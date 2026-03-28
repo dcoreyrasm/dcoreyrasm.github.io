@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Darice Corey is a Senior Director of Web and IT Planning at Yale College, higher ed IT leader, EDUCAUSE speaker, Executive DBA candidate, and host of the Yale College Voices podcast." />
   <title>Darice Corey — Higher Ed IT Leader & Scholar</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
@@ -14,10 +15,46 @@
       --coral:     #c084fc;
       --coral-dim: #a855f7;
       --cream:     #ede9f6;
-      --muted:     #7e7a9a;
+      --muted:     #a9a4c2;
       --line:      rgba(192,132,252,0.12);
       --serif:     'Playfair Display', Georgia, serif;
       --sans:      'DM Sans', sans-serif;
+    }
+
+    /* ── SKIP LINK ── */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      background: var(--coral);
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      z-index: 9999;
+      text-decoration: none;
+      border-radius: 0 0 4px 4px;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ── FOCUS STYLES ── */
+    :focus-visible {
+      outline: 3px solid var(--coral);
+      outline-offset: 3px;
+    }
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--coral);
+      outline-offset: 3px;
+    }
+
+    /* ── REDUCED MOTION ── */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
     }
 
     html { scroll-behavior: smooth; }
@@ -207,22 +244,15 @@
       z-index: 1;
       width: 100%;
       height: 100%;
-      background: var(--bg2);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.75rem;
-      border: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 0.8rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      overflow: hidden;
     }
 
-    .photo-placeholder svg {
-      width: 48px; height: 48px;
-      opacity: 0.3;
+    .photo-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
     }
 
     /* Floating stat cards */
@@ -663,9 +693,10 @@
   </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- NAV -->
-  <nav>
+  <nav aria-label="Main navigation">
     <a class="nav-name" href="#top">Darice Corey</a>
     <ul class="nav-links">
       <li><a href="#work">Work</a></li>
@@ -677,7 +708,8 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="top">
+  <main id="main-content">
+  <section class="hero" id="top" aria-label="Introduction">
     <div class="hero-text">
       <p class="hero-eyebrow fade-in">Senior Director · Scholar · Builder</p>
       <h1 class="hero-name fade-in">Darice<br><em>Corey</em></h1>
@@ -694,11 +726,7 @@
     <div class="hero-image">
       <div class="photo-frame">
         <div class="photo-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <circle cx="12" cy="8" r="4"/>
-            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-          </svg>
-          <span>Your photo here</span>
+          <img src="darice.jpg" alt="Darice Corey, Senior Director of Web & IT Planning at Yale College" />
         </div>
         <div class="stat-card stat-card-1">
           <span class="num">18+</span>
@@ -713,7 +741,7 @@
   </section>
 
   <!-- MARQUEE -->
-  <div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-strip" aria-hidden="true" role="presentation">
     <div class="marquee-inner">
       <span>Yale College IT</span>
       <span>EDUCAUSE Speaker</span>
@@ -740,12 +768,12 @@
   </div>
 
   <!-- WORK -->
-  <section id="work">
+  <section id="work" aria-labelledby="work-heading">
     <p class="section-label">Selected Work</p>
-    <h2 class="section-heading">Building things that last.</h2>
+    <h2 class="section-heading" id="work-heading">Building things that last.</h2>
 
     <div class="work-grid">
-      <a href="https://yearendreport-109986419086.us-east4.run.app/" target="_blank" class="work-card featured">
+      <a href="https://yearendreport-109986419086.us-east4.run.app/" target="_blank" rel="noopener noreferrer" class="work-card featured" aria-label="View Year-End Report: The OneIT Connector (opens in new tab)">
         <p class="work-card-tag">Year-End Report · 2024–2025</p>
         <h3>The OneIT Connector: A Year of Bridging Yale College and Central IT</h3>
         <p>An interactive portfolio documenting a full year of strategic IT leadership, from AI ecosystem development and first-year student onboarding to digital signage, POS compliance, and cross-unit collaboration. Built as a web application with live data and storytelling.</p>
@@ -785,9 +813,9 @@
   </section>
 
   <!-- SPEAKING -->
-  <section id="speaking">
+  <section id="speaking" aria-labelledby="speaking-heading">
     <p class="section-label">Speaking & Thought Leadership</p>
-    <h2 class="section-heading">Shaping the conversation<br>in higher ed IT.</h2>
+    <h2 class="section-heading" id="speaking-heading">Shaping the conversation<br>in higher ed IT.</h2>
 
     <div class="speaking-list">
       <div class="speaking-item">
@@ -838,9 +866,9 @@
   </section>
 
   <!-- PODCAST -->
-  <section id="podcast">
+  <section id="podcast" aria-labelledby="podcast-heading">
     <p class="section-label">Digital Community</p>
-    <h2 class="section-heading">Yale College Voices</h2>
+    <h2 class="section-heading" id="podcast-heading">Yale College Voices</h2>
 
     <div class="podcast-layout">
       <div>
@@ -875,7 +903,7 @@
         <div class="podcast-card">
           <p class="podcast-card-sub">Now Playing</p>
           <p class="podcast-card-title">Yale College Voices</p>
-          <div class="waveform">
+          <div class="waveform" aria-hidden="true" role="presentation">
             <span style="height:12px"></span><span style="height:24px"></span>
             <span style="height:18px"></span><span style="height:30px"></span>
             <span style="height:14px"></span><span style="height:28px"></span>
@@ -894,10 +922,10 @@
   </section>
 
   <!-- ABOUT -->
-  <section id="about">
+  <section id="about" aria-labelledby="about-heading">
     <div>
       <p class="section-label">About</p>
-      <h2 class="section-heading">I connect the dots others miss.</h2>
+      <h2 class="section-heading" id="about-heading">I connect the dots others miss.</h2>
       <div class="about-credentials">
         <div class="credential">
           <div class="credential-dot"></div>
@@ -957,22 +985,18 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
+  <section id="contact" aria-labelledby="contact-heading">
     <p class="section-label" style="justify-content:center;">Get In Touch</p>
-    <h2 class="section-heading">Let's talk about what's next.</h2>
+    <h2 class="section-heading" id="contact-heading">Let's talk about what's next.</h2>
     <p>Whether you're thinking about a collaboration, a speaking invitation, or a leadership opportunity, I'm always open to a good conversation.</p>
-    <a href="mailto:darice@daricecorey.com" class="btn-primary">Send Me a Note</a>
+    <a href="mailto:darice@daricecorey.com" class="btn-primary" aria-label="Send Darice Corey an email">Send Me a Note</a>
   </section>
+  </main>
 
   <!-- FOOTER -->
-  <footer>
+  <footer role="contentinfo">
     <p>© 2026 Darice Corey. All rights reserved.</p>
     <ul class="footer-links">
-      <li><a href="https://www.linkedin.com/in/daricecorey/" target="_blank">LinkedIn</a></li>
-      <li><a href="https://yearendreport-109986419086.us-east4.run.app/" target="_blank">Year-End Report</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </footer>
-
-</body>
-</html>
+      <li><a href="https://www.linkedin.com/in/daricecorey/" target="_blank" rel="noopener noreferrer" aria-label="Darice Corey on LinkedIn (opens in new tab)">LinkedIn</a></li>
+      <li><a href="https://yearendreport-109986419086.us-east4.run.app/" target="_blank" rel="noopener noreferrer" aria-label="View Year-End Report (opens in new tab)">Year-End Report</a></li>
+      <li><a href="#contact">Contact</a>
