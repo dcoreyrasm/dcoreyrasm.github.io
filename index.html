@@ -678,8 +678,19 @@
       nav { padding: 1.2rem 1.5rem; }
       .nav-links { display: none; }
       .hero { grid-template-columns: 1fr; }
-      .hero-text { padding: 6rem 1.5rem 2rem; }
-      .hero-image { display: none; }
+      .hero-text { padding: 2rem 1.5rem 2rem; order: 2; }
+      .hero-image { 
+        display: flex; 
+        order: 1;
+        padding: 6rem 1.5rem 1.5rem;
+        justify-content: center;
+      }
+      .photo-frame {
+        width: 220px;
+        height: 270px;
+      }
+      .stat-card-1 { bottom: 20px; left: -10px; }
+      .stat-card-2 { top: 20px; right: -10px; }
       section { padding: 4rem 1.5rem; }
       .work-grid { grid-template-columns: 1fr; }
       .work-card.featured { grid-column: span 1; }
@@ -687,7 +698,7 @@
       .speaking-venue { display: none; }
       .podcast-layout { grid-template-columns: 1fr; gap: 2.5rem; }
       #about { grid-template-columns: 1fr; gap: 0; padding: 4rem 1.5rem; }
-      .about-right { padding-top: 0; }
+      .about-right { padding-top: 2rem; }
       footer { flex-direction: column; gap: 1rem; padding: 2rem 1.5rem; }
     }
   </style>
