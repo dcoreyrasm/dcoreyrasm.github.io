@@ -151,6 +151,14 @@
     .podcast-stat .big { font-family:var(--serif); font-size:2.8rem; font-weight:900; display:block; line-height:1; }
     .podcast-stat .small { font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; opacity:.75; }
     .podcast-desc { font-size:1rem; line-height:1.75; opacity:.9; margin-bottom:2rem; }
+    .episode-list { display:flex; flex-direction:column; gap:0; margin-bottom:2rem; }
+    .episode-item { display:grid; grid-template-columns:60px 1fr 20px; gap:1rem; align-items:center; padding:1rem 0; border-bottom:1px solid rgba(255,255,255,.1); text-decoration:none; color:#fff; transition:opacity .2s; }
+    .episode-item:first-child { border-top:1px solid rgba(255,255,255,.1); }
+    .episode-item:hover { opacity:.8; }
+    .episode-num { font-size:.65rem; letter-spacing:.1em; text-transform:uppercase; color:var(--coral); }
+    .episode-body strong { display:block; font-size:.9rem; font-weight:500; margin-bottom:.25rem; line-height:1.3; }
+    .episode-body span { font-size:.78rem; opacity:.7; line-height:1.4; }
+    .episode-arrow { color:var(--coral); font-size:1rem; }
     .podcast-platforms { display:flex; gap:.75rem; flex-wrap:wrap; }
     .platform-tag { background:rgba(255,255,255,.15); color:#fff; padding:.4rem .9rem; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; border:1px solid rgba(255,255,255,.25); text-decoration:none; transition:background .2s; }
     .platform-tag:hover { background:rgba(255,255,255,.28); }
@@ -168,7 +176,9 @@
     .credential-dot { width:8px; height:8px; border-radius:50%; background:var(--coral); margin-top:.45rem; flex-shrink:0; }
     .credential-text strong { display:block; font-size:.9rem; font-weight:500; color:var(--cream); margin-bottom:.1rem; }
     .credential-text span { font-size:.8rem; color:var(--muted); }
-    .about-right { padding-top:5.5rem; }
+    .about-right { padding-top:3rem; }
+    .about-photo-wrap { width:120px; height:120px; border-radius:50%; overflow:hidden; border:3px solid var(--coral); margin-bottom:2rem; }
+    .about-photo { width:100%; height:100%; object-fit:cover; object-position:center top; display:block; }
     .about-quote { font-family:var(--serif); font-size:1.5rem; font-style:italic; line-height:1.55; color:var(--cream); margin-bottom:2.5rem; padding-left:1.5rem; border-left:3px solid var(--coral); }
     .about-body { font-size:.95rem; color:var(--muted); line-height:1.8; }
     #contact { background:var(--bg); text-align:center; padding:7rem 5rem; }
@@ -179,6 +189,12 @@
     .footer-links { display:flex; gap:1.5rem; list-style:none; }
     .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; transition:color .2s; }
     .footer-links a:hover { color:var(--coral); }
+    .cert-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3rem; }
+    .cert-card { background:var(--bg2); padding:1.75rem 1.5rem; border-left:2px solid var(--coral); }
+    .cert-icon { color:var(--coral); font-size:.7rem; margin-bottom:.75rem; }
+    .cert-card strong { display:block; font-size:.92rem; font-weight:500; color:var(--cream); margin-bottom:.4rem; line-height:1.3; }
+    .cert-card span { font-size:.8rem; color:var(--muted); line-height:1.6; }
+
     .fade-in { opacity:0; transform:translateY(24px); animation:fadeUp .7s ease forwards; }
     @keyframes fadeUp { to { opacity:1; transform:translateY(0); } }
     .fade-in:nth-child(1) { animation-delay:.1s; }
@@ -186,6 +202,15 @@
     .fade-in:nth-child(3) { animation-delay:.4s; }
     .fade-in:nth-child(4) { animation-delay:.55s; }
     .fade-in:nth-child(5) { animation-delay:.7s; }
+    .contact-form { max-width:680px; margin:0 auto; text-align:left; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
+    .form-group { display:flex; flex-direction:column; gap:.5rem; margin-bottom:1.25rem; }
+    .form-group label { font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--coral); font-weight:500; }
+    .form-group input, .form-group textarea { background:var(--bg2); border:1px solid var(--line); color:var(--cream); padding:.85rem 1rem; font-family:var(--sans); font-size:.95rem; font-weight:300; resize:vertical; transition:border-color .2s; }
+    .form-group input::placeholder, .form-group textarea::placeholder { color:var(--muted); opacity:.6; }
+    .form-group input:focus, .form-group textarea:focus { outline:none; border-color:var(--coral); }
+    .contact-form .btn-primary { margin-top:.5rem; width:100%; justify-content:center; font-size:.9rem; padding:1rem; }
+
     @media (max-width:900px) {
       nav { padding:1.2rem 1.5rem; }
       .nav-links { display:none; }
@@ -202,6 +227,9 @@
       .podcast-layout { grid-template-columns:1fr; gap:2.5rem; }
       #about { grid-template-columns:1fr; gap:0; padding:4rem 1.5rem; }
       .about-right { padding-top:2rem; }
+      .cert-grid { grid-template-columns:1fr; }
+      .form-row { grid-template-columns:1fr; }
+      .episode-item { grid-template-columns:50px 1fr 20px; }
       footer { flex-direction:column; gap:1rem; padding:2rem 1.5rem; }
     }
   </style>
@@ -214,6 +242,7 @@
       <li><a href="#work">Work</a></li>
       <li><a href="#speaking">Speaking</a></li>
       <li><a href="#podcast">Podcast</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#career">Career</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -279,6 +308,74 @@
       </div>
     </section>
 
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" aria-labelledby="cert-heading" style="background:var(--bg);">
+      <p class="section-label">Certifications &amp; Executive Programs</p>
+      <h2 class="section-heading" id="cert-heading">Staying sharp. Staying current.</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">◆</div>
+          <strong>Deloitte University Greenhouse</strong>
+          <span>Breakthrough Lab — Executive innovation and organizational transformation program. March 2025.</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">◆</div>
+          <strong>Agent Explorer (Microsoft / Founderz)</strong>
+          <span>AI Agents, Microsoft Copilot integration, and prompt engineering. November 2025.</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">◆</div>
+          <strong>AI Skills 4 Women (Founderz)</strong>
+          <span>Applied machine learning, data analysis, and AI ethics. November 2025.</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">◆</div>
+          <strong>Business Process Improvement</strong>
+          <span>Certified in analyzing and improving organizational workflows and systems.</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">◆</div>
+          <strong>Research Security Training</strong>
+          <span>Combined research security certification for institutional compliance.</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">◆</div>
+          <strong>Proposal Reviewer 2025</strong>
+          <span>Certified proposal reviewer for academic and institutional programs.</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">◆</div>
+          <strong>Creating Safe Spaces for Tough Conversations</strong>
+          <span>Facilitation and leadership certification for inclusive workplace dialogue.</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">◆</div>
+          <strong>Dashboard in a Day — Microsoft</strong>
+          <span>Power BI, data modeling, DAX, and visualization best practices. July 2025.</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">◆</div>
+          <strong>Digital Marketing Certificate — GWU</strong>
+          <span>George Washington University School of Business. 2021–2023.</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">◆</div>
+          <strong>Yale Emerge Leadership Certificate</strong>
+          <span>Yale University executive leadership development program. 2022–2023.</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">◆</div>
+          <strong>CITI Program — Research Ethics</strong>
+          <span>Social and Behavioral Research, Research with Children, Humanities Responsible Conduct, and Information Privacy and Security.</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">◆</div>
+          <strong>.NET Technology Certificate — Sacred Heart University</strong>
+          <span>Graduate certificate in .NET development. 2021–2022.</span>
+        </div>
+      </div>
+    </section>
+
     <!-- CAREER TIMELINE -->
     <section id="career" aria-labelledby="career-heading" style="background:var(--bg2);">
       <p class="section-label">Full Career</p>
@@ -338,6 +435,23 @@
             <div class="podcast-stat"><span class="big">35+</span><span class="small">Episodes</span></div>
             <div class="podcast-stat"><span class="big">6</span><span class="small">Platforms</span></div>
           </div>
+          <div class="episode-list">
+            <a href="https://open.spotify.com/show/3i5HUA9ENPuL0yG8RfBMVW" target="_blank" rel="noopener noreferrer" class="episode-item" aria-label="Listen to episode on Spotify (opens in new tab)">
+              <span class="episode-num">Featured</span>
+              <div class="episode-body"><strong>Dr. Anjelica Gonzalez's Path to Biomedical Innovation</strong><span>How one Yale scientist navigated research, identity, and building a lab that opens doors for others.</span></div>
+              <span class="episode-arrow">→</span>
+            </a>
+            <a href="https://open.spotify.com/show/3i5HUA9ENPuL0yG8RfBMVW" target="_blank" rel="noopener noreferrer" class="episode-item" aria-label="Listen to episode on Spotify (opens in new tab)">
+              <span class="episode-num">Featured</span>
+              <div class="episode-body"><strong>Empowering Future Leaders through Diversity with Thomas Near</strong><span>Yale College's Thomas Near on mentorship, representation, and why diversity in leadership matters now more than ever.</span></div>
+              <span class="episode-arrow">→</span>
+            </a>
+            <a href="https://open.spotify.com/show/3i5HUA9ENPuL0yG8RfBMVW" target="_blank" rel="noopener noreferrer" class="episode-item" aria-label="Listen to episode on Spotify (opens in new tab)">
+              <span class="episode-num">Featured</span>
+              <div class="episode-body"><strong>Cultivating Diversity and Mentorship with Daisy Abreu</strong><span>A candid conversation about community, identity, and the power of showing up for the people around you.</span></div>
+              <span class="episode-arrow">→</span>
+            </a>
+          </div>
           <div class="podcast-platforms">
             <a href="https://open.spotify.com/show/3i5HUA9ENPuL0yG8RfBMVW" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Listen on Spotify (opens in new tab)">Spotify</a>
             <a href="https://podcasts.apple.com/us/podcast/yale-college-voices-exploring-diverse-roles-and/id1710317630" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Listen on Apple Podcasts (opens in new tab)">Apple Podcasts</a>
@@ -384,6 +498,9 @@
         </div>
       </div>
       <div class="about-right">
+        <div class="about-photo-wrap">
+          <img src="https://dcoreyrasm.github.io/darice.jpg" alt="Darice Corey" class="about-photo" />
+        </div>
         <blockquote class="about-quote">"I took a blank slate as an invitation to build something that truly serves Yale College. With no preset boundaries, I forged new collaborations, led strategic projects, and integrated communities across the university."</blockquote>
         <p class="about-body">I'm an IT leader who builds the digital connective tissue for higher education. My career spans 18+ years at Yale, where I've grown from Programmer Analyst to Senior Director, managing a $981K annual IT budget, overseeing 50+ websites, and leading strategic initiatives that connect technology to student success.<br><br>Before joining Yale, I began my teaching career as an adjunct instructor at Albertus Magnus College, then the University of Phoenix, and later Rasmussen University. I taught courses in SQL, database management, e-commerce, and business systems. That experience still shapes how I lead today. I explain things clearly, I coach people through complexity, and I focus on building solutions that people can actually use.<br><br>At Yale, I co-developed Designing Your Career, a platform now used by 7,100+ students across 83 institutions. That work earned the Linda K. Lorimer Presidential Award for Distinguished Service in 2024. I've also led efforts that resulted in $130K in annual vendor savings, modernized student housing operations generating up to $1.4M in cost savings, and implemented PCI-compliant point-of-sale systems across 20 departments.<br><br>I'm also a contributor to multiple editions of Processes, Systems, and Information: An Introduction to MIS, a textbook used in university classrooms nationwide.<br><br>The throughline in my work is simple. When technology is built with intention and grounded in real needs, it can make a meaningful difference in people's lives.</p>
       </div>
@@ -391,8 +508,28 @@
     <section id="contact" aria-labelledby="contact-heading">
       <p class="section-label" style="justify-content:center;">Get In Touch</p>
       <h2 class="section-heading" id="contact-heading">Let's talk about what's next.</h2>
-      <p>Whether you are thinking about a collaboration, a speaking invitation, or a leadership opportunity, I am always open to a good conversation.</p>
-      <a href="mailto:darice@daricecorey.com" class="btn-primary" aria-label="Send Darice Corey an email">Send Me a Note</a>
+      <p>Whether you're thinking about a collaboration, a speaking invitation, or a leadership opportunity, I'm always open to a good conversation.</p>
+      <form action="https://formspree.io/f/xbdpglok" method="POST" class="contact-form" aria-label="Contact form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="Jane Smith" required aria-required="true" />
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Your Email</label>
+            <input type="email" id="contact-email" name="email" placeholder="jane@institution.edu" required aria-required="true" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" name="subject" placeholder="Speaking invitation, collaboration, or just hello" />
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="5" placeholder="Tell me what's on your mind..." required aria-required="true"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
     </section>
   </main>
   <footer role="contentinfo">
