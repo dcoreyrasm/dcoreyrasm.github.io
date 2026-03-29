@@ -146,11 +146,17 @@
     #podcast .section-label { color:var(--coral); }
     #podcast .section-label::after { background:rgba(192,132,252,.2); }
     #podcast .section-heading { color:#fff; }
-    .podcast-layout { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; margin-top:2rem; }
+    .podcast-layout { display:grid; grid-template-columns:1fr; gap:2rem; margin-top:2rem; max-width:720px; }
     .podcast-stat-row { display:flex; gap:3rem; margin:2rem 0; }
     .podcast-stat .big { font-family:var(--serif); font-size:2.8rem; font-weight:900; display:block; line-height:1; }
     .podcast-stat .small { font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; opacity:.75; }
     .podcast-desc { font-size:1rem; line-height:1.75; opacity:.9; margin-bottom:2rem; }
+    .video-embeds { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-bottom:2.5rem; }
+    .video-item {}
+    .video-wrap { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; background:rgba(0,0,0,0.3); border:1px solid rgba(192,132,252,.2); }
+    .video-wrap iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
+    .video-label { font-size:.78rem; color:rgba(255,255,255,.7); margin-top:.6rem; line-height:1.4; }
+
     .episode-list { display:flex; flex-direction:column; gap:0; margin-bottom:2rem; }
     .episode-item { display:grid; grid-template-columns:60px 1fr 20px; gap:1rem; align-items:center; padding:1rem 0; border-bottom:1px solid rgba(255,255,255,.1); text-decoration:none; color:#fff; transition:opacity .2s; }
     .episode-item:first-child { border-top:1px solid rgba(255,255,255,.1); }
@@ -228,6 +234,7 @@
       #about { grid-template-columns:1fr; gap:0; padding:4rem 1.5rem; }
       .about-right { padding-top:2rem; }
       .cert-grid { grid-template-columns:1fr; }
+      .video-embeds { grid-template-columns:1fr; }
       .form-row { grid-template-columns:1fr; }
       .episode-item { grid-template-columns:50px 1fr 20px; }
       footer { flex-direction:column; gap:1rem; padding:2rem 1.5rem; }
@@ -452,6 +459,26 @@
               <span class="episode-arrow">→</span>
             </a>
           </div>
+          <div class="video-embeds" id="video-embeds">
+            <div class="video-item">
+              <div class="video-wrap">
+                <iframe src="https://www.youtube.com/embed/1ukSVXzQFug" title="Dr. Anjelica Gonzalez's Path to Biomedical Innovation — Yale College Voices" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <p class="video-label">Dr. Anjelica Gonzalez's Path to Biomedical Innovation</p>
+            </div>
+            <div class="video-item">
+              <div class="video-wrap">
+                <iframe src="https://www.youtube.com/embed/BeJ6gsXyWZk" title="Empowering Future Leaders through Diversity with Thomas Near — Yale College Voices" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <p class="video-label">Empowering Future Leaders through Diversity with Thomas Near</p>
+            </div>
+            <div class="video-item">
+              <div class="video-wrap">
+                <iframe src="https://www.youtube.com/embed/84g0vLOSeTA" title="Cultivating Diversity and Mentorship: A Conversation with Daisy Abreu — Yale College Voices" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <p class="video-label">Cultivating Diversity and Mentorship: A Conversation with Daisy Abreu</p>
+            </div>
+          </div>
           <div class="podcast-platforms">
             <a href="https://open.spotify.com/show/3i5HUA9ENPuL0yG8RfBMVW" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Listen on Spotify (opens in new tab)">Spotify</a>
             <a href="https://podcasts.apple.com/us/podcast/yale-college-voices-exploring-diverse-roles-and/id1710317630" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Listen on Apple Podcasts (opens in new tab)">Apple Podcasts</a>
@@ -461,16 +488,6 @@
             <a href="https://www.youtube.com/@YaleCollegeVoices" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Watch on YouTube (opens in new tab)">YouTube</a>
             <a href="https://yalecollege.yale.edu/get-know-yale-college/yale-college-voices-podcast" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Yale College official podcast page (opens in new tab)">Yale College</a>
             <a href="https://www.yale.edu/podcasts" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Yale University Podcasts page (opens in new tab)">Yale University</a>
-          </div>
-        </div>
-        <div class="podcast-visual">
-          <div class="podcast-card">
-            <p class="podcast-card-sub">Now Playing</p>
-            <p class="podcast-card-title">Yale College Voices</p>
-            <div class="waveform" aria-hidden="true" role="presentation">
-              <span style="height:12px"></span><span style="height:24px"></span><span style="height:18px"></span><span style="height:30px"></span><span style="height:14px"></span><span style="height:28px"></span><span style="height:20px"></span><span style="height:16px"></span><span style="height:26px"></span><span style="height:12px"></span><span style="height:22px"></span><span style="height:30px"></span><span style="height:10px"></span><span style="height:24px"></span><span style="height:18px"></span><span style="height:28px"></span><span style="height:14px"></span><span style="height:20px"></span><span style="height:26px"></span><span style="height:16px"></span>
-            </div>
-            <p style="font-size:.8rem;opacity:.7;">Hosted &amp; Produced by Darice Corey · Yale College</p>
           </div>
         </div>
       </div>
