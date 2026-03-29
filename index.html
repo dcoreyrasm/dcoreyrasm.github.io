@@ -230,6 +230,15 @@
     .credential-text strong { display:block; font-size:.88rem; font-weight:500; color:var(--cream); margin-bottom:.1rem; }
     .credential-text span { font-size:.8rem; color:var(--muted); overflow-wrap:break-word; max-width:100%; display:block; }
 
+    /* MENTORSHIP */
+    .mentorship-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; margin-top:3rem; }
+    .mentorship-card { background:var(--bg2); padding:2rem; border-top:2px solid var(--coral); }
+    .mentorship-card-header { display:flex; gap:1rem; align-items:start; margin-bottom:1.25rem; }
+    .mentorship-icon { font-size:1.5rem; flex-shrink:0; margin-top:.1rem; }
+    .mentorship-card-header h3 { font-family:var(--serif); font-size:1.05rem; font-weight:700; color:var(--cream); margin-bottom:.2rem; line-height:1.3; }
+    .mentorship-org { font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:var(--coral); }
+    .mentorship-card p { font-size:.88rem; color:var(--muted); line-height:1.75; overflow-wrap:break-word; }
+
     /* FOOTER */
     footer { background:#0e0b17; padding:2rem 3rem; display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--line); }
     footer p { font-size:.78rem; color:var(--muted); }
@@ -289,6 +298,7 @@
       .research-grid { grid-template-columns:1fr; }
       .topics-grid { grid-template-columns:1fr; }
       .pub-list { gap:.75rem; }
+      .mentorship-grid { grid-template-columns:1fr; }
       .contact-reasons { grid-template-columns:1fr; gap:1rem; margin-bottom:2.5rem; }
       .contact-reason { padding:1.25rem 1.5rem; display:block; border-top:none; border-left:2px solid var(--coral); text-align:left; }
       .contact-reason .icon { font-size:1.1rem; margin-bottom:.5rem; display:block; }
@@ -318,7 +328,16 @@
       /* FORMS */
       .form-row { grid-template-columns:1fr; }
 
-      /* FOOTER */
+      /* MENTORSHIP */
+    .mentorship-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; margin-top:3rem; }
+    .mentorship-card { background:var(--bg2); padding:2rem; border-top:2px solid var(--coral); }
+    .mentorship-card-header { display:flex; gap:1rem; align-items:start; margin-bottom:1.25rem; }
+    .mentorship-icon { font-size:1.5rem; flex-shrink:0; margin-top:.1rem; }
+    .mentorship-card-header h3 { font-family:var(--serif); font-size:1.05rem; font-weight:700; color:var(--cream); margin-bottom:.2rem; line-height:1.3; }
+    .mentorship-org { font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:var(--coral); }
+    .mentorship-card p { font-size:.88rem; color:var(--muted); line-height:1.75; overflow-wrap:break-word; }
+
+    /* FOOTER */
       footer { flex-direction:column; gap:1rem; padding:1.5rem; text-align:center; }
       .footer-links { justify-content:center; flex-wrap:wrap; }
     }
@@ -338,6 +357,7 @@
       <li><a href="#" onclick="showPage('ai');closeNav();return false;" data-page="ai">AI Leadership</a></li>
       <li><a href="#" onclick="showPage('research');closeNav();return false;" data-page="research">Research</a></li>
       <li><a href="#" onclick="showPage('speaking');closeNav();return false;" data-page="speaking">Speaking</a></li>
+      <li><a href="#" onclick="showPage('mentorship');closeNav();return false;" data-page="mentorship">Mentorship</a></li>
       <li><a href="#" onclick="showPage('contact');closeNav();return false;" data-page="contact">Contact</a></li>
       <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
     </ul>
@@ -806,6 +826,127 @@
         </div>
       </section>
     </div><!-- end speaking -->
+
+    <!-- ══════════════ MENTORSHIP ══════════════ -->
+    <div class="page" id="page-mentorship">
+
+      <section aria-labelledby="mentorship-hero-heading" style="background:linear-gradient(135deg,#1e1a2e 0%,#2d1f4e 100%);padding:5rem 0;">
+        <div class="container">
+          <p class="section-label" style="color:var(--coral);">Mentorship &amp; Community</p>
+          <h2 class="section-heading" id="mentorship-hero-heading" style="color:#fff;">Investing in people is the work.</h2>
+          <p style="font-size:1rem;color:rgba(255,255,255,.85);max-width:620px;line-height:1.8;">Mentorship isn&rsquo;t a side activity for me. It&rsquo;s central to how I lead. Whether I&rsquo;m advising a first-year student navigating college life, supporting a junior colleague building their IT career, or connecting women in the workforce to new opportunities, the goal is always the same: help people see what&rsquo;s possible and give them the tools to get there.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="mentorship-areas-heading">
+        <div class="container">
+          <p class="section-label">Areas of Mentorship</p>
+          <h2 class="section-heading" id="mentorship-areas-heading">Where I show up for people.</h2>
+          <div class="mentorship-grid">
+
+            <div class="mentorship-card">
+              <div class="mentorship-card-header">
+                <span class="mentorship-icon">🎓</span>
+                <div>
+                  <h3>First-Year Student Advising</h3>
+                  <span class="mentorship-org">Pierson College, Yale University</span>
+                </div>
+              </div>
+              <p>As a Pierson College Fellow and First-Year Academic Adviser, I work with incoming Yale students during one of the most significant transitions of their lives. I provide academic guidance, help students navigate course selection and degree requirements, and serve as a steady point of contact as they find their footing in a demanding environment. The goal is to help each student feel seen, supported, and ready to thrive.</p>
+            </div>
+
+            <div class="mentorship-card">
+              <div class="mentorship-card-header">
+                <span class="mentorship-icon">💼</span>
+                <div>
+                  <h3>Yale ITS Peer Mentorship</h3>
+                  <span class="mentorship-org">Yale University IT Services</span>
+                </div>
+              </div>
+              <p>Through Yale&rsquo;s formal Staff Learning and Development peer mentorship program, I mentored junior ITS colleagues navigating early-career growth in higher education IT. Our conversations covered career pathways, building visibility within a large institution, and developing the leadership presence needed to move into senior roles. I focus on helping colleagues see the full scope of what&rsquo;s available to them, not just the next step.</p>
+            </div>
+
+            <div class="mentorship-card">
+              <div class="mentorship-card-header">
+                <span class="mentorship-icon">🤝</span>
+                <div>
+                  <h3>New Haven Promise Mentorship</h3>
+                  <span class="mentorship-org">New Haven Promise Program</span>
+                </div>
+              </div>
+              <p>I mentored New Haven Promise interns placed on Yale College IT projects, providing hands-on supervision and career guidance for young people from the New Haven community. One standout intern contributed meaningfully to a YaleSites migration project and earned a graduate school recommendation based on their performance. This work reflects my commitment to using my position at Yale to open doors for people who might not otherwise have access to this environment.</p>
+            </div>
+
+            <div class="mentorship-card">
+              <div class="mentorship-card-header">
+                <span class="mentorship-icon">⭐</span>
+                <div>
+                  <h3>Working Women&rsquo;s Network</h3>
+                  <span class="mentorship-org">Yale University</span>
+                </div>
+              </div>
+              <p>I participate in Yale&rsquo;s Working Women&rsquo;s Network, a community focused on career pathways and professional development for women across the institution. This network creates space for honest conversations about advancement, leadership, and navigating institutional structures. I bring my own experience as a senior leader who has built a significant career within Yale to those conversations, with the hope that others can see a clearer path forward.</p>
+            </div>
+
+            <div class="mentorship-card">
+              <div class="mentorship-card-header">
+                <span class="mentorship-icon">🌱</span>
+                <div>
+                  <h3>Student IT Associates &amp; Developers</h3>
+                  <span class="mentorship-org">Yale College IT</span>
+                </div>
+              </div>
+              <p>I have directly mentored Yale student photographers, student IT associates, and student developers working on real Yale College IT projects. Rather than treating student employment as transactional, I structure these experiences as genuine professional development. Students have served as project co-leads, built app prototypes, and developed media credentials and portfolio-building work. Several have gone on to graduate programs and professional roles in technology.</p>
+            </div>
+
+            <div class="mentorship-card">
+              <div class="mentorship-card-header">
+                <span class="mentorship-icon">🎙️</span>
+                <div>
+                  <h3>Yale College Voices as a Mentorship Platform</h3>
+                  <span class="mentorship-org">Yale College</span>
+                </div>
+              </div>
+              <p>The Yale College Voices podcast is, at its core, a mentorship platform at scale. Each episode amplifies the story of a Yale staff or faculty member, giving listeners an honest look at non-linear career paths, resilience, and what it means to build a meaningful professional life. For students and early-career staff, these stories serve as the kind of mentorship that can be hard to access directly.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="mentorship-philosophy-heading" style="background:var(--bg2);">
+        <div class="container">
+          <p class="section-label">My Approach</p>
+          <h2 class="section-heading" id="mentorship-philosophy-heading">How I think about mentorship.</h2>
+          <div class="stand-for-grid">
+            <div>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">Good mentorship is not about giving advice. It is about helping someone understand their own strengths more clearly, see options they hadn&rsquo;t considered, and build the confidence to act on what they know.</p>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">I also believe mentorship is most powerful when it crosses boundaries: between senior and junior, between institution and community, between those who have access and those who are working to build it.</p>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;">The throughline in my mentorship work is the same as my technology work. I connect people to what they need to move forward.</p>
+            </div>
+            <div>
+              <p class="section-label" style="margin-bottom:1.5rem;">By the Numbers</p>
+              <div class="impact-strip" style="margin-top:0;">
+                <div class="impact-num"><span class="big">12+</span><span class="small">Students mentored &amp; supervised</span></div>
+                <div class="impact-num"><span class="big">100%</span><span class="small">Intern project success rate</span></div>
+                <div class="impact-num"><span class="big">4</span><span class="small">Mentorship programs &amp; networks</span></div>
+                <div class="impact-num"><span class="big">35+</span><span class="small">Podcast episodes amplifying voices</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="mentorship-cta-heading">
+        <div class="container" style="text-align:center;">
+          <p class="section-label" style="justify-content:center;">Connect</p>
+          <h2 class="section-heading" id="mentorship-cta-heading">Interested in connecting?</h2>
+          <p class="section-sub" style="margin:0 auto 2.5rem;">Whether you&rsquo;re a student, an early-career IT professional, or someone exploring what&rsquo;s next, I&rsquo;m always open to a conversation.</p>
+          <a href="#" onclick="showPage('contact');return false;" class="btn-primary">Get In Touch</a>
+        </div>
+      </section>
+
+    </div><!-- end mentorship -->
 
     <!-- ══════════════ CONTACT ══════════════ -->
     <div class="page" id="page-contact">
