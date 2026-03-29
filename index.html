@@ -3,31 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Darice Corey is a Senior Director of Web and IT Planning at Yale College, higher ed IT leader, EDUCAUSE speaker, Executive DBA candidate, and host of the Yale College Voices podcast." />
+  <meta name="description" content="Darice Corey is a Senior Director of Web and IT Planning at Yale College, higher ed IT leader, AI strategist, Executive DBA candidate, and host of the Yale College Voices podcast." />
   <title>Darice Corey — Higher Ed IT Leader & Scholar</title>
-  <!-- SEO & Open Graph -->
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Darice Corey" />
   <link rel="canonical" href="https://www.daricecorey.com/" />
-
-  <!-- Open Graph (LinkedIn, Facebook, Slack previews) -->
   <meta property="og:type" content="profile" />
   <meta property="og:title" content="Darice Corey — Higher Ed IT Leader & Scholar" />
-  <meta property="og:description" content="Senior Director of Web and IT Planning at Yale College. EDUCAUSE speaker, Executive DBA candidate, AI community builder, and host of the Yale College Voices podcast." />
+  <meta property="og:description" content="Senior Director of Web and IT Planning at Yale College. AI strategist, Executive DBA candidate, EDUCAUSE speaker, and host of the Yale College Voices podcast." />
   <meta property="og:url" content="https://www.daricecorey.com/" />
   <meta property="og:image" content="https://dcoreyrasm.github.io/darice.jpg" />
-  <meta property="og:image:alt" content="Darice Corey, Senior Director of Web and IT Planning at Yale College" />
-  <meta property="og:site_name" content="Darice Corey" />
-  <meta property="profile:first_name" content="Darice" />
-  <meta property="profile:last_name" content="Corey" />
-
-  <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Darice Corey — Higher Ed IT Leader & Scholar" />
-  <meta name="twitter:description" content="Senior Director of Web and IT Planning at Yale College. EDUCAUSE speaker, Executive DBA candidate, AI community builder, and host of the Yale College Voices podcast." />
+  <meta name="twitter:description" content="Senior Director at Yale College. AI strategist, Executive DBA candidate, EDUCAUSE speaker." />
   <meta name="twitter:image" content="https://dcoreyrasm.github.io/darice.jpg" />
-
-  <!-- JSON-LD Structured Data (for Google, ChatGPT, Perplexity, AI Overviews) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -36,41 +25,13 @@
     "url": "https://www.daricecorey.com",
     "image": "https://dcoreyrasm.github.io/darice.jpg",
     "jobTitle": "Senior Director of Web and IT Planning",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Yale College",
-      "url": "https://yalecollege.yale.edu"
-    },
+    "worksFor": { "@type": "Organization", "name": "Yale College", "url": "https://yalecollege.yale.edu" },
     "description": "Higher education IT leader with 18+ years at Yale College. Senior Director overseeing $981K IT budget and 50+ websites. Executive DBA candidate researching equity-minded AI adoption. Webby Award winner, Linda K. Lorimer Presidential Award recipient, EDUCAUSE speaker, published MIS textbook contributor, adjunct faculty across four institutions, and host of the Yale College Voices podcast.",
-    "alumniOf": [
-      {
-        "@type": "CollegeOrUniversity",
-        "name": "Fairfield University",
-        "description": "Executive DBA candidate, expected 2028"
-      }
-    ],
-    "award": [
-      "Webby People's Voice Award — Yale College Website Redesign, 2018",
-      "U.S. Congressional Commendation — Community-facing technology initiatives",
-      "EDUCAUSE Next Leaders Fellowship"
-    ],
-    "knowsAbout": [
-      "Higher Education IT Strategy",
-      "AI Adoption in Higher Education",
-      "Digital Transformation",
-      "Web Platform Governance",
-      "IT Service Management",
-      "Equity-Minded AI",
-      "Power Platform Automation",
-      "PCI Compliance"
-    ],
-    "sameAs": [
-      "https://www.linkedin.com/in/daricecorey/",
-      "https://yearendreport-109986419086.us-east4.run.app/"
-    ]
+    "award": ["Webby People's Voice Award 2018", "Linda K. Lorimer Presidential Award for Distinguished Service 2024", "U.S. Congressional Commendation", "EDUCAUSE Next Leaders Fellowship"],
+    "knowsAbout": ["Higher Education IT Strategy", "AI Adoption in Higher Education", "Digital Transformation", "Web Platform Governance", "IT Service Management", "Equity-Minded AI", "Power Platform Automation"],
+    "sameAs": ["https://www.linkedin.com/in/daricecorey/", "https://yearendreport-109986419086.us-east4.run.app/"]
   }
   </script>
-
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -79,483 +40,819 @@
       --cream: #ede9f6; --muted: #a9a4c2; --line: rgba(192,132,252,0.12);
       --serif: 'Playfair Display', Georgia, serif; --sans: 'DM Sans', sans-serif;
     }
-    .skip-link { position:absolute; top:-100%; left:1rem; background:var(--coral); color:#fff; padding:.75rem 1.25rem; font-size:.9rem; font-weight:500; z-index:9999; text-decoration:none; border-radius:0 0 4px 4px; }
+    .skip-link { position:absolute; top:-100%; left:1rem; background:var(--coral); color:#1a0a2e; padding:.75rem 1.25rem; font-size:.9rem; font-weight:500; z-index:9999; text-decoration:none; border-radius:0 0 4px 4px; }
     .skip-link:focus { top:0; }
     :focus-visible { outline:3px solid var(--coral); outline-offset:3px; }
     @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; } html { scroll-behavior:auto; } }
     html { scroll-behavior:smooth; }
     body { background:var(--bg); color:var(--cream); font-family:var(--sans); font-weight:300; line-height:1.6; overflow-x:hidden; }
-    nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; justify-content:space-between; align-items:center; padding:1.4rem 2.5rem; background:rgba(22,19,31,0.9); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
-    .nav-name { font-family:var(--serif); font-size:1.05rem; color:var(--cream); text-decoration:none; }
-    .nav-links { display:flex; gap:2rem; list-style:none; }
-    .nav-links a { color:var(--muted); text-decoration:none; font-size:.82rem; letter-spacing:.08em; text-transform:uppercase; transition:color .2s; }
-    .nav-links a:hover { color:var(--coral); }
-    .hero { min-height:100vh; display:grid; grid-template-columns:1fr 1fr; padding-top:5rem; position:relative; overflow:hidden; }
-    .hero::before { content:''; position:absolute; top:-20%; right:-10%; width:600px; height:600px; border-radius:50%; background:radial-gradient(circle,rgba(192,132,252,.13) 0%,transparent 70%); pointer-events:none; }
-    .hero-text { display:flex; flex-direction:column; justify-content:center; padding:5rem 3rem 5rem 5rem; position:relative; z-index:2; }
-    .hero-eyebrow { font-size:.75rem; letter-spacing:.18em; text-transform:uppercase; color:var(--coral); margin-bottom:1.5rem; display:flex; align-items:center; gap:.75rem; }
-    .hero-eyebrow::before { content:''; display:block; width:2rem; height:1px; background:var(--coral); }
-    .hero-name { font-family:var(--serif); font-size:clamp(3rem,6vw,5.5rem); font-weight:900; line-height:1; color:var(--cream); margin-bottom:.25rem; }
-    .hero-name em { font-style:italic; color:var(--coral); }
-    .hero-title { font-family:var(--serif); font-size:clamp(1rem,2vw,1.4rem); font-weight:400; font-style:italic; color:var(--muted); margin-bottom:2.5rem; }
-    .hero-bio { font-size:1.05rem; color:var(--cream); opacity:.85; max-width:480px; line-height:1.75; margin-bottom:3rem; border-left:2px solid var(--coral); padding-left:1.25rem; }
-    .hero-ctas { display:flex; gap:1rem; flex-wrap:wrap; }
+
+    /* NAV */
+    nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; justify-content:space-between; align-items:center; padding:1.2rem 3rem; background:rgba(22,19,31,0.95); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+    .nav-name { font-family:var(--serif); font-size:1.05rem; color:var(--cream); text-decoration:none; flex-shrink:0; }
+    .nav-links { display:flex; gap:1.75rem; list-style:none; flex-wrap:wrap; }
+    .nav-links a { color:var(--muted); text-decoration:none; font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; transition:color .2s; }
+    .nav-links a:hover, .nav-links a.active { color:var(--coral); }
+
+    /* PAGES */
+    .page { display:none; min-height:100vh; padding-top:5rem; }
+    .page.active { display:block; }
+
+    /* SHARED */
+    .container { max-width:1100px; margin:0 auto; padding:0 3rem; }
+    .section-label { font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--coral); margin-bottom:2rem; display:flex; align-items:center; gap:1rem; }
+    .section-label::after { content:''; flex:1; height:1px; background:var(--line); }
+    .section-heading { font-family:var(--serif); font-size:clamp(1.8rem,4vw,3rem); font-weight:700; line-height:1.15; color:var(--cream); margin-bottom:1.25rem; }
+    .section-sub { font-size:1rem; color:var(--muted); line-height:1.75; max-width:640px; margin-bottom:3rem; }
+    section { padding:5rem 0; }
+    section:nth-child(even) { background:var(--bg2); }
+
+    /* BUTTONS */
     .btn-primary { background:var(--coral); color:#1a0a2e; padding:.85rem 1.75rem; font-family:var(--sans); font-size:.82rem; font-weight:500; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; border:none; cursor:pointer; transition:background .2s,transform .15s; display:inline-block; }
     .btn-primary:hover { background:var(--coral-dim); transform:translateY(-1px); }
     .btn-ghost { background:transparent; color:var(--cream); padding:.85rem 1.75rem; font-family:var(--sans); font-size:.82rem; font-weight:500; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; border:1px solid rgba(240,235,226,.25); cursor:pointer; transition:border-color .2s,color .2s; display:inline-block; }
     .btn-ghost:hover { border-color:var(--coral); color:var(--coral); }
-    .hero-image { position:relative; display:flex; align-items:center; justify-content:center; padding:5rem 4rem 5rem 2rem; }
+
+    /* ── HOME PAGE ── */
+    .hero { min-height:calc(100vh - 5rem); display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:4rem; padding:4rem 3rem; position:relative; overflow:hidden; max-width:1100px; margin:0 auto; }
+    .hero::before { content:''; position:absolute; top:-20%; right:-10%; width:600px; height:600px; border-radius:50%; background:radial-gradient(circle,rgba(192,132,252,.13) 0%,transparent 70%); pointer-events:none; }
+    .hero-eyebrow { font-size:.75rem; letter-spacing:.18em; text-transform:uppercase; color:var(--coral); margin-bottom:1.5rem; display:flex; align-items:center; gap:.75rem; }
+    .hero-eyebrow::before { content:''; display:block; width:2rem; height:1px; background:var(--coral); }
+    .hero-name { font-family:var(--serif); font-size:clamp(3rem,6vw,5.5rem); font-weight:900; line-height:1; color:var(--cream); margin-bottom:.25rem; }
+    .hero-name em { font-style:italic; color:var(--coral); }
+    .hero-title { font-family:var(--serif); font-size:clamp(1rem,2vw,1.3rem); font-style:italic; color:var(--muted); margin-bottom:2rem; }
+    .hero-bio { font-size:1rem; color:var(--cream); opacity:.85; max-width:480px; line-height:1.75; margin-bottom:2.5rem; border-left:2px solid var(--coral); padding-left:1.25rem; }
+    .hero-ctas { display:flex; gap:1rem; flex-wrap:wrap; }
+    .hero-image { position:relative; display:flex; align-items:center; justify-content:center; }
     .photo-frame { position:relative; width:340px; height:420px; }
     .photo-frame::before { content:''; position:absolute; top:16px; left:16px; right:-16px; bottom:-16px; border:1px solid var(--coral); z-index:0; }
     .photo-placeholder { position:relative; z-index:1; width:100%; height:100%; overflow:hidden; }
     .photo-placeholder img { width:100%; height:100%; object-fit:cover; object-position:center top; display:block; }
-    .stat-card { position:absolute; background:var(--coral); color:#1a0a2e; padding:1rem 1.25rem; z-index:3; }
+    .stat-card { position:absolute; padding:1rem 1.25rem; z-index:3; }
     .stat-card .num { font-family:var(--serif); font-size:1.8rem; font-weight:700; line-height:1; display:block; }
     .stat-card .label { font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; opacity:.85; }
-    .stat-card-1 { bottom:60px; left:-30px; }
+    .stat-card-1 { bottom:60px; left:-30px; background:var(--coral); color:#1a0a2e; }
     .stat-card-2 { top:60px; right:-20px; background:var(--bg2); border:1px solid var(--line); color:var(--cream); }
+
+    /* MARQUEE */
     .marquee-strip { background:#2d1f4e; padding:.75rem 0; overflow:hidden; white-space:nowrap; }
     .marquee-inner { display:inline-block; animation:marquee 28s linear infinite; }
     .marquee-inner span { font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:#fff; margin:0 2.5rem; }
     .marquee-inner span::before { content:'◆'; margin-right:2.5rem; opacity:.6; }
     @keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
-    section { padding:6rem 5rem; }
-    .section-label { font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--coral); margin-bottom:3rem; display:flex; align-items:center; gap:1rem; }
-    .section-label::after { content:''; flex:1; height:1px; background:var(--line); }
-    .section-heading { font-family:var(--serif); font-size:clamp(2rem,4vw,3.2rem); font-weight:700; line-height:1.15; color:var(--cream); margin-bottom:1.5rem; }
-    #work { background:var(--bg2); }
-    .work-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5px; margin-top:3rem; background:var(--line); }
+
+    /* WHAT I STAND FOR */
+    .stand-for-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
+    .belief-list { display:flex; flex-direction:column; gap:1.25rem; margin-bottom:2.5rem; }
+    .belief-item { display:flex; gap:1rem; align-items:start; }
+    .belief-dot { width:6px; height:6px; border-radius:50%; background:var(--coral); margin-top:.55rem; flex-shrink:0; }
+    .belief-text { font-size:1rem; color:var(--cream); line-height:1.65; }
+    .practice-list { display:flex; flex-direction:column; gap:.75rem; }
+    .practice-item { font-size:.9rem; color:var(--muted); line-height:1.6; padding-left:1rem; border-left:1px solid var(--line); }
+
+    /* CURRENT FOCUS */
+    .focus-section { background:#2d1f4e; }
+    .focus-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:2rem; }
+    .focus-card { background:rgba(192,132,252,.08); border:1px solid rgba(192,132,252,.2); padding:1.75rem; }
+    .focus-card-icon { font-size:1.25rem; margin-bottom:1rem; }
+    .focus-card p { font-size:.9rem; color:rgba(255,255,255,.85); line-height:1.7; }
+
+    /* IMPACT STRIP */
+    .impact-strip { display:grid; grid-template-columns:repeat(4,1fr); gap:0; background:var(--line); margin-top:3rem; }
+    .impact-num { background:var(--bg2); padding:2rem 1.5rem; text-align:center; border:1px solid var(--line); }
+    .impact-num .big { font-family:var(--serif); font-size:2.2rem; font-weight:900; color:var(--coral); display:block; line-height:1; margin-bottom:.5rem; }
+    .impact-num .small { font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); }
+
+    /* ── WORK PAGE ── */
+    .work-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5px; background:var(--line); margin-top:3rem; }
     .work-card { background:var(--bg2); padding:2.5rem 2rem; position:relative; overflow:hidden; transition:background .25s; text-decoration:none; color:inherit; display:block; }
     .work-card::after { content:''; position:absolute; bottom:0; left:0; width:0; height:2px; background:var(--coral); transition:width .3s; }
     .work-card:hover { background:#241d38; }
     .work-card:hover::after { width:100%; }
     .work-card-tag { font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--coral); margin-bottom:1rem; }
-    .work-card h3 { font-family:var(--serif); font-size:1.25rem; font-weight:700; margin-bottom:.75rem; line-height:1.3; }
+    .work-card h3 { font-family:var(--serif); font-size:1.2rem; font-weight:700; margin-bottom:.75rem; line-height:1.3; }
     .work-card p { font-size:.88rem; color:var(--muted); line-height:1.65; }
-    .work-card-arrow { margin-top:1.5rem; font-size:.8rem; color:var(--coral); letter-spacing:.08em; }
+    .work-card-arrow { margin-top:1.5rem; font-size:.8rem; color:var(--coral); }
     .work-card.featured { grid-column:span 2; background:#1e1a2e; border-left:3px solid var(--coral); }
-    #speaking { background:var(--bg); }
-    .speaking-list { margin-top:3rem; display:flex; flex-direction:column; }
-    .speaking-item { display:grid; grid-template-columns:100px 1fr auto; gap:2rem; align-items:start; padding:2rem 0; border-bottom:1px solid var(--line); }
-    .speaking-item:first-child { border-top:1px solid var(--line); }
-    .speaking-year { font-family:var(--serif); font-size:1.1rem; font-weight:700; color:var(--coral); }
-    .speaking-body h4 { font-family:var(--serif); font-size:1.1rem; font-weight:700; margin-bottom:.35rem; color:var(--cream); }
-    .speaking-body p { font-size:.85rem; color:var(--muted); }
-    .speaking-venue { font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); text-align:right; }
-    #podcast { background:#2d1f4e; color:#fff; }
-    #podcast .section-label { color:var(--coral); }
-    #podcast .section-label::after { background:rgba(192,132,252,.2); }
-    #podcast .section-heading { color:#fff; }
-    .podcast-layout { display:grid; grid-template-columns:1fr; gap:2rem; margin-top:2rem; max-width:720px; }
-    .podcast-stat-row { display:flex; gap:3rem; margin:2rem 0; }
-    .podcast-stat .big { font-family:var(--serif); font-size:2.8rem; font-weight:900; display:block; line-height:1; }
-    .podcast-stat .small { font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; opacity:.75; }
-    .podcast-desc { font-size:1rem; line-height:1.75; opacity:.9; margin-bottom:2rem; }
+
+    /* IMPACT CATEGORIES */
+    .impact-cats { display:grid; grid-template-columns:repeat(2,1fr); gap:2rem; margin-top:3rem; }
+    .impact-cat { background:var(--bg2); padding:2rem; border-top:2px solid var(--coral); }
+    .impact-cat h3 { font-family:var(--serif); font-size:1.1rem; font-weight:700; margin-bottom:1.25rem; color:var(--cream); }
+    .impact-cat ul { list-style:none; display:flex; flex-direction:column; gap:.75rem; }
+    .impact-cat li { font-size:.88rem; color:var(--muted); line-height:1.6; padding-left:1rem; border-left:2px solid var(--coral); }
+
+    /* ── AI PAGE ── */
+    .ai-hero { background:linear-gradient(135deg,#1e1a2e 0%,#2d1f4e 100%); padding:5rem 3rem; }
+    .ai-ecosystem { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5px; background:var(--line); margin-top:3rem; }
+    .ai-card { background:var(--bg2); padding:2rem 1.5rem; }
+    .ai-card-num { font-family:var(--serif); font-size:2rem; font-weight:900; color:var(--coral); display:block; margin-bottom:.5rem; }
+    .ai-card h3 { font-family:var(--serif); font-size:1rem; font-weight:700; margin-bottom:.75rem; }
+    .ai-card p { font-size:.85rem; color:var(--muted); line-height:1.65; }
+    .ai-principles { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3rem; }
+    .ai-principle { padding:1.75rem; border:1px solid var(--line); }
+    .ai-principle h3 { font-family:var(--serif); font-size:1rem; font-weight:700; color:var(--coral); margin-bottom:.75rem; }
+    .ai-principle p { font-size:.85rem; color:var(--muted); line-height:1.65; }
+
+    /* ── RESEARCH PAGE ── */
+    .research-hero { background:linear-gradient(135deg,#16131f 0%,#1e1a2e 100%); padding:5rem 3rem; }
+    .research-question { font-family:var(--serif); font-size:clamp(1.4rem,3vw,2.2rem); font-style:italic; line-height:1.45; color:var(--cream); border-left:3px solid var(--coral); padding-left:1.5rem; margin:2.5rem 0; max-width:700px; }
+    .research-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; margin-top:3rem; }
+    .research-block h3 { font-family:var(--serif); font-size:1.1rem; font-weight:700; color:var(--coral); margin-bottom:1rem; }
+    .research-block p { font-size:.9rem; color:var(--muted); line-height:1.8; }
+    .pub-list { display:flex; flex-direction:column; gap:1rem; margin-top:2rem; }
+    .pub-item { background:var(--bg2); padding:1.5rem; border-left:2px solid var(--coral); }
+    .pub-item strong { display:block; font-size:.9rem; color:var(--cream); margin-bottom:.25rem; }
+    .pub-item span { font-size:.8rem; color:var(--muted); }
+
+    /* ── SPEAKING PAGE ── */
+    .speaking-hero { background:linear-gradient(135deg,#2d1f4e 0%,#1e1a2e 100%); padding:5rem 3rem; }
+    .topics-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; margin-top:3rem; }
+    .topic-card { background:var(--bg2); padding:2rem; border-top:2px solid var(--coral); }
+    .topic-card h3 { font-family:var(--serif); font-size:1.1rem; font-weight:700; margin-bottom:.75rem; }
+    .topic-card p { font-size:.88rem; color:var(--muted); line-height:1.65; }
+    .engagements { display:flex; flex-direction:column; margin-top:2rem; }
+    .engagement-item { display:grid; grid-template-columns:80px 1fr auto; gap:2rem; align-items:start; padding:1.75rem 0; border-bottom:1px solid var(--line); }
+    .engagement-item:first-child { border-top:1px solid var(--line); }
+    .engagement-year { font-family:var(--serif); font-size:1rem; font-weight:700; color:var(--coral); }
+    .engagement-body h4 { font-family:var(--serif); font-size:1rem; font-weight:700; margin-bottom:.25rem; }
+    .engagement-body p { font-size:.85rem; color:var(--muted); }
+    .engagement-venue { font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); text-align:right; padding-top:.2rem; }
+    .podcast-section { background:#2d1f4e; }
     .video-embeds { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-bottom:2.5rem; }
-    .video-item {}
     .video-wrap { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; background:rgba(0,0,0,0.3); border:1px solid rgba(192,132,252,.2); }
     .video-wrap iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
     .video-label { font-size:.78rem; color:rgba(255,255,255,.7); margin-top:.6rem; line-height:1.4; }
-
-    .episode-list { display:flex; flex-direction:column; gap:0; margin-bottom:2rem; }
+    .episode-list { display:flex; flex-direction:column; margin-bottom:2rem; }
     .episode-item { display:grid; grid-template-columns:60px 1fr 20px; gap:1rem; align-items:center; padding:1rem 0; border-bottom:1px solid rgba(255,255,255,.1); text-decoration:none; color:#fff; transition:opacity .2s; }
     .episode-item:first-child { border-top:1px solid rgba(255,255,255,.1); }
     .episode-item:hover { opacity:.8; }
     .episode-num { font-size:.65rem; letter-spacing:.1em; text-transform:uppercase; color:var(--coral); }
     .episode-body strong { display:block; font-size:.9rem; font-weight:500; margin-bottom:.25rem; line-height:1.3; }
     .episode-body span { font-size:.78rem; opacity:.7; line-height:1.4; }
-    .episode-arrow { color:var(--coral); font-size:1rem; }
-    .podcast-platforms { display:flex; gap:.75rem; flex-wrap:wrap; }
+    .episode-arrow { color:var(--coral); }
+    .podcast-stats { display:flex; gap:3rem; margin:2rem 0; }
+    .podcast-stat .big { font-family:var(--serif); font-size:2.5rem; font-weight:900; display:block; line-height:1; color:#fff; }
+    .podcast-stat .small { font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; opacity:.7; }
+    .podcast-platforms { display:flex; gap:.75rem; flex-wrap:wrap; margin-top:2rem; }
     .platform-tag { background:rgba(255,255,255,.15); color:#fff; padding:.4rem .9rem; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; border:1px solid rgba(255,255,255,.25); text-decoration:none; transition:background .2s; }
     .platform-tag:hover { background:rgba(255,255,255,.28); }
-    .podcast-card { background:rgba(192,132,252,.08); border:1px solid rgba(192,132,252,.25); padding:2.5rem; }
-    .podcast-card-title { font-family:var(--serif); font-size:1.5rem; font-weight:700; font-style:italic; margin-bottom:.5rem; }
-    .podcast-card-sub { font-size:.8rem; opacity:.7; letter-spacing:.08em; text-transform:uppercase; margin-bottom:2rem; }
-    .waveform { display:flex; align-items:center; gap:3px; height:40px; margin-bottom:1.5rem; }
-    .waveform span { display:block; width:3px; background:rgba(255,255,255,.5); border-radius:2px; animation:wave 1.2s ease-in-out infinite; }
-    .waveform span:nth-child(odd) { animation-delay:.1s; }
-    .waveform span:nth-child(3n) { animation-delay:.3s; }
-    @keyframes wave { 0%,100% { height:8px; } 50% { height:32px; } }
-    #about { background:var(--bg2); display:grid; grid-template-columns:1fr 1fr; gap:6rem; align-items:start; }
-    .about-credentials { margin-top:3rem; display:flex; flex-direction:column; gap:1.5rem; }
-    .credential { display:flex; gap:1.25rem; align-items:start; }
-    .credential-dot { width:8px; height:8px; border-radius:50%; background:var(--coral); margin-top:.45rem; flex-shrink:0; }
-    .credential-text strong { display:block; font-size:.9rem; font-weight:500; color:var(--cream); margin-bottom:.1rem; }
+    .speaker-bio { background:var(--bg2); padding:2.5rem; border-left:3px solid var(--coral); margin-top:3rem; }
+    .speaker-bio h3 { font-family:var(--serif); font-size:1.1rem; font-weight:700; margin-bottom:1rem; color:var(--coral); }
+    .speaker-bio p { font-size:.92rem; color:var(--muted); line-height:1.8; }
+
+    /* ── CONTACT PAGE ── */
+    .contact-reasons { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-bottom:4rem; }
+    .contact-reason { background:var(--bg2); padding:2rem; border-top:2px solid var(--coral); text-align:center; }
+    .contact-reason .icon { font-size:1.5rem; margin-bottom:1rem; }
+    .contact-reason h3 { font-family:var(--serif); font-size:1rem; font-weight:700; margin-bottom:.5rem; }
+    .contact-reason p { font-size:.85rem; color:var(--muted); line-height:1.6; }
+    .contact-form { max-width:680px; margin:0 auto; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
+    .form-group { display:flex; flex-direction:column; gap:.5rem; margin-bottom:1.25rem; }
+    .form-group label { font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--coral); font-weight:500; }
+    .form-group input, .form-group textarea, .form-group select { background:var(--bg2); border:1px solid var(--line); color:var(--cream); padding:.85rem 1rem; font-family:var(--sans); font-size:.95rem; font-weight:300; resize:vertical; transition:border-color .2s; }
+    .form-group input::placeholder, .form-group textarea::placeholder { color:var(--muted); opacity:.6; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline:none; border-color:var(--coral); }
+    .form-group select option { background:var(--bg2); }
+    .contact-form .btn-primary { width:100%; justify-content:center; font-size:.9rem; padding:1rem; margin-top:.5rem; }
+
+    /* ABOUT SECTION (used on home) */
+    .about-layout { display:grid; grid-template-columns:180px 1fr; gap:3rem; align-items:start; }
+    .about-photo-wrap { width:160px; height:160px; border-radius:50%; overflow:hidden; border:3px solid var(--coral); flex-shrink:0; }
+    .about-photo { width:100%; height:100%; object-fit:cover; object-position:center top; }
+    .about-quote { font-family:var(--serif); font-size:1.3rem; font-style:italic; line-height:1.55; color:var(--cream); margin-bottom:1.5rem; padding-left:1.25rem; border-left:3px solid var(--coral); }
+    .about-body { font-size:.92rem; color:var(--muted); line-height:1.8; }
+    .credentials { display:flex; flex-direction:column; gap:1rem; margin-top:2.5rem; }
+    .credential { display:flex; gap:1rem; align-items:start; }
+    .credential-dot { width:6px; height:6px; border-radius:50%; background:var(--coral); margin-top:.5rem; flex-shrink:0; }
+    .credential-text strong { display:block; font-size:.88rem; font-weight:500; color:var(--cream); margin-bottom:.1rem; }
     .credential-text span { font-size:.8rem; color:var(--muted); }
-    .about-right { padding-top:3rem; }
-    .about-photo-wrap { width:120px; height:120px; border-radius:50%; overflow:hidden; border:3px solid var(--coral); margin-bottom:2rem; }
-    .about-photo { width:100%; height:100%; object-fit:cover; object-position:center top; display:block; }
-    .about-quote { font-family:var(--serif); font-size:1.5rem; font-style:italic; line-height:1.55; color:var(--cream); margin-bottom:2.5rem; padding-left:1.5rem; border-left:3px solid var(--coral); }
-    .about-body { font-size:.95rem; color:var(--muted); line-height:1.8; }
-    #contact { background:var(--bg); text-align:center; padding:7rem 5rem; }
-    #contact .section-heading { max-width:600px; margin:0 auto 1.5rem; }
-    #contact p { color:var(--muted); max-width:440px; margin:0 auto 2.5rem; font-size:.95rem; }
-    footer { background:#0e0b17; padding:2rem 5rem; display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--line); }
+
+    /* FOOTER */
+    footer { background:#0e0b17; padding:2rem 3rem; display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--line); }
     footer p { font-size:.78rem; color:var(--muted); }
     .footer-links { display:flex; gap:1.5rem; list-style:none; }
     .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; transition:color .2s; }
     .footer-links a:hover { color:var(--coral); }
-    .cert-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3rem; }
-    .cert-card { background:var(--bg2); padding:1.75rem 1.5rem; border-left:2px solid var(--coral); }
-    .cert-icon { color:var(--coral); font-size:.7rem; margin-bottom:.75rem; }
-    .cert-card strong { display:block; font-size:.92rem; font-weight:500; color:var(--cream); margin-bottom:.4rem; line-height:1.3; }
-    .cert-card span { font-size:.8rem; color:var(--muted); line-height:1.6; }
 
-    .fade-in { opacity:0; transform:translateY(24px); animation:fadeUp .7s ease forwards; }
-    @keyframes fadeUp { to { opacity:1; transform:translateY(0); } }
-    .fade-in:nth-child(1) { animation-delay:.1s; }
-    .fade-in:nth-child(2) { animation-delay:.25s; }
-    .fade-in:nth-child(3) { animation-delay:.4s; }
-    .fade-in:nth-child(4) { animation-delay:.55s; }
-    .fade-in:nth-child(5) { animation-delay:.7s; }
-    .contact-form { max-width:680px; margin:0 auto; text-align:left; }
-    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
-    .form-group { display:flex; flex-direction:column; gap:.5rem; margin-bottom:1.25rem; }
-    .form-group label { font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--coral); font-weight:500; }
-    .form-group input, .form-group textarea { background:var(--bg2); border:1px solid var(--line); color:var(--cream); padding:.85rem 1rem; font-family:var(--sans); font-size:.95rem; font-weight:300; resize:vertical; transition:border-color .2s; }
-    .form-group input::placeholder, .form-group textarea::placeholder { color:var(--muted); opacity:.6; }
-    .form-group input:focus, .form-group textarea:focus { outline:none; border-color:var(--coral); }
-    .contact-form .btn-primary { margin-top:.5rem; width:100%; justify-content:center; font-size:.9rem; padding:1rem; }
+    /* RESPONSIVE */
+    /* HAMBURGER */
+    .nav-toggle { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:.5rem; }
+    .nav-toggle span { display:block; width:22px; height:2px; background:var(--cream); transition:all .3s; border-radius:2px; }
+    .nav-toggle.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2) { opacity:0; }
+    .nav-toggle.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
 
     @media (max-width:900px) {
-      nav { padding:1.2rem 1.5rem; }
-      .nav-links { display:none; }
-      .hero { grid-template-columns:1fr; }
-      .hero-text { padding:2rem 1.5rem; order:2; }
-      .hero-image { display:flex; order:1; padding:6rem 1.5rem 3rem; justify-content:center; }
-      .photo-frame { width:220px; height:270px; }
+      nav { padding:1.1rem 1.5rem; }
+      .nav-toggle { display:flex; }
+      .nav-links {
+        display:none;
+        position:fixed;
+        top:60px; left:0; right:0;
+        background:rgba(22,19,31,0.98);
+        flex-direction:column;
+        gap:0;
+        padding:1rem 0;
+        border-bottom:1px solid var(--line);
+        z-index:99;
+      }
+      .nav-links.open { display:flex; }
+      .nav-links li { width:100%; }
+      .nav-links a { display:block; padding:.85rem 1.5rem; font-size:.85rem; border-bottom:1px solid var(--line); }
+      .hero { grid-template-columns:1fr; padding:2rem 1.5rem; gap:2rem; }
+      .hero-image { order:-1; padding-top:1rem; justify-content:center; }
+      .photo-frame { width:200px; height:250px; }
       .stat-card { display:none; }
-      section { padding:4rem 1.5rem; }
+      .stand-for-grid, .research-grid, .topics-grid, .impact-cats { grid-template-columns:1fr; }
+      .focus-grid, .ai-ecosystem, .ai-principles { grid-template-columns:1fr; }
       .work-grid { grid-template-columns:1fr; }
       .work-card.featured { grid-column:span 1; }
-      .speaking-item { grid-template-columns:70px 1fr; }
-      .speaking-venue { display:none; }
-      .podcast-layout { grid-template-columns:1fr; gap:2.5rem; }
-      #about { grid-template-columns:1fr; gap:0; padding:4rem 1.5rem; }
-      .about-right { padding-top:2rem; }
-      .cert-grid { grid-template-columns:1fr; }
+      .impact-strip, .contact-reasons { grid-template-columns:repeat(2,1fr); }
       .video-embeds { grid-template-columns:1fr; }
+      .engagement-item { grid-template-columns:60px 1fr; }
+      .engagement-venue { display:none; }
+      .about-layout { grid-template-columns:1fr; }
       .form-row { grid-template-columns:1fr; }
-      .episode-item { grid-template-columns:50px 1fr 20px; }
-      footer { flex-direction:column; gap:1rem; padding:2rem 1.5rem; }
+      .container { padding:0 1.5rem; }
+      .ai-hero, .research-hero, .speaking-hero { padding:3rem 1.5rem; }
+      footer { flex-direction:column; gap:1rem; padding:2rem 1.5rem; text-align:center; }
     }
   </style>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <nav aria-label="Main navigation">
-    <a class="nav-name" href="#top">Darice Corey</a>
-    <ul class="nav-links">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#speaking">Speaking</a></li>
-      <li><a href="#podcast">Podcast</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#career">Career</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="Darice Corey on LinkedIn (opens in new tab)">LinkedIn</a></li>
+    <a class="nav-name" href="#" onclick="showPage('home');return false;">Darice Corey</a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#" onclick="showPage('home');closeNav();return false;" class="active" data-page="home">Home</a></li>
+      <li><a href="#" onclick="showPage('work');closeNav();return false;" data-page="work">Work</a></li>
+      <li><a href="#" onclick="showPage('ai');closeNav();return false;" data-page="ai">AI Leadership</a></li>
+      <li><a href="#" onclick="showPage('research');closeNav();return false;" data-page="research">Research</a></li>
+      <li><a href="#" onclick="showPage('speaking');closeNav();return false;" data-page="speaking">Speaking</a></li>
+      <li><a href="#" onclick="showPage('contact');closeNav();return false;" data-page="contact">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
     </ul>
   </nav>
+
   <main id="main-content">
-    <section class="hero" id="top" aria-label="Introduction">
-      <div class="hero-text">
-        <p class="hero-eyebrow fade-in">Senior Director · Scholar · Builder</p>
-        <h1 class="hero-name fade-in">Darice<br><em>Corey</em></h1>
-        <p class="hero-title fade-in">Higher Ed IT Leadership &amp; Inclusive Innovation</p>
-        <p class="hero-bio fade-in">I build the technology infrastructure, communities, and strategies that help universities actually work for the people inside them. 18+ years at Yale. Now finishing a Doctorate in Business Administration focused on equity-minded AI adoption.</p>
-        <div class="hero-ctas fade-in">
-          <a href="https://yearendreport-109986419086.us-east4.run.app/" target="_blank" rel="noopener noreferrer" class="btn-primary" aria-label="View Year-End Report (opens in new tab)">View Year-End Report</a>
-          <a href="#work" class="btn-ghost">See My Work</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <div class="photo-frame">
-          <div class="photo-placeholder">
-            <img src="https://dcoreyrasm.github.io/darice.jpg" alt="Darice Corey, Senior Director of Web and IT Planning at Yale College" />
+
+    <!-- ══════════════ HOME ══════════════ -->
+    <div class="page active" id="page-home">
+
+      <div class="hero">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Senior Director · Scholar · Builder</p>
+          <h1 class="hero-name">Darice<br><em>Corey</em></h1>
+          <p class="hero-title">Higher Ed IT Leadership &amp; Inclusive Innovation</p>
+          <p class="hero-bio">I build technology that people can actually use. 18+ years at Yale. Executive DBA candidate. Host of the Yale College Voices podcast.</p>
+          <div class="hero-ctas">
+            <a href="#" onclick="showPage('work');return false;" class="btn-primary">See My Work</a>
+            <a href="#" onclick="showPage('contact');return false;" class="btn-ghost">Get In Touch</a>
           </div>
-          <div class="stat-card stat-card-1" aria-hidden="true"><span class="num">18+</span><span class="label">Years at Yale</span></div>
-          <div class="stat-card stat-card-2" aria-hidden="true"><span class="num">14K%</span><span class="label">Podcast Growth</span></div>
+        </div>
+        <div class="hero-image">
+          <div class="photo-frame">
+            <div class="photo-placeholder">
+              <img src="https://dcoreyrasm.github.io/darice.jpg" alt="Darice Corey, Senior Director of Web and IT Planning at Yale College" />
+            </div>
+            <div class="stat-card stat-card-1" aria-hidden="true"><span class="num">18+</span><span class="label">Years at Yale</span></div>
+            <div class="stat-card stat-card-2" aria-hidden="true"><span class="num">14K%</span><span class="label">Podcast Growth</span></div>
+          </div>
         </div>
       </div>
-    </section>
-    <div class="marquee-strip" aria-hidden="true" role="presentation">
-      <div class="marquee-inner">
-        <span>Yale College IT</span><span>EDUCAUSE Speaker</span><span>NERCOMP Presenter</span><span>Next Leaders Fellow</span><span>Executive DBA Candidate</span><span>Webby People's Voice Award</span><span>AI Community of Practice</span><span>Yale College Voices Podcast</span><span>Congressional Commendation</span><span>Pierson College Fellow</span><span>Yale College IT</span><span>EDUCAUSE Speaker</span><span>NERCOMP Presenter</span><span>Next Leaders Fellow</span><span>Executive DBA Candidate</span><span>Webby People's Voice Award</span><span>AI Community of Practice</span><span>Yale College Voices Podcast</span><span>Congressional Commendation</span><span>Pierson College Fellow</span>
-      </div>
-    </div>
-    <section id="work" aria-labelledby="work-heading">
-      <p class="section-label">Selected Work</p>
-      <h2 class="section-heading" id="work-heading">Building things that last.</h2>
-      <div class="work-grid">
-        <a href="https://yearendreport-109986419086.us-east4.run.app/" target="_blank" rel="noopener noreferrer" class="work-card featured" aria-label="View Year-End Report: The OneIT Connector (opens in new tab)">
-          <p class="work-card-tag">Year-End Report · 2024-2025</p>
-          <h3>The OneIT Connector: A Year of Bridging Yale College and Central IT</h3>
-          <p>An interactive portfolio documenting a full year of strategic IT leadership, from AI ecosystem development and first-year student onboarding to digital signage, POS compliance, and cross-unit collaboration.</p>
-          <p class="work-card-arrow">Read the report →</p>
-        </a>
-        <div class="work-card"><p class="work-card-tag">AI Strategy</p><h3>Yale College AI Community of Practice</h3><p>Built a 100+ member staff community focused on responsible, equity-minded AI adoption. 92% confidence boost reported. Now a model for cross-unit AI governance.</p></div>
-        <div class="work-card"><p class="work-card-tag">Platform · 2018</p><h3>Yale College Website Redesign</h3><p>Led the full redesign of Yale College's web presence. Won the Webby People's Voice Award. Still the foundation of Yale College's digital identity today.</p></div>
-        <div class="work-card"><p class="work-card-tag">Operations · PCI Compliance</p><h3>POS &amp; Retail Technology Rollout</h3><p>Researched, selected, and deployed Clover POS systems across 14 residential colleges and cultural centers. Owns annual PCI compliance reviews end to end.</p></div>
-        <div class="work-card"><p class="work-card-tag">Automation &amp; Workflow</p><h3>Business Process Automation Portfolio</h3><p>Designed and operates Power Automate and Power Apps solutions for Yale College, including FERPA-aware workflows, intake systems, and student-facing mobile apps.</p></div>
-        <div class="work-card"><p class="work-card-tag">Tool · Career Development</p><h3>Designing Your Career</h3><p>Co-created a career readiness platform now used by 7,100+ students across 83 institutions. Recognized with Yale's Linda K. Lorimer Presidential Award for Distinguished Service, 2024.</p></div>
-        <div class="work-card"><p class="work-card-tag">Teaching · 20+ Years</p><h3>Adjunct Faculty Across Four Institutions</h3><p>Taught IT, database management, e-commerce, and business systems at Rasmussen University (14+ years), Albertus Magnus College (15 years), University of Phoenix, and served on advisory boards at USF Muma College of Business and Rasmussen University.</p></div>
-        <div class="work-card"><p class="work-card-tag">Publication · 3 Editions</p><h3>Processes, Systems &amp; Information: An Introduction to MIS</h3><p>Contributing author across the 2nd, 3rd, and 4th editions of this widely adopted university textbook by McKinney &amp; Kroenke. Used in classrooms across the country.</p></div>
-        <div class="work-card"><p class="work-card-tag">Financial Impact</p><h3>Vendor Strategy &amp; Cost Savings</h3><p>Secured a video transcription agreement generating $130K in annual savings. Led student housing modernization producing $225K–$1.4M in savings between 2013 and 2019. Manages $981K annual IT budget with no overruns.</p></div>
-      </div>
-    </section>
-    <section id="speaking" aria-labelledby="speaking-heading">
-      <p class="section-label">Speaking &amp; Thought Leadership</p>
-      <h2 class="section-heading" id="speaking-heading">Shaping the conversation in higher ed IT.</h2>
-      <div class="speaking-list">
-        <div class="speaking-item"><div class="speaking-year">2025</div><div class="speaking-body"><h4>AI Innovation &amp; Impact at Yale: Community, Practice, and Research</h4><p>Presenter and Community Leader. Explored the intersection of DEI and AI adoption, and introduced the Practitioner-Scholar model to a national audience.</p></div><div class="speaking-venue">EDUCAUSE</div></div>
-        <div class="speaking-item"><div class="speaking-year">2025</div><div class="speaking-body"><h4>Regional Higher-Ed AI Strategy</h4><p>Planning Committee and Moderator. Helped shape the regional agenda for IT leaders with a focus on student services and ethical AI governance.</p></div><div class="speaking-venue">NERCOMP</div></div>
-        <div class="speaking-item"><div class="speaking-year">2025</div><div class="speaking-body"><h4>Next Leaders Fellowship Capstone</h4><p>Completed EDUCAUSE Next Leaders Fellowship. Capstone focused on AI support models for higher ed institutions.</p></div><div class="speaking-venue">EDUCAUSE</div></div>
-        <div class="speaking-item"><div class="speaking-year">2025</div><div class="speaking-body"><h4>Vantage CIO Lounge</h4><p>Invited participant. Executive conversations on IT governance shaping institutional Town Hall agendas.</p></div><div class="speaking-venue">EDUCAUSE</div></div>
-        <div class="speaking-item"><div class="speaking-year">Ongoing</div><div class="speaking-body"><h4>Doctoral Research: Equity-Minded AI Adoption in Higher Education</h4><p>Executive DBA candidate at Fairfield University, expected 2028. Research connects AI governance, DEI practice, and institutional change management.</p></div><div class="speaking-venue">Fairfield University</div></div>
-      </div>
-    </section>
 
-    <!-- CERTIFICATIONS -->
-    <section id="certifications" aria-labelledby="cert-heading" style="background:var(--bg);">
-      <p class="section-label">Certifications &amp; Executive Programs</p>
-      <h2 class="section-heading" id="cert-heading">Staying sharp. Staying current.</h2>
-      <div class="cert-grid">
-        <div class="cert-card">
-          <div class="cert-icon" aria-hidden="true">◆</div>
-          <strong>Deloitte University Greenhouse</strong>
-          <span>Breakthrough Lab — Executive innovation and organizational transformation program. March 2025.</span>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon" aria-hidden="true">◆</div>
-          <strong>Agent Explorer (Microsoft / Founderz)</strong>
-          <span>AI Agents, Microsoft Copilot integration, and prompt engineering. November 2025.</span>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon" aria-hidden="true">◆</div>
-          <strong>AI Skills 4 Women (Founderz)</strong>
-          <span>Applied machine learning, data analysis, and AI ethics. November 2025.</span>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon" aria-hidden="true">◆</div>
-          <strong>Business Process Improvement</strong>
-          <span>Certified in analyzing and improving organizational workflows and systems.</span>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon" aria-hidden="true">◆</div>
-          <strong>Research Security Training</strong>
-          <span>Combined research security certification for institutional compliance.</span>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon" aria-hidden="true">◆</div>
-          <strong>Proposal Reviewer 2025</strong>
-          <span>Certified proposal reviewer for academic and institutional programs.</span>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon" aria-hidden="true">◆</div>
-          <strong>Creating Safe Spaces for Tough Conversations</strong>
-          <span>Facilitation and leadership certification for inclusive workplace dialogue.</span>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon" aria-hidden="true">◆</div>
-          <strong>Dashboard in a Day — Microsoft</strong>
-          <span>Power BI, data modeling, DAX, and visualization best practices. July 2025.</span>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon" aria-hidden="true">◆</div>
-          <strong>Digital Marketing Certificate — GWU</strong>
-          <span>George Washington University School of Business. 2021–2023.</span>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon" aria-hidden="true">◆</div>
-          <strong>Yale Emerge Leadership Certificate</strong>
-          <span>Yale University executive leadership development program. 2022–2023.</span>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon" aria-hidden="true">◆</div>
-          <strong>CITI Program — Research Ethics</strong>
-          <span>Social and Behavioral Research, Research with Children, Humanities Responsible Conduct, and Information Privacy and Security.</span>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon" aria-hidden="true">◆</div>
-          <strong>.NET Technology Certificate — Sacred Heart University</strong>
-          <span>Graduate certificate in .NET development. 2021–2022.</span>
+      <div class="marquee-strip" aria-hidden="true" role="presentation">
+        <div class="marquee-inner">
+          <span>Yale College IT</span><span>EDUCAUSE Speaker</span><span>NERCOMP Presenter</span><span>Next Leaders Fellow</span><span>Executive DBA Candidate</span><span>Webby People's Voice Award</span><span>AI Community of Practice</span><span>Yale College Voices Podcast</span><span>Congressional Commendation</span><span>Lorimer Presidential Award</span><span>Yale College IT</span><span>EDUCAUSE Speaker</span><span>NERCOMP Presenter</span><span>Next Leaders Fellow</span><span>Executive DBA Candidate</span><span>Webby People's Voice Award</span><span>AI Community of Practice</span><span>Yale College Voices Podcast</span><span>Congressional Commendation</span><span>Lorimer Presidential Award</span>
         </div>
       </div>
-    </section>
 
-    <!-- CAREER TIMELINE -->
-    <section id="career" aria-labelledby="career-heading" style="background:var(--bg2);">
-      <p class="section-label">Full Career</p>
-      <h2 class="section-heading" id="career-heading">18+ years building. Every role mattered.</h2>
-      <div class="speaking-list">
-        <div class="speaking-item">
-          <div class="speaking-year">2024–Now</div>
-          <div class="speaking-body"><h4>Senior Director, Web &amp; IT Planning — Yale College</h4><p>Lead IT strategy, digital transformation, and service operations for Yale College Dean's Office. $981K budget. 50+ websites. Dotted-line to Associate CIO of FAS-SEAS IT.</p></div>
-          <div class="speaking-venue">Yale University</div>
+      <!-- WHAT I STAND FOR -->
+      <section aria-labelledby="stand-heading">
+        <div class="container">
+          <p class="section-label">What I Stand For</p>
+          <h2 class="section-heading" id="stand-heading">I build technology that people can actually use.</h2>
+          <div class="stand-for-grid">
+            <div>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:2rem;">My work focuses on making systems clearer, more connected, and easier to navigate across higher education. I care about whether something works in real life. Not just whether it launches.</p>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:2rem;">I believe technology should support students, staff, and faculty in ways that feel practical and reliable. That means simplifying complexity, improving communication, and making sure tools fit into everyday work.</p>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:2rem;">I also believe institutions need to be thoughtful about how they adopt new technologies, especially AI. I focus on helping teams use these tools in ways that are responsible, understandable, and grounded in real needs.</p>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;">At the center of my work is translation. I connect ideas to execution, strategy to systems, and emerging technology to real-world use.</p>
+            </div>
+            <div>
+              <p class="section-label" style="margin-bottom:1.5rem;">What This Looks Like in Practice</p>
+              <div class="practice-list">
+                <p class="practice-item">Building systems that support student success, not just operations</p>
+                <p class="practice-item">Connecting local needs with enterprise platforms and strategy</p>
+                <p class="practice-item">Designing tools and workflows that people trust and return to</p>
+                <p class="practice-item">Supporting adoption through clear communication and hands-on guidance</p>
+                <p class="practice-item">Helping institutions make practical, responsible use of AI</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="speaking-item">
-          <div class="speaking-year">2013–2024</div>
-          <div class="speaking-body"><h4>Director, Web &amp; IT Planning — Yale College</h4><p>Led Yale College website redesign (Webby Award, 2020). Deployed POS systems across 20 departments. Modernized student housing operations. Built web governance framework for 50+ sites.</p></div>
-          <div class="speaking-venue">Yale University</div>
+      </section>
+
+      <!-- CURRENT FOCUS -->
+      <section class="focus-section" aria-labelledby="focus-heading">
+        <div class="container">
+          <p class="section-label" style="color:var(--coral);">Current Focus</p>
+          <h2 class="section-heading" id="focus-heading" style="color:#fff;">Right now, I'm focused on:</h2>
+          <div class="focus-grid">
+            <div class="focus-card">
+              <div class="focus-card-icon">⚡</div>
+              <p>Supporting AI use across decentralized university environments where central mandates don't always reach.</p>
+            </div>
+            <div class="focus-card">
+              <div class="focus-card-icon">🧭</div>
+              <p>Helping faculty and staff adopt new tools in ways that feel manageable, not imposed.</p>
+            </div>
+            <div class="focus-card">
+              <div class="focus-card-icon">🔗</div>
+              <p>Identifying gaps between innovation and governance, and building repeatable models that close them.</p>
+            </div>
+          </div>
+          <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="#" onclick="showPage('ai');return false;" class="btn-primary">AI Leadership Work</a>
+            <a href="#" onclick="showPage('research');return false;" class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.3);">Doctoral Research</a>
+          </div>
         </div>
-        <div class="speaking-item">
-          <div class="speaking-year">2012–2013</div>
-          <div class="speaking-body"><h4>Director, Web Operations — Yale College</h4><p>Led migration of 60+ websites to Drupal 7. Built departmental ticketing system. Established web design and content standards across Yale College.</p></div>
-          <div class="speaking-venue">Yale University</div>
+      </section>
+
+      <!-- IMPACT NUMBERS -->
+      <section aria-labelledby="impact-heading">
+        <div class="container">
+          <p class="section-label">Impact at a Glance</p>
+          <h2 class="section-heading" id="impact-heading">Numbers that tell the story.</h2>
+          <div class="impact-strip">
+            <div class="impact-num"><span class="big">$1.4M</span><span class="small">Cost savings, housing modernization</span></div>
+            <div class="impact-num"><span class="big">7,100+</span><span class="small">Students served by Designing Your Career</span></div>
+            <div class="impact-num"><span class="big">100+</span><span class="small">AI Community of Practice members</span></div>
+            <div class="impact-num"><span class="big">83</span><span class="small">Institutions using Designing Your Career</span></div>
+          </div>
+          <div style="margin-top:2rem;text-align:right;">
+            <a href="#" onclick="showPage('work');return false;" class="btn-ghost">See full impact →</a>
+          </div>
         </div>
-        <div class="speaking-item">
-          <div class="speaking-year">2010–2012</div>
-          <div class="speaking-body"><h4>Programmer Analyst II — Yale Health</h4><p>Developed tailored clinical and administrative systems. Disaster recovery planning. Cross-functional bridge between technical and clinical teams.</p></div>
-          <div class="speaking-venue">Yale University</div>
+      </section>
+
+      <!-- ABOUT -->
+      <section aria-labelledby="about-heading" style="background:var(--bg2);">
+        <div class="container">
+          <p class="section-label">About</p>
+          <h2 class="section-heading" id="about-heading">I connect the dots others miss.</h2>
+          <div class="about-layout">
+            <div>
+              <div class="about-photo-wrap">
+                <img src="https://dcoreyrasm.github.io/darice.jpg" alt="Darice Corey" class="about-photo" />
+              </div>
+            </div>
+            <div>
+              <blockquote class="about-quote">"I took a blank slate as an invitation to build something that truly serves Yale College."</blockquote>
+              <p class="about-body">I'm an IT leader who builds the digital connective tissue for higher education. My career spans 18+ years at Yale, growing from Programmer Analyst to Senior Director. Before Yale, I taught at Albertus Magnus College, the University of Phoenix, and Rasmussen University. That experience shapes how I lead: I explain things clearly, coach people through complexity, and build solutions people can actually use.<br><br>I co-developed Designing Your Career, serving 7,100+ students across 83 institutions, earning Yale's Linda K. Lorimer Presidential Award in 2024. I'm also a contributor to three editions of Processes, Systems, and Information: An Introduction to MIS.</p>
+              <div class="credentials" style="margin-top:2rem;">
+                <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Senior Director, Web &amp; IT Planning — Yale College</strong><span>$981K annual IT budget · 50+ websites · Dotted-line to Associate CIO, FAS-SEAS</span></div></div>
+                <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Executive DBA Candidate — Fairfield University ('28)</strong><span>Equity-minded AI adoption in higher education</span></div></div>
+                <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>EDUCAUSE Next Leaders Fellow &amp; Ambassador</strong></div></div>
+                <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Webby People's Voice Award · Lorimer Presidential Award · Congressional Commendation</strong></div></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="speaking-item">
-          <div class="speaking-year">2007–2010</div>
-          <div class="speaking-body"><h4>Programmer Analyst / Web Database Developer — Association of Yale Alumni</h4><p>Built and maintained advanced database systems in MS SQL, FileMaker, and MySQL. Led platform migrations and technology adoption across the organization.</p></div>
-          <div class="speaking-venue">Yale University</div>
+      </section>
+
+    </div><!-- end home -->
+
+    <!-- ══════════════ WORK ══════════════ -->
+    <div class="page" id="page-work">
+      <section aria-labelledby="work-heading">
+        <div class="container">
+          <p class="section-label">Selected Work</p>
+          <h2 class="section-heading" id="work-heading">Building things that last.</h2>
+          <p class="section-sub">A curated look at the projects and platforms that have made a real difference at Yale and beyond.</p>
+          <div class="work-grid">
+            <a href="https://yearendreport-109986419086.us-east4.run.app/" target="_blank" rel="noopener noreferrer" class="work-card featured" aria-label="View Year-End Report (opens in new tab)">
+              <p class="work-card-tag">Year-End Report · 2024–2025</p>
+              <h3>The OneIT Connector: A Year of Bridging Yale College and Central IT</h3>
+              <p>An interactive portfolio documenting a full year of strategic IT leadership. AI ecosystem development, first-year student onboarding, digital signage, POS compliance, and cross-unit collaboration.</p>
+              <p class="work-card-arrow">Read the report →</p>
+            </a>
+            <div class="work-card"><p class="work-card-tag">AI Strategy</p><h3>Yale College AI Community of Practice</h3><p>Built a 100+ member staff community focused on responsible, equity-minded AI adoption. 92% confidence boost reported. Now a model for cross-unit AI governance.</p></div>
+            <div class="work-card"><p class="work-card-tag">Platform · 2018</p><h3>Yale College Website Redesign</h3><p>Led the full redesign of Yale College's web presence. Won the Webby People's Voice Award. Foundation of Yale College's digital identity today.</p></div>
+            <div class="work-card"><p class="work-card-tag">Operations · PCI Compliance</p><h3>POS &amp; Retail Technology</h3><p>Deployed Clover POS systems across 20 departments. Full PCI compliance ownership. Standardized revenue collection across residential colleges and cultural centers.</p></div>
+            <div class="work-card"><p class="work-card-tag">Automation &amp; Workflow</p><h3>Business Process Automation</h3><p>Power Automate and Power Apps solutions including FERPA-aware workflows, intake systems, and student-facing mobile apps. Full lifecycle ownership.</p></div>
+            <div class="work-card"><p class="work-card-tag">Tool · Career Development</p><h3>Designing Your Career</h3><p>Co-created a career readiness platform now used by 7,100+ students across 83 institutions. Linda K. Lorimer Presidential Award for Distinguished Service, 2024.</p></div>
+            <div class="work-card"><p class="work-card-tag">Teaching · 20+ Years</p><h3>Adjunct Faculty Across Four Institutions</h3><p>Taught IT, database management, e-commerce, and business systems at Rasmussen University (14+ years), Albertus Magnus College (15 years), and University of Phoenix.</p></div>
+            <div class="work-card"><p class="work-card-tag">Publication · 3 Editions</p><h3>Processes, Systems &amp; Information: An Introduction to MIS</h3><p>Contributing author across the 2nd, 3rd, and 4th editions of this widely adopted university textbook by McKinney &amp; Kroenke.</p></div>
+          </div>
         </div>
-        <div class="speaking-item">
-          <div class="speaking-year">2012–Now</div>
-          <div class="speaking-body"><h4>Adjunct Online Instructor — Rasmussen University</h4><p>14+ years teaching Web Application Development, SQL Server Management, Distributed Database Management, and Business Systems. Subject Matter Expert and Computer Science Advisory Board Member.</p></div>
-          <div class="speaking-venue">Rasmussen University</div>
+      </section>
+
+      <!-- IMPACT CATEGORIES -->
+      <section aria-labelledby="impact-cats-heading" style="background:var(--bg2);">
+        <div class="container">
+          <p class="section-label">Results</p>
+          <h2 class="section-heading" id="impact-cats-heading">Impact, by category.</h2>
+          <div class="impact-cats">
+            <div class="impact-cat">
+              <h3>💰 Financial Impact</h3>
+              <ul>
+                <li>$130K annual savings from video transcription vendor strategy</li>
+                <li>$225K–$1.4M in savings from student housing modernization (2013–2019)</li>
+                <li>$981K annual IT budget managed with no overruns</li>
+                <li>PCI-compliant POS deployment across 20 departments, reducing cash-handling risk</li>
+              </ul>
+            </div>
+            <div class="impact-cat">
+              <h3>🎓 Student Impact</h3>
+              <ul>
+                <li>Designing Your Career: 7,100+ students across 83 institutions</li>
+                <li>Slate integration enabling seamless onboarding for ~1,600 incoming students annually</li>
+                <li>First-year onboarding portal unifying advising, orientation, and engagement</li>
+                <li>12+ students mentored including New Haven Promise interns</li>
+              </ul>
+            </div>
+            <div class="impact-cat">
+              <h3>🏛️ Institutional Impact</h3>
+              <ul>
+                <li>AI Community of Practice: 100+ members, 92% confidence boost</li>
+                <li>14 residential colleges migrated to unified Appspace digital signage</li>
+                <li>50+ websites governed and maintained under shared standards</li>
+                <li>YaleSites Planning Advisory Committee member driving Drupal 10/11 upgrade</li>
+              </ul>
+            </div>
+            <div class="impact-cat">
+              <h3>🏆 Recognition</h3>
+              <ul>
+                <li>Linda K. Lorimer Presidential Award for Distinguished Service, Yale 2024</li>
+                <li>Webby People's Voice Award — Yale College website redesign, 2020</li>
+                <li>U.S. Congressional Commendation — community-facing technology initiatives</li>
+                <li>EDUCAUSE Next Leaders Fellowship — AI support model capstone</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="speaking-item">
-          <div class="speaking-year">2003–2018</div>
-          <div class="speaking-body"><h4>Adjunct Instructor — Albertus Magnus College</h4><p>15 years teaching Information Systems, Database Development, and Operating Systems in accelerated adult learner programs through the New Dimensions division.</p></div>
-          <div class="speaking-venue">Albertus Magnus College</div>
-        </div>
-        <div class="speaking-item">
-          <div class="speaking-year">2011–2014</div>
-          <div class="speaking-body"><h4>Adjunct Instructor — University of Phoenix</h4><p>Business Information Systems, E-Business Technology, Supply Chain Information Management across Norwalk, CT and Jersey City campuses.</p></div>
-          <div class="speaking-venue">University of Phoenix</div>
+      </section>
+    </div><!-- end work -->
+
+    <!-- ══════════════ AI LEADERSHIP ══════════════ -->
+    <div class="page" id="page-ai">
+      <div class="ai-hero">
+        <div class="container">
+          <p class="section-label" style="color:var(--coral);">AI Leadership</p>
+          <h2 class="section-heading" style="color:#fff;">Building AI strategy that actually works in practice.</h2>
+          <p style="font-size:1.05rem;color:rgba(255,255,255,.8);max-width:640px;line-height:1.75;margin-bottom:2.5rem;">Most institutions are still experimenting with AI. I've been building governance structures, community models, and adoption frameworks. This is one of my strongest differentiators and it connects directly to my doctoral research.</p>
+          <a href="#" onclick="showPage('research');return false;" class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.4);">See My Research →</a>
         </div>
       </div>
-    </section>
 
-    <section id="podcast" aria-labelledby="podcast-heading">
-      <p class="section-label">Digital Community</p>
-      <h2 class="section-heading" id="podcast-heading">Yale College Voices</h2>
-      <div class="podcast-layout">
-        <div>
-          <p class="podcast-desc">A podcast I host and produce that amplifies the stories of students, faculty, and staff across Yale College. Built from scratch into a growing digital community with 14,000% audience growth.</p>
-          <div class="podcast-stat-row">
+      <section aria-labelledby="ai-ecosystem-heading">
+        <div class="container">
+          <p class="section-label">The Work</p>
+          <h2 class="section-heading" id="ai-ecosystem-heading">An integrated AI ecosystem.</h2>
+          <p class="section-sub">Research, strategy, community, and feedback working as a continuous loop. Each element informs the others.</p>
+          <div class="ai-ecosystem">
+            <div class="ai-card">
+              <span class="ai-card-num">01</span>
+              <h3>Research (DBA)</h3>
+              <p>Executive DBA research on equity-minded AI adoption establishes the theoretical framework and informs institutional strategy.</p>
+            </div>
+            <div class="ai-card">
+              <span class="ai-card-num">02</span>
+              <h3>Strategy (BSC02)</h3>
+              <p>Balanced Scorecard framework aligns research with university policy and security guardrails. Produces a clear AI support roadmap.</p>
+            </div>
+            <div class="ai-card">
+              <span class="ai-card-num">03</span>
+              <h3>Community (CoP)</h3>
+              <p>100+ member AI Community of Practice tests strategy in real life with staff. Lunch &amp; Learns and workshops generate adoption data.</p>
+            </div>
+            <div class="ai-card">
+              <span class="ai-card-num">04</span>
+              <h3>Validation (Feedback)</h3>
+              <p>Community feedback informs new research questions, restarting the loop. 92% staff confidence boost documented.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="ai-principles-heading" style="background:var(--bg2);">
+        <div class="container">
+          <p class="section-label">My Position</p>
+          <h2 class="section-heading" id="ai-principles-heading">How I think about AI in higher ed.</h2>
+          <div class="ai-principles">
+            <div class="ai-principle">
+              <h3>Adoption requires trust, not mandates</h3>
+              <p>Faculty and staff adopt AI when they understand it, see it work, and feel safe experimenting. Community models beat top-down rollouts.</p>
+            </div>
+            <div class="ai-principle">
+              <h3>Governance must match the institution's structure</h3>
+              <p>Decentralized universities need flexible governance frameworks. One-size approaches from central IT don't reach where the real work happens.</p>
+            </div>
+            <div class="ai-principle">
+              <h3>Equity has to be built in, not added later</h3>
+              <p>AI adoption strategies that don't account for access, representation, and impact on underserved populations will replicate existing gaps at scale.</p>
+            </div>
+            <div class="ai-principle">
+              <h3>Practitioners are the bridge</h3>
+              <p>The gap between AI research and institutional practice is filled by people who can do both. That's the practitioner-scholar role I occupy.</p>
+            </div>
+            <div class="ai-principle">
+              <h3>Tools should reduce friction, not create it</h3>
+              <p>If a tool makes someone's job harder, it won't be used. Adoption work starts with understanding the actual workflow, not the technology.</p>
+            </div>
+            <div class="ai-principle">
+              <h3>The CIO role is changing</h3>
+              <p>Tomorrow's higher ed CIOs will need fluency in AI ethics, governance, and community leadership. Technical skills alone won't be enough.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="ai-cta-heading">
+        <div class="container" style="text-align:center;">
+          <p class="section-label" style="justify-content:center;">Let's Talk AI</p>
+          <h2 class="section-heading" id="ai-cta-heading">Building something similar at your institution?</h2>
+          <p class="section-sub" style="margin:0 auto 2.5rem;">I'm always interested in connecting with IT leaders, researchers, and practitioners working on AI adoption, governance, and equity in higher ed.</p>
+          <a href="#" onclick="showPage('contact');return false;" class="btn-primary">Get In Touch</a>
+        </div>
+      </section>
+    </div><!-- end ai -->
+
+    <!-- ══════════════ RESEARCH ══════════════ -->
+    <div class="page" id="page-research">
+      <div class="research-hero">
+        <div class="container">
+          <p class="section-label" style="color:var(--coral);">Doctoral Research</p>
+          <h2 class="section-heading" style="color:#fff;">Practitioner. Scholar. Both at once.</h2>
+          <p style="font-size:1rem;color:rgba(255,255,255,.8);max-width:600px;line-height:1.75;">I'm an Executive DBA candidate at Fairfield University, expected to complete in 2028. My research connects what I do every day at Yale to the questions higher ed institutions haven't fully answered yet about AI.</p>
+        </div>
+      </div>
+
+      <section aria-labelledby="research-q-heading">
+        <div class="container">
+          <p class="section-label">The Research Question</p>
+          <h2 class="section-heading" id="research-q-heading">What drives equity-minded AI adoption in decentralized universities?</h2>
+          <blockquote class="research-question">How do decentralized higher education institutions build AI adoption strategies that are both broadly effective and equitable for all members of the community?</blockquote>
+          <div class="research-grid">
+            <div class="research-block">
+              <h3>Why This Matters</h3>
+              <p>Most AI adoption research focuses on centralized organizations or K-12 settings. Decentralized universities, where faculty, staff, and students operate with significant autonomy, present a different challenge entirely. Central mandates don't reach where the real work happens. Local adoption without governance creates risk. This research fills that gap.</p>
+            </div>
+            <div class="research-block">
+              <h3>How It Connects to My Work</h3>
+              <p>Everything I'm studying, I'm also doing in real time at Yale. The AI Community of Practice, the BSC02 governance framework, the workshops and training programs. My research is grounded in practice, and my practice is informed by research. That's the practitioner-scholar model I believe in.</p>
+            </div>
+            <div class="research-block">
+              <h3>The Practitioner-Scholar Model</h3>
+              <p>I sit at the intersection of theory and practice. I'm not just researching AI adoption. I'm building the structures that test whether those theories hold in real institutional environments. That dual role is what makes this research credible and what makes my leadership distinctive.</p>
+            </div>
+            <div class="research-block">
+              <h3>What I'm Working Toward</h3>
+              <p>A replicable framework for equity-minded AI adoption that other decentralized institutions can use. Something practical, grounded in evidence, and built by someone who has actually done the work. Expected completion: 2028.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="pubs-heading" style="background:var(--bg2);">
+        <div class="container">
+          <p class="section-label">Publications</p>
+          <h2 class="section-heading" id="pubs-heading">Contributing author, three editions.</h2>
+          <p class="section-sub">Contributing author to a widely adopted university MIS textbook, used in classrooms across the country.</p>
+          <div class="pub-list">
+            <div class="pub-item"><strong>Processes, Systems &amp; Information: An Introduction to MIS — 4th Edition</strong><span>Earl H. McKinney Jr. &amp; David M. Kroenke · Contributing Author</span></div>
+            <div class="pub-item"><strong>Processes, Systems &amp; Information: An Introduction to MIS — 3rd Edition</strong><span>Earl H. McKinney Jr. &amp; David M. Kroenke · Contributing Author</span></div>
+            <div class="pub-item"><strong>Processes, Systems &amp; Information: An Introduction to MIS — 2nd Edition (Global)</strong><span>Earl H. McKinney Jr. &amp; David M. Kroenke · Contributing Author</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="research-cta-heading">
+        <div class="container" style="text-align:center;">
+          <p class="section-label" style="justify-content:center;">Collaborate</p>
+          <h2 class="section-heading" id="research-cta-heading">Interested in this research?</h2>
+          <p class="section-sub" style="margin:0 auto 2.5rem;">I'm open to connecting with other researchers, practitioners, and institutions working on AI adoption, equity, and governance in higher education.</p>
+          <a href="#" onclick="showPage('contact');return false;" class="btn-primary">Let's Connect</a>
+        </div>
+      </section>
+    </div><!-- end research -->
+
+    <!-- ══════════════ SPEAKING ══════════════ -->
+    <div class="page" id="page-speaking">
+      <div class="speaking-hero">
+        <div class="container">
+          <p class="section-label" style="color:var(--coral);">Speaking &amp; Media</p>
+          <h2 class="section-heading" style="color:#fff;">Shaping the conversation in higher ed IT.</h2>
+          <p style="font-size:1rem;color:rgba(255,255,255,.8);max-width:600px;line-height:1.75;margin-bottom:2.5rem;">I speak at national conferences, lead workshops, and host a podcast. My goal is always the same: give practitioners real frameworks they can use, not theory they have to translate.</p>
+          <a href="#" onclick="showPage('contact');return false;" class="btn-primary">Invite Me to Speak</a>
+        </div>
+      </div>
+
+      <section aria-labelledby="topics-heading">
+        <div class="container">
+          <p class="section-label">Signature Topics</p>
+          <h2 class="section-heading" id="topics-heading">What I talk about.</h2>
+          <div class="topics-grid">
+            <div class="topic-card">
+              <h3>AI Governance and Adoption in Higher Ed</h3>
+              <p>How institutions build AI strategies that work across decentralized environments. Covers community models, governance frameworks, equity considerations, and the gap between policy and practice.</p>
+            </div>
+            <div class="topic-card">
+              <h3>Digital Transformation in Decentralized Institutions</h3>
+              <p>What it takes to modernize technology in environments where central authority is limited. Real examples from 18+ years navigating the space between local needs and enterprise platforms.</p>
+            </div>
+            <div class="topic-card">
+              <h3>Building and Leading IT Communities of Practice</h3>
+              <p>How to build communities that drive adoption, share knowledge, and create institutional change. The Yale AI CoP as a case study in scaling impact without scaling headcount.</p>
+            </div>
+            <div class="topic-card">
+              <h3>The Practitioner-Scholar Model for IT Leaders</h3>
+              <p>Why the next generation of higher ed IT leaders needs both research fluency and operational credibility. How to pursue doctoral work while leading at a senior level.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="engagements-heading" style="background:var(--bg2);">
+        <div class="container">
+          <p class="section-label">Past Engagements</p>
+          <h2 class="section-heading" id="engagements-heading">Where I've presented.</h2>
+          <div class="engagements">
+            <div class="engagement-item">
+              <div class="engagement-year">2025</div>
+              <div class="engagement-body"><h4>AI Innovation &amp; Impact at Yale: Community, Practice, and Research</h4><p>Presenter and Community Leader. Explored DEI and AI adoption intersection. Introduced the Practitioner-Scholar model to a national audience.</p></div>
+              <div class="engagement-venue">EDUCAUSE</div>
+            </div>
+            <div class="engagement-item">
+              <div class="engagement-year">2025</div>
+              <div class="engagement-body"><h4>Regional Higher-Ed AI Strategy</h4><p>Planning Committee and Moderator. Shaped the regional agenda for IT leaders with focus on student services and ethical AI governance.</p></div>
+              <div class="engagement-venue">NERCOMP</div>
+            </div>
+            <div class="engagement-item">
+              <div class="engagement-year">2025</div>
+              <div class="engagement-body"><h4>Vantage CIO Lounge</h4><p>Invited participant in executive conversations shaping IT governance and institutional Town Hall agendas.</p></div>
+              <div class="engagement-venue">EDUCAUSE</div>
+            </div>
+            <div class="engagement-item">
+              <div class="engagement-year">2024</div>
+              <div class="engagement-body"><h4>Next Leaders Fellowship Capstone</h4><p>Completed EDUCAUSE Next Leaders Fellowship. Capstone focused on AI support models for higher ed institutions.</p></div>
+              <div class="engagement-venue">EDUCAUSE</div>
+            </div>
+            <div class="engagement-item">
+              <div class="engagement-year">2023</div>
+              <div class="engagement-body"><h4>Yale College IT Advisory — Monthly Forum</h4><p>Convenes Deans, Faculty, Staff, and ITS leadership in a unified forum. Primary engine for aligning central IT services with Yale College's academic mission.</p></div>
+              <div class="engagement-venue">Yale University</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PODCAST -->
+      <section class="podcast-section" aria-labelledby="podcast-heading">
+        <div class="container">
+          <p class="section-label" style="color:var(--coral);">Digital Community</p>
+          <h2 class="section-heading" id="podcast-heading" style="color:#fff;">Yale College Voices</h2>
+          <p style="font-size:1rem;color:rgba(255,255,255,.85);max-width:600px;line-height:1.75;margin-bottom:1.5rem;">A podcast I host and produce that amplifies the stories of students, faculty, and staff across Yale College. Built from scratch into a growing digital community.</p>
+          <div class="podcast-stats">
             <div class="podcast-stat"><span class="big">14K%</span><span class="small">Audience Growth</span></div>
             <div class="podcast-stat"><span class="big">35+</span><span class="small">Episodes</span></div>
-            <div class="podcast-stat"><span class="big">6</span><span class="small">Platforms</span></div>
+            <div class="podcast-stat"><span class="big">8</span><span class="small">Platforms</span></div>
+          </div>
+          <div class="video-embeds">
+            <div><div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/1ukSVXzQFug" title="Dr. Anjelica Gonzalez's Path to Biomedical Innovation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div><p class="video-label">Dr. Anjelica Gonzalez's Path to Biomedical Innovation</p></div>
+            <div><div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/BeJ6gsXyWZk" title="Empowering Future Leaders through Diversity with Thomas Near" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div><p class="video-label">Empowering Future Leaders through Diversity with Thomas Near</p></div>
+            <div><div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/84g0vLOSeTA" title="Cultivating Diversity and Mentorship with Daisy Abreu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div><p class="video-label">Cultivating Diversity and Mentorship with Daisy Abreu</p></div>
           </div>
           <div class="episode-list">
-            <a href="https://open.spotify.com/show/3i5HUA9ENPuL0yG8RfBMVW" target="_blank" rel="noopener noreferrer" class="episode-item" aria-label="Listen to episode on Spotify (opens in new tab)">
-              <span class="episode-num">Featured</span>
-              <div class="episode-body"><strong>Dr. Anjelica Gonzalez's Path to Biomedical Innovation</strong><span>How one Yale scientist navigated research, identity, and building a lab that opens doors for others.</span></div>
-              <span class="episode-arrow">→</span>
-            </a>
-            <a href="https://open.spotify.com/show/3i5HUA9ENPuL0yG8RfBMVW" target="_blank" rel="noopener noreferrer" class="episode-item" aria-label="Listen to episode on Spotify (opens in new tab)">
-              <span class="episode-num">Featured</span>
-              <div class="episode-body"><strong>Empowering Future Leaders through Diversity with Thomas Near</strong><span>Yale College's Thomas Near on mentorship, representation, and why diversity in leadership matters now more than ever.</span></div>
-              <span class="episode-arrow">→</span>
-            </a>
-            <a href="https://open.spotify.com/show/3i5HUA9ENPuL0yG8RfBMVW" target="_blank" rel="noopener noreferrer" class="episode-item" aria-label="Listen to episode on Spotify (opens in new tab)">
-              <span class="episode-num">Featured</span>
-              <div class="episode-body"><strong>Cultivating Diversity and Mentorship with Daisy Abreu</strong><span>A candid conversation about community, identity, and the power of showing up for the people around you.</span></div>
-              <span class="episode-arrow">→</span>
-            </a>
-          </div>
-          <div class="video-embeds" id="video-embeds">
-            <div class="video-item">
-              <div class="video-wrap">
-                <iframe src="https://www.youtube.com/embed/1ukSVXzQFug" title="Dr. Anjelica Gonzalez's Path to Biomedical Innovation — Yale College Voices" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-              </div>
-              <p class="video-label">Dr. Anjelica Gonzalez's Path to Biomedical Innovation</p>
-            </div>
-            <div class="video-item">
-              <div class="video-wrap">
-                <iframe src="https://www.youtube.com/embed/BeJ6gsXyWZk" title="Empowering Future Leaders through Diversity with Thomas Near — Yale College Voices" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-              </div>
-              <p class="video-label">Empowering Future Leaders through Diversity with Thomas Near</p>
-            </div>
-            <div class="video-item">
-              <div class="video-wrap">
-                <iframe src="https://www.youtube.com/embed/84g0vLOSeTA" title="Cultivating Diversity and Mentorship: A Conversation with Daisy Abreu — Yale College Voices" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-              </div>
-              <p class="video-label">Cultivating Diversity and Mentorship: A Conversation with Daisy Abreu</p>
-            </div>
+            <a href="https://open.spotify.com/show/3i5HUA9ENPuL0yG8RfBMVW" target="_blank" rel="noopener noreferrer" class="episode-item"><span class="episode-num">Featured</span><div class="episode-body"><strong>Dr. Anjelica Gonzalez's Path to Biomedical Innovation</strong><span>How one Yale scientist navigated research, identity, and building a lab that opens doors for others.</span></div><span class="episode-arrow">→</span></a>
+            <a href="https://open.spotify.com/show/3i5HUA9ENPuL0yG8RfBMVW" target="_blank" rel="noopener noreferrer" class="episode-item"><span class="episode-num">Featured</span><div class="episode-body"><strong>Empowering Future Leaders through Diversity with Thomas Near</strong><span>Yale College's Thomas Near on mentorship, representation, and why diversity in leadership matters now more than ever.</span></div><span class="episode-arrow">→</span></a>
+            <a href="https://open.spotify.com/show/3i5HUA9ENPuL0yG8RfBMVW" target="_blank" rel="noopener noreferrer" class="episode-item"><span class="episode-num">Featured</span><div class="episode-body"><strong>Cultivating Diversity and Mentorship with Daisy Abreu</strong><span>A candid conversation about community, identity, and the power of showing up for the people around you.</span></div><span class="episode-arrow">→</span></a>
           </div>
           <div class="podcast-platforms">
-            <a href="https://open.spotify.com/show/3i5HUA9ENPuL0yG8RfBMVW" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Listen on Spotify (opens in new tab)">Spotify</a>
-            <a href="https://podcasts.apple.com/us/podcast/yale-college-voices-exploring-diverse-roles-and/id1710317630" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Listen on Apple Podcasts (opens in new tab)">Apple Podcasts</a>
-            <a href="https://soundcloud.com/yale-college-voices" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Listen on SoundCloud (opens in new tab)">SoundCloud</a>
-            <a href="https://www.iheart.com/podcast/269-yale-college-voices-explor-308577787/" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Listen on iHeart (opens in new tab)">iHeart</a>
-            <a href="https://music.amazon.com/podcasts/143425ec-3b40-4f8c-b3ed-988e9631e5aa/yale-college-voices-exploring-diverse-roles-and-innovative-projects-of-our-staff" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Listen on Amazon Music (opens in new tab)">Amazon Music</a>
-            <a href="https://www.youtube.com/@YaleCollegeVoices" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Watch on YouTube (opens in new tab)">YouTube</a>
-            <a href="https://yalecollege.yale.edu/get-know-yale-college/yale-college-voices-podcast" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Yale College official podcast page (opens in new tab)">Yale College</a>
-            <a href="https://www.yale.edu/podcasts" target="_blank" rel="noopener noreferrer" class="platform-tag" aria-label="Yale University Podcasts page (opens in new tab)">Yale University</a>
+            <a href="https://open.spotify.com/show/3i5HUA9ENPuL0yG8RfBMVW" target="_blank" rel="noopener noreferrer" class="platform-tag">Spotify</a>
+            <a href="https://podcasts.apple.com/us/podcast/yale-college-voices-exploring-diverse-roles-and/id1710317630" target="_blank" rel="noopener noreferrer" class="platform-tag">Apple Podcasts</a>
+            <a href="https://soundcloud.com/yale-college-voices" target="_blank" rel="noopener noreferrer" class="platform-tag">SoundCloud</a>
+            <a href="https://www.iheart.com/podcast/269-yale-college-voices-explor-308577787/" target="_blank" rel="noopener noreferrer" class="platform-tag">iHeart</a>
+            <a href="https://music.amazon.com/podcasts/143425ec-3b40-4f8c-b3ed-988e9631e5aa/yale-college-voices-exploring-diverse-roles-and-innovative-projects-of-our-staff" target="_blank" rel="noopener noreferrer" class="platform-tag">Amazon Music</a>
+            <a href="https://www.youtube.com/@YaleCollegeVoices" target="_blank" rel="noopener noreferrer" class="platform-tag">YouTube</a>
+            <a href="https://yalecollege.yale.edu/get-know-yale-college/yale-college-voices-podcast" target="_blank" rel="noopener noreferrer" class="platform-tag">Yale College</a>
+            <a href="https://www.yale.edu/podcasts" target="_blank" rel="noopener noreferrer" class="platform-tag">Yale University</a>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="about" aria-labelledby="about-heading">
-      <div>
-        <p class="section-label">About</p>
-        <h2 class="section-heading" id="about-heading">I connect the dots others miss.</h2>
-        <div class="about-credentials">
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Senior Director, Web &amp; IT Planning — Yale College</strong><span>18+ years leading digital strategy, service operations, and IT planning. Oversee $981K annual IT budget and 50+ Yale College websites.</span></div></div>
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Linda K. Lorimer Presidential Award for Distinguished Service — Yale, 2024</strong><span>Co-developer of Designing Your Career, a career readiness platform serving 7,100+ users across 83 institutions.</span></div></div>
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Webby People's Voice Award</strong><span>Yale College website redesign, recognized nationally for user experience and accessibility.</span></div></div>
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>U.S. Congressional Commendation</strong><span>Community-facing technology initiatives.</span></div></div>
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Executive DBA Candidate, Fairfield University ('28)</strong><span>Research focus: equity-minded AI adoption in higher education.</span></div></div>
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>EDUCAUSE Next Leaders Fellow &amp; Ambassador</strong><span>Mentorship from senior BIPOC CIOs. Capstone focused on AI support models for higher ed.</span></div></div>
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Pierson College Fellow, Yale University</strong><span>First-Year Academic Adviser and residential community leader.</span></div></div>
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Yale College DEIB Committee Member</strong><span>Part of Yale's university-wide Belonging at Yale initiative, developing local DEIB plans for staff, faculty, and students of color.</span></div></div>
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Deloitte University Greenhouse — Breakthrough Lab, 2025</strong><span>Executive leadership immersive focused on innovation and organizational transformation.</span></div></div>
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Yale Emerge Leadership Certificate</strong><span>Yale University leadership development program, 2022–2023.</span></div></div>
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Adjunct Instructor — Rasmussen University (14+ years)</strong><span>Business Intelligence, e-commerce, web application development. Advisory Board Member and Subject Matter Expert.</span></div></div>
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Adjunct Instructor — Albertus Magnus College (15 years)</strong><span>Information Systems, Database Development, and Operating Systems in accelerated adult learner programs.</span></div></div>
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Adjunct Instructor — University of Phoenix (3 years)</strong><span>Business Information Systems, E-Business Technology, Supply Chain Information Management.</span></div></div>
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Digital Marketing Advisory Council — USF Muma College of Business</strong><span>Program evaluator for credit and noncredit offerings, 2021–2024.</span></div></div>
-          <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Published Contributor — Processes, Systems &amp; Information: An Introduction to MIS</strong><span>Contributing author across 2nd, 3rd, and 4th editions by McKinney &amp; Kroenke.</span></div></div>
-        </div>
-      </div>
-      <div class="about-right">
-        <div class="about-photo-wrap">
-          <img src="https://dcoreyrasm.github.io/darice.jpg" alt="Darice Corey" class="about-photo" />
-        </div>
-        <blockquote class="about-quote">"I took a blank slate as an invitation to build something that truly serves Yale College. With no preset boundaries, I forged new collaborations, led strategic projects, and integrated communities across the university."</blockquote>
-        <p class="about-body">I'm an IT leader who builds the digital connective tissue for higher education. My career spans 18+ years at Yale, where I've grown from Programmer Analyst to Senior Director, managing a $981K annual IT budget, overseeing 50+ websites, and leading strategic initiatives that connect technology to student success.<br><br>Before joining Yale, I began my teaching career as an adjunct instructor at Albertus Magnus College, then the University of Phoenix, and later Rasmussen University. I taught courses in SQL, database management, e-commerce, and business systems. That experience still shapes how I lead today. I explain things clearly, I coach people through complexity, and I focus on building solutions that people can actually use.<br><br>At Yale, I co-developed Designing Your Career, a platform now used by 7,100+ students across 83 institutions. That work earned the Linda K. Lorimer Presidential Award for Distinguished Service in 2024. I've also led efforts that resulted in $130K in annual vendor savings, modernized student housing operations generating up to $1.4M in cost savings, and implemented PCI-compliant point-of-sale systems across 20 departments.<br><br>I'm also a contributor to multiple editions of Processes, Systems, and Information: An Introduction to MIS, a textbook used in university classrooms nationwide.<br><br>The throughline in my work is simple. When technology is built with intention and grounded in real needs, it can make a meaningful difference in people's lives.</p>
-      </div>
-    </section>
-    <section id="contact" aria-labelledby="contact-heading">
-      <p class="section-label" style="justify-content:center;">Get In Touch</p>
-      <h2 class="section-heading" id="contact-heading">Let's talk about what's next.</h2>
-      <p>Whether you're thinking about a collaboration, a speaking invitation, or a leadership opportunity, I'm always open to a good conversation.</p>
-      <form action="https://formspree.io/f/xbdpglok" method="POST" class="contact-form" aria-label="Contact form">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="contact-name">Your Name</label>
-            <input type="text" id="contact-name" name="name" placeholder="Jane Smith" required aria-required="true" />
+      </section>
+
+      <!-- SPEAKER BIO -->
+      <section aria-labelledby="bio-heading">
+        <div class="container">
+          <p class="section-label">Speaker Bio</p>
+          <h2 class="section-heading" id="bio-heading">For event organizers.</h2>
+          <div class="speaker-bio">
+            <h3>Short Bio (150 words)</h3>
+            <p>Darice Corey is the Senior Director of Web and IT Planning at Yale College, where she leads digital strategy, AI adoption, and IT service operations for one of the country's most respected liberal arts institutions. With 18+ years at Yale, she has built a career at the intersection of technology, student success, and institutional change. She is the founder of Yale College's AI Community of Practice, co-developer of Designing Your Career (used by 7,100+ students across 83 institutions), and host of the Yale College Voices podcast. Darice is an Executive DBA candidate at Fairfield University researching equity-minded AI adoption in decentralized universities. She is an EDUCAUSE Next Leaders Fellow, a Webby Award winner, a recipient of Yale's Linda K. Lorimer Presidential Award for Distinguished Service, and a U.S. Congressional commendation recipient. She speaks nationally on AI governance, digital transformation, and IT leadership in higher education.</p>
           </div>
-          <div class="form-group">
-            <label for="contact-email">Your Email</label>
-            <input type="email" id="contact-email" name="email" placeholder="jane@institution.edu" required aria-required="true" />
+          <div style="margin-top:2rem;text-align:center;">
+            <a href="#" onclick="showPage('contact');return false;" class="btn-primary">Invite Me to Speak</a>
           </div>
         </div>
-        <div class="form-group">
-          <label for="contact-subject">Subject</label>
-          <input type="text" id="contact-subject" name="subject" placeholder="Speaking invitation, collaboration, or just hello" />
+      </section>
+    </div><!-- end speaking -->
+
+    <!-- ══════════════ CONTACT ══════════════ -->
+    <div class="page" id="page-contact">
+      <section aria-labelledby="contact-heading">
+        <div class="container">
+          <p class="section-label">Get In Touch</p>
+          <h2 class="section-heading" id="contact-heading">Let's talk about what's next.</h2>
+          <p class="section-sub">I'm always open to a good conversation. Here are three reasons people typically reach out.</p>
+          <div class="contact-reasons">
+            <div class="contact-reason">
+              <div class="icon">🎤</div>
+              <h3>Invite Me to Speak</h3>
+              <p>Conferences, panels, workshops, and institutional events on AI, digital strategy, and higher ed IT leadership.</p>
+            </div>
+            <div class="contact-reason">
+              <div class="icon">🤝</div>
+              <h3>Explore a Collaboration</h3>
+              <p>Research partnerships, institutional projects, or shared work on AI adoption, governance, or student-centered technology.</p>
+            </div>
+            <div class="contact-reason">
+              <div class="icon">💬</div>
+              <h3>Connect About Leadership</h3>
+              <p>Conversations about IT leadership in higher ed, the practitioner-scholar path, or what's coming next in AI and governance.</p>
+            </div>
+          </div>
+          <form action="https://formspree.io/f/xbdpglok" method="POST" class="contact-form" aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="Jane Smith" required aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="jane@institution.edu" required aria-required="true" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-reason">Reason for Reaching Out</label>
+              <select id="contact-reason" name="reason">
+                <option value="">Select one...</option>
+                <option value="speaking">Speaking or presentation invitation</option>
+                <option value="collaboration">Collaboration or research partnership</option>
+                <option value="leadership">Leadership or AI conversation</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Tell me what's on your mind..." required aria-required="true"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="contact-message">Message</label>
-          <textarea id="contact-message" name="message" rows="5" placeholder="Tell me what's on your mind..." required aria-required="true"></textarea>
-        </div>
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-    </section>
+      </section>
+    </div><!-- end contact -->
+
   </main>
+
   <footer role="contentinfo">
     <p>&copy; 2026 Darice Corey. All rights reserved.</p>
     <ul class="footer-links">
-      <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="Darice Corey on LinkedIn (opens in new tab)">LinkedIn</a></li>
-      <li><a href="https://yearendreport-109986419086.us-east4.run.app/" target="_blank" rel="noopener noreferrer" aria-label="View Year-End Report (opens in new tab)">Year-End Report</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+      <li><a href="https://yearendreport-109986419086.us-east4.run.app/" target="_blank" rel="noopener noreferrer" aria-label="Year-End Report (opens in new tab)">Year-End Report</a></li>
+      <li><a href="#" onclick="showPage('contact');return false;">Contact</a></li>
     </ul>
   </footer>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav-links a[data-page]').forEach(a => a.classList.remove('active'));
+      document.getElementById('page-' + id).classList.add('active');
+      const navLink = document.querySelector('.nav-links a[data-page="' + id + '"]');
+      if (navLink) navLink.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    function toggleNav(btn) {
+      const nav = document.getElementById('nav-links');
+      const open = nav.classList.toggle('open');
+      btn.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open);
+    }
+    function closeNav() {
+      const nav = document.getElementById('nav-links');
+      const btn = document.querySelector('.nav-toggle');
+      nav.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', false);
+    }
+  </script>
+
 </body>
 </html>
