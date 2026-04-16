@@ -390,7 +390,6 @@
           <p class="hero-eyebrow">Senior Director · Executive DBA Candidate · Higher Ed IT Strategist</p>
           <h1 class="hero-name">Darice<br><em>Corey</em></h1>
           <p class="hero-title">Digital strategy, AI governance, and student-centered systems in higher education</p>
-          <!-- CHANGE 1 & 2: Added cross-unit scope signal ("across academic and administrative teams") and a brief Yale College Voices mention. Both are supported by existing content. -->
           <p class="hero-bio">I lead digital strategy across academic and administrative teams in decentralized university environments, focusing on AI governance, student experience, and institutional alignment. At Yale, I connect enterprise priorities to systems people can actually use — including building Yale College Voices, a multi-platform storytelling initiative I created and lead.</p>
           <div class="hero-ctas">
             <a href="#" onclick="showPage('work');return false;" class="btn-primary">See My Work</a>
@@ -408,7 +407,6 @@
         </div>
       </div>
 
-      <!-- CHANGE 1: POV strip — added "across units" scope signal. Supported by the cross-unit collaboration described throughout the site. -->
       <div class="pov-strip" aria-label="Leadership perspective">
         <div class="container">
           <p>In decentralized universities, central mandates have limits. My work focuses on building adoption models that hold up across units — where institutional authority runs out and local judgment takes over.</p>
@@ -447,7 +445,7 @@
         </div>
       </section>
 
-      <!-- WHAT I STAND FOR -->
+      <!-- WHAT I STAND FOR — unchanged -->
       <section aria-labelledby="stand-heading">
         <div class="container">
           <p class="section-label">What I Stand For</p>
@@ -461,7 +459,6 @@
             <div>
               <p class="section-label" style="margin-bottom:1.5rem;">What This Looks Like in Practice</p>
               <div class="practice-list">
-                <!-- CHANGE 1: Added "across Yale College and partner units" to the first practice item — supported by existing cross-unit content throughout the site -->
                 <p class="practice-item">Building AI support models that work across Yale College and partner units, without relying on central mandates</p>
                 <p class="practice-item">Connecting local institutional needs to enterprise platforms and university-wide strategy</p>
                 <p class="practice-item">Designing tools and workflows that people trust, return to, and recommend to colleagues</p>
@@ -473,13 +470,12 @@
         </div>
       </section>
 
-      <!-- CURRENT FOCUS -->
+      <!-- CURRENT FOCUS — unchanged -->
       <section class="focus-section" aria-labelledby="focus-heading">
         <div class="container">
           <p class="section-label" style="color:var(--coral);">Current Focus</p>
           <h2 class="section-heading" id="focus-heading" style="color:#fff;">Right now, I'm focused on:</h2>
           <div class="focus-grid">
-            <!-- CHANGE 3: "Co-leading Yale's AI support strategy" — tightened from "Co-leading AI support strategy across Yale". Supported by the Balanced Scorecard / Ge Yan work described in detail elsewhere. -->
             <div class="focus-card">
               <div class="focus-card-icon">⚡</div>
               <p>Co-leading Yale's AI support strategy across academic and administrative teams, building shared adoption models that work where institutional policy runs out and individual judgment takes over.</p>
@@ -496,6 +492,31 @@
           <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
             <a href="#" onclick="showPage('ai');return false;" class="btn-primary">AI Leadership Work</a>
             <a href="#" onclick="showPage('research');return false;" class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.3);">Doctoral Research</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEW: HOW I LEAD — built from source sections 1, 4, and 7. Uses existing stand-for-grid and practice-list patterns. Placed after Current Focus, before impact numbers. -->
+      <section aria-labelledby="how-i-lead-heading">
+        <div class="container">
+          <p class="section-label">How I Lead</p>
+          <h2 class="section-heading" id="how-i-lead-heading">Stewardship over speed. Judgment over novelty.</h2>
+          <div class="stand-for-grid">
+            <div>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:2rem;">I lead through context, care, and clarity. I am most effective working at the intersection of complexity and uncertainty, helping institutions move forward with emerging technology without losing sight of their values. I prioritize listening before acting, restraint alongside creativity, and transparency in every decision.</p>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:2rem;">My role in AI leadership is not to chase tools, but to shape how AI is thoughtfully introduced in environments with real constraints: privacy, security, equity, and long-term sustainability. That means framing the problem AI is meant to solve, being clear about what it should not be used for, and establishing guardrails before experimentation begins. I view AI leadership as an exercise in judgment — determining when innovation serves the institution, and when restraint is the more responsible choice.</p>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;">Strong operations create the foundation that allows institutions to innovate responsibly. Part of my work is making invisible infrastructure visible to decision-makers: clarifying tradeoffs, surfacing inefficiencies, and aligning technical decisions with financial and organizational realities. The goal is not efficiency for its own sake, but resilience that endures.</p>
+            </div>
+            <div>
+              <p class="section-label" style="margin-bottom:1.5rem;">Leadership Principles</p>
+              <div class="practice-list">
+                <p class="practice-item">Frame the problem before selecting the tool — clarity about purpose matters more than speed of adoption</p>
+                <p class="practice-item">Make invisible infrastructure visible to leaders who have to make decisions about it</p>
+                <p class="practice-item">Build governance structures that reflect how the institution actually works, not how it should work in theory</p>
+                <p class="practice-item">Treat restraint as a leadership choice, not a limitation — knowing when not to act is as important as knowing when to</p>
+                <p class="practice-item">Sustain change by investing in people and community, not just systems and processes</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -560,11 +581,11 @@
               <p class="work-card-arrow">Read the report →</p>
             </a>
 
-            <!-- CHANGE 3: "co-leading Yale's AI support model" — tightened phrasing, ownership is clear from surrounding content -->
+            <!-- UPGRADED: AI CoP card — leads with philosophy/intent, follows with evidence. Source: section 2. -->
             <div class="work-card">
               <p class="work-card-tag">AI Strategy · Governance</p>
               <h3>AI Community of Practice and Support Model</h3>
-              <p>Co-leading Yale's AI support model, I helped design and grow a 100+ member community across academic and administrative teams, building workshops, adoption programming, and a Balanced Scorecard governance framework alongside Ge Yan. Participants reported a 92% confidence boost. Currently expanding with a hands-on community to deepen practical engagement.</p>
+              <p>Co-leading Yale's AI support model, I built a community where learning happens safely and gradually — lowering barriers to entry while respecting that readiness varies widely across roles and units. The CoP now has 100+ members across academic and administrative teams. Participants reported a 92% confidence boost. Sustainable change happens when people feel supported, not pressured.</p>
             </div>
 
             <div class="work-card">
@@ -579,10 +600,11 @@
               <p>Led the full redesign of Yale College's web presence, which won the Webby People's Voice Award in 2020. This project remains the foundation of Yale College's digital identity and established the governance model used to manage 50+ institutional websites since.</p>
             </div>
 
+            <!-- UPGRADED: Yale Xplore card — "removing friction" phrase lifted from source section 5. -->
             <div class="work-card">
               <p class="work-card-tag">AI Tool · Student Experience</p>
               <h3>Yale Xplore</h3>
-              <p>Played a key role in shaping Yale Xplore, an AI-powered resource navigation tool designed to help students find what they need across Yale College's systems. This initiative sits at the direct intersection of AI adoption, student-centered design, and the challenge of making complex institutional information accessible.</p>
+              <p>Played a key role in shaping Yale Xplore, an AI-powered resource navigation tool designed to help students find what they need across Yale College's systems. The goal was to remove friction so students can move forward confidently, even within complex institutional structures. Student-centered digital work is often invisible when it goes well — and that is by design.</p>
             </div>
 
             <div class="work-card">
@@ -595,7 +617,7 @@
         </div>
       </section>
 
-      <!-- CASE STUDY: Yale College Voices — unchanged -->
+      <!-- CASE STUDY — unchanged -->
       <section class="case-study-section" aria-labelledby="case-study-heading">
         <div class="container">
           <p class="section-label">Case Study</p>
@@ -607,10 +629,9 @@
             <p>Yale College has remarkable stories. Faculty doing groundbreaking research, staff leading student-facing programs, administrators navigating significant institutional change. There was no centralized platform for those stories to reach the people who could benefit most from hearing them: students trying to understand what careers at Yale look like, colleagues looking for connection across a large institution, and leaders building visibility for the work happening across Yale College. I saw that gap and decided to close it.</p>
           </div>
 
-          <!-- CHANGE 4: Added "a multi-platform storytelling initiative I created and lead" — this makes ownership explicit in one place within the case study, and is the single reinforcement instance per the instruction. -->
           <div class="case-study-block">
             <h3>What I Built</h3>
-            <p>I created, produced, and host Yale College Voices, a multi-platform storytelling initiative I created and lead now in its fourth season. Starting from scratch, I built a full content pipeline covering guest development, editorial planning, production, and distribution across eight platforms. The podcast is listed on Yale's official podcast directory and embedded in Yale College's web presence, making it part of the institution's broader digital identity rather than a standalone project.</p>
+            <p>I created, host, and produce Yale College Voices, a multi-platform storytelling initiative now in its fourth season. Starting from scratch, I built a full content pipeline covering guest development, editorial planning, production, and distribution across eight platforms. The podcast is listed on Yale's official podcast directory and embedded in Yale College's web presence, making it part of the institution's broader digital identity rather than a standalone project.</p>
           </div>
 
           <div class="case-study-scope">
@@ -701,13 +722,13 @@
         <div class="container">
           <p class="section-label" style="color:var(--coral);">AI Leadership</p>
           <h2 class="section-heading" style="color:#fff;">Shaping how decentralized universities adopt AI responsibly.</h2>
-          <!-- CHANGE 1: Added "across units" scope signal — supported by Balanced Scorecard, CoP, cross-unit work described throughout -->
-          <p style="font-size:1.05rem;color:rgba(255,255,255,.8);max-width:640px;line-height:1.75;margin-bottom:2.5rem;">Many universities are still working through a core question: how do you support AI adoption across units where central mandates have limits and local teams make their own decisions? I've been building governance structures, community models, and adoption frameworks to answer that question in practice at Yale. The work is grounded, iterative, and directly connected to what my doctoral research is revealing about how institutions actually make these decisions.</p>
+          <!-- UPGRADED: AI hero paragraph — incorporates governance judgment framing and constraints language from source section 1. -->
+          <p style="font-size:1.05rem;color:rgba(255,255,255,.8);max-width:640px;line-height:1.75;margin-bottom:2.5rem;">Many universities are still working through a core question: how do you support AI adoption across units where central mandates have limits and local teams make their own decisions? My role is not to chase tools, but to shape how AI is thoughtfully introduced in environments with real constraints — privacy, security, equity, and long-term sustainability. I've been building governance structures, community models, and adoption frameworks to answer that question in practice at Yale, grounded in what my doctoral research is revealing about how institutions actually make these decisions.</p>
           <a href="#" onclick="showPage('research');return false;" class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.4);">See My Research →</a>
         </div>
       </div>
 
-      <!-- CHANGE 5: Consistency pass — "AI governance" used intentionally in card 01; "AI adoption" where it refers to the practice/community layer. Distinction is now deliberate. -->
+      <!-- ECOSYSTEM LOOP — unchanged -->
       <section aria-labelledby="ai-ecosystem-heading">
         <div class="container">
           <p class="section-label">How It Works</p>
@@ -717,7 +738,6 @@
             <div class="ai-card">
               <span class="ai-card-num">01</span>
               <h3>Research (DBA)</h3>
-              <!-- governance framing intentional here -->
               <p>Executive DBA research on AI governance in decentralized universities provides the theoretical grounding and informs how the institutional strategy is structured.</p>
             </div>
             <div class="ai-card">
@@ -728,8 +748,8 @@
             <div class="ai-card">
               <span class="ai-card-num">03</span>
               <h3>Community (CoP)</h3>
-              <!-- adoption framing intentional here — this is the practice/behavior layer -->
-              <p>A 100+ member AI Community of Practice puts strategy into practice with real staff. Workshops and Lunch &amp; Learns generate adoption data and surface the questions governance hasn't answered yet.</p>
+              <!-- UPGRADED: CoP card — incorporates psychological safety and variance-in-readiness language from source section 2. -->
+              <p>A 100+ member AI Community of Practice creates space where learning happens safely and gradually. Workshops and Lunch &amp; Learns lower barriers to entry while respecting that readiness varies widely across roles and units — generating adoption data and surfacing the questions governance hasn't answered yet.</p>
             </div>
             <div class="ai-card">
               <span class="ai-card-num">04</span>
@@ -740,14 +760,16 @@
         </div>
       </section>
 
+      <!-- PRINCIPLES — two cards upgraded. -->
       <section aria-labelledby="ai-principles-heading" style="background:var(--bg2);">
         <div class="container">
           <p class="section-label">My Position</p>
           <h2 class="section-heading" id="ai-principles-heading">How I think about AI in higher ed.</h2>
           <div class="ai-principles">
+            <!-- UPGRADED: "Adoption requires trust" card — incorporates psychological safety and honest questions framing from source section 2. -->
             <div class="ai-principle">
               <h3>Adoption requires trust, not mandates</h3>
-              <p>Faculty and staff adopt AI when they understand it, see it work in their context, and feel safe experimenting. Community-based models outperform top-down rollouts in decentralized settings.</p>
+              <p>Faculty and staff adopt AI when they have space to ask honest questions, share early experiments, and understand how it fits — or doesn't fit — their work. Community-based models build that trust in ways top-down rollouts cannot.</p>
             </div>
             <div class="ai-principle">
               <h3>Governance has to match the institution's structure</h3>
@@ -761,9 +783,10 @@
               <h3>Practitioners are the bridge</h3>
               <p>The gap between AI strategy and institutional practice is filled by people who understand both. That's the role I occupy at Yale, and it's what makes the governance work credible rather than theoretical.</p>
             </div>
+            <!-- UPGRADED: "Tools should reduce friction" card — replaced with restraint/judgment framing from source section 1. More distinctive than the original. -->
             <div class="ai-principle">
-              <h3>Tools should reduce friction, not create it</h3>
-              <p>If a tool makes someone's job harder, it won't be used. Adoption work starts with understanding the actual workflow, then working backward to the technology choice.</p>
+              <h3>Restraint is a leadership choice</h3>
+              <p>Determining when innovation serves the institution — and when it doesn't — is as important as building adoption capacity. The goal is not novelty, but usable, ethical systems that earn trust and can endure beyond early adoption.</p>
             </div>
             <div class="ai-principle">
               <h3>The CIO role is changing</h3>
@@ -819,7 +842,6 @@
         </div>
       </section>
 
-      <!-- Bridge section — unchanged -->
       <section aria-labelledby="research-bridge-heading" style="background:#2d1f4e;">
         <div class="container">
           <p class="section-label" style="color:var(--coral);">The Connection</p>
@@ -861,7 +883,8 @@
         <div class="container">
           <p class="section-label" style="color:var(--coral);">Speaking &amp; Media</p>
           <h2 class="section-heading" style="color:#fff;">Contributing to the conversation in higher ed IT.</h2>
-          <p style="font-size:1rem;color:rgba(255,255,255,.8);max-width:600px;line-height:1.75;margin-bottom:2.5rem;">I present at national conferences, participate in panels, and lead workshops. My goal is to give practitioners real frameworks they can use, grounded in what I've learned leading at the senior level for more than a decade.</p>
+          <!-- UPGRADED: Speaking hero paragraph — incorporates plain language, real questions, and values-driven framing from source section 3. -->
+          <p style="font-size:1rem;color:rgba(255,255,255,.8);max-width:600px;line-height:1.75;margin-bottom:2.5rem;">I present at national conferences, participate in panels, and lead workshops. I design sessions around real questions and concerns, not hype or demos. My goal is plain language, concrete examples, and space for reflection — especially for audiences navigating AI for the first time. Thoughtful adoption begins with understanding, not acceleration.</p>
           <a href="#" onclick="showPage('contact');return false;" class="btn-primary">Invite Me to Speak</a>
         </div>
       </div>
@@ -871,9 +894,10 @@
           <p class="section-label">Signature Topics</p>
           <h2 class="section-heading" id="topics-heading">What I talk about.</h2>
           <div class="topics-grid">
+            <!-- UPGRADED: AI Governance topic card — incorporates human-centered, values-driven AI literacy framing from source section 3. -->
             <div class="topic-card">
               <h3>AI Governance and Adoption in Higher Ed</h3>
-              <p>How institutions build AI strategies that hold up across decentralized environments. Covers community models, governance frameworks, equity considerations, and the gap between policy and practice.</p>
+              <p>How institutions build AI strategies that hold up across decentralized environments. I focus on what AI can and cannot do, how to approach it thoughtfully rather than fearfully or uncritically, and why AI literacy is most effective when it is human-centered and values-driven — not just technically informed.</p>
             </div>
             <div class="topic-card">
               <h3>Digital Transformation in Decentralized Institutions</h3>
@@ -998,21 +1022,18 @@
         </div>
       </section>
 
-      <!-- PODCAST — unchanged except description note -->
+      <!-- PODCAST — unchanged -->
       <section class="podcast-section" aria-labelledby="podcast-heading">
         <div class="container">
           <p class="section-label" style="color:var(--coral);">Institutional Storytelling</p>
           <h2 class="section-heading" id="podcast-heading" style="color:#fff;">Yale College Voices</h2>
-          <!-- CHANGE 4 note: Ownership reinforcement is handled in the hero bio and the case study "What I Built" block. This description is kept as-is to avoid redundancy. -->
           <p style="font-size:1rem;color:rgba(255,255,255,.85);max-width:640px;line-height:1.75;margin-bottom:1.5rem;">I created and lead Yale College Voices, a multi-platform storytelling initiative where I shape editorial direction, lead production, and manage distribution across eight digital channels. Now in its fourth season, it functions as an institutional platform for amplifying staff and faculty voices, building community across Yale College, and creating visibility for the kind of work that rarely gets a public stage. It's listed in Yale's official podcast directory and embedded in Yale College's web presence.</p>
-
           <div class="podcast-stats">
             <div class="podcast-stat"><span class="big">Season 4</span><span class="small">Now in production</span></div>
             <div class="podcast-stat"><span class="big">40+</span><span class="small">Episodes published</span></div>
             <div class="podcast-stat"><span class="big">105K+</span><span class="small">Annual impressions</span></div>
             <div class="podcast-stat"><span class="big">8</span><span class="small">Distribution platforms</span></div>
           </div>
-
           <div class="video-embeds" style="margin-top:2rem;">
             <div><div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/1ukSVXzQFug" title="Dr. Anjelica Gonzalez's Path to Biomedical Innovation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div><p class="video-label">Dr. Anjelica Gonzalez's Path to Biomedical Innovation</p></div>
             <div><div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/BeJ6gsXyWZk" title="Empowering Future Leaders through Diversity with Thomas Near" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div><p class="video-label">Empowering Future Leaders through Diversity with Thomas Near</p></div>
@@ -1149,6 +1170,8 @@
           <div class="stand-for-grid">
             <div>
               <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">Good mentorship is not about giving advice. It is about helping someone understand their own strengths more clearly, see options they hadn&rsquo;t considered, and build the confidence to act on what they already know.</p>
+              <!-- UPGRADED: Added trust/access/challenge framing and context-over-tasks philosophy from source section 6. -->
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">I prioritize trust, access, and challenge — encouraging experimentation while modeling accountability. Rather than directing tasks, I focus on helping emerging professionals understand context, consequences, and the value of thoughtful decision-making. My goal is not just skill development, but confidence, judgment, and a sense of responsibility to the communities these systems serve.</p>
               <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">I also believe mentorship is most powerful when it crosses boundaries: between senior and junior, between institution and community, between those who have access and those who are working to build it. When it works, it doesn't just help one person. It builds capacity across a team and, over time, across an institution.</p>
               <p style="font-size:1rem;color:var(--muted);line-height:1.8;">The throughline in my mentorship work is the same as in my technology work. I connect people to what they need to move forward.</p>
             </div>
