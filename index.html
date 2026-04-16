@@ -17,6 +17,8 @@
   <meta name="twitter:title" content="Darice Corey — Higher Ed IT Leader & Scholar" />
   <meta name="twitter:description" content="Senior Director at Yale College. AI strategist, Executive DBA candidate, EDUCAUSE speaker." />
   <meta name="twitter:image" content="https://dcoreyrasm.github.io/darice.jpg" />
+
+  <!-- CHANGE 2: Corrected Webby award year from 2018 to 2020; updated description to 19 years; removed "Ambassador"; refined fellowship phrasing -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -26,12 +28,13 @@
     "image": "https://dcoreyrasm.github.io/darice.jpg",
     "jobTitle": "Senior Director of Web and IT Planning",
     "worksFor": { "@type": "Organization", "name": "Yale College", "url": "https://yalecollege.yale.edu" },
-    "description": "Higher education IT leader with 18+ years at Yale College. Senior Director overseeing $981K IT budget and 50+ websites. Executive DBA candidate researching equity-minded AI adoption. Webby Award winner, Linda K. Lorimer Presidential Award recipient, EDUCAUSE speaker, published MIS textbook contributor, adjunct faculty across four institutions, and host of the Yale College Voices podcast.",
-    "award": ["Webby People's Voice Award 2018", "Linda K. Lorimer Presidential Award for Distinguished Service 2024", "U.S. Congressional Commendation", "EDUCAUSE Next Leaders Fellowship"],
-    "knowsAbout": ["Higher Education IT Strategy", "AI Adoption in Higher Education", "Digital Transformation", "Web Platform Governance", "IT Service Management", "Equity-Minded AI", "Power Platform Automation"],
+    "description": "Higher education IT leader with 19 years at Yale College. Senior Director overseeing a $981K IT budget and 50+ websites. Executive DBA candidate researching AI governance and adoption in decentralized universities. Webby Award winner, Linda K. Lorimer Presidential Award recipient, U.S. Congressional Commendation recipient, EDUCAUSE-sponsored Next Leaders Fellow, published MIS textbook contributor, adjunct faculty across four institutions, and host of the Yale College Voices podcast.",
+    "award": ["Webby People's Voice Award 2020", "Linda K. Lorimer Presidential Award for Distinguished Service 2024", "U.S. Congressional Commendation", "EDUCAUSE-sponsored Next Leaders Fellowship"],
+    "knowsAbout": ["Higher Education IT Strategy", "AI Governance and Adoption", "Decentralized University Systems", "Digital Transformation", "Web Platform Governance", "IT Service Management", "Power Platform Automation"],
     "sameAs": ["https://www.linkedin.com/in/daricecorey/", "https://yearendreport-109986419086.us-east4.run.app/"]
   }
   </script>
+
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-725R412XD7"></script>
   <script>
@@ -56,7 +59,6 @@
     html { scroll-behavior:smooth; }
     body { background:var(--bg); color:var(--cream); font-family:var(--sans); font-weight:300; line-height:1.6; overflow-x:hidden; word-break:normal; overflow-wrap:break-word; -webkit-text-size-adjust:100%; }
     p, li, span, h1, h2, h3, h4 { word-break:normal; overflow-wrap:break-word; hyphens:none; }
-    /* Prevent grid blowout on all screen sizes */
     [class*="-grid"] > *, [class*="-card"], .work-card, .cert-card, .focus-card, .ai-card, .topic-card, .pub-item { min-width:0; box-sizing:border-box; }
 
     /* NAV */
@@ -112,6 +114,15 @@
     .marquee-inner span { font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:#fff; margin:0 2.5rem; }
     .marquee-inner span::before { content:'◆'; margin-right:2.5rem; opacity:.6; }
     @keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+
+    /* POINT OF VIEW STRIP — CHANGE 4 -->
+    /* CHANGE 5: "How I Think" section styles */
+    .pov-strip { background:var(--bg); border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:2rem 0; }
+    .pov-strip p { font-size:1rem; color:var(--muted); line-height:1.8; max-width:760px; font-style:italic; }
+    .how-i-think-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); margin-top:2rem; }
+    .how-i-think-item { background:var(--bg); padding:1.5rem 1.25rem; }
+    .how-i-think-item .hit-num { font-family:var(--serif); font-size:.85rem; color:var(--coral); display:block; margin-bottom:.5rem; font-weight:700; }
+    .how-i-think-item p { font-size:.88rem; color:var(--cream); line-height:1.65; }
 
     /* WHAT I STAND FOR */
     .stand-for-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
@@ -189,6 +200,8 @@
     .engagement-year { font-family:var(--serif); font-size:1rem; font-weight:700; color:var(--coral); }
     .engagement-body h4 { font-family:var(--serif); font-size:1rem; font-weight:700; margin-bottom:.25rem; }
     .engagement-body p { font-size:.85rem; color:var(--muted); overflow-wrap:break-word; max-width:100%; }
+    /* CHANGE 11: Added role badge styling for speaking engagements */
+    .engagement-role { font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:var(--coral); background:rgba(192,132,252,.1); border:1px solid rgba(192,132,252,.2); padding:.2rem .6rem; display:inline-block; margin-bottom:.5rem; }
     .engagement-venue { font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); text-align:right; padding-top:.2rem; }
     .podcast-section { background:#2d1f4e; }
     .video-embeds { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-bottom:2.5rem; }
@@ -229,7 +242,7 @@
     .form-group select option { background:var(--bg2); }
     .contact-form .btn-primary { width:100%; justify-content:center; font-size:.9rem; padding:1rem; margin-top:.5rem; }
 
-    /* ABOUT SECTION (used on home) */
+    /* ABOUT SECTION */
     .about-layout { display:grid; grid-template-columns:180px 1fr; gap:3rem; align-items:start; }
     .about-photo-wrap { width:160px; height:160px; border-radius:50%; overflow:hidden; border:3px solid var(--coral); flex-shrink:0; }
     .about-photo { width:100%; height:100%; object-fit:cover; object-position:center top; }
@@ -258,7 +271,6 @@
     .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; transition:color .2s; }
     .footer-links a:hover { color:var(--coral); }
 
-    /* RESPONSIVE */
     /* HAMBURGER */
     .nav-toggle { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:.5rem; }
     .nav-toggle span { display:block; width:22px; height:2px; background:var(--cream); transition:all .3s; border-radius:2px; }
@@ -267,7 +279,6 @@
     .nav-toggle.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
 
     @media (max-width:900px) {
-      /* NAV */
       nav { padding:1.1rem 1.5rem; }
       .nav-toggle { display:flex; }
       .nav-links {
@@ -278,8 +289,6 @@
       .nav-links.open { display:flex; }
       .nav-links li { width:100%; }
       .nav-links a { display:block; padding:.85rem 1.5rem; font-size:.85rem; border-bottom:1px solid var(--line); }
-
-      /* HERO */
       .hero { grid-template-columns:1fr; padding:2rem 1.5rem; gap:1.5rem; }
       .hero-image { order:-1; justify-content:center; padding-top:0; }
       .photo-frame { width:180px; height:220px; }
@@ -287,18 +296,12 @@
       .stat-card { display:none; }
       .hero-name { font-size:3rem; }
       .hero-bio { font-size:.95rem; }
-
-      /* MARQUEE */
       .marquee-inner span { margin:0 1.5rem; font-size:.65rem; }
-
-      /* SECTIONS */
       section { padding:3rem 0; }
       .container { padding:0 1.25rem; max-width:100%; }
       .section-heading { font-size:1.6rem; line-height:1.2; }
       .section-sub { font-size:.92rem; max-width:100%; }
       p, li, span { max-width:100%; }
-
-      /* ALL GRIDS — single column, no exceptions */
       .stand-for-grid,
       .focus-grid,
       .impact-strip,
@@ -311,43 +314,27 @@
       .mentorship-grid,
       .contact-reasons,
       .video-embeds,
+      .how-i-think-grid,
       .cert-grid { grid-template-columns:1fr !important; }
-
       .work-card.featured { grid-column:span 1; }
       .pub-list { gap:.75rem; }
-
-      /* MENTORSHIP CARDS */
       .mentorship-card { padding:1.5rem; }
       .mentorship-card-header h3 { font-size:.95rem; }
       .mentorship-card p { font-size:.85rem; }
-
-      /* CONTACT CARDS */
       .contact-reason { padding:1.25rem 1.5rem; display:block; border-top:none; border-left:2px solid var(--coral); text-align:left; }
       .contact-reason .icon { font-size:1.1rem; margin-bottom:.5rem; display:block; }
       .contact-reason h3 { font-size:.95rem; margin-bottom:.4rem; }
       .contact-reason p { font-size:.85rem; line-height:1.6; word-break:normal; overflow-wrap:break-word; }
-
-      /* ENGAGEMENT */
       .engagement-item { grid-template-columns:60px 1fr; gap:1rem; }
       .engagement-venue { display:none; }
-
-      /* PODCAST */
       .podcast-stats { gap:1.5rem; flex-wrap:wrap; }
       .podcast-stat .big { font-size:2rem; }
       .podcast-platforms { gap:.5rem; }
       .platform-tag { font-size:.65rem; padding:.35rem .7rem; }
-
-      /* ABOUT */
       .about-layout { grid-template-columns:1fr; gap:1.5rem; }
       .about-photo-wrap { width:100px; height:100px; }
-
-      /* HERO SECTIONS */
       .ai-hero, .research-hero, .speaking-hero { padding:3rem 1.25rem; }
-
-      /* FORMS */
       .form-row { grid-template-columns:1fr; }
-
-      /* FOOTER */
       footer { flex-direction:column; gap:1rem; padding:1.5rem; text-align:center; }
       .footer-links { justify-content:center; flex-wrap:wrap; }
     }
@@ -378,12 +365,15 @@
     <!-- ══════════════ HOME ══════════════ -->
     <div class="page active" id="page-home">
 
+      <!-- CHANGE 1 & 3: Updated eyebrow, title, bio; 19 years; removed "18+" stat card reference -->
       <div class="hero">
         <div class="hero-text">
-          <p class="hero-eyebrow">Senior Director · Scholar · Mentor &amp; Connector</p>
+          <p class="hero-eyebrow">Senior Director · Executive DBA Candidate · Higher Ed IT Strategist</p>
           <h1 class="hero-name">Darice<br><em>Corey</em></h1>
-          <p class="hero-title">Higher Ed IT Leadership &amp; Inclusive Innovation</p>
-          <p class="hero-bio">I build technology that people can actually use. 18+ years at Yale. Executive DBA candidate. Host of the Yale College Voices podcast.</p>
+          <!-- CHANGE 3: Updated title -->
+          <p class="hero-title">Digital strategy, AI adoption, and student-centered systems in higher education</p>
+          <!-- CHANGE 3: Updated bio copy -->
+          <p class="hero-bio">I lead digital strategy in decentralized university environments, focusing on AI adoption, student experience, and cross-unit alignment. At Yale, I connect institutional priorities to systems people can actually use.</p>
           <div class="hero-ctas">
             <a href="#" onclick="showPage('work');return false;" class="btn-primary">See My Work</a>
             <a href="#" onclick="showPage('contact');return false;" class="btn-ghost">Get In Touch</a>
@@ -394,9 +384,17 @@
             <div class="photo-placeholder">
               <img src="https://dcoreyrasm.github.io/darice.jpg" alt="Darice Corey, Senior Director of Web and IT Planning at Yale College" />
             </div>
-            <div class="stat-card stat-card-1" aria-hidden="true"><span class="num">18+</span><span class="label">Years at Yale</span></div>
+            <!-- CHANGE 1: Updated stat card to 19 -->
+            <div class="stat-card stat-card-1" aria-hidden="true"><span class="num">19</span><span class="label">Years at Yale</span></div>
             <div class="stat-card stat-card-2" aria-hidden="true"><span class="num">14K%</span><span class="label">Podcast Growth</span></div>
           </div>
+        </div>
+      </div>
+
+      <!-- CHANGE 4: Point-of-view strip placed immediately after hero -->
+      <div class="pov-strip" aria-label="Leadership perspective">
+        <div class="container">
+          <p>Decentralized universities do not adopt technology the same way centralized organizations do. My work focuses on building models that work in that reality, where central mandates have limits and local judgment shapes what actually gets used.</p>
         </div>
       </div>
 
@@ -406,33 +404,59 @@
         </div>
       </div>
 
-      <!-- WHAT I STAND FOR -->
+      <!-- CHANGE 5: "How I Think" section -->
+      <section aria-labelledby="how-i-think-heading">
+        <div class="container">
+          <p class="section-label">How I Think</p>
+          <h2 class="section-heading" id="how-i-think-heading">Four ideas that shape how I work.</h2>
+          <div class="how-i-think-grid">
+            <div class="how-i-think-item">
+              <span class="hit-num">01</span>
+              <p>Decentralization is something to design for, not work around. The goal is models that hold up when the center can't reach.</p>
+            </div>
+            <div class="how-i-think-item">
+              <span class="hit-num">02</span>
+              <p>AI adoption is shaped by risk tolerance and institutional context, not just access to tools. Governance has to account for that.</p>
+            </div>
+            <div class="how-i-think-item">
+              <span class="hit-num">03</span>
+              <p>Technology strategy should start with student experience. If it doesn't improve something real for students, the case for it weakens.</p>
+            </div>
+            <div class="how-i-think-item">
+              <span class="hit-num">04</span>
+              <p>Governance should support thoughtful experimentation. Institutions that only allow low-risk adoption will always be behind.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHANGE 6: Revised "What I Stand For" heading and body -->
       <section aria-labelledby="stand-heading">
         <div class="container">
           <p class="section-label">What I Stand For</p>
-          <h2 class="section-heading" id="stand-heading">I build technology that people can actually use.</h2>
+          <h2 class="section-heading" id="stand-heading">I help institutions make technology usable, trusted, and worth adopting.</h2>
           <div class="stand-for-grid">
             <div>
-              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:2rem;">My work focuses on making systems clearer, more connected, and easier to navigate across higher education. I care about whether something works in real life. Not just whether it launches.</p>
-              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:2rem;">I believe technology should support students, staff, and faculty in ways that feel practical and reliable. That means simplifying complexity, improving communication, and making sure tools fit into everyday work.</p>
-              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:2rem;">I also believe institutions need to be thoughtful about how they adopt new technologies, especially AI. I focus on helping teams use these tools in ways that are responsible, understandable, and grounded in real needs.</p>
-              <p style="font-size:1rem;color:var(--muted);line-height:1.8;">At the center of my work is translation. I connect ideas to execution, strategy to systems, and emerging technology to real-world use.</p>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:2rem;">My work sits at the intersection of institutional strategy, digital systems, and real-world adoption. I care about whether something works in practice, not just whether it gets deployed. That means understanding how people actually use technology before deciding how to build or buy it.</p>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:2rem;">In decentralized university environments, adoption doesn't happen because leadership says so. It happens when people trust a tool, understand why it exists, and see that someone thought through how it fits their work. That's the gap I close.</p>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:2rem;">AI is the clearest version of this challenge right now. Most institutions are moving fast without the governance structures or adoption models to back it up. I build those structures, test them in practice, and use what I learn to make the strategy stronger.</p>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;">At the center of my work is translation: strategy to systems, systems to people, and institutional goals to tools people can actually use every day.</p>
             </div>
             <div>
               <p class="section-label" style="margin-bottom:1.5rem;">What This Looks Like in Practice</p>
               <div class="practice-list">
-                <p class="practice-item">Building systems that support student success, not just operations</p>
-                <p class="practice-item">Connecting local needs with enterprise platforms and strategy</p>
-                <p class="practice-item">Designing tools and workflows that people trust and return to</p>
-                <p class="practice-item">Supporting adoption through clear communication and hands-on guidance</p>
-                <p class="practice-item">Helping institutions make practical, responsible use of AI</p>
+                <p class="practice-item">Building AI support models that work across decentralized units without relying on central mandates</p>
+                <p class="practice-item">Connecting local institutional needs to enterprise platforms and university-wide strategy</p>
+                <p class="practice-item">Designing tools and workflows that people trust, return to, and recommend to colleagues</p>
+                <p class="practice-item">Supporting adoption through clear communication, hands-on guidance, and community-building</p>
+                <p class="practice-item">Grounding research questions in real leadership work, then bringing findings back into practice</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- CURRENT FOCUS -->
+      <!-- CURRENT FOCUS — unchanged structurally, minor language polish -->
       <section class="focus-section" aria-labelledby="focus-heading">
         <div class="container">
           <p class="section-label" style="color:var(--coral);">Current Focus</p>
@@ -440,15 +464,16 @@
           <div class="focus-grid">
             <div class="focus-card">
               <div class="focus-card-icon">⚡</div>
-              <p>Supporting AI use across decentralized university environments where central mandates don't always reach.</p>
+              <!-- CHANGE 10 signal: each focus card reinforces the AI/research/practice loop -->
+              <p>Co-leading AI support strategy across Yale, building shared adoption models that work where central IT guidance runs out.</p>
             </div>
             <div class="focus-card">
               <div class="focus-card-icon">🧭</div>
-              <p>Helping faculty and staff adopt new tools in ways that feel manageable, not imposed.</p>
+              <p>Helping faculty and staff adopt new tools in ways that feel manageable, not imposed, through community-based engagement and hands-on learning.</p>
             </div>
             <div class="focus-card">
               <div class="focus-card-icon">🔗</div>
-              <p>Identifying gaps between innovation and governance, and building repeatable models that close them.</p>
+              <p>Researching how risk, authority, and institutional context shape AI decision-making in decentralized universities, and feeding those findings back into my leadership work.</p>
             </div>
           </div>
           <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
@@ -458,7 +483,7 @@
         </div>
       </section>
 
-      <!-- IMPACT NUMBERS -->
+      <!-- IMPACT NUMBERS — unchanged -->
       <section aria-labelledby="impact-heading">
         <div class="container">
           <p class="section-label">Impact at a Glance</p>
@@ -475,11 +500,11 @@
         </div>
       </section>
 
-      <!-- ABOUT -->
+      <!-- ABOUT — CHANGE 1: 19 years; CHANGE 2: removed "Ambassador"; CHANGE 13: tightened bio copy -->
       <section aria-labelledby="about-heading" style="background:var(--bg2);">
         <div class="container">
           <p class="section-label">About</p>
-          <h2 class="section-heading" id="about-heading">I connect the dots others miss.</h2>
+          <h2 class="section-heading" id="about-heading">I connect the work on the ground to the strategy at the top.</h2>
           <div class="about-layout">
             <div>
               <div class="about-photo-wrap">
@@ -488,12 +513,17 @@
             </div>
             <div>
               <blockquote class="about-quote">"I took a blank slate as an invitation to build something that truly serves Yale College."</blockquote>
-              <p class="about-body">I'm an IT leader who builds the digital connective tissue for higher education. My career spans 18+ years at Yale, growing from Programmer Analyst to Senior Director. Before Yale, I taught at Albertus Magnus College, the University of Phoenix, and Rasmussen University. That experience shapes how I lead: I explain things clearly, coach people through complexity, and build solutions people can actually use.<br><br>I co-developed Designing Your Career, serving 7,100+ students across 83 institutions, earning Yale's Linda K. Lorimer Presidential Award in 2024. I'm also a textbook reviewer for three editions of Processes, Systems, and Information: An Introduction to MIS by Earl McKinney Jr. and David M. Kroenke.</p>
+              <!-- CHANGE 1 & 13: Updated year count, cleaned up bio -->
+              <p class="about-body">I'm an IT leader who builds the digital infrastructure that holds higher education together. My career spans 19 years at Yale, growing from Programmer Analyst to Senior Director of Web and IT Planning. Before Yale, I taught IT, database systems, and e-commerce at Albertus Magnus College, the University of Phoenix, and Rasmussen University. That background shapes how I lead: I explain complex things clearly, coach people through ambiguity, and build solutions that fit into real workflows.<br><br>I co-developed Designing Your Career, now used by 7,100+ students across 83 institutions, and received Yale's Linda K. Lorimer Presidential Award for Distinguished Service in 2024. I also serve as a textbook reviewer for three editions of Processes, Systems, and Information: An Introduction to MIS by Earl McKinney Jr. and David M. Kroenke.</p>
               <div class="credentials" style="margin-top:2rem;">
-                <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Senior Director, Web &amp; IT Planning — Yale College</strong><span>$981K annual IT budget · 50+ websites · Dotted-line to Associate CIO, FAS-SEAS</span></div></div>
-                <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Executive DBA Candidate — Fairfield University ('28)</strong><span>Equity-minded AI adoption in higher education</span></div></div>
-                <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>EDUCAUSE Next Leaders Fellow &amp; Ambassador</strong></div></div>
-                <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Webby People's Voice Award · Lorimer Presidential Award · Congressional Commendation</strong></div></div>
+                <!-- CHANGE 13: Tightened role description -->
+                <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Senior Director, Web &amp; IT Planning — Yale College</strong><span>$981K annual IT budget · 50+ websites · Dotted-line to Associate CIO, FAS-SEAS · 13 years in role</span></div></div>
+                <!-- CHANGE 13: Corrected DBA research description to AI governance framing -->
+                <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Executive DBA Candidate — Fairfield University ('28)</strong><span>AI governance and adoption in decentralized universities</span></div></div>
+                <!-- CHANGE 2: Removed "Ambassador" — kept "Next Leaders Fellow" with EDUCAUSE-sponsored framing -->
+                <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>EDUCAUSE-sponsored Next Leaders Fellow</strong></div></div>
+                <!-- CHANGE 2: Corrected Webby year to 2020 in display text -->
+                <div class="credential"><div class="credential-dot"></div><div class="credential-text"><strong>Webby People's Voice Award (2020) · Lorimer Presidential Award (2024) · Congressional Commendation</strong></div></div>
               </div>
             </div>
           </div>
@@ -503,31 +533,61 @@
     </div><!-- end home -->
 
     <!-- ══════════════ WORK ══════════════ -->
+    <!-- CHANGE 7: Simplified to flagship items; removed lower-priority cards; added Yale Xplore -->
     <div class="page" id="page-work">
       <section aria-labelledby="work-heading">
         <div class="container">
           <p class="section-label">Selected Work</p>
-          <h2 class="section-heading" id="work-heading">Building things that last.</h2>
-          <p class="section-sub">A curated look at the projects and platforms that have made a real difference at Yale and beyond.</p>
+          <h2 class="section-heading" id="work-heading">Leadership that leaves something behind.</h2>
+          <p class="section-sub">A focused look at the initiatives that best represent my leadership story, from institutional platforms to community-driven AI strategy.</p>
           <div class="work-grid">
+            <!-- Flagship 1: Year-End Report -->
             <a href="https://yearendreport-109986419086.us-east4.run.app/" target="_blank" rel="noopener noreferrer" class="work-card featured" aria-label="View Year-End Report (opens in new tab)">
               <p class="work-card-tag">Year-End Report · 2024–2025</p>
               <h3>The OneIT Connector: A Year of Bridging Yale College and Central IT</h3>
-              <p>An interactive portfolio documenting a full year of strategic IT leadership. AI ecosystem development, first-year student onboarding, digital signage, POS compliance, and cross-unit collaboration.</p>
+              <p>An interactive portfolio documenting a full year of strategic IT leadership across AI ecosystem development, first-year student onboarding, digital signage, POS compliance, and cross-unit collaboration. A living record of what decentralized IT leadership looks like in practice.</p>
               <p class="work-card-arrow">Read the report →</p>
             </a>
-            <div class="work-card"><p class="work-card-tag">AI Strategy</p><h3>Yale College AI Community of Practice</h3><p>Committee member and active contributor to a 100+ staff community focused on responsible, equity-minded AI adoption. Help drive engagement and programming, contributing to a 92% reported confidence boost among participants. Currently building a &ldquo;vibe coding&rdquo; community to expand hands-on collaboration.</p></div>
-            <div class="work-card"><p class="work-card-tag">Platform · 2018</p><h3>Yale College Website Redesign</h3><p>Led the full redesign of Yale College's web presence. Won the Webby People's Voice Award. Foundation of Yale College's digital identity today.</p></div>
-            <div class="work-card"><p class="work-card-tag">Operations · PCI Compliance</p><h3>POS &amp; Retail Technology</h3><p>Deployed Clover POS systems across 20 departments. Full PCI compliance ownership. Standardized revenue collection across residential colleges and cultural centers.</p></div>
-            <div class="work-card"><p class="work-card-tag">Automation &amp; Workflow</p><h3>Business Process Automation</h3><p>Power Automate and Power Apps solutions including FERPA-aware workflows, intake systems, and student-facing mobile apps. Full lifecycle ownership.</p></div>
-            <div class="work-card"><p class="work-card-tag">Tool · Career Development</p><h3>Designing Your Career</h3><p>Co-created a career readiness platform now used by 7,100+ students across 83 institutions. Linda K. Lorimer Presidential Award for Distinguished Service, 2024.</p></div>
-            <div class="work-card"><p class="work-card-tag">Teaching · 20+ Years</p><h3>Adjunct Faculty Across Four Institutions</h3><p>Taught IT, database management, e-commerce, and business systems at Rasmussen University (14+ years), Albertus Magnus College (15 years), and University of Phoenix.</p></div>
-            <div class="work-card"><p class="work-card-tag">Publication · 3 Editions</p><h3>Processes, Systems &amp; Information: An Introduction to MIS</h3><p>Contributed as a textbook reviewer for the 2nd, 3rd, and 4th editions of this widely adopted university textbook by Earl McKinney Jr. and David M. Kroenke, helping shape course-aligned content and case materials.</p></div>
+
+            <!-- Flagship 2: AI Community of Practice -->
+            <div class="work-card">
+              <p class="work-card-tag">AI Strategy · Governance</p>
+              <h3>AI Community of Practice and Support Model</h3>
+              <p>Co-led the design and growth of a 100+ member AI community at Yale, building workshops, adoption programming, and a Balanced Scorecard governance framework alongside Ge Yan. Participants reported a 92% confidence boost. Currently expanding with a hands-on "vibe coding" community to deepen practical engagement.</p>
+            </div>
+
+            <!-- Flagship 3: Designing Your Career -->
+            <div class="work-card">
+              <p class="work-card-tag">Platform · Career Development</p>
+              <h3>Designing Your Career</h3>
+              <p>Co-created a career readiness platform now used by 7,100+ students across 83 institutions nationwide. Recognized with Yale's Linda K. Lorimer Presidential Award for Distinguished Service in 2024. One of the clearest examples of how a locally developed solution can scale to broad institutional impact.</p>
+            </div>
+
+            <!-- Flagship 4: Yale College Website Redesign -->
+            <div class="work-card">
+              <p class="work-card-tag">Digital Strategy · 2020</p>
+              <h3>Yale College Website Redesign</h3>
+              <p>Led the full redesign of Yale College's web presence, which won the Webby People's Voice Award in 2020. This project remains the foundation of Yale College's digital identity and established the governance model I've used to manage 50+ institutional websites since.</p>
+            </div>
+
+            <!-- Flagship 5: Yale Xplore -->
+            <div class="work-card">
+              <p class="work-card-tag">AI Tool · Student Experience</p>
+              <h3>Yale Xplore</h3>
+              <p>Contributed to the development of Yale Xplore, an AI-powered chatbot designed to help students navigate Yale College resources more easily. This project sits at the direct intersection of AI adoption, student-centered design, and the challenge of making complex institutional systems accessible.</p>
+            </div>
+
+            <!-- Supporting: Textbook Reviewer -->
+            <div class="work-card">
+              <p class="work-card-tag">Publication · 3 Editions</p>
+              <h3>Processes, Systems &amp; Information: An Introduction to MIS</h3>
+              <p>Textbook reviewer for the 2nd, 3rd, and 4th editions of this widely adopted university MIS textbook by Earl McKinney Jr. and David M. Kroenke. Contributed to shaping course-aligned content and case materials used across institutions nationally.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- IMPACT CATEGORIES -->
+      <!-- IMPACT CATEGORIES — CHANGE 2: Corrected Webby year to 2020 in recognition section -->
       <section aria-labelledby="impact-cats-heading" style="background:var(--bg2);">
         <div class="container">
           <p class="section-label">Results</p>
@@ -563,10 +623,11 @@
             <div class="impact-cat">
               <h3>🏆 Recognition</h3>
               <ul>
+                <!-- CHANGE 2: Corrected Webby year to 2020 -->
                 <li>Linda K. Lorimer Presidential Award for Distinguished Service, Yale 2024</li>
                 <li>Webby People's Voice Award — Yale College website redesign, 2020</li>
-                <li>U.S. Congressional Commendation — community-facing technology initiatives</li>
-                <li>EDUCAUSE Next Leaders Fellowship — AI support model capstone</li>
+                <li>U.S. Congressional Commendation — community technology leadership</li>
+                <li>EDUCAUSE-sponsored Next Leaders Fellowship</li>
               </ul>
             </div>
           </div>
@@ -575,46 +636,51 @@
     </div><!-- end work -->
 
     <!-- ══════════════ AI LEADERSHIP ══════════════ -->
+    <!-- CHANGE 8: Rewrote opening paragraph; strengthened governance/strategy signals -->
     <div class="page" id="page-ai">
       <div class="ai-hero">
         <div class="container">
           <p class="section-label" style="color:var(--coral);">AI Leadership</p>
-          <h2 class="section-heading" style="color:#fff;">Building AI strategy that actually works in practice.</h2>
-          <p style="font-size:1.05rem;color:rgba(255,255,255,.8);max-width:640px;line-height:1.75;margin-bottom:2.5rem;">Most institutions are still experimenting with AI. I've been building governance structures, community models, and adoption frameworks. This is one of my strongest differentiators and it connects directly to my doctoral research.</p>
+          <h2 class="section-heading" style="color:#fff;">Shaping how decentralized universities adopt AI responsibly.</h2>
+          <!-- CHANGE 8: New opening paragraph in Darice's voice -->
+          <p style="font-size:1.05rem;color:rgba(255,255,255,.8);max-width:640px;line-height:1.75;margin-bottom:2.5rem;">My work focuses on a question many universities are still working through: how do you support AI adoption in decentralized environments without losing trust, clarity, or accountability? I've been building governance structures, community models, and adoption frameworks to answer that question in practice. This work connects directly to my doctoral research and shapes how I lead every day at Yale.</p>
+          <!-- CHANGE 10: Link to research reinforces the loop -->
           <a href="#" onclick="showPage('research');return false;" class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.4);">See My Research →</a>
         </div>
       </div>
 
+      <!-- CHANGE 8: Renamed section to signal governance more clearly -->
       <section aria-labelledby="ai-ecosystem-heading">
         <div class="container">
-          <p class="section-label">The Work</p>
-          <h2 class="section-heading" id="ai-ecosystem-heading">An integrated AI ecosystem.</h2>
-          <p class="section-sub">Research, strategy, community, and feedback working as a continuous loop. Each element informs the others.</p>
+          <p class="section-label">How It Works</p>
+          <h2 class="section-heading" id="ai-ecosystem-heading">Research, governance, community, and feedback as a continuous loop.</h2>
+          <p class="section-sub">Each element informs the others. The research sharpens the governance model. The community tests it. The feedback restarts the cycle.</p>
           <div class="ai-ecosystem">
             <div class="ai-card">
               <span class="ai-card-num">01</span>
               <h3>Research (DBA)</h3>
-              <p>Executive DBA research on equity-minded AI adoption establishes the theoretical framework and informs institutional strategy.</p>
+              <p>Executive DBA research on AI governance in decentralized universities provides the theoretical grounding and informs how the institutional strategy is structured.</p>
             </div>
             <div class="ai-card">
               <span class="ai-card-num">02</span>
               <h3>Strategy &amp; Governance</h3>
-              <p>A Balanced Scorecard framework aligns research with university policy and security guardrails, producing a clear AI support roadmap.</p>
+              <p>A Balanced Scorecard framework aligns research with university policy and security considerations, producing a clear AI support roadmap that accounts for decentralized decision-making.</p>
             </div>
             <div class="ai-card">
               <span class="ai-card-num">03</span>
               <h3>Community (CoP)</h3>
-              <p>100+ member AI Community of Practice tests strategy in real life with staff. Lunch &amp; Learns and workshops generate adoption data.</p>
+              <p>100+ member AI Community of Practice puts strategy into practice with real staff. Workshops and Lunch &amp; Learns generate adoption data and surface the questions governance hasn't answered yet.</p>
             </div>
             <div class="ai-card">
               <span class="ai-card-num">04</span>
-              <h3>Validation (Feedback)</h3>
-              <p>Community feedback informs new research questions, restarting the loop. 92% staff confidence boost documented.</p>
+              <h3>Validation &amp; Feedback</h3>
+              <p>Community feedback surfaces new research questions, restarting the loop. 92% of participants reported increased confidence in using AI tools after community engagement.</p>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- CHANGE 8: Principles section — minor language refinements for consistency with revised framing -->
       <section aria-labelledby="ai-principles-heading" style="background:var(--bg2);">
         <div class="container">
           <p class="section-label">My Position</p>
@@ -622,27 +688,27 @@
           <div class="ai-principles">
             <div class="ai-principle">
               <h3>Adoption requires trust, not mandates</h3>
-              <p>Faculty and staff adopt AI when they understand it, see it work, and feel safe experimenting. Community models beat top-down rollouts.</p>
+              <p>Faculty and staff adopt AI when they understand it, see it work in their context, and feel safe experimenting. Community-based models outperform top-down rollouts in decentralized settings.</p>
             </div>
             <div class="ai-principle">
-              <h3>Governance must match the institution's structure</h3>
-              <p>Decentralized universities need flexible governance frameworks. One-size approaches from central IT don't reach where the real work happens.</p>
+              <h3>Governance has to match the institution's structure</h3>
+              <p>Decentralized universities need governance frameworks built for their reality. Centralized approaches don't reach where decisions actually get made, and they don't account for the variation in local risk tolerance.</p>
             </div>
             <div class="ai-principle">
               <h3>Equity has to be built in, not added later</h3>
-              <p>AI adoption strategies that don't account for access, representation, and impact on underserved populations will replicate existing gaps at scale.</p>
+              <p>AI adoption strategies that don't account for access, representation, and impact on underserved populations will replicate existing gaps at scale. This is a governance question as much as a values question.</p>
             </div>
             <div class="ai-principle">
               <h3>Practitioners are the bridge</h3>
-              <p>The gap between AI research and institutional practice is filled by people who can do both. That's the practitioner-scholar role I occupy.</p>
+              <p>The gap between AI research and institutional practice is filled by people who can do both. That's the practitioner-scholar position I work from, and it's what makes the strategy credible.</p>
             </div>
             <div class="ai-principle">
               <h3>Tools should reduce friction, not create it</h3>
-              <p>If a tool makes someone's job harder, it won't be used. Adoption work starts with understanding the actual workflow, not the technology.</p>
+              <p>If a tool makes someone's job harder, it won't be used. Adoption work starts with understanding the actual workflow, then working backward to the technology choice.</p>
             </div>
             <div class="ai-principle">
               <h3>The CIO role is changing</h3>
-              <p>Tomorrow's higher ed CIOs will need fluency in AI ethics, governance, and community leadership. Technical skills alone won't be enough.</p>
+              <p>Senior IT leaders in higher education will need fluency in AI ethics, governance, and community leadership alongside technical knowledge. The institutions that recognize this early will be better positioned.</p>
             </div>
           </div>
         </div>
@@ -651,45 +717,64 @@
       <section aria-labelledby="ai-cta-heading">
         <div class="container" style="text-align:center;">
           <p class="section-label" style="justify-content:center;">Let's Talk AI</p>
-          <h2 class="section-heading" id="ai-cta-heading">Building something similar at your institution?</h2>
-          <p class="section-sub" style="margin:0 auto 2.5rem;">I'm always interested in connecting with IT leaders, researchers, and practitioners working on AI adoption, governance, and equity in higher ed.</p>
+          <h2 class="section-heading" id="ai-cta-heading">Working on something similar at your institution?</h2>
+          <p class="section-sub" style="margin:0 auto 2.5rem;">I'm always open to connecting with IT leaders, researchers, and practitioners working on AI adoption, governance, and support models in higher ed.</p>
           <a href="#" onclick="showPage('contact');return false;" class="btn-primary">Get In Touch</a>
         </div>
       </section>
     </div><!-- end ai -->
 
     <!-- ══════════════ RESEARCH ══════════════ -->
+    <!-- CHANGE 9: Revised research question; strengthened gap/rationale/practitioner framing; added theoretical signals -->
     <div class="page" id="page-research">
       <div class="research-hero">
         <div class="container">
           <p class="section-label" style="color:var(--coral);">Doctoral Research</p>
           <h2 class="section-heading" style="color:#fff;">Practitioner. Scholar. Both at once.</h2>
-          <p style="font-size:1rem;color:rgba(255,255,255,.8);max-width:600px;line-height:1.75;">I'm an Executive DBA candidate at Fairfield University, expected to complete in 2028. My research connects what I do every day at Yale to the questions higher ed institutions haven't fully answered yet about AI.</p>
+          <!-- CHANGE 9: Updated intro to match revised research framing -->
+          <p style="font-size:1rem;color:rgba(255,255,255,.8);max-width:600px;line-height:1.75;">I'm an Executive DBA candidate at Fairfield University, expected to complete in 2028. My research focuses on AI decision-making in decentralized universities, an area where the gap between policy and practice is wide and the existing research is thin. Everything I study, I'm also working through in real time at Yale.</p>
         </div>
       </div>
 
       <section aria-labelledby="research-q-heading">
         <div class="container">
           <p class="section-label">The Research Question</p>
-          <h2 class="section-heading" id="research-q-heading">What drives equity-minded AI adoption in decentralized universities?</h2>
-          <blockquote class="research-question">How do decentralized higher education institutions build AI adoption strategies that are both broadly effective and equitable for all members of the community?</blockquote>
+          <!-- CHANGE 9: Updated heading to match revised question -->
+          <h2 class="section-heading" id="research-q-heading">How does institutional context shape AI decision-making in decentralized universities?</h2>
+          <!-- CHANGE 9: Revised research question -->
+          <blockquote class="research-question">How do professionals in decentralized universities decide whether to experiment with AI tools in their work, and how do risk, authority, and institutional context shape those decisions?</blockquote>
+
+          <!-- CHANGE 9: Revised all four blocks to answer the required questions -->
           <div class="research-grid">
             <div class="research-block">
-              <h3>Why This Matters</h3>
-              <p>Most AI adoption research focuses on centralized organizations or K-12 settings. Decentralized universities, where faculty, staff, and students operate with significant autonomy, present a different challenge entirely. Central mandates don't reach where the real work happens. Local adoption without governance creates risk. This research fills that gap.</p>
+              <h3>What Gap Does This Fill?</h3>
+              <p>Most research on AI adoption focuses on centralized organizations or K-12 settings. Decentralized universities, where faculty, departments, and units make significant decisions independently, present a fundamentally different situation. Central policy doesn't automatically translate into local behavior. Individual judgment, local risk tolerance, and the ambiguity around institutional authority all shape what actually gets adopted. This research addresses that gap directly.</p>
             </div>
             <div class="research-block">
-              <h3>How It Connects to My Work</h3>
-              <p>Everything I'm studying, I'm also doing in real time at Yale. The AI Community of Practice, the BSC02 governance framework, the workshops and training programs. My research is grounded in practice, and my practice is informed by research. That's the practitioner-scholar model I believe in.</p>
+              <h3>Why Decentralized Universities?</h3>
+              <p>In a decentralized institution, there is rarely a single source of authority over technology decisions. A faculty member's willingness to experiment with an AI tool is shaped by their sense of what's permitted, what's safe, and what their colleagues are doing. These are organizational and social dynamics, not just technical ones. Understanding them requires a setting where that complexity is visible, and higher education provides exactly that.</p>
             </div>
             <div class="research-block">
-              <h3>The Practitioner-Scholar Model</h3>
-              <p>I sit at the intersection of theory and practice. I'm not just researching AI adoption. I'm building the structures that test whether those theories hold in real institutional environments. That dual role is what makes this research credible and what makes my leadership distinctive.</p>
+              <h3>Why Practitioner Insight Matters Here</h3>
+              <p>This isn't a research problem I'm observing from the outside. I've spent 13 years navigating these dynamics at Yale, building AI workshops, shaping governance frameworks, and watching how risk perception and institutional culture shape what people actually do with AI tools. That experience makes my observations sharper and my frameworks more grounded in what real adoption looks like, day to day, in a complex institution.</p>
             </div>
             <div class="research-block">
-              <h3>What I'm Working Toward</h3>
-              <p>A replicable framework for equity-minded AI adoption that other decentralized institutions can use. Something practical, grounded in evidence, and built by someone who has actually done the work. Expected completion: 2028.</p>
+              <h3>How Research and Practice Reinforce Each Other</h3>
+              <p>My leadership work at Yale provides the context for my research questions, and the research findings sharpen how I build adoption models and governance structures. The Balanced Scorecard framework I co-lead at Yale is informed by what the research is revealing about how professionals perceive AI risk and make decisions under ambiguity. That loop, from practice to theory and back, is what the practitioner-scholar model is built on.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHANGE 10: Added a bridge section connecting research back to practice and AI leadership -->
+      <section aria-labelledby="research-bridge-heading" style="background:#2d1f4e;">
+        <div class="container">
+          <p class="section-label" style="color:var(--coral);">The Connection</p>
+          <h2 class="section-heading" id="research-bridge-heading" style="color:#fff;">Research, leadership, and strategy as a loop.</h2>
+          <p style="font-size:1rem;color:rgba(255,255,255,.8);max-width:680px;line-height:1.8;margin-bottom:2rem;">What I study at Fairfield, I test at Yale. What I build at Yale, I examine through research. The result is a cycle where leadership work produces better research questions, and research produces more rigorous strategy. This is the core of the practitioner-scholar model and it's why my AI leadership work and my doctoral research can't be separated from each other.</p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="#" onclick="showPage('ai');return false;" class="btn-primary">AI Leadership Work</a>
+            <a href="#" onclick="showPage('work');return false;" class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.3);">Selected Work</a>
           </div>
         </div>
       </section>
@@ -711,23 +796,26 @@
         <div class="container" style="text-align:center;">
           <p class="section-label" style="justify-content:center;">Collaborate</p>
           <h2 class="section-heading" id="research-cta-heading">Interested in this research?</h2>
-          <p class="section-sub" style="margin:0 auto 2.5rem;">I'm open to connecting with other researchers, practitioners, and institutions working on AI adoption, equity, and governance in higher education.</p>
+          <p class="section-sub" style="margin:0 auto 2.5rem;">I'm open to connecting with researchers, practitioners, and institutions working on AI adoption, governance, and decision-making in higher education. If you're exploring similar questions, I'd like to hear what you're finding.</p>
           <a href="#" onclick="showPage('contact');return false;" class="btn-primary">Let's Connect</a>
         </div>
       </section>
     </div><!-- end research -->
 
     <!-- ══════════════ SPEAKING ══════════════ -->
+    <!-- CHANGE 11: Clarified role distinctions (presenter vs. panelist vs. organizer/planner) -->
     <div class="page" id="page-speaking">
       <div class="speaking-hero">
         <div class="container">
           <p class="section-label" style="color:var(--coral);">Speaking &amp; Media</p>
-          <h2 class="section-heading" style="color:#fff;">Shaping the conversation in higher ed IT.</h2>
-          <p style="font-size:1rem;color:rgba(255,255,255,.8);max-width:600px;line-height:1.75;margin-bottom:2.5rem;">I speak at national conferences, lead workshops, and host a podcast. My goal is always the same: give practitioners real frameworks they can use, not theory they have to translate.</p>
+          <!-- CHANGE 13: Headline less dramatic, more credible -->
+          <h2 class="section-heading" style="color:#fff;">Contributing to the conversation in higher ed IT.</h2>
+          <p style="font-size:1rem;color:rgba(255,255,255,.8);max-width:600px;line-height:1.75;margin-bottom:2.5rem;">I present at national conferences, participate in panels, and lead workshops. My goal is to give practitioners real frameworks they can use, grounded in what I've learned leading at the senior level for more than a decade.</p>
           <a href="#" onclick="showPage('contact');return false;" class="btn-primary">Invite Me to Speak</a>
         </div>
       </div>
 
+      <!-- CHANGE 11: Topics section — unchanged, strong as-is -->
       <section aria-labelledby="topics-heading">
         <div class="container">
           <p class="section-label">Signature Topics</p>
@@ -735,60 +823,105 @@
           <div class="topics-grid">
             <div class="topic-card">
               <h3>AI Governance and Adoption in Higher Ed</h3>
-              <p>How institutions build AI strategies that work across decentralized environments. Covers community models, governance frameworks, equity considerations, and the gap between policy and practice.</p>
+              <p>How institutions build AI strategies that hold up across decentralized environments. Covers community models, governance frameworks, equity considerations, and the gap between policy and practice.</p>
             </div>
             <div class="topic-card">
+              <!-- CHANGE 1: Updated year count in topic description -->
               <h3>Digital Transformation in Decentralized Institutions</h3>
-              <p>What it takes to modernize technology in environments where central authority is limited. Real examples from 18+ years navigating the space between local needs and enterprise platforms.</p>
+              <p>What it takes to modernize technology in environments where central authority is limited. Real examples from 19 years navigating the space between local needs and enterprise platforms.</p>
             </div>
             <div class="topic-card">
               <h3>Building and Leading IT Communities of Practice</h3>
-              <p>How to build communities that drive adoption, share knowledge, and create institutional change. The Yale AI CoP as a case study in scaling impact without scaling headcount.</p>
+              <p>How to build communities that drive adoption, share knowledge, and create institutional change. The Yale AI Community of Practice as a case study in scaling impact without scaling headcount.</p>
             </div>
             <div class="topic-card">
               <h3>The Practitioner-Scholar Model for IT Leaders</h3>
-              <p>Why the next generation of higher ed IT leaders needs both research fluency and operational credibility. How to pursue doctoral work while leading at a senior level.</p>
+              <p>Why the next generation of higher ed IT leaders needs both research fluency and operational experience. How to pursue doctoral work while leading at a senior level, and what that combination makes possible.</p>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- CHANGE 11: Past Engagements — added role badges to clarify presenter vs. panelist vs. planner -->
       <section aria-labelledby="engagements-heading" style="background:var(--bg2);">
         <div class="container">
           <p class="section-label">Past Engagements</p>
-          <h2 class="section-heading" id="engagements-heading">Where I've presented.</h2>
+          <h2 class="section-heading" id="engagements-heading">Where I've presented and participated.</h2>
           <div class="engagements">
+
             <div class="engagement-item">
               <div class="engagement-year">2025</div>
-              <div class="engagement-body"><h4>AI Innovation &amp; Impact at Yale: Community, Practice, and Research</h4><p>Presenter and Community Leader. Explored DEI and AI adoption intersection. Introduced the Practitioner-Scholar model to a national audience.</p></div>
+              <div class="engagement-body">
+                <span class="engagement-role">Presenter</span>
+                <h4>AI Innovation &amp; Impact at Yale: Community, Practice, and Research</h4>
+                <p>Presented on the intersection of AI adoption and institutional equity, introducing the practitioner-scholar model to a national audience of higher ed IT leaders.</p>
+              </div>
               <div class="engagement-venue">EDUCAUSE</div>
             </div>
+
             <div class="engagement-item">
               <div class="engagement-year">2025</div>
-              <div class="engagement-body"><h4>Regional Higher-Ed AI Strategy</h4><p>Planning Committee and Moderator. Shaped the regional agenda for IT leaders with focus on student services and ethical AI governance.</p></div>
+              <div class="engagement-body">
+                <!-- CHANGE 11: Clarified as Planning Committee + Moderator, not just "presenter" -->
+                <span class="engagement-role">Planning Committee · Moderator</span>
+                <h4>Regional Higher-Ed AI Strategy</h4>
+                <p>Served on the planning committee and moderated sessions focused on student services and ethical AI governance for regional IT leaders.</p>
+              </div>
               <div class="engagement-venue">NERCOMP</div>
             </div>
 
             <div class="engagement-item">
               <div class="engagement-year">2024</div>
-              <div class="engagement-body"><h4>Next Leaders Fellowship Capstone</h4><p>Completed EDUCAUSE Next Leaders Fellowship. Capstone focused on AI support models for higher ed institutions.</p></div>
+              <div class="engagement-body">
+                <!-- CHANGE 11: Clarified as panelist at EDUCAUSE Annual Conference -->
+                <span class="engagement-role">Panelist</span>
+                <h4>Catalysts of Change: Diversity in Tech Leadership</h4>
+                <p>Panelist at the EDUCAUSE Annual Conference 2024. Contributed to a discussion on how diversity in IT leadership shapes institutional technology strategy and culture.</p>
+              </div>
+              <div class="engagement-venue">EDUCAUSE Annual</div>
+            </div>
+
+            <div class="engagement-item">
+              <div class="engagement-year">2024</div>
+              <div class="engagement-body">
+                <!-- CHANGE 2 & 11: Next Leaders Fellowship — no longer implies EDUCAUSE runs it; fellowship capstone is a completion, not a speaking engagement — reframed -->
+                <span class="engagement-role">Fellowship Completion</span>
+                <h4>EDUCAUSE-sponsored Next Leaders Fellowship — Capstone</h4>
+                <p>Completed the EDUCAUSE-sponsored Next Leaders Fellowship with a capstone focused on AI support models for higher ed institutions.</p>
+              </div>
               <div class="engagement-venue">EDUCAUSE</div>
             </div>
+
             <div class="engagement-item">
-              <div class="engagement-year">2023</div>
-              <div class="engagement-body"><h4>Yale College IT Advisory — Monthly Forum</h4><p>Convenes Deans, Faculty, Staff, and ITS leadership in a unified forum. Primary engine for aligning central IT services with Yale College's academic mission.</p></div>
-              <div class="engagement-venue">Yale University</div>
+              <div class="engagement-year">2024</div>
+              <div class="engagement-body">
+                <span class="engagement-role">Co-Lead · Showcase</span>
+                <h4>AI Task Automation Showcase</h4>
+                <p>Co-led a hands-on AI task automation showcase at the Yale One IT Conference, demonstrating practical use cases for Power Automate and AI-assisted workflows.</p>
+              </div>
+              <div class="engagement-venue">Yale One IT Conference</div>
             </div>
+
+            <div class="engagement-item">
+              <div class="engagement-year">2022</div>
+              <div class="engagement-body">
+                <span class="engagement-role">Presenter</span>
+                <h4>Yale's Web Ecosystem Strategy</h4>
+                <p>Presented on Yale College's Drupal-based web ecosystem strategy, governance model, and multi-site platform approach.</p>
+              </div>
+              <div class="engagement-venue">DrupalCon Portland</div>
+            </div>
+
           </div>
         </div>
       </section>
 
-      <!-- PODCAST -->
+      <!-- PODCAST — unchanged structurally; minor label polish -->
       <section class="podcast-section" aria-labelledby="podcast-heading">
         <div class="container">
           <p class="section-label" style="color:var(--coral);">Digital Community</p>
           <h2 class="section-heading" id="podcast-heading" style="color:#fff;">Yale College Voices</h2>
-          <p style="font-size:1rem;color:rgba(255,255,255,.85);max-width:600px;line-height:1.75;margin-bottom:1.5rem;">A podcast I host and produce that amplifies the stories of students, faculty, and staff across Yale College. Built from scratch into a growing digital community.</p>
+          <p style="font-size:1rem;color:rgba(255,255,255,.85);max-width:600px;line-height:1.75;margin-bottom:1.5rem;">A podcast I host and produce that amplifies the stories of students, faculty, and staff across Yale College. Built from scratch into a growing platform for sharing the real stories behind careers in higher education.</p>
           <div class="podcast-stats">
             <div class="podcast-stat"><span class="big">14K%</span><span class="small">Audience Growth</span></div>
             <div class="podcast-stat"><span class="big">35+</span><span class="small">Episodes</span></div>
@@ -817,14 +950,14 @@
         </div>
       </section>
 
-      <!-- SPEAKER BIO -->
+      <!-- SPEAKER BIO — CHANGE 1: 19 years; CHANGE 2: removed "Ambassador," corrected fellowship phrasing; CHANGE 13: tightened copy -->
       <section aria-labelledby="bio-heading">
         <div class="container">
           <p class="section-label">Speaker Bio</p>
           <h2 class="section-heading" id="bio-heading">For event organizers.</h2>
           <div class="speaker-bio">
             <h3>Short Bio (150 words)</h3>
-            <p>Darice Corey is the Senior Director of Web and IT Planning at Yale College, where she leads digital strategy, AI adoption, and IT service operations for one of the country's most respected liberal arts institutions. With 18+ years at Yale, she has built a career at the intersection of technology, student success, and institutional change. She is the founder of Yale College's AI Community of Practice, co-developer of Designing Your Career (used by 7,100+ students across 83 institutions), and host of the Yale College Voices podcast. Darice is an Executive DBA candidate at Fairfield University researching equity-minded AI adoption in decentralized universities. She is an EDUCAUSE Next Leaders Fellow, a Webby Award winner, a recipient of Yale's Linda K. Lorimer Presidential Award for Distinguished Service, and a U.S. Congressional commendation recipient. She speaks nationally on AI governance, digital transformation, and IT leadership in higher education.</p>
+            <p>Darice Corey is the Senior Director of Web and IT Planning at Yale College, where she leads digital strategy, AI adoption, and IT operations for one of the country's most complex liberal arts institutions. With 19 years at Yale, she has built her career at the intersection of technology, student experience, and institutional strategy. She co-leads Yale's AI support model, founded the Yale College AI Community of Practice, co-developed Designing Your Career (used by 7,100+ students across 83 institutions), and hosts the Yale College Voices podcast. Darice is an Executive DBA candidate at Fairfield University, researching AI governance and adoption in decentralized universities. She is an EDUCAUSE-sponsored Next Leaders Fellow, a Webby Award winner, a recipient of Yale's Linda K. Lorimer Presidential Award for Distinguished Service, and a U.S. Congressional Commendation recipient. She speaks nationally on AI governance, digital transformation, and IT leadership in higher education.</p>
           </div>
           <div style="margin-top:2rem;text-align:center;">
             <a href="#" onclick="showPage('contact');return false;" class="btn-primary">Invite Me to Speak</a>
@@ -834,13 +967,15 @@
     </div><!-- end speaking -->
 
     <!-- ══════════════ MENTORSHIP ══════════════ -->
+    <!-- CHANGE 12: Added framing sentence connecting mentorship to leadership capacity and team development -->
     <div class="page" id="page-mentorship">
 
       <section aria-labelledby="mentorship-hero-heading" style="background:linear-gradient(135deg,#1e1a2e 0%,#2d1f4e 100%);padding:5rem 0;">
         <div class="container">
           <p class="section-label" style="color:var(--coral);">Mentorship &amp; Community</p>
           <h2 class="section-heading" id="mentorship-hero-heading" style="color:#fff;">Investing in people is the work.</h2>
-          <p style="font-size:1rem;color:rgba(255,255,255,.85);max-width:620px;line-height:1.8;">Mentorship isn&rsquo;t a side activity for me. It&rsquo;s central to how I lead. Whether I&rsquo;m advising a first-year student navigating college life, supporting a junior colleague building their IT career, or connecting women in the workforce to new opportunities, the goal is always the same: help people see what&rsquo;s possible and give them the tools to get there.</p>
+          <!-- CHANGE 12: Added sentence connecting mentorship to leadership capacity and team development -->
+          <p style="font-size:1rem;color:rgba(255,255,255,.85);max-width:620px;line-height:1.8;">Mentorship isn&rsquo;t a side activity for me. It&rsquo;s central to how I lead. Whether I&rsquo;m advising a first-year student navigating college life, supporting a junior colleague building their IT career, or connecting professionals to new opportunities, the goal is consistent: help people see what&rsquo;s possible and give them what they need to get there. Strong mentorship builds stronger teams and stronger institutions. That connection is intentional.</p>
         </div>
       </section>
 
@@ -869,7 +1004,7 @@
                   <span class="mentorship-org">Yale University IT Services</span>
                 </div>
               </div>
-              <p>Through Yale&rsquo;s formal Staff Learning and Development peer mentorship program, I mentored junior ITS colleagues navigating early-career growth in higher education IT. Our conversations covered career pathways, building visibility within a large institution, and developing the leadership presence needed to move into senior roles. I focus on helping colleagues see the full scope of what&rsquo;s available to them, not just the next step.</p>
+              <p>Through Yale&rsquo;s Staff Learning and Development peer mentorship program, I mentored junior ITS colleagues navigating early-career growth in higher education IT. Our conversations covered career pathways, building visibility within a large institution, and developing the leadership presence needed to move into senior roles. I focus on helping colleagues see the full scope of what&rsquo;s available to them, not just the next step.</p>
             </div>
 
             <div class="mentorship-card">
@@ -902,7 +1037,7 @@
                   <span class="mentorship-org">Yale College IT</span>
                 </div>
               </div>
-              <p>I have directly mentored Yale student photographers, student IT associates, and student developers working on real Yale College IT projects. Rather than treating student employment as transactional, I structure these experiences as genuine professional development. Students have served as project co-leads, built app prototypes, and developed media credentials and portfolio-building work. Several have gone on to graduate programs and professional roles in technology.</p>
+              <p>I have directly mentored Yale student photographers, student IT associates, and student developers working on real Yale College IT projects. Rather than treating student employment as transactional, I structure these experiences as genuine professional development. Students have served as project co-leads, built app prototypes, and developed media and portfolio work. Several have gone on to graduate programs and professional roles in technology.</p>
             </div>
 
             <div class="mentorship-card">
@@ -920,15 +1055,16 @@
         </div>
       </section>
 
+      <!-- CHANGE 12 & 13: Mentorship philosophy — added sentence on building future leaders -->
       <section aria-labelledby="mentorship-philosophy-heading" style="background:var(--bg2);">
         <div class="container">
           <p class="section-label">My Approach</p>
           <h2 class="section-heading" id="mentorship-philosophy-heading">How I think about mentorship.</h2>
           <div class="stand-for-grid">
             <div>
-              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">Good mentorship is not about giving advice. It is about helping someone understand their own strengths more clearly, see options they hadn&rsquo;t considered, and build the confidence to act on what they know.</p>
-              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">I also believe mentorship is most powerful when it crosses boundaries: between senior and junior, between institution and community, between those who have access and those who are working to build it.</p>
-              <p style="font-size:1rem;color:var(--muted);line-height:1.8;">The throughline in my mentorship work is the same as my technology work. I connect people to what they need to move forward.</p>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">Good mentorship is not about giving advice. It is about helping someone understand their own strengths more clearly, see options they hadn&rsquo;t considered, and build the confidence to act on what they already know.</p>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">I also believe mentorship is most powerful when it crosses boundaries: between senior and junior, between institution and community, between those who have access and those who are working to build it. When it works, it doesn't just help one person. It builds capacity across a team and, over time, across an institution.</p>
+              <p style="font-size:1rem;color:var(--muted);line-height:1.8;">The throughline in my mentorship work is the same as in my technology work. I connect people to what they need to move forward.</p>
             </div>
             <div>
               <p class="section-label" style="margin-bottom:1.5rem;">By the Numbers</p>
@@ -947,7 +1083,7 @@
         <div class="container" style="text-align:center;">
           <p class="section-label" style="justify-content:center;">Connect</p>
           <h2 class="section-heading" id="mentorship-cta-heading">Interested in connecting?</h2>
-          <p class="section-sub" style="margin:0 auto 2.5rem;">Whether you&rsquo;re a student, an early-career IT professional, or someone exploring what&rsquo;s next, I&rsquo;m always open to a conversation.</p>
+          <p class="section-sub" style="margin:0 auto 2.5rem;">Whether you&rsquo;re a student, an early-career IT professional, or someone figuring out what&rsquo;s next, I&rsquo;m open to a conversation.</p>
           <a href="#" onclick="showPage('contact');return false;" class="btn-primary">Get In Touch</a>
         </div>
       </section>
@@ -955,27 +1091,28 @@
     </div><!-- end mentorship -->
 
     <!-- ══════════════ CONTACT ══════════════ -->
+    <!-- CHANGE 13: Minor copy polish — unchanged structurally -->
     <div class="page" id="page-contact">
       <section aria-labelledby="contact-heading">
         <div class="container">
           <p class="section-label">Get In Touch</p>
           <h2 class="section-heading" id="contact-heading">Let's talk about what's next.</h2>
-          <p class="section-sub">I'm always open to a good conversation. Here are three reasons people typically reach out.</p>
+          <p class="section-sub">I'm always open to a good conversation. Here are a few reasons people typically reach out.</p>
           <div class="contact-reasons">
             <div class="contact-reason">
               <div class="icon">🎤</div>
               <h3>Invite Me to Speak</h3>
-              <p>Conferences, panels, workshops, and institutional events on AI, digital strategy, and higher ed IT leadership.</p>
+              <p>Conferences, panels, workshops, and institutional events on AI governance, digital strategy, and higher ed IT leadership.</p>
             </div>
             <div class="contact-reason">
               <div class="icon">🤝</div>
               <h3>Explore a Collaboration</h3>
-              <p>Research partnerships, institutional projects, or shared work on AI adoption, governance, or student-centered technology.</p>
+              <p>Research partnerships, institutional projects, or shared work on AI adoption, governance, or student-centered technology in higher education.</p>
             </div>
             <div class="contact-reason">
               <div class="icon">💬</div>
               <h3>Connect About Leadership</h3>
-              <p>Conversations about IT leadership in higher ed, the practitioner-scholar path, or what's coming next in AI and governance.</p>
+              <p>Conversations about IT leadership in higher ed, the practitioner-scholar path, or what decentralized institutions are learning about AI governance.</p>
             </div>
           </div>
           <form action="https://formspree.io/f/xbdpglok" method="POST" class="contact-form" aria-label="Contact form">
