@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Darice Corey — speaking invitations, research collaborations, and leadership conversations." />
+  <title>Contact — Darice Corey</title>
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.daricecorey.com/contact.html" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-725R412XD7"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-725R412XD7');</script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <nav aria-label="Main navigation">
+    <a class="nav-name" href="index.html">Darice Corey</a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="ai.html">AI Leadership</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="speaking.html">Speaking</a></li>
+      <li><a href="mentorship.html">Mentorship</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+
+    <section aria-labelledby="contact-heading">
+      <div class="container">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-heading" id="contact-heading">Let's talk about what's next.</h2>
+        <p class="section-sub">I'm always open to a good conversation. Here are a few reasons people typically reach out.</p>
+        <div class="contact-reasons">
+          <div class="contact-reason"><div class="icon">🎤</div><h3>Invite Me to Speak</h3><p>Conferences, panels, workshops, and institutional events on AI governance, digital strategy, and higher ed IT leadership.</p></div>
+          <div class="contact-reason"><div class="icon">🤝</div><h3>Explore a Collaboration</h3><p>Research partnerships, institutional projects, or shared work on AI adoption, governance, or student-centered technology in higher education.</p></div>
+          <div class="contact-reason"><div class="icon">💬</div><h3>Connect About Leadership</h3><p>Conversations about IT leadership in higher ed, the practitioner-scholar path, or what decentralized institutions are learning about AI governance.</p></div>
+        </div>
+        <form action="https://formspree.io/f/xbdpglok" method="POST" class="contact-form" aria-label="Contact form">
+          <div class="form-row">
+            <div class="form-group"><label for="contact-name">Your Name</label><input type="text" id="contact-name" name="name" placeholder="Jane Smith" required aria-required="true" /></div>
+            <div class="form-group"><label for="contact-email">Your Email</label><input type="email" id="contact-email" name="email" placeholder="jane@institution.edu" required aria-required="true" /></div>
+          </div>
+          <div class="form-group">
+            <label for="contact-reason">Reason for Reaching Out</label>
+            <select id="contact-reason" name="reason">
+              <option value="">Select one...</option>
+              <option value="speaking">Speaking or presentation invitation</option>
+              <option value="collaboration">Collaboration or research partnership</option>
+              <option value="leadership">Leadership or AI conversation</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="contact-message">Message</label><textarea id="contact-message" name="message" rows="5" placeholder="Tell me what's on your mind..." required aria-required="true"></textarea></div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 Darice Corey. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+      <li><a href="https://yearendreport-109986419086.us-east4.run.app/" target="_blank" rel="noopener noreferrer" aria-label="Year-End Report (opens in new tab)">Year-End Report</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </footer>
+  <script>
+    function toggleNav(btn) {
+      const nav = document.getElementById('nav-links');
+      const open = nav.classList.toggle('open');
+      btn.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open);
+    }
+  </script>
+</body>
+</html>
