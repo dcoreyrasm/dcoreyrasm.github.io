@@ -438,9 +438,16 @@
   }
 
   function tLeadershipGrowth(){
+    // Doctoral program months completed, calculated from the start date (June 5, 2025) through today.
+    var _ds=new Date(2025,5,5), _now=new Date();
+    var dbaMonths=(_now.getFullYear()-_ds.getFullYear())*12+(_now.getMonth()-_ds.getMonth());
+    if(_now.getDate()<_ds.getDate()) dbaMonths--;
+    if(dbaMonths<0) dbaMonths=0;
+    var dbaPct=Math.min(100,Math.round(dbaMonths/36*100));
+    var dbaLabel=dbaMonths+" Month"+(dbaMonths===1?"":"s")+" Completed";
     const dba=`<div class="yer-band" style="padding:2rem;margin-bottom:1.5rem;display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;justify-content:space-between;">
       <div style="flex:1;min-width:260px;"><div style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-bottom:.6rem;"><span class="yer-badge" style="background:var(--yellow);color:#241038;border-color:var(--yellow);">Scholar-Practitioner</span><span style="font-size:.8rem;color:var(--muted2);display:flex;align-items:center;gap:.3rem;">${I('check-circle',null,'sm')} Accepted Spring 2025</span></div><h3 style="font-family:var(--serif);font-size:1.6rem;margin-bottom:.25rem;">Doctorate of Business Administration</h3><p style="color:var(--muted2);font-size:1.05rem;">Fairfield University</p></div>
-      <div style="background:rgba(255,255,255,.08);border:1px solid var(--line2);border-radius:10px;padding:1rem;min-width:200px;"><p class="yer-eyebrow" style="color:var(--muted2);margin-bottom:.3rem;">Current Status</p><p style="font-weight:600;font-size:.9rem;">6 Months Completed</p><div style="height:6px;background:rgba(0,0,0,.25);border-radius:999px;margin-top:.5rem;overflow:hidden;"><div style="height:100%;width:16%;background:var(--yellow);"></div></div><p style="font-size:.66rem;color:var(--muted2);text-align:right;margin-top:.25rem;">3-Year Program</p></div>
+      <div style="background:rgba(255,255,255,.08);border:1px solid var(--line2);border-radius:10px;padding:1rem;min-width:200px;"><p class="yer-eyebrow" style="color:var(--muted2);margin-bottom:.3rem;">Current Status</p><p style="font-weight:600;font-size:.9rem;">${dbaLabel}</p><div style="height:6px;background:rgba(0,0,0,.25);border-radius:999px;margin-top:.5rem;overflow:hidden;"><div style="height:100%;width:${dbaPct}%;background:var(--yellow);"></div></div><p style="font-size:.66rem;color:var(--muted2);text-align:right;margin-top:.25rem;">3-Year Program</p></div>
     </div>`;
     const ext=`<div class="yer-grid yer-g3" style="margin-bottom:1.5rem;">
       ${externalLeadership.map(it=>`<div class="yer-card"><span class="yer-eyebrow">${it.org}</span><h4 style="font-size:1.1rem;margin:.3rem 0;">${it.topic}</h4><span class="yer-badge">${it.role}</span><p class="yer-muted" style="font-size:.86rem;line-height:1.6;margin-top:.6rem;">${it.details}</p></div>`).join('')}
