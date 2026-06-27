@@ -165,7 +165,7 @@
 
   const credentials = [
     {title:"MOR Leaders Program",issuer:"MOR Associates",date:"Nov 2025",skills:"Strategic Leadership, Change Management, Cross-Team Collaboration"},
-    {title:"Next Leaders Fellowship",issuer:"EDUCAUSE",date:"Jul 2025",skills:"Executive IT Leadership, DEI Management, Strategic Planning"},
+    {title:"Next Leaders Fellowship",issuer:"EDUCAUSE",date:"Mar 2025",skills:"Executive IT Leadership, DEI Management, Strategic Planning"},
     {title:"Agent Explorer (Copilot)",issuer:"Founderz Business School / Microsoft",date:"Nov 26, 2025",skills:"AI Agents, Microsoft Copilot Integration, Prompt Engineering"},
     {title:"AI Skills 4 Women",issuer:"Founderz Business School",date:"Nov 26, 2025",skills:"Applied Machine Learning, Data Analysis, AI Ethics"},
     {title:"Dashboard in a Day",issuer:"Microsoft",date:"Jul 1, 2025",skills:"Power BI, Data Modeling, DAX, Visualization Best Practices"}
@@ -287,7 +287,7 @@
     <div class="yer-band yer-hero" style="padding:2.5rem;position:relative;overflow:hidden;">
       <div aria-hidden="true" style="position:absolute;right:-40px;top:0;height:100%;width:38%;background:rgba(192,132,252,.12);transform:skewX(-12deg);z-index:0;"></div>
       <div style="position:relative;z-index:1;">
-        <h1 style="font-family:var(--serif);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:900;line-height:1.12;margin-bottom:.75rem;">Darice Corey, Senior Director of Yale College IT</h1>
+        <h1 style="font-family:var(--serif);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:900;line-height:1.12;margin-bottom:.75rem;">Darice Corey, Senior Director of Web and IT Planning, Yale College</h1>
         <p style="font-size:1.15rem;color:var(--muted2);margin-bottom:1rem;">Stretch Opportunity: Year-End Report (2024–2025)</p>
         <div style="height:3px;width:80px;background:var(--yellow);margin-bottom:1.5rem;"></div>
         <p style="max-width:760px;font-size:1.02rem;line-height:1.8;color:var(--muted2);">"I started with a blank slate and used it to build an IT foundation that strengthens Yale College and contributes to the wider Yale community. With no preset limits, I formed new partnerships, launched strategic projects, and set up systems and communities that now support work well beyond my own unit."</p>
