@@ -2,8 +2,10 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
+  color-scheme: dark;
   --bg: #16131f; --bg2: #1e1a2e; --coral: #c084fc; --coral-dim: #a855f7;
   --cream: #ede9f6; --muted: #a9a4c2; --line: rgba(192,132,252,0.12);
+  --nav-bg: rgba(22,19,31,0.95);
   --serif: 'Playfair Display', Georgia, serif; --sans: 'DM Sans', sans-serif;
 }
 .skip-link { position:absolute; top:-100%; left:1rem; background:var(--coral); color:#1a0a2e; padding:.75rem 1.25rem; font-size:.9rem; font-weight:500; z-index:9999; text-decoration:none; border-radius:0 0 4px 4px; }
@@ -16,7 +18,7 @@ p, li, span, h1, h2, h3, h4 { word-break:normal; overflow-wrap:break-word; hyphe
 [class*="-grid"] > *, [class*="-card"], .work-card, .cert-card, .focus-card, .ai-card, .topic-card, .pub-item { min-width:0; box-sizing:border-box; }
 
 /* NAV */
-nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; justify-content:space-between; align-items:center; padding:1.2rem 3rem; background:rgba(22,19,31,0.95); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; justify-content:space-between; align-items:center; padding:1.2rem 3rem; background:var(--nav-bg); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
 .nav-name { font-family:var(--serif); font-size:1.05rem; color:var(--cream); text-decoration:none; flex-shrink:0; }
 .nav-links { display:flex; gap:1.75rem; list-style:none; flex-wrap:wrap; }
 .nav-links a { color:var(--muted); text-decoration:none; font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; transition:color .2s; }
@@ -253,7 +255,7 @@ footer p { font-size:.78rem; color:var(--muted); }
   .nav-toggle { display:flex; }
   .nav-links {
     display:none; position:fixed; top:60px; left:0; right:0;
-    background:rgba(22,19,31,0.98); flex-direction:column; gap:0;
+    background:var(--nav-bg); flex-direction:column; gap:0;
     padding:1rem 0; border-bottom:1px solid var(--line); z-index:99;
   }
   .nav-links.open { display:flex; }
@@ -309,4 +311,51 @@ footer p { font-size:.78rem; color:var(--muted); }
   footer { flex-direction:column; gap:1rem; padding:1.5rem; text-align:center; }
   .footer-links { justify-content:center; flex-wrap:wrap; }
   .program-item { grid-template-columns:1fr; }
+}
+
+/* ============================================================
+   LIGHT MODE — applied automatically when the visitor's browser
+   or operating system is set to a light color scheme. Dark mode
+   above remains the default for anyone set to dark or "no
+   preference". Only colors change; layout is untouched.
+   ============================================================ */
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --bg: #f8f7fc;        /* page background */
+    --bg2: #efedf7;       /* cards / alternating sections */
+    --coral: #7c3aed;     /* accent, darkened for contrast on light surfaces */
+    --coral-dim: #6d28d9; /* accent hover */
+    --cream: #211c2e;     /* primary text */
+    --muted: #595270;     /* secondary text */
+    --line: rgba(124,58,237,0.16);
+    --nav-bg: rgba(248,247,252,0.9);
+  }
+
+  /* The deep-purple accent bands stay dark by design. Re-assert the
+     brighter accent inside them so their labels, links, and buttons
+     keep full contrast against the dark background. */
+  .marquee-strip, .focus-section, .podcast-section,
+  .ai-hero, .research-hero, .speaking-hero {
+    --coral: #c084fc; --coral-dim: #a855f7;
+  }
+  /* Keep the band backgrounds dark even if they sit on an even section
+     index (specificity must match `section:nth-child(even)`). */
+  section.focus-section, section.podcast-section { background:#2d1f4e; }
+  /* Buttons inside those dark bands keep their original dark-on-accent text. */
+  .focus-section .btn-primary, .podcast-section .btn-primary,
+  .ai-hero .btn-primary, .research-hero .btn-primary, .speaking-hero .btn-primary { color:#1a0a2e; }
+
+  /* Chrome elements that were hardcoded dark. */
+  footer { background:var(--bg2); }
+  .work-card:hover { background:#e7e3f3; }
+  .work-card.featured { background:var(--bg2); }
+
+  /* On light surfaces the accent is now dark, so accent-backed text turns white. */
+  .btn-primary, .btn-primary:hover { color:#fff; }
+  .stat-card-1 { color:#fff; }
+  .skip-link { color:#fff; }
+
+  /* Ghost-button outline needs to be visible on a light background. */
+  .btn-ghost { border-color:rgba(33,28,46,0.25); }
 }
