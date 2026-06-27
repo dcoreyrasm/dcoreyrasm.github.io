@@ -69,7 +69,7 @@
     {date:"Mar 2025",title:"Next Leaders Fellowship Completion",desc:"Wrapped up the EDUCAUSE Next Leaders Fellowship and applied the learning directly to cross-unit leadership work.",icon:"award"},
     {date:"Mar 2025",title:"Slate Integration",desc:"Unified first-year onboarding data flow across five systems.",icon:"workflow"},
     {date:"May 2025",title:"Digital Signage",desc:"Standardized the Appspace rollout for all 14 Residential Colleges and prepared content workflows for fall.",icon:"monitor"},
-    {date:"Jul 2025",title:"Doctoral Program Start",desc:"Began my Executive Doctorate in Business Administration, connecting research with IT strategy and equity-focused work at Yale.",icon:"graduation-cap"},
+    {date:"Jun 2025",title:"Doctoral Program Start",desc:"Began my Executive Doctorate in Business Administration, connecting research with IT strategy and equity-focused work at Yale.",icon:"graduation-cap"},
     {date:"Sep 2025",title:"Cultural Centers",desc:"Delivered a classroom conversion proposal and moved it forward for Provost review.",icon:"landmark"},
     {date:"Dec 2025",title:"MOR Program Completion",desc:"Completed the MOR program and incorporated those leadership tools into ongoing collaboration across Yale College IT, FAS-SEAS IT, and ITS.",icon:"user-check"}
   ];
