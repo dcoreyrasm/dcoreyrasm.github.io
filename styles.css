@@ -154,7 +154,7 @@ section:nth-child(even) { background:var(--bg2); }
 .ai-principle p { font-size:.85rem; color:var(--muted); line-height:1.65; overflow-wrap:break-word; max-width:100%; }
 
 /* RESEARCH PAGE */
-.research-hero { background:linear-gradient(135deg,#16131f 0%,#1e1a2e 100%); padding:5rem 3rem; }
+.research-hero { background:linear-gradient(135deg,#1e1a2e 0%,#2d1f4e 100%); padding:5rem 3rem; }
 .research-question { font-family:var(--serif); font-size:clamp(1.4rem,3vw,2.2rem); font-style:italic; line-height:1.45; color:var(--cream); border-left:3px solid var(--coral); padding-left:1.5rem; margin:2.5rem 0; max-width:700px; }
 .research-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; margin-top:3rem; }
 .research-block h3 { font-family:var(--serif); font-size:1.1rem; font-weight:700; color:var(--coral); margin-bottom:1rem; }
@@ -166,6 +166,13 @@ section:nth-child(even) { background:var(--bg2); }
 
 /* SPEAKING PAGE */
 .speaking-hero { background:linear-gradient(135deg,#2d1f4e 0%,#1e1a2e 100%); padding:5rem 3rem; }
+
+/* HOME & WORK HERO BANDS — deep purple on top, consistent in light and dark */
+.hero-band { background:linear-gradient(135deg,#1e1a2e 0%,#2d1f4e 100%); --cream:#ede9f6; --muted:#a9a4c2; --coral:#c084fc; --coral-dim:#a855f7; --line:rgba(192,132,252,0.18); }
+.hero-band .btn-primary { color:#1a0a2e; }
+.hero-band .btn-ghost { color:var(--cream); border-color:rgba(240,235,226,0.3); }
+.hero-band .stat-card-1 { color:#1a0a2e; }
+.work-hero { background:linear-gradient(135deg,#1e1a2e 0%,#2d1f4e 100%); padding:5rem 0; --coral:#c084fc; }
 .topics-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; margin-top:3rem; }
 .topic-card { background:var(--bg2); padding:2rem; border-top:2px solid var(--coral); }
 .topic-card h3 { font-family:var(--serif); font-size:1.1rem; font-weight:700; margin-bottom:.75rem; }
