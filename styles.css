@@ -366,3 +366,42 @@ footer p { font-size:.78rem; color:var(--muted); }
   /* Ghost-button outline needs to be visible on a light background. */
   .btn-ghost { border-color:rgba(33,28,46,0.25); }
 }
+
+/* ============================================================
+   BLOG — additive styles for the Jekyll blog section only.
+   Every selector below is namespaced to blog-only classes
+   (.blog-list, .blog-post-card, .post-*) that appear on NO
+   existing page, so nothing here can change how the current
+   pages render. Colors and type reuse the same design tokens
+   as the rest of the site, so dark + light mode work for free.
+   ============================================================ */
+
+/* Blog index — list of post cards */
+.blog-list { display:flex; flex-direction:column; gap:1.25rem; margin-top:3rem; }
+.blog-post-card { display:block; background:var(--bg2); border-left:2px solid var(--coral); padding:1.75rem 2rem; text-decoration:none; color:inherit; transition:border-color .2s, transform .15s; }
+.blog-post-card:hover { border-left-color:var(--coral-dim); transform:translateY(-1px); }
+.blog-post-card h3 { font-family:var(--serif); font-size:1.2rem; font-weight:700; color:var(--cream); margin:.15rem 0 .5rem; line-height:1.3; }
+.blog-post-card p { font-size:.9rem; color:var(--muted); line-height:1.7; }
+.blog-empty { color:var(--muted); margin-top:2rem; }
+
+/* Shared date/meta label (index cards + single-post header) */
+.post-date, .post-meta { font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--coral); display:block; }
+
+/* Single post — article body rendered from Markdown */
+.post-content { max-width:720px; font-size:1rem; color:var(--cream); line-height:1.85; }
+.post-content > * + * { margin-top:1.5rem; }
+.post-content h2 { font-family:var(--serif); font-size:1.6rem; font-weight:700; color:var(--cream); line-height:1.25; margin-top:2.5rem; }
+.post-content h3 { font-family:var(--serif); font-size:1.25rem; font-weight:700; color:var(--cream); margin-top:2rem; }
+.post-content p, .post-content li { color:var(--muted); }
+.post-content a { color:var(--coral); text-decoration:underline; text-underline-offset:2px; }
+.post-content a:hover { color:var(--coral-dim); }
+.post-content strong { color:var(--cream); font-weight:500; }
+.post-content ul, .post-content ol { padding-left:1.5rem; }
+.post-content li { margin-top:.5rem; line-height:1.7; }
+.post-content blockquote { border-left:3px solid var(--coral); padding-left:1.25rem; font-style:italic; color:var(--cream); }
+.post-content code { background:var(--bg2); padding:.15rem .4rem; font-size:.9em; border:1px solid var(--line); }
+.post-content pre { background:var(--bg2); padding:1.25rem; overflow-x:auto; border:1px solid var(--line); }
+.post-content pre code { background:none; border:none; padding:0; }
+.post-content img { max-width:100%; height:auto; }
+.post-back { display:inline-block; margin-top:3rem; font-size:.82rem; letter-spacing:.08em; text-transform:uppercase; color:var(--coral); text-decoration:none; }
+.post-back:hover { color:var(--coral-dim); }

@@ -1,0 +1,13 @@
+# Jekyll build artifacts
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Local Ruby/Bundler
+Gemfile.lock
+vendor/
+.bundle/
+
+# Local-only developer notes — kept on disk, never committed or published
+README.md

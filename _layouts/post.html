@@ -3,26 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Impact by role, community voices, operational before-and-after transformations, and talent development outcomes." />
-  <title>Impact Stories — Year-End Report | Darice Corey</title>
+  <meta name="description" content="{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}" />
+  <title>{{ page.title }} — Darice Corey</title>
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.daricecorey.com/year-end-report/impact.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Impact Stories — Year-End Report | Darice Corey" />
-  <meta property="og:description" content="Impact by role, community voices, operational before-and-after transformations, and talent development outcomes." />
-  <meta property="og:url" content="https://www.daricecorey.com/year-end-report/impact.html" />
-  <meta property="og:image" content="https://www.daricecorey.com/darice.jpg" />
+  <meta name="author" content="Darice Corey" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ '/darice.jpg' | absolute_url }}" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Impact Stories — Year-End Report | Darice Corey" />
-  <meta name="twitter:description" content="Impact by role, community voices, operational before-and-after transformations, and talent development outcomes." />
-  <meta name="twitter:image" content="https://www.daricecorey.com/darice.jpg" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}" />
+  <meta name="twitter:image" content="{{ '/darice.jpg' | absolute_url }}" />
+  {% feed_meta %}
   <script>window.__daOptOut=(function(){try{return localStorage.getItem('da-analytics-optout')==='1'}catch(e){return false}})();if(window.__daOptOut){window['ga-disable-G-725R412XD7']=true;}</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-725R412XD7"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-725R412XD7');</script>
-  <script type="text/javascript">if(!window.__daOptOut){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xdrtc0i2un");}</script>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" href="/styles.css" />
-  <link rel="stylesheet" href="/year-end-report/report.css" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">if(!window.__daOptOut){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xdrtc0i2un");}</script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -40,21 +42,32 @@
       <li><a href="/speaking.html">Speaking</a></li>
       <li><a href="/mentorship.html">Mentorship</a></li>
       <li><a href="/contact.html">Contact</a></li>
-      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/blog.html" class="active">Blog</a></li>
       <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
     </ul>
   </nav>
+
   <main id="main-content">
-    <div class="yer-wrap">
+
+    <div class="ai-hero">
       <div class="container">
-        <div class="yer-tabbar" id="yer-tabs" role="tablist" aria-label="Report sections"></div>
-        <div id="yer-content" data-yer-tab="impact"></div>
-      </div>
-      <div class="yer-overlay" id="yer-overlay" hidden>
-        <div class="yer-modal" id="yer-modal" role="dialog" aria-modal="true"></div>
+        <p class="section-label" style="color:var(--coral);">Blog</p>
+        <h1 class="section-heading" style="color:#fff;">{{ page.title }}</h1>
+        <span class="post-meta" style="color:rgba(255,255,255,.75);">{{ page.date | date: "%B %-d, %Y" }}</span>
       </div>
     </div>
+
+    <section>
+      <div class="container">
+        <article class="post-content">
+          {{ content }}
+        </article>
+        <a class="post-back" href="/blog.html">&larr; All posts</a>
+      </div>
+    </section>
+
   </main>
+
   <footer role="contentinfo">
     <p>&copy; 2026 Darice Corey. All rights reserved.</p>
     <ul class="footer-links">
@@ -64,9 +77,14 @@
       <li><a href="/contact.html">Contact</a></li>
     </ul>
   </footer>
+
   <script>
-    function toggleNav(btn){var nav=document.getElementById('nav-links');var open=nav.classList.toggle('open');btn.classList.toggle('open',open);btn.setAttribute('aria-expanded',open);}
+    function toggleNav(btn) {
+      const nav = document.getElementById('nav-links');
+      const open = nav.classList.toggle('open');
+      btn.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open);
+    }
   </script>
-  <script src="/year-end-report/report.js"></script>
 </body>
 </html>
