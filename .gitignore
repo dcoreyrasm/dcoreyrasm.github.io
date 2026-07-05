@@ -8,3 +8,6 @@ _site/
 Gemfile.lock
 vendor/
 .bundle/
+
+# Local-only developer notes — kept on disk, never committed or published
+README.md
