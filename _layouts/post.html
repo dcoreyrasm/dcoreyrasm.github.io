@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}" />
+  <title>{{ page.title }} — Darice Corey</title>
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Darice Corey" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ '/darice.jpg' | absolute_url }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}" />
+  <meta name="twitter:image" content="{{ '/darice.jpg' | absolute_url }}" />
+  {% feed_meta %}
+  <script>window.__daOptOut=(function(){try{return localStorage.getItem('da-analytics-optout')==='1'}catch(e){return false}})();if(window.__daOptOut){window['ga-disable-G-725R412XD7']=true;}</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-725R412XD7"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-725R412XD7');</script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/styles.css" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">if(!window.__daOptOut){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xdrtc0i2un");}</script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <nav aria-label="Main navigation">
+    <a class="nav-name" href="/index.html">Darice Corey</a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/work.html">Work</a></li>
+      <li><a href="/ai.html">AI Leadership</a></li>
+      <li><a href="/newsletter.html">Newsletter</a></li>
+      <li><a href="/research.html">Research</a></li>
+      <li><a href="/speaking.html">Speaking</a></li>
+      <li><a href="/mentorship.html">Mentorship</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/blog.html" class="active">Blog</a></li>
+      <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+
+    <div class="ai-hero">
+      <div class="container">
+        <p class="section-label" style="color:var(--coral);">Blog</p>
+        <h1 class="section-heading" style="color:#fff;">{{ page.title }}</h1>
+        <span class="post-meta" style="color:rgba(255,255,255,.75);">{{ page.date | date: "%B %-d, %Y" }}</span>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <article class="post-content">
+          {{ content }}
+        </article>
+        <a class="post-back" href="/blog.html">&larr; All posts</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 Darice Corey. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+      <li><a href="/year-end-report/">Year-End Report</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      const nav = document.getElementById('nav-links');
+      const open = nav.classList.toggle('open');
+      btn.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open);
+    }
+  </script>
+</body>
+</html>

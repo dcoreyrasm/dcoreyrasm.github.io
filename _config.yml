@@ -1,0 +1,36 @@
+# Jekyll configuration for daricecorey.com
+#
+# GitHub Pages already runs Jekyll on this repo by default. Your existing
+# .html pages have NO YAML front matter, so Jekyll copies them through
+# verbatim and their look/behavior is unchanged by this file. Only the new
+# blog pages (which DO have front matter) are rendered by Jekyll.
+
+title: Darice Corey
+description: >-
+  Notes and writing from Darice Corey on AI adoption, governance, and
+  student-centered systems in higher education.
+url: https://www.daricecorey.com
+author: Darice Corey
+
+# jekyll-feed generates an Atom feed at /feed.xml. It is on the GitHub Pages
+# allow-list, so it works on Pages with no extra setup.
+plugins:
+  - jekyll-feed
+
+# Blog posts use the shared post layout and get clean /blog/<title>/ URLs.
+# Scoped to posts only, so it never touches the static top-level pages.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:title/
+
+# Keep new tooling/meta files out of the built site. (README.md is left as-is
+# so it keeps publishing exactly as it does today — no change to current output.)
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gitignore
