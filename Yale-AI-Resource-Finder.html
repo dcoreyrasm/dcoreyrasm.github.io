@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yale AI Resource Finder</title>
+<!--
+  ============================================================================
+  FOR SITE OWNERS / MAINTAINERS
+  ============================================================================
+  This is a self-contained file. No build step, no dependencies. To update it,
+  edit the data objects near the top of the <script> block. Nothing else needs
+  to change.
+
+  WHERE TO EDIT:
+    L          - every link used anywhere (tools, guidance, learning). One URL
+                 per entry. Change a URL here and it updates across the tool.
+    CATALOG    - the searchable "All tools" inventory. Each tool: name, url,
+                 desc, tags[], level, cost, and optional warn (see below).
+    CATEGORIES - the filter chips in the inventory. Must match the tags used
+                 in CATALOG.
+    TASKS      - the "Good tool for each task" map. Each task lists tool keys
+                 (which must exist in L). The FIRST tool is shown highlighted
+                 as the simplest starting point.
+    TOOL_MAX   - the highest data level each tool is cleared for (low/moderate/
+                 high). This is what filters the task map by data sensitivity.
+                 If Yale changes a tool's classification, change it here.
+    JOBS       - the staff job-type starters.
+    ROLES / GOALS / DATA_OPTS / QUICK - the questions and use cases.
+
+  THE "NOT YALE-MANAGED" FLAG (e.g. ChatGPT):
+    A tool shown for transparency but NOT endorsed has level: "Not Yale-managed",
+    a warn: "..." string, and a "Not Yale-managed" tag. These tools appear in the
+    inventory (so people can find honest guidance) but are intentionally LEFT OUT
+    of TASKS, so they never appear as a recommended option in the task map.
+
+  GOVERNANCE LINE (read before changing ChatGPT):
+    The task map and data filter treat Yale's published tools page
+    (https://ai.yale.edu/yales-ai-tools-and-resources) as the source of truth.
+    Only move a tool into the cleared set (add it to TASKS + TOOL_MAX) AFTER the
+    AI Steering Committee / AI Review Framework approves it. ChatGPT is kept out
+    of the task map and flagged "Not Yale-managed" on purpose. If Yale signs an
+    agreement (for example ChatGPT Edu), move it into the cleared set then, not
+    before. The ChatGPT guidance page (renderChatGPT) is where the "use it
+    responsibly anyway" advice lives; keep that even if ChatGPT stays unmanaged.
+
+  VERIFY PERIODICALLY:
+    Tool availability, data classifications, and prices change. Reconfirm against
+    the linked Yale pages. Links last verified June 2026.
+  ============================================================================
+-->
+<style>
+  :root {
+    --navy: #00356B; --navy-deep: #002247;
+    --clay: #A8512B; --clay-soft: #FBF1EB; --green: #0E8C6E; --teal: #2E7D8A;
+    --ink: #1F2430; --muted: #59636F; --slate: #475569;
+    --paper: #FFFFFF; --panel: #F4F6F9; --line: #DCE0E7;
+    --low: #0E8C6E; --moderate: #B7791F; --high: #A8512B;
+    --shadow: 0 10px 40px rgba(0,33,71,0.13);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #EAEEF3; color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased;
+    min-height: 100vh; display: flex; flex-direction: column; align-items: center;
+    padding: 28px 18px 40px;
+  }
+  .shell { width: 100%; max-width: 820px; }
+
+  header { margin-bottom: 16px; }
+  .eyebrow { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: 27px; color: var(--navy); font-weight: 700; margin: 4px 0 2px; }
+  .sub { font-family: Georgia, serif; font-size: 15px; color: var(--ink); }
+  .rule { height: 3px; background: var(--navy); margin-top: 11px; }
+  .frame { font-size: 13px; color: var(--muted); margin-top: 9px; max-width: 70ch; }
+
+  .card { background: var(--paper); border-radius: 12px; box-shadow: var(--shadow); overflow: hidden; }
+  .card-inner { padding: 28px 30px 26px; }
+
+  .stage-tag { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin-bottom: 8px; }
+  .q-title { font-family: Georgia, serif; font-size: 23px; line-height: 1.22; color: var(--navy); font-weight: 700; margin-bottom: 6px; }
+  .q-prompt { color: var(--muted); font-size: 15px; margin-bottom: 18px; max-width: 64ch; }
+
+  .options { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; align-items: stretch; }
+  .options.single { grid-template-columns: 1fr; }
+  .opt {
+    display: flex; align-items: center; gap: 14px; width: 100%; text-align: left;
+    background: var(--paper); border: 1.5px solid var(--line); border-radius: 9px;
+    padding: 14px 16px; cursor: pointer; font: inherit; color: var(--ink);
+    transition: border-color .14s ease, background .14s ease, transform .08s ease;
+  }
+  .opt:hover { border-color: var(--navy); background: #F8FAFD; }
+  .opt:active { transform: translateY(1px); }
+  .opt:focus-visible { outline: 3px solid rgba(0,53,107,0.4); outline-offset: 2px; }
+  .opt .box {
+    flex: 0 0 auto; width: 30px; height: 30px; border-radius: 7px;
+    border: 1.5px solid var(--line); background: var(--panel);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 700; color: var(--navy);
+  }
+  .opt .otext { display: flex; flex-direction: column; }
+  .opt .otext .ol { display: block; font-weight: 600; font-size: 15px; line-height: 1.3; }
+  .opt .otext .os { display: block; color: var(--muted); font-size: 13px; margin-top: 4px; line-height: 1.35; }
+  .opt .arrow { margin-left: auto; color: var(--navy); font-size: 18px; opacity: 0.5; }
+  .opt:hover .arrow { opacity: 1; }
+  .opt .check { margin-left: auto; color: var(--navy); font-size: 18px; font-weight: 700; opacity: 0; }
+  .opt[aria-pressed="true"] { border-color: var(--navy); background: #EEF3FA; }
+  .opt[aria-pressed="true"] .box { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .opt[aria-pressed="true"] .check { opacity: 1; }
+
+  .selbar { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .selcount { font-size: 13px; color: var(--muted); } .selcount b { color: var(--ink); }
+  .hint { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
+
+  /* step tracker */
+  .progress { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+  .pstep { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 600; color: var(--muted); padding: 5px 12px; border-radius: 20px; background: var(--panel); border: 1.5px solid var(--line); }
+  .pstep.cur { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .pstep.done { background: #EEF3FA; border-color: var(--navy); color: var(--navy); }
+  .pline { flex: 0 0 16px; height: 2px; background: var(--line); }
+
+  /* multi-select use-case options as checkboxes */
+  .pickhead { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .pickbadge { font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #fff; background: var(--green); padding: 3px 9px; border-radius: 20px; }
+  .opt.multiopt { align-items: flex-start; }
+  .cbox { flex: 0 0 auto; width: 26px; height: 26px; border-radius: 7px; border: 2px solid var(--line); background: var(--paper); display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; color: #fff; margin-top: 1px; transition: background .12s, border-color .12s; }
+  .opt.multiopt[aria-checked="true"] { border-color: var(--navy); background: #EEF3FA; }
+  .opt.multiopt[aria-checked="true"] .cbox { background: var(--navy); border-color: var(--navy); }
+
+  .pickedwrap { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; margin-top: 16px; min-height: 4px; }
+  .pickedlabel { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin-right: 2px; }
+  .pchip { font-size: 12.5px; font-weight: 600; padding: 5px 11px; border-radius: 20px; background: var(--navy); color: #fff; }
+
+  /* task -> tool map */
+  .taskmap { border: 1px solid var(--line); border-radius: 9px; overflow: hidden; }
+  .task { padding: 11px 14px; border-bottom: 1px solid var(--line); }
+  .task:last-child { border-bottom: none; }
+  .tk-label { font-weight: 600; font-size: 14.5px; color: var(--ink); }
+  .tk-tools { margin-top: 4px; font-size: 13px; color: var(--muted); }
+  .tk-tools a { color: var(--navy); font-weight: 600; text-decoration: none; }
+  .tk-tools a:hover { text-decoration: underline; }
+  .tk-sep { color: var(--line); margin: 0 7px; }
+  .catchall { font-size: 13px; color: var(--muted); margin-top: 10px; line-height: 1.5; }
+
+  .jobs { list-style: none; }
+  .jobs li { padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 14px; line-height: 1.45; }
+  .jobs li:last-child { border-bottom: none; }
+  .jobs b { color: var(--navy); display: block; margin-bottom: 2px; }
+
+  /* tool chips in the task map */
+  .tk-tools { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+  .toolchip { font-size: 12.5px; font-weight: 600; text-decoration: none; padding: 5px 11px; border-radius: 18px; border: 1.5px solid var(--line); color: var(--navy); background: var(--paper); }
+  .toolchip:hover { border-color: var(--navy); background: #F8FAFD; }
+  .toolchip.best { background: var(--navy); color: #fff; border-color: var(--navy); }
+  .legend { font-size: 12.5px; color: var(--muted); margin: 8px 0 10px; }
+  .legend .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--navy); margin-right: 5px; vertical-align: middle; }
+
+  .extbadge { font-size: 10px; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); border-radius: 10px; padding: 1px 6px; margin-left: 4px; }
+  .linklike { background: none; border: none; padding: 0; font: inherit; color: var(--navy); font-weight: 600; cursor: pointer; text-decoration: underline; }
+
+  /* searchable inventory */
+  .invsearch { width: 100%; font: inherit; font-size: 15px; padding: 11px 14px; border: 1.5px solid var(--line); border-radius: 9px; margin-bottom: 14px; }
+  .invsearch:focus-visible { outline: 3px solid rgba(0,53,107,0.4); border-color: var(--navy); }
+  .tagfilter { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 16px; }
+  .tagchip { font: inherit; font-size: 12.5px; padding: 6px 12px; border-radius: 20px; cursor: pointer; background: var(--panel); border: 1.5px solid var(--line); color: var(--ink); }
+  .tagchip:hover { border-color: var(--navy); }
+  .tagchip.active { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .invcount { font-size: 12px; color: var(--muted); margin-bottom: 10px; }
+  .invcard { border: 1px solid var(--line); border-radius: 9px; padding: 13px 15px; margin-bottom: 10px; }
+  .inv-top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .inv-name { font-weight: 700; font-size: 15px; color: var(--navy); text-decoration: none; }
+  .inv-name:hover { text-decoration: underline; }
+  .inv-meta { font-size: 12px; color: var(--muted); white-space: nowrap; }
+  .inv-desc { font-size: 13.5px; color: var(--ink); margin: 5px 0 8px; line-height: 1.45; }
+  .inv-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .minitag { font-size: 11px; font-weight: 600; color: var(--slate); background: var(--panel); border: 1px solid var(--line); padding: 2px 9px; border-radius: 14px; }
+  .invwarn { font-size: 12.5px; color: var(--clay); background: var(--clay-soft); border-left: 3px solid var(--clay); border-radius: 6px; padding: 7px 10px; margin: 6px 0 8px; line-height: 1.45; }
+  .warnmeta { color: var(--clay); font-weight: 700; }
+
+  .quick { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .quick-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin-bottom: 10px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    font: inherit; font-size: 13px; padding: 7px 13px; border-radius: 20px; cursor: pointer;
+    background: var(--panel); border: 1.5px solid var(--line); color: var(--ink);
+    transition: border-color .14s, background .14s;
+  }
+  .chip:hover { border-color: var(--navy); background: #EEF3FA; }
+  .chip:focus-visible { outline: 3px solid rgba(0,53,107,0.4); outline-offset: 2px; }
+
+  .crumb { font-size: 12.5px; color: var(--muted); margin-bottom: 14px; }
+  .crumb b { color: var(--ink); }
+
+  .verdict-head { margin: 0 -30px 20px; padding: 20px 30px 18px; color: #fff; }
+  .verdict-head.navy { background: var(--navy); }
+  .verdict-head.clay { background: var(--clay); }
+  .verdict-head.teal { background: var(--teal); }
+  .verdict-head.high { background: var(--high); }
+  .verdict-kicker { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.88; font-weight: 700; margin-bottom: 5px; }
+  .verdict-title { font-family: Georgia, serif; font-size: 24px; font-weight: 700; line-height: 1.18; }
+
+  .blk-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin: 18px 0 9px; }
+  .blk-label:first-of-type { margin-top: 4px; }
+
+  .primary { border: 2px solid var(--navy); border-radius: 9px; padding: 15px 17px; }
+  .primary .pt { font-weight: 700; font-size: 16px; color: var(--navy); }
+  .primary .pw { font-size: 14px; color: var(--ink); margin: 5px 0 9px; line-height: 1.45; }
+  .reslink { display: inline-flex; align-items: center; gap: 6px; font-size: 13.5px; font-weight: 600; color: var(--navy); text-decoration: none; word-break: break-word; }
+  .reslink:hover { text-decoration: underline; }
+  .reslink .ext { font-size: 12px; opacity: 0.7; }
+
+  .linklist { list-style: none; }
+  .linklist li { padding: 11px 0; border-bottom: 1px solid var(--line); }
+  .linklist li:last-child { border-bottom: none; }
+  .linklist .lw { display: block; font-size: 13px; color: var(--muted); margin-top: 3px; line-height: 1.4; }
+
+  .gov { background: var(--panel); border-left: 3px solid var(--navy); border-radius: 6px; padding: 13px 16px; }
+  .gov .gov-head { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+  .gov ul { list-style: none; }
+  .gov li { padding: 6px 0; }
+
+  .datanote { border-radius: 8px; padding: 13px 16px; margin-top: 4px; font-size: 13.5px; line-height: 1.5; }
+  .datanote.high { background: var(--clay-soft); border-left: 3px solid var(--clay); }
+  .datanote.info { background: var(--panel); border-left: 3px solid var(--navy); }
+  .datanote b { color: var(--ink); }
+
+  .tooltable { width: 100%; border-collapse: collapse; margin-top: 4px; font-size: 13.5px; }
+  .tooltable th { text-align: left; background: var(--panel); color: var(--muted); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.03em; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  .tooltable td { padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .tooltable tr:last-child td { border-bottom: none; }
+  .tooltable td a { color: var(--navy); font-weight: 600; text-decoration: none; }
+  .tooltable td a:hover { text-decoration: underline; }
+  .tag { display: inline-block; font-size: 10.5px; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; padding: 2px 8px; border-radius: 12px; color: #fff; white-space: nowrap; }
+  .tag.low { background: var(--low); }
+  .tag.moderate { background: var(--moderate); }
+  .tag.high { background: var(--high); }
+
+  .controls { display: flex; gap: 10px; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); }
+  .btn { font: inherit; font-size: 14px; font-weight: 600; border-radius: 8px; padding: 10px 18px; cursor: pointer;
+    border: 1.5px solid var(--line); background: var(--paper); color: var(--ink); transition: border-color .14s, background .14s; }
+  .btn:hover { border-color: var(--navy); }
+  .btn:focus-visible { outline: 3px solid rgba(0,53,107,0.4); outline-offset: 2px; }
+  .btn.primary { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .btn.primary:hover { background: var(--navy-deep); }
+  .spacer { flex: 1; }
+
+  footer { margin-top: 16px; font-size: 12px; color: var(--muted); line-height: 1.6; }
+  footer a { color: var(--muted); }
+
+  .fade { animation: fade .22s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  @media (max-width: 560px) {
+    body { padding: 18px 12px 32px; }
+    .card-inner { padding: 22px 18px; }
+    h1 { font-size: 22px; } .q-title { font-size: 20px; }
+    .verdict-head { margin: 0 -18px 18px; padding: 18px; }
+    .options { grid-template-columns: 1fr; }
+    .controls { flex-wrap: wrap; }
+    .controls .btn { flex: 1 1 auto; }
+    .tooltable { font-size: 12.5px; }
+    .tooltable th, .tooltable td { padding: 7px 7px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .fade { animation: none; } .opt, .btn { transition: none; } }
+
+  @media print {
+    body { background: #fff; padding: 0; display: block; }
+    .shell { max-width: none; }
+    .options, .quick, .controls, footer .kbdrow { display: none !important; }
+    .card { box-shadow: none; border: 1px solid #bbb; }
+    .verdict-head { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .tag, .datanote, .gov { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    @page { size: letter; margin: 0.5in; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <div class="eyebrow">Yale &middot; AI Resources</div>
+    <h1>Yale AI Resource Finder</h1>
+    <div class="sub">Find the right Yale AI guidance, tool, or support in a few clicks.</div>
+    <div class="rule"></div>
+    <div class="frame">Yale's AI information lives across many sites: AI at Yale, the Poorvu Center, the Library, Research Computing, Privacy, and Cybersecurity. This tool asks a couple of plain questions and points you to the page that actually answers yours. Every link goes to an official Yale page.</div>
+  </header>
+
+  <div class="card"><div class="card-inner" id="stage" aria-live="polite"></div></div>
+
+  <footer>
+    <div class="kbdrow" style="margin-bottom:6px;">Press <b>Esc</b> to start over.</div>
+    <div id="asof"></div>
+    <div style="margin-top:6px;">Resources are decentralized and change often. Confirm tool availability, pricing, and data classification on the linked pages. Links marked <b>NetID</b> require Yale login.</div>
+  </footer>
+</div>
+
+<script>
+/* ---------------------------------------------------------------------------
+   Verified Yale AI resource links (confirmed live, June 2026).
+   Each link object: { url, title, why, netid? }
+--------------------------------------------------------------------------- */
+const L = {
+  // Hubs
+  hub:          { url: "https://ai.yale.edu/", title: "AI at Yale (main hub)", why: "The front door for tools, guidance, news, and the Ask this site assistant." },
+  tools:        { url: "https://ai.yale.edu/yales-ai-tools-and-resources", title: "Yale's AI Tools and Resources", why: "Full table of Yale-provided tools, how to access each, and its data classification." },
+  guidance:     { url: "https://ai.yale.edu/guidance", title: "AI at Yale: Guidance", why: "Collected university guidance on responsible AI use, data, and privacy." },
+  learn:        { url: "https://ai.yale.edu/guidance/learn-about-ai", title: "Learn about AI", why: "Videos, key terms, and short courses for getting started with AI chat tools." },
+  reviewfw:     { url: "https://ai.yale.edu/ai-review-framework", title: "AI Review Framework", why: "The AI Steering Committee's principles for selecting an AI system." },
+  researchmap:  { url: "https://ai.yale.edu/yales-ai-tools-and-resources/ai-research-resource-map", title: "AI Research Resource Map", why: "Orients researchers to the AI resources available across Yale." },
+  profdev:      { url: "https://ai.yale.edu/yales-ai-tools-and-resources/ai-for-professional-development", title: "AI for Professional Development", why: "Using AI to build skills in your role." },
+  studenttk:    { url: "https://ai.yale.edu/yales-ai-tools-and-resources/students", title: "Student AI Toolkit", why: "A starting point built for students." },
+  healthtk:     { url: "https://ai.yale.edu/yales-ai-tools-and-resources/yale-standards-for-using-ai-tools-and-chatbots-in-health-sciences", title: "Health Sciences AI Toolkit", why: "Standards for AI use with health sciences data, including ePHI." },
+  copractice:   { url: "https://ai.yale.edu/opportunities/ai-communities-of-practice", title: "AI Communities of Practice", why: "Peer groups sharing how they actually use AI at Yale." },
+  events:       { url: "https://ai.yale.edu/find-ai-events", title: "Find AI Events", why: "Workshops, trainings, and talks across campus." },
+
+  // Tools
+  clarity:      { url: "https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform", title: "Clarity Platform", why: "Yale's own secure chatbot, with access to Anthropic, Google, and OpenAI models inside Yale infrastructure. Free." },
+  claritychat:  { url: "https://ai-chat.yale.edu/", title: "Clarity chat (sign in)", why: "Go straight to the Clarity chat interface." },
+  claritysec:   { url: "https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform/security", title: "Clarity Platform security", why: "What data Clarity can handle, including exceptions such as ePHI." },
+  copilotchat:  { url: "https://ai.yale.edu/yales-ai-tools-and-resources/copilot-chat", title: "Copilot Chat", why: "Secure Microsoft chatbot. Free. Moderate data in the Web tab, High data in the Work tab." },
+  gemini:       { url: "https://ai.yale.edu/yales-ai-tools-and-resources/google-gemini", title: "Google Gemini and NotebookLM", why: "Free for the Yale community. Good for drafting and for source-grounded reading with NotebookLM. Rated for Moderate data." },
+  consensus:    { url: "https://ai.yale.edu/yales-ai-tools-and-resources/consensus", title: "Consensus", why: "AI search over peer-reviewed literature, with citations. Free trial. Rated for Low data." },
+  m365copilot:  { url: "https://ai.yale.edu/yales-ai-tools-and-resources/microsoft-365-copilot", title: "Microsoft 365 Copilot", why: "AI inside Word, Excel, Outlook, Teams. Paid license. Rated for High data." },
+  ghcopilot:    { url: "https://ai.yale.edu/yales-ai-tools-and-resources/github-copilot", title: "GitHub Copilot", why: "AI coding assistant in VS Code and JetBrains. Paid license. Rated for Moderate data." },
+  zoom:         { url: "https://ai.yale.edu/yales-ai-tools-and-resources/zoom-ai-companion", title: "Zoom AI Companion", why: "Meeting summaries and notes inside Zoom. Rated for High data." },
+  powerbi:      { url: "https://ai.yale.edu/yales-ai-tools-and-resources/power-bi-copilot", title: "Power BI Copilot", why: "AI help building dashboards and pulling insights from data. Rated for High data." },
+  teams:        { url: "https://ai.yale.edu/yales-ai-tools-and-resources/teams-premium", title: "Teams Premium", why: "AI meeting help inside Microsoft Teams. Rated for High data." },
+
+  // Governance / data / privacy
+  dataclass:    { url: "https://cybersecurity.yale.edu/data-classification", title: "Data Classification Guideline", why: "Defines Low, Moderate, and High risk data. This decides where your data may go." },
+  staffdata:    { url: "https://yaledata.yale.edu/ai-guidelines-for-staff", title: "Data Governance Guidance for Staff", why: "How to protect data and intellectual property while staying compliant." },
+  privacy:      { url: "https://privacy.yale.edu/resources/ai-and-privacy", title: "AI and Privacy", why: "Privacy considerations for AI systems, including notetaking and transcription apps." },
+  genaipolicy:  { url: "https://provost.yale.edu/news/guidelines-use-generative-ai-tools", title: "Guidelines for the Use of Generative AI Tools", why: "The Provost's university-wide guidance on responsible generative AI use." },
+  aireview:     { url: "https://yaledata.yale.edu/", title: "AI request review process", why: "Where to take a new app or integration for data review, including Azure AI and AWS Bedrock." },
+  spa:          { url: "https://cybersecurity.yale.edu/spa", title: "Security Planning Assessment (SPA)", why: "Required per application for developer platforms that build on cloud AI models." },
+  itfoundations:{ url: "https://www.myworkday.com/yale/learning/course/38b538cb88571001fb9d7ad8debd0000?record=4f082f0bb5ac1001594818bdae290001&type=9882927d138b100019b928e75843018d", title: "IT Foundations: Artificial Intelligence (Workday)", why: "A 45-minute course on AI terms, concepts, and campus use cases.", netid: true },
+
+  // Teaching (Poorvu)
+  poorvuhub:    { url: "https://poorvucenter.yale.edu/ai-guidelines", title: "Poorvu Center AI Guidelines", why: "The teaching-and-learning hub for AI guidance." },
+  principles:   { url: "https://poorvucenter.yale.edu/guiding-principles-for-teaching-and-learning-with-ai", title: "Guiding Principles for Teaching and Learning with AI", why: "Principles to support decisions and conversations about AI in your course." },
+  teachers:     { url: "https://poorvucenter.yale.edu/teaching/teaching-resource-library/ai-guidance-for-teachers", title: "AI Guidance for Teachers", why: "Help deciding whether and how to bring AI into your teaching." },
+  students:     { url: "https://poorvucenter.yale.edu/learning/learning-resource-library/ai-guidance-for-students", title: "AI Guidance for Students", why: "Strategies to learn with and about AI, within course policies." },
+  provostres:   { url: "https://provost.yale.edu/news/resources-teaching-and-learning-ai", title: "Resources for teaching and learning with AI", why: "Provost's collection, including AI-resilient assessment resources." },
+
+  // Research (Library + YCRC)
+  libresearch:  { url: "https://library.yale.edu/help-and-research-support/research-support/using-ai-research", title: "Using AI in Research (Yale Library)", why: "Help getting started, evaluating AI outputs, and integrating AI into research." },
+  libguide:     { url: "https://guides.library.yale.edu/libraryAI", title: "AI Guidance for Library Resources", why: "Trustworthiness, copyright, citing AI, and using AI with licensed resources." },
+  gaitools:     { url: "https://guides.library.yale.edu/gai/tools", title: "Generative AI for Research: Tools", why: "How to evaluate generative AI tools for research." },
+  gaioutput:    { url: "https://guides.library.yale.edu/gai/output", title: "Generative AI for Research: Reporting and Citation", why: "How to document and cite AI use in scholarship." },
+  eresources:   { url: "https://guides.library.yale.edu/about/policies/e-resources-access-use", title: "E-resources access and use policy", why: "Whether a licensed database may be used with AI. Often the answer is no." },
+  ycrc:         { url: "https://docs.ycrc.yale.edu/ai/", title: "AI at Research Computing (YCRC)", why: "Running models and AI workflows on Yale's HPC clusters." },
+  ycrcres:      { url: "https://docs.ycrc.yale.edu/ai/resources/", title: "YCRC: Resources and recommendations", why: "Where your workflow should run, GPU characteristics, and beginner tips." },
+  ycrcollama:   { url: "https://docs.ycrc.yale.edu/ai/ollama/", title: "YCRC: Ollama", why: "The recommended tool for open-source model inference on the clusters." },
+  ycrchf:       { url: "https://docs.ycrc.yale.edu/ai/huggingface/", title: "YCRC: Hugging Face", why: "Environment setup for Hugging Face models." },
+  ycrcnairr:    { url: "https://docs.ycrc.yale.edu/ai/nairr/", title: "YCRC: National AI Research Resource", why: "Free national compute for AI research, by application, when Yale GPUs are not enough." },
+  ycrcclarity:  { url: "https://docs.ycrc.yale.edu/ai/clarity/", title: "YCRC: Closed-source models via Clarity API", why: "Secure, Yale-managed access to Claude and other closed models for research." },
+  ycrccoding:   { url: "https://docs.ycrc.yale.edu/ai/aicodingtools/", title: "YCRC: AI coding tools", why: "Recommendations and data-security cautions for AI coding assistants." },
+
+  // External learning (free courses, not Yale-run)
+  openai_academy:    { url: "https://academy.openai.com/", title: "OpenAI Academy", why: "Free courses on using AI well. AI Foundations is a good first step.", ext: true },
+  anthropic_courses: { url: "https://anthropic.skilljar.com/", title: "Anthropic Courses", why: "Free courses on working with Claude and AI, with tracks for educators and students.", ext: true },
+  grow_google:       { url: "https://grow.google/", title: "Grow with Google", why: "Free Google training, including AI Essentials and AI for Students and Educators.", ext: true }
+};
+
+/* ---------------------------------------------------------------------------
+   Tool data-classification facts (from Yale's tools page, June 2026).
+--------------------------------------------------------------------------- */
+const CLEARED = {
+  high: [
+    { k: "clarity",     level: "high", note: "secure Yale infrastructure; some exceptions such as ePHI" },
+    { k: "copilotchat", level: "high", note: "use the Work tab for High data" },
+    { k: "m365copilot", level: "high", note: "paid license; works inside Office apps" },
+    { k: "zoom",        level: "high", note: "for meeting content" }
+  ],
+  moderate: [
+    { k: "gemini",      level: "moderate", note: "drafting, summarizing, NotebookLM" },
+    { k: "copilotchat", level: "moderate", note: "Web tab is Moderate; Work tab handles High" },
+    { k: "ghcopilot",   level: "moderate", note: "for code" }
+  ],
+  low: [
+    { k: "clarity",     level: "high", note: "a good default inside Yale" },
+    { k: "copilotchat", level: "moderate", note: "free, general use" },
+    { k: "gemini",      level: "moderate", note: "drafting and source-grounded reading" },
+    { k: "consensus",   level: "low", note: "peer-reviewed literature search" }
+  ]
+};
+const LEVEL_LABEL = { low: "Low", moderate: "Moderate", high: "High" };
+
+/* ---------------------------------------------------------------------------
+   Plain task -> tool map. Tool capabilities are taken from Yale's tools page.
+   TOOL_MAX is the highest data level each tool is cleared for, used to filter
+   the task map to what is safe for the data the user chose.
+--------------------------------------------------------------------------- */
+const RANK = { low: 1, moderate: 2, high: 3 };
+const TOOL_MAX = {
+  clarity: "high", copilotchat: "high", m365copilot: "high", zoom: "high", powerbi: "high", teams: "high",
+  gemini: "moderate", ghcopilot: "moderate", consensus: "low"
+};
+const TASKS = [
+  { label: "Write an email, memo, or report", tools: ["copilotchat", "clarity", "gemini", "m365copilot"] },
+  { label: "Write inside Word, Outlook, or Teams", tools: ["m365copilot"] },
+  { label: "Summarize a long document or PDF", tools: ["clarity", "copilotchat", "gemini"] },
+  { label: "Read a fixed set of sources closely", tools: ["gemini"] },
+  { label: "Analyze numbers in a spreadsheet", tools: ["m365copilot", "clarity"] },
+  { label: "Build a dashboard from data", tools: ["powerbi"] },
+  { label: "Make a slide deck", tools: ["m365copilot", "clarity", "copilotchat", "gemini"] },
+  { label: "Create an image, flyer, or graphic", tools: ["copilotchat", "gemini"] },
+  { label: "Find research or sources with citations", tools: ["consensus"] },
+  { label: "Take meeting notes and summaries", tools: ["zoom", "teams"] },
+  { label: "Write or check code", tools: ["clarity", "ghcopilot"] },
+  { label: "Build a reusable assistant or automate a task", tools: ["clarity", "m365copilot"] }
+];
+
+/* Staff job-type starters. Plain one-line recommendations. */
+const JOBS = [
+  { label: "Administrative & office support", rec: "Copilot Chat for email and writing. Microsoft 365 Copilot if you work mostly in Outlook and Word." },
+  { label: "Finance & accounting", rec: "Microsoft 365 Copilot in Excel for analysis. Power BI Copilot for dashboards." },
+  { label: "Communications & marketing", rec: "Gemini or Copilot Chat for drafts and images." },
+  { label: "IT, technical & developer", rec: "GitHub Copilot in your code editor. Clarity for secure model access." },
+  { label: "Research administration", rec: "Clarity to summarize documents. Consensus if you work with published research." },
+  { label: "Data & reporting", rec: "Power BI Copilot for dashboards. Microsoft 365 Copilot in Excel." }
+];
+
+/* ---------------------------------------------------------------------------
+   Full, searchable tool inventory. Facts from Yale's AI tools page (June 2026).
+   Each tool links to its own page on ai.yale.edu (or its official Yale page).
+--------------------------------------------------------------------------- */
+const CATALOG = [
+  { name: "Clarity Platform", url: L.clarity.url, desc: "Yale's own secure chatbot. Write, summarize, analyze documents, check code, and build custom agents.", tags: ["Chat", "Writing", "Documents", "Coding", "Build & automate"], level: "High", cost: "Free" },
+  { name: "Copilot Chat", url: L.copilotchat.url, desc: "Secure Microsoft chatbot for writing, images, and questions about documents you upload.", tags: ["Chat", "Writing", "Images", "Documents"], level: "High (Work tab)", cost: "Free" },
+  { name: "Google Gemini & NotebookLM", url: L.gemini.url, desc: "Google's assistant for drafting and images. NotebookLM reads a fixed set of your documents.", tags: ["Chat", "Writing", "Images", "Research"], level: "Moderate", cost: "Free" },
+  { name: "Consensus", url: L.consensus.url, desc: "Search engine for peer-reviewed research, with citations.", tags: ["Research"], level: "Low", cost: "Free (trial)" },
+  { name: "Beacon AI", url: "https://yalesites.yale.edu/beaconai", desc: "Chatbot that answers questions from a YaleSites website's own pages.", tags: ["Websites"], level: "Low", cost: "Free" },
+  { name: "Zoom AI Companion", url: L.zoom.url, desc: "Meeting transcripts, summaries, and action items inside Zoom.", tags: ["Meetings"], level: "High", cost: "Free" },
+  { name: "Microsoft 365 Copilot", url: L.m365copilot.url, desc: "AI inside Word, Excel, PowerPoint, Outlook, and Teams.", tags: ["Writing", "Office", "Data & dashboards", "Slides", "Build & automate"], level: "High", cost: "$18/mo" },
+  { name: "Microsoft 365 Copilot Studio", url: L.tools.url, desc: "Build and share custom agents. Comes with a Microsoft 365 Copilot license.", tags: ["Build & automate"], level: "High", cost: "With M365 Copilot" },
+  { name: "Power BI Copilot", url: L.powerbi.url, desc: "Build dashboards and pull insights from data in Power BI.", tags: ["Data & dashboards"], level: "High", cost: "Fabric license" },
+  { name: "Teams Premium", url: "https://ai.yale.edu/yales-ai-tools-and-resources/teams-premium", desc: "AI meeting help before, during, and after Teams meetings.", tags: ["Meetings"], level: "High", cost: "$1.88/mo" },
+  { name: "GitHub Copilot", url: L.ghcopilot.url, desc: "AI coding help in VS Code and JetBrains.", tags: ["Coding"], level: "Moderate", cost: "$19/mo" },
+  { name: "Portkey", url: "https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform/api#portkey", desc: "Developer gateway to many AI models for building tools.", tags: ["Developer & API"], level: "High", cost: "Usage" },
+  { name: "Azure AI", url: "https://ai.yale.edu/yales-ai-tools-and-resources/azure-ai", desc: "Microsoft cloud models for building applications.", tags: ["Developer & API"], level: "Review required", cost: "Usage" },
+  { name: "AWS Bedrock", url: "https://ai.yale.edu/yales-ai-tools-and-resources/aws-bedrock", desc: "Amazon cloud models for building applications.", tags: ["Developer & API"], level: "Review required", cost: "Usage" },
+  { name: "ChatGPT (OpenAI)", url: "https://chatgpt.com/", desc: "Popular general AI chatbot from OpenAI. Widely used, including on personal accounts.", tags: ["Chat", "Writing", "Images", "Coding", "Documents", "Not Yale-managed"], level: "Not Yale-managed", cost: "Free / paid", warn: "Not a Yale-managed tool. For the same OpenAI models with Yale's protection, use Clarity or Copilot Chat, and keep sensitive Yale data out of personal accounts." },
+  { name: "ChatGPT Business (formerly Team)", url: "https://openai.com/business/chatgpt-pricing/", desc: "OpenAI's team workspace plan that some departments buy on their own. About $20 to $25 per user per month.", tags: ["Chat", "Writing", "Coding", "Not Yale-managed"], level: "Not Yale-managed", cost: "~$20-25/mo", warn: "Not institutionally sanctioned and not cleared for sensitive Yale data. Yale's managed path to OpenAI models is Clarity." }
+];
+const CATEGORIES = ["Chat", "Writing", "Documents", "Images", "Research", "Data & dashboards", "Slides", "Meetings", "Coding", "Build & automate", "Office", "Websites", "Developer & API", "Not Yale-managed"];
+let invQuery = "";
+let invTag = "All";
+
+/* ---------------------------------------------------------------------------
+   Flow: role -> goal -> (optional data gate) -> result
+--------------------------------------------------------------------------- */
+const ROLES = [
+  { key: "student",    label: "Student",                 sub: "Undergraduate, graduate, or professional student." },
+  { key: "instructor", label: "Instructor or faculty",   sub: "Teaching a course this term or planning one." },
+  { key: "researcher", label: "Researcher or scholar",   sub: "Literature, analysis, models, or scholarly writing." },
+  { key: "staff",      label: "Staff or administrator",  sub: "Administrative, operational, or service work." },
+  { key: "explore",    label: "Just exploring",          sub: "Not sure yet. Show me the landscape." }
+];
+
+// goal sets per role. result is a builder key; gate:true sends through the data step first.
+const GOALS = {
+  student: [
+    { key: "find",   label: "Find an AI tool I can use",          sub: "What is available to me and what is it safe for.", gate: true },
+    { key: "course", label: "Know what's allowed in my courses",  sub: "Course policies and learning with AI." },
+    { key: "rsch",   label: "Use AI for research or writing",     sub: "Finding sources, drafting, checking work." },
+    { key: "cite",   label: "Cite or document AI use",            sub: "How to report that you used AI." },
+    { key: "basics", label: "Learn the basics",                   sub: "Terms, techniques, and short courses." }
+  ],
+  instructor: [
+    { key: "policy", label: "Set an AI policy for my course",     sub: "What to allow, and how to say it." },
+    { key: "assess", label: "Design AI-resilient assessments",    sub: "Grading and assignments less easily shortcut." },
+    { key: "teachtool", label: "Find a tool to use in teaching",  sub: "What is available, and student-data limits.", gate: true },
+    { key: "helpstu", label: "Help students use AI well",         sub: "Point students to the right guidance." },
+    { key: "rules",  label: "Understand the university rules",    sub: "Generative AI guidance and privacy." }
+  ],
+  researcher: [
+    { key: "find",   label: "Find the right tool for a task",   sub: "Match a tool to writing, analysis, coding, and more.", gate: true },
+    { key: "lit",    label: "Find literature or run a review",    sub: "Peer-reviewed sources with citations." },
+    { key: "compute",label: "Run models or need GPUs",            sub: "Open models, HPC clusters, large jobs." },
+    { key: "secure", label: "Use closed models or an API securely", sub: "Claude and others, with data protected." },
+    { key: "citers", label: "Cite or document AI in scholarship", sub: "Reporting and citation expectations." },
+    { key: "build",  label: "Build an app or integration",        sub: "Develop on cloud AI models, get it reviewed." },
+    { key: "licensed", label: "Use AI with licensed library content", sub: "What the database licenses allow." }
+  ],
+  staff: [
+    { key: "find",   label: "Find an AI tool for my work",        sub: "What is available and what it is safe for.", gate: true },
+    { key: "datarules", label: "Know the data rules",             sub: "What data can go into which tool." },
+    { key: "agent",  label: "Build a custom agent or automate",   sub: "Reusable assistants and workflows." },
+    { key: "pd",     label: "Professional development",           sub: "Build AI skills for your role." },
+    { key: "appreview", label: "Get an AI tool or use reviewed",  sub: "Selection framework and data review." }
+  ],
+  explore: [
+    { key: "landscape", label: "Show me the whole landscape",     sub: "Hubs, tools, and guidance in one place." },
+    { key: "find",   label: "Find a tool to try",                 sub: "What is available and what it is safe for.", gate: true },
+    { key: "basics", label: "Learn the basics first",             sub: "Terms, techniques, short courses." }
+  ]
+};
+
+/* ---------------------------------------------------------------------------
+   Quick-question shortcuts (derived from Yale's guidance taxonomy)
+   Each jumps straight to a built result.
+--------------------------------------------------------------------------- */
+const QUICK = [
+  { label: "What free AI tools does Yale give me?", role: "explore", goals: ["find"], data: "low" },
+  { label: "Can I put student records (FERPA) in AI?", role: "staff", goals: ["find"], data: "high" },
+  { label: "Working with health or patient data?", role: "researcher", goals: ["find"], data: "high" },
+  { label: "Can I use AI in my course?", role: "instructor", goals: ["policy"] },
+  { label: "How do I cite AI?", role: "researcher", goals: ["citers"] },
+  { label: "I need GPUs to run a model", role: "researcher", goals: ["compute"] },
+  { label: "Where can I learn AI?", role: "explore", goals: ["basics"] }
+];
+
+const DATA_OPTS = [
+  { key: "low",      label: "Public or low-risk only",  sub: "General, non-sensitive information." },
+  { key: "moderate", label: "Internal, not identifying",sub: "Internal work that is not personal or regulated." },
+  { key: "high",     label: "Sensitive or regulated",   sub: "Student records (FERPA), health (PHI), HR, financial, or controlled research." },
+  { key: "unsure",   label: "I'm not sure",             sub: "Help me figure out the classification first." }
+];
+
+/* ---------------------------------------------------------------------------
+   Result builders. Return: { theme, kicker, title, primary, also[], gov[],
+   dataNote?, toolLevel? }
+   primary/also/gov entries are keys into L (or inline objects).
+--------------------------------------------------------------------------- */
+function resFind(data) {
+  let out;
+  if (data === "high") {
+    out = {
+      theme: "high", kicker: "Sensitive data", title: "For sensitive data, use these tools only",
+      lead: "Student records, health, HR, finances, or controlled research can go only into tools cleared for high-risk data.",
+      toolLevel: "high",
+      primary: "clarity",
+      also: ["healthtk", "tools"],
+      gov: ["dataclass", "privacy", "staffdata"],
+      dataNote: { kind: "high", html: "<b>Do not use Gemini, NotebookLM, Consensus, or the Copilot Chat Web tab for this.</b> They are not cleared for sensitive data. For health data or ePHI, start with the Health Sciences AI Toolkit." }
+    };
+  } else if (data === "moderate") {
+    out = {
+      theme: "navy", kicker: "Internal data", title: "Good options for internal work",
+      lead: "For internal work that is not personal or regulated, the tools below all fit, free.",
+      toolLevel: "moderate",
+      primary: "clarity",
+      also: ["tools"],
+      gov: ["dataclass", "privacy"],
+      dataNote: null
+    };
+  } else if (data === "unsure") {
+    out = {
+      theme: "navy", kicker: "Check first", title: "Let's sort out your data first",
+      lead: "The safe tool depends on what you put in. Check the classification, then come back. When unsure, stay inside Yale's own tool.",
+      toolLevel: "unsure",
+      primary: "dataclass",
+      also: ["clarity", "tools", "privacy"],
+      gov: ["staffdata", "genaipolicy"],
+      dataNote: { kind: "info", html: "Safe default while you check: <a href='" + L.clarity.url + "' target='_blank' rel='noopener'>Clarity</a> runs inside Yale and is cleared for high-risk data, except ePHI." }
+    };
+  } else {
+    out = {
+      theme: "teal", kicker: "Low-risk data", title: "Any Yale tool works. Pick by the task",
+      lead: "For public or low-risk material, choose the tool that matches what you are doing.",
+      toolLevel: "low",
+      primary: "clarity",
+      also: ["tools"],
+      gov: ["dataclass", "genaipolicy"],
+      dataNote: null
+    };
+  }
+  if (state.roles.has("student") && !out.also.includes("studenttk")) out.also.push("studenttk");
+  return out;
+}
+
+const BUILD = {
+  // STUDENT
+  "student/course": () => ({
+    theme: "navy", kicker: "Students", title: "Follow your course policy first, then the Poorvu guidance",
+    lead: "Whether AI is allowed depends on each course. Your instructor's syllabus is the rule. The Poorvu Center explains how to learn with AI within those policies.",
+    primary: "students", also: ["studenttk", "principles"], gov: ["genaipolicy"]
+  }),
+  "student/rsch": () => ({
+    theme: "teal", kicker: "Students", title: "Use Library tools for sources, and verify everything",
+    lead: "AI is not a research database. Use it to get oriented, then confirm sources in the Library's licensed databases.",
+    primary: "consensus", also: ["libresearch", "libguide", "gaioutput"], gov: ["dataclass"]
+  }),
+  "student/cite": () => ({
+    theme: "navy", kicker: "Students", title: "Document AI use as part of normal citation",
+    lead: "Institutions, funders, and publishers increasingly expect you to report AI use. The Library guide shows how.",
+    primary: "gaioutput", also: ["libguide", "students"], gov: []
+  }),
+  "student/basics": () => ({
+    theme: "navy", kicker: "Students", title: "Start with the basics, then the Student Toolkit",
+    lead: "Short videos and key terms first, then a starting point built for students.",
+    primary: "learn", also: ["studenttk", "hub", "anthropic_courses", "openai_academy", "grow_google"], gov: []
+  }),
+
+  // INSTRUCTOR
+  "instructor/policy": () => ({
+    theme: "navy", kicker: "Teaching", title: "Set your policy with the Poorvu guidance and Guiding Principles",
+    lead: "There is no single Yale rule. You decide your course policy, supported by the Poorvu Center's guidance and the university's Guiding Principles.",
+    primary: "teachers", also: ["principles", "provostres"], gov: ["genaipolicy"]
+  }),
+  "instructor/assess": () => ({
+    theme: "teal", kicker: "Teaching", title: "Use the AI-resilient assessment resources",
+    lead: "The Provost's collection includes assessment resources designed to be less easily shortcut by AI, developed with the Poorvu Center.",
+    primary: "provostres", also: ["teachers", "principles"], gov: []
+  }),
+  "instructor/helpstu": () => ({
+    theme: "navy", kicker: "Teaching", title: "Point students to the Poorvu student guidance",
+    lead: "Send students to guidance written for them, plus the Student Toolkit.",
+    primary: "students", also: ["studenttk", "principles"], gov: []
+  }),
+  "instructor/rules": () => ({
+    theme: "navy", kicker: "Teaching", title: "The university guidance and privacy rules",
+    lead: "The Provost's generative AI guidance applies across Yale. Privacy guidance covers notetaking and transcription tools used in class.",
+    primary: "genaipolicy", also: ["guidance", "privacy"], gov: ["dataclass"]
+  }),
+
+  // RESEARCHER
+  "researcher/lit": () => ({
+    theme: "teal", kicker: "Research", title: "Start with Consensus and the Library research support",
+    lead: "Consensus searches peer-reviewed literature with citations. The Library helps you evaluate outputs and integrate AI into your method.",
+    primary: "consensus", also: ["libresearch", "gaitools", "researchmap"], gov: ["dataclass"]
+  }),
+  "researcher/compute": () => ({
+    theme: "navy", kicker: "Research", title: "Run models on Yale's clusters through Research Computing",
+    lead: "YCRC documents supported workflows for open-source models on the HPC clusters, from placement to GPUs.",
+    primary: "ycrc", also: ["ycrcres", "ycrcollama", "ycrcnairr"], gov: ["dataclass"]
+  }),
+  "researcher/secure": () => ({
+    theme: "high", kicker: "Research", title: "Reach closed models securely through Clarity",
+    lead: "For Claude and other closed models with data protected, use Yale-managed access rather than a personal account.",
+    primary: "ycrcclarity", also: ["clarity", "claritysec"], gov: ["dataclass", "privacy"]
+  }),
+  "researcher/citers": () => ({
+    theme: "navy", kicker: "Research", title: "Document and cite AI use in your scholarship",
+    lead: "The Library's research guide covers reporting and citation expectations for AI.",
+    primary: "gaioutput", also: ["libguide", "libresearch"], gov: []
+  }),
+  "researcher/build": () => ({
+    theme: "high", kicker: "Research", title: "Take a build through the AI request review process",
+    lead: "Developing on cloud AI models, such as Azure AI or AWS Bedrock, requires a data review and a security assessment per application.",
+    primary: "aireview", also: ["spa", "ycrccoding", "reviewfw"], gov: ["dataclass"]
+  }),
+  "researcher/licensed": () => ({
+    theme: "navy", kicker: "Research", title: "Check the license before using AI with library databases",
+    lead: "Licensed databases generally may not be used with AI. The policy and your subject specialist can confirm for a specific resource.",
+    primary: "eresources", also: ["libguide", "libresearch"], gov: []
+  }),
+
+  // STAFF
+  "staff/datarules": () => ({
+    theme: "navy", kicker: "Staff", title: "Start with the staff data governance guidance",
+    lead: "This explains what data can go into which tool, and how to protect data and intellectual property.",
+    primary: "staffdata", also: ["dataclass", "privacy"], gov: ["genaipolicy"]
+  }),
+  "staff/agent": () => ({
+    theme: "teal", kicker: "Staff", title: "Build a custom agent in Clarity",
+    lead: "Clarity offers a self-service portal for building and deploying custom agents inside Yale's infrastructure. Microsoft 365 Copilot Studio is an option if you hold that license.",
+    primary: "clarity", also: ["m365copilot", "tools"], gov: ["dataclass", "staffdata"]
+  }),
+  "staff/pd": () => ({
+    theme: "navy", kicker: "Staff", title: "Build AI skills with the professional development resources",
+    lead: "A practical starting point, plus a short IT Foundations course on Workday.",
+    primary: "profdev", also: ["itfoundations", "learn", "copractice", "openai_academy", "anthropic_courses", "grow_google"], gov: []
+  }),
+  "staff/appreview": () => ({
+    theme: "navy", kicker: "Staff", title: "Use the AI Review Framework, then the request review",
+    lead: "The framework guides how to select an AI system. The request review process handles the data side.",
+    primary: "reviewfw", also: ["aireview", "spa"], gov: ["dataclass"]
+  }),
+
+  // EXPLORE
+  "explore/landscape": () => ({
+    theme: "navy", kicker: "Orientation", title: "The Yale AI landscape in three doors",
+    lead: "Tools, guidance, and the people side. Start at whichever matches your question.",
+    primary: "hub", also: ["tools", "guidance", "copractice"], gov: ["genaipolicy", "dataclass"]
+  }),
+  "explore/basics": () => ({
+    theme: "navy", kicker: "Orientation", title: "Learn the basics first",
+    lead: "Short videos, key terms, and a starting course. Free outside courses are listed too.",
+    primary: "learn", also: ["hub", "itfoundations", "openai_academy", "anthropic_courses", "grow_google"], gov: []
+  })
+};
+
+/* ---------------------------------------------------------------------------
+   State + rendering
+--------------------------------------------------------------------------- */
+let state = { view: "role", roles: new Set(), goals: new Set(), data: null };
+const stageEl = document.getElementById("stage");
+
+function linkAnchor(item) {
+  const o = typeof item === "string" ? L[item] : item;
+  if (!o) return "";
+  const badge = o.netid ? " <span style='font-size:11px;color:var(--muted);font-weight:600;'>(NetID)</span>" : "";
+  const extb = o.ext ? " <span class='extbadge'>external</span>" : "";
+  return `<a class="reslink" href="${o.url}" target="_blank" rel="noopener">${o.title} <span class="ext">&#8599;</span></a>${badge}${extb}`;
+}
+
+function roleLabel(k) { const r = ROLES.find(x => x.key === k); return r ? r.label : ""; }
+function selectedRoleLabels() { return ROLES.filter(r => state.roles.has(r.key)).map(r => r.label); }
+function mergedGoals() {
+  const seen = new Set(); const out = [];
+  ROLES.forEach(r => { if (state.roles.has(r.key)) (GOALS[r.key] || []).forEach(g => { if (!seen.has(g.key)) { seen.add(g.key); out.push(g); } }); });
+  return out;
+}
+function goalOwner(k) {
+  for (const r of ROLES) { if (state.roles.has(r.key) && (GOALS[r.key] || []).some(g => g.key === k)) return r.key; }
+  return [...state.roles][0] || "explore";
+}
+function goalLabel(k) { const g = mergedGoals().find(x => x.key === k); return g ? g.label : ""; }
+function selectedGoals() { return [...state.goals]; }
+function selectedGoalLabels() { return selectedGoals().map(goalLabel).filter(Boolean); }
+function anyGate() {
+  const goals = mergedGoals();
+  return selectedGoals().some(k => { const g = goals.find(x => x.key === k); return g && g.gate; });
+}
+
+function steps(active) {
+  const order = ["role", "goal", "result"];
+  const idx = { role: 0, goal: 1, data: 1, result: 2 }[active];
+  const labels = ["Your role", "What you need", "Your resources"];
+  return `<div class="progress">` + labels.map((lab, i) => {
+    const cls = i < idx ? "done" : (i === idx ? "cur" : "");
+    const mark = i < idx ? "&#10003; " : "";
+    return `<span class="pstep ${cls}">${mark}${lab}</span>`;
+  }).join(`<span class="pline"></span>`) + `</div>`;
+}
+
+function continueLabel() {
+  if (!state.goals.size) return "Pick at least one to continue";
+  const n = state.goals.size;
+  return anyGate() ? `Next: data question (${n} selected) &rarr;` : `See my resources (${n} selected) &rarr;`;
+}
+
+function updatePicked() {
+  const wrap = document.getElementById("pickedwrap");
+  if (!wrap) return;
+  const labels = selectedGoalLabels();
+  wrap.innerHTML = labels.length
+    ? `<span class="pickedlabel">Selected:</span>` + labels.map(l => `<span class="pchip">${l}</span>`).join("")
+    : "";
+}
+
+function syncGoalUI() {
+  mergedGoals().forEach(g => {
+    const b = stageEl.querySelector(`[data-goal="${g.key}"]`);
+    if (!b) return;
+    const on = state.goals.has(g.key);
+    b.setAttribute("aria-checked", on);
+    const cb = b.querySelector(".cbox");
+    if (cb) cb.innerHTML = on ? "&#10003;" : "";
+  });
+  updatePicked();
+  const cont = document.getElementById("contBtn");
+  if (cont) {
+    cont.innerHTML = continueLabel();
+    if (state.goals.size) cont.removeAttribute("disabled"); else cont.setAttribute("disabled", "");
+  }
+}
+
+function roleContinueLabel() {
+  if (!state.roles.size) return "Pick at least one to continue";
+  return `Continue (${state.roles.size} selected) &rarr;`;
+}
+
+function updateRPicked() {
+  const wrap = document.getElementById("rpicked");
+  if (!wrap) return;
+  const labels = selectedRoleLabels();
+  wrap.innerHTML = labels.length
+    ? `<span class="pickedlabel">You are:</span>` + labels.map(l => `<span class="pchip">${l}</span>`).join("")
+    : "";
+}
+
+function syncRoleUI() {
+  ROLES.forEach(r => {
+    const b = stageEl.querySelector(`[data-role="${r.key}"]`);
+    if (!b) return;
+    const on = state.roles.has(r.key);
+    b.setAttribute("aria-checked", on);
+    const cb = b.querySelector(".cbox");
+    if (cb) cb.innerHTML = on ? "&#10003;" : "";
+  });
+  updateRPicked();
+  const cont = document.getElementById("rcontBtn");
+  if (cont) {
+    cont.innerHTML = roleContinueLabel();
+    if (state.roles.size) cont.removeAttribute("disabled"); else cont.setAttribute("disabled", "");
+  }
+}
+
+function roleContinue() {
+  if (!state.roles.size) return;
+  const valid = new Set(mergedGoals().map(g => g.key));
+  state.goals = new Set([...state.goals].filter(k => valid.has(k)));
+  state.view = "goal";
+  render();
+}
+
+function renderRole() {
+  let html = steps("role") + `<div class="pickhead"><span class="pickbadge">Pick one or more</span></div>
+    <div class="q-title">Who are you?</div>
+    <div class="q-prompt">Select all that apply. Faculty who also do research can pick both. This tailors the use cases on the next screen.</div>
+    <div class="options multi">`;
+  ROLES.forEach((r) => {
+    const on = state.roles.has(r.key);
+    html += `<button class="opt multiopt" role="checkbox" aria-checked="${on}" data-role="${r.key}">
+      <span class="cbox">${on ? "&#10003;" : ""}</span>
+      <span class="otext"><span class="ol">${r.label}</span><span class="os">${r.sub}</span></span>
+    </button>`;
+  });
+  html += `</div>`;
+  html += `<div class="pickedwrap" id="rpicked"></div>`;
+  html += `<div class="selbar">
+      <span class="spacer"></span>
+      <button class="btn primary" id="rcontBtn" ${state.roles.size ? "" : "disabled"}>${roleContinueLabel()}</button>
+    </div>`;
+  html += `<div class="quick"><div class="quick-label">Or jump to a common question</div><div class="chips">`;
+  QUICK.forEach((q, i) => { html += `<button class="chip" data-quick="${i}">${q.label}</button>`; });
+  html += `</div>`;
+  html += `<div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;">
+    <button class="btn" data-nav="inventory">Browse all tools (searchable) &rarr;</button>
+    <button class="btn" data-nav="chatgpt">Using ChatGPT? Read this</button>
+  </div>`;
+  html += `</div>`;
+  stageEl.innerHTML = html;
+  stageEl.classList.remove("fade"); void stageEl.offsetWidth; stageEl.classList.add("fade");
+  stageEl.querySelectorAll("[data-role]").forEach(b => b.addEventListener("click", () => {
+    const k = b.dataset.role;
+    if (state.roles.has(k)) state.roles.delete(k); else state.roles.add(k);
+    syncRoleUI();
+  }));
+  const cont = document.getElementById("rcontBtn");
+  if (cont) cont.addEventListener("click", roleContinue);
+  stageEl.querySelectorAll("[data-quick]").forEach(b => b.addEventListener("click", () => {
+    const q = QUICK[parseInt(b.dataset.quick, 10)];
+    state.roles = new Set([q.role]); state.goals = new Set(q.goals); state.data = q.data || null; state.view = "result"; render();
+  }));
+  updateRPicked();
+  bindNavLinks();
+}
+
+function renderGoal() {
+  const goals = mergedGoals();
+  let html = steps("goal") + `<div class="crumb"><b>${selectedRoleLabels().join(", ")}</b></div>
+    <div class="pickhead"><span class="pickbadge">Pick more than one</span></div>
+    <div class="q-title">What do you need help with?</div>
+    <div class="q-prompt">Select every use case that applies. The tool combines your choices into one set of resources, so there is no need to start over for each question.</div>
+    <div class="options multi ${goals.length > 4 ? "" : "single"}">`;
+  goals.forEach((g) => {
+    const on = state.goals.has(g.key);
+    html += `<button class="opt multiopt" role="checkbox" aria-checked="${on}" data-goal="${g.key}">
+      <span class="cbox">${on ? "&#10003;" : ""}</span>
+      <span class="otext"><span class="ol">${g.label}</span><span class="os">${g.sub}</span></span>
+    </button>`;
+  });
+  html += `</div>`;
+  html += `<div class="pickedwrap" id="pickedwrap"></div>`;
+  html += `<div class="selbar">
+      <button class="btn" id="backBtn">&larr; Back</button>
+      <button class="btn" id="overBtn">Start over</button>
+      <span class="spacer"></span>
+      <button class="btn primary" id="contBtn" ${state.goals.size ? "" : "disabled"}>${continueLabel()}</button>
+    </div>`;
+  html += `<div class="hint">Tip: tap as many as you need. Keyboard: <b>1</b>&ndash;<b>9</b> to toggle, <b>Enter</b> to continue.</div>`;
+  stageEl.innerHTML = html;
+  stageEl.classList.remove("fade"); void stageEl.offsetWidth; stageEl.classList.add("fade");
+
+  stageEl.querySelectorAll("[data-goal]").forEach(b => b.addEventListener("click", () => {
+    const k = b.dataset.goal;
+    if (state.goals.has(k)) state.goals.delete(k); else state.goals.add(k);
+    syncGoalUI();
+  }));
+  const cont = document.getElementById("contBtn");
+  if (cont) cont.addEventListener("click", goalContinue);
+  updatePicked();
+  bindNav();
+}
+
+function renderChatGPT() {
+  let html = `<div class="q-title">Using ChatGPT at Yale</div>
+    <div class="q-prompt">Many teams use ChatGPT. It is not a Yale-managed tool, so a few simple steps keep your work and Yale's data safe.</div>`;
+
+  html += `<div class="blk-label">Safest path: the same models, with Yale's protection</div>`;
+  html += `<div class="primary"><div class="pt">Use Clarity or Copilot Chat instead</div><div class="pw">Both run under Yale agreements and reach OpenAI's models, so you get ChatGPT-style help without sending Yale data outside. Clarity also reaches Claude and Gemini, and is free.</div>${linkAnchor("clarity")}<div style="margin-top:7px;">${linkAnchor("copilotchat")}</div></div>`;
+
+  html += `<div class="blk-label">If you use ChatGPT anyway</div>`;
+  html += `<ul class="linklist">
+    <li><b>Keep sensitive data out.</b> No student records (FERPA), health or PHI, HR, financial, or controlled research data.<span class="lw">${linkAnchor("dataclass")}</span></li>
+    <li><b>Treat it like the open internet.</b> Do not paste anything you would not email to someone outside Yale.</li>
+    <li><b>Turn off training on a personal account.</b> In ChatGPT settings, turn off improving the model with your chats. Free and Plus accounts may keep or train on your data. ChatGPT Business and Enterprise do not train on workspace data, but they are still not under a Yale agreement unless your unit has contracted controls.</li>
+    <li><b>Check Yale's rules.</b><span class="lw">${linkAnchor("genaipolicy")}</span><span class="lw">${linkAnchor("privacy")}</span></li>
+  </ul>`;
+
+  html += `<div class="blk-label">Thinking of buying ChatGPT Business for your team?</div>`;
+  html += `<div class="gov"><div class="gov-head">Run it through review first</div><ul>
+    <li>It is a self-serve plan, about $20 to $25 per user per month, and is not institutionally sanctioned or cleared for sensitive data.</li>
+    <li>${linkAnchor("reviewfw")}</li>
+    <li>${linkAnchor("aireview")}</li>
+  </ul></div>`;
+  html += `<div class="catchall">Clarity already gives your team OpenAI, Anthropic, and Google models inside Yale at no cost. Weigh that before buying another subscription.</div>`;
+
+  html += `<div class="selbar"><button class="btn" id="backBtn">&larr; Back</button><button class="btn" id="overBtn">Start over</button></div>`;
+  stageEl.innerHTML = html;
+  stageEl.classList.remove("fade"); void stageEl.offsetWidth; stageEl.classList.add("fade");
+  bindNav();
+}
+
+function renderInventory() {
+  let html = `<div class="q-title">All Yale AI tools</div>
+    <div class="q-prompt">Search by name or by what you want to do, or filter by category. Each tool links to its page on Yale's AI site.</div>
+    <input id="invsearch" class="invsearch" type="text" placeholder="Search, for example: images, code, meetings, write" value="${invQuery.replace(/"/g, "&quot;")}">
+    <div class="tagfilter" id="tagfilter">${tagChips()}</div>
+    <div id="invlist">${invListHtml()}</div>`;
+  html += `<div class="selbar"><button class="btn" id="backBtn">&larr; Back</button><button class="btn" id="overBtn">Start over</button></div>`;
+  stageEl.innerHTML = html;
+  stageEl.classList.remove("fade"); void stageEl.offsetWidth; stageEl.classList.add("fade");
+
+  const s = document.getElementById("invsearch");
+  s.addEventListener("input", () => { invQuery = s.value; document.getElementById("invlist").innerHTML = invListHtml(); });
+  stageEl.querySelectorAll("[data-tag]").forEach(b => b.addEventListener("click", () => { invTag = b.dataset.tag; renderInventory(); }));
+  bindNav();
+}
+
+function goalContinue() {
+  if (!state.goals.size) return;
+  state.view = anyGate() ? "data" : "result";
+  render();
+}
+
+function renderData() {
+  let html = steps("data") + `<div class="crumb"><b>${selectedRoleLabels().join(", ")}</b> &rsaquo; ${selectedGoalLabels().join(", ")}</div>
+    <div class="q-title">One more question: what data will you put in?</div>
+    <div class="q-prompt">Choose the most sensitive type of information you expect to use. This sets which tools are safe. When in doubt, pick the more sensitive option. Choose one to see your resources.</div>
+    <div class="options single">`;
+  DATA_OPTS.forEach((d, i) => {
+    html += `<button class="opt" data-data="${d.key}">
+      <span class="box">${i + 1}</span>
+      <span class="otext"><span class="ol">${d.label}</span><span class="os">${d.sub}</span></span>
+      <span class="arrow">&#8594;</span></button>`;
+  });
+  html += `</div>`;
+  html += controls(false);
+  stageEl.innerHTML = html;
+  stageEl.classList.remove("fade"); void stageEl.offsetWidth; stageEl.classList.add("fade");
+  stageEl.querySelectorAll("[data-data]").forEach(b => b.addEventListener("click", () => { state.data = b.dataset.data; state.view = "result"; render(); }));
+  bindNav();
+}
+
+function getResultForGoal(g) {
+  if (g === "find" || g === "teachtool") return resFind(state.data || "low");
+  const key = goalOwner(g) + "/" + g;
+  if (BUILD[key]) return BUILD[key]();
+  return {
+    theme: "navy", kicker: "Start here", title: "Yale's AI hub",
+    lead: "Begin at the main hub and follow the door that matches your question.",
+    primary: "hub", also: ["tools", "guidance"], gov: ["genaipolicy"]
+  };
+}
+
+function synthesize() {
+  const goals = selectedGoals();
+  const results = goals.map(getResultForGoal);
+  const hasFind = goals.some(g => g === "find" || g === "teachtool");
+  const toolLevel = hasFind ? (state.data || "low") : null;
+
+  const seen = new Set();
+  const primaries = [];
+  results.forEach(r => { if (r.primary && !seen.has(r.primary)) { seen.add(r.primary); primaries.push(r.primary); } });
+  const govSeen = new Set();
+  const govs = [];
+  results.forEach(r => (r.gov || []).forEach(k => { if (!govSeen.has(k)) { govSeen.add(k); govs.push(k); } }));
+  const alsos = [];
+  results.forEach(r => (r.also || []).forEach(k => { if (!seen.has(k) && !govSeen.has(k)) { seen.add(k); alsos.push(k); } }));
+  let dataNote = null;
+  results.forEach(r => { if (r.dataNote && !dataNote) dataNote = r.dataNote; });
+
+  const single = goals.length === 1;
+  let theme, kicker, title, lead;
+  if (single) {
+    theme = results[0].theme; kicker = results[0].kicker; title = results[0].title; lead = results[0].lead;
+  } else {
+    theme = (toolLevel === "high") ? "high" : "navy";
+    kicker = selectedRoleLabels().join(" + ");
+    title = "Here's where to start";
+    lead = "Based on everything you picked. Work down the list from the top.";
+  }
+  return { theme, kicker, title, lead, primaries, alsos, govs, toolLevel, dataNote, single };
+}
+
+function taskMap(level) {
+  const rows = TASKS.map(t => {
+    const tools = t.tools.filter(k => RANK[TOOL_MAX[k] || "low"] >= RANK[level]);
+    if (!tools.length) return "";
+    const chips = tools.map((k, i) => `<a class="toolchip ${i === 0 ? "best" : ""}" href="${L[k].url}" target="_blank" rel="noopener">${L[k].title}</a>`).join("");
+    return `<div class="task"><div class="tk-label">${t.label}</div><div class="tk-tools">${chips}</div></div>`;
+  }).filter(Boolean).join("");
+  return `<div class="taskmap">${rows}</div>`;
+}
+
+function jobsList() {
+  return `<ul class="jobs">` + JOBS.map(j => `<li><b>${j.label}</b>${j.rec}</li>`).join("") + `</ul>`;
+}
+
+function tagChips() {
+  return ["All"].concat(CATEGORIES).map(t => `<button class="tagchip ${t === invTag ? "active" : ""}" data-tag="${t}">${t}</button>`).join("");
+}
+
+function invListHtml() {
+  const q = invQuery.trim().toLowerCase();
+  const items = CATALOG.filter(t => {
+    const tagOk = invTag === "All" || t.tags.includes(invTag);
+    const text = (t.name + " " + t.desc + " " + t.tags.join(" ")).toLowerCase();
+    return tagOk && (!q || text.includes(q));
+  });
+  if (!items.length) return `<div class="catchall">No tools match. Try a different word or category.</div>`;
+  return `<div class="invcount">${items.length} tool${items.length > 1 ? "s" : ""}</div>` + items.map(t => `
+    <div class="invcard">
+      <div class="inv-top"><a class="inv-name" href="${t.url}" target="_blank" rel="noopener">${t.name} <span class="ext">&#8599;</span></a><span class="inv-meta ${t.warn ? "warnmeta" : ""}">${t.level} &middot; ${t.cost}</span></div>
+      <div class="inv-desc">${t.desc}</div>
+      ${t.warn ? `<div class="invwarn">${t.warn}</div>` : ""}
+      <div class="inv-tags">${t.tags.map(tg => `<span class="minitag">${tg}</span>`).join("")}</div>
+    </div>`).join("");
+}
+
+function bindNavLinks() {
+  stageEl.querySelectorAll("[data-nav]").forEach(b => b.addEventListener("click", () => { state.view = b.dataset.nav; render(); }));
+}
+
+function renderResult() {
+  const r = synthesize();
+  const hasMap = r.toolLevel && RANK[r.toolLevel];
+  let crumb = `<b>${selectedRoleLabels().join(", ")}</b> &rsaquo; ${selectedGoalLabels().join(", ")}`;
+  if (state.data) crumb += ` &rsaquo; ${DATA_OPTS.find(d => d.key === state.data)?.label || ""}`;
+
+  let html = steps("result");
+  html += `<div class="crumb">${crumb}</div>`;
+  html += `<div class="verdict-head ${r.theme}"><div class="verdict-kicker">${r.kicker}</div><div class="verdict-title">${r.title}</div></div>`;
+  if (r.lead) html += `<p style="font-size:15px;color:var(--ink);margin-bottom:4px;">${r.lead}</p>`;
+
+  // Start here (limit to the top few so it stays scannable)
+  html += `<div class="blk-label">Start here</div>`;
+  r.primaries.slice(0, 3).forEach((k, idx) => {
+    const p = L[k]; if (!p) return;
+    html += `<div class="primary" style="${idx > 0 ? "margin-top:10px;" : ""}"><div class="pt">${p.title}</div><div class="pw">${p.why || ""}</div>${linkAnchor(k)}</div>`;
+  });
+
+  // Good tool for each task
+  if (hasMap) {
+    html += `<div class="blk-label">Good tool for each task</div>`;
+    html += `<div class="legend"><span class="dot"></span>Most chat assistants can draft, summarize, and help with code. The highlighted tool is the simplest place to start. The others also work.</div>`;
+    html += taskMap(r.toolLevel);
+    html += `<div class="catchall"><b>Want one tool for most things?</b> Clarity is free and covers the widest range. Microsoft 365 Copilot does too if you work inside Office apps.</div>`;
+    html += `<div class="catchall"><b>What about ChatGPT?</b> Many departments use it, but it is not a Yale-managed tool. For the same OpenAI models with Yale's protection, use Clarity or Copilot Chat, and keep sensitive data out of personal ChatGPT or ChatGPT Business. <button class="linklike" data-nav="chatgpt">Read the ChatGPT guidance</button></div>`;
+    if (r.toolLevel === "high") {
+      html += `<div class="catchall">For anything not listed here, Clarity is the safe default. It runs inside Yale and is cleared for sensitive data, except ePHI.</div>`;
+    }
+    if (state.roles.has("staff")) {
+      html += `<div class="blk-label">By the kind of work you do</div>${jobsList()}`;
+    } else if (state.roles.has("researcher") || state.roles.has("instructor")) {
+      html += `<div class="catchall">The right tool depends on your task and your data, not your field.</div>`;
+    }
+  }
+
+  if (r.dataNote) {
+    html += `<div class="datanote ${r.dataNote.kind}" style="margin-top:14px;">${r.dataNote.html}</div>`;
+  }
+
+  if (r.alsos && r.alsos.length) {
+    html += `<div class="blk-label">More help</div><ul class="linklist">`;
+    r.alsos.forEach(k => { const o = L[k] || k; html += `<li>${linkAnchor(k)}<span class="lw">${o.why || ""}</span></li>`; });
+    html += `</ul>`;
+  }
+
+  if (r.govs && r.govs.length) {
+    html += `<div class="gov"><div class="gov-head">What's allowed</div><ul>`;
+    r.govs.forEach(k => { html += `<li>${linkAnchor(k)}</li>`; });
+    html += `</ul></div>`;
+  }
+
+  html += `<div class="datanote info" style="margin-top:16px;">Still stuck? Ask Yale's <a href="${L.hub.url}" target="_blank" rel="noopener">Ask this site</a> assistant, or <button class="linklike" data-nav="inventory">browse all tools</button>.</div>`;
+
+  html += controls(true);
+  stageEl.innerHTML = html;
+  stageEl.classList.remove("fade"); void stageEl.offsetWidth; stageEl.classList.add("fade");
+  bindNav();
+  bindNavLinks();
+}
+
+function controls(isResult) {
+  return `<div class="controls">
+    <button class="btn" id="backBtn">&larr; Back</button>
+    <button class="btn" id="overBtn">Start over</button>
+    <span class="spacer"></span>
+    ${isResult ? `<button class="btn primary" id="printBtn">Print or save</button>` : ""}
+  </div>`;
+}
+
+function bindNav() {
+  const b = document.getElementById("backBtn");
+  const o = document.getElementById("overBtn");
+  const p = document.getElementById("printBtn");
+  if (b) b.addEventListener("click", goBack);
+  if (o) o.addEventListener("click", startOver);
+  if (p) p.addEventListener("click", () => window.print());
+}
+
+function goBack() {
+  if (state.view === "inventory" || state.view === "chatgpt") { state.view = "role"; render(); return; }
+  if (state.view === "result") {
+    state.view = anyGate() ? "data" : "goal";
+    render();
+  } else if (state.view === "data") { state.view = "goal"; render(); }
+  else if (state.view === "goal") { state.view = "role"; render(); }
+}
+
+function startOver() { state = { view: "role", roles: new Set(), goals: new Set(), data: null }; invQuery = ""; invTag = "All"; render(); }
+
+function render() {
+  if (state.view === "role") renderRole();
+  else if (state.view === "goal") renderGoal();
+  else if (state.view === "data") renderData();
+  else if (state.view === "inventory") renderInventory();
+  else if (state.view === "chatgpt") renderChatGPT();
+  else renderResult();
+}
+
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") { startOver(); return; }
+  if (e.key === "ArrowLeft" || e.key === "Backspace") {
+    if (document.activeElement && /INPUT|TEXTAREA/.test(document.activeElement.tagName)) return;
+    if (state.view !== "role") { e.preventDefault(); goBack(); }
+    return;
+  }
+  if (state.view === "role") {
+    if (/^[1-5]$/.test(e.key)) {
+      const r = ROLES[parseInt(e.key, 10) - 1];
+      if (r) { if (state.roles.has(r.key)) state.roles.delete(r.key); else state.roles.add(r.key); syncRoleUI(); }
+    }
+    if (e.key === "Enter") roleContinue();
+  } else if (state.view === "goal") {
+    const goals = mergedGoals();
+    if (/^[1-9]$/.test(e.key)) {
+      const g = goals[parseInt(e.key, 10) - 1];
+      if (g) {
+        if (state.goals.has(g.key)) state.goals.delete(g.key); else state.goals.add(g.key);
+        syncGoalUI();
+      }
+    }
+    if (e.key === "Enter") goalContinue();
+  } else if (state.view === "data") {
+    if (/^[1-4]$/.test(e.key)) { const d = DATA_OPTS[parseInt(e.key, 10) - 1]; if (d) { state.data = d.key; state.view = "result"; render(); } }
+  }
+});
+
+// "As of" date stamp
+document.getElementById("asof").textContent =
+  "Links verified " + new Date().toLocaleDateString("en-US", { year: "numeric", month: "long" }) + ".";
+
+render();
+</script>
+</body>
+</html>
