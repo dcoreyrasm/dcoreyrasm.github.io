@@ -11,3 +11,23 @@ vendor/
 
 # Local-only developer notes — kept on disk, never committed or published
 README.md
+
+# Secrets and credentials — never commit these. Push protection + the gitleaks
+# workflow are the real safety net; this list just stops accidental staging.
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+*.pkcs12
+*.keystore
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.crt
+credentials
+credentials.json
+secrets.json
+.netrc
