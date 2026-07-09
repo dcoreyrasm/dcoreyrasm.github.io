@@ -11,6 +11,7 @@ vendor/
 
 # Local-only developer notes — kept on disk, never committed or published
 README.md
+_tools/where-things-live.md
 
 # Secrets and credentials — never commit these. Push protection + the gitleaks
 # workflow are the real safety net; this list just stops accidental staging.
