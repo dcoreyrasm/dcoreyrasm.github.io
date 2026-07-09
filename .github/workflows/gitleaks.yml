@@ -1,0 +1,30 @@
+# Scans for hardcoded secrets (private keys, API tokens, passwords) on every
+# push and pull request. Fails the run if anything is found, so a leaked
+# credential is caught before it goes unnoticed. This repo is public and
+# receives automated commits, so this is the safety net for those pushes.
+#
+# gitleaks is free and needs no license key for public repositories.
+# See: https://github.com/gitleaks/gitleaks-action
+name: gitleaks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  scan:
+    name: Scan for secrets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history)
+        uses: actions/checkout@v4
+        with:
+          # fetch-depth: 0 pulls the whole history so gitleaks scans every
+          # commit, not just the latest one.
+          fetch-depth: 0
+
+      - name: Run gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
