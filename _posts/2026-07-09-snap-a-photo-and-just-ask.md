@@ -9,6 +9,8 @@ Some questions are easier to show than to type. What is this plant, what does th
 
 ## Claude: read the text and detail inside a picture
 
+![Claude: read the words and detail inside a photo](/assets/blog/2026-07-09/claude.png){: .section-image }
+
 Claude can look at a photo you upload and reason about what is in it, and it is especially good at the words inside an image.
 
 1. Open a new chat at claude.ai or in the Claude app.
@@ -21,6 +23,8 @@ Claude can look at a photo you upload and reason about what is in it, and it is 
 Source: [Claude Help Center](https://support.claude.com/en/articles/8241126-upload-files-to-claude)
 
 ## ChatGPT: identify something and get the next step
+
+![ChatGPT: point at what matters and identify it](/assets/blog/2026-07-09/chatgpt.png){: .section-image }
 
 ChatGPT can look at a photo and help you name what you are seeing and decide what to do about it.
 
@@ -35,6 +39,8 @@ Source: [OpenAI Help Center](https://help.openai.com/en/articles/8400551-image-i
 
 ## Copilot: point your camera and talk it through
 
+![Copilot: point your live camera and ask out loud](/assets/blog/2026-07-09/copilot.png){: .section-image }
+
 Copilot Vision uses your phone's live camera instead of a still photo, so you can aim it at something and ask out loud, hands free.
 
 1. Open the Copilot app on your phone, on iOS or Android, and sign in with a free Microsoft account.
@@ -47,6 +53,8 @@ Copilot Vision uses your phone's live camera instead of a still photo, so you ca
 Source: [Microsoft Support](https://support.microsoft.com/en-us/microsoft-copilot/using-copilot-vision-with-microsoft-copilot)
 
 ## Gemini: snap it in the moment and ask
+
+![Gemini: snap a photo in the moment and ask](/assets/blog/2026-07-09/gemini.png){: .section-image }
 
 Gemini lets you take a photo right inside the app and ask about it, which is handy when you are out and about.
 

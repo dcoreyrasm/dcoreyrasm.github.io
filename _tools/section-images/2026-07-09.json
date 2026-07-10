@@ -1,0 +1,9 @@
+{
+  "outdir": "assets/blog/2026-07-09",
+  "sections": [
+    {"platform": "Claude",  "accent": "#d97757", "icon": "photo_text",  "label": "Read the words and detail inside a photo"},
+    {"platform": "ChatGPT", "accent": "#10a37f", "icon": "target_photo", "label": "Point at what matters and identify it"},
+    {"platform": "Copilot", "accent": "#2e7df6", "icon": "live_camera",  "label": "Point your live camera and ask out loud"},
+    {"platform": "Gemini",  "accent": "#9168e8", "icon": "snap_camera",  "label": "Snap a photo in the moment and ask"}
+  ]
+}

@@ -34,6 +34,13 @@ fi
 
 git add "$POST"
 
+# Also stage this issue's section images, if present (assets/blog/<date>/),
+# so the four per-tool PNGs ship in the same commit as the post.
+DATE="$(basename "$POST" | grep -oE '^[0-9]{4}-[0-9]{2}-[0-9]{2}')"
+if [[ -n "$DATE" && -d "assets/blog/$DATE" ]]; then
+  git add "assets/blog/$DATE"
+fi
+
 if git diff --cached --quiet; then
   echo "Nothing to publish — $POST is already committed with no changes."
   exit 0

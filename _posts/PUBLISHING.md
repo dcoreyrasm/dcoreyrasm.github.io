@@ -54,6 +54,53 @@ See the two reference posts already in this folder for the exact rhythm:
 `2026-07-01-four-ways-to-stop-starting-from-scratch.md` and
 `2026-07-06-set-it-up-once-stop-re-explaining-yourself.md`.
 
+## Section images (one per tool)
+
+Every issue gets **four images, one embedded in each tool's section** (Claude,
+ChatGPT, Copilot, Gemini). Each is a "feature card": the platform's name and accent
+color, an icon, and that section's one-line feature label, on the site's dark card.
+They are **PNG** (email clients strip SVG) and live in the repo so they load from
+`daricecorey.com` in both the email and the blog.
+
+**Generate them** with the reusable Pillow generator (Python + Pillow only, no other
+tooling — so the Sunday automation can run it too):
+
+1. Write a config for the issue at `_tools/section-images/YYYY-MM-DD.json`. Copy the
+   most recent one and edit the four `label` lines to match this issue's features.
+   Keep the fixed per-platform `accent`; pick an `icon` from the set in
+   `generate.py` (`photo_text`, `target_photo`, `live_camera`, `snap_camera`, …) — add
+   a new icon function there if none fits.
+2. From the repo root:
+   `python _tools/section-images/generate.py _tools/section-images/YYYY-MM-DD.json`
+   → writes `assets/blog/YYYY-MM-DD/{claude,chatgpt,copilot,gemini}.png`.
+
+**Embed in the blog post** — put the image right under each `## Tool:` heading, with
+real alt text:
+
+```
+## Claude: <feature>
+
+![Claude: <feature label>](/assets/blog/YYYY-MM-DD/claude.png){: .section-image }
+
+<the section text...>
+```
+
+The `{: .section-image }` class renders the card at a modest centered width (~440px)
+instead of the full content column — keep it on every section image.
+
+**Embed in the email** — the newsletter HTML references the same files by **absolute**
+URL (`https://www.daricecorey.com/assets/blog/YYYY-MM-DD/claude.png`), so the PNGs must
+be committed and pushed *before* the email is sent. Display them at a matching modest
+width (`width="440"` on the `<img>`), not full bleed.
+
+**Only publish images we have the right to use.** These generated cards are original,
+which is why we make them instead of lifting screenshots or logos from the tools'
+help/docs pages — those are copyrighted.
+
+**Social-share image (optional):** the post layout falls back to `/darice.jpg` for the
+Open Graph / Twitter card unless a post sets `image:` in its front matter (point it at a
+`.png`/`.jpg`, not an SVG).
+
 ## The same accuracy rules apply
 
 The blog post carries the same standing rules as the newsletter: no invented facts or

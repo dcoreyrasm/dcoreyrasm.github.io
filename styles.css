@@ -402,6 +402,10 @@ footer p { font-size:.78rem; color:var(--muted); }
 .post-content code { background:var(--bg2); padding:.15rem .4rem; font-size:.9em; border:1px solid var(--line); }
 .post-content pre { background:var(--bg2); padding:1.25rem; overflow-x:auto; border:1px solid var(--line); }
 .post-content pre code { background:none; border:none; padding:0; }
-.post-content img { max-width:100%; height:auto; }
+.post-content img { max-width:100%; height:auto; display:block; border:1px solid var(--line); border-radius:10px; }
+.post-content .section-image { max-width:440px; margin-left:auto; margin-right:auto; }
+.post-content figure { margin-top:1.5rem; }
+.post-content figure img { margin:0; }
+.post-content figcaption { font-size:.82rem; color:var(--muted); text-align:center; margin-top:.6rem; font-style:italic; }
 .post-back { display:inline-block; margin-top:3rem; font-size:.82rem; letter-spacing:.08em; text-transform:uppercase; color:var(--coral); text-decoration:none; }
 .post-back:hover { color:var(--coral-dim); }
