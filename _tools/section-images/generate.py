@@ -126,11 +126,65 @@ def icon_snap_camera(d, accent, soft, bg):
     d.ellipse([S(cx - 22), S(cy - 22), S(cx + 22), S(cy + 22)], outline=accent, width=S(4))
     d.ellipse([S(cx - 7), S(cy - 7), S(cx + 7), S(cy + 7)], fill=accent)
 
+def icon_doc_stack(d, accent, soft, bg):
+    # two offset pages behind a front page: a long or multi-file document
+    d.rounded_rectangle([S(524), S(158), S(692), S(298)], radius=S(14), fill=soft, outline=blend(bg, accent, 0.45), width=S(3))
+    d.rounded_rectangle([S(508), S(170), S(676), S(310)], radius=S(14), fill=soft, outline=blend(bg, accent, 0.7), width=S(3))
+    d.rounded_rectangle([S(492), S(182), S(660), S(322)], radius=S(16), fill=soft, outline=accent, width=S(4))
+    y = 212
+    for w, op in [(140, 0.85), (120, 0.6), (140, 0.6), (95, 0.35)]:
+        d.rounded_rectangle([S(514), S(y), S(514 + w), S(y + 11)], radius=S(6), fill=blend(bg, accent, op))
+        y += 25
+
+def icon_doc_extract(d, accent, soft, bg):
+    # a page with one line pulled out to the right: extract the answer
+    d.rounded_rectangle([S(452), S(160), S(612), S(310)], radius=S(16), fill=soft, outline=accent, width=S(4))
+    y = 190
+    for w, op in [(118, 0.5), (98, 0.5), (118, 0.5)]:
+        d.rounded_rectangle([S(474), S(y), S(474 + w), S(y + 10)], radius=S(5), fill=blend(bg, accent, op))
+        y += 24
+    d.rounded_rectangle([S(474), S(y), S(474 + 118), S(y + 16)], radius=S(8), fill=accent)
+    ay = y + 8
+    d.line([S(612), S(ay), S(672), S(ay)], fill=accent, width=S(5))
+    d.polygon([S(670), S(ay - 11), S(692), S(ay), S(670), S(ay + 11)], fill=accent)
+
+def icon_doc_browser(d, accent, soft, bg):
+    # a browser window with a summary sidebar: summarize the page you have open
+    d.rounded_rectangle([S(448), S(156), S(712), S(312)], radius=S(16), fill=soft, outline=accent, width=S(4))
+    d.line([S(448), S(190), S(712), S(190)], fill=accent, width=S(3))
+    for cx in (472, 492, 512):
+        d.ellipse([S(cx - 5), S(168), S(cx + 5), S(178)], fill=blend(bg, accent, 0.6))
+    y = 208
+    for w in (150, 130, 150, 108):
+        d.rounded_rectangle([S(470), S(y), S(470 + w), S(y + 10)], radius=S(5), fill=blend(bg, accent, 0.4))
+        y += 22
+    d.rounded_rectangle([S(636), S(198), S(700), S(300)], radius=S(10), fill=blend(bg, accent, 0.14), outline=accent, width=S(3))
+    y = 212
+    for w, op in [(46, 0.85), (40, 0.7), (46, 0.7), (30, 0.5)]:
+        d.rounded_rectangle([S(648), S(y), S(648 + w), S(y + 8)], radius=S(4), fill=blend(bg, accent, op))
+        y += 18
+
+def icon_doc_upload(d, accent, soft, bg):
+    # a page with an up arrow: upload a file and ask
+    cx = 580
+    d.polygon([S(cx - 26), S(178), S(cx), S(150), S(cx + 26), S(178)], fill=accent)
+    d.line([S(cx), S(160), S(cx), S(206)], fill=accent, width=S(8))
+    d.line([S(cx - 42), S(218), S(cx + 42), S(218)], fill=blend(bg, accent, 0.6), width=S(5))
+    d.rounded_rectangle([S(500), S(236), S(660), S(330)], radius=S(16), fill=soft, outline=accent, width=S(4))
+    y = 262
+    for w, op in [(116, 0.5), (96, 0.5), (116, 0.35)]:
+        d.rounded_rectangle([S(522), S(y), S(522 + w), S(y + 10)], radius=S(5), fill=blend(bg, accent, op))
+        y += 22
+
 ICONS = {
     "photo_text": icon_photo_text,
     "target_photo": icon_target_photo,
     "live_camera": icon_live_camera,
     "snap_camera": icon_snap_camera,
+    "doc_stack": icon_doc_stack,
+    "doc_extract": icon_doc_extract,
+    "doc_browser": icon_doc_browser,
+    "doc_upload": icon_doc_upload,
 }
 
 # ---- card --------------------------------------------------------------

@@ -16,6 +16,7 @@ Format: `YYYY-MM-DD | theme | Claude feature; ChatGPT feature; Copilot feature; 
 2026-07-05 | Make the most of summer, four ways | Claude keep a trip in one Project; ChatGPT voice mode; Copilot image generation (party invite); Gemini Deep Research
 2026-07-06 | Set it up once, stop re-explaining yourself | Claude Projects; ChatGPT Memory; Copilot personalization; Gemini Gems
 2026-07-09 | Snap a photo and just ask (image input) | Claude read text/detail in an uploaded image; ChatGPT identify + markup a photo; Copilot Vision live camera + voice; Gemini take a photo in-app (Add files > Camera)
+2026-07-12 | Make sense of a long document you upload | Claude ask across a long/multiple PDF (up to 20 files); ChatGPT extract a specific answer from a document; Copilot summarize a PDF/page open in Edge sidebar; Gemini upload a file or add from Google Drive
 
 ## Do not reuse these themes (used already or in skill examples)
 
@@ -24,6 +25,7 @@ Format: `YYYY-MM-DD | theme | Claude feature; ChatGPT feature; Copilot feature; 
 - Make the most of summer
 - Set it up once / stop re-explaining yourself
 - Snap a photo and ask (image input)
+- Make sense of a long document you upload (file/document input)
 - Comparing products before a purchase
 - Writing a birthday message
 - Turning a chaotic week into a simple plan

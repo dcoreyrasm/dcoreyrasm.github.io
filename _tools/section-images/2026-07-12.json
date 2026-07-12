@@ -1,0 +1,9 @@
+{
+  "outdir": "assets/blog/2026-07-12",
+  "sections": [
+    {"platform": "Claude",  "accent": "#d97757", "icon": "doc_stack",   "label": "Ask questions across a long PDF"},
+    {"platform": "ChatGPT", "accent": "#10a37f", "icon": "doc_extract",  "label": "Pull the answer out of a document"},
+    {"platform": "Copilot", "accent": "#2e7df6", "icon": "doc_browser",  "label": "Summarize a PDF open in your browser"},
+    {"platform": "Gemini",  "accent": "#9168e8", "icon": "doc_upload",   "label": "Upload a file or pull one from Drive"}
+  ]
+}
