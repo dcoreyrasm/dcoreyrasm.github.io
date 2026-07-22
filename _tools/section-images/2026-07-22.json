@@ -1,0 +1,9 @@
+{
+  "outdir": "assets/blog/2026-07-22",
+  "sections": [
+    {"platform": "Claude",  "accent": "#d97757", "icon": "mic_voice", "label": "Voice mode"},
+    {"platform": "ChatGPT", "accent": "#10a37f", "icon": "mic_voice", "label": "GPT-Live"},
+    {"platform": "Copilot", "accent": "#2e7df6", "icon": "mic_voice", "label": "Copilot Voice"},
+    {"platform": "Gemini",  "accent": "#9168e8", "icon": "mic_voice", "label": "Gemini Live"}
+  ]
+}
