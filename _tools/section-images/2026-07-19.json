@@ -1,0 +1,9 @@
+{
+  "outdir": "assets/blog/2026-07-19",
+  "sections": [
+    {"platform": "Claude",  "accent": "#d97757", "icon": "connect", "label": "Connectors: Gmail, Calendar, and Drive"},
+    {"platform": "ChatGPT", "accent": "#10a37f", "icon": "connect", "label": "Apps in ChatGPT"},
+    {"platform": "Copilot", "accent": "#2e7df6", "icon": "connect", "label": "Connect Copilot to your other accounts"},
+    {"platform": "Gemini",  "accent": "#9168e8", "icon": "connect", "label": "Connected Apps with an @ mention"}
+  ]
+}
