@@ -1,0 +1,9 @@
+{
+  "outdir": "assets/blog/2026-07-13",
+  "sections": [
+    {"platform": "Claude",  "accent": "#d97757", "icon": "spreadsheet", "label": "Ask Claude for Excel about your workbook"},
+    {"platform": "ChatGPT", "accent": "#10a37f", "icon": "spreadsheet", "label": "Upload a spreadsheet and ask ChatGPT to dig in"},
+    {"platform": "Copilot", "accent": "#2e7df6", "icon": "spreadsheet", "label": "Chat with Copilot inside Excel"},
+    {"platform": "Gemini",  "accent": "#9168e8", "icon": "spreadsheet", "label": "Have Gemini build the spreadsheet for you"}
+  ]
+}
