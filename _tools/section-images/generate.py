@@ -21,9 +21,11 @@ Config shape (see 2026-07-09.json):
 }
 Files are written as <platform-lowercased>.png in outdir.
 
-Run from the repo root so outdir resolves correctly. Fonts are Segoe UI
-(present on Windows); drop DM Sans TTFs in this folder and repoint FONT_* to
-match the site exactly.
+Run from the repo root so outdir resolves correctly. Fonts: prefers Segoe UI
+(present on Darice's Windows machine); on any other OS (e.g. an automated
+Linux run with no Segoe UI installed) falls back to DM Sans if present, then
+Poppins, then whatever Pillow's default is, so this always produces images
+instead of crashing. See FONT_CANDIDATES below to add another fallback.
 """
 
 import json
@@ -37,9 +39,40 @@ BG = "#16131f"
 CREAM = "#ede9f6"
 MUTED = "#a9a4c2"
 
-FONT_EYEBROW = "C:/Windows/Fonts/segoeuib.ttf"    # bold  -> platform name
-FONT_LABEL   = "C:/Windows/Fonts/segoeuil.ttf"    # light -> feature line
-FONT_TAG     = "C:/Windows/Fonts/segoeuisl.ttf"   # semilight -> footer
+# Each role lists candidate font files in preference order. The first path
+# that exists on this machine wins. Keep Segoe UI first so Darice's own
+# machine still renders with the exact site font; the later entries are
+# fallbacks for any other environment (e.g. a scheduled/automated run).
+FONT_CANDIDATES = {
+    "eyebrow": [  # bold -> platform name
+        "C:/Windows/Fonts/segoeuib.ttf",
+        "DMSans-Bold.ttf",
+        "/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf",
+    ],
+    "label": [  # light -> feature line
+        "C:/Windows/Fonts/segoeuil.ttf",
+        "DMSans-Light.ttf",
+        "/usr/share/fonts/truetype/google-fonts/Poppins-Light.ttf",
+    ],
+    "tag": [  # semilight -> footer
+        "C:/Windows/Fonts/segoeuisl.ttf",
+        "DMSans-Regular.ttf",
+        "/usr/share/fonts/truetype/google-fonts/Poppins-Regular.ttf",
+    ],
+}
+
+
+def _resolve_font(role):
+    for path in FONT_CANDIDATES[role]:
+        if os.path.exists(path):
+            return path
+    # Last resort: Pillow's bundled default (no TTF found at all).
+    return None
+
+
+FONT_EYEBROW = _resolve_font("eyebrow")
+FONT_LABEL = _resolve_font("label")
+FONT_TAG = _resolve_font("tag")
 
 def S(v):
     return int(round(v * SS))
@@ -52,6 +85,11 @@ def blend(c1, c2, t):
     return tuple(round(a + (b - a) * t) for a, b in zip(c1, c2))
 
 def font(path, size):
+    if path is None:
+        # No TTF resolved at all (see FONT_CANDIDATES) - fall back to
+        # Pillow's built-in bitmap font rather than crashing. It won't match
+        # the site's type, so this only fires if every candidate is missing.
+        return ImageFont.load_default()
     return ImageFont.truetype(path, S(size))
 
 def tracked(d, x, y, text, fnt, fill, tracking, center=False):
@@ -176,6 +214,34 @@ def icon_doc_upload(d, accent, soft, bg):
         d.rounded_rectangle([S(522), S(y), S(522 + w), S(y + 10)], radius=S(5), fill=blend(bg, accent, op))
         y += 22
 
+def icon_spreadsheet(d, accent, soft, bg):
+    # a small grid of cells: ask a question about a spreadsheet
+    _frame(d, (470, 155, 690, 305), accent, soft)
+    d.line([S(470), S(205), S(690), S(205)], fill=accent, width=S(3))
+    for gx in (543, 617):
+        d.line([S(gx), S(155), S(gx), S(305)], fill=blend(bg, accent, 0.5), width=S(3))
+    for gy in (238, 271):
+        d.line([S(470), S(gy), S(690), S(gy)], fill=blend(bg, accent, 0.35), width=S(2))
+    d.rounded_rectangle([S(547), S(211), S(613), S(232)], radius=S(4), fill=blend(bg, accent, 0.7))
+
+def icon_connect(d, accent, soft, bg):
+    # two linked rounded shapes: connect it to your other apps
+    d.rounded_rectangle([S(462), S(190), S(560), S(270)], radius=S(24), outline=accent, width=S(6))
+    d.rounded_rectangle([S(600), S(190), S(698), S(270)], radius=S(24), outline=accent, width=S(6))
+    d.line([S(560), S(230), S(600), S(230)], fill=accent, width=S(8))
+    d.ellipse([S(573), S(217), S(587), S(231)], fill=accent)
+
+def icon_mic_voice(d, accent, soft, bg):
+    # a microphone with sound waves: talk to it instead of typing
+    cx = 580
+    d.rounded_rectangle([S(cx - 24), S(150), S(cx + 24), S(250)], radius=S(24), fill=soft, outline=accent, width=S(5))
+    d.arc([S(cx - 42), S(190), S(cx + 42), S(280)], start=0, end=180, fill=accent, width=S(6))
+    d.line([S(cx), S(280), S(cx), S(304)], fill=accent, width=S(6))
+    d.line([S(cx - 26), S(304), S(cx + 26), S(304)], fill=accent, width=S(6))
+    for r, op in ((20, 0.8), (40, 0.5), (60, 0.3)):
+        c = blend(bg, accent, op)
+        d.arc([S(650 - r), S(200 - r), S(650 + r), S(200 + r)], start=-60, end=60, fill=c, width=S(5))
+
 ICONS = {
     "photo_text": icon_photo_text,
     "target_photo": icon_target_photo,
@@ -185,6 +251,9 @@ ICONS = {
     "doc_extract": icon_doc_extract,
     "doc_browser": icon_doc_browser,
     "doc_upload": icon_doc_upload,
+    "spreadsheet": icon_spreadsheet,
+    "connect": icon_connect,
+    "mic_voice": icon_mic_voice,
 }
 
 # ---- card --------------------------------------------------------------
