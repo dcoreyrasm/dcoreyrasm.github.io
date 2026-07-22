@@ -17,6 +17,9 @@ Format: `YYYY-MM-DD | theme | Claude feature; ChatGPT feature; Copilot feature; 
 2026-07-06 | Set it up once, stop re-explaining yourself | Claude Projects; ChatGPT Memory; Copilot personalization; Gemini Gems
 2026-07-09 | Snap a photo and just ask (image input) | Claude read text/detail in an uploaded image; ChatGPT identify + markup a photo; Copilot Vision live camera + voice; Gemini take a photo in-app (Add files > Camera)
 2026-07-12 | Make sense of a long document you upload | Claude ask across a long/multiple PDF (up to 20 files); ChatGPT extract a specific answer from a document; Copilot summarize a PDF/page open in Edge sidebar; Gemini upload a file or add from Google Drive
+2026-07-13 | Ask your spreadsheet a question | Claude for Excel; ChatGPT data analysis (upload and analyze); Copilot in Excel; Gemini in Sheets (build/edit)
+2026-07-19 | Connect it to your other apps | Claude Connectors (Gmail, Calendar, Drive); ChatGPT Apps in ChatGPT; Copilot connecting the free personal Copilot to other accounts; Gemini Connected Apps (@ mention)
+2026-07-22 | Talk to it instead of typing (skip the typing, just talk to your AI instead) | Claude Voice mode; ChatGPT GPT-Live; Copilot Copilot Voice; Gemini Gemini Live
 
 ## Do not reuse these themes (used already or in skill examples)
 
@@ -29,15 +32,14 @@ Format: `YYYY-MM-DD | theme | Claude feature; ChatGPT feature; Copilot feature; 
 - Comparing products before a purchase
 - Writing a birthday message
 - Turning a chaotic week into a simple plan
+- Ask your spreadsheet a question (make sense of a spreadsheet)
+- Connect it to your other apps
+- Talk to it instead of typing (skip the typing, just talk to your AI instead)
 
 ## Candidate themes to rotate through (pick one that is not in "Issues so far")
 
-- Talk to it instead of typing (voice input)
-- Snap a photo and ask (image input)
-- Make sense of a spreadsheet
 - Research a real decision you will still confirm with a person
 - Understand a long document you upload
-- Connect it to your other apps
 - Plan an event on a budget
 - Practice for something hard (interview, hard conversation, exam)
 - Learn a new skill or topic step by step
