@@ -1,0 +1,9 @@
+{
+  "outdir": "assets/blog/2026-07-26",
+  "sections": [
+    {"platform": "Claude",  "accent": "#d97757", "icon": "folder", "label": "Answers in a style that sounds like you"},
+    {"platform": "ChatGPT", "accent": "#10a37f", "icon": "folder", "label": "Give one project a home"},
+    {"platform": "Copilot", "accent": "#2e7df6", "icon": "folder", "label": "Turn a pile of notes into one notebook"},
+    {"platform": "Gemini",  "accent": "#9168e8", "icon": "folder", "label": "Turn it into something you can hear"}
+  ]
+}

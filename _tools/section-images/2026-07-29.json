@@ -1,0 +1,9 @@
+{
+  "outdir": "assets/blog/2026-07-29",
+  "sections": [
+    {"platform": "Claude",  "accent": "#d97757", "icon": "clock", "label": "Run several searches at once"},
+    {"platform": "ChatGPT", "accent": "#10a37f", "icon": "clock", "label": "Put reminders on a schedule"},
+    {"platform": "Copilot", "accent": "#2e7df6", "icon": "clock", "label": "Hand off a recurring job"},
+    {"platform": "Gemini",  "accent": "#9168e8", "icon": "clock", "label": "Set a recurring reminder"}
+  ]
+}

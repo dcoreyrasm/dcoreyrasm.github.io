@@ -1,0 +1,79 @@
+name: Blog sync check
+
+# Makes sure every SENT "Darice on AI" issue has a matching blog post. This is
+# the safety net for scheduled sends, which go out with no one at the keyboard,
+# so the "post it when you build the issue" step never runs for them. It does
+# not publish anything (the post format is a quality step, see
+# _posts/PUBLISHING.md). If an issue is missing a post, it opens or updates a
+# tracking issue so the gap can't sit unnoticed. Add the MailerLite API key as
+# a repo secret named MAILERLITE_API_KEY (Settings > Secrets and variables >
+# Actions) before this can run.
+
+on:
+  schedule:
+    - cron: "0 13 * * *"   # daily at 13:00 UTC
+  workflow_dispatch:        # allows a manual run to test
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Compare sent issues to blog posts
+        id: check
+        continue-on-error: true
+        env:
+          MAILERLITE_API_KEY: ${{ secrets.MAILERLITE_API_KEY }}
+        run: |
+          python _tools/blog-sync-check.py | tee report.txt
+          echo "exit=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      - name: Open or update tracking issue when drift is found
+        if: steps.check.outputs.exit == '1'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('report.txt', 'utf8').trim();
+            const title = 'Blog is missing one or more sent newsletter issues';
+            const body = [
+              'The daily blog-sync check found sent *Darice on AI* issues with no blog post:',
+              '',
+              '```',
+              report,
+              '```',
+              '',
+              'To fix each one, follow `_posts/PUBLISHING.md` (author the post from the',
+              'issue content, generate the four section images, then run',
+              '`_tools/publish-post.sh`). Close this issue once the blog is caught up;',
+              'it will reopen automatically if anything is still missing tomorrow.',
+            ].join('\n');
+
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'blog-sync',
+            });
+            if (existing.data.length) {
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: existing.data[0].number, body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['blog-sync'],
+              });
+            }
+
+      - name: Fail the run if drift was found
+        if: steps.check.outputs.exit == '1'
+        run: exit 1

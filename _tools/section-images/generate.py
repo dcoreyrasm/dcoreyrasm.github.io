@@ -242,6 +242,22 @@ def icon_mic_voice(d, accent, soft, bg):
         c = blend(bg, accent, op)
         d.arc([S(650 - r), S(200 - r), S(650 + r), S(200 + r)], start=-60, end=60, fill=c, width=S(5))
 
+def icon_folder(d, accent, soft, bg):
+    # a project folder holding a few papers: give this project one home
+    d.rounded_rectangle([S(500), S(172), S(602), S(202)], radius=S(10), fill=blend(bg, accent, 0.4))
+    d.rounded_rectangle([S(490), S(192), S(710), S(312)], radius=S(16), fill=soft, outline=accent, width=S(4))
+    for i in range(3):
+        yy = 226 + i * 26
+        d.rounded_rectangle([S(522), S(yy), S(522 + (150 - i * 26)), S(yy + 11)], radius=S(6), fill=blend(bg, accent, 0.55))
+
+def icon_clock(d, accent, soft, bg):
+    # a clock face with hands: keep a recurring check going on a schedule
+    cx, cy, r = 600, 232, 74
+    d.ellipse([S(cx - r), S(cy - r), S(cx + r), S(cy + r)], fill=soft, outline=accent, width=S(5))
+    d.line([S(cx), S(cy), S(cx), S(cy - 46)], fill=accent, width=S(7))
+    d.line([S(cx), S(cy), S(cx + 34), S(cy + 16)], fill=accent, width=S(7))
+    d.ellipse([S(cx - 7), S(cy - 7), S(cx + 7), S(cy + 7)], fill=accent)
+
 ICONS = {
     "photo_text": icon_photo_text,
     "target_photo": icon_target_photo,
@@ -254,6 +270,8 @@ ICONS = {
     "spreadsheet": icon_spreadsheet,
     "connect": icon_connect,
     "mic_voice": icon_mic_voice,
+    "folder": icon_folder,
+    "clock": icon_clock,
 }
 
 # ---- card --------------------------------------------------------------
