@@ -130,3 +130,14 @@ git push origin main
 
 Publish the post when the issue is final and approved — the same moment it's ready to
 send from MailerLite — so the blog and the email stay in sync.
+
+## Automation
+
+Two GitHub Actions back this process up so a scheduled send can't quietly skip the blog:
+
+- **Monitor** (`.github/workflows/blog-sync-check.yml`, `_tools/blog-sync-check.py`): runs daily, compares sent issues to `_posts/`, and opens a tracking issue if any issue has no post. It never publishes.
+- **Auto-publisher** (`.github/workflows/newsletter-to-blog.yml`, `_tools/newsletter-to-blog.py`): runs daily, and for any sent issue missing a post it parses the issue, builds the post and the four cards, and opens a **pull request** for review. It does not commit to `main` directly.
+
+The auto-publisher deliberately relaxes the "do not scrape the email HTML" rule above, but only into a PR draft. The review is where the quality bar is held: check the title, intro, and the four sources, and swap the placeholder `doc_stack` icon in the issue's `section-images/<date>.json` for a themed one before merging. Authoring by hand when you build the issue live is still preferred; the auto-publisher exists to catch issues that go out on a schedule.
+
+Both Actions need a repository secret `MAILERLITE_API_KEY` (Settings > Secrets and variables > Actions).

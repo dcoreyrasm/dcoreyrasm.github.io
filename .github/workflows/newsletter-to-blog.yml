@@ -1,0 +1,64 @@
+name: Newsletter to blog (auto-draft)
+
+# Auto-publisher: for every SENT "Darice on AI" issue with no post yet, it
+# parses the issue, builds the post and its four section-image cards, and opens
+# a PULL REQUEST. Nothing goes live until the PR is merged. This is the piece
+# that keeps the blog current for scheduled sends, which go out with no one at
+# the keyboard. It relaxes the "don't scrape" note in _posts/PUBLISHING.md, but
+# only into a draft that a human reviews. Needs the MAILERLITE_API_KEY secret.
+
+on:
+  schedule:
+    - cron: "0 15 * * *"   # daily at 15:00 UTC (a couple hours after the monitor)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install beautifulsoup4 pillow
+
+      - name: Draft posts for any missing issues
+        id: draft
+        env:
+          MAILERLITE_API_KEY: ${{ secrets.MAILERLITE_API_KEY }}
+        run: |
+          python _tools/newsletter-to-blog.py | tee draft.txt
+
+      - name: Open a pull request if anything was drafted
+        if: ${{ hashFiles('_posts/**') != '' }}
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: auto/newsletter-blog-drafts
+          base: main
+          commit-message: "Auto-draft blog posts from newly sent issues"
+          title: "Auto-drafted blog posts for newly sent issues"
+          labels: blog-sync
+          body: |
+            One or more sent *Darice on AI* issues had no blog post, so this PR
+            drafts them from the issue content and generates the section-image
+            cards.
+
+            **Review before merging.** These are machine-assembled from the email
+            template (see `_posts/PUBLISHING.md`). Check the title, the intro, and
+            the four sources, and swap the placeholder `doc_stack` icon in the
+            `_tools/section-images/<date>.json` for a themed one if you want, then
+            re-run `python _tools/section-images/generate.py <that-config>`.
+
+            ```
+            ${{ steps.draft.outputs.stdout }}
+            ```
+        # create-pull-request commits whatever the script changed in the working
+        # tree (new _posts/*.md, assets/blog/<date>/*.png, section-images config)
+        # onto its own branch and opens/updates the PR. A no-op run makes no PR.
