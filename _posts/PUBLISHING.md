@@ -143,3 +143,7 @@ The auto-publisher deliberately relaxes the "do not scrape the email HTML" rule 
 It reaches the email HTML through the single-campaign API endpoint (`GET /campaigns/{id}`); the list endpoint omits `emails[].content`, so the script fetches each new issue's detail before parsing.
 
 Both Actions need a repository secret `MAILERLITE_API_KEY` (Settings > Secrets and variables > Actions).
+
+> A fuller operations runbook — how to change the cadence, the real-issue filter, and the
+> post template, plus troubleshooting steps — is kept privately outside this repository.
+> Ask Darice for it before making changes to the automation.
