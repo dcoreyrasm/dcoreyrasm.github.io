@@ -159,6 +159,16 @@ def parse_issue(campaign):
             if label:
                 label.extract()
             when = clean(when_cell.get_text())
+        if not when:
+            # Some issue templates render the note as a plain paragraph
+            # ("When to reach for it: ...") rather than a td.when-cell box.
+            # Accept either so the two formats never drift the note off the blog.
+            for p in card.find_all("p"):
+                t = clean(p.get_text())
+                m = re.match(r"(?i)^when to reach for it\s*[:\-–—]\s*", t)
+                if m:
+                    when = t[m.end():].strip()
+                    break
 
         src = card.select_one("div.t-faint a") or card.select_one("a[href^='http']")
         source_text = clean(src.get_text()) if src else "Source"
