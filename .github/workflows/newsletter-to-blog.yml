@@ -1,23 +1,32 @@
-name: Newsletter to blog (auto-draft)
+name: Newsletter to blog (auto-publish)
 
-# Auto-publisher: for every SENT "Darice on AI" issue with no post yet, it
-# parses the issue, builds the post and its four section-image cards, and opens
-# a PULL REQUEST. Nothing goes live until the PR is merged. This is the piece
-# that keeps the blog current for scheduled sends, which go out with no one at
-# the keyboard. It relaxes the "don't scrape" note in _posts/PUBLISHING.md, but
-# only into a draft that a human reviews. Needs the MAILERLITE_API_KEY secret.
+# Auto-publisher: for every SENT "Darice on AI" issue that has no post yet, it
+# parses the issue, builds the post and its four section-image cards, and
+# commits them straight to main. GitHub Pages then rebuilds and the post goes
+# live. This runs hourly so a scheduled send appears on the blog within about
+# an hour, with no one at the keyboard.
+#
+# There is no human review step: the post is machine-assembled from the email
+# template (see _posts/PUBLISHING.md). Two things keep that safe. A parse that
+# does not cleanly recognize the four tool cards raises and commits NOTHING
+# (so a malformed issue never publishes a broken post), and blog-sync-check.yml
+# opens a tracking issue if anything a send should have produced is still
+# missing. Needs the MAILERLITE_API_KEY secret.
 
 on:
   schedule:
-    - cron: "0 15 * * *"   # daily at 15:00 UTC (a couple hours after the monitor)
-  workflow_dispatch:
+    - cron: "0 * * * *"   # hourly, on the hour
+  workflow_dispatch:        # allows a manual run
 
 permissions:
   contents: write
-  pull-requests: write
+
+concurrency:
+  group: newsletter-to-blog
+  cancel-in-progress: false
 
 jobs:
-  draft:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,36 +38,24 @@ jobs:
       - name: Install dependencies
         run: pip install beautifulsoup4 pillow
 
-      - name: Draft posts for any missing issues
-        id: draft
+      - name: Build posts for any newly sent issues
         env:
           MAILERLITE_API_KEY: ${{ secrets.MAILERLITE_API_KEY }}
+        run: python _tools/newsletter-to-blog.py
+
+      - name: Commit and push anything new
         run: |
-          python _tools/newsletter-to-blog.py | tee draft.txt
-
-      - name: Open a pull request if anything was drafted
-        if: ${{ hashFiles('_posts/**') != '' }}
-        uses: peter-evans/create-pull-request@v6
-        with:
-          branch: auto/newsletter-blog-drafts
-          base: main
-          commit-message: "Auto-draft blog posts from newly sent issues"
-          title: "Auto-drafted blog posts for newly sent issues"
-          labels: blog-sync
-          body: |
-            One or more sent *Darice on AI* issues had no blog post, so this PR
-            drafts them from the issue content and generates the section-image
-            cards.
-
-            **Review before merging.** These are machine-assembled from the email
-            template (see `_posts/PUBLISHING.md`). Check the title, the intro, and
-            the four sources, and swap the placeholder `doc_stack` icon in the
-            `_tools/section-images/<date>.json` for a themed one if you want, then
-            re-run `python _tools/section-images/generate.py <that-config>`.
-
-            ```
-            ${{ steps.draft.outputs.stdout }}
-            ```
-        # create-pull-request commits whatever the script changed in the working
-        # tree (new _posts/*.md, assets/blog/<date>/*.png, section-images config)
-        # onto its own branch and opens/updates the PR. A no-op run makes no PR.
+          git add _posts assets/blog _tools/section-images
+          if git diff --cached --quiet; then
+            echo "Blog already in sync; nothing to publish."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Auto-publish blog posts from newly sent issues"
+          # main can move under us between checkout and push; rebase and retry.
+          for attempt in 1 2 3; do
+            git push && break
+            echo "push rejected (attempt $attempt); rebasing on origin/main"
+            git pull --rebase origin main
+          done

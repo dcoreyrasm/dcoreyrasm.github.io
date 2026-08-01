@@ -136,8 +136,10 @@ send from MailerLite — so the blog and the email stay in sync.
 Two GitHub Actions back this process up so a scheduled send can't quietly skip the blog:
 
 - **Monitor** (`.github/workflows/blog-sync-check.yml`, `_tools/blog-sync-check.py`): runs daily, compares sent issues to `_posts/`, and opens a tracking issue if any issue has no post. It never publishes.
-- **Auto-publisher** (`.github/workflows/newsletter-to-blog.yml`, `_tools/newsletter-to-blog.py`): runs daily, and for any sent issue missing a post it parses the issue, builds the post and the four cards, and opens a **pull request** for review. It does not commit to `main` directly.
+- **Auto-publisher** (`.github/workflows/newsletter-to-blog.yml`, `_tools/newsletter-to-blog.py`): runs **hourly**, and for any sent issue missing a post it parses the issue, builds the post and the four cards, and **commits them straight to `main`**. GitHub Pages rebuilds and the post goes live within about an hour of a send — no review step, no one at the keyboard.
 
-The auto-publisher deliberately relaxes the "do not scrape the email HTML" rule above, but only into a PR draft. The review is where the quality bar is held: check the title, intro, and the four sources, and swap the placeholder `doc_stack` icon in the issue's `section-images/<date>.json` for a themed one before merging. Authoring by hand when you build the issue live is still preferred; the auto-publisher exists to catch issues that go out on a schedule.
+The auto-publisher deliberately relaxes the "do not scrape the email HTML" rule above. Because it publishes directly, two things hold the line instead of a human review: a parse that does not cleanly recognize the four tool cards raises and commits **nothing** (a malformed issue can never publish a broken post), and the Monitor opens a tracking issue if a send still has no post. The post title comes from the issue's H1 headline; steps, when-notes, and sources come from the four tool cards; the section-image cards use the neutral `doc_stack` icon. If you want to author by hand instead (still fine when you build an issue live), just publish the post before the top of the next hour and the auto-publisher will see the date is already covered and skip it.
+
+It reaches the email HTML through the single-campaign API endpoint (`GET /campaigns/{id}`); the list endpoint omits `emails[].content`, so the script fetches each new issue's detail before parsing.
 
 Both Actions need a repository secret `MAILERLITE_API_KEY` (Settings > Secrets and variables > Actions).

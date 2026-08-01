@@ -45,6 +45,7 @@ CONFIG_DIR = os.path.join(HERE, "section-images")
 GENERATOR = os.path.join(HERE, "section-images", "generate.py")
 
 API = "https://connect.mailerlite.com/api/campaigns?filter[status]=sent&limit=100"
+CAMPAIGN = "https://connect.mailerlite.com/api/campaigns/{}"
 
 TOOLS = ["Claude", "ChatGPT", "Copilot", "Gemini"]
 ACCENTS = {"Claude": "#d97757", "ChatGPT": "#10a37f", "Copilot": "#2e7df6", "Gemini": "#9168e8"}
@@ -64,6 +65,17 @@ def fetch_sent(api_key):
         "Authorization": f"Bearer {api_key}", "Accept": "application/json"})
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.load(r).get("data", [])
+
+
+def fetch_campaign(api_key, cid):
+    """Fetch one campaign's full detail. The list endpoint (fetch_sent) omits
+    the email HTML (emails[].content); only the single-campaign endpoint
+    returns it, and the parser needs that HTML, so fetch it per new issue."""
+    req = urllib.request.Request(CAMPAIGN.format(cid), headers={
+        "Authorization": f"Bearer {api_key}", "Accept": "application/json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        obj = json.load(r)
+    return obj.get("data", obj)
 
 
 def is_real_issue(c):
@@ -112,8 +124,11 @@ def parse_issue(campaign):
     html = email.get("content") or ""
     soup = BeautifulSoup(html, "html.parser")
 
-    title = title_from_name(campaign.get("name", "")) or clean(
-        (soup.select_one("h1") or soup.new_tag("h1")).get_text())
+    # Prefer the issue's own H1 headline (matches how posts have been titled);
+    # fall back to the campaign name's middle segment if there's no H1.
+    h1 = soup.select_one("h1")
+    title = (clean(h1.get_text()) if h1 else "") or title_from_name(
+        campaign.get("name", ""))
     date = issue_date(campaign)
 
     intro_el = soup.select_one("td.intro p") or soup.select_one("td.intro")
@@ -259,6 +274,8 @@ def main():
         d = issue_date(c)
         if not args.campaign_json and d in have:
             continue
+        if not args.campaign_json:
+            c = fetch_campaign(key, c["id"])   # list omits the email HTML
         issue = parse_issue(c)
         write_issue(issue, make_images=make_images)
         wrote.append(f'{issue["date"]}-{issue["slug"]}')
