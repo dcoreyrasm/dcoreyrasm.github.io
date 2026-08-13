@@ -116,6 +116,21 @@ def first_sentence(text, limit=180):
     return (s[:limit].rstrip() + "...") if len(s) > limit else s
 
 
+def extract_try_this(soup):
+    """The closing 'Try this' experiment. It's a callout with a 'Try this'
+    accent label and no tool heading, so it's told apart from the four tool
+    cards. Returns '' for older issues without one."""
+    for card in soup.select("table.bg-callout"):
+        if card.select_one("h2.card-h"):
+            continue
+        label = card.select_one(".t-accent")
+        if label and clean(label.get_text()).lower().startswith("try this"):
+            p = card.find("p")
+            if p:
+                return clean(p.get_text())
+    return ""
+
+
 def parse_issue(campaign):
     """Return a dict: title, date, description, intro, sections[]. Raises on a
     structure it doesn't recognize, so a bad parse becomes a visible failure
@@ -190,6 +205,7 @@ def parse_issue(campaign):
     return {
         "title": title, "date": date, "slug": slugify(title),
         "description": first_sentence(intro), "intro": intro, "sections": sections,
+        "try_this": extract_try_this(soup),
     }
 
 
@@ -219,6 +235,11 @@ def render_markdown(issue):
             lines.append(f'**When to reach for it:** {lower_first(s["when"])}')
             lines.append("")
         lines.append(f'Source: [{s["source_text"]}]({s["source_url"]})')
+        lines.append("")
+    if issue.get("try_this"):
+        lines.append("## Try this")
+        lines.append("")
+        lines.append(issue["try_this"])
         lines.append("")
     lines.append(CLOSER)
     lines.append("")
