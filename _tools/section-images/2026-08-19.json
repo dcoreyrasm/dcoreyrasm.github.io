@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-08-19",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "doc_stack",
+      "label": "Brainstorm a surprise without leaving a trace"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "doc_stack",
+      "label": "Design the tag, wrapping, or card yourself"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "doc_stack",
+      "label": "Get a reasoned shortlist, not just a list"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "doc_stack",
+      "label": "Turn a photo you already have into the gift"
+    }
+  ]
+}
