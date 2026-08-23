@@ -32,3 +32,7 @@ credentials
 credentials.json
 secrets.json
 .netrc
+
+# Python bytecode from the _tools/ scripts
+__pycache__/
+*.py[cod]
