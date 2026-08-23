@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-08-26",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "share_link",
+      "label": "Share and unshare a chat"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "share_link",
+      "label": "Shared links"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "share_link",
+      "label": "Share a chat or a single answer"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "share_link",
+      "label": "Public links you can delete later"
+    }
+  ]
+}
