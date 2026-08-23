@@ -131,6 +131,37 @@ git push origin main
 Publish the post when the issue is final and approved — the same moment it's ready to
 send from MailerLite — so the blog and the email stay in sync.
 
+## The archive (month, then week)
+
+Past issues are browsable from three places, all fed by the same include, so nothing has
+to be hand-maintained when a post is published:
+
+- `_includes/post-archive.html` — the shared component. It groups `site.posts` by month,
+  then by Sunday-start week, and renders each month as a collapsible `<details>`. The
+  newest month is open by default; on a post page that post's month is open too and its
+  own entry is flagged.
+- Where it appears: `blog.html` (an "Archive" section under the six latest post cards),
+  `newsletter.html` (a "Past issues" section above the signup form), and `_layouts/post.html`
+  (a compact "Past issues" section under every post).
+- Styles live in `styles.css` under the `.post-archive` / `.archive-*` block, namespaced so
+  they touch nothing else on the site.
+
+A new post joins all three automatically on the next Pages build. Nothing to update by hand.
+
+**In the email.** The issue template carries a matching "Past issues" block with the same
+month, then week grouping. Its markup is kept here as `_tools/email-past-issues-block.html`
+(the skill's copy can be wiped by a plugin re-sync; this one is the source of truth), and
+its `{{PAST_ISSUES}}` placeholder is filled by:
+
+```bash
+python _tools/past-issues-email.py --exclude YYYY-MM-DD
+```
+
+where the date is the issue being sent, so it does not list itself. Defaults to the last
+six weeks, at most six links; `--weeks` and `--max` change that. Paste the output over the
+placeholder. If the script cannot run, delete the whole `<!-- Past issues -->` row rather
+than sending a raw placeholder.
+
 ## Automation
 
 Two GitHub Actions back this process up so a scheduled send can't quietly skip the blog:

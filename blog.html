@@ -66,7 +66,7 @@ description: Practical AI tips for work and everyday life from Darice Corey.
         <p class="section-label" id="posts-heading">Latest posts</p>
         {% if site.posts.size > 0 %}
         <div class="blog-list">
-          {% for post in site.posts %}
+          {% for post in site.posts limit: 6 %}
           <a class="blog-post-card" href="{{ post.url | relative_url }}">
             <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
             <h3>{{ post.title }}</h3>
@@ -74,9 +74,21 @@ description: Practical AI tips for work and everyday life from Darice Corey.
           </a>
           {% endfor %}
         </div>
+        {% if site.posts.size > 6 %}
+        <p class="archive-jump"><a href="#archive">Browse every past issue by month &darr;</a></p>
+        {% endif %}
         {% else %}
         <p class="blog-empty">No posts yet &mdash; check back soon.</p>
         {% endif %}
+      </div>
+    </section>
+
+    <section id="archive" aria-labelledby="archive-heading" style="background:var(--bg2);">
+      <div class="container">
+        <p class="section-label">Archive</p>
+        <h2 class="section-heading" id="archive-heading">Every past issue.</h2>
+        <p class="section-sub">Grouped by month, then by the week it went out. Open a month to see its weeks.</p>
+        {% include post-archive.html %}
       </div>
     </section>
 

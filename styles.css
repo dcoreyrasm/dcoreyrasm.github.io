@@ -409,3 +409,43 @@ footer p { font-size:.78rem; color:var(--muted); }
 .post-content figcaption { font-size:.82rem; color:var(--muted); text-align:center; margin-top:.6rem; font-style:italic; }
 .post-back { display:inline-block; margin-top:3rem; font-size:.82rem; letter-spacing:.08em; text-transform:uppercase; color:var(--coral); text-decoration:none; }
 .post-back:hover { color:var(--coral-dim); }
+
+/* Post archive — every issue, grouped by month, then by week. Used on the blog
+   index, the newsletter page, and under each post. Namespaced to .archive-*
+   and .post-archive, which appear nowhere else on the site. */
+.archive-jump { margin-top:2rem; font-size:.82rem; letter-spacing:.08em; text-transform:uppercase; }
+.archive-jump a { color:var(--coral); text-decoration:none; }
+.archive-jump a:hover { color:var(--coral-dim); }
+
+.post-archive { max-width:720px; border-top:1px solid var(--line); }
+.post-archive-compact .archive-month-summary { padding:.9rem .25rem; }
+.post-archive-compact .archive-month-name { font-size:1rem; }
+.post-archive-compact .archive-post-title { font-size:.9rem; }
+
+.archive-month { border-bottom:1px solid var(--line); }
+.archive-month-summary { display:flex; align-items:baseline; justify-content:space-between; gap:1rem; padding:1.1rem .25rem; cursor:pointer; list-style:none; }
+.archive-month-summary::-webkit-details-marker { display:none; }
+.archive-month-summary::marker { content:''; }
+.archive-month-summary:hover .archive-month-name { color:var(--coral); }
+.archive-month-name { font-family:var(--serif); font-size:1.05rem; font-weight:700; color:var(--cream); transition:color .2s; }
+.archive-month-name::before { content:''; display:inline-block; width:0; height:0; margin-right:.55rem; border-left:6px solid var(--coral); border-top:5px solid transparent; border-bottom:5px solid transparent; transition:transform .2s; }
+.archive-month[open] > .archive-month-summary .archive-month-name::before { transform:rotate(90deg); }
+.archive-month-count { font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); white-space:nowrap; }
+
+.archive-week { padding:0 0 1.25rem 1rem; border-left:1px solid var(--line); margin-left:.35rem; }
+.archive-week:first-of-type { padding-top:.25rem; }
+.archive-week-label { font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:var(--coral); margin-bottom:.6rem; }
+.archive-week-list { list-style:none; display:flex; flex-direction:column; gap:.4rem; }
+.archive-week-list a { display:flex; gap:.9rem; align-items:baseline; text-decoration:none; padding:.35rem .4rem; border-radius:3px; transition:background .2s; }
+.archive-week-list a:hover { background:var(--line); }
+.archive-post-day { font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); flex-shrink:0; min-width:3.6rem; }
+.archive-post-title { font-size:.95rem; color:var(--cream); line-height:1.5; }
+.archive-week-list a:hover .archive-post-title { color:var(--coral); }
+.archive-week-list a.is-current { background:var(--line); }
+.archive-week-list a.is-current .archive-post-title { color:var(--coral); font-weight:500; }
+.archive-week-list a.is-current .archive-post-title::after { content:' (current post)'; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+
+@media (max-width:600px) {
+  .archive-week-list a { flex-direction:column; gap:.15rem; }
+  .archive-post-day { min-width:0; }
+}

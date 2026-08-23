@@ -1,0 +1,25 @@
+<!-- Past issues -->
+<!--
+  Durable copy of the "Past issues" block that lives in the newsletter skill's
+  assets/issue-template.html (the skill cache can be wiped by a plugin re-sync;
+  this repo copy is the source of truth). It sits between the "Try this"
+  callout and the "Share / grow" block.
+
+  Fill {{PAST_ISSUES}} with:
+      python _tools/past-issues-email.py --exclude YYYY-MM-DD
+  where the date is the issue being sent, so it does not list itself.
+-->
+<tr>
+<td class="px" style="padding:26px 40px 0 40px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="bg-callout" style="background-color:#f4effc; border-radius:4px;">
+<tr>
+<td class="card-pad" style="padding:18px 22px;">
+<div class="t-accent" style="font-family:'DM Sans',Helvetica,Arial,sans-serif; font-weight:700; font-size:12px; letter-spacing:1.5px; text-transform:uppercase; color:#7c3aed; padding-bottom:2px;">Past issues</div>
+<div class="t-muted" style="font-family:'DM Sans',Helvetica,Arial,sans-serif; font-weight:300; font-size:13px; line-height:1.5; color:#5d5775; padding-bottom:4px;">By month, then by the week each one went out.</div>
+{{PAST_ISSUES}}
+<div style="padding-top:12px;"><a href="https://www.daricecorey.com/blog.html#archive" class="t-accent" style="font-family:'DM Sans',Helvetica,Arial,sans-serif; font-weight:400; font-size:13px; color:#7c3aed; text-decoration:underline;">See the full archive &rarr;</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>

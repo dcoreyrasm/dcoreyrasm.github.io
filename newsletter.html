@@ -1,3 +1,7 @@
+---
+# Front matter is required so Jekyll renders the past-issues archive below.
+title: Newsletter
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,7 +84,16 @@
       </div>
     </section>
 
-    <section id="signup" aria-labelledby="signup-heading">
+    <section id="past-issues" aria-labelledby="past-issues-heading" style="background:var(--bg2);">
+      <div class="container">
+        <p class="section-label">Past issues</p>
+        <h2 class="section-heading" id="past-issues-heading">Read the back catalog.</h2>
+        <p class="section-sub">Every issue is also posted on the <a href="blog.html">blog</a>. Grouped by month, then by the week it went out. Open a month to see its weeks.</p>
+        {% include post-archive.html %}
+      </div>
+    </section>
+
+    <section id="signup" aria-labelledby="signup-heading" style="background:var(--bg2);">
       <div class="container">
         <p class="section-label">Join</p>
         <h2 class="section-heading" id="signup-heading">Get the weekly newsletter.</h2>

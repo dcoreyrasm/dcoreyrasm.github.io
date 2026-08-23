@@ -1,0 +1,60 @@
+{% comment %}
+  Post archive — every published issue, grouped by month, then by week.
+
+  Used on /blog.html, /newsletter.html and at the foot of every post page,
+  so a reader can always get back to any past issue from wherever they are.
+
+  Optional include params:
+    compact — "true" renders the tighter version used under a post
+    current — a post URL to mark as the page you are on (defaults to page.url,
+              so a post page opens its own month and flags its own entry)
+
+  Week grouping: posts are grouped by Sunday-start week (%U). The "Week of"
+  label is that Sunday, derived by rolling the earliest post in the group back
+  by its own weekday, so a week that straddles two months still reads right
+  under each month it appears in.
+{% endcomment %}
+{% assign archive_current = include.current | default: page.url %}
+{% assign archive_current_month = "" %}
+{% for archive_post in site.posts %}
+  {% if archive_post.url == archive_current %}
+    {% assign archive_current_month = archive_post.date | date: "%Y-%m" %}
+  {% endif %}
+{% endfor %}
+{% assign archive_months = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
+{% if archive_months.size > 0 %}
+<div class="post-archive{% if include.compact == 'true' %} post-archive-compact{% endif %}">
+  {% for month in archive_months %}
+  {% assign month_key = month.items.first.date | date: "%Y-%m" %}
+  <details class="archive-month"{% if forloop.first or month_key == archive_current_month %} open{% endif %}>
+    <summary class="archive-month-summary">
+      <span class="archive-month-name">{{ month.items.first.date | date: "%B %Y" }}</span>
+      <span class="archive-month-count">{{ month.items.size }} post{% unless month.items.size == 1 %}s{% endunless %}</span>
+    </summary>
+    {% assign archive_weeks = month.items | group_by_exp: "post", "post.date | date: '%Y-%U'" %}
+    {% for week in archive_weeks %}
+      {% assign week_first = week.items.last %}
+      {% assign week_secs = week_first.date | date: "%s" | plus: 0 %}
+      {% assign week_dow = week_first.date | date: "%w" | plus: 0 %}
+      {% assign week_offset = week_dow | times: 86400 %}
+      {% assign week_start = week_secs | minus: week_offset %}
+    <div class="archive-week">
+      <p class="archive-week-label">Week of {{ week_start | date: "%b %-d" }}</p>
+      <ul class="archive-week-list">
+        {% for post in week.items %}
+        <li>
+          <a href="{{ post.url | relative_url }}"{% if post.url == archive_current %} class="is-current" aria-current="page"{% endif %}>
+            <span class="archive-post-day">{{ post.date | date: "%a %-d" }}</span>
+            <span class="archive-post-title">{{ post.title }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </details>
+  {% endfor %}
+</div>
+{% else %}
+<p class="blog-empty">No posts yet &mdash; check back soon.</p>
+{% endif %}
