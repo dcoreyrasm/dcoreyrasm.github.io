@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-08-23",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "doc_stack",
+      "label": "Extended Thinking"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "doc_stack",
+      "label": "Record Mode"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "doc_stack",
+      "label": "Copilot Health"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "doc_stack",
+      "label": "Deep Think"
+    }
+  ]
+}
