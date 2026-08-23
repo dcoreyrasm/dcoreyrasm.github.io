@@ -18,6 +18,23 @@
   <meta name="twitter:description" content="{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}" />
   <meta name="twitter:image" content="{{ page.image | default: '/darice.jpg' | absolute_url }}" />
   {% feed_meta %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ page.title | jsonify }},
+    "description": {{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | jsonify }},
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+    "url": {{ page.url | absolute_url | jsonify }},
+    "mainEntityOfPage": { "@type": "WebPage", "@id": {{ page.url | absolute_url | jsonify }} },
+    "image": {{ page.image | default: '/darice.jpg' | absolute_url | jsonify }},
+    "author": { "@type": "Person", "name": "Darice Corey", "url": {{ '/' | absolute_url | jsonify }} },
+    "publisher": { "@type": "Person", "name": "Darice Corey", "url": {{ '/' | absolute_url | jsonify }} },
+    "isPartOf": { "@type": "Blog", "name": "Darice on AI", "url": {{ '/blog.html' | absolute_url | jsonify }} },
+    "inLanguage": "en-US"
+  }
+  </script>
   <script>window.__daOptOut=(function(){try{return localStorage.getItem('da-analytics-optout')==='1'}catch(e){return false}})();if(window.__daOptOut){window['ga-disable-G-725R412XD7']=true;}</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-725R412XD7"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-725R412XD7');</script>

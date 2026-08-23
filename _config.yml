@@ -16,6 +16,12 @@ author: Darice Corey
 # allow-list, so it works on Pages with no extra setup.
 plugins:
   - jekyll-feed
+  # Generates /sitemap.xml from every page, static .html file, and post, on each
+  # build. Replaces the old hand-maintained sitemap.xml, which listed the static
+  # pages but not a single blog post. Build-time generation is what matters here:
+  # posts are often published by the CI auto-publisher, which can never run
+  # anything local, so any script-maintained sitemap would silently fall behind.
+  - jekyll-sitemap
 
 # Blog posts use the shared post layout and get clean /blog/<title>/ URLs.
 # Scoped to posts only, so it never touches the static top-level pages.
