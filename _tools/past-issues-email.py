@@ -7,9 +7,14 @@ by month, then by the week it went out. The email carries the same idea in a
 short form: the last few weeks, same month > week grouping, so a reader who
 missed one can get back to it without leaving their inbox.
 
+By default the list comes from the live site feed (/feed.xml), not the local
+_posts/ folder, so the email always lists exactly what the website archive
+shows -- including posts published by CI or from another machine. It falls back
+to _posts/ when the feed cannot be read.
+
 This writes email-safe HTML only -- tables, divs, inline styles, no CSS classes
-that a mail client can drop -- to fill the {{PAST_ISSUES}} placeholder in the
-skill's assets/issue-template.html.
+that a mail client can drop -- for the block between the PAST_ISSUES markers in
+the skill's assets/issue-template.html.
 
 Usage:
     python _tools/past-issues-email.py
@@ -21,12 +26,17 @@ Usage:
 
     python _tools/past-issues-email.py --weeks 8 --max 8 --out block.html
 
+    python _tools/past-issues-email.py --source posts
+        Skip the live feed and read the local _posts/ folder instead.
+
 Exits 1 if there is nothing to link yet, so a caller can drop the block.
 """
 
 import argparse
 import re
 import sys
+import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -35,12 +45,45 @@ POSTS = REPO / "_posts"
 SITE = "https://www.daricecorey.com"
 
 POST_NAME = re.compile(r"^(\d{4})-(\d{2})-(\d{2})-(.+)\.md$")
+FEED = f"{SITE}/feed.xml"
+ATOM = "{http://www.w3.org/2005/Atom}"
 
 ACCENT = "#7c3aed"
 INK = "#2a2540"
 MUTED = "#5d5775"
 FAINT = "#6b6583"
 SANS = "'DM Sans',Helvetica,Arial,sans-serif"
+
+
+def read_feed(timeout=10):
+    """Every published post from the live site feed, newest first.
+
+    The feed is what the website archive actually shows, so building the email
+    list from it keeps the two in sync no matter which path published the post
+    (a local publish, the hourly auto-publisher in CI, or the Sunday task).
+    Returns None if the feed cannot be read, so the caller can fall back.
+    """
+    try:
+        with urllib.request.urlopen(FEED, timeout=timeout) as resp:
+            root = ET.fromstring(resp.read())
+    except Exception as exc:  # offline, DNS, malformed feed, anything
+        print(f"note: could not read {FEED} ({exc}); using local _posts/.", file=sys.stderr)
+        return None
+
+    found = []
+    for entry in root.findall(f"{ATOM}entry"):
+        title = (entry.findtext(f"{ATOM}title") or "").strip()
+        published = (entry.findtext(f"{ATOM}published") or "").strip()
+        link = entry.find(f"{ATOM}link")
+        url = link.get("href") if link is not None else None
+        if not (title and published and url):
+            continue
+        found.append((date.fromisoformat(published[:10]), title, url))
+    if not found:
+        print(f"note: {FEED} had no entries; using local _posts/.", file=sys.stderr)
+        return None
+    found.sort(key=lambda row: row[0], reverse=True)
+    return found
 
 
 def read_posts():
@@ -116,9 +159,18 @@ def main():
     ap.add_argument("--exclude", default=None,
                     help="YYYY-MM-DD of the issue being sent, so it is not listed")
     ap.add_argument("--out", default=None, help="write to this file instead of stdout")
+    ap.add_argument("--source", choices=["auto", "feed", "posts"], default="auto",
+                    help="where the issue list comes from: the live site feed, the "
+                         "local _posts/ folder, or auto (feed, falling back to posts)")
     args = ap.parse_args()
 
-    posts = read_posts()
+    posts = None
+    if args.source in ("auto", "feed"):
+        posts = read_feed()
+        if posts is None and args.source == "feed":
+            return 1
+    if posts is None:
+        posts = read_posts()
     if args.exclude:
         skip = date.fromisoformat(args.exclude)
         posts = [row for row in posts if row[0] != skip]

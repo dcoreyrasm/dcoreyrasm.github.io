@@ -166,10 +166,21 @@ _tools/refresh-email-past-issues.sh YYYY-MM-DD
 ```
 
 Defaults to the last six weeks, at most six links (`_tools/past-issues-email.py` does the
-rendering; `--weeks` and `--max` change the size). The refresh is self-repairing: if a
-plugin re-sync has wiped the block out of the skill's template, it puts the whole block
-back from the repo copy. It soft-fails rather than blocking a publish, so if the template
-cannot be found the publish still succeeds and says so.
+rendering; `--weeks` and `--max` change the size). The list is built from the **live site
+feed** (`/feed.xml`), not the local `_posts/` folder, so the email lists exactly what the
+website archive shows even when a post was published from CI or another machine; it falls
+back to `_posts/` if the feed cannot be read.
+
+Two other things run it, so the template cannot quietly drift: the Sunday scheduled task
+runs it after it pushes, and the newsletter skill runs it as the first step of building an
+issue. It is idempotent, so running it more than once is free. The refresh is also
+self-repairing: if a plugin re-sync has wiped the block out of the skill's template, it
+puts the whole block back from the repo copy. It soft-fails rather than blocking a
+publish, so if the template cannot be found the publish still succeeds and says so.
+
+One limit worth naming: an email is frozen the moment it is sent. An issue sent in August
+keeps the list it shipped with, which is why every issue also carries the "See the full
+archive" link back to the site, where the archive is always current.
 
 ## Automation
 
