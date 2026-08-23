@@ -29,6 +29,7 @@ Format: `YYYY-MM-DD | theme | Claude feature; ChatGPT feature; Copilot feature; 
 2026-08-16 | Compare it without the forty open tabs | Claude memory; ChatGPT search; Copilot Shopping; Gemini shopping help
 2026-08-19 | Give a gift that actually fits, not just a price point | Claude brainstorm without leaving a trace; ChatGPT design the tag, wrapping, or card; Copilot a reasoned shortlist; Gemini turn a photo you already have into the gift
 2026-08-23 | Slow down when it actually matters | Claude Extended Thinking; ChatGPT Record Mode; Copilot Health; Gemini Deep Think
+2026-08-26 | Share the plan, not the screenshot | Claude share and unshare a chat; ChatGPT shared links; Copilot share a chat or a single answer; Gemini public links you can delete later
 
 > Backfill note (2026-08-23): the nine lines above were reconstructed from the published
 > posts in `_posts/`. Issues published by the hourly auto-publisher do not update this log,
@@ -59,6 +60,7 @@ Format: `YYYY-MM-DD | theme | Claude feature; ChatGPT feature; Copilot feature; 
 - Compare it without the forty open tabs (comparison shopping)
 - Give a gift that actually fits
 - Slow down when it actually matters (deeper reasoning modes)
+- Share the plan, not the screenshot (sharing a chat with someone else)
 
 ## Candidate themes to rotate through (pick one that is not in "Issues so far")
 

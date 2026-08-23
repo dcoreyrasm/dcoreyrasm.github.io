@@ -250,6 +250,20 @@ def icon_folder(d, accent, soft, bg):
         yy = 226 + i * 26
         d.rounded_rectangle([S(522), S(yy), S(522 + (150 - i * 26)), S(yy + 11)], radius=S(6), fill=blend(bg, accent, 0.55))
 
+def icon_share_link(d, accent, soft, bg):
+    # one node sending out to two others: share a chat with someone else
+    nodes = [(528, 232), (672, 172), (672, 292)]
+    r = 28
+    for (x1, y1) in nodes[1:]:
+        d.line([S(nodes[0][0] + 22), S(nodes[0][1] + (y1 - nodes[0][1]) // 6),
+                S(x1 - 22), S(y1 + (nodes[0][1] - y1) // 6)],
+               fill=blend(bg, accent, 0.7), width=S(7))
+    for i, (cx, cy) in enumerate(nodes):
+        fill = accent if i == 0 else soft
+        d.ellipse([S(cx - r), S(cy - r), S(cx + r), S(cy + r)],
+                  fill=fill, outline=accent, width=S(5))
+
+
 def icon_clock(d, accent, soft, bg):
     # a clock face with hands: keep a recurring check going on a schedule
     cx, cy, r = 600, 232, 74
@@ -272,6 +286,7 @@ ICONS = {
     "mic_voice": icon_mic_voice,
     "folder": icon_folder,
     "clock": icon_clock,
+    "share_link": icon_share_link,
 }
 
 # ---- card --------------------------------------------------------------
