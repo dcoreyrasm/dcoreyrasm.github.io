@@ -3,6 +3,7 @@ layout: post
 title: "Four Ways AI Can Help You Support an Aging Parent"
 date: 2026-07-29
 description: "Research a decision or keep a recurring check going for a parent's care, in Claude, ChatGPT, Copilot, and Gemini, without carrying it all in your head."
+image: /assets/blog/2026-07-29/claude.png
 ---
 
 If you are helping look after a parent, most of the mental load is just remembering things: medications, appointments, forms, follow-ups. All four tools now have a way to dig into something once or keep checking on it for you, instead of you carrying it all in your head. A few of these need a paid plan, noted below, but you can still ask the same question by hand for free either way. One serious caveat: never treat an AI answer as medical or legal advice. Always confirm anything about health, money, or benefits with a real doctor, pharmacist, or advisor.

@@ -3,6 +3,7 @@ layout: post
 title: "Plan the trip, skip the twelve open tabs"
 date: 2026-08-12
 description: "I've got a trip coming up and my browser looked like a crime scene: six flight tabs, four hotel tabs, and a spreadsheet nobody had touched in a week."
+image: /assets/blog/2026-08-12/claude.png
 ---
 
 I've got a trip coming up and my browser looked like a crime scene: six flight tabs, four hotel tabs, and a spreadsheet nobody had touched in a week. Each tool below handles one real piece of trip planning, building the packing list, researching where to actually go, comparing flights and hotels, or turning a real decision into a report you can trust. Pick whichever tab you're currently drowning in.

@@ -3,6 +3,7 @@ layout: post
 title: "Make Sense of a Long Document"
 date: 2026-07-12
 description: "Four ways to hand a lease, policy, or manual to AI and get plain answers, in Claude, ChatGPT, Copilot, and Gemini."
+image: /assets/blog/2026-07-12/claude.png
 ---
 
 Some documents are too long to read and too important to skip. A lease, an insurance policy, a benefits packet, the manual for the thing that just broke. All four of these tools can take the document and answer your questions about it in plain words, and each one is good at a slightly different way of doing that. Here is one feature per tool, with the official steps and an honest note on when it helps.

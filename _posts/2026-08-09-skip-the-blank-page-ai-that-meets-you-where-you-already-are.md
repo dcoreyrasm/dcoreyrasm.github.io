@@ -3,6 +3,7 @@ layout: post
 title: "Skip the blank page: AI that meets you where you already are"
 date: 2026-08-09
 description: "Every one of these tools has a blank chat box you can type into, and most of the time that is exactly where you should start."
+image: /assets/blog/2026-08-09/claude.png
 ---
 
 Every one of these tools has a blank chat box you can type into, and most of the time that is exactly where you should start. But each one also has a quieter feature that shows up somewhere you already are, in your browser tabs, in a group chat, in a ready-made assistant, or in the account you already use every day. Here is one of those from each tool, with an honest note on what it needs and what it does not.

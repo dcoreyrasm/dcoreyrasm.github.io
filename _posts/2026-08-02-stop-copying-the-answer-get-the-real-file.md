@@ -3,6 +3,7 @@ layout: post
 title: "Stop copying the answer, get the real file"
 date: 2026-08-02
 description: "You ask a good question and get a great answer, then spend ten minutes turning it into something useful, a document, a spreadsheet, an email you can actually send."
+image: /assets/blog/2026-08-02/claude.png
 ---
 
 You ask a good question and get a great answer, then spend ten minutes turning it into something useful, a document, a spreadsheet, an email you can actually send. All four tools can skip that step now and hand you the real thing directly. Here's one way to do it on each.

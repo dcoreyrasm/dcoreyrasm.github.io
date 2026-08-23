@@ -3,6 +3,7 @@ layout: post
 title: "Connect It to Your Other Apps"
 date: 2026-07-19
 description: "Four ways to let Claude, ChatGPT, Copilot, and Gemini check your own Gmail, calendar, and files instead of copying everything in by hand."
+image: /assets/blog/2026-07-19/claude.png
 ---
 
 You already keep your life in Gmail, a calendar, Google Drive, or OneDrive. All four tools can now reach into those apps directly instead of you copying and pasting everything back in by hand. One thing worth knowing before you turn a connection on: it can see real, personal information, so only connect an account you would not mind an assistant looking into.

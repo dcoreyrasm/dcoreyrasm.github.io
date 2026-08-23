@@ -3,6 +3,7 @@ layout: post
 title: "Give a gift that actually fits, not just a price point"
 date: 2026-08-19
 description: "Picking a gift is stressful when you don't know what to get, or you're worried it'll feel generic."
+image: /assets/blog/2026-08-19/claude.png
 ---
 
 Picking a gift is stressful when you don't know what to get, or you're worried it'll feel generic. Here's one way each of the four tools I use can help, from actually weighing the trade-offs to making the wrapping look like you tried. Pick the piece you need and skip the rest.

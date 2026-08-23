@@ -3,6 +3,7 @@ layout: post
 title: "Four ways to actually learn something, not just look it up"
 date: 2026-08-05
 description: "All four of these tools now have a real studying mode, built to walk you through a topic instead of just handing you the answer."
+image: /assets/blog/2026-08-05/claude.png
 ---
 
 All four of these tools now have a real studying mode, built to walk you through a topic instead of just handing you the answer. That is obviously useful for a test or a paper, but the same modes work just as well for a work certification, a new hobby, or just wanting to actually understand something instead of skimming a summary. Here is how to turn on the real studying mode in each one.

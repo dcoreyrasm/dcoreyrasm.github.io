@@ -3,6 +3,7 @@ layout: post
 title: "Snap a Photo and Just Ask"
 date: 2026-07-09
 description: "Four ways to point your phone's camera at real life and get help, in Claude, ChatGPT, Copilot, and Gemini."
+image: /assets/blog/2026-07-09/claude.png
 ---
 
 Some questions are easier to show than to type. What is this plant, what does this error message mean, how do I read this form. All four of these tools can look at a picture and answer, and each is good at a slightly different kind of "look at this." Here is one image feature per tool, with the official steps and an honest note on when it helps.

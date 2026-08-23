@@ -27,6 +27,7 @@ layout: post
 title: "Four Ways to Stop Starting From Scratch"
 date: 2026-07-01
 description: "One-sentence summary of the issue, ~15-25 words, no line breaks."
+image: /assets/blog/2026-07-01/claude.png
 ---
 ```
 
@@ -34,6 +35,11 @@ description: "One-sentence summary of the issue, ~15-25 words, no line breaks."
 - `date` — the send date, `YYYY-MM-DD`, no time.
 - `description` — one clean sentence for SEO and the blog card. Adapt the issue's intro
   or preview line; do not just paste the 8-12 word inbox preview.
+- `image` — the issue's Claude card, `/assets/blog/<date>/claude.png`. This is what
+  LinkedIn, other social cards, and search results show as the preview, and it feeds the
+  `BlogPosting` structured data in `_layouts/post.html`. Omit it only if the issue has no
+  section images; the layout then falls back to the site headshot. The auto-publisher
+  writes this line for you.
 
 ## Body (maps 1:1 to the four tool cards)
 

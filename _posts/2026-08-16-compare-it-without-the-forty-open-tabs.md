@@ -3,6 +3,7 @@ layout: post
 title: "Compare it without the forty open tabs"
 date: 2026-08-16
 description: "I have fallen down the rabbit hole of comparing coffee makers across forty open tabs more times than I want to admit."
+image: /assets/blog/2026-08-16/claude.png
 ---
 
 I have fallen down the rabbit hole of comparing coffee makers across forty open tabs more times than I want to admit. All four AI tools now help with exactly this: remembering what you already ruled out, pulling live prices, tracking a price drop, or lining two options up side by side. Here is one feature from each, worth trying the next time you are staring down a real purchase.

@@ -3,6 +3,7 @@ layout: post
 title: "Ask Your Spreadsheet a Question"
 date: 2026-07-13
 description: "Four ways to point Claude, ChatGPT, Copilot, and Gemini at a spreadsheet you already have and get a plain answer back."
+image: /assets/blog/2026-07-13/claude.png
 ---
 
 That family budget, that trip-expense tracker, that sign-up sheet. They all sit somewhere gathering dust, because getting one answer out means digging through formulas you do not remember writing. All four tools can now sit inside or next to a spreadsheet and just answer a plain question about it. Here is one way to do that in each, plus an honest note on what it takes to get access.

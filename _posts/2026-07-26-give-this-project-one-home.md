@@ -3,6 +3,7 @@ layout: post
 title: "Give This Project One Home"
 date: 2026-07-26
 description: "Keep a move, a renovation, or a big trip in one place and get the result in a shape you'll use, in Claude, ChatGPT, Copilot, and Gemini."
+image: /assets/blog/2026-07-26/claude.png
 ---
 
 Most of us start a new chat every time, then can't find the answer we got three weeks ago. All four tools now have a way to keep one project together, a move, a renovation, a big trip, and hand the result back in a shape you'll actually use: your own voice, one workspace, or something you can listen to instead of read. Here's one way to do it on each platform.

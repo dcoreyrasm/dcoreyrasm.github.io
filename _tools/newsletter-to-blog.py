@@ -215,10 +215,16 @@ def lower_first(s):
     return s[:1].lower() + s[1:] if s else s
 
 
-def render_markdown(issue):
+def render_markdown(issue, with_image=True):
     lines = ["---", "layout: post", f'title: "{issue["title"]}"',
-             f'date: {issue["date"]}', f'description: "{issue["description"]}"',
-             "---", "", issue["intro"], ""]
+             f'date: {issue["date"]}', f'description: "{issue["description"]}"']
+    # The Claude card doubles as the post's social/search preview image and feeds
+    # the BlogPosting structured data. Only claim it when the cards are actually
+    # being generated: pointing at a missing file would render an empty card on
+    # LinkedIn, where the layout's headshot fallback at least shows something.
+    if with_image:
+        lines.append(f'image: /assets/blog/{issue["date"]}/claude.png')
+    lines += ["---", "", issue["intro"], ""]
     for s in issue["sections"]:
         lines.append(f'## {s["tool"]}: {lower_first(s["feature"])}')
         lines.append("")
@@ -269,7 +275,7 @@ def posted_dates():
 def write_issue(issue, make_images=True):
     post_path = os.path.join(POSTS_DIR, f'{issue["date"]}-{issue["slug"]}.md')
     with open(post_path, "w") as f:
-        f.write(render_markdown(issue))
+        f.write(render_markdown(issue, with_image=make_images))
     cfg_path = os.path.join(CONFIG_DIR, f'{issue["date"]}.json')
     with open(cfg_path, "w") as f:
         json.dump(render_config(issue), f, indent=2)

@@ -3,6 +3,7 @@ layout: post
 title: "Talk to It Instead of Typing"
 date: 2026-07-22
 description: "Four ways to just talk to Claude, ChatGPT, Copilot, and Gemini now that voice mode across all of them feels like a real conversation."
+image: /assets/blog/2026-07-22/claude.png
 ---
 
 Sometimes typing is the slow part, not the thinking. All four of these tools let you just talk instead, and the voice experience across the board just got a lot more natural, less like a walkie-talkie, more like an actual conversation. A spoken answer can still be confidently wrong, the same as a typed one, so treat anything important the same way and double-check it before you act on it.
