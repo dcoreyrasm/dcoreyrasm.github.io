@@ -40,3 +40,6 @@ exclude:
   - Gemfile.lock
   - vendor
   - .gitignore
+  # Build tooling for the Village Notes directory. It runs only in Actions and
+  # has no business being copied into the published site.
+  - scripts
