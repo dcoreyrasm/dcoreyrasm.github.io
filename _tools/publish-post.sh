@@ -50,5 +50,11 @@ git commit -m "$MSG"
 git pull --rebase origin main
 git push origin main
 
+# Keep the newsletter email template's "Past issues" list current, so the next
+# issue is built from a template that already links every published issue.
+# Soft-fails on purpose: a publish must never break because the skill template
+# moved or a plugin re-sync wiped it.
+_tools/refresh-email-past-issues.sh "$DATE" || true
+
 SLUG="$(basename "$POST" .md | sed -E 's/^[0-9]{4}-[0-9]{2}-[0-9]{2}-//')"
 echo "Published. Live shortly at: https://www.daricecorey.com/blog/${SLUG}/"

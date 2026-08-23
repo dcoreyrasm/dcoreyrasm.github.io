@@ -149,18 +149,27 @@ to be hand-maintained when a post is published:
 A new post joins all three automatically on the next Pages build. Nothing to update by hand.
 
 **In the email.** The issue template carries a matching "Past issues" block with the same
-month, then week grouping. Its markup is kept here as `_tools/email-past-issues-block.html`
-(the skill's copy can be wiped by a plugin re-sync; this one is the source of truth), and
-its `{{PAST_ISSUES}}` placeholder is filled by:
+month, then week, then title grouping. Its markup is kept here as
+`_tools/email-past-issues-block.html` (the skill's copy can be wiped by a plugin re-sync;
+this one is the source of truth), and the list itself sits between two markers:
 
-```bash
-python _tools/past-issues-email.py --exclude YYYY-MM-DD
+```html
+<!-- PAST_ISSUES:START --> ... <!-- PAST_ISSUES:END -->
 ```
 
-where the date is the issue being sent, so it does not list itself. Defaults to the last
-six weeks, at most six links; `--weeks` and `--max` change that. Paste the output over the
-placeholder. If the script cannot run, delete the whole `<!-- Past issues -->` row rather
-than sending a raw placeholder.
+`_tools/publish-post.sh` regenerates what is between them on every publish, excluding the
+issue it just published, so the template a new issue is built from always carries current
+links and there is no per-issue step. To refresh it by hand:
+
+```bash
+_tools/refresh-email-past-issues.sh YYYY-MM-DD
+```
+
+Defaults to the last six weeks, at most six links (`_tools/past-issues-email.py` does the
+rendering; `--weeks` and `--max` change the size). The refresh is self-repairing: if a
+plugin re-sync has wiped the block out of the skill's template, it puts the whole block
+back from the repo copy. It soft-fails rather than blocking a publish, so if the template
+cannot be found the publish still succeeds and says so.
 
 ## Automation
 
