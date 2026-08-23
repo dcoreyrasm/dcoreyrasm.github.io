@@ -20,6 +20,21 @@ Format: `YYYY-MM-DD | theme | Claude feature; ChatGPT feature; Copilot feature; 
 2026-07-13 | Ask your spreadsheet a question | Claude for Excel; ChatGPT data analysis (upload and analyze); Copilot in Excel; Gemini in Sheets (build/edit)
 2026-07-19 | Connect it to your other apps | Claude Connectors (Gmail, Calendar, Drive); ChatGPT Apps in ChatGPT; Copilot connecting the free personal Copilot to other accounts; Gemini Connected Apps (@ mention)
 2026-07-22 | Talk to it instead of typing (skip the typing, just talk to your AI instead) | Claude Voice mode; ChatGPT GPT-Live; Copilot Copilot Voice; Gemini Gemini Live
+2026-07-26 | Give this project one home | Claude answers in a style that sounds like you; ChatGPT one home for a project instead of ten chats; Copilot turn a pile of notes into a notebook; Gemini listen to what you gathered (Audio Overview)
+2026-07-29 | Support an aging parent | Claude Research (several searches at once); ChatGPT Tasks (scheduled reminders); Copilot Tasks; Gemini Scheduled actions
+2026-08-02 | Stop copying the answer, get the real file | Claude create and edit real files; ChatGPT Deep Research; Copilot Researcher agent; Gemini export responses to Docs, Sheets, or Gmail
+2026-08-05 | Actually learn something, not just look it up | Claude web search; ChatGPT Study Mode; Copilot study and learn mode; Gemini Study Notebooks
+2026-08-09 | Skip the blank page, AI that meets you where you already are | Claude in Chrome; ChatGPT a ready-made GPT; Copilot in GroupMe; Gemini personalization
+2026-08-12 | Plan the trip, skip the twelve open tabs | Claude create and edit files (repeat of 08-02); ChatGPT Deep Research (repeat of 08-02); Copilot Researcher agent (repeat of 08-02); Gemini search for flights and hotels
+2026-08-16 | Compare it without the forty open tabs | Claude memory; ChatGPT search; Copilot Shopping; Gemini shopping help
+2026-08-19 | Give a gift that actually fits, not just a price point | Claude brainstorm without leaving a trace; ChatGPT design the tag, wrapping, or card; Copilot a reasoned shortlist; Gemini turn a photo you already have into the gift
+2026-08-23 | Slow down when it actually matters | Claude Extended Thinking; ChatGPT Record Mode; Copilot Health; Gemini Deep Think
+
+> Backfill note (2026-08-23): the nine lines above were reconstructed from the published
+> posts in `_posts/`. Issues published by the hourly auto-publisher do not update this log,
+> so it had drifted a month behind. Three of the four features in the 2026-08-12 issue
+> repeat the 2026-08-02 issue, which is exactly the kind of repeat this log exists to
+> prevent. Worth checking the log by hand until the auto-publisher also appends to it.
 
 ## Do not reuse these themes (used already or in skill examples)
 
@@ -35,15 +50,24 @@ Format: `YYYY-MM-DD | theme | Claude feature; ChatGPT feature; Copilot feature; 
 - Ask your spreadsheet a question (make sense of a spreadsheet)
 - Connect it to your other apps
 - Talk to it instead of typing (skip the typing, just talk to your AI instead)
+- Give this project one home
+- Support an aging parent
+- Stop copying the answer, get the real file (get a real file out)
+- Actually learn something, not just look it up
+- Skip the blank page / AI where you already are
+- Plan the trip (trip planning)
+- Compare it without the forty open tabs (comparison shopping)
+- Give a gift that actually fits
+- Slow down when it actually matters (deeper reasoning modes)
 
 ## Candidate themes to rotate through (pick one that is not in "Issues so far")
 
-- Research a real decision you will still confirm with a person
-- Understand a long document you upload
-- Plan an event on a budget
 - Practice for something hard (interview, hard conversation, exam)
-- Learn a new skill or topic step by step
 - Get unstuck on a household or family task
+- Cook from what is already in the kitchen
+- Explain something to a kid without dumbing it down
+- Read the fine print (a bill, a lease, a policy) in plain language
+- Keep it private: what each tool remembers and how to clear it
 
 ## How to use this file
 
