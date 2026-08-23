@@ -215,9 +215,23 @@ def lower_first(s):
     return s[:1].lower() + s[1:] if s else s
 
 
+def yaml_str(value):
+    """Quote a value safely for YAML front matter.
+
+    Titles and descriptions come from the issue HTML, so they can contain a
+    double quote, a backslash, or (via a bad parse) a newline. Wrapping those
+    in bare quotes ends the string early and yields front matter Jekyll cannot
+    parse, which fails the Pages build and takes the whole site's next deploy
+    with it. json.dumps emits a double-quoted scalar using the same escapes
+    YAML defines for those characters, so the value survives intact.
+    ensure_ascii=False keeps curly quotes and accents readable in the file.
+    """
+    return json.dumps(str(value), ensure_ascii=False)
+
+
 def render_markdown(issue, with_image=True):
-    lines = ["---", "layout: post", f'title: "{issue["title"]}"',
-             f'date: {issue["date"]}', f'description: "{issue["description"]}"']
+    lines = ["---", "layout: post", f'title: {yaml_str(issue["title"])}',
+             f'date: {issue["date"]}', f'description: {yaml_str(issue["description"])}']
     # The Claude card doubles as the post's social/search preview image and feeds
     # the BlogPosting structured data. Only claim it when the cards are actually
     # being generated: pointing at a missing file would render an empty card on
