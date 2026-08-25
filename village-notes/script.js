@@ -119,7 +119,12 @@
     if (has(r.category)) head += '<span class="vn-sep">/</span>' + esc(r.category);
     head += '</p>';
 
+    // Only worth a row when it says something the town line does not already.
+    var extraTowns = (Array.isArray(r.townsServed) ? r.townsServed : [])
+      .filter(function (t) { return t !== r.town; });
+
     var facts =
+      fact('Serves', extraTowns.length ? [r.town].concat(extraTowns).filter(has).join(', ') : null) +
       fact('Hours', r.hours) +
       fact('Waitlist', r.availability, true) +
       fact('Ages', r.ages) +
@@ -162,10 +167,18 @@
 
   /* ---------- filtering ---------- */
 
+  // A family filtering to their town wants everyone who serves it, not only
+  // providers headquartered there -- an agency based one town over that covers
+  // theirs is exactly the result they are looking for.
+  function servesTown(r, town) {
+    if (r.town === town) return true;
+    return Array.isArray(r.townsServed) && r.townsServed.indexOf(town) !== -1;
+  }
+
   function matches(r) {
     if (state.track && r.track !== state.track) return false;
     if (state.category && r.category !== state.category) return false;
-    if (state.town && r.town !== state.town) return false;
+    if (state.town && !servesTown(r, state.town)) return false;
     if (!state.search) return true;
     return (r._haystack || '').indexOf(state.search) !== -1;
   }
@@ -174,6 +187,7 @@
     return [r.name, r.track, r.category, r.specificType, r.town, r.address,
             r.ages, r.hours, r.availability, r.cost, r.contact, r.notes,
             r.submittedBy]
+      .concat(Array.isArray(r.townsServed) ? r.townsServed : [])
       .filter(has).join(' ␟ ').toLowerCase();
   }
 
@@ -280,7 +294,12 @@
         });
 
         fillSelect(el.track, uniqueSorted(state.all.map(function (r) { return r.track; })), 'All tracks');
-        fillSelect(el.town, uniqueSorted(state.all.map(function (r) { return r.town; })), 'All towns');
+        var townValues = [];
+        state.all.forEach(function (r) {
+          townValues.push(r.town);
+          if (Array.isArray(r.townsServed)) townValues = townValues.concat(r.townsServed);
+        });
+        fillSelect(el.town, uniqueSorted(townValues), 'All towns');
         refreshCategoryOptions();
 
         el.countBadge.textContent = state.all.length
