@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-25T16:05:29.801Z",
+  "generated": "2026-08-25T16:45:17.083Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "Moderation Status = \"Published\""
   },
-  "count": 9,
+  "count": 19,
   "tracks": [
     "Elder Care",
     "Family & Childcare"
@@ -14,12 +14,19 @@
     "Arts Camp",
     "Assisted Living",
     "Before/After School Care",
+    "Birth-to-Three / Early Intervention",
+    "Caregiver Support Group",
+    "Elder Law / Financial Planning",
     "Geriatric Care Manager",
     "Hospice / Palliative Care",
     "In-Home Caregiver / Home Health Aide",
     "Infant Care",
+    "Legal/HR Resource",
     "Outdoor/Nature Camp",
-    "Preschool / Pre-K"
+    "Parenting Support/Classes",
+    "Preschool / Pre-K",
+    "Respite Care",
+    "Veterans Benefits Counseling"
   ],
   "towns": [
     "Ansonia",
@@ -42,12 +49,35 @@
     "Oxford",
     "Seymour",
     "Shelton",
+    "Statewide",
     "Statewide (all of Connecticut)",
     "Wallingford",
     "West Haven",
     "Woodbridge"
   ],
   "resources": [
+    {
+      "id": "recCgB2MLhg3OcANI",
+      "name": "211 Child Development Infoline",
+      "track": "Family & Childcare",
+      "category": "Birth-to-Three / Early Intervention",
+      "specificType": "Free care coordination and referrals for child health, behavior, development, and learning",
+      "town": "Statewide",
+      "address": null,
+      "ages": "Pregnant people, parents, caregivers, providers, and families with children",
+      "hours": "Care coordinators are available Monday through Friday, 8:00 a.m. to 6:00 p.m., except holidays. Messages may be left at any time.",
+      "availability": null,
+      "cost": "Free and confidential",
+      "website": "https://portal.ct.gov/oca/knowledge-base/articles/resources/child-development",
+      "contact": "1-800-505-7000; multilingual and TTY support is available",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official State of Connecticut resource page verified 2026-08-25."
+    },
     {
       "id": "rec6hA0NlC2QfcsaR",
       "name": "Agency on Aging of South Central Connecticut",
@@ -140,6 +170,28 @@
       "notes": "Calvin Hill Day Care Center and the Kitty Lustman-Findling Kindergarten is a private, nonprofit preschool and kindergarten on Yale's campus in New Haven, serving both Yale-affiliated and community families. The program uses a progressive, integrated-day curriculum and is known for long-tenured teaching staff and active parent involvement, including a parent committee and one family work day per year. Tuition is offered on a sliding scale to keep the program accessible, and the center participates in the New Haven School Readiness Program. Priority enrollment goes to children of Yale faculty, staff, and students, but the program is open to families across the greater New Haven area."
     },
     {
+      "id": "rec23tNM3vi2Cx1wg",
+      "name": "Care 4 Kids",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Connecticut child-care financial assistance and eligibility screening",
+      "town": "Statewide",
+      "address": null,
+      "ages": "Low- to moderate-income Connecticut families needing help with child-care costs",
+      "hours": null,
+      "availability": "Online prescreening, application, redetermination, and change-reporting services are available. Eligibility depends on household, income, and work, training, or education circumstances.",
+      "cost": "Financial assistance program; family contribution depends on eligibility and household circumstances.",
+      "website": "https://portal.ct.gov/oec/care4kids",
+      "contact": null,
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official Connecticut Office of Early Childhood source verified 2026-08-25. Category is the closest available tracker choice; this is a child-care subsidy and application resource."
+    },
+    {
       "id": "recWYluHeg2kW3YFQ",
       "name": "Common Ground High School, Urban Farm & Environmental Education Center",
       "track": "Family & Childcare",
@@ -160,6 +212,182 @@
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
       "dateSubmitted": "2026-08-08",
       "notes": "Common Ground's summer camp runs on a 20-acre urban farm at the base of West Rock Ridge State Park, with campers spending their days almost entirely outdoors: caring for farm animals, hiking, wading in the stream, building forts, and cooking over a campfire. Two-week sessions run late June through early August, with camp tracks organized by age and interest, including a dedicated Sprouts program for 4-to-6-year-olds and a cooking-focused camp. Extended day care is available until 5:30 PM for families who need coverage past the standard 3:00 PM pickup. Making camp financially accessible is core to the program's mission: Common Ground provides over $30,000 in scholarships each summer and actively works to reach underserved New Haven neighborhoods and schools."
+    },
+    {
+      "id": "recDzBQwGDgwuAxTG",
+      "name": "Connecticut Birth to Three System",
+      "track": "Family & Childcare",
+      "category": "Birth-to-Three / Early Intervention",
+      "specificType": "Early intervention for infants and toddlers with developmental delays or qualifying medical conditions",
+      "town": "Statewide",
+      "address": null,
+      "ages": "Connecticut children age 3 or younger and their families",
+      "hours": null,
+      "availability": "Families may contact 211 Child Development to discuss concerns and request a referral or evaluation.",
+      "cost": null,
+      "website": "https://portal.ct.gov/dds/knowledge-base/articles/eligibility-for-birth-to-three-program",
+      "contact": "211 Child Development: 1-800-505-7000 or 2-1-1",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official State of Connecticut eligibility and referral page verified 2026-08-25."
+    },
+    {
+      "id": "rec3GEXKKTT13BHcy",
+      "name": "Connecticut Parenting Support Services",
+      "track": "Family & Childcare",
+      "category": "Parenting Support/Classes",
+      "specificType": "Parent coaching, classes, case management, Triple P, and Circle of Security Parenting",
+      "town": "Statewide",
+      "address": null,
+      "ages": "Families with children from birth through age 18; priority is given to families involved with DCF",
+      "hours": null,
+      "availability": "Program access and priority depend on family circumstances and DCF involvement.",
+      "cost": null,
+      "website": "https://portal.ct.gov/dcf/knowledge-base/articles/supports-for-children-and-families/parent-resources/parenting-support-services",
+      "contact": null,
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official Connecticut Department of Children and Families source verified 2026-08-25."
+    },
+    {
+      "id": "recANgRyQcMQtJToA",
+      "name": "Connecticut Senior Medicare Patrol",
+      "track": "Elder Care",
+      "category": "Elder Law / Financial Planning",
+      "specificType": "Free Medicare fraud prevention education, billing help, counseling, and complaint review",
+      "town": "Statewide",
+      "address": null,
+      "ages": "Medicare beneficiaries, family members, and caregivers",
+      "hours": null,
+      "availability": "Local Area Agency on Aging staff provide education and one-on-one counseling and can review suspected errors, fraud, or abuse.",
+      "cost": "Free assistance",
+      "website": "https://portal.ct.gov/ads/knowledge-base/articles/advocacy-services/fraud-prevention/senior-medicare-patrol",
+      "contact": "1-800-994-9422",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. Category is the closest available tracker choice; this program focuses on Medicare education and fraud assistance."
+    },
+    {
+      "id": "rec8rp4ikH5hfoHTd",
+      "name": "Connecticut Statewide Respite Care Program",
+      "track": "Elder Care",
+      "category": "Respite Care",
+      "specificType": "Respite and care planning for families caring for someone with Alzheimer’s disease or a related condition",
+      "town": "Statewide",
+      "address": null,
+      "ages": "Connecticut caregivers of people with Alzheimer’s disease or related dementias",
+      "hours": null,
+      "availability": "A care manager reviews need and available funding. Families may use a home-care agency or hire someone they trust.",
+      "cost": "The program may pay up to $7,500 per year, depending on need and available funding.",
+      "website": "https://portal.ct.gov/ads/knowledge-base/articles/independent-living-services/healthy-living-services/connecticut-statewide-respite-care",
+      "contact": "1-800-994-9422",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25."
+    },
+    {
+      "id": "recuM2X9dc0S5CJab",
+      "name": "Connecticut Veterans Directed Care Program",
+      "track": "Elder Care",
+      "category": "Veterans Benefits Counseling",
+      "specificType": "Veteran-directed home and community care with an individual budget and caregiver choice",
+      "town": "Statewide",
+      "address": null,
+      "ages": "Eligible Connecticut veterans referred and screened through the VA Connecticut Healthcare System",
+      "hours": null,
+      "availability": "A VA medical center must first refer and prescreen the veteran. The appropriate Area Agency on Aging then coordinates assessment and services.",
+      "cost": null,
+      "website": "https://portal.ct.gov/ads/knowledge-base/articles/independent-living-services/healthy-living-services/connecticut-veterans-directed-care-program",
+      "contact": "Area Agency on Aging: 1-800-994-9422; Connecticut Veterans Affairs advocacy: 860-616-3683",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. Access begins through a VA referral."
+    },
+    {
+      "id": "recAkcq1mH3zGjJk3",
+      "name": "Grandparents as Parents Support",
+      "track": "Elder Care",
+      "category": "Caregiver Support Group",
+      "specificType": "Support groups and referral help for grandparents and older relatives raising children",
+      "town": "Statewide",
+      "address": null,
+      "ages": "Grandparents and older relatives raising grandchildren or other children",
+      "hours": null,
+      "availability": "Call 2-1-1 for support-group information or the Area Agency on Aging line for help with grandfamily resources.",
+      "cost": null,
+      "website": "https://portal.ct.gov/ads/knowledge-base/articles/independent-living-services/healthy-living-services/grandparents-as-parents-support",
+      "contact": "2-1-1 for support groups; 1-800-994-9422 for Area Agency on Aging help",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25."
+    },
+    {
+      "id": "recovd34oCQLHnm5J",
+      "name": "My Place CT Long-Term Services and Supports",
+      "track": "Elder Care",
+      "category": "Geriatric Care Manager",
+      "specificType": "Online information, chat, options counseling, benefits counseling, and service referrals",
+      "town": "Statewide",
+      "address": null,
+      "ages": "Older adults, people with disabilities, family members, and caregivers",
+      "hours": null,
+      "availability": "People who need added help may contact an Area Agency on Aging for a service coordinator or benefits counselor.",
+      "cost": null,
+      "website": "https://portal.ct.gov/ads/knowledge-base/articles/independent-living-services/healthy-living-services/no-wrong-door-initiatives-to-improve-behavioral-health-services-for-older-adults",
+      "contact": "Area Agency on Aging: 1-800-994-9422",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. Category is the closest available tracker choice; this is a service-finding and counseling resource."
+    },
+    {
+      "id": "recfeqVRPt58qn6zX",
+      "name": "National Family Caregiver Support Program in Connecticut",
+      "track": "Elder Care",
+      "category": "Caregiver Support Group",
+      "specificType": "Caregiver information, respite, training, support groups, and possible help paying for certain services",
+      "town": "Statewide",
+      "address": null,
+      "ages": "Adult caregivers of older adults or people with dementia; some grandparents and older relative caregivers",
+      "hours": null,
+      "availability": "A local Area Agency on Aging reviews needs and eligibility. Some services depend on income, need, and available funding.",
+      "cost": null,
+      "website": "https://portal.ct.gov/ads/knowledge-base/articles/independent-living-services/healthy-living-services/national-family-caregiver-support-program",
+      "contact": "1-800-994-9422",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. The program offers several forms of caregiver help, not only support groups."
     },
     {
       "id": "recc8lOUI90anHLsy",
