@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A searchable directory of AI funding, training, tools, and technical support for community leaders, informal groups, nonprofits, and Connecticut organizations." />
+  <title>AI Support &amp; Opportunities for Communities — Darice Corey</title>
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.daricecorey.com/community-ai.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AI Support &amp; Opportunities for Communities" />
+  <meta property="og:description" content="A searchable directory of AI funding, training, tools, and technical support for community leaders, informal groups, nonprofits, and Connecticut organizations." />
+  <meta property="og:url" content="https://www.daricecorey.com/community-ai.html" />
+  <meta property="og:image" content="https://www.daricecorey.com/darice.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Support &amp; Opportunities for Communities" />
+  <meta name="twitter:description" content="A searchable directory of AI funding, training, tools, and technical support for community leaders, informal groups, nonprofits, and Connecticut organizations." />
+  <meta name="twitter:image" content="https://www.daricecorey.com/darice.jpg" />
+  <script>window.__daOptOut=(function(){try{return localStorage.getItem('da-analytics-optout')==='1'}catch(e){return false}})();if(window.__daOptOut){window['ga-disable-G-725R412XD7']=true;}</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-725R412XD7"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-725R412XD7');</script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">if(!window.__daOptOut){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xdrtc0i2un");}</script>
+
+<style>
+/* ==========================================================================
+   Community AI finder — page-scoped styles.
+   Inherits the site palette from styles.css (--coral is the purple accent).
+   ========================================================================== */
+
+/* Semantic tokens for the bits this page paints itself. styles.css flips the
+   site palette under prefers-color-scheme; these flip alongside it so the
+   status colors and accent-filled surfaces keep their contrast in both themes. */
+:root {
+  --cf-on-accent: #1a0a2e;                 /* text sitting on a filled accent */
+  --cf-ok:    #7ee2a8; --cf-ok-line:    rgba(126,226,168,.42); --cf-ok-bg:    rgba(126,226,168,.09);
+  --cf-warn:  #fbd24e; --cf-warn-line:  rgba(251,210,78,.42);  --cf-warn-bg:  rgba(251,210,78,.09);
+  --cf-alert: #f89b9b; --cf-alert-line: rgba(248,155,155,.45); --cf-alert-bg: rgba(248,155,155,.10);
+  --cf-mark: rgba(192,132,252,.30);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --cf-on-accent: #fff;
+    --cf-ok:    #0f7a4a; --cf-ok-line:    rgba(15,122,74,.34);  --cf-ok-bg:    rgba(15,122,74,.07);
+    --cf-warn:  #8a5a00; --cf-warn-line:  rgba(138,90,0,.34);   --cf-warn-bg:  rgba(138,90,0,.07);
+    --cf-alert: #b02525; --cf-alert-line: rgba(176,37,37,.34);  --cf-alert-bg: rgba(176,37,37,.06);
+    --cf-mark: rgba(124,58,237,.20);
+  }
+}
+
+.cf-wrap { max-width: 1240px; margin: 0 auto; padding: 0 3rem; }
+
+/* ---- Intro -------------------------------------------------------------- */
+.cf-intro { padding: 4rem 0 2.5rem; }
+.cf-eyebrow { font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: var(--coral); margin-bottom: 1.25rem; display: flex; align-items: center; gap: 1rem; }
+.cf-eyebrow::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+.cf-title { font-family: var(--serif); font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 700; line-height: 1.12; margin-bottom: 1.1rem; }
+.cf-lede { font-size: 1rem; color: var(--muted); line-height: 1.8; max-width: 68ch; }
+.cf-lede + .cf-lede { margin-top: .9rem; }
+.cf-stats { display: flex; flex-wrap: wrap; gap: 2.5rem; margin-top: 2.25rem; padding-top: 1.75rem; border-top: 1px solid var(--line); }
+.cf-stat .n { font-family: var(--serif); font-size: 1.9rem; font-weight: 700; color: var(--coral); line-height: 1; display: block; }
+.cf-stat .l { font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-top: .45rem; display: block; }
+
+/* ---- Doors explainer ---------------------------------------------------- */
+.cf-doors { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); margin-top: 2.5rem; border: 1px solid var(--line); }
+.cf-door { background: var(--bg2); padding: 1.35rem 1.4rem; }
+.cf-door h3 { font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--coral); margin-bottom: .55rem; font-weight: 500; }
+.cf-door p { font-size: .88rem; color: var(--muted); line-height: 1.6; }
+
+/* ---- Search bar --------------------------------------------------------- */
+.cf-tools { position: sticky; top: 5rem; z-index: 40; background: var(--bg); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1.1rem 0; margin-bottom: 2rem; }
+.cf-toolbar { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; }
+.cf-searchbox { position: relative; flex: 1 1 320px; min-width: 0; }
+.cf-searchbox svg { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; stroke: var(--muted); pointer-events: none; }
+#cf-q { width: 100%; background: var(--bg2); border: 1px solid var(--line); color: var(--cream); font-family: var(--sans); font-size: .95rem; padding: .85rem 2.6rem .85rem 2.8rem; border-radius: 2px; }
+#cf-q::placeholder { color: var(--muted); }
+#cf-q:focus { border-color: var(--coral); outline: none; }
+.cf-clearq { position: absolute; right: .55rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--muted); cursor: pointer; font-size: 1.1rem; line-height: 1; padding: .35rem .5rem; border-radius: 2px; }
+.cf-clearq:hover { color: var(--coral); }
+.cf-select { background: var(--bg2); border: 1px solid var(--line); color: var(--cream); font-family: var(--sans); font-size: .8rem; padding: .8rem .9rem; border-radius: 2px; cursor: pointer; }
+.cf-select:focus { border-color: var(--coral); outline: none; }
+.cf-filters-toggle { display: none; }
+
+/* ---- Quick starts ------------------------------------------------------- */
+.cf-quick { margin-bottom: 2rem; }
+.cf-quick-label { font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: .8rem; }
+.cf-quick-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+.cf-quick-btn { background: transparent; border: 1px solid var(--line); color: var(--cream); font-family: var(--sans); font-size: .82rem; padding: .55rem 1rem; border-radius: 999px; cursor: pointer; transition: border-color .18s, color .18s, background .18s; }
+.cf-quick-btn:hover { border-color: var(--coral); color: var(--coral); }
+.cf-quick-btn[aria-pressed="true"] { background: var(--coral); border-color: var(--coral); color: var(--cf-on-accent); font-weight: 500; }
+
+/* ---- Layout ------------------------------------------------------------- */
+.cf-layout { display: grid; grid-template-columns: 270px 1fr; gap: 2.5rem; align-items: start; padding-bottom: 5rem; }
+
+/* ---- Facet sidebar ------------------------------------------------------ */
+.cf-side { position: sticky; top: 10.5rem; max-height: calc(100vh - 12rem); overflow-y: auto; padding-right: .5rem; }
+.cf-side-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1rem; padding-bottom: .75rem; border-bottom: 1px solid var(--line); }
+.cf-side-head h2 { font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--coral); font-weight: 500; }
+.cf-reset { background: none; border: none; color: var(--muted); font-family: var(--sans); font-size: .76rem; cursor: pointer; text-decoration: underline; padding: 0; }
+.cf-reset:hover { color: var(--coral); }
+.cf-facet { border-bottom: 1px solid var(--line); }
+.cf-facet > summary { cursor: pointer; list-style: none; padding: .85rem 0; font-size: .82rem; color: var(--cream); display: flex; justify-content: space-between; align-items: center; gap: .5rem; }
+.cf-facet > summary::-webkit-details-marker { display: none; }
+.cf-facet > summary::after { content: '+'; color: var(--coral); font-size: 1rem; line-height: 1; flex-shrink: 0; }
+.cf-facet[open] > summary::after { content: '\2212'; }
+.cf-facet > summary:hover { color: var(--coral); }
+.cf-facet-count { font-size: .68rem; background: var(--coral); color: var(--cf-on-accent); border-radius: 999px; padding: .1rem .45rem; font-weight: 500; margin-left: auto; }
+.cf-opts { padding: 0 0 .9rem; display: flex; flex-direction: column; gap: .1rem; }
+.cf-opt { display: flex; align-items: flex-start; gap: .55rem; font-size: .82rem; color: var(--muted); cursor: pointer; padding: .3rem .25rem; border-radius: 2px; line-height: 1.45; }
+.cf-opt:hover { color: var(--cream); background: rgba(192,132,252,.06); }
+.cf-opt input { accent-color: var(--coral); margin-top: .2rem; flex-shrink: 0; }
+.cf-opt .cf-opt-n { margin-left: auto; font-size: .72rem; opacity: .65; flex-shrink: 0; padding-left: .4rem; }
+.cf-opt.is-empty { opacity: .38; }
+.cf-more { background: none; border: none; color: var(--coral); font-family: var(--sans); font-size: .76rem; cursor: pointer; text-align: left; padding: .35rem .25rem; text-decoration: underline; }
+
+/* ---- Results ------------------------------------------------------------ */
+.cf-resulthead { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.cf-count { font-size: .85rem; color: var(--muted); }
+.cf-count strong { color: var(--cream); font-weight: 500; }
+.cf-chips { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: 1.5rem; }
+.cf-chip { display: inline-flex; align-items: center; gap: .45rem; background: rgba(192,132,252,.12); border: 1px solid rgba(192,132,252,.3); color: var(--cream); font-size: .76rem; padding: .35rem .75rem; border-radius: 999px; }
+.cf-chip button { background: none; border: none; color: var(--coral); cursor: pointer; font-size: .95rem; line-height: 1; padding: 0; }
+.cf-chip button:hover { color: var(--cream); }
+.cf-group { margin-bottom: 2.5rem; padding: 0; background: none; }
+.cf-chips:empty { margin-bottom: 0; }
+.cf-group-head { font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--coral); margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem; }
+.cf-group-head::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+.cf-group-head .n { color: var(--muted); letter-spacing: .05em; }
+
+.cf-card { background: var(--bg2); border: 1px solid var(--line); padding: 1.5rem 1.6rem; margin-bottom: 1rem; transition: border-color .18s; }
+.cf-card:hover { border-color: rgba(192,132,252,.32); }
+.cf-card-top { display: flex; justify-content: space-between; gap: 1.25rem; align-items: flex-start; flex-wrap: wrap; }
+.cf-card-org { font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--coral); margin-bottom: .4rem; }
+.cf-card h3 { font-family: var(--serif); font-size: 1.22rem; font-weight: 700; line-height: 1.3; color: var(--cream); }
+.cf-card h3 mark, .cf-card p mark { background: var(--cf-mark); color: var(--cream); padding: 0 .12em; border-radius: 2px; }
+.cf-badges { display: flex; flex-wrap: wrap; gap: .4rem; margin: .85rem 0; }
+.cf-badge { font-size: .7rem; letter-spacing: .05em; padding: .28rem .65rem; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.cf-badge.door1 { border-color: var(--cf-ok-line); color: var(--cf-ok); background: var(--cf-ok-bg); }
+.cf-badge.door2 { border-color: var(--cf-warn-line); color: var(--cf-warn); background: var(--cf-warn-bg); }
+.cf-badge.door3 { border-color: var(--cf-alert-line); color: var(--cf-alert); background: var(--cf-alert-bg); }
+.cf-badge.money { border-color: rgba(192,132,252,.45); color: var(--coral); background: rgba(192,132,252,.1); }
+.cf-badge.deadline { border-color: var(--cf-alert); color: var(--cf-alert); background: var(--cf-alert-bg); font-weight: 500; }
+.cf-card-desc { font-size: .92rem; color: var(--muted); line-height: 1.7; }
+.cf-card-actions { display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; margin-top: 1.1rem; }
+.cf-toggle { background: none; border: none; color: var(--coral); font-family: var(--sans); font-size: .8rem; letter-spacing: .05em; cursor: pointer; padding: 0; text-decoration: underline; text-underline-offset: 3px; }
+.cf-toggle:hover { color: var(--cream); }
+.cf-visit { color: var(--cream); font-size: .8rem; letter-spacing: .05em; text-decoration: none; border-bottom: 1px solid var(--coral); padding-bottom: 2px; }
+.cf-visit:hover { color: var(--coral); }
+
+/* ---- Card detail -------------------------------------------------------- */
+.cf-detail { display: none; margin-top: 1.4rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+.cf-detail.open { display: block; }
+.cf-dl { display: grid; grid-template-columns: minmax(140px, 190px) 1fr; gap: .55rem 1.5rem; font-size: .87rem; line-height: 1.65; }
+.cf-dl dt { color: var(--coral); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; padding-top: .2rem; }
+.cf-dl dd { color: var(--muted); }
+.cf-dl dd .tag { display: inline-block; background: rgba(192,132,252,.09); border: 1px solid var(--line); border-radius: 2px; padding: .1rem .5rem; margin: 0 .3rem .3rem 0; font-size: .78rem; color: var(--cream); }
+.cf-detail-note { margin-top: 1.4rem; padding: 1rem 1.15rem; border-left: 2px solid var(--coral); background: rgba(192,132,252,.06); font-size: .87rem; line-height: 1.7; color: var(--cream); }
+.cf-detail-note strong { color: var(--coral); font-weight: 500; display: block; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: .4rem; }
+.cf-detail-note.warn { border-left-color: var(--cf-alert); background: var(--cf-alert-bg); }
+.cf-detail-note.warn strong { color: var(--cf-alert); }
+.cf-unstated { margin-top: 1.1rem; font-size: .78rem; color: var(--muted); line-height: 1.6; opacity: .85; }
+.cf-unstated em { font-style: normal; color: var(--cream); opacity: .75; }
+.cf-verified { margin-top: 1.25rem; font-size: .74rem; color: var(--muted); opacity: .8; }
+
+/* ---- Empty / loading ---------------------------------------------------- */
+.cf-empty { text-align: center; padding: 4rem 1rem; border: 1px dashed var(--line); }
+.cf-empty h3 { font-family: var(--serif); font-size: 1.3rem; margin-bottom: .75rem; }
+.cf-empty p { color: var(--muted); font-size: .92rem; margin-bottom: 1.5rem; }
+.cf-status { padding: 3rem 0; color: var(--muted); font-size: .92rem; }
+
+/* ---- Footnote ----------------------------------------------------------- */
+.cf-foot { border-top: 1px solid var(--line); padding: 2.5rem 0 4rem; font-size: .84rem; color: var(--muted); line-height: 1.75; }
+.cf-foot p + p { margin-top: .8rem; }
+.cf-foot a { color: var(--coral); }
+
+.cf-sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+/* ---- Responsive --------------------------------------------------------- */
+@media (max-width: 980px) {
+  .cf-wrap { padding: 0 1.5rem; }
+  .cf-doors { grid-template-columns: 1fr; }
+  .cf-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+  .cf-side { position: static; max-height: none; overflow: visible; display: none; border: 1px solid var(--line); padding: 1.25rem; background: var(--bg2); }
+  .cf-side.open { display: block; }
+  .cf-filters-toggle { display: inline-block; background: var(--bg2); border: 1px solid var(--line); color: var(--cream); font-family: var(--sans); font-size: .8rem; padding: .8rem 1.1rem; border-radius: 2px; cursor: pointer; }
+  .cf-filters-toggle[aria-expanded="true"] { border-color: var(--coral); color: var(--coral); }
+  .cf-tools { position: static; }
+  .cf-dl { grid-template-columns: 1fr; gap: .15rem 0; }
+  .cf-dl dt { padding-top: .8rem; }
+}
+@media (max-width: 560px) {
+  .cf-stats { gap: 1.75rem; }
+  .cf-card { padding: 1.25rem 1.1rem; }
+}
+</style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <nav aria-label="Main navigation">
+    <a class="nav-name" href="index.html">Darice Corey</a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="ai.html">AI Leadership</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="speaking.html">Speaking</a></li>
+      <li><a href="mentorship.html">Mentorship</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+
+    <div class="cf-wrap">
+      <header class="cf-intro">
+        <p class="cf-eyebrow">Open Resource Directory</p>
+        <h1 class="cf-title">AI Support &amp; Opportunities<br>for Communities</h1>
+        <p class="cf-lede">Funding, training, tools, and technical help for the people who usually get left out of the AI conversation &mdash; community leaders, informal groups without a nonprofit status, fiscally sponsored projects, small nonprofits, libraries, schools, and Connecticut organizations.</p>
+        <p class="cf-lede">Every entry was checked against the official source, and the notes say plainly what a program actually gives you, what it costs once the free part ends, and whether you can apply at all. Search it, filter it, and take the next step listed on the entry.</p>
+
+        <div class="cf-stats">
+          <div class="cf-stat"><span class="n" id="cf-stat-total">&mdash;</span><span class="l">Opportunities</span></div>
+          <div class="cf-stat"><span class="n" id="cf-stat-open">&mdash;</span><span class="l">No application needed</span></div>
+          <div class="cf-stat"><span class="n" id="cf-stat-nostatus">&mdash;</span><span class="l">No 501(c)(3) required</span></div>
+          <div class="cf-stat"><span class="n" id="cf-stat-orgs">&mdash;</span><span class="l">Organizations</span></div>
+          <div class="cf-stat"><span class="n" id="cf-stat-updated">&mdash;</span><span class="l">Last updated</span></div>
+        </div>
+
+        <div class="cf-doors">
+          <div class="cf-door">
+            <h3>Door 1 &mdash; No application</h3>
+            <p>Open to anyone who meets the stated terms. Sign up, enroll, or download it today. Start here if you need something this week.</p>
+          </div>
+          <div class="cf-door">
+            <h3>Door 2 &mdash; Competitive</h3>
+            <p>There is a real application, cycle, or review. Worth the effort, but plan for lead time and read the eligibility line closely.</p>
+          </div>
+          <div class="cf-door">
+            <h3>Door 3 &mdash; Relationship only</h3>
+            <p>No cold applications. Access runs through an employee, partner, or nomination. Listed so you know it exists and how to get introduced.</p>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="cf-tools">
+      <div class="cf-wrap">
+        <div class="cf-toolbar">
+          <div class="cf-searchbox">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <label for="cf-q" class="cf-sr">Search opportunities</label>
+            <input type="search" id="cf-q" placeholder="Search by name, funder, need &mdash; try &ldquo;grant writing&rdquo; or &ldquo;library&rdquo;" autocomplete="off" spellcheck="false" />
+            <button type="button" class="cf-clearq" id="cf-clearq" aria-label="Clear search" hidden>&times;</button>
+          </div>
+          <button type="button" class="cf-filters-toggle" id="cf-filters-toggle" aria-expanded="false" aria-controls="cf-side">Filters</button>
+          <label for="cf-group" class="cf-sr">Group results by</label>
+          <select id="cf-group" class="cf-select">
+            <option value="door">Group by: how you access it</option>
+            <option value="type">Group by: kind of opportunity</option>
+            <option value="org">Group by: organization</option>
+            <option value="none">Group by: nothing</option>
+          </select>
+          <label for="cf-sort" class="cf-sr">Sort results</label>
+          <select id="cf-sort" class="cf-select">
+            <option value="relevance">Sort: best match</option>
+            <option value="title">Sort: name A&ndash;Z</option>
+            <option value="org">Sort: organization A&ndash;Z</option>
+            <option value="funding">Sort: largest funding first</option>
+            <option value="checked">Sort: most recently checked</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="cf-wrap">
+      <div class="cf-quick">
+        <p class="cf-quick-label">Start with who you are</p>
+        <div class="cf-quick-row" id="cf-quick"></div>
+      </div>
+
+      <div class="cf-layout">
+        <aside class="cf-side" id="cf-side" aria-label="Filters">
+          <div class="cf-side-head">
+            <h2>Narrow it down</h2>
+            <button type="button" class="cf-reset" id="cf-reset">Reset all</button>
+          </div>
+          <div id="cf-facets"></div>
+        </aside>
+
+        <div class="cf-results">
+          <div class="cf-resulthead">
+            <p class="cf-count" id="cf-count" role="status" aria-live="polite"></p>
+          </div>
+          <div class="cf-chips" id="cf-chips"></div>
+          <div id="cf-list"><p class="cf-status">Loading the directory&hellip;</p></div>
+        </div>
+      </div>
+
+      <div class="cf-foot">
+        <p><strong>How to read an entry.</strong> &ldquo;Watch out for&rdquo; is the honest caveat &mdash; a program that is discounted rather than free, credits that expire into a bill, or a funder you cannot approach cold. &ldquo;Suggested next step&rdquo; is the concrete thing to do if you want to pursue it.</p>
+        <p><strong>Verify before you apply.</strong> Programs change their terms, cycles, and pricing without notice. Each entry links to its official source and shows the date it was last checked &mdash; treat that source, not this page, as the authority.</p>
+        <p>Maintained by <a href="index.html">Darice Corey</a>. Spotted something out of date, or running a program that belongs here? <a href="contact.html">Send it over</a>.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 Darice Corey. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+      <li><a href="year-end-report/">Year-End Report</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      const nav = document.getElementById('nav-links');
+      const open = nav.classList.toggle('open');
+      btn.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open);
+    }
+  </script>
+
+<script>
+/* ============================================================================
+   Community AI finder
+   ----------------------------------------------------------------------------
+   Reads assets/data/community-ai-opportunities.json, which is generated from
+   the Airtable base by _tools/fetch-community-ai.py. To change the DATA, edit
+   Airtable and re-run that script — never hand-edit the JSON.
+
+   To change which filters appear, edit FACETS below: `key` must match a field
+   name in the JSON, and options are derived from the data at load time, so a
+   new Airtable choice shows up on its own with no code change here.
+   ========================================================================== */
+(function () {
+  'use strict';
+
+  var DATA_URL = 'assets/data/community-ai-opportunities.json';
+
+  /* Values that mean "we could not confirm this" — real in the record, but
+     useless as a filter, so they are kept off the facet lists. */
+  var NON_ANSWERS = ['Not stated', 'Not determined', 'None', 'N/A'];
+
+  var FACETS = [
+    { key: 'whoCanParticipate', label: 'Who can take part',   open: true },
+    { key: 'door',              label: 'How you access it',   open: true },
+    { key: 'support',           label: 'What you get',        open: true },
+    { key: 'type',              label: 'Kind of opportunity' },
+    { key: 'cost',              label: 'Cost' },
+    { key: 'legalStatus',       label: 'Legal status needed', keepNone: true },
+    { key: 'topics',            label: 'Topic area' },
+    { key: 'communityServed',   label: 'Community served' },
+    { key: 'audienceStage',     label: 'Who it is written for' },
+    { key: 'deliveryFormat',    label: 'Format' },
+    { key: 'ageGroup',          label: 'Age group' },
+    { key: 'ctRelevance',       label: 'Connecticut' },
+    { key: 'beginnerFriendly',  label: 'Beginner friendly' },
+    { key: 'languages',         label: 'Languages' },
+    { key: 'accessibility',     label: 'Accessibility' },
+    { key: 'accountBenefit',    label: 'Account you may already have' },
+    { key: 'lockIn',            label: 'Platform lock-in risk' }
+  ];
+
+  var QUICK = [
+    'Individual community leader', 'Informal community group', 'Nonprofit organization',
+    'School or youth program', 'Educator', 'Library', 'Public agency',
+    'Fiscally sponsored project', 'Connecticut participant'
+  ];
+
+  /* Fields searched by the text box, with their weight in the match score. */
+  var SEARCH_FIELDS = [
+    ['title', 12], ['org', 10], ['description', 5], ['bestFit', 4],
+    ['whoCanApply', 3], ['eligibility', 3], ['support', 3], ['topics', 3],
+    ['communityServed', 3], ['type', 3], ['audienceStage', 2], ['fundingDetails', 2],
+    ['nextStep', 2], ['geo', 1], ['notes', 1], ['concern', 1], ['cost', 1],
+    ['legalStatus', 1], ['deliveryFormat', 1], ['accountBenefit', 1], ['ageGroup', 1]
+  ];
+
+  var DETAIL_ROWS = [
+    ['whoCanApply',      'Who can apply'],
+    ['eligibility',      'Eligibility'],
+    ['bestFit',          'Best fit for'],
+    ['fundingDetails',   'Funding details'],
+    ['cost',             'Cost'],
+    ['costAfterCredits', 'Cost after credits end'],
+    ['afterSupportEnds', 'When free support ends'],
+    ['cycle',            'Cycle'],
+    ['deadline',         'Deadline'],
+    ['status',           'Current status'],
+    ['geo',              'Geographic scope'],
+    ['ctRelevance',      'Connecticut relevance'],
+    ['travel',           'Travel or location'],
+    ['legalStatus',      'Legal status needed'],
+    ['localPartner',     'Local partner needed'],
+    ['techStaff',        'Technical staff needed'],
+    ['readiness',        'Readiness level'],
+    ['communityInput',   'Community input'],
+    ['beginnerFriendly', 'Beginner friendly'],
+    ['oneOnOne',         'One-on-one help'],
+    ['trainTrainer',     'Train-the-trainer'],
+    ['internetDevice',   'Internet or device'],
+    ['sensitiveInfo',    'Sensitive information'],
+    ['lockIn',           'Platform lock-in risk'],
+    ['support',          'What you get'],
+    ['topics',           'Topic areas'],
+    ['communityServed',  'Communities served'],
+    ['audienceStage',    'Written for'],
+    ['ageGroup',         'Age group'],
+    ['deliveryFormat',   'Format'],
+    ['languages',        'Languages'],
+    ['accessibility',    'Accessibility'],
+    ['accountBenefit',   'Accounts that help'],
+    ['whoCanParticipate','Who can take part']
+  ];
+
+  var DOOR_ORDER = ['Door 1 - No Application', 'Door 2 - Competitive', 'Door 3 - Relationship Only'];
+  var DOOR_LABEL = {
+    'Door 1 - No Application':      'Door 1 — no application needed',
+    'Door 2 - Competitive':         'Door 2 — competitive application',
+    'Door 3 - Relationship Only':   'Door 3 — relationship or nomination'
+  };
+
+  var ALL = [];
+  var META = {};
+  var state = { q: '', filters: {}, group: 'door', sort: 'relevance', expanded: {} };
+  var facetShowAll = {};
+  /* Whether each facet's <details> is open. Seeded from FACETS, then owned by
+     the reader — a re-render must never fold up a group they just opened. */
+  var facetOpen = {};
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  /* -- helpers ------------------------------------------------------------ */
+
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
+  function values(rec, key) {
+    var v = rec[key];
+    if (v == null) return [];
+    return Array.isArray(v) ? v : [v];
+  }
+
+  function isAnswer(v, keepNone) {
+    if (!v) return false;
+    if (keepNone && v === 'None') return true;
+    return NON_ANSWERS.indexOf(v) === -1;
+  }
+
+  function tokens(q) {
+    return q.toLowerCase().split(/[^a-z0-9+#]+/).filter(function (t) { return t.length > 1; });
+  }
+
+  function haystack(rec, key) {
+    var v = rec[key];
+    if (v == null) return '';
+    return (Array.isArray(v) ? v.join(' ') : String(v)).toLowerCase();
+  }
+
+  /* Score a record against the query. Returns 0 when any token is missing, so
+     multi-word searches narrow rather than widen. */
+  function score(rec, toks) {
+    if (!toks.length) return 1;
+    var total = 0;
+    for (var i = 0; i < toks.length; i++) {
+      var tok = toks[i], best = 0;
+      for (var f = 0; f < SEARCH_FIELDS.length; f++) {
+        var key = SEARCH_FIELDS[f][0], weight = SEARCH_FIELDS[f][1];
+        var hay = rec._hay[key];
+        if (!hay) continue;
+        var at = hay.indexOf(tok);
+        if (at === -1) continue;
+        /* whole-word and start-of-field hits count for more */
+        var bonus = 1;
+        if (at === 0) bonus = 1.6;
+        else if (/[^a-z0-9]/.test(hay.charAt(at - 1))) bonus = 1.3;
+        var hit = weight * bonus;
+        if (hit > best) best = hit;
+      }
+      if (!best) return 0;
+      total += best;
+    }
+    return total;
+  }
+
+  function highlight(text, toks) {
+    var out = esc(text);
+    if (!toks.length) return out;
+    var pattern = toks.map(function (t) { return t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }).join('|');
+    return out.replace(new RegExp('(' + pattern + ')', 'gi'), '<mark>$1</mark>');
+  }
+
+  function money(n) {
+    if (n == null) return null;
+    return '$' + Number(n).toLocaleString('en-US', { maximumFractionDigits: 0 });
+  }
+
+  function prettyDate(iso) {
+    if (!iso) return null;
+    var p = String(iso).split('-');
+    if (p.length !== 3) return iso;
+    var d = new Date(Date.UTC(+p[0], +p[1] - 1, +p[2]));
+    if (isNaN(d)) return iso;
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+  }
+
+  function doorClass(door) {
+    if (!door) return '';
+    if (door.indexOf('Door 1') === 0) return 'door1';
+    if (door.indexOf('Door 2') === 0) return 'door2';
+    if (door.indexOf('Door 3') === 0) return 'door3';
+    return '';
+  }
+
+  function shortDoor(door) {
+    if (!door) return null;
+    if (door.indexOf('Door 1') === 0) return 'No application needed';
+    if (door.indexOf('Door 2') === 0) return 'Competitive application';
+    if (door.indexOf('Door 3') === 0) return 'Relationship or nomination';
+    return door;
+  }
+
+  /* -- filtering ---------------------------------------------------------- */
+
+  function matchesFacets(rec, skipKey) {
+    for (var key in state.filters) {
+      if (key === skipKey) continue;
+      var chosen = state.filters[key];
+      if (!chosen || !chosen.length) continue;
+      var have = values(rec, key);
+      var hit = false;
+      for (var i = 0; i < chosen.length && !hit; i++) {
+        if (have.indexOf(chosen[i]) !== -1) hit = true;
+      }
+      if (!hit) return false;
+    }
+    return true;
+  }
+
+  function compute() {
+    var toks = tokens(state.q);
+    var rows = [];
+    for (var i = 0; i < ALL.length; i++) {
+      var rec = ALL[i];
+      if (!matchesFacets(rec, null)) continue;
+      var s = score(rec, toks);
+      if (!s) continue;
+      rows.push({ rec: rec, score: s });
+    }
+
+    var by = state.sort;
+    rows.sort(function (a, b) {
+      if (by === 'title') return a.rec.title.localeCompare(b.rec.title);
+      if (by === 'org') return (a.rec.org || '').localeCompare(b.rec.org || '') || a.rec.title.localeCompare(b.rec.title);
+      if (by === 'funding') return (b.rec.maxFunding || -1) - (a.rec.maxFunding || -1) || a.rec.title.localeCompare(b.rec.title);
+      if (by === 'checked') return String(b.rec.lastChecked || '').localeCompare(String(a.rec.lastChecked || '')) || a.rec.title.localeCompare(b.rec.title);
+      return b.score - a.score || a.rec.title.localeCompare(b.rec.title);
+    });
+    return { rows: rows, toks: toks };
+  }
+
+  /* Counts shown next to each option: how many results you would get if you
+     added that option, holding every OTHER facet fixed. */
+  function facetCounts(key) {
+    var toks = tokens(state.q);
+    var counts = {};
+    for (var i = 0; i < ALL.length; i++) {
+      var rec = ALL[i];
+      if (!matchesFacets(rec, key)) continue;
+      if (!score(rec, toks)) continue;
+      var vals = values(rec, key);
+      for (var v = 0; v < vals.length; v++) counts[vals[v]] = (counts[vals[v]] || 0) + 1;
+    }
+    return counts;
+  }
+
+  /* -- rendering ---------------------------------------------------------- */
+
+  function renderQuick() {
+    var host = $('cf-quick');
+    host.innerHTML = QUICK.map(function (v) {
+      var on = (state.filters.whoCanParticipate || []).indexOf(v) !== -1;
+      return '<button type="button" class="cf-quick-btn" data-quick="' + esc(v) + '" aria-pressed="' + on + '">' + esc(v) + '</button>';
+    }).join('');
+  }
+
+  function renderFacets() {
+    var host = $('cf-facets');
+    var html = FACETS.map(function (facet) {
+      var counts = facetCounts(facet.key);
+      var chosen = state.filters[facet.key] || [];
+      var opts = Object.keys(facet._options).filter(function (v) { return isAnswer(v, facet.keepNone); });
+
+      opts.sort(function (a, b) {
+        var ca = counts[a] || 0, cb = counts[b] || 0;
+        if (facet.key === 'door') return DOOR_ORDER.indexOf(a) - DOOR_ORDER.indexOf(b);
+        return cb - ca || a.localeCompare(b);
+      });
+
+      var showAll = facetShowAll[facet.key];
+      var LIMIT = 7;
+      var visible = (showAll || opts.length <= LIMIT + 1) ? opts : opts.slice(0, LIMIT);
+
+      var body = visible.map(function (v) {
+        var n = counts[v] || 0;
+        var on = chosen.indexOf(v) !== -1;
+        return '<label class="cf-opt' + (n === 0 && !on ? ' is-empty' : '') + '">' +
+          '<input type="checkbox" data-facet="' + esc(facet.key) + '" value="' + esc(v) + '"' + (on ? ' checked' : '') + (n === 0 && !on ? ' disabled' : '') + ' />' +
+          '<span>' + esc(facet.key === 'door' ? (DOOR_LABEL[v] || v) : v) + '</span>' +
+          '<span class="cf-opt-n">' + n + '</span></label>';
+      }).join('');
+
+      if (visible.length < opts.length) {
+        body += '<button type="button" class="cf-more" data-more="' + esc(facet.key) + '">Show ' + (opts.length - visible.length) + ' more</button>';
+      } else if (showAll && opts.length > LIMIT + 1) {
+        body += '<button type="button" class="cf-more" data-more="' + esc(facet.key) + '">Show fewer</button>';
+      }
+
+      var isOpen = facetOpen[facet.key] || chosen.length > 0;
+      return '<details class="cf-facet"' + (isOpen ? ' open' : '') + '>' +
+        '<summary>' + esc(facet.label) +
+        (chosen.length ? '<span class="cf-facet-count">' + chosen.length + '</span>' : '') +
+        '</summary><div class="cf-opts">' + body + '</div></details>';
+    }).join('');
+    host.innerHTML = html;
+  }
+
+  function renderChips() {
+    var host = $('cf-chips');
+    var chips = [];
+    if (state.q) {
+      chips.push('<span class="cf-chip">Search: &ldquo;' + esc(state.q) + '&rdquo;<button type="button" data-clear="q" aria-label="Clear search">&times;</button></span>');
+    }
+    FACETS.forEach(function (facet) {
+      (state.filters[facet.key] || []).forEach(function (v) {
+        chips.push('<span class="cf-chip">' + esc(facet.key === 'door' ? (DOOR_LABEL[v] || v) : v) +
+          '<button type="button" data-off="' + esc(facet.key) + '" data-val="' + esc(v) + '" aria-label="Remove filter ' + esc(v) + '">&times;</button></span>');
+      });
+    });
+    if (chips.length > 1) {
+      chips.push('<span class="cf-chip"><button type="button" data-clear="all" style="color:var(--cream);text-decoration:underline">Clear everything</button></span>');
+    }
+    host.innerHTML = chips.join('');
+  }
+
+  function card(rec, toks) {
+    var open = !!state.expanded[rec.id];
+    var badges = [];
+    if (rec.door) badges.push('<span class="cf-badge ' + doorClass(rec.door) + '">' + esc(shortDoor(rec.door)) + '</span>');
+    if (rec.type) badges.push('<span class="cf-badge">' + esc(rec.type) + '</span>');
+    if (rec.maxFunding != null) badges.push('<span class="cf-badge money">Up to ' + esc(money(rec.maxFunding)) + '</span>');
+    if (rec.cost && rec.cost !== 'Not stated') badges.push('<span class="cf-badge">' + esc(rec.cost) + '</span>');
+    if (rec.legalStatus === 'None') badges.push('<span class="cf-badge">No legal status needed</span>');
+    else if (rec.legalStatus && rec.legalStatus !== 'Not stated') badges.push('<span class="cf-badge">' + esc(rec.legalStatus) + '</span>');
+    if (rec.beginnerFriendly === 'Yes') badges.push('<span class="cf-badge">Beginner friendly</span>');
+    if (rec.deadline) badges.push('<span class="cf-badge deadline">Deadline ' + esc(prettyDate(rec.deadline)) + '</span>');
+
+    /* A field the official source never addressed is worth saying once, at the
+       end — not as eight rows of "Not stated" between the facts that matter. */
+    var unstated = [];
+    var rows = DETAIL_ROWS.map(function (pair) {
+      var key = pair[0], label = pair[1], v = rec[key];
+      if (v == null || v === '' || (Array.isArray(v) && !v.length)) return '';
+      var list = Array.isArray(v) ? v : [v];
+      var real = list.filter(function (x) { return NON_ANSWERS.indexOf(x) === -1 || x === 'None' || x === 'N/A'; });
+      if (!real.length) { unstated.push(label.toLowerCase()); return ''; }
+      var body;
+      if (Array.isArray(v)) {
+        body = real.map(function (x) { return '<span class="tag">' + esc(x) + '</span>'; }).join('');
+      } else if (key === 'deadline') {
+        body = esc(prettyDate(v));
+      } else {
+        body = esc(v);
+      }
+      return '<dt>' + esc(label) + '</dt><dd>' + body + '</dd>';
+    }).join('');
+
+    if (rec.maxFunding != null) {
+      rows = '<dt>Maximum funding</dt><dd>' + esc(money(rec.maxFunding)) + '</dd>' + rows;
+    }
+
+    var detail = '<div class="cf-detail' + (open ? ' open' : '') + '" id="d-' + esc(rec.id) + '">' +
+      '<dl class="cf-dl">' + rows + '</dl>' +
+      (rec.concern ? '<div class="cf-detail-note warn"><strong>Watch out for</strong>' + esc(rec.concern) + '</div>' : '') +
+      (rec.nextStep ? '<div class="cf-detail-note"><strong>Suggested next step</strong>' + esc(rec.nextStep) + '</div>' : '') +
+      (rec.notes ? '<div class="cf-detail-note"><strong>Notes</strong>' + esc(rec.notes) + '</div>' : '') +
+      (unstated.length ? '<p class="cf-unstated"><em>The official source does not state:</em> ' + esc(unstated.join(', ')) + '.</p>' : '') +
+      (rec.lastChecked ? '<p class="cf-verified">Checked against the official source on ' + esc(prettyDate(rec.lastChecked)) + '. Confirm current terms before you apply.</p>' : '') +
+      '</div>';
+
+    return '<article class="cf-card">' +
+      '<div class="cf-card-top"><div>' +
+        (rec.org ? '<p class="cf-card-org">' + highlight(rec.org, toks) + '</p>' : '') +
+        '<h3>' + highlight(rec.title, toks) + '</h3>' +
+      '</div></div>' +
+      '<div class="cf-badges">' + badges.join('') + '</div>' +
+      (rec.description ? '<p class="cf-card-desc">' + highlight(rec.description, toks) + '</p>' : '') +
+      '<div class="cf-card-actions">' +
+        '<button type="button" class="cf-toggle" data-detail="' + esc(rec.id) + '" aria-expanded="' + open + '" aria-controls="d-' + esc(rec.id) + '">' +
+          (open ? 'Hide the details' : 'See the details') + '</button>' +
+        (rec.url ? '<a class="cf-visit" href="' + esc(rec.url) + '" target="_blank" rel="noopener noreferrer">Official page &nearr;</a>' : '') +
+      '</div>' + detail + '</article>';
+  }
+
+  function groupKey(rec) {
+    if (state.group === 'door') return rec.door || 'Not stated';
+    if (state.group === 'type') return rec.type || 'Not stated';
+    if (state.group === 'org') return rec.org || 'Not stated';
+    return '';
+  }
+
+  function render() {
+    var res = compute();
+    var rows = res.rows, toks = res.toks;
+
+    $('cf-count').innerHTML = rows.length === ALL.length
+      ? 'Showing all <strong>' + ALL.length + '</strong> opportunities'
+      : 'Showing <strong>' + rows.length + '</strong> of ' + ALL.length + ' opportunities';
+
+    var list = $('cf-list');
+
+    if (!rows.length) {
+      list.innerHTML = '<div class="cf-empty"><h3>Nothing matches that combination</h3>' +
+        '<p>Try fewer filters, or search a plainer word &mdash; &ldquo;training&rdquo; instead of &ldquo;professional development&rdquo;.</p>' +
+        '<button type="button" class="btn-primary" data-clear="all">Reset the search</button></div>';
+      return;
+    }
+
+    if (state.group === 'none') {
+      list.innerHTML = rows.map(function (r) { return card(r.rec, toks); }).join('');
+      return;
+    }
+
+    var order = [], buckets = {};
+    rows.forEach(function (r) {
+      var k = groupKey(r.rec);
+      if (!buckets[k]) { buckets[k] = []; order.push(k); }
+      buckets[k].push(r);
+    });
+
+    if (state.group === 'door') {
+      order.sort(function (a, b) {
+        var ia = DOOR_ORDER.indexOf(a), ib = DOOR_ORDER.indexOf(b);
+        return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+      });
+    } else {
+      order.sort(function (a, b) { return buckets[b].length - buckets[a].length || a.localeCompare(b); });
+    }
+
+    list.innerHTML = order.map(function (k) {
+      var label = state.group === 'door' ? (DOOR_LABEL[k] || k) : k;
+      return '<section class="cf-group"><h2 class="cf-group-head">' + esc(label) +
+        '<span class="n">' + buckets[k].length + '</span></h2>' +
+        buckets[k].map(function (r) { return card(r.rec, toks); }).join('') + '</section>';
+    }).join('');
+  }
+
+  function renderAll() {
+    renderQuick();
+    renderFacets();
+    renderChips();
+    render();
+    $('cf-clearq').hidden = !state.q;
+  }
+
+  /* -- URL state ---------------------------------------------------------- */
+
+  var syncing = false;
+
+  function writeHash() {
+    if (syncing) return;
+    var p = new URLSearchParams();
+    if (state.q) p.set('q', state.q);
+    if (state.group !== 'door') p.set('group', state.group);
+    if (state.sort !== 'relevance') p.set('sort', state.sort);
+    FACETS.forEach(function (f) {
+      var v = state.filters[f.key];
+      if (v && v.length) p.set(f.key, v.join('~'));
+    });
+    var hash = p.toString();
+    history.replaceState(null, '', hash ? '#' + hash : location.pathname);
+  }
+
+  function readHash() {
+    var raw = location.hash.replace(/^#/, '');
+    if (!raw) return;
+    var p = new URLSearchParams(raw);
+    state.q = p.get('q') || '';
+    state.group = p.get('group') || 'door';
+    state.sort = p.get('sort') || 'relevance';
+    state.filters = {};
+    FACETS.forEach(function (f) {
+      var v = p.get(f.key);
+      if (v) state.filters[f.key] = v.split('~').filter(Boolean);
+    });
+  }
+
+  /* -- events ------------------------------------------------------------- */
+
+  function toggleFilter(key, value) {
+    var cur = state.filters[key] || [];
+    var at = cur.indexOf(value);
+    if (at === -1) cur = cur.concat([value]);
+    else cur = cur.slice(0, at).concat(cur.slice(at + 1));
+    if (cur.length) state.filters[key] = cur; else delete state.filters[key];
+  }
+
+  function wire() {
+    var qEl = $('cf-q'), timer;
+    qEl.addEventListener('input', function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () { state.q = qEl.value.trim(); writeHash(); renderAll(); }, 140);
+    });
+
+    $('cf-clearq').addEventListener('click', function () {
+      qEl.value = ''; state.q = ''; writeHash(); renderAll(); qEl.focus();
+    });
+
+    $('cf-group').addEventListener('change', function () { state.group = this.value; writeHash(); render(); });
+    $('cf-sort').addEventListener('change', function () { state.sort = this.value; writeHash(); render(); });
+
+    $('cf-reset').addEventListener('click', function () {
+      state.q = ''; state.filters = {}; qEl.value = ''; writeHash(); renderAll();
+    });
+
+    $('cf-quick').addEventListener('click', function (e) {
+      var btn = e.target.closest('[data-quick]');
+      if (!btn) return;
+      toggleFilter('whoCanParticipate', btn.getAttribute('data-quick'));
+      writeHash(); renderAll();
+    });
+
+    $('cf-facets').addEventListener('change', function (e) {
+      var box = e.target.closest('input[data-facet]');
+      if (!box) return;
+      toggleFilter(box.getAttribute('data-facet'), box.value);
+      writeHash(); renderAll();
+    });
+
+    $('cf-facets').addEventListener('toggle', function (e) {
+      var d = e.target;
+      if (d.classList && d.classList.contains('cf-facet')) {
+        var box = d.querySelector('input[data-facet]');
+        if (box) facetOpen[box.getAttribute('data-facet')] = d.open;
+      }
+    }, true);
+
+    $('cf-facets').addEventListener('click', function (e) {
+      var more = e.target.closest('[data-more]');
+      if (!more) return;
+      var key = more.getAttribute('data-more');
+      facetShowAll[key] = !facetShowAll[key];
+      renderFacets();
+    });
+
+    $('cf-chips').addEventListener('click', function (e) {
+      var off = e.target.closest('[data-off]');
+      if (off) { toggleFilter(off.getAttribute('data-off'), off.getAttribute('data-val')); writeHash(); renderAll(); return; }
+      var clear = e.target.closest('[data-clear]');
+      if (!clear) return;
+      if (clear.getAttribute('data-clear') === 'q') { state.q = ''; qEl.value = ''; }
+      else { state.q = ''; qEl.value = ''; state.filters = {}; }
+      writeHash(); renderAll();
+    });
+
+    $('cf-list').addEventListener('click', function (e) {
+      var clear = e.target.closest('[data-clear]');
+      if (clear) { state.q = ''; qEl.value = ''; state.filters = {}; writeHash(); renderAll(); return; }
+      var btn = e.target.closest('[data-detail]');
+      if (!btn) return;
+      var id = btn.getAttribute('data-detail');
+      var panel = document.getElementById('d-' + id);
+      var nowOpen = !state.expanded[id];
+      state.expanded[id] = nowOpen;
+      if (panel) panel.classList.toggle('open', nowOpen);
+      btn.setAttribute('aria-expanded', String(nowOpen));
+      btn.textContent = nowOpen ? 'Hide the details' : 'See the details';
+    });
+
+    var ft = $('cf-filters-toggle');
+    ft.addEventListener('click', function () {
+      var open = $('cf-side').classList.toggle('open');
+      ft.setAttribute('aria-expanded', String(open));
+    });
+
+    window.addEventListener('hashchange', function () {
+      syncing = true;
+      readHash();
+      qEl.value = state.q;
+      $('cf-group').value = state.group;
+      $('cf-sort').value = state.sort;
+      syncing = false;
+      renderAll();
+    });
+  }
+
+  /* -- boot --------------------------------------------------------------- */
+
+  function boot(payload) {
+    META = payload.meta || {};
+    ALL = payload.opportunities || [];
+
+    /* Pre-lowercase every searched field once, so typing stays instant. */
+    ALL.forEach(function (rec) {
+      rec._hay = {};
+      SEARCH_FIELDS.forEach(function (pair) { rec._hay[pair[0]] = haystack(rec, pair[0]); });
+    });
+
+    /* Facet options come from the data, not a hand-kept list. */
+    FACETS.forEach(function (facet) {
+      facetOpen[facet.key] = !!facet.open;
+      facet._options = {};
+      ALL.forEach(function (rec) {
+        values(rec, facet.key).forEach(function (v) { facet._options[v] = true; });
+      });
+    });
+
+    var orgs = {}, door1 = 0, noStatus = 0;
+    ALL.forEach(function (rec) {
+      if (rec.org) orgs[rec.org] = true;
+      if (rec.door && rec.door.indexOf('Door 1') === 0) door1++;
+      if (rec.legalStatus === 'None' || rec.legalStatus === 'Fiscal sponsor accepted') noStatus++;
+    });
+    $('cf-stat-total').textContent = ALL.length;
+    $('cf-stat-open').textContent = door1;
+    $('cf-stat-nostatus').textContent = noStatus;
+    $('cf-stat-orgs').textContent = Object.keys(orgs).length;
+    $('cf-stat-updated').textContent = META.generated ? prettyDate(META.generated) : '—';
+
+    readHash();
+    $('cf-q').value = state.q;
+    $('cf-group').value = state.group;
+    $('cf-sort').value = state.sort;
+
+    wire();
+    renderAll();
+  }
+
+  fetch(DATA_URL, { cache: 'no-cache' })
+    .then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(boot)
+    .catch(function (err) {
+      $('cf-list').innerHTML = '<div class="cf-empty"><h3>The directory could not load</h3>' +
+        '<p>Please refresh the page. If it keeps failing, the data file may be missing.</p></div>';
+      $('cf-count').textContent = '';
+      if (window.console) console.error('Community AI finder:', err);
+    });
+})();
+</script>
+</body>
+</html>
