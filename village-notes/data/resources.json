@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-25T15:09:56.302Z",
+  "generated": "2026-08-25T15:22:36.625Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -43,6 +43,9 @@
       "cost": "Free information, referral, and counseling services; some connected programs are income-based",
       "website": "https://www.aoascc.org/",
       "contact": "(203) 785-8533",
+      "townsServed": [
+        "North Haven"
+      ],
       "rating": null,
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
       "dateSubmitted": "2026-08-08",
@@ -62,6 +65,9 @@
       "cost": "Membership-based; contact for current fees and financial assistance options",
       "website": "https://bgcgnh.org/new-haven/",
       "contact": "(203) 491-1229 | info@bgcgnh.org",
+      "townsServed": [
+        "New Haven"
+      ],
       "rating": null,
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
       "dateSubmitted": "2026-08-08",
@@ -81,6 +87,9 @@
       "cost": "Sliding-scale tuition; priority enrollment for Yale faculty, staff, and student families, open to community families",
       "website": "https://calvinhilldaycare.org/",
       "contact": "(203) 764-9350 | susan@calvinhilldaycare.org",
+      "townsServed": [
+        "New Haven"
+      ],
       "rating": null,
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
       "dateSubmitted": "2026-08-08",
@@ -100,6 +109,9 @@
       "cost": "$655-$735 per two-week session depending on camp track (2026 pricing); financial aid available to qualified applicants from any town; over $30,000 awarded in camp scholarships annually",
       "website": "https://www.commongroundct.org/about-summer-camp",
       "contact": "(203) 389-4333 ext. 1213 | camp@commongroundct.org",
+      "townsServed": [
+        "New Haven"
+      ],
       "rating": null,
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
       "dateSubmitted": "2026-08-08",
@@ -119,6 +131,9 @@
       "cost": "About 15% of students receive financial aid or scholarship assistance; contact for current tuition",
       "website": "https://nmsnewhaven.org/summer-music",
       "contact": "(203) 624-5189 | info@nmsnewhaven.org",
+      "townsServed": [
+        "New Haven"
+      ],
       "rating": null,
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
       "dateSubmitted": "2026-08-08",
@@ -138,6 +153,9 @@
       "cost": "Contact center for current tuition; scholarship application available",
       "website": "https://medicine.yale.edu/bodelchildcare/",
       "contact": "(203) 785-3829 | kyle.miller@yale.edu",
+      "townsServed": [
+        "New Haven"
+      ],
       "rating": null,
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
       "dateSubmitted": "2026-08-08",
@@ -157,6 +175,12 @@
       "cost": "Contact for current hourly rates; State of Connecticut DCP Registration #HCA.0000342",
       "website": "https://www.rightathome.net/new-haven-county",
       "contact": "(203) 713-8855",
+      "townsServed": [
+        "Milford",
+        "New Haven",
+        "Hamden",
+        "North Haven"
+      ],
       "rating": null,
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
       "dateSubmitted": "2026-08-08",
@@ -176,6 +200,9 @@
       "cost": "Covered by Medicare, Medicaid, and most private insurance for eligible hospice care; as a non-profit, additional services are supported by donations",
       "website": "https://www.hospice.com/",
       "contact": "(203) 315-7301 general inquiries | (203) 315-7540 admissions/intake (24/7)",
+      "townsServed": [
+        "Branford"
+      ],
       "rating": null,
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
       "dateSubmitted": "2026-08-08",
@@ -195,6 +222,9 @@
       "cost": "Contact for current pricing; entrance-fee Life Care model is designed so costs typically don't spike if a resident's care needs increase over time",
       "website": "https://www.whitneycenter.com/",
       "contact": "(203) 974-0001 Marketing & Sales | (203) 281-6745 Main | (203) 848-2222 Memory Care (Meadow Mills)",
+      "townsServed": [
+        "Hamden"
+      ],
       "rating": null,
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
       "dateSubmitted": "2026-08-08",
