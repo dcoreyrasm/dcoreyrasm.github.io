@@ -120,11 +120,22 @@
     head += '</p>';
 
     // Only worth a row when it says something the town line does not already.
-    var extraTowns = (Array.isArray(r.townsServed) ? r.townsServed : [])
-      .filter(function (t) { return t !== r.town; });
+    // A 20-town list is a wall of text, so it is summarised past a handful.
+    var extraTowns = served(r).filter(function (t) {
+      return t !== r.town && t !== STATEWIDE;
+    });
+    var servesLabel = null;
+    if (isStatewide(r)) {
+      servesLabel = 'Statewide \u2014 all of Connecticut';
+    } else if (extraTowns.length) {
+      var all = [r.town].concat(extraTowns).filter(has);
+      servesLabel = all.length > 6
+        ? all.slice(0, 5).join(', ') + ' and ' + (all.length - 5) + ' more'
+        : all.join(', ');
+    }
 
     var facts =
-      fact('Serves', extraTowns.length ? [r.town].concat(extraTowns).filter(has).join(', ') : null) +
+      fact('Serves', servesLabel) +
       fact('Hours', r.hours) +
       fact('Waitlist', r.availability, true) +
       fact('Ages', r.ages) +
@@ -167,12 +178,26 @@
 
   /* ---------- filtering ---------- */
 
+  // Coverage flag rather than a place: a listing carrying it serves every town,
+  // so it is matched specially below and kept out of the town dropdown.
+  var STATEWIDE = 'Statewide (all of Connecticut)';
+
+  function served(r) {
+    return Array.isArray(r.townsServed) ? r.townsServed : [];
+  }
+
+  function isStatewide(r) {
+    return served(r).indexOf(STATEWIDE) !== -1;
+  }
+
   // A family filtering to their town wants everyone who serves it, not only
   // providers headquartered there -- an agency based one town over that covers
-  // theirs is exactly the result they are looking for.
+  // theirs is exactly the result they are looking for, and a statewide program
+  // covers them wherever they are.
   function servesTown(r, town) {
     if (r.town === town) return true;
-    return Array.isArray(r.townsServed) && r.townsServed.indexOf(town) !== -1;
+    if (isStatewide(r)) return true;
+    return served(r).indexOf(town) !== -1;
   }
 
   function matches(r) {
@@ -297,8 +322,9 @@
         var townValues = [];
         state.all.forEach(function (r) {
           townValues.push(r.town);
-          if (Array.isArray(r.townsServed)) townValues = townValues.concat(r.townsServed);
+          townValues = townValues.concat(served(r));
         });
+        townValues = townValues.filter(function (t) { return t !== STATEWIDE; });
         fillSelect(el.town, uniqueSorted(townValues), 'All towns');
         refreshCategoryOptions();
 
