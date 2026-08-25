@@ -1,0 +1,36 @@
+{
+  "generated": null,
+  "source": {
+    "base": "appxUByKs5ULrDZQp",
+    "table": "tbltzLo6IdBIfjkL7",
+    "filter": "Moderation Status = \"Published\""
+  },
+  "count": 0,
+  "tracks": [],
+  "categories": [],
+  "towns": [],
+  "resources": [],
+  "_placeholder": {
+    "note": "Placeholder until the village-notes-sync workflow runs. It is overwritten wholesale by scripts/fetch-airtable.js; do not hand-edit. The keys below are the exact shape of each entry in the resources array, mapped from the live Airtable field names.",
+    "resourceShape": {
+      "id": "Airtable record id, e.g. rec6hA0NlC2QfcsaR",
+      "name": "Resource Name (singleLineText)",
+      "track": "Track (singleSelect: Family & Childcare | Elder Care)",
+      "category": "Category (singleSelect, 42 choices)",
+      "specificType": "Specific Type or Notes (singleLineText)",
+      "town": "Town/Area (CT) (singleLineText)",
+      "address": "Address (singleLineText)",
+      "ages": "Ages or Population Served (singleLineText)",
+      "hours": "Hours/Schedule (singleLineText)",
+      "availability": "Availability/Wait Notes (multilineText)",
+      "cost": "Cost Notes (singleLineText)",
+      "website": "Website (url)",
+      "contact": "Contact Info (singleLineText)",
+      "rating": "Rating (rating, 1-5 stars; null when unrated)",
+      "submittedBy": "Submitted By (singleLineText)",
+      "dateSubmitted": "Date Submitted (date, YYYY-MM-DD)",
+      "notes": "Notes/Tags (multilineText)"
+    },
+    "omitted": "Moderation Status is used to filter the pull and is never written to this file."
+  }
+}

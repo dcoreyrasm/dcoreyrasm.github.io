@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Village Notes — a crowdsourced directory of childcare, camp, and elder care resources across Connecticut, with the real operating hours and honest waitlist timelines official directories don't publish." />
+  <title>Village Notes — Darice Corey</title>
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.daricecorey.com/village-notes/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Village Notes — Darice Corey" />
+  <meta property="og:description" content="A crowdsourced directory of childcare, camp, and elder care resources across Connecticut, with the real operating hours and honest waitlist timelines official directories don't publish." />
+  <meta property="og:url" content="https://www.daricecorey.com/village-notes/" />
+  <meta property="og:image" content="https://www.daricecorey.com/darice.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Village Notes — Darice Corey" />
+  <meta name="twitter:description" content="A crowdsourced directory of childcare, camp, and elder care resources across Connecticut." />
+  <meta name="twitter:image" content="https://www.daricecorey.com/darice.jpg" />
+  <script>window.__daOptOut=(function(){try{return localStorage.getItem('da-analytics-optout')==='1'}catch(e){return false}})();if(window.__daOptOut){window['ga-disable-G-725R412XD7']=true;}</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-725R412XD7"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-725R412XD7');</script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/village-notes/village-notes.css" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">if(!window.__daOptOut){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xdrtc0i2un");}</script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <nav aria-label="Main navigation">
+    <a class="nav-name" href="/index.html">Darice Corey</a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/work.html">Work</a></li>
+      <li><a href="/ai.html">AI Leadership</a></li>
+      <li><a href="/newsletter.html">Newsletter</a></li>
+      <li><a href="/research.html">Research</a></li>
+      <li><a href="/speaking.html">Speaking</a></li>
+      <li><a href="/mentorship.html">Mentorship</a></li>
+      <li><a href="/village-notes/" class="active">Village Notes</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+
+    <div class="vn-hero">
+      <div class="container">
+        <p class="section-label" style="color:var(--coral);">Connecticut Care Directory</p>
+        <h1 class="section-heading" style="color:#fff;">Village Notes</h1>
+        <p class="vn-hero-lede">Childcare, camps, and elder care across Connecticut &mdash; with the details official directories leave out. Real operating hours. Honest waitlist timelines. What it actually costs. Written down by the families and caregivers who already made the calls.</p>
+        <div class="vn-hero-meta">
+          <span id="vn-count-badge" class="vn-badge">Loading listings&hellip;</span>
+          <span id="vn-updated" class="vn-updated"></span>
+        </div>
+      </div>
+    </div>
+
+    <section class="vn-controls-section" aria-labelledby="vn-filters-heading">
+      <div class="container">
+        <h2 id="vn-filters-heading" class="vn-visually-hidden">Find a resource</h2>
+
+        <form class="vn-controls" role="search" onsubmit="return false;">
+          <div class="vn-field vn-field-search">
+            <label for="vn-search">Search</label>
+            <input type="search" id="vn-search" placeholder="Name, town, notes, hours&hellip;" autocomplete="off" />
+          </div>
+
+          <div class="vn-field">
+            <label for="vn-track">Track</label>
+            <select id="vn-track">
+              <option value="">All tracks</option>
+            </select>
+          </div>
+
+          <div class="vn-field">
+            <label for="vn-category">Category</label>
+            <select id="vn-category">
+              <option value="">All categories</option>
+            </select>
+          </div>
+
+          <div class="vn-field">
+            <label for="vn-town">Town / Area</label>
+            <select id="vn-town">
+              <option value="">All towns</option>
+            </select>
+          </div>
+
+          <button type="button" id="vn-reset" class="btn-ghost vn-reset">Reset</button>
+        </form>
+
+        <p class="vn-resultline" id="vn-resultline" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="vn-results-section">
+      <div class="container">
+        <div id="vn-results" class="vn-grid"></div>
+
+        <div id="vn-empty" class="vn-empty" hidden>
+          <p class="vn-empty-icon" aria-hidden="true">&#9671;</p>
+          <h2 class="vn-empty-heading">Nothing here yet.</h2>
+          <p class="vn-empty-body" id="vn-empty-body">The directory is still being filled in. Published listings appear here automatically once they clear review.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="vn-about-section" aria-labelledby="vn-about-heading">
+      <div class="container">
+        <p class="section-label">Why This Exists</p>
+        <h2 class="section-heading" id="vn-about-heading">The gap official directories don't fill.</h2>
+        <div class="vn-about-grid">
+          <div class="vn-about-block">
+            <h3>Real hours, not listed hours</h3>
+            <p>State and hospital directories publish a phone number and an address. They rarely publish when a place is actually open, whether the office hours match the care hours, or who picks up after five.</p>
+          </div>
+          <div class="vn-about-block">
+            <h3>Honest waitlist timelines</h3>
+            <p>&ldquo;Contact us for availability&rdquo; tells a family nothing. What helps is someone saying they applied in March and got a spot in November. That is the kind of note this directory collects.</p>
+          </div>
+          <div class="vn-about-block">
+            <h3>Both ends of caregiving</h3>
+            <p>Families caring for young children and families caring for aging parents are often the same families. Village Notes keeps both tracks in one place instead of splitting them across separate systems.</p>
+          </div>
+          <div class="vn-about-block">
+            <h3>Crowdsourced, then reviewed</h3>
+            <p>Entries come from parents and caregivers. Every submission is reviewed before it publishes, and multiple people can submit their own note on the same place &mdash; more data points, not duplicates to clean up.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p class="vn-credit">Village Notes, developed by Darice Corey</p>
+    <p>&copy; 2026 Darice Corey. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+      <li><a href="/village-notes/">Village Notes</a></li>
+      <li><a href="/year-end-report/">Year-End Report</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      const nav = document.getElementById('nav-links');
+      const open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+  </script>
+  <script src="/village-notes/script.js" defer></script>
+</body>
+</html>

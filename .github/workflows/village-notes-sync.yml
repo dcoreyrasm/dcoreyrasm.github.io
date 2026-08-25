@@ -1,0 +1,57 @@
+name: Village Notes sync (Airtable to JSON)
+
+# Refreshes village-notes/data/resources.json from the "CT Family & Elder Care
+# Network" Airtable base every six hours.
+#
+# This workflow is the only place the Airtable token exists. It is read from
+# the AIRTABLE_TOKEN repo secret at runtime, handed to the script as an env
+# var, and never written to a file. The script pulls only records whose
+# Moderation Status is "Published" and emits plain listing data, so nothing
+# committed here contains a credential and the site never calls Airtable.
+#
+# If the pull fails the script exits non-zero having written nothing, so the
+# previous JSON stays live rather than the directory going blank.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # 00:00, 06:00, 12:00, 18:00 UTC
+  workflow_dispatch:         # allows a manual run
+
+permissions:
+  contents: write
+
+concurrency:
+  group: village-notes-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Pull published listings from Airtable
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+        run: node scripts/fetch-airtable.js
+
+      - name: Commit the refreshed directory
+        run: |
+          git add village-notes/data/resources.json
+          if git diff --cached --quiet; then
+            echo "Directory already in sync; nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh Village Notes directory from Airtable"
+          # main can move under us between checkout and push; rebase and retry.
+          for attempt in 1 2 3; do
+            git push && break
+            echo "push rejected (attempt $attempt); rebasing on origin/main"
+            git pull --rebase origin main
+          done
