@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-25T14:46:29.054Z",
+  "generated": "2026-08-25T15:09:56.302Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -24,7 +24,7 @@
   "towns": [
     "Branford",
     "Hamden",
-    "Milford (serves New Haven, Hamden, North Haven, and surrounding towns)",
+    "Milford",
     "New Haven",
     "North Haven"
   ],
@@ -148,8 +148,8 @@
       "name": "Right at Home of New Haven County",
       "track": "Elder Care",
       "category": "In-Home Caregiver / Home Health Aide",
-      "specificType": "Non-medical in-home companion care, personal care, and respite care",
-      "town": "Milford (serves New Haven, Hamden, North Haven, and surrounding towns)",
+      "specificType": "Non-medical in-home companion care, personal care, and respite care. Serves New Haven, Hamden, North Haven, and surrounding towns.",
+      "town": "Milford",
       "address": "200 Bridgeport Avenue, Milford, CT 06460",
       "ages": "Adults and seniors",
       "hours": "Office Mon-Fri 8:30 AM-5:00 PM; care services available 24 hours a day, 7 days a week",
