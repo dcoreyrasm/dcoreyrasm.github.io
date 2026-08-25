@@ -42,6 +42,7 @@ const FIELD_MAP = {
   'Cost Notes':               'cost',
   'Website':                  'website',
   'Contact Info':             'contact',
+  'Towns Served':             'townsServed',
   'Rating':                   'rating',
   'Submitted By':             'submittedBy',
   'Date Submitted':           'dateSubmitted',
@@ -88,7 +89,13 @@ async function fetchAllRecords() {
 
 /* ---------- shape ---------- */
 
-function clean(value) {
+// Airtable omits empty fields entirely, so a multi-select with nothing chosen
+// arrives as undefined rather than []. The page expects these keys to always be
+// arrays, so they are normalised here rather than guarded at every use site.
+const LIST_KEYS = new Set(['townsServed']);
+
+function clean(value, key) {
+  if (LIST_KEYS.has(key)) return Array.isArray(value) ? value : (value ? [value] : []);
   if (value == null) return null;
   if (typeof value === 'number') return value;
   const text = String(value).trim();
@@ -100,7 +107,7 @@ function toResource(record) {
   const out = { id: record.id };
 
   for (const [airtableName, key] of Object.entries(FIELD_MAP)) {
-    out[key] = clean(fields[airtableName]);
+    out[key] = clean(fields[airtableName], key);
   }
   return out;
 }
@@ -109,7 +116,7 @@ function toResource(record) {
 
 function build(resources) {
   const byName = (a, b) => String(a || '').localeCompare(String(b || ''));
-  const distinct = key => [...new Set(resources.map(r => r[key]).filter(Boolean))].sort(byName);
+  const distinct = key => [...new Set(resources.flatMap(r => r[key]).filter(Boolean))].sort(byName);
 
   return {
     generated: new Date().toISOString(),
@@ -121,7 +128,9 @@ function build(resources) {
     count: resources.length,
     tracks: distinct('track'),
     categories: distinct('category'),
-    towns: distinct('town'),
+    // Union of base towns and served towns, so the filter offers every town a
+    // family might search for, not just the ones providers are located in.
+    towns: [...new Set([...distinct('town'), ...distinct('townsServed')])].sort(byName),
     resources: resources.sort((a, b) => byName(a.name, b.name))
   };
 }
