@@ -1629,77 +1629,6 @@
         "Not stated"
       ],
       "accountBenefit": [
-        "Claude account"
-      ],
-      "afterSupportEnds": "Access may be reduced or become paid after the free allowance is used. Check current terms and costs before continuing.",
-      "ageGroup": [
-        "Adults"
-      ],
-      "audienceStage": [
-        "Lifelong learner"
-      ],
-      "beginnerFriendly": "Not stated",
-      "bestFit": null,
-      "communityInput": "Not stated",
-      "communityServed": [
-        "Adult education, GED, and English learners"
-      ],
-      "concern": "Usage limits apply and plans can change. Review data controls before uploading files.",
-      "cost": "Limited free plan",
-      "costAfterCredits": null,
-      "ctRelevance": "Direct",
-      "cycle": null,
-      "deadline": null,
-      "deliveryFormat": [
-        "Software or online tool"
-      ],
-      "description": "A no-cost Claude plan with limited usage for writing, analysis, files, web search, and other learning activities.",
-      "door": "Door 1 - No Application",
-      "eligibility": null,
-      "fundingDetails": null,
-      "geo": "Global",
-      "id": "rec9VK3EaWmLAiRbq",
-      "internetDevice": "Internet and device needed",
-      "languages": [
-        "Not stated"
-      ],
-      "lastChecked": "2026-08-25",
-      "legalStatus": "None",
-      "localPartner": "No",
-      "lockIn": null,
-      "maxFunding": null,
-      "nextStep": "Test the same low-risk task in more than one tool and compare accuracy and usefulness.",
-      "notes": null,
-      "oneOnOne": "Not stated",
-      "org": "Anthropic",
-      "readiness": null,
-      "sensitiveInfo": "Not stated",
-      "status": null,
-      "support": [
-        "Free or reduced-price software"
-      ],
-      "techStaff": null,
-      "title": "Claude Free Plan",
-      "topics": [
-        "Education and tutoring",
-        "Research and data"
-      ],
-      "trainTrainer": "Not stated",
-      "travel": null,
-      "type": "Free Tools",
-      "url": "https://claude.com/pricing",
-      "whoCanApply": "Individuals who want a second general-purpose AI assistant for practice.",
-      "whoCanParticipate": [
-        "Individual community leader",
-        "Informal community group",
-        "Connecticut participant"
-      ]
-    },
-    {
-      "accessibility": [
-        "Not stated"
-      ],
-      "accountBenefit": [
         "Claude account",
         "Educator verification"
       ],
@@ -1776,6 +1705,77 @@
         "Connecticut participant",
         "School or youth program",
         "Educator"
+      ]
+    },
+    {
+      "accessibility": [
+        "Not stated"
+      ],
+      "accountBenefit": [
+        "Claude account"
+      ],
+      "afterSupportEnds": "Access may be reduced or become paid after the free allowance is used. Check current terms and costs before continuing.",
+      "ageGroup": [
+        "Adults"
+      ],
+      "audienceStage": [
+        "Lifelong learner"
+      ],
+      "beginnerFriendly": "Not stated",
+      "bestFit": null,
+      "communityInput": "Not stated",
+      "communityServed": [
+        "Adult education, GED, and English learners"
+      ],
+      "concern": "Usage limits apply and plans can change. Review data controls before uploading files.",
+      "cost": "Limited free plan",
+      "costAfterCredits": null,
+      "ctRelevance": "Direct",
+      "cycle": null,
+      "deadline": null,
+      "deliveryFormat": [
+        "Software or online tool"
+      ],
+      "description": "A no-cost Claude plan with limited usage for writing, analysis, files, web search, and other learning activities.",
+      "door": "Door 1 - No Application",
+      "eligibility": null,
+      "fundingDetails": null,
+      "geo": "Global",
+      "id": "rec9VK3EaWmLAiRbq",
+      "internetDevice": "Internet and device needed",
+      "languages": [
+        "Not stated"
+      ],
+      "lastChecked": "2026-08-25",
+      "legalStatus": "None",
+      "localPartner": "No",
+      "lockIn": null,
+      "maxFunding": null,
+      "nextStep": "Test the same low-risk task in more than one tool and compare accuracy and usefulness.",
+      "notes": null,
+      "oneOnOne": "Not stated",
+      "org": "Anthropic",
+      "readiness": null,
+      "sensitiveInfo": "Not stated",
+      "status": null,
+      "support": [
+        "Free or reduced-price software"
+      ],
+      "techStaff": null,
+      "title": "Claude Free Plan",
+      "topics": [
+        "Education and tutoring",
+        "Research and data"
+      ],
+      "trainTrainer": "Not stated",
+      "travel": null,
+      "type": "Free Tools",
+      "url": "https://claude.com/pricing",
+      "whoCanApply": "Individuals who want a second general-purpose AI assistant for practice.",
+      "whoCanParticipate": [
+        "Individual community leader",
+        "Informal community group",
+        "Connecticut participant"
       ]
     },
     {
@@ -2768,6 +2768,79 @@
       "accessibility": [
         "Not stated"
       ],
+      "accountBenefit": [],
+      "afterSupportEnds": null,
+      "ageGroup": [
+        "Adults"
+      ],
+      "audienceStage": [
+        "Technical learner",
+        "Lifelong learner"
+      ],
+      "beginnerFriendly": "Yes",
+      "bestFit": null,
+      "communityInput": "Not stated",
+      "communityServed": [
+        "Environmental and neighborhood groups",
+        "Adult education, GED, and English learners"
+      ],
+      "concern": "Requires coding experience and more time than an introductory course.",
+      "cost": "Free",
+      "costAfterCredits": null,
+      "ctRelevance": "Direct",
+      "cycle": null,
+      "deadline": null,
+      "deliveryFormat": [
+        "Not stated"
+      ],
+      "description": "A free, practical deep-learning course focused on building and putting into use models with accessible computing resources.",
+      "door": "Door 1 - No Application",
+      "eligibility": null,
+      "fundingDetails": null,
+      "geo": "Global",
+      "id": "recLLShIpSPL1PMQQ",
+      "internetDevice": "Not stated",
+      "languages": [
+        "Not stated"
+      ],
+      "lastChecked": "2026-08-25",
+      "legalStatus": "None",
+      "localPartner": "No",
+      "lockIn": null,
+      "maxFunding": null,
+      "nextStep": "Complete the setup lesson and use the recommended free notebook environment.",
+      "notes": null,
+      "oneOnOne": "Not stated",
+      "org": "fast.ai",
+      "readiness": null,
+      "sensitiveInfo": "Not stated",
+      "status": null,
+      "support": [
+        "Beginner AI education",
+        "Accessibility or assistive technology"
+      ],
+      "techStaff": null,
+      "title": "Practical Deep Learning for Coders",
+      "topics": [
+        "Education and tutoring",
+        "Climate and environmental work",
+        "Technology and coding"
+      ],
+      "trainTrainer": "Not stated",
+      "travel": null,
+      "type": "Free Training",
+      "url": "https://course.fast.ai/",
+      "whoCanApply": "People with some coding experience who learn best by building.",
+      "whoCanParticipate": [
+        "Individual community leader",
+        "Informal community group",
+        "Connecticut participant"
+      ]
+    },
+    {
+      "accessibility": [
+        "Not stated"
+      ],
       "accountBenefit": [
         "Google account"
       ],
@@ -2998,86 +3071,6 @@
       ],
       "afterSupportEnds": null,
       "ageGroup": [
-        "Adults"
-      ],
-      "audienceStage": [
-        "K-12 educator",
-        "College educator",
-        "Community educator",
-        "Technical learner",
-        "Nontechnical beginner",
-        "Lifelong learner"
-      ],
-      "beginnerFriendly": "Yes",
-      "bestFit": null,
-      "communityInput": "Not stated",
-      "communityServed": [
-        "Youth and after-school programs",
-        "Adult education, GED, and English learners"
-      ],
-      "concern": "Some later labs and advanced content on the platform may require credits or a subscription.",
-      "cost": "Free",
-      "costAfterCredits": null,
-      "ctRelevance": "Available to Connecticut residents",
-      "cycle": null,
-      "deadline": null,
-      "deliveryFormat": [
-        "Software or online tool"
-      ],
-      "description": "A 45-minute introductory micro-course explaining AI that creates content, how it differs from traditional AI systems that learn patterns from data, and Google tools for building AI applications. A badge is available.",
-      "door": "Door 1 - No Application",
-      "eligibility": null,
-      "fundingDetails": null,
-      "geo": "Global or as stated",
-      "id": "recSXCgh1spYU5rHT",
-      "internetDevice": "Internet and device needed",
-      "languages": [
-        "Not stated"
-      ],
-      "lastChecked": "2026-08-25",
-      "legalStatus": "None",
-      "localPartner": "No",
-      "lockIn": null,
-      "maxFunding": null,
-      "nextStep": "Sign in with an existing Google account so the earned badge is attached to the learner profile.",
-      "notes": null,
-      "oneOnOne": "Not stated",
-      "org": "Google Cloud Skills Boost",
-      "readiness": null,
-      "sensitiveInfo": "Not stated",
-      "status": null,
-      "support": [
-        "Beginner AI education",
-        "Certification or exam voucher"
-      ],
-      "techStaff": null,
-      "title": "Introduction to Generative AI",
-      "topics": [
-        "Education and tutoring",
-        "Technology and coding",
-        "Research and data"
-      ],
-      "trainTrainer": "Not stated",
-      "travel": null,
-      "type": "Free Training",
-      "url": "https://www.cloudskillsboost.google/course_templates/536",
-      "whoCanApply": "Beginners, students, professionals, educators, and lifelong learners.",
-      "whoCanParticipate": [
-        "Individual community leader",
-        "Informal community group",
-        "Connecticut participant",
-        "Educator"
-      ]
-    },
-    {
-      "accessibility": [
-        "Not stated"
-      ],
-      "accountBenefit": [
-        "Google account"
-      ],
-      "afterSupportEnds": null,
-      "ageGroup": [
         "Elementary school",
         "Middle school",
         "High school",
@@ -3146,6 +3139,86 @@
         "Individual community leader",
         "Connecticut participant",
         "School or youth program",
+        "Educator"
+      ]
+    },
+    {
+      "accessibility": [
+        "Not stated"
+      ],
+      "accountBenefit": [
+        "Google account"
+      ],
+      "afterSupportEnds": null,
+      "ageGroup": [
+        "Adults"
+      ],
+      "audienceStage": [
+        "K-12 educator",
+        "College educator",
+        "Community educator",
+        "Technical learner",
+        "Nontechnical beginner",
+        "Lifelong learner"
+      ],
+      "beginnerFriendly": "Yes",
+      "bestFit": null,
+      "communityInput": "Not stated",
+      "communityServed": [
+        "Youth and after-school programs",
+        "Adult education, GED, and English learners"
+      ],
+      "concern": "Some later labs and advanced content on the platform may require credits or a subscription.",
+      "cost": "Free",
+      "costAfterCredits": null,
+      "ctRelevance": "Available to Connecticut residents",
+      "cycle": null,
+      "deadline": null,
+      "deliveryFormat": [
+        "Software or online tool"
+      ],
+      "description": "A 45-minute introductory micro-course explaining AI that creates content, how it differs from traditional AI systems that learn patterns from data, and Google tools for building AI applications. A badge is available.",
+      "door": "Door 1 - No Application",
+      "eligibility": null,
+      "fundingDetails": null,
+      "geo": "Global or as stated",
+      "id": "recSXCgh1spYU5rHT",
+      "internetDevice": "Internet and device needed",
+      "languages": [
+        "Not stated"
+      ],
+      "lastChecked": "2026-08-25",
+      "legalStatus": "None",
+      "localPartner": "No",
+      "lockIn": null,
+      "maxFunding": null,
+      "nextStep": "Sign in with an existing Google account so the earned badge is attached to the learner profile.",
+      "notes": null,
+      "oneOnOne": "Not stated",
+      "org": "Google Cloud Skills Boost",
+      "readiness": null,
+      "sensitiveInfo": "Not stated",
+      "status": null,
+      "support": [
+        "Beginner AI education",
+        "Certification or exam voucher"
+      ],
+      "techStaff": null,
+      "title": "Introduction to Generative AI",
+      "topics": [
+        "Education and tutoring",
+        "Technology and coding",
+        "Research and data"
+      ],
+      "trainTrainer": "Not stated",
+      "travel": null,
+      "type": "Free Training",
+      "url": "https://www.cloudskillsboost.google/course_templates/536",
+      "whoCanApply": "Beginners, students, professionals, educators, and lifelong learners.",
+      "whoCanParticipate": [
+        "Individual community leader",
+        "Informal community group",
+        "Connecticut participant",
         "Educator"
       ]
     },
@@ -3624,6 +3697,79 @@
       "accessibility": [
         "Not stated"
       ],
+      "accountBenefit": [],
+      "afterSupportEnds": null,
+      "ageGroup": [
+        "Adults"
+      ],
+      "audienceStage": [
+        "Nonprofit staff",
+        "Nontechnical beginner",
+        "Researcher"
+      ],
+      "beginnerFriendly": "Yes",
+      "bestFit": "Journalism, civic information, arts, or community projects with an existing Knight relationship.",
+      "communityInput": "Not stated",
+      "communityServed": [
+        "Local journalists and community media"
+      ],
+      "concern": "Not an open AI adoption fund, and there is no Connecticut local program path.",
+      "cost": "Free",
+      "costAfterCredits": "N/A",
+      "ctRelevance": null,
+      "cycle": "Ongoing",
+      "deadline": null,
+      "deliveryFormat": [
+        "Not stated"
+      ],
+      "description": "Most funding emerges through relationships, research, and ongoing work rather than an always-open application. Named challenges may create temporary competitive doors. Application or access status: Cannot apply cold except named open calls. Recommended action: Subscribe to open-call notices and pursue only if the project fits a national strategy.",
+      "door": "Door 3 - Relationship Only",
+      "eligibility": "Must align with a defined Knight strategy or open challenge. General unsolicited proposals are not the normal route.",
+      "fundingDetails": "Most funding emerges through relationships, research, and ongoing work rather than an always-open application. Named challenges may create temporary competitive doors.",
+      "geo": "National strategies plus 26 named U.S. communities. Connecticut and New Haven are not listed Knight communities.",
+      "id": "recqo33OuYAzySgMR",
+      "internetDevice": "Not stated",
+      "languages": [
+        "Not stated"
+      ],
+      "lastChecked": "2026-08-24",
+      "legalStatus": "Partner affiliation required",
+      "localPartner": "Yes",
+      "lockIn": "Low",
+      "maxFunding": null,
+      "nextStep": "Subscribe to open-call notices and pursue only if the project fits a national strategy.",
+      "notes": "The 2026 Knight Cities Challenge is closed and was not included as an active opportunity.",
+      "oneOnOne": "Not stated",
+      "org": "Knight Foundation",
+      "readiness": null,
+      "sensitiveInfo": "Not stated",
+      "status": "Cannot apply cold except named open calls",
+      "support": [
+        "Beginner AI education",
+        "Funding or grant"
+      ],
+      "techStaff": null,
+      "title": "Knight Foundation Strategic Grantmaking",
+      "topics": [
+        "Community journalism",
+        "Government services",
+        "Arts and creative work",
+        "Research and data"
+      ],
+      "trainTrainer": "Not stated",
+      "travel": null,
+      "type": "Grant",
+      "url": "https://knightfoundation.org/how-we-fund/",
+      "whoCanApply": "Organizations in journalism, arts, economic opportunity, and 26 Knight communities, depending on strategy.",
+      "whoCanParticipate": [
+        "Nonprofit organization",
+        "Partner organization"
+      ]
+    },
+    {
+      "accessibility": [
+        "Not stated"
+      ],
       "accountBenefit": [
         "Nonprofit affiliation"
       ],
@@ -3695,79 +3841,6 @@
       "type": "Grant + Pro Bono",
       "url": "https://kpmg.com/us/en/careers-and-culture/kpmg-ai-impact-initiative.html",
       "whoCanApply": "U.S. nonprofits in education, mental health, and community vitality selected by KPMG.",
-      "whoCanParticipate": [
-        "Nonprofit organization",
-        "Partner organization"
-      ]
-    },
-    {
-      "accessibility": [
-        "Not stated"
-      ],
-      "accountBenefit": [],
-      "afterSupportEnds": null,
-      "ageGroup": [
-        "Adults"
-      ],
-      "audienceStage": [
-        "Nonprofit staff",
-        "Nontechnical beginner",
-        "Researcher"
-      ],
-      "beginnerFriendly": "Yes",
-      "bestFit": "Journalism, civic information, arts, or community projects with an existing Knight relationship.",
-      "communityInput": "Not stated",
-      "communityServed": [
-        "Local journalists and community media"
-      ],
-      "concern": "Not an open AI adoption fund, and there is no Connecticut local program path.",
-      "cost": "Free",
-      "costAfterCredits": "N/A",
-      "ctRelevance": null,
-      "cycle": "Ongoing",
-      "deadline": null,
-      "deliveryFormat": [
-        "Not stated"
-      ],
-      "description": "Most funding emerges through relationships, research, and ongoing work rather than an always-open application. Named challenges may create temporary competitive doors. Application or access status: Cannot apply cold except named open calls. Recommended action: Subscribe to open-call notices and pursue only if the project fits a national strategy.",
-      "door": "Door 3 - Relationship Only",
-      "eligibility": "Must align with a defined Knight strategy or open challenge. General unsolicited proposals are not the normal route.",
-      "fundingDetails": "Most funding emerges through relationships, research, and ongoing work rather than an always-open application. Named challenges may create temporary competitive doors.",
-      "geo": "National strategies plus 26 named U.S. communities. Connecticut and New Haven are not listed Knight communities.",
-      "id": "recqo33OuYAzySgMR",
-      "internetDevice": "Not stated",
-      "languages": [
-        "Not stated"
-      ],
-      "lastChecked": "2026-08-24",
-      "legalStatus": "Partner affiliation required",
-      "localPartner": "Yes",
-      "lockIn": "Low",
-      "maxFunding": null,
-      "nextStep": "Subscribe to open-call notices and pursue only if the project fits a national strategy.",
-      "notes": "The 2026 Knight Cities Challenge is closed and was not included as an active opportunity.",
-      "oneOnOne": "Not stated",
-      "org": "Knight Foundation",
-      "readiness": null,
-      "sensitiveInfo": "Not stated",
-      "status": "Cannot apply cold except named open calls",
-      "support": [
-        "Beginner AI education",
-        "Funding or grant"
-      ],
-      "techStaff": null,
-      "title": "Knight Foundation Strategic Grantmaking",
-      "topics": [
-        "Community journalism",
-        "Government services",
-        "Arts and creative work",
-        "Research and data"
-      ],
-      "trainTrainer": "Not stated",
-      "travel": null,
-      "type": "Grant",
-      "url": "https://knightfoundation.org/how-we-fund/",
-      "whoCanApply": "Organizations in journalism, arts, economic opportunity, and 26 Knight communities, depending on strategy.",
       "whoCanParticipate": [
         "Nonprofit organization",
         "Partner organization"
@@ -7000,79 +7073,6 @@
         "Nonprofit organization",
         "Connecticut participant",
         "Partner organization"
-      ]
-    },
-    {
-      "accessibility": [
-        "Not stated"
-      ],
-      "accountBenefit": [],
-      "afterSupportEnds": null,
-      "ageGroup": [
-        "Adults"
-      ],
-      "audienceStage": [
-        "Technical learner",
-        "Lifelong learner"
-      ],
-      "beginnerFriendly": "Yes",
-      "bestFit": null,
-      "communityInput": "Not stated",
-      "communityServed": [
-        "Environmental and neighborhood groups",
-        "Adult education, GED, and English learners"
-      ],
-      "concern": "Requires coding experience and more time than an introductory course.",
-      "cost": "Free",
-      "costAfterCredits": null,
-      "ctRelevance": "Direct",
-      "cycle": null,
-      "deadline": null,
-      "deliveryFormat": [
-        "Not stated"
-      ],
-      "description": "A free, practical deep-learning course focused on building and putting into use models with accessible computing resources.",
-      "door": "Door 1 - No Application",
-      "eligibility": null,
-      "fundingDetails": null,
-      "geo": "Global",
-      "id": "recLLShIpSPL1PMQQ",
-      "internetDevice": "Not stated",
-      "languages": [
-        "Not stated"
-      ],
-      "lastChecked": "2026-08-25",
-      "legalStatus": "None",
-      "localPartner": "No",
-      "lockIn": null,
-      "maxFunding": null,
-      "nextStep": "Complete the setup lesson and use the recommended free notebook environment.",
-      "notes": null,
-      "oneOnOne": "Not stated",
-      "org": "fast.ai",
-      "readiness": null,
-      "sensitiveInfo": "Not stated",
-      "status": null,
-      "support": [
-        "Beginner AI education",
-        "Accessibility or assistive technology"
-      ],
-      "techStaff": null,
-      "title": "Practical Deep Learning for Coders",
-      "topics": [
-        "Education and tutoring",
-        "Climate and environmental work",
-        "Technology and coding"
-      ],
-      "trainTrainer": "Not stated",
-      "travel": null,
-      "type": "Free Training",
-      "url": "https://course.fast.ai/",
-      "whoCanApply": "People with some coding experience who learn best by building.",
-      "whoCanParticipate": [
-        "Individual community leader",
-        "Informal community group",
-        "Connecticut participant"
       ]
     }
   ]
