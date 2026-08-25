@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-25T15:22:36.625Z",
+  "generated": "2026-08-25T16:05:29.801Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -22,11 +22,30 @@
     "Preschool / Pre-K"
   ],
   "towns": [
+    "Ansonia",
+    "Beacon Falls",
+    "Bethany",
     "Branford",
+    "Cheshire",
+    "Derby",
+    "East Haven",
+    "Guilford",
     "Hamden",
+    "Madison",
+    "Meriden",
     "Milford",
+    "Naugatuck",
     "New Haven",
-    "North Haven"
+    "North Branford",
+    "North Haven",
+    "Orange",
+    "Oxford",
+    "Seymour",
+    "Shelton",
+    "Statewide (all of Connecticut)",
+    "Wallingford",
+    "West Haven",
+    "Woodbridge"
   ],
   "resources": [
     {
@@ -44,7 +63,26 @@
       "website": "https://www.aoascc.org/",
       "contact": "(203) 785-8533",
       "townsServed": [
-        "North Haven"
+        "Ansonia",
+        "Bethany",
+        "Branford",
+        "Derby",
+        "East Haven",
+        "Guilford",
+        "Hamden",
+        "Madison",
+        "Meriden",
+        "Milford",
+        "New Haven",
+        "North Branford",
+        "North Haven",
+        "Orange",
+        "Oxford",
+        "Seymour",
+        "Shelton",
+        "Wallingford",
+        "West Haven",
+        "Woodbridge"
       ],
       "rating": null,
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
@@ -88,7 +126,13 @@
       "website": "https://calvinhilldaycare.org/",
       "contact": "(203) 764-9350 | susan@calvinhilldaycare.org",
       "townsServed": [
-        "New Haven"
+        "New Haven",
+        "Hamden",
+        "East Haven",
+        "West Haven",
+        "North Haven",
+        "Woodbridge",
+        "Branford"
       ],
       "rating": null,
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
@@ -110,7 +154,7 @@
       "website": "https://www.commongroundct.org/about-summer-camp",
       "contact": "(203) 389-4333 ext. 1213 | camp@commongroundct.org",
       "townsServed": [
-        "New Haven"
+        "Statewide (all of Connecticut)"
       ],
       "rating": null,
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
@@ -201,7 +245,29 @@
       "website": "https://www.hospice.com/",
       "contact": "(203) 315-7301 general inquiries | (203) 315-7540 admissions/intake (24/7)",
       "townsServed": [
-        "Branford"
+        "Ansonia",
+        "Beacon Falls",
+        "Bethany",
+        "Branford",
+        "Cheshire",
+        "Derby",
+        "East Haven",
+        "Guilford",
+        "Hamden",
+        "Madison",
+        "Meriden",
+        "Milford",
+        "Naugatuck",
+        "New Haven",
+        "North Branford",
+        "North Haven",
+        "Orange",
+        "Oxford",
+        "Seymour",
+        "Shelton",
+        "Wallingford",
+        "West Haven",
+        "Woodbridge"
       ],
       "rating": null,
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
@@ -223,7 +289,13 @@
       "website": "https://www.whitneycenter.com/",
       "contact": "(203) 974-0001 Marketing & Sales | (203) 281-6745 Main | (203) 848-2222 Memory Care (Meadow Mills)",
       "townsServed": [
-        "Hamden"
+        "New Haven",
+        "Hamden",
+        "East Haven",
+        "West Haven",
+        "North Haven",
+        "Woodbridge",
+        "Branford"
       ],
       "rating": null,
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
