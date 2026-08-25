@@ -1,0 +1,61 @@
+name: Community AI sync (Airtable to JSON)
+
+# Refreshes assets/data/community-ai-opportunities.json from the "AI Support &
+# Opportunities for Communities" Airtable base, so community-ai.html no longer
+# depends on someone remembering to run the script by hand and commit the result.
+#
+# Same architecture as the Village Notes sync: the token is read from a repo
+# secret at runtime and handed to the script as an env var. It is never written
+# to a file, and the JSON that gets committed contains only listing data, so no
+# credential reaches the repo or a visitor's browser.
+#
+# _tools/fetch-community-ai.py uses only the Python standard library, so there
+# is nothing to install. If the pull fails it exits non-zero having written
+# nothing, leaving the previous snapshot live rather than blanking the page.
+#
+# Scheduled 30 minutes offset from village-notes-sync: both workflows commit to
+# main, and staggering them keeps the two from racing on the same push.
+
+on:
+  schedule:
+    - cron: "30 */6 * * *"   # 00:30, 06:30, 12:30, 18:30 UTC
+  workflow_dispatch:          # allows a manual run
+
+permissions:
+  contents: write
+
+concurrency:
+  group: community-ai-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.x"
+
+      - name: Pull opportunities from Airtable
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+        run: python3 _tools/fetch-community-ai.py
+
+      - name: Commit the refreshed directory
+        run: |
+          git add assets/data/community-ai-opportunities.json
+          if git diff --cached --quiet; then
+            echo "Directory already in sync; nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh Community AI directory from Airtable"
+          # main can move under us between checkout and push; rebase and retry.
+          for attempt in 1 2 3; do
+            git push && break
+            echo "push rejected (attempt $attempt); rebasing on origin/main"
+            git pull --rebase origin main
+          done
