@@ -1,0 +1,34 @@
+name: One-off - add Category choices
+
+# TEMPORARY. Adds nine choices to the Resources table's Category field, then
+# this workflow and its script are removed. It exists only because Airtable's
+# schema API needs a real HTTP call and the token lives in this repo's secrets,
+# which nothing outside Actions can read.
+#
+# Manual trigger only -- no schedule. It never runs on its own.
+#
+# Needs AIRTABLE_TOKEN to carry schema.bases:write for this run. Narrow that
+# token back to data.records:read afterwards: it is the same secret the two
+# sync workflows use unattended every six hours, and read-only is most of why
+# it is safe sitting there.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  add-choices:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Add the Category choices
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+        run: node scripts/add-categories.js
