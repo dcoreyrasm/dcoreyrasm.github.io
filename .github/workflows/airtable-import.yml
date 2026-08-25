@@ -1,0 +1,54 @@
+name: Airtable bulk import (manual)
+
+# Loads a prepared CSV of Connecticut resources into the Village Notes base.
+# Manual trigger only -- it never runs on a schedule.
+#
+# Runs here rather than from a laptop for the same reason the syncs do: the
+# Airtable token lives in this repo's secrets and nothing outside Actions can
+# read it.
+#
+# Requires AIRTABLE_TOKEN to carry data.records:write for the run. Narrow it
+# back to data.records:read afterwards -- it is the same secret the two sync
+# workflows use unattended every six hours.
+#
+# The importer is idempotent: every row is keyed on its licence/registry id and
+# checked against the table first, so re-running adds nothing. Start with
+# dry_run to see the plan before writing.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print the plan without writing anything"
+        type: boolean
+        default: true
+      status:
+        description: "Moderation Status for imported rows"
+        type: choice
+        options: ["Published", "Pending Review"]
+        default: "Pending Review"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: airtable-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.x"
+
+      - name: Import
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+        run: |
+          python3 scripts/import-early-start-ct.py \
+            --status "${{ inputs.status }}" \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
