@@ -15,7 +15,7 @@
   // URL here and every "add it" link on the page starts using it, prefilled
   // with whatever the visitor was looking for. Left empty, the links fall back
   // to the contact page so nothing is ever broken.
-  var FORM_URL = '';
+  var FORM_URL = 'https://airtable.com/appxUByKs5ULrDZQp/pagofYquo4QHUjcQG/form';
 
   var state = { all: [], search: '', track: '', categories: [], towns: [], flags: {},
                sort: 'name', shown: 0 };
