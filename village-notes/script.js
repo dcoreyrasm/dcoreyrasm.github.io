@@ -11,18 +11,38 @@
 
   var DATA_URL = '/village-notes/data/resources.json';
 
-  var state = { all: [], search: '', track: '', category: '', town: '' };
+  var state = { all: [], search: '', track: '', categories: [], towns: [], flags: {},
+               sort: 'name', shown: 0 };
+
+  // Cards are built as HTML strings; 524 of them at once is the slowest thing
+  // the page does. Rendering a screenful and extending on demand keeps the
+  // first paint quick without hiding anything -- the count above always
+  // reports the full match, and Show more walks the rest.
+  var PAGE = 60;
 
   var el = {
     search:     document.getElementById('vn-search'),
     track:      document.getElementById('vn-track'),
-    category:   document.getElementById('vn-category'),
-    town:       document.getElementById('vn-town'),
+    catToggle:  document.getElementById('vn-cat-toggle'),
+    catPanel:   document.getElementById('vn-cat-panel'),
+    catLabel:   document.getElementById('vn-cat-label'),
+    catList:    document.getElementById('vn-cat-list'),
+    catFind:    document.getElementById('vn-cat-find'),
+    catClear:   document.getElementById('vn-cat-clear'),
+    toggles:    document.querySelectorAll('.vn-toggle input'),
+    townToggle: document.getElementById('vn-town-toggle'),
+    townPanel:  document.getElementById('vn-town-panel'),
+    townLabel:  document.getElementById('vn-town-label'),
+    townList:   document.getElementById('vn-town-list'),
+    townFind:   document.getElementById('vn-town-find'),
+    townClear:  document.getElementById('vn-town-clear'),
     reset:      document.getElementById('vn-reset'),
     results:    document.getElementById('vn-results'),
     empty:      document.getElementById('vn-empty'),
     emptyBody:  document.getElementById('vn-empty-body'),
     resultline: document.getElementById('vn-resultline'),
+    sort:       document.getElementById('vn-sort'),
+    showMore:   document.getElementById('vn-showmore'),
     countBadge: document.getElementById('vn-count-badge'),
     updated:    document.getElementById('vn-updated')
   };
@@ -91,6 +111,67 @@
 
   function plural(n, one, many) { return n === 1 ? one : many; }
 
+  /* ---------- what-you-need groups ---------- */
+
+  // The Category field carries 58 options and does two jobs at once: the kind
+  // of need, and the specific flavour. A single flat list makes a parent guess
+  // whether a robotics week is filed under STEM, Specialty or Summer Day, and
+  // filtering on the wrong guess hides it. So the filter works on the group and
+  // the specific category stays visible on the card and inside search.
+  var GROUPS = [
+    ['Child Care', ['Center-Based Daycare','Home Daycare (Licensed)','Infant Care',
+      'Preschool / Pre-K','Before/After School Care','Backup/Emergency Care',
+      'Nanny / Au Pair','Nanny Share','Babysitting Co-op']],
+    ['Camps & School Breaks', ['Summer Day Camp','Summer Sleepaway Camp','Sports Camp',
+      'STEM/Tech Camp','Arts Camp','Outdoor/Nature Camp','Academic/Enrichment Camp',
+      'Faith-Based Camp','Municipal/Parks & Rec Camp','Language Immersion Camp',
+      'Specialty Camp','Inclusive/Special Needs Camp','School Vacation Week Care']],
+    ['Activities & Enrichment', ['Afterschool Enrichment','Tutoring / Academic Support',
+      'Literacy / Reading Program','Youth Development Program','Teen Program',
+      'Teen/CIT Program','Youth Employment Program']],
+    ['Early Intervention & Therapy', ['Birth-to-Three / Early Intervention',
+      'Pediatric Therapy (OT/PT/Speech)','Special Needs Childcare']],
+    ['Parent & Family Support', ['Postpartum Support','Lactation Support',
+      'Perinatal Mental Health','Doula Services','Parenting Support/Classes',
+      'Barter/Skill Exchange','Household Help']],
+    ['Paying for Care', ['Legal/HR Resource']],
+
+    ['Care at Home', ['In-Home Caregiver / Home Health Aide','Companion Services',
+      'Respite Care','Home Modification / Fall Prevention','Durable Medical Equipment Loan']],
+    ['Residential Care', ['Assisted Living','Memory Care','Skilled Nursing / Rehab']],
+    ['Day Programs & Community', ['Adult Day Program',
+      'Senior Center / Congregate Meals & Social Programs','Meal Delivery','Elder Transportation']],
+    ['Health & End of Life', ['Hospice / Palliative Care','Grief/Bereavement Support']],
+    ['Caregiver Support', ['Caregiver Support Group','Geriatric Care Manager']],
+    ['Benefits, Legal & Money', ['Elder Law / Financial Planning','Veterans Benefits Counseling']]
+  ];
+
+  var GROUP_OF = (function () {
+    var map = {};
+    GROUPS.forEach(function (g) { g[1].forEach(function (c) { map[c] = g[0]; }); });
+    return map;
+  })();
+
+  function groupOf(r) { return GROUP_OF[r.category] || 'Other'; }
+
+  /* ---------- quick-filter predicates ---------- */
+
+  // "Not Confirmed" is a real answer in this data and must not read as a yes.
+  function yesish(v) { return v === 'Yes' || v === 'Limited / Selected Sites'; }
+
+  var FLAGS = {
+    openNow:     function (r) { return ['Open','Rolling / Ongoing','Opening Soon'].indexOf(r.registrationStatus) !== -1; },
+    care4Kids:   function (r) { return yesish(r.care4Kids); },
+    financialAid:function (r) { return yesish(r.financialAid); },
+    transport:   function (r) { return r.transportation && r.transportation !== 'No'
+                                       && r.transportation !== 'No Transportation'
+                                       && r.transportation !== 'Not Confirmed'
+                                       && r.transportation !== 'Contact Program'; },
+    extended:    function (r) { var e = r.extendedCare || [];
+                                return e.some(function (x) { return x !== 'None' && x !== 'Not Confirmed'; }); },
+    fullDay:     function (r) { return r.schoolDayCoverage === 'Full Workday'; }
+  };
+
   /* ---------- rendering ---------- */
 
   function stars(rating) {
@@ -134,12 +215,35 @@
         : all.join(', ');
     }
 
+    // Scannable badges: the four things a parent checks before reading further.
+    var badges = [];
+    if (r.registrationStatus) {
+      var openish = FLAGS.openNow(r);
+      badges.push('<span class="vn-badge-chip' + (openish ? ' is-open' : '') + '">' +
+                  esc(r.registrationStatus) + '</span>');
+    }
+    if (yesish(r.care4Kids))    badges.push('<span class="vn-badge-chip">Care 4 Kids</span>');
+    if (yesish(r.financialAid)) badges.push('<span class="vn-badge-chip">Financial help</span>');
+    if (FLAGS.transport(r))     badges.push('<span class="vn-badge-chip">Transport</span>');
+    if (FLAGS.extended(r))      badges.push('<span class="vn-badge-chip">Before/after care</span>');
+    var badgeRow = badges.length ? '<div class="vn-chips">' + badges.join('') + '</div>' : '';
+
+    var times = [r.startTime, r.endTime].filter(has).join(' \u2013 ');
+
     var facts =
       fact('Serves', servesLabel) +
       fact('Hours', r.hours) +
       fact('Waitlist', r.availability, true) +
       fact('Ages', r.ages) +
       fact('Cost', r.cost) +
+      fact('Times', times || null) +
+      fact('Days', (r.daysOffered || []).join(', ') || null) +
+      fact('Extended', (r.extendedCare || []).filter(function (x) {
+        return x !== 'None' && x !== 'Not Confirmed'; }).join(', ') || null) +
+      fact('Languages', (r.languages || []).filter(function (x) {
+        return x !== 'Not Confirmed'; }).join(', ') || null) +
+      fact('Meals', r.meals && r.meals !== 'Not Confirmed' ? r.meals : null) +
+      fact('Licensing', r.licensing && r.licensing !== 'Not Confirmed' ? r.licensing : null) +
       fact('Address', r.address);
 
     var links = [];
@@ -165,6 +269,7 @@
       head +
       '<h3 class="vn-card-name">' + esc(r.name || 'Untitled listing') + '</h3>' +
       (has(r.town) ? '<p class="vn-card-town">' + esc(r.town) + '</p>' : '') +
+      badgeRow +
       stars(r.rating) +
       (has(r.specificType) ? '<p class="vn-card-type">' + esc(r.specificType) + '</p>' : '') +
       (facts ? '<dl class="vn-facts">' + facts + '</dl>' : '') +
@@ -175,6 +280,39 @@
       '</div>' +
     '</article>';
   }
+
+  /* ---------- sorting ---------- */
+
+  // What a family actually came for. A listing with real hours, a real waitlist
+  // note and a real cost is worth more than one with a phone number, so
+  // "detail" ranks on those rather than on how many fields are populated.
+  var DETAIL_FIELDS = ['hours', 'availability', 'cost', 'website', 'ages', 'contact'];
+
+  function detailScore(r) {
+    var n = 0;
+    DETAIL_FIELDS.forEach(function (k) { if (has(r[k])) n++; });
+    // The imported boilerplate is not a real availability note; it says
+    // "contact the program". Do not let it count as knowledge we have.
+    if (/^Contact the program directly/i.test(r.availability || '')) n--;
+    if (r.rating) n++;
+    return n;
+  }
+
+  function byName(a, b) { return String(a.name || '').localeCompare(String(b.name || '')); }
+
+  var SORTS = {
+    name:     byName,
+    town:     function (a, b) {
+                return String(a.town || '').localeCompare(String(b.town || '')) || byName(a, b);
+              },
+    detail:   function (a, b) { return detailScore(b) - detailScore(a) || byName(a, b); },
+    needs:    function (a, b) { return detailScore(a) - detailScore(b) || byName(a, b); },
+    verified: function (a, b) {
+                var av = a.lastVerified || a.dateSubmitted || '';
+                var bv = b.lastVerified || b.dateSubmitted || '';
+                return bv.localeCompare(av) || byName(a, b);
+              }
+  };
 
   /* ---------- filtering ---------- */
 
@@ -202,8 +340,11 @@
 
   function matches(r) {
     if (state.track && r.track !== state.track) return false;
-    if (state.category && r.category !== state.category) return false;
-    if (state.town && !servesTown(r, state.town)) return false;
+    if (state.categories.length && state.categories.indexOf(r.category) === -1) return false;
+    if (state.towns.length && !state.towns.some(function (t) { return servesTown(r, t); })) return false;
+    for (var flag in state.flags) {
+      if (state.flags[flag] && FLAGS[flag] && !FLAGS[flag](r)) return false;
+    }
     if (!state.search) return true;
     return (r._haystack || '').indexOf(state.search) !== -1;
   }
@@ -213,33 +354,99 @@
             r.ages, r.hours, r.availability, r.cost, r.contact, r.notes,
             r.submittedBy]
       .concat(Array.isArray(r.townsServed) ? r.townsServed : [])
+      .concat(r.servicesOffered || []).concat(r.languages || [])
+      .concat([groupOf(r), r.registrationStatus, r.licensing])
       .filter(has).join(' ␟ ').toLowerCase();
   }
 
   // Category options track the selected Track, so a family browsing Elder
   // Care is never offered "Sports Camp" as a filter that returns nothing.
-  function refreshCategoryOptions() {
+  // Category options follow the chosen track, so someone browsing Elder Care is
+  // never offered "Sports Camp" as a filter that returns nothing.
+  function buildCatList() {
     var pool = state.track
       ? state.all.filter(function (r) { return r.track === state.track; })
       : state.all;
-    fillSelect(el.category, uniqueSorted(pool.map(function (r) { return r.category; })), 'All categories');
-    if (el.category.value !== state.category) {
-      state.category = el.category.value;
+    var live = {};
+    pool.forEach(function (r) { live[r.category] = (live[r.category] || 0) + 1; });
+
+    var html = '';
+    GROUPS.forEach(function (g) {
+      var cats = g[1].filter(function (c) { return live[c]; });
+      if (!cats.length) return;
+      var total = cats.reduce(function (n, c) { return n + live[c]; }, 0);
+      html += '<div class="vn-multi-group" data-find="' + esc((g[0] + ' ' + cats.join(' ')).toLowerCase()) + '">' +
+                '<label class="vn-multi-opt vn-multi-grouphead">' +
+                  '<input type="checkbox" data-group="' + esc(g[0]) + '" />' +
+                  '<span>' + esc(g[0]) + '</span><em>' + total + '</em>' +
+                '</label>';
+      cats.forEach(function (c) {
+        html += '<label class="vn-multi-opt vn-multi-child">' +
+                  '<input type="checkbox" value="' + esc(c) + '" />' +
+                  '<span>' + esc(c) + '</span><em>' + live[c] + '</em>' +
+                '</label>';
+      });
+      html += '</div>';
+    });
+
+    // Anything not in the map still appears, so a new Airtable category is
+    // never silently unreachable.
+    var mapped = {};
+    GROUPS.forEach(function (g) { g[1].forEach(function (c) { mapped[c] = true; }); });
+    var loose = Object.keys(live).filter(function (c) { return !mapped[c]; }).sort();
+    if (loose.length) {
+      html += '<div class="vn-multi-group" data-find="other ' + esc(loose.join(' ').toLowerCase()) + '">' +
+              '<label class="vn-multi-opt vn-multi-grouphead"><input type="checkbox" data-group="Other" />' +
+              '<span>Other</span></label>';
+      loose.forEach(function (c) {
+        html += '<label class="vn-multi-opt vn-multi-child"><input type="checkbox" value="' + esc(c) + '" />' +
+                '<span>' + esc(c) + '</span><em>' + live[c] + '</em></label>';
+      });
+      html += '</div>';
     }
+
+    el.catList.innerHTML = html;
+    // Drop selections the current track cannot show.
+    state.categories = state.categories.filter(function (c) { return live[c]; });
+    syncCatUI();
   }
 
-  function render() {
-    var shown = state.all.filter(matches);
+  function syncCatUI() {
+    var n = state.categories.length;
+    el.catLabel.textContent = n === 0 ? 'Anything'
+                            : (n === 1 ? state.categories[0] : n + ' types selected');
+    el.catToggle.classList.toggle('has-selection', n > 0);
+    Array.prototype.forEach.call(el.catList.querySelectorAll('input[value]'), function (box) {
+      box.checked = state.categories.indexOf(box.value) !== -1;
+    });
+    Array.prototype.forEach.call(el.catList.querySelectorAll('input[data-group]'), function (head) {
+      var kids = head.closest('.vn-multi-group').querySelectorAll('input[value]');
+      var on = 0;
+      Array.prototype.forEach.call(kids, function (k) { if (k.checked) on++; });
+      head.checked = on > 0 && on === kids.length;
+      head.indeterminate = on > 0 && on < kids.length;
+    });
+  }
+
+  function render(keepShown) {
+    var shown = state.all.filter(matches).sort(SORTS[state.sort] || SORTS.name);
+
+    if (!keepShown) state.shown = PAGE;
+    var page = shown.slice(0, state.shown);
 
     if (!shown.length) {
       el.results.innerHTML = '';
+      el.showMore.hidden = true;
       el.empty.hidden = false;
       el.emptyBody.textContent = state.all.length
-        ? 'No listings match these filters. Try clearing the search box or widening the track and category.'
+        ? 'No listings match these filters. Try clearing the search box, or widening the track, type and town.'
         : 'The directory is still being filled in. Published listings appear here automatically once they clear review.';
     } else {
       el.empty.hidden = true;
-      el.results.innerHTML = shown.map(card).join('');
+      el.results.innerHTML = page.map(card).join('');
+      var left = shown.length - page.length;
+      el.showMore.hidden = left <= 0;
+      el.showMore.textContent = 'Show ' + Math.min(left, PAGE) + ' more of ' + left;
     }
 
     if (!state.all.length) {
@@ -253,9 +460,195 @@
     }
   }
 
+  /* ---------- town multi-select ---------- */
+
+  // A plain <select> forces one town. Families search their own town plus the
+  // ones next to it, so this is a checkbox panel with its own find box -- with
+  // 90+ towns, scrolling to Woodbridge is its own small ordeal.
+
+  function buildTownList(towns) {
+    el.townList.innerHTML = towns.map(function (t) {
+      return '<label class="vn-multi-opt" data-town="' + esc(t) + '">' +
+               '<input type="checkbox" value="' + esc(t) + '" />' +
+               '<span>' + esc(t) + '</span>' +
+             '</label>';
+    }).join('');
+    syncTownUI();
+  }
+
+  function syncTownUI() {
+    var n = state.towns.length;
+    el.townLabel.textContent =
+      n === 0 ? 'All towns' : (n === 1 ? state.towns[0] : n + ' towns selected');
+    el.townToggle.classList.toggle('has-selection', n > 0);
+    Array.prototype.forEach.call(el.townList.querySelectorAll('input'), function (box) {
+      box.checked = state.towns.indexOf(box.value) !== -1;
+    });
+  }
+
+  function openTownPanel(open) {
+    el.townPanel.hidden = !open;
+    el.townToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open) el.townFind.focus();
+  }
+
+  function bindTownMulti() {
+    el.townToggle.addEventListener('click', function () {
+      openTownPanel(el.townPanel.hidden);
+    });
+
+    el.townList.addEventListener('change', function (event) {
+      var box = event.target;
+      if (!box || box.type !== 'checkbox') return;
+      var at = state.towns.indexOf(box.value);
+      if (box.checked && at === -1) state.towns.push(box.value);
+      if (!box.checked && at !== -1) state.towns.splice(at, 1);
+      syncTownUI();
+      render();
+    });
+
+    el.townFind.addEventListener('input', function () {
+      var q = this.value.trim().toLowerCase();
+      Array.prototype.forEach.call(el.townList.children, function (opt) {
+        opt.hidden = q !== '' && opt.dataset.town.toLowerCase().indexOf(q) === -1;
+      });
+    });
+
+    el.townClear.addEventListener('click', function () {
+      state.towns = [];
+      syncTownUI();
+      render();
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!el.townPanel.hidden && !document.getElementById('vn-town-multi').contains(event.target)) {
+        openTownPanel(false);
+      }
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && !el.townPanel.hidden) {
+        openTownPanel(false);
+        el.townToggle.focus();
+      }
+    });
+  }
+
+  /* ---------- category multi-select & quick filters ---------- */
+
+  function bindCatMulti() {
+    el.catToggle.addEventListener('click', function () {
+      var open = el.catPanel.hidden;
+      el.catPanel.hidden = !open;
+      el.catToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) el.catFind.focus();
+    });
+
+    el.catList.addEventListener('change', function (event) {
+      var box = event.target;
+      if (!box || box.type !== 'checkbox') return;
+
+      if (box.dataset.group !== undefined) {
+        // Ticking a group is shorthand for ticking everything inside it.
+        var kids = box.closest('.vn-multi-group').querySelectorAll('input[value]');
+        Array.prototype.forEach.call(kids, function (k) {
+          var at = state.categories.indexOf(k.value);
+          if (box.checked && at === -1) state.categories.push(k.value);
+          if (!box.checked && at !== -1) state.categories.splice(at, 1);
+        });
+      } else {
+        var i = state.categories.indexOf(box.value);
+        if (box.checked && i === -1) state.categories.push(box.value);
+        if (!box.checked && i !== -1) state.categories.splice(i, 1);
+      }
+      syncCatUI();
+      render();
+    });
+
+    el.catFind.addEventListener('input', function () {
+      var q = this.value.trim().toLowerCase();
+      Array.prototype.forEach.call(el.catList.children, function (grp) {
+        grp.hidden = q !== '' && grp.dataset.find.indexOf(q) === -1;
+      });
+    });
+
+    el.catClear.addEventListener('click', function () {
+      state.categories = [];
+      syncCatUI();
+      render();
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!el.catPanel.hidden && !document.getElementById('vn-cat-multi').contains(event.target)) {
+        el.catPanel.hidden = true;
+        el.catToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && !el.catPanel.hidden) {
+        el.catPanel.hidden = true;
+        el.catToggle.setAttribute('aria-expanded', 'false');
+        el.catToggle.focus();
+      }
+    });
+  }
+
+  function bindSortAndPaging() {
+    el.sort.addEventListener('change', function () {
+      state.sort = this.value;
+      render();
+    });
+    el.showMore.addEventListener('click', function () {
+      state.shown += PAGE;
+      render(true);
+      // Keep the reader where they were rather than jumping to the top.
+      var cards = el.results.children;
+      if (cards.length) cards[Math.max(0, state.shown - PAGE)].scrollIntoView({ block: 'center' });
+    });
+  }
+
+  function bindToggles() {
+    Array.prototype.forEach.call(el.toggles, function (box) {
+      box.addEventListener('change', function () {
+        state.flags[this.dataset.flag] = this.checked;
+        render();
+      });
+    });
+  }
+
+  // These filters read fields that only some listings carry yet -- the state
+  // import brought addresses and phone numbers, not whether a place takes
+  // Care 4 Kids. Absent is not "no", so a toggle that would quietly imply
+  // "only one place in Connecticut accepts it" is hidden until the data can
+  // support it, and the rest carry their count so the number is never a
+  // surprise.
+  function tuneToggles() {
+    var shown = 0;
+    Array.prototype.forEach.call(el.toggles, function (box) {
+      var test = FLAGS[box.dataset.flag];
+      var n = test ? state.all.filter(test).length : 0;
+      var label = box.parentNode.querySelector('span');
+      if (!label.dataset.base) label.dataset.base = label.textContent;
+      if (n === 0) {
+        box.parentNode.hidden = true;
+        box.checked = false;
+        delete state.flags[box.dataset.flag];
+      } else {
+        box.parentNode.hidden = false;
+        label.textContent = label.dataset.base + ' (' + n + ')';
+        shown++;
+      }
+    });
+    var row = document.querySelector('.vn-toggles');
+    if (row) row.hidden = shown === 0;
+  }
+
   /* ---------- events ---------- */
 
   function bind() {
+    bindTownMulti();
+    bindCatMulti();
+    bindToggles();
+    bindSortAndPaging();
     el.search.addEventListener('input', function () {
       state.search = this.value.trim().toLowerCase();
       render();
@@ -263,27 +656,22 @@
 
     el.track.addEventListener('change', function () {
       state.track = this.value;
-      refreshCategoryOptions();
-      render();
-    });
-
-    el.category.addEventListener('change', function () {
-      state.category = this.value;
-      render();
-    });
-
-    el.town.addEventListener('change', function () {
-      state.town = this.value;
+      buildCatList();
       render();
     });
 
     el.reset.addEventListener('click', function () {
-      state.search = state.track = state.category = state.town = '';
+      state.search = state.track = '';
+      state.towns = [];
+      state.categories = [];
+      state.flags = {};
+      state.sort = 'name';
+      el.sort.value = 'name';
       el.search.value = '';
       el.track.value = '';
-      el.town.value = '';
-      refreshCategoryOptions();
-      el.category.value = '';
+      Array.prototype.forEach.call(el.toggles, function (t) { t.checked = false; });
+      syncTownUI();
+      buildCatList();
       render();
       el.search.focus();
     });
@@ -314,8 +702,6 @@
         state.all = list.map(function (r) {
           r._haystack = haystack(r);
           return r;
-        }).sort(function (a, b) {
-          return String(a.name || '').localeCompare(String(b.name || ''));
         });
 
         fillSelect(el.track, uniqueSorted(state.all.map(function (r) { return r.track; })), 'All tracks');
@@ -324,9 +710,17 @@
           townValues.push(r.town);
           townValues = townValues.concat(served(r));
         });
-        townValues = townValues.filter(function (t) { return t !== STATEWIDE; });
-        fillSelect(el.town, uniqueSorted(townValues), 'All towns');
-        refreshCategoryOptions();
+        // Town/Area is free text, so multi-town strings leak in -- "Bridgeport
+        // and Fairfield", "Greater Hartford area". They are fine on a card but
+        // useless as a filter option, and they crowd out the real town next to
+        // them alphabetically. Towns Served is the structured field, so the
+        // options come from clean single names only.
+        townValues = townValues.filter(function (t) {
+          return t && t !== STATEWIDE && !/,| and | area$/i.test(t);
+        });
+        buildTownList(uniqueSorted(townValues));
+        buildCatList();
+        tuneToggles();
 
         el.countBadge.textContent = state.all.length
           ? state.all.length + ' ' + plural(state.all.length, 'listing', 'listings')

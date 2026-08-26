@@ -46,7 +46,35 @@ const FIELD_MAP = {
   'Rating':                   'rating',
   'Submitted By':             'submittedBy',
   'Date Submitted':           'dateSubmitted',
-  'Notes/Tags':               'notes'
+  'Notes/Tags':               'notes',
+
+  // Added after the state import, when the base grew fields the page can
+  // actually filter on. The first block drives filters; the rest is detail
+  // shown on a card.
+  'Registration Status':          'registrationStatus',
+  'Care 4 Kids Accepted':         'care4Kids',
+  'Financial Assistance Available':'financialAid',
+  'Transportation Available':     'transportation',
+  'Extended Care Available':      'extendedCare',
+  'School-Day Coverage':          'schoolDayCoverage',
+  'Services Offered':             'servicesOffered',
+  'Languages Offered':            'languages',
+
+  'Meals Provided':               'meals',
+  'Days Offered':                 'daysOffered',
+  'Schedule Window':              'scheduleWindow',
+  'Program Length':               'programLength',
+  'Typical Start Time':           'startTime',
+  'Typical End Time':             'endTime',
+  'Registration Opens':           'registrationOpens',
+  'Registration Closes':          'registrationCloses',
+  'Licensing / Exemption Status': 'licensing',
+  'Residency Eligibility':        'residency',
+  'Sibling Discount Available':   'siblingDiscount',
+  'Inclusion / Accessibility Support': 'accessibility',
+  'Refund / Cancellation Policy': 'refundPolicy',
+  'Current Program Year':         'programYear',
+  'Last Verified':                'lastVerified'
 };
 
 const TOKEN = process.env.AIRTABLE_TOKEN;
@@ -92,7 +120,8 @@ async function fetchAllRecords() {
 // Airtable omits empty fields entirely, so a multi-select with nothing chosen
 // arrives as undefined rather than []. The page expects these keys to always be
 // arrays, so they are normalised here rather than guarded at every use site.
-const LIST_KEYS = new Set(['townsServed']);
+const LIST_KEYS = new Set(['townsServed', 'extendedCare', 'servicesOffered',
+                           'languages', 'daysOffered', 'scheduleWindow']);
 
 function clean(value, key) {
   if (LIST_KEYS.has(key)) return Array.isArray(value) ? value : (value ? [value] : []);
@@ -107,7 +136,13 @@ function toResource(record) {
   const out = { id: record.id };
 
   for (const [airtableName, key] of Object.entries(FIELD_MAP)) {
-    out[key] = clean(fields[airtableName], key);
+    const value = clean(fields[airtableName], key);
+    // Omit empties. Most of the added fields are blank on the imported state
+    // rows, and `"key": null` repeated across 518 records is dead weight in a
+    // file the browser downloads before it can draw anything. The page already
+    // guards every read, so a missing key behaves exactly like an empty one.
+    if (value === null || (Array.isArray(value) && value.length === 0)) continue;
+    out[key] = value;
   }
   return out;
 }
