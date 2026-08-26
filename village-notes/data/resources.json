@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26T10:32:06.197Z",
+  "generated": "2026-08-26T10:55:56.362Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -7,7 +7,6 @@
   },
   "count": 547,
   "tracks": [
-    "Camps & Youth Programs",
     "Elder Care",
     "Family & Childcare"
   ],
@@ -20,7 +19,6 @@
     "Birth-to-Three / Early Intervention",
     "Caregiver Support Group",
     "Center-Based Daycare",
-    "Counselor-in-Training Program",
     "Elder Law / Financial Planning",
     "Geriatric Care Manager",
     "Home Daycare (Licensed)",
@@ -32,18 +30,16 @@
     "Literacy / Reading Program",
     "Medical / Diagnosis-Specific Camp",
     "Municipal/Parks & Rec Camp",
-    "Nature / Farm Camp",
-    "Nature / Outdoor Camp",
     "Outdoor/Nature Camp",
     "Parenting Support/Classes",
     "Preschool / Pre-K",
     "Respite Care",
-    "Special Needs / Inclusive Camp",
     "Specialty Camp",
     "STEM/Tech Camp",
     "Summer Day Camp",
     "Summer Sleepaway Camp",
     "Teen Program",
+    "Teen/CIT Program",
     "Veterans Benefits Counseling",
     "Youth Employment Program"
   ],
@@ -549,8 +545,8 @@
     {
       "id": "recMLOtfjGA8p2Yu1",
       "name": "Arethusa Farm Camp",
-      "track": "Camps & Youth Programs",
-      "category": "Nature / Farm Camp",
+      "track": "Family & Childcare",
+      "category": "Outdoor/Nature Camp",
       "specificType": "Farm-based summer day camp",
       "town": "Litchfield",
       "ages": "Ages 5–13",
@@ -601,7 +597,7 @@
     {
       "id": "recU8K5HDKId7mk7Y",
       "name": "Arthur C. Luf Children's Burn Camp",
-      "track": "Camps & Youth Programs",
+      "track": "Family & Childcare",
       "category": "Medical / Diagnosis-Specific Camp",
       "specificType": "Free overnight camp for child burn survivors",
       "town": "Milford-based provider; camp in Kunkletown, PA",
@@ -721,8 +717,8 @@
     {
       "id": "rec08eX7f1jYsaUfj",
       "name": "Boys & Girls Club of Greenwich CIT Program",
-      "track": "Camps & Youth Programs",
-      "category": "Counselor-in-Training Program",
+      "track": "Family & Childcare",
+      "category": "Teen/CIT Program",
       "specificType": "Camp leadership and on-the-job youth development",
       "town": "Greenwich",
       "address": "4 Horseneck Ln, Greenwich, CT 06830",
@@ -1381,7 +1377,7 @@
         "Infant Care"
       ],
       "scheduleWindow": [
-        "Full day / full workday"
+        "Full Day"
       ],
       "startTime": "06:30",
       "endTime": "18:00",
@@ -1411,7 +1407,7 @@
         "Infant Care"
       ],
       "scheduleWindow": [
-        "Full day / full workday"
+        "Full Day"
       ],
       "startTime": "06:30",
       "endTime": "18:00",
@@ -1441,7 +1437,7 @@
         "Infant Care"
       ],
       "scheduleWindow": [
-        "Full day / full workday"
+        "Full Day"
       ],
       "startTime": "06:30",
       "endTime": "18:00",
@@ -1473,9 +1469,9 @@
         "Toddler Care",
         "Preschool / Pre-K"
       ],
-      "meals": "Healthy meals and snacks",
+      "meals": "Meals and Snacks",
       "scheduleWindow": [
-        "Full day / full workday"
+        "Full Day"
       ],
       "startTime": "06:30",
       "endTime": "18:00",
@@ -1662,7 +1658,7 @@
     {
       "id": "recdLMP8G1hdVjVzo",
       "name": "Camp Courage 2026",
-      "track": "Camps & Youth Programs",
+      "track": "Family & Childcare",
       "category": "Medical / Diagnosis-Specific Camp",
       "specificType": "Overnight camp for children, teens, and young adults living with epilepsy",
       "town": "South Windham",
@@ -1722,7 +1718,7 @@
     {
       "id": "rec4ZfJWgIaU3rgcR",
       "name": "Camp Oasis of Connecticut",
-      "track": "Camps & Youth Programs",
+      "track": "Family & Childcare",
       "category": "Medical / Diagnosis-Specific Camp",
       "specificType": "Residential camp for children and teens living with IBD",
       "town": "Winsted",
@@ -2671,7 +2667,7 @@
     {
       "id": "rechSPhyqMZj75yEr",
       "name": "Connecticut Lions Pathfinders T1D Camp",
-      "track": "Camps & Youth Programs",
+      "track": "Family & Childcare",
       "category": "Medical / Diagnosis-Specific Camp",
       "specificType": "Day camp for children with Type 1 diabetes",
       "town": "Meriden",
@@ -5173,8 +5169,8 @@
     {
       "id": "recSzuJexRPTTKPwD",
       "name": "Indian Rock Summer Camp",
-      "track": "Camps & Youth Programs",
-      "category": "Nature / Outdoor Camp",
+      "track": "Family & Childcare",
+      "category": "Outdoor/Nature Camp",
       "specificType": "Environmental education and outdoor recreation day camp",
       "town": "Bristol",
       "website": "https://elcct.org/education/summercamp/",
@@ -5278,8 +5274,8 @@
     {
       "id": "reccYDV7o4uJlVguG",
       "name": "Ivan Lendl Adaptive Sports Camp",
-      "track": "Camps & Youth Programs",
-      "category": "Special Needs / Inclusive Camp",
+      "track": "Family & Childcare",
+      "category": "Inclusive/Special Needs Camp",
       "specificType": "Free adaptive sports day camp with physical-disability and neurodivergent tracks",
       "town": "West Hartford",
       "address": "University of Saint Joseph, 1678 Asylum Avenue, West Hartford, CT 06117",
@@ -6596,8 +6592,8 @@
     {
       "id": "recSgLWKlOGT0k1Hv",
       "name": "Meriden YMCA Mountain Mist Adaptive Camp",
-      "track": "Camps & Youth Programs",
-      "category": "Special Needs / Inclusive Camp",
+      "track": "Family & Childcare",
+      "category": "Inclusive/Special Needs Camp",
       "specificType": "Adaptive day camp with 1:1 aide or support",
       "town": "Meriden",
       "ages": "Completed grades K–8",
@@ -6868,7 +6864,7 @@
         "Friday"
       ],
       "scheduleWindow": [
-        "Full day / full workday"
+        "Full Day"
       ],
       "startTime": "06:30",
       "endTime": "18:00",
@@ -6927,7 +6923,7 @@
         "Friday"
       ],
       "scheduleWindow": [
-        "Full day / full workday"
+        "Full Day"
       ],
       "startTime": "06:30",
       "endTime": "18:30",
@@ -7996,7 +7992,7 @@
       "submittedBy": "ChatGPT Daily Search",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Registration Varies",
-      "transportation": "No Transportation",
+      "transportation": "No",
       "schoolDayCoverage": "Full Workday",
       "servicesOffered": [
         "Summer Camp",
@@ -8041,7 +8037,7 @@
       "schoolDayCoverage": "Varies",
       "servicesOffered": [
         "Summer Camp",
-        "Teen Program"
+        "Teen / CIT Program"
       ],
       "daysOffered": [
         "Monday",
@@ -8725,7 +8721,7 @@
       "programLength": "Full Day",
       "startTime": "8:30 AM",
       "endTime": "2:45 PM",
-      "residency": "Bridgeport Residents Only",
+      "residency": "Residents Only",
       "programYear": "Summer 2026",
       "lastVerified": "2026-08-25"
     },
@@ -8819,7 +8815,7 @@
         "Friday"
       ],
       "scheduleWindow": [
-        "Full day / full workday"
+        "Full Day"
       ],
       "startTime": "06:30",
       "endTime": "18:30",
@@ -9261,8 +9257,8 @@
     {
       "id": "recC032j2Splm9wuo",
       "name": "Sterling Community Center CIT Program",
-      "track": "Camps & Youth Programs",
-      "category": "Counselor-in-Training Program",
+      "track": "Family & Childcare",
+      "category": "Teen/CIT Program",
       "specificType": "Summer leadership, job-skills, and service program",
       "town": "Stratford",
       "address": "2283 Main Street, Stratford, CT 06615",
