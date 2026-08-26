@@ -1,12 +1,13 @@
 {
-  "generated": "2026-08-26T06:38:37.740Z",
+  "generated": "2026-08-26T10:32:06.197Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "Moderation Status = \"Published\""
   },
-  "count": 531,
+  "count": 547,
   "tracks": [
+    "Camps & Youth Programs",
     "Elder Care",
     "Family & Childcare"
   ],
@@ -19,6 +20,7 @@
     "Birth-to-Three / Early Intervention",
     "Caregiver Support Group",
     "Center-Based Daycare",
+    "Counselor-in-Training Program",
     "Elder Law / Financial Planning",
     "Geriatric Care Manager",
     "Home Daycare (Licensed)",
@@ -28,11 +30,15 @@
     "Infant Care",
     "Legal/HR Resource",
     "Literacy / Reading Program",
+    "Medical / Diagnosis-Specific Camp",
     "Municipal/Parks & Rec Camp",
+    "Nature / Farm Camp",
+    "Nature / Outdoor Camp",
     "Outdoor/Nature Camp",
     "Parenting Support/Classes",
     "Preschool / Pre-K",
     "Respite Care",
+    "Special Needs / Inclusive Camp",
     "Specialty Camp",
     "STEM/Tech Camp",
     "Summer Day Camp",
@@ -63,6 +69,7 @@
     "Colchester",
     "Colebrook",
     "Coventry",
+    "Cromwell",
     "Danbury",
     "Darien",
     "Derby",
@@ -90,12 +97,14 @@
     "Lebanon",
     "Ledyard",
     "Lisbon",
+    "Litchfield",
     "Madison",
     "Manchester",
     "Mansfield",
     "Meriden",
     "Middletown",
     "Milford",
+    "Milford-based provider; camp in Kunkletown, PA",
     "Monroe",
     "Naugatuck",
     "New Britain",
@@ -123,6 +132,7 @@
     "Seymour",
     "Sharon",
     "Shelton",
+    "South Windham",
     "Southington",
     "Sprague",
     "Stafford",
@@ -150,6 +160,7 @@
     "Windham",
     "Windsor",
     "Windsor Locks",
+    "Winsted",
     "Wolcott",
     "Woodbridge",
     "Woodstock"
@@ -536,6 +547,39 @@
       "notes": "FY26 state-funded spaces: 57 preschool. An allocation, not current openings. Licence/registry: DCEX.80523; Registry 2002. Local partner: Valley Early Childhood Regional Council -- Alyson Stanici | astanisci@ansonia.org | 203-736-5080 ext. 5143. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recMLOtfjGA8p2Yu1",
+      "name": "Arethusa Farm Camp",
+      "track": "Camps & Youth Programs",
+      "category": "Nature / Farm Camp",
+      "specificType": "Farm-based summer day camp",
+      "town": "Litchfield",
+      "ages": "Ages 5–13",
+      "hours": "Weekdays, 9:00 AM–3:30 PM, June 15–August 21, 2026",
+      "website": "https://arethusafarmfoundation.org/programs/",
+      "contact": "info@arethusafarmfoundation.org",
+      "townsServed": [
+        "Litchfield"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "Official page confirms ten weeks of 2026 farm camp and youth volunteer camp counselor positions. The 2026 camp period has ended.",
+      "servicesOffered": [
+        "Summer Camp",
+        "Volunteer Opportunity"
+      ],
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "startTime": "9:00 AM",
+      "endTime": "3:30 PM",
+      "programYear": "2026 Summer",
+      "lastVerified": "2026-08-26"
+    },
+    {
       "id": "recOFodHS2VBFxbzc",
       "name": "Ark Child Development Center",
       "track": "Family & Childcare",
@@ -553,6 +597,31 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 20 preschool. An allocation, not current openings. Licence/registry: DCCC.70834; Registry 1650. Local partner: Waterbury Bridge to Success Partnership -- Krista Pisano | krista.pisano@waterbury.k12.ct.us | 203-573-6684. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recU8K5HDKId7mk7Y",
+      "name": "Arthur C. Luf Children's Burn Camp",
+      "track": "Camps & Youth Programs",
+      "category": "Medical / Diagnosis-Specific Camp",
+      "specificType": "Free overnight camp for child burn survivors",
+      "town": "Milford-based provider; camp in Kunkletown, PA",
+      "address": "Camp Trexler, 288 Camp Trexler Rd, Kunkletown, PA 18058",
+      "ages": "Ages 8–17",
+      "hours": "July 12 at 11:00 AM through July 19 at 10:00 AM, 2026",
+      "cost": "Free",
+      "website": "https://www.ctburnsfoundation.org/become-a-camper/",
+      "contact": "203-878-6744",
+      "townsServed": [
+        "Milford"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "Connecticut Burns Care Foundation program for child burn survivors. Provider office is in Milford, Connecticut, but the camp is held in Pennsylvania. Medical form and completed application were required. The 2026 session and deadline have passed.",
+      "servicesOffered": [
+        "Summer Camp"
+      ],
+      "programYear": "2026 Summer",
+      "lastVerified": "2026-08-26"
     },
     {
       "id": "recJbmS8enr9TzwtE",
@@ -648,6 +717,32 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 48 infant/toddler and 35 preschool. An allocation, not current openings. Licence/registry: DCCC.12135; Registry 365. Local partner: Alliance for Bloomfield's Children -- Gail Nolan | gnolan@blmfld.org | 860-769-5518. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "rec08eX7f1jYsaUfj",
+      "name": "Boys & Girls Club of Greenwich CIT Program",
+      "track": "Camps & Youth Programs",
+      "category": "Counselor-in-Training Program",
+      "specificType": "Camp leadership and on-the-job youth development",
+      "town": "Greenwich",
+      "address": "4 Horseneck Ln, Greenwich, CT 06830",
+      "ages": "Ages 13–15",
+      "hours": "Weekly, June 22–August 14, 2026; exact daily hours not stated",
+      "website": "https://bgcgcampaign.org/what-we-do/summer-camps/cit.html",
+      "contact": "Don Palmer, dpalmer@bgcg.org; 203-869-3224",
+      "townsServed": [
+        "Greenwich"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "Limited-enrollment CIT program. Acceptance is at the Camp Director’s discretion and in-person training is required. Participants choose Clubhouse Camp or Camp Simmons.",
+      "servicesOffered": [
+        "Summer Camp",
+        "Mentoring",
+        "Youth Leadership"
+      ],
+      "programYear": "2026 Summer",
+      "lastVerified": "2026-08-26"
     },
     {
       "id": "recXmCxqIbiip1Ozv",
@@ -1219,6 +1314,51 @@
       "notes": "FY26 state-funded spaces: 18 infant/toddler and 49 preschool. An allocation, not current openings. Licence/registry: DCCC.15020; Registry 836. Local partner: Middletown LGP -- Dawn Dubay | dubayd@mpsct.org | 860-346-7354. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recfrrR2omwZe40G5",
+      "name": "Bright Horizons at First Stamford Place",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": "Childcare center with infant, toddler, preschool, kindergarten-prep, and summer programs.",
+      "town": "Stamford",
+      "address": "300 First Stamford Place, Stamford, CT 06902",
+      "ages": "2 months to 6 years",
+      "hours": "Monday–Friday, 7:00 AM–6:00 PM",
+      "availability": "The family portal accepts enrollment requests. Registration does not guarantee immediate enrollment; contact the center for current space.",
+      "cost": "Tuition is not published. Submit an inquiry for rates and openings.",
+      "website": "https://www.brighthorizons.com/daycare-centers/ct/stamford/300-first-stamford-place-06902",
+      "contact": "203-309-2892",
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "NAEYC accredited. Licensing, food, transportation, financial aid, and accommodation details were not confirmed on the provider page.",
+      "registrationStatus": "Rolling / Ongoing",
+      "schoolDayCoverage": "Full Workday",
+      "servicesOffered": [
+        "Infant Care",
+        "Toddler Care",
+        "Preschool / Pre-K",
+        "Full-Day Childcare",
+        "Summer Day Camp",
+        "Child Care"
+      ],
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Extended Day"
+      ],
+      "programLength": "Extended Day",
+      "startTime": "7:00 AM",
+      "endTime": "6:00 PM",
+      "licensing": "Not Confirmed",
+      "programYear": "2026",
+      "lastVerified": "2026-08-26"
+    },
+    {
       "id": "recbNUEa2XaSwVpfc",
       "name": "BrightPath Newtown Child Care Center",
       "track": "Family & Childcare",
@@ -1520,6 +1660,30 @@
       "notes": "Official 2026 registration page verified August 25, 2026. Multiweek and family discounts listed."
     },
     {
+      "id": "recdLMP8G1hdVjVzo",
+      "name": "Camp Courage 2026",
+      "track": "Camps & Youth Programs",
+      "category": "Medical / Diagnosis-Specific Camp",
+      "specificType": "Overnight camp for children, teens, and young adults living with epilepsy",
+      "town": "South Windham",
+      "address": "Camp Horizons, 127 Babcock Hill Rd, South Windham, CT 06266",
+      "ages": "Ages 8–25",
+      "hours": "July 19–24, 2026",
+      "website": "https://epilepsyct.com/camp-courage/",
+      "contact": "monica@epilepsyct.com",
+      "townsServed": [
+        "Windham"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "Week-long overnight camp for people living with epilepsy. The 2026 session has ended.",
+      "servicesOffered": [
+        "Summer Camp"
+      ],
+      "programYear": "2026 Summer",
+      "lastVerified": "2026-08-26"
+    },
+    {
       "id": "recsqQIMks6uDOKVK",
       "name": "Camp Hazen YMCA",
       "track": "Family & Childcare",
@@ -1554,6 +1718,31 @@
       "submittedBy": "Darice Corey",
       "dateSubmitted": "2026-08-25",
       "notes": "YMCA of Greater Hartford overnight camp with traditional, equestrian, leadership, and some day-camp options. Official site verified August 25, 2026."
+    },
+    {
+      "id": "rec4ZfJWgIaU3rgcR",
+      "name": "Camp Oasis of Connecticut",
+      "track": "Camps & Youth Programs",
+      "category": "Medical / Diagnosis-Specific Camp",
+      "specificType": "Residential camp for children and teens living with IBD",
+      "town": "Winsted",
+      "address": "Greenwood Trails, 390 Winchester Rd, Winsted, CT 06098",
+      "ages": "Campers grades 2–10; leaders in training grades 11–12",
+      "hours": "August 17–22, 2026",
+      "website": "https://www.crohnscolitisfoundation.org/events/camp-oasis-of-connecticut",
+      "contact": "646-771-0455",
+      "townsServed": [
+        "Winchester"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "For children living with Crohn’s disease or ulcerative colitis. Virtual CampOasis@Home option is also listed. The 2026 in-person session has ended.",
+      "servicesOffered": [
+        "Summer Camp",
+        "Youth Leadership"
+      ],
+      "programYear": "2026 Summer",
+      "lastVerified": "2026-08-26"
     },
     {
       "id": "recNXAWmFcbY465Cu",
@@ -1911,6 +2100,53 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 18 preschool. An allocation, not current openings. Licence/registry: DCEX.80505; Registry 1802. Local partner: Eastern CT LGP -- Maggie Francis-Gietzen | mfrancisgietzen@ec.eastconn.org | 860-455-1532. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recq9rHUPmFdyjzSf",
+      "name": "Cheshire KinderCare",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": "Licensed childcare center offering infant, toddler, and preschool care.",
+      "town": "Cheshire",
+      "address": "1544 Byam Rd, Cheshire, CT 06410",
+      "ages": "6 weeks to 12 years",
+      "hours": "Monday–Friday, 6:30 AM–6:00 PM",
+      "availability": "Now enrolling for Fall 2026. Infant and toddler programs are listed as available; preschool is listed as upcoming availability.",
+      "cost": "Tuition is not published. The official page confirms fee-assistance options and sibling discounts; eligibility varies.",
+      "website": "https://www.kindercare.com/our-centers/cheshire/ct/070220",
+      "contact": "(866) 232-9308",
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "NAEYC accredited. Meals and snacks are provided; dietary arrangements can be discussed with the center. The page says classrooms support children of all abilities, backgrounds, and experiences.",
+      "registrationStatus": "Open",
+      "financialAid": "Yes",
+      "schoolDayCoverage": "Full Workday",
+      "servicesOffered": [
+        "Infant Care",
+        "Toddler Care",
+        "Preschool / Pre-K",
+        "Full-Day Childcare",
+        "Child Care"
+      ],
+      "meals": "Meals and Snacks",
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Extended Day"
+      ],
+      "programLength": "Extended Day",
+      "startTime": "6:30 AM",
+      "endTime": "6:00 PM",
+      "licensing": "Licensed",
+      "siblingDiscount": "Yes",
+      "programYear": "Fall 2026",
+      "lastVerified": "2026-08-26"
     },
     {
       "id": "recg6bvURU7b4vY5Q",
@@ -2433,6 +2669,44 @@
       "notes": "Source: https://ctheadstart.org/find-a-program/, accessed 2026-08-25."
     },
     {
+      "id": "rechSPhyqMZj75yEr",
+      "name": "Connecticut Lions Pathfinders T1D Camp",
+      "track": "Camps & Youth Programs",
+      "category": "Medical / Diagnosis-Specific Camp",
+      "specificType": "Day camp for children with Type 1 diabetes",
+      "town": "Meriden",
+      "ages": "Ages 6–13",
+      "hours": "July 27–31 and August 3–7, 2026; 9:00 AM–3:00 PM",
+      "cost": "$242 per week; scholarships available",
+      "website": "https://www.meridenymca.org/programs/camp/camp-offerings/pathfinders-camp/",
+      "contact": "Carolyn Daniels, cdaniels@meridenymca.org; 203-235-6386",
+      "townsServed": [
+        "Meriden",
+        "Hartford",
+        "New Haven"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "Medical team provides care. Bus transportation was available from downtown Hartford and New Haven. Extended day was not available. The 2026 sessions have ended.",
+      "financialAid": "Yes",
+      "transportation": "Yes",
+      "servicesOffered": [
+        "Summer Camp",
+        "Transportation"
+      ],
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "startTime": "9:00 AM",
+      "endTime": "3:00 PM",
+      "programYear": "2026 Summer",
+      "lastVerified": "2026-08-26"
+    },
+    {
       "id": "recRyR2bHkoxaKOPo",
       "name": "Connecticut Office of Early Childhood: Find Child Care and Camps",
       "track": "Family & Childcare",
@@ -2672,6 +2946,54 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 2 infant/toddler and 4 preschool and 3 school-age. An allocation, not current openings. Licence/registry: DCFH.57339; Registry 8963. Local partner: Waterbury Bridge to Success Partnership -- Krista Pisano | krista.pisano@waterbury.k12.ct.us | 203-573-6684. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recxuktK37SsjTl73",
+      "name": "Cromwell KinderCare",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": "Licensed childcare center offering infant, toddler, and preschool care.",
+      "town": "Cromwell",
+      "address": "146 Berlin Rd, Cromwell, CT 06416",
+      "ages": "6 weeks to 6 years on the center summary",
+      "hours": "Monday–Friday, 6:30 AM–6:00 PM",
+      "availability": "Now enrolling for Fall 2026. Infant, toddler, and preschool programs are listed as available.",
+      "cost": "Tuition is not published. The official page confirms fee-assistance options and sibling discounts; eligibility varies.",
+      "website": "https://www.kindercare.com/our-centers/cromwell/ct/301627",
+      "contact": "(860) 613-2263",
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "NAEYC accredited. Public-school buses serve Cromwell schools, Hubbard in East Berlin, and Lawrence and Moody in Middletown. The center summary says ages through 6; families should confirm any school-age care directly.",
+      "registrationStatus": "Open",
+      "financialAid": "Yes",
+      "transportation": "Yes",
+      "schoolDayCoverage": "Full Workday",
+      "servicesOffered": [
+        "Infant Care",
+        "Toddler Care",
+        "Preschool / Pre-K",
+        "Full-Day Childcare",
+        "Child Care"
+      ],
+      "meals": "Meals and Snacks",
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Extended Day"
+      ],
+      "programLength": "Extended Day",
+      "startTime": "6:30 AM",
+      "endTime": "6:00 PM",
+      "licensing": "Licensed",
+      "siblingDiscount": "Yes",
+      "programYear": "Fall 2026",
+      "lastVerified": "2026-08-26"
     },
     {
       "id": "recOwquqF1P7aYult",
@@ -4735,6 +5057,8 @@
       "specificType": "Coding, robotics, game development, and 3D design; day camps",
       "town": "Fairfield",
       "ages": "Ages 7–17",
+      "hours": "Day camp schedule: check-in 8:30–9:00 AM; instruction and activities begin at 9:00 AM; pickup 4:30–5:00 PM.",
+      "availability": "The 2026 Fairfield season is closed. The official page says Summer 2027 registration opens in November 2026.",
       "cost": "Starting at $1,159; payment plan available",
       "website": "https://www.idtech.com/locations/connecticut-summer-camps/fairfield-university",
       "contact": "1-888-709-8324; hello@idtech.com",
@@ -4743,7 +5067,8 @@
       ],
       "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
-      "registrationStatus": "Past Cycle",
+      "notes": "Official iD Tech pages list Fairfield University as closed for the 2026 season and state that Summer 2027 registration opens in November 2026. Verified 2026-08-26.",
+      "registrationStatus": "Registration Opens Later",
       "schoolDayCoverage": "Full Workday",
       "servicesOffered": [
         "STEM Enrichment"
@@ -4752,8 +5077,10 @@
         "Full Day"
       ],
       "programLength": "Full Day",
-      "programYear": "Summer 2026",
-      "lastVerified": "2026-08-25"
+      "startTime": "8:30 AM",
+      "endTime": "5:00 PM",
+      "programYear": "Summer 2027",
+      "lastVerified": "2026-08-26"
     },
     {
       "id": "recVajAddhTLhJazN",
@@ -4793,7 +5120,7 @@
       "town": "Middletown",
       "ages": "Ages 7–17",
       "hours": "Day camp sample schedule: check-in 8:30–9:00 AM; pickup 4:30–5:00 PM",
-      "availability": "Summer 2027 registration expected to open in November 2026.",
+      "availability": "The 2026 Wesleyan season is closed. Summer 2027 registration opens in November 2026.",
       "cost": "Starting at $1,099; payment plan available",
       "website": "https://www.idtech.com/locations/connecticut-summer-camps/wesleyan-university",
       "contact": "1-888-709-8324; hello@idtech.com",
@@ -4802,6 +5129,7 @@
       ],
       "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
+      "notes": "Official iD Tech pages list Wesleyan University as closed for the 2026 season and state that Summer 2027 registration opens in November 2026. Verified 2026-08-26.",
       "registrationStatus": "Registration Opens Later",
       "schoolDayCoverage": "Full Workday",
       "servicesOffered": [
@@ -4821,7 +5149,7 @@
       "startTime": "8:30 AM check-in",
       "endTime": "5:00 PM pickup",
       "programYear": "Summer 2027",
-      "lastVerified": "2026-08-25"
+      "lastVerified": "2026-08-26"
     },
     {
       "id": "recsRVeUDZWf9Re7A",
@@ -4841,6 +5169,33 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 8 infant/toddler and 119 preschool. An allocation, not current openings. Licence/registry: DCCC.16710; Registry 1904. Local partner: Bristol LGP -- Donna Osuch | donnaosuch@bristolct.gov | 860-584-6254. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recSzuJexRPTTKPwD",
+      "name": "Indian Rock Summer Camp",
+      "track": "Camps & Youth Programs",
+      "category": "Nature / Outdoor Camp",
+      "specificType": "Environmental education and outdoor recreation day camp",
+      "town": "Bristol",
+      "website": "https://elcct.org/education/summercamp/",
+      "townsServed": [
+        "Bristol"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "Official page confirms canoeing, kayaking, fishing, hiking, archery, before and after care, financial assistance, and a volunteer CIT program. Exact 2026 ages, hours, and address were not confirmed in the page text reviewed.",
+      "financialAid": "Yes",
+      "extendedCare": [
+        "Before Care",
+        "After Care"
+      ],
+      "servicesOffered": [
+        "Summer Camp",
+        "Youth Leadership",
+        "Volunteer Opportunity"
+      ],
+      "programYear": "2026 Summer",
+      "lastVerified": "2026-08-26"
     },
     {
       "id": "recoe8MA1RrHLjJeK",
@@ -4919,6 +5274,40 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 7 infant/toddler and 1 preschool and 1 school-age. An allocation, not current openings. Licence/registry: DCFH.56434; Registry 7479. Local partner: Hartford LGP -- Tamika Thurston | tamika.thurston@hartford.gov | 860-757-9898. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "reccYDV7o4uJlVguG",
+      "name": "Ivan Lendl Adaptive Sports Camp",
+      "track": "Camps & Youth Programs",
+      "category": "Special Needs / Inclusive Camp",
+      "specificType": "Free adaptive sports day camp with physical-disability and neurodivergent tracks",
+      "town": "West Hartford",
+      "address": "University of Saint Joseph, 1678 Asylum Avenue, West Hartford, CT 06117",
+      "ages": "Ages 6–19",
+      "hours": "Monday–Friday, July 27–31, 2026; daily hours not stated",
+      "cost": "Free",
+      "website": "https://hfsc.org/sports-and-fitness/ivan-lendl-adaptive-sports-camp/",
+      "contact": "860-223-2761",
+      "townsServed": [
+        "West Hartford"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "For youth living with physical disabilities or autism spectrum disorders. Participants must communicate needs and accommodations, be independent with personal care, or bring needed support. Registration was first-come, first-served. The 2026 camp has ended.",
+      "servicesOffered": [
+        "Summer Camp",
+        "Adaptive Program",
+        "Sports Enrichment"
+      ],
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "programYear": "2026 Summer",
+      "lastVerified": "2026-08-26"
     },
     {
       "id": "recGChT3ehNdTK76C",
@@ -5649,6 +6038,52 @@
       "notes": "FY26 state-funded spaces: 20 preschool. An allocation, not current openings. Licence/registry: DCCC.70070; Registry 6352. Local partner: Meriden LGP -- Rhonda Knight | rknight@meridenct.gov | 203-630-4222. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recE7vPagSJGQqTYM",
+      "name": "Long Ridge Road Child Development Center",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": "Bright Horizons childcare center with infant, toddler, preschool, kindergarten-prep, school-age, and summer programs.",
+      "town": "Stamford",
+      "address": "778 Long Ridge Road, Stamford, CT 06902",
+      "ages": "1 month to 11 years",
+      "hours": "Monday–Friday, 7:30 AM–6:00 PM",
+      "availability": "The family portal accepts enrollment requests. Registration does not guarantee immediate enrollment; contact the center for current space.",
+      "cost": "Tuition is not published. Submit an inquiry for rates and openings.",
+      "website": "https://www.brighthorizons.com/daycare-centers/ct/stamford/778-long-ridge-road-06902",
+      "contact": "203-309-3743",
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "NAEYC accredited. The official page confirms AM and PM snacks, flexible 2-, 3-, or 5-day schedules, and a summer program for ages 3–12. Licensing was not confirmed on the provider page.",
+      "registrationStatus": "Rolling / Ongoing",
+      "schoolDayCoverage": "Full Workday",
+      "servicesOffered": [
+        "Infant Care",
+        "Toddler Care",
+        "Preschool / Pre-K",
+        "Full-Day Childcare",
+        "Summer Day Camp",
+        "Child Care"
+      ],
+      "meals": "Snacks Only",
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Extended Day"
+      ],
+      "programLength": "Extended Day",
+      "startTime": "7:30 AM",
+      "endTime": "6:00 PM",
+      "licensing": "Not Confirmed",
+      "programYear": "2026",
+      "lastVerified": "2026-08-26"
+    },
+    {
       "id": "recrgEVDtvhtASEli",
       "name": "Loveable Angels Childcare Learning Center",
       "track": "Family & Childcare",
@@ -6159,6 +6594,31 @@
       "notes": "FY26 state-funded spaces: 22 preschool. An allocation, not current openings. Licence/registry: DCCC.70183; Registry 7233. Local partner: Meriden LGP -- Rhonda Knight | rknight@meridenct.gov | 203-630-4222. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recSgLWKlOGT0k1Hv",
+      "name": "Meriden YMCA Mountain Mist Adaptive Camp",
+      "track": "Camps & Youth Programs",
+      "category": "Special Needs / Inclusive Camp",
+      "specificType": "Adaptive day camp with 1:1 aide or support",
+      "town": "Meriden",
+      "ages": "Completed grades K–8",
+      "hours": "Five two-week sessions, June 15–August 21, 2026; daily hours not stated",
+      "cost": "$695–$1,442 per two-week session, based on support level and membership",
+      "website": "https://www.meridenymca.org/programs/camp/camp-offerings/adaptive-camp/",
+      "contact": "Carolyn Daniels, cdaniels@meridenymca.org; 203-235-6386",
+      "townsServed": [
+        "Meriden"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "For children with developmental disabilities, active IEPs, or 504 plans. Acceptance review required. Campers must be toilet trained. Before and after care are not available.",
+      "servicesOffered": [
+        "Summer Camp",
+        "Adaptive Program"
+      ],
+      "programYear": "2026 Summer",
+      "lastVerified": "2026-08-26"
+    },
+    {
       "id": "recv8OTts1Fgvpg8T",
       "name": "Meriden YMCA Preschool Center",
       "track": "Family & Childcare",
@@ -6570,6 +7030,59 @@
       "notes": "FY26 state-funded spaces: 5 infant/toddler and 2 preschool. An allocation, not current openings. Licence/registry: DCGH.80007; Registry 7529. Local partner: New Haven LGP -- Kerry Oberg | koberg@uwgnh.org | 203-691-4208. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recr0tMmCV4yT8TaU",
+      "name": "Mt. Carmel KinderCare",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": "Licensed childcare center with infant, toddler, preschool, and before- and after-school care.",
+      "town": "Hamden",
+      "address": "3025 Dixwell Ave, Hamden, CT 06518",
+      "ages": "6 weeks to 12 years",
+      "hours": "Monday–Friday, 6:30 AM–6:30 PM",
+      "availability": "Infant, toddler, preschool, and before- and after-school programs are listed as available. Contact the center to confirm a place for the requested start date.",
+      "cost": "Tuition is not published. The official page confirms several fee-assistance options and sibling discounts; eligibility varies.",
+      "website": "https://www.kindercare.com/our-centers/hamden/ct/301764",
+      "contact": "(203) 248-8262",
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "NAEYC accredited. School buses serve Ridge Road and Green Acres in North Haven and Spring Glen, Dunbar, Bear Path, and Westwoods in Hamden. The page says classrooms support children of all abilities, backgrounds, and experiences.",
+      "registrationStatus": "Open",
+      "financialAid": "Yes",
+      "transportation": "Yes",
+      "extendedCare": [
+        "Both"
+      ],
+      "schoolDayCoverage": "Full Workday",
+      "servicesOffered": [
+        "Infant Care",
+        "Toddler Care",
+        "Preschool / Pre-K",
+        "Full-Day Childcare",
+        "Before-School Care",
+        "After-School Care",
+        "Child Care",
+        "Before- and After-School Care"
+      ],
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Extended Day"
+      ],
+      "programLength": "Extended Day",
+      "startTime": "6:30 AM",
+      "endTime": "6:30 PM",
+      "licensing": "Licensed",
+      "siblingDiscount": "Yes",
+      "programYear": "2026",
+      "lastVerified": "2026-08-26"
+    },
+    {
       "id": "recW3KGNJuU6b5kFU",
       "name": "Muriel H. Moore Child Development Center",
       "track": "Family & Childcare",
@@ -6976,6 +7489,56 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 27 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 1520. Local partner: New Haven LGP -- Kerry Oberg | koberg@uwgnh.org | 203-691-4208. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recEYpqZpR35d8gKa",
+      "name": "New Haven KinderCare",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": "Licensed childcare center offering infant, toddler, preschool, and school-age care.",
+      "town": "New Haven",
+      "address": "555 Long Wharf Dr, New Haven, CT 06511",
+      "ages": "6 weeks to 12 years",
+      "hours": "Monday–Friday, 7:00 AM–6:00 PM",
+      "availability": "Now enrolling for Fall 2026. Contact the center for current openings by age and schedule.",
+      "cost": "Tuition is not published on the center page. Call for rates and openings.",
+      "website": "https://www.kindercare.com/our-centers/new-haven/ct/070294",
+      "contact": "(866) 232-9308",
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "NAEYC accredited. The official page says classrooms support children of all abilities, backgrounds, and experiences. Families must arrange school-bus transportation for before-school pickup and after-school drop-off.",
+      "registrationStatus": "Open",
+      "extendedCare": [
+        "Both"
+      ],
+      "schoolDayCoverage": "Full Workday",
+      "servicesOffered": [
+        "Infant Care",
+        "Toddler Care",
+        "Preschool / Pre-K",
+        "Full-Day Childcare",
+        "Before-School Care",
+        "After-School Care",
+        "Child Care",
+        "Before- and After-School Care"
+      ],
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Extended Day"
+      ],
+      "programLength": "Extended Day",
+      "startTime": "7:00 AM",
+      "endTime": "6:00 PM",
+      "licensing": "Licensed",
+      "programYear": "Fall 2026",
+      "lastVerified": "2026-08-26"
     },
     {
       "id": "recSuFjnaOduxluvf",
@@ -8694,6 +9257,34 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 29 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 6260. Local partner: Northeast Early Childhood Council (NECC) -- Kristine Cicchetti | mrscicch95@sbcglobal.net | 860-431-0830. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recC032j2Splm9wuo",
+      "name": "Sterling Community Center CIT Program",
+      "track": "Camps & Youth Programs",
+      "category": "Counselor-in-Training Program",
+      "specificType": "Summer leadership, job-skills, and service program",
+      "town": "Stratford",
+      "address": "2283 Main Street, Stratford, CT 06615",
+      "ages": "Entering grades 9–12",
+      "hours": "Minimum 6 of 9 camp weeks; training begins in early June",
+      "cost": "$250 program fee, returned after successful completion; completion stipend also listed",
+      "website": "https://www.sterlingcommunitycenter.org/camp-teen-opportunities",
+      "contact": "203-378-2606",
+      "townsServed": [
+        "Stratford"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "Thirty 2026 slots were listed. Applications opened March 7, with interviews beginning in April. Includes service-hour verification and possible progression to Junior Counselor.",
+      "servicesOffered": [
+        "Summer Camp",
+        "Youth Leadership",
+        "Youth Employment",
+        "Volunteer Opportunity"
+      ],
+      "programYear": "2026 Summer",
+      "lastVerified": "2026-08-26"
     },
     {
       "id": "recqV3M1L87baGpt8",
