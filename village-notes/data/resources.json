@@ -1,13 +1,12 @@
 {
-  "generated": "2026-08-26T00:58:17.527Z",
+  "generated": "2026-08-26T02:23:11.195Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "Moderation Status = \"Published\""
   },
-  "count": 518,
+  "count": 524,
   "tracks": [
-    "Children & Youth",
     "Elder Care",
     "Family & Childcare"
   ],
@@ -25,6 +24,7 @@
     "Home Daycare (Licensed)",
     "Hospice / Palliative Care",
     "In-Home Caregiver / Home Health Aide",
+    "Inclusive/Special Needs Camp",
     "Infant Care",
     "Legal/HR Resource",
     "Literacy / Reading Program",
@@ -37,6 +37,7 @@
     "STEM/Tech Camp",
     "Summer Day Camp",
     "Summer Sleepaway Camp",
+    "Teen Program",
     "Veterans Benefits Counseling",
     "Youth Employment Program"
   ],
@@ -63,6 +64,7 @@
     "Colebrook",
     "Coventry",
     "Danbury",
+    "Darien",
     "Derby",
     "East Hartford",
     "East Haven",
@@ -214,7 +216,7 @@
         "Statewide (all of Connecticut)"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official State of Connecticut resource page verified 2026-08-25."
     },
@@ -779,7 +781,9 @@
       "cost": "Fees vary by program",
       "website": "https://www.bgcridgefield.org/",
       "contact": null,
-      "townsServed": [],
+      "townsServed": [
+        "Ridgefield"
+      ],
       "rating": null,
       "submittedBy": "Darice Corey",
       "dateSubmitted": "2026-08-25",
@@ -1597,7 +1601,9 @@
       "cost": "Fees vary by session",
       "website": "https://www.camphazenymca.org/",
       "contact": null,
-      "townsServed": [],
+      "townsServed": [
+        "Chester"
+      ],
       "rating": null,
       "submittedBy": "Darice Corey",
       "dateSubmitted": "2026-08-25",
@@ -1617,7 +1623,9 @@
       "cost": "Fees vary; flexible payment and scholarships described",
       "website": "https://campjewell.org/",
       "contact": null,
-      "townsServed": [],
+      "townsServed": [
+        "Colebrook"
+      ],
       "rating": null,
       "submittedBy": "Darice Corey",
       "dateSubmitted": "2026-08-25",
@@ -1659,7 +1667,9 @@
       "cost": "Fees vary by session",
       "website": "https://campsloane.org/",
       "contact": "860-435-2557; info@campsloane.org",
-      "townsServed": [],
+      "townsServed": [
+        "Lakeville"
+      ],
       "rating": null,
       "submittedBy": "Darice Corey",
       "dateSubmitted": "2026-08-25",
@@ -1679,7 +1689,9 @@
       "cost": "Fees vary by session",
       "website": "https://www.campwoodstock.org/",
       "contact": null,
-      "townsServed": [],
+      "townsServed": [
+        "Woodstock"
+      ],
       "rating": null,
       "submittedBy": "Darice Corey",
       "dateSubmitted": "2026-08-25",
@@ -1769,7 +1781,7 @@
         "Statewide (all of Connecticut)"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Office of Early Childhood source verified 2026-08-25. Category is the closest available tracker choice; this is a child-care subsidy and application resource."
     },
@@ -2561,7 +2573,7 @@
         "Statewide (all of Connecticut)"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official State of Connecticut eligibility and referral page verified 2026-08-25."
     },
@@ -2671,7 +2683,7 @@
         "Statewide (all of Connecticut)"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Department of Children and Families source verified 2026-08-25."
     },
@@ -2693,7 +2705,7 @@
         "Statewide (all of Connecticut)"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. Category is the closest available tracker choice; this program focuses on Medicare education and fraud assistance."
     },
@@ -2715,7 +2727,7 @@
         "Statewide (all of Connecticut)"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25."
     },
@@ -2737,7 +2749,7 @@
         "Statewide (all of Connecticut)"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. Access begins through a VA referral."
     },
@@ -3004,6 +3016,72 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 60 preschool. An allocation, not current openings. Licence/registry: DCCC. 70683; Registry 9832. Local partner: Greater Danbury LGP -- Eileen Costello | costello@edadvance.org | 860-567-0863 ext.1160. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recXC1O2MQCYYHvoA",
+      "name": "Darien YMCA Afternoon Navigators",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": "Afternoon program for children attending gymnastics camp or summer school; arts, sports, swimming, and boating",
+      "town": "Darien",
+      "address": "2420 Post Road, Darien, CT 06820",
+      "ages": "Children who completed kindergarten through age 12",
+      "hours": "Monday–Friday, 1:00–3:30 PM; June 22–August 14, 2026",
+      "availability": null,
+      "cost": null,
+      "website": "https://darien-ymca.org/child-care/summer-camp/afternoon-navigators/",
+      "contact": "203-655-8228",
+      "townsServed": [
+        "Darien"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "recf9NP6smbLskkFB",
+      "name": "Darien YMCA Diverse Abilities Summer Camp",
+      "track": "Family & Childcare",
+      "category": "Inclusive/Special Needs Camp",
+      "specificType": "Summer camp serving participants with diverse abilities",
+      "town": "Darien",
+      "address": "2420 Post Road, Darien, CT 06820",
+      "ages": null,
+      "hours": "Monday, Wednesday, and Friday, 3:45–6:00 PM; June 22–August 14, 2026",
+      "availability": null,
+      "cost": "Members $152/week; nonmembers $175/week",
+      "website": "https://darien-ymca.org/child-care/summer-camp/diverse-abilities-summer-camp-2/",
+      "contact": "203-655-8228",
+      "townsServed": [
+        "Darien"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "recExFFNvBVSu06kH",
+      "name": "Darien YMCA School Age Camp",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": "Traditional school-age camp with swimming, boating, arts, STEM, sports, and field trips",
+      "town": "Darien",
+      "address": "Middlesex Middle School, 204 Hollow Tree Ridge Road, Darien, CT 06820",
+      "ages": "Children completing kindergarten through grade 7; groups vary by completed grade",
+      "hours": "Monday–Friday, 8:30 AM–3:30 PM; optional extended care 3:30–6:00 PM; June 22–August 21, 2026",
+      "availability": null,
+      "cost": "Weekly member fees $444–$485; nonmember fees $538–$585, depending on group; extended care $120/week",
+      "website": "https://darien-ymca.org/child-care/summer-camp/school-age-camp/",
+      "contact": "203-655-8228",
+      "townsServed": [
+        "Darien"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
     },
     {
       "id": "recdpVzpqFtwjCVk3",
@@ -3613,7 +3691,9 @@
       "cost": "Fees vary by camp and residency",
       "website": "https://fairfieldrecreation.com/programs/youth/summer_camp_-_action_squad.php",
       "contact": null,
-      "townsServed": [],
+      "townsServed": [
+        "Fairfield"
+      ],
       "rating": null,
       "submittedBy": "Darice Corey",
       "dateSubmitted": "2026-08-25",
@@ -4161,7 +4241,9 @@
       "cost": "2026–2027 monthly rates vary by schedule; financial assistance, Care4Kids, and sibling discount available",
       "website": "https://www.ghymca.org/facility/glastonbury-ymca-nayaug-child-care",
       "contact": "860-633-6548",
-      "townsServed": [],
+      "townsServed": [
+        "Glastonbury"
+      ],
       "rating": null,
       "submittedBy": "Darice Corey",
       "dateSubmitted": "2026-08-25",
@@ -4207,7 +4289,7 @@
         "Statewide (all of Connecticut)"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25."
     },
@@ -5096,7 +5178,7 @@
     {
       "id": "recsiH9zrIcMlj2aZ",
       "name": "iD Tech Camps at Fairfield University",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": "Coding, robotics, game development, and 3D design; day camps",
       "town": "Fairfield",
@@ -5111,14 +5193,14 @@
         "Fairfield"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
     {
       "id": "recVajAddhTLhJazN",
       "name": "iD Tech Camps at Southern Connecticut State University",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": "Coding, game development, robotics, AI, and related technology camps; day and overnight options",
       "town": "New Haven",
@@ -5133,14 +5215,14 @@
         "New Haven"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
     {
       "id": "rec5UUL1nd13Qeicp",
       "name": "iD Tech Camps at Wesleyan University",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": null,
       "town": "Middletown",
@@ -5155,7 +5237,7 @@
         "Middletown"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
@@ -6703,7 +6785,7 @@
     {
       "id": "reckR5C3Cw9TW6t8d",
       "name": "Meriden YMCA Robotics Revolution: Create & Code",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": "Two-week LEGO robotics, Ozobots, online coding, and game-design camp",
       "town": "Meriden",
@@ -6718,14 +6800,14 @@
         "Meriden"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
     {
       "id": "recXLeynUjXuAcpcP",
       "name": "Meriden YMCA Rocketry and Flight 101",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": "Rocketry, flight mechanics, drone flying, and hands-on experiments",
       "town": "Meriden",
@@ -6740,7 +6822,7 @@
         "Meriden"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
@@ -7114,7 +7196,7 @@
         "Statewide (all of Connecticut)"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. Category is the closest available tracker choice; this is a service-finding and counseling resource."
     },
@@ -7158,7 +7240,7 @@
         "Statewide (all of Connecticut)"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. The program offers several forms of caregiver help, not only support groups."
     },
@@ -7363,7 +7445,7 @@
     {
       "id": "recKVELR5gWCgRnmT",
       "name": "New Britain-Berlin YMCA STEAM Explorations Camp",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": "K'NEX, LEGO building, rocketry, Ozobot coding, and engineering challenges",
       "town": "New Britain and Berlin",
@@ -7379,7 +7461,7 @@
         "Berlin"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
@@ -7980,6 +8062,50 @@
       "notes": "FY26 state-funded spaces: 3 infant/toddler. An allocation, not current openings. Licence/registry: DCFH.57734; Registry 9891. Local partner: Bristol LGP -- Donna Osuch | donnaosuch@bristolct.gov | 860-584-6254. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recqCWer511Nobboj",
+      "name": "Orange Parks and Recreation Day Camp",
+      "track": "Family & Childcare",
+      "category": "Municipal/Parks & Rec Camp",
+      "specificType": "Municipal day camp; transportation is not provided",
+      "town": "Orange",
+      "address": "High Plains Community Center, Orange, CT 06477",
+      "ages": "Entering kindergarten through completed grade 5",
+      "hours": "Four two-week sessions; camp day 9:00 AM–4:30 PM",
+      "availability": null,
+      "cost": null,
+      "website": "https://www.orange-ct.gov/625/Camps",
+      "contact": "203-891-4700",
+      "townsServed": [
+        "Orange"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "recBYtJ6otLiC1X2f",
+      "name": "Orange Parks and Recreation Travelin’ Teens",
+      "track": "Family & Childcare",
+      "category": "Teen Program",
+      "specificType": "Traveling teen camp with daily off-site trips; transportation and admission included",
+      "town": "Orange",
+      "address": "High Plains Community Center, Orange, CT 06477",
+      "ages": "Entering grades 7–10",
+      "hours": "Eight one-week sessions; normally 9:00 AM–4:00 PM, with some trips requiring earlier departure or later pickup",
+      "availability": null,
+      "cost": null,
+      "website": "https://www.orange-ct.gov/629/Travelin-Teens",
+      "contact": "203-891-4700",
+      "townsServed": [
+        "Orange"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
       "id": "recOg3bQHgJU4cKOF",
       "name": "Our Lady of Fatima Day Care Center",
       "track": "Family & Childcare",
@@ -8411,7 +8537,9 @@
       "cost": "Fees vary by camp",
       "website": "https://reddingct.gov/parks-and-recreation/programs/camps/summer-camps/",
       "contact": null,
-      "townsServed": [],
+      "townsServed": [
+        "Redding"
+      ],
       "rating": null,
       "submittedBy": "Darice Corey",
       "dateSubmitted": "2026-08-25",
@@ -8797,7 +8925,7 @@
     {
       "id": "recGzXSIaCOFrQr09",
       "name": "SigmaCamp",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": "Advanced mathematics and science residential camp",
       "town": "Sharon",
@@ -8812,14 +8940,14 @@
         "Sharon"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
     {
       "id": "reco9tN0iGGmDTa4b",
       "name": "SigmaNext",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": "Research-focused advanced STEM residential camp",
       "town": "Sharon",
@@ -8834,7 +8962,7 @@
         "Sharon"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
@@ -9321,6 +9449,28 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 124 preschool. An allocation, not current openings. Licence/registry: DCEX.80616; Registry 2031. Local partner: Stratford LGP -- Suzanne Porco Clements | clements@cestrumbull.org | 203-365-8213. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recWGS90XqFXEbbxw",
+      "name": "Stratford Recreation Summer Camps",
+      "track": "Family & Childcare",
+      "category": "Municipal/Parks & Rec Camp",
+      "specificType": "2026 sports camps included basketball, soccer, track and field, volleyball, multi-sport, and softball. Arts camps included theater, filmmaking, dance, cheer, cooking, and art programs. Playground Camp and Teen Squad were also reported by the user.",
+      "town": "Stratford",
+      "address": null,
+      "ages": null,
+      "hours": null,
+      "availability": "Official Stratford Public Schools notice confirmed that the 2026 recreation camp season began June 29 and that programs were filling. Exact schedules were not shown.",
+      "cost": null,
+      "website": "https://townofstratford.recdesk.com/Community/Program",
+      "contact": null,
+      "townsServed": [
+        "Stratford"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
     },
     {
       "id": "recnl2GtlJPEbwCyX",
@@ -10227,7 +10377,7 @@
     {
       "id": "recewCuFgmUXrd7LK",
       "name": "UConn AI Summer Camp",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": "Artificial intelligence, programming, responsible use, and engineering",
       "town": "Storrs",
@@ -10242,7 +10392,7 @@
         "Mansfield"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
@@ -10271,7 +10421,7 @@
     {
       "id": "recznuF6pGME3ONfW",
       "name": "UConn Explore Engineering",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": "Two-week residential introduction to engineering majors",
       "town": "Storrs",
@@ -10286,14 +10436,14 @@
         "Mansfield"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
     {
       "id": "recoIidDuGmfcW9pP",
       "name": "UConn Navy STEM Boat Camp",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": "STEM, engineering, boats, and ocean exploration",
       "town": "Groton, Hartford, and New Haven",
@@ -10310,14 +10460,14 @@
         "New Haven"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
     {
       "id": "recVX1ty38aS1CECf",
       "name": "UConn SPARK Summer Program",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": "Project-based engineering, science, invention, and innovation camp",
       "town": "Storrs",
@@ -10332,14 +10482,14 @@
         "Mansfield"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
     {
       "id": "recJ9jvcn68KF4u51",
       "name": "University of Hartford Summer Place Robotics & Coding Camp",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": "Two-week robotics and coding program using C, Python, microcontrollers, and mobile robots",
       "town": "West Hartford",
@@ -10354,7 +10504,7 @@
         "West Hartford"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
@@ -10499,13 +10649,14 @@
       "town": "Bridgeport and Fairfield",
       "address": "Bridgeport and Fairfield clubhouses",
       "ages": "Grades K–8",
-      "hours": "Weekly themed full-day camps; before and after care available",
+      "hours": "Monday–Friday, 9:00 AM–3:30 PM; optional before care 7:30–9:00 AM and after care 3:30–5:30 PM",
       "availability": null,
       "cost": "Fees vary by site and week",
       "website": "https://www.wakemanclub.org/summer-camp",
       "contact": null,
       "townsServed": [
-        "Bridgeport"
+        "Bridgeport",
+        "Fairfield"
       ],
       "rating": null,
       "submittedBy": "Darice Corey",
@@ -11115,7 +11266,7 @@
     {
       "id": "recX9CgohEyCYo6dY",
       "name": "Yale Pathways to Science Summer Scholars",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": "STEM workshops and college preparation for invited Pathways Scholars",
       "town": "New Haven",
@@ -11130,7 +11281,7 @@
         "New Haven"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
@@ -11159,7 +11310,7 @@
     {
       "id": "recPm7aQp6pt2n7QJ",
       "name": "Yale Young Scholars Summer Program in Biostatistics and Clinical Research",
-      "track": "Children & Youth",
+      "track": "Family & Childcare",
       "category": "STEM/Tech Camp",
       "specificType": "Biostatistics, clinical research, study design, and public health data",
       "town": "New Haven",
@@ -11174,7 +11325,7 @@
         "New Haven"
       ],
       "rating": null,
-      "submittedBy": "ChatGPT Statewide STEM Search",
+      "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": null
     },
