@@ -21,13 +21,13 @@
   var NON_ANSWERS = ['Not stated', 'Not determined', 'None', 'N/A'];
 
   var FACETS = [
-    { key: 'whoCanParticipate', label: 'Who can take part',   open: true },
-    { key: 'door',              label: 'How you access it',   open: true },
-    { key: 'support',           label: 'What you get',        open: true },
+    { key: 'whoCanParticipate', label: 'Who can take part' },
+    { key: 'door',              label: 'How you access it' },
+    { key: 'support',           label: 'What you get' },
     { key: 'type',              label: 'Kind of opportunity' },
-    { key: 'cost',              label: 'Cost' },
+    { key: 'cost',              label: 'Cost', open: true },
     { key: 'legalStatus',       label: 'Legal status needed', keepNone: true },
-    { key: 'topics',            label: 'Topic area' },
+    { key: 'topics',            label: 'Topic area', open: true },
     { key: 'communityServed',   label: 'Community served' },
     { key: 'audienceStage',     label: 'Who it is written for' },
     { key: 'deliveryFormat',    label: 'Format' },
@@ -38,6 +38,17 @@
     { key: 'accessibility',     label: 'Accessibility' },
     { key: 'accountBenefit',    label: 'Account you may already have' },
     { key: 'lockIn',            label: 'Platform lock-in risk' }
+  ];
+
+  /* The filters promoted out of the sidebar into the labelled boxes above the
+     results, in the order they appear there. Each names the facet it drives and
+     what its box reads when nothing is ticked. Both places write the same
+     state, so a tick in one is a tick in the other. */
+  var ROW_FIELDS = [
+    { key: 'whoCanParticipate', empty: 'Anyone' },
+    { key: 'door',              empty: 'Any way in' },
+    { key: 'support',           empty: 'Anything' },
+    { key: 'type',              empty: 'Any kind' }
   ];
 
   var QUICK = [
@@ -308,6 +319,140 @@
 
   /* -- rendering ---------------------------------------------------------- */
 
+  /* -- the promoted filter boxes ------------------------------------------ */
+
+  /* The same four filters the sidebar carries, in the labelled boxes the
+     childcare directory uses. They read and write state.filters like every
+     other control, so the sidebar, the quick starts and these stay in step
+     with no syncing code of their own. */
+
+  function facetByKey(key) {
+    for (var i = 0; i < FACETS.length; i++) if (FACETS[i].key === key) return FACETS[i];
+    return null;
+  }
+
+  /* Built once. Rebuilding the markup on each change would fold up a panel the
+     reader is still ticking through, and re-sorting live counts would slide
+     options out from under the pointer -- so the order is fixed here and only
+     the labels, ticks and counts move afterwards. */
+  function buildRow() {
+    var host = $('cf-fieldrow');
+    if (!host) return;
+
+    host.innerHTML = ROW_FIELDS.map(function (field) {
+      var facet = facetByKey(field.key);
+      if (!facet) return '';
+
+      var counts = facetCounts(field.key);
+      var opts = Object.keys(facet._options)
+        .filter(function (v) { return isAnswer(v, facet.keepNone); })
+        .sort(function (a, b) {
+          if (field.key === 'door') return DOOR_ORDER.indexOf(a) - DOOR_ORDER.indexOf(b);
+          return (counts[b] || 0) - (counts[a] || 0) || a.localeCompare(b);
+        });
+      if (!opts.length) return '';
+
+      var text = function (v) { return field.key === 'door' ? (DOOR_LABEL[v] || v) : v; };
+
+      var list = opts.map(function (v) {
+        return '<label class="cf-multi-opt" data-find-text="' + esc(text(v).toLowerCase()) + '">' +
+                 '<input type="checkbox" data-facet="' + esc(field.key) + '" value="' + esc(v) + '" />' +
+                 '<span>' + esc(text(v)) + '</span>' +
+                 '<em data-count="' + esc(v) + '">' + (counts[v] || 0) + '</em>' +
+               '</label>';
+      }).join('');
+
+      // A find box earns its place on a long list and clutters a short one.
+      var head = opts.length > 8
+        ? '<div class="cf-multi-head">' +
+            '<input type="search" data-find="' + esc(field.key) + '" placeholder="Find&hellip;" ' +
+                   'aria-label="Find within ' + esc(facet.label.toLowerCase()) + '" autocomplete="off" />' +
+            '<button type="button" class="cf-multi-clear" data-clearfacet="' + esc(field.key) + '">Clear</button>' +
+          '</div>'
+        : '<div class="cf-multi-head cf-multi-head-bare">' +
+            '<button type="button" class="cf-multi-clear" data-clearfacet="' + esc(field.key) + '">Clear</button>' +
+          '</div>';
+
+      return '<div class="cf-field">' +
+        '<span class="cf-field-label" id="cf-lbl-' + esc(field.key) + '">' + esc(facet.label) + '</span>' +
+        '<div class="cf-multi" data-multi="' + esc(field.key) + '">' +
+          '<button type="button" class="cf-multi-toggle" data-toggle="' + esc(field.key) + '" ' +
+                  'aria-expanded="false" aria-haspopup="true" aria-controls="cf-panel-' + esc(field.key) + '" ' +
+                  'aria-labelledby="cf-lbl-' + esc(field.key) + ' cf-val-' + esc(field.key) + '">' +
+            '<span id="cf-val-' + esc(field.key) + '" data-value="' + esc(field.key) + '">' + esc(field.empty) + '</span>' +
+          '</button>' +
+          '<div class="cf-multi-panel" id="cf-panel-' + esc(field.key) + '" role="group" ' +
+               'aria-label="Filter by ' + esc(facet.label.toLowerCase()) + '" hidden>' +
+            head +
+            '<div class="cf-multi-list">' + list + '</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  function syncRow() {
+    var host = $('cf-fieldrow');
+    if (!host) return;
+
+    ROW_FIELDS.forEach(function (field) {
+      var box = host.querySelector('[data-multi="' + field.key + '"]');
+      if (!box) return;
+
+      var chosen = state.filters[field.key] || [];
+      var label = box.querySelector('[data-value]');
+      var toggle = box.querySelector('[data-toggle]');
+
+      label.textContent = chosen.length === 0 ? field.empty
+        : (chosen.length === 1
+            ? (field.key === 'door' ? (DOOR_LABEL[chosen[0]] || chosen[0]) : chosen[0])
+            : chosen.length + ' selected');
+      toggle.classList.toggle('has-selection', chosen.length > 0);
+
+      /* Counts hold every other filter fixed, so they answer "what would I get
+         if I added this one" rather than restating what is already on screen.
+         An option that would return nothing is dimmed but stays clickable when
+         it is the one already ticked -- otherwise it could not be unticked. */
+      var counts = facetCounts(field.key);
+      Array.prototype.forEach.call(box.querySelectorAll('input[data-facet]'), function (input) {
+        var on = chosen.indexOf(input.value) !== -1;
+        var n = counts[input.value] || 0;
+        input.checked = on;
+        input.disabled = n === 0 && !on;
+        var opt = input.parentNode;
+        opt.classList.toggle('is-empty', n === 0 && !on);
+        var em = opt.querySelector('em');
+        if (em) em.textContent = n;
+      });
+    });
+  }
+
+  function openPanel(key, open) {
+    var host = $('cf-fieldrow');
+    if (!host) return;
+    Array.prototype.forEach.call(host.querySelectorAll('[data-multi]'), function (box) {
+      var mine = box.getAttribute('data-multi') === key;
+      var panel = box.querySelector('.cf-multi-panel');
+      var toggle = box.querySelector('[data-toggle]');
+      var show = mine && open;
+      panel.hidden = !show;
+      toggle.setAttribute('aria-expanded', show ? 'true' : 'false');
+      if (show) {
+        var find = panel.querySelector('input[data-find]');
+        if (find) find.focus();
+      }
+    });
+  }
+
+  function anyPanelOpen() {
+    var host = $('cf-fieldrow');
+    return !!(host && host.querySelector('.cf-multi-panel:not([hidden])'));
+  }
+
+  function closePanels() {
+    openPanel(null, false);
+  }
+
   function renderQuick() {
     var host = $('cf-quick');
     /* QUICK is a hand-picked shortlist, not the whole field. If the directory
@@ -325,9 +470,17 @@
     }).join('');
   }
 
+  function inRow(key) {
+    for (var i = 0; i < ROW_FIELDS.length; i++) if (ROW_FIELDS[i].key === key) return true;
+    return false;
+  }
+
+  /* The four promoted to the boxes above the results are not repeated here.
+     Showing the same list twice on one screen invites the reader to wonder
+     which of the two is the real one. */
   function renderFacets() {
     var host = $('cf-facets');
-    var html = FACETS.map(function (facet) {
+    var html = FACETS.filter(function (facet) { return !inRow(facet.key); }).map(function (facet) {
       var counts = facetCounts(facet.key);
       var chosen = state.filters[facet.key] || [];
       var opts = Object.keys(facet._options).filter(function (v) { return isAnswer(v, facet.keepNone); });
@@ -558,6 +711,7 @@
 
   function renderAll() {
     renderQuick();
+    syncRow();
     renderFacets();
     renderChips();
     render();
@@ -642,8 +796,58 @@
       if (cards[first]) cards[first].scrollIntoView({ block: 'center' });
     });
 
-    $('cf-reset').addEventListener('click', function () {
-      state.q = ''; state.filters = {}; qEl.value = ''; writeHash(); renderAll();
+    function resetAll() {
+      state.q = ''; state.filters = {}; qEl.value = '';
+      closePanels(); writeHash(); renderAll();
+    }
+    $('cf-reset').addEventListener('click', resetAll);
+    $('cf-reset-row').addEventListener('click', resetAll);
+
+    var row = $('cf-fieldrow');
+
+    row.addEventListener('click', function (e) {
+      var toggle = e.target.closest('[data-toggle]');
+      if (toggle) {
+        var key = toggle.getAttribute('data-toggle');
+        var panel = document.getElementById('cf-panel-' + key);
+        openPanel(key, panel.hidden);
+        return;
+      }
+      var clear = e.target.closest('[data-clearfacet]');
+      if (clear) {
+        delete state.filters[clear.getAttribute('data-clearfacet')];
+        writeHash(); renderAll();
+      }
+    });
+
+    row.addEventListener('change', function (e) {
+      var box = e.target.closest('input[data-facet]');
+      if (!box) return;
+      toggleFilter(box.getAttribute('data-facet'), box.value);
+      writeHash(); renderAll();
+    });
+
+    row.addEventListener('input', function (e) {
+      var find = e.target.closest('input[data-find]');
+      if (!find) return;
+      var q = find.value.trim().toLowerCase();
+      var list = find.closest('.cf-multi-panel').querySelector('.cf-multi-list');
+      Array.prototype.forEach.call(list.children, function (opt) {
+        opt.hidden = q !== '' && opt.getAttribute('data-find-text').indexOf(q) === -1;
+      });
+    });
+
+    /* A panel is a menu: clicking away or pressing Escape should put it away,
+       and Escape should hand focus back to the box it came from. */
+    document.addEventListener('click', function (e) {
+      if (anyPanelOpen() && !e.target.closest('#cf-fieldrow')) closePanels();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape' || !anyPanelOpen()) return;
+      var open = row.querySelector('.cf-multi-panel:not([hidden])');
+      var toggle = open && open.parentNode.querySelector('[data-toggle]');
+      closePanels();
+      if (toggle) toggle.focus();
     });
 
     $('cf-quick').addEventListener('click', function (e) {
@@ -768,6 +972,7 @@
     }
 
     readHash();
+    buildRow();
     state.sort  = normalizeChoice('cf-sort', 'relevance', state.sort);
     state.group = normalizeChoice('cf-group', 'door', state.group);
     $('cf-q').value = state.q;
