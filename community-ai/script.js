@@ -206,6 +206,26 @@
     return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
   }
 
+  /* "Today" is read from the viewer's own calendar, not UTC. A deadline is a
+     plain date with no timezone, so someone in Los Angeles at 9pm on the 31st
+     should still be told it is open — telling them they missed it because the
+     date already turned in London is the one error worth avoiding here. */
+  function todayISO() {
+    var d = new Date(), m = d.getMonth() + 1, day = d.getDate();
+    return d.getFullYear() + '-' + (m < 10 ? '0' : '') + m + '-' + (day < 10 ? '0' : '') + day;
+  }
+
+  function isClosed(deadline) {
+    return !!deadline && String(deadline) < todayISO();
+  }
+
+  /* Order for the deadline sort: what is still open, soonest first; then the
+     rolling entries with no date; then what has already closed. */
+  function deadlineRank(rec) {
+    if (!rec.deadline) return '1';
+    return (isClosed(rec.deadline) ? '2' : '0') + rec.deadline;
+  }
+
   function doorClass(door) {
     if (!door) return '';
     if (door.indexOf('Door 1') === 0) return 'door1';
@@ -257,11 +277,11 @@
       if (by === 'funding') return (b.rec.maxFunding || -1) - (a.rec.maxFunding || -1) || a.rec.title.localeCompare(b.rec.title);
       if (by === 'checked') return String(b.rec.lastChecked || '').localeCompare(String(a.rec.lastChecked || '')) || a.rec.title.localeCompare(b.rec.title);
       /* Someone with a date to hit wants the closing ones first. Most entries
-         are rolling and carry no deadline at all; those sort after the dated
-         ones rather than ahead of them, which an empty string would do. */
+         are rolling and carry no deadline at all, and a few have already
+         closed; deadlineRank keeps all three groups in the useful order. */
       if (by === 'deadline') {
-        var ad = a.rec.deadline || '\uffff', bd = b.rec.deadline || '\uffff';
-        return ad.localeCompare(bd) || a.rec.title.localeCompare(b.rec.title);
+        return deadlineRank(a.rec).localeCompare(deadlineRank(b.rec)) ||
+               a.rec.title.localeCompare(b.rec.title);
       }
       /* The mirror of "recently checked": what to read most sceptically,
          because the official page has had the longest to change underneath it. */
@@ -374,7 +394,11 @@
     if (rec.legalStatus === 'None') badges.push('<span class="cf-badge">No legal status needed</span>');
     else if (rec.legalStatus && rec.legalStatus !== 'Not stated') badges.push('<span class="cf-badge">' + esc(rec.legalStatus) + '</span>');
     if (rec.beginnerFriendly === 'Yes') badges.push('<span class="cf-badge">Beginner friendly</span>');
-    if (rec.deadline) badges.push('<span class="cf-badge deadline">Deadline ' + esc(prettyDate(rec.deadline)) + '</span>');
+    if (rec.deadline) {
+      badges.push(isClosed(rec.deadline)
+        ? '<span class="cf-badge closed">Closed ' + esc(prettyDate(rec.deadline)) + '</span>'
+        : '<span class="cf-badge deadline">Deadline ' + esc(prettyDate(rec.deadline)) + '</span>');
+    }
 
     /* A field the official source never addressed is worth saying once, at the
        end — not as eight rows of "Not stated" between the facts that matter. */
@@ -389,7 +413,7 @@
       if (Array.isArray(v)) {
         body = real.map(function (x) { return '<span class="tag">' + esc(x) + '</span>'; }).join('');
       } else if (key === 'deadline') {
-        body = esc(prettyDate(v));
+        body = esc(prettyDate(v)) + (isClosed(v) ? ' <span class="cf-closed-note">(this date has passed)</span>' : '');
       } else {
         body = esc(v);
       }
