@@ -126,6 +126,11 @@
   // whether a robotics week is filed under STEM, Specialty or Summer Day, and
   // filtering on the wrong guess hides it. So the filter works on the group and
   // the specific category stays visible on the card and inside search.
+  // scripts/check-vocabulary.js reads this literal to tell a new Airtable
+  // category from a coined duplicate, so it is parsed as well as run.
+  // Renaming the variable or reindenting its closing bracket breaks that
+  // check -- loudly, by design, rather than by reporting every category
+  // as unmapped.
   var GROUPS = [
     ['Child Care', ['Center-Based Daycare','Home Daycare (Licensed)','Infant Care',
       'Preschool / Pre-K','Before/After School Care','Backup/Emergency Care',
