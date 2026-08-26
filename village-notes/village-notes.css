@@ -256,3 +256,40 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
 @media (max-width:600px) {
   .vn-multi-panel { width:min(19rem,92vw); }
 }
+
+/* ---------- GROUPED MULTI-SELECT ---------- */
+.vn-multi-panel-wide { width:min(24rem,88vw); }
+.vn-multi-group { border-bottom:1px solid var(--line); padding-bottom:.25rem; margin-bottom:.25rem; }
+.vn-multi-group:last-child { border-bottom:none; }
+.vn-multi-group[hidden] { display:none; }
+.vn-multi-opt em { margin-left:auto; font-style:normal; font-size:.74rem; color:var(--muted); }
+.vn-multi-grouphead { font-weight:500; color:var(--cream); }
+.vn-multi-grouphead span { font-size:.88rem; }
+.vn-multi-child { padding-left:1.9rem; }
+.vn-multi-child span { font-size:.83rem; color:var(--muted); }
+
+/* ---------- QUICK TOGGLES ---------- */
+.vn-toggles { display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; margin-top:1.5rem; }
+.vn-toggles-label {
+  font-size:.68rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--coral); margin-right:.25rem;
+}
+.vn-toggle { display:inline-flex; align-items:center; gap:.45rem; cursor:pointer; }
+.vn-toggle input { position:absolute; opacity:0; width:0; height:0; }
+.vn-toggle span {
+  display:inline-block; border:1px solid var(--line); border-radius:999px;
+  padding:.4rem .85rem; font-size:.78rem; color:var(--muted);
+  background:var(--bg2); transition:all .15s; white-space:nowrap;
+}
+.vn-toggle:hover span { border-color:var(--coral); color:var(--cream); }
+.vn-toggle input:checked + span { background:var(--coral); border-color:var(--coral); color:#241038; }
+.vn-toggle input:focus-visible + span { outline:3px solid var(--coral); outline-offset:2px; }
+@media (prefers-color-scheme: light) { .vn-toggle input:checked + span { color:#fff; } }
+
+/* ---------- CARD CHIPS ---------- */
+.vn-chips { display:flex; flex-wrap:wrap; gap:.35rem; margin-bottom:.85rem; }
+.vn-badge-chip {
+  font-size:.68rem; letter-spacing:.04em; padding:.22rem .55rem;
+  border:1px solid var(--line); border-radius:999px; color:var(--muted);
+}
+.vn-badge-chip.is-open { border-color:var(--coral); color:var(--coral); }

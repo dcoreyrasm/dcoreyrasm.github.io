@@ -79,10 +79,20 @@
           </div>
 
           <div class="vn-field">
-            <label for="vn-category">Category</label>
-            <select id="vn-category">
-              <option value="">All categories</option>
-            </select>
+            <span class="vn-field-label">What you need</span>
+            <div class="vn-multi" id="vn-cat-multi">
+              <button type="button" class="vn-multi-toggle" id="vn-cat-toggle"
+                      aria-expanded="false" aria-haspopup="true" aria-controls="vn-cat-panel">
+                <span id="vn-cat-label">Anything</span>
+              </button>
+              <div class="vn-multi-panel vn-multi-panel-wide" id="vn-cat-panel" role="group" aria-label="Filter by what you need" hidden>
+                <div class="vn-multi-head">
+                  <input type="search" id="vn-cat-find" placeholder="Find a type&hellip;" aria-label="Find a type" autocomplete="off" />
+                  <button type="button" class="vn-multi-clear" id="vn-cat-clear">Clear</button>
+                </div>
+                <div class="vn-multi-list" id="vn-cat-list"></div>
+              </div>
+            </div>
           </div>
 
           <div class="vn-field">
@@ -105,6 +115,16 @@
 
           <button type="button" id="vn-reset" class="btn-ghost vn-reset">Reset</button>
         </form>
+
+        <div class="vn-toggles" role="group" aria-label="Quick filters">
+          <span class="vn-toggles-label">Only show</span>
+          <label class="vn-toggle"><input type="checkbox" data-flag="openNow" /><span>Registration open</span></label>
+          <label class="vn-toggle"><input type="checkbox" data-flag="care4Kids" /><span>Accepts Care 4 Kids</span></label>
+          <label class="vn-toggle"><input type="checkbox" data-flag="financialAid" /><span>Financial help</span></label>
+          <label class="vn-toggle"><input type="checkbox" data-flag="transport" /><span>Transportation</span></label>
+          <label class="vn-toggle"><input type="checkbox" data-flag="extended" /><span>Before/after care</span></label>
+          <label class="vn-toggle"><input type="checkbox" data-flag="fullDay" /><span>Covers a workday</span></label>
+        </div>
 
         <p class="vn-resultline" id="vn-resultline" role="status" aria-live="polite"></p>
       </div>
