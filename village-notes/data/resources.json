@@ -1,16 +1,19 @@
 {
-  "generated": "2026-08-25T17:58:51.774Z",
+  "generated": "2026-08-26T00:58:17.527Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "Moderation Status = \"Published\""
   },
-  "count": 457,
+  "count": 518,
   "tracks": [
+    "Children & Youth",
     "Elder Care",
     "Family & Childcare"
   ],
   "categories": [
+    "Academic/Enrichment Camp",
+    "Afterschool Enrichment",
     "Arts Camp",
     "Assisted Living",
     "Before/After School Care",
@@ -24,29 +27,40 @@
     "In-Home Caregiver / Home Health Aide",
     "Infant Care",
     "Legal/HR Resource",
+    "Literacy / Reading Program",
+    "Municipal/Parks & Rec Camp",
     "Outdoor/Nature Camp",
     "Parenting Support/Classes",
     "Preschool / Pre-K",
     "Respite Care",
-    "Veterans Benefits Counseling"
+    "Specialty Camp",
+    "STEM/Tech Camp",
+    "Summer Day Camp",
+    "Summer Sleepaway Camp",
+    "Veterans Benefits Counseling",
+    "Youth Employment Program"
   ],
   "towns": [
     "Andover",
     "Ansonia",
     "Ashford",
     "Beacon Falls",
+    "Berlin",
     "Bethany",
     "Bethel",
     "Bloomfield",
     "Branford",
     "Bridgeport",
+    "Bridgeport and Fairfield",
     "Bristol",
     "Brooklyn",
     "Canaan",
     "Canterbury",
     "Chaplin",
     "Cheshire",
+    "Chester",
     "Colchester",
+    "Colebrook",
     "Coventry",
     "Danbury",
     "Derby",
@@ -57,15 +71,20 @@
     "Eastford",
     "Ellington",
     "Enfield",
+    "Fairfield",
+    "Glastonbury",
+    "Greater Hartford area",
     "Greenwich",
     "Griswold",
     "Groton",
+    "Groton, Hartford, and New Haven",
     "Guilford",
     "Hamden",
     "Hampton",
     "Hartford",
     "Hebron",
     "Killingly",
+    "Lakeville",
     "Lebanon",
     "Ledyard",
     "Lisbon",
@@ -77,6 +96,7 @@
     "Milford",
     "Naugatuck",
     "New Britain",
+    "New Britain and Berlin",
     "New Canaan",
     "New Fairfield",
     "New Haven",
@@ -94,8 +114,11 @@
     "Plainville",
     "Plymouth",
     "Putnam",
+    "Redding",
+    "Ridgefield",
     "Scotland",
     "Seymour",
+    "Sharon",
     "Shelton",
     "Southington",
     "Sprague",
@@ -104,6 +127,7 @@
     "Statewide",
     "Statewide (all of Connecticut)",
     "Sterling",
+    "Storrs",
     "Stratford",
     "Thomaston",
     "Thompson",
@@ -113,6 +137,7 @@
     "Voluntown",
     "Wallingford",
     "Waterbury",
+    "Waterbury and surrounding towns",
     "Waterford",
     "Watertown",
     "West Hartford",
@@ -123,7 +148,8 @@
     "Windsor",
     "Windsor Locks",
     "Wolcott",
-    "Woodbridge"
+    "Woodbridge",
+    "Woodstock"
   ],
   "resources": [
     {
@@ -696,6 +722,70 @@
       "notes": "FY26 state-funded spaces: 48 infant/toddler and 35 preschool. An allocation, not current openings. Licence/registry: DCCC.12135; Registry 365. Local partner: Alliance for Bloomfield's Children -- Gail Nolan | gnolan@blmfld.org | 860-769-5518. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recXmCxqIbiip1Ozv",
+      "name": "Boys & Girls Club of Greenwich Summer Camps",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Greenwich",
+      "address": null,
+      "ages": "Ages 6–15",
+      "hours": "Summer sessions vary across Clubhouse Camp, Camp Simmons, and Teen Camp",
+      "availability": null,
+      "cost": "Fees vary by program",
+      "website": "https://bgcg.org/what-we-do/summer-camps/overview.html",
+      "contact": null,
+      "townsServed": [
+        "Greenwich"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Connecticut OEC-licensed programs. Official club page verified August 25, 2026."
+    },
+    {
+      "id": "recSJfLdAfG0CIf8O",
+      "name": "Boys & Girls Club of Milford Summer Camp at Simon Lake",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Milford",
+      "address": "59 Devonshire Road, Milford, CT 06460",
+      "ages": "Incoming kindergarten through incoming grade 8",
+      "hours": "June 22–August 21, 2026; weekly sessions; 9 a.m.–5:30 p.m.; optional care 7:30–9 a.m.",
+      "availability": null,
+      "cost": "$250 per week; before care $50 per week; field trips vary",
+      "website": "https://boysandgirlsclubofmilford.com/summer-at-the-club/",
+      "contact": "JillPisani@boysandgirlsclubofmilford.com",
+      "townsServed": [
+        "Milford"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Weekly themes, outdoor recreation, arts, STEM, games, and optional trips. Official 2026 page verified August 25, 2026."
+    },
+    {
+      "id": "recJA3XlP9mQCGSFu",
+      "name": "Boys & Girls Club of Ridgefield Camp",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Ridgefield",
+      "address": null,
+      "ages": "Children and teens; program-specific ages vary",
+      "hours": "2026 camp registration and payments available online",
+      "availability": null,
+      "cost": "Fees vary by program",
+      "website": "https://www.bgcridgefield.org/",
+      "contact": null,
+      "townsServed": [],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official club site verified August 25, 2026. Current 2026 camp registration remains available."
+    },
+    {
       "id": "recfGIF0kzUM1jPH9",
       "name": "Boys & Girls Clubs of Greater New Haven (Columbus Clubhouse)",
       "track": "Family & Childcare",
@@ -718,18 +808,40 @@
       "notes": "The Boys & Girls Clubs of Greater New Haven's Columbus Avenue Clubhouse, in the Hill neighborhood, runs afterschool programming from 2:30 to 6:00 PM on school days for kids in kindergarten through eighth grade, with bus service from most New Haven Public Schools directly to the Club. During the summer the Clubhouse shifts to a full-day camp model (roughly 8:00 AM to 5:00 PM) for children ages 5 to 14, which can cover the gap between when a school day ends and a parent's workday does. The Club also runs separate evening programming for middle and high schoolers, sports leagues, and a teen leadership track (Keystone Club) that includes college and career preparation."
     },
     {
+      "id": "recfXPqqy7pLSA2VE",
+      "name": "Boys & Girls Clubs of Hartford After-School Programs",
+      "track": "Family & Childcare",
+      "category": "Before/After School Care",
+      "specificType": null,
+      "town": "Hartford",
+      "address": null,
+      "ages": "Ages 6–18",
+      "hours": "Monday–Friday after school; generally 3–6 p.m. for ages 10 and younger and until 8 p.m. for older youth; Friday teen hours may extend to 9 p.m.",
+      "availability": null,
+      "cost": "$10 per child for the academic year",
+      "website": "https://www.bgchartford.org/become-a-member",
+      "contact": "860-929-7690",
+      "townsServed": [
+        "Hartford"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Homework help, enrichment, recreation, healthy habits, and meals at multiple Hartford club sites. Verify transportation with the child’s school. Official page verified August 25, 2026."
+    },
+    {
       "id": "recFscK9N6GLMqHrK",
       "name": "Boys and Girls Club of Hartford Early Learning Center",
       "track": "Family & Childcare",
       "category": "Center-Based Daycare",
       "specificType": "State-funded Early Start CT provider (Child Care Center) -- 50 preschool funded spaces FY26",
       "town": "Hartford",
-      "address": "170 Sigourney St, Hartford, CT, 06105",
-      "ages": "Preschool",
-      "hours": null,
+      "address": "170 Sigourney Street, Hartford, CT 06105",
+      "ages": "Children beginning at age 2 years, 8 months",
+      "hours": "Monday–Friday, 7:30 a.m.–5:30 p.m.",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
-      "website": null,
+      "website": "https://www.bgchartford.org/early-learning-center",
       "contact": "Candalyn Sanders | (860) 929-7675",
       "townsServed": [
         "Hartford"
@@ -737,7 +849,7 @@
       "rating": null,
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
-      "notes": "FY26 state-funded spaces: 50 preschool. An allocation, not current openings. Licence/registry: DCCC.70157; Registry 6407. Local partner: Hartford LGP -- Tamika Thurston | tamika.thurston@hartford.gov | 860-757-9898. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+      "notes": "NAEYC-accredited early learning program. Care4Kids information is provided. Official page verified August 25, 2026."
     },
     {
       "id": "recKbjJxSqAYleZm0",
@@ -1448,6 +1560,130 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 16 preschool. An allocation, not current openings. Licence/registry: DCCC.12194; Registry 888. Local partner: New Haven LGP -- Kerry Oberg | koberg@uwgnh.org | 203-691-4208. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recuXAv0pezrYDwuh",
+      "name": "Camp BGC Meriden",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Meriden",
+      "address": null,
+      "ages": "Children; verify grade eligibility during registration",
+      "hours": "2026 summer sessions; AM care 7–9 a.m.; PM care 4–6 p.m.",
+      "availability": null,
+      "cost": "$170 per week before April 1, then $180; $25 registration; AM/PM care $45 each per week",
+      "website": "https://www.bgcmeriden.org/camp-bgc/",
+      "contact": null,
+      "townsServed": [
+        "Meriden"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official 2026 registration page verified August 25, 2026. Multiweek and family discounts listed."
+    },
+    {
+      "id": "recsqQIMks6uDOKVK",
+      "name": "Camp Hazen YMCA",
+      "track": "Family & Childcare",
+      "category": "Summer Sleepaway Camp",
+      "specificType": null,
+      "town": "Chester",
+      "address": "204 West Main Street, Chester, CT 06412",
+      "ages": "Children and teens; session-specific ages vary",
+      "hours": "Summer overnight sessions; see registration for dates",
+      "availability": null,
+      "cost": "Fees vary by session",
+      "website": "https://www.camphazenymca.org/",
+      "contact": null,
+      "townsServed": [],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "YMCA camp on Cedar Lake with outdoor and group activities. Official site verified August 25, 2026."
+    },
+    {
+      "id": "rectqEdNWb69NNyDK",
+      "name": "Camp Jewell YMCA",
+      "track": "Family & Childcare",
+      "category": "Summer Sleepaway Camp",
+      "specificType": null,
+      "town": "Colebrook",
+      "address": "6 Prock Hill Road, Colebrook, CT",
+      "ages": "Traditional overnight camp ages 7–15; equestrian and teen leadership programs",
+      "hours": "Summer overnight sessions; see registration for dates",
+      "availability": null,
+      "cost": "Fees vary; flexible payment and scholarships described",
+      "website": "https://campjewell.org/",
+      "contact": null,
+      "townsServed": [],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "YMCA of Greater Hartford overnight camp with traditional, equestrian, leadership, and some day-camp options. Official site verified August 25, 2026."
+    },
+    {
+      "id": "recNXAWmFcbY465Cu",
+      "name": "Camp RECreate & Camp S'More",
+      "track": "Family & Childcare",
+      "category": "Municipal/Parks & Rec Camp",
+      "specificType": "Camp RECreate: entering kindergarten–grade 8; Camp S'More: entering grades K–5",
+      "town": "Newington",
+      "address": null,
+      "ages": null,
+      "hours": "2026 summer program; registration opened January 13, 2026",
+      "availability": null,
+      "cost": "See registration site",
+      "website": "https://www.newingtonct.gov/1450/Camp-RECreate",
+      "contact": "860-665-8666",
+      "townsServed": [
+        "Newington"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official Town of Newington page verified August 25, 2026. Online registration only."
+    },
+    {
+      "id": "recNs3imNnc1BamXw",
+      "name": "Camp Sloane YMCA",
+      "track": "Family & Childcare",
+      "category": "Summer Sleepaway Camp",
+      "specificType": null,
+      "town": "Lakeville",
+      "address": "124 Indian Mountain Road, Lakeville, CT 06039",
+      "ages": "Children and teens; session-specific ages vary",
+      "hours": "Summer overnight sessions; see registration for dates",
+      "availability": null,
+      "cost": "Fees vary by session",
+      "website": "https://campsloane.org/",
+      "contact": "860-435-2557; info@campsloane.org",
+      "townsServed": [],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official YMCA camp site verified August 25, 2026."
+    },
+    {
+      "id": "reclBBZzdHYLk0Fdk",
+      "name": "Camp Woodstock YMCA",
+      "track": "Family & Childcare",
+      "category": "Summer Sleepaway Camp",
+      "specificType": null,
+      "town": "Woodstock",
+      "address": null,
+      "ages": "Children and teens; session-specific ages vary",
+      "hours": "Summer overnight sessions; see registration for dates",
+      "availability": null,
+      "cost": "Fees vary by session",
+      "website": "https://www.campwoodstock.org/",
+      "contact": null,
+      "townsServed": [],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "YMCA overnight camp operating in Connecticut since 1922. Official site verified August 25, 2026."
     },
     {
       "id": "recKsuy4qlxEoAApU",
@@ -2220,6 +2456,28 @@
       "notes": "FY26 state-funded spaces: 320 preschool. An allocation, not current openings. Licence/registry: DCCC.15346; Registry 1570. Local partner: Stamford LGP -- D'Naysha Brown | dbrown@stamfordct.gov | 203-977-4589. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recZQkYAfvUBi4LKO",
+      "name": "Code Ninjas Fairfield Seasonal Camps",
+      "track": "Family & Childcare",
+      "category": "STEM/Tech Camp",
+      "specificType": "Coding, robotics, game development, AI, 3D design and printing, and creative technology camps",
+      "town": "Fairfield",
+      "address": "665 Commerce Drive, Fairfield, CT 06825",
+      "ages": "Ages 5–14",
+      "hours": null,
+      "availability": "Official location page confirms seasonal summer, winter, and spring-break camps. Individual camp dates and prices vary.",
+      "cost": null,
+      "website": "https://www.codeninjas.com/locations/en-us/ct/fairfield/",
+      "contact": "203-816-5239; fairfieldct@codeninjas.com",
+      "townsServed": [
+        "Fairfield"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
       "id": "recMpcC8hWGxjzxYA",
       "name": "Colchester Boe At Colchester Early Childhood Program",
       "track": "Family & Childcare",
@@ -2814,6 +3072,28 @@
       "notes": "FY26 state-funded spaces: 2 infant/toddler. An allocation, not current openings. Licence/registry: DCFH.56803; Registry 7957. Local partner: Wethersfield Early Childhood Collaborative -- Kimberly Bobin | kbobin@wethersfield.me | 860-929-1316. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recP1gGuGPYvvr15r",
+      "name": "Discover Summer Day Camp",
+      "track": "Family & Childcare",
+      "category": "Municipal/Parks & Rec Camp",
+      "specificType": "Municipal summer camp; see official camp page for detailed age groups",
+      "town": "Groton",
+      "address": null,
+      "ages": null,
+      "hours": "2026 summer program; registration available online, by mail, or in person",
+      "availability": null,
+      "cost": "See registration page",
+      "website": "https://www.groton-ct.gov/dept_news_detail_T23_R956.php",
+      "contact": null,
+      "townsServed": [
+        "Groton"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official City of Groton page verified August 25, 2026. Walk-in registration is available at Spicer House, 29 Spicer Ave., Noank."
+    },
+    {
       "id": "rec8xZrUzHj2gJGYI",
       "name": "Douglas Street Early Care & Education -Community Renewal Team (CRT)",
       "track": "Family & Childcare",
@@ -2966,6 +3246,28 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 94 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 1659. Local partner: East Hartford LGP -- Thomas Anderson | anderson.t@easthartford.org | 860-622-5107. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "reccpqJb9nu27GCx4",
+      "name": "East Hartford Parks & Recreation Summer Camps",
+      "track": "Family & Childcare",
+      "category": "Municipal/Parks & Rec Camp",
+      "specificType": "Municipal April and summer camp programs; program ages vary",
+      "town": "East Hartford",
+      "address": null,
+      "ages": null,
+      "hours": "June 22–August 7, 2026; seven consecutive weeks",
+      "availability": null,
+      "cost": "See official registration page",
+      "website": "https://www.easthartfordct.gov/parks-recreation/pages/2026-april-summer-camps",
+      "contact": null,
+      "townsServed": [
+        "East Hartford"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official East Hartford Parks & Recreation page verified August 25, 2026."
     },
     {
       "id": "recYDSIXPOJu3LVdx",
@@ -3296,6 +3598,114 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 6 infant/toddler and 3 preschool. An allocation, not current openings. Licence/registry: DCFH.56725; Registry 7591. Local partner: Bridgeport LGP -- Camille Harris | charris@bridgeportedu.net | 203-275-1082. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recqRHAudSML1eEC8",
+      "name": "Fairfield Community Services Summer Camps",
+      "track": "Family & Childcare",
+      "category": "Municipal/Parks & Rec Camp",
+      "specificType": "Municipal day camps with crafts, outdoor games, water days, trips, and other activities",
+      "town": "Fairfield",
+      "address": null,
+      "ages": null,
+      "hours": "Session 1: June 22–July 3, 2026; Session 2: July 6–17, 2026; additional sessions listed on site",
+      "availability": null,
+      "cost": "Fees vary by camp and residency",
+      "website": "https://fairfieldrecreation.com/programs/youth/summer_camp_-_action_squad.php",
+      "contact": null,
+      "townsServed": [],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official Fairfield Community Services page verified August 25, 2026."
+    },
+    {
+      "id": "recw3ioVZjTl1NOZA",
+      "name": "Fairfield YMCA Beach Club",
+      "track": "Family & Childcare",
+      "category": "Specialty Camp",
+      "specificType": "Swimming, fishing, clamming, kayaking, paddleboarding, and beach activities",
+      "town": "Fairfield",
+      "address": "841 Old Post Road, Fairfield, CT 06824",
+      "ages": "Ages 10–15; strong swimming skills required",
+      "hours": "Monday–Friday, 9:00 AM–2:30 PM; June 15–August 17, 2026",
+      "availability": null,
+      "cost": "$255 members; $375 program participants",
+      "website": "https://cccymca.org/locations/fairfield/",
+      "contact": "203-255-2834",
+      "townsServed": [
+        "Fairfield"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "rec0H0l1RpX0JvZEa",
+      "name": "Fairfield YMCA Camp Badakookala",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": "Traditional YMCA day camp with a 2026 brochure, parent handbook, and registration packet",
+      "town": "Fairfield",
+      "address": "841 Old Post Road, Fairfield, CT 06824",
+      "ages": null,
+      "hours": null,
+      "availability": "2026 program cycle completed. Financial assistance forms are available through the YMCA.",
+      "cost": null,
+      "website": "https://cccymca.org/locations/fairfield/camp/",
+      "contact": "203-255-2834",
+      "townsServed": [
+        "Fairfield"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "recAuIGeBoLbP89It",
+      "name": "Fairfield YMCA Half-Day Swim School",
+      "track": "Family & Childcare",
+      "category": "Specialty Camp",
+      "specificType": "Half-day swimming instruction and water-safety program",
+      "town": "Fairfield",
+      "address": "841 Old Post Road, Fairfield, CT 06824",
+      "ages": "Ages 3–10",
+      "hours": "Monday–Friday, 9:00 AM–12:00 PM or 1:00–4:00 PM; June 1–August 24, 2026",
+      "availability": null,
+      "cost": "$185 members; $260 program participants",
+      "website": "https://cccymca.org/locations/fairfield/",
+      "contact": "203-255-2834 ext. 2325; agoodwin@cccymca.org; rspodenko@cccymca.org",
+      "townsServed": [
+        "Fairfield"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "recAOzGEfYFSv2aKa",
+      "name": "Fairfield YMCA Sunshine Club and Camp Discovery",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": "Traditional YMCA day camps; 2026 brochure and registration packet confirmed on official page",
+      "town": "Fairfield",
+      "address": "841 Old Post Road, Fairfield, CT 06824",
+      "ages": null,
+      "hours": null,
+      "availability": "2026 program cycle completed. Financial assistance forms are available through the YMCA.",
+      "cost": null,
+      "website": "https://cccymca.org/locations/fairfield/camp/",
+      "contact": "203-255-2834",
+      "townsServed": [
+        "Fairfield"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
     },
     {
       "id": "recrK30cO7CZrSvHX",
@@ -3738,6 +4148,26 @@
       "notes": "FY26 state-funded spaces: 4 infant/toddler. An allocation, not current openings. Licence/registry: DCFH.56946; Registry 8131. Local partner: Alliance for Bloomfield's Children -- Gail Nolan | gnolan@blmfld.org | 860-769-5518. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recGYNkCyVYdYl2bR",
+      "name": "Glastonbury YMCA Nayaug Child Care",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": null,
+      "town": "Glastonbury",
+      "address": "222 Old Maids Lane, South Glastonbury, CT 06073",
+      "ages": "Preschool ages 3 through entering kindergarten; school-age children",
+      "hours": "Full-day preschool 7 a.m.–6 p.m.; half-day 8 a.m.–noon; before/after-school and vacation care",
+      "availability": null,
+      "cost": "2026–2027 monthly rates vary by schedule; financial assistance, Care4Kids, and sibling discount available",
+      "website": "https://www.ghymca.org/facility/glastonbury-ymca-nayaug-child-care",
+      "contact": "860-633-6548",
+      "townsServed": [],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official YMCA 2026–2027 childcare information verified August 25, 2026."
+    },
+    {
       "id": "recQUEuDFFivivB25",
       "name": "Good Child Development Center",
       "track": "Family & Childcare",
@@ -3824,6 +4254,30 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 24 infant/toddler and 169 preschool. An allocation, not current openings. Licence/registry: DCCC.13034; Registry 1790. Local partner: Waterbury Bridge to Success Partnership -- Krista Pisano | krista.pisano@waterbury.k12.ct.us | 203-573-6684. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "reckmrIUx2MxSzLPZ",
+      "name": "Greater Waterbury YMCA Summer Camps",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Waterbury and surrounding towns",
+      "address": null,
+      "ages": "Ages 4–15",
+      "hours": "Summer schedules vary by camp",
+      "availability": null,
+      "cost": "Fees vary; check registration site",
+      "website": "https://www.waterburyymca.org/camps",
+      "contact": null,
+      "townsServed": [
+        "Waterbury",
+        "Watertown",
+        "Wolcott"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Two day-camp programs with swimming, arts and crafts, boating, nature, hiking, and family nights. Official YMCA page verified August 25, 2026."
     },
     {
       "id": "recG2kRQ5pR6c5861",
@@ -4640,6 +5094,72 @@
       "notes": "FY26 state-funded spaces: 4 infant/toddler and 26 preschool. An allocation, not current openings. Licence/registry: DCCC.12138; Registry 541. Local partner: Hartford LGP -- Tamika Thurston | tamika.thurston@hartford.gov | 860-757-9898. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recsiH9zrIcMlj2aZ",
+      "name": "iD Tech Camps at Fairfield University",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": "Coding, robotics, game development, and 3D design; day camps",
+      "town": "Fairfield",
+      "address": null,
+      "ages": "Ages 7–17",
+      "hours": null,
+      "availability": null,
+      "cost": "Starting at $1,159; payment plan available",
+      "website": "https://www.idtech.com/locations/connecticut-summer-camps/fairfield-university",
+      "contact": "1-888-709-8324; hello@idtech.com",
+      "townsServed": [
+        "Fairfield"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "recVajAddhTLhJazN",
+      "name": "iD Tech Camps at Southern Connecticut State University",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": "Coding, game development, robotics, AI, and related technology camps; day and overnight options",
+      "town": "New Haven",
+      "address": null,
+      "ages": "Ages 7–17",
+      "hours": null,
+      "availability": null,
+      "cost": "Starting at $949; payment plan available",
+      "website": "https://www.idtech.com/locations/connecticut-summer-camps/southern-connecticut-state",
+      "contact": "1-888-709-8324; hello@idtech.com",
+      "townsServed": [
+        "New Haven"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "rec5UUL1nd13Qeicp",
+      "name": "iD Tech Camps at Wesleyan University",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": null,
+      "town": "Middletown",
+      "address": null,
+      "ages": "Ages 7–17",
+      "hours": "Day camp sample schedule: check-in 8:30–9:00 AM; pickup 4:30–5:00 PM",
+      "availability": "Summer 2027 registration expected to open in November 2026.",
+      "cost": "Starting at $1,099; payment plan available",
+      "website": "https://www.idtech.com/locations/connecticut-summer-camps/wesleyan-university",
+      "contact": "1-888-709-8324; hello@idtech.com",
+      "townsServed": [
+        "Middletown"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
       "id": "recsRVeUDZWf9Re7A",
       "name": "Imagine Nation-A Museum Early Learning Center",
       "track": "Family & Childcare",
@@ -4668,20 +5188,20 @@
       "category": "Center-Based Daycare",
       "specificType": "State-funded Early Start CT provider (Child Care Center) -- 26 infant/toddler and 37 preschool funded spaces FY26",
       "town": "Vernon",
-      "address": "23 Elm St, Vernon, CT, 06066",
-      "ages": "Infant/Toddler; Preschool",
-      "hours": null,
+      "address": "23 Elm Street, Rockville, CT",
+      "ages": "Infants, toddlers, preschoolers, and school-age children",
+      "hours": "Full-day early care plus before and after school programs; school-age care generally 7 a.m. to school start and dismissal to 6 p.m.",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
-      "cost": "Reduced state-set fee for eligible families in a funded space.",
-      "website": null,
-      "contact": "Jennifer Motta | (860) 896-0584",
+      "cost": "School-age 2026 pricing listed from $365 to $609 monthly depending on schedule",
+      "website": "https://www.ghymca.org/facility/indian-valley-ymca-rockville-child-care-center",
+      "contact": "860-896-0584; ivchildcare@ghymca.org",
       "townsServed": [
         "Vernon"
       ],
       "rating": null,
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
-      "notes": "FY26 state-funded spaces: 26 infant/toddler and 37 preschool. An allocation, not current openings. Licence/registry: DCCC.16791; Registry 2073. Local partner: Vernon LGP -- Anna Figueroa | afigueroa@vernon-ct.gov | 860-870-3555. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+      "notes": "Official YMCA childcare page verified August 25, 2026."
     },
     {
       "id": "rect9wFzNgGgYMuPx",
@@ -4836,6 +5356,51 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 6 infant/toddler. An allocation, not current openings. Licence/registry: DCFH.53811; Registry 6723. Local partner: East Hartford LGP -- Thomas Anderson | anderson.t@easthartford.org | 860-622-5107. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recV6F3npFKxg5YS0",
+      "name": "JCC of Greater New Haven Day Camps",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Woodbridge",
+      "address": "360 Amity Road, Woodbridge, CT 06525",
+      "ages": "Age 4 through grade 9",
+      "hours": "June 22–August 14, 2026; two four-week sessions; Monday–Friday, 9 a.m.–4 p.m.; after-camp options",
+      "availability": null,
+      "cost": "See dates and rates page; early-bird pricing offered",
+      "website": "https://www.jccnh.org/daycamps",
+      "contact": "203-387-2424; webmaster@jccnh.org",
+      "townsServed": [
+        "Woodbridge",
+        "New Haven"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Open to all backgrounds. Pool, sports fields, trails, ropes course, arts, dance, and other activities. Official 2026 page verified August 25, 2026."
+    },
+    {
+      "id": "recg9KZ6QKaCxCU7i",
+      "name": "JDL Northwest Boys & Girls Club Summer Fun Club",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Hartford",
+      "address": "1 Nahum Drive, Hartford, CT",
+      "ages": "Ages 6–12",
+      "hours": "June 29–August 14, 2026; Monday–Friday, 9 a.m.–5 p.m.; early care from 8 a.m.",
+      "availability": null,
+      "cost": "$700; early care $100; early-bird and possible Care4Kids or scholarship support",
+      "website": "https://www.bgchartford.org/summers-at-the-club",
+      "contact": "860-242-5553; mgarcia@bgchartford.org",
+      "townsServed": [
+        "Hartford"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Arts, sciences, athletics, field trips, and meals. Official 2026 program page verified August 25, 2026."
     },
     {
       "id": "recwSPjWDo0WbA46v",
@@ -5188,6 +5753,72 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 4 infant/toddler. An allocation, not current openings. Licence/registry: DCFH.57060; Registry 8338. Local partner: Manchester LGP -- Donna Farr | dfarr@manchesterct.gov | 860-965-0445. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recJH1BrZPIWQmX7e",
+      "name": "Lauter Park Summer Camp",
+      "track": "Family & Childcare",
+      "category": "Municipal/Parks & Rec Camp",
+      "specificType": "Municipal day camp at Lauter Park; see official page for age requirements",
+      "town": "Windham",
+      "address": null,
+      "ages": null,
+      "hours": "June 29–August 14, 2026 after cancellation of the planned June 22–26 week",
+      "availability": null,
+      "cost": "See official page",
+      "website": "https://windhamct.gov/414/Lauter-Park-Summer-Camp",
+      "contact": null,
+      "townsServed": [
+        "Windham"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official Town of Windham page verified August 25, 2026."
+    },
+    {
+      "id": "rec4v1u9vYoKqxQJy",
+      "name": "LEAP Afterschool Children's Program",
+      "track": "Family & Childcare",
+      "category": "Afterschool Enrichment",
+      "specificType": null,
+      "town": "New Haven",
+      "address": "31 Jefferson Street and neighborhood sites, New Haven, CT 06511",
+      "ages": "Ages 7–12 who live in participating New Haven neighborhoods",
+      "hours": "Fall 2026: September 28–December 10; Monday–Thursday, 3–6 p.m.",
+      "availability": null,
+      "cost": "Free",
+      "website": "https://www.leapforkids.org/afterschool",
+      "contact": "203-773-0770",
+      "townsServed": [
+        "New Haven"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Homework help, literacy, athletics, arts, computer science, cooking, gardening, dance, and community activities. Eligibility is based on residence in participating neighborhoods."
+    },
+    {
+      "id": "reckBErGFKQyEUecP",
+      "name": "LEAP Leaders in Training",
+      "track": "Family & Childcare",
+      "category": "Youth Employment Program",
+      "specificType": null,
+      "town": "New Haven",
+      "address": "31 Jefferson Street, New Haven, CT 06511",
+      "ages": "New Haven teens ages 13–15 from any neighborhood",
+      "hours": "Fall 2026: Monday–Thursday, 3–6:30 p.m.; Friday, 3–5 p.m.; summer schedule also available",
+      "availability": null,
+      "cost": "Participants receive a small stipend",
+      "website": "https://www.leapforkids.org/leaders-in-training",
+      "contact": "203-773-0770",
+      "townsServed": [
+        "New Haven"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Academic support, health education, service, job exploration, leadership, and supervised work with younger children."
     },
     {
       "id": "rectmCJiglmIWPkQK",
@@ -5740,6 +6371,50 @@
       "notes": "Licence/registry: DCEX.80543; Registry 6291. Local partner: Manchester LGP -- Donna Farr | dfarr@manchesterct.gov | 860-965-0445. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recUKOOmktFL1gguu",
+      "name": "Manchester Summer Day Camp",
+      "track": "Family & Childcare",
+      "category": "Municipal/Parks & Rec Camp",
+      "specificType": "Municipal summer day camp; see official page for program-specific ages",
+      "town": "Manchester",
+      "address": null,
+      "ages": null,
+      "hours": "2026 summer program; online registration began April 6, 2026 at 9:00 a.m.",
+      "availability": null,
+      "cost": "See registration page",
+      "website": "https://www.manchesterct.gov/Government/Departments/Leisure-Family-and-Recreation-Department/Recreation-Divison/Recreation-Programs/Summer-Camp",
+      "contact": "860-647-3084",
+      "townsServed": [
+        "Manchester"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official Town of Manchester page verified August 25, 2026. An active online recreation account is required to register."
+    },
+    {
+      "id": "recXw8PIzkcV4RSSN",
+      "name": "Mandell JCC Summer Camps and Programs",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "West Hartford",
+      "address": null,
+      "ages": "Children and teens; program-specific ages vary",
+      "hours": "2026 summer registration open; dates vary across Camp Shalom, Sports Jams, childcare camps, and recreation programs",
+      "availability": null,
+      "cost": "Fees vary; payment plans and financial assistance available",
+      "website": "https://www.mandelljcc.org/index.php?category=SummerPrograms&ref=SummerLandingPage&src=gendocs",
+      "contact": "860-236-4571; Camp Shalom 860-231-6376; Sports Jams 860-231-6410",
+      "townsServed": [
+        "West Hartford"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Includes sports camps, day camp, childcare camps, and off-site recreation. Official 2026 program page verified August 25, 2026."
+    },
+    {
       "id": "rece2keIjgtgHa3zs",
       "name": "Mansfield Discovery Depot",
       "track": "Family & Childcare",
@@ -6024,6 +6699,50 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 8 infant/toddler and 20 preschool. An allocation, not current openings. Licence/registry: DCCC 70733; Registry 12017. Local partner: Meriden LGP -- Rhonda Knight | rknight@meridenct.gov | 203-630-4222. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "reckR5C3Cw9TW6t8d",
+      "name": "Meriden YMCA Robotics Revolution: Create & Code",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": "Two-week LEGO robotics, Ozobots, online coding, and game-design camp",
+      "town": "Meriden",
+      "address": null,
+      "ages": null,
+      "hours": null,
+      "availability": null,
+      "cost": null,
+      "website": "https://www.meridenymca.org/programs/camp/camp-offerings/stem-camps/",
+      "contact": null,
+      "townsServed": [
+        "Meriden"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "recXLeynUjXuAcpcP",
+      "name": "Meriden YMCA Rocketry and Flight 101",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": "Rocketry, flight mechanics, drone flying, and hands-on experiments",
+      "town": "Meriden",
+      "address": null,
+      "ages": "Completed grades 3–8",
+      "hours": "Session 4, July 27–August 7, 2026",
+      "availability": null,
+      "cost": "Full member $404; program member $464; $125 deposit; $35 camp improvement fee",
+      "website": "https://www.meridenymca.org/programs/camp/camp-offerings/stem-camps/",
+      "contact": null,
+      "townsServed": [
+        "Meriden"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
     },
     {
       "id": "recD1HDttGCyu5kqC",
@@ -6642,6 +7361,51 @@
       "notes": "FY26 state-funded spaces: 48 infant/toddler and 40 preschool. An allocation, not current openings. Licence/registry: DCCC.70356; Registry 8084. Local partner: New Britain LGP -- Christopher Badenhop | badenhop@csdnb.org | 860-827-2240. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recKVELR5gWCgRnmT",
+      "name": "New Britain-Berlin YMCA STEAM Explorations Camp",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": "K'NEX, LEGO building, rocketry, Ozobot coding, and engineering challenges",
+      "town": "New Britain and Berlin",
+      "address": null,
+      "ages": "Ages 7–14",
+      "hours": "Half-day session, June 22–26, 2026",
+      "availability": null,
+      "cost": "Member $238; non-member $248; $35 one-time summer registration fee",
+      "website": "https://www.nbbymca.org/programs/camp/camp-offerings/stem-camps/",
+      "contact": null,
+      "townsServed": [
+        "New Britain",
+        "Berlin"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "recDS08wHKxQz9Fi1",
+      "name": "New Haven Afterschool Initiative",
+      "track": "Family & Childcare",
+      "category": "Afterschool Enrichment",
+      "specificType": null,
+      "town": "New Haven",
+      "address": "20 New Haven Public School sites",
+      "ages": "New Haven Public Schools students in grades K–8",
+      "hours": "2026–2027: every school day through 5:30 p.m.; fall session September 9–December 22 and spring January 4–June 16",
+      "availability": null,
+      "cost": "$25 per week; free for qualifying families receiving Care4Kids, SNAP, or other assistance",
+      "website": "https://afterschoolhq.com/NHAI",
+      "contact": null,
+      "townsServed": [
+        "New Haven"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Citywide partnership of New Haven Public Schools, City of New Haven, Youth and Recreation, Boys & Girls Clubs of Greater New Haven, and New Haven Counts. K–4 receives homework help and enrichment; grades 5–8 receive math tutoring, SEL, sports, and homework help. No bus transportation home."
+    },
+    {
       "id": "rec4M4EuEuTIIHQ6b",
       "name": "New Haven BOE at Columbus Family Academy",
       "track": "Family & Childcare",
@@ -6730,26 +7494,72 @@
       "notes": "FY26 state-funded spaces: 27 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 1520. Local partner: New Haven LGP -- Kerry Oberg | koberg@uwgnh.org | 203-691-4208. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recSuFjnaOduxluvf",
+      "name": "New Haven Reads One-on-One Tutoring",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": null,
+      "town": "New Haven",
+      "address": "45 Bristol Street, New Haven, CT 06511",
+      "ages": "Children who need literacy support; confirm current grade eligibility during intake",
+      "hours": "Individual after-school tutoring; current appointment schedule arranged through the program",
+      "availability": null,
+      "cost": "Free",
+      "website": "https://newhavenreads.org/",
+      "contact": "203-752-1923",
+      "townsServed": [
+        "New Haven"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Free individually planned one-on-one literacy tutoring, educational family support, and community book bank."
+    },
+    {
       "id": "recpOPuSVdMPe7CtE",
       "name": "New Haven YMCA Youth Center",
       "track": "Family & Childcare",
       "category": "Center-Based Daycare",
       "specificType": "State-funded Early Start CT provider (Child Care Center) -- 28 infant/toddler and 40 preschool and 20 school-age funded spaces FY26",
       "town": "New Haven",
-      "address": "52 Howe St, New Haven, CT, 06511",
-      "ages": "Infant/Toddler; Preschool; School age",
-      "hours": null,
+      "address": "50 Howe Street, New Haven, CT 06511",
+      "ages": "Toddlers ages 1–2; preschool ages 3–5; after-school ages 5–12",
+      "hours": "Full-day, year-round toddler and preschool programs; after-school care",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
-      "website": null,
-      "contact": "Aishah Brice | (203) 776-9622",
+      "website": "https://cccymca.org/locations/newhaven/child-care/",
+      "contact": "203-776-9622",
       "townsServed": [
         "New Haven"
       ],
       "rating": null,
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
-      "notes": "FY26 state-funded spaces: 28 infant/toddler and 40 preschool and 20 school-age. An allocation, not current openings. Licence/registry: DCCC.14328; Registry 1697. Local partner: New Haven LGP -- Kerry Oberg | koberg@uwgnh.org | 203-691-4208. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+      "notes": "OEC-licensed toddler program, school readiness, NAEYC-accredited preschool, and after-school care. Official 2026–2027 information verified August 25, 2026."
+    },
+    {
+      "id": "recNldwKxygGbCErC",
+      "name": "New Haven YMCA Youth Center Summer Care",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "New Haven",
+      "address": "50 Howe Street, New Haven, CT 06511",
+      "ages": "Children and teens",
+      "hours": "Summer program; transportation connection to Camp Mountain Laurel described",
+      "availability": null,
+      "cost": "Fees vary; financial assistance available",
+      "website": "https://cccymca.org/locations/newhaven/camp/",
+      "contact": "203-776-9622",
+      "townsServed": [
+        "New Haven",
+        "Hamden",
+        "North Haven"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Swimming, trips, arts and crafts, outdoor programs, and access to Camp Mountain Laurel. Official YMCA page verified August 25, 2026."
     },
     {
       "id": "recLws3De9y9iY8r4",
@@ -6774,6 +7584,28 @@
       "notes": "FY26 state-funded spaces: 45 preschool. An allocation, not current openings. Licence/registry: DCCC.13749; Registry 1683. Local partner: Windham LGP -- Karla Alamo | kalamo@windhamct.gov | 860-450-2122. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recjW384mokxiTfWs",
+      "name": "New HYTEs After-School Program",
+      "track": "Family & Childcare",
+      "category": "Afterschool Enrichment",
+      "specificType": null,
+      "town": "New Haven",
+      "address": null,
+      "ages": "Elementary, middle, and high-school youth; eligibility varies by program",
+      "hours": "After-school and summer programs; current detailed schedule requires confirmation",
+      "availability": null,
+      "cost": "Confirm with program",
+      "website": "https://newhytes.org/",
+      "contact": null,
+      "townsServed": [
+        "New Haven"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Tennis, academic support, math and literacy tutoring, life skills, character development, and preparation for postsecondary success. Latest school-year page found was 2025–2026."
+    },
+    {
       "id": "recCU1UotnP40F6IY",
       "name": "New London BOE at Early Childhood Center at B.P. Learned Mission",
       "track": "Family & Childcare",
@@ -6794,6 +7626,28 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 40 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 9662. Local partner: New London LGP -- Kelly Davis | kdavis@learn.k12.ct.us | 860-434-4800 ext. 1128. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recyCUEh9mBGw0YZN",
+      "name": "Newtown Community Center Summer Camps",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Newtown",
+      "address": null,
+      "ages": "Ages 3–12 depending on camp; core Summer Bash program for grades K–6",
+      "hours": "Weekly camps June 22–August 21, 2026; full-day and half-day options",
+      "availability": null,
+      "cost": "Typical 2026 weekly fees range from $165 to $245 depending on camp and membership",
+      "website": "https://newtowncommunitycenter.org/programs/summer-camp/",
+      "contact": "203-270-4349; matthew.ariniello@newtown-ct.gov",
+      "townsServed": [
+        "Newtown"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Includes Summer Bash, preschool, swimming, art, cooking, nature, and specialty programs. Official 2026 page verified August 25, 2026."
     },
     {
       "id": "recV8EugIU3IJURVJ",
@@ -7544,6 +8398,26 @@
       "notes": "FY26 state-funded spaces: 4 infant/toddler. An allocation, not current openings. Licence/registry: DCFH.57438; Registry 9425. Local partner: Hartford LGP -- Tamika Thurston | tamika.thurston@hartford.gov | 860-757-9898. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recTdbYcZoEFmFcih",
+      "name": "Redding Parks & Recreation Summer Camps",
+      "track": "Family & Childcare",
+      "category": "Municipal/Parks & Rec Camp",
+      "specificType": "Wide range of municipal camps focused on friendship, personal growth, fitness, safety, and trying new activities",
+      "town": "Redding",
+      "address": null,
+      "ages": null,
+      "hours": "Summer schedule varies by camp",
+      "availability": null,
+      "cost": "Fees vary by camp",
+      "website": "https://reddingct.gov/parks-and-recreation/programs/camps/summer-camps/",
+      "contact": null,
+      "townsServed": [],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official Town of Redding page verified August 25, 2026. Review current registration listings for session availability."
+    },
+    {
       "id": "recXkcKl6RfDxLL8f",
       "name": "Regional Center for Early Learning",
       "track": "Family & Childcare",
@@ -7767,6 +8641,28 @@
       "notes": "FY26 state-funded spaces: 6 infant/toddler. An allocation, not current openings. Licence/registry: DCFH.56464; Registry 7207. Local partner: New Britain LGP -- Christopher Badenhop | badenhop@csdnb.org | 860-827-2240. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recMQ7nEjpv1zHbzC",
+      "name": "Samuel S. Gray Jr. Boys & Girls Club Summer Fun Club",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Hartford",
+      "address": "170 Sigourney Street, Hartford, CT",
+      "ages": "Ages 6–12",
+      "hours": "June 29–August 14, 2026; Monday–Friday, 9 a.m.–5 p.m.; early care from 8 a.m.",
+      "availability": null,
+      "cost": "$700; early care $100; early-bird and possible Care4Kids or scholarship support",
+      "website": "https://www.bgchartford.org/summers-at-the-club",
+      "contact": "860-929-7690; swilliams@bgchartford.com",
+      "townsServed": [
+        "Hartford"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Arts, sciences, athletics, field trips, and meals. Official 2026 program page verified August 25, 2026."
+    },
+    {
       "id": "recjnulgOQjVu5YUV",
       "name": "Santa Hernandez Family Child Care Home",
       "track": "Family & Childcare",
@@ -7809,6 +8705,28 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 18 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 1677. Local partner: Eastern CT LGP -- Maggie Francis-Gietzen | mfrancisgietzen@ec.eastconn.org | 860-455-1532. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recEkDDiK10hExmak",
+      "name": "Seaside Park Summer Day Camp",
+      "track": "Family & Childcare",
+      "category": "Municipal/Parks & Rec Camp",
+      "specificType": "Seaside Park, ages 5–10",
+      "town": "Bridgeport",
+      "address": null,
+      "ages": null,
+      "hours": "June 29–August 21, 2026; Monday–Friday, 8:30 a.m.–2:45 p.m.",
+      "availability": null,
+      "cost": "$300",
+      "website": "https://www.bridgeportct.gov/government/departments/parks-recreation/summer-camp-information",
+      "contact": "203-576-7233 or 203-576-8080",
+      "townsServed": [
+        "Bridgeport"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official City of Bridgeport page verified August 25, 2026. Camp is closed July 3."
     },
     {
       "id": "recTBUJHhbyPJMn1O",
@@ -7877,6 +8795,50 @@
       "notes": "FY26 state-funded spaces: 31 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 9538. Local partner: Valley Early Childhood Regional Council -- Alyson Stanici | astanisci@ansonia.org | 203-736-5080 ext. 5143. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recGzXSIaCOFrQr09",
+      "name": "SigmaCamp",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": "Advanced mathematics and science residential camp",
+      "town": "Sharon",
+      "address": null,
+      "ages": "Ages 12–15",
+      "hours": "Residential program, August 1–8, 2026",
+      "availability": "2026 completed. The 2027 program is expected to be announced in January.",
+      "cost": null,
+      "website": "https://www.sigmacamp.org/2026",
+      "contact": null,
+      "townsServed": [
+        "Sharon"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "reco9tN0iGGmDTa4b",
+      "name": "SigmaNext",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": "Research-focused advanced STEM residential camp",
+      "town": "Sharon",
+      "address": null,
+      "ages": "Ages 14–17",
+      "hours": "Residential program, August 9–16, 2026",
+      "availability": "2026 applications closed.",
+      "cost": null,
+      "website": "https://www.sigmacamp.org/",
+      "contact": null,
+      "townsServed": [
+        "Sharon"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
       "id": "recUcWexLDVkJUXSm",
       "name": "Silva's Youth of Today Learning Center",
       "track": "Family & Childcare",
@@ -7941,6 +8903,28 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 6 infant/toddler. An allocation, not current openings. Licence/registry: DCFH.56092; Registry 9799. Local partner: East Hartford LGP -- Thomas Anderson | anderson.t@easthartford.org | 860-622-5107. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "rec4SfgwFUaR84f1r",
+      "name": "South End Boys & Girls Club Summer Fun Club",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Hartford",
+      "address": "129 Ledyard Street, Hartford, CT",
+      "ages": "Ages 6–12",
+      "hours": "June 29–August 14, 2026; Monday–Friday, 9 a.m.–5 p.m.; early care from 8 a.m.",
+      "availability": null,
+      "cost": "$700; early care $100; early-bird and possible Care4Kids or scholarship support",
+      "website": "https://www.bgchartford.org/summers-at-the-club",
+      "contact": "959-255-6472; kingram@bgchartford.org",
+      "townsServed": [
+        "Hartford"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Arts, sciences, athletics, field trips, and meals. Official 2026 program page verified August 25, 2026."
     },
     {
       "id": "rec2tHyrFKtZMhmBI",
@@ -8207,6 +9191,50 @@
       "notes": "FY26 state-funded spaces: 16 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 6431. Local partner: Stamford LGP -- D'Naysha Brown | dbrown@stamfordct.gov | 203-977-4589. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recq1vQRsz4gPIKrA",
+      "name": "Stamford JCC Day Camps at The J",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Stamford",
+      "address": null,
+      "ages": "Programs begin with ages 3–4 and continue through older youth divisions",
+      "hours": "Flexible partial-day and full-day summer programs; schedules vary by division",
+      "availability": null,
+      "cost": "Fees vary by division",
+      "website": "https://www.stamfordjcc.org/daycampsatthej/",
+      "contact": null,
+      "townsServed": [
+        "Stamford"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Age-based camps with sports and swim instruction. Official Stamford JCC page verified August 25, 2026."
+    },
+    {
+      "id": "reczyrejy2jkOZfMx",
+      "name": "Stamford Parks & Recreation Summer Camps",
+      "track": "Family & Childcare",
+      "category": "Municipal/Parks & Rec Camp",
+      "specificType": "Multiple day camps and playground/activity programs; individual age ranges vary",
+      "town": "Stamford",
+      "address": null,
+      "ages": null,
+      "hours": "2026 summer sessions; registration began March 10, 2026",
+      "availability": null,
+      "cost": "Fees vary by program",
+      "website": "https://www.stamfordrecreation.com/summer-camp",
+      "contact": null,
+      "townsServed": [
+        "Stamford"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official Stamford Recreation page verified August 25, 2026. Includes Heroy, TOR, Star Center, Stillmeadow, and Springdale programs."
+    },
+    {
       "id": "recOXxeao3JGEJgw5",
       "name": "Stepping Stones Early Learning Lab School",
       "track": "Family & Childcare",
@@ -8251,6 +9279,28 @@
       "notes": "FY26 state-funded spaces: 29 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 6260. Local partner: Northeast Early Childhood Council (NECC) -- Kristine Cicchetti | mrscicch95@sbcglobal.net | 860-431-0830. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recqV3M1L87baGpt8",
+      "name": "Sterling House Community Center Summer Camp",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Stratford",
+      "address": "2283 Main Street, Stratford, CT 06615",
+      "ages": "Ages 4–13; CIT and volunteer opportunities for grades 9–12",
+      "hours": "Summer program; current application status shown on official page",
+      "availability": null,
+      "cost": "See official camp information",
+      "website": "https://www.sterlingcommunitycenter.org/summer-camp",
+      "contact": null,
+      "townsServed": [
+        "Stratford"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Community-center camp with teen leadership opportunities. Official page verified August 25, 2026; applications were shown as closed when checked."
+    },
+    {
       "id": "recqh52UZO6ZzS7zh",
       "name": "Stratford BOE At Stratford Academy Victoria Soto School",
       "track": "Family & Childcare",
@@ -8271,6 +9321,28 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 124 preschool. An allocation, not current openings. Licence/registry: DCEX.80616; Registry 2031. Local partner: Stratford LGP -- Suzanne Porco Clements | clements@cestrumbull.org | 203-365-8213. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recnl2GtlJPEbwCyX",
+      "name": "Sunny Daze Summer Fun",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Stamford",
+      "address": null,
+      "ages": "Children and youth; see registration materials for age groups",
+      "hours": "2026 summer program; member registration opened February 17 and public registration March 1",
+      "availability": null,
+      "cost": "See official registration",
+      "website": "https://www.bgcastamford.org/sunny-daze-summer-fun-2026/",
+      "contact": "203-324-0594 or 203-323-3547; jmorales@bgcastamford.org",
+      "townsServed": [
+        "Stamford"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Boys & Girls Club of Stamford official 2026 page verified August 25, 2026."
     },
     {
       "id": "rec0E4L5yrHOfvEjc",
@@ -9153,6 +10225,28 @@
       "notes": "FY26 state-funded spaces: 36 infant/toddler and 100 preschool. An allocation, not current openings. Licence/registry: DCCC.15931; Registry 1395. Local partner: New London LGP -- Kelly Davis | kdavis@learn.k12.ct.us | 860-434-4800 ext. 1128. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recewCuFgmUXrd7LK",
+      "name": "UConn AI Summer Camp",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": "Artificial intelligence, programming, responsible use, and engineering",
+      "town": "Storrs",
+      "address": null,
+      "ages": "Rising grades 9–12; younger students who completed Algebra I may apply",
+      "hours": "July 27–31, 2026; attendance required all five days",
+      "availability": "2026 first-consideration deadline was July 1.",
+      "cost": null,
+      "website": "https://vergnano.institute.uconn.edu/programs-opportunities/ai-summer-camp/",
+      "contact": null,
+      "townsServed": [
+        "Mansfield"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
       "id": "rec5niPZqG2bEPVYH",
       "name": "Uconn Child Development Laboratories",
       "track": "Family & Childcare",
@@ -9173,6 +10267,96 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 5 preschool. An allocation, not current openings. Licence/registry: DCCC.13495; Registry 1639. Local partner: Mansfield LGP -- Jocelyn Santiago | SantiagoJ@mansfieldct.org | 860-429-3338. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recznuF6pGME3ONfW",
+      "name": "UConn Explore Engineering",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": "Two-week residential introduction to engineering majors",
+      "town": "Storrs",
+      "address": null,
+      "ages": "Rising high school students",
+      "hours": "Residential program, July 12–24, 2026",
+      "availability": "Summer 2026 applications closed.",
+      "cost": null,
+      "website": "https://vergnano.institute.uconn.edu/programs-opportunities/explore-engineering/",
+      "contact": null,
+      "townsServed": [
+        "Mansfield"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "recoIidDuGmfcW9pP",
+      "name": "UConn Navy STEM Boat Camp",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": "STEM, engineering, boats, and ocean exploration",
+      "town": "Groton, Hartford, and New Haven",
+      "address": null,
+      "ages": "Students entering grades 5 or 6 in fall 2026",
+      "hours": "Monday–Friday, 9:00 AM–4:00 PM; New Haven July 13–17, Groton July 20–24, Hartford August 3–7, 2026",
+      "availability": "2026 application deadline was May 29.",
+      "cost": "$150 per student per week; financial aid available",
+      "website": "https://navy-stem.uconn.edu/summer-programs/boat-camp/",
+      "contact": null,
+      "townsServed": [
+        "Groton",
+        "Hartford",
+        "New Haven"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "recVX1ty38aS1CECf",
+      "name": "UConn SPARK Summer Program",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": "Project-based engineering, science, invention, and innovation camp",
+      "town": "Storrs",
+      "address": null,
+      "ages": "Middle school girls interested in STEM",
+      "hours": "Residential weekly sessions: June 28–July 3, July 5–10, and July 12–17, 2026",
+      "availability": "2026 application deadline was May 1.",
+      "cost": null,
+      "website": "https://vergnano.institute.uconn.edu/programs-opportunities/spark-summer-program/",
+      "contact": null,
+      "townsServed": [
+        "Mansfield"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "recJ9jvcn68KF4u51",
+      "name": "University of Hartford Summer Place Robotics & Coding Camp",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": "Two-week robotics and coding program using C, Python, microcontrollers, and mobile robots",
+      "town": "West Hartford",
+      "address": null,
+      "ages": "Rising grades 9–11",
+      "hours": "June 29–July 10, 2026; camper arrival 8:30 AM; robotics and coding 9:00 AM–12:00 PM; lunch 12:00–1:00 PM; pickup 1:00 PM; no camp July 3",
+      "availability": null,
+      "cost": null,
+      "website": "https://www.hartford.edu/community/summerplace/robotics-coding/",
+      "contact": null,
+      "townsServed": [
+        "West Hartford"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
     },
     {
       "id": "recJRXlti6eYNWbyr",
@@ -9305,6 +10489,28 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 30 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 1838. Local partner: Southeast CT LGP -- Linda Allen | lallen@learn.k12.ct.us | 860-434-4800. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "rec2KI5TR2vwzuRDH",
+      "name": "Wakeman Boys & Girls Club Summer Day Camp",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Bridgeport and Fairfield",
+      "address": "Bridgeport and Fairfield clubhouses",
+      "ages": "Grades K–8",
+      "hours": "Weekly themed full-day camps; before and after care available",
+      "availability": null,
+      "cost": "Fees vary by site and week",
+      "website": "https://www.wakemanclub.org/summer-camp",
+      "contact": null,
+      "townsServed": [
+        "Bridgeport"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Arts, sports, STEM, and indoor/outdoor activities. Official program page verified August 25, 2026."
     },
     {
       "id": "rec8XPsVM3zKSV1jf",
@@ -9703,6 +10909,28 @@
       "notes": "FY26 state-funded spaces: 12 preschool. An allocation, not current openings. Licence/registry: DCCC.13435; Registry 1696. Local partner: New Haven LGP -- Kerry Oberg | koberg@uwgnh.org | 203-691-4208. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recbw0lezgS4S4bDY",
+      "name": "Wheeler Regional Family YMCA Early Childhood and School-Age Care",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": null,
+      "town": "Plainville",
+      "address": "123 and 149 Farmington Avenue, Plainville, CT",
+      "ages": "Infants, toddlers, preschoolers, and school-age children",
+      "hours": "Preschool and early care plus before school from 6:30–8:30 a.m. and after school from 3:30–6 p.m.",
+      "availability": null,
+      "cost": "2026 monthly rates vary by schedule",
+      "website": "https://www.ghymca.org/facility/wheeler-regional-family-ymca-preschool",
+      "contact": "860-793-9631; wheelery@ghymca.org",
+      "townsServed": [
+        "Plainville"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Official YMCA childcare page verified August 25, 2026."
+    },
+    {
       "id": "recCdYozIAQpSpSnk",
       "name": "Whitney Center",
       "track": "Elder Care",
@@ -9751,6 +10979,28 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 15 infant/toddler and 8 preschool. An allocation, not current openings. Licence/registry: DCCC 70713; Registry 11921. Local partner: Hartford LGP -- Tamika Thurston | tamika.thurston@hartford.gov | 860-757-9898. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recraGAzyt1MPJVmW",
+      "name": "Wilson-Gray YMCA Early Childhood and School-Age Care",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": null,
+      "town": "Hartford",
+      "address": null,
+      "ages": "Infants, toddlers, preschoolers, and school-age children",
+      "hours": "Preschool Monday–Friday, 7 a.m.–6 p.m.; before school 7–8:45 a.m.; after school 3:30–6 p.m.",
+      "availability": null,
+      "cost": "2026 pricing varies by program; before/after school listed from $225 to $410 monthly",
+      "website": "https://www.ghymca.org/facility/wilson-gray-ymca-infant-toddler-care-preschool",
+      "contact": null,
+      "townsServed": [
+        "Hartford"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Infant, toddler, preschool, and school-age options. Official YMCA page verified August 25, 2026."
     },
     {
       "id": "recQuCyoBH1fY3Meh",
@@ -9861,6 +11111,72 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 88 infant/toddler and 111 preschool. An allocation, not current openings. Licence/registry: DCCC.14248; Registry 1753. Local partner: Hartford LGP -- Tamika Thurston | tamika.thurston@hartford.gov | 860-757-9898. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recX9CgohEyCYo6dY",
+      "name": "Yale Pathways to Science Summer Scholars",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": "STEM workshops and college preparation for invited Pathways Scholars",
+      "town": "New Haven",
+      "address": null,
+      "ages": "Eligible Pathways Scholars entering grades 10–12",
+      "hours": "Two-week July program with more than 20 weeklong STEM workshops",
+      "availability": "2026 applications were sent to eligible scholars in January and were due February 24.",
+      "cost": "Free",
+      "website": "https://onha.yale.edu/public-schools-and-youth/k-12-program-library/pathways-to-science-summer-scholars-program",
+      "contact": null,
+      "townsServed": [
+        "New Haven"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
+    },
+    {
+      "id": "recbcMrHbJV01F38Q",
+      "name": "Yale Splash and Sprout",
+      "track": "Family & Childcare",
+      "category": "Academic/Enrichment Camp",
+      "specificType": null,
+      "town": "New Haven",
+      "address": "Yale University campus, New Haven, CT",
+      "ages": "Splash: grades 7–12; Sprout eligibility varies by semester",
+      "hours": "Splash is generally a one-day Saturday program; Sprout runs on three consecutive Saturdays",
+      "availability": null,
+      "cost": "Latest verified Splash fee was $25 including lunch; full financial aid was available",
+      "website": "https://yale.learningu.org/faq.html",
+      "contact": "yalesplash@gmail.com",
+      "townsServed": [
+        "New Haven"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Yale undergraduates teach student-selected classes across arts, humanities, science, technology, and other subjects. Latest confirmed event was Fall 2025; a 2026 student registration cycle could not yet be verified."
+    },
+    {
+      "id": "recPm7aQp6pt2n7QJ",
+      "name": "Yale Young Scholars Summer Program in Biostatistics and Clinical Research",
+      "track": "Children & Youth",
+      "category": "STEM/Tech Camp",
+      "specificType": "Biostatistics, clinical research, study design, and public health data",
+      "town": "New Haven",
+      "address": null,
+      "ages": "Students entering grades 11 and 12 who excel in mathematics",
+      "hours": null,
+      "availability": "2026 application information was released February 1, 2026.",
+      "cost": null,
+      "website": "https://ysph.yale.edu/ycas/young-scholars/",
+      "contact": null,
+      "townsServed": [
+        "New Haven"
+      ],
+      "rating": null,
+      "submittedBy": "ChatGPT Statewide STEM Search",
+      "dateSubmitted": "2026-08-25",
+      "notes": null
     },
     {
       "id": "rec4gCKVNMDzw67Nc",
@@ -9993,6 +11309,54 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 16 infant/toddler and 112 preschool. An allocation, not current openings. Licence/registry: DCCC.16416; Registry 1399. Local partner: Meriden LGP -- Rhonda Knight | rknight@meridenct.gov | 203-630-4222. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recJ1eE1MhBZuSjC7",
+      "name": "YMCA of Greater Hartford Day Camps",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Greater Hartford area",
+      "address": "Multiple locations",
+      "ages": "Traditional day camp begins at age 5; teen leadership programs available",
+      "hours": "Weekly summer sessions vary by location",
+      "availability": null,
+      "cost": "Fees vary; financial assistance may be available",
+      "website": "https://www.ghymca.org/camping/day-camps",
+      "contact": null,
+      "townsServed": [
+        "Hartford",
+        "East Hartford",
+        "Manchester",
+        "Wethersfield",
+        "Windsor"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Multiple themed day-camp locations and Y-Bell Power Scholars Academy. Official YMCA page verified August 25, 2026."
+    },
+    {
+      "id": "recjm6axfGwlZh55D",
+      "name": "YMCA of Greenwich Summer Camp",
+      "track": "Family & Childcare",
+      "category": "Summer Day Camp",
+      "specificType": null,
+      "town": "Greenwich",
+      "address": null,
+      "ages": "Ages 6 months through grade 10; program-specific eligibility varies",
+      "hours": "Summer sessions vary by program",
+      "availability": null,
+      "cost": "Fees vary by program",
+      "website": "https://greenwichymca.org/childcare/summer-camp",
+      "contact": null,
+      "townsServed": [
+        "Greenwich"
+      ],
+      "rating": null,
+      "submittedBy": "Darice Corey",
+      "dateSubmitted": "2026-08-25",
+      "notes": "Broad camp lineup from early-childhood through teen programs. Official YMCA page verified August 25, 2026."
     },
     {
       "id": "rec5bSSo56Cr95ekr",
