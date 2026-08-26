@@ -18,11 +18,12 @@ Safety properties that matter for a directory families act on:
   * --dry-run prints exactly what would happen and writes nothing.
 
 Usage:
-    AIRTABLE_TOKEN=pat... python3 scripts/import-early-start-ct.py --dry-run
-    AIRTABLE_TOKEN=pat... python3 scripts/import-early-start-ct.py
+    AIRTABLE_IMPORT_TOKEN=pat... python3 scripts/import-early-start-ct.py --dry-run
+    AIRTABLE_IMPORT_TOKEN=pat... python3 scripts/import-early-start-ct.py
 
-Needs data.records:read and data.records:write on the base. Narrow the token
-back to read-only afterwards -- the sync workflows run unattended on it.
+Needs data.records:read and data.records:write on the base. Use a dedicated
+write-scoped AIRTABLE_IMPORT_TOKEN when possible; it falls back to
+AIRTABLE_TOKEN.
 """
 
 import argparse, csv, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
@@ -183,9 +184,9 @@ def main():
                     help='Moderation Status to set (default: Published; use "Pending Review" to stage)')
     args = ap.parse_args()
 
-    token = os.environ.get("AIRTABLE_TOKEN")
+    token = os.environ.get("AIRTABLE_IMPORT_TOKEN") or os.environ.get("AIRTABLE_TOKEN")
     if not token:
-        sys.exit("AIRTABLE_TOKEN is not set. Refusing to run.")
+        sys.exit("Set AIRTABLE_IMPORT_TOKEN (preferred) or AIRTABLE_TOKEN. Refusing to run.")
 
     rows = list(csv.DictReader(open(CSV_PATH, newline="", encoding="utf-8-sig")))
     have = existing_keys(token)

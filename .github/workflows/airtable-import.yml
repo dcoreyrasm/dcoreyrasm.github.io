@@ -7,9 +7,8 @@ name: Airtable bulk import (manual)
 # Airtable token lives in this repo's secrets and nothing outside Actions can
 # read it.
 #
-# Requires AIRTABLE_TOKEN to carry data.records:write for the run. Narrow it
-# back to data.records:read afterwards -- it is the same secret the two sync
-# workflows use unattended every six hours.
+# Prefer a dedicated AIRTABLE_IMPORT_TOKEN with data.records:write for this
+# run. If not set, the importer falls back to AIRTABLE_TOKEN.
 #
 # The importer is idempotent: every row is keyed on its licence/registry id and
 # checked against the table first, so re-running adds nothing. Start with
@@ -47,6 +46,7 @@ jobs:
 
       - name: Import
         env:
+          AIRTABLE_IMPORT_TOKEN: ${{ secrets.AIRTABLE_IMPORT_TOKEN }}
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
         run: |
           python3 scripts/import-early-start-ct.py \
