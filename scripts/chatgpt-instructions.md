@@ -21,6 +21,11 @@ parent filtering for inclusive camps sees half of them. The site's category map
 (`village-notes/script.js`) has to be patched by hand each time to compensate,
 and anything unmapped falls into an "Other" bucket that tells a parent nothing.
 
+It also covers **Services Offered**, which is the opposite problem: not a field
+being filled in wrongly but one being left empty. It was blank on 492 of 547
+records, and since the site now lets a service stand in for its matching
+category when a parent filters, an empty one hides most of what a place does.
+
 ## The prompt
 
 ```
@@ -114,6 +119,84 @@ CATEGORY — exactly one value, from this list only:
 - Teen Program
 - Medical / Diagnosis-Specific Camp
 
+SERVICES OFFERED — multi-select. This is the one field where a listing gets to
+say everything it does, and it matters more than it looks.
+
+Category is a single select, so it can only name what a place is mainly for. A
+YMCA centre that runs infant rooms, toddler rooms, a preschool and after-school
+care has to be filed under one of those four. The site now treats a service as
+equivalent to its matching category when a parent filters, so whatever you put
+here is what that centre can be found by. Leave it blank and three quarters of
+what the place does is invisible.
+
+So: tag every service the provider's own materials confirm. "Infants, toddlers,
+preschoolers, and school-age children" earns Infant Care, Toddler Care,
+Preschool / Pre-K and After-School Care — four tags, one sentence, no guessing.
+
+Pick only from this list:
+- Infant Care
+- Toddler Care
+- Preschool / Pre-K
+- Full-Day Childcare
+- Before-School Care
+- After-School Care
+- Before- and After-School Care
+- School Vacation Care
+- Child Care
+- Summer Day Camp
+- Summer Sleepaway Camp
+- Summer Camp
+- Specialty Camp
+- Afterschool Enrichment
+- Arts Enrichment
+- STEM Enrichment
+- Sports Enrichment
+- Literacy / Tutoring
+- Mentoring
+- College Access / Readiness
+- Youth Leadership
+- Youth Employment
+- Teen Program
+- Teen / CIT Program
+- Volunteer Opportunity
+- Adaptive Program
+- Disability Support
+- Parent / Family Support
+- Caregiver Support
+- Elder Care
+- Transportation
+
+Five traps, every one of which a first automated pass over the existing records
+fell into before being corrected. They are easy to make and hard to spot:
+
+1. A source citation is not a service. "Official Connecticut Aging and
+   Disability Services source verified 2026-08-25" describes who published the
+   page. It was tagging six elder listings Disability Support.
+2. A denial is not a confirmation. "Licensing, food, transportation, financial
+   aid, and accommodation details were not confirmed on the provider page" is
+   the opposite of a transportation service. So is "families must arrange
+   school-bus transportation".
+3. Referring is not providing. Birth-to-Three serves infants; it does not run a
+   nursery. 211 and WIC mention infants for the same reason. Tagging any of
+   them Infant Care sends a parent hunting for daycare to a phone line.
+4. An amenity is not a programme. A retirement community with an art studio is
+   not somewhere to send a child to do art. Keep youth enrichment tags off
+   Elder Care listings.
+5. Arts / STEM / Sports Enrichment mean the programme includes those
+   activities. They do not mean it is an arts camp or a STEM camp — that is
+   what Category is for.
+
+The rule behind all five: tag what the source states, not what the name
+suggests. An untagged listing is honest. A wrongly tagged one sends a family to
+a place that cannot take their child.
+
+scripts/derive-services.py in the site repo is the working version of these
+rules, if you want to see how an edge case was decided.
+
+AGE GROUPS SERVED — multi-select, fill it in where the source states ages. The
+site does not read this field yet, so Services Offered comes first if you only
+have time for one.
+
 TOWNS SERVED — multi-select, real Connecticut town names only, plus the single
 option "Statewide (all of Connecticut)" for programs with no geographic limit.
 A region is not a town: never add "Greater New Haven", "Fairfield County", or
@@ -145,7 +228,7 @@ provider's own website over an aggregator.
 
 ## Keeping this current
 
-The Category list above is a snapshot of the field as of 2026-08-26, with the
-four known duplicates removed. If options are added or merged in Airtable,
+The Category and Services Offered lists above are snapshots of those fields as
+of 2026-08-26, with the four known duplicate categories removed. If options are added or merged in Airtable,
 update this file and re-paste the prompt — a stale list here recreates the exact
 problem it exists to prevent.
