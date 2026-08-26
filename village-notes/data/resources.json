@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-26T02:23:50.175Z",
+  "generated": "2026-08-26T06:38:37.740Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "Moderation Status = \"Published\""
   },
-  "count": 524,
+  "count": 531,
   "tracks": [
     "Elder Care",
     "Family & Childcare"
@@ -96,6 +96,7 @@
     "Meriden",
     "Middletown",
     "Milford",
+    "Monroe",
     "Naugatuck",
     "New Britain",
     "New Britain and Berlin",
@@ -1216,6 +1217,130 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 18 infant/toddler and 49 preschool. An allocation, not current openings. Licence/registry: DCCC.15020; Registry 836. Local partner: Middletown LGP -- Dawn Dubay | dubayd@mpsct.org | 860-346-7354. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recbNUEa2XaSwVpfc",
+      "name": "BrightPath Newtown Child Care Center",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": "Infant through school-age child care",
+      "town": "Newtown",
+      "address": "2 Saw Mill Road, Newtown, CT 06470",
+      "ages": "6 weeks to 12 years",
+      "hours": "6:30 AM–6:00 PM; days not stated on official page",
+      "website": "https://brightpathkids.com/us/locations/newtown",
+      "contact": "860-580-5328",
+      "townsServed": [
+        "Newtown"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "Official center page confirms care from 6 weeks to 12 years, an infant program for 6 weeks to 18 months, NAEYC accreditation, and licensing. Contact the center for openings. Verified 2026-08-26.",
+      "servicesOffered": [
+        "Child Care",
+        "Infant Care"
+      ],
+      "scheduleWindow": [
+        "Full day / full workday"
+      ],
+      "startTime": "06:30",
+      "endTime": "18:00",
+      "licensing": "Licensed",
+      "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "recOWGlEOKgOoJUi0",
+      "name": "BrightPath Oxford Child Care Center",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": "Infant and early childhood care",
+      "town": "Oxford",
+      "address": "290 Main Street, Oxford, CT 06478",
+      "ages": "Infant program: 6 weeks to 18 months; other age programs listed on provider page",
+      "hours": "6:30 AM–6:00 PM; days not stated on official page",
+      "website": "https://brightpathkids.com/us/locations/oxford",
+      "contact": "860-580-5328",
+      "townsServed": [
+        "Oxford"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "Official center page confirms an infant program for ages 6 weeks to 18 months and licensed capacity for 230 children. Contact the center for openings. Verified 2026-08-26.",
+      "servicesOffered": [
+        "Child Care",
+        "Infant Care"
+      ],
+      "scheduleWindow": [
+        "Full day / full workday"
+      ],
+      "startTime": "06:30",
+      "endTime": "18:00",
+      "licensing": "Licensed",
+      "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "rec3FA84duhLIN2JO",
+      "name": "BrightPath Redding Child Care Center",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": "Infant and early childhood care",
+      "town": "Redding",
+      "address": "20 Portland Avenue, Redding, CT 06896",
+      "ages": "Infant program: 6 weeks to 18 months; other age programs listed on provider page",
+      "hours": "6:30 AM–6:00 PM; days not stated on official page",
+      "website": "https://brightpathkids.com/us/locations/redding",
+      "contact": "860-580-5328",
+      "townsServed": [
+        "Redding"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "Official center page confirms an infant program for ages 6 weeks to 18 months, licensed capacity for 144 children, and NAEYC accreditation. Contact the center for openings. Verified 2026-08-26.",
+      "servicesOffered": [
+        "Child Care",
+        "Infant Care"
+      ],
+      "scheduleWindow": [
+        "Full day / full workday"
+      ],
+      "startTime": "06:30",
+      "endTime": "18:00",
+      "licensing": "Licensed",
+      "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "recYLItpwVUM2roRa",
+      "name": "BrightPath Trumbull-Shelton Child Care Center",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": "Infant, toddler, preschool, and pre-K child care",
+      "town": "Trumbull",
+      "address": "111 Merritt Boulevard, Trumbull, CT 06611",
+      "ages": "6 weeks to 5 years",
+      "hours": "6:30 AM–6:00 PM; days not stated on official page",
+      "website": "https://brightpathkids.com/us/locations/trumbull",
+      "contact": "860-580-5328",
+      "townsServed": [
+        "Trumbull"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "Official location page confirms infant care from 6 weeks to 18 months, toddler care from 18 months to 3 years, preschool and pre-K, CT Care for Kids acceptance, healthy meals and snacks, NAEYC accreditation, and licensed capacity for 269 children. Verified 2026-08-26.",
+      "care4Kids": "Yes",
+      "servicesOffered": [
+        "Child Care",
+        "Infant Care",
+        "Toddler Care",
+        "Preschool / Pre-K"
+      ],
+      "meals": "Healthy meals and snacks",
+      "scheduleWindow": [
+        "Full day / full workday"
+      ],
+      "startTime": "06:30",
+      "endTime": "18:00",
+      "licensing": "Licensed",
+      "lastVerified": "2026-08-26"
     },
     {
       "id": "recVGzXxliONC9gkx",
@@ -6252,6 +6377,45 @@
       "notes": "FY26 state-funded spaces: 23 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 7726. Local partner: Milford LGP -- Mary Stone | mstone@aces.org | 203-783-3422. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
     },
     {
+      "id": "recyTjRhksIvmI2yM",
+      "name": "Milford KinderCare",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": "Infant through school-age child care",
+      "town": "Milford",
+      "address": "39 Wellington Rd, Milford, CT 06461",
+      "ages": "6 weeks to 12 years",
+      "hours": "Monday–Friday, 6:30 AM–6:00 PM",
+      "website": "https://www.kindercare.com/our-centers/milford/ct/301676",
+      "contact": "866-232-9308",
+      "townsServed": [
+        "Milford"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "Official center page lists infant daycare as available, toddler daycare as upcoming availability, preschool as available, NAEYC accreditation, and state licensing. Verify current openings with the center. Verified 2026-08-26.",
+      "servicesOffered": [
+        "Child Care",
+        "Infant Care",
+        "Toddler Care",
+        "Preschool / Pre-K"
+      ],
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "scheduleWindow": [
+        "Full day / full workday"
+      ],
+      "startTime": "06:30",
+      "endTime": "18:00",
+      "licensing": "Licensed",
+      "lastVerified": "2026-08-26"
+    },
+    {
       "id": "recND7C4NQ8p0SSUg",
       "name": "Monica Vergara Family Child Care Home (Angels Daycare)",
       "track": "Family & Childcare",
@@ -6269,6 +6433,46 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 5 infant/toddler. An allocation, not current openings. Licence/registry: DCFH.56900; Registry 8025. Local partner: West Hartford LGP -- Amy Yarbrough | earlystartwh@gmail.com | TBD. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recUHfP94Vcc0Jugc",
+      "name": "Monroe KinderCare",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": "Infant through school-age child care",
+      "town": "Monroe",
+      "address": "304 Elm St, Monroe, CT 06468",
+      "ages": "6 weeks to 12 years",
+      "hours": "Monday–Friday, 6:30 AM–6:30 PM",
+      "website": "https://www.kindercare.com/our-centers/monroe/ct/301603",
+      "contact": "203-445-9548",
+      "townsServed": [
+        "Monroe"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "Official center page lists infant, toddler, preschool, and before/after-school programs as available, plus NAEYC accreditation and state licensing. Verified 2026-08-26.",
+      "servicesOffered": [
+        "Child Care",
+        "Infant Care",
+        "Toddler Care",
+        "Preschool / Pre-K",
+        "Before- and After-School Care"
+      ],
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "scheduleWindow": [
+        "Full day / full workday"
+      ],
+      "startTime": "06:30",
+      "endTime": "18:30",
+      "licensing": "Licensed",
+      "lastVerified": "2026-08-26"
     },
     {
       "id": "rechta3b7XpOgKiIc",
@@ -8018,6 +8222,46 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 31 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 9538. Local partner: Valley Early Childhood Regional Council -- Alyson Stanici | astanisci@ansonia.org | 203-736-5080 ext. 5143. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25."
+    },
+    {
+      "id": "recq9z5fdAIMwR5a0",
+      "name": "Shelton KinderCare",
+      "track": "Family & Childcare",
+      "category": "Center-Based Daycare",
+      "specificType": "Infant through school-age child care",
+      "town": "Shelton",
+      "address": "1 Trap Falls Rd, Shelton, CT 06484",
+      "ages": "6 weeks to 12 years",
+      "hours": "Monday–Friday, 6:30 AM–6:30 PM",
+      "website": "https://www.kindercare.com/our-centers/shelton/ct/301792",
+      "contact": "866-232-9308",
+      "townsServed": [
+        "Shelton"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-26",
+      "notes": "Official center page confirms infant care beginning at 6 weeks, NAEYC accreditation, state licensing, and full- or part-time care. Verified 2026-08-26.",
+      "servicesOffered": [
+        "Child Care",
+        "Infant Care",
+        "Toddler Care",
+        "Preschool / Pre-K",
+        "Before- and After-School Care"
+      ],
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "scheduleWindow": [
+        "Full day / full workday"
+      ],
+      "startTime": "06:30",
+      "endTime": "18:30",
+      "licensing": "Licensed",
+      "lastVerified": "2026-08-26"
     },
     {
       "id": "recGzXSIaCOFrQr09",
