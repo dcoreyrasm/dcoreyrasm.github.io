@@ -11,7 +11,14 @@
 
   var DATA_URL = '/village-notes/data/resources.json';
 
-  var state = { all: [], search: '', track: '', categories: [], towns: [], flags: {} };
+  var state = { all: [], search: '', track: '', categories: [], towns: [], flags: {},
+               sort: 'name', shown: 0 };
+
+  // Cards are built as HTML strings; 524 of them at once is the slowest thing
+  // the page does. Rendering a screenful and extending on demand keeps the
+  // first paint quick without hiding anything -- the count above always
+  // reports the full match, and Show more walks the rest.
+  var PAGE = 60;
 
   var el = {
     search:     document.getElementById('vn-search'),
@@ -34,6 +41,8 @@
     empty:      document.getElementById('vn-empty'),
     emptyBody:  document.getElementById('vn-empty-body'),
     resultline: document.getElementById('vn-resultline'),
+    sort:       document.getElementById('vn-sort'),
+    showMore:   document.getElementById('vn-showmore'),
     countBadge: document.getElementById('vn-count-badge'),
     updated:    document.getElementById('vn-updated')
   };
@@ -272,6 +281,39 @@
     '</article>';
   }
 
+  /* ---------- sorting ---------- */
+
+  // What a family actually came for. A listing with real hours, a real waitlist
+  // note and a real cost is worth more than one with a phone number, so
+  // "detail" ranks on those rather than on how many fields are populated.
+  var DETAIL_FIELDS = ['hours', 'availability', 'cost', 'website', 'ages', 'contact'];
+
+  function detailScore(r) {
+    var n = 0;
+    DETAIL_FIELDS.forEach(function (k) { if (has(r[k])) n++; });
+    // The imported boilerplate is not a real availability note; it says
+    // "contact the program". Do not let it count as knowledge we have.
+    if (/^Contact the program directly/i.test(r.availability || '')) n--;
+    if (r.rating) n++;
+    return n;
+  }
+
+  function byName(a, b) { return String(a.name || '').localeCompare(String(b.name || '')); }
+
+  var SORTS = {
+    name:     byName,
+    town:     function (a, b) {
+                return String(a.town || '').localeCompare(String(b.town || '')) || byName(a, b);
+              },
+    detail:   function (a, b) { return detailScore(b) - detailScore(a) || byName(a, b); },
+    needs:    function (a, b) { return detailScore(a) - detailScore(b) || byName(a, b); },
+    verified: function (a, b) {
+                var av = a.lastVerified || a.dateSubmitted || '';
+                var bv = b.lastVerified || b.dateSubmitted || '';
+                return bv.localeCompare(av) || byName(a, b);
+              }
+  };
+
   /* ---------- filtering ---------- */
 
   // Coverage flag rather than a place: a listing carrying it serves every town,
@@ -386,18 +428,25 @@
     });
   }
 
-  function render() {
-    var shown = state.all.filter(matches);
+  function render(keepShown) {
+    var shown = state.all.filter(matches).sort(SORTS[state.sort] || SORTS.name);
+
+    if (!keepShown) state.shown = PAGE;
+    var page = shown.slice(0, state.shown);
 
     if (!shown.length) {
       el.results.innerHTML = '';
+      el.showMore.hidden = true;
       el.empty.hidden = false;
       el.emptyBody.textContent = state.all.length
-        ? 'No listings match these filters. Try clearing the search box or widening the track and category.'
+        ? 'No listings match these filters. Try clearing the search box, or widening the track, type and town.'
         : 'The directory is still being filled in. Published listings appear here automatically once they clear review.';
     } else {
       el.empty.hidden = true;
-      el.results.innerHTML = shown.map(card).join('');
+      el.results.innerHTML = page.map(card).join('');
+      var left = shown.length - page.length;
+      el.showMore.hidden = left <= 0;
+      el.showMore.textContent = 'Show ' + Math.min(left, PAGE) + ' more of ' + left;
     }
 
     if (!state.all.length) {
@@ -419,9 +468,8 @@
 
   function buildTownList(towns) {
     el.townList.innerHTML = towns.map(function (t) {
-      var id = 'vn-town-' + t.replace(/[^A-Za-z0-9]/g, '-');
       return '<label class="vn-multi-opt" data-town="' + esc(t) + '">' +
-               '<input type="checkbox" id="' + esc(id) + '" value="' + esc(t) + '" />' +
+               '<input type="checkbox" value="' + esc(t) + '" />' +
                '<span>' + esc(t) + '</span>' +
              '</label>';
     }).join('');
@@ -431,8 +479,7 @@
   function syncTownUI() {
     var n = state.towns.length;
     el.townLabel.textContent =
-      n === 0 ? 'All towns'
-              : (n === 1 ? state.towns[0] : n + ' towns selected');
+      n === 0 ? 'All towns' : (n === 1 ? state.towns[0] : n + ' towns selected');
     el.townToggle.classList.toggle('has-selection', n > 0);
     Array.prototype.forEach.call(el.townList.querySelectorAll('input'), function (box) {
       box.checked = state.towns.indexOf(box.value) !== -1;
@@ -473,7 +520,6 @@
       render();
     });
 
-    // Close on outside click or Escape, so the panel never traps the page.
     document.addEventListener('click', function (event) {
       if (!el.townPanel.hidden && !document.getElementById('vn-town-multi').contains(event.target)) {
         openTownPanel(false);
@@ -546,6 +592,20 @@
     });
   }
 
+  function bindSortAndPaging() {
+    el.sort.addEventListener('change', function () {
+      state.sort = this.value;
+      render();
+    });
+    el.showMore.addEventListener('click', function () {
+      state.shown += PAGE;
+      render(true);
+      // Keep the reader where they were rather than jumping to the top.
+      var cards = el.results.children;
+      if (cards.length) cards[Math.max(0, state.shown - PAGE)].scrollIntoView({ block: 'center' });
+    });
+  }
+
   function bindToggles() {
     Array.prototype.forEach.call(el.toggles, function (box) {
       box.addEventListener('change', function () {
@@ -588,6 +648,7 @@
     bindTownMulti();
     bindCatMulti();
     bindToggles();
+    bindSortAndPaging();
     el.search.addEventListener('input', function () {
       state.search = this.value.trim().toLowerCase();
       render();
@@ -604,6 +665,8 @@
       state.towns = [];
       state.categories = [];
       state.flags = {};
+      state.sort = 'name';
+      el.sort.value = 'name';
       el.search.value = '';
       el.track.value = '';
       Array.prototype.forEach.call(el.toggles, function (t) { t.checked = false; });
@@ -639,8 +702,6 @@
         state.all = list.map(function (r) {
           r._haystack = haystack(r);
           return r;
-        }).sort(function (a, b) {
-          return String(a.name || '').localeCompare(String(b.name || ''));
         });
 
         fillSelect(el.track, uniqueSorted(state.all.map(function (r) { return r.track; })), 'All tracks');

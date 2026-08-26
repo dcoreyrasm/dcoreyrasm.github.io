@@ -113,6 +113,17 @@
             </div>
           </div>
 
+          <div class="vn-field">
+            <label for="vn-sort">Sort by</label>
+            <select id="vn-sort">
+              <option value="name">Name A&ndash;Z</option>
+              <option value="town">Town A&ndash;Z</option>
+              <option value="detail">Most detail first</option>
+              <option value="needs">Needs detail first</option>
+              <option value="verified">Recently checked</option>
+            </select>
+          </div>
+
           <button type="button" id="vn-reset" class="btn-ghost vn-reset">Reset</button>
         </form>
 
@@ -135,6 +146,10 @@
         <p class="vn-source-note">Entries drawn from public records carry the official details &mdash; address, phone, licence, funded places. The hours, waitlist and cost notes come from people who have actually called. A sparse listing is a starting point, not a dead end: if you know more, add it.</p>
 
         <div id="vn-results" class="vn-grid"></div>
+
+        <div class="vn-more-wrap">
+          <button type="button" id="vn-showmore" class="btn-ghost" hidden></button>
+        </div>
 
         <div id="vn-empty" class="vn-empty" hidden>
           <p class="vn-empty-icon" aria-hidden="true">&#9671;</p>

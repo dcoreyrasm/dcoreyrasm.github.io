@@ -295,3 +295,7 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
 .vn-badge-chip.is-open { border-color:var(--coral); color:var(--coral); }
 .vn-toggle[hidden] { display:none; }
 .vn-toggles[hidden] { display:none; }
+
+/* ---------- SHOW MORE ---------- */
+.vn-more-wrap { display:flex; justify-content:center; margin-top:2.5rem; }
+.vn-more-wrap button[hidden] { display:none; }
