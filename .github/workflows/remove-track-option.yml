@@ -1,0 +1,27 @@
+name: One-off - remove retired Track option
+
+# TEMPORARY, manual trigger only. Removes the unused "Children & Youth" choice
+# from the Track field, which the Airtable connector cannot do. Deleted once it
+# has run.
+#
+# Needs AIRTABLE_TOKEN to carry schema.bases:read and schema.bases:write for the
+# run. The script refuses to touch anything if any record still uses the choice.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  remove:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.x"
+      - name: Remove the option
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+        run: python3 scripts/remove-track-option.py
