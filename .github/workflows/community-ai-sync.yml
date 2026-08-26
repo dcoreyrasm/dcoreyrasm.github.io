@@ -38,6 +38,13 @@ jobs:
         with:
           python-version: "3.x"
 
+      # Only the drift check needs Node. It is set up here rather than beside
+      # that step so a missing toolchain fails before the pull, not after a
+      # refresh has already been committed.
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
       - name: Pull opportunities from Airtable
         env:
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
@@ -60,3 +67,10 @@ jobs:
             git pull --rebase origin main
           done
 
+      # Deliberately after the commit, for the same reason as the Village Notes
+      # sync: an option or a field the page does not recognise is a quality
+      # problem, not an outage -- every opportunity still shows -- so it must
+      # never be a reason to hold back a refresh. Failing here turns the run
+      # red, which is the notification.
+      - name: Check the base for vocabulary drift
+        run: node scripts/check-community-vocabulary.js
