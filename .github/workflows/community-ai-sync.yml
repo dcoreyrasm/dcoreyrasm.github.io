@@ -1,7 +1,7 @@
 name: Community AI sync (Airtable to JSON)
 
-# Refreshes assets/data/community-ai-opportunities.json from the "AI Support &
-# Opportunities for Communities" Airtable base, so community-ai.html no longer
+# Refreshes community-ai/data/opportunities.json from the "AI Support &
+# Opportunities for Communities" Airtable base, so /community-ai/ no longer
 # depends on someone remembering to run the script by hand and commit the result.
 #
 # Same architecture as the Village Notes sync: the token is read from a repo
@@ -45,7 +45,7 @@ jobs:
 
       - name: Commit the refreshed directory
         run: |
-          git add assets/data/community-ai-opportunities.json
+          git add community-ai/data/opportunities.json
           if git diff --cached --quiet; then
             echo "Directory already in sync; nothing to commit."
             exit 0
@@ -59,3 +59,4 @@ jobs:
             echo "push rejected (attempt $attempt); rebasing on origin/main"
             git pull --rebase origin main
           done
+

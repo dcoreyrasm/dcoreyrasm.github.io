@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Refresh assets/data/community-ai-opportunities.json from Airtable.
+"""Refresh community-ai/data/opportunities.json from Airtable.
 
-The community AI finder (community-ai.html) reads a static JSON snapshot rather
+The community AI directory (/community-ai/) reads a static JSON snapshot rather
 than calling Airtable from the browser, because the site is public and a browser
 call would mean shipping an Airtable token to every visitor. This script is how
 that snapshot gets rebuilt.
@@ -28,9 +28,9 @@ from pathlib import Path
 
 BASE_ID = "apptzwHFsoWzjKOmV"
 TABLE_ID = "tblAfYqyIzTYhAQ7q"
-OUT = Path(__file__).resolve().parent.parent / "assets" / "data" / "community-ai-opportunities.json"
+OUT = Path(__file__).resolve().parent.parent / "community-ai" / "data" / "opportunities.json"
 
-# Airtable field name -> key used in the JSON and by community-ai.html.
+# Airtable field name -> key used in the JSON and by community-ai/script.js.
 # Add a row here to publish a new field; the page shows it if DETAIL_ROWS in
 # that file lists the key, and filters on it if FACETS does.
 FIELDS = {
