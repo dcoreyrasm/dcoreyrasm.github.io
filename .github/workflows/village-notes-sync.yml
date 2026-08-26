@@ -55,3 +55,10 @@ jobs:
             echo "push rejected (attempt $attempt); rebasing on origin/main"
             git pull --rebase origin main
           done
+
+      # Deliberately after the commit. An option nobody recognises is a quality
+      # problem, not an outage -- the page still shows every listing -- so it
+      # must never be a reason to hold back a refresh. Failing here turns the
+      # run red, which is the notification.
+      - name: Check the base for vocabulary drift
+        run: node scripts/check-vocabulary.js
