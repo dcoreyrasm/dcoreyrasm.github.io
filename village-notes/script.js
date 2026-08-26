@@ -134,12 +134,15 @@
       'STEM/Tech Camp','Arts Camp','Outdoor/Nature Camp','Academic/Enrichment Camp',
       'Faith-Based Camp','Municipal/Parks & Rec Camp','Language Immersion Camp',
       'Specialty Camp','Inclusive/Special Needs Camp','School Vacation Week Care',
-      // Second spellings of options already above, created by later additions
-      // to the base. They are listed here so those camps group with their own
-      // kind instead of dropping into "Other"; if the duplicates are ever
-      // merged away in Airtable these names simply stop matching anything.
-      'Special Needs / Inclusive Camp','Nature / Outdoor Camp','Nature / Farm Camp',
-      'Medical / Diagnosis-Specific Camp']],
+      // 'Medical / Diagnosis-Specific Camp' is a real option. The three after
+      // it are second spellings of options already above, coined by a writer
+      // that invented options instead of picking them. Their records have been
+      // moved onto the canonical names and the options themselves are empty,
+      // pending deletion in Airtable -- but the map keeps the aliases, because
+      // a name coined once can be coined again, and an unmapped category drops
+      // into "Other" where it tells a parent nothing.
+      'Medical / Diagnosis-Specific Camp',
+      'Special Needs / Inclusive Camp','Nature / Outdoor Camp','Nature / Farm Camp']],
     ['Activities & Enrichment', ['Afterschool Enrichment','Tutoring / Academic Support',
       'Literacy / Reading Program','Youth Development Program','Teen Program',
       'Teen/CIT Program','Counselor-in-Training Program','Youth Employment Program']],
