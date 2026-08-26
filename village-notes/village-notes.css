@@ -293,3 +293,5 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
   border:1px solid var(--line); border-radius:999px; color:var(--muted);
 }
 .vn-badge-chip.is-open { border-color:var(--coral); color:var(--coral); }
+.vn-toggle[hidden] { display:none; }
+.vn-toggles[hidden] { display:none; }

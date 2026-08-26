@@ -555,6 +555,33 @@
     });
   }
 
+  // These filters read fields that only some listings carry yet -- the state
+  // import brought addresses and phone numbers, not whether a place takes
+  // Care 4 Kids. Absent is not "no", so a toggle that would quietly imply
+  // "only one place in Connecticut accepts it" is hidden until the data can
+  // support it, and the rest carry their count so the number is never a
+  // surprise.
+  function tuneToggles() {
+    var shown = 0;
+    Array.prototype.forEach.call(el.toggles, function (box) {
+      var test = FLAGS[box.dataset.flag];
+      var n = test ? state.all.filter(test).length : 0;
+      var label = box.parentNode.querySelector('span');
+      if (!label.dataset.base) label.dataset.base = label.textContent;
+      if (n === 0) {
+        box.parentNode.hidden = true;
+        box.checked = false;
+        delete state.flags[box.dataset.flag];
+      } else {
+        box.parentNode.hidden = false;
+        label.textContent = label.dataset.base + ' (' + n + ')';
+        shown++;
+      }
+    });
+    var row = document.querySelector('.vn-toggles');
+    if (row) row.hidden = shown === 0;
+  }
+
   /* ---------- events ---------- */
 
   function bind() {
@@ -632,6 +659,7 @@
         });
         buildTownList(uniqueSorted(townValues));
         buildCatList();
+        tuneToggles();
 
         el.countBadge.textContent = state.all.length
           ? state.all.length + ' ' + plural(state.all.length, 'listing', 'listings')
