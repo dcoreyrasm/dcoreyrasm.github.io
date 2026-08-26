@@ -11,10 +11,9 @@
 
   var DATA_URL = '/village-notes/data/resources.json';
 
-  // The one thing to fill in when the Airtable form exists: paste its share
-  // URL here and every "add it" link on the page starts using it, prefilled
-  // with whatever the visitor was looking for. Left empty, the links fall back
-  // to the contact page so nothing is ever broken.
+  // Used to build the empty-state link, which appends a prefill for whatever
+  // the visitor was searching for. The section button carries this URL in the
+  // markup instead of relying on script -- keep the two in step.
   var FORM_URL = 'https://airtable.com/appxUByKs5ULrDZQp/pagofYquo4QHUjcQG/form';
 
   var state = { all: [], search: '', track: '', categories: [], towns: [], flags: {},
@@ -750,17 +749,6 @@
 
   /* ---------- boot ---------- */
 
-  // Point the section button at the form too, so there is one place to change.
-  function wireSubmitLinks() {
-    if (!FORM_URL) return;
-    var main = document.querySelector('.vn-submit-cta a');
-    if (main) {
-      main.setAttribute('href', FORM_URL);
-      main.setAttribute('target', '_blank');
-      main.setAttribute('rel', 'noopener noreferrer');
-    }
-  }
-
   function load() {
     fetch(DATA_URL, { cache: 'no-cache' })
       .then(function (res) {
@@ -815,6 +803,5 @@
   }
 
   bind();
-  wireSubmitLinks();
   load();
 })();
