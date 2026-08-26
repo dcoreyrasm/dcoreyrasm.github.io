@@ -270,7 +270,16 @@ def call(url, data=None, method="GET"):
             if err.code in (429, 500, 502, 503) and attempt < 3:
                 time.sleep(2 ** attempt)
                 continue
-            raise SystemExit(f"Airtable {err.code} on {method} {url}: {err.read().decode()[:400]}")
+            detail = err.read().decode()[:400]
+            if err.code == 403 and method == "PATCH":
+                raise SystemExit(
+                    "Airtable refused the write (403).\n"
+                    "AIRTABLE_TOKEN can read this base but not write to it, which is how it\n"
+                    "is meant to sit day to day -- the two sync workflows only ever read.\n"
+                    "Add data.records:write to the token for this run, then take it off again:\n"
+                    "  airtable.com/create/tokens -> the Village Notes token -> Scopes\n"
+                    f"\nAirtable said: {detail}")
+            raise SystemExit(f"Airtable {err.code} on {method} {url}: {detail}")
 
 
 def fetch_all():
@@ -338,11 +347,21 @@ def main():
         print("\nDry run: nothing written.")
         return
 
-    for i in range(0, len(updates), 10):
-        batch = updates[i:i + 10]
-        call(API, {"records": [{"id": rid, "fields": {FLD["services"]: merged}}
-                               for rid, _, _, merged, _ in batch]}, method="PATCH")
-        print(f"  wrote {i + len(batch)}/{len(updates)}")
+    written = 0
+    try:
+        for i in range(0, len(updates), 10):
+            batch = updates[i:i + 10]
+            call(API, {"records": [{"id": rid, "fields": {FLD["services"]: merged}}
+                                   for rid, _, _, merged, _ in batch]}, method="PATCH")
+            written += len(batch)
+            print(f"  wrote {written}/{len(updates)}", flush=True)
+    except SystemExit:
+        # Half a run is worse than none only if nobody knows which half. Tags
+        # are additive and the whole thing is idempotent, so re-running once
+        # the cause is fixed simply finishes the job.
+        print(f"\nStopped after {written} of {len(updates)} records. "
+              f"Re-running picks up where this left off.", flush=True)
+        raise
     print(f"\nDone: {len(updates)} records updated.")
 
 
