@@ -133,10 +133,16 @@
     ['Camps & School Breaks', ['Summer Day Camp','Summer Sleepaway Camp','Sports Camp',
       'STEM/Tech Camp','Arts Camp','Outdoor/Nature Camp','Academic/Enrichment Camp',
       'Faith-Based Camp','Municipal/Parks & Rec Camp','Language Immersion Camp',
-      'Specialty Camp','Inclusive/Special Needs Camp','School Vacation Week Care']],
+      'Specialty Camp','Inclusive/Special Needs Camp','School Vacation Week Care',
+      // Second spellings of options already above, created by later additions
+      // to the base. They are listed here so those camps group with their own
+      // kind instead of dropping into "Other"; if the duplicates are ever
+      // merged away in Airtable these names simply stop matching anything.
+      'Special Needs / Inclusive Camp','Nature / Outdoor Camp','Nature / Farm Camp',
+      'Medical / Diagnosis-Specific Camp']],
     ['Activities & Enrichment', ['Afterschool Enrichment','Tutoring / Academic Support',
       'Literacy / Reading Program','Youth Development Program','Teen Program',
-      'Teen/CIT Program','Youth Employment Program']],
+      'Teen/CIT Program','Counselor-in-Training Program','Youth Employment Program']],
     ['Early Intervention & Therapy', ['Birth-to-Three / Early Intervention',
       'Pediatric Therapy (OT/PT/Speech)','Special Needs Childcare']],
     ['Parent & Family Support', ['Postpartum Support','Lactation Support',
