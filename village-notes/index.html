@@ -188,11 +188,15 @@
           </div>
         </div>
 
-        <!-- Points at the contact page until the Airtable submission form exists.
-             To switch it over: swap this href for the form's share URL and add
-             target="_blank" rel="noopener noreferrer". Nothing else changes. -->
+        <!-- The form URL is written here rather than left to script.js to set,
+             so the button is correct in the markup itself: it works before the
+             script runs, if the script fails, and for anyone holding a cached
+             copy of it. script.js keeps FORM_URL for the empty-state link,
+             which has to build a prefill at runtime. Change both together. -->
         <div class="vn-submit-cta">
-          <a href="/contact.html" class="btn-primary">Submit a Resource</a>
+          <a href="https://airtable.com/appxUByKs5ULrDZQp/pagofYquo4QHUjcQG/form"
+             class="btn-primary" target="_blank" rel="noopener noreferrer">Submit a Resource</a>
+          <a href="/contact.html" class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.3);">Suggest a Correction</a>
         </div>
       </div>
     </section>
