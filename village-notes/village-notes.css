@@ -194,3 +194,11 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
 @media (max-width:700px) {
   .vn-submit-grid { grid-template-columns:1fr; }
 }
+
+/* Sits above the results grid: says where an entry came from before a
+   visitor works it out from a thin card. */
+.vn-source-note {
+  font-size:.84rem; color:var(--muted); line-height:1.7;
+  max-width:760px; margin:0 0 2rem; padding-left:1rem;
+  border-left:2px solid var(--line);
+}
