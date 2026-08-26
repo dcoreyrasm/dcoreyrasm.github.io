@@ -257,6 +257,16 @@ footer p { font-size:.78rem; color:var(--muted); }
 .nav-toggle.open span:nth-child(2) { opacity:0; }
 .nav-toggle.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
 
+/* The nav carries eleven items since the AI Resources directory joined it.
+   Between the phone breakpoint and a roomy desktop there is no longer room for
+   all of them at the full gap, and flex-wrap drops a single link onto a second
+   row. Tightening the spacing across that band keeps the nav on one line; below
+   900px the hamburger takes over and this stops applying. */
+@media (min-width:901px) and (max-width:1300px) {
+  nav { padding:1.2rem 2rem; }
+  .nav-links { gap:1.15rem; }
+}
+
 @media (max-width:900px) {
   nav { padding:1.1rem 1.5rem; }
   .nav-toggle { display:flex; }
