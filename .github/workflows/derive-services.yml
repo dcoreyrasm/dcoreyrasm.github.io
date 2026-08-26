@@ -1,0 +1,53 @@
+name: Derive Services Offered (manual)
+
+# Fills in Services Offered on the Village Notes records from what each record
+# already says about itself, so a centre that runs infant rooms, a preschool
+# and after-school care can be found by a parent filtering for any of them --
+# not only the one thing its Category names.
+#
+# Manual trigger only. Runs here rather than from a laptop because the Airtable
+# token lives in this repo's secrets and nothing outside Actions can read it.
+#
+# Requires AIRTABLE_TOKEN to carry data.records:write for the run. Narrow it
+# back to data.records:read afterwards -- it is the same secret the two sync
+# workflows use unattended every six hours.
+#
+# Safe to re-run: tags are only ever added, so a human correction survives, and
+# a record whose text supports nothing new is left alone. Start with dry_run.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print the plan without writing anything"
+        type: boolean
+        default: true
+      limit:
+        description: "Only print this many records in the plan (0 = all)"
+        type: string
+        default: "40"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: airtable-write
+  cancel-in-progress: false
+
+jobs:
+  derive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.x"
+
+      - name: Derive
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+        run: |
+          python3 scripts/derive-services.py \
+            --limit "${{ inputs.limit }}" \
+            ${{ inputs.dry_run && '--dry-run' || '' }}

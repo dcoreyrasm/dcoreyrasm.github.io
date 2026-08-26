@@ -176,6 +176,50 @@
 
   function groupOf(r) { return GROUP_OF[r.category] || 'Other'; }
 
+  // Category is a single select, so it can only say what a place is mainly
+  // for. A centre filed as Center-Based Daycare that also runs a preschool and
+  // after-school care was invisible to a parent filtering for either -- which
+  // is the whole reason Services Offered exists on the record. So a service
+  // counts towards its equivalent category when filtering.
+  //
+  // Only exact equivalents are listed. "Arts Enrichment" is deliberately not
+  // mapped to "Arts Camp": a day camp that runs an art hour is not an arts
+  // camp, and ticking Arts Camp to be shown every generic day camp in the
+  // state is worse than not finding the arts camp at all. Same reasoning
+  // keeps "Child Care" out -- it is broader than any one category.
+  var SERVICE_AS_CATEGORY = {
+    'Infant Care':                   ['Infant Care'],
+    'Preschool / Pre-K':             ['Preschool / Pre-K'],
+    'Before-School Care':            ['Before/After School Care'],
+    'After-School Care':             ['Before/After School Care'],
+    'Before- and After-School Care': ['Before/After School Care'],
+    'School Vacation Care':          ['School Vacation Week Care'],
+    'Summer Day Camp':               ['Summer Day Camp'],
+    'Summer Sleepaway Camp':         ['Summer Sleepaway Camp'],
+    'Specialty Camp':                ['Specialty Camp'],
+    'Teen / CIT Program':            ['Teen/CIT Program'],
+    'Teen Program':                  ['Teen Program'],
+    'Youth Employment':              ['Youth Employment Program'],
+    'Afterschool Enrichment':        ['Afterschool Enrichment'],
+    'Literacy / Tutoring':           ['Tutoring / Academic Support', 'Literacy / Reading Program'],
+    'Adaptive Program':              ['Inclusive/Special Needs Camp'],
+    'Parent / Family Support':       ['Parenting Support/Classes'],
+    'Caregiver Support':             ['Caregiver Support Group']
+  };
+
+  // Every category a listing can honestly answer to: its own, plus any its
+  // other services amount to. Computed once at load and cached on the record,
+  // because filtering runs it across 500+ listings on every keystroke.
+  function categoriesOf(r) {
+    var out = r.category ? [r.category] : [];
+    (r.servicesOffered || []).forEach(function (service) {
+      (SERVICE_AS_CATEGORY[service] || []).forEach(function (c) {
+        if (out.indexOf(c) === -1) out.push(c);
+      });
+    });
+    return out;
+  }
+
   /* ---------- quick-filter predicates ---------- */
 
   // "Not Confirmed" is a real answer in this data and must not read as a yes.
@@ -252,8 +296,18 @@
 
     var times = [r.startTime, r.endTime].filter(has).join(' \u2013 ');
 
+    // What else this place does, beyond the single category it is filed under.
+    // Anything the category already says is dropped, so a daycare does not
+    // announce that it also offers child care.
+    var alsoOffers = (r.servicesOffered || []).filter(function (service) {
+      if ((SERVICE_AS_CATEGORY[service] || []).indexOf(r.category) !== -1) return false;
+      return !(service === 'Child Care' &&
+               (r.category === 'Center-Based Daycare' || r.category === 'Home Daycare (Licensed)'));
+    });
+
     var facts =
       fact('Serves', servesLabel) +
+      fact('Also offers', alsoOffers.join(', ') || null) +
       fact('Hours', r.hours) +
       fact('Waitlist', r.availability, true) +
       fact('Ages', r.ages) +
@@ -411,7 +465,9 @@
 
   function matches(r) {
     if (state.track && r.track !== state.track) return false;
-    if (state.categories.length && state.categories.indexOf(r.category) === -1) return false;
+    if (state.categories.length && !(r._cats || []).some(function (c) {
+      return state.categories.indexOf(c) !== -1;
+    })) return false;
     if (state.towns.length && !state.towns.some(function (t) { return servesTown(r, t); })) return false;
     for (var flag in state.flags) {
       if (state.flags[flag] && FLAGS[flag] && !FLAGS[flag](r)) return false;
@@ -439,7 +495,11 @@
       ? state.all.filter(function (r) { return r.track === state.track; })
       : state.all;
     var live = {};
-    pool.forEach(function (r) { live[r.category] = (live[r.category] || 0) + 1; });
+    // Counted over the same widened set the filter uses, so a group that says
+    // 40 returns 40 rather than the 12 filed under it.
+    pool.forEach(function (r) {
+      (r._cats || []).forEach(function (c) { live[c] = (live[c] || 0) + 1; });
+    });
 
     var html = '';
     GROUPS.forEach(function (g) {
@@ -773,6 +833,7 @@
         var list = Array.isArray(data) ? data : (data && data.resources) || [];
 
         state.all = list.map(function (r) {
+          r._cats = categoriesOf(r);
           r._haystack = haystack(r);
           return r;
         });
