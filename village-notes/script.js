@@ -11,6 +11,12 @@
 
   var DATA_URL = '/village-notes/data/resources.json';
 
+  // The one thing to fill in when the Airtable form exists: paste its share
+  // URL here and every "add it" link on the page starts using it, prefilled
+  // with whatever the visitor was looking for. Left empty, the links fall back
+  // to the contact page so nothing is ever broken.
+  var FORM_URL = '';
+
   var state = { all: [], search: '', track: '', categories: [], towns: [], flags: {},
                sort: 'name', shown: 0 };
 
@@ -41,6 +47,9 @@
     empty:      document.getElementById('vn-empty'),
     emptyBody:  document.getElementById('vn-empty-body'),
     resultline: document.getElementById('vn-resultline'),
+    emptyCta:   document.getElementById('vn-empty-cta'),
+    emptyAsk:   document.getElementById('vn-empty-ask'),
+    emptyAdd:   document.getElementById('vn-empty-add'),
     sort:       document.getElementById('vn-sort'),
     showMore:   document.getElementById('vn-showmore'),
     countBadge: document.getElementById('vn-count-badge'),
@@ -281,6 +290,55 @@
     '</article>';
   }
 
+  /* ---------- turning a dead end into a contribution ---------- */
+
+  // Finding nothing is the most useful moment on the page: the visitor has
+  // just told us, precisely, about a gap. Rather than "try clearing the search
+  // box", say what was missing and offer to record it -- carrying the search
+  // into the form so they are not asked to type it twice.
+
+  function currentSearchWords() {
+    var bits = [];
+    if (state.categories.length) {
+      bits.push(state.categories.length <= 2 ? state.categories.join(' or ')
+                                             : state.categories.length + ' types');
+    }
+    if (state.towns.length) {
+      bits.push('in ' + (state.towns.length <= 3 ? state.towns.join(', ')
+                                                 : state.towns.length + ' towns'));
+    }
+    if (state.search) bits.push('matching "' + state.search + '"');
+    if (!bits.length && state.track) bits.push(state.track.toLowerCase());
+    return bits.join(' ');
+  }
+
+  // Airtable form fields can be prefilled from the query string. If the field
+  // names ever change the extra parameters are simply ignored, so a stale
+  // prefill degrades to a blank form rather than an error.
+  function formLink() {
+    if (!FORM_URL) return '/contact.html';
+    var q = [];
+    if (state.towns.length === 1) q.push('prefill_Town%2FArea+(CT)=' + encodeURIComponent(state.towns[0]));
+    if (state.categories.length === 1) q.push('prefill_Category=' + encodeURIComponent(state.categories[0]));
+    if (state.track) q.push('prefill_Track=' + encodeURIComponent(state.track));
+    return FORM_URL + (q.length ? (FORM_URL.indexOf('?') === -1 ? '?' : '&') + q.join('&') : '');
+  }
+
+  function updateEmptyCta(hasFilters) {
+    if (!el.emptyCta) return;
+    el.emptyCta.hidden = !hasFilters;
+    if (!hasFilters) return;
+    var what = currentSearchWords();
+    el.emptyAsk.textContent = what
+      ? 'Nobody has added anything for ' + what + ' yet. If you know somewhere \u2014 even just a name and a phone number \u2014 that is exactly the gap worth filling.'
+      : 'If you know somewhere that belongs here, adding it takes a minute.';
+    el.emptyAdd.setAttribute('href', formLink());
+    if (FORM_URL) {
+      el.emptyAdd.setAttribute('target', '_blank');
+      el.emptyAdd.setAttribute('rel', 'noopener noreferrer');
+    }
+  }
+
   /* ---------- sorting ---------- */
 
   // What a family actually came for. A listing with real hours, a real waitlist
@@ -438,9 +496,11 @@
       el.results.innerHTML = '';
       el.showMore.hidden = true;
       el.empty.hidden = false;
-      el.emptyBody.textContent = state.all.length
-        ? 'No listings match these filters. Try clearing the search box, or widening the track, type and town.'
+      var filtered = state.all.length > 0;
+      el.emptyBody.textContent = filtered
+        ? 'Nothing in the directory matches that yet \u2014 which does not mean nothing exists.'
         : 'The directory is still being filled in. Published listings appear here automatically once they clear review.';
+      updateEmptyCta(filtered);
     } else {
       el.empty.hidden = true;
       el.results.innerHTML = page.map(card).join('');
@@ -690,6 +750,17 @@
 
   /* ---------- boot ---------- */
 
+  // Point the section button at the form too, so there is one place to change.
+  function wireSubmitLinks() {
+    if (!FORM_URL) return;
+    var main = document.querySelector('.vn-submit-cta a');
+    if (main) {
+      main.setAttribute('href', FORM_URL);
+      main.setAttribute('target', '_blank');
+      main.setAttribute('rel', 'noopener noreferrer');
+    }
+  }
+
   function load() {
     fetch(DATA_URL, { cache: 'no-cache' })
       .then(function (res) {
@@ -744,5 +815,6 @@
   }
 
   bind();
+  wireSubmitLinks();
   load();
 })();
