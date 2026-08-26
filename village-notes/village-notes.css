@@ -202,3 +202,57 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
   max-width:760px; margin:0 0 2rem; padding-left:1rem;
   border-left:2px solid var(--line);
 }
+
+/* ---------- MULTI-SELECT (town) ---------- */
+.vn-field-label {
+  font-size:.68rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--coral); font-weight:500;
+}
+.vn-multi { position:relative; min-width:0; }
+.vn-multi-toggle {
+  width:100%; text-align:left; background:var(--bg2); color:var(--cream);
+  border:1px solid var(--line); border-radius:2px;
+  font-family:var(--sans); font-size:.9rem; font-weight:300;
+  padding:.7rem 2.4rem .7rem .85rem; cursor:pointer; transition:border-color .2s;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.vn-multi-toggle::after {
+  content:''; position:absolute; right:.9rem; top:50%; width:6px; height:6px;
+  border-right:1px solid currentColor; border-bottom:1px solid currentColor;
+  transform:translateY(-70%) rotate(45deg); pointer-events:none;
+}
+.vn-multi-toggle:hover { border-color:var(--coral); }
+.vn-multi-toggle.has-selection { border-color:var(--coral); color:var(--coral); }
+
+.vn-multi-panel {
+  position:absolute; z-index:60; top:calc(100% + .35rem); left:0;
+  width:min(19rem,80vw); background:var(--bg2);
+  border:1px solid var(--coral); border-radius:2px;
+  box-shadow:0 12px 32px rgba(0,0,0,.28);
+}
+.vn-multi-head { display:flex; gap:.5rem; padding:.6rem; border-bottom:1px solid var(--line); }
+.vn-multi-head input {
+  flex:1; min-width:0; background:var(--bg); color:var(--cream);
+  border:1px solid var(--line); border-radius:2px;
+  font-family:var(--sans); font-size:.85rem; font-weight:300; padding:.45rem .6rem;
+}
+.vn-multi-clear {
+  background:none; border:none; cursor:pointer; padding:0 .3rem;
+  font-family:var(--sans); font-size:.7rem; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--coral);
+}
+.vn-multi-clear:hover { text-decoration:underline; }
+
+.vn-multi-list { max-height:16rem; overflow-y:auto; padding:.35rem; }
+.vn-multi-opt {
+  display:flex; align-items:center; gap:.6rem;
+  padding:.45rem .6rem; cursor:pointer; font-size:.87rem; color:var(--cream);
+  border-radius:2px;
+}
+.vn-multi-opt:hover { background:color-mix(in srgb, var(--bg2) 85%, var(--coral)); }
+.vn-multi-opt input { accent-color:var(--coral); width:1rem; height:1rem; flex-shrink:0; }
+.vn-multi-opt[hidden] { display:none; }
+
+@media (max-width:600px) {
+  .vn-multi-panel { width:min(19rem,92vw); }
+}

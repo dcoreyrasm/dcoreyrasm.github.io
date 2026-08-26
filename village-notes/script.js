@@ -11,13 +11,18 @@
 
   var DATA_URL = '/village-notes/data/resources.json';
 
-  var state = { all: [], search: '', track: '', category: '', town: '' };
+  var state = { all: [], search: '', track: '', category: '', towns: [] };
 
   var el = {
     search:     document.getElementById('vn-search'),
     track:      document.getElementById('vn-track'),
     category:   document.getElementById('vn-category'),
-    town:       document.getElementById('vn-town'),
+    townToggle: document.getElementById('vn-town-toggle'),
+    townPanel:  document.getElementById('vn-town-panel'),
+    townLabel:  document.getElementById('vn-town-label'),
+    townList:   document.getElementById('vn-town-list'),
+    townFind:   document.getElementById('vn-town-find'),
+    townClear:  document.getElementById('vn-town-clear'),
     reset:      document.getElementById('vn-reset'),
     results:    document.getElementById('vn-results'),
     empty:      document.getElementById('vn-empty'),
@@ -203,7 +208,7 @@
   function matches(r) {
     if (state.track && r.track !== state.track) return false;
     if (state.category && r.category !== state.category) return false;
-    if (state.town && !servesTown(r, state.town)) return false;
+    if (state.towns.length && !state.towns.some(function (t) { return servesTown(r, t); })) return false;
     if (!state.search) return true;
     return (r._haystack || '').indexOf(state.search) !== -1;
   }
@@ -253,9 +258,86 @@
     }
   }
 
+  /* ---------- town multi-select ---------- */
+
+  // A plain <select> forces one town. Families search their own town plus the
+  // ones next to it, so this is a checkbox panel with its own find box -- with
+  // 90+ towns, scrolling to Woodbridge is its own small ordeal.
+
+  function buildTownList(towns) {
+    el.townList.innerHTML = towns.map(function (t) {
+      var id = 'vn-town-' + t.replace(/[^A-Za-z0-9]/g, '-');
+      return '<label class="vn-multi-opt" data-town="' + esc(t) + '">' +
+               '<input type="checkbox" id="' + esc(id) + '" value="' + esc(t) + '" />' +
+               '<span>' + esc(t) + '</span>' +
+             '</label>';
+    }).join('');
+    syncTownUI();
+  }
+
+  function syncTownUI() {
+    var n = state.towns.length;
+    el.townLabel.textContent =
+      n === 0 ? 'All towns'
+              : (n === 1 ? state.towns[0] : n + ' towns selected');
+    el.townToggle.classList.toggle('has-selection', n > 0);
+    Array.prototype.forEach.call(el.townList.querySelectorAll('input'), function (box) {
+      box.checked = state.towns.indexOf(box.value) !== -1;
+    });
+  }
+
+  function openTownPanel(open) {
+    el.townPanel.hidden = !open;
+    el.townToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open) el.townFind.focus();
+  }
+
+  function bindTownMulti() {
+    el.townToggle.addEventListener('click', function () {
+      openTownPanel(el.townPanel.hidden);
+    });
+
+    el.townList.addEventListener('change', function (event) {
+      var box = event.target;
+      if (!box || box.type !== 'checkbox') return;
+      var at = state.towns.indexOf(box.value);
+      if (box.checked && at === -1) state.towns.push(box.value);
+      if (!box.checked && at !== -1) state.towns.splice(at, 1);
+      syncTownUI();
+      render();
+    });
+
+    el.townFind.addEventListener('input', function () {
+      var q = this.value.trim().toLowerCase();
+      Array.prototype.forEach.call(el.townList.children, function (opt) {
+        opt.hidden = q !== '' && opt.dataset.town.toLowerCase().indexOf(q) === -1;
+      });
+    });
+
+    el.townClear.addEventListener('click', function () {
+      state.towns = [];
+      syncTownUI();
+      render();
+    });
+
+    // Close on outside click or Escape, so the panel never traps the page.
+    document.addEventListener('click', function (event) {
+      if (!el.townPanel.hidden && !document.getElementById('vn-town-multi').contains(event.target)) {
+        openTownPanel(false);
+      }
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && !el.townPanel.hidden) {
+        openTownPanel(false);
+        el.townToggle.focus();
+      }
+    });
+  }
+
   /* ---------- events ---------- */
 
   function bind() {
+    bindTownMulti();
     el.search.addEventListener('input', function () {
       state.search = this.value.trim().toLowerCase();
       render();
@@ -272,16 +354,12 @@
       render();
     });
 
-    el.town.addEventListener('change', function () {
-      state.town = this.value;
-      render();
-    });
-
     el.reset.addEventListener('click', function () {
-      state.search = state.track = state.category = state.town = '';
+      state.search = state.track = state.category = '';
+      state.towns = [];
       el.search.value = '';
       el.track.value = '';
-      el.town.value = '';
+      syncTownUI();
       refreshCategoryOptions();
       el.category.value = '';
       render();
@@ -324,8 +402,15 @@
           townValues.push(r.town);
           townValues = townValues.concat(served(r));
         });
-        townValues = townValues.filter(function (t) { return t !== STATEWIDE; });
-        fillSelect(el.town, uniqueSorted(townValues), 'All towns');
+        // Town/Area is free text, so multi-town strings leak in -- "Bridgeport
+        // and Fairfield", "Greater Hartford area". They are fine on a card but
+        // useless as a filter option, and they crowd out the real town next to
+        // them alphabetically. Towns Served is the structured field, so the
+        // options come from clean single names only.
+        townValues = townValues.filter(function (t) {
+          return t && t !== STATEWIDE && !/,| and | area$/i.test(t);
+        });
+        buildTownList(uniqueSorted(townValues));
         refreshCategoryOptions();
 
         el.countBadge.textContent = state.all.length

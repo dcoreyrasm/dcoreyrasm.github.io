@@ -68,7 +68,7 @@
         <form class="vn-controls" role="search" onsubmit="return false;">
           <div class="vn-field vn-field-search">
             <label for="vn-search">Search</label>
-            <input type="search" id="vn-search" placeholder="Name, town, notes, hours&hellip;" autocomplete="off" />
+            <input type="search" id="vn-search" placeholder="Name, program, notes, hours&hellip;" autocomplete="off" />
           </div>
 
           <div class="vn-field">
@@ -86,10 +86,21 @@
           </div>
 
           <div class="vn-field">
-            <label for="vn-town">Town / Area</label>
-            <select id="vn-town">
-              <option value="">All towns</option>
-            </select>
+            <span class="vn-field-label" id="vn-town-lbl">Town / Area</span>
+            <div class="vn-multi" id="vn-town-multi">
+              <button type="button" class="vn-multi-toggle" id="vn-town-toggle"
+                      aria-expanded="false" aria-haspopup="true" aria-controls="vn-town-panel">
+                <span id="vn-town-label">All towns</span>
+              </button>
+              <div class="vn-multi-panel" id="vn-town-panel" role="group" aria-label="Filter by town" hidden>
+                <div class="vn-multi-head">
+                  <input type="search" id="vn-town-find" placeholder="Find a town&hellip;"
+                         aria-label="Find a town" autocomplete="off" />
+                  <button type="button" class="vn-multi-clear" id="vn-town-clear">Clear</button>
+                </div>
+                <div class="vn-multi-list" id="vn-town-list"></div>
+              </div>
+            </div>
           </div>
 
           <button type="button" id="vn-reset" class="btn-ghost vn-reset">Reset</button>
