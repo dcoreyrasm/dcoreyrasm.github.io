@@ -74,7 +74,14 @@ const FIELD_MAP = {
   'Inclusion / Accessibility Support': 'accessibility',
   'Refund / Cancellation Policy': 'refundPolicy',
   'Current Program Year':         'programYear',
-  'Last Verified':                'lastVerified'
+  'Last Verified':                'lastVerified',
+
+  // Pet Care & Resources. Animals Accepted is that track's Ages field -- the
+  // first thing an owner checks, because a kennel that takes only dogs is no
+  // use to someone with a rabbit. Intake Requirements is the second: whether
+  // they can book at all, or need shots and an assessment first.
+  'Animals Accepted':             'animals',
+  'Pet Intake Requirements':      'petRequirements'
 };
 
 const TOKEN = process.env.AIRTABLE_TOKEN;
@@ -121,7 +128,8 @@ async function fetchAllRecords() {
 // arrives as undefined rather than []. The page expects these keys to always be
 // arrays, so they are normalised here rather than guarded at every use site.
 const LIST_KEYS = new Set(['townsServed', 'extendedCare', 'servicesOffered',
-                           'languages', 'daysOffered', 'scheduleWindow']);
+                           'languages', 'daysOffered', 'scheduleWindow',
+                           'animals', 'petRequirements']);
 
 function clean(value, key) {
   if (LIST_KEYS.has(key)) return Array.isArray(value) ? value : (value ? [value] : []);

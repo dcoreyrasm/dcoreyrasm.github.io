@@ -165,7 +165,19 @@
       'Senior Center / Congregate Meals & Social Programs','Meal Delivery','Elder Transportation']],
     ['Health & End of Life', ['Hospice / Palliative Care','Grief/Bereavement Support']],
     ['Caregiver Support', ['Caregiver Support Group','Geriatric Care Manager']],
-    ['Benefits, Legal & Money', ['Elder Law / Financial Planning','Veterans Benefits Counseling']]
+    ['Benefits, Legal & Money', ['Elder Law / Financial Planning','Veterans Benefits Counseling']],
+
+    // Pet Care & Resources. Grouped the way an owner's problem arrives: who
+    // looks after them day to day, who treats them when something is wrong,
+    // and who helps when the household cannot cope on its own.
+    ['Pet Day-to-Day Care', ['Dog Daycare','Pet Boarding','Pet Sitting (In-Home)',
+      'Dog Walking','Pet Grooming','Training & Behavior Support','Pet Transportation']],
+    ['Pet Health & Emergencies', ['Veterinary Care','Emergency Veterinary Care',
+      'Low-Cost Veterinary Clinic','Mobile Veterinary Service',
+      'Vaccination & Microchip Clinic','Spay/Neuter Assistance']],
+    ['Pet Help & Rehoming', ['Pet Food Assistance','Emergency Pet Foster Care',
+      'Pet-Friendly Housing','Adoption & Rescue','Lost & Found Pet Services',
+      'Pet Loss & Grief Support']]
   ];
 
   var GROUP_OF = (function () {
@@ -305,8 +317,17 @@
                (r.category === 'Center-Based Daycare' || r.category === 'Home Daycare (Licensed)'));
     });
 
+    // For a pet listing these are the first two questions, so they sit above
+    // hours and cost rather than among the details. "None Stated" is dropped:
+    // it is a real answer in the field, but as a card row it reads like a
+    // promise the provider never made.
+    var animals = (r.animals || []).filter(function (a) { return a !== 'Not Confirmed'; });
+    var petRules = (r.petRequirements || []).filter(function (x) { return x !== 'None Stated'; });
+
     var facts =
       fact('Serves', servesLabel) +
+      fact('Takes', animals.join(', ') || null) +
+      fact('Before booking', petRules.join(', ') || null) +
       fact('Also offers', alsoOffers.join(', ') || null) +
       fact('Hours', r.hours) +
       fact('Waitlist', r.availability, true) +
@@ -482,6 +503,7 @@
             r.submittedBy]
       .concat(Array.isArray(r.townsServed) ? r.townsServed : [])
       .concat(r.servicesOffered || []).concat(r.languages || [])
+      .concat(r.animals || []).concat(r.petRequirements || [])
       .concat([groupOf(r), r.registrationStatus, r.licensing])
       .filter(has).join(' ␟ ').toLowerCase();
   }
@@ -755,10 +777,17 @@
   // support it, and the rest carry their count so the number is never a
   // surprise.
   function tuneToggles() {
+    // Counted within the chosen track, not across the whole directory. These
+    // toggles are childcare-shaped -- Care 4 Kids, before/after care, covers a
+    // workday -- and offering them to somebody browsing pet care is offering a
+    // filter that can only return nothing.
+    var pool = state.track
+      ? state.all.filter(function (r) { return r.track === state.track; })
+      : state.all;
     var shown = 0;
     Array.prototype.forEach.call(el.toggles, function (box) {
       var test = FLAGS[box.dataset.flag];
-      var n = test ? state.all.filter(test).length : 0;
+      var n = test ? pool.filter(test).length : 0;
       var label = box.parentNode.querySelector('span');
       if (!label.dataset.base) label.dataset.base = label.textContent;
       if (n === 0) {
@@ -790,6 +819,7 @@
     el.track.addEventListener('change', function () {
       state.track = this.value;
       buildCatList();
+      tuneToggles();
       render();
     });
 
@@ -805,6 +835,7 @@
       Array.prototype.forEach.call(el.toggles, function (t) { t.checked = false; });
       syncTownUI();
       buildCatList();
+      tuneToggles();
       render();
       el.search.focus();
     });

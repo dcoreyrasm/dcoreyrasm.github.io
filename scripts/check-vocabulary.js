@@ -24,10 +24,11 @@ const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'village-notes', 'data', 'resources.json');
 const SCRIPT = path.join(ROOT, 'village-notes', 'script.js');
 
-// Track is the audience, and there are two audiences. Unlike Category, the
-// page builds its Track dropdown straight from the data, so there is no list
-// in script.js to read -- the expectation lives here instead.
-const KNOWN_TRACKS = ['Family & Childcare', 'Elder Care'];
+// Track is who a listing is for. Unlike Category, the page builds its Track
+// dropdown straight from the data, so there is no list in script.js to read --
+// the expectation lives here instead, which is the point: a fourth track
+// appearing unannounced is exactly what this check exists to catch.
+const KNOWN_TRACKS = ['Family & Childcare', 'Elder Care', 'Pet Care & Resources'];
 
 /**
  * Pull the category map out of script.js.
