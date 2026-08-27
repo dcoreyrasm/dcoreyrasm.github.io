@@ -131,6 +131,19 @@
   // Renaming the variable or reindenting its closing bracket breaks that
   // check -- loudly, by design, rather than by reporting every category
   // as unmapped.
+  // The three audiences this directory serves. Declared rather than read off
+  // the data, because a track with no listings yet still has to be offerable:
+  // somebody looking for pet care needs to find the section and be asked to
+  // add the first one, not conclude the site has nothing to do with pets.
+  // Selecting an empty track lands on the contribution prompt, which is the
+  // most useful thing an empty section can do.
+  //
+  // scripts/check-vocabulary.js reads this literal, so it is the one place the
+  // expected tracks are written down. A track in the data but not here still
+  // appears in the dropdown -- and fails the sync check, which is how a fourth
+  // one gets noticed rather than quietly filtering to nothing.
+  var TRACKS = ['Family & Childcare', 'Elder Care', 'Pet Care & Resources'];
+
   var GROUPS = [
     ['Child Care', ['Center-Based Daycare','Home Daycare (Licensed)','Infant Care',
       'Preschool / Pre-K','Before/After School Care','Backup/Emergency Care',
@@ -869,7 +882,8 @@
           return r;
         });
 
-        fillSelect(el.track, uniqueSorted(state.all.map(function (r) { return r.track; })), 'All tracks');
+        fillSelect(el.track, uniqueSorted(TRACKS.concat(
+          state.all.map(function (r) { return r.track; }))), 'All tracks');
         var townValues = [];
         state.all.forEach(function (r) {
           townValues.push(r.town);
