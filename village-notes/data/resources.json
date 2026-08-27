@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27T12:47:11.734Z",
+  "generated": "2026-08-27T21:36:41.578Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -10003,7 +10003,6 @@
       "schoolDayCoverage": "Varies",
       "servicesOffered": [
         "Summer Camp",
-        "Teen / CIT Program",
         "Teen Program"
       ],
       "daysOffered": [
