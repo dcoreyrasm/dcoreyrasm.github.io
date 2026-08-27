@@ -1,14 +1,15 @@
 {
-  "generated": "2026-08-27T12:09:21.727Z",
+  "generated": "2026-08-27T12:47:11.734Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "Moderation Status = \"Published\""
   },
-  "count": 547,
+  "count": 574,
   "tracks": [
     "Elder Care",
-    "Family & Childcare"
+    "Family & Childcare",
+    "Pet Care & Resources"
   ],
   "categories": [
     "Academic/Enrichment Camp",
@@ -19,7 +20,10 @@
     "Birth-to-Three / Early Intervention",
     "Caregiver Support Group",
     "Center-Based Daycare",
+    "Dog Daycare",
+    "Dog Park",
     "Elder Law / Financial Planning",
+    "Emergency Veterinary Care",
     "Geriatric Care Manager",
     "Home Daycare (Licensed)",
     "Hospice / Palliative Care",
@@ -28,12 +32,16 @@
     "Infant Care",
     "Legal/HR Resource",
     "Literacy / Reading Program",
+    "Low-Cost Veterinary Clinic",
     "Medical / Diagnosis-Specific Camp",
     "Municipal/Parks & Rec Camp",
     "Outdoor/Nature Camp",
     "Parenting Support/Classes",
+    "Pet Boarding",
+    "Pet Food Assistance",
     "Preschool / Pre-K",
     "Respite Care",
+    "Spay/Neuter Assistance",
     "Specialty Camp",
     "STEM/Tech Camp",
     "Summer Day Camp",
@@ -119,6 +127,7 @@
     "Putnam",
     "Redding",
     "Ridgefield",
+    "Rocky Hill",
     "Scotland",
     "Seymour",
     "Sharon",
@@ -1914,6 +1923,92 @@
       ]
     },
     {
+      "id": "recaaQadP4I4p7CmF",
+      "name": "Camp Bow Wow Bloomfield",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "specificType": "Dog daycare and overnight boarding with live webcams, indoor and outdoor play areas",
+      "town": "Bloomfield",
+      "address": "122 West Dudley Town Road, Bloomfield, CT 06002",
+      "hours": "Monday–Friday 6:30 AM–7:00 PM; Saturday 7:00 AM–7:00 PM; Sunday and holidays 8:00–11:00 AM and 4:00–7:00 PM.",
+      "website": "https://www.campbowwow.com/bloomfield/",
+      "contact": "860-851-6798",
+      "townsServed": [
+        "Bloomfield"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-27",
+      "notes": "Official provider location page or official Connecticut location directory confirms this physical location and current dog daycare and boarding services.",
+      "servicesOffered": [
+        "Dog Daycare",
+        "Pet Boarding",
+        "Overnight Pet Care"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs"
+      ]
+    },
+    {
+      "id": "recP75W1PLwEWfTLK",
+      "name": "Camp Bow Wow Fairfield-Trumbull",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "specificType": "Dog daycare, overnight boarding, grooming, training and enrichment with live camper cameras",
+      "town": "Bridgeport",
+      "address": "105 Island Brook Ave, Bridgeport, CT 06606",
+      "hours": "Monday–Saturday 6:30 AM–7:00 PM. Sunday and holidays 6:30–10:00 AM and 4:00–7:00 PM.",
+      "website": "https://www.campbowwow.com/fairfield-trumbull/",
+      "contact": "475-255-2351",
+      "townsServed": [
+        "Bridgeport",
+        "Fairfield",
+        "Milford",
+        "Stratford",
+        "Shelton",
+        "Trumbull"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-27",
+      "notes": "Official page confirms dog daycare, boarding, grooming, training, enrichment, live cameras, an interview process and medication administration during boarding. It names Fairfield, Easton, Weston, Westport, Milford, Stratford, Shelton and Trumbull as convenient service areas. Easton, Weston and Westport are not current Towns Served choices.",
+      "servicesOffered": [
+        "Dog Daycare",
+        "Pet Boarding",
+        "Medication Administration",
+        "Overnight Pet Care"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs"
+      ]
+    },
+    {
+      "id": "rechs6QLU0Nkfw9A3",
+      "name": "Camp Bow Wow Stamford",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "specificType": "Dog daycare and overnight boarding",
+      "town": "Stamford",
+      "address": "581 Hope St, Stamford, CT 06907",
+      "website": "https://www.campbowwow.com/stamford/",
+      "contact": "203-442-9429",
+      "townsServed": [
+        "Stamford"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-27",
+      "notes": "Official provider location page or official Connecticut location directory confirms this physical location and current dog daycare and boarding services.",
+      "servicesOffered": [
+        "Dog Daycare",
+        "Pet Boarding",
+        "Overnight Pet Care"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs"
+      ]
+    },
+    {
       "id": "recdLMP8G1hdVjVzo",
       "name": "Camp Courage 2026",
       "track": "Family & Childcare",
@@ -2398,6 +2493,37 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recJdCjLx4DSO79zB",
+      "name": "Central Bark Danbury",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "town": "Danbury",
+      "address": "55 Kenosia Avenue, Danbury, CT 06810",
+      "hours": "Monday–Friday 6:30 AM–6:30 PM; Saturday and Sunday by appointment only.",
+      "website": "https://www.centralbarkusa.com/danbury/",
+      "contact": "203-616-5144; danbury@centralbarkusa.com",
+      "townsServed": [
+        "Danbury"
+      ],
+      "servicesOffered": [
+        "Dog Daycare",
+        "Pet Boarding",
+        "Pet Grooming",
+        "Training & Behavior Support",
+        "Overnight Pet Care"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Weekend",
+        "Overnight"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Puppies"
       ]
     },
     {
@@ -3115,6 +3241,88 @@
       ]
     },
     {
+      "id": "recTQzp9oQb8vH0LJ",
+      "name": "Connecticut Humane Society Fox Memorial Clinic",
+      "track": "Pet Care & Resources",
+      "category": "Low-Cost Veterinary Clinic",
+      "specificType": "Donor-subsidized, reduced-fee non-emergency veterinary clinic for cats and dogs",
+      "town": "Newington",
+      "address": "701 Russell Road, Newington, CT 06111",
+      "hours": "Monday–Friday by appointment only. Closed 1:00–2:00 PM for lunch. Appointments begin at 9:00 AM; last appointment at 3:30 PM.",
+      "availability": "Appointment availability is extremely limited. Current operations page says new clients are accepted for medical care, not routine wellness visits; limited vaccine appointments are available.",
+      "cost": "Discounted veterinary services, typically 20–30% below other local veterinary clinics.",
+      "website": "https://cthumane.org/veterinary-care/clinic-basics/",
+      "contact": "860-594-4500; fax 860-665-1241",
+      "townsServed": [
+        "Newington"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-27",
+      "notes": "The Newington CHS campus also offers the Pet Food Pantry Program for dogs and cats. The pantry requires an application, a recent pet photo, and proof of current rabies vaccination. Program page: https://cthumane.org/pet-food-pantry-program/",
+      "servicesOffered": [
+        "Low-Cost Veterinary Clinic",
+        "Veterinary Care",
+        "Pet Food Assistance"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
+      "id": "reczqL8eArAXPnlGG",
+      "name": "Connecticut Humane Society Pet Food Pantry, Newington",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Short-term free cat and dog food for pet owners facing financial hardship. Application review is approximately 2–3 weeks.",
+      "town": "Newington",
+      "address": "701 Russell Road, Newington, CT 06111",
+      "website": "https://cthumane.org/pet-food-pantry-program/",
+      "contact": "860-594-4500; petfoodpantry@cthumane.org",
+      "townsServed": [
+        "Newington"
+      ],
+      "servicesOffered": [
+        "Pet Food Assistance"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ],
+      "petRequirements": [
+        "Rabies Certificate Required",
+        "Membership or Registration Required"
+      ]
+    },
+    {
+      "id": "recjnEM36foqNXUnb",
+      "name": "Connecticut Humane Society Pet Food Pantry, Waterford",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Short-term free cat and dog food for pet owners facing financial hardship. Application review is approximately 2–3 weeks.",
+      "town": "Waterford",
+      "address": "169 Old Colchester Road, Quaker Hill, CT 06375",
+      "website": "https://cthumane.org/pet-food-pantry-program/",
+      "contact": "860-594-4500; petfoodpantry@cthumane.org",
+      "townsServed": [
+        "Waterford"
+      ],
+      "servicesOffered": [
+        "Pet Food Assistance"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ],
+      "petRequirements": [
+        "Rabies Certificate Required",
+        "Membership or Registration Required"
+      ]
+    },
+    {
       "id": "rechSPhyqMZj75yEr",
       "name": "Connecticut Lions Pathfinders T1D Camp",
       "track": "Family & Childcare",
@@ -3808,6 +4016,153 @@
       "notes": "Official City of Groton page verified August 25, 2026. Walk-in registration is available at Spicer House, 29 Spicer Ave., Noank.",
       "servicesOffered": [
         "Summer Day Camp"
+      ]
+    },
+    {
+      "id": "reckwxW9zdUTLgfbg",
+      "name": "Dogtopia of Fairfield",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "specificType": "Dog daycare, overnight and long-term boarding, spa services and webcam access",
+      "town": "Fairfield",
+      "address": "1401 Kings Highway, Fairfield, CT 06824",
+      "hours": "Monday–Sunday 7:00 AM–7:00 PM",
+      "website": "https://www.dogtopia.com/connecticut-fairfield/",
+      "contact": "203-993-6757",
+      "townsServed": [
+        "Fairfield"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-27",
+      "notes": "Official page confirms half-day and full-day dog daycare, overnight and long-term boarding, spa services, webcams, required vaccination and a required evaluation.",
+      "servicesOffered": [
+        "Dog Daycare",
+        "Pet Boarding",
+        "Overnight Pet Care"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs"
+      ],
+      "petRequirements": [
+        "Vaccinations Required",
+        "Temperament Assessment Required"
+      ]
+    },
+    {
+      "id": "recVrvDTHnRNnAwld",
+      "name": "Dogtopia of Milford",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "specificType": "Half-day and full-day dog daycare, overnight and extended boarding, spa services and webcams",
+      "town": "Milford",
+      "address": "40 Quirk Road, Milford, CT 06460",
+      "hours": "Monday–Friday 6:30 AM–7:00 PM; Saturday–Sunday 9:00 AM–5:00 PM",
+      "website": "https://www.dogtopia.com/milford/",
+      "contact": "203-951-9970",
+      "townsServed": [
+        "Milford"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-27",
+      "notes": "Official provider location page or official Connecticut location directory confirms this physical location and current dog daycare and boarding services.",
+      "servicesOffered": [
+        "Dog Daycare",
+        "Pet Boarding",
+        "Overnight Pet Care"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs"
+      ],
+      "petRequirements": [
+        "Vaccinations Required",
+        "Temperament Assessment Required"
+      ]
+    },
+    {
+      "id": "reciHVg2IpSgaQXlE",
+      "name": "Dogtopia of Norwalk",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "specificType": "Dog daycare, boarding, spa services and webcams",
+      "town": "Norwalk",
+      "address": "30 Belden Ave #2, Norwalk, CT 06850",
+      "hours": "Monday–Sunday 7:00 AM–7:00 PM",
+      "website": "https://www.dogtopia.com/connecticut-norwalk/",
+      "contact": "203-993-6822",
+      "townsServed": [
+        "Norwalk"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-27",
+      "notes": "Official provider location page or official Connecticut location directory confirms this physical location and current dog daycare and boarding services.",
+      "servicesOffered": [
+        "Dog Daycare",
+        "Pet Boarding",
+        "Overnight Pet Care"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs"
+      ]
+    },
+    {
+      "id": "reckRJMxlMFQdARL6",
+      "name": "Dogtopia of Shelton",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "specificType": "Half-day and full-day dog daycare, overnight and long-term boarding, spa services and webcams",
+      "town": "Shelton",
+      "address": "850 Bridgeport Avenue, Shelton, CT 06484",
+      "hours": "Monday–Sunday 7:00 AM–7:00 PM",
+      "website": "https://www.dogtopia.com/connecticut-shelton/",
+      "contact": "203-973-7233",
+      "townsServed": [
+        "Shelton"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-27",
+      "notes": "Official provider location page or official Connecticut location directory confirms this physical location and current dog daycare and boarding services.",
+      "servicesOffered": [
+        "Dog Daycare",
+        "Pet Boarding",
+        "Overnight Pet Care"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs"
+      ]
+    },
+    {
+      "id": "rectgR8fCrSaK7iVS",
+      "name": "Dogtopia of Stamford-Downtown",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "specificType": "Full-day and half-day dog daycare, overnight and extended boarding, spa services and webcams",
+      "town": "Stamford",
+      "address": "421 Atlantic Street, Suite 101, Stamford, CT 06901",
+      "hours": "Monday–Sunday 7:00 AM–7:00 PM",
+      "website": "https://www.dogtopia.com/stamford-downtown/",
+      "contact": "203-716-6013",
+      "townsServed": [
+        "Stamford"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-27",
+      "notes": "Official provider location page or official Connecticut location directory confirms this physical location and current dog daycare and boarding services.",
+      "servicesOffered": [
+        "Dog Daycare",
+        "Pet Boarding",
+        "Overnight Pet Care"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs"
+      ],
+      "petRequirements": [
+        "Vaccinations Required",
+        "Temperament Assessment Required"
       ]
     },
     {
@@ -5850,6 +6205,46 @@
       ]
     },
     {
+      "id": "reckr7uGhsFZhEsiw",
+      "name": "Hounds Town Hartford",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "town": "Hartford",
+      "address": "92 Weston Street, Suite 39, Hartford, CT",
+      "hours": "Monday–Friday 6:30 AM–7:00 PM; Saturday 8:00 AM–5:00 PM; Sunday 11:00 AM–1:00 PM. Lobby closed 12:00–2:00 PM Monday–Saturday.",
+      "cost": "Published rates include daycare from $31–$38, dog boarding from $60, cat boarding $35, and grooming services priced by size.",
+      "website": "https://houndstownusa.com/locations/hartford/",
+      "contact": "475-454-6863",
+      "townsServed": [
+        "Hartford"
+      ],
+      "servicesOffered": [
+        "Dog Daycare",
+        "Pet Boarding",
+        "Pet Grooming",
+        "Pet Transportation",
+        "Training & Behavior Support",
+        "Overnight Pet Care"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Weekend",
+        "Overnight"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Puppies",
+        "Cats"
+      ],
+      "petRequirements": [
+        "Vaccinations Required",
+        "Spay/Neuter Required",
+        "Temperament Assessment Required",
+        "Minimum Age Applies"
+      ]
+    },
+    {
       "id": "recs5ByM5c3AJ6cHJ",
       "name": "HRA of NBB Franklin Early Childcare Lng Admy",
       "track": "Family & Childcare",
@@ -7753,6 +8148,31 @@
       ]
     },
     {
+      "id": "recZuffvoutN22jL3",
+      "name": "MedVet Norwalk",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "town": "Norwalk",
+      "address": "129 Glover Avenue, Suite 1A, Norwalk, CT 06850",
+      "hours": "Emergency room open 24 hours a day, 7 days a week, 365 days a year.",
+      "website": "https://www.medvet.com/location/norwalk/",
+      "contact": "203-838-6626; info.norwalk@medvet.com",
+      "townsServed": [
+        "Norwalk"
+      ],
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Veterinary Care",
+        "Emergency / Same-Day Availability"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Weekend",
+        "Overnight"
+      ],
+      "lastVerified": "2026-08-27"
+    },
+    {
       "id": "recPLuF8FWwTtVawt",
       "name": "Meriden YMCA Head Start",
       "track": "Family & Childcare",
@@ -9097,6 +9517,35 @@
       ]
     },
     {
+      "id": "rec4eL7xJacVM8dQv",
+      "name": "Newtown Veterinary Specialists",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "town": "Newtown",
+      "address": "52 Church Hill Road, Newtown, CT 06470",
+      "hours": "Open 24 hours a day, 7 days a week, including holidays.",
+      "website": "https://www.newtownvets.com/site/home",
+      "contact": "203-270-8387",
+      "townsServed": [
+        "Newtown"
+      ],
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Veterinary Care",
+        "Emergency / Same-Day Availability"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Weekend",
+        "Overnight"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
       "id": "recV8EugIU3IJURVJ",
       "name": "Ninoska Santos De Acosta Family Child Care Home ( Play and Learn Home Day Care)",
       "track": "Family & Childcare",
@@ -9118,6 +9567,30 @@
         "Child Care",
         "Infant Care",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recJP3hi1gU2qcLBw",
+      "name": "No Animal Left Unfed Pet Pantry Program",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Free pet food and supplies for Connecticut residents who submit the assistance form.",
+      "town": "West Hartford",
+      "address": "PO Box 330145, West Hartford, CT 06133",
+      "website": "https://noanimalleftunfedinc.com/pet-pantry-program/",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "servicesOffered": [
+        "Pet Food Assistance"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ],
+      "petRequirements": [
+        "Membership or Registration Required"
       ]
     },
     {
@@ -9364,6 +9837,32 @@
       "notes": "FY26 state-funded spaces: 55 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 9526. Local partner: Southeast CT LGP -- Linda Allen | lallen@learn.k12.ct.us | 860-434-4800. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "recy7FuWoyHZzFmii",
+      "name": "Nutmeg Spay/Neuter Clinic",
+      "track": "Pet Care & Resources",
+      "category": "Spay/Neuter Assistance",
+      "specificType": "Nonprofit reduced-cost spay/neuter surgery and wellness care",
+      "town": "Stratford",
+      "address": "626 Surf Avenue, Stratford, CT 06615",
+      "cost": "Reduced-cost spay/neuter services and wellness care; current prices are published on the provider's pricing page.",
+      "website": "https://www.nutmegclinic.org/",
+      "contact": "203-690-1550; info@nutmegclinic.org",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-27",
+      "notes": "Official provider page confirms reduced-cost spay/neuter and wellness care for cats and dogs throughout Connecticut and beyond. Clinic appointment link is available on the official site.",
+      "servicesOffered": [
+        "Spay/Neuter Assistance"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Cats"
       ]
     },
     {
@@ -9622,6 +10121,35 @@
       ]
     },
     {
+      "id": "recjXa6ifzJRexGPJ",
+      "name": "Paw Haven",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "town": "New Haven",
+      "address": "1175 State Street, Suite 241, New Haven, CT 06511",
+      "hours": "Open 7 days a week, 6:30 AM–7:30 PM.",
+      "website": "https://www.pawhavenct.com/",
+      "contact": "203-535-0453",
+      "townsServed": [
+        "New Haven"
+      ],
+      "servicesOffered": [
+        "Dog Daycare",
+        "Pet Boarding",
+        "Pet Grooming",
+        "Overnight Pet Care"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Overnight"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
       "id": "recilD3L2Cj6wULfW",
       "name": "Pequenin Children Multicultural Readiness Academy",
       "track": "Family & Childcare",
@@ -9644,6 +10172,38 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "rec5i9PuE7aDvO6Iu",
+      "name": "PetSmart PetsHotel & Doggie Day Camp, East Hartford",
+      "track": "Pet Care & Resources",
+      "category": "Pet Boarding",
+      "town": "East Hartford",
+      "address": "5 Main Street, East Hartford, CT 06118",
+      "hours": "Monday–Saturday 7:00 AM–9:00 PM; Sunday 8:00 AM–7:00 PM. Boarding is available overnight.",
+      "website": "https://stores.petsmart.com/ct/east-hartford/east-hartford/petshotel-doggie-day-camp",
+      "contact": "860-895-1816",
+      "townsServed": [
+        "East Hartford"
+      ],
+      "servicesOffered": [
+        "Pet Boarding",
+        "Dog Daycare",
+        "Pet Grooming",
+        "Training & Behavior Support",
+        "Medication Administration",
+        "Overnight Pet Care"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Weekend",
+        "Overnight"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Cats"
       ]
     },
     {
@@ -9715,6 +10275,38 @@
       "servicesOffered": [
         "Infant Care",
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "recrKaLJbTkadKGaT",
+      "name": "Pieper Memorial Veterinary Center",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "specificType": "24/7 emergency, primary and specialty veterinary care, including avian and exotic-pet care",
+      "town": "Middletown",
+      "address": "730 Randolph Road, Middletown, CT 06457",
+      "hours": "Emergency services: 24/7. Primary care: Monday–Friday 8:00 AM–8:00 PM; Saturday–Sunday 8:00 AM–4:00 PM. Specialty services: by appointment.",
+      "website": "https://pieperveterinary.com/locations/middletown-pieper-memorial/",
+      "contact": "Emergency 860-347-8387; specialty 860-743-0713; primary care 860-347-1122",
+      "townsServed": [
+        "Middletown"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-27",
+      "notes": "Official provider page confirms 24/7 emergency care, primary care, specialty services, puppy and kitten care, and avian and exotic-pet care.",
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Veterinary Care",
+        "Emergency / Same-Day Availability"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Puppies",
+        "Cats",
+        "Kittens",
+        "Birds",
+        "Exotic Pets"
       ]
     },
     {
@@ -9831,6 +10423,33 @@
       "notes": "FY26 state-funded spaces: 11 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 1636. Local partner: Thomaston/Plymouth LGP -- Michelle Anderson | andersonm@edadvance.org | 860-567-0863 ext 1177. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "rec26NwxU07Bt3oiP",
+      "name": "POA SPAY!",
+      "track": "Pet Care & Resources",
+      "category": "Spay/Neuter Assistance",
+      "town": "East Hartford",
+      "address": "144 Main Street, Unit E, East Hartford, CT 06118",
+      "cost": "Published low-cost packages include cat spay/neuter from $85 for feral cats and $160 for tame cats. Dog packages vary by age and weight.",
+      "website": "https://poaspay.org/",
+      "contact": "860-206-7922; info@poaspay.org",
+      "townsServed": [
+        "East Hartford"
+      ],
+      "servicesOffered": [
+        "Spay/Neuter Assistance",
+        "Low-Cost Veterinary Clinic",
+        "Veterinary Care"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ],
+      "petRequirements": [
+        "Membership or Registration Required"
       ]
     },
     {
@@ -10137,6 +10756,30 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recMRcLwP5GxSPrEo",
+      "name": "Rocky Hill Dog Park",
+      "track": "Pet Care & Resources",
+      "category": "Dog Park",
+      "specificType": "Fenced off-leash dog park. Dogs must be at least four months old and display a valid license and current rabies vaccination tag.",
+      "town": "Rocky Hill",
+      "address": "376 Elm Street, Rocky Hill, CT 06067",
+      "hours": "Daily from dawn to dusk.",
+      "website": "https://www.rockyhillct.gov/facilities/facility/details/rockyhilldogpark-10",
+      "contact": "Rocky Hill Parks and Recreation: 860-258-2772",
+      "servicesOffered": [
+        "Dog Park"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs"
+      ],
+      "petRequirements": [
+        "Rabies Certificate Required",
+        "Minimum Age Applies",
+        "Membership or Registration Required"
       ]
     },
     {
@@ -10655,6 +11298,33 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recxwmkOz6SkUvZ11",
+      "name": "Southington Dog Park",
+      "track": "Pet Care & Resources",
+      "category": "Dog Park",
+      "specificType": "Fenced off-leash park with a separate fenced area for small or timid dogs. Dogs must be at least four months old and display a current license.",
+      "town": "Southington",
+      "address": "Mill Street, Southington, CT",
+      "hours": "Daily from dawn until 9:00 PM.",
+      "website": "https://www.southingtonct.gov/departments/highway_parks_department/southington_dog_park.php",
+      "contact": "Southington Highway & Parks Department: 860-276-9430",
+      "townsServed": [
+        "Southington"
+      ],
+      "servicesOffered": [
+        "Dog Park"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs"
+      ],
+      "petRequirements": [
+        "Vaccinations Required",
+        "Minimum Age Applies",
+        "Membership or Registration Required"
       ]
     },
     {
@@ -11479,6 +12149,38 @@
       ]
     },
     {
+      "id": "recnW54wSfbUbGHX6",
+      "name": "The Furry Inn",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "specificType": "Boutique cage-free dog daycare and overnight boarding with supervised play, walks, and photo and video updates",
+      "town": "Bridgeport",
+      "address": "3486 Fairfield Avenue, Bridgeport, CT",
+      "cost": "Daycare $45 per day. Boarding $60 per night under 40 pounds; $70 per night over 40 pounds.",
+      "website": "https://www.thefurryinndogboardingdaycare.com/",
+      "contact": "203-981-4973",
+      "townsServed": [
+        "Bridgeport",
+        "Fairfield"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-27",
+      "notes": "Official page confirms daycare and boarding for dogs, a required free temperament evaluation, routine oral medication administration, and service for Bridgeport and Fairfield families. Exact operating hours were not published on the reviewed page.",
+      "servicesOffered": [
+        "Dog Daycare",
+        "Pet Boarding",
+        "Medication Administration",
+        "Overnight Pet Care"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs"
+      ],
+      "petRequirements": [
+        "Temperament Assessment Required"
+      ]
+    },
+    {
       "id": "recNQf2evmaQ8QBLi",
       "name": "The Global Child",
       "track": "Family & Childcare",
@@ -12276,6 +12978,30 @@
       ]
     },
     {
+      "id": "recgU4SlZFYl6h0rz",
+      "name": "VCA Shoreline Veterinary Referral and Emergency Center",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "specificType": "24-hour emergency and specialty veterinary hospital; no appointment necessary for emergencies",
+      "town": "Shelton",
+      "address": "895 Bridgeport Avenue, Shelton, CT 06484",
+      "hours": "Open 24 hours, Monday–Sunday",
+      "website": "https://vcahospitals.com/shoreline",
+      "contact": "203-929-8600; fax 203-944-9754",
+      "townsServed": [
+        "Shelton"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-27",
+      "notes": "Official provider page confirms a 24-hour emergency and referral hospital open 365 days a year. No appointment is necessary for emergencies. Animals Accepted left blank because the reviewed page did not state accepted animal types.",
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Veterinary Care",
+        "Emergency / Same-Day Availability"
+      ],
+      "lastVerified": "2026-08-27"
+    },
+    {
       "id": "recgY8GJlUtLOQhZN",
       "name": "Vernon Preschool Collaborative At Center Road School",
       "track": "Family & Childcare",
@@ -12389,6 +13115,69 @@
       "notes": "FY26 state-funded spaces: 30 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 1838. Local partner: Southeast CT LGP -- Linda Allen | lallen@learn.k12.ct.us | 860-434-4800. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "recnrCH8WhOeFZrtM",
+      "name": "Wag Central",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "specificType": "Dog daycare, boarding, grooming, training, swimming, agility enrichment and puppy academy",
+      "town": "Stratford",
+      "address": "80 Hathaway Drive, Stratford, CT 06615",
+      "website": "https://wagcentralct.com/",
+      "contact": "info@wagcentralct.com",
+      "townsServed": [
+        "Stratford"
+      ],
+      "submittedBy": "ChatGPT Daily Search",
+      "dateSubmitted": "2026-08-27",
+      "notes": "Official page confirms daycare, lodging, grooming, training, swimming, agility enrichment and puppy programming. Proof of vaccinations, a Personality Profile and local dog licensing are required. Exact operating hours were not published on the reviewed page.",
+      "servicesOffered": [
+        "Dog Daycare",
+        "Pet Boarding",
+        "Overnight Pet Care"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Puppies"
+      ],
+      "petRequirements": [
+        "Vaccinations Required",
+        "Temperament Assessment Required",
+        "Membership or Registration Required"
+      ]
+    },
+    {
+      "id": "recQ1YnicVakvQzIo",
+      "name": "Wags Doggie Daycamp & Boarding",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "town": "Danbury",
+      "address": "47 Miry Brook Road, Danbury, CT 06810",
+      "hours": "Dog daycare is offered seven days per week. Staff companionship is provided 24 hours a day, seven days a week for boarding.",
+      "website": "https://wagsdaycamp.com/",
+      "contact": "203-744-9247; info@wagsdaycamp.com",
+      "townsServed": [
+        "Danbury"
+      ],
+      "servicesOffered": [
+        "Dog Daycare",
+        "Pet Boarding",
+        "Pet Grooming",
+        "Training & Behavior Support",
+        "Overnight Pet Care"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Weekend",
+        "Overnight"
+      ],
+      "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Cats"
       ]
     },
     {
