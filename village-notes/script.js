@@ -184,7 +184,8 @@
     // looks after them day to day, who treats them when something is wrong,
     // and who helps when the household cannot cope on its own.
     ['Pet Day-to-Day Care', ['Dog Daycare','Pet Boarding','Pet Sitting (In-Home)',
-      'Dog Walking','Pet Grooming','Training & Behavior Support','Pet Transportation']],
+      'Dog Walking','Dog Park','Pet Grooming','Training & Behavior Support',
+      'Pet Transportation']],
     ['Pet Health & Emergencies', ['Veterinary Care','Emergency Veterinary Care',
       'Low-Cost Veterinary Clinic','Mobile Veterinary Service',
       'Vaccination & Microchip Clinic','Spay/Neuter Assistance']],
@@ -240,6 +241,7 @@
     'Pet Boarding':                  ['Pet Boarding'],
     'Pet Sitting (In-Home)':         ['Pet Sitting (In-Home)'],
     'Dog Walking':                   ['Dog Walking'],
+    'Dog Park':                      ['Dog Park'],
     'Pet Grooming':                  ['Pet Grooming'],
     'Training & Behavior Support':   ['Training & Behavior Support'],
     'Pet Transportation':            ['Pet Transportation'],

@@ -1,10 +1,10 @@
 # Daily search brief for Village Notes
 
-Paste the fenced block into the scheduled ChatGPT search that adds resources to
-the Village Notes base. It says **what to look for**. The companion file,
-`chatgpt-instructions.md`, says **how to record it** — the closed option lists,
-the no-typecast rule, the multi-tagging. Both are needed; neither repeats the
-other.
+This says **what to look for**. The companion file, `chatgpt-instructions.md`,
+says **how to record it** — the closed option lists, the no-typecast rule, the
+multi-tagging. Both are needed and neither repeats the other, so
+`build-chatgpt-brief.js` joins them into `chatgpt-brief.md`. Paste that one;
+edit this one.
 
 ## Why this replaces the old search
 
@@ -32,10 +32,10 @@ exists.
 
 ```
 You run the daily Connecticut search for Village Notes, a public directory at
-daricecorey.com/village-notes. Record what you find in Airtable base
-appxUByKs5ULrDZQp, table "Resources", following the write-safety standard you
-already have — closed option lists, no typecast, Services Offered multi-tagged.
-This brief only tells you what to go looking for.
+daricecorey.com/village-notes, and record what you find in Airtable base
+appxUByKs5ULrDZQp, table "Resources". The write-safety rules for this base --
+closed option lists, no typecast, Services Offered multi-tagged -- govern how
+you record it. What follows is what to go looking for.
 
 Work in this priority order. Do not skip to the easy one.
 
