@@ -21,6 +21,11 @@ parent filtering for inclusive camps sees half of them. The site's category map
 (`village-notes/script.js`) has to be patched by hand each time to compensate,
 and anything unmapped falls into an "Other" bucket that tells a parent nothing.
 
+It also covers **Services Offered**, which is the opposite problem: not a field
+being filled in wrongly but one being left empty. It was blank on 492 of 547
+records, and since the site now lets a service stand in for its matching
+category when a parent filters, an empty one hides most of what a place does.
+
 ## The prompt
 
 ```
@@ -47,11 +52,17 @@ unrecognised value with typecast enabled. So:
 - The same rule applies if you hand back a CSV or a table for import rather
   than writing to the API directly.
 
-TRACK — exactly two values, nothing else:
+TRACK — exactly three values, nothing else:
   Family & Childcare
   Elder Care
+  Pet Care & Resources
 Track is the audience, not the kind of program. A camp is Family & Childcare
 with a camp Category. It is not its own track. Neither is a youth program.
+
+The tracks do not mix. A boarding kennel is never Family & Childcare however
+family-run it is, and a nursing home is never Pet Care however pet-friendly
+its visiting policy. If a listing genuinely serves two, file it under the one
+its own materials lead with and say so in Specific Type or Notes.
 
 CATEGORY — exactly one value, from this list only:
 - Home Daycare (Licensed)
@@ -114,6 +125,166 @@ CATEGORY — exactly one value, from this list only:
 - Teen Program
 - Medical / Diagnosis-Specific Camp
 
+SERVICES OFFERED — multi-select. This is the one field where a listing gets to
+say everything it does, and it matters more than it looks.
+
+Category is a single select, so it can only name what a place is mainly for. A
+YMCA centre that runs infant rooms, toddler rooms, a preschool and after-school
+care has to be filed under one of those four. The site now treats a service as
+equivalent to its matching category when a parent filters, so whatever you put
+here is what that centre can be found by. Leave it blank and three quarters of
+what the place does is invisible.
+
+So: tag every service the provider's own materials confirm. "Infants, toddlers,
+preschoolers, and school-age children" earns Infant Care, Toddler Care,
+Preschool / Pre-K and After-School Care — four tags, one sentence, no guessing.
+
+Pick only from this list:
+- Infant Care
+- Toddler Care
+- Preschool / Pre-K
+- Full-Day Childcare
+- Before-School Care
+- After-School Care
+- Before- and After-School Care
+- School Vacation Care
+- Child Care
+- Summer Day Camp
+- Summer Sleepaway Camp
+- Summer Camp
+- Specialty Camp
+- Afterschool Enrichment
+- Arts Enrichment
+- STEM Enrichment
+- Sports Enrichment
+- Literacy / Tutoring
+- Mentoring
+- College Access / Readiness
+- Youth Leadership
+- Youth Employment
+- Teen Program
+- Teen / CIT Program
+- Volunteer Opportunity
+- Adaptive Program
+- Disability Support
+- Parent / Family Support
+- Caregiver Support
+- Elder Care
+- Transportation
+
+Five traps, every one of which a first automated pass over the existing records
+fell into before being corrected. They are easy to make and hard to spot:
+
+1. A source citation is not a service. "Official Connecticut Aging and
+   Disability Services source verified 2026-08-25" describes who published the
+   page. It was tagging six elder listings Disability Support.
+2. A denial is not a confirmation. "Licensing, food, transportation, financial
+   aid, and accommodation details were not confirmed on the provider page" is
+   the opposite of a transportation service. So is "families must arrange
+   school-bus transportation".
+3. Referring is not providing. Birth-to-Three serves infants; it does not run a
+   nursery. 211 and WIC mention infants for the same reason. Tagging any of
+   them Infant Care sends a parent hunting for daycare to a phone line.
+4. An amenity is not a programme. A retirement community with an art studio is
+   not somewhere to send a child to do art. Keep youth enrichment tags off
+   Elder Care listings.
+5. Arts / STEM / Sports Enrichment mean the programme includes those
+   activities. They do not mean it is an arts camp or a STEM camp — that is
+   what Category is for.
+
+The rule behind all five: tag what the source states, not what the name
+suggests. An untagged listing is honest. A wrongly tagged one sends a family to
+a place that cannot take their child.
+
+scripts/derive-services.py in the site repo is the working version of these
+rules, if you want to see how an edge case was decided.
+
+PET CARE & RESOURCES — the track for households whose dependants have four
+legs. Somebody juggling a toddler, an aging parent and a dog is one person
+with one week, and the week they all go wrong is the same week.
+
+CATEGORY for this track — exactly one, from this list only:
+- Dog Daycare
+- Pet Boarding
+- Pet Sitting (In-Home)
+- Dog Walking
+- Pet Grooming
+- Training & Behavior Support
+- Pet Transportation
+- Veterinary Care
+- Emergency Veterinary Care
+- Low-Cost Veterinary Clinic
+- Mobile Veterinary Service
+- Vaccination & Microchip Clinic
+- Spay/Neuter Assistance
+- Pet Food Assistance
+- Emergency Pet Foster Care
+- Pet-Friendly Housing
+- Adoption & Rescue
+- Lost & Found Pet Services
+- Pet Loss & Grief Support
+
+ANIMALS ACCEPTED — multi-select, and on a pet listing it is the field that
+matters most. A kennel that takes only dogs is no use to somebody with a
+rabbit, and an owner filters on this before anything else. Options:
+- Dogs
+- Puppies
+- Cats
+- Kittens
+- Small Animals (rabbits, rodents)
+- Birds
+- Reptiles
+- Exotic Pets
+- Horses / Large Animals
+- Farm Animals
+- All Animals
+- Not Confirmed
+
+Use "All Animals" only when the provider says so. A vet listing "dogs, cats
+and exotics" gets those three, not All Animals.
+
+PET INTAKE REQUIREMENTS — multi-select: what an owner has to have sorted
+before the first visit. One field rather than four, because they are all the
+same question — can I book, or is there a hurdle first. Options:
+- Vaccinations Required
+- Rabies Certificate Required
+- Spay/Neuter Required
+- Temperament Assessment Required
+- Trial Day Required
+- Size Limits Apply
+- Breed Restrictions Apply
+- Minimum Age Applies
+- Membership or Registration Required
+- None Stated
+
+"None Stated" means the provider publishes no requirement. Blank means nobody
+has checked. They are not interchangeable — one is an answer, the other is a
+gap — so do not use either to mean the other.
+
+SERVICES OFFERED gained five pet options, on the same multi-tag rule as
+everything else: Senior Pet Care, Special-Needs Pet Care, Medication
+Administration, Overnight Pet Care, Emergency / Same-Day Availability. A
+daycare that also boards overnight and gives insulin earns all three.
+
+DO NOT ASK FOR NEW FIELDS FOR THIS TRACK. The obvious ones already exist and
+work across all three tracks:
+  hours, including overnight    -> Hours/Schedule, and Schedule Window
+  cost                          -> Cost Notes
+  financial assistance          -> Financial Assistance Available
+  transport offered             -> Transportation Available
+  towns covered                 -> Towns Served
+  booking or reservation state  -> Registration Status
+  licensed, insured, accredited -> Licensing / Exemption Status
+  senior or special-needs care  -> Services Offered
+There are already forty-plus fields on this table and most are empty. A field
+nobody fills is worse than no field: it spreads the same evidence thinner and
+makes the record look answered when it isn't.
+
+
+AGE GROUPS SERVED — multi-select, fill it in where the source states ages. The
+site does not read this field yet, so Services Offered comes first if you only
+have time for one.
+
 TOWNS SERVED — multi-select, real Connecticut town names only, plus the single
 option "Statewide (all of Connecticut)" for programs with no geographic limit.
 A region is not a town: never add "Greater New Haven", "Fairfield County", or
@@ -145,7 +316,8 @@ provider's own website over an aggregator.
 
 ## Keeping this current
 
-The Category list above is a snapshot of the field as of 2026-08-26, with the
-four known duplicates removed. If options are added or merged in Airtable,
+The Category, Services Offered, Animals Accepted and Pet Intake Requirements
+lists above are snapshots of those fields as of 2026-08-27, with the four known
+duplicate categories removed. If options are added or merged in Airtable,
 update this file and re-paste the prompt — a stale list here recreates the exact
 problem it exists to prevent.
