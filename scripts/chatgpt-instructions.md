@@ -143,7 +143,9 @@ So: tag every service the provider's own materials confirm. "Infants, toddlers,
 preschoolers, and school-age children" earns Infant Care, Toddler Care,
 Preschool / Pre-K and After-School Care — four tags, one sentence, no guessing.
 
-Pick only from this list:
+Pick only from this list — plus, for the pet track, the nineteen pet
+categories, which are all Services Offered options too (see PET CARE &
+RESOURCES below):
 - Infant Care
 - Toddler Care
 - Preschool / Pre-K
@@ -265,10 +267,30 @@ same question — can I book, or is there a hurdle first. Options:
 has checked. They are not interchangeable — one is an answer, the other is a
 gap — so do not use either to mean the other.
 
-SERVICES OFFERED gained five pet options, on the same multi-tag rule as
-everything else: Senior Pet Care, Special-Needs Pet Care, Medication
-Administration, Overnight Pet Care, Emergency / Same-Day Availability. A
-daycare that also boards overnight and gives insulin earns all three.
+SERVICES OFFERED — every one of the nineteen categories above is also a
+Services Offered option, plus five that only ever appear there: Senior Pet
+Care, Special-Needs Pet Care, Medication Administration, Overnight Pet Care,
+Emergency / Same-Day Availability.
+
+The mirroring matters more on this track than on the others, because pet
+providers stack services. One kennel boards, grooms and trains. One humane
+society rehomes, fosters, reunites strays and runs the vaccine clinic. Category
+holds one of those; Services Offered holds the rest, and the site treats a
+service as its matching category when somebody filters. Fill in only Category
+and that kennel is invisible to everyone searching for grooming.
+
+So: Category is what the provider leads with. Services Offered is everything
+else it actually does, including the thing in Category if you like — the card
+drops the duplicate.
+
+Two to be careful with, because getting them wrong sends somebody to the wrong
+door in a bad moment:
+  Veterinary Care — only when the provider actually treats animals. A shelter
+    with a public clinic, yes. A boarding kennel with a vet on call, no.
+  Low-Cost Veterinary Clinic — only when the provider says its pricing is
+    reduced, sliding-scale or income-qualified. Somebody ticks that filter
+    because they cannot pay full price. If it is just a normal practice that
+    happens to be cheap, leave it off and put the prices in Cost Notes.
 
 DO NOT ASK FOR NEW FIELDS FOR THIS TRACK. The obvious ones already exist and
 work across all three tracks:

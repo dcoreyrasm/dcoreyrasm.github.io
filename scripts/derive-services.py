@@ -44,8 +44,11 @@ FLD = dict(name="fldhaAie6ZWEBNSnr", category="fldBp1UDqNtkz5fKM", track="fldoN4
            notes="fldcvNAYhvWg21zzc", services="flduTdPfjfHmL2h5k",
            status="fldoE5JfQiXElXs1S")
 
-# The 31 options on Services Offered. Anything not in here is a bug in the
-# tables below, not a new option to create.
+# What this script is allowed to emit. Not the whole field -- Services Offered
+# now carries the pet options too, and nothing here derives those, because the
+# pet records are hand-researched rather than bulk-imported. Anything the
+# tables below produce that is missing from this set is a bug in them, not a
+# new option to create.
 VALID = {
     "Infant Care", "Toddler Care", "Preschool / Pre-K", "Full-Day Childcare",
     "Before-School Care", "After-School Care", "School Vacation Care",

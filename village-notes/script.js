@@ -229,7 +229,32 @@
     'Literacy / Tutoring':           ['Tutoring / Academic Support', 'Literacy / Reading Program'],
     'Adaptive Program':              ['Inclusive/Special Needs Camp'],
     'Parent / Family Support':       ['Parenting Support/Classes'],
-    'Caregiver Support':             ['Caregiver Support Group']
+    'Caregiver Support':             ['Caregiver Support Group'],
+
+    // Every pet category is also a service, because pet providers stack
+    // services more than childcare ones do: one kennel boards, grooms and
+    // trains; one humane society rehomes, fosters, reunites strays and runs
+    // the vaccine clinic. Filed under one of those each would be invisible
+    // to somebody searching for any of the others.
+    'Dog Daycare':                   ['Dog Daycare'],
+    'Pet Boarding':                  ['Pet Boarding'],
+    'Pet Sitting (In-Home)':         ['Pet Sitting (In-Home)'],
+    'Dog Walking':                   ['Dog Walking'],
+    'Pet Grooming':                  ['Pet Grooming'],
+    'Training & Behavior Support':   ['Training & Behavior Support'],
+    'Pet Transportation':            ['Pet Transportation'],
+    'Veterinary Care':               ['Veterinary Care'],
+    'Emergency Veterinary Care':     ['Emergency Veterinary Care'],
+    'Low-Cost Veterinary Clinic':    ['Low-Cost Veterinary Clinic'],
+    'Mobile Veterinary Service':     ['Mobile Veterinary Service'],
+    'Vaccination & Microchip Clinic':['Vaccination & Microchip Clinic'],
+    'Spay/Neuter Assistance':        ['Spay/Neuter Assistance'],
+    'Pet Food Assistance':           ['Pet Food Assistance'],
+    'Emergency Pet Foster Care':     ['Emergency Pet Foster Care'],
+    'Pet-Friendly Housing':          ['Pet-Friendly Housing'],
+    'Adoption & Rescue':             ['Adoption & Rescue'],
+    'Lost & Found Pet Services':     ['Lost & Found Pet Services'],
+    'Pet Loss & Grief Support':      ['Pet Loss & Grief Support']
   };
 
   // Every category a listing can honestly answer to: its own, plus any its
