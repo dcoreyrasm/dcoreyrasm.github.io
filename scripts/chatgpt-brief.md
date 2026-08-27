@@ -212,6 +212,7 @@ CATEGORY for this track — exactly one, from this list only:
 - Pet Boarding
 - Pet Sitting (In-Home)
 - Dog Walking
+- Dog Park
 - Pet Grooming
 - Training & Behavior Support
 - Pet Transportation
@@ -316,6 +317,16 @@ A region is not a town: never add "Greater New Haven", "Fairfield County", or
 If you don't know which towns those are, leave the field empty — do not guess.
 
 TOWN/AREA (CT) — free text, the single town where the program physically sits.
+Send it as a plain string: "Norwalk", not ["Norwalk"]. It was briefly a
+multi-select, and an array is what a client that still believes that sends;
+Airtable answers "Field Town/Area (CT) cannot accept the provided value",
+which reads like the town was rejected when it is the shape that was.
+
+That is the general rule for every field: match its type. Text and dates take
+a string, a single select takes one option name as a string, a multi-select
+takes an array of option names. If a write is refused, check the shape you
+sent before you doubt the value -- and read the field's current type rather
+than trusting what it was last time.
 
 DON'T FILL BLANKS WITH FILLER. An empty field shows as nothing on the site. A
 sentence like "Contact the program directly for availability" shows as though
