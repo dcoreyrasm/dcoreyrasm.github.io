@@ -131,6 +131,19 @@
   // Renaming the variable or reindenting its closing bracket breaks that
   // check -- loudly, by design, rather than by reporting every category
   // as unmapped.
+  // The three audiences this directory serves. Declared rather than read off
+  // the data, because a track with no listings yet still has to be offerable:
+  // somebody looking for pet care needs to find the section and be asked to
+  // add the first one, not conclude the site has nothing to do with pets.
+  // Selecting an empty track lands on the contribution prompt, which is the
+  // most useful thing an empty section can do.
+  //
+  // scripts/check-vocabulary.js reads this literal, so it is the one place the
+  // expected tracks are written down. A track in the data but not here still
+  // appears in the dropdown -- and fails the sync check, which is how a fourth
+  // one gets noticed rather than quietly filtering to nothing.
+  var TRACKS = ['Family & Childcare', 'Elder Care', 'Pet Care & Resources'];
+
   var GROUPS = [
     ['Child Care', ['Center-Based Daycare','Home Daycare (Licensed)','Infant Care',
       'Preschool / Pre-K','Before/After School Care','Backup/Emergency Care',
@@ -216,7 +229,32 @@
     'Literacy / Tutoring':           ['Tutoring / Academic Support', 'Literacy / Reading Program'],
     'Adaptive Program':              ['Inclusive/Special Needs Camp'],
     'Parent / Family Support':       ['Parenting Support/Classes'],
-    'Caregiver Support':             ['Caregiver Support Group']
+    'Caregiver Support':             ['Caregiver Support Group'],
+
+    // Every pet category is also a service, because pet providers stack
+    // services more than childcare ones do: one kennel boards, grooms and
+    // trains; one humane society rehomes, fosters, reunites strays and runs
+    // the vaccine clinic. Filed under one of those each would be invisible
+    // to somebody searching for any of the others.
+    'Dog Daycare':                   ['Dog Daycare'],
+    'Pet Boarding':                  ['Pet Boarding'],
+    'Pet Sitting (In-Home)':         ['Pet Sitting (In-Home)'],
+    'Dog Walking':                   ['Dog Walking'],
+    'Pet Grooming':                  ['Pet Grooming'],
+    'Training & Behavior Support':   ['Training & Behavior Support'],
+    'Pet Transportation':            ['Pet Transportation'],
+    'Veterinary Care':               ['Veterinary Care'],
+    'Emergency Veterinary Care':     ['Emergency Veterinary Care'],
+    'Low-Cost Veterinary Clinic':    ['Low-Cost Veterinary Clinic'],
+    'Mobile Veterinary Service':     ['Mobile Veterinary Service'],
+    'Vaccination & Microchip Clinic':['Vaccination & Microchip Clinic'],
+    'Spay/Neuter Assistance':        ['Spay/Neuter Assistance'],
+    'Pet Food Assistance':           ['Pet Food Assistance'],
+    'Emergency Pet Foster Care':     ['Emergency Pet Foster Care'],
+    'Pet-Friendly Housing':          ['Pet-Friendly Housing'],
+    'Adoption & Rescue':             ['Adoption & Rescue'],
+    'Lost & Found Pet Services':     ['Lost & Found Pet Services'],
+    'Pet Loss & Grief Support':      ['Pet Loss & Grief Support']
   };
 
   // Every category a listing can honestly answer to: its own, plus any its
@@ -869,7 +907,8 @@
           return r;
         });
 
-        fillSelect(el.track, uniqueSorted(state.all.map(function (r) { return r.track; })), 'All tracks');
+        fillSelect(el.track, uniqueSorted(TRACKS.concat(
+          state.all.map(function (r) { return r.track; }))), 'All tracks');
         var townValues = [];
         state.all.forEach(function (r) {
           townValues.push(r.town);

@@ -24,11 +24,10 @@ const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'village-notes', 'data', 'resources.json');
 const SCRIPT = path.join(ROOT, 'village-notes', 'script.js');
 
-// Track is who a listing is for. Unlike Category, the page builds its Track
-// dropdown straight from the data, so there is no list in script.js to read --
-// the expectation lives here instead, which is the point: a fourth track
-// appearing unannounced is exactly what this check exists to catch.
-const KNOWN_TRACKS = ['Family & Childcare', 'Elder Care', 'Pet Care & Resources'];
+// Read from script.js rather than repeated here. When the page had no track
+// list of its own this file was the only place the expectation was written
+// down; now that the dropdown declares one, two copies would drift, and the
+// copy that drifts is the one nobody edits.
 
 /**
  * Pull the category map out of script.js.
@@ -37,6 +36,18 @@ const KNOWN_TRACKS = ['Family & Childcare', 'Elder Care', 'Pet Care & Resources'
  * containing an apostrophe -- "Children's Program" -- reads correctly instead
  * of silently truncating and reporting every category after it as unmapped.
  */
+/** The declared track list. A flat array of strings, so a single ] ends it. */
+function readTracks() {
+  const source = fs.readFileSync(SCRIPT, 'utf8');
+  const match = source.match(/var TRACKS = (\[[^\]]*\]);/);
+  if (!match) throw new Error('could not find the TRACKS literal in script.js');
+  const tracks = new Function('return ' + match[1])();
+  if (!Array.isArray(tracks) || !tracks.length || !tracks.every(t => typeof t === 'string')) {
+    throw new Error('the TRACKS literal in script.js is not a list of strings');
+  }
+  return tracks;
+}
+
 function readGroups() {
   const source = fs.readFileSync(SCRIPT, 'utf8');
   const start = source.indexOf('var GROUPS = [');
@@ -82,6 +93,7 @@ function report(unknown, singular, many, counts, examples) {
 }
 
 function main() {
+  const knownTracks = readTracks();
   const mapped = readGroups();
   const { resources } = JSON.parse(fs.readFileSync(DATA, 'utf8'));
 
@@ -89,7 +101,7 @@ function main() {
   const tracks = tally(resources, 'track');
 
   const newCats = [...cats.counts.keys()].filter(c => !mapped.has(c)).sort();
-  const newTracks = [...tracks.counts.keys()].filter(t => !KNOWN_TRACKS.includes(t)).sort();
+  const newTracks = [...tracks.counts.keys()].filter(t => !knownTracks.includes(t)).sort();
 
   if (!newCats.length && !newTracks.length) {
     console.log(`Vocabulary clean: ${cats.counts.size} categories and ` +
@@ -109,10 +121,11 @@ about whether the directory stays easy to search.
 Each one is either a real new kind of resource or a second spelling of
 something that already exists. Check which, then:
 
-  a real new kind    -> add it to GROUPS in village-notes/script.js, in the
-                        group a parent would look for it under
-  a second spelling  -> retag its listings onto the existing option in
-                        Airtable, then delete the duplicate option
+  a real new track    -> add it to TRACKS in village-notes/script.js
+  a real new category -> add it to GROUPS in village-notes/script.js, in the
+                         group a parent would look for it under
+  a second spelling   -> retag its listings onto the existing option in
+                         Airtable, then delete the duplicate option
 
 scripts/airtable-option-audit.md has the last pass over this, and
 scripts/chatgpt-instructions.md is the standard meant to stop it recurring.`);
