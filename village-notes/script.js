@@ -920,7 +920,12 @@
         // them alphabetically. Towns Served is the structured field, so the
         // options come from clean single names only.
         townValues = townValues.filter(function (t) {
-          return t && t !== STATEWIDE && !/,| and | area$/i.test(t);
+          // "Statewide" is not a town, but 21 listings carry it as their
+          // Town/Area, so it was sitting in the dropdown between Stamford and
+          // Sterling. Every one of them also carries the Towns Served
+          // statewide flag, which already matches them to whatever town a
+          // family picks, so dropping the option loses nobody.
+          return t && !/^statewide/i.test(t) && !/,| and | area$/i.test(t);
         });
         buildTownList(uniqueSorted(townValues));
         buildCatList();
