@@ -41,7 +41,7 @@ jobs:
       # Only the drift check needs Node. It is set up here rather than beside
       # that step so a missing toolchain fails before the pull, not after a
       # refresh has already been committed.
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v7
         with:
           node-version: "22"
 
