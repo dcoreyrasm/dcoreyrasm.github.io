@@ -100,22 +100,32 @@ function readExpectedShapes() {
   return Object.entries(fieldMap).map(([name, key]) => ({ name, key, list: listKeys.has(key) }));
 }
 
+/**
+ * Field name -> Airtable type, or a reason the check could not run.
+ *
+ * Reading the schema needs schema.bases:read, which this token has never
+ * carried -- the same 403 that stopped a Category option being renamed months
+ * ago. So this degrades rather than failing: a missing permission is not a
+ * reason to redden a run over a check that is additional to the vocabulary
+ * one. It does mean the check is inert until the scope is added, which is why
+ * the message says so instead of just saying "skipped".
+ */
 async function airtableFields() {
   const token = process.env.AIRTABLE_TOKEN;
-  if (!token) return null;
+  if (!token) return { skipped: 'no AIRTABLE_TOKEN, so this only runs in Actions' };
+
   const url = `https://api.airtable.com/v0/meta/bases/${BASE_ID}/tables`;
   const res = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
-  if (!res.ok) {
-    // Read-only schema access is not guaranteed on this token, and never has
-    // been. Say so and check what can be checked rather than failing the run
-    // over a permission the vocabulary check never needed.
-    console.log(`Skipping the field-shape check: Airtable returned ${res.status} for the schema.`);
-    return null;
+  if (res.status === 401 || res.status === 403) {
+    return { skipped: 'the token cannot read the schema (403). Add schema.bases:read ' +
+                      'to it -- read-only, and this check does nothing without it' };
   }
+  if (!res.ok) return { skipped: `Airtable returned ${res.status} for the schema` };
+
   const body = await res.json();
   const table = (body.tables || []).find(t => t.id === TABLE_ID);
   if (!table) throw new Error(`table ${TABLE_ID} is not in the base schema`);
-  return new Map(table.fields.map(f => [f.name, f.type]));
+  return { fields: new Map(table.fields.map(f => [f.name, f.type])) };
 }
 
 function checkShapes(expected, actual) {
@@ -154,9 +164,11 @@ function report(unknown, singular, many, counts, examples) {
 }
 
 async function main() {
-  const shapes = await airtableFields();
-  if (shapes) {
-    const { missing, wrong } = checkShapes(readExpectedShapes(), shapes);
+  const { fields, skipped } = await airtableFields();
+  if (skipped) {
+    console.log(`Field-shape check skipped: ${skipped}.`);
+  } else {
+    const { missing, wrong } = checkShapes(readExpectedShapes(), fields);
     if (missing.length || wrong.length) {
       console.error('Airtable fields no longer match what the sync expects.\n');
       for (const name of missing) {
@@ -177,8 +189,6 @@ it. Do not leave the two disagreeing.
     } else {
       console.log(`Field shapes match: ${readExpectedShapes().length} fields as the sync expects them.`);
     }
-  } else {
-    console.log('Field-shape check skipped (no AIRTABLE_TOKEN).');
   }
 
   const knownTracks = readTracks();
