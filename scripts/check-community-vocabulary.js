@@ -82,6 +82,19 @@ function readKeys() {
   return [...keys];
 }
 
+/**
+ * Tell a field that has gone quiet from one that has not arrived yet.
+ *
+ * A renamed Airtable field still leaves its key on every record, set to null by
+ * the fetch script's normalize() -- that is the silent breakage worth failing
+ * on. A key no record carries at all is a field the page reads but the snapshot
+ * predates: the next sync fills it. Failing on that would turn every new field
+ * into a red run for six hours, so it is reported as a note instead.
+ */
+function carriedBySomeRecord(rows, key) {
+  return rows.some(row => Object.prototype.hasOwnProperty.call(row, key));
+}
+
 function isEmpty(value) {
   if (value == null || value === '') return true;
   return Array.isArray(value) && value.length === 0;
@@ -126,14 +139,21 @@ function main() {
   // A key the page reads that no entry answers. Every one of them carries data
   // today, so this only goes red when a field stops arriving.
   const keys = readKeys();
-  const goneQuiet = keys
-    .filter(key => opportunities.every(row => isEmpty(row[key])))
-    .sort();
+  const unanswered = keys.filter(key => opportunities.every(row => isEmpty(row[key])));
+  const goneQuiet = unanswered.filter(key => carriedBySomeRecord(opportunities, key)).sort();
+  const notYetSynced = unanswered.filter(key => !carriedBySomeRecord(opportunities, key)).sort();
+
+  if (notYetSynced.length) {
+    console.log(`${notYetSynced.length} ${plural(notYetSynced.length, 'field the page reads is', 'fields the page reads are')} ` +
+                `not in this snapshot yet; the next sync will fill ${plural(notYetSynced.length, 'it', 'them')}: ` +
+                notYetSynced.join(', '));
+  }
 
   if (!newDoors.length && !newLegal.length && !goneQuiet.length) {
+    const answered = keys.length - notYetSynced.length;
     console.log(`Vocabulary clean: ${doors.counts.size} access ${plural(doors.counts.size, 'door', 'doors')}, ` +
                 `${legal.counts.size} legal-status ${plural(legal.counts.size, 'option', 'options')}, ` +
-                `and all ${keys.length} fields the page reads are answered by at least one entry.`);
+                `and all ${answered} fields in this snapshot are answered by at least one entry.`);
     return;
   }
 

@@ -144,6 +144,28 @@
 .cf-multi-opt.is-empty { opacity: .38; }
 .cf-multi-opt[hidden] { display: none; }
 
+/* ---- "Only show" switches ----------------------------------------------- */
+/* The pill switches the childcare directory uses for the same job. The real
+   checkbox is hidden rather than removed, so it still takes focus and still
+   answers to the keyboard. */
+.cf-onlys { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: -.75rem 0 2rem; }
+.cf-onlys[hidden] { display: none; }
+.cf-onlys-label { font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--coral); margin-right: .25rem; }
+/* Named cf-only, not cf-toggle: that class already belongs to the card's
+   "See the details" button, and sharing it dressed these pills in a link's
+   underline while pushing pill geometry onto every card. */
+.cf-only { display: inline-flex; align-items: center; gap: .45rem; cursor: pointer; text-decoration: none; }
+.cf-only[hidden] { display: none; }
+.cf-only input { position: absolute; opacity: 0; width: 0; height: 0; }
+.cf-only span {
+  display: inline-block; border: 1px solid var(--line); border-radius: 999px;
+  padding: .4rem .85rem; font-size: .78rem; color: var(--muted);
+  background: var(--bg2); transition: all .15s; white-space: nowrap;
+}
+.cf-only:hover span { border-color: var(--coral); color: var(--cream); }
+.cf-only input:checked + span { background: var(--coral); border-color: var(--coral); color: var(--cf-on-accent); }
+.cf-only input:focus-visible + span { outline: 3px solid var(--coral); outline-offset: 2px; }
+
 /* ---- Layout ------------------------------------------------------------- */
 .cf-layout { display: grid; grid-template-columns: 270px 1fr; gap: 2.5rem; align-items: start; padding-bottom: 5rem; }
 
@@ -199,6 +221,10 @@
    so the record still reads honestly, but it gives up the alert colour — the
    red is reserved for dates someone can still act on. */
 .cf-badge.closed { border-color: var(--line); color: var(--muted); background: transparent; }
+/* Still open, but far enough off that alert red would cry wolf next to a date
+   that really is days away. */
+.cf-badge.upcoming { border-color: var(--cf-warn-line); color: var(--cf-warn); background: var(--cf-warn-bg); }
+.cf-badge.fresh { border-color: var(--cf-ok-line); color: var(--cf-ok); background: var(--cf-ok-bg); font-weight: 500; }
 .cf-closed-note { color: var(--muted); font-size: .82em; }
 .cf-card-desc { font-size: .92rem; color: var(--muted); line-height: 1.7; }
 .cf-card-actions { display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; margin-top: 1.1rem; }

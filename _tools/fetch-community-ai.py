@@ -112,6 +112,14 @@ def fetch_all(token):
 def normalize(record):
     fields = record.get("fields", {})
     out = {"id": record["id"]}
+
+    # When the row first appeared in the base, which the page uses to mark an
+    # entry as recently added. Airtable returns this on every record without a
+    # field having to exist for it, so nothing in the base has to be maintained
+    # by hand -- and unlike a hand-kept "date added" it cannot be forgotten.
+    created = record.get("createdTime") or ""
+    out["added"] = created[:10] or None
+
     for airtable_name, key in FIELDS.items():
         value = fields.get(airtable_name)
         if key in LIST_KEYS:

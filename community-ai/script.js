@@ -76,6 +76,7 @@
     ['afterSupportEnds', 'When free support ends'],
     ['cycle',            'Cycle'],
     ['deadline',         'Deadline'],
+    ['added',            'Added to this directory'],
     ['status',           'Current status'],
     ['geo',              'Geographic scope'],
     ['ctRelevance',      'Connecticut relevance'],
@@ -132,7 +133,8 @@
 
   var ALL = [];
   var META = {};
-  var state = { q: '', filters: {}, group: 'door', sort: 'relevance', expanded: {}, shown: 0 };
+  var state = { q: '', filters: {}, only: {}, group: 'door', sort: 'relevance',
+                expanded: {}, shown: 0 };
   var facetShowAll = {};
   /* Whether each facet's <details> is open. Seeded from FACETS, then owned by
      the reader — a re-render must never fold up a group they just opened. */
@@ -230,6 +232,62 @@
     return !!deadline && String(deadline) < todayISO();
   }
 
+  /* How many days from today to a plain YYYY-MM-DD, on the viewer's own
+     calendar — negative for a date already gone. Built from local parts for the
+     same reason todayISO() is: Date('2026-09-07') is UTC midnight, which is the
+     day before for anyone west of Greenwich. */
+  function daysUntil(iso) {
+    if (!iso) return null;
+    var parts = String(iso).split('-');
+    if (parts.length !== 3) return null;
+    var then = new Date(+parts[0], +parts[1] - 1, +parts[2]);
+    if (isNaN(then)) return null;
+    var now = new Date();
+    return Math.round((then - new Date(now.getFullYear(), now.getMonth(), now.getDate())) / 86400000);
+  }
+
+  function daysSince(iso) {
+    var n = daysUntil(iso);
+    return n === null ? null : -n;
+  }
+
+  /* A date still ahead says more as a countdown than as a date: "closes in 4
+     days" is a decision, "Sep 7, 2026" is arithmetic homework. Past this
+     window it goes back to being a date. */
+  var SOON_DAYS = 14;
+
+  function closingSoon(rec) {
+    var n = daysUntil(rec.deadline);
+    return n !== null && n >= 0 && n <= SOON_DAYS;
+  }
+
+  /* `added` is the day the row first appeared in the base, which the sync
+     carries over from Airtable. An entry the directory has not had for long is
+     worth pointing at — someone who came back after the last talk wants to know
+     what is here now that was not before. */
+  var NEW_DAYS = 7;
+
+  function isNew(rec) {
+    var n = daysSince(rec.added);
+    return n !== null && n >= 0 && n <= NEW_DAYS;
+  }
+
+  /* Set at load. When a directory is first built every entry is new, and a mark
+     on all of them says nothing — so it is dropped while that is true, and
+     comes back on its own as the founding bulk ages out. */
+  var newSaysNothing = false;
+
+  function showsNew(rec) {
+    return !newSaysNothing && isNew(rec);
+  }
+
+  /* The two switches above the results. They ask about dates rather than about
+     a field, so they cut across every facet instead of being one. */
+  var ONLY = {
+    'new':  { test: showsNew,      said: 'added recently' },
+    'soon': { test: closingSoon,   said: 'with a deadline coming up' }
+  };
+
   /* Order for the deadline sort: what is still open, soonest first; then the
      rolling entries with no date; then what has already closed. */
   function deadlineRank(rec) {
@@ -256,6 +314,9 @@
   /* -- filtering ---------------------------------------------------------- */
 
   function matchesFacets(rec, skipKey) {
+    for (var only in state.only) {
+      if (state.only[only] && ONLY[only] && !ONLY[only].test(rec)) return false;
+    }
     for (var key in state.filters) {
       if (key === skipKey) continue;
       var chosen = state.filters[key];
@@ -290,6 +351,10 @@
       /* Someone with a date to hit wants the closing ones first. Most entries
          are rolling and carry no deadline at all, and a few have already
          closed; deadlineRank keeps all three groups in the useful order. */
+      if (by === 'added') {
+        return String(b.rec.added || '').localeCompare(String(a.rec.added || '')) ||
+               a.rec.title.localeCompare(b.rec.title);
+      }
       if (by === 'deadline') {
         return deadlineRank(a.rec).localeCompare(deadlineRank(b.rec)) ||
                a.rec.title.localeCompare(b.rec.title);
@@ -548,10 +613,21 @@
     else if (rec.legalStatus && rec.legalStatus !== 'Not stated') badges.push('<span class="cf-badge">' + esc(rec.legalStatus) + '</span>');
     if (rec.beginnerFriendly === 'Yes') badges.push('<span class="cf-badge">Beginner friendly</span>');
     if (rec.deadline) {
-      badges.push(isClosed(rec.deadline)
-        ? '<span class="cf-badge closed">Closed ' + esc(prettyDate(rec.deadline)) + '</span>'
-        : '<span class="cf-badge deadline">Deadline ' + esc(prettyDate(rec.deadline)) + '</span>');
+      var left = daysUntil(rec.deadline);
+      if (isClosed(rec.deadline)) {
+        badges.push('<span class="cf-badge closed">Closed ' + esc(prettyDate(rec.deadline)) + '</span>');
+      } else if (left === 0) {
+        badges.push('<span class="cf-badge deadline">Closes today</span>');
+      } else if (left !== null && left <= SOON_DAYS) {
+        badges.push('<span class="cf-badge deadline">Closes in ' + left +
+                    (left === 1 ? ' day' : ' days') + '</span>');
+      } else {
+        /* Still open, but months out. Alert red would cry wolf next to a date
+           that really is days away, so a further-off one reads calmer. */
+        badges.push('<span class="cf-badge upcoming">Deadline ' + esc(prettyDate(rec.deadline)) + '</span>');
+      }
     }
+    if (showsNew(rec)) badges.push('<span class="cf-badge fresh">Just added</span>');
 
     /* A field the official source never addressed is worth saying once, at the
        end — not as eight rows of "Not stated" between the facts that matter. */
@@ -567,6 +643,8 @@
         body = real.map(function (x) { return '<span class="tag">' + esc(x) + '</span>'; }).join('');
       } else if (key === 'deadline') {
         body = esc(prettyDate(v)) + (isClosed(v) ? ' <span class="cf-closed-note">(this date has passed)</span>' : '');
+      } else if (key === 'added') {
+        body = esc(prettyDate(v));
       } else {
         body = esc(v);
       }
@@ -612,6 +690,9 @@
      the search box", and it is the sentence that makes an email worth sending. */
   function currentAsk() {
     var bits = [];
+    Object.keys(ONLY).forEach(function (key) {
+      if (state.only[key]) bits.push(ONLY[key].said);
+    });
     FACETS.forEach(function (facet) {
       var chosen = state.filters[facet.key] || [];
       if (!chosen.length) return;
@@ -709,8 +790,39 @@
     }).join('');
   }
 
+  /* Counts on the switches, and a switch that would return nothing hides
+     rather than promising an empty result. "Added recently" also disappears
+     while everything is new, which is the same judgement showsNew() makes. */
+  function tuneOnly() {
+    var live = 0;
+    Array.prototype.forEach.call(document.querySelectorAll('.cf-only input[data-only]'), function (box) {
+      var key = box.getAttribute('data-only');
+      var n = ALL.filter(ONLY[key].test).length;
+      var label = box.parentNode.querySelector('span');
+      if (!label.dataset.base) label.dataset.base = label.textContent;
+      if (n === 0) {
+        box.parentNode.hidden = true;
+        box.checked = false;
+        delete state.only[key];
+      } else {
+        box.parentNode.hidden = false;
+        label.textContent = label.dataset.base + ' (' + n + ')';
+        live++;
+      }
+    });
+    var row = document.querySelector('.cf-onlys');
+    if (row) row.hidden = live === 0;
+  }
+
+  function syncOnly() {
+    Array.prototype.forEach.call(document.querySelectorAll('.cf-only input[data-only]'), function (box) {
+      box.checked = !!state.only[box.getAttribute('data-only')];
+    });
+  }
+
   function renderAll() {
     renderQuick();
+    syncOnly();
     syncRow();
     renderFacets();
     renderChips();
@@ -728,6 +840,8 @@
     if (state.q) p.set('q', state.q);
     if (state.group !== 'door') p.set('group', state.group);
     if (state.sort !== 'relevance') p.set('sort', state.sort);
+    var on = Object.keys(state.only).filter(function (k) { return state.only[k]; });
+    if (on.length) p.set('only', on.join('~'));
     FACETS.forEach(function (f) {
       var v = state.filters[f.key];
       if (v && v.length) p.set(f.key, v.join('~'));
@@ -758,6 +872,10 @@
     FACETS.forEach(function (f) {
       var v = p.get(f.key);
       if (v) state.filters[f.key] = v.split('~').filter(Boolean);
+    });
+    state.only = {};
+    (p.get('only') || '').split('~').forEach(function (k) {
+      if (ONLY[k]) state.only[k] = true;
     });
   }
 
@@ -797,9 +915,16 @@
     });
 
     function resetAll() {
-      state.q = ''; state.filters = {}; qEl.value = '';
+      state.q = ''; state.filters = {}; state.only = {}; qEl.value = '';
       closePanels(); writeHash(); renderAll();
     }
+
+    Array.prototype.forEach.call(document.querySelectorAll('.cf-only input[data-only]'), function (box) {
+      box.addEventListener('change', function () {
+        state.only[this.getAttribute('data-only')] = this.checked;
+        writeHash(); renderAll();
+      });
+    });
     $('cf-reset').addEventListener('click', resetAll);
     $('cf-reset-row').addEventListener('click', resetAll);
 
@@ -944,6 +1069,11 @@
       });
     });
 
+    /* Decided before anything renders: if nearly every entry was added inside
+       the window, "just added" is not news, it is the whole list. */
+    var fresh = ALL.filter(isNew).length;
+    newSaysNothing = ALL.length > 0 && fresh / ALL.length >= 0.8;
+
     var orgs = {}, door1 = 0, noStatus = 0, dated = 0;
     ALL.forEach(function (rec) {
       if (rec.org) orgs[rec.org] = true;
@@ -973,6 +1103,7 @@
 
     readHash();
     buildRow();
+    tuneOnly();
     state.sort  = normalizeChoice('cf-sort', 'relevance', state.sort);
     state.group = normalizeChoice('cf-group', 'door', state.group);
     $('cf-q').value = state.q;

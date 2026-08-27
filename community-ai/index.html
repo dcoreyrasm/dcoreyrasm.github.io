@@ -111,6 +111,7 @@
             <option value="title">Sort: name A&ndash;Z</option>
             <option value="org">Sort: organization A&ndash;Z</option>
             <option value="funding">Sort: largest funding first</option>
+            <option value="added">Sort: recently added</option>
             <option value="checked">Sort: most recently checked</option>
             <option value="stale">Sort: longest since checked</option>
           </select>
@@ -134,6 +135,16 @@
         <div class="cf-fieldrow" id="cf-fieldrow"></div>
         <button type="button" id="cf-reset-row" class="btn-ghost cf-reset-row">Reset</button>
       </form>
+
+      <!-- Two switches that ask about dates rather than about a field, so they
+           cut across every filter above. script.js puts the count on each and
+           hides one that would return nothing — including "Added recently"
+           while the whole directory is still new. -->
+      <div class="cf-onlys" role="group" aria-label="Quick filters" hidden>
+        <span class="cf-onlys-label">Only show</span>
+        <label class="cf-only"><input type="checkbox" data-only="new" /><span>Added recently</span></label>
+        <label class="cf-only"><input type="checkbox" data-only="soon" /><span>Deadline coming up</span></label>
+      </div>
 
       <div class="cf-layout">
         <aside class="cf-side" id="cf-side" aria-label="Filters">
