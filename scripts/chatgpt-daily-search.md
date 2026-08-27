@@ -110,7 +110,11 @@ Check for an existing record before adding one. Match on organisation name plus
 street address. Two sites of one provider in different towns are two records;
 the same site written up twice is a duplicate that someone has to clean up.
 
-Set Moderation Status to "Pending Review" unless Darice has said otherwise.
+Set Moderation Status to "Published". Records go live on the next sync with
+nobody reading them first, which is deliberate -- but it means an unsound
+record reaches a family before anyone notices. If one is not solid enough to
+stand on its own, leave it out and name it in your report rather than
+publishing a thinner version of it.
 
 REPORT AT THE END OF EACH RUN
   - how many records you added, by track

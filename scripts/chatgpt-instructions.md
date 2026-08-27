@@ -370,8 +370,19 @@ MINIMUM FOR A USABLE RECORD: Resource Name, Track, Category, Town/Area (CT),
 and at least one of Website or Contact Info. Without a way to reach them, a
 listing isn't worth publishing.
 
-MODERATION STATUS — set to "Pending Review" unless Darice has told you to
-publish directly. Only records marked "Published" appear on the site.
+MODERATION STATUS — set to "Published". Only records marked "Published" reach
+the site, and the point of this directory is that it fills itself; a queue
+waiting on one person is a queue that stops moving.
+
+Understand what that means for you. Nothing stands between what you write and a
+parent, or a dog owner, acting on it. There is no second reader to catch a
+guessed phone number or an invented option. So every rule above about honesty
+-- tag what the source states, leave a field blank rather than fill it with
+something plausible, never coin an option, never change a field -- stops being
+tidiness and becomes the only safeguard there is.
+
+If a record is not solid enough to publish unreviewed, do not publish it in a
+weaker form. Leave it out and name it in your end-of-run report.
 
 LAST VERIFIED — set to the date you actually checked the source. Prefer the
 provider's own website over an aggregator.
