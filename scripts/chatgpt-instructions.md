@@ -26,6 +26,10 @@ being filled in wrongly but one being left empty. It was blank on 492 of 547
 records, and since the site now lets a service stand in for its matching
 category when a parent filters, an empty one hides most of what a place does.
 
+This file covers how to record a resource. What to go looking for in the first
+place is a separate brief, `chatgpt-daily-search.md`, aimed at the scheduled
+search. Keep both pasted in.
+
 ## The prompt
 
 ```
