@@ -21,6 +21,12 @@ parent filtering for inclusive camps sees half of them. The site's category map
 (`village-notes/script.js`) has to be patched by hand each time to compensate,
 and anything unmapped falls into an "Other" bucket that tells a parent nothing.
 
+A second kind of change has since happened too: **Town/Area (CT) was converted
+from free text into a multi-select**, which nobody asked for and which turned
+every value the field had ever held into a permanent dropdown option — "Greater
+Hartford area", "and New Haven", "PA". Same root cause as the coined options:
+a change made in passing that nobody would have approved if asked.
+
 It also covers **Services Offered**, which is the opposite problem: not a field
 being filled in wrongly but one being left empty. It was blank on 492 of 547
 records, and since the site now lets a service stand in for its matching
@@ -55,6 +61,25 @@ unrecognised value with typecast enabled. So:
   tell Darice which option you think is missing so she can add it deliberately.
 - The same rule applies if you hand back a CSV or a table for import rather
   than writing to the API directly.
+
+SECOND RULE, SAME SHAPE: never change a field's type, and never add, rename or
+delete a field. Propose it and let Darice decide.
+
+This one has already happened too. Town/Area (CT) was converted from free text
+into a multi-select. Nothing broke outright, but converting a text field turns
+every value it has ever held into a permanent dropdown option, so the field now
+offers "Greater Hartford area", "Waterbury and surrounding towns", "and New
+Haven" and "PA" as choices somebody can pick for a new record. It also left two
+fields doing the same job, since Towns Served was already the structured one.
+
+A field's type is not a detail the site absorbs. It decides whether the page
+reads one value or several, and changing it changes every listing at once. The
+sync now fails when a field is not the shape it expects, so a change like this
+turns the next run red rather than going unnoticed -- but the point is not to
+make it detectable, it is not to do it.
+
+If a field genuinely looks wrong, say so in your end-of-run report with what
+you would change and why.
 
 TRACK — exactly three values, nothing else:
   Family & Childcare

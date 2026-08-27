@@ -60,5 +60,11 @@ jobs:
       # problem, not an outage -- the page still shows every listing -- so it
       # must never be a reason to hold back a refresh. Failing here turns the
       # run red, which is the notification.
-      - name: Check the base for vocabulary drift
+      #
+      # The token is here so the check can also compare field types against
+      # what the sync expects. It only reads, and it degrades to the
+      # vocabulary check alone if schema access is refused.
+      - name: Check the base for vocabulary and field-shape drift
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
         run: node scripts/check-vocabulary.js

@@ -135,9 +135,23 @@ function clean(value, key) {
   if (LIST_KEYS.has(key)) return Array.isArray(value) ? value : (value ? [value] : []);
   if (value == null) return null;
   if (typeof value === 'number') return value;
+  // A scalar field that arrives as an array means its type changed in Airtable
+  // -- Town/Area was turned from free text into a multi-select once, and the
+  // default String([a,b]) rendering glued the values together as "a,b". Join
+  // them properly so the card stays readable while the change is sorted out,
+  // and say so, because a shape change should not pass in silence.
+  if (Array.isArray(value)) {
+    shapeChanges.add(key);
+    const joined = value.map(v => String(v).trim()).filter(Boolean).join(', ');
+    return joined === '' ? null : joined;
+  }
   const text = String(value).trim();
   return text === '' ? null : text;
 }
+
+// Fields the site reads as one value that came back as several. Collected
+// across the whole pull so the warning is one line, not one per record.
+const shapeChanges = new Set();
 
 function toResource(record) {
   const fields = record.fields || {};
@@ -178,6 +192,16 @@ function build(resources) {
   };
 }
 
+// ::warning:: puts this on the run's summary page, where a green run's output
+// otherwise goes unread. It does not fail the sync: the data is fine and
+// should ship. check-vocabulary.js is what turns the run red.
+function reportShapeChanges() {
+  if (!shapeChanges.size) return;
+  const fields = [...shapeChanges].sort().join(', ');
+  console.log(`::warning::Fields the site reads as single values came back as lists: ${fields}. ` +
+              'Their type changed in Airtable. Values were joined with a comma to keep the page readable.');
+}
+
 async function main() {
   const records = await fetchAllRecords();
   const resources = records.map(toResource);
@@ -198,11 +222,13 @@ async function main() {
 
   if (previous && JSON.stringify(previous.resources) === JSON.stringify(payload.resources)) {
     console.log(`No change: ${payload.count} published ${payload.count === 1 ? 'listing' : 'listings'}.`);
+    reportShapeChanges();
     return;
   }
 
   fs.writeFileSync(OUT_PATH, JSON.stringify(payload, null, 2) + '\n', 'utf8');
   console.log(`Wrote ${payload.count} published ${payload.count === 1 ? 'listing' : 'listings'} to ${path.relative(process.cwd(), OUT_PATH)}.`);
+  reportShapeChanges();
 }
 
 main().catch(err => {
