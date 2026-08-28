@@ -13,7 +13,7 @@ Two batches of coloured options are legitimate and were left alone: the nine
 elder-care and early-intervention categories added on request, and the ~90 real
 Connecticut towns added during the state import.
 
-## Done — records already moved, options are empty
+## Safe to delete — records already moved, options are empty
 
 Each option below now holds **zero records**. Delete them in Airtable
 (field → Customize field type → hover the option → delete); nothing needs
@@ -31,12 +31,21 @@ re-tagging first.
 | Meals Provided | Healthy meals and snacks | Meals and Snacks (1) |
 | Residency Eligibility | Bridgeport Residents Only | Residents Only (1) |
 | Transportation Available | No Transportation | No (1) |
-| Services Offered | Teen Program | Teen / CIT Program (1) |
 
 These were the unambiguous ones: a casing difference, a sentence that leaked
 into a dropdown, a town name baked into a rule that the record's own Town field
 already carries, or a slash-spacing variant of an option sitting two rows above
 it.
+
+**Corrected 2026-08-27: `Teen Program` was on this list and should not have
+been.** It was merged into `Teen / CIT Program` as a near-duplicate. It is not
+one -- Category carries both as separate options, and a teen programme is not a
+counselor-in-training programme. Several listings legitimately hold both. The
+one record the merge touched has been put back, and the option stays.
+
+The tell was that the derivation pass recreated it a day later from records
+whose own text said "teen programs", which is what should happen for an option
+that is doing a job. A genuinely dead option does not come back on its own.
 
 `Medical / Diagnosis-Specific Camp` (4 records) was coined the same way but is a
 real kind of camp with no equivalent in the list. It was kept.
