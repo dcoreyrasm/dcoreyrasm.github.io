@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-28T21:39:35.886Z",
+  "generated": "2026-08-28T22:07:32.499Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -36,6 +36,7 @@
     "Medical / Diagnosis-Specific Camp",
     "Municipal/Parks & Rec Camp",
     "Nature / Farm Camp",
+    "Nature / Outdoor Camp",
     "Parenting Support/Classes",
     "Pet Boarding",
     "Pet Food Assistance",
@@ -3111,6 +3112,7 @@
       "id": "recWYluHeg2kW3YFQ",
       "name": "Common Ground High School, Urban Farm & Environmental Education Center",
       "track": "Family & Childcare",
+      "category": "Nature / Outdoor Camp",
       "specificType": "Summer ecology day camp: Sprouts, Adventure, Treehouse, Amazing Animals, Cooking, and Rangers tracks, plus a Junior Counselor program",
       "town": "New Haven",
       "address": "358 Springside Ave, New Haven, CT 06515",
@@ -6486,6 +6488,7 @@
       "id": "recSzuJexRPTTKPwD",
       "name": "Indian Rock Summer Camp",
       "track": "Family & Childcare",
+      "category": "Nature / Outdoor Camp",
       "specificType": "Environmental education and outdoor recreation day camp",
       "town": "Bristol",
       "website": "https://elcct.org/education/summercamp/",
