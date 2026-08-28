@@ -126,6 +126,14 @@ CATEGORY — exactly one value, from this list only:
 - Inclusive/Special Needs Camp
 - Teen Program
 - Medical / Diagnosis-Specific Camp
+- Nature / Farm Camp
+
+Two entries in that list look like the coined variants warned about above, and
+are not. `Medical / Diagnosis-Specific Camp` and `Nature / Farm Camp` each name
+a kind of camp the rest of the list cannot say, so both are real options. A
+working farm is not a nature preserve: use `Nature / Farm Camp` for a camp run
+on a farm, and `Outdoor/Nature Camp` for everything else outdoors. There is no
+`Nature / Outdoor Camp` -- that was a second spelling and has been removed.
 
 SERVICES OFFERED — multi-select. This is the one field where a listing gets to
 say everything it does, and it matters more than it looks.
