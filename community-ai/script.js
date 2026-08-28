@@ -92,22 +92,30 @@
     ['whoCanParticipate','Who can take part']
   ];
 
-  /* The three doors are this page's spine: they order the groups, colour the
-     badges, and fill the "no application needed" figure in the hero. A door
-     value that is not on this list still shows — it just sorts last and reads
-     as plain text — so scripts/check-community-vocabulary.js parses this
-     literal and turns the sync run red when Airtable coins a fourth one. */
+  /* How you get in: the page's spine. These three order the groups, colour the
+     badges, and fill the "open to anyone" figure in the hero.
+     
+     DOOR_ORDER holds the values as Airtable stores them, in the Access Door
+     field -- "Door 1", "Door 2", "Door 3" are the base's vocabulary and stay
+     that way, so the sync and the drift check keep matching on stable strings.
+     DOOR_LABEL is what a reader sees, and nothing on the page says "Door":
+     numbers told a visitor nothing about which one applied to them. Change a
+     label freely; changing a key means changing Airtable too.
+
+     A value not on this list still shows -- it just sorts last and reads as
+     plain text -- so scripts/check-community-vocabulary.js parses DOOR_ORDER
+     and turns the sync run red when Airtable coins a fourth one. */
   var DOOR_ORDER = ['Door 1 - No Application', 'Door 2 - Competitive', 'Door 3 - Relationship Only'];
   var DOOR_LABEL = {
-    'Door 1 - No Application':      'Door 1 — no application needed',
-    'Door 2 - Competitive':         'Door 2 — competitive application',
-    'Door 3 - Relationship Only':   'Door 3 — relationship or nomination'
+    'Door 1 - No Application':      'Open to anyone',
+    'Door 2 - Competitive':         'By application',
+    'Door 3 - Relationship Only':   'By introduction'
   };
 
   /* Entries whose Access Door has not been filled in yet. They sort below the
-     three real doors and say why they are there, rather than heading a fifth of
-     the directory with the word "Not stated". */
-  var NO_DOOR = 'Not sorted into a door yet';
+     three real categories and say why they are there, rather than heading a
+     fifth of the directory with the words "Not stated". */
+  var NO_DOOR = 'Access not recorded yet';
 
   /* Legal status is read as well as displayed: the hero counts the first list
      as "no 501(c)(3) required", and a card turns 'None' into a plain-English
@@ -291,12 +299,11 @@
     return '';
   }
 
+  /* The badge, the group heading and the filter option all read the same, so
+     nobody has to work out that "competitive application" and "by application"
+     are the same thing. */
   function shortDoor(door) {
-    if (!door) return null;
-    if (door.indexOf('Door 1') === 0) return 'No application needed';
-    if (door.indexOf('Door 2') === 0) return 'Competitive application';
-    if (door.indexOf('Door 3') === 0) return 'Relationship or nomination';
-    return door;
+    return door ? (DOOR_LABEL[door] || door) : null;
   }
 
   /* -- filtering ---------------------------------------------------------- */
