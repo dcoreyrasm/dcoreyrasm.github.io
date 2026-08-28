@@ -26,7 +26,7 @@ UI job.
 | Track | Camps & Youth Programs | Family & Childcare (10) |
 | Category | Special Needs / Inclusive Camp | Inclusive/Special Needs Camp (2) |
 | Category | Counselor-in-Training Program | Teen/CIT Program (2) |
-| Category | Nature / Outdoor Camp | Outdoor/Nature Camp (1) |
+| Category | Outdoor/Nature Camp | Nature / Outdoor Camp (2) |
 | Source Type | Official provider website | Official Provider Website (17) |
 | Schedule Window | Full day / full workday | Full Day (7) |
 | Meals Provided | Healthy meals and snacks | Meals and Snacks (1) |
@@ -48,8 +48,8 @@ The tell was that the derivation pass recreated it a day later from records
 whose own text said "teen programs", which is what should happen for an option
 that is doing a job. A genuinely dead option does not come back on its own.
 
-**Kept 2026-08-28: `Nature / Farm Camp`.** It was on this list, merged into
-`Outdoor/Nature Camp` on the same reasoning as the slash-spacing variants. That
+**Kept 2026-08-28: `Nature / Farm Camp`.** It was on this list, merged into the
+outdoor-camp option on the same reasoning as the slash-spacing variants. That
 was wrong for the same reason `Teen Program` was: the test is whether an option
 names a distinct concept, not whether it is empty. A working dairy farm is not a
 nature preserve. The one record the merge moved -- Arethusa Farm Camp,
@@ -58,6 +58,26 @@ use rather than kept empty on principle.
 
 `Medical / Diagnosis-Specific Camp` (4 records) was coined the same way and kept
 for the same reason.
+
+**Reversed 2026-08-28: the outdoor-camp pair.** This table originally said to
+delete `Nature / Outdoor Camp` and keep `Outdoor/Nature Camp`. In the event the
+opposite option was deleted in the UI -- the two names differ only by slash
+spacing and word order, which is what made them worth merging and also what made
+them easy to confuse. Deleting a select option clears it from every record that
+held it, so two published listings lost their Category: Common Ground High
+School (`recWYluHeg2kW3YFQ`) and Indian Rock Summer Camp (`recSzuJexRPTTKPwD`).
+Both were identified from the committed sync snapshots, which record every
+listing's category before the deletion, and both have been restored.
+
+Rather than undo it, `Nature / Outdoor Camp` is now the canonical name. It reads
+no worse, and it matches `Nature / Farm Camp`, so the two outdoor camp options
+share a prefix instead of being spelled two different ways. `Outdoor/Nature Camp`
+stays mapped in script.js as an alias.
+
+**If you delete an option that is not empty, the values go with it.** The
+snapshots in `village-notes/data/resources.json` are the recovery source: each
+sync commit records every published listing's category, so `git log` on that file
+reconstructs what any record held before a deletion.
 
 ## Your call — real overlap, but each carries information
 

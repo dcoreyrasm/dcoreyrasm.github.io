@@ -149,7 +149,7 @@
       'Preschool / Pre-K','Before/After School Care','Backup/Emergency Care',
       'Nanny / Au Pair','Nanny Share','Babysitting Co-op']],
     ['Camps & School Breaks', ['Summer Day Camp','Summer Sleepaway Camp','Sports Camp',
-      'STEM/Tech Camp','Arts Camp','Outdoor/Nature Camp','Academic/Enrichment Camp',
+      'STEM/Tech Camp','Arts Camp','Nature / Outdoor Camp','Academic/Enrichment Camp',
       'Faith-Based Camp','Municipal/Parks & Rec Camp','Language Immersion Camp',
       'Specialty Camp','Inclusive/Special Needs Camp','School Vacation Week Care',
       // These two were coined the same way as the aliases below, but each names
@@ -162,7 +162,7 @@
       // Airtable -- but the map keeps the aliases, because a name coined once
       // can be coined again, and an unmapped category drops into "Other" where
       // it tells a parent nothing.
-      'Special Needs / Inclusive Camp','Nature / Outdoor Camp']],
+      'Special Needs / Inclusive Camp','Outdoor/Nature Camp']],
     ['Activities & Enrichment', ['Afterschool Enrichment','Tutoring / Academic Support',
       'Literacy / Reading Program','Youth Development Program','Teen Program',
       'Teen/CIT Program','Counselor-in-Training Program','Youth Employment Program']],
