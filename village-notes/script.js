@@ -152,15 +152,17 @@
       'STEM/Tech Camp','Arts Camp','Outdoor/Nature Camp','Academic/Enrichment Camp',
       'Faith-Based Camp','Municipal/Parks & Rec Camp','Language Immersion Camp',
       'Specialty Camp','Inclusive/Special Needs Camp','School Vacation Week Care',
-      // 'Medical / Diagnosis-Specific Camp' is a real option. The three after
-      // it are second spellings of options already above, coined by a writer
-      // that invented options instead of picking them. Their records have been
-      // moved onto the canonical names and the options themselves are empty,
-      // pending deletion in Airtable -- but the map keeps the aliases, because
-      // a name coined once can be coined again, and an unmapped category drops
-      // into "Other" where it tells a parent nothing.
-      'Medical / Diagnosis-Specific Camp',
-      'Special Needs / Inclusive Camp','Nature / Outdoor Camp','Nature / Farm Camp']],
+      // These two were coined the same way as the aliases below, but each names
+      // a kind of camp the original list cannot say -- a working farm is not a
+      // nature preserve -- so both were kept as real options.
+      'Medical / Diagnosis-Specific Camp','Nature / Farm Camp',
+      // The two below are second spellings of options already above, coined by
+      // a writer that invented options instead of picking them. Their records
+      // have been moved onto the canonical names and the options removed from
+      // Airtable -- but the map keeps the aliases, because a name coined once
+      // can be coined again, and an unmapped category drops into "Other" where
+      // it tells a parent nothing.
+      'Special Needs / Inclusive Camp','Nature / Outdoor Camp']],
     ['Activities & Enrichment', ['Afterschool Enrichment','Tutoring / Academic Support',
       'Literacy / Reading Program','Youth Development Program','Teen Program',
       'Teen/CIT Program','Counselor-in-Training Program','Youth Employment Program']],

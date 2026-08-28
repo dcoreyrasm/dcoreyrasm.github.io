@@ -15,16 +15,17 @@ Connecticut towns added during the state import.
 
 ## Safe to delete — records already moved, options are empty
 
-Each option below now holds **zero records**. Delete them in Airtable
-(field → Customize field type → hover the option → delete); nothing needs
-re-tagging first.
+**Decided 2026-08-28: delete these nine.** Each holds **zero records**. Delete
+them in Airtable (field → Customize field type → hover the option → delete);
+nothing needs re-tagging first. No tool can do this — the Airtable MCP's
+`update_field` takes only `formula` in `options`, not `choices` — so it is a
+UI job.
 
 | Field | Delete this option | Records moved to |
 |---|---|---|
 | Track | Camps & Youth Programs | Family & Childcare (10) |
 | Category | Special Needs / Inclusive Camp | Inclusive/Special Needs Camp (2) |
 | Category | Counselor-in-Training Program | Teen/CIT Program (2) |
-| Category | Nature / Farm Camp | Outdoor/Nature Camp (1) |
 | Category | Nature / Outdoor Camp | Outdoor/Nature Camp (1) |
 | Source Type | Official provider website | Official Provider Website (17) |
 | Schedule Window | Full day / full workday | Full Day (7) |
@@ -47,8 +48,16 @@ The tell was that the derivation pass recreated it a day later from records
 whose own text said "teen programs", which is what should happen for an option
 that is doing a job. A genuinely dead option does not come back on its own.
 
-`Medical / Diagnosis-Specific Camp` (4 records) was coined the same way but is a
-real kind of camp with no equivalent in the list. It was kept.
+**Kept 2026-08-28: `Nature / Farm Camp`.** It was on this list, merged into
+`Outdoor/Nature Camp` on the same reasoning as the slash-spacing variants. That
+was wrong for the same reason `Teen Program` was: the test is whether an option
+names a distinct concept, not whether it is empty. A working dairy farm is not a
+nature preserve. The one record the merge moved -- Arethusa Farm Camp,
+Litchfield (`recMLOtfjGA8p2Yu1`) -- has been put back on it, so the option is in
+use rather than kept empty on principle.
+
+`Medical / Diagnosis-Specific Camp` (4 records) was coined the same way and kept
+for the same reason.
 
 ## Your call — real overlap, but each carries information
 
