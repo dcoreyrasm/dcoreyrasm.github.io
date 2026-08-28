@@ -20,41 +20,29 @@
      useless as a filter, so they are kept off the facet lists. */
   var NON_ANSWERS = ['Not stated', 'Not determined', 'None', 'N/A'];
 
+  /* Five filters, each a labelled box above the results, in that order. There
+     used to be seventeen of them across a sidebar, a row of boxes and a strip
+     of quick-start pills -- three places to do one job, with the pills a plain
+     duplicate of the first box. What is gone was chosen on what the data can
+     actually answer: Languages was answered by two entries of 123 and
+     Accessibility by one, so neither could narrow anything; Age group said
+     "Adults" for three quarters of the list; and Community served and Who it is
+     written for asked the same "who" question as the first box in slightly
+     different words. Connecticut went for a different reason: its options read
+     "Direct", "Regional Watch" and "Partner-Eligible", which say nothing to a
+     visitor, while the first box already carries "Connecticut participant" in
+     plain words on 59 entries. Every one of them is still ON the cards -- they
+     stopped being ways to search, not facts.
+
+     `empty` is what the box reads when nothing is ticked. FACETS is the whole
+     filter vocabulary now, so scripts/check-community-vocabulary.js and the
+     URL both follow this list. */
   var FACETS = [
-    { key: 'whoCanParticipate', label: 'Who can take part' },
-    { key: 'door',              label: 'How you access it' },
-    { key: 'support',           label: 'What you get' },
-    { key: 'type',              label: 'Kind of opportunity' },
-    { key: 'cost',              label: 'Cost', open: true },
-    { key: 'legalStatus',       label: 'Legal status needed', keepNone: true },
-    { key: 'topics',            label: 'Topic area', open: true },
-    { key: 'communityServed',   label: 'Community served' },
-    { key: 'audienceStage',     label: 'Who it is written for' },
-    { key: 'deliveryFormat',    label: 'Format' },
-    { key: 'ageGroup',          label: 'Age group' },
-    { key: 'ctRelevance',       label: 'Connecticut' },
-    { key: 'beginnerFriendly',  label: 'Beginner friendly' },
-    { key: 'languages',         label: 'Languages' },
-    { key: 'accessibility',     label: 'Accessibility' },
-    { key: 'accountBenefit',    label: 'Account you may already have' },
-    { key: 'lockIn',            label: 'Platform lock-in risk' }
-  ];
-
-  /* The filters promoted out of the sidebar into the labelled boxes above the
-     results, in the order they appear there. Each names the facet it drives and
-     what its box reads when nothing is ticked. Both places write the same
-     state, so a tick in one is a tick in the other. */
-  var ROW_FIELDS = [
-    { key: 'whoCanParticipate', empty: 'Anyone' },
-    { key: 'door',              empty: 'Any way in' },
-    { key: 'support',           empty: 'Anything' },
-    { key: 'type',              empty: 'Any kind' }
-  ];
-
-  var QUICK = [
-    'Individual community leader', 'Informal community group', 'Nonprofit organization',
-    'School or youth program', 'Educator', 'Library', 'Public agency',
-    'Fiscally sponsored project', 'Connecticut participant'
+    { key: 'whoCanParticipate', label: 'Who can take part',   empty: 'Anyone' },
+    { key: 'door',              label: 'How you access it',   empty: 'Any way in' },
+    { key: 'support',           label: 'What you get',        empty: 'Anything' },
+    { key: 'cost',              label: 'Cost',                empty: 'Any cost' },
+    { key: 'legalStatus',       label: 'Legal status needed', empty: 'Any status', keepNone: true }
   ];
 
   /* Fields searched by the text box, with their weight in the match score. */
@@ -116,6 +104,11 @@
     'Door 3 - Relationship Only':   'Door 3 — relationship or nomination'
   };
 
+  /* Entries whose Access Door has not been filled in yet. They sort below the
+     three real doors and say why they are there, rather than heading a fifth of
+     the directory with the word "Not stated". */
+  var NO_DOOR = 'Not sorted into a door yet';
+
   /* Legal status is read as well as displayed: the hero counts the first list
      as "no 501(c)(3) required", and a card turns 'None' into a plain-English
      badge. Both are silent if an option gets renamed in Airtable, so the
@@ -133,12 +126,7 @@
 
   var ALL = [];
   var META = {};
-  var state = { q: '', filters: {}, only: {}, group: 'door', sort: 'relevance',
-                expanded: {}, shown: 0 };
-  var facetShowAll = {};
-  /* Whether each facet's <details> is open. Seeded from FACETS, then owned by
-     the reader — a re-render must never fold up a group they just opened. */
-  var facetOpen = {};
+  var state = { q: '', filters: {}, only: {}, sort: 'relevance', expanded: {}, shown: 0 };
 
   var $ = function (id) { return document.getElementById(id); };
 
@@ -345,7 +333,6 @@
     var by = state.sort;
     rows.sort(function (a, b) {
       if (by === 'title') return a.rec.title.localeCompare(b.rec.title);
-      if (by === 'org') return (a.rec.org || '').localeCompare(b.rec.org || '') || a.rec.title.localeCompare(b.rec.title);
       if (by === 'funding') return (b.rec.maxFunding || -1) - (a.rec.maxFunding || -1) || a.rec.title.localeCompare(b.rec.title);
       if (by === 'checked') return String(b.rec.lastChecked || '').localeCompare(String(a.rec.lastChecked || '')) || a.rec.title.localeCompare(b.rec.title);
       /* Someone with a date to hit wants the closing ones first. Most entries
@@ -359,9 +346,6 @@
         return deadlineRank(a.rec).localeCompare(deadlineRank(b.rec)) ||
                a.rec.title.localeCompare(b.rec.title);
       }
-      /* The mirror of "recently checked": what to read most sceptically,
-         because the official page has had the longest to change underneath it. */
-      if (by === 'stale') return String(a.rec.lastChecked || '').localeCompare(String(b.rec.lastChecked || '')) || a.rec.title.localeCompare(b.rec.title);
       return b.score - a.score || a.rec.title.localeCompare(b.rec.title);
     });
     return { rows: rows, toks: toks };
@@ -391,10 +375,6 @@
      other control, so the sidebar, the quick starts and these stay in step
      with no syncing code of their own. */
 
-  function facetByKey(key) {
-    for (var i = 0; i < FACETS.length; i++) if (FACETS[i].key === key) return FACETS[i];
-    return null;
-  }
 
   /* Built once. Rebuilding the markup on each change would fold up a panel the
      reader is still ticking through, and re-sorting live counts would slide
@@ -404,10 +384,8 @@
     var host = $('cf-fieldrow');
     if (!host) return;
 
-    host.innerHTML = ROW_FIELDS.map(function (field) {
-      var facet = facetByKey(field.key);
-      if (!facet) return '';
-
+    host.innerHTML = FACETS.map(function (facet) {
+      var field = facet;
       var counts = facetCounts(field.key);
       var opts = Object.keys(facet._options)
         .filter(function (v) { return isAnswer(v, facet.keepNone); })
@@ -460,7 +438,7 @@
     var host = $('cf-fieldrow');
     if (!host) return;
 
-    ROW_FIELDS.forEach(function (field) {
+    FACETS.forEach(function (field) {
       var box = host.querySelector('[data-multi="' + field.key + '"]');
       if (!box) return;
 
@@ -518,72 +496,9 @@
     openPanel(null, false);
   }
 
-  function renderQuick() {
-    var host = $('cf-quick');
-    /* QUICK is a hand-picked shortlist, not the whole field. If the directory
-       has nothing for one of them, offering the button promises a result that
-       is not there — so it is dropped until a record earns it back. */
-    var live = QUICK.filter(function (v) {
-      for (var i = 0; i < ALL.length; i++) {
-        if (values(ALL[i], 'whoCanParticipate').indexOf(v) !== -1) return true;
-      }
-      return false;
-    });
-    host.innerHTML = live.map(function (v) {
-      var on = (state.filters.whoCanParticipate || []).indexOf(v) !== -1;
-      return '<button type="button" class="cf-quick-btn" data-quick="' + esc(v) + '" aria-pressed="' + on + '">' + esc(v) + '</button>';
-    }).join('');
-  }
-
-  function inRow(key) {
-    for (var i = 0; i < ROW_FIELDS.length; i++) if (ROW_FIELDS[i].key === key) return true;
-    return false;
-  }
-
   /* The four promoted to the boxes above the results are not repeated here.
      Showing the same list twice on one screen invites the reader to wonder
      which of the two is the real one. */
-  function renderFacets() {
-    var host = $('cf-facets');
-    var html = FACETS.filter(function (facet) { return !inRow(facet.key); }).map(function (facet) {
-      var counts = facetCounts(facet.key);
-      var chosen = state.filters[facet.key] || [];
-      var opts = Object.keys(facet._options).filter(function (v) { return isAnswer(v, facet.keepNone); });
-
-      opts.sort(function (a, b) {
-        var ca = counts[a] || 0, cb = counts[b] || 0;
-        if (facet.key === 'door') return DOOR_ORDER.indexOf(a) - DOOR_ORDER.indexOf(b);
-        return cb - ca || a.localeCompare(b);
-      });
-
-      var showAll = facetShowAll[facet.key];
-      var LIMIT = 7;
-      var visible = (showAll || opts.length <= LIMIT + 1) ? opts : opts.slice(0, LIMIT);
-
-      var body = visible.map(function (v) {
-        var n = counts[v] || 0;
-        var on = chosen.indexOf(v) !== -1;
-        return '<label class="cf-opt' + (n === 0 && !on ? ' is-empty' : '') + '">' +
-          '<input type="checkbox" data-facet="' + esc(facet.key) + '" value="' + esc(v) + '"' + (on ? ' checked' : '') + (n === 0 && !on ? ' disabled' : '') + ' />' +
-          '<span>' + esc(facet.key === 'door' ? (DOOR_LABEL[v] || v) : v) + '</span>' +
-          '<span class="cf-opt-n">' + n + '</span></label>';
-      }).join('');
-
-      if (visible.length < opts.length) {
-        body += '<button type="button" class="cf-more" data-more="' + esc(facet.key) + '">Show ' + (opts.length - visible.length) + ' more</button>';
-      } else if (showAll && opts.length > LIMIT + 1) {
-        body += '<button type="button" class="cf-more" data-more="' + esc(facet.key) + '">Show fewer</button>';
-      }
-
-      var isOpen = facetOpen[facet.key] || chosen.length > 0;
-      return '<details class="cf-facet"' + (isOpen ? ' open' : '') + '>' +
-        '<summary>' + esc(facet.label) +
-        (chosen.length ? '<span class="cf-facet-count">' + chosen.length + '</span>' : '') +
-        '</summary><div class="cf-opts">' + body + '</div></details>';
-    }).join('');
-    host.innerHTML = html;
-  }
-
   function renderChips() {
     var host = $('cf-chips');
     var chips = [];
@@ -678,11 +593,13 @@
       '</div>' + detail + '</article>';
   }
 
+  /* Results are always grouped by door. It used to be a dropdown offering
+     organization and kind of opportunity too, but the door is the one grouping
+     that answers a question the reader has — can I actually get this — and a
+     second way to rearrange the same list is a decision to make before any
+     result is read. */
   function groupKey(rec) {
-    if (state.group === 'door') return rec.door || 'Not stated';
-    if (state.group === 'type') return rec.type || 'Not stated';
-    if (state.group === 'org') return rec.org || 'Not stated';
-    return '';
+    return rec.door || NO_DOOR;
   }
 
   /* Finding nothing is the most useful moment on the page: the visitor has just
@@ -740,39 +657,27 @@
        reordering — otherwise "Show more" would sprinkle new cards into groups
        further up the page instead of continuing where the reader stopped. */
     var order = [], totals = {};
-    if (state.group !== 'none') {
-      rows.forEach(function (r) {
-        var k = groupKey(r.rec);
-        if (totals[k] === undefined) { totals[k] = 0; order.push(k); }
-        totals[k]++;
-      });
+    rows.forEach(function (r) {
+      var k = groupKey(r.rec);
+      if (totals[k] === undefined) { totals[k] = 0; order.push(k); }
+      totals[k]++;
+    });
+    order.sort(function (a, b) {
+      var ia = DOOR_ORDER.indexOf(a), ib = DOOR_ORDER.indexOf(b);
+      return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+    });
 
-      if (state.group === 'door') {
-        order.sort(function (a, b) {
-          var ia = DOOR_ORDER.indexOf(a), ib = DOOR_ORDER.indexOf(b);
-          return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
-        });
-      } else {
-        order.sort(function (a, b) { return totals[b] - totals[a] || a.localeCompare(b); });
-      }
-
-      var rank = {};
-      order.forEach(function (k, i) { rank[k] = i; });
-      /* Array.prototype.sort is stable in every browser this page supports, so
-         each group keeps whatever order the sort dropdown just produced. */
-      rows.sort(function (a, b) { return rank[groupKey(a.rec)] - rank[groupKey(b.rec)]; });
-    }
+    var rank = {};
+    order.forEach(function (k, i) { rank[k] = i; });
+    /* Array.prototype.sort is stable in every browser this page supports, so
+       each door keeps whatever order the sort dropdown just produced. */
+    rows.sort(function (a, b) { return rank[groupKey(a.rec)] - rank[groupKey(b.rec)]; });
 
     if (!keepShown) state.shown = PAGE;
     var page = rows.slice(0, state.shown);
     var left = rows.length - page.length;
     more.hidden = left <= 0;
     more.textContent = 'Show ' + Math.min(left, PAGE) + ' more of ' + left;
-
-    if (state.group === 'none') {
-      list.innerHTML = page.map(function (r) { return card(r.rec, toks); }).join('');
-      return;
-    }
 
     var buckets = {};
     page.forEach(function (r) {
@@ -781,7 +686,7 @@
     });
 
     list.innerHTML = order.filter(function (k) { return buckets[k]; }).map(function (k) {
-      var label = state.group === 'door' ? (DOOR_LABEL[k] || k) : k;
+      var label = DOOR_LABEL[k] || k;
       /* The heading counts every match in the group, not only the cards drawn
          so far, so the number never shrinks as the reader pages through. */
       return '<section class="cf-group"><h2 class="cf-group-head">' + esc(label) +
@@ -821,10 +726,8 @@
   }
 
   function renderAll() {
-    renderQuick();
     syncOnly();
     syncRow();
-    renderFacets();
     renderChips();
     render();
     $('cf-clearq').hidden = !state.q;
@@ -838,7 +741,6 @@
     if (syncing) return;
     var p = new URLSearchParams();
     if (state.q) p.set('q', state.q);
-    if (state.group !== 'door') p.set('group', state.group);
     if (state.sort !== 'relevance') p.set('sort', state.sort);
     var on = Object.keys(state.only).filter(function (k) { return state.only[k]; });
     if (on.length) p.set('only', on.join('~'));
@@ -866,7 +768,6 @@
     if (!raw) return;
     var p = new URLSearchParams(raw);
     state.q = p.get('q') || '';
-    state.group = p.get('group') || 'door';
     state.sort = p.get('sort') || 'relevance';
     state.filters = {};
     FACETS.forEach(function (f) {
@@ -900,7 +801,6 @@
       qEl.value = ''; state.q = ''; writeHash(); renderAll(); qEl.focus();
     });
 
-    $('cf-group').addEventListener('change', function () { state.group = this.value; writeHash(); render(); });
     $('cf-sort').addEventListener('change', function () { state.sort = this.value; writeHash(); render(); });
 
     $('cf-showmore').addEventListener('click', function () {
@@ -925,7 +825,6 @@
         writeHash(); renderAll();
       });
     });
-    $('cf-reset').addEventListener('click', resetAll);
     $('cf-reset-row').addEventListener('click', resetAll);
 
     var row = $('cf-fieldrow');
@@ -975,36 +874,6 @@
       if (toggle) toggle.focus();
     });
 
-    $('cf-quick').addEventListener('click', function (e) {
-      var btn = e.target.closest('[data-quick]');
-      if (!btn) return;
-      toggleFilter('whoCanParticipate', btn.getAttribute('data-quick'));
-      writeHash(); renderAll();
-    });
-
-    $('cf-facets').addEventListener('change', function (e) {
-      var box = e.target.closest('input[data-facet]');
-      if (!box) return;
-      toggleFilter(box.getAttribute('data-facet'), box.value);
-      writeHash(); renderAll();
-    });
-
-    $('cf-facets').addEventListener('toggle', function (e) {
-      var d = e.target;
-      if (d.classList && d.classList.contains('cf-facet')) {
-        var box = d.querySelector('input[data-facet]');
-        if (box) facetOpen[box.getAttribute('data-facet')] = d.open;
-      }
-    }, true);
-
-    $('cf-facets').addEventListener('click', function (e) {
-      var more = e.target.closest('[data-more]');
-      if (!more) return;
-      var key = more.getAttribute('data-more');
-      facetShowAll[key] = !facetShowAll[key];
-      renderFacets();
-    });
-
     $('cf-chips').addEventListener('click', function (e) {
       var off = e.target.closest('[data-off]');
       if (off) { toggleFilter(off.getAttribute('data-off'), off.getAttribute('data-val')); writeHash(); renderAll(); return; }
@@ -1029,19 +898,11 @@
       btn.textContent = nowOpen ? 'Hide the details' : 'See the details';
     });
 
-    var ft = $('cf-filters-toggle');
-    ft.addEventListener('click', function () {
-      var open = $('cf-side').classList.toggle('open');
-      ft.setAttribute('aria-expanded', String(open));
-    });
-
     window.addEventListener('hashchange', function () {
       syncing = true;
       readHash();
-      state.sort  = normalizeChoice('cf-sort', 'relevance', state.sort);
-      state.group = normalizeChoice('cf-group', 'door', state.group);
+      state.sort = normalizeChoice('cf-sort', 'relevance', state.sort);
       qEl.value = state.q;
-      $('cf-group').value = state.group;
       $('cf-sort').value = state.sort;
       syncing = false;
       renderAll();
@@ -1062,7 +923,6 @@
 
     /* Facet options come from the data, not a hand-kept list. */
     FACETS.forEach(function (facet) {
-      facetOpen[facet.key] = !!facet.open;
       facet._options = {};
       ALL.forEach(function (rec) {
         values(rec, facet.key).forEach(function (v) { facet._options[v] = true; });
@@ -1104,10 +964,8 @@
     readHash();
     buildRow();
     tuneOnly();
-    state.sort  = normalizeChoice('cf-sort', 'relevance', state.sort);
-    state.group = normalizeChoice('cf-group', 'door', state.group);
+    state.sort = normalizeChoice('cf-sort', 'relevance', state.sort);
     $('cf-q').value = state.q;
-    $('cf-group').value = state.group;
     $('cf-sort').value = state.sort;
 
     wire();
