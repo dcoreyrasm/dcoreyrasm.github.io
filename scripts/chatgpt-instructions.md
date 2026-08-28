@@ -11,7 +11,7 @@ invented at write time** rather than existing ones selected. Airtable creates an
 unrecognised option silently when `typecast` is on, so nobody sees it happen.
 The results so far:
 
-- `Nature / Outdoor Camp` created next to the existing `Outdoor/Nature Camp`
+- `Nature / Outdoor Camp` created next to the then-existing `Outdoor/Nature Camp`
 - `Special Needs / Inclusive Camp` next to `Inclusive/Special Needs Camp`
 - `Counselor-in-Training Program` next to `Teen/CIT Program`
 - a third **Track** option, `Camps & Youth Programs`, next to the two real ones
@@ -55,8 +55,8 @@ unrecognised value with typecast enabled. So:
   adding itself to the field.
 - Before a batch of writes, read the field schema and match option names
   character for character — spacing around slashes, "&" vs "and", singular vs
-  plural, capitalisation. "Nature / Outdoor Camp" and "Outdoor/Nature Camp" are
-  two different options to Airtable, and one of them is wrong.
+  plural, capitalisation. "Nature / Outdoor Camp" and "Outdoor/Nature Camp"
+  would be two different options to Airtable, and only one of them exists.
 - If no existing option fits, do NOT coin one. Choose the closest existing
   option, put the specific flavour in "Specific Type or Notes" (free text), and
   tell Darice which option you think is missing so she can add it deliberately.
@@ -111,7 +111,7 @@ CATEGORY — exactly one value, from this list only:
 - Sports Camp
 - STEM/Tech Camp
 - Arts Camp
-- Outdoor/Nature Camp
+- Nature / Outdoor Camp
 - Academic/Enrichment Camp
 - Faith-Based Camp
 - Municipal/Parks & Rec Camp
@@ -160,8 +160,9 @@ Two entries in that list look like the coined variants warned about above, and
 are not. `Medical / Diagnosis-Specific Camp` and `Nature / Farm Camp` each name
 a kind of camp the rest of the list cannot say, so both are real options. A
 working farm is not a nature preserve: use `Nature / Farm Camp` for a camp run
-on a farm, and `Outdoor/Nature Camp` for everything else outdoors. There is no
-`Nature / Outdoor Camp` -- that was a second spelling and has been removed.
+on a farm, and `Nature / Outdoor Camp` for everything else outdoors. There is no
+`Outdoor/Nature Camp` -- that spelling has been removed, and the two surviving
+names deliberately share the `Nature / ` prefix.
 
 SERVICES OFFERED — multi-select. This is the one field where a listing gets to
 say everything it does, and it matters more than it looks.
