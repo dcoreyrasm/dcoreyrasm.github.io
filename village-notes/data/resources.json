@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-28T22:07:32.499Z",
+  "generated": "2026-08-29T05:16:08.153Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "Moderation Status = \"Published\""
   },
-  "count": 574,
+  "count": 580,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -23,6 +23,7 @@
     "Dog Daycare",
     "Dog Park",
     "Elder Law / Financial Planning",
+    "Emergency Pet Foster Care",
     "Emergency Veterinary Care",
     "Geriatric Care Manager",
     "Home Daycare (Licensed)",
@@ -2528,6 +2529,54 @@
       ]
     },
     {
+      "id": "rec5OGNPPe4eEqRVG",
+      "name": "Central Hospital for Veterinary Medicine, Guilford",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "town": "Guilford",
+      "address": "535 Boston Post Road, Guilford, CT 06437",
+      "hours": "Open 24 hours a day, 7 days a week, 365 days a year. Emergency care does not require an appointment.",
+      "website": "https://centralpetvet.com/emergency-critical-care-2/",
+      "contact": "203-533-6444",
+      "townsServed": [
+        "Guilford"
+      ],
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Veterinary Care",
+        "Emergency / Same-Day Availability"
+      ],
+      "lastVerified": "2026-08-28",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
+      "id": "recCCnYCZ0ZXXG0e6",
+      "name": "Central Hospital for Veterinary Medicine, North Haven",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "town": "North Haven",
+      "address": "4 Devine Street, North Haven, CT 06473",
+      "hours": "Open 24 hours a day, 7 days a week, 365 days a year. Emergency care does not require an appointment.",
+      "website": "https://centralpetvet.com/emergency-critical-care-2/",
+      "contact": "203-865-0878",
+      "townsServed": [
+        "North Haven"
+      ],
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Veterinary Care",
+        "Emergency / Same-Day Availability"
+      ],
+      "lastVerified": "2026-08-28",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
       "id": "recwQCLjTBoICsa8J",
       "name": "Centro San Jose Child Development Center (Catholic Charities)",
       "track": "Family & Childcare",
@@ -3159,6 +3208,29 @@
       ]
     },
     {
+      "id": "recyQoc1fkJIEv2PA",
+      "name": "Connecticut Animal Population Control Program",
+      "track": "Pet Care & Resources",
+      "category": "Spay/Neuter Assistance",
+      "specificType": "State vaccination and sterilization voucher programs for qualifying residents, municipal-pound adopters, and eligible feral-cat organizations.",
+      "town": "Statewide",
+      "availability": "The Low-Income Program is closed for fiscal year 2026. Municipal Pound Pet Program vouchers remain available through participating municipal pounds.",
+      "cost": "Low-income vouchers cover two vaccinations and up to $200 for a female dog, $180 for a male dog, $120 for a female cat, or $80 for a male cat. Municipal-pound adopters pay a $45 fee and receive a voucher.",
+      "website": "https://portal.ct.gov/doag/knowledge-base/articles/public-resources/pet-spay-and-neuter-program-in-connecticut",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "servicesOffered": [
+        "Spay/Neuter Assistance",
+        "Vaccination & Microchip Clinic"
+      ],
+      "lastVerified": "2026-08-28",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
       "id": "recDzBQwGDgwuAxTG",
       "name": "Connecticut Birth to Three System",
       "track": "Family & Childcare",
@@ -3324,6 +3396,24 @@
       ]
     },
     {
+      "id": "recygfy7X91aWT7j8",
+      "name": "Connecticut Humane Society Safe and Sheltered Pets Crisis Foster Program",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Pet Foster Care",
+      "specificType": "Temporary foster placement may be considered during military deployment, a hospital stay, housing problems, a house fire, domestic violence, or another temporary crisis. Placement is not guaranteed.",
+      "town": "Statewide",
+      "availability": "Requests are evaluated based on program purpose, capacity, the household's circumstances, and each pet's needs. The provider asks applicants to allow up to five days for a response.",
+      "website": "https://cthumane.org/request-crisis-foster/",
+      "contact": "800-452-0114",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "servicesOffered": [
+        "Emergency Pet Foster Care"
+      ],
+      "lastVerified": "2026-08-28"
+    },
+    {
       "id": "rechSPhyqMZj75yEr",
       "name": "Connecticut Lions Pathfinders T1D Camp",
       "track": "Family & Childcare",
@@ -3464,6 +3554,24 @@
       "submittedBy": "Village Notes research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. Access begins through a VA referral."
+    },
+    {
+      "id": "recne5uGjcQlxvdSP",
+      "name": "Connecticut Veterinary Medical Foundation Companions Assistant Program",
+      "track": "Pet Care & Resources",
+      "category": "Low-Cost Veterinary Clinic",
+      "specificType": "Financial assistance voucher program, not a veterinary clinic. Approved applicants receive a voucher for care at a participating veterinary hospital.",
+      "town": "Statewide",
+      "cost": "Eligible Connecticut residents receiving public assistance may receive a $125 veterinary-care voucher. Limited to 10 vouchers per month, two pets per household, and one voucher per pet per year. Not for emergency care.",
+      "website": "https://petsafetyct.org/cap/",
+      "contact": "860-635-7770; president@petsafetyct.org",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "servicesOffered": [
+        "Low-Cost Veterinary Clinic"
+      ],
+      "lastVerified": "2026-08-28"
     },
     {
       "id": "recxdkohINh3atbLJ",
@@ -8171,7 +8279,7 @@
         "Weekend",
         "Overnight"
       ],
-      "lastVerified": "2026-08-27"
+      "lastVerified": "2026-08-28"
     },
     {
       "id": "recPLuF8FWwTtVawt",
@@ -9172,6 +9280,30 @@
       "lastVerified": "2026-08-25"
     },
     {
+      "id": "recNA7ZAfznSXVa3L",
+      "name": "New England Veterinary Center & Cancer Care",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "town": "Windsor",
+      "address": "955 Kennedy Road, Windsor, CT 06095",
+      "hours": "Emergency care 24 hours a day, 7 days a week, 365 days a year.",
+      "website": "https://www.nevccc.com/site/emergency-veterinary-care-windsor",
+      "contact": "860-688-8400",
+      "townsServed": [
+        "Windsor"
+      ],
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Veterinary Care",
+        "Emergency / Same-Day Availability"
+      ],
+      "lastVerified": "2026-08-28",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
       "id": "recDS08wHKxQz9Fi1",
       "name": "New Haven Afterschool Initiative",
       "track": "Family & Childcare",
@@ -9525,7 +9657,7 @@
       "town": "Newtown",
       "address": "52 Church Hill Road, Newtown, CT 06470",
       "hours": "Open 24 hours a day, 7 days a week, including holidays.",
-      "website": "https://www.newtownvets.com/site/home",
+      "website": "https://www.newtownvets.com/site/emergency-veterinary-care-fairfield-county",
       "contact": "203-270-8387",
       "townsServed": [
         "Newtown"
@@ -9540,7 +9672,7 @@
         "Weekend",
         "Overnight"
       ],
-      "lastVerified": "2026-08-27",
+      "lastVerified": "2026-08-28",
       "animals": [
         "Dogs",
         "Cats"
@@ -10299,7 +10431,7 @@
         "Veterinary Care",
         "Emergency / Same-Day Availability"
       ],
-      "lastVerified": "2026-08-27",
+      "lastVerified": "2026-08-28",
       "animals": [
         "Dogs",
         "Puppies",
@@ -12985,7 +13117,7 @@
       "specificType": "24-hour emergency and specialty veterinary hospital; no appointment necessary for emergencies",
       "town": "Shelton",
       "address": "895 Bridgeport Avenue, Shelton, CT 06484",
-      "hours": "Open 24 hours, Monday–Sunday",
+      "hours": "Open 24 hours a day, 7 days a week, 365 days a year. No appointment is necessary for emergencies.",
       "website": "https://vcahospitals.com/shoreline",
       "contact": "203-929-8600; fax 203-944-9754",
       "townsServed": [
@@ -12999,7 +13131,11 @@
         "Veterinary Care",
         "Emergency / Same-Day Availability"
       ],
-      "lastVerified": "2026-08-27"
+      "lastVerified": "2026-08-28",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ]
     },
     {
       "id": "recgY8GJlUtLOQhZN",
