@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-29T05:16:08.153Z",
+  "generated": "2026-08-29T12:08:27.277Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -3214,17 +3214,19 @@
       "category": "Spay/Neuter Assistance",
       "specificType": "State vaccination and sterilization voucher programs for qualifying residents, municipal-pound adopters, and eligible feral-cat organizations.",
       "town": "Statewide",
-      "availability": "The Low-Income Program is closed for fiscal year 2026. Municipal Pound Pet Program vouchers remain available through participating municipal pounds.",
+      "availability": "The Low-Income Voucher Program is closed for fiscal year 2026. Pending applications are reviewed in order received and are not guaranteed. The Feral Cat Grant Program began accepting fiscal year 2027 applications from eligible Connecticut nonprofit rescue groups on July 1, 2026 and remains open until further notice.",
       "cost": "Low-income vouchers cover two vaccinations and up to $200 for a female dog, $180 for a male dog, $120 for a female cat, or $80 for a male cat. Municipal-pound adopters pay a $45 fee and receive a voucher.",
-      "website": "https://portal.ct.gov/doag/knowledge-base/articles/public-resources/pet-spay-and-neuter-program-in-connecticut",
+      "website": "https://portal.ct.gov/doag/regulatory/regulatory/animal-population-control-program",
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
+      "notes": "Official Connecticut Department of Agriculture page checked August 29, 2026. Low-income applications are closed for FY2026; pending applicants should expect status notice in 4 to 6 weeks. Non-Connecticut residents are ineligible. FY2027 feral-cat grants are open to eligible Connecticut nonprofit rescue groups.",
+      "registrationStatus": "Registration Varies",
+      "financialAid": "Yes",
       "servicesOffered": [
-        "Spay/Neuter Assistance",
-        "Vaccination & Microchip Clinic"
+        "Spay/Neuter Assistance"
       ],
-      "lastVerified": "2026-08-28",
+      "lastVerified": "2026-08-29",
       "animals": [
         "Dogs",
         "Cats"
