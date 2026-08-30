@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-29T12:08:27.277Z",
+  "generated": "2026-08-30T12:10:20.718Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -357,7 +357,7 @@
       "name": "Agency on Aging of South Central Connecticut",
       "track": "Elder Care",
       "category": "Geriatric Care Manager",
-      "specificType": "Regional Area Agency on Aging / Aging and Disability Resource Center: information and referral, CHOICES Medicare counseling, caregiver support, in-home assessment and case management",
+      "specificType": "Area Agency on Aging service navigation, CHOICES counseling, caregiver support, home-care planning, and home-modification funding assistance",
       "town": "North Haven",
       "address": "117 Washington Avenue, Suite 17, North Haven, CT 06473",
       "ages": "Older adults, individuals with disabilities, and their caregivers",
@@ -390,12 +390,13 @@
       ],
       "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
       "dateSubmitted": "2026-08-08",
-      "notes": "The Agency on Aging of South Central Connecticut is the regional Area Agency on Aging serving Greater New Haven and the lower Naugatuck Valley, and it's often the best single starting point for a family that doesn't know where to begin. Information counselors help older adults and caregivers navigate state, federal, and community benefit programs, including free CHOICES counseling on Medicare options. The agency also offers caregiver-specific support: linking family caregivers to respite care, individual counseling, and training, plus in-home assessments and case management for programs like the Connecticut Home Care Program for Elders. Call and ask for 'Aging Answers' to get connected to a counselor rather than navigating the phone tree alone.",
+      "notes": "The Agency on Aging of South Central Connecticut is the regional Area Agency on Aging serving Greater New Haven and the lower Naugatuck Valley. Information counselors help older adults and caregivers navigate state, federal, and community programs, including CHOICES Medicare counseling, caregiver respite and training, in-home assessment, and Connecticut Home Care Program for Elders case management. Its home-modification service helps older adults and people with disabilities identify safety changes such as grab bars, ramps, widened doorways, and stair glides and seek available public funding. Home-modification page: https://www.aoascc.org/Services/Support-to-Live-at-Home/Home-Modification-and-Repair-Services/",
       "servicesOffered": [
         "Caregiver Support",
         "Disability Support",
         "Elder Care"
-      ]
+      ],
+      "lastVerified": "2026-08-30"
     },
     {
       "id": "recJc8eiiRyt6wpMh",
@@ -4870,7 +4871,9 @@
       "specificType": "Traditional YMCA day camp with a 2026 brochure, parent handbook, and registration packet",
       "town": "Fairfield",
       "address": "841 Old Post Road, Fairfield, CT 06824",
-      "availability": "2026 program cycle completed. Financial assistance forms are available through the YMCA.",
+      "hours": "2026 camp hours: 9:00 AM–3:00 PM. AM care: 7:30–9:00 AM at the camp site. PM care: 3:00–6:00 PM; campers are bused to the Fairfield YMCA. Published summer dates: June 15–August 28, 2026.",
+      "availability": "The published 2026 season ended August 28. A future cycle has not yet been announced.",
+      "cost": "2026 weekly fee: $292 YMCA member or $435 program participant. AM care: $80/$115; PM care: $120/$170. One-time $50 registration fee and $50 nonrefundable, nontransferable deposit per camper per week.",
       "website": "https://cccymca.org/locations/fairfield/camp/",
       "contact": "203-255-2834",
       "townsServed": [
@@ -4878,17 +4881,40 @@
       ],
       "submittedBy": "Darice Corey",
       "dateSubmitted": "2026-08-25",
-      "registrationStatus": "Past Cycle",
+      "registrationStatus": "Closed",
+      "care4Kids": "Yes",
       "financialAid": "Yes",
-      "schoolDayCoverage": "Not Confirmed",
+      "extendedCare": [
+        "Both"
+      ],
+      "schoolDayCoverage": "Partial Day",
       "servicesOffered": [
         "Child Care",
         "Summer Camp",
-        "Summer Day Camp"
+        "Summer Day Camp",
+        "Arts Enrichment",
+        "Sports Enrichment",
+        "Teen / CIT Program"
       ],
-      "accessibility": "Official page provides Individual Care Plan and medication authorization forms for campers who require support.",
-      "programYear": "Summer 2026",
-      "lastVerified": "2026-08-25"
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Extended Day"
+      ],
+      "programLength": "Full Day",
+      "startTime": "9:00 AM",
+      "endTime": "3:00 PM",
+      "registrationCloses": "2026-08-28",
+      "licensing": "Licensed",
+      "accessibility": "The YMCA asks families to contact the camp director about social, behavioral, or medical accommodations. It cannot guarantee a particular counselor or group.",
+      "programYear": "2026 Summer",
+      "lastVerified": "2026-08-30"
     },
     {
       "id": "recAuIGeBoLbP89It",
@@ -4940,7 +4966,9 @@
       "specificType": "Traditional YMCA day camps; 2026 brochure and registration packet confirmed on official page",
       "town": "Fairfield",
       "address": "841 Old Post Road, Fairfield, CT 06824",
-      "availability": "2026 program cycle completed. Financial assistance forms are available through the YMCA.",
+      "hours": "2026 hours: Sunshine Club 9:00 AM–12:00 PM; Camp Discovery 9:00 AM–1:00 PM; Discovery PM care 1:00–4:00 PM. Published summer dates: June 15–August 28, 2026.",
+      "availability": "The published 2026 season ended August 28. A future cycle has not yet been announced.",
+      "cost": "2026 weekly rates: Sunshine Club two-day schedule $96 member/$140 participant; three-day schedule $143/$210. Discovery $250/$355. Discovery PM care $68/$78. One-time $50 registration fee and $50 nonrefundable, nontransferable deposit per camper per week.",
       "website": "https://cccymca.org/locations/fairfield/camp/",
       "contact": "203-255-2834",
       "townsServed": [
@@ -4948,17 +4976,35 @@
       ],
       "submittedBy": "Darice Corey",
       "dateSubmitted": "2026-08-25",
-      "registrationStatus": "Past Cycle",
+      "registrationStatus": "Closed",
+      "care4Kids": "Yes",
       "financialAid": "Yes",
-      "schoolDayCoverage": "Not Confirmed",
+      "extendedCare": [
+        "After Care"
+      ],
+      "schoolDayCoverage": "Varies",
       "servicesOffered": [
         "Child Care",
         "Summer Camp",
-        "Summer Day Camp"
+        "Summer Day Camp",
+        "Toddler Care",
+        "Preschool / Pre-K",
+        "Arts Enrichment"
       ],
-      "accessibility": "Official page provides Individual Care Plan and medication authorization forms for campers who require support.",
-      "programYear": "Summer 2026",
-      "lastVerified": "2026-08-25"
+      "daysOffered": [
+        "Varies"
+      ],
+      "scheduleWindow": [
+        "Varies"
+      ],
+      "programLength": "Varies",
+      "startTime": "9:00 AM",
+      "endTime": "Varies: 12:00 PM, 1:00 PM, or 4:00 PM with PM care",
+      "registrationCloses": "2026-08-28",
+      "licensing": "Licensed",
+      "accessibility": "The YMCA asks families to contact the child care director about social, behavioral, or medical accommodations. It cannot guarantee a particular counselor or group.",
+      "programYear": "2026 Summer",
+      "lastVerified": "2026-08-30"
     },
     {
       "id": "recrK30cO7CZrSvHX",
