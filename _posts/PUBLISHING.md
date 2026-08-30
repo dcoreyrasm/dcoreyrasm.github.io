@@ -190,7 +190,15 @@ archive" link back to the site, where the archive is always current.
 
 ## Automation
 
-Two GitHub Actions back this process up so a scheduled send can't quietly skip the blog:
+Three GitHub Actions back this process up so a scheduled send can't quietly skip the blog:
+
+- **Due-post publisher** (`.github/workflows/publish-due-posts.yml`): runs every morning
+  (11:05 and 14:05 UTC) and, on the day a post's front-matter date arrives, asks Pages for a
+  fresh build. This exists because `_config.yml` sets no `future` key, so Jekyll skips
+  future-dated posts, and the legacy build-from-branch Pages setup only rebuilds on a push.
+  Without it, a post written ahead of its send date stays invisible until some unrelated push
+  happens to land. Write a post for a future date, merge it whenever, and it goes live on its
+  own date. On a day with no due post it does nothing. `workflow_dispatch` runs it by hand.
 
 - **Monitor** (`.github/workflows/blog-sync-check.yml`, `_tools/blog-sync-check.py`): runs daily, compares sent issues to `_posts/`, and opens a tracking issue if any issue has no post. It never publishes.
 - **Auto-publisher** (`.github/workflows/newsletter-to-blog.yml`, `_tools/newsletter-to-blog.py`): runs **hourly**, and for any sent issue missing a post it parses the issue, builds the post and the four cards, and **commits them straight to `main`**. GitHub Pages rebuilds and the post goes live within about an hour of a send — no review step, no one at the keyboard.

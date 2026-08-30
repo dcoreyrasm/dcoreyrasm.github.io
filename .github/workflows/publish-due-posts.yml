@@ -1,0 +1,76 @@
+name: Publish due posts
+
+# Jekyll skips future-dated posts (_config.yml sets no `future` key, so it
+# defaults to false), and this site uses the legacy build-from-branch Pages
+# setup, which only rebuilds on a push. So a post written ahead of its date
+# stays invisible until something happens to push, which may be days later
+# or not at all.
+#
+# This runs every morning, and on the day a post's date arrives it asks
+# GitHub Pages for a fresh build so the post goes live on the date in its
+# front matter rather than whenever the next unrelated push lands.
+#
+# Safe to run by hand at any time (workflow_dispatch). Requesting a build is
+# idempotent: on a day with no due post it does nothing at all.
+
+on:
+  schedule:
+    - cron: "5 11 * * *"   # 11:05 UTC -> 07:05 America/New_York (EDT), 06:05 (EST)
+    - cron: "5 14 * * *"   # a second pass, in case the first is delayed or skipped
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: publish-due-posts
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Look for a post that becomes due today
+        id: due
+        run: |
+          today="$(TZ=America/New_York date +%F)"
+          echo "Today in America/New_York: $today"
+          match="$(ls _posts/"$today"-*.md 2>/dev/null | head -1 || true)"
+          if [ -n "$match" ]; then
+            echo "Due post: $match"
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No post dated today. Nothing to do."
+            echo "found=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Request a Pages build
+        id: build
+        if: steps.due.outputs.found == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          code="$(curl -sS -o /tmp/resp.json -w '%{http_code}' -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages/builds")"
+          echo "HTTP $code"
+          cat /tmp/resp.json || true
+          [ "$code" = "201" ]
+
+      # Fallback: if the build API is unavailable to GITHUB_TOKEN, force a
+      # rebuild the only other way the legacy Pages setup offers, a push.
+      - name: Fall back to an empty commit
+        if: steps.due.outputs.found == 'true' && steps.build.outcome == 'failure'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "Rebuild Pages for posts due $(TZ=America/New_York date +%F)"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && break
+            sleep 5
+          done
