@@ -272,6 +272,38 @@ def icon_clock(d, accent, soft, bg):
     d.line([S(cx), S(cy), S(cx + 34), S(cy + 16)], fill=accent, width=S(7))
     d.ellipse([S(cx - 7), S(cy - 7), S(cx + 7), S(cy + 7)], fill=accent)
 
+def icon_shield(d, accent, soft, bg):
+    # a shield with a check inside: a privacy setting you turn on for yourself
+    cx = 600
+    pts = [(cx - 76, 172), (cx, 150), (cx + 76, 172),
+           (cx + 76, 246), (cx, 320), (cx - 76, 246)]
+    scaled = [(S(x), S(y)) for x, y in pts]
+    d.polygon(scaled, fill=soft)
+    d.line(scaled + [scaled[0]], fill=accent, width=S(5), joint="curve")
+    d.line([S(cx - 32), S(232), S(cx - 8), S(256), S(cx + 36), S(206)],
+           fill=accent, width=S(8), joint="curve")
+
+def icon_bubble_fade(d, accent, soft, bg):
+    # a chat bubble trailing off into smaller dots: a conversation that does not stay
+    d.polygon([S(494), S(262), S(494), S(330), S(552), S(278)], fill=soft)
+    d.line([S(496), S(276), S(494), S(330), S(550), S(280)],
+           fill=accent, width=S(5), joint="curve")
+    d.rounded_rectangle([S(452), S(158), S(648), S(284)], radius=S(28), fill=soft, outline=accent, width=S(5))
+    y = 192
+    for w, op in [(118, 0.8), (94, 0.55), (58, 0.35)]:
+        d.rounded_rectangle([S(486), S(y), S(486 + w), S(y + 12)], radius=S(6), fill=blend(bg, accent, op))
+        y += 28
+    for cx, r, op in ((690, 16, 0.6), (730, 11, 0.38), (762, 7, 0.22)):
+        d.ellipse([S(cx - r), S(221 - r), S(cx + r), S(221 + r)], fill=blend(bg, accent, op))
+
+def icon_trash(d, accent, soft, bg):
+    # a bin under an open lid: clear out the history you have already made
+    d.rounded_rectangle([S(552), S(148), S(648), S(166)], radius=S(8), fill=blend(bg, accent, 0.55))
+    d.line([S(492), S(180), S(708), S(180)], fill=accent, width=S(7))
+    d.rounded_rectangle([S(514), S(192), S(686), S(328)], radius=S(18), fill=soft, outline=accent, width=S(5))
+    for x in (558, 600, 642):
+        d.line([S(x), S(222), S(x), S(298)], fill=blend(bg, accent, 0.7), width=S(6))
+
 ICONS = {
     "photo_text": icon_photo_text,
     "target_photo": icon_target_photo,
@@ -287,6 +319,9 @@ ICONS = {
     "folder": icon_folder,
     "clock": icon_clock,
     "share_link": icon_share_link,
+    "shield": icon_shield,
+    "bubble_fade": icon_bubble_fade,
+    "trash": icon_trash,
 }
 
 # ---- card --------------------------------------------------------------
