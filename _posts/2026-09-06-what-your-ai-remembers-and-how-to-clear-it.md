@@ -1,16 +1,16 @@
 ---
 layout: post
 title: "What your AI remembers, and how to clear it"
-date: 2026-09-02
+date: 2026-09-06
 description: "Four different levers for controlling what Claude, ChatGPT, Copilot, and Gemini keep from your chats, and the limits none of them get around."
-image: /assets/blog/2026-09-02/claude.png
+image: /assets/blog/2026-09-06/claude.png
 ---
 
 Most of us type things into these tools we would never post anywhere. A health question at midnight. A money worry. A draft of a message to somebody we are annoyed with. All four tools keep a record of that by default, and all four hand you a different lever. Claude has a setting, ChatGPT has a mode, Copilot has a cleanup, Gemini has a timer. None of them erase anything the instant you click, and none of them cover everything, so the real limits are in each section below.
 
 ## Claude: Turn off training on your chats
 
-![Claude: Turn off training on your chats](/assets/blog/2026-09-02/claude.png){: .section-image }
+![Claude: Turn off training on your chats](/assets/blog/2026-09-06/claude.png){: .section-image }
 
 One toggle decides whether your conversations are used to train future versions of Claude.
 
@@ -25,7 +25,7 @@ Source: [How do I change my model improvement privacy settings, Anthropic Privac
 
 ## ChatGPT: Temporary Chat
 
-![ChatGPT: Temporary Chat](/assets/blog/2026-09-02/chatgpt.png){: .section-image }
+![ChatGPT: Temporary Chat](/assets/blog/2026-09-06/chatgpt.png){: .section-image }
 
 A conversation that stays out of your history, makes no new memories, and is not used to train the models.
 
@@ -40,7 +40,7 @@ Source: [Temporary Chat FAQ, OpenAI Help Center](https://help.openai.com/en/arti
 
 ## Copilot: Delete your activity history
 
-![Copilot: Delete your activity history](/assets/blog/2026-09-02/copilot.png){: .section-image }
+![Copilot: Delete your activity history](/assets/blog/2026-09-06/copilot.png){: .section-image }
 
 Microsoft's privacy dashboard holds what Copilot has logged for your personal account, and lets you read it or wipe it.
 
@@ -55,7 +55,7 @@ Source: [Manage your Copilot activity history in the privacy dashboard, Microsof
 
 ## Gemini: Set activity to auto-delete
 
-![Gemini: Set activity to auto-delete](/assets/blog/2026-09-02/gemini.png){: .section-image }
+![Gemini: Set activity to auto-delete](/assets/blog/2026-09-06/gemini.png){: .section-image }
 
 Rather than remembering to clean things out, you pick a window and Google clears it for you.
 

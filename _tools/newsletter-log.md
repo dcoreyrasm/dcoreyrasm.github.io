@@ -31,7 +31,8 @@ Format: `YYYY-MM-DD | theme | Claude feature; ChatGPT feature; Copilot feature; 
 2026-08-23 | Slow down when it actually matters | Claude Extended Thinking; ChatGPT Record Mode; Copilot Health; Gemini Deep Think
 2026-08-26 | Share the plan, not the screenshot | Claude share and unshare a chat; ChatGPT shared links; Copilot share a chat or a single answer; Gemini public links you can delete later
 2026-08-30 | Pick up right where you left off | Claude monthly Recap; ChatGPT pin chats and projects; Copilot Journeys (Microsoft Edge); Gemini pin and rename chats
-2026-09-02 | What your AI remembers, and how to clear it | Claude model improvement privacy toggle; ChatGPT Temporary Chat; Copilot delete activity history in the privacy dashboard; Gemini auto-delete Gemini Apps Activity
+2026-09-02 | Let it actually do the thing | Claude Cowork; ChatGPT Agent mode; Copilot Agent in Settings; Gemini Auto browse in Chrome
+2026-09-06 | What your AI remembers, and how to clear it | Claude model improvement privacy toggle; ChatGPT Temporary Chat; Copilot delete activity history in the privacy dashboard; Gemini auto-delete Gemini Apps Activity
 
 > Backfill note (2026-08-23): the nine lines above were reconstructed from the published
 > posts in `_posts/`. Issues published by the hourly auto-publisher do not update this log,
@@ -64,6 +65,7 @@ Format: `YYYY-MM-DD | theme | Claude feature; ChatGPT feature; Copilot feature; 
 - Slow down when it actually matters (deeper reasoning modes)
 - Share the plan, not the screenshot (sharing a chat with someone else)
 - Pick up right where you left off (holding your place across sessions)
+- Let it actually do the thing (agentic modes that complete a task)
 - What your AI remembers, and how to clear it (privacy, retention, and deletion controls)
 
 ## Candidate themes to rotate through (pick one that is not in "Issues so far")
