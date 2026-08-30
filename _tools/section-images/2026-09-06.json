@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-09-06",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "shield",
+      "label": "Turn off training on your chats"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "bubble_fade",
+      "label": "Temporary Chat"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "trash",
+      "label": "Delete your activity history"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "clock",
+      "label": "Set activity to auto-delete"
+    }
+  ]
+}
