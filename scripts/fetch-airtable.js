@@ -81,7 +81,19 @@ const FIELD_MAP = {
   // use to someone with a rabbit. Intake Requirements is the second: whether
   // they can book at all, or need shots and an assessment first.
   'Animals Accepted':             'animals',
-  'Pet Intake Requirements':      'petRequirements'
+  'Pet Intake Requirements':      'petRequirements',
+
+  // Teens & High School. Only two of these are new fields. Program Setting,
+  // Camp & Program Topics and Teen Opportunity Type have been in the base for
+  // weeks but never reached the page -- this is the first track that needs
+  // them, and between them they answer public-vs-private, what a school
+  // specialises in, and what a programme leads to, without inventing fields
+  // that duplicate what is already there.
+  'Grade Range':                  'gradeRange',
+  'School District':              'schoolDistrict',
+  'Program Setting':              'programSetting',
+  'Camp & Program Topics':        'programTopics',
+  'Teen Opportunity Type':        'teenOpportunity'
 };
 
 const TOKEN = process.env.AIRTABLE_TOKEN;
@@ -129,7 +141,8 @@ async function fetchAllRecords() {
 // arrays, so they are normalised here rather than guarded at every use site.
 const LIST_KEYS = new Set(['townsServed', 'extendedCare', 'servicesOffered',
                            'languages', 'daysOffered', 'scheduleWindow',
-                           'animals', 'petRequirements']);
+                           'animals', 'petRequirements',
+                           'programSetting', 'programTopics', 'teenOpportunity']);
 
 function clean(value, key) {
   if (LIST_KEYS.has(key)) return Array.isArray(value) ? value : (value ? [value] : []);
