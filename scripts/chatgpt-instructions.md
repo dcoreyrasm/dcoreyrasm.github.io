@@ -82,12 +82,22 @@ make it detectable, it is not to do it.
 If a field genuinely looks wrong, say so in your end-of-run report with what
 you would change and why.
 
-TRACK — exactly three values, nothing else:
+TRACK — exactly four values, nothing else:
   Family & Childcare
   Elder Care
   Pet Care & Resources
+  Teens & High School
 Track is the audience, not the kind of program. A camp is Family & Childcare
 with a camp Category. It is not its own track. Neither is a youth program.
+
+Teens & High School is the exception worth stating, because it looks like it
+overlaps the youth categories under Family & Childcare and does not. That
+track holds programmes a parent arranges for a child. This one holds the
+school itself and what follows it -- which high school, which trade, which
+apprenticeship. A summer camp for fifteen-year-olds is still Family &
+Childcare with a camp Category. An after-school club is still Afterschool
+Enrichment. Use Teens & High School only for a school, or for a route into
+work or college.
 
 The tracks do not mix. A boarding kennel is never Family & Childcare however
 family-run it is, and a nursing home is never Pet Care however pet-friendly
@@ -155,6 +165,12 @@ CATEGORY — exactly one value, from this list only:
 - Teen Program
 - Medical / Diagnosis-Specific Camp
 - Nature / Farm Camp
+- High School (Public)
+- High School (Private)
+- Magnet / Specialty School
+- Apprenticeship
+- Job Training Program
+- College Access / Readiness
 
 Two entries in that list look like the coined variants warned about above, and
 are not. `Medical / Diagnosis-Specific Camp` and `Nature / Farm Camp` each name
@@ -163,6 +179,43 @@ working farm is not a nature preserve: use `Nature / Farm Camp` for a camp run
 on a farm, and `Nature / Outdoor Camp` for everything else outdoors. There is no
 `Outdoor/Nature Camp` -- that spelling has been removed, and the two surviving
 names deliberately share the `Nature / ` prefix.
+
+The last six are the Teens & High School categories. Two notes on them.
+
+`College Access / Readiness` is spelled exactly as Services Offered already
+spells it, deliberately: the base carried that phrase before this track
+existed, and a third spelling ("College Prep") would have split the same idea
+across two names. `Apprenticeship` also exists as a Teen Opportunity Type
+option -- that is a facet, this is the primary identity, and a record can
+legitimately carry both.
+
+Public and private are split at the Category level rather than kept in a
+separate field, because it is the first question a family asks and Category is
+what the filter shows. A magnet, charter or technical school goes under
+`Magnet / Specialty School` even though it is publicly funded -- families
+search for it as a specialty, not as a public school.
+
+FIELDS FOR THIS TRACK. Three of them already existed and were built for camps;
+they carry over exactly, so do not invent new ones:
+
+  Grade Range          NEW. 6-12, 7-12, 9-12, K-12, Varies, Not Confirmed.
+                       Age Groups Served says the band; this says the span.
+                       Only what the school's own materials state.
+  School District      NEW. Free text, official form -- "New Haven Public
+                       Schools", "Amity Regional School District 5". One per
+                       record.
+  Program Setting      EXISTING. Public School / Magnet School / Charter
+                       School / Private School answers public-vs-private.
+  Camp & Program Topics EXISTING. 57 options, already including Culinary Arts,
+                       Health Careers, Aviation, Construction Trades,
+                       Broadcasting, Public Safety, Coding, Robotics. This is
+                       the specialty field. Do not add a new one.
+  Teen Opportunity Type EXISTING. Apprenticeship, Internship, Paid Youth
+                       Employment, Career Exploration, College Readiness and
+                       four more.
+  Registration Closes  EXISTING. This is the application deadline. There is no
+                       separate "Application Deadline" field and there should
+                       not be.
 
 SERVICES OFFERED — multi-select. This is the one field where a listing gets to
 say everything it does, and it matters more than it looks.

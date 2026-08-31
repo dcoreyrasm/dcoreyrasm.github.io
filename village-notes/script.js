@@ -142,7 +142,8 @@
   // expected tracks are written down. A track in the data but not here still
   // appears in the dropdown -- and fails the sync check, which is how a fourth
   // one gets noticed rather than quietly filtering to nothing.
-  var TRACKS = ['Family & Childcare', 'Elder Care', 'Pet Care & Resources'];
+  var TRACKS = ['Family & Childcare', 'Elder Care', 'Pet Care & Resources',
+                'Teens & High School'];
 
   var GROUPS = [
     ['Child Care', ['Center-Based Daycare','Home Daycare (Licensed)','Infant Care',
@@ -193,7 +194,14 @@
       'Vaccination & Microchip Clinic','Spay/Neuter Assistance']],
     ['Pet Help & Rehoming', ['Pet Food Assistance','Emergency Pet Foster Care',
       'Pet-Friendly Housing','Adoption & Rescue','Lost & Found Pet Services',
-      'Pet Loss & Grief Support']]
+      'Pet Loss & Grief Support']],
+
+    // Teens & High School, split the way the family's question splits:
+    // which school, and then what comes after it.
+    ['Schools & Specialties', ['High School (Public)','High School (Private)',
+      'Magnet / Specialty School']],
+    ['Careers & College Paths', ['Apprenticeship','Job Training Program',
+      'College Access / Readiness']]
   ];
 
   var GROUP_OF = (function () {
@@ -233,6 +241,10 @@
     'Adaptive Program':              ['Inclusive/Special Needs Camp'],
     'Parent / Family Support':       ['Parenting Support/Classes'],
     'Caregiver Support':             ['Caregiver Support Group'],
+    // Services Offered already carried this exact name before the teen
+    // track existed, which is why the category reuses it verbatim rather
+    // than inventing "College Prep" as a third spelling.
+    'College Access / Readiness':    ['College Access / Readiness'],
 
     // Every pet category is also a service, because pet providers stack
     // services more than childcare ones do: one kennel boards, grooms and
@@ -366,10 +378,32 @@
     var animals = (r.animals || []).filter(function (a) { return a !== 'Not Confirmed'; });
     var petRules = (r.petRequirements || []).filter(function (x) { return x !== 'None Stated'; });
 
+    // Teens & High School. Grade Range and School District are new fields,
+    // empty on every existing record, so those rows self-hide the way the pet
+    // rows above do. The other three do NOT: Program Setting, Camp & Program
+    // Topics and Teen Opportunity Type are already filled in on camps and
+    // youth programmes, and showing them unconditionally would put new rows on
+    // cards this change is meant to leave alone. So they are gated on the
+    // track. Same for Apply by, which reads Registration Closes -- a field
+    // camps already use. Search is different: indexing a field can only add
+    // matches, never remove one, so the haystack above takes them for every
+    // track.
+    var teenTrack = r.track === 'Teens & High School';
+    var teenList = function (values) {
+      return teenTrack ? (values || []).join(', ') || null : null;
+    };
+
     var facts =
       fact('Serves', servesLabel) +
       fact('Takes', animals.join(', ') || null) +
       fact('Before booking', petRules.join(', ') || null) +
+      fact('Grades', r.gradeRange && r.gradeRange !== 'Not Confirmed'
+                     ? r.gradeRange : null) +
+      fact('District', r.schoolDistrict) +
+      fact('Setting', teenList(r.programSetting)) +
+      fact('Focus', teenList(r.programTopics)) +
+      fact('Opportunities', teenList(r.teenOpportunity)) +
+      fact('Apply by', teenTrack ? (formatDate(r.registrationCloses) || null) : null) +
       fact('Also offers', alsoOffers.join(', ') || null) +
       fact('Hours', r.hours) +
       fact('Waitlist', r.availability, true) +
@@ -546,7 +580,10 @@
       .concat(Array.isArray(r.townsServed) ? r.townsServed : [])
       .concat(r.servicesOffered || []).concat(r.languages || [])
       .concat(r.animals || []).concat(r.petRequirements || [])
-      .concat([groupOf(r), r.registrationStatus, r.licensing])
+      .concat(r.programSetting || []).concat(r.programTopics || [])
+      .concat(r.teenOpportunity || [])
+      .concat([groupOf(r), r.registrationStatus, r.licensing,
+               r.gradeRange, r.schoolDistrict])
       .filter(has).join(' ␟ ').toLowerCase();
   }
 
