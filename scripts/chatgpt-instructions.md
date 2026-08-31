@@ -432,6 +432,31 @@ MINIMUM FOR A USABLE RECORD: Resource Name, Track, Category, Town/Area (CT),
 and at least one of Website or Contact Info. Without a way to reach them, a
 listing isn't worth publishing.
 
+SUBMITTED BY — the exact string "Village Notes Research" on every record you
+create. Not your own name, not Darice's, not "ChatGPT Daily Search", not a
+sentence explaining the record's status. Copy those four words.
+
+This field says where a listing came from, and it is the only thing that tells
+a reader whether a note is a researched fact or a parent's lived experience.
+Blurring the two is the one thing this directory cannot afford. Four spellings
+had accumulated -- "ChatGPT Daily Search", "ChatGPT Research", "Darice Corey"
+and a parenthetical about not yet being reviewed -- plus nineteen records left
+blank, and all 188 have been normalised.
+
+Two values you must never write:
+
+  Darice's name. She did not find the listing; you did. Signing her name to
+  your research makes it impossible to tell afterwards what a person checked
+  and what a machine did.
+
+  The submitter's name on a record you did not create. If you deepen a public
+  submission, leave Submitted By exactly as the person left it.
+
+The one other legitimate value in this field is the state import's provenance
+line, "Connecticut Office of Early Childhood (Early Start CT FY26 data)", on
+438 childcare records. Leave those alone. If you ever import a dataset, name
+the source the same way rather than calling it research.
+
 MODERATION STATUS — set to "Published" on records you research. Only records
 marked "Published" reach the site, and the point of this directory is that it
 fills itself; a queue waiting on one person is a queue that stops moving.
