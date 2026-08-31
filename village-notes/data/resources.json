@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-31T23:13:45.383Z",
+  "generated": "2026-08-31T23:19:49.462Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "Moderation Status = \"Published\""
   },
-  "count": 580,
+  "count": 628,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -13,6 +13,7 @@
   ],
   "categories": [
     "Academic/Enrichment Camp",
+    "Adult Day Program",
     "Afterschool Enrichment",
     "Arts Camp",
     "Assisted Living",
@@ -20,9 +21,12 @@
     "Birth-to-Three / Early Intervention",
     "Caregiver Support Group",
     "Center-Based Daycare",
+    "Companion Services",
     "Dog Daycare",
     "Dog Park",
+    "Durable Medical Equipment Loan",
     "Elder Law / Financial Planning",
+    "Elder Transportation",
     "Emergency Pet Foster Care",
     "Emergency Veterinary Care",
     "Geriatric Care Manager",
@@ -34,7 +38,10 @@
     "Legal/HR Resource",
     "Literacy / Reading Program",
     "Low-Cost Veterinary Clinic",
+    "Meal Delivery",
     "Medical / Diagnosis-Specific Camp",
+    "Memory Care",
+    "Mobile Veterinary Service",
     "Municipal/Parks & Rec Camp",
     "Nature / Farm Camp",
     "Nature / Outdoor Camp",
@@ -43,6 +50,8 @@
     "Pet Food Assistance",
     "Preschool / Pre-K",
     "Respite Care",
+    "Senior Center / Congregate Meals & Social Programs",
+    "Skilled Nursing / Rehab",
     "Spay/Neuter Assistance",
     "Specialty Camp",
     "STEM/Tech Camp",
@@ -51,6 +60,8 @@
     "Teen Program",
     "Teen/CIT Program",
     "Veterans Benefits Counseling",
+    "Veterinary Care",
+    "Youth Development Program",
     "Youth Employment Program"
   ],
   "towns": [
@@ -68,6 +79,7 @@
     "Brooklyn",
     "Canaan",
     "Canterbury",
+    "Canton",
     "Chaplin",
     "Cheshire",
     "Chester",
@@ -86,7 +98,9 @@
     "Ellington",
     "Enfield",
     "Fairfield",
+    "Farmington",
     "Glastonbury",
+    "Granby",
     "Greenwich",
     "Griswold",
     "Groton",
@@ -126,6 +140,7 @@
     "Plainfield",
     "Plainville",
     "Plymouth",
+    "Prospect",
     "Putnam",
     "Redding",
     "Ridgefield",
@@ -156,7 +171,9 @@
     "Watertown",
     "West Hartford",
     "West Haven",
+    "Westbrook",
     "Wethersfield",
+    "Wilton",
     "Winchester",
     "Windham",
     "Windsor",
@@ -571,6 +588,31 @@
       ]
     },
     {
+      "id": "recp8xEIMvGQjXETm",
+      "name": "Alzheimer's Association Connecticut Chapter Caregiver Support Groups",
+      "track": "Elder Care",
+      "category": "Caregiver Support Group",
+      "specificType": "Support groups for unpaid family members and friends caring for someone living with Alzheimer's disease, another dementia, or a related disorder.",
+      "town": "Farmington",
+      "address": "10 Executive Drive, Suite 202, Farmington, CT 06032",
+      "ages": "Unpaid family members and friends caring for someone living with dementia",
+      "hours": "Support-group schedules vary and are updated regularly. Connecticut office hours are Monday through Friday, 9:00 a.m. to 4:00 p.m.; the Helpline operates 24 hours a day, 7 days a week.",
+      "website": "https://www.alz.org/ct/support",
+      "contact": "Connecticut office: 860-406-3040; 24/7 Helpline: 800-272-3900; ctchapter@alz.org",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official Connecticut Chapter support and office pages checked August 29, 2026. The provider asks people to confirm group dates and locations before attending. Groups are not for paid professional caregivers.",
+      "registrationStatus": "Rolling / Ongoing",
+      "servicesOffered": [
+        "Caregiver Support",
+        "Elder Care"
+      ],
+      "lastVerified": "2026-08-29"
+    },
+    {
       "id": "reciLChcJXuY8iTCN",
       "name": "Andover Boe At Early Learning Center",
       "track": "Family & Childcare",
@@ -799,6 +841,30 @@
         "Child Care",
         "Preschool / Pre-K"
       ]
+    },
+    {
+      "id": "rec5e69QWs2A3UJPh",
+      "name": "Benchmark at South Farms",
+      "track": "Elder Care",
+      "category": "Assisted Living",
+      "specificType": "Assisted living with memory care, short respite stays, needs-based support, meals, activities, and transportation assistance",
+      "town": "Middletown",
+      "address": "645 Saybrook Road, Middletown, CT 06457",
+      "ages": "Older adults needing assisted living, memory care, or a short respite stay",
+      "website": "https://www.benchmarkseniorliving.com/senior-living/ct/middletown/the-village-at-south-farms/",
+      "contact": "860-342-8033",
+      "townsServed": [
+        "Middletown"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-31",
+      "notes": "The official location page confirms assisted living, Mind & Memory Care, respite care, transportation assistance, housekeeping, laundry, meals, and activities.",
+      "transportation": "Yes",
+      "servicesOffered": [
+        "Elder Care",
+        "Transportation"
+      ],
+      "lastVerified": "2026-08-31"
     },
     {
       "id": "recllcR7JDFw8emf4",
@@ -3140,6 +3206,33 @@
       ]
     },
     {
+      "id": "recj0rFsSoHpRlo3M",
+      "name": "Clelian Adult Day Center",
+      "track": "Elder Care",
+      "category": "Adult Day Program",
+      "specificType": "Medical and dementia adult day care with nursing, recreation, meals, transportation, respite, and caregiver support",
+      "town": "Hamden",
+      "address": "261 Benham Street, Hamden, CT 06514",
+      "ages": "Older adults and families needing medical-model daytime support",
+      "cost": "Daily fee; funding is available through the Agency on Aging and Alzheimer's Association.",
+      "website": "https://www.hamden.com/183/Clelian-Adult-Day-Center",
+      "contact": "203-288-4151",
+      "townsServed": [
+        "Hamden"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "financialAid": "Yes",
+      "transportation": "Yes",
+      "servicesOffered": [
+        "Elder Care",
+        "Caregiver Support",
+        "Transportation"
+      ],
+      "meals": "Breakfast, Lunch, and Snack",
+      "lastVerified": "2026-08-30"
+    },
+    {
       "id": "recZQkYAfvUBi4LKO",
       "name": "Code Ninjas Fairfield Seasonal Camps",
       "track": "Family & Childcare",
@@ -3169,6 +3262,37 @@
       "programLength": "Varies",
       "programYear": "Year-Round / Seasonal",
       "lastVerified": "2026-08-25"
+    },
+    {
+      "id": "recruWxBnqZeIqFNz",
+      "name": "Code Ninjas Trumbull",
+      "track": "Family & Childcare",
+      "category": "Afterschool Enrichment",
+      "specificType": "Year-round coding, game development, robotics, AI, Minecraft and Roblox enrichment",
+      "town": "Trumbull",
+      "address": "4244 Madison Ave, Trumbull, CT 06611",
+      "ages": "Ages 5–14",
+      "website": "https://www.codeninjas.com/locations/en-us/ct/trumbull/",
+      "contact": "(203) 816-5239; trumbullct@codeninjas.com",
+      "townsServed": [
+        "Trumbull"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-27",
+      "notes": "Official provider page confirms coding classes, after-school sessions, seasonal camps, robotics and AI-focused activities. Fall 2026 enrollment flyer says enrollment is open but does not publish class schedule or cost. Flyer includes an apparent Fairfield copy error; this record uses the confirmed Trumbull address and contact information.",
+      "registrationStatus": "Open",
+      "servicesOffered": [
+        "After-School Care",
+        "Afterschool Enrichment",
+        "STEM Enrichment"
+      ],
+      "programYear": "2026–2027 School Year",
+      "lastVerified": "2026-08-27",
+      "programTopics": [
+        "STEM",
+        "Coding",
+        "Robotics"
+      ]
     },
     {
       "id": "recMpcC8hWGxjzxYA",
@@ -3310,6 +3434,26 @@
         "Preschool / Pre-K",
         "Toddler Care"
       ]
+    },
+    {
+      "id": "recjryIj1A0AQkyjj",
+      "name": "Connecticut DVA Office of Advocacy and Assistance",
+      "track": "Elder Care",
+      "category": "Veterans Benefits Counseling",
+      "specificType": "Accredited Veterans Service Officers help veterans and eligible family members access benefits and file disability, compensation, and pension claims",
+      "town": "Rocky Hill",
+      "address": "287 West Street, Rocky Hill, CT 06067",
+      "ages": "Connecticut veterans and eligible family members",
+      "website": "https://portal.ct.gov/dva/advocacy-and-assistance",
+      "contact": "860-616-3685; oaa.dva@ct.gov",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-31",
+      "notes": "The state lists district offices in Rocky Hill, Norwich, Milford, Fairfield, and Waterbury. Staff help with federal, state, and local veterans benefits and entitlements.",
+      "residency": "Statewide",
+      "lastVerified": "2026-08-31"
     },
     {
       "id": "rec1ow42gJJzdi07g",
@@ -3457,6 +3601,61 @@
         "Emergency Pet Foster Care"
       ],
       "lastVerified": "2026-08-28"
+    },
+    {
+      "id": "recCU2JM8Uw9x1ilt",
+      "name": "Connecticut Humane Society Veterinary Clinic — Wilton",
+      "track": "Pet Care & Resources",
+      "category": "Low-Cost Veterinary Clinic",
+      "specificType": "Reduced-fee non-emergency veterinary clinic with wellness exams, vaccines, microchips, diagnostics, limited surgery, and end-of-life care",
+      "town": "Wilton",
+      "address": "863 Danbury Road, Wilton, CT 06897",
+      "ages": "Dogs and cats",
+      "hours": "Tuesday-Saturday by appointment only. Closed 12-1 pm for lunch. Appointments begin at 9:00 am; last appointment at 4:00 pm. Closed Sunday and Monday.",
+      "availability": "Appointment availability is extremely limited. The official page says the clinics accept new patients who need medical attention.",
+      "cost": "Donor-supported rates are typically 20–30% lower than other local veterinary clinics. Fees are not income-based.",
+      "website": "https://cthumane.org/veterinary-care/clinic-basics/",
+      "contact": "800-452-0114; infofoxclinic@cthumane.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-31",
+      "notes": "No emergency care or walk-ins. Some appointments require a deposit. The clinic asks for 48 hours’ notice to cancel or reschedule.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Low-Cost Veterinary Clinic",
+        "Vaccination & Microchip Clinic",
+        "Veterinary Care"
+      ],
+      "lastVerified": "2026-08-31",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ],
+      "petRequirements": [
+        "Rabies Certificate Required"
+      ]
+    },
+    {
+      "id": "rec2WIrtK1OTgu4Gi",
+      "name": "Connecticut In-Home Assistance — Stratford",
+      "track": "Elder Care",
+      "category": "Companion Services",
+      "specificType": "Non-medical homemaker, companion, personal-care, overnight, and live-in assistance",
+      "town": "Stratford",
+      "ages": "Older adults and people with disabilities",
+      "hours": "Services include hourly care, all-day care, overnight care, and 24-hour live-in care; the schedule is arranged for each client.",
+      "website": "https://www.cthomecare.com/services/homemaker-companion-services",
+      "contact": "855-412-2273",
+      "townsServed": [
+        "Stratford"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "notes": "Official provider materials identify Connecticut Department of Consumer Protection registration HCA.0000137 and offices in Stratford, Hamden, Hartford, and Stamford.",
+      "registrationStatus": "Rolling / Ongoing",
+      "servicesOffered": [
+        "Elder Care"
+      ],
+      "lastVerified": "2026-08-30"
     },
     {
       "id": "rechSPhyqMZj75yEr",
@@ -3610,6 +3809,29 @@
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. Access begins through a VA referral."
     },
     {
+      "id": "recLq392E3JoAHR1e",
+      "name": "Connecticut Veterinary Center - West Hartford",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "specificType": "Full-service veterinary hospital with emergency and critical care, wellness care, surgery, dental care, and boarding.",
+      "town": "West Hartford",
+      "address": "470 Oakwood Avenue, West Hartford, CT 06110",
+      "hours": "Emergency walk-ins are accepted. The official location page states emergency care is unavailable Tuesdays and Saturdays after 6:00 p.m. Appointment hours vary by day.",
+      "website": "https://www.ctvetcenter.com/west-hartford-location.html",
+      "contact": "860-233-8564",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official location page checked August 29, 2026. The page contains conflicting general wording about 24-hour access, so the documented emergency exceptions are preserved.",
+      "registrationStatus": "Open",
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Veterinary Care",
+        "Pet Boarding",
+        "Emergency / Same-Day Availability"
+      ],
+      "lastVerified": "2026-08-29"
+    },
+    {
       "id": "recne5uGjcQlxvdSP",
       "name": "Connecticut Veterinary Medical Foundation Companions Assistant Program",
       "track": "Pet Care & Resources",
@@ -3672,6 +3894,77 @@
         "Infant Care",
         "Toddler Care"
       ]
+    },
+    {
+      "id": "rechJUnJF1WGTb3YU",
+      "name": "Cornell University Veterinary Specialists Emergency & Critical Care",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "specificType": "University-affiliated emergency and specialty veterinary hospital with a Level I emergency and critical care facility.",
+      "town": "Stamford",
+      "address": "880 Canal Street, Stamford, CT 06902",
+      "hours": "Emergency & Critical Care available 24 hours a day, 7 days a week, 365 days a year.",
+      "website": "https://www.cuvs.org/emergency_information",
+      "contact": "203-595-2777; info@cuvs.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official page checked August 29, 2026. New patients complete registration information on arrival; calling ahead is requested when possible.",
+      "registrationStatus": "Open",
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Veterinary Care",
+        "Emergency / Same-Day Availability"
+      ],
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Evening",
+        "Overnight",
+        "Weekend"
+      ],
+      "lastVerified": "2026-08-31"
+    },
+    {
+      "id": "recYGhaZyuHojf2ME",
+      "name": "Coventry Senior Transportation Program",
+      "track": "Elder Care",
+      "category": "Elder Transportation",
+      "specificType": "Free, wheelchair-accessible van transportation for medical appointments, groceries, employment, voting, and errands in Bolton, Tolland, Vernon, and Manchester.",
+      "town": "Coventry",
+      "ages": "Coventry older adults using the municipal senior transportation program",
+      "hours": "Rides are offered Mondays, Tuesdays, and Thursdays from 9:00 a.m. to 1:00 p.m. Reserve at least 48 hours in advance and by noon Thursday for the following week.",
+      "cost": "Free",
+      "website": "https://www.coventry-ct.gov/226/Transportation-Services",
+      "contact": "Transportation Coordinator: 860-742-3525",
+      "townsServed": [
+        "Coventry"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official municipal page checked August 29, 2026. Medical appointments receive priority.",
+      "registrationStatus": "Open",
+      "transportation": "Yes",
+      "servicesOffered": [
+        "Transportation",
+        "Elder Care"
+      ],
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Thursday"
+      ],
+      "scheduleWindow": [
+        "Full Day"
+      ],
+      "lastVerified": "2026-08-29"
     },
     {
       "id": "recGZVU5aADCtPKqa",
@@ -3914,6 +4207,70 @@
       ]
     },
     {
+      "id": "recdk5Vxl39vY1LTF",
+      "name": "Daddy Backwards Entertainment Summer Youth Program",
+      "track": "Family & Childcare",
+      "category": "Youth Development Program",
+      "specificType": "Seasonal youth activities reported as arts and crafts, sports, board games, music, play, chess, fitness, and life skills",
+      "town": "Bridgeport",
+      "availability": "The provider's official site confirms active youth mentoring, but the current seasonal summer program details could not be confirmed.",
+      "website": "https://www.daddybackwardsentertainment.com/",
+      "contact": "85 Elm Street, Bridgeport, CT 06604",
+      "townsServed": [
+        "Bridgeport"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-25",
+      "registrationStatus": "Not Confirmed",
+      "schoolDayCoverage": "Not Confirmed",
+      "servicesOffered": [
+        "Mentoring",
+        "Arts Enrichment",
+        "Sports Enrichment"
+      ],
+      "programYear": "Not Confirmed",
+      "lastVerified": "2026-08-25"
+    },
+    {
+      "id": "recfXpJ97MvZHPdDN",
+      "name": "Danbury Animal Welfare Society Low-Cost Spay/Neuter Clinic",
+      "track": "Pet Care & Resources",
+      "category": "Low-Cost Veterinary Clinic",
+      "specificType": "Appointment-only low-cost spay/neuter clinic with vaccines and microchips",
+      "town": "Bethel",
+      "address": "147 Grassy Plain Street, Bethel, CT 06801",
+      "ages": "Dogs, cats, puppies, and kittens that meet health, age, and weight requirements",
+      "hours": "Spay/neuter surgeries are scheduled on rotating weekdays, Monday-Friday. Appointment required; walk-ins are not accepted.",
+      "cost": "Cats: $150 neuter or $175 spay. Dog prices begin at $325 and vary by sex and weight. Vaccines $30 each; microchip $40. Additional fees may apply.",
+      "website": "https://daws.org/low-cost-spay-neuter/",
+      "contact": "203-744-3297 ext. 101; clinicadmin@daws.org",
+      "townsServed": [
+        "Bethel"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "notes": "Low-cost spay/neuter is offered to families in need. Dogs and cats must have current rabies and distemper vaccination documentation. Puppies and kittens must be at least 3 months old and weigh at least 3 pounds.",
+      "registrationStatus": "Open",
+      "servicesOffered": [
+        "Low-Cost Veterinary Clinic",
+        "Spay/Neuter Assistance",
+        "Vaccination & Microchip Clinic"
+      ],
+      "lastVerified": "2026-08-31",
+      "animals": [
+        "Dogs",
+        "Cats",
+        "Puppies",
+        "Kittens"
+      ],
+      "petRequirements": [
+        "Vaccinations Required",
+        "Rabies Certificate Required",
+        "Minimum Age Applies",
+        "Membership or Registration Required"
+      ]
+    },
+    {
       "id": "recMfcRysJpk3ACjA",
       "name": "Danbury Public School Readiness Program",
       "track": "Family & Childcare",
@@ -3958,6 +4315,31 @@
         "Child Care",
         "Preschool / Pre-K"
       ]
+    },
+    {
+      "id": "rec9TsAUYAEVI7Ozv",
+      "name": "Darien Human Services Medical Equipment Loan Closet",
+      "track": "Elder Care",
+      "category": "Durable Medical Equipment Loan",
+      "specificType": "Free short-term loans of wheelchairs, transport chairs, knee scooters, walkers, canes, and crutches",
+      "town": "Darien",
+      "address": "2 Renshaw Road, Room 109, Darien, CT 06820",
+      "ages": "Darien residents who need short-term durable medical equipment",
+      "hours": "Monday–Thursday, 8:00 AM–5:15 PM. Closed Fridays and holidays.",
+      "cost": "Loans are free. A refundable $50 deposit is required for wheelchairs, transport chairs, knee scooters, and walkers with a seat.",
+      "website": "https://www.darienct.gov/184/Human-Services",
+      "contact": "203-656-7328",
+      "townsServed": [
+        "Darien"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-31",
+      "notes": "The town page distinguishes a free loan from the refundable equipment deposit.",
+      "servicesOffered": [
+        "Elder Care"
+      ],
+      "residency": "Residents Only",
+      "lastVerified": "2026-08-31"
     },
     {
       "id": "recXC1O2MQCYYHvoA",
@@ -5609,6 +5991,29 @@
       ]
     },
     {
+      "id": "recHSHaE3eg9Rmuyf",
+      "name": "Granby Senior Van Transportation Service",
+      "track": "Elder Care",
+      "category": "Elder Transportation",
+      "specificType": "Municipal senior-van rides, including local medical appointments",
+      "town": "Granby",
+      "address": "15C North Granby Road, Granby, CT 06035",
+      "ages": "Granby seniors",
+      "availability": "Medical rides should be scheduled at least two weeks in advance.",
+      "website": "https://www.granby-ct.gov/517/Senior-Services",
+      "contact": "860-844-5350",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-31",
+      "notes": "The official town FAQ confirms local medical transportation and advance scheduling.",
+      "transportation": "Yes",
+      "servicesOffered": [
+        "Elder Care",
+        "Transportation"
+      ],
+      "residency": "Residents Only",
+      "lastVerified": "2026-08-31"
+    },
+    {
       "id": "recAkcq1mH3zGjJk3",
       "name": "Grandparents as Parents Support",
       "track": "Elder Care",
@@ -5628,6 +6033,31 @@
       "servicesOffered": [
         "Caregiver Support"
       ]
+    },
+    {
+      "id": "recchEeCzlB07Cnp1",
+      "name": "Greater New Haven Transit District — Hamden Elderly Services",
+      "track": "Elder Care",
+      "category": "Elder Transportation",
+      "specificType": "Shared-ride public transportation and Hamden elderly transportation services",
+      "town": "Hamden",
+      "address": "840 Sherman Avenue, Hamden, CT 06514",
+      "ages": "Older adults using Hamden Elderly Services; people with disabilities may qualify for separate ADA service",
+      "website": "https://www.gnhtd.org/service-areas",
+      "contact": "Reservations 203-288-6643; office 203-288-6282; comments@gnhtd.org",
+      "townsServed": [
+        "Hamden"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "notes": "The official service-area page lists Hamden Elderly Services separately from ADA paratransit. Shared rides should generally be reserved one to seven days ahead.",
+      "transportation": "Yes",
+      "servicesOffered": [
+        "Elder Care",
+        "Transportation",
+        "Disability Support"
+      ],
+      "lastVerified": "2026-08-30"
     },
     {
       "id": "rec8LXnA4xpNWW4aC",
@@ -6291,6 +6721,26 @@
       "servicesOffered": [
         "Preschool / Pre-K"
       ]
+    },
+    {
+      "id": "recSU9Xm51HrqhN4m",
+      "name": "Hartford HealthCare at Home Hospice Care",
+      "track": "Elder Care",
+      "category": "Hospice / Palliative Care",
+      "specificType": "Hospice care delivered through Hartford HealthCare at Home, with referral support from its Wethersfield administrative office.",
+      "town": "Wethersfield",
+      "address": "1290 Silas Deane Highway, Suite 4B, Wethersfield, CT 06109",
+      "ages": "People with a life-limiting illness and their families",
+      "website": "https://hartfordhealthcare.org/services/hospice-care",
+      "contact": "Referrals: 1-800-HOMECARE",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official Hartford HealthCare hospice page checked August 29, 2026. Service hours, cost, and current capacity are not stated.",
+      "servicesOffered": [
+        "Elder Care",
+        "Caregiver Support"
+      ],
+      "lastVerified": "2026-08-29"
     },
     {
       "id": "recrY7YkySujE4I7U",
@@ -8379,6 +8829,108 @@
       ]
     },
     {
+      "id": "recStSzDoxBT6HaE3",
+      "name": "Mary Wade Adult Day Center",
+      "track": "Elder Care",
+      "category": "Adult Day Program",
+      "specificType": "Adult day care with social activities, nursing, personal care, transportation, medication administration, lunch, dementia support, rehabilitation coordination, and family caregiver support.",
+      "town": "New Haven",
+      "address": "118 Clinton Avenue, New Haven, CT 06513",
+      "ages": "Seniors, including people living with Alzheimer's disease or dementia",
+      "website": "https://marywade.org/services/adult-day-center/",
+      "contact": "203-562-7222",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official provider page checked August 29, 2026. The specialized Garden Room program serves no more than ten members per day.",
+      "transportation": "Yes",
+      "servicesOffered": [
+        "Elder Care",
+        "Transportation",
+        "Caregiver Support"
+      ],
+      "meals": "Meals Only",
+      "lastVerified": "2026-08-29"
+    },
+    {
+      "id": "recffmAqw2R2MgQ5b",
+      "name": "Masonicare at Ashlar Village",
+      "track": "Elder Care",
+      "category": "Assisted Living",
+      "specificType": "Not-for-profit continuing care community with assisted living, memory care, independent living, and access to skilled nursing, rehabilitation, home care, and hospice services.",
+      "town": "Wallingford",
+      "address": "74 Cheshire Road, Wallingford, CT 06492",
+      "ages": "Older adults seeking independent living, assisted living, or memory care",
+      "website": "https://www.masonicare.org/ct-locations/ashlar-village-ct",
+      "contact": "203-679-6400; Assisted Living: 203-679-6401",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official provider and contact pages checked August 29, 2026. Current openings and residential costs are not stated.",
+      "transportation": "Yes",
+      "servicesOffered": [
+        "Elder Care",
+        "Transportation"
+      ],
+      "lastVerified": "2026-08-29"
+    },
+    {
+      "id": "recr9Skqzc5ppp0ph",
+      "name": "Masonicare at Greenridge Place Memory Care",
+      "track": "Elder Care",
+      "category": "Memory Care",
+      "specificType": "Secure residential memory-care program with individualized support, cognitive and creative activities, family involvement, meals, housekeeping, and transportation.",
+      "town": "Rocky Hill",
+      "address": "1 Elizabeth Court, Rocky Hill, CT 06067",
+      "ages": "People living with memory impairments",
+      "website": "https://www.masonicare.org/ct-locations/greenridge-place",
+      "contact": "860-500-4300",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official provider page checked August 29, 2026. Current openings and memory-care prices are not stated.",
+      "transportation": "Yes",
+      "servicesOffered": [
+        "Elder Care",
+        "Transportation"
+      ],
+      "meals": "Meals Only",
+      "lastVerified": "2026-08-29"
+    },
+    {
+      "id": "recvq8XBDMTCwuacz",
+      "name": "Masonicare Health Center Skilled Nursing and Rehabilitation",
+      "track": "Elder Care",
+      "category": "Skilled Nursing / Rehab",
+      "specificType": "Short-term rehabilitation and long-term skilled nursing with physical, occupational, and speech therapy, medical care, respite stays, and specialized recovery programs.",
+      "town": "Wallingford",
+      "address": "22 Masonic Avenue, Wallingford, CT 06492",
+      "ages": "Adults needing short-term rehabilitation, long-term skilled nursing, respite, or memory care",
+      "hours": "On-site physician or APRN care is available 24 hours a day, 7 days a week. Rehabilitation therapies and admissions are available 7 days a week.",
+      "website": "https://www.masonicare.org/services/health-wellness/skilled-nursing-rehab",
+      "contact": "203-679-5900; Admissions: 203-679-5901",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official provider and contact pages checked August 29, 2026. Provider states Medicare and Medicaid certification and acceptance of most commercial insurance plans.",
+      "servicesOffered": [
+        "Elder Care"
+      ],
+      "meals": "Meals and Snacks",
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Evening",
+        "Overnight",
+        "Weekend"
+      ],
+      "lastVerified": "2026-08-29"
+    },
+    {
       "id": "recrud50mnYwM16UH",
       "name": "Mayflower Montessori School",
       "track": "Family & Childcare",
@@ -8829,6 +9381,42 @@
       "lastVerified": "2026-08-26"
     },
     {
+      "id": "recvJWqefdbAAW09B",
+      "name": "Milford Senior Center",
+      "track": "Elder Care",
+      "category": "Senior Center / Congregate Meals & Social Programs",
+      "specificType": "Senior center offering activities, social services, a mini-lunch program, Meals on Wheels, a food bank, and the Ahrens respite program.",
+      "town": "Milford",
+      "address": "9 Jepson Drive, Milford, CT 06460",
+      "ages": "Adults age 55 and older",
+      "hours": "Sunday 11:30 a.m. to 2:30 p.m.; Monday 9:00 a.m. to 8:00 p.m.; Tuesday through Friday 9:00 a.m. to 4:30 p.m.",
+      "website": "https://milfordctseniorcenter.com/",
+      "contact": "203-877-5131",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official center and City of Milford pages checked August 29, 2026.",
+      "registrationStatus": "Rolling / Ongoing",
+      "servicesOffered": [
+        "Elder Care",
+        "Caregiver Support"
+      ],
+      "meals": "Meals Only",
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Sunday"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Evening",
+        "Weekend"
+      ],
+      "lastVerified": "2026-08-29"
+    },
+    {
       "id": "recND7C4NQ8p0SSUg",
       "name": "Monica Vergara Family Child Care Home (Angels Daycare)",
       "track": "Family & Childcare",
@@ -8892,6 +9480,34 @@
       "endTime": "18:30",
       "licensing": "Licensed",
       "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "recnnPWbgoJjew2xy",
+      "name": "Monroe Senior Center",
+      "track": "Elder Care",
+      "category": "Senior Center / Congregate Meals & Social Programs",
+      "specificType": "Social, recreation, education, wellness, caregiver, outreach, and transportation programs",
+      "town": "Monroe",
+      "address": "235 Cutlers Farm Road, Monroe, CT 06468",
+      "ages": "Membership age 55+; transportation for resident members age 60+ or disabled",
+      "hours": "Monday–Friday 8:30 AM–4:30 PM; closed federal holidays.",
+      "cost": "Annual membership: $15 Monroe residents or $20 nonresidents. Some grant-funded activities are free with suggested donations.",
+      "website": "https://www.monroect.gov/p/senior-center",
+      "contact": "203-452-2815",
+      "townsServed": [
+        "Monroe"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "registrationStatus": "Rolling / Ongoing",
+      "transportation": "Yes",
+      "servicesOffered": [
+        "Elder Care",
+        "Caregiver Support",
+        "Transportation"
+      ],
+      "residency": "No Residency Restriction",
+      "lastVerified": "2026-08-30"
     },
     {
       "id": "rechta3b7XpOgKiIc",
@@ -8991,6 +9607,159 @@
         "Preschool / Pre-K",
         "Toddler Care"
       ]
+    },
+    {
+      "id": "rec7QZaOyCOaT1mfY",
+      "name": "Mozaic Adult Day Program — Bridgeport",
+      "track": "Elder Care",
+      "category": "Adult Day Program",
+      "specificType": "Medical-model adult day care with nursing, medication management, personal care, therapeutic activities, meals, and accessible transportation",
+      "town": "Bridgeport",
+      "address": "4200 Park Avenue, Bridgeport, CT 06604",
+      "ages": "Older adults with physical challenges, chronic health conditions, memory changes, or daytime support needs",
+      "hours": "Monday–Friday, 8:00 AM–4:30 PM",
+      "website": "https://www.mozaicsl.org/services/day-services/adult-day-program",
+      "contact": "203-365-6470; adultday@mozaicsl.org",
+      "townsServed": [
+        "Bridgeport"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-31",
+      "notes": "The program supports continued living at home and gives family caregivers reliable daytime respite.",
+      "transportation": "Yes",
+      "servicesOffered": [
+        "Elder Care",
+        "Caregiver Support",
+        "Transportation"
+      ],
+      "meals": "Breakfast, Lunch, and Snack",
+      "accessibility": "Wheelchair-accessible transportation is available.",
+      "lastVerified": "2026-08-31"
+    },
+    {
+      "id": "reccdmDKj0sFKBe3x",
+      "name": "Mozaic Adult Day Program — Stratford",
+      "track": "Elder Care",
+      "category": "Adult Day Program",
+      "specificType": "Medical-model adult day care with nursing, medication management, personal care, therapeutic activities, meals, and accessible transportation",
+      "town": "Stratford",
+      "address": "720 Barnum Avenue Cutoff, Stratford, CT 06614",
+      "ages": "Older adults with physical challenges, chronic health conditions, memory changes, or daytime support needs",
+      "hours": "Monday–Friday, 7:30 AM–5:30 PM",
+      "website": "https://www.mozaicsl.org/services/day-services/adult-day-program",
+      "contact": "203-345-0918; adultday@mozaicsl.org",
+      "townsServed": [
+        "Stratford"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-31",
+      "notes": "The program supports continued living at home and gives family caregivers reliable daytime respite.",
+      "transportation": "Yes",
+      "servicesOffered": [
+        "Elder Care",
+        "Caregiver Support",
+        "Transportation"
+      ],
+      "meals": "Breakfast, Lunch, and Snack",
+      "accessibility": "Wheelchair-accessible transportation is available.",
+      "lastVerified": "2026-08-31"
+    },
+    {
+      "id": "recN37tyNgrevTRQM",
+      "name": "Mozaic Assisted Living — Kuriansky Family Residence",
+      "track": "Elder Care",
+      "category": "Assisted Living",
+      "specificType": "Small assisted-living residence with daily-living help, 24-hour on-site nursing, meals, housekeeping, activities, and limited medical transportation",
+      "town": "Bridgeport",
+      "address": "4200 Park Avenue, Bridgeport, CT 06604",
+      "ages": "Individuals and couples who need assistance with daily living",
+      "hours": "24-hour on-site nursing staff and emergency call system",
+      "website": "https://www.mozaicsl.org/services/assisted-living",
+      "contact": "203-659-3357; assistedliving@mozaicsl.org",
+      "townsServed": [
+        "Bridgeport"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-31",
+      "notes": "Includes all meals, weekly housekeeping and laundry, recreation, and scheduled medical transportation within 10 miles up to twice per month.",
+      "transportation": "Yes",
+      "servicesOffered": [
+        "Elder Care",
+        "Transportation"
+      ],
+      "meals": "Meals Only",
+      "lastVerified": "2026-08-31"
+    },
+    {
+      "id": "recK51t5Xo7WHTixY",
+      "name": "Mozaic Hospice Care Services",
+      "track": "Elder Care",
+      "category": "Hospice / Palliative Care",
+      "specificType": "In-home hospice care with physician oversight, skilled nursing, symptom support, medication coordination, and family education",
+      "town": "Bridgeport",
+      "address": "4200 Park Avenue, Bridgeport, CT 06604",
+      "ages": "People with life-limiting illness and their families",
+      "website": "https://www.mozaicsl.org/services/hospice",
+      "contact": "203-396-1136; hospice@mozaicsl.org",
+      "townsServed": [
+        "Bridgeport"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-31",
+      "notes": "Care focuses on comfort, dignity, quality of life, and support for patients and families.",
+      "servicesOffered": [
+        "Elder Care",
+        "Caregiver Support"
+      ],
+      "lastVerified": "2026-08-31"
+    },
+    {
+      "id": "recpixen8kVVOopS8",
+      "name": "Mozaic Jewish Home",
+      "track": "Elder Care",
+      "category": "Skilled Nursing / Rehab",
+      "specificType": "Long-term skilled nursing with rehabilitation therapies, personalized dementia care, hospice support, and family support groups",
+      "town": "Bridgeport",
+      "address": "4200 Park Avenue, Bridgeport, CT 06604",
+      "ages": "Older adults needing long-term nursing care, rehabilitation, dementia support, or hospice care",
+      "hours": "24-hour nursing care",
+      "website": "https://www.mozaicsl.org/services/long-term-care/the-jewish-home",
+      "contact": "203-365-6400",
+      "townsServed": [
+        "Bridgeport"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-31",
+      "notes": "Services include physical, occupational, and speech therapy; personalized dementia care; hospice care; and support groups for residents and families. The official page states that the home is licensed by Connecticut DPH.",
+      "servicesOffered": [
+        "Elder Care",
+        "Caregiver Support"
+      ],
+      "licensing": "Licensed",
+      "lastVerified": "2026-08-31"
+    },
+    {
+      "id": "recNFjkrwx5T0gyd2",
+      "name": "Mozaic Senior Life Home Care",
+      "track": "Elder Care",
+      "category": "In-Home Caregiver / Home Health Aide",
+      "specificType": "Non-medical one-to-one home care, companion and homemaker help, in-home therapy, and elder-care navigation",
+      "town": "Bridgeport",
+      "address": "4200 Park Avenue, Bridgeport, CT 06604",
+      "ages": "Older adults returning home after a hospital stay, recovering from illness, or needing help to remain at home",
+      "website": "https://www.mozaicsl.org/services/home-care",
+      "contact": "203-365-6400",
+      "townsServed": [
+        "Bridgeport"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-31",
+      "notes": "Official materials also describe companion and homemaker services, in-home therapy, adult family living support, and help navigating care options.",
+      "servicesOffered": [
+        "Elder Care",
+        "Caregiver Support"
+      ],
+      "lastVerified": "2026-08-31"
     },
     {
       "id": "recGjOCk6fspdaBPa",
@@ -9630,6 +10399,25 @@
       "lastVerified": "2026-08-26"
     },
     {
+      "id": "rec0uLSDRKbhis3Yy",
+      "name": "New Haven Legal Assistance Elder Law Services",
+      "track": "Elder Care",
+      "category": "Elder Law / Financial Planning",
+      "specificType": "Civil legal advice and representation for seniors, including an Elder Law Unit supported through Older Americans Act funding.",
+      "town": "New Haven",
+      "address": "205 Orange Street, New Haven, CT 06510",
+      "ages": "Seniors and other eligible residents who need civil legal help",
+      "website": "https://nhlegal.org/",
+      "contact": "203-946-4811",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official provider page and current organizational materials checked August 29, 2026. Intake eligibility, service area, and appointment availability should be confirmed through the provider.",
+      "servicesOffered": [
+        "Elder Care"
+      ],
+      "lastVerified": "2026-08-29"
+    },
+    {
       "id": "recSuFjnaOduxluvf",
       "name": "New Haven Reads One-on-One Tutoring",
       "track": "Family & Childcare",
@@ -9781,6 +10569,29 @@
       ]
     },
     {
+      "id": "recMP3V8uUzKzS7tf",
+      "name": "New Opportunities Meals on Wheels",
+      "track": "Elder Care",
+      "category": "Meal Delivery",
+      "specificType": "Home delivery of two meals a day, up to seven days a week, for older adults in Greater Waterbury.",
+      "town": "Waterbury",
+      "address": "232 North Elm Street, Waterbury, CT 06702",
+      "ages": "Adults age 60 and older",
+      "hours": "Two meals a day may be delivered up to seven days a week.",
+      "availability": "An official April 21, 2026 notice says the program has a waiting list because of a critical funding shortage.",
+      "website": "https://newoppinc.org/Service/Meals-on-Wheels",
+      "contact": "Meals on Wheels: 203-575-4280; main office: 203-575-9799",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official program, organization, and funding notice pages checked August 29, 2026. Exact towns beyond Greater Waterbury were not listed, so Towns Served is blank.",
+      "registrationStatus": "Waitlist",
+      "servicesOffered": [
+        "Elder Care"
+      ],
+      "meals": "Meals Only",
+      "lastVerified": "2026-08-29"
+    },
+    {
       "id": "recyCUEh9mBGw0YZN",
       "name": "Newtown Community Center Summer Camps",
       "track": "Family & Childcare",
@@ -9907,6 +10718,31 @@
         "Preschool / Pre-K",
         "Toddler Care"
       ]
+    },
+    {
+      "id": "recwT06Ks46jgsa8r",
+      "name": "North Central Area Agency on Aging",
+      "track": "Elder Care",
+      "category": "Geriatric Care Manager",
+      "specificType": "Aging and disability information, benefits help, care navigation, caregiver respite, CHOICES counseling, and veterans-directed care",
+      "town": "Hartford",
+      "address": "151 New Park Avenue, Hartford, CT 06106",
+      "ages": "People age 60 and older, people with disabilities, families, and caregivers",
+      "hours": "Monday–Friday 8:30 AM–4:30 PM.",
+      "website": "https://ncaaact.org/aging-disability-resource-center/",
+      "contact": "860-724-6443",
+      "townsServed": [
+        "Hartford"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "notes": "Regional Area Agency on Aging serving 38 north-central Connecticut towns. Services include Medicare counseling, aging information and assistance, family caregiver help, veterans assistance, healthy aging, and grants/funding.",
+      "servicesOffered": [
+        "Elder Care",
+        "Caregiver Support",
+        "Disability Support"
+      ],
+      "lastVerified": "2026-08-31"
     },
     {
       "id": "recelLwKXd1cZnShl",
@@ -10387,6 +11223,39 @@
       ]
     },
     {
+      "id": "recrq8vTNsytcJj25",
+      "name": "Partnerships Adult Day Center",
+      "track": "Elder Care",
+      "category": "Adult Day Program",
+      "specificType": "Medical-model adult day care with nursing, personal care, therapeutic recreation, meals, and caregiver support",
+      "town": "Hamden",
+      "address": "3 Industrial Circle, Hamden, CT 06517",
+      "ages": "Frail older adults and adults age 18+ with physical or mental disabilities",
+      "hours": "Monday–Friday 7:30 AM–5:00 PM; Saturday and Sunday closed.",
+      "cost": "A free trial day is available; ongoing program fees were not published on the reviewed page.",
+      "website": "https://partnershipsadc.org/",
+      "contact": "203-248-8854; info@partnershipsadc.org",
+      "townsServed": [
+        "Hamden",
+        "New Haven",
+        "North Haven",
+        "East Haven",
+        "West Haven",
+        "Branford",
+        "Cheshire",
+        "Wallingford"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "registrationStatus": "Open",
+      "servicesOffered": [
+        "Elder Care",
+        "Caregiver Support"
+      ],
+      "meals": "Meals Only",
+      "lastVerified": "2026-08-30"
+    },
+    {
       "id": "recGl0Hr7nW9zQTFv",
       "name": "Patricia J. Rodriguez Family Child Care Home (Angels Place LLC)",
       "track": "Family & Childcare",
@@ -10599,6 +11468,38 @@
         "Kittens",
         "Birds",
         "Exotic Pets"
+      ]
+    },
+    {
+      "id": "rec0CiQQvdYzROQ9O",
+      "name": "Pieper Veterinary Madison Urgent Care",
+      "track": "Pet Care & Resources",
+      "category": "Veterinary Care",
+      "specificType": "Same-day urgent veterinary care for stable, non-life-threatening illnesses and minor injuries",
+      "town": "Madison",
+      "address": "51 Boston Post Road, Madison, CT 06443",
+      "ages": "Dogs and cats",
+      "hours": "Urgent Care: Monday-Wednesday 12 pm-10 pm; Thursday-Sunday 10 am-8 pm. Walk-ins welcome; same-day urgent visits available.",
+      "cost": "Exam fee and any testing or medication costs vary by the pet's condition.",
+      "website": "https://pieperveterinary.com/locations/pieper-veterinary-madison/",
+      "contact": "203-245-8511",
+      "townsServed": [
+        "Madison"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "registrationStatus": "Open",
+      "servicesOffered": [
+        "Veterinary Care",
+        "Emergency / Same-Day Availability"
+      ],
+      "lastVerified": "2026-08-31",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ],
+      "petRequirements": [
+        "None Stated"
       ]
     },
     {
@@ -10840,6 +11741,29 @@
         "Preschool / Pre-K",
         "Toddler Care"
       ]
+    },
+    {
+      "id": "recXeFIyP48Lw5dtp",
+      "name": "Prospect Senior Center",
+      "track": "Elder Care",
+      "category": "Senior Center / Congregate Meals & Social Programs",
+      "specificType": "Municipal senior center with social, wellness, educational, recreational, benefits-help, screening, and transportation services",
+      "town": "Prospect",
+      "ages": "Aging adults; free Dial-A-Ride serves disabled residents and adults age 60 and older",
+      "hours": "Monday–Friday, 9:00 AM–4:00 PM",
+      "cost": "Annual membership: $10 for Prospect residents; $20 for nonresidents. Blood-pressure screenings are free. Dial-A-Ride is free for eligible riders.",
+      "website": "https://townofprospect.gov/senior-center/",
+      "contact": "203-758-5300",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-31",
+      "notes": "The center helps with energy-assistance paperwork and offers a local minibus. Free Dial-A-Ride is first-come, first-served.",
+      "transportation": "Yes",
+      "servicesOffered": [
+        "Elder Care",
+        "Transportation"
+      ],
+      "residency": "Residents and Nonresidents",
+      "lastVerified": "2026-08-31"
     },
     {
       "id": "recKdMvDOL9XBAMXw",
@@ -11174,6 +12098,45 @@
       ]
     },
     {
+      "id": "recaCnyBI1ASgApXv",
+      "name": "Safe Futures Protect Our Pets",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Pet Foster Care",
+      "specificType": "Pet safety support for people leaving abuse, including pet-friendly emergency shelter and hotels, foster placement connections, pet supplies, veterinary-care access, and pet transportation costs.",
+      "town": "New London",
+      "address": "16 Jay Street, New London, CT 06320",
+      "hours": "Confidential support line operates 24 hours a day, 365 days a year. Main office is open Monday through Friday, 9:00 a.m. to 5:00 p.m.",
+      "cost": "Safe Futures states that its services are free and confidential.",
+      "website": "https://safefuturesct.org/protect-our-pets/",
+      "contact": "24/7 support line: 860-701-6001; office: 860-447-0366",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official Protect Our Pets, services, and contact pages checked August 29, 2026. Animal types are not specified, so Animals Accepted is blank.",
+      "registrationStatus": "Open",
+      "servicesOffered": [
+        "Emergency Pet Foster Care",
+        "Pet-Friendly Housing",
+        "Pet Food Assistance",
+        "Pet Transportation"
+      ],
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Evening",
+        "Overnight",
+        "Weekend"
+      ],
+      "lastVerified": "2026-08-29"
+    },
+    {
       "id": "recMQ7nEjpv1zHbzC",
       "name": "Samuel S. Gray Jr. Boys & Girls Club Summer Fun Club",
       "track": "Family & Childcare",
@@ -11282,6 +12245,58 @@
       "residency": "Residents Only",
       "programYear": "Summer 2026",
       "lastVerified": "2026-08-25"
+    },
+    {
+      "id": "rec5E1ozij8fe25nT",
+      "name": "Senior Meals on Wheels — Greater New Haven",
+      "track": "Elder Care",
+      "category": "Meal Delivery",
+      "specificType": "Home-delivered meals and 16 community cafés for older adults",
+      "town": "New Haven",
+      "address": "317 East Street, New Haven, CT 06511",
+      "ages": "Homebound adults age 60 and older in the service area",
+      "hours": "Home-delivered meals Monday–Friday. Wallingford and Bethany may receive five chilled meals once weekly. Community cafés serve Monday–Friday 11:30 AM–12:30 PM.",
+      "cost": "Community cafés request a suggested $3 donation. Home-delivery cost was not stated on the official page.",
+      "website": "https://seniormealsct.org/",
+      "contact": "203-752-9919; seniorfoodservices@lifebridgect.org",
+      "townsServed": [
+        "New Haven",
+        "Wallingford",
+        "Bethany"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "registrationStatus": "Rolling / Ongoing",
+      "servicesOffered": [
+        "Elder Care"
+      ],
+      "meals": "Meals Only",
+      "lastVerified": "2026-08-30"
+    },
+    {
+      "id": "rece2HuDpVtEJ9YGU",
+      "name": "Senior Resources Agency on Aging",
+      "track": "Elder Care",
+      "category": "Geriatric Care Manager",
+      "specificType": "Eastern Connecticut aging and disability information, service navigation, caregiver help, and community-program funding",
+      "town": "Norwich",
+      "address": "19 Ohio Avenue, Suite 2, Norwich, CT 06360",
+      "ages": "Older adults, people with disabilities, families, and caregivers",
+      "hours": "Monday–Friday 8:30 AM–4:00 PM.",
+      "website": "https://seniorresourcesec.org/programs-services/",
+      "contact": "860-887-3561",
+      "townsServed": [
+        "Norwich"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "notes": "One of Connecticut's five Area Agencies on Aging; serves eastern, Middlesex, and shoreline areas from its Norwich office.",
+      "servicesOffered": [
+        "Elder Care",
+        "Caregiver Support",
+        "Disability Support"
+      ],
+      "lastVerified": "2026-08-31"
     },
     {
       "id": "recTBUJHhbyPJMn1O",
@@ -11623,6 +12638,31 @@
       ]
     },
     {
+      "id": "recC3CKf8Omr2QIhJ",
+      "name": "Southwestern Connecticut Agency on Aging",
+      "track": "Elder Care",
+      "category": "Geriatric Care Manager",
+      "specificType": "Aging Answers, Medicare and Medicaid navigation, benefits help, home-care options, and caregiver support",
+      "town": "Bridgeport",
+      "address": "1000 Lafayette Boulevard, 9th Floor, Bridgeport, CT 06604",
+      "ages": "Older adults, people with disabilities, families, and caregivers",
+      "hours": "Monday–Friday 8:30 AM–4:30 PM.",
+      "website": "https://swcaa.org/programs-and-services/",
+      "contact": "203-333-9288; info@swcaa.org",
+      "townsServed": [
+        "Bridgeport"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "notes": "Regional Area Agency on Aging serving older adults, caregivers, and individuals with disabilities in southwestern Connecticut.",
+      "servicesOffered": [
+        "Elder Care",
+        "Caregiver Support",
+        "Disability Support"
+      ],
+      "lastVerified": "2026-08-31"
+    },
+    {
       "id": "recR9W2hxz8xiKJFq",
       "name": "Sprague Boe At Sayles School",
       "track": "Family & Childcare",
@@ -11891,6 +12931,27 @@
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Stamford Recreation page verified August 25, 2026. Includes Heroy, TOR, Star Center, Stillmeadow, and Springdale programs."
+    },
+    {
+      "id": "recavfScYGTdoO7IF",
+      "name": "STARelief Safe Place for Pets",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Pet Foster Care",
+      "specificType": "Free, safe, temporary foster care during a personal crisis",
+      "town": "Stamford",
+      "address": "P.O. Box 3035, Stamford, CT 06905",
+      "ages": "People experiencing homelessness, domestic violence, or a long-term medical emergency",
+      "cost": "Free temporary foster care",
+      "website": "https://starelief.org/our-programs/",
+      "contact": "203-636-0971",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "notes": "Safe Place for Pets provides free temporary foster care for pets of people experiencing homelessness, domestic violence, or illness.",
+      "registrationStatus": "Rolling / Ongoing",
+      "servicesOffered": [
+        "Emergency Pet Foster Care"
+      ],
+      "lastVerified": "2026-08-31"
     },
     {
       "id": "recOXxeao3JGEJgw5",
@@ -12171,6 +13232,32 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recazIX7pFqw7VIQe",
+      "name": "TEAM Mobile Feline Spay/Neuter and Vaccination Clinic",
+      "track": "Pet Care & Resources",
+      "category": "Mobile Veterinary Service",
+      "specificType": "Mobile affordable spay/neuter and vaccination clinic for domestic and feral cats",
+      "town": "Westbrook",
+      "address": "P.O. Box 591, Westbrook, CT 06498",
+      "ages": "Domestic and feral cats throughout Connecticut",
+      "website": "https://everyanimalmatters.org/mobile-spay-neuter/",
+      "contact": "860-399-5569 or 888-367-8326; info@everyanimalmatters.org",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "notes": "Mobile feline spay/neuter and vaccination clinic. Any Connecticut cat, domestic or feral, is welcome; clinic travels to communities statewide.",
+      "servicesOffered": [
+        "Mobile Veterinary Service",
+        "Spay/Neuter Assistance"
+      ],
+      "lastVerified": "2026-08-31",
+      "animals": [
+        "Cats"
       ]
     },
     {
@@ -13289,6 +14376,97 @@
       ]
     },
     {
+      "id": "recYxgMsUDJvmeWp3",
+      "name": "ValuePetVet Dayville",
+      "track": "Pet Care & Resources",
+      "category": "Veterinary Care",
+      "specificType": "Affordable veterinary care, wellness, vaccination, dental care, surgery, and spay/neuter",
+      "town": "Killingly",
+      "address": "729 Hartford Pike, Dayville, CT 06241",
+      "ages": "Dogs, cats, and rabbits",
+      "hours": "Monday-Friday: 9:00 am-5:00 pm. Saturday-Sunday: closed.",
+      "cost": "Official page publishes example prices and says prices may change; annual wellness exam $69 and first-visit wellness exam $79 at verification.",
+      "website": "https://valuepetvet.com/locations/dayville-ct/",
+      "contact": "860-779-6070; Dayville@valuepetvet.com",
+      "townsServed": [
+        "Killingly"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "notes": "Veterinary services for dogs, cats, and rabbits include wellness care, vaccinations, spay/neuter, dental care, general medicine, surgery, and diagnostics. Provider describes pricing as affordable/competitive, but does not state reduced, sliding-scale, or income-qualified pricing; therefore not classified as Low-Cost Veterinary Clinic.",
+      "registrationStatus": "Open",
+      "servicesOffered": [
+        "Veterinary Care",
+        "Spay/Neuter Assistance"
+      ],
+      "lastVerified": "2026-08-31",
+      "animals": [
+        "Dogs",
+        "Cats",
+        "Small Animals (rabbits, rodents)"
+      ]
+    },
+    {
+      "id": "recszrOUXW4ckKNGv",
+      "name": "ValuePetVet Monroe",
+      "track": "Pet Care & Resources",
+      "category": "Veterinary Care",
+      "specificType": "Affordable veterinary care, wellness, vaccination, dental care, surgery, and spay/neuter",
+      "town": "Monroe",
+      "address": "506 Main Street, Monroe, CT 06468",
+      "ages": "Dogs and cats",
+      "hours": "Monday, Wednesday, Friday: 8:15 am-4:00 pm. Every other Saturday: 9:30 am-2:30 pm, alternating with the Norwalk location.",
+      "website": "https://valuepetvet.com/locations/monroe-ct/",
+      "contact": "203-939-9591; info@valuepetvet.com",
+      "townsServed": [
+        "Monroe"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "notes": "Full-service animal hospital offering wellness exams, vaccinations, urgent/sick pet care, dental care, spay/neuter, diagnostics, and surgery. Provider describes pricing as affordable/competitive, but does not state reduced, sliding-scale, or income-qualified pricing; therefore not classified as Low-Cost Veterinary Clinic.",
+      "registrationStatus": "Open",
+      "servicesOffered": [
+        "Veterinary Care",
+        "Spay/Neuter Assistance",
+        "Vaccination & Microchip Clinic"
+      ],
+      "lastVerified": "2026-08-31",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
+      "id": "recaADJdU5zUovh9B",
+      "name": "ValuePetVet Norwalk",
+      "track": "Pet Care & Resources",
+      "category": "Veterinary Care",
+      "specificType": "Affordable veterinary care, wellness, vaccination, dental care, surgery, and spay/neuter",
+      "town": "Norwalk",
+      "address": "17 Park Street, Norwalk, CT 06851",
+      "ages": "Dogs and cats",
+      "hours": "Tuesday, Thursday, Friday: 8:15 am-4:00 pm. Every other Saturday: 9:30 am-2:30 pm, alternating with the Monroe location.",
+      "website": "https://valuepetvet.com/our-locations/",
+      "contact": "203-939-9590; info@valuepetvet.com",
+      "townsServed": [
+        "Norwalk"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "notes": "Full-service animal hospital offering wellness exams, vaccinations, urgent/sick pet care, dental care, spay/neuter, diagnostics, and surgery. Provider describes pricing as affordable/competitive, but does not state reduced, sliding-scale, or income-qualified pricing; therefore not classified as Low-Cost Veterinary Clinic.",
+      "registrationStatus": "Open",
+      "servicesOffered": [
+        "Veterinary Care",
+        "Spay/Neuter Assistance",
+        "Vaccination & Microchip Clinic"
+      ],
+      "lastVerified": "2026-08-31",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
       "id": "recgU4SlZFYl6h0rz",
       "name": "VCA Shoreline Veterinary Referral and Emergency Center",
       "track": "Pet Care & Resources",
@@ -13317,6 +14495,71 @@
       ]
     },
     {
+      "id": "rec081A5vaD6evtP5",
+      "name": "VCA Veterinary Referral and Emergency Center",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "town": "Norwalk",
+      "address": "123 W. Cedar Street, Norwalk, CT 06854",
+      "hours": "Open 24 hours a day, Monday-Sunday.",
+      "website": "https://vcahospitals.com/veterinary-referral-and-emergency-center",
+      "contact": "203-854-9960",
+      "submittedBy": "Village Notes Research",
+      "notes": "24-hour specialty, referral, and emergency veterinary hospital serving Fairfield County and surrounding areas.",
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Veterinary Care",
+        "Emergency / Same-Day Availability"
+      ],
+      "lastVerified": "2026-08-31"
+    },
+    {
+      "id": "recnJLqYoyKEujyRA",
+      "name": "VEG Emergency Vet Greenwich-Cos Cob",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "specificType": "Walk-in emergency veterinary hospital for dogs, cats, birds, and exotic pets.",
+      "town": "Greenwich",
+      "address": "409 East Putnam Avenue, Greenwich, CT 06830",
+      "hours": "Open 24 hours a day, 7 days a week, 365 days a year. Walk-ins accepted; no appointment required for emergency care.",
+      "website": "https://www.veg.com/locations/connecticut/greenwich-cos-cob",
+      "contact": "203-909-6560",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official location page checked August 29, 2026.",
+      "registrationStatus": "Open",
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Veterinary Care",
+        "Emergency / Same-Day Availability"
+      ],
+      "daysOffered": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "scheduleWindow": [
+        "Full Day",
+        "Evening",
+        "Overnight",
+        "Weekend"
+      ],
+      "lastVerified": "2026-08-31",
+      "animals": [
+        "Dogs",
+        "Cats",
+        "Birds",
+        "Exotic Pets"
+      ],
+      "petRequirements": [
+        "None Stated"
+      ]
+    },
+    {
       "id": "recgY8GJlUtLOQhZN",
       "name": "Vernon Preschool Collaborative At Center Road School",
       "track": "Family & Childcare",
@@ -13337,6 +14580,25 @@
       "servicesOffered": [
         "Preschool / Pre-K"
       ]
+    },
+    {
+      "id": "rec3pb50iCWDuBU3C",
+      "name": "Veterinary Emergency Center of Canton",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "town": "Canton",
+      "address": "135 Dowd Avenue, Canton, CT 06019",
+      "hours": "Urgent Care: Monday-Friday 8 am-12 am; Saturday-Sunday 8 am-8 pm. Nursing staff present 24 hours.",
+      "website": "https://vecofcanton.com/",
+      "contact": "860-693-6992; info@vecofcanton.com",
+      "submittedBy": "Village Notes Research",
+      "notes": "Urgent and emergency veterinary care with 24-hour nursing coverage; surgical center is located inside the hospital.",
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Veterinary Care",
+        "Emergency / Same-Day Availability"
+      ],
+      "lastVerified": "2026-08-31"
     },
     {
       "id": "recl9R8SLNN5KYNt3",
@@ -13927,6 +15189,30 @@
       ]
     },
     {
+      "id": "recjiO4bzJtqlbNiK",
+      "name": "Western Connecticut Area Agency on Aging",
+      "track": "Elder Care",
+      "category": "Geriatric Care Manager",
+      "specificType": "Person-centered aging services, Medicare counseling, home-care navigation, caregiver resources, and Meals on Wheels referrals",
+      "town": "Waterbury",
+      "address": "84 Progress Lane, 2nd Floor, Waterbury, CT 06705",
+      "ages": "Older adults, people with disabilities, and caregivers",
+      "website": "https://wcaaa.org/programs",
+      "contact": "203-757-5449; toll-free 800-994-9422",
+      "townsServed": [
+        "Waterbury"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-30",
+      "notes": "Programs include caregiver support, Alzheimer respite, Connecticut Home Care Program for Elders, Medicare counseling, service navigation, congregate and home-delivered meals, transportation, legal assistance, and other aging services.",
+      "servicesOffered": [
+        "Elder Care",
+        "Caregiver Support",
+        "Disability Support"
+      ],
+      "lastVerified": "2026-08-31"
+    },
+    {
       "id": "recTbJ0AbjukqGqU5",
       "name": "Westville Community Nursery School",
       "track": "Family & Childcare",
@@ -14168,6 +15454,31 @@
         "Preschool / Pre-K",
         "Toddler Care"
       ]
+    },
+    {
+      "id": "recc7NAtgIbeMJgAC",
+      "name": "Woodbridge Medical Loan Closet",
+      "track": "Elder Care",
+      "category": "Durable Medical Equipment Loan",
+      "specificType": "Short-term loans of walkers, commodes, shower chairs, crutches, canes, rolling walkers, and wheelchairs.",
+      "town": "Woodbridge",
+      "address": "4 Meetinghouse Lane, Woodbridge, CT",
+      "ages": "Woodbridge residents who are elderly or disabled",
+      "availability": "The official page states that a large selection is currently available. Call Human Services to arrange pickup or drop-off.",
+      "website": "https://www.woodbridgect.org/467/Medical-Loan-Closet",
+      "contact": "Woodbridge Human Services: 203-389-3429",
+      "townsServed": [
+        "Woodbridge"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-08-29",
+      "notes": "Official municipal page checked August 29, 2026.",
+      "registrationStatus": "Open",
+      "servicesOffered": [
+        "Elder Care",
+        "Disability Support"
+      ],
+      "lastVerified": "2026-08-29"
     },
     {
       "id": "recX9CgohEyCYo6dY",
