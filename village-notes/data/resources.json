@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T12:12:38.343Z",
+  "generated": "2026-08-31T23:13:45.383Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -224,7 +224,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official State of Connecticut resource page verified 2026-08-25."
     },
@@ -388,7 +388,7 @@
         "West Haven",
         "Woodbridge"
       ],
-      "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-08",
       "notes": "The Agency on Aging of South Central Connecticut is the regional Area Agency on Aging serving Greater New Haven and the lower Naugatuck Valley. Information counselors help older adults and caregivers navigate state, federal, and community programs, including CHOICES Medicare counseling, caregiver respite and training, in-home assessment, and Connecticut Home Care Program for Elders case management. Its home-modification service helps older adults and people with disabilities identify safety changes such as grab bars, ramps, widened doorways, and stair glides and seek available public funding. Home-modification page: https://www.aoascc.org/Services/Support-to-Live-at-Home/Home-Modification-and-Repair-Services/",
       "servicesOffered": [
@@ -653,7 +653,7 @@
       "townsServed": [
         "Litchfield"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "Official page confirms ten weeks of 2026 farm camp and youth volunteer camp counselor positions. The 2026 camp period has ended.",
       "servicesOffered": [
@@ -671,7 +671,16 @@
       "startTime": "9:00 AM",
       "endTime": "3:30 PM",
       "programYear": "2026 Summer",
-      "lastVerified": "2026-08-26"
+      "lastVerified": "2026-08-26",
+      "programSetting": [
+        "Farm"
+      ],
+      "programTopics": [
+        "Farm",
+        "Gardening",
+        "Wildlife",
+        "Environmental Education"
+      ]
     },
     {
       "id": "recOFodHS2VBFxbzc",
@@ -712,7 +721,7 @@
       "townsServed": [
         "Milford"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "Connecticut Burns Care Foundation program for child burn survivors. Provider office is in Milford, Connecticut, but the camp is held in Pennsylvania. Medical form and completed application were required. The 2026 session and deadline have passed.",
       "servicesOffered": [
@@ -853,7 +862,7 @@
       "townsServed": [
         "Greenwich"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "Limited-enrollment CIT program. Acceptance is at the Camp Director’s discretion and in-person training is required. Participants choose Clubhouse Camp or Camp Simmons.",
       "servicesOffered": [
@@ -863,7 +872,20 @@
         "Youth Leadership"
       ],
       "programYear": "2026 Summer",
-      "lastVerified": "2026-08-26"
+      "lastVerified": "2026-08-26",
+      "programSetting": [
+        "Boys & Girls Club"
+      ],
+      "programTopics": [
+        "Leadership",
+        "Mentoring",
+        "Life Skills"
+      ],
+      "teenOpportunity": [
+        "Counselor in Training",
+        "Leadership Program",
+        "Career Exploration"
+      ]
     },
     {
       "id": "recXmCxqIbiip1Ozv",
@@ -878,7 +900,7 @@
       "townsServed": [
         "Greenwich"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Connecticut OEC-licensed programs. Official club page verified August 25, 2026.",
       "servicesOffered": [
@@ -900,7 +922,7 @@
       "townsServed": [
         "Milford"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Weekly themes, outdoor recreation, arts, STEM, games, and optional trips. Official 2026 page verified August 25, 2026.",
       "servicesOffered": [
@@ -922,7 +944,7 @@
       "townsServed": [
         "Ridgefield"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official club site verified August 25, 2026. Current 2026 camp registration remains available.",
       "servicesOffered": [
@@ -946,7 +968,7 @@
       "townsServed": [
         "New Haven"
       ],
-      "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-08",
       "notes": "The Boys & Girls Clubs of Greater New Haven's Columbus Avenue Clubhouse, in the Hill neighborhood, runs afterschool programming from 2:30 to 6:00 PM on school days for kids in kindergarten through eighth grade, with bus service from most New Haven Public Schools directly to the Club. During the summer the Clubhouse shifts to a full-day camp model (roughly 8:00 AM to 5:00 PM) for children ages 5 to 14, which can cover the gap between when a school day ends and a parent's workday does. The Club also runs separate evening programming for middle and high schoolers, sports leagues, and a teen leadership track (Keystone Club) that includes college and career preparation.",
       "servicesOffered": [
@@ -972,7 +994,7 @@
       "townsServed": [
         "Hartford"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Homework help, enrichment, recreation, healthy habits, and meals at multiple Hartford club sites. Verify transportation with the child’s school. Official page verified August 25, 2026.",
       "servicesOffered": [
@@ -1556,7 +1578,7 @@
       "cost": "Tuition is not published. Submit an inquiry for rates and openings.",
       "website": "https://www.brighthorizons.com/daycare-centers/ct/stamford/300-first-stamford-place-06902",
       "contact": "203-309-2892",
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "NAEYC accredited. Licensing, food, transportation, financial aid, and accommodation details were not confirmed on the provider page.",
       "registrationStatus": "Rolling / Ongoing",
@@ -1602,7 +1624,7 @@
       "townsServed": [
         "Newtown"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "Official center page confirms care from 6 weeks to 12 years, an infant program for 6 weeks to 18 months, NAEYC accreditation, and licensing. Contact the center for openings. Verified 2026-08-26.",
       "servicesOffered": [
@@ -1632,7 +1654,7 @@
       "townsServed": [
         "Oxford"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "Official center page confirms an infant program for ages 6 weeks to 18 months and licensed capacity for 230 children. Contact the center for openings. Verified 2026-08-26.",
       "servicesOffered": [
@@ -1662,7 +1684,7 @@
       "townsServed": [
         "Redding"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "Official center page confirms an infant program for ages 6 weeks to 18 months, licensed capacity for 144 children, and NAEYC accreditation. Contact the center for openings. Verified 2026-08-26.",
       "servicesOffered": [
@@ -1692,7 +1714,7 @@
       "townsServed": [
         "Trumbull"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "Official location page confirms infant care from 6 weeks to 18 months, toddler care from 18 months to 3 years, preschool and pre-K, CT Care for Kids acceptance, healthy meals and snacks, NAEYC accreditation, and licensed capacity for 269 children. Verified 2026-08-26.",
       "care4Kids": "Yes",
@@ -1875,7 +1897,7 @@
         "Woodbridge",
         "Branford"
       ],
-      "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-08",
       "notes": "Calvin Hill Day Care Center and the Kitty Lustman-Findling Kindergarten is a private, nonprofit preschool and kindergarten on Yale's campus in New Haven, serving both Yale-affiliated and community families. The program uses a progressive, integrated-day curriculum and is known for long-tenured teaching staff and active parent involvement, including a parent committee and one family work day per year. Tuition is offered on a sliding scale to keep the program accessible, and the center participates in the New Haven School Readiness Program. Priority enrollment goes to children of Yale faculty, staff, and students, but the program is open to families across the greater New Haven area.",
       "servicesOffered": [
@@ -1918,7 +1940,7 @@
       "townsServed": [
         "Meriden"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official 2026 registration page verified August 25, 2026. Multiweek and family discounts listed.",
       "servicesOffered": [
@@ -1939,7 +1961,7 @@
       "townsServed": [
         "Bloomfield"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-27",
       "notes": "Official provider location page or official Connecticut location directory confirms this physical location and current dog daycare and boarding services.",
       "servicesOffered": [
@@ -1971,7 +1993,7 @@
         "Shelton",
         "Trumbull"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-27",
       "notes": "Official page confirms dog daycare, boarding, grooming, training, enrichment, live cameras, an interview process and medication administration during boarding. It names Fairfield, Easton, Weston, Westport, Milford, Stratford, Shelton and Trumbull as convenient service areas. Easton, Weston and Westport are not current Towns Served choices.",
       "servicesOffered": [
@@ -1998,7 +2020,7 @@
       "townsServed": [
         "Stamford"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-27",
       "notes": "Official provider location page or official Connecticut location directory confirms this physical location and current dog daycare and boarding services.",
       "servicesOffered": [
@@ -2026,7 +2048,7 @@
       "townsServed": [
         "Windham"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "Week-long overnight camp for people living with epilepsy. The 2026 session has ended.",
       "servicesOffered": [
@@ -2050,7 +2072,7 @@
       "townsServed": [
         "Chester"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "YMCA camp on Cedar Lake with outdoor and group activities. Official site verified August 25, 2026.",
       "servicesOffered": [
@@ -2071,7 +2093,7 @@
       "townsServed": [
         "Colebrook"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "YMCA of Greater Hartford overnight camp with traditional, equestrian, leadership, and some day-camp options. Official site verified August 25, 2026.",
       "servicesOffered": [
@@ -2095,7 +2117,7 @@
       "townsServed": [
         "Winchester"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "For children living with Crohn’s disease or ulcerative colitis. Virtual CampOasis@Home option is also listed. The 2026 in-person session has ended.",
       "servicesOffered": [
@@ -2104,7 +2126,14 @@
         "Youth Leadership"
       ],
       "programYear": "2026 Summer",
-      "lastVerified": "2026-08-26"
+      "lastVerified": "2026-08-26",
+      "programTopics": [
+        "Leadership",
+        "Social-Emotional Learning"
+      ],
+      "teenOpportunity": [
+        "Leadership Program"
+      ]
     },
     {
       "id": "recNXAWmFcbY465Cu",
@@ -2120,7 +2149,7 @@
       "townsServed": [
         "Newington"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Town of Newington page verified August 25, 2026. Online registration only."
     },
@@ -2139,7 +2168,7 @@
       "townsServed": [
         "Lakeville"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official YMCA camp site verified August 25, 2026.",
       "servicesOffered": [
@@ -2159,7 +2188,7 @@
       "townsServed": [
         "Woodstock"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "YMCA overnight camp operating in Connecticut since 1922. Official site verified August 25, 2026.",
       "servicesOffered": [
@@ -2250,7 +2279,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Office of Early Childhood source verified 2026-08-25. Category is the closest available tracker choice; this is a child-care subsidy and application resource."
     },
@@ -2511,6 +2540,7 @@
       "townsServed": [
         "Danbury"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Dog Daycare",
         "Pet Boarding",
@@ -2543,6 +2573,7 @@
       "townsServed": [
         "Guilford"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Emergency Veterinary Care",
         "Veterinary Care",
@@ -2568,6 +2599,7 @@
       "townsServed": [
         "North Haven"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Emergency Veterinary Care",
         "Veterinary Care",
@@ -2638,7 +2670,7 @@
       "cost": "Tuition is not published. The official page confirms fee-assistance options and sibling discounts; eligibility varies.",
       "website": "https://www.kindercare.com/our-centers/cheshire/ct/070220",
       "contact": "(866) 232-9308",
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "NAEYC accredited. Meals and snacks are provided; dietary arrangements can be discussed with the center. The page says classrooms support children of all abilities, backgrounds, and experiences.",
       "registrationStatus": "Open",
@@ -3122,7 +3154,7 @@
       "townsServed": [
         "Fairfield"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Registration Varies",
       "schoolDayCoverage": "Varies",
@@ -3177,7 +3209,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
-      "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-08",
       "notes": "Common Ground's summer camp runs on a 20-acre urban farm at the base of West Rock Ridge State Park, with campers spending their days almost entirely outdoors: caring for farm animals, hiking, wading in the stream, building forts, and cooking over a campfire. Two-week sessions run late June through early August, with camp tracks organized by age and interest, including a dedicated Sprouts program for 4-to-6-year-olds and a cooking-focused camp. Extended day care is available until 5:30 PM for families who need coverage past the standard 3:00 PM pickup. Making camp financially accessible is core to the program's mission: Common Ground provides over $30,000 in scholarships each summer and actively works to reach underserved New Haven neighborhoods and schools.",
       "servicesOffered": [
@@ -3223,6 +3255,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
+      "submittedBy": "Village Notes Research",
       "notes": "Official Connecticut Department of Agriculture page checked August 29, 2026. Low-income applications are closed for FY2026; pending applicants should expect status notice in 4 to 6 weeks. Non-Connecticut residents are ineligible. FY2027 feral-cat grants are open to eligible Connecticut nonprofit rescue groups.",
       "registrationStatus": "Registration Varies",
       "financialAid": "Yes",
@@ -3249,7 +3282,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official State of Connecticut eligibility and referral page verified 2026-08-25."
     },
@@ -3334,7 +3367,7 @@
       "townsServed": [
         "Newington"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-27",
       "notes": "The Newington CHS campus also offers the Pet Food Pantry Program for dogs and cats. The pantry requires an application, a recent pet photo, and proof of current rabies vaccination. Program page: https://cthumane.org/pet-food-pantry-program/",
       "servicesOffered": [
@@ -3365,6 +3398,7 @@
       "townsServed": [
         "Newington"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Pet Food Assistance"
       ],
@@ -3391,6 +3425,7 @@
       "townsServed": [
         "Waterford"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Pet Food Assistance"
       ],
@@ -3417,6 +3452,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Emergency Pet Foster Care"
       ],
@@ -3439,7 +3475,7 @@
         "Hartford",
         "New Haven"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "Medical team provides care. Bus transportation was available from downtown Hartford and New Haven. Extended day was not available. The 2026 sessions have ended.",
       "financialAid": "Yes",
@@ -3459,7 +3495,16 @@
       "startTime": "9:00 AM",
       "endTime": "3:00 PM",
       "programYear": "2026 Summer",
-      "lastVerified": "2026-08-26"
+      "lastVerified": "2026-08-26",
+      "programSetting": [
+        "YMCA"
+      ],
+      "programTopics": [
+        "Aquatics",
+        "Hiking",
+        "Sports",
+        "Arts"
+      ]
     },
     {
       "id": "recRyR2bHkoxaKOPo",
@@ -3495,7 +3540,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Department of Children and Families source verified 2026-08-25.",
       "servicesOffered": [
@@ -3517,7 +3562,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. Category is the closest available tracker choice; this program focuses on Medicare education and fraud assistance.",
       "servicesOffered": [
@@ -3539,7 +3584,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25.",
       "servicesOffered": [
@@ -3560,7 +3605,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. Access begins through a VA referral."
     },
@@ -3577,6 +3622,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Low-Cost Veterinary Clinic"
       ],
@@ -3784,7 +3830,7 @@
       "cost": "Tuition is not published. The official page confirms fee-assistance options and sibling discounts; eligibility varies.",
       "website": "https://www.kindercare.com/our-centers/cromwell/ct/301627",
       "contact": "(860) 613-2263",
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "NAEYC accredited. Public-school buses serve Cromwell schools, Hubbard in East Berlin, and Lawrence and Moody in Middletown. The center summary says ages through 6; families should confirm any school-age care directly.",
       "registrationStatus": "Open",
@@ -3928,7 +3974,7 @@
       "townsServed": [
         "Darien"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Partial Day",
@@ -3970,7 +4016,7 @@
       "townsServed": [
         "Darien"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Partial Day",
@@ -4011,7 +4057,7 @@
       "townsServed": [
         "Darien"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "financialAid": "Yes",
@@ -4129,7 +4175,7 @@
       "townsServed": [
         "Groton"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official City of Groton page verified August 25, 2026. Walk-in registration is available at Spicer House, 29 Spicer Ave., Noank.",
       "servicesOffered": [
@@ -4150,7 +4196,7 @@
       "townsServed": [
         "Fairfield"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-27",
       "notes": "Official page confirms half-day and full-day dog daycare, overnight and long-term boarding, spa services, webcams, required vaccination and a required evaluation.",
       "servicesOffered": [
@@ -4181,7 +4227,7 @@
       "townsServed": [
         "Milford"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-27",
       "notes": "Official provider location page or official Connecticut location directory confirms this physical location and current dog daycare and boarding services.",
       "servicesOffered": [
@@ -4212,7 +4258,7 @@
       "townsServed": [
         "Norwalk"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-27",
       "notes": "Official provider location page or official Connecticut location directory confirms this physical location and current dog daycare and boarding services.",
       "servicesOffered": [
@@ -4239,7 +4285,7 @@
       "townsServed": [
         "Shelton"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-27",
       "notes": "Official provider location page or official Connecticut location directory confirms this physical location and current dog daycare and boarding services.",
       "servicesOffered": [
@@ -4266,7 +4312,7 @@
       "townsServed": [
         "Stamford"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-27",
       "notes": "Official provider location page or official Connecticut location directory confirms this physical location and current dog daycare and boarding services.",
       "servicesOffered": [
@@ -4461,7 +4507,7 @@
       "townsServed": [
         "East Hartford"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official East Hartford Parks & Recreation page verified August 25, 2026."
     },
@@ -4824,7 +4870,7 @@
       "townsServed": [
         "Fairfield"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Fairfield Community Services page verified August 25, 2026."
     },
@@ -4844,7 +4890,7 @@
       "townsServed": [
         "Fairfield"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Partial Day",
@@ -4885,7 +4931,7 @@
       "townsServed": [
         "Fairfield"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Closed",
       "care4Kids": "Yes",
@@ -4920,7 +4966,19 @@
       "licensing": "Licensed",
       "accessibility": "The YMCA asks families to contact the camp director about social, behavioral, or medical accommodations. It cannot guarantee a particular counselor or group.",
       "programYear": "2026 Summer",
-      "lastVerified": "2026-08-30"
+      "lastVerified": "2026-08-30",
+      "programSetting": [
+        "YMCA",
+        "Public School"
+      ],
+      "programTopics": [
+        "Arts",
+        "Sports",
+        "Aquatics"
+      ],
+      "teenOpportunity": [
+        "Counselor in Training"
+      ]
     },
     {
       "id": "recAuIGeBoLbP89It",
@@ -4938,7 +4996,7 @@
       "townsServed": [
         "Fairfield"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Partial Day",
@@ -4980,7 +5038,7 @@
       "townsServed": [
         "Fairfield"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Closed",
       "care4Kids": "Yes",
@@ -5010,7 +5068,15 @@
       "licensing": "Licensed",
       "accessibility": "The YMCA asks families to contact the child care director about social, behavioral, or medical accommodations. It cannot guarantee a particular counselor or group.",
       "programYear": "2026 Summer",
-      "lastVerified": "2026-08-30"
+      "lastVerified": "2026-08-30",
+      "programSetting": [
+        "YMCA",
+        "Child Care Center"
+      ],
+      "programTopics": [
+        "Arts",
+        "Aquatics"
+      ]
     },
     {
       "id": "recrK30cO7CZrSvHX",
@@ -5510,7 +5576,7 @@
       "townsServed": [
         "Glastonbury"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official YMCA 2026–2027 childcare information verified August 25, 2026.",
       "servicesOffered": [
@@ -5556,7 +5622,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25.",
       "servicesOffered": [
@@ -5628,7 +5694,7 @@
         "Watertown",
         "Wolcott"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Two day-camp programs with swimming, arts and crafts, boating, nature, hiking, and family nights. Official YMCA page verified August 25, 2026.",
       "servicesOffered": [
@@ -6381,6 +6447,7 @@
       "townsServed": [
         "Hartford"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Dog Daycare",
         "Pet Boarding",
@@ -6535,7 +6602,7 @@
       "townsServed": [
         "Fairfield"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official iD Tech pages list Fairfield University as closed for the 2026 season and state that Summer 2027 registration opens in November 2026. Verified 2026-08-26.",
       "registrationStatus": "Registration Opens Later",
@@ -6566,7 +6633,7 @@
       "townsServed": [
         "New Haven"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Varies",
@@ -6597,7 +6664,7 @@
       "townsServed": [
         "Middletown"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official iD Tech pages list Wesleyan University as closed for the 2026 season and state that Summer 2027 registration opens in November 2026. Verified 2026-08-26.",
       "registrationStatus": "Registration Opens Later",
@@ -6657,7 +6724,7 @@
       "townsServed": [
         "Bristol"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "Official page confirms canoeing, kayaking, fishing, hiking, archery, before and after care, financial assistance, and a volunteer CIT program. Exact 2026 ages, hours, and address were not confirmed in the page text reviewed.",
       "financialAid": "Yes",
@@ -6673,7 +6740,22 @@
         "Youth Leadership"
       ],
       "programYear": "2026 Summer",
-      "lastVerified": "2026-08-26"
+      "lastVerified": "2026-08-26",
+      "programSetting": [
+        "Nature Center"
+      ],
+      "programTopics": [
+        "Environmental Education",
+        "Fishing",
+        "Hiking",
+        "Kayaking",
+        "Conservation"
+      ],
+      "teenOpportunity": [
+        "Counselor in Training",
+        "Volunteer Placement",
+        "Leadership Program"
+      ]
     },
     {
       "id": "recoe8MA1RrHLjJeK",
@@ -6787,7 +6869,7 @@
       "townsServed": [
         "West Hartford"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "For youth living with physical disabilities or autism spectrum disorders. Participants must communicate needs and accommodations, be independent with personal care, or bring needed support. Registration was first-come, first-served. The 2026 camp has ended.",
       "servicesOffered": [
@@ -6805,7 +6887,16 @@
         "Friday"
       ],
       "programYear": "2026 Summer",
-      "lastVerified": "2026-08-26"
+      "lastVerified": "2026-08-26",
+      "programSetting": [
+        "Hospital",
+        "College / University"
+      ],
+      "programTopics": [
+        "Adaptive Sports",
+        "Leadership",
+        "Life Skills"
+      ]
     },
     {
       "id": "recGChT3ehNdTK76C",
@@ -6921,7 +7012,7 @@
         "Woodbridge",
         "New Haven"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Open to all backgrounds. Pool, sports fields, trails, ropes course, arts, dance, and other activities. Official 2026 page verified August 25, 2026.",
       "servicesOffered": [
@@ -6945,7 +7036,7 @@
       "townsServed": [
         "Hartford"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Arts, sciences, athletics, field trips, and meals. Official 2026 program page verified August 25, 2026.",
       "servicesOffered": [
@@ -7350,7 +7441,7 @@
       "townsServed": [
         "Windham"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Town of Windham page verified August 25, 2026.",
       "servicesOffered": [
@@ -7372,7 +7463,7 @@
       "townsServed": [
         "New Haven"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Homework help, literacy, athletics, arts, computer science, cooking, gardening, dance, and community activities. Eligibility is based on residence in participating neighborhoods.",
       "registrationStatus": "Open",
@@ -7409,7 +7500,7 @@
       "townsServed": [
         "New Haven"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Academic support, health education, service, job exploration, leadership, and supervised work with younger children.",
       "registrationStatus": "Open",
@@ -7715,7 +7806,7 @@
       "cost": "Tuition is not published. Submit an inquiry for rates and openings.",
       "website": "https://www.brighthorizons.com/daycare-centers/ct/stamford/778-long-ridge-road-06902",
       "contact": "203-309-3743",
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "NAEYC accredited. The official page confirms AM and PM snacks, flexible 2-, 3-, or 5-day schedules, and a summer program for ages 3–12. Licensing was not confirmed on the provider page.",
       "registrationStatus": "Rolling / Ongoing",
@@ -8065,7 +8156,7 @@
       "townsServed": [
         "Manchester"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Town of Manchester page verified August 25, 2026. An active online recreation account is required to register.",
       "servicesOffered": [
@@ -8086,7 +8177,7 @@
       "townsServed": [
         "West Hartford"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Includes sports camps, day camp, childcare camps, and off-site recreation. Official 2026 program page verified August 25, 2026.",
       "servicesOffered": [
@@ -8323,6 +8414,7 @@
       "townsServed": [
         "Norwalk"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Emergency Veterinary Care",
         "Veterinary Care",
@@ -8420,7 +8512,7 @@
       "townsServed": [
         "Meriden"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "For children with developmental disabilities, active IEPs, or 504 plans. Acceptance review required. Campers must be toilet trained. Before and after care are not available.",
       "servicesOffered": [
@@ -8430,7 +8522,15 @@
         "Summer Day Camp"
       ],
       "programYear": "2026 Summer",
-      "lastVerified": "2026-08-26"
+      "lastVerified": "2026-08-26",
+      "programSetting": [
+        "YMCA"
+      ],
+      "programTopics": [
+        "Adaptive Sports",
+        "Leadership",
+        "Social-Emotional Learning"
+      ]
     },
     {
       "id": "recv8OTts1Fgvpg8T",
@@ -8468,7 +8568,7 @@
       "townsServed": [
         "Meriden"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Not Confirmed",
@@ -8493,7 +8593,7 @@
       "townsServed": [
         "Meriden"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Not Confirmed",
@@ -8704,7 +8804,7 @@
       "townsServed": [
         "Milford"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "Official center page lists infant daycare as available, toddler daycare as upcoming availability, preschool as available, NAEYC accreditation, and state licensing. Verify current openings with the center. Verified 2026-08-26.",
       "servicesOffered": [
@@ -8767,7 +8867,7 @@
       "townsServed": [
         "Monroe"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "Official center page lists infant, toddler, preschool, and before/after-school programs as available, plus NAEYC accreditation and state licensing. Verified 2026-08-26.",
       "servicesOffered": [
@@ -8931,7 +9031,7 @@
       "cost": "Tuition is not published. The official page confirms several fee-assistance options and sibling discounts; eligibility varies.",
       "website": "https://www.kindercare.com/our-centers/hamden/ct/301764",
       "contact": "(203) 248-8262",
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "NAEYC accredited. School buses serve Ridge Road and Green Acres in North Haven and Spring Glen, Dunbar, Bear Path, and Westwoods in Hamden. The page says classrooms support children of all abilities, backgrounds, and experiences.",
       "registrationStatus": "Open",
@@ -9034,7 +9134,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. Category is the closest available tracker choice; this is a service-finding and counseling resource.",
       "servicesOffered": [
@@ -9081,7 +9181,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. The program offers several forms of caregiver help, not only support groups.",
       "servicesOffered": [
@@ -9199,7 +9299,7 @@
       "townsServed": [
         "New Haven"
       ],
-      "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-08",
       "notes": "Neighborhood Music School is one of the largest community arts schools in the country, teaching more than 30 instruments and seven genres of dance out of its Audubon Arts District campus a short walk from Yale's central campus. Alongside year-round private lessons, ensembles, and a state-certified preschool, NMS runs summer programs in rock, jazz, and other musical genres where kids build performance skills, learn recording basics, and play alongside other musicians. About 15 percent of the school's roughly 3,000 annual students receive financial aid or scholarship support, and the school serves ages from 6 months through adulthood, so it can be a long-term home for a family rather than a single-summer stop.",
       "servicesOffered": [
@@ -9315,7 +9415,7 @@
         "New Britain",
         "Berlin"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Partial Day",
@@ -9346,6 +9446,7 @@
       "townsServed": [
         "Windsor"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Emergency Veterinary Care",
         "Veterinary Care",
@@ -9371,7 +9472,7 @@
       "townsServed": [
         "New Haven"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Citywide partnership of New Haven Public Schools, City of New Haven, Youth and Recreation, Boys & Girls Clubs of Greater New Haven, and New Haven Counts. K–4 receives homework help and enrichment; grades 5–8 receive math tutoring, SEL, sports, and homework help. No bus transportation home.",
       "registrationStatus": "Open",
@@ -9492,7 +9593,7 @@
       "cost": "Tuition is not published on the center page. Call for rates and openings.",
       "website": "https://www.kindercare.com/our-centers/new-haven/ct/070294",
       "contact": "(866) 232-9308",
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "NAEYC accredited. The official page says classrooms support children of all abilities, backgrounds, and experiences. Families must arrange school-bus transportation for before-school pickup and after-school drop-off.",
       "registrationStatus": "Open",
@@ -9543,7 +9644,7 @@
       "townsServed": [
         "New Haven"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Free individually planned one-on-one literacy tutoring, educational family support, and community book bank.",
       "registrationStatus": "Rolling / Ongoing",
@@ -9597,7 +9698,7 @@
         "Hamden",
         "North Haven"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Swimming, trips, arts and crafts, outdoor programs, and access to Camp Mountain Laurel. Official YMCA page verified August 25, 2026.",
       "servicesOffered": [
@@ -9642,7 +9743,7 @@
       "townsServed": [
         "New Haven"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Tennis, academic support, math and literacy tutoring, life skills, character development, and preparation for postsecondary success. Latest school-year page found was 2025–2026.",
       "registrationStatus": "Not Yet Announced",
@@ -9693,7 +9794,7 @@
       "townsServed": [
         "Newtown"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Includes Summer Bash, preschool, swimming, art, cooking, nature, and specialty programs. Official 2026 page verified August 25, 2026.",
       "servicesOffered": [
@@ -9716,6 +9817,7 @@
       "townsServed": [
         "Newtown"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Emergency Veterinary Care",
         "Veterinary Care",
@@ -9768,6 +9870,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Pet Food Assistance"
       ],
@@ -10040,7 +10143,7 @@
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-27",
       "notes": "Official provider page confirms reduced-cost spay/neuter and wellness care for cats and dogs throughout Connecticut and beyond. Clinic appointment link is available on the official site.",
       "servicesOffered": [
@@ -10142,7 +10245,7 @@
       "townsServed": [
         "Orange"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Registration Varies",
       "transportation": "No",
@@ -10184,7 +10287,7 @@
       "townsServed": [
         "Orange"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Registration Varies",
       "transportation": "Program Transportation Included",
@@ -10320,6 +10423,7 @@
       "townsServed": [
         "New Haven"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Dog Daycare",
         "Pet Boarding",
@@ -10374,6 +10478,7 @@
       "townsServed": [
         "East Hartford"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Pet Boarding",
         "Dog Daycare",
@@ -10456,7 +10561,7 @@
       "townsServed": [
         "New Haven"
       ],
-      "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-08",
       "notes": "The Phyllis Bodel Childcare Center at Yale School of Medicine cares for children from six weeks through pre-kindergarten in a licensed center near the medical school campus. Teachers work full days, five days a week, so children are not shifted between staff during the day, and the center stays open in inclement weather to support parents' work schedules. Beyond full-time care, Phyllis Bodel offers part-time slots (two or three days a week) and occasional short-term care ranging from one day to eight weeks, which can help families bridging a gap in coverage. The center is affiliated with the Yale School of Medicine and is open to families from the broader New Haven community, not just Yale affiliates.",
       "servicesOffered": [
@@ -10478,7 +10583,7 @@
       "townsServed": [
         "Middletown"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-27",
       "notes": "Official provider page confirms 24/7 emergency care, primary care, specialty services, puppy and kitten care, and avian and exotic-pet care.",
       "servicesOffered": [
@@ -10625,6 +10730,7 @@
       "townsServed": [
         "East Hartford"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Spay/Neuter Assistance",
         "Low-Cost Veterinary Clinic",
@@ -10795,7 +10901,7 @@
       "townsServed": [
         "Redding"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Town of Redding page verified August 25, 2026. Review current registration listings for session availability."
     },
@@ -10866,7 +10972,7 @@
         "Hamden",
         "North Haven"
       ],
-      "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-08",
       "notes": "Right at Home of New Haven County is a locally owned, licensed non-medical home care agency (Connecticut DCP Registration #HCA.0000342) based in Milford and serving New Haven, Hamden, North Haven, and the surrounding towns. Caregivers provide companionship, help with errands and medical appointments, light housekeeping, and personal care such as bathing and dressing, with care available around the clock even though the office itself keeps standard business hours. The New Haven County office won Home Care Pulse's 2026 Best of Home Care Provider of Choice and Employer of Choice awards. A complimentary custom service plan consultation is the usual starting point for a family figuring out what level of help they actually need.",
       "servicesOffered": [
@@ -10956,6 +11062,7 @@
       "hours": "Daily from dawn to dusk.",
       "website": "https://www.rockyhillct.gov/facilities/facility/details/rockyhilldogpark-10",
       "contact": "Rocky Hill Parks and Recreation: 860-258-2772",
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Dog Park"
       ],
@@ -11081,7 +11188,7 @@
       "townsServed": [
         "Hartford"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Arts, sciences, athletics, field trips, and meals. Official 2026 program page verified August 25, 2026.",
       "servicesOffered": [
@@ -11150,7 +11257,7 @@
       "townsServed": [
         "Bridgeport"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official City of Bridgeport page verified August 25, 2026. Camp is closed July 3.",
       "registrationStatus": "Past Cycle",
@@ -11260,7 +11367,7 @@
       "townsServed": [
         "Shelton"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "Official center page confirms infant care beginning at 6 weeks, NAEYC accreditation, state licensing, and full- or part-time care. Verified 2026-08-26.",
       "servicesOffered": [
@@ -11299,7 +11406,7 @@
       "townsServed": [
         "Sharon"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Varies",
@@ -11328,7 +11435,7 @@
       "townsServed": [
         "Sharon"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Varies",
@@ -11430,7 +11537,7 @@
       "townsServed": [
         "Hartford"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Arts, sciences, athletics, field trips, and meals. Official 2026 program page verified August 25, 2026.",
       "servicesOffered": [
@@ -11501,6 +11608,7 @@
       "townsServed": [
         "Southington"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Dog Park"
       ],
@@ -11759,7 +11867,7 @@
       "townsServed": [
         "Stamford"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Age-based camps with sports and swim instruction. Official Stamford JCC page verified August 25, 2026.",
       "servicesOffered": [
@@ -11780,7 +11888,7 @@
       "townsServed": [
         "Stamford"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official Stamford Recreation page verified August 25, 2026. Includes Heroy, TOR, Star Center, Stillmeadow, and Springdale programs."
     },
@@ -11847,7 +11955,7 @@
       "townsServed": [
         "Stratford"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-26",
       "notes": "Thirty 2026 slots were listed. Applications opened March 7, with interviews beginning in April. Includes service-hour verification and possible progression to Junior Counselor.",
       "servicesOffered": [
@@ -11858,7 +11966,23 @@
         "Youth Leadership"
       ],
       "programYear": "2026 Summer",
-      "lastVerified": "2026-08-26"
+      "lastVerified": "2026-08-26",
+      "programSetting": [
+        "Community Center"
+      ],
+      "programTopics": [
+        "Leadership",
+        "Mentoring",
+        "Life Skills",
+        "Service"
+      ],
+      "teenOpportunity": [
+        "Counselor in Training",
+        "Paid Youth Employment",
+        "Volunteer Placement",
+        "Leadership Program",
+        "Career Exploration"
+      ]
     },
     {
       "id": "recqV3M1L87baGpt8",
@@ -11874,7 +11998,7 @@
       "townsServed": [
         "Stratford"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Community-center camp with teen leadership opportunities. Official page verified August 25, 2026; applications were shown as closed when checked.",
       "servicesOffered": [
@@ -11919,7 +12043,7 @@
       "townsServed": [
         "Stratford"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Not Confirmed",
@@ -11945,7 +12069,7 @@
       "townsServed": [
         "Stamford"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Boys & Girls Club of Stamford official 2026 page verified August 25, 2026.",
       "servicesOffered": [
@@ -12302,7 +12426,7 @@
         "West Haven",
         "Woodbridge"
       ],
-      "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-08",
       "notes": "The Connecticut Hospice in Branford was the first hospice in the United States and remains the only one in the state with its own dedicated inpatient hospital, a waterfront facility overlooking Long Island Sound. It offers both inpatient and home-based hospice and palliative care, along with skilled home care, a dementia-focused Magnolia Care program, and short-term respite care (up to five days) for family caregivers who need a break. The centralized intake department takes calls 24 hours a day, seven days a week, which matters for families making end-of-life decisions on short notice. As a non-profit, the organization also relies on donor support to cover services and therapies not fully reimbursed by insurance.",
       "servicesOffered": [
@@ -12350,7 +12474,7 @@
         "Bridgeport",
         "Fairfield"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-27",
       "notes": "Official page confirms daycare and boarding for dogs, a required free temperament evaluation, routine oral medication administration, and service for Bridgeport and Fairfield families. Exact operating hours were not published on the reviewed page.",
       "servicesOffered": [
@@ -12962,7 +13086,7 @@
       "townsServed": [
         "Mansfield"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Not Confirmed",
@@ -13017,7 +13141,7 @@
       "townsServed": [
         "Mansfield"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Varies",
@@ -13048,7 +13172,7 @@
         "Hartford",
         "New Haven"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "financialAid": "Yes",
@@ -13087,7 +13211,7 @@
       "townsServed": [
         "Mansfield"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Varies",
@@ -13114,7 +13238,7 @@
       "townsServed": [
         "West Hartford"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "transportation": "Morning Bus Only",
@@ -13178,7 +13302,7 @@
       "townsServed": [
         "Shelton"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-27",
       "notes": "Official provider page confirms a 24-hour emergency and referral hospital open 365 days a year. No appointment is necessary for emergencies. Animals Accepted left blank because the reviewed page did not state accepted animal types.",
       "servicesOffered": [
@@ -13321,7 +13445,7 @@
       "townsServed": [
         "Stratford"
       ],
-      "submittedBy": "ChatGPT Daily Search",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-27",
       "notes": "Official page confirms daycare, lodging, grooming, training, swimming, agility enrichment and puppy programming. Proof of vaccinations, a Personality Profile and local dog licensing are required. Exact operating hours were not published on the reviewed page.",
       "servicesOffered": [
@@ -13353,6 +13477,7 @@
       "townsServed": [
         "Danbury"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "Dog Daycare",
         "Pet Boarding",
@@ -13386,7 +13511,7 @@
         "Bridgeport",
         "Fairfield"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Arts, sports, STEM, and indoor/outdoor activities. Official program page verified August 25, 2026.",
       "registrationStatus": "Past Cycle",
@@ -13839,7 +13964,7 @@
       "townsServed": [
         "Plainville"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official YMCA childcare page verified August 25, 2026.",
       "servicesOffered": [
@@ -13871,7 +13996,7 @@
         "Woodbridge",
         "Branford"
       ],
-      "submittedBy": "Village Notes team (public listing, not yet reviewed by a parent/caregiver)",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-08",
       "notes": "Whitney Center is a non-profit Life Plan (continuing care) community in Hamden that lets residents move between independent living, assisted living, memory care, and skilled nursing on the same campus as their needs change, without relocating to a new facility each time. Its memory care neighborhood, Meadow Mills, is a secured unit designed specifically for residents who need memory support, with staff and structured activities built around that population. Because it's a Life Care community, the entrance-fee model is designed so a resident's costs don't spike if they need a higher level of care later, one of the bigger financial unknowns families run into with elder care. The campus includes amenities like a fitness center, pool, art studio, and cultural arts center, and it serves the Greater New Haven area specifically.",
       "servicesOffered": [
@@ -13916,7 +14041,7 @@
       "townsServed": [
         "Hartford"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Infant, toddler, preschool, and school-age options. Official YMCA page verified August 25, 2026.",
       "servicesOffered": [
@@ -14059,7 +14184,7 @@
       "townsServed": [
         "New Haven"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Not Confirmed",
@@ -14086,7 +14211,7 @@
       "townsServed": [
         "New Haven"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Yale undergraduates teach student-selected classes across arts, humanities, science, technology, and other subjects. Latest confirmed event was Fall 2025; a 2026 student registration cycle could not yet be verified.",
       "registrationStatus": "Not Yet Announced",
@@ -14113,7 +14238,7 @@
       "townsServed": [
         "New Haven"
       ],
-      "submittedBy": "Village Notes research",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "registrationStatus": "Past Cycle",
       "schoolDayCoverage": "Not Confirmed",
@@ -14288,7 +14413,7 @@
         "Wethersfield",
         "Windsor"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Multiple themed day-camp locations and Y-Bell Power Scholars Academy. Official YMCA page verified August 25, 2026.",
       "servicesOffered": [
@@ -14310,7 +14435,7 @@
       "townsServed": [
         "Greenwich"
       ],
-      "submittedBy": "Darice Corey",
+      "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Broad camp lineup from early-childhood through teen programs. Official YMCA page verified August 25, 2026.",
       "servicesOffered": [
