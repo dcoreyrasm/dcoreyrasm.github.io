@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30T12:10:20.718Z",
+  "generated": "2026-08-31T12:12:38.343Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -2534,6 +2534,7 @@
       "name": "Central Hospital for Veterinary Medicine, Guilford",
       "track": "Pet Care & Resources",
       "category": "Emergency Veterinary Care",
+      "specificType": "24/7 emergency and specialty veterinary hospital for dogs and cats; emergency visits do not require an appointment",
       "town": "Guilford",
       "address": "535 Boston Post Road, Guilford, CT 06437",
       "hours": "Open 24 hours a day, 7 days a week, 365 days a year. Emergency care does not require an appointment.",
@@ -2547,7 +2548,7 @@
         "Veterinary Care",
         "Emergency / Same-Day Availability"
       ],
-      "lastVerified": "2026-08-28",
+      "lastVerified": "2026-08-31",
       "animals": [
         "Dogs",
         "Cats"
@@ -2558,6 +2559,7 @@
       "name": "Central Hospital for Veterinary Medicine, North Haven",
       "track": "Pet Care & Resources",
       "category": "Emergency Veterinary Care",
+      "specificType": "24/7 emergency and specialty veterinary hospital for dogs and cats; emergency visits do not require an appointment",
       "town": "North Haven",
       "address": "4 Devine Street, North Haven, CT 06473",
       "hours": "Open 24 hours a day, 7 days a week, 365 days a year. Emergency care does not require an appointment.",
@@ -2571,7 +2573,7 @@
         "Veterinary Care",
         "Emergency / Same-Day Availability"
       ],
-      "lastVerified": "2026-08-28",
+      "lastVerified": "2026-08-31",
       "animals": [
         "Dogs",
         "Cats"
@@ -3337,13 +3339,17 @@
       "notes": "The Newington CHS campus also offers the Pet Food Pantry Program for dogs and cats. The pantry requires an application, a recent pet photo, and proof of current rabies vaccination. Program page: https://cthumane.org/pet-food-pantry-program/",
       "servicesOffered": [
         "Low-Cost Veterinary Clinic",
+        "Vaccination & Microchip Clinic",
         "Veterinary Care",
         "Pet Food Assistance"
       ],
-      "lastVerified": "2026-08-27",
+      "lastVerified": "2026-08-31",
       "animals": [
         "Dogs",
         "Cats"
+      ],
+      "petRequirements": [
+        "Rabies Certificate Required"
       ]
     },
     {
@@ -10038,9 +10044,10 @@
       "dateSubmitted": "2026-08-27",
       "notes": "Official provider page confirms reduced-cost spay/neuter and wellness care for cats and dogs throughout Connecticut and beyond. Clinic appointment link is available on the official site.",
       "servicesOffered": [
-        "Spay/Neuter Assistance"
+        "Spay/Neuter Assistance",
+        "Veterinary Care"
       ],
-      "lastVerified": "2026-08-27",
+      "lastVerified": "2026-08-31",
       "animals": [
         "Dogs",
         "Cats"
@@ -10479,7 +10486,7 @@
         "Veterinary Care",
         "Emergency / Same-Day Availability"
       ],
-      "lastVerified": "2026-08-28",
+      "lastVerified": "2026-08-31",
       "animals": [
         "Dogs",
         "Puppies",
