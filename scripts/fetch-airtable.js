@@ -2,8 +2,30 @@
 /* ============================================================
    Village Notes — Airtable to static JSON.
 
-   Pulls every Resources record whose Moderation Status is
-   "Published" and rewrites village-notes/data/resources.json.
+   Pulls every publishable Resources record and rewrites
+   village-notes/data/resources.json.
+
+   Publishable means one of two things:
+     - Moderation Status is "Published"; or
+     - Submitted By is "Village Notes Research" AND Source Type is set,
+       and the record is not Flagged or Removed.
+
+   The second clause exists because research records are pre-reviewed by
+   definition -- Darice runs the research, so its output is her editorial
+   act. Relying on the researcher to remember to set a status did not work:
+   four consecutive days produced records left Pending, invisible until
+   somebody went looking. Moderation Status is now the FORM's gate, not
+   research's.
+
+   Source Type is required for the second clause, and that is the whole
+   security of it: the public form does not collect Source Type, so a
+   submission cannot satisfy this branch whatever it types into Submitted
+   By -- including the literal words "Village Notes Research". It doubles
+   as a quality gate: a research record citing no source stays off the
+   site, and the run names it.
+
+   Flagged and Removed still beat both clauses, so they remain the way to
+   pull a bad research record off the site.
 
    This is the ONLY thing that ever sees the Airtable token. It runs
    in GitHub Actions, reads the token from the AIRTABLE_TOKEN secret
@@ -22,6 +44,34 @@ const path = require('path');
 const BASE_ID  = 'appxUByKs5ULrDZQp';
 const TABLE_ID = 'tbltzLo6IdBIfjkL7';
 const PUBLISHED = 'Published';
+const RESEARCH  = 'Village Notes Research';
+
+// Joined into one line for the query string, written in parts so the shape
+// stays readable. Airtable treats a blank single select as "".
+const PUBLISHABLE = [
+  'OR(',
+    `{Moderation Status} = "${PUBLISHED}"`, ',',
+    'AND(',
+      `{Submitted By} = "${RESEARCH}"`, ',',
+      '{Source Type} != ""', ',',
+      '{Moderation Status} != "Flagged"', ',',
+      '{Moderation Status} != "Removed"',
+    ')',
+  ')'
+].join('');
+
+// Research records the filter holds back for the one reason that is probably
+// an oversight rather than a decision: no Source Type. Flagged and Removed
+// are deliberate, so they are not reported.
+const HELD_BACK = [
+  'AND(',
+    `{Submitted By} = "${RESEARCH}"`, ',',
+    '{Source Type} = ""', ',',
+    `{Moderation Status} != "${PUBLISHED}"`, ',',
+    '{Moderation Status} != "Flagged"', ',',
+    '{Moderation Status} != "Removed"',
+  ')'
+].join('');
 
 const OUT_PATH = path.join(__dirname, '..', 'village-notes', 'data', 'resources.json');
 
@@ -104,12 +154,14 @@ if (!TOKEN) {
 
 /* ---------- fetch ---------- */
 
-async function fetchPage(offset) {
+async function fetchPage(offset, formula, fields) {
   const url = new URL(`https://api.airtable.com/v0/${BASE_ID}/${TABLE_ID}`);
-  // Server-side filter: unpublished rows never leave Airtable, so a record
-  // still under review cannot end up in a committed file by accident.
-  url.searchParams.set('filterByFormula', `{Moderation Status} = "${PUBLISHED}"`);
+  // Server-side filter: anything not publishable never leaves Airtable, so a
+  // form submission still awaiting review cannot reach a committed file by
+  // accident.
+  url.searchParams.set('filterByFormula', formula || PUBLISHABLE);
   url.searchParams.set('pageSize', '100');
+  (fields || []).forEach(f => url.searchParams.append('fields[]', f));
   if (offset) url.searchParams.set('offset', offset);
 
   const res = await fetch(url, { headers: { Authorization: `Bearer ${TOKEN}` } });
@@ -126,7 +178,7 @@ async function fetchAllRecords() {
   let offset;
 
   do {
-    const page = await fetchPage(offset);
+    const page = await fetchPage(offset, PUBLISHABLE);
     records.push(...(page.records || []));
     offset = page.offset;
   } while (offset);
@@ -193,7 +245,7 @@ function build(resources) {
     source: {
       base: BASE_ID,
       table: TABLE_ID,
-      filter: `Moderation Status = "${PUBLISHED}"`
+      filter: PUBLISHABLE
     },
     count: resources.length,
     tracks: distinct('track'),
@@ -213,6 +265,31 @@ function reportShapeChanges() {
   const fields = [...shapeChanges].sort().join(', ');
   console.log(`::warning::Fields the site reads as single values came back as lists: ${fields}. ` +
               'Their type changed in Airtable. Values were joined with a comma to keep the page readable.');
+}
+
+// A research record with no Source Type is the one case the publishable
+// filter holds back that nobody chose. Before this, such a record simply did
+// not appear and nothing said so -- which is how thirty-two accumulated. Name
+// them, so a silent queue cannot build again.
+async function reportHeldBack() {
+  let held = [];
+  let offset;
+  try {
+    do {
+      const page = await fetchPage(offset, HELD_BACK, ['Resource Name']);
+      held.push(...(page.records || []).map(r => (r.fields || {})['Resource Name'] || r.id));
+      offset = page.offset;
+    } while (offset);
+  } catch (err) {
+    // This is a diagnostic, not the job. A directory that synced fine should
+    // not go red because the follow-up query did not.
+    console.log(`::warning::Could not check for held-back research records: ${err.message}`);
+    return;
+  }
+  if (!held.length) return;
+  console.log(`::warning::${held.length} research ${held.length === 1 ? 'record is' : 'records are'} ` +
+              'off the site for want of a Source Type: ' + held.sort().join('; ') +
+              '. Set Source Type and they publish on the next run.');
 }
 
 async function main() {
@@ -236,12 +313,14 @@ async function main() {
   if (previous && JSON.stringify(previous.resources) === JSON.stringify(payload.resources)) {
     console.log(`No change: ${payload.count} published ${payload.count === 1 ? 'listing' : 'listings'}.`);
     reportShapeChanges();
+    await reportHeldBack();
     return;
   }
 
   fs.writeFileSync(OUT_PATH, JSON.stringify(payload, null, 2) + '\n', 'utf8');
   console.log(`Wrote ${payload.count} published ${payload.count === 1 ? 'listing' : 'listings'} to ${path.relative(process.cwd(), OUT_PATH)}.`);
   reportShapeChanges();
+  await reportHeldBack();
 }
 
 main().catch(err => {
