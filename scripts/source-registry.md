@@ -32,7 +32,6 @@ now.
   boysandgirlsclubofmilford.com      1  never        Family & Childcare
   bgcridgefield.org                  1  never        Family & Childcare
   bgcgnh.org                         1  never        Family & Childcare
-  calvinhilldaycare.org              1  never        Family & Childcare
   bgcmeriden.org                     1  never        Family & Childcare
   camphazenymca.org                  1  never        Family & Childcare
   campjewell.org                     1  never        Family & Childcare
@@ -113,7 +112,6 @@ now.
   medvet.com                         1  2026-08-28   Pet Care & Resources
   nevccc.com                         1  2026-08-28   Pet Care & Resources
   newtownvets.com                    1  2026-08-28   Pet Care & Resources
-  masonicare.org                     3  2026-08-29   Elder Care
   alz.org                            1  2026-08-29   Elder Care
   ctvetcenter.com                    1  2026-08-29   Pet Care & Resources
   coventry-ct.gov                    1  2026-08-29   Elder Care
@@ -132,28 +130,60 @@ now.
   monroect.gov                       1  2026-08-30   Elder Care
   partnershipsadc.org                1  2026-08-30   Elder Care
   seniormealsct.org                  1  2026-08-30   Elder Care
-  portal.ct.gov                     13  2026-08-31   Elder Care, Family & Childcare, Pet Care & Resources
+  portal.ct.gov                     16  2026-08-31   Elder Care, Family & Childcare, Pet Care & Resources, Teens & High School
   mozaicsl.org                       6  2026-08-31   Elder Care
   cthumane.org                       5  2026-08-31   Pet Care & Resources
+  masonicare.org                     4  2026-08-31   Elder Care
+  fwc.bridgeportedu.net              3  2026-08-31   Teens & High School
+  benchmarkseniorliving.com          3  2026-08-31   Elder Care
   valuepetvet.com                    3  2026-08-31   Pet Care & Resources
   centralpetvet.com                  2  2026-08-31   Pet Care & Resources
   pieperveterinary.com               2  2026-08-31   Pet Care & Resources
   vcahospitals.com                   2  2026-08-31   Pet Care & Resources
-  benchmarkseniorliving.com          1  2026-08-31   Elder Care
+  prince.cttech.org                  1  2026-08-31   Teens & High School
+  aitestamford.org                   1  2026-08-31   Teens & High School
+  eastconn.org                       1  2026-08-31   Teens & High School
+  aqua.bridgeportedu.net             1  2026-08-31   Teens & High School
+  bristol.cttech.org                 1  2026-08-31   Teens & High School
+  bullard-havens.cttech.org          1  2026-08-31   Teens & High School
+  calvinhilldaycare.org              1  2026-08-31   Family & Childcare
+  chestelmrehab.com                  1  2026-08-31   Elder Care
+  ciba.easthartford.org              1  2026-08-31   Teens & High School
+  ctriveracademy.org                 1  2026-08-31   Teens & High School
   cuvs.org                           1  2026-08-31   Pet Care & Resources
   daws.org                           1  2026-08-31   Pet Care & Resources
   darienct.gov                       1  2026-08-31   Elder Care
+  goodwin.cttech.org                 1  2026-08-31   Teens & High School
+  whitney.cttech.org                 1  2026-08-31   Teens & High School
+  grasso.cttech.org                  1  2026-08-31   Teens & High School
+  obrien.cttech.org                  1  2026-08-31   Teens & High School
+  geercares.org                      1  2026-08-31   Elder Care
   granby-ct.gov                      1  2026-08-31   Elder Care
+  wilcox.cttech.org                  1  2026-08-31   Teens & High School
+  ellis.cttech.org                   1  2026-08-31   Teens & High School
+  abbott.cttech.org                  1  2026-08-31   Teens & High School
+  cheney.cttech.org                  1  2026-08-31   Teens & High School
+  wright.cttech.org                  1  2026-08-31   Teens & High School
+  msmhs.com                          1  2026-08-31   Teens & High School
   ncaaact.org                        1  2026-08-31   Elder Care
+  norwich.cttech.org                 1  2026-08-31   Teens & High School
   nutmegclinic.org                   1  2026-08-31   Pet Care & Resources
+  wolcott.cttech.org                 1  2026-08-31   Teens & High School
+  platt.cttech.org                   1  2026-08-31   Teens & High School
   townofprospect.gov                 1  2026-08-31   Elder Care
   seniorresourcesec.org              1  2026-08-31   Elder Care
+  sharonhcc.com                      1  2026-08-31   Elder Care
   swcaa.org                          1  2026-08-31   Elder Care
   starelief.org                      1  2026-08-31   Pet Care & Resources
+  suffieldrhc.com                    1  2026-08-31   Elder Care
   everyanimalmatters.org             1  2026-08-31   Pet Care & Resources
   veg.com                            1  2026-08-31   Pet Care & Resources
   vecofcanton.com                    1  2026-08-31   Pet Care & Resources
+  vinal.cttech.org                   1  2026-08-31   Teens & High School
+  kaynor.cttech.org                  1  2026-08-31   Teens & High School
+  wams.waterbury.k12.ct.us           1  2026-08-31   Teens & High School
   wcaaa.org                          1  2026-08-31   Elder Care
+  windham.cttech.org                 1  2026-08-31   Teens & High School
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -178,7 +208,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 204 of 628 listings (32%) carry a Website, so
+Only 242 of 666 listings (36%) carry a Website, so
 everything above is built from that third of the directory. The other
 424 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -188,7 +218,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-41 of the 131 domains here have never had a Last Verified on
+40 of the 161 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```

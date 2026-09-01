@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-01T00:24:36.693Z",
+  "generated": "2026-09-01T04:13:19.835Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 649,
+  "count": 666,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -126,6 +126,8 @@
     "Middletown",
     "Milford",
     "Monroe",
+    "Moodus",
+    "Mystic",
     "Naugatuck",
     "New Britain",
     "New Canaan",
@@ -136,6 +138,7 @@
     "Newington",
     "Newtown",
     "North Branford",
+    "North Canaan",
     "North Haven",
     "Norwalk",
     "Norwich",
@@ -163,6 +166,7 @@
     "Sterling",
     "Storrs",
     "Stratford",
+    "Suffield",
     "Thomaston",
     "Thompson",
     "Torrington",
@@ -177,6 +181,7 @@
     "West Haven",
     "Westbrook",
     "Wethersfield",
+    "Willimantic",
     "Wilton",
     "Winchester",
     "Windham",
@@ -301,6 +306,35 @@
       ]
     },
     {
+      "id": "reclM8jR5TVV5ud4P",
+      "name": "Academy of Information Technology & Engineering",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "Interdistrict college-preparatory magnet high school with a STEAM focus. Academic concentrations include architecture and engineering, biomedical sciences, business, fine arts, and information technology, with PLTW pathways and dual-credit college courses.",
+      "town": "Stamford",
+      "address": "411 High Ridge Road, Stamford, CT 06905",
+      "website": "https://www.aitestamford.org/",
+      "contact": "203-977-4336",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Stamford Public Schools",
+      "programSetting": [
+        "Magnet School",
+        "Public School"
+      ],
+      "programTopics": [
+        "Architecture",
+        "Health Careers",
+        "Coding",
+        "STEM",
+        "College Readiness"
+      ],
+      "teenOpportunity": [
+        "Career Exploration"
+      ]
+    },
+    {
       "id": "recBdvLlOLxs76bdH",
       "name": "Action Early Learning Center",
       "track": "Family & Childcare",
@@ -373,6 +407,32 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recf0QOLz9pi3doL2",
+      "name": "Aerospace/Hydrospace Engineering & Physical Sciences High School at Fairchild Wheeler",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "One of three interdistrict magnet high schools at Fairchild Wheeler. Career-focused curriculum emphasizes engineering, physics, environmental sciences, aerospace, and marine technologies. The 2026-2027 magnet application period closed January 16, 2026.",
+      "town": "Bridgeport",
+      "address": "840 Old Town Road, Bridgeport, CT 06606",
+      "website": "https://fwc.bridgeportedu.net/",
+      "contact": "203-275-3374",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Bridgeport Public Schools",
+      "programSetting": [
+        "Magnet School",
+        "Public School"
+      ],
+      "programTopics": [
+        "STEM"
+      ],
+      "teenOpportunity": [
+        "Career Exploration"
       ]
     },
     {
@@ -805,6 +865,27 @@
       "lastVerified": "2026-08-26"
     },
     {
+      "id": "recEbyjYcMR1fmwJs",
+      "name": "Arts at the Capitol Theater Magnet High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "Full-day arts magnet high school serving grades 9-12, housed in the Capitol Theater and combining a demanding academic curriculum with arts study.",
+      "town": "Willimantic",
+      "address": "896 Main Street, Willimantic, CT 06226",
+      "website": "https://eastconn.org/index.php/act-admissions",
+      "contact": "860-465-5636",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "programSetting": [
+        "Magnet School",
+        "Public School"
+      ],
+      "programTopics": [
+        "Arts"
+      ]
+    },
+    {
       "id": "recJbmS8enr9TzwtE",
       "name": "Ashford Boe At Ashford Elementary",
       "track": "Family & Childcare",
@@ -874,6 +955,25 @@
       ]
     },
     {
+      "id": "recd0A2i4YRawURsw",
+      "name": "Benchmark at Ridgefield Crossings",
+      "track": "Elder Care",
+      "category": "Assisted Living",
+      "specificType": "Assisted living and memory care community in Ridgefield. Provider also offers respite care and transportation support as part of resident services.",
+      "town": "Ridgefield",
+      "address": "640 Danbury Road, Ridgefield, CT 06877",
+      "website": "https://www.benchmarkseniorliving.com/senior-living/ct/ridgefield/benchmark-senior-living-at-ridgefield-crossings/",
+      "contact": "203-403-4383",
+      "submittedBy": "Village Notes Research",
+      "notes": "Provider confirms assisted living, Mind & Memory Care, respite care, housekeeping, transportation and other resident supports.",
+      "servicesOffered": [
+        "Elder Care",
+        "Assisted Living",
+        "Transportation"
+      ],
+      "lastVerified": "2026-08-31"
+    },
+    {
       "id": "rec5e69QWs2A3UJPh",
       "name": "Benchmark at South Farms",
       "track": "Elder Care",
@@ -896,6 +996,32 @@
         "Transportation"
       ],
       "lastVerified": "2026-08-31"
+    },
+    {
+      "id": "rec6P4XU8pzUyTJx3",
+      "name": "Biotechnology Research & Zoological Sciences High School at Fairchild Wheeler",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "One of three interdistrict magnet high schools at Fairchild Wheeler. Career-focused curriculum emphasizes biotechnology, genetics, life sciences, zoological and animal sciences. The 2026-2027 magnet application period closed January 16, 2026.",
+      "town": "Bridgeport",
+      "address": "840 Old Town Road, Bridgeport, CT 06606",
+      "website": "https://fwc.bridgeportedu.net/",
+      "contact": "203-275-3314",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Bridgeport Public Schools",
+      "programSetting": [
+        "Magnet School",
+        "Public School"
+      ],
+      "programTopics": [
+        "STEM"
+      ],
+      "teenOpportunity": [
+        "Career Exploration"
+      ]
     },
     {
       "id": "recllcR7JDFw8emf4",
@@ -1612,6 +1738,31 @@
       ]
     },
     {
+      "id": "recokakJq7XyeH5YT",
+      "name": "Bridgeport Regional Aquaculture Science and Technology Education Center",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "Agricultural Science and Technology Education center serving high school students with specialized aquaculture, marine science and technology coursework that supplements the traditional high school curriculum.",
+      "town": "Bridgeport",
+      "address": "60 St. Stephens Road, Bridgeport, CT 06605",
+      "website": "https://aqua.bridgeportedu.net/home",
+      "contact": "203-275-2926",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Bridgeport Public Schools",
+      "programSetting": [
+        "Public School"
+      ],
+      "programTopics": [
+        "Marine Science",
+        "STEM"
+      ],
+      "teenOpportunity": [
+        "Career Exploration"
+      ]
+    },
+    {
       "id": "recOaka93AssLHrQn",
       "name": "Bridgeport YMCA/Kolbe Educational Center",
       "track": "Family & Childcare",
@@ -2030,7 +2181,7 @@
       "town": "New Haven",
       "address": "150 Highland Street, New Haven, CT 06511",
       "ages": "3-year-olds through kindergarten",
-      "hours": "Monday-Friday, 8:00 AM - 5:00 PM",
+      "hours": "Monday-Friday, 8:00 AM-5:15 PM September-June. Seven-week summer session: 8:00 AM-5:00 PM full time or 8:00 AM-1:00 PM part time. Closed in August.",
       "availability": "Currently accepting applications for the 2026-2027 school year. Contact directly for current openings.",
       "cost": "Sliding-scale tuition; priority enrollment for Yale faculty, staff, and student families, open to community families",
       "website": "https://calvinhilldaycare.org/",
@@ -2047,9 +2198,12 @@
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-08",
       "notes": "Calvin Hill Day Care Center and the Kitty Lustman-Findling Kindergarten is a private, nonprofit preschool and kindergarten on Yale's campus in New Haven, serving both Yale-affiliated and community families. The program uses a progressive, integrated-day curriculum and is known for long-tenured teaching staff and active parent involvement, including a parent committee and one family work day per year. Tuition is offered on a sliding scale to keep the program accessible, and the center participates in the New Haven School Readiness Program. Priority enrollment goes to children of Yale faculty, staff, and students, but the program is open to families across the greater New Haven area.",
+      "registrationStatus": "Open",
       "servicesOffered": [
-        "Preschool / Pre-K"
-      ]
+        "Preschool / Pre-K",
+        "Full-Day Childcare"
+      ],
+      "lastVerified": "2026-08-31"
     },
     {
       "id": "reckDEe4v2uelWBPd",
@@ -2851,6 +3005,23 @@
       "lastVerified": "2026-08-26"
     },
     {
+      "id": "recIwJPdL8Bqki2np",
+      "name": "Chestelm Health & Rehabilitation Center",
+      "track": "Elder Care",
+      "category": "Skilled Nursing / Rehab",
+      "town": "Moodus",
+      "address": "534 Town Street, Moodus, CT 06469",
+      "website": "https://www.chestelmrehab.com/",
+      "contact": "860-873-1455; admissions@chestelmrehab.com",
+      "submittedBy": "Village Notes Research",
+      "notes": "Identified through Connecticut nursing-facility data and confirmed on the provider's current site. Services include short-term rehabilitation, long-term care, 24/7 skilled nursing, respite care, memory care, and outpatient rehabilitation.",
+      "servicesOffered": [
+        "Elder Care",
+        "Skilled Nursing"
+      ],
+      "lastVerified": "2026-08-31"
+    },
+    {
       "id": "recg6bvURU7b4vY5Q",
       "name": "Cheyenne's Early Learning Center",
       "track": "Family & Childcare",
@@ -3461,13 +3632,13 @@
         "Statewide (all of Connecticut)"
       ],
       "submittedBy": "Village Notes Research",
-      "notes": "Official Connecticut Department of Agriculture page checked August 29, 2026. Low-income applications are closed for FY2026; pending applicants should expect status notice in 4 to 6 weeks. Non-Connecticut residents are ineligible. FY2027 feral-cat grants are open to eligible Connecticut nonprofit rescue groups.",
+      "notes": "Official Connecticut Department of Agriculture source rechecked August 31, 2026. The Animal Population Control Program provides vaccination and spay/neuter vouchers for qualifying low-income Connecticut residents and for dogs or cats adopted from municipal impound facilities. The Low-Income Program is closed for FY2026 due to demand; pending applications are being reviewed. Sterilizations and vaccinations must be completed by participating veterinarians.",
       "registrationStatus": "Registration Varies",
       "financialAid": "Yes",
       "servicesOffered": [
         "Spay/Neuter Assistance"
       ],
-      "lastVerified": "2026-08-29",
+      "lastVerified": "2026-08-31",
       "animals": [
         "Dogs",
         "Cats"
@@ -3716,6 +3887,28 @@
       ]
     },
     {
+      "id": "rec7efvK0U25FgDQw",
+      "name": "Connecticut IB Academy",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "Interdistrict magnet high school offering the International Baccalaureate Middle Years Programme in grades 9-10 and Diploma Programme in grades 11-12.",
+      "town": "East Hartford",
+      "address": "857 Forbes Street, East Hartford, CT 06118",
+      "website": "https://ciba.easthartford.org/",
+      "contact": "860-622-5590",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "East Hartford Public Schools",
+      "programSetting": [
+        "Magnet School",
+        "Public School"
+      ],
+      "programTopics": [
+        "College Readiness"
+      ]
+    },
+    {
       "id": "rec2WIrtK1OTgu4Gi",
       "name": "Connecticut In-Home Assistance — Stratford",
       "track": "Elder Care",
@@ -3862,6 +4055,39 @@
       "lastVerified": "2026-08-31",
       "teenOpportunity": [
         "Apprenticeship"
+      ]
+    },
+    {
+      "id": "recRMsdacElIMoVkl",
+      "name": "Connecticut River Academy",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "Goodwin University magnet high school with a sustainability theme, environmental studies and advanced manufacturing, plus an Early College model offering more than 30 tuition-free transferable college credits. Advanced Manufacturing students may have internship opportunities while in high school.",
+      "town": "East Hartford",
+      "address": "9 Riverside Drive, East Hartford, CT 06118",
+      "website": "https://www.ctriveracademy.org/",
+      "contact": "860-913-2200; CTRAinfo@goodwinmagnetsystem.org",
+      "submittedBy": "Village Notes Research",
+      "notes": "The 2026-27 late RSCO application remains available according to the current admissions page. The high school serves grades 9-12 at 9 Riverside Drive; the separate middle-level program is not part of this record.",
+      "registrationStatus": "Open",
+      "servicesOffered": [
+        "College Access / Readiness"
+      ],
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Goodwin University Magnet School System",
+      "programSetting": [
+        "Magnet School"
+      ],
+      "programTopics": [
+        "Environmental Education",
+        "STEM",
+        "College Readiness"
+      ],
+      "teenOpportunity": [
+        "Internship",
+        "College Readiness",
+        "Career Exploration"
       ]
     },
     {
@@ -4221,6 +4447,24 @@
       "servicesOffered": [
         "Child Care"
       ]
+    },
+    {
+      "id": "recQMW412nPuY1CsP",
+      "name": "Crescent Point at Niantic",
+      "track": "Elder Care",
+      "category": "Assisted Living",
+      "specificType": "Assisted living and memory care community in Niantic with respite care and personalized support.",
+      "town": "East Lyme",
+      "address": "417 Main Street, Niantic, CT 06357",
+      "website": "https://www.benchmarkseniorliving.com/senior-living/ct/niantic/crescent-point-at-niantic/",
+      "contact": "860-451-9094",
+      "submittedBy": "Village Notes Research",
+      "notes": "Provider confirms assisted living, Mind & Memory Care and respite care at the Niantic location.",
+      "servicesOffered": [
+        "Elder Care",
+        "Assisted Living"
+      ],
+      "lastVerified": "2026-08-31"
     },
     {
       "id": "rec5aHf7opnZ92bU1",
@@ -6144,6 +6388,23 @@
       ]
     },
     {
+      "id": "reciCm0phr1T9A7EY",
+      "name": "Geer Nursing and Rehabilitation Center",
+      "track": "Elder Care",
+      "category": "Skilled Nursing / Rehab",
+      "town": "North Canaan",
+      "address": "99 South Canaan Road, Canaan, CT 06018",
+      "website": "https://www.geercares.org/",
+      "contact": "860-824-5137",
+      "submittedBy": "Village Notes Research",
+      "notes": "Identified through the Connecticut Open Data Nursing Facility Registry and confirmed with the provider's current site. Geer Nursing and Rehabilitation Center provides skilled nursing, short-term rehabilitation, long-term care, memory-impairment care, and compassionate end-of-life care. The Connecticut state registry confirms the nursing facility address and contact information.",
+      "servicesOffered": [
+        "Elder Care",
+        "Skilled Nursing"
+      ],
+      "lastVerified": "2026-08-31"
+    },
+    {
       "id": "recs9Vt6qy37JU1PV",
       "name": "Gianna Piccione Family Child Care Home",
       "track": "Family & Childcare",
@@ -7589,6 +7850,33 @@
       "notes": "Official YMCA childcare page verified August 25, 2026.",
       "servicesOffered": [
         "Child Care"
+      ]
+    },
+    {
+      "id": "recLzPetjXppfw53L",
+      "name": "Information Technology & Software Engineering High School at Fairchild Wheeler",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "One of three interdistrict magnet high schools at Fairchild Wheeler. Career-focused curriculum centers on information technology and software engineering. The 2026-2027 magnet application period closed January 16, 2026.",
+      "town": "Bridgeport",
+      "address": "840 Old Town Road, Bridgeport, CT 06606",
+      "website": "https://fwc.bridgeportedu.net/",
+      "contact": "203-275-3372",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Bridgeport Public Schools",
+      "programSetting": [
+        "Magnet School",
+        "Public School"
+      ],
+      "programTopics": [
+        "Coding",
+        "STEM"
+      ],
+      "teenOpportunity": [
+        "Career Exploration"
       ]
     },
     {
@@ -9169,6 +9457,29 @@
       ]
     },
     {
+      "id": "recHVG2hiw9Jdtqb6",
+      "name": "Marine Science Magnet High School of Southeastern Connecticut",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "Interdistrict magnet high school with a marine science-focused curriculum. Applications are closed for the 2026-2027 school year.",
+      "town": "Groton",
+      "address": "130 Shennecossett Road, Groton, CT 06340",
+      "website": "https://www.msmhs.com/",
+      "contact": "860-446-9380; info@msmhs.com",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "programSetting": [
+        "Magnet School",
+        "Public School"
+      ],
+      "programTopics": [
+        "Marine Science",
+        "STEM"
+      ]
+    },
+    {
       "id": "recwrDw1ZIojbjXo4",
       "name": "Marvin Children's Center",
       "track": "Family & Childcare",
@@ -9281,6 +9592,26 @@
       ],
       "meals": "Meals Only",
       "lastVerified": "2026-08-29"
+    },
+    {
+      "id": "recbALJQjaDDENXkw",
+      "name": "Masonicare at Mystic",
+      "track": "Elder Care",
+      "category": "Assisted Living",
+      "specificType": "Senior living community offering assisted living, memory care, independent living and an adult day program. Transportation to medical appointments, scheduled shopping and activities is available within the provider's stated service radius.",
+      "town": "Mystic",
+      "address": "45 Clara Drive, Mystic, CT 06355",
+      "website": "https://www.masonicare.org/ct-locations/mystic-ct",
+      "contact": "860-415-2500; 888-332-0033",
+      "submittedBy": "Village Notes Research",
+      "notes": "Provider confirms assisted living, memory care, independent living, adult day services and transportation. This record uses Assisted Living as the primary Category because the provider presents it as a core care option.",
+      "servicesOffered": [
+        "Elder Care",
+        "Assisted Living",
+        "Adult Day Program",
+        "Transportation"
+      ],
+      "lastVerified": "2026-08-31"
     },
     {
       "id": "recvq8XBDMTCwuacz",
@@ -12771,6 +13102,23 @@
       "lastVerified": "2026-08-31"
     },
     {
+      "id": "recu1DJKbTVtTBI6T",
+      "name": "Sharon Center for Health and Rehabilitation",
+      "track": "Elder Care",
+      "category": "Skilled Nursing / Rehab",
+      "town": "Sharon",
+      "address": "27 Hospital Hill Road, Sharon, CT 06069",
+      "website": "https://sharonhcc.com/",
+      "contact": "860-364-1002; Info@Sharonhcc.com",
+      "submittedBy": "Village Notes Research",
+      "notes": "Identified through Connecticut nursing-facility data and confirmed on the provider's current site. Provides post-acute rehabilitation, long-term care, around-the-clock care for chronic illnesses and disabilities, medical and therapy services, and a dedicated memory care unit.",
+      "servicesOffered": [
+        "Elder Care",
+        "Skilled Nursing"
+      ],
+      "lastVerified": "2026-08-31"
+    },
+    {
       "id": "recTBUJHhbyPJMn1O",
       "name": "Shelta Wilson Family Child Care Home (Baby Me Daycare)",
       "track": "Family & Childcare",
@@ -13587,6 +13935,23 @@
       ],
       "programYear": "Summer 2026",
       "lastVerified": "2026-08-25"
+    },
+    {
+      "id": "recfw5TzzCI7U6lQM",
+      "name": "Suffield House Rehabilitation and Healthcare Center",
+      "track": "Elder Care",
+      "category": "Skilled Nursing / Rehab",
+      "town": "Suffield",
+      "address": "1 Canal Road, Suffield, CT 06078",
+      "website": "https://www.suffieldrhc.com/",
+      "contact": "860-668-6111; info@suffieldrhc.com",
+      "submittedBy": "Village Notes Research",
+      "notes": "Identified through Connecticut nursing-facility data and confirmed on the provider's current site. Provides skilled nursing, respite care, palliative care, rehabilitation, and related healthcare services. The same organization also operates Eagle Point assisted living, but this record represents the skilled nursing/rehabilitation facility.",
+      "servicesOffered": [
+        "Elder Care",
+        "Skilled Nursing"
+      ],
+      "lastVerified": "2026-08-31"
     },
     {
       "id": "recnl2GtlJPEbwCyX",
@@ -15380,6 +15745,34 @@
         "Child Care",
         "Infant Care",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recV05HJDaxHc5HQS",
+      "name": "Waterbury Arts Magnet School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "Grades 6-12 arts magnet school with visual arts, music, theater, dance, broadcasting, STEAM opportunities, college coursework, and arts partnerships/internships. The regular and late application windows for the current cycle have passed.",
+      "town": "Waterbury",
+      "address": "16 South Elm Street, Waterbury, CT 06706",
+      "website": "https://wams.waterbury.k12.ct.us/",
+      "contact": "203-573-6300",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "6-12",
+      "schoolDistrict": "Waterbury Public Schools",
+      "programSetting": [
+        "Magnet School",
+        "Public School"
+      ],
+      "programTopics": [
+        "Arts",
+        "Broadcasting",
+        "STEM"
+      ],
+      "teenOpportunity": [
+        "Internship"
       ]
     },
     {
