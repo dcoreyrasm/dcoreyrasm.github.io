@@ -117,6 +117,30 @@
     return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   }
 
+  // An announced, dated event -- an open house, tour, information session,
+  // webinar, registration night. Returns the date if it has not happened yet,
+  // otherwise null, and null is the whole point: this is the only thing on a
+  // listing that goes wrong by sitting still. Hours and cost are still roughly
+  // true next month; last March's open house is a lie the moment it passes.
+  //
+  // Checked against the visitor's clock rather than the sync's. The JSON is
+  // rebuilt every six hours, but the card must stop advertising yesterday's
+  // event even if no sync has run since, and a page left open overnight must
+  // not still be advertising it in the morning.
+  //
+  // Both fields are required. Text with no date would never expire, which is
+  // exactly the failure this guards against, so it is held back and the sync
+  // names it on the run rather than the page showing something undismissable.
+  function liveEvent(r) {
+    if (!has(r.event) || !has(r.eventDate)) return null;
+    var raw = String(r.eventDate);
+    var when = new Date(raw + (/^\d{4}-\d{2}-\d{2}$/.test(raw) ? 'T00:00:00' : ''));
+    if (isNaN(when.getTime())) return null;
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    return when < today ? null : when;
+  }
+
   function plural(n, one, many) { return n === 1 ? one : many; }
 
   /* ---------- what-you-need groups ---------- */
@@ -328,6 +352,23 @@
   function card(r) {
     var url = safeUrl(r.website);
 
+    // Above the badges, because it is the one row with a deadline on it.
+    // The year is shown only when it is not this one -- "Mar 14" reads as a
+    // date a family can act on; "Mar 14, 2027" reads as an archive entry.
+    var eventRow = '';
+    var eventOn = liveEvent(r);
+    if (eventOn) {
+      var opts = { month: 'short', day: 'numeric' };
+      if (eventOn.getFullYear() !== new Date().getFullYear()) opts.year = 'numeric';
+      eventRow = '<p class="vn-event">' +
+                   '<span class="vn-visually-hidden">Upcoming event: </span>' +
+                   '<span class="vn-event-when">' +
+                     esc(eventOn.toLocaleDateString('en-US', opts)) +
+                   '</span>' +
+                   '<span class="vn-event-what">' + esc(r.event) + '</span>' +
+                 '</p>';
+    }
+
     var head = '<p class="vn-card-track">' + esc(r.track || 'Resource');
     if (has(r.category)) head += '<span class="vn-sep">/</span>' + esc(r.category);
     head += '</p>';
@@ -442,6 +483,7 @@
       head +
       '<h3 class="vn-card-name">' + esc(r.name || 'Untitled listing') + '</h3>' +
       (has(r.town) ? '<p class="vn-card-town">' + esc(r.town) + '</p>' : '') +
+      eventRow +
       badgeRow +
       stars(r.rating) +
       (has(r.specificType) ? '<p class="vn-card-type">' + esc(r.specificType) + '</p>' : '') +
@@ -584,6 +626,12 @@
       .concat(r.teenOpportunity || [])
       .concat([groupOf(r), r.registrationStatus, r.licensing,
                r.gradeRange, r.schoolDistrict])
+      // Only while the event is still ahead. Indexing a field usually can
+      // only add matches, which is why the teen fields are indexed for every
+      // track -- but an expired event is text the card deliberately does not
+      // show, and matching "open house" against something invisible sends a
+      // family to a card that never mentions one.
+      .concat(liveEvent(r) ? [r.event] : [])
       .filter(has).join(' ␟ ').toLowerCase();
   }
 

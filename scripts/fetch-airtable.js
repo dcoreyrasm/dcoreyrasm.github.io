@@ -143,7 +143,15 @@ const FIELD_MAP = {
   'School District':              'schoolDistrict',
   'Program Setting':              'programSetting',
   'Camp & Program Topics':        'programTopics',
-  'Teen Opportunity Type':        'teenOpportunity'
+  'Teen Opportunity Type':        'teenOpportunity',
+
+  // One dated, announced event -- an open house, tour, information session,
+  // webinar, registration night. Two fields rather than one sentence, because
+  // the date is what lets the card hide the event once it has happened. A
+  // directory that advertises last March's open house is worse than one that
+  // advertises nothing, and nobody was ever going to sweep these by hand.
+  'Upcoming Event':               'event',
+  'Event Date':                   'eventDate'
 };
 
 const TOKEN = process.env.AIRTABLE_TOKEN;
@@ -292,6 +300,35 @@ async function reportHeldBack() {
               '. Set Source Type and they publish on the next run.');
 }
 
+// Events are the one field on the card that goes wrong by sitting still: an
+// open house is useful for a fortnight and misleading forever after. The page
+// hides an expired one on its own, so nothing wrong ever reaches a visitor --
+// but hidden is not fixed, and a listing whose only event has passed has
+// quietly lost a row. So the run says which ones to refresh, and which have
+// text with no date, the shape the page cannot show at all.
+function reportEvents(resources) {
+  const today = new Date().toISOString().slice(0, 10);
+  const expired = resources
+    .filter(r => r.eventDate && r.eventDate < today)
+    .map(r => `${r.name} (${r.eventDate})`)
+    .sort();
+  const undated = resources
+    .filter(r => r.event && !r.eventDate)
+    .map(r => r.name)
+    .sort();
+
+  if (expired.length) {
+    console.log(`::warning::${expired.length} ${expired.length === 1 ? 'listing has an event' : 'listings have events'} ` +
+                'whose date has passed, now hidden on the site: ' + expired.join('; ') +
+                '. Replace with the next announced date, or clear both fields.');
+  }
+  if (undated.length) {
+    console.log(`::warning::${undated.length} ${undated.length === 1 ? 'listing has' : 'listings have'} ` +
+                'an Upcoming Event with no Event Date, so the site cannot show it: ' + undated.join('; ') +
+                '. An event with no date cannot expire, so it is held back until one is set.');
+  }
+}
+
 async function main() {
   const records = await fetchAllRecords();
   const resources = records.map(toResource);
@@ -313,6 +350,7 @@ async function main() {
   if (previous && JSON.stringify(previous.resources) === JSON.stringify(payload.resources)) {
     console.log(`No change: ${payload.count} published ${payload.count === 1 ? 'listing' : 'listings'}.`);
     reportShapeChanges();
+    reportEvents(resources);
     await reportHeldBack();
     return;
   }
@@ -320,6 +358,7 @@ async function main() {
   fs.writeFileSync(OUT_PATH, JSON.stringify(payload, null, 2) + '\n', 'utf8');
   console.log(`Wrote ${payload.count} published ${payload.count === 1 ? 'listing' : 'listings'} to ${path.relative(process.cwd(), OUT_PATH)}.`);
   reportShapeChanges();
+  reportEvents(resources);
   await reportHeldBack();
 }
 
