@@ -1,20 +1,22 @@
 {
-  "generated": "2026-08-31T23:19:49.462Z",
+  "generated": "2026-09-01T00:24:36.693Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
-    "filter": "Moderation Status = \"Published\""
+    "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 628,
+  "count": 649,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
-    "Pet Care & Resources"
+    "Pet Care & Resources",
+    "Teens & High School"
   ],
   "categories": [
     "Academic/Enrichment Camp",
     "Adult Day Program",
     "Afterschool Enrichment",
+    "Apprenticeship",
     "Arts Camp",
     "Assisted Living",
     "Before/After School Care",
@@ -35,9 +37,11 @@
     "In-Home Caregiver / Home Health Aide",
     "Inclusive/Special Needs Camp",
     "Infant Care",
+    "Job Training Program",
     "Legal/HR Resource",
     "Literacy / Reading Program",
     "Low-Cost Veterinary Clinic",
+    "Magnet / Specialty School",
     "Meal Delivery",
     "Medical / Diagnosis-Specific Camp",
     "Memory Care",
@@ -244,6 +248,33 @@
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official State of Connecticut resource page verified 2026-08-25."
+    },
+    {
+      "id": "recwnBGQj3NfGCPsr",
+      "name": "A.I. Prince Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school combining academics with career and technical education; paid work-based learning is available for eligible upper-grade students.",
+      "town": "Hartford",
+      "address": "401 Flatbush Avenue, Hartford, CT 06106",
+      "website": "https://prince.cttech.org/",
+      "contact": "860-951-7112",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Registration Varies",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
+      ]
     },
     {
       "id": "reclODLiV5u4SnnGr",
@@ -1872,6 +1903,28 @@
       ]
     },
     {
+      "id": "recUdMDHCcnefguyw",
+      "name": "Bristol Technical Education Center",
+      "track": "Teens & High School",
+      "category": "Job Training Program",
+      "specificType": "Trade-focused technical education center serving high school students in grades 11-12 and adult learners; high school students complete academics at their sending high school.",
+      "town": "Bristol",
+      "address": "431 Minor Street, Bristol, CT 06010",
+      "website": "https://bristol.cttech.org/",
+      "contact": "860-584-8433",
+      "submittedBy": "Village Notes Research",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Certification Program",
+        "Career Exploration"
+      ]
+    },
+    {
       "id": "reczTaDIhufoi4tbI",
       "name": "Brooklyn Boe At Brooklyn Elementary School",
       "track": "Family & Childcare",
@@ -1938,6 +1991,34 @@
       "servicesOffered": [
         "Child Care",
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "recpG0YbRF0fCoGlP",
+      "name": "Bullard-Havens Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school serving grades 9-12 with career and technical education and paid work-based learning opportunities.",
+      "town": "Bridgeport",
+      "address": "500 Palisade Avenue, Bridgeport, CT 06610",
+      "website": "https://bullard-havens.cttech.org/",
+      "contact": "203-579-6333",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "registrationCloses": "2026-03-01",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
       ]
     },
     {
@@ -3658,6 +3739,26 @@
       "lastVerified": "2026-08-30"
     },
     {
+      "id": "recV4hWQ0gAGxvBGV",
+      "name": "Connecticut Level Up Program",
+      "track": "Teens & High School",
+      "category": "Job Training Program",
+      "specificType": "Statewide pre-employment transition program for students ages 16-22 with an IEP, 504 plan, or documented disability. Services include job exploration, post-secondary counseling, work-based learning, work-readiness training, and self-advocacy.",
+      "town": "Statewide",
+      "website": "https://portal.ct.gov/ads/knowledge-base/articles/education-services/for-high-school-and-college-students/level-up",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Rolling / Ongoing",
+      "servicesOffered": [
+        "Disability Support"
+      ],
+      "programYear": "Ongoing",
+      "lastVerified": "2026-08-31",
+      "teenOpportunity": [
+        "Career Exploration",
+        "College Readiness"
+      ]
+    },
+    {
       "id": "rechSPhyqMZj75yEr",
       "name": "Connecticut Lions Pathfinders T1D Camp",
       "track": "Family & Childcare",
@@ -3744,6 +3845,23 @@
       "notes": "Official Connecticut Department of Children and Families source verified 2026-08-25.",
       "servicesOffered": [
         "Parent / Family Support"
+      ]
+    },
+    {
+      "id": "recr1Zns1rQBDtn67",
+      "name": "Connecticut Registered Apprenticeship System",
+      "track": "Teens & High School",
+      "category": "Apprenticeship",
+      "specificType": "Statewide registered apprenticeship system combining paid on-the-job training with required academic instruction. Apprentices register through an approved employer sponsor.",
+      "town": "Statewide",
+      "address": "200 Folly Brook Boulevard, Wethersfield, CT 06109",
+      "website": "https://portal.ct.gov/dol/divisions/apprenticeships/message",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Rolling / Ongoing",
+      "programYear": "Ongoing",
+      "lastVerified": "2026-08-31",
+      "teenOpportunity": [
+        "Apprenticeship"
       ]
     },
     {
@@ -3869,6 +3987,26 @@
       "notes": "Source: https://portal.ct.gov/DPH/WIC/Find-a-Local-Agency, accessed 2026-08-25.",
       "servicesOffered": [
         "Parent / Family Support"
+      ]
+    },
+    {
+      "id": "recIlHULd6YtfyyZ0",
+      "name": "Connecticut Youth Employment Program",
+      "track": "Teens & High School",
+      "category": "Job Training Program",
+      "specificType": "Statewide year-round program for youth ages 14-24 to gain work experience and earn money through Connecticut's five regional Workforce Development Boards.",
+      "town": "Statewide",
+      "website": "https://portal.ct.gov/dol/divisions/workforce-innovation-and-opportunity-act-wioa-administration-unit/ct-youth-employment-information",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Rolling / Ongoing",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "programYear": "Ongoing",
+      "lastVerified": "2026-08-31",
+      "teenOpportunity": [
+        "Paid Youth Employment",
+        "Career Exploration"
       ]
     },
     {
@@ -4737,6 +4875,33 @@
       ]
     },
     {
+      "id": "recdzXV8I0R3NW3MF",
+      "name": "E.C. Goodwin Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school combining academic courses with career and technical education and work-based learning.",
+      "town": "New Britain",
+      "address": "735 Slater Road, New Britain, CT 06053",
+      "website": "https://goodwin.cttech.org/",
+      "contact": "860-827-7736",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Registration Varies",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
+      ]
+    },
+    {
       "id": "recC94yUcUZiS8Iky",
       "name": "Early Childhood Development Center Groton",
       "track": "Family & Childcare",
@@ -5053,6 +5218,34 @@
       ]
     },
     {
+      "id": "recMH05Qk3XdSqtqw",
+      "name": "Eli Whitney Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school for grades 9-12 with academic and career-technical programs.",
+      "town": "Hamden",
+      "address": "100 Fairview Avenue, Hamden, CT 06514",
+      "website": "https://whitney.cttech.org/",
+      "contact": "203-397-4031",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "registrationCloses": "2026-03-01",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
+      ]
+    },
+    {
       "id": "recoeKEBsg8BTTSh9",
       "name": "Elizabeth Celotto Child Care Center",
       "track": "Family & Childcare",
@@ -5098,6 +5291,34 @@
         "Child Care",
         "Infant Care",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recHttOV19uEs7p9f",
+      "name": "Ella T. Grasso Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school for grades 9-12 offering academics and career-technical study.",
+      "town": "Groton",
+      "address": "189 Fort Hill Road, Groton, CT 06340",
+      "website": "https://grasso.cttech.org/",
+      "contact": "860-448-0220",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "registrationCloses": "2026-03-01",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
       ]
     },
     {
@@ -5166,6 +5387,34 @@
         "Child Care",
         "Infant Care",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recEcQO9XCtk5dcHL",
+      "name": "Emmett O'Brien Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school for grades 9-12 with career and technical education.",
+      "town": "Ansonia",
+      "address": "141 Prindle Avenue, Ansonia, CT 06401",
+      "website": "https://obrien.cttech.org/",
+      "contact": "203-732-1800",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "registrationCloses": "2026-03-01",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
       ]
     },
     {
@@ -6253,6 +6502,34 @@
       ]
     },
     {
+      "id": "recOKK1AroM3Lsq2P",
+      "name": "H.C. Wilcox Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school for grades 9-12 with career and technical education.",
+      "town": "Meriden",
+      "address": "298 Oregon Road, Meriden, CT 06451",
+      "website": "https://wilcox.cttech.org/",
+      "contact": "203-238-6260",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "registrationCloses": "2026-03-01",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
+      ]
+    },
+    {
       "id": "recOAbBm8ZKeLH1Nu",
       "name": "Hale Early Education Center",
       "track": "Family & Childcare",
@@ -6768,6 +7045,34 @@
       ]
     },
     {
+      "id": "recIRq7d4bJMqSLxv",
+      "name": "Harvard H. Ellis Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school for grades 9-12 with career and technical education.",
+      "town": "Killingly",
+      "address": "613 Upper Maple Street, Danielson, CT 06239",
+      "website": "https://ellis.cttech.org/",
+      "contact": "860-412-7500",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "registrationCloses": "2026-03-01",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
+      ]
+    },
+    {
       "id": "rec5hZ2BUyPGva37f",
       "name": "Hebron Early Childhood Center",
       "track": "Family & Childcare",
@@ -6808,6 +7113,34 @@
       "notes": "Source: https://www.ctoec.org/help-me-grow/, accessed 2026-08-25.",
       "servicesOffered": [
         "Parent / Family Support"
+      ]
+    },
+    {
+      "id": "recyGUXsXe7nyPBvQ",
+      "name": "Henry Abbott Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school for grades 9-12 with career and technical education.",
+      "town": "Danbury",
+      "address": "21 Hayestown Avenue, Danbury, CT 06811",
+      "website": "https://abbott.cttech.org/",
+      "contact": "203-797-4460",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "registrationCloses": "2026-03-01",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
       ]
     },
     {
@@ -6922,6 +7255,33 @@
         "Spay/Neuter Required",
         "Temperament Assessment Required",
         "Minimum Age Applies"
+      ]
+    },
+    {
+      "id": "recbcC6gyfBeCS0Ol",
+      "name": "Howell Cheney Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school combining academic study with career and technical education.",
+      "town": "Manchester",
+      "address": "791 West Middle Turnpike, Manchester, CT 06040",
+      "website": "https://cheney.cttech.org/",
+      "contact": "860-649-5396",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Registration Varies",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
       ]
     },
     {
@@ -7371,6 +7731,34 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recGoTwufeh7zFCOl",
+      "name": "J.M. Wright Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school for grades 9-12 with career and technical education.",
+      "town": "Stamford",
+      "address": "120 Bridge Street, Stamford, CT 06905",
+      "website": "https://wright.cttech.org/",
+      "contact": "203-324-7363",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "registrationCloses": "2026-03-01",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
       ]
     },
     {
@@ -10966,6 +11354,34 @@
       ]
     },
     {
+      "id": "recjZUJKnszW7S1xF",
+      "name": "Norwich Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school for grades 9-12 with career and technical education.",
+      "town": "Norwich",
+      "address": "7 Mahan Drive, Norwich, CT 06360",
+      "website": "https://norwich.cttech.org/",
+      "contact": "860-889-8453",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "registrationCloses": "2026-03-01",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
+      ]
+    },
+    {
       "id": "recy7FuWoyHZzFmii",
       "name": "Nutmeg Spay/Neuter Clinic",
       "track": "Pet Care & Resources",
@@ -11040,6 +11456,34 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "rec0DmN5bnnEAuTfG",
+      "name": "Oliver Wolcott Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school for grades 9-12 with career and technical education.",
+      "town": "Torrington",
+      "address": "75 Oliver Street, Torrington, CT 06790",
+      "website": "https://wolcott.cttech.org/",
+      "contact": "860-496-5300",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "registrationCloses": "2026-03-01",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
       ]
     },
     {
@@ -11569,6 +12013,34 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recDmCyQ9YOJz38SC",
+      "name": "Platt Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school for grades 9-12 with career and technical education.",
+      "town": "Milford",
+      "address": "600 Orange Avenue, Milford, CT 06461",
+      "website": "https://platt.cttech.org/",
+      "contact": "203-783-5300",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "registrationCloses": "2026-03-01",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
       ]
     },
     {
@@ -14624,6 +15096,34 @@
       ]
     },
     {
+      "id": "recANFeQ9ZHbVwmOG",
+      "name": "Vinal Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school for grades 9-12 with career and technical education.",
+      "town": "Middletown",
+      "address": "60 Daniels Street, Middletown, CT 06457",
+      "website": "https://vinal.cttech.org/",
+      "contact": "860-344-7100",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "registrationCloses": "2026-03-01",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
+      ]
+    },
+    {
       "id": "recctJptfpP5P46uH",
       "name": "Virginia Medina Family Child Care",
       "track": "Family & Childcare",
@@ -14692,6 +15192,34 @@
       "notes": "FY26 state-funded spaces: 30 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 1838. Local partner: Southeast CT LGP -- Linda Allen | lallen@learn.k12.ct.us | 860-434-4800. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "recJ9Ue2ABagk0IIJ",
+      "name": "W.F. Kaynor Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school for grades 9-12 with career and technical education.",
+      "town": "Waterbury",
+      "address": "43 Tompkins Street, Waterbury, CT 06708",
+      "website": "https://kaynor.cttech.org/",
+      "contact": "203-596-4302",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "registrationCloses": "2026-03-01",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
       ]
     },
     {
@@ -15381,6 +15909,34 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recJkNJFJCSsme56L",
+      "name": "Windham Technical High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-operated technical high school for grades 9-12 with career and technical education.",
+      "town": "Windham",
+      "address": "210 Birch Street, Willimantic, CT 06226",
+      "website": "https://windham.cttech.org/",
+      "contact": "860-456-3879",
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "registrationCloses": "2026-03-01",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-08-31",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Connecticut Technical Education and Career System",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Paid Youth Employment"
       ]
     },
     {
