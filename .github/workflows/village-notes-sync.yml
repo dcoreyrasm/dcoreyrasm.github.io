@@ -11,6 +11,11 @@ name: Village Notes sync (Airtable to JSON)
 #
 # If the pull fails the script exits non-zero having written nothing, so the
 # previous JSON stays live rather than the directory going blank.
+#
+# It also rebuilds the standing source registry and the ChatGPT brief, both of
+# which are derived from the listings. Regenerating them anywhere else means
+# they describe whatever the directory looked like the last time somebody
+# remembered.
 
 on:
   schedule:
@@ -39,9 +44,20 @@ jobs:
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
         run: node scripts/fetch-airtable.js
 
+      # The registry is derived from the listings that were just pulled, so it
+      # has to be rebuilt here or it silently describes yesterday's directory
+      # -- and a stale work queue is worse than none, because it looks current.
+      # Neither script touches Airtable; both read the JSON on disk.
+      - name: Rebuild the source registry and the ChatGPT brief
+        run: |
+          node scripts/build-source-registry.js
+          node scripts/build-chatgpt-brief.js
+
       - name: Commit the refreshed directory
         run: |
-          git add village-notes/data/resources.json
+          git add village-notes/data/resources.json \
+                  scripts/source-registry.md \
+                  scripts/chatgpt-brief.md
           if git diff --cached --quiet; then
             echo "Directory already in sync; nothing to commit."
             exit 0

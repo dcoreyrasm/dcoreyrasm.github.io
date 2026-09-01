@@ -594,138 +594,138 @@ even when nothing changed. An unchanged listing that was checked today is
 worth far more to a family than one that was right in August and might not be
 now.
 
-  DOMAIN                             N  LAST VERIFIED      TRACKS
-  bgchartford.org                    5  never              Family & Childcare
-  ghymca.org                         5  never              Family & Childcare
-  ctoec.org                          3  never              Family & Childcare
-  resources.211childcare.org         1  never              Family & Childcare
-  search.211childcare.org            1  never              Family & Childcare
-  bgcg.org                           1  never              Family & Childcare
-  boysandgirlsclubofmilford.com      1  never              Family & Childcare
-  bgcridgefield.org                  1  never              Family & Childcare
-  bgcgnh.org                         1  never              Family & Childcare
-  calvinhilldaycare.org              1  never              Family & Childcare
-  bgcmeriden.org                     1  never              Family & Childcare
-  camphazenymca.org                  1  never              Family & Childcare
-  campjewell.org                     1  never              Family & Childcare
-  newingtonct.gov                    1  never              Family & Childcare
-  campsloane.org                     1  never              Family & Childcare
-  campwoodstock.org                  1  never              Family & Childcare
-  childcareaware.org                 1  never              Family & Childcare
-  commongroundct.org                 1  never              Family & Childcare
-  elicense.ct.gov                    1  never              Family & Childcare
-  ctheadstart.org                    1  never              Family & Childcare
-  groton-ct.gov                      1  never              Family & Childcare
-  easthartfordct.gov                 1  never              Family & Childcare
-  fairfieldrecreation.com            1  never              Family & Childcare
-  headstart.gov                      1  never              Family & Childcare
-  waterburyymca.org                  1  never              Family & Childcare
-  huskyhealthct.org                  1  never              Family & Childcare
-  jccnh.org                          1  never              Family & Childcare
-  windhamct.gov                      1  never              Family & Childcare
-  manchesterct.gov                   1  never              Family & Childcare
-  mandelljcc.org                     1  never              Family & Childcare
-  nmsnewhaven.org                    1  never              Family & Childcare
-  newtowncommunitycenter.org         1  never              Family & Childcare
-  medicine.yale.edu                  1  never              Family & Childcare
-  reddingct.gov                      1  never              Family & Childcare
-  rightathome.net                    1  never              Elder Care
-  stamfordjcc.org                    1  never              Family & Childcare
-  stamfordrecreation.com             1  never              Family & Childcare
-  bgcastamford.org                   1  never              Family & Childcare
-  hospice.com                        1  never              Elder Care
-  whitneycenter.com                  1  never              Elder Care
-  greenwichymca.org                  1  never              Family & Childcare
-  darien-ymca.org                    3  2026-08-25 (7d)    Family & Childcare
-  vergnano.institute.uconn.edu       3  2026-08-25 (7d)    Family & Childcare
-  leapforkids.org                    2  2026-08-25 (7d)    Family & Childcare
-  orange-ct.gov                      2  2026-08-25 (7d)    Family & Childcare
-  sigmacamp.org                      2  2026-08-25 (7d)    Family & Childcare
-  daddybackwardsentertainment.com    1  2026-08-25 (7d)    Family & Childcare
-  nbbymca.org                        1  2026-08-25 (7d)    Family & Childcare
-  afterschoolhq.com                  1  2026-08-25 (7d)    Family & Childcare
-  newhavenreads.org                  1  2026-08-25 (7d)    Family & Childcare
-  newhytes.org                       1  2026-08-25 (7d)    Family & Childcare
-  bridgeportct.gov                   1  2026-08-25 (7d)    Family & Childcare
-  townofstratford.recdesk.com        1  2026-08-25 (7d)    Family & Childcare
-  navy-stem.uconn.edu                1  2026-08-25 (7d)    Family & Childcare
-  hartford.edu                       1  2026-08-25 (7d)    Family & Childcare
-  wakemanclub.org                    1  2026-08-25 (7d)    Family & Childcare
-  onha.yale.edu                      1  2026-08-25 (7d)    Family & Childcare
-  yale.learningu.org                 1  2026-08-25 (7d)    Family & Childcare
-  ysph.yale.edu                      1  2026-08-25 (7d)    Family & Childcare
-  kindercare.com                     7  2026-08-26 (6d)    Family & Childcare
-  brightpathkids.com                 4  2026-08-26 (6d)    Family & Childcare
-  meridenymca.org                    4  2026-08-26 (6d)    Family & Childcare
-  idtech.com                         3  2026-08-26 (6d)    Family & Childcare
-  brighthorizons.com                 2  2026-08-26 (6d)    Family & Childcare
-  sterlingcommunitycenter.org        2  2026-08-26 (6d)    Family & Childcare
-  arethusafarmfoundation.org         1  2026-08-26 (6d)    Family & Childcare
-  ctburnsfoundation.org              1  2026-08-26 (6d)    Family & Childcare
-  bgcgcampaign.org                   1  2026-08-26 (6d)    Family & Childcare
-  epilepsyct.com                     1  2026-08-26 (6d)    Family & Childcare
-  crohnscolitisfoundation.org        1  2026-08-26 (6d)    Family & Childcare
-  elcct.org                          1  2026-08-26 (6d)    Family & Childcare
-  hfsc.org                           1  2026-08-26 (6d)    Family & Childcare
-  dogtopia.com                       5  2026-08-27 (5d)    Pet Care & Resources
-  campbowwow.com                     3  2026-08-27 (5d)    Pet Care & Resources
-  codeninjas.com                     2  2026-08-27 (5d)    Family & Childcare
-  centralbarkusa.com                 1  2026-08-27 (5d)    Pet Care & Resources
-  houndstownusa.com                  1  2026-08-27 (5d)    Pet Care & Resources
-  noanimalleftunfedinc.com           1  2026-08-27 (5d)    Pet Care & Resources
-  pawhavenct.com                     1  2026-08-27 (5d)    Pet Care & Resources
-  stores.petsmart.com                1  2026-08-27 (5d)    Pet Care & Resources
-  poaspay.org                        1  2026-08-27 (5d)    Pet Care & Resources
-  rockyhillct.gov                    1  2026-08-27 (5d)    Pet Care & Resources
-  southingtonct.gov                  1  2026-08-27 (5d)    Pet Care & Resources
-  thefurryinndogboardingdaycare.com   1  2026-08-27 (5d)    Pet Care & Resources
-  wagcentralct.com                   1  2026-08-27 (5d)    Pet Care & Resources
-  wagsdaycamp.com                    1  2026-08-27 (5d)    Pet Care & Resources
-  petsafetyct.org                    1  2026-08-28 (4d)    Pet Care & Resources
-  medvet.com                         1  2026-08-28 (4d)    Pet Care & Resources
-  nevccc.com                         1  2026-08-28 (4d)    Pet Care & Resources
-  newtownvets.com                    1  2026-08-28 (4d)    Pet Care & Resources
-  masonicare.org                     3  2026-08-29 (3d)    Elder Care
-  alz.org                            1  2026-08-29 (3d)    Elder Care
-  ctvetcenter.com                    1  2026-08-29 (3d)    Pet Care & Resources
-  coventry-ct.gov                    1  2026-08-29 (3d)    Elder Care
-  hartfordhealthcare.org             1  2026-08-29 (3d)    Elder Care
-  marywade.org                       1  2026-08-29 (3d)    Elder Care
-  milfordctseniorcenter.com          1  2026-08-29 (3d)    Elder Care
-  nhlegal.org                        1  2026-08-29 (3d)    Elder Care
-  newoppinc.org                      1  2026-08-29 (3d)    Elder Care
-  safefuturesct.org                  1  2026-08-29 (3d)    Pet Care & Resources
-  woodbridgect.org                   1  2026-08-29 (3d)    Elder Care
-  cccymca.org                        6  2026-08-30 (2d)    Family & Childcare
-  aoascc.org                         1  2026-08-30 (2d)    Elder Care
-  hamden.com                         1  2026-08-30 (2d)    Elder Care
-  cthomecare.com                     1  2026-08-30 (2d)    Elder Care
-  gnhtd.org                          1  2026-08-30 (2d)    Elder Care
-  monroect.gov                       1  2026-08-30 (2d)    Elder Care
-  partnershipsadc.org                1  2026-08-30 (2d)    Elder Care
-  seniormealsct.org                  1  2026-08-30 (2d)    Elder Care
-  portal.ct.gov                     13  2026-08-31 (1d)    Elder Care, Family & Childcare, Pet Care & Resources
-  mozaicsl.org                       6  2026-08-31 (1d)    Elder Care
-  cthumane.org                       5  2026-08-31 (1d)    Pet Care & Resources
-  valuepetvet.com                    3  2026-08-31 (1d)    Pet Care & Resources
-  centralpetvet.com                  2  2026-08-31 (1d)    Pet Care & Resources
-  pieperveterinary.com               2  2026-08-31 (1d)    Pet Care & Resources
-  vcahospitals.com                   2  2026-08-31 (1d)    Pet Care & Resources
-  benchmarkseniorliving.com          1  2026-08-31 (1d)    Elder Care
-  cuvs.org                           1  2026-08-31 (1d)    Pet Care & Resources
-  daws.org                           1  2026-08-31 (1d)    Pet Care & Resources
-  darienct.gov                       1  2026-08-31 (1d)    Elder Care
-  granby-ct.gov                      1  2026-08-31 (1d)    Elder Care
-  ncaaact.org                        1  2026-08-31 (1d)    Elder Care
-  nutmegclinic.org                   1  2026-08-31 (1d)    Pet Care & Resources
-  townofprospect.gov                 1  2026-08-31 (1d)    Elder Care
-  seniorresourcesec.org              1  2026-08-31 (1d)    Elder Care
-  swcaa.org                          1  2026-08-31 (1d)    Elder Care
-  starelief.org                      1  2026-08-31 (1d)    Pet Care & Resources
-  everyanimalmatters.org             1  2026-08-31 (1d)    Pet Care & Resources
-  veg.com                            1  2026-08-31 (1d)    Pet Care & Resources
-  vecofcanton.com                    1  2026-08-31 (1d)    Pet Care & Resources
-  wcaaa.org                          1  2026-08-31 (1d)    Elder Care
+  DOMAIN                             N  VERIFIED     TRACKS
+  bgchartford.org                    5  never        Family & Childcare
+  ghymca.org                         5  never        Family & Childcare
+  ctoec.org                          3  never        Family & Childcare
+  resources.211childcare.org         1  never        Family & Childcare
+  search.211childcare.org            1  never        Family & Childcare
+  bgcg.org                           1  never        Family & Childcare
+  boysandgirlsclubofmilford.com      1  never        Family & Childcare
+  bgcridgefield.org                  1  never        Family & Childcare
+  bgcgnh.org                         1  never        Family & Childcare
+  calvinhilldaycare.org              1  never        Family & Childcare
+  bgcmeriden.org                     1  never        Family & Childcare
+  camphazenymca.org                  1  never        Family & Childcare
+  campjewell.org                     1  never        Family & Childcare
+  newingtonct.gov                    1  never        Family & Childcare
+  campsloane.org                     1  never        Family & Childcare
+  campwoodstock.org                  1  never        Family & Childcare
+  childcareaware.org                 1  never        Family & Childcare
+  commongroundct.org                 1  never        Family & Childcare
+  elicense.ct.gov                    1  never        Family & Childcare
+  ctheadstart.org                    1  never        Family & Childcare
+  groton-ct.gov                      1  never        Family & Childcare
+  easthartfordct.gov                 1  never        Family & Childcare
+  fairfieldrecreation.com            1  never        Family & Childcare
+  headstart.gov                      1  never        Family & Childcare
+  waterburyymca.org                  1  never        Family & Childcare
+  huskyhealthct.org                  1  never        Family & Childcare
+  jccnh.org                          1  never        Family & Childcare
+  windhamct.gov                      1  never        Family & Childcare
+  manchesterct.gov                   1  never        Family & Childcare
+  mandelljcc.org                     1  never        Family & Childcare
+  nmsnewhaven.org                    1  never        Family & Childcare
+  newtowncommunitycenter.org         1  never        Family & Childcare
+  medicine.yale.edu                  1  never        Family & Childcare
+  reddingct.gov                      1  never        Family & Childcare
+  rightathome.net                    1  never        Elder Care
+  stamfordjcc.org                    1  never        Family & Childcare
+  stamfordrecreation.com             1  never        Family & Childcare
+  bgcastamford.org                   1  never        Family & Childcare
+  hospice.com                        1  never        Elder Care
+  whitneycenter.com                  1  never        Elder Care
+  greenwichymca.org                  1  never        Family & Childcare
+  darien-ymca.org                    3  2026-08-25   Family & Childcare
+  vergnano.institute.uconn.edu       3  2026-08-25   Family & Childcare
+  leapforkids.org                    2  2026-08-25   Family & Childcare
+  orange-ct.gov                      2  2026-08-25   Family & Childcare
+  sigmacamp.org                      2  2026-08-25   Family & Childcare
+  daddybackwardsentertainment.com    1  2026-08-25   Family & Childcare
+  nbbymca.org                        1  2026-08-25   Family & Childcare
+  afterschoolhq.com                  1  2026-08-25   Family & Childcare
+  newhavenreads.org                  1  2026-08-25   Family & Childcare
+  newhytes.org                       1  2026-08-25   Family & Childcare
+  bridgeportct.gov                   1  2026-08-25   Family & Childcare
+  townofstratford.recdesk.com        1  2026-08-25   Family & Childcare
+  navy-stem.uconn.edu                1  2026-08-25   Family & Childcare
+  hartford.edu                       1  2026-08-25   Family & Childcare
+  wakemanclub.org                    1  2026-08-25   Family & Childcare
+  onha.yale.edu                      1  2026-08-25   Family & Childcare
+  yale.learningu.org                 1  2026-08-25   Family & Childcare
+  ysph.yale.edu                      1  2026-08-25   Family & Childcare
+  kindercare.com                     7  2026-08-26   Family & Childcare
+  brightpathkids.com                 4  2026-08-26   Family & Childcare
+  meridenymca.org                    4  2026-08-26   Family & Childcare
+  idtech.com                         3  2026-08-26   Family & Childcare
+  brighthorizons.com                 2  2026-08-26   Family & Childcare
+  sterlingcommunitycenter.org        2  2026-08-26   Family & Childcare
+  arethusafarmfoundation.org         1  2026-08-26   Family & Childcare
+  ctburnsfoundation.org              1  2026-08-26   Family & Childcare
+  bgcgcampaign.org                   1  2026-08-26   Family & Childcare
+  epilepsyct.com                     1  2026-08-26   Family & Childcare
+  crohnscolitisfoundation.org        1  2026-08-26   Family & Childcare
+  elcct.org                          1  2026-08-26   Family & Childcare
+  hfsc.org                           1  2026-08-26   Family & Childcare
+  dogtopia.com                       5  2026-08-27   Pet Care & Resources
+  campbowwow.com                     3  2026-08-27   Pet Care & Resources
+  codeninjas.com                     2  2026-08-27   Family & Childcare
+  centralbarkusa.com                 1  2026-08-27   Pet Care & Resources
+  houndstownusa.com                  1  2026-08-27   Pet Care & Resources
+  noanimalleftunfedinc.com           1  2026-08-27   Pet Care & Resources
+  pawhavenct.com                     1  2026-08-27   Pet Care & Resources
+  stores.petsmart.com                1  2026-08-27   Pet Care & Resources
+  poaspay.org                        1  2026-08-27   Pet Care & Resources
+  rockyhillct.gov                    1  2026-08-27   Pet Care & Resources
+  southingtonct.gov                  1  2026-08-27   Pet Care & Resources
+  thefurryinndogboardingdaycare.com   1  2026-08-27   Pet Care & Resources
+  wagcentralct.com                   1  2026-08-27   Pet Care & Resources
+  wagsdaycamp.com                    1  2026-08-27   Pet Care & Resources
+  petsafetyct.org                    1  2026-08-28   Pet Care & Resources
+  medvet.com                         1  2026-08-28   Pet Care & Resources
+  nevccc.com                         1  2026-08-28   Pet Care & Resources
+  newtownvets.com                    1  2026-08-28   Pet Care & Resources
+  masonicare.org                     3  2026-08-29   Elder Care
+  alz.org                            1  2026-08-29   Elder Care
+  ctvetcenter.com                    1  2026-08-29   Pet Care & Resources
+  coventry-ct.gov                    1  2026-08-29   Elder Care
+  hartfordhealthcare.org             1  2026-08-29   Elder Care
+  marywade.org                       1  2026-08-29   Elder Care
+  milfordctseniorcenter.com          1  2026-08-29   Elder Care
+  nhlegal.org                        1  2026-08-29   Elder Care
+  newoppinc.org                      1  2026-08-29   Elder Care
+  safefuturesct.org                  1  2026-08-29   Pet Care & Resources
+  woodbridgect.org                   1  2026-08-29   Elder Care
+  cccymca.org                        6  2026-08-30   Family & Childcare
+  aoascc.org                         1  2026-08-30   Elder Care
+  hamden.com                         1  2026-08-30   Elder Care
+  cthomecare.com                     1  2026-08-30   Elder Care
+  gnhtd.org                          1  2026-08-30   Elder Care
+  monroect.gov                       1  2026-08-30   Elder Care
+  partnershipsadc.org                1  2026-08-30   Elder Care
+  seniormealsct.org                  1  2026-08-30   Elder Care
+  portal.ct.gov                     13  2026-08-31   Elder Care, Family & Childcare, Pet Care & Resources
+  mozaicsl.org                       6  2026-08-31   Elder Care
+  cthumane.org                       5  2026-08-31   Pet Care & Resources
+  valuepetvet.com                    3  2026-08-31   Pet Care & Resources
+  centralpetvet.com                  2  2026-08-31   Pet Care & Resources
+  pieperveterinary.com               2  2026-08-31   Pet Care & Resources
+  vcahospitals.com                   2  2026-08-31   Pet Care & Resources
+  benchmarkseniorliving.com          1  2026-08-31   Elder Care
+  cuvs.org                           1  2026-08-31   Pet Care & Resources
+  daws.org                           1  2026-08-31   Pet Care & Resources
+  darienct.gov                       1  2026-08-31   Elder Care
+  granby-ct.gov                      1  2026-08-31   Elder Care
+  ncaaact.org                        1  2026-08-31   Elder Care
+  nutmegclinic.org                   1  2026-08-31   Pet Care & Resources
+  townofprospect.gov                 1  2026-08-31   Elder Care
+  seniorresourcesec.org              1  2026-08-31   Elder Care
+  swcaa.org                          1  2026-08-31   Elder Care
+  starelief.org                      1  2026-08-31   Pet Care & Resources
+  everyanimalmatters.org             1  2026-08-31   Pet Care & Resources
+  veg.com                            1  2026-08-31   Pet Care & Resources
+  vecofcanton.com                    1  2026-08-31   Pet Care & Resources
+  wcaaa.org                          1  2026-08-31   Elder Care
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 

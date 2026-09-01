@@ -93,9 +93,14 @@ const total = data.resources.length;
 const pct = n => Math.round((100 * n) / total);
 const never = rows.filter(r => r.age === null).length;
 
+// The date only, never "N days ago". Age is what orders the list, but printing
+// it would change this file every time the clock rolled past midnight, and the
+// sync would commit a diff that means nothing. The relative order is unaffected
+// by the passage of time -- every age shifts together -- so the queue stays
+// right while the file stays still.
 const table = rows.map(r => {
-  const when = r.verified ? `${r.verified} (${r.age}d)` : 'never';
-  return `  ${r.domain.padEnd(32)} ${String(r.listings).padStart(3)}  ${when.padEnd(18)} ${r.tracks}`;
+  const when = r.verified || 'never';
+  return `  ${r.domain.padEnd(32)} ${String(r.listings).padStart(3)}  ${when.padEnd(12)} ${r.tracks}`;
 }).join('\n');
 
 const hubs = readHubs();
@@ -126,7 +131,7 @@ even when nothing changed. An unchanged listing that was checked today is
 worth far more to a family than one that was right in August and might not be
 now.
 
-  ${'DOMAIN'.padEnd(32)} ${'N'.padStart(3)}  ${'LAST VERIFIED'.padEnd(18)} TRACKS
+  ${'DOMAIN'.padEnd(32)} ${'N'.padStart(3)}  ${'VERIFIED'.padEnd(12)} TRACKS
 ${table}
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
