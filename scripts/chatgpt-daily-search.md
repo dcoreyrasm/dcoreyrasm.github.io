@@ -8,9 +8,10 @@ edit this one.
 
 ## Why this replaces the old search
 
-Two things changed on 2026-08-27. There is a third track, Pet Care & Resources,
-with nineteen categories and no listings in it at all. And measuring what the
-directory actually holds changed what is worth searching for.
+Two things changed. There is a fourth track, Teens & High School, with six
+categories and no listings in it at all -- Pet Care, which was the empty one
+when this was last rewritten, is now real. And measuring what the directory
+actually holds, rather than assuming, changed what is worth searching for.
 
 The headline: **the directory is broad and shallow.** The breadth is real; the
 depth behind it is not. The exact figures are measured on every sync and
@@ -41,29 +42,65 @@ you record it. What follows is what to go looking for.
 
 Work in this priority order. Do not skip to the easy one.
 
-1. PET CARE & RESOURCES — the new track, currently empty.
+1. TEENS & HIGH SCHOOL — started, and lopsided.
 
-   A visitor can select it today and get nothing, which is worse than not
-   offering it. Fill it first.
+   The technical high schools and interdistrict magnets are in. What is missing
+   is everything a family compares them AGAINST, and the routes out of school:
 
-   Start with what people search for in a crisis, because that is when a
-   directory earns its place: emergency and after-hours veterinary hospitals,
-   then low-cost and income-qualified clinics, then spay/neuter and vaccination
-   programmes. Municipal animal control, humane societies and regional rescues
-   are good spines — they publish real hours and often run the assistance
-   programmes too.
+     High School (Public)        the comprehensive high school in each town --
+                                 the default option, and the one most families
+                                 are actually choosing between
+     High School (Private)       independent and parochial
+     College Access / Readiness  Upward Bound, GEAR UP, college-access
+                                 nonprofits, the state's own programmes
 
-   Then the everyday: dog daycare, boarding, in-home sitting, walking,
-   grooming, training. Start in the towns the directory already covers, so a
-   family searching their own town finds both kinds of care in one place.
+   Those three categories are empty. A family looking at a magnet has nothing
+   to weigh it against, which makes the track misleading rather than merely
+   thin -- it currently reads as though specialty schools are the only option.
 
-   Animals Accepted is not optional on this track. A kennel that takes only
-   dogs is no use to somebody with a rabbit, and it is the first thing an owner
-   filters on. If the provider does not say, leave it blank — do not assume dogs.
+   Start with the towns the directory already covers well, so a family
+   searching their own town sees the local high school beside the magnet.
+   Then the routes out: registered apprenticeships and youth employment
+   through the regional workforce boards, where there is one of each so far.
 
-2. ELDER CARE — ten listings, about one per category.
+   Read the track boundary in the recording instructions before you start. It
+   is the one most likely to go wrong: a summer camp for fifteen-year-olds is
+   still Family & Childcare, and an after-school club is still Afterschool
+   Enrichment. This track is the school itself, or a route into work or
+   college. Nothing else.
 
-   Half of what this directory claims to be, and it is nearly empty. The five
+   Grade Range and School District are this track's equivalent of Animals
+   Accepted -- the fields a family filters on first. Record both, and use
+   Program Setting to say public, magnet, charter or private.
+
+2. THE 424 LISTINGS WITH NO WEBSITE — a bounded, finishable job.
+
+   Every listing missing a URL came from one bulk import of Office of Early
+   Childhood childcare providers. Every record research has written carries
+   one. So this is not a habit to fix; it is a known set to work through, and
+   it has an end.
+
+   It matters more than its dullness suggests. A listing with no URL cannot be
+   re-checked by anyone, ever, and never enters the standing source registry --
+   so no scheduled re-read will reach it however long the directory runs.
+   Finishing this is what takes the re-check schedule from covering a third of
+   the directory to covering all of it.
+
+   Find them in Airtable: Moderation Status is Published, Submitted By starts
+   "Connecticut Office of Early Childhood", Website is empty. Work by town so
+   you can use one municipal or state page for several at once.
+
+   The rules on which URLs count are in the recording instructions and they
+   are strict: provider-owned or official only, never a directory or review
+   site, and never guessed from the name. An empty Website is better than a
+   wrong one. Record Last Verified as you go -- that is what puts the site into
+   the re-check queue.
+
+3. ELDER CARE — real now, but still thin per category.
+
+   Half of what this directory claims to be. The measured count is below; the
+   shape of the gap is that some categories have several listings and others
+   have one or none, so aim for even coverage rather than volume. The five
    Connecticut Area Agencies on Aging are the obvious spine; each publishes
    directories of home care agencies, adult day programmes, congregate meal
    sites and caregiver support groups. Assisted living, memory care and skilled
@@ -72,7 +109,7 @@ Work in this priority order. Do not skip to the easy one.
    Aim to get every elder category into double figures before adding a
    twentieth childcare centre.
 
-3. DEPTH ON LISTINGS THAT ALREADY EXIST — the biggest gap of all.
+4. DEPTH ON LISTINGS THAT ALREADY EXIST — hours, cost, waitlists.
 
    Hours and Website are the specific promise on the front of the page, and it
    is mostly unkept. See the measured section below for where that stands now
@@ -92,7 +129,7 @@ Work in this priority order. Do not skip to the easy one.
    If you cannot find the real thing, leave the boilerplate. Do not paraphrase
    it into something that sounds more specific than what you actually know.
 
-4. THE SIXTY TOWNS WITH NOTHING.
+5. THE TOWNS WITH NOTHING.
 
    Well under half of Connecticut's 169 municipalities appear -- the measured
    count is below. Work from the state's own
