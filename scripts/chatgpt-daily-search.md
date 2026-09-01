@@ -9,9 +9,9 @@ edit this one.
 ## Why this replaces the old search
 
 Two things changed. There is a fourth track, Teens & High School, with six
-categories and no listings in it at all -- Pet Care, which was the empty one
-when this was last rewritten, is now real. And measuring what the directory
-actually holds, rather than assuming, changed what is worth searching for.
+categories -- Pet Care, which was the empty one when this was last rewritten,
+is now real. And measuring what the directory actually holds, rather than
+assuming, changed what is worth searching for.
 
 The headline: **the directory is broad and shallow.** The breadth is real; the
 depth behind it is not. The exact figures are measured on every sync and
@@ -73,12 +73,13 @@ Work in this priority order. Do not skip to the easy one.
    Accepted -- the fields a family filters on first. Record both, and use
    Program Setting to say public, magnet, charter or private.
 
-2. THE 424 LISTINGS WITH NO WEBSITE — a bounded, finishable job.
+2. THE LISTINGS WITH NO WEBSITE — a bounded, finishable job.
 
    Every listing missing a URL came from one bulk import of Office of Early
    Childhood childcare providers. Every record research has written carries
    one. So this is not a habit to fix; it is a known set to work through, and
-   it has an end.
+   it has an end. The measured section below says how many are left; that
+   number falls as you work, so trust it and not any figure typed here.
 
    It matters more than its dullness suggests. A listing with no URL cannot be
    re-checked by anyone, ever, and never enters the standing source registry --
