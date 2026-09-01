@@ -42,18 +42,26 @@ you record it. What follows is what to go looking for.
 
 Work in this priority order. Do not skip to the easy one.
 
-1. TEENS & HIGH SCHOOL — the new track, currently empty.
+1. TEENS & HIGH SCHOOL — started, and lopsided.
 
-   A visitor can select it today and get nothing, which is worse than not
-   offering it. Fill it first.
+   The technical high schools and interdistrict magnets are in. What is missing
+   is everything a family compares them AGAINST, and the routes out of school:
 
-   Start with the schools themselves, because that is what a family is choosing
-   between: the seventeen CT Technical Education and Career System schools,
-   the interdistrict magnets, the regional agricultural science programmes, and
-   the comprehensive public high schools in the towns the directory already
-   covers well. Then the routes out of them -- registered apprenticeships,
-   youth employment through the regional workforce boards, and college-access
-   programmes.
+     High School (Public)        the comprehensive high school in each town --
+                                 the default option, and the one most families
+                                 are actually choosing between
+     High School (Private)       independent and parochial
+     College Access / Readiness  Upward Bound, GEAR UP, college-access
+                                 nonprofits, the state's own programmes
+
+   Those three categories are empty. A family looking at a magnet has nothing
+   to weigh it against, which makes the track misleading rather than merely
+   thin -- it currently reads as though specialty schools are the only option.
+
+   Start with the towns the directory already covers well, so a family
+   searching their own town sees the local high school beside the magnet.
+   Then the routes out: registered apprenticeships and youth employment
+   through the regional workforce boards, where there is one of each so far.
 
    Read the track boundary in the recording instructions before you start. It
    is the one most likely to go wrong: a summer camp for fifteen-year-olds is
