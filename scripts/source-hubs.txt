@@ -1,0 +1,27 @@
+# Directory and hub sites worth re-reading on a schedule even though they
+# rarely become a listing themselves. They publish new programmes continuously,
+# so they are where NEW resources appear rather than where one resource lives.
+#
+# The rest of the registry is generated from the Website field of listings we
+# already hold -- this file is the part a machine cannot infer, because a hub
+# that produced no listing leaves no trace in the base.
+#
+# Format:  domain  |  track  |  what it publishes
+# Lines starting with # are ignored. Keep it short; a list nobody reads is
+# worse than no list.
+
+portal.ct.gov            | All            | OEC, DSS, Aging & Disability Services, Agriculture, Veterans Affairs. The single highest-yield source in the directory.
+211ct.org                | All            | Statewide referral database; new programmes appear here before they appear anywhere else.
+ctoec.org                | Family         | Office of Early Childhood -- licensing, Care 4 Kids, Birth to Three.
+aoascc.org               | Elder Care     | Agency on Aging of South Central CT
+swcaa.org                | Elder Care     | Southwestern CT Agency on Aging
+wcaaa.org                | Elder Care     | Western CT Area Agency on Aging
+seniorresourcesec.org    | Elder Care     | Senior Resources Agency on Aging (eastern CT)
+ncaaact.org              | Elder Care     | North Central Area Agency on Aging
+cthumane.org             | Pet Care       | Connecticut Humane Society -- clinics, adoption, assistance programmes
+portal.ct.gov/DOAG       | Pet Care       | Animal Population Control Program
+cttech.org               | Teens          | CT Technical Education and Career System -- the 17 technical high schools
+portal.ct.gov/SDE        | Teens          | State Department of Education -- magnet, charter, choice
+ctdol.state.ct.us        | Teens          | Department of Labor -- youth employment, apprenticeship
+apprenticeship.ct.gov    | Teens          | Registered apprenticeship programmes
+ctohe.org                | Teens          | Office of Higher Education -- college access, scholarships
