@@ -6,17 +6,17 @@ Measured from the published listings, so it is never out of date.
 ```
 WHERE THE DIRECTORY IS THIN — measured, not remembered.
 
-666 listings across 120 Connecticut towns of 169.
+688 listings across 122 Connecticut towns of 169.
 
 That breadth is real. The depth behind it is the problem:
 
-  a website              242 / 666   36%   the single most valuable gap: without a URL nobody can ever re-check the listing
-  operating hours        149 / 666   22%   the specific promise on the front of the page
-  a real cost note        99 / 666   15%   excludes the state-fee boilerplate
-  a real waitlist note    57 / 666    9%   excludes the "contact the program directly" boilerplate
-  a verified date        178 / 666   27%   without one we cannot tell fresh from forgotten
-  a phone or email       624 / 666   94%
-  services tagged        642 / 666   96%   what makes a listing findable beyond its one category
+  a website              268 / 688   39%   the single most valuable gap: without a URL nobody can ever re-check the listing
+  operating hours        150 / 688   22%   the specific promise on the front of the page
+  a real cost note       100 / 688   15%   excludes the state-fee boilerplate
+  a real waitlist note    57 / 688    8%   excludes the "contact the program directly" boilerplate
+  a verified date        204 / 688   30%   without one we cannot tell fresh from forgotten
+  a phone or email       641 / 688   93%
+  services tagged        650 / 688   94%   what makes a listing findable beyond its one category
 
 A listing can carry a value and still say nothing. Two boilerplate lines were
 written onto hundreds of records by the original state import -- "Contact the
@@ -29,10 +29,10 @@ that sounds more specific than what you actually know.
 
 WEBSITE COVERAGE BY TRACK
 
-  Family & Childcare      539 listings, 115 with a website (21%)
-  Elder Care               49 listings,  49 with a website (100%)
+  Family & Childcare      541 listings, 121 with a website (22%)
+  Elder Care               51 listings,  51 with a website (100%)
+  Teens & High School      49 listings,  49 with a website (100%)
   Pet Care & Resources     47 listings,  47 with a website (100%)
-  Teens & High School      31 listings,  31 with a website (100%)
 
 WHY THE WEBSITE COLUMN COMES FIRST
 
@@ -43,10 +43,10 @@ Every other gap here can be filled later. That one compounds.
 
 AND THE GAP IS NOT WHERE IT LOOKS
 
-424 listings have no website. 424 of them -- every single one -- came from the
+420 listings have no website. 420 of them -- every single one -- came from the
 one bulk import of Connecticut Office of Early Childhood childcare providers,
-which arrived without URLs. Of the 228 records written by
-research, 228 carry a website: 100%.
+which arrived without URLs. Of the 250 records written by
+research, 250 carry a website: 100%.
 
 So this is not a habit to correct. It is a bounded backfill of a known set,
 and the set is licensed childcare providers whose details came from the state.
@@ -55,5 +55,5 @@ lookup has a record. Work through them by town, and record Last Verified as
 you go so the standing registry starts reaching them.
 
 That is worth more per hour than finding a new listing, because it converts
-424 permanently unverifiable rows into rows that can be maintained.
+420 permanently unverifiable rows into rows that can be maintained.
 ```

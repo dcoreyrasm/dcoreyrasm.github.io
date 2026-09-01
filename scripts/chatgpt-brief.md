@@ -723,7 +723,6 @@ now.
   ysph.yale.edu                      1  2026-08-25   Family & Childcare
   kindercare.com                     7  2026-08-26   Family & Childcare
   brightpathkids.com                 4  2026-08-26   Family & Childcare
-  meridenymca.org                    4  2026-08-26   Family & Childcare
   idtech.com                         3  2026-08-26   Family & Childcare
   brighthorizons.com                 2  2026-08-26   Family & Childcare
   sterlingcommunitycenter.org        2  2026-08-26   Family & Childcare
@@ -770,7 +769,6 @@ now.
   monroect.gov                       1  2026-08-30   Elder Care
   partnershipsadc.org                1  2026-08-30   Elder Care
   seniormealsct.org                  1  2026-08-30   Elder Care
-  portal.ct.gov                     16  2026-08-31   Elder Care, Family & Childcare, Pet Care & Resources, Teens & High School
   mozaicsl.org                       6  2026-08-31   Elder Care
   cthumane.org                       5  2026-08-31   Pet Care & Resources
   masonicare.org                     4  2026-08-31   Elder Care
@@ -824,6 +822,30 @@ now.
   wams.waterbury.k12.ct.us           1  2026-08-31   Teens & High School
   wcaaa.org                          1  2026-08-31   Elder Care
   windham.cttech.org                 1  2026-08-31   Teens & High School
+  portal.ct.gov                     17  2026-09-01   Elder Care, Family & Childcare, Pet Care & Resources, Teens & High School
+  meridenymca.org                    5  2026-09-01   Family & Childcare
+  capitalworkforce.org               2  2026-09-01   Teens & High School
+  hartfordschools.org                2  2026-09-01   Teens & High School
+  bulkeley.hartfordschools.org       1  2026-09-01   Teens & High School
+  clcfc.org                          1  2026-09-01   Family & Childcare
+  ewib.org                           1  2026-09-01   Teens & High School
+  hartfordct.gov                     1  2026-09-01   Family & Childcare
+  career.nhps.net                    1  2026-09-01   Teens & High School
+  hopkins.edu                        1  2026-09-01   Teens & High School
+  jameshillhouse.nhps.net            1  2026-09-01   Teens & High School
+  metropolitan.nhps.net              1  2026-09-01   Teens & High School
+  mgelc.com                          1  2026-09-01   Family & Childcare
+  newhavenacademy.nhps.net           1  2026-09-01   Teens & High School
+  newhavenct.gov                     1  2026-09-01   Family & Childcare
+  noblehorizons.org                  1  2026-09-01   Elder Care
+  elc.norwichpublicschools.org       1  2026-09-01   Family & Childcare
+  sound.nhps.net                     1  2026-09-01   Teens & High School
+  stamfordhigh.org                   1  2026-09-01   Teens & High School
+  thenathanielwitherell.org          1  2026-09-01   Elder Care
+  workplace.org                      1  2026-09-01   Teens & High School
+  westhillweb.com                    1  2026-09-01   Teens & High School
+  wilburcross.nhps.net               1  2026-09-01   Teens & High School
+  workforcealliance.biz              1  2026-09-01   Teens & High School
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -848,9 +870,9 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 242 of 666 listings (36%) carry a Website, so
+Only 268 of 688 listings (39%) carry a Website, so
 everything above is built from that third of the directory. The other
-424 have no URL recorded at all, which means nobody -- not you,
+420 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
 unverifiable in their current state.
 
@@ -858,7 +880,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-40 of the 161 domains here have never had a Last Verified on
+40 of the 183 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 
@@ -869,17 +891,17 @@ WHERE THE DIRECTORY IS THIN
 
 WHERE THE DIRECTORY IS THIN — measured, not remembered.
 
-666 listings across 120 Connecticut towns of 169.
+688 listings across 122 Connecticut towns of 169.
 
 That breadth is real. The depth behind it is the problem:
 
-  a website              242 / 666   36%   the single most valuable gap: without a URL nobody can ever re-check the listing
-  operating hours        149 / 666   22%   the specific promise on the front of the page
-  a real cost note        99 / 666   15%   excludes the state-fee boilerplate
-  a real waitlist note    57 / 666    9%   excludes the "contact the program directly" boilerplate
-  a verified date        178 / 666   27%   without one we cannot tell fresh from forgotten
-  a phone or email       624 / 666   94%
-  services tagged        642 / 666   96%   what makes a listing findable beyond its one category
+  a website              268 / 688   39%   the single most valuable gap: without a URL nobody can ever re-check the listing
+  operating hours        150 / 688   22%   the specific promise on the front of the page
+  a real cost note       100 / 688   15%   excludes the state-fee boilerplate
+  a real waitlist note    57 / 688    8%   excludes the "contact the program directly" boilerplate
+  a verified date        204 / 688   30%   without one we cannot tell fresh from forgotten
+  a phone or email       641 / 688   93%
+  services tagged        650 / 688   94%   what makes a listing findable beyond its one category
 
 A listing can carry a value and still say nothing. Two boilerplate lines were
 written onto hundreds of records by the original state import -- "Contact the
@@ -892,10 +914,10 @@ that sounds more specific than what you actually know.
 
 WEBSITE COVERAGE BY TRACK
 
-  Family & Childcare      539 listings, 115 with a website (21%)
-  Elder Care               49 listings,  49 with a website (100%)
+  Family & Childcare      541 listings, 121 with a website (22%)
+  Elder Care               51 listings,  51 with a website (100%)
+  Teens & High School      49 listings,  49 with a website (100%)
   Pet Care & Resources     47 listings,  47 with a website (100%)
-  Teens & High School      31 listings,  31 with a website (100%)
 
 WHY THE WEBSITE COLUMN COMES FIRST
 
@@ -906,10 +928,10 @@ Every other gap here can be filled later. That one compounds.
 
 AND THE GAP IS NOT WHERE IT LOOKS
 
-424 listings have no website. 424 of them -- every single one -- came from the
+420 listings have no website. 420 of them -- every single one -- came from the
 one bulk import of Connecticut Office of Early Childhood childcare providers,
-which arrived without URLs. Of the 228 records written by
-research, 228 carry a website: 100%.
+which arrived without URLs. Of the 250 records written by
+research, 250 carry a website: 100%.
 
 So this is not a habit to correct. It is a bounded backfill of a known set,
 and the set is licensed childcare providers whose details came from the state.
@@ -918,5 +940,5 @@ lookup has a record. Work through them by town, and record Last Verified as
 you go so the standing registry starts reaching them.
 
 That is worth more per hour than finding a new listing, because it converts
-424 permanently unverifiable rows into rows that can be maintained.
+420 permanently unverifiable rows into rows that can be maintained.
 ```

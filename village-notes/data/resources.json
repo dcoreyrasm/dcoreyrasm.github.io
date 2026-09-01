@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-01T04:13:19.835Z",
+  "generated": "2026-09-01T06:54:41.116Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 666,
+  "count": 688,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -23,6 +23,7 @@
     "Birth-to-Three / Early Intervention",
     "Caregiver Support Group",
     "Center-Based Daycare",
+    "College Access / Readiness",
     "Companion Services",
     "Dog Daycare",
     "Dog Park",
@@ -32,6 +33,8 @@
     "Emergency Pet Foster Care",
     "Emergency Veterinary Care",
     "Geriatric Care Manager",
+    "High School (Private)",
+    "High School (Public)",
     "Home Daycare (Licensed)",
     "Hospice / Palliative Care",
     "In-Home Caregiver / Home Health Aide",
@@ -103,6 +106,7 @@
     "Enfield",
     "Fairfield",
     "Farmington",
+    "Franklin",
     "Glastonbury",
     "Granby",
     "Greenwich",
@@ -152,6 +156,7 @@
     "Redding",
     "Ridgefield",
     "Rocky Hill",
+    "Salisbury",
     "Scotland",
     "Seymour",
     "Sharon",
@@ -2145,6 +2150,26 @@
       ]
     },
     {
+      "id": "recF88GSgpwRQGoqW",
+      "name": "Bulkeley High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Comprehensive Hartford public high school. The current district-owned site highlights Freshman Academy and two career pathways: Leadership and Public Service, and Computer Science.",
+      "town": "Hartford",
+      "address": "300 Wethersfield Avenue, Hartford, CT 06114",
+      "website": "https://bulkeley.hartfordschools.org/",
+      "contact": "860-695-1009",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "schoolDistrict": "Hartford Public Schools",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration"
+      ]
+    },
+    {
       "id": "recpG0YbRF0fCoGlP",
       "name": "Bullard-Havens Technical High School",
       "track": "Teens & High School",
@@ -2539,6 +2564,41 @@
       "notes": "FY26 state-funded spaces: 47 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 1722. Local partner: Northeast Early Childhood Council (NECC) -- Kristine Cicchetti | mrscicch95@sbcglobal.net | 860-431-0830. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "recGPWFRoLikD0kXV",
+      "name": "Capital Workforce Partners Summer Youth Employment & Learning Program",
+      "track": "Teens & High School",
+      "category": "Youth Employment Program",
+      "specificType": "Capital Workforce Partners' Summer Youth Employment & Learning Program provides internships for youth ages 14-24 in North Central Connecticut and is part of CWP's current youth-program portfolio.",
+      "town": "Hartford",
+      "address": "350 Church Street, Hartford, CT 06103",
+      "website": "https://capitalworkforce.org/youth-programs/",
+      "submittedBy": "Village Notes Research",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "lastVerified": "2026-09-01",
+      "teenOpportunity": [
+        "Paid Youth Employment",
+        "Internship",
+        "Career Exploration"
+      ]
+    },
+    {
+      "id": "recfgKenTDrmeYZlO",
+      "name": "Capital Workforce Partners Youth Pathways",
+      "track": "Teens & High School",
+      "category": "Job Training Program",
+      "specificType": "Youth Pathways is a North Central Connecticut job-readiness pathway for young adults ages 18-24 who are not in school or working. Capital Workforce Partners identifies it as part of its current youth-program portfolio.",
+      "town": "Hartford",
+      "address": "350 Church Street, Hartford, CT 06103",
+      "website": "https://capitalworkforce.org/youth-programs/",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "teenOpportunity": [
+        "Career Exploration"
       ]
     },
     {
@@ -3399,6 +3459,7 @@
       "ages": "Preschool",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
+      "website": "https://clcfc.org/clc-overview-and-locations/",
       "contact": "Penny Lehman | (203) 323-5944",
       "townsServed": [
         "Stamford"
@@ -3409,7 +3470,8 @@
       "servicesOffered": [
         "Child Care",
         "Preschool / Pre-K"
-      ]
+      ],
+      "lastVerified": "2026-09-01"
     },
     {
       "id": "rec4dnJ9zOPtRHtnk",
@@ -4018,6 +4080,24 @@
       "notes": "Source: https://www.ctoec.org/child-care-and-camps/, accessed 2026-08-25.",
       "servicesOffered": [
         "Parent / Family Support"
+      ]
+    },
+    {
+      "id": "recmYCvjvUPCxO1IH",
+      "name": "Connecticut OHE Know B4 You Enroll / Credential Registry",
+      "track": "Teens & High School",
+      "category": "College Access / Readiness",
+      "specificType": "Connecticut Office of Higher Education's student resource directs students to the Connecticut Credential Registry to compare authorized colleges, universities, private career schools, education and training programs, credential levels, towns and delivery methods, and also links to financial-aid resources.",
+      "town": "Hartford",
+      "website": "https://portal.ct.gov/ohe/for-students",
+      "submittedBy": "Village Notes Research",
+      "servicesOffered": [
+        "College Access / Readiness"
+      ],
+      "lastVerified": "2026-09-01",
+      "teenOpportunity": [
+        "College Readiness",
+        "Career Exploration"
       ]
     },
     {
@@ -5346,6 +5426,26 @@
         "Child Care",
         "Infant Care",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recxhSK3jeCsaenzO",
+      "name": "Eastern Connecticut Workforce Investment Board CT Youth Employment Program",
+      "track": "Teens & High School",
+      "category": "Youth Employment Program",
+      "specificType": "The Eastern Connecticut Workforce Investment Board's CT Youth Employment Program provides eligible youth ages 14-24 with approximately five weeks of paid summer work experience, generally 15-25 hours per week at minimum wage, with job-readiness and career-learning components.",
+      "town": "Franklin",
+      "address": "108 New Park Avenue, Franklin, CT 06254",
+      "website": "https://www.ewib.org/youth-services/ct-youth-employment-program/",
+      "contact": "860-859-4100; information@ewib.org",
+      "submittedBy": "Village Notes Research",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
+      "lastVerified": "2026-09-01",
+      "teenOpportunity": [
+        "Paid Youth Employment",
+        "Career Exploration"
       ]
     },
     {
@@ -7306,6 +7406,35 @@
       ]
     },
     {
+      "id": "receL7atoMHyhZXiC",
+      "name": "Hartford Public High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Hartford public high school. The current district site identifies the school as offering three pathways and provides current school contact information.",
+      "town": "Hartford",
+      "address": "55 Forest Street, Hartford, CT 06105",
+      "website": "https://www.hartfordschools.org/o/hphs",
+      "contact": "860-695-1300",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "schoolDistrict": "Hartford Public Schools",
+      "programSetting": [
+        "Public School"
+      ]
+    },
+    {
+      "id": "recuwc6mpJHXArnp0",
+      "name": "Hartford Youth Services Bureau",
+      "track": "Family & Childcare",
+      "category": "Youth Development Program",
+      "specificType": "The City of Hartford Division for Youth Services serves as Hartford's Youth Service Bureau. Current city materials describe a focus on youth ages 9-25, academic success, workforce development, coordination, capacity building and community partnerships.",
+      "town": "Hartford",
+      "address": "550 Main Street, Hartford, CT 06103",
+      "website": "https://www.hartfordct.gov/Government/Departments/DFCY/DFCYR_YouthDiv",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01"
+    },
+    {
       "id": "recIRq7d4bJMqSLxv",
       "name": "Harvard H. Ellis Technical High School",
       "track": "Teens & High School",
@@ -7405,6 +7534,33 @@
       ]
     },
     {
+      "id": "rec3cyTUT9eqWjCG3",
+      "name": "Hill Regional Career Magnet",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "New Haven Public Schools magnet high school serving grades 9-12. The current official site includes Health/Science academics, school counseling, and post-secondary planning resources.",
+      "town": "New Haven",
+      "address": "140 Legion Avenue, New Haven, CT 06519",
+      "website": "https://career.nhps.net/",
+      "contact": "475-220-5000",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "New Haven Public Schools",
+      "programSetting": [
+        "Magnet School",
+        "Public School"
+      ],
+      "programTopics": [
+        "Health Careers",
+        "College Readiness"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "College Readiness"
+      ]
+    },
+    {
       "id": "recjUOoOmOI3sYwRK",
       "name": "Hilltop Christian Early Learning Center",
       "track": "Family & Childcare",
@@ -7475,6 +7631,23 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recedpeGKm8y0bOLB",
+      "name": "Hopkins School",
+      "track": "Teens & High School",
+      "category": "High School (Private)",
+      "specificType": "Independent private day school serving grades 7-12 in New Haven. The 2026-2027 course guide and current curriculum information are published on the school's official website.",
+      "town": "New Haven",
+      "address": "986 Forest Road, New Haven, CT 06515",
+      "website": "https://www.hopkins.edu/",
+      "contact": "203-397-1001",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "gradeRange": "7-12",
+      "programSetting": [
+        "Private School"
       ]
     },
     {
@@ -8096,6 +8269,23 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recqguiRUne8SDqri",
+      "name": "James Hillhouse High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Comprehensive New Haven public high school. The current school site highlights pathways designed to help students identify interests, develop skills, and prepare for future education and work.",
+      "town": "New Haven",
+      "address": "480 Sherman Parkway, New Haven, CT 06511",
+      "website": "https://jameshillhouse.nhps.net/",
+      "contact": "475-220-7500",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "schoolDistrict": "New Haven Public Schools",
+      "programSetting": [
+        "Public School"
       ]
     },
     {
@@ -9911,6 +10101,7 @@
       "ages": "Infant/Toddler; Preschool",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
+      "website": "https://www.meridenymca.org/about-us/facilities/",
       "contact": "Tina Valentin | (203) 440-3254",
       "townsServed": [
         "Meriden"
@@ -9923,6 +10114,31 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ],
+      "lastVerified": "2026-09-01"
+    },
+    {
+      "id": "recw9skyXj6IMY0bC",
+      "name": "Metropolitan Business Academy",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "New Haven Public Schools specialty high school serving grades 9-12. The district-owned school site confirms the current Water Street location and contact information; the school's business focus is reflected in its official name and program identity.",
+      "town": "New Haven",
+      "address": "115 Water Street, New Haven, CT 06511",
+      "website": "https://metropolitan.nhps.net/",
+      "contact": "475-220-7700",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "New Haven Public Schools",
+      "programSetting": [
+        "Public School"
+      ],
+      "programTopics": [
+        "Entrepreneurship"
+      ],
+      "teenOpportunity": [
+        "Career Exploration"
       ]
     },
     {
@@ -10263,20 +10479,22 @@
       "address": "1859 Chapel St, New Haven, CT, 06515",
       "ages": "Infant/Toddler; Preschool",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
-      "cost": "Reduced state-set fee for eligible families in a funded space.",
+      "cost": "Preschool School Readiness slots may use sliding-scale tuition for New Haven residents when available. Infant/toddler OEC and/or Early Head Start slots may also use sliding-scale tuition when available; the provider encourages eligible families to apply for Care 4 Kids.",
+      "website": "https://www.mgelc.com/",
       "contact": "Glory Smith | (203) 389-4148",
       "townsServed": [
         "New Haven"
       ],
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
-      "notes": "FY26 state-funded spaces: 8 infant/toddler and 10 preschool. An allocation, not current openings. Licence/registry: DCCC.15339; Registry 1112. Local partner: New Haven LGP -- Kerry Oberg | koberg@uwgnh.org | 203-691-4208. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
+      "notes": "Provider-owned site verified 2026-09-01. Enrollment information covers preschool plus infant/toddler care and describes reduced-tuition pathways through School Readiness, OEC/Early Head Start, and Care 4 Kids when available.",
       "servicesOffered": [
-        "Child Care",
         "Infant Care",
+        "Toddler Care",
         "Preschool / Pre-K",
-        "Toddler Care"
-      ]
+        "Child Care"
+      ],
+      "lastVerified": "2026-09-01"
     },
     {
       "id": "recH3qCygMn6ndFD3",
@@ -10947,6 +11165,25 @@
       ]
     },
     {
+      "id": "reczezv7LtmSvjFJv",
+      "name": "New Haven Academy",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "New Haven Public Schools magnet high school. The district's current school-planning materials identify New Haven Academy as serving grades 9-12.",
+      "town": "New Haven",
+      "address": "444 Orange Street, New Haven, CT 06511",
+      "website": "https://newhavenacademy.nhps.net/",
+      "contact": "475-220-6600",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "New Haven Public Schools",
+      "programSetting": [
+        "Magnet School",
+        "Public School"
+      ]
+    },
+    {
       "id": "recDS08wHKxQz9Fi1",
       "name": "New Haven Afterschool Initiative",
       "track": "Family & Childcare",
@@ -11215,6 +11452,21 @@
       ]
     },
     {
+      "id": "recl8JFYYOTX4Ra40",
+      "name": "New Haven Youth Services Bureau",
+      "track": "Family & Childcare",
+      "category": "Youth Development Program",
+      "specificType": "City of New Haven Youth Services Bureau coordinates and facilitates youth programs and partnerships. Current municipal materials identify the Mayor's Youth Council for high-school youth leadership, youth guides, bike initiatives, Youth Conservation Corps and connections with Youth@Work.",
+      "town": "New Haven",
+      "address": "165 Church Street, New Haven, CT 06510",
+      "website": "https://www.newhavenct.gov/government/departments-divisions/youth-and-recreation-department/programs-initiatives/youth-services-bureau",
+      "submittedBy": "Village Notes Research",
+      "servicesOffered": [
+        "Youth Leadership"
+      ],
+      "lastVerified": "2026-09-01"
+    },
+    {
       "id": "recLws3De9y9iY8r4",
       "name": "New Heights Child Development Program",
       "track": "Family & Childcare",
@@ -11412,6 +11664,23 @@
       "petRequirements": [
         "Membership or Registration Required"
       ]
+    },
+    {
+      "id": "rec2mSdcxm52CR3rY",
+      "name": "Noble Horizons",
+      "track": "Elder Care",
+      "category": "Skilled Nursing / Rehab",
+      "specificType": "Nonprofit senior living community offering skilled nursing care, short-term rehabilitation, outpatient rehabilitation, intermediate care, and independent living. This record is categorized by its skilled nursing/rehabilitation service.",
+      "town": "Salisbury",
+      "address": "17 Cobble Road, Salisbury, CT 06068",
+      "website": "https://noblehorizons.org/",
+      "contact": "860-435-9851",
+      "submittedBy": "Village Notes Research",
+      "servicesOffered": [
+        "Elder Care",
+        "Skilled Nursing"
+      ],
+      "lastVerified": "2026-09-01"
     },
     {
       "id": "recfCm9YfG3qSkxUC",
@@ -11651,6 +11920,7 @@
       "ages": "Preschool",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
+      "website": "https://elc.norwichpublicschools.org/",
       "contact": "Cori Beckwith | (860) 892-4342",
       "townsServed": [
         "Norwich"
@@ -11660,7 +11930,8 @@
       "notes": "FY26 state-funded spaces: 13 preschool. An allocation, not current openings. Licence/registry: Exempt; Registry 12191. Local partner: Southeast CT LGP -- Linda Allen | lallen@learn.k12.ct.us | 860-434-4800. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
-      ]
+      ],
+      "lastVerified": "2026-09-01"
     },
     {
       "id": "recHtw9rrGIALrupI",
@@ -13358,6 +13629,32 @@
       ]
     },
     {
+      "id": "recEs2JclbUEnxjMq",
+      "name": "Sound School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "New Haven Public Schools specialty high school and Connecticut Agricultural Science and Technology Education center serving grades 9-12. Current official pages describe ASTE curriculum, work-based learning, marine science, vessel operations, and related environmental programs.",
+      "town": "New Haven",
+      "address": "60 South Water Street, New Haven, CT 06519",
+      "website": "https://sound.nhps.net/",
+      "contact": "475-220-6800",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "New Haven Public Schools",
+      "programSetting": [
+        "Public School"
+      ],
+      "programTopics": [
+        "Marine Science",
+        "Environmental Education",
+        "Conservation"
+      ],
+      "teenOpportunity": [
+        "Career Exploration"
+      ]
+    },
+    {
       "id": "rec4SfgwFUaR84f1r",
       "name": "South End Boys & Girls Club Summer Fun Club",
       "track": "Family & Childcare",
@@ -13712,6 +14009,33 @@
       "notes": "FY26 state-funded spaces: 16 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 6431. Local partner: Stamford LGP -- D'Naysha Brown | dbrown@stamfordct.gov | 203-977-4589. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "recdP3dUrCuBbYb44",
+      "name": "Stamford High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Comprehensive Stamford public high school and International Baccalaureate school. The official school site confirms IB, Advanced Placement, UConn Early College Experience, and Early College Studies dual enrollment that can lead to an associate degree in mobile programming or software design.",
+      "town": "Stamford",
+      "address": "55 Strawberry Hill Avenue, Stamford, CT 06902",
+      "website": "https://www.stamfordhigh.org/",
+      "contact": "203-977-4223",
+      "submittedBy": "Village Notes Research",
+      "servicesOffered": [
+        "College Access / Readiness"
+      ],
+      "lastVerified": "2026-09-01",
+      "schoolDistrict": "Stamford Public Schools",
+      "programSetting": [
+        "Public School"
+      ],
+      "programTopics": [
+        "Coding",
+        "College Readiness"
+      ],
+      "teenOpportunity": [
+        "College Readiness"
       ]
     },
     {
@@ -14564,6 +14888,24 @@
       ]
     },
     {
+      "id": "recNSZoJaTnVd6xmM",
+      "name": "The Nathaniel Witherell",
+      "track": "Elder Care",
+      "category": "Skilled Nursing / Rehab",
+      "specificType": "Town of Greenwich-owned senior care facility providing skilled nursing, short-term rehabilitation, memory care, and caregiver support. The provider's current site confirms the Greenwich location and service mix.",
+      "town": "Greenwich",
+      "address": "70 Parsonage Road, Greenwich, CT 06830",
+      "website": "https://www.thenathanielwitherell.org/",
+      "contact": "203-618-4200",
+      "submittedBy": "Village Notes Research",
+      "servicesOffered": [
+        "Elder Care",
+        "Skilled Nursing",
+        "Caregiver Support"
+      ],
+      "lastVerified": "2026-09-01"
+    },
+    {
       "id": "recWFpGvQYKk8A2Qr",
       "name": "The Riverfront Childrens Center",
       "track": "Family & Childcare",
@@ -14609,6 +14951,42 @@
       "servicesOffered": [
         "Child Care",
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "recSCOlPIoIFLiZLO",
+      "name": "The WorkPlace CareerHub",
+      "track": "Teens & High School",
+      "category": "Job Training Program",
+      "specificType": "CareerHub serves out-of-school, out-of-work young adults ages 16-24 in Southwestern Connecticut with career coaching, skills and occupational training, credentials, job search/placement support and paid internship opportunities.",
+      "town": "Bridgeport",
+      "address": "1000 Lafayette Boulevard, Suite 501, Bridgeport, CT 06604",
+      "website": "https://www.workplace.org/careerhub/",
+      "contact": "203-610-8500; info2@workplace.org",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "teenOpportunity": [
+        "Internship",
+        "Certification Program",
+        "Career Exploration"
+      ]
+    },
+    {
+      "id": "recD2wG8itDR3yJuN",
+      "name": "Thomas Snell Weaver High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Hartford public high school. Current school resources include career pathways, college resources, financial-aid information, scholarship information, and school counseling.",
+      "town": "Hartford",
+      "address": "415 Granby Street, Hartford, CT 06112",
+      "hours": "School hours: 7:30 AM-2:10 PM",
+      "website": "https://www.hartfordschools.org/o/weaver/",
+      "contact": "860-695-1640",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "schoolDistrict": "Hartford Public Schools",
+      "programSetting": [
+        "Public School"
       ]
     },
     {
@@ -16134,6 +16512,37 @@
       "lastVerified": "2026-08-31"
     },
     {
+      "id": "rec7m6OgtrrC4UfKX",
+      "name": "Westhill High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Comprehensive Stamford public high school serving grades 9-12. Current official materials list Agriscience, JROTC, Academy of Finance, Computer Science, Advanced Placement, UConn Early College Experience, Health Science Technology, and Carpentry Pre-Apprenticeship.",
+      "town": "Stamford",
+      "address": "125 Roxbury Road, Stamford, CT 06902",
+      "website": "https://www.westhillweb.com/",
+      "contact": "203-977-4477",
+      "submittedBy": "Village Notes Research",
+      "servicesOffered": [
+        "College Access / Readiness"
+      ],
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Stamford Public Schools",
+      "programSetting": [
+        "Public School"
+      ],
+      "programTopics": [
+        "Coding",
+        "Health Careers",
+        "Leadership",
+        "College Readiness"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "College Readiness"
+      ]
+    },
+    {
       "id": "recTbJ0AbjukqGqU5",
       "name": "Westville Community Nursery School",
       "track": "Family & Childcare",
@@ -16208,6 +16617,23 @@
       "notes": "Whitney Center is a non-profit Life Plan (continuing care) community in Hamden that lets residents move between independent living, assisted living, memory care, and skilled nursing on the same campus as their needs change, without relocating to a new facility each time. Its memory care neighborhood, Meadow Mills, is a secured unit designed specifically for residents who need memory support, with staff and structured activities built around that population. Because it's a Life Care community, the entrance-fee model is designed so a resident's costs don't spike if they need a higher level of care later, one of the bigger financial unknowns families run into with elder care. The campus includes amenities like a fitness center, pool, art studio, and cultural arts center, and it serves the Greater New Haven area specifically.",
       "servicesOffered": [
         "Elder Care"
+      ]
+    },
+    {
+      "id": "rechOFNbfyPT1EyUC",
+      "name": "Wilbur Cross High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Comprehensive New Haven public high school. Current school materials describe four academies: Freshman Academy, International Academy, Arts & Public Service Academy, and Design, Innovation & Industry Academy.",
+      "town": "New Haven",
+      "address": "181 Mitchell Drive, New Haven, CT 06511",
+      "website": "https://wilburcross.nhps.net/",
+      "contact": "475-220-7400",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "schoolDistrict": "New Haven Public Schools",
+      "programSetting": [
+        "Public School"
       ]
     },
     {
@@ -16428,6 +16854,22 @@
         "Disability Support"
       ],
       "lastVerified": "2026-08-29"
+    },
+    {
+      "id": "recc0q3CAjMfyLBnQ",
+      "name": "Workforce Alliance Young Adult Training Programs",
+      "track": "Teens & High School",
+      "category": "Job Training Program",
+      "specificType": "Workforce Alliance funds community-based training for South Central Connecticut young adults up to age 24 who are not enrolled in high school or college. Current programs include job coaching, skills training, industry credentials and job placement in fields including healthcare, IT, security, business and transportation.",
+      "town": "New Haven",
+      "website": "https://workforcealliance.biz/youth-and-young-adults/young-adults-16-24/",
+      "contact": "203-867-4030 ext. 237; jbrancato@workforcealliance.biz",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "teenOpportunity": [
+        "Certification Program",
+        "Career Exploration"
+      ]
     },
     {
       "id": "recX9CgohEyCYo6dY",

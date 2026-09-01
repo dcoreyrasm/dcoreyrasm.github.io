@@ -83,7 +83,6 @@ now.
   ysph.yale.edu                      1  2026-08-25   Family & Childcare
   kindercare.com                     7  2026-08-26   Family & Childcare
   brightpathkids.com                 4  2026-08-26   Family & Childcare
-  meridenymca.org                    4  2026-08-26   Family & Childcare
   idtech.com                         3  2026-08-26   Family & Childcare
   brighthorizons.com                 2  2026-08-26   Family & Childcare
   sterlingcommunitycenter.org        2  2026-08-26   Family & Childcare
@@ -130,7 +129,6 @@ now.
   monroect.gov                       1  2026-08-30   Elder Care
   partnershipsadc.org                1  2026-08-30   Elder Care
   seniormealsct.org                  1  2026-08-30   Elder Care
-  portal.ct.gov                     16  2026-08-31   Elder Care, Family & Childcare, Pet Care & Resources, Teens & High School
   mozaicsl.org                       6  2026-08-31   Elder Care
   cthumane.org                       5  2026-08-31   Pet Care & Resources
   masonicare.org                     4  2026-08-31   Elder Care
@@ -184,6 +182,30 @@ now.
   wams.waterbury.k12.ct.us           1  2026-08-31   Teens & High School
   wcaaa.org                          1  2026-08-31   Elder Care
   windham.cttech.org                 1  2026-08-31   Teens & High School
+  portal.ct.gov                     17  2026-09-01   Elder Care, Family & Childcare, Pet Care & Resources, Teens & High School
+  meridenymca.org                    5  2026-09-01   Family & Childcare
+  capitalworkforce.org               2  2026-09-01   Teens & High School
+  hartfordschools.org                2  2026-09-01   Teens & High School
+  bulkeley.hartfordschools.org       1  2026-09-01   Teens & High School
+  clcfc.org                          1  2026-09-01   Family & Childcare
+  ewib.org                           1  2026-09-01   Teens & High School
+  hartfordct.gov                     1  2026-09-01   Family & Childcare
+  career.nhps.net                    1  2026-09-01   Teens & High School
+  hopkins.edu                        1  2026-09-01   Teens & High School
+  jameshillhouse.nhps.net            1  2026-09-01   Teens & High School
+  metropolitan.nhps.net              1  2026-09-01   Teens & High School
+  mgelc.com                          1  2026-09-01   Family & Childcare
+  newhavenacademy.nhps.net           1  2026-09-01   Teens & High School
+  newhavenct.gov                     1  2026-09-01   Family & Childcare
+  noblehorizons.org                  1  2026-09-01   Elder Care
+  elc.norwichpublicschools.org       1  2026-09-01   Family & Childcare
+  sound.nhps.net                     1  2026-09-01   Teens & High School
+  stamfordhigh.org                   1  2026-09-01   Teens & High School
+  thenathanielwitherell.org          1  2026-09-01   Elder Care
+  workplace.org                      1  2026-09-01   Teens & High School
+  westhillweb.com                    1  2026-09-01   Teens & High School
+  wilburcross.nhps.net               1  2026-09-01   Teens & High School
+  workforcealliance.biz              1  2026-09-01   Teens & High School
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -208,9 +230,9 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 242 of 666 listings (36%) carry a Website, so
+Only 268 of 688 listings (39%) carry a Website, so
 everything above is built from that third of the directory. The other
-424 have no URL recorded at all, which means nobody -- not you,
+420 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
 unverifiable in their current state.
 
@@ -218,7 +240,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-40 of the 161 domains here have never had a Last Verified on
+40 of the 183 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```
