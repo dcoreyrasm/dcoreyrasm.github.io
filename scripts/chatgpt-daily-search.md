@@ -12,15 +12,17 @@ Two things changed on 2026-08-27. There is a third track, Pet Care & Resources,
 with nineteen categories and no listings in it at all. And measuring what the
 directory actually holds changed what is worth searching for.
 
-The headline: **the directory is broad and shallow.** 547 listings covering 109
-of Connecticut's 169 towns is real breadth. But of those 547:
+The headline: **the directory is broad and shallow.** The breadth is real; the
+depth behind it is not. The exact figures are measured on every sync and
+printed in the WHERE THE DIRECTORY IS THIN section below -- read them there
+rather than trusting anything typed here, which is how the numbers in this
+paragraph came to be wrong within a week the last time. Broadly:
 
-| The site promises | It actually has |
-|---|---|
-| real operating hours | **95** listings with any hours at all |
-| honest waitlist timelines | **49** — the other 427 say "contact the program directly" |
-| what it actually costs | **77** — the other 426 repeat one state-fee sentence |
-| somewhere to click | **123** with a website |
+The site promises real operating hours, honest waitlist timelines, what a place
+actually costs, and somewhere to click. Every one of those is carried by a
+minority of listings, and two of them are worse than the raw count suggests
+because hundreds of records carry a boilerplate sentence instead of an answer.
+The measured section gives the current figure for each.
 
 The boilerplate came in with the state import and was honest at the time. It is
 not knowledge, and the page's "needs detail" sort already discounts it. So the
@@ -72,8 +74,10 @@ Work in this priority order. Do not skip to the easy one.
 
 3. DEPTH ON LISTINGS THAT ALREADY EXIST — the biggest gap of all.
 
-   Only 95 of 547 listings carry operating hours, and 123 carry a website. That
-   is the specific promise on the front of the page and it is mostly unkept.
+   Hours and Website are the specific promise on the front of the page, and it
+   is mostly unkept. See the measured section below for where that stands now
+   -- including the finding that every listing missing a website came from one
+   bulk import, which makes this a bounded backfill rather than a habit.
 
    So spend part of every run going back, not forward. Take listings that have
    a name and a phone number and nothing else, find the provider's own page,
@@ -83,15 +87,15 @@ Work in this priority order. Do not skip to the easy one.
    If you replace one of these two boilerplate lines with something real, that
    is a win worth reporting:
      "Contact the program directly for current openings, schedule, eligibility,
-      and family cost."   (on 427 records)
-     "Reduced state-set fee for eligible families in a funded space."
-      (on 426 records)
+      and family cost."
+     "Reduced state-set fee for eligible families in a funded space." 
    If you cannot find the real thing, leave the boilerplate. Do not paraphrase
    it into something that sounds more specific than what you actually know.
 
 4. THE SIXTY TOWNS WITH NOTHING.
 
-   109 of Connecticut's 169 municipalities appear. Work from the state's own
+   Well under half of Connecticut's 169 municipalities appear -- the measured
+   count is below. Work from the state's own
    list of municipalities rather than guessing which are missing, and prefer
    the smaller and more rural ones — a family in a town with three options
    needs the directory more than a family in New Haven.
@@ -127,6 +131,7 @@ REPORT AT THE END OF EACH RUN
 
 ## Keeping this current
 
-The counts above are from 2026-08-27. Re-measure before rewriting this brief —
-`village-notes/data/resources.json` holds everything needed, and the point of
+The counts in this brief are no longer typed by hand. They are measured from
+the published listings on every sync, so the gaps you are sent at are the
+gaps that exist today —
 the priority order is that it follows the measurement rather than a hunch.
