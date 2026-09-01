@@ -404,6 +404,35 @@ MINIMUM FOR A USABLE RECORD: Resource Name, Track, Category, Town/Area (CT),
 and at least one of Website or Contact Info. Without a way to reach them, a
 listing isn't worth publishing.
 
+WEBSITE AND LAST VERIFIED — record both whenever you touch a listing.
+
+These two fields are what make a listing maintainable, and they are the two
+most likely to be skipped because neither changes what a family reads today.
+
+  Website        The provider's own page. This is what puts the listing into
+                 the standing source registry, which is the only reason anyone
+                 will ever look at it again. A listing without one cannot be
+                 re-checked by you, by Darice, or by a parent. It is a dead end
+                 from the day it is written.
+
+  Last Verified  The date you actually checked. Not the date you created the
+                 record, not today's date on a record you did not open. An
+                 unchanged listing checked this week is worth more to a family
+                 than one that was right in August and might not be now.
+
+ONLY A PROVIDER-OWNED OR OFFICIAL URL COUNTS. The provider's own site, or the
+state or municipal page for a public programme. Never a directory, an
+aggregator, a review site, a social media profile, or a map link. A Yelp page
+in this field would raise the coverage number while making the directory
+worse: the registry would send the next run back to Yelp instead of to the
+provider, and a family would be reading strangers rather than the programme.
+If the provider has no page of its own and no official listing, leave Website
+empty. Empty is honest; a wrong URL is not.
+
+DO NOT GUESS A URL FROM THE NAME. "Riverside Learning Center" does not imply
+riversidelearningcenter.com. Open it, confirm it is that provider in that
+town, then record it.
+
 SUBMITTED BY — the exact string "Village Notes Research" on every record you
 create. Not your own name, not Darice's, not "ChatGPT Daily Search", not a
 sentence explaining the record's status. Copy those four words.
@@ -519,8 +548,10 @@ Work in this priority order. Do not skip to the easy one.
 
 3. DEPTH ON LISTINGS THAT ALREADY EXIST — the biggest gap of all.
 
-   Only 95 of 547 listings carry operating hours, and 123 carry a website. That
-   is the specific promise on the front of the page and it is mostly unkept.
+   Hours and Website are the specific promise on the front of the page, and it
+   is mostly unkept. See the measured section below for where that stands now
+   -- including the finding that every listing missing a website came from one
+   bulk import, which makes this a bounded backfill rather than a habit.
 
    So spend part of every run going back, not forward. Take listings that have
    a name and a phone number and nothing else, find the provider's own page,
@@ -530,15 +561,15 @@ Work in this priority order. Do not skip to the easy one.
    If you replace one of these two boilerplate lines with something real, that
    is a win worth reporting:
      "Contact the program directly for current openings, schedule, eligibility,
-      and family cost."   (on 427 records)
-     "Reduced state-set fee for eligible families in a funded space."
-      (on 426 records)
+      and family cost."
+     "Reduced state-set fee for eligible families in a funded space." 
    If you cannot find the real thing, leave the boilerplate. Do not paraphrase
    it into something that sounds more specific than what you actually know.
 
 4. THE SIXTY TOWNS WITH NOTHING.
 
-   109 of Connecticut's 169 municipalities appear. Work from the state's own
+   Well under half of Connecticut's 169 municipalities appear -- the measured
+   count is below. Work from the state's own
    list of municipalities rather than guessing which are missing, and prefer
    the smaller and more rural ones — a family in a town with three options
    needs the directory more than a family in New Haven.
@@ -763,4 +794,61 @@ ever again, and it is what puts the site into this queue.
 41 of the 131 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
+
+
+==========================================================================
+WHERE THE DIRECTORY IS THIN
+==========================================================================
+
+WHERE THE DIRECTORY IS THIN — measured, not remembered.
+
+628 listings across 115 Connecticut towns of 169.
+
+That breadth is real. The depth behind it is the problem:
+
+  a website              204 / 628   32%   the single most valuable gap: without a URL nobody can ever re-check the listing
+  operating hours        149 / 628   24%   the specific promise on the front of the page
+  a real cost note        99 / 628   16%   excludes the state-fee boilerplate
+  a real waitlist note    57 / 628    9%   excludes the "contact the program directly" boilerplate
+  a verified date        139 / 628   22%   without one we cannot tell fresh from forgotten
+  a phone or email       589 / 628   94%
+  services tagged        615 / 628   98%   what makes a listing findable beyond its one category
+
+A listing can carry a value and still say nothing. Two boilerplate lines were
+written onto hundreds of records by the original state import -- "Contact the
+program directly for current openings..." and "Reduced state-set fee for
+eligible families in a funded space." The counts above exclude both, because
+counting them would hide the gap rather than show it. If you replace one with
+something real, say so in your report; that is a win. If you cannot find the
+real thing, leave the boilerplate rather than paraphrasing it into something
+that sounds more specific than what you actually know.
+
+WEBSITE COVERAGE BY TRACK
+
+  Family & Childcare      539 listings, 115 with a website (21%)
+  Pet Care & Resources     47 listings,  47 with a website (100%)
+  Elder Care               42 listings,  42 with a website (100%)
+
+WHY THE WEBSITE COLUMN COMES FIRST
+
+A listing with no URL cannot be re-checked by anyone -- not you, not Darice,
+not a parent. It is a dead end the day it is written, and it stays out of the
+standing source registry forever, so no scheduled re-read will ever reach it.
+Every other gap here can be filled later. That one compounds.
+
+AND THE GAP IS NOT WHERE IT LOOKS
+
+424 listings have no website. 424 of them -- every single one -- came from the
+one bulk import of Connecticut Office of Early Childhood childcare providers,
+which arrived without URLs. Of the 190 records written by
+research, 190 carry a website: 100%.
+
+So this is not a habit to correct. It is a bounded backfill of a known set,
+and the set is licensed childcare providers whose details came from the state.
+They are findable: the provider has a page, or the state's own licensing
+lookup has a record. Work through them by town, and record Last Verified as
+you go so the standing registry starts reaching them.
+
+That is worth more per hour than finding a new listing, because it converts
+424 permanently unverifiable rows into rows that can be maintained.
 ```

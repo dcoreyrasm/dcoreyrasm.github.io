@@ -432,6 +432,35 @@ MINIMUM FOR A USABLE RECORD: Resource Name, Track, Category, Town/Area (CT),
 and at least one of Website or Contact Info. Without a way to reach them, a
 listing isn't worth publishing.
 
+WEBSITE AND LAST VERIFIED — record both whenever you touch a listing.
+
+These two fields are what make a listing maintainable, and they are the two
+most likely to be skipped because neither changes what a family reads today.
+
+  Website        The provider's own page. This is what puts the listing into
+                 the standing source registry, which is the only reason anyone
+                 will ever look at it again. A listing without one cannot be
+                 re-checked by you, by Darice, or by a parent. It is a dead end
+                 from the day it is written.
+
+  Last Verified  The date you actually checked. Not the date you created the
+                 record, not today's date on a record you did not open. An
+                 unchanged listing checked this week is worth more to a family
+                 than one that was right in August and might not be now.
+
+ONLY A PROVIDER-OWNED OR OFFICIAL URL COUNTS. The provider's own site, or the
+state or municipal page for a public programme. Never a directory, an
+aggregator, a review site, a social media profile, or a map link. A Yelp page
+in this field would raise the coverage number while making the directory
+worse: the registry would send the next run back to Yelp instead of to the
+provider, and a family would be reading strangers rather than the programme.
+If the provider has no page of its own and no official listing, leave Website
+empty. Empty is honest; a wrong URL is not.
+
+DO NOT GUESS A URL FROM THE NAME. "Riverside Learning Center" does not imply
+riversidelearningcenter.com. Open it, confirm it is that provider in that
+town, then record it.
+
 SUBMITTED BY — the exact string "Village Notes Research" on every record you
 create. Not your own name, not Darice's, not "ChatGPT Daily Search", not a
 sentence explaining the record's status. Copy those four words.

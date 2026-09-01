@@ -30,6 +30,10 @@ const PARTS = [
   // we already hold, plus the hand-kept hubs in source-hubs.txt. Regenerate it
   // before this, or the brief ships a stale work queue.
   ['Sites to re-check on a schedule', 'source-registry.md'],
+  // Measured on every sync. The counts used to be typed into
+  // chatgpt-daily-search.md by hand and were wrong within a week, which
+  // sent the researcher at gaps that had already moved.
+  ['Where the directory is thin', 'coverage.md'],
 ];
 
 /** The single fenced block in a source file -- the part meant for ChatGPT. */

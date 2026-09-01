@@ -51,12 +51,14 @@ jobs:
       - name: Rebuild the source registry and the ChatGPT brief
         run: |
           node scripts/build-source-registry.js
+          node scripts/build-coverage.js
           node scripts/build-chatgpt-brief.js
 
       - name: Commit the refreshed directory
         run: |
           git add village-notes/data/resources.json \
                   scripts/source-registry.md \
+                  scripts/coverage.md \
                   scripts/chatgpt-brief.md
           if git diff --cached --quiet; then
             echo "Directory already in sync; nothing to commit."
