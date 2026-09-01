@@ -186,8 +186,16 @@ now.
   meridenymca.org                    5  2026-09-01   Family & Childcare
   capitalworkforce.org               2  2026-09-01   Teens & High School
   hartfordschools.org                2  2026-09-01   Teens & High School
+  andoverelementaryct.org            1  2026-09-01   Family & Childcare
+  bassick.bridgeportedu.net          1  2026-09-01   Teens & High School
+  les.bloomfieldschools.org          1  2026-09-01   Family & Childcare
+  bmhs.norwalkps.org                 1  2026-09-01   Teens & High School
   bulkeley.hartfordschools.org       1  2026-09-01   Teens & High School
+  central.bridgeportedu.net          1  2026-09-01   Teens & High School
   clcfc.org                          1  2026-09-01   Family & Childcare
+  coop.nhps.net                      1  2026-09-01   Teens & High School
+  crosby.waterbury.k12.ct.us         1  2026-09-01   Teens & High School
+  dhs.danbury.k12.ct.us              1  2026-09-01   Teens & High School
   ewib.org                           1  2026-09-01   Teens & High School
   hartfordct.gov                     1  2026-09-01   Family & Childcare
   career.nhps.net                    1  2026-09-01   Teens & High School
@@ -195,14 +203,18 @@ now.
   jameshillhouse.nhps.net            1  2026-09-01   Teens & High School
   metropolitan.nhps.net              1  2026-09-01   Teens & High School
   mgelc.com                          1  2026-09-01   Family & Childcare
+  nbhs.csdnb.org                     1  2026-09-01   Teens & High School
   newhavenacademy.nhps.net           1  2026-09-01   Teens & High School
   newhavenct.gov                     1  2026-09-01   Family & Childcare
   noblehorizons.org                  1  2026-09-01   Elder Care
+  nhs.norwalkps.org                  1  2026-09-01   Teens & High School
   elc.norwichpublicschools.org       1  2026-09-01   Family & Childcare
+  chooseptechnorwalk.org             1  2026-09-01   Teens & High School
   sound.nhps.net                     1  2026-09-01   Teens & High School
   stamfordhigh.org                   1  2026-09-01   Teens & High School
   thenathanielwitherell.org          1  2026-09-01   Elder Care
   workplace.org                      1  2026-09-01   Teens & High School
+  harding.bridgeportedu.net          1  2026-09-01   Teens & High School
   westhillweb.com                    1  2026-09-01   Teens & High School
   wilburcross.nhps.net               1  2026-09-01   Teens & High School
   workforcealliance.biz              1  2026-09-01   Teens & High School
@@ -230,9 +242,9 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 268 of 688 listings (39%) carry a Website, so
+Only 280 of 698 listings (40%) carry a Website, so
 everything above is built from that third of the directory. The other
-420 have no URL recorded at all, which means nobody -- not you,
+418 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
 unverifiable in their current state.
 
@@ -240,7 +252,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-40 of the 183 domains here have never had a Last Verified on
+40 of the 195 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```

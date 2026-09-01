@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-01T06:54:41.116Z",
+  "generated": "2026-09-01T15:56:57.089Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 688,
+  "count": 698,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -716,9 +716,10 @@
       "specificType": "State-funded Early Start CT provider (Public School) -- 22 preschool funded spaces FY26",
       "town": "Andover",
       "address": "35 School Rd, Andover, CT, 06232",
-      "ages": "Preschool",
-      "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
-      "cost": "Reduced state-set fee for eligible families in a funded space.",
+      "ages": "Children ages 3-4",
+      "availability": "If applications exceed available spaces, families are placed on a waitlist based on application date. Enrollment priorities vary by age, income eligibility, and residency.",
+      "cost": "Published tuition is $600 per month or $6,000 per year. Reduced tuition may be available through School Readiness or Smart Start based on income and residency rules.",
+      "website": "https://www.andoverelementaryct.org/index.php/pre-k/about-pre-k",
       "contact": "Taylor Parker | (860) 742-7339",
       "townsServed": [
         "Andover"
@@ -726,9 +727,12 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 22 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 1658. Local partner: Andover/Hebron/Lebanon LGP -- Teresa Surprenant | TSurprenant@eastconn.org. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
+      "financialAid": "Yes",
       "servicesOffered": [
-        "Preschool / Pre-K"
-      ]
+        "Preschool / Pre-K",
+        "Arts Enrichment"
+      ],
+      "lastVerified": "2026-09-01"
     },
     {
       "id": "recFrJ92tpGSTp4fj",
@@ -960,6 +964,37 @@
       ]
     },
     {
+      "id": "recgy8GCsda4WfSIU",
+      "name": "Bassick High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Bridgeport public high school with career pathways including carpentry, automotive work, and the Tango Flight aviation program.",
+      "town": "Bridgeport",
+      "address": "205 Broad Street, Bridgeport, CT 06604",
+      "ages": "Grades 9-12",
+      "website": "https://bassick.bridgeportedu.net/",
+      "submittedBy": "Village Notes Research",
+      "servicesOffered": [
+        "College Access / Readiness"
+      ],
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Bridgeport Public Schools",
+      "programSetting": [
+        "Public School"
+      ],
+      "programTopics": [
+        "Aviation",
+        "Construction Trades",
+        "College Readiness"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "Certification Program",
+        "College Readiness"
+      ]
+    },
+    {
       "id": "recd0A2i4YRawURsw",
       "name": "Benchmark at Ridgefield Crossings",
       "track": "Elder Care",
@@ -1037,8 +1072,9 @@
       "town": "Bloomfield",
       "address": "1 Filley St, Bloomfield, CT, 06002",
       "ages": "Preschool",
-      "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
+      "availability": "The official school site currently provides a Laurel Pre-K lottery link and 2026 preschool family orientation information.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
+      "website": "https://les.bloomfieldschools.org/",
       "contact": "Jennifer Dwyer | (860) 286-2675",
       "townsServed": [
         "Bloomfield"
@@ -1048,7 +1084,8 @@
       "notes": "FY26 state-funded spaces: 18 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 9769. Local partner: Alliance for Bloomfield's Children -- Gail Nolan | gnolan@blmfld.org | 860-769-5518. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
-      ]
+      ],
+      "lastVerified": "2026-09-01"
     },
     {
       "id": "recHni9dlVK9BGF9G",
@@ -1790,6 +1827,33 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recO1OW4lrbnKBuMD",
+      "name": "Brien McMahon High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Norwalk comprehensive public high school with marine science, health care, and International Baccalaureate pathways.",
+      "town": "Norwalk",
+      "address": "300 Highland Avenue, Norwalk, CT 06854",
+      "ages": "Grades 9-12",
+      "website": "https://bmhs.norwalkps.org/",
+      "contact": "203-852-9488",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Norwalk Public Schools",
+      "programSetting": [
+        "Public School"
+      ],
+      "programTopics": [
+        "Marine Science",
+        "Health Careers"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "College Readiness"
       ]
     },
     {
@@ -2918,6 +2982,25 @@
       "animals": [
         "Dogs",
         "Puppies"
+      ]
+    },
+    {
+      "id": "recyW5n4c55WLYNUq",
+      "name": "Central High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Bridgeport Public Schools comprehensive public high school.",
+      "town": "Bridgeport",
+      "address": "1 Lincoln Boulevard, Bridgeport, CT 06606",
+      "ages": "Grades 9-12",
+      "website": "https://central.bridgeportedu.net/",
+      "contact": "203-576-7377",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Bridgeport Public Schools",
+      "programSetting": [
+        "Public School"
       ]
     },
     {
@@ -4316,6 +4399,29 @@
       ]
     },
     {
+      "id": "recQ3vGxtkvkzkSpb",
+      "name": "Cooperative Arts & Humanities Magnet High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "New Haven Public Schools interdistrict magnet high school with an arts and humanities curriculum.",
+      "town": "New Haven",
+      "address": "177 College Street, New Haven, CT 06511",
+      "ages": "Grades 9-12",
+      "website": "https://coop.nhps.net/",
+      "contact": "475-220-2400",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "New Haven Public Schools",
+      "programSetting": [
+        "Magnet School",
+        "Public School"
+      ],
+      "programTopics": [
+        "Arts"
+      ]
+    },
+    {
       "id": "recohcppWnDTI98CT",
       "name": "Cora Wright Early Learning Center",
       "track": "Family & Childcare",
@@ -4620,6 +4726,25 @@
       "lastVerified": "2026-08-26"
     },
     {
+      "id": "recqxaElwcNi65Rv4",
+      "name": "Crosby High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Waterbury Public Schools comprehensive public high school.",
+      "town": "Waterbury",
+      "address": "300 Pierpont Road, Waterbury, CT 06705",
+      "ages": "Grades 9-12",
+      "website": "https://crosby.waterbury.k12.ct.us/",
+      "contact": "203-574-8060",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Waterbury Public Schools",
+      "programSetting": [
+        "Public School"
+      ]
+    },
+    {
       "id": "recOwquqF1P7aYult",
       "name": "CRT - Job Corps Academy Child Development Center",
       "track": "Family & Childcare",
@@ -4730,6 +4855,29 @@
         "Rabies Certificate Required",
         "Minimum Age Applies",
         "Membership or Registration Required"
+      ]
+    },
+    {
+      "id": "rec52owidgLAt422C",
+      "name": "Danbury High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Danbury Public Schools comprehensive public high school organized around career and academic academies.",
+      "town": "Danbury",
+      "address": "43 Clapboard Ridge Road, Danbury, CT 06811",
+      "ages": "Grades 9-12",
+      "website": "https://dhs.danbury.k12.ct.us/",
+      "contact": "203-797-4800",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Danbury Public Schools",
+      "programSetting": [
+        "Public School"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "College Readiness"
       ]
     },
     {
@@ -11082,6 +11230,35 @@
       ]
     },
     {
+      "id": "recWE1D5ux3zJtSI5",
+      "name": "New Britain High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "New Britain public high school with career academies, Advanced Placement, early-college, and dual-enrollment courses.",
+      "town": "New Britain",
+      "address": "110 Mill Street, New Britain, CT 06051",
+      "ages": "Grades 9-12",
+      "website": "https://nbhs.csdnb.org/",
+      "contact": "860-225-6300",
+      "submittedBy": "Village Notes Research",
+      "servicesOffered": [
+        "College Access / Readiness"
+      ],
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Consolidated School District of New Britain",
+      "programSetting": [
+        "Public School"
+      ],
+      "programTopics": [
+        "College Readiness"
+      ],
+      "teenOpportunity": [
+        "Career Exploration",
+        "College Readiness"
+      ]
+    },
+    {
       "id": "recUx3X9iKvD0gG5U",
       "name": "New Britain YMCA - Preschool",
       "track": "Family & Childcare",
@@ -11844,6 +12021,25 @@
       ]
     },
     {
+      "id": "recy09BzFfbN430Ct",
+      "name": "Norwalk High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Norwalk Public Schools comprehensive public high school.",
+      "town": "Norwalk",
+      "address": "23 Calvin Murphy Drive, Norwalk, CT 06851",
+      "ages": "Grades 9-12",
+      "website": "https://nhs.norwalkps.org/",
+      "contact": "203-838-4481",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Norwalk Public Schools",
+      "programSetting": [
+        "Public School"
+      ]
+    },
+    {
       "id": "recG8HLY7J6PZeAxP",
       "name": "Norwich BOE at Huntington School Preschool",
       "track": "Family & Childcare",
@@ -12218,6 +12414,39 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "reckWhS1juDN9JEmr",
+      "name": "P-TECH Norwalk",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "Public magnet pathway where students can earn a high school diploma and a no-cost associate degree while gaining technology and internship experience.",
+      "town": "Norwalk",
+      "address": "23 Calvin Murphy Drive, Norwalk, CT 06851",
+      "ages": "Grades 9-12",
+      "website": "https://chooseptechnorwalk.org/",
+      "contact": "203-838-4481 ext. 13150",
+      "submittedBy": "Village Notes Research",
+      "servicesOffered": [
+        "College Access / Readiness"
+      ],
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Norwalk Public Schools",
+      "programSetting": [
+        "Magnet School",
+        "Public School"
+      ],
+      "programTopics": [
+        "STEM",
+        "Coding",
+        "College Readiness"
+      ],
+      "teenOpportunity": [
+        "Internship",
+        "Career Exploration",
+        "College Readiness"
       ]
     },
     {
@@ -16123,6 +16352,32 @@
         "Child Care",
         "Infant Care",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recX102phEVjI4ztY",
+      "name": "Warren Harding High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Bridgeport public high school with health careers and law and public service academies.",
+      "town": "Bridgeport",
+      "address": "379 Bond Street, Bridgeport, CT 06610",
+      "ages": "Grades 9-12",
+      "website": "https://harding.bridgeportedu.net/",
+      "contact": "203-275-2751",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-01",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Bridgeport Public Schools",
+      "programSetting": [
+        "Public School"
+      ],
+      "programTopics": [
+        "Health Careers",
+        "Public Safety"
+      ],
+      "teenOpportunity": [
+        "Career Exploration"
       ]
     },
     {
