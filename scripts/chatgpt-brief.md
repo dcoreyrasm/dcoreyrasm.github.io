@@ -515,29 +515,57 @@ you record it. What follows is what to go looking for.
 
 Work in this priority order. Do not skip to the easy one.
 
-1. PET CARE & RESOURCES — the new track, currently empty.
+1. TEENS & HIGH SCHOOL — the new track, currently empty.
 
    A visitor can select it today and get nothing, which is worse than not
    offering it. Fill it first.
 
-   Start with what people search for in a crisis, because that is when a
-   directory earns its place: emergency and after-hours veterinary hospitals,
-   then low-cost and income-qualified clinics, then spay/neuter and vaccination
-   programmes. Municipal animal control, humane societies and regional rescues
-   are good spines — they publish real hours and often run the assistance
-   programmes too.
+   Start with the schools themselves, because that is what a family is choosing
+   between: the seventeen CT Technical Education and Career System schools,
+   the interdistrict magnets, the regional agricultural science programmes, and
+   the comprehensive public high schools in the towns the directory already
+   covers well. Then the routes out of them -- registered apprenticeships,
+   youth employment through the regional workforce boards, and college-access
+   programmes.
 
-   Then the everyday: dog daycare, boarding, in-home sitting, walking,
-   grooming, training. Start in the towns the directory already covers, so a
-   family searching their own town finds both kinds of care in one place.
+   Read the track boundary in the recording instructions before you start. It
+   is the one most likely to go wrong: a summer camp for fifteen-year-olds is
+   still Family & Childcare, and an after-school club is still Afterschool
+   Enrichment. This track is the school itself, or a route into work or
+   college. Nothing else.
 
-   Animals Accepted is not optional on this track. A kennel that takes only
-   dogs is no use to somebody with a rabbit, and it is the first thing an owner
-   filters on. If the provider does not say, leave it blank — do not assume dogs.
+   Grade Range and School District are this track's equivalent of Animals
+   Accepted -- the fields a family filters on first. Record both, and use
+   Program Setting to say public, magnet, charter or private.
 
-2. ELDER CARE — ten listings, about one per category.
+2. THE 424 LISTINGS WITH NO WEBSITE — a bounded, finishable job.
 
-   Half of what this directory claims to be, and it is nearly empty. The five
+   Every listing missing a URL came from one bulk import of Office of Early
+   Childhood childcare providers. Every record research has written carries
+   one. So this is not a habit to fix; it is a known set to work through, and
+   it has an end.
+
+   It matters more than its dullness suggests. A listing with no URL cannot be
+   re-checked by anyone, ever, and never enters the standing source registry --
+   so no scheduled re-read will reach it however long the directory runs.
+   Finishing this is what takes the re-check schedule from covering a third of
+   the directory to covering all of it.
+
+   Find them in Airtable: Moderation Status is Published, Submitted By starts
+   "Connecticut Office of Early Childhood", Website is empty. Work by town so
+   you can use one municipal or state page for several at once.
+
+   The rules on which URLs count are in the recording instructions and they
+   are strict: provider-owned or official only, never a directory or review
+   site, and never guessed from the name. An empty Website is better than a
+   wrong one. Record Last Verified as you go -- that is what puts the site into
+   the re-check queue.
+
+3. ELDER CARE — real now, but still thin per category.
+
+   Half of what this directory claims to be. The measured count is below; the
+   shape of the gap is that some categories have several listings and others
+   have one or none, so aim for even coverage rather than volume. The five
    Connecticut Area Agencies on Aging are the obvious spine; each publishes
    directories of home care agencies, adult day programmes, congregate meal
    sites and caregiver support groups. Assisted living, memory care and skilled
@@ -546,7 +574,7 @@ Work in this priority order. Do not skip to the easy one.
    Aim to get every elder category into double figures before adding a
    twentieth childcare centre.
 
-3. DEPTH ON LISTINGS THAT ALREADY EXIST — the biggest gap of all.
+4. DEPTH ON LISTINGS THAT ALREADY EXIST — hours, cost, waitlists.
 
    Hours and Website are the specific promise on the front of the page, and it
    is mostly unkept. See the measured section below for where that stands now
@@ -566,7 +594,7 @@ Work in this priority order. Do not skip to the easy one.
    If you cannot find the real thing, leave the boilerplate. Do not paraphrase
    it into something that sounds more specific than what you actually know.
 
-4. THE SIXTY TOWNS WITH NOTHING.
+5. THE TOWNS WITH NOTHING.
 
    Well under half of Connecticut's 169 municipalities appear -- the measured
    count is below. Work from the state's own
