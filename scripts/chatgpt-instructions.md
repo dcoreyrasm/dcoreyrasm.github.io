@@ -461,6 +461,44 @@ DO NOT GUESS A URL FROM THE NAME. "Riverside Learning Center" does not imply
 riversidelearningcenter.com. Open it, confirm it is that provider in that
 town, then record it.
 
+UPCOMING EVENT AND EVENT DATE — an announced, dated thing a family can attend.
+
+Open houses, tour dates, information sessions, webinars, registration nights,
+orientations, vaccination clinics, adoption days. The site shows these
+highlighted at the top of the card, above everything else, because they are
+the only thing on a listing with a deadline attached.
+
+  Upcoming Event  One short scannable phrase, not a paragraph. "Fall open
+                  house, tours at 9am and 6pm, RSVP required" is right. A
+                  three-sentence description of the school's philosophy is
+                  not -- that belongs in Notes/Tags.
+
+  Event Date      The date it happens. If the provider gives a range, put the
+                  first day here and say the range in Upcoming Event.
+
+BOTH FIELDS OR NEITHER. An event with no date never expires, so the site will
+not show it at all and the sync will name it on the run as something to fix.
+This is deliberate: the date is what lets the card hide the event the morning
+after it happens. That is the entire reason this is two fields rather than one
+sentence -- nobody was ever going to sweep hundreds of listings by hand for
+open houses that had already come and gone.
+
+ONLY WHAT IS PUBLISHED, WITH A DATE ON IT. "Tours available by appointment" is
+not an event. "We usually hold an open house in the spring" is not an event.
+Neither is a date you inferred from last year's calendar. If the provider has
+not announced a specific date, leave both fields empty.
+
+ONE EVENT PER LISTING, THE NEXT ONE. When a provider announces something new,
+replace what is there rather than appending. If the date already sitting in
+the record has passed, that is the one to replace -- the run reports those
+every sync, and they are the fastest useful edit in the directory: the listing
+already exists, you are only refreshing one line.
+
+WORTH A LOOK ON EVERY LISTING YOU OPEN. You are already on the provider's own
+page to fill in Website and Last Verified. Their events or admissions page is
+usually one click away, and a family who finds an open house two weeks out
+gets something no other directory in Connecticut gives them.
+
 SUBMITTED BY — the exact string "Village Notes Research" on every record you
 create. Not your own name, not Darice's, not "ChatGPT Daily Search", not a
 sentence explaining the record's status. Copy those four words.
