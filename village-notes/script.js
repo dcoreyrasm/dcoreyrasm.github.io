@@ -270,6 +270,25 @@
     // than inventing "College Prep" as a third spelling.
     'College Access / Readiness':    ['College Access / Readiness'],
 
+    // Elder Care. Services Offered carries these names and the Category field
+    // carries the same ideas under slightly different spellings, so without
+    // this a card announces what it just said: nine listings currently read
+    // "Skilled Nursing / Rehab" at the top and "Also offers: Skilled Nursing"
+    // below. Mapping them removes the echo and, where the service is NOT the
+    // listing's own category, widens the filter correctly -- an assisted
+    // living residence that also runs an adult day programme now answers to
+    // both. Home Modification is deliberately absent: there is no category of
+    // that name, so it is a service only, like Transportation.
+    'Adult Day Program':             ['Adult Day Program'],
+    'Assisted Living':               ['Assisted Living'],
+    'Skilled Nursing':               ['Skilled Nursing / Rehab'],
+    'Hospice':                       ['Hospice / Palliative Care'],
+    'Durable Medical Equipment Loan':['Durable Medical Equipment Loan'],
+    'Veterans Benefits Counseling':  ['Veterans Benefits Counseling'],
+    'Meal Delivery':                 ['Meal Delivery'],
+    'Senior Center':                 ['Senior Center / Congregate Meals & Social Programs'],
+    'Companion Services':            ['Companion Services'],
+
     // Every pet category is also a service, because pet providers stack
     // services more than childcare ones do: one kennel boards, grooms and
     // trains; one humane society rehomes, fosters, reunites strays and runs
