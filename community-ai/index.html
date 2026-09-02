@@ -1,3 +1,11 @@
+---
+# This front matter exists for one reason: it makes Jekyll evaluate the {{ }}
+# stamps on the stylesheet and script URLs below. Without it the file is copied
+# through verbatim and the stamps would ship as literal text.
+#
+# No layout is applied and nothing else about the page changes -- the rest is
+# still written and served exactly as it reads here.
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +28,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-725R412XD7"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-725R412XD7');</script>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="stylesheet" href="/styles.css" />
-  <link rel="stylesheet" href="/community-ai/community-ai.css" />
+  <link rel="stylesheet" href="/styles.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
+  <link rel="stylesheet" href="/community-ai/community-ai.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
   <!-- Microsoft Clarity -->
   <script type="text/javascript">if(!window.__daOptOut){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xdrtc0i2un");}</script>
 </head>
@@ -201,6 +209,6 @@
       btn.setAttribute('aria-expanded', open);
     }
   </script>
-  <script src="/community-ai/script.js" defer></script>
+  <script src="/community-ai/script.js?v={{ site.time | date: '%Y%m%d%H%M' }}" defer></script>
 </body>
 </html>
