@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T15:56:57.089Z",
+  "generated": "2026-09-02T02:28:36.619Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -4072,7 +4072,8 @@
       "notes": "Official provider materials identify Connecticut Department of Consumer Protection registration HCA.0000137 and offices in Stratford, Hamden, Hartford, and Stamford.",
       "registrationStatus": "Rolling / Ongoing",
       "servicesOffered": [
-        "Elder Care"
+        "Elder Care",
+        "Companion Services"
       ],
       "lastVerified": "2026-08-30"
     },
@@ -10481,7 +10482,8 @@
       "registrationStatus": "Rolling / Ongoing",
       "servicesOffered": [
         "Elder Care",
-        "Caregiver Support"
+        "Caregiver Support",
+        "Senior Center"
       ],
       "meals": "Meals Only",
       "daysOffered": [
@@ -10587,7 +10589,8 @@
       "servicesOffered": [
         "Elder Care",
         "Caregiver Support",
-        "Transportation"
+        "Transportation",
+        "Senior Center"
       ],
       "residency": "No Residency Restriction",
       "lastVerified": "2026-08-30"
@@ -10842,7 +10845,8 @@
       "notes": "Official materials also describe companion and homemaker services, in-home therapy, adult family living support, and help navigating care options.",
       "servicesOffered": [
         "Elder Care",
-        "Caregiver Support"
+        "Caregiver Support",
+        "Companion Services"
       ],
       "lastVerified": "2026-08-31"
     },
@@ -11734,7 +11738,8 @@
       "notes": "Official program, organization, and funding notice pages checked August 29, 2026. Exact towns beyond Greater Waterbury were not listed, so Towns Served is blank.",
       "registrationStatus": "Waitlist",
       "servicesOffered": [
-        "Elder Care"
+        "Elder Care",
+        "Meal Delivery"
       ],
       "meals": "Meals Only",
       "lastVerified": "2026-08-29"
@@ -13063,7 +13068,8 @@
       "transportation": "Yes",
       "servicesOffered": [
         "Elder Care",
-        "Transportation"
+        "Transportation",
+        "Senior Center"
       ],
       "residency": "Residents and Nonresidents",
       "lastVerified": "2026-08-31"
@@ -13571,7 +13577,8 @@
       "dateSubmitted": "2026-08-30",
       "registrationStatus": "Rolling / Ongoing",
       "servicesOffered": [
-        "Elder Care"
+        "Elder Care",
+        "Meal Delivery"
       ],
       "meals": "Meals Only",
       "lastVerified": "2026-08-30"
