@@ -94,7 +94,10 @@
     return out.sort(function (a, b) { return a.localeCompare(b); });
   }
 
-  function fillSelect(select, values, allLabel) {
+  // labelFor is optional: it only changes what the option reads as, never the
+  // value, so filtering, the Airtable prefill and the share URL keep working
+  // off the real track name. Defaults to showing the value as-is.
+  function fillSelect(select, values, allLabel, labelFor) {
     var current = select.value;
     select.innerHTML = '';
     var first = document.createElement('option');
@@ -104,7 +107,7 @@
     values.forEach(function (v) {
       var opt = document.createElement('option');
       opt.value = v;
-      opt.textContent = v;
+      opt.textContent = labelFor ? labelFor(v) : v;
       select.appendChild(opt);
     });
     if (values.indexOf(current) !== -1) select.value = current;
@@ -168,6 +171,17 @@
   // one gets noticed rather than quietly filtering to nothing.
   var TRACKS = ['Family & Childcare', 'Elder Care', 'Pet Care & Resources',
                 'Teens & High School'];
+
+  // The dropdown asks "Who you're caring for", so the options have to answer
+  // that question rather than name the track. Display only -- the values, the
+  // data and the Airtable field are untouched, and a track missing from here
+  // (a fourth one) falls back to its own name instead of vanishing.
+  var TRACK_LABELS = {
+    'Family & Childcare':   'Kids & family',
+    'Elder Care':           'Older adults',
+    'Pet Care & Resources': 'Pets'
+  };
+  function trackLabel(v) { return TRACK_LABELS[v] || v; }
 
   var GROUPS = [
     ['Child Care', ['Center-Based Daycare','Home Daycare (Licensed)','Infant Care',
@@ -1016,7 +1030,7 @@
         });
 
         fillSelect(el.track, uniqueSorted(TRACKS.concat(
-          state.all.map(function (r) { return r.track; }))), 'All tracks');
+          state.all.map(function (r) { return r.track; }))), 'Anyone', trackLabel);
         var townValues = [];
         state.all.forEach(function (r) {
           townValues.push(r.town);
