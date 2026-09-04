@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-02T02:28:36.619Z",
+  "generated": "2026-09-04T20:09:54.143Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 698,
+  "count": 712,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -92,6 +92,7 @@
     "Chester",
     "Colchester",
     "Colebrook",
+    "Cornwall",
     "Coventry",
     "Cromwell",
     "Danbury",
@@ -105,6 +106,7 @@
     "Ellington",
     "Enfield",
     "Fairfield",
+    "Fairfield / Bridgeport",
     "Farmington",
     "Franklin",
     "Glastonbury",
@@ -141,13 +143,16 @@
     "New Milford",
     "Newington",
     "Newtown",
+    "Norfolk",
     "North Branford",
     "North Canaan",
     "North Haven",
+    "North Stonington",
     "Norwalk",
     "Norwich",
     "Orange",
     "Oxford",
+    "Pawcatuck",
     "Plainfield",
     "Plainville",
     "Plymouth",
@@ -169,6 +174,7 @@
     "Statewide",
     "Statewide (all of Connecticut)",
     "Sterling",
+    "Stonington",
     "Storrs",
     "Stratford",
     "Suffield",
@@ -182,6 +188,7 @@
     "Waterbury",
     "Waterford",
     "Watertown",
+    "West Cornwall",
     "West Hartford",
     "West Haven",
     "Westbrook",
@@ -510,6 +517,34 @@
         "Elder Care"
       ],
       "lastVerified": "2026-08-30"
+    },
+    {
+      "id": "recvBfqW3mePW0YRh",
+      "name": "AID a Pet Community Pet Pantry",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Free dog and cat food and pet supplies for Hartford residents in need",
+      "town": "Hartford",
+      "address": "277 Main Street, Hartford, CT 06106",
+      "ages": "Hartford residents needing help feeding dogs or cats",
+      "hours": "Pet pantry distributions are scheduled by the provider; current 2026 dates and times are posted on the pantry page.",
+      "cost": "Pet food and supplies are provided free of charge while supplies last.",
+      "website": "https://www.aidapethartfordct.org/visit",
+      "townsServed": [
+        "Hartford"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "AID a Pet serves Hartford residents. The provider states that assistance recipients should bring a Connecticut EBT Medical Card or Food Stamp Card as proof of need. Supplies are first-come, first-served and vary based on donations.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Pet Food Assistance"
+      ],
+      "residency": "Residents Only",
+      "lastVerified": "2026-09-04",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ]
     },
     {
       "id": "recJc8eiiRyt6wpMh",
@@ -3893,6 +3928,29 @@
       ]
     },
     {
+      "id": "receptFSi8I4azQr8",
+      "name": "Connecticut Humane Society Dr. Bill Haines Special Assistance Fund",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "specificType": "Financial assistance for unexpected and lifesaving veterinary care",
+      "town": "Statewide",
+      "ages": "Connecticut pet owners facing financial difficulty with veterinary care",
+      "website": "https://cthumane.org/keeping-pets-in-homes-success-page/",
+      "contact": "800-452-0114",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "The Dr. Bill Haines Special Assistance Fund provides financial support when a pet has unexpected medical needs, helping families obtain treatment rather than surrendering a pet. Connecticut Humane Society directs people needing help with food, veterinary care, or temporary hardship to call 800-452-0114.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Veterinary Care"
+      ],
+      "residency": "Statewide",
+      "lastVerified": "2026-09-04"
+    },
+    {
       "id": "recTQzp9oQb8vH0LJ",
       "name": "Connecticut Humane Society Fox Memorial Clinic",
       "track": "Pet Care & Resources",
@@ -3971,6 +4029,36 @@
         "Pet Food Assistance"
       ],
       "lastVerified": "2026-08-27",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ],
+      "petRequirements": [
+        "Rabies Certificate Required",
+        "Membership or Registration Required"
+      ]
+    },
+    {
+      "id": "recr18jeuWfoAH7fc",
+      "name": "Connecticut Humane Society Pet Food Pantry, Wilton",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Short-term free dog and cat food for pet owners experiencing financial hardship",
+      "town": "Wilton",
+      "address": "863 Danbury Road, Wilton, CT",
+      "ages": "Pet owners experiencing temporary economic hardship; dogs and cats",
+      "website": "https://cthumane.org/pet-food-pantry-program/",
+      "contact": "860-594-4500; petfoodpantry@cthumane.org",
+      "townsServed": [
+        "Wilton"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "Connecticut Humane Society currently confirms Wilton as one of its three Pet Food Pantry pickup locations. Applicants submit a recent pet photo, proof of current rabies vaccination, and financial-need information. Approved clients receive free pet food for three months before renewal; assistance may continue for up to two years. Prescription food is not provided and there is no delivery.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Pet Food Assistance"
+      ],
+      "lastVerified": "2026-09-04",
       "animals": [
         "Dogs",
         "Cats"
@@ -5348,6 +5436,33 @@
       ]
     },
     {
+      "id": "recQZ2oZPLO2QtHzB",
+      "name": "Downtown Evening Soup Kitchen Pet Food Assistance",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Dog and cat food assistance through the DESK pantry",
+      "town": "New Haven",
+      "address": "57 Olive Street, New Haven, CT",
+      "ages": "People using Downtown Evening Soup Kitchen food-assistance services",
+      "hours": "Connecticut's pet-owner resource guide lists pet food distribution Wednesday, 1:30 PM-3 PM. Confirm with DESK before visiting.",
+      "website": "https://deskct.org/food-donations/",
+      "contact": "donate@deskct.org",
+      "townsServed": [
+        "New Haven"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "Connecticut's pet-owner resource guide lists Downtown Evening Soup Kitchen as a pet food pantry. DESK's current official site confirms that it accepts cat and dog food for its food-assistance operation and lists the Olive Street Pantry at 57 Olive Street.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Pet Food Assistance"
+      ],
+      "lastVerified": "2026-09-04",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
       "id": "recdzXV8I0R3NW3MF",
       "name": "E.C. Goodwin Technical High School",
       "track": "Teens & High School",
@@ -6391,6 +6506,31 @@
       ]
     },
     {
+      "id": "recdkptdVppnnEezx",
+      "name": "Fishes & Loaves at North Canaan Congregational Church Pet Food Assistance",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Pet food assistance through the Fishes & Loaves food pantry",
+      "town": "North Canaan",
+      "address": "30 Granite Avenue, Canaan, CT 06018",
+      "ages": "Residents of Canaan, East Canaan, Falls Village, and North Canaan",
+      "hours": "Connecticut's pet-owner resource guide lists Thursday 12 PM-2 PM for pet food assistance. Contact the pantry to confirm current distribution details.",
+      "website": "https://www.northcanaancongregationalchurch.org/_wpez/north-canaan-congregational-church/contact-us/",
+      "contact": "860-824-7232; fishesandloavespantry@gmail.com",
+      "townsServed": [
+        "Canaan",
+        "North Canaan"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "Connecticut's pet-owner resource guide identifies North Canaan Congregational Church as a pet food pantry serving residents of Canaan, East Canaan, Falls Village, and North Canaan. The church's official site confirms Fishes & Loaves Food Pantry at 30 Granite Avenue and provides current contact information.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Pet Food Assistance"
+      ],
+      "residency": "Residents Only",
+      "lastVerified": "2026-09-04"
+    },
+    {
       "id": "recjMZcIKKfAhB6v9",
       "name": "Francisca A Hernández García Family Child Care Home",
       "track": "Family & Childcare",
@@ -6488,6 +6628,27 @@
         "Infant Care",
         "Toddler Care"
       ]
+    },
+    {
+      "id": "recozJsAX0BgbZExr",
+      "name": "Friends of Berlin Animal Control Pet Food Pantry",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Pet food assistance for low-income households and people experiencing financial hardship",
+      "town": "Berlin",
+      "ages": "Low-income individuals and families experiencing financial hardship",
+      "website": "https://www.fobac.org/",
+      "contact": "860-828-5287; fobac.pets@yahoo.com",
+      "townsServed": [
+        "Berlin"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "Connecticut's current pet-owner resource guide lists the Friends of Berlin Animal Control Pet Food Pantry in Berlin for low-income individuals or people experiencing financial hardship. Contact the organization to confirm current distribution details and documentation requirements before visiting.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Pet Food Assistance"
+      ],
+      "lastVerified": "2026-09-04"
     },
     {
       "id": "recPDcRlSDkGQLiyH",
@@ -10360,6 +10521,33 @@
       ]
     },
     {
+      "id": "rec9cHNWOa2mSgXJI",
+      "name": "Milford Animal Control Pet Food Bank",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Municipal pet food bank for Milford-area pet owners needing food assistance",
+      "town": "Milford",
+      "address": "49 Silver Sands Parkway, Milford, CT 06460",
+      "ages": "Pet owners needing food assistance; contact Milford Animal Control for current eligibility",
+      "hours": "Animal Control office hours: Monday-Friday 9 AM-5 PM; Saturday 9 AM-3 PM. Contact the department before visiting for Pet Food Bank availability.",
+      "website": "https://www.milfordct.us/185/Donations",
+      "contact": "203-783-3279 or 203-701-4705",
+      "townsServed": [
+        "Milford"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "Connecticut's pet-owner resource guide lists the Milford Animal Control Pet Food Bank. Milford Animal Control's current municipal page confirms the department accepts dog and cat food donations and provides current contact, location, and office hours. Call ahead for current Pet Food Bank eligibility and availability.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Pet Food Assistance"
+      ],
+      "lastVerified": "2026-09-04",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
       "id": "recKNrKfU7NdtG0Us",
       "name": "Milford Boe At Live Oaks Elementary School",
       "track": "Family & Childcare",
@@ -12590,6 +12778,30 @@
       ]
     },
     {
+      "id": "rec55II1C91JCmxEd",
+      "name": "Pawcatuck Neighborhood Center Pet Food Assistance",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Pet food provided to food pantry clients as part of weekly basic-needs services",
+      "town": "Pawcatuck",
+      "address": "27 Chase Street, Pawcatuck, CT 06379",
+      "ages": "Residents of Pawcatuck, Mystic, Stonington, North Stonington, and Westerly in the PNC service area",
+      "hours": "Food pantry hours: Monday-Friday, 9 AM-3:30 PM.",
+      "website": "https://pawcatuckneighborhoodcenter.org/food/",
+      "contact": "860-599-3285",
+      "townsServed": [
+        "Stonington",
+        "North Stonington"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "Pawcatuck Neighborhood Center confirms that pet food is provided to PNC clients as part of its food bank service. The organization serves Pawcatuck, Mystic, Stonington, North Stonington, and Westerly; only Connecticut town options supported by the Village Notes schema are tagged in Towns Served.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Pet Food Assistance"
+      ],
+      "lastVerified": "2026-09-04"
+    },
+    {
       "id": "recilD3L2Cj6wULfW",
       "name": "Pequenin Children Multicultural Readiness Academy",
       "track": "Family & Childcare",
@@ -13282,6 +13494,32 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recd5B0sAvepsa67F",
+      "name": "ROAR Ridgefield Pet Food Assistance",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Dog and cat food assistance available through the ROAR shelter",
+      "town": "Ridgefield",
+      "address": "45 South Street, Ridgefield, CT",
+      "ages": "Ridgefield-area residents needing help feeding a dog or cat",
+      "hours": "Municipal guidance lists pet food assistance Monday-Friday 11 AM-3 PM; Thursday-Friday 6 PM-8 PM; Saturday 11 AM-3 PM; Sunday 12 PM-2 PM.",
+      "website": "https://ridgefieldct.gov/departments/social_services/food_pantry.php",
+      "townsServed": [
+        "Ridgefield"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "The Town of Ridgefield Social Services food-pantry page directs residents needing help feeding a dog or cat to the ROAR shelter at 45 South Street.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Pet Food Assistance"
+      ],
+      "lastVerified": "2026-09-04",
+      "animals": [
+        "Dogs",
+        "Cats"
       ]
     },
     {
@@ -14313,6 +14551,56 @@
       "notes": "Official Stamford Recreation page verified August 25, 2026. Includes Heroy, TOR, Star Center, Stillmeadow, and Springdale programs."
     },
     {
+      "id": "rec8aIumeDgRXUNHu",
+      "name": "STARelief Home For Life Grants",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "specificType": "Financial assistance for routine and emergency veterinary care",
+      "town": "Stamford",
+      "ages": "Pet caretakers and families experiencing financial hardship",
+      "cost": "Financial assistance is available for qualifying routine and emergency veterinary care; eligibility documentation is required.",
+      "website": "https://starelief.org/our-programs/",
+      "contact": "203-636-0971",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "STARelief and Pet Assistance is based in Stamford and operates nationally. Its Home For Life Grant program provides financial assistance and resources to pet caretakers and families experiencing financial hardship, including routine and emergency veterinary care. The application requires proof of financial hardship, a veterinary estimate, and a current pet photo.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Veterinary Care"
+      ],
+      "residency": "Statewide",
+      "lastVerified": "2026-09-04"
+    },
+    {
+      "id": "reccYJguQjwLb7pZb",
+      "name": "STARelief Pet Food Pantry",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Free pet food and supplies for people experiencing financial difficulty",
+      "town": "Stamford",
+      "ages": "Low-income households and others experiencing financial hardship",
+      "website": "https://starelief.org/our-programs/",
+      "contact": "203-636-0971",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "STARelief states that its Pet Food Pantry provides free pet food and supplies to people having financial difficulties. Connecticut's pet-owner resource guide states that applicants must provide financial-need documentation and valid ID, and that assistance is available for up to five pets per household.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Pet Food Assistance"
+      ],
+      "residency": "Statewide",
+      "lastVerified": "2026-09-04",
+      "petRequirements": [
+        "Spay/Neuter Required",
+        "Membership or Registration Required"
+      ]
+    },
+    {
       "id": "recavfScYGTdoO7IF",
       "name": "STARelief Safe Place for Pets",
       "track": "Pet Care & Resources",
@@ -15074,6 +15362,39 @@
       ]
     },
     {
+      "id": "recm5ZqowLanCrLV2",
+      "name": "The Little Guild Pet Pantry",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Free pet food and supplies through an on-site pantry and Northwest Connecticut partner locations",
+      "town": "West Cornwall",
+      "address": "285 Sharon-Goshen Turnpike, West Cornwall, CT 06796",
+      "ages": "Pet owners in need across Northwest Connecticut",
+      "hours": "On-site pantry is available during regular Little Guild open hours; partner distributions are monthly or bi-monthly depending on location.",
+      "website": "https://www.littleguild.org/petpantry",
+      "contact": "860-672-6346",
+      "townsServed": [
+        "Cornwall",
+        "Torrington",
+        "Winchester",
+        "Canaan",
+        "Lakeville",
+        "Litchfield",
+        "Norfolk"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "The Little Guild provides free pet food and supplies at its Cornwall facility and through partner events in Torrington, Winsted, Canaan, Lakeville, Litchfield, and Norfolk.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Pet Food Assistance"
+      ],
+      "lastVerified": "2026-09-04",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
       "id": "recOPeN3kQ4XmSbb0",
       "name": "The Little Log School House",
       "track": "Family & Childcare",
@@ -15187,6 +15508,36 @@
       "servicesOffered": [
         "Child Care",
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "reccr7o8295OGxZuv",
+      "name": "The Victor Project",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Veterinary Care",
+      "specificType": "Veterinary financial assistance for families facing hardship",
+      "town": "Fairfield / Bridgeport",
+      "ages": "Families experiencing financial hardship; dogs and cats",
+      "cost": "Grant assistance is paid directly to the veterinary practice, not to the applicant.",
+      "website": "https://thevictorproject.org/",
+      "contact": "info@thevictorproject.org",
+      "townsServed": [
+        "Fairfield",
+        "Bridgeport"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "Serves Fairfield and Bridgeport, Connecticut, and surrounding communities. Grants cover emergency and medically necessary treatment, spay/neuter surgery, palliative care, and humane euthanasia. Vaccinations and routine/wellness care are excluded. Approved grants are paid directly to the veterinary practice.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Emergency Veterinary Care",
+        "Spay/Neuter Assistance",
+        "Veterinary Care"
+      ],
+      "residency": "Residents Only",
+      "lastVerified": "2026-09-04",
+      "animals": [
+        "Dogs",
+        "Cats"
       ]
     },
     {
@@ -16008,6 +16359,36 @@
       ],
       "petRequirements": [
         "None Stated"
+      ]
+    },
+    {
+      "id": "recpoUKm288958nul",
+      "name": "Vernon Pet Pantry at HVCC",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Pet food and supplies for pet owners in need in Tolland County",
+      "town": "Vernon",
+      "address": "29 Naek Road, Suite 5A, Vernon, CT 06066",
+      "ages": "Pet owners in need in Tolland County",
+      "hours": "HVCC pantry hours: Monday 2 PM-5 PM; Wednesday 12 PM-5 PM; Thursday 9 AM-1 PM; Friday 9 AM-12 PM.",
+      "website": "https://www.hvcchelps.org/vernonpetpantry",
+      "contact": "860-872-7727",
+      "townsServed": [
+        "Vernon"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "HVCC states that the Vernon Pet Pantry supports pet owners in need in Tolland County and provides dry or wet cat and dog food, litter, accessories, and treats. Connecticut Foodshare states participants must be Tolland County residents and registered with the HVCC Food Pantry.",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Pet Food Assistance"
+      ],
+      "lastVerified": "2026-09-04",
+      "animals": [
+        "Dogs",
+        "Cats"
+      ],
+      "petRequirements": [
+        "Membership or Registration Required"
       ]
     },
     {

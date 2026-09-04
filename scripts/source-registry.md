@@ -130,7 +130,6 @@ now.
   partnershipsadc.org                1  2026-08-30   Elder Care
   seniormealsct.org                  1  2026-08-30   Elder Care
   mozaicsl.org                       6  2026-08-31   Elder Care
-  cthumane.org                       5  2026-08-31   Pet Care & Resources
   masonicare.org                     4  2026-08-31   Elder Care
   fwc.bridgeportedu.net              3  2026-08-31   Teens & High School
   benchmarkseniorliving.com          3  2026-08-31   Elder Care
@@ -172,7 +171,6 @@ now.
   seniorresourcesec.org              1  2026-08-31   Elder Care
   sharonhcc.com                      1  2026-08-31   Elder Care
   swcaa.org                          1  2026-08-31   Elder Care
-  starelief.org                      1  2026-08-31   Pet Care & Resources
   suffieldrhc.com                    1  2026-08-31   Elder Care
   everyanimalmatters.org             1  2026-08-31   Pet Care & Resources
   veg.com                            1  2026-08-31   Pet Care & Resources
@@ -218,6 +216,18 @@ now.
   westhillweb.com                    1  2026-09-01   Teens & High School
   wilburcross.nhps.net               1  2026-09-01   Teens & High School
   workforcealliance.biz              1  2026-09-01   Teens & High School
+  cthumane.org                       7  2026-09-04   Pet Care & Resources
+  starelief.org                      3  2026-09-04   Pet Care & Resources
+  aidapethartfordct.org              1  2026-09-04   Pet Care & Resources
+  deskct.org                         1  2026-09-04   Pet Care & Resources
+  northcanaancongregationalchurch.org   1  2026-09-04   Pet Care & Resources
+  fobac.org                          1  2026-09-04   Pet Care & Resources
+  milfordct.us                       1  2026-09-04   Pet Care & Resources
+  pawcatuckneighborhoodcenter.org    1  2026-09-04   Pet Care & Resources
+  ridgefieldct.gov                   1  2026-09-04   Pet Care & Resources
+  littleguild.org                    1  2026-09-04   Pet Care & Resources
+  thevictorproject.org               1  2026-09-04   Pet Care & Resources
+  hvcchelps.org                      1  2026-09-04   Pet Care & Resources
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -242,7 +252,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 280 of 698 listings (40%) carry a Website, so
+Only 294 of 712 listings (41%) carry a Website, so
 everything above is built from that third of the directory. The other
 418 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -252,7 +262,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-40 of the 195 domains here have never had a Last Verified on
+40 of the 205 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```
