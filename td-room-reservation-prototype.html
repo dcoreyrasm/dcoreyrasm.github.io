@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>TD Room Reservation — Working Prototype</title>
+<!--
+  ============================================================================
+  TD ROOM RESERVATION SYSTEM — CLICKABLE PROTOTYPE
+  ============================================================================
+  This is a self-contained file. No build step, no dependencies, no server,
+  no real data. Open it in a browser and everything works.
+
+  WHAT IT IS FOR
+    Showing TD staff what the system would do BEFORE anything is built in
+    Airtable, so they can correct the rules while correcting them is cheap.
+    Every value the source workflow document did NOT specify is marked with a
+    dotted underline and a "?" badge, and is listed on the "Build notes" tab.
+    Those marks are the point of this prototype. Do not remove them until a
+    human has actually answered the question.
+
+  WHERE TO EDIT (all near the top of the <script> block)
+    ROOMS      - the five spaces and their rules. The three real per-room
+                 differences from the source document are `training`, `swipe`,
+                 and `longTerm`. Everything else in a room record (hours,
+                 notice window, max length) is a PLACEHOLDER awaiting a human.
+    STUDENTS   - fictional demo students. Their `trainings` array drives the
+                 training gate.
+    DENIALS    - denial reasons and the student-facing message for each.
+    SEED       - the demo bookings that create realistic conflicts. Dates are
+                 computed relative to today so the demo never goes stale.
+    OPEN       - the open-questions list on the Build notes tab.
+
+  WHAT IS DELIBERATELY NOT HERE
+    No email, no Google Calendar, no swipe-system call, no database. Where the
+    real system would take one of those actions, this prototype writes a line
+    to the Automation log instead, so reviewers can see what WOULD fire.
+
+  SOURCE
+    Built from TD_Airtable_Rooms_Automations_and_Workflow (the workflow
+    document), which specifies an eight-step flow shared by all five spaces.
+  ============================================================================
+-->
+<style>
+  :root{
+    --navy:#00356B; --navy-deep:#002247; --navy-tint:#EEF3FA;
+    --clay:#A8512B; --clay-soft:#FBF1EB;
+    --green:#0E8C6E; --green-soft:#E8F5F1;
+    --amber:#B7791F; --amber-soft:#FDF5E6;
+    --ink:#1F2430; --muted:#59636F; --slate:#475569;
+    --paper:#FFFFFF; --panel:#F4F6F9; --line:#DCE0E7;
+    --shadow:0 10px 40px rgba(0,33,71,0.13);
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:#EAEEF3; color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:14px; line-height:1.55; -webkit-text-size-adjust:100%;
+  }
+  :focus-visible{outline:3px solid var(--navy); outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){*{transition-duration:.01ms !important}}
+  .wrap{max-width:1080px; margin:0 auto; padding:26px 22px 70px}
+
+  /* ---------- header ---------- */
+  .banner{
+    background:var(--amber-soft); border:1.5px solid #E8D5A8; border-radius:10px;
+    padding:11px 15px; font-size:12.5px; color:#6B5518; margin-bottom:20px;
+    display:flex; gap:10px; align-items:flex-start;
+  }
+  .banner b{color:#4A3A10}
+  .eyebrow{font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); font-weight:700}
+  h1{font-family:Georgia,"Times New Roman",serif; font-size:28px; color:var(--navy); font-weight:700; margin:5px 0 3px}
+  .sub{font-family:Georgia,serif; font-size:15px; color:var(--ink)}
+  .rule{height:3px; background:var(--navy); margin-top:12px}
+  .frame{font-size:13px; color:var(--muted); margin-top:10px; max-width:74ch}
+
+  /* ---------- struct toggle ---------- */
+  .toolbar{display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin:18px 0 6px}
+  .switch{display:inline-flex; align-items:center; gap:9px; cursor:pointer; font-size:13px; font-weight:600; color:var(--navy)}
+  .switch input{position:absolute; opacity:0; width:0; height:0}
+  .track{width:38px; height:22px; border-radius:20px; background:var(--line); position:relative; transition:background .15s; flex:0 0 auto}
+  .track::after{content:''; position:absolute; top:3px; left:3px; width:16px; height:16px; border-radius:50%; background:#fff; transition:transform .15s; box-shadow:0 1px 3px rgba(0,0,0,.25)}
+  .switch input:checked + .track{background:var(--navy)}
+  .switch input:checked + .track::after{transform:translateX(16px)}
+  .switch input:focus-visible + .track{outline:3px solid var(--navy); outline-offset:2px}
+  .toolbar .note{font-size:12.5px; color:var(--muted)}
+
+  /* ---------- tabs ---------- */
+  .tabs{display:flex; gap:5px; flex-wrap:wrap; margin:16px 0 0; border-bottom:2px solid var(--line)}
+  .tab{
+    appearance:none; border:none; background:none; font:inherit; cursor:pointer;
+    padding:10px 15px; font-size:13.5px; font-weight:600; color:var(--muted);
+    border-bottom:3px solid transparent; margin-bottom:-2px; border-radius:6px 6px 0 0;
+  }
+  .tab:hover{color:var(--navy); background:#E3E9F1}
+  .tab[aria-selected="true"]{color:var(--navy); border-bottom-color:var(--navy); background:var(--paper)}
+  .tab .cnt{
+    display:inline-block; min-width:19px; padding:1px 6px; margin-left:6px; border-radius:20px;
+    background:var(--clay); color:#fff; font-size:11px; font-weight:700; vertical-align:1px;
+  }
+  .panel{display:none; margin-top:22px}
+  .panel.on{display:block}
+
+  /* ---------- cards ---------- */
+  .card{background:var(--paper); border-radius:12px; box-shadow:var(--shadow); padding:22px; margin-bottom:18px}
+  .card.tight{padding:0; overflow:hidden}
+  h2{font-family:Georgia,serif; font-size:20px; color:var(--navy); font-weight:700; margin-bottom:5px}
+  h3{font-size:13.5px; font-weight:700; color:var(--ink); margin:20px 0 9px}
+  h3:first-child{margin-top:0}
+  .lede{color:var(--muted); font-size:13.5px; margin-bottom:16px; max-width:72ch}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+  @media (max-width:760px){.grid2{grid-template-columns:1fr}}
+
+  /* ---------- forms ---------- */
+  label.fl{display:block; font-size:12px; font-weight:700; color:var(--slate); margin-bottom:5px; letter-spacing:.02em}
+  input[type=text],input[type=date],input[type=time],input[type=number],select,textarea{
+    width:100%; font:inherit; font-size:14px; color:var(--ink); background:var(--paper);
+    border:1.5px solid var(--line); border-radius:8px; padding:9px 11px;
+  }
+  input:focus,select:focus,textarea:focus{border-color:var(--navy); outline:none; box-shadow:0 0 0 3px rgba(0,53,107,.12)}
+  textarea{resize:vertical; min-height:70px}
+  .field{margin-bottom:15px}
+  .btn{
+    appearance:none; font:inherit; font-size:13.5px; font-weight:600; cursor:pointer;
+    border-radius:8px; padding:10px 18px; border:1.5px solid var(--navy);
+    background:var(--navy); color:#fff; transition:background .12s,transform .1s;
+  }
+  .btn:hover{background:var(--navy-deep)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:var(--paper); color:var(--navy)}
+  .btn.ghost:hover{background:var(--navy-tint)}
+  .btn.deny{border-color:var(--clay); background:var(--paper); color:var(--clay)}
+  .btn.deny:hover{background:var(--clay-soft)}
+  .btn.ok{border-color:var(--green); background:var(--green); color:#fff}
+  .btn.ok:hover{background:#0A7359}
+  .btn.sm{padding:6px 13px; font-size:12.5px}
+  .btnrow{display:flex; gap:9px; flex-wrap:wrap; align-items:center}
+
+  /* ---------- room picker ---------- */
+  .rooms{display:grid; grid-template-columns:repeat(auto-fill,minmax(228px,1fr)); gap:11px}
+  .room{
+    text-align:left; background:var(--paper); border:1.5px solid var(--line); border-radius:10px;
+    padding:13px 14px; cursor:pointer; font:inherit; color:var(--ink); transition:border-color .12s,background .12s;
+  }
+  .room:hover{border-color:var(--navy); background:#F8FAFD}
+  .room[aria-pressed="true"]{border-color:var(--navy); background:var(--navy-tint); box-shadow:0 0 0 1px var(--navy) inset}
+  .room .rn{font-weight:700; font-size:14px; color:var(--navy); display:block}
+  .room .rl{font-size:12px; color:var(--muted); display:block; margin-top:2px}
+  .room .flags{display:flex; gap:5px; flex-wrap:wrap; margin-top:9px}
+
+  /* ---------- chips / pills ---------- */
+  .chip{
+    display:inline-flex; align-items:center; gap:4px; font-size:10.5px; font-weight:700;
+    letter-spacing:.04em; text-transform:uppercase; padding:3px 8px; border-radius:20px;
+    border:1px solid transparent; white-space:nowrap;
+  }
+  .chip.train{background:var(--amber-soft); color:#8A5F13; border-color:#E8D5A8}
+  .chip.swipe{background:var(--navy-tint); color:var(--navy); border-color:#C3D3E8}
+  .chip.long{background:var(--green-soft); color:#0A6B54; border-color:#B9E0D5}
+  .chip.none{background:var(--panel); color:var(--muted); border-color:var(--line)}
+  .chip.gap{background:var(--clay-soft); color:var(--clay); border-color:#E8C9B8}
+
+  .status{
+    display:inline-block; font-size:10.5px; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; padding:3px 9px; border-radius:20px; white-space:nowrap;
+  }
+  .status.PENDING{background:var(--amber-soft); color:#8A5F13}
+  .status.BOOKED{background:var(--green-soft); color:#0A6B54}
+  .status.DENIED{background:var(--clay-soft); color:var(--clay)}
+  .status.HOLD{background:#F0E8F8; color:#6B3FA0}
+
+  /* ---------- placeholder marker ---------- */
+  .ph{
+    border-bottom:2px dotted var(--clay); cursor:help; position:relative;
+    background:linear-gradient(transparent 70%, rgba(168,81,43,.10) 70%);
+  }
+  .ph::after{
+    content:'?'; font-size:9px; font-weight:800; color:#fff; background:var(--clay);
+    border-radius:50%; width:12px; height:12px; display:inline-flex; align-items:center;
+    justify-content:center; margin-left:3px; vertical-align:2px; line-height:1;
+  }
+
+  /* ---------- structure labels ---------- */
+  .st{display:none}
+  body.show-struct .st{
+    display:inline-block; font-family:var(--mono); font-size:10.5px; font-weight:600;
+    background:#1F2430; color:#8FD3FF; padding:2px 7px; border-radius:4px;
+    margin:4px 4px 0 0; letter-spacing:.01em;
+  }
+  body.show-struct .st.auto{background:#3A2A0E; color:#F5C86A}
+  body.show-struct .st.field{background:#0E2338; color:#7FC4F5}
+  body.show-struct .stblock{display:block; margin-top:8px}
+
+  /* ---------- check trace ---------- */
+  .trace{border:1.5px solid var(--line); border-radius:10px; overflow:hidden; margin-top:14px}
+  .trace .th{background:var(--panel); padding:9px 14px; font-size:12px; font-weight:700; color:var(--slate); letter-spacing:.03em; text-transform:uppercase}
+  .chk{display:flex; gap:11px; padding:10px 14px; border-top:1px solid var(--line); align-items:flex-start}
+  .chk .ic{flex:0 0 auto; width:19px; height:19px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800; color:#fff; margin-top:1px}
+  .chk.pass .ic{background:var(--green)}
+  .chk.fail .ic{background:var(--clay)}
+  .chk.hold .ic{background:#6B3FA0}
+  .chk.skip .ic{background:var(--line); color:var(--muted)}
+  .chk .cl{display:block; font-weight:600; font-size:13px}
+  .chk .cd{display:block; font-size:12.5px; color:var(--muted); margin-top:2px}
+
+  /* ---------- outcome ---------- */
+  .outcome{border-radius:10px; padding:16px 18px; margin-top:16px; border:1.5px solid}
+  .outcome.PENDING{background:var(--amber-soft); border-color:#E8D5A8}
+  .outcome.DENIED{background:var(--clay-soft); border-color:#E8C9B8}
+  .outcome.HOLD{background:#F5F0FB; border-color:#DCC9F0}
+  .outcome h4{font-family:Georgia,serif; font-size:17px; margin-bottom:5px; color:var(--ink)}
+  .outcome p{font-size:13.5px; color:var(--slate); max-width:70ch}
+  .msgbox{background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:12px 14px; margin-top:12px; font-size:13px; color:var(--ink)}
+  .msgbox .mh{font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:6px}
+
+  /* ---------- booking rows ---------- */
+  .brow{border-top:1px solid var(--line); padding:15px 20px}
+  .brow:first-of-type{border-top:none}
+  .bhead{display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap}
+  .bhead .bt{flex:1 1 240px; min-width:0}
+  .bhead .bn{font-weight:700; font-size:14.5px; color:var(--navy)}
+  .bhead .bm{font-size:12.5px; color:var(--muted); margin-top:2px}
+  .bmeta{display:flex; gap:16px; flex-wrap:wrap; margin-top:10px; font-size:12.5px; color:var(--slate)}
+  .bmeta b{color:var(--ink); font-weight:600}
+  .empty{padding:34px 20px; text-align:center; color:var(--muted); font-size:13.5px}
+
+  /* ---------- tables ---------- */
+  .tblwrap{overflow-x:auto; border:1.5px solid var(--line); border-radius:10px}
+  table{border-collapse:collapse; width:100%; min-width:660px; font-size:13px}
+  th,td{text-align:left; padding:10px 13px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{background:var(--panel); font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--slate); font-weight:700; white-space:nowrap}
+  tbody tr:last-child td{border-bottom:none}
+  td .rn{font-weight:700; color:var(--navy)}
+  .yes{color:var(--green); font-weight:700}
+  .no{color:var(--muted)}
+  .unk{color:var(--clay); font-weight:700}
+
+  /* ---------- automation log ---------- */
+  .log{background:#141821; border-radius:10px; padding:14px 16px; font-family:var(--mono); font-size:12px; color:#C8D3E0; max-height:280px; overflow-y:auto}
+  .log .ln{padding:3px 0; border-bottom:1px solid rgba(255,255,255,.06); display:flex; gap:10px}
+  .log .ln:last-child{border-bottom:none}
+  .log .ts{color:#6B7A8D; flex:0 0 auto}
+  .log .ev{color:#F5C86A; flex:0 0 auto; font-weight:600}
+  .log .tx{color:#C8D3E0}
+  .log .none{color:#6B7A8D; font-style:italic}
+
+  /* ---------- notes ---------- */
+  .q{border-left:3px solid var(--clay); background:var(--clay-soft); padding:12px 15px; border-radius:0 8px 8px 0; margin-bottom:11px}
+  .q .qt{font-weight:700; font-size:13.5px; color:var(--ink); margin-bottom:3px}
+  .q .qw{font-size:12.5px; color:var(--slate)}
+  .q .qo{font-size:12px; color:var(--muted); margin-top:5px}
+  .auto{border:1.5px solid var(--line); border-radius:10px; padding:14px 16px; margin-bottom:11px; background:var(--paper)}
+  .auto .an{font-weight:700; color:var(--navy); font-size:13.5px; font-family:var(--mono)}
+  .auto .ad{font-size:12.5px; color:var(--slate); margin-top:5px}
+  .auto .at{font-size:12px; color:var(--muted); margin-top:6px}
+  .auto .at b{color:var(--slate)}
+  ul.plain{list-style:none}
+  ul.plain li{padding:5px 0 5px 17px; position:relative; font-size:13px; color:var(--slate)}
+  ul.plain li::before{content:''; position:absolute; left:0; top:12px; width:6px; height:6px; border-radius:50%; background:var(--navy)}
+  .foot{margin-top:26px; font-size:12px; color:var(--muted); text-align:center}
+  .sr{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="banner">
+    <span aria-hidden="true">⚠</span>
+    <div><b>Prototype, not a real system.</b> Nothing here sends email, touches Google Calendar, or changes swipe access. All students and bookings are fictional. Values the workflow document did not specify are marked <span class="ph">like this</span> and listed on the Build notes tab.</div>
+  </div>
+
+  <header>
+    <div class="eyebrow">Timothy Dwight College &middot; Space Reservations</div>
+    <h1>TD Room Reservation System</h1>
+    <div class="sub">A clickable prototype for staff review, built from the room workflow document.</div>
+    <div class="rule"></div>
+    <p class="frame">The workflow document describes the same eight steps for every space. What actually differs between rooms is three things: whether training is required, whether the room uses swipe access, and whether long-term bookings are allowed. This prototype treats those as settings on a Rooms table rather than five separate workflows, and runs the intake checks live so you can see what the automation would decide.</p>
+  </header>
+
+  <div class="toolbar">
+    <label class="switch">
+      <input type="checkbox" id="structToggle">
+      <span class="track" aria-hidden="true"></span>
+      <span>Show Airtable structure</span>
+    </label>
+    <span class="note">Labels each element with the table, field, or automation that would sit behind it.</span>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="Prototype sections">
+    <button class="tab" role="tab" id="tab-request" aria-controls="p-request" aria-selected="true">Request a space</button>
+    <button class="tab" role="tab" id="tab-queue" aria-controls="p-queue" aria-selected="false">Staff queue<span class="cnt" id="pendCount">0</span></button>
+    <button class="tab" role="tab" id="tab-schedule" aria-controls="p-schedule" aria-selected="false">Schedule</button>
+    <button class="tab" role="tab" id="tab-rules" aria-controls="p-rules" aria-selected="false">Room rules</button>
+    <button class="tab" role="tab" id="tab-notes" aria-controls="p-notes" aria-selected="false">Build notes</button>
+  </div>
+
+  <!-- ============================ REQUEST ============================ -->
+  <section class="panel on" id="p-request" role="tabpanel" aria-labelledby="tab-request" tabindex="0">
+    <div class="card">
+      <h2>Reservation request</h2>
+      <p class="lede">This is what a student fills out. Submitting it runs the same intake checks the automation would run, and shows you every check it evaluated, so you can tell us where the rules are wrong.</p>
+      <span class="st stblock">Airtable form &rarr; Bookings table</span>
+
+      <h3>1. Choose a space <span class="st">Bookings &middot; Room (link to Rooms)</span></h3>
+      <div class="rooms" id="roomPicker"></div>
+      <div id="roomDetail"></div>
+
+      <h3>2. Who is booking <span class="st">Bookings &middot; Student (link to Students)</span></h3>
+      <div class="grid2">
+        <div class="field">
+          <label class="fl" for="student">Student</label>
+          <select id="student"></select>
+        </div>
+        <div class="field">
+          <label class="fl" for="headcount">Expected attendance <span class="st field">Headcount</span></label>
+          <input type="number" id="headcount" min="1" max="60" value="6">
+        </div>
+      </div>
+
+      <h3>3. When <span class="st">Bookings &middot; Date, Start Time, End Time</span></h3>
+      <div class="grid2">
+        <div class="field">
+          <label class="fl" for="date">Date</label>
+          <input type="date" id="date">
+        </div>
+        <div class="field">
+          <label class="fl" for="start">Start time</label>
+          <input type="time" id="start" value="18:00">
+        </div>
+        <div class="field">
+          <label class="fl" for="end">End time</label>
+          <input type="time" id="end" value="20:00">
+        </div>
+        <div class="field">
+          <label class="fl" for="purpose">Purpose <span class="st field">Purpose</span></label>
+          <input type="text" id="purpose" placeholder="Study break, rehearsal, club meeting…">
+        </div>
+      </div>
+
+      <div class="btnrow">
+        <button class="btn" id="submitBtn">Submit request</button>
+        <button class="btn ghost sm" id="conflictBtn">Try a request that conflicts</button>
+        <button class="btn ghost sm" id="trainBtn">Try one with training missing</button>
+      </div>
+
+      <div id="result" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ============================ QUEUE ============================ -->
+  <section class="panel" id="p-queue" role="tabpanel" aria-labelledby="tab-queue" tabindex="0">
+    <div class="card tight">
+      <div style="padding:22px 20px 0">
+        <h2>Staff approval queue</h2>
+        <p class="lede">Everything that passed the automatic checks and is waiting on a person. A TD staff member or web aide approves or denies here.</p>
+        <span class="st stblock">Bookings &middot; view: Status is PENDING &middot; sorted by Date</span>
+      </div>
+      <div id="queueList"></div>
+    </div>
+
+    <div class="card">
+      <h2>Automation log</h2>
+      <p class="lede">Every action the real system would have taken. In the built version these are Airtable automations; here they are printed so you can see what fires and when.</p>
+      <div class="log" id="autoLog"></div>
+    </div>
+  </section>
+
+  <!-- ============================ SCHEDULE ============================ -->
+  <section class="panel" id="p-schedule" role="tabpanel" aria-labelledby="tab-schedule" tabindex="0">
+    <div class="card tight">
+      <div style="padding:22px 20px 0">
+        <h2>Schedule</h2>
+        <p class="lede">Confirmed bookings, so staff can see when a space is actually in use. In the built system this is the view that also syncs to Google Calendar.</p>
+        <span class="st stblock">Bookings &middot; view: Status is BOOKED &middot; grouped by Date</span>
+      </div>
+      <div id="schedList"></div>
+    </div>
+
+    <div class="card tight">
+      <div style="padding:22px 20px 0">
+        <h2>Denied and closed</h2>
+        <p class="lede">Kept rather than deleted, so patterns show up: which rule denies the most requests, and whether that rule is right.</p>
+        <span class="st stblock">Bookings &middot; view: Status is DENIED</span>
+      </div>
+      <div id="deniedList"></div>
+    </div>
+  </section>
+
+  <!-- ============================ ROOM RULES ============================ -->
+  <section class="panel" id="p-rules" role="tabpanel" aria-labelledby="tab-rules" tabindex="0">
+    <div class="card">
+      <h2>Room rules</h2>
+      <p class="lede">The three columns on the left came from the workflow document. The three on the right did not appear anywhere in it, so they are placeholders. This table is the fastest thing to correct in a review meeting, and correcting it changes how the whole system behaves.</p>
+      <span class="st stblock">Rooms table &middot; one record per space</span>
+      <div class="tblwrap" style="margin-top:14px">
+        <table>
+          <caption class="sr">Per-room rules, showing which came from the workflow document and which are placeholders</caption>
+          <thead>
+            <tr>
+              <th scope="col">Space</th>
+              <th scope="col">Training required</th>
+              <th scope="col">Swipe access</th>
+              <th scope="col">Long-term OK</th>
+              <th scope="col">Allowed hours</th>
+              <th scope="col">Minimum notice</th>
+              <th scope="col">Max length</th>
+            </tr>
+          </thead>
+          <tbody id="rulesBody"></tbody>
+        </table>
+      </div>
+      <p style="font-size:12.5px;color:var(--muted);margin-top:12px">
+        Columns marked <span class="ph">like this</span> are our placeholders, not TD policy. The workflow document refers to "allowed hours" and "too short notice" as denial reasons but never says what those values are.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>What the workflow document actually says differs</h2>
+      <p class="lede">Read across the five spaces, the eight steps are identical. These are the only real differences.</p>
+      <ul class="plain">
+        <li><b>Student Kitchen</b> — training required, swipe access, no long-term bookings. Training incomplete holds the booking in PENDING rather than denying it outright.</li>
+        <li><b>Thompson Room</b> — no training, no swipe or key access needed, no long-term bookings. The simplest space.</li>
+        <li><b>Student Lounge</b> — no training, swipe access, no long-term bookings. Swipe is revoked automatically after the event.</li>
+        <li><b>Art Studio</b> — training required, swipe access, and it is the one space that <b>does</b> allow long-term bookings.</li>
+        <li><b>Recording Studio</b> — the section is empty in the document. It reads "[Jake]" and nothing else, so none of its three rules are known.</li>
+      </ul>
+      <p style="font-size:12.5px;color:var(--muted);margin-top:14px">
+        One other thing worth confirming: the Art Studio section says the student "fills out a reservation form for the Lounge." That reads like a copy-paste carryover from the Lounge section rather than a real rule, so this prototype treats it as the Art Studio form.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================ NOTES ============================ -->
+  <section class="panel" id="p-notes" role="tabpanel" aria-labelledby="tab-notes" tabindex="0">
+    <div class="card">
+      <h2>Open questions</h2>
+      <p class="lede">Each of these has to be answered by a person before the Airtable build. They are ordered by how much they change the system.</p>
+      <div id="openList"></div>
+    </div>
+
+    <div class="card">
+      <h2>Proposed Airtable structure</h2>
+      <p class="lede">Seven tables. The per-room differences live as fields on Rooms, which is what keeps this one workflow instead of five.</p>
+      <div id="schemaList"></div>
+    </div>
+
+    <div class="card">
+      <h2>Automations</h2>
+      <p class="lede">The workflow document names one automation, "Send Booking Confirmation." Getting the described behavior takes seven, because scheduled actions and denial notices cannot ride on the same trigger.</p>
+      <div id="autoDocs"></div>
+    </div>
+  </section>
+
+  <p class="foot">Prototype for review. No real student data, no live integrations.</p>
+</div>
+
+<script>
+"use strict";
+
+/* ==========================================================================
+   DATA
+   ==========================================================================
+   `training`, `swipe`, and `longTerm` come from the workflow document.
+   `open`, `close`, `minNoticeHrs`, and `maxHrs` do NOT appear anywhere in it.
+   They are marked placeholder:true so the UI can flag them honestly.
+   ========================================================================== */
+
+var ROOMS = [
+  { id:'kitchen', name:'Student Kitchen', loc:'TD basement', cap:12,
+    training:'Student Kitchen training', swipe:true, longTerm:false,
+    open:'08:00', close:'22:00', minNoticeHrs:48, maxHrs:4,
+    trainingHolds:true,
+    fromDoc:'Training required, swipe access, no long-term bookings. Document says an untrained student is held in PENDING until training is verified, and denied only if it cannot be completed.' },
+
+  { id:'thompson', name:'Thompson Room', loc:'TD main floor', cap:40,
+    training:null, swipe:false, longTerm:false,
+    open:'08:00', close:'23:00', minNoticeHrs:24, maxHrs:4,
+    fromDoc:'No training, no swipe or key access for students, no long-term bookings.' },
+
+  { id:'lounge', name:'Student Lounge', loc:'TD main floor', cap:25,
+    training:null, swipe:true, longTerm:false,
+    open:'08:00', close:'23:00', minNoticeHrs:24, maxHrs:4,
+    fromDoc:'No training. Swipe access enabled for the booking window and revoked automatically afterward. No long-term bookings.' },
+
+  { id:'art', name:'Art Studio', loc:'TD annex', cap:10,
+    training:'Art Studio training', swipe:true, longTerm:true,
+    open:'09:00', close:'21:00', minNoticeHrs:48, maxHrs:6,
+    trainingHolds:true,
+    fromDoc:'Training required, swipe access, and the only space that allows long-term bookings.' },
+
+  { id:'recording', name:'Recording Studio', loc:'TD annex', cap:4,
+    training:null, swipe:null, longTerm:null,
+    open:null, close:null, minNoticeHrs:null, maxHrs:null,
+    undocumented:true,
+    fromDoc:'The workflow document has no content for this space. Its section reads "[Jake]" and stops there.' }
+];
+
+/* Fictional. Do not replace with real students in a file that gets published. */
+var STUDENTS = [
+  { id:'s1', name:'Amara Whitfield', netid:'aw882', year:'2027', trainings:['Student Kitchen training'] },
+  { id:'s2', name:'Devon Park',      netid:'dp413', year:'2026', trainings:['Student Kitchen training','Art Studio training'] },
+  { id:'s3', name:'Rosa Delgado',    netid:'rd207', year:'2028', trainings:[] },
+  { id:'s4', name:'Ellis Nakamura',  netid:'en551', year:'2027', trainings:['Art Studio training'] }
+];
+
+/* Denial reasons, with the student-facing message each one sends. */
+var DENIALS = {
+  conflict:  { label:'Time conflict',
+               msg:'That space is already reserved for part of the time you asked for. Take a look at the schedule and send a new request for an open window.' },
+  hours:     { label:'Outside allowed hours',
+               msg:'The time you asked for falls outside the hours this space can be reserved. Please pick a time inside the posted window and try again.' },
+  notice:    { label:'Too short notice',
+               msg:'Requests for this space need to come in further ahead of time so staff can review them. Please send your request earlier for a later date.' },
+  longterm:  { label:'Long-term booking not allowed',
+               msg:'This space cannot be held for an extended period. If you need a recurring or long-running reservation, email the TD operations office and we will talk it through.' },
+  capacity:  { label:'Over capacity',
+               msg:'The number of people you listed is more than this space holds. Please lower the count or choose a larger space.' },
+  training:  { label:'Training not completed',
+               msg:'This space requires training before you can reserve it. Your request is on hold. Once your training is on file we will pick the review back up.' },
+  staff:     { label:'Denied by staff',
+               msg:'A staff member reviewed your request and was not able to approve it. The reason is below. Reply to this message if you would like to talk it through.' }
+};
+
+/* ==========================================================================
+   HELPERS
+   ========================================================================== */
+
+function $(s){ return document.querySelector(s); }
+function el(t,c,x){ var n=document.createElement(t); if(c) n.className=c; if(x!=null) n.textContent=x; return n; }
+function esc(s){ return String(s).replace(/[&<>"]/g,function(m){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]; }); }
+function room(id){ for(var i=0;i<ROOMS.length;i++) if(ROOMS[i].id===id) return ROOMS[i]; return null; }
+function student(id){ for(var i=0;i<STUDENTS.length;i++) if(STUDENTS[i].id===id) return STUDENTS[i]; return null; }
+function mins(t){ var p=String(t).split(':'); return (+p[0])*60 + (+p[1]); }
+function hhmm(t){
+  var p=String(t).split(':'), h=+p[0], m=p[1];
+  var ap = h>=12 ? 'pm' : 'am', h12 = h%12 === 0 ? 12 : h%12;
+  return h12 + (m==='00' ? '' : ':'+m) + ap;
+}
+function iso(d){
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+function plusDays(n){ var d=new Date(); d.setDate(d.getDate()+n); return d; }
+function longDate(s){
+  var p=s.split('-'), d=new Date(+p[0], +p[1]-1, +p[2]);
+  return d.toLocaleDateString('en-US',{weekday:'short', month:'short', day:'numeric'});
+}
+/* Placeholder marker: a value we invented, flagged as such. */
+function ph(v, why){
+  return '<span class="ph" title="' + esc(why) + '">' + esc(v) + '</span>';
+}
+
+/* ==========================================================================
+   STATE
+   ========================================================================== */
+
+var BOOKINGS = [];
+var LOG = [];
+var seq = 100;
+var selectedRoom = 'kitchen';
+
+/* Seed bookings, dated relative to today so the demo never goes stale. */
+function seed(){
+  var S = [
+    { room:'kitchen',  student:'s2', d:2, start:'18:00', end:'20:00', purpose:'Sunday dinner for the suite',   status:'BOOKED'  },
+    { room:'thompson', student:'s3', d:1, start:'19:00', end:'21:00', purpose:'Debate practice',               status:'BOOKED'  },
+    { room:'lounge',   student:'s1', d:3, start:'20:00', end:'22:00', purpose:'Movie night',                   status:'PENDING' },
+    { room:'art',      student:'s4', d:4, start:'14:00', end:'18:00', purpose:'Senior project, ongoing',       status:'PENDING' },
+    { room:'thompson', student:'s1', d:5, start:'12:00', end:'13:30', purpose:'First-year advising lunch',     status:'PENDING' },
+    { room:'thompson', student:'s2', d:6, start:'19:00', end:'21:00', purpose:'A cappella rehearsal',          status:'BOOKED'  }
+  ];
+  S.forEach(function(s){
+    var r = room(s.room);
+    BOOKINGS.push({
+      id: 'BK-' + (++seq),
+      roomId: s.room, studentId: s.student,
+      date: iso(plusDays(s.d)), start: s.start, end: s.end,
+      purpose: s.purpose, headcount: 6,
+      status: s.status, hold:false, denial:null, staffNote:'',
+      swipe: s.status==='BOOKED' && r.swipe === true,
+      calendar: s.status==='BOOKED' ? 'gcal_' + (seq*37).toString(16) : null
+    });
+  });
+  log('seed', BOOKINGS.length + ' existing bookings loaded for the demo');
+}
+
+function log(ev, txt){
+  var t = new Date();
+  LOG.unshift({
+    ts: String(t.getHours()).padStart(2,'0') + ':' + String(t.getMinutes()).padStart(2,'0') + ':' + String(t.getSeconds()).padStart(2,'0'),
+    ev: ev, tx: txt
+  });
+  renderLog();
+}
+
+/* ==========================================================================
+   INTAKE CHECKS
+   --------------------------------------------------------------------------
+   This is the rule engine. In Airtable it would be a script action on the
+   "Run intake checks" automation. Order matters: hard denials first, then
+   the training gate, which HOLDS rather than denies (per the document).
+   ========================================================================== */
+
+function runChecks(req){
+  var r = room(req.roomId), st = student(req.studentId);
+  var checks = [], decision = 'PENDING', denial = null, hold = false;
+
+  function add(state, label, detail){ checks.push({ state:state, label:label, detail:detail }); }
+
+  /* Undocumented room: we refuse to invent rules for it. */
+  if (r.undocumented){
+    add('skip','Automatic checks skipped','The workflow document defines no rules for this space, so nothing is checked automatically. The request goes straight to a person.');
+    add('hold','Routed to staff','A staff member has to decide by hand until the Recording Studio rules are written down.');
+    return { checks:checks, decision:'PENDING', denial:null, hold:true, manual:true };
+  }
+
+  /* 1. Valid time range */
+  if (mins(req.end) <= mins(req.start)){
+    add('fail','End time is after start time','The end time you gave is not after the start time.');
+    return { checks:checks, decision:'DENIED', denial:'hours', hold:false };
+  }
+  add('pass','End time is after start time', hhmm(req.start) + ' to ' + hhmm(req.end));
+
+  /* 2. Allowed hours — PLACEHOLDER WINDOW */
+  if (mins(req.start) < mins(r.open) || mins(req.end) > mins(r.close)){
+    add('fail','Within allowed hours','Asked for ' + hhmm(req.start) + '–' + hhmm(req.end) + '. Placeholder window for this space is ' + hhmm(r.open) + '–' + hhmm(r.close) + '.');
+    decision = 'DENIED'; denial = 'hours';
+  } else {
+    add('pass','Within allowed hours','Placeholder window ' + hhmm(r.open) + '–' + hhmm(r.close) + '. Real hours still need confirming.');
+  }
+
+  /* 3. Minimum notice — PLACEHOLDER */
+  var reqStart = new Date(req.date + 'T' + req.start + ':00');
+  var noticeHrs = (reqStart - new Date()) / 36e5;
+  if (noticeHrs < 0){
+    if (!denial){ decision='DENIED'; denial='notice'; }
+    add('fail','Minimum notice','That start time is in the past.');
+  } else if (noticeHrs < r.minNoticeHrs){
+    if (!denial){ decision='DENIED'; denial='notice'; }
+    add('fail','Minimum notice', Math.round(noticeHrs) + ' hours ahead. Placeholder minimum for this space is ' + r.minNoticeHrs + ' hours.');
+  } else {
+    add('pass','Minimum notice', Math.round(noticeHrs) + ' hours ahead, placeholder minimum is ' + r.minNoticeHrs + '.');
+  }
+
+  /* 4. Long-term / max length */
+  var lenHrs = (mins(req.end) - mins(req.start)) / 60;
+  if (!r.longTerm && lenHrs > r.maxHrs){
+    if (!denial){ decision='DENIED'; denial='longterm'; }
+    add('fail','Booking length', lenHrs + ' hours. This space does not allow long-term bookings, and the placeholder maximum is ' + r.maxHrs + ' hours.');
+  } else if (r.longTerm){
+    add('pass','Booking length', lenHrs + ' hours. This space allows long-term bookings, so length is not capped.');
+  } else {
+    add('pass','Booking length', lenHrs + ' hours, placeholder maximum is ' + r.maxHrs + '.');
+  }
+
+  /* 5. Capacity */
+  if (req.headcount > r.cap){
+    if (!denial){ decision='DENIED'; denial='capacity'; }
+    add('fail','Capacity', req.headcount + ' people, placeholder capacity is ' + r.cap + '.');
+  } else {
+    add('pass','Capacity', req.headcount + ' of a placeholder capacity of ' + r.cap + '.');
+  }
+
+  /* 6. Conflicts — checked against BOOKED and PENDING, so two people cannot
+        both be sitting in the queue for the same slot. */
+  var clash = null;
+  for (var i=0;i<BOOKINGS.length;i++){
+    var b = BOOKINGS[i];
+    if (b.roomId !== req.roomId || b.date !== req.date) continue;
+    if (b.status !== 'BOOKED' && b.status !== 'PENDING') continue;
+    if (mins(req.start) < mins(b.end) && mins(req.end) > mins(b.start)){ clash = b; break; }
+  }
+  if (clash){
+    if (!denial){ decision='DENIED'; denial='conflict'; }
+    add('fail','No conflict with existing bookings','Overlaps ' + clash.id + ', ' + hhmm(clash.start) + '–' + hhmm(clash.end) + ', currently ' + clash.status + '.');
+  } else {
+    add('pass','No conflict with existing bookings','Nothing else is held in this space at that time.');
+  }
+
+  /* 7. Training gate — HOLDS, does not deny. Straight from the document. */
+  if (r.training){
+    if (st.trainings.indexOf(r.training) > -1){
+      add('pass','Training on file', st.name.split(' ')[0] + ' has completed ' + r.training + '.');
+    } else {
+      hold = true;
+      add('hold','Training on file','No record of ' + r.training + '. The document says to hold the request in PENDING until training is verified, and deny only if it cannot be completed.');
+    }
+  } else {
+    add('skip','Training not required','This space does not require training.');
+  }
+
+  return { checks:checks, decision:decision, denial:denial, hold:hold };
+}
+
+/* ==========================================================================
+   RENDER: request form
+   ========================================================================== */
+
+function renderRoomPicker(){
+  var w = $('#roomPicker'); w.innerHTML='';
+  ROOMS.forEach(function(r){
+    var b = el('button','room');
+    b.type='button';
+    b.setAttribute('aria-pressed', r.id===selectedRoom ? 'true':'false');
+    var flags = '';
+    if (r.undocumented){
+      flags = '<span class="chip gap">Rules not defined</span>';
+    } else {
+      flags += r.training ? '<span class="chip train">Training</span>' : '<span class="chip none">No training</span>';
+      flags += r.swipe ? '<span class="chip swipe">Swipe</span>' : '';
+      flags += r.longTerm ? '<span class="chip long">Long-term OK</span>' : '';
+    }
+    b.innerHTML = '<span class="rn">' + esc(r.name) + '</span>' +
+                  '<span class="rl">' + esc(r.loc) + '</span>' +
+                  '<span class="flags">' + flags + '</span>';
+    b.addEventListener('click', function(){ selectedRoom = r.id; renderRoomPicker(); renderRoomDetail(); });
+    w.appendChild(b);
+  });
+}
+
+function renderRoomDetail(){
+  var r = room(selectedRoom), w = $('#roomDetail');
+  var hrs = r.undocumented ? ph('not defined','No hours are specified for this space anywhere in the workflow document')
+                           : ph(hhmm(r.open) + '–' + hhmm(r.close), 'Placeholder. The document names "outside allowed hours" as a denial reason but never says what the hours are.');
+  var notice = r.undocumented ? ph('not defined','No notice window is specified for this space')
+                              : ph(r.minNoticeHrs + ' hours', 'Placeholder. The document names "too short notice" as a denial reason but never says how short is too short.');
+  w.innerHTML =
+    '<div style="background:var(--panel);border:1.5px solid var(--line);border-radius:10px;padding:13px 15px;margin:12px 0 4px;font-size:13px;color:var(--slate)">' +
+      '<div style="margin-bottom:7px">' + esc(r.fromDoc) + '</div>' +
+      '<div style="font-size:12.5px"><b>Hours:</b> ' + hrs + ' &nbsp;&middot;&nbsp; <b>Minimum notice:</b> ' + notice + '</div>' +
+      '<span class="st stblock">Rooms &middot; Requires Training, Uses Swipe Access, Allows Long-Term, Allowed Hours, Minimum Notice</span>' +
+    '</div>';
+}
+
+function renderStudents(){
+  var s = $('#student'); s.innerHTML='';
+  STUDENTS.forEach(function(st){
+    var t = st.trainings.length ? st.trainings.join(', ') : 'no training on file';
+    var o = el('option', null, st.name + ' (' + st.netid + ', ' + t + ')');
+    o.value = st.id; s.appendChild(o);
+  });
+}
+
+/* ==========================================================================
+   SUBMIT
+   ========================================================================== */
+
+function submit(){
+  var req = {
+    roomId: selectedRoom,
+    studentId: $('#student').value,
+    date: $('#date').value,
+    start: $('#start').value,
+    end: $('#end').value,
+    purpose: $('#purpose').value || 'Not given',
+    headcount: parseInt($('#headcount').value,10) || 1
+  };
+  if (!req.date){ $('#date').focus(); return; }
+
+  var r = runChecks(req);
+  var rm = room(req.roomId), st = student(req.studentId);
+  var id = 'BK-' + (++seq);
+
+  var booking = {
+    id:id, roomId:req.roomId, studentId:req.studentId, date:req.date,
+    start:req.start, end:req.end, purpose:req.purpose, headcount:req.headcount,
+    status: r.decision, hold: r.hold, denial: r.denial, staffNote:'',
+    swipe:false, calendar:null, manual: !!r.manual
+  };
+  BOOKINGS.push(booking);
+
+  log('record.create', id + ' created for ' + rm.name + ', status ' + r.decision + (r.hold ? ' (training hold)' : ''));
+
+  if (r.decision === 'DENIED'){
+    log('email.send', 'Denial notice to ' + st.netid + '@yale.edu — reason: ' + DENIALS[r.denial].label);
+  } else if (r.hold){
+    log('email.send', 'Hold notice to ' + st.netid + '@yale.edu — training not on file');
+    log('notify.staff', 'Flagged for staff: training verification needed on ' + id);
+  } else {
+    log('notify.staff', id + ' added to the approval queue');
+  }
+
+  renderResult(booking, r);
+  renderAll();
+}
+
+function renderResult(b, r){
+  var rm = room(b.roomId), st = student(b.studentId), w = $('#result');
+  var kind = b.status === 'DENIED' ? 'DENIED' : (b.hold ? 'HOLD' : 'PENDING');
+
+  var head, body;
+  if (kind === 'DENIED'){
+    head = 'Automatically denied';
+    body = 'The intake checks denied this before it ever reached a person, because of: <b>' + esc(DENIALS[b.denial].label) + '</b>. The document calls for exactly this, an automatic denial with a specific message rather than a generic one.';
+  } else if (b.manual){
+    head = 'Sent to staff, unchecked';
+    body = 'No rules exist for this space yet, so nothing was checked automatically and the request goes straight to a person. This is what every Recording Studio request would do until its rules are written down.';
+  } else if (kind === 'HOLD'){
+    head = 'Held, pending training';
+    body = 'Everything else passed, but there is no training record on file. The document says to hold the request rather than deny it, and to deny only if the training cannot be completed.';
+  } else {
+    head = 'Submitted, waiting on staff';
+    body = 'All automatic checks passed. It is now in the staff queue for a person to approve or deny. Open the <b>Staff queue</b> tab to act on it.';
+  }
+
+  var html =
+    '<div class="outcome ' + kind + '">' +
+      '<h4>' + esc(head) + ' &middot; <span style="font-family:var(--mono);font-size:14px">' + esc(b.id) + '</span></h4>' +
+      '<p>' + body + '</p>' +
+      '<span class="st stblock">Bookings &middot; Status = ' + esc(b.status) + (b.hold ? ' &middot; Training Hold = true' : '') + '</span>' +
+    '</div>';
+
+  html += '<div class="trace"><div class="th">What the automation checked</div>';
+  r.checks.forEach(function(c){
+    var mark = c.state==='pass' ? '✓' : c.state==='fail' ? '✕' : c.state==='hold' ? '!' : '–';
+    html += '<div class="chk ' + c.state + '">' +
+              '<span class="ic" aria-hidden="true">' + mark + '</span>' +
+              '<span><span class="cl">' + esc(c.label) + '</span><span class="cd">' + esc(c.detail) + '</span></span>' +
+            '</div>';
+  });
+  html += '</div>';
+
+  if (b.status === 'DENIED' || b.hold){
+    var key = b.status === 'DENIED' ? b.denial : 'training';
+    var verb = b.status === 'DENIED' ? ' was not approved.' : ' is on hold.';
+    html += '<div class="msgbox">' +
+              '<div class="mh">Message the student would receive</div>' +
+              'Hi ' + esc(st.name.split(' ')[0]) + ', your request for the ' + esc(rm.name) + ' on ' + esc(longDate(b.date)) + ' at ' + esc(hhmm(b.start)) + esc(verb) + '<br><br>' +
+              esc(DENIALS[key].msg) +
+              '<span class="st stblock">Denial Reasons &middot; Student-Facing Message &rarr; automation: Send Denial Notice</span>' +
+            '</div>';
+  }
+  w.innerHTML = html;
+  w.scrollIntoView({ behavior:'smooth', block:'nearest' });
+}
+
+/* ==========================================================================
+   RENDER: queue, schedule
+   ========================================================================== */
+
+function bookingRow(b, withActions){
+  var rm = room(b.roomId), st = student(b.studentId);
+  var d = el('div','brow');
+  var holdChip = b.hold ? '<span class="chip train">Training hold</span>' : '';
+  var manualChip = b.manual ? '<span class="chip gap">No rules defined</span>' : '';
+  var swipeChip = b.swipe ? '<span class="chip swipe">Swipe granted</span>' : '';
+
+  var html =
+    '<div class="bhead">' +
+      '<div class="bt">' +
+        '<div class="bn">' + esc(rm.name) + ' &middot; ' + esc(longDate(b.date)) + ', ' + esc(hhmm(b.start)) + '–' + esc(hhmm(b.end)) + '</div>' +
+        '<div class="bm">' + esc(st.name) + ' (' + esc(st.netid) + ') &middot; ' + esc(b.purpose) + '</div>' +
+      '</div>' +
+      '<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">' +
+        holdChip + manualChip + swipeChip +
+        '<span class="status ' + b.status + '">' + b.status + '</span>' +
+      '</div>' +
+    '</div>' +
+    '<div class="bmeta">' +
+      '<span><b>' + esc(b.id) + '</b></span>' +
+      '<span>' + b.headcount + ' expected</span>' +
+      (b.calendar ? '<span>Calendar event <b>' + esc(b.calendar) + '</b></span>' : '') +
+      (b.denial ? '<span>Reason: <b>' + esc(DENIALS[b.denial].label) + '</b></span>' : '') +
+      (b.staffNote ? '<span>Note: <b>' + esc(b.staffNote) + '</b></span>' : '') +
+    '</div>';
+
+  if (withActions){
+    html += '<div class="btnrow" style="margin-top:12px">' +
+              '<button class="btn ok sm" data-act="approve" data-id="' + b.id + '">Approve</button>' +
+              '<button class="btn deny sm" data-act="deny" data-id="' + b.id + '">Deny</button>' +
+              (b.hold ? '<button class="btn ghost sm" data-act="verify" data-id="' + b.id + '">Mark training verified</button>' : '') +
+            '</div>' +
+            '<span class="st stblock">Bookings &middot; Status, Reviewed By, Reviewed At &rarr; automation: Send Booking Confirmation</span>';
+  }
+  d.innerHTML = html;
+  return d;
+}
+
+function renderQueue(){
+  var w = $('#queueList'); w.innerHTML='';
+  var pend = BOOKINGS.filter(function(b){ return b.status==='PENDING'; })
+                     .sort(function(a,b){ return a.date < b.date ? -1 : 1; });
+  $('#pendCount').textContent = pend.length;
+  if (!pend.length){ w.appendChild(el('div','empty','Nothing is waiting on staff right now.')); return; }
+  pend.forEach(function(b){ w.appendChild(bookingRow(b, true)); });
+}
+
+function renderSchedule(){
+  var w = $('#schedList'); w.innerHTML='';
+  var booked = BOOKINGS.filter(function(b){ return b.status==='BOOKED'; })
+                       .sort(function(a,b){ return a.date === b.date ? (a.start < b.start ? -1:1) : (a.date < b.date ? -1:1); });
+  if (!booked.length) w.appendChild(el('div','empty','Nothing is confirmed yet. Approve something in the staff queue.'));
+  else booked.forEach(function(b){ w.appendChild(bookingRow(b, false)); });
+
+  var dw = $('#deniedList'); dw.innerHTML='';
+  var den = BOOKINGS.filter(function(b){ return b.status==='DENIED'; });
+  if (!den.length) dw.appendChild(el('div','empty','Nothing has been denied yet.'));
+  else den.forEach(function(b){ dw.appendChild(bookingRow(b, false)); });
+}
+
+function renderLog(){
+  var w = $('#autoLog'); if(!w) return;
+  w.innerHTML = '';
+  if (!LOG.length){ w.appendChild(el('div','none','Nothing has fired yet.')); return; }
+  LOG.forEach(function(l){
+    var d = el('div','ln');
+    d.innerHTML = '<span class="ts">' + esc(l.ts) + '</span><span class="ev">' + esc(l.ev) + '</span><span class="tx">' + esc(l.tx) + '</span>';
+    w.appendChild(d);
+  });
+}
+
+/* ==========================================================================
+   STAFF ACTIONS
+   ========================================================================== */
+
+function approve(id){
+  var b = null;
+  for (var i=0;i<BOOKINGS.length;i++) if (BOOKINGS[i].id===id) b = BOOKINGS[i];
+  if (!b) return;
+  var rm = room(b.roomId), st = student(b.studentId);
+
+  if (b.hold){
+    alert('This booking is on hold because ' + st.name + ' has no record of ' + rm.training + '.\n\nUse "Mark training verified" first, or deny it. This is the step the workflow document describes as holding in PENDING until training is verified.');
+    return;
+  }
+
+  b.status = 'BOOKED';
+  b.calendar = 'gcal_' + (Math.random().toString(16).slice(2,10));
+  log('automation', 'Send Booking Confirmation fired for ' + b.id);
+  log('gcal.create', 'Calendar event ' + b.calendar + ' created, invited ' + st.netid + '@yale.edu and TD staff');
+  log('email.send', 'Confirmation to ' + st.netid + '@yale.edu for ' + rm.name + ' on ' + longDate(b.date));
+
+  if (rm.swipe === true){
+    b.swipe = true;
+    log('access.grant', 'Swipe access for ' + st.netid + ' at ' + rm.name + ', ' + hhmm(b.start) + '–' + hhmm(b.end));
+    log('scheduled', 'Revoke swipe queued for ' + hhmm(b.end) + ' on ' + longDate(b.date));
+  } else if (rm.swipe === null){
+    log('flag', rm.name + ' access method is undefined. A person has to handle access by hand.');
+  }
+  log('scheduled', 'Feedback request queued for the day after ' + longDate(b.date));
+  renderAll();
+}
+
+function deny(id){
+  var b = null;
+  for (var i=0;i<BOOKINGS.length;i++) if (BOOKINGS[i].id===id) b = BOOKINGS[i];
+  if (!b) return;
+  var st = student(b.studentId);
+  var why = prompt('Reason for denying ' + b.id + '.\nThis goes to the student, so write it the way you would say it to them.', 'The space is already committed that evening.');
+  if (why === null) return;
+  b.status = 'DENIED'; b.denial = 'staff'; b.staffNote = why || 'No reason given'; b.hold = false;
+  log('record.update', b.id + ' set to DENIED by staff');
+  log('automation', 'Send Denial Notice fired for ' + b.id);
+  log('email.send', 'Denial to ' + st.netid + '@yale.edu — "' + b.staffNote + '"');
+  renderAll();
+}
+
+function verify(id){
+  var b = null;
+  for (var i=0;i<BOOKINGS.length;i++) if (BOOKINGS[i].id===id) b = BOOKINGS[i];
+  if (!b) return;
+  var rm = room(b.roomId), st = student(b.studentId);
+  if (st.trainings.indexOf(rm.training) === -1) st.trainings.push(rm.training);
+  b.hold = false;
+  log('record.create', 'Training record: ' + st.name + ' completed ' + rm.training);
+  log('record.update', b.id + ' training hold cleared, ready for approval');
+  renderStudents();
+  renderAll();
+}
+
+/* ==========================================================================
+   RENDER: rules, notes
+   ========================================================================== */
+
+function renderRules(){
+  var w = $('#rulesBody'); w.innerHTML='';
+  ROOMS.forEach(function(r){
+    var tr = el('tr');
+    function cell(v){ var td=el('td'); td.innerHTML=v; return td; }
+    var unk = '<span class="unk">Not documented</span>';
+    tr.appendChild(cell('<span class="rn">' + esc(r.name) + '</span><br><span style="color:var(--muted);font-size:12px">' + esc(r.loc) + '</span>'));
+    tr.appendChild(cell(r.undocumented ? unk : (r.training ? '<span class="yes">Yes</span><br><span style="font-size:12px;color:var(--muted)">' + esc(r.training) + '</span>' : '<span class="no">No</span>')));
+    tr.appendChild(cell(r.undocumented ? unk : (r.swipe ? '<span class="yes">Yes</span>' : '<span class="no">No</span>')));
+    tr.appendChild(cell(r.undocumented ? unk : (r.longTerm ? '<span class="yes">Yes</span>' : '<span class="no">No</span>')));
+    tr.appendChild(cell(r.undocumented ? unk : ph(hhmm(r.open) + '–' + hhmm(r.close), 'Placeholder, not from the workflow document')));
+    tr.appendChild(cell(r.undocumented ? unk : ph(r.minNoticeHrs + ' hrs', 'Placeholder, not from the workflow document')));
+    tr.appendChild(cell(r.undocumented ? unk : (r.longTerm ? '<span class="no">Uncapped</span>' : ph(r.maxHrs + ' hrs', 'Placeholder, not from the workflow document'))));
+    w.appendChild(tr);
+  });
+}
+
+var OPEN = [
+  { q:'What are the Recording Studio rules?',
+    w:'Its whole section in the workflow document is empty. It reads "[Jake]" and stops. Until someone fills it in, every Recording Studio request has to be handled by hand, because we will not invent a training requirement or an access method for a space we know nothing about.',
+    o:'Jake' },
+  { q:'What are the allowed hours for each space?',
+    w:'"Outside allowed hours" is named as an automatic denial reason for four of the five spaces, but the hours themselves are never given. The system cannot deny anything on this basis until someone says what the window is, per room.',
+    o:'TD operations' },
+  { q:'How much notice does a request need?',
+    w:'"Too short notice" is also named as an automatic denial reason, with no number attached. It may also differ by space, since the Kitchen and Art Studio need a training check that the Thompson Room does not.',
+    o:'TD operations' },
+  { q:'Who approves, and for which spaces?',
+    w:'The document says "a TD web aide or staff member" for the Kitchen and Lounge, and "a TD staff member" for the Thompson Room and Art Studio. If that distinction is real, approval rights differ by space and the queue needs to be filtered per person.',
+    o:'TD staff lead' },
+  { q:'What actually grants swipe access?',
+    w:'Three spaces use swipe. The document says access is enabled for the booking period and revoked afterward, but not by what. If there is no API, an approval has to produce a task for a person instead of an automated grant, and that changes the build.',
+    o:'Yale access control' },
+  { q:'What counts as a long-term booking?',
+    w:'Four spaces disallow them and the Art Studio allows them, but the threshold is never defined. Is it a booking longer than some number of hours, one that recurs weekly, or one that spans multiple days? Each is a different rule.',
+    o:'TD operations' },
+  { q:'How is training verified?',
+    w:'The system has to check whether a student completed training for the Kitchen and Art Studio. Where does that record live now, does it expire, and who is allowed to mark it complete?',
+    o:'TD staff lead' },
+  { q:'What does feedback collection mean?',
+    w:'Every space ends with "feedback can be collected from the student after the event." A form link in an email is easy. Anything more structured is a second build, and it is worth knowing which one is meant.',
+    o:'TD staff lead' },
+  { q:'Should a request that is still pending block a later one for the same slot?',
+    w:'This prototype counts pending requests when it checks for conflicts, so the second student to ask for a slot is denied while the first is still unreviewed. That protects the first student but denies the second for something that may never get approved. The alternative is to let both sit in the queue and make staff pick, which is more work but fairer.',
+    o:'TD staff lead' },
+  { q:'What happens to a booking nobody reviews?',
+    w:'Nothing in the document covers a request that sits in PENDING until its own start time passes. Without a rule, students get silence. A reminder to staff, an auto-expiry, or both would fix it.',
+    o:'TD staff lead' }
+];
+
+var SCHEMA = [
+  { t:'Rooms', d:'One record per space. This is where the per-room differences live, which is what keeps this a single workflow.',
+    f:'Name, Location, Capacity, Requires Training, Training (link), Uses Swipe Access, Allows Long-Term, Allowed Hours Start, Allowed Hours End, Minimum Notice (hrs), Max Length (hrs), Approvers (link to Staff), Active' },
+  { t:'Bookings', d:'The center of the base. Every request, whatever its outcome, stays here.',
+    f:'Booking ID, Student (link), Room (link), Date, Start Time, End Time, Purpose, Headcount, Status, Training Hold, Check Result, Denial Reason (link), Denial Message, Reviewed By (link), Reviewed At, Calendar Event ID, Swipe Granted, Swipe Revoked, Feedback Sent, Created At' },
+  { t:'Students', d:'Fed by whatever roster you already have rather than typed by hand.',
+    f:'Name, NetID, Email, Class Year, College, Training Records (link), Bookings (link)' },
+  { t:'Trainings', d:'One record per required training, linked to the rooms that need it.',
+    f:'Training Name, Required For (link to Rooms), Description, Expires After (months)' },
+  { t:'Training Records', d:'Who has completed what, and when it lapses. This is what the training gate reads.',
+    f:'Student (link), Training (link), Completed On, Expires On, Verified By (link to Staff)' },
+  { t:'Denial Reasons', d:'Keeps the student-facing wording in one editable place instead of buried in seven automations.',
+    f:'Reason, Category, Student-Facing Message, Automatic (checkbox)' },
+  { t:'Staff', d:'Drives who sees which requests, and separates web aides from operations staff.',
+    f:'Name, Email, Role (Staff / Web Aide / Operations), Approves Rooms (link), Active' }
+];
+
+var AUTOS = [
+  { n:'Run intake checks', t:'When a record is created in Bookings',
+    d:'Runs the conflict, hours, notice, length, capacity, and training checks against the Rooms settings, then sets Status to PENDING or DENIED and writes what it found to Check Result. Everything downstream reads that decision.',
+    x:'This is the one the workflow document describes across all five spaces without naming it.' },
+  { n:'Send Booking Confirmation', t:'When Status becomes BOOKED',
+    d:'Creates the Google Calendar event, invites the student and the relevant TD staff, sends the confirmation email, and writes the event ID back to the booking.',
+    x:'The only automation the workflow document names by name.' },
+  { n:'Send Denial Notice', t:'When Status becomes DENIED',
+    d:'Sends the student the message from the linked Denial Reason, or the staff member\'s own wording when a person denied it.',
+    x:'Separate from confirmation because a denial cannot ride on a BOOKED trigger.' },
+  { n:'Grant swipe access', t:'When Status becomes BOOKED and the room uses swipe',
+    d:'Opens access for the booking window. If there is no access-control API, this becomes a task assigned to operations staff instead.',
+    x:'Applies to the Kitchen, Lounge, and Art Studio.' },
+  { n:'Revoke swipe access', t:'Scheduled, after the booking ends',
+    d:'Closes access and stamps Swipe Revoked.',
+    x:'The document is explicit that this is automatic for the Lounge and Art Studio.' },
+  { n:'Request feedback', t:'Scheduled, the day after the booking',
+    d:'Sends the student a short form and marks Feedback Sent.',
+    x:'Every space ends with this step in the document.' },
+  { n:'Escalate flagged booking', t:'When a booking is flagged',
+    d:'Notifies operations staff. Covers the Kitchen\'s escalation path and anything involving a space whose rules are not yet defined.',
+    x:'The document mentions escalation for the Student Kitchen specifically.' }
+];
+
+function renderNotes(){
+  var w = $('#openList'); w.innerHTML='';
+  OPEN.forEach(function(o){
+    var d = el('div','q');
+    d.innerHTML = '<div class="qt">' + esc(o.q) + '</div><div class="qw">' + esc(o.w) + '</div><div class="qo">Likely answered by: ' + esc(o.o) + '</div>';
+    w.appendChild(d);
+  });
+
+  var s = $('#schemaList'); s.innerHTML='';
+  SCHEMA.forEach(function(t){
+    var d = el('div','auto');
+    d.innerHTML = '<div class="an">' + esc(t.t) + '</div><div class="ad">' + esc(t.d) + '</div><div class="at"><b>Fields:</b> ' + esc(t.f) + '</div>';
+    s.appendChild(d);
+  });
+
+  var a = $('#autoDocs'); a.innerHTML='';
+  AUTOS.forEach(function(t){
+    var d = el('div','auto');
+    d.innerHTML = '<div class="an">' + esc(t.n) + '</div>' +
+                  '<div class="at"><b>Trigger:</b> ' + esc(t.t) + '</div>' +
+                  '<div class="ad">' + esc(t.d) + '</div>' +
+                  '<div class="at">' + esc(t.x) + '</div>';
+    a.appendChild(d);
+  });
+}
+
+/* ==========================================================================
+   WIRING
+   ========================================================================== */
+
+function renderAll(){ renderQueue(); renderSchedule(); }
+
+function initTabs(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      tabs.forEach(function(o){
+        o.setAttribute('aria-selected','false');
+        $('#' + o.getAttribute('aria-controls')).classList.remove('on');
+      });
+      t.setAttribute('aria-selected','true');
+      $('#' + t.getAttribute('aria-controls')).classList.add('on');
+    });
+    t.addEventListener('keydown', function(e){
+      var i = tabs.indexOf(t), n = null;
+      if (e.key === 'ArrowRight') n = tabs[(i+1) % tabs.length];
+      if (e.key === 'ArrowLeft')  n = tabs[(i-1+tabs.length) % tabs.length];
+      if (n){ e.preventDefault(); n.focus(); n.click(); }
+    });
+  });
+}
+
+function init(){
+  seed();
+  renderRoomPicker();
+  renderRoomDetail();
+  renderStudents();
+  renderRules();
+  renderNotes();
+  renderAll();
+  initTabs();
+
+  $('#date').value = iso(plusDays(7));
+
+  $('#structToggle').addEventListener('change', function(){
+    document.body.classList.toggle('show-struct', this.checked);
+  });
+
+  $('#submitBtn').addEventListener('click', submit);
+
+  /* Preset: lands on top of the confirmed Thompson Room rehearsal six days
+     out, so it clears the notice window and fails on the conflict alone. */
+  $('#conflictBtn').addEventListener('click', function(){
+    selectedRoom = 'thompson'; renderRoomPicker(); renderRoomDetail();
+    $('#student').value = 's1';
+    $('#date').value = iso(plusDays(6));
+    $('#start').value = '19:30'; $('#end').value = '21:00';
+    $('#purpose').value = 'Study break';
+    $('#headcount').value = 10;
+    submit();
+  });
+
+  /* Preset: a student with no kitchen training. */
+  $('#trainBtn').addEventListener('click', function(){
+    selectedRoom = 'kitchen'; renderRoomPicker(); renderRoomDetail();
+    $('#student').value = 's3';
+    $('#date').value = iso(plusDays(9));
+    $('#start').value = '17:00'; $('#end').value = '19:00';
+    $('#purpose').value = 'Birthday dinner';
+    $('#headcount').value = 8;
+    submit();
+  });
+
+  /* Queue actions, delegated so re-rendering does not drop handlers. */
+  $('#queueList').addEventListener('click', function(e){
+    var b = e.target.closest('button[data-act]');
+    if (!b) return;
+    var act = b.getAttribute('data-act'), id = b.getAttribute('data-id');
+    if (act === 'approve') approve(id);
+    if (act === 'deny')    deny(id);
+    if (act === 'verify')  verify(id);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
