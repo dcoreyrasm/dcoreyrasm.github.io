@@ -31,7 +31,7 @@
 
     /* Tab bar */
     .yer-tabbar{
-      position:sticky; top:4.6rem; z-index:50;
+      position:sticky; top:var(--header-h); z-index:50;
       display:flex; gap:.45rem; overflow-x:auto; -webkit-overflow-scrolling:touch;
       padding:.7rem 0; margin-bottom:2.25rem;
       background:var(--bg); border-bottom:1px solid var(--line);
