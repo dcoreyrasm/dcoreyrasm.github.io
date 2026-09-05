@@ -6,6 +6,13 @@ Measured from the published listings, so it is never out of date.
 ```
 WHERE THE DIRECTORY IS THIN — measured, not remembered.
 
+Measured on 2026-09-05. THESE FIGURES EXPIRE. They are recounted from the
+published listings on every sync, which is several times a day, and your own
+work is what moves them. Do not save any number here as a baseline or carry it
+between sessions: read them fresh from this section each time this brief is
+given to you, and if you are working from a remembered figure you are working
+from a gap that has already moved.
+
 722 listings across 129 Connecticut towns of 169.
 
 That breadth is real. The depth behind it is the problem:
