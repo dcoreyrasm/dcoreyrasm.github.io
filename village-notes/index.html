@@ -77,16 +77,37 @@
       </div>
     </div>
 
-    <section class="vn-controls-section" aria-labelledby="vn-filters-heading">
+    <!-- Search and sort are pinned: they are the two controls you reach for
+         while reading results. The filters below stay put, so the pinned strip
+         costs one row of screen instead of the whole control block. -->
+    <section class="vn-searchbar-section" aria-labelledby="vn-search-heading">
       <div class="container">
-        <h2 id="vn-filters-heading" class="vn-visually-hidden">Find a resource</h2>
-
-        <form class="vn-controls" role="search" onsubmit="return false;">
+        <h2 id="vn-search-heading" class="vn-visually-hidden">Search the directory</h2>
+        <form class="vn-searchbar" role="search" onsubmit="return false;">
           <div class="vn-field vn-field-search">
             <label for="vn-search">Search</label>
             <input type="search" id="vn-search" placeholder="Name, program, notes, hours&hellip;" autocomplete="off" />
           </div>
 
+          <div class="vn-field">
+            <label for="vn-sort">Sort by</label>
+            <select id="vn-sort">
+              <option value="name">Name A&ndash;Z</option>
+              <option value="town">Town A&ndash;Z</option>
+              <option value="detail">Most complete listings</option>
+              <option value="needs">Listings that need info</option>
+              <option value="verified">Recently checked</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="vn-controls-section" aria-labelledby="vn-filters-heading">
+      <div class="container">
+        <h2 id="vn-filters-heading" class="vn-visually-hidden">Narrow the results</h2>
+
+        <form class="vn-controls" onsubmit="return false;">
           <div class="vn-field">
             <label for="vn-track">Who you’re caring for</label>
             <select id="vn-track">
@@ -127,17 +148,6 @@
                 <div class="vn-multi-list" id="vn-town-list"></div>
               </div>
             </div>
-          </div>
-
-          <div class="vn-field">
-            <label for="vn-sort">Sort by</label>
-            <select id="vn-sort">
-              <option value="name">Name A&ndash;Z</option>
-              <option value="town">Town A&ndash;Z</option>
-              <option value="detail">Most complete listings</option>
-              <option value="needs">Listings that need info</option>
-              <option value="verified">Recently checked</option>
-            </select>
           </div>
 
           <button type="button" id="vn-reset" class="btn-ghost vn-reset">Reset</button>
