@@ -145,6 +145,15 @@ const FIELD_MAP = {
   'Camp & Program Topics':        'programTopics',
   'Teen Opportunity Type':        'teenOpportunity',
 
+  // Disability and accessibility. Inclusion / Accessibility Support has been in
+  // the map since the state import but never reached the page; Specialized
+  // Support Type is new here. Together with the Disability Support and
+  // Special-Needs Pet Care services they are what the accessibility filter
+  // reads, and they cut across all four tracks -- an adaptive camp, an agency
+  // on aging, and a disability employment programme are each at home in their
+  // own track and findable together through these.
+  'Specialized Support Type':     'specializedSupport',
+
   // One dated, announced event -- an open house, tour, information session,
   // webinar, registration night. Two fields rather than one sentence, because
   // the date is what lets the card hide the event once it has happened. A
@@ -202,7 +211,8 @@ async function fetchAllRecords() {
 const LIST_KEYS = new Set(['townsServed', 'extendedCare', 'servicesOffered',
                            'languages', 'daysOffered', 'scheduleWindow',
                            'animals', 'petRequirements',
-                           'programSetting', 'programTopics', 'teenOpportunity']);
+                           'programSetting', 'programTopics', 'teenOpportunity',
+                           'specializedSupport']);
 
 function clean(value, key) {
   if (LIST_KEYS.has(key)) return Array.isArray(value) ? value : (value ? [value] : []);

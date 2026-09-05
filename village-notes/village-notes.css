@@ -310,6 +310,26 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
   color:var(--coral); font-weight:600; font-size:.7rem;
   letter-spacing:.08em; text-transform:uppercase; white-space:nowrap;
 }
+/* ---------- DISABILITY & ACCESSIBILITY DOORWAY ---------- */
+/* The filter is an ordinary quick filter; this is the sign above it. It exists
+   because the toggle row is seven checkboxes long and someone caring for a
+   disabled family member should not have to read all seven to learn the
+   directory has anything for them. It hides itself when there is nothing to
+   show and once the filter is already on. No new colour: --coral is the accent
+   the open-registration chip and the event strip already carry. */
+.vn-doorway {
+  display:flex; flex-wrap:wrap; align-items:center; gap:.75rem 1rem;
+  margin-top:1rem; padding:.85rem 1rem;
+  border:1px solid var(--line); border-left:3px solid var(--coral);
+  border-radius:6px;
+}
+.vn-doorway[hidden] { display:none; }
+.vn-doorway-text {
+  margin:0; flex:1 1 22rem; font-size:.85rem; line-height:1.6; color:var(--muted);
+}
+.vn-doorway-text strong { display:block; color:var(--coral); font-size:.9rem; }
+.vn-doorway-btn { flex:0 0 auto; }
+
 .vn-toggle[hidden] { display:none; }
 .vn-toggles[hidden] { display:none; }
 

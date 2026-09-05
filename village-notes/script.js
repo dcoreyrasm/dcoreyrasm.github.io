@@ -42,6 +42,9 @@
     townFind:   document.getElementById('vn-town-find'),
     townClear:  document.getElementById('vn-town-clear'),
     reset:      document.getElementById('vn-reset'),
+    doorway:    document.getElementById('vn-doorway'),
+    doorwayNum: document.getElementById('vn-doorway-detail'),
+    doorwayBtn: document.getElementById('vn-doorway-btn'),
     results:    document.getElementById('vn-results'),
     empty:      document.getElementById('vn-empty'),
     emptyBody:  document.getElementById('vn-empty-body'),
@@ -239,7 +242,16 @@
     ['Schools & Specialties', ['High School (Public)','High School (Private)',
       'Magnet / Specialty School']],
     ['Careers & College Paths', ['Apprenticeship','Job Training Program',
-      'College Access / Readiness']]
+      'College Access / Readiness']],
+
+    // Cross-track, and deliberately small. Disability and accessibility support
+    // is not a track: nearly every organisation offering it also serves seniors
+    // or families, and moving those records would break the home they already
+    // have. The accessibility filter finds them where they are. This category
+    // is only for the rare organisation whose sole purpose is disability
+    // support and which fits nowhere else -- an independent living centre, a
+    // disability-rights legal aid office. No existing record was moved into it.
+    ['Disability & Accessibility', ['Disability & Accessibility Services']]
   ];
 
   var GROUP_OF = (function () {
@@ -358,7 +370,20 @@
                                        && r.transportation !== 'Contact Program'; },
     extended:    function (r) { var e = r.extendedCare || [];
                                 return e.some(function (x) { return x !== 'None' && x !== 'Not Confirmed'; }); },
-    fullDay:     function (r) { return r.schoolDayCoverage === 'Full Workday'; }
+    fullDay:     function (r) { return r.schoolDayCoverage === 'Full Workday'; },
+
+    // Disability and accessibility support, across all four tracks at once.
+    // Three ways a listing can qualify, because the base records this in three
+    // places and a family does not care which one was filled in: the service
+    // is tagged, the kind of support is named, or the provider has written
+    // down what it can accommodate.
+    disability:  function (r) {
+      var services = r.servicesOffered || [];
+      return services.indexOf('Disability Support') !== -1 ||
+             services.indexOf('Special-Needs Pet Care') !== -1 ||
+             (r.specializedSupport || []).length > 0 ||
+             has(r.accessibility);
+    }
   };
 
   /* ---------- rendering ---------- */
@@ -471,6 +496,8 @@
       fact('Serves', servesLabel) +
       fact('Takes', animals.join(', ') || null) +
       fact('Before booking', petRules.join(', ') || null) +
+      fact('Support', (r.specializedSupport || []).join(', ') || null) +
+      fact('Accessibility', r.accessibility, true) +
       fact('Grades', r.gradeRange && r.gradeRange !== 'Not Confirmed'
                      ? r.gradeRange : null) +
       fact('District', r.schoolDistrict) +
@@ -656,9 +683,9 @@
       .concat(r.servicesOffered || []).concat(r.languages || [])
       .concat(r.animals || []).concat(r.petRequirements || [])
       .concat(r.programSetting || []).concat(r.programTopics || [])
-      .concat(r.teenOpportunity || [])
+      .concat(r.teenOpportunity || []).concat(r.specializedSupport || [])
       .concat([groupOf(r), r.registrationStatus, r.licensing,
-               r.gradeRange, r.schoolDistrict])
+               r.gradeRange, r.schoolDistrict, r.accessibility])
       // Only while the event is still ahead. Indexing a field usually can
       // only add matches, which is why the teen fields are indexed for every
       // track -- but an expired event is text the card deliberately does not
@@ -921,10 +948,22 @@
     });
   }
 
+  function bindDoorway() {
+    if (!el.doorwayBtn) return;
+    el.doorwayBtn.addEventListener('click', function () {
+      var box = document.getElementById('vn-flag-disability');
+      if (!box || box.parentNode.hidden) return;
+      box.checked = true;
+      box.dispatchEvent(new Event('change'));
+      el.results.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    });
+  }
+
   function bindToggles() {
     Array.prototype.forEach.call(el.toggles, function (box) {
       box.addEventListener('change', function () {
         state.flags[this.dataset.flag] = this.checked;
+        if (this.dataset.flag === 'disability') tuneToggles();
         render();
       });
     });
@@ -962,6 +1001,16 @@
     });
     var row = document.querySelector('.vn-toggles');
     if (row) row.hidden = shown === 0;
+
+    if (el.doorway) {
+      var n = pool.filter(FLAGS.disability).length;
+      el.doorway.hidden = n === 0 || !!state.flags.disability;
+      el.doorwayNum.textContent = n + ' ' + plural(n, 'listing', 'listings') +
+        (state.track ? ' here' : ' across all four sections') +
+        ' name the accommodations they can make, the support they offer, or ' +
+        'both. They stay filed under the kind of care they are, so this is a ' +
+        'way of finding them together rather than a separate list.';
+    }
   }
 
   /* ---------- events ---------- */
@@ -970,6 +1019,7 @@
     bindTownMulti();
     bindCatMulti();
     bindToggles();
+    bindDoorway();
     bindSortAndPaging();
     el.search.addEventListener('input', function () {
       state.search = this.value.trim().toLowerCase();
