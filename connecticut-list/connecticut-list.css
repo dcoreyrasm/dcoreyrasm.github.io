@@ -118,7 +118,12 @@ body.cl-detail-open { overflow:hidden; }
 }
 
 /* ---------- FOOTER DISCLAIMER ---------- */
+/* The shared footer is a left-aligned flex column whose children set their own
+   width, so this matches .footer-base rather than centring itself, and sits
+   directly above it. Required on this page and belonging only to it, so it
+   lives here rather than in the shared footer markup. */
 .cl-disclaimer {
+  width:100%; max-width:720px;
   font-size:.76rem; color:var(--muted); line-height:1.7;
-  max-width:720px; margin:0 auto .9rem; opacity:.85;
+  margin:0 0 1.25rem; opacity:.85;
 }
