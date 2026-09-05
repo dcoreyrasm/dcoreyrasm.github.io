@@ -75,4 +75,6 @@ jobs:
         env:
           AIRTABLE_ACCESS_TOKEN: ${{ secrets.AIRTABLE_ACCESS_TOKEN }}
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+          AIRTABLE_CONNECTICUT_BASE_ID: ${{ vars.AIRTABLE_CONNECTICUT_BASE_ID }}
+          AIRTABLE_CONNECTICUT_TABLE_ID: ${{ vars.AIRTABLE_CONNECTICUT_TABLE_ID }}
         run: node scripts/check-connecticut-vocabulary.js

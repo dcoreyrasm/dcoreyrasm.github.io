@@ -23,8 +23,8 @@ const fs = require('fs');
 const path = require('path');
 
 const TOKEN = process.env.AIRTABLE_ACCESS_TOKEN || process.env.AIRTABLE_TOKEN;
-const BASE_ID  = process.env.AIRTABLE_CONNECTICUT_BASE_ID  || 'appaCjeN9ZaJXVTV6';
-const TABLE_ID = process.env.AIRTABLE_CONNECTICUT_TABLE_ID || 'tblOeQoBxHTZGs0uZ';
+const BASE_ID = process.env.AIRTABLE_CONNECTICUT_BASE_ID;
+const TABLE_ID = process.env.AIRTABLE_CONNECTICUT_TABLE_ID;
 
 const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'connecticut-list', 'data', 'experiences.json');
@@ -92,8 +92,8 @@ async function fetchSchema() {
 }
 
 function main() {
-  if (!TOKEN) {
-    console.error('AIRTABLE_ACCESS_TOKEN is not set. Refusing to run.');
+  if (!TOKEN || !BASE_ID || !TABLE_ID) {
+    console.error('Airtable token, base ID, and table ID are required. Refusing to run.');
     process.exit(1);
   }
 

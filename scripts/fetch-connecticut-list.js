@@ -28,16 +28,15 @@ const path = require('path');
 /* ---------- configuration ----------
 
    Base and table are the Connecticut Passport base and its "Things to
-   Do" table. They are overridable by environment variable so the IDs
-   can move without a code change, but they default to the live ones so
-   a local run needs only a token.
+   Do" table. They are supplied by environment variable so the IDs
+   can move without a code change and are never embedded in source.
 
    The private "Mya & Victor's Connecticut Passport" base is a different
    base entirely and is never referenced here. */
 
 const TOKEN = process.env.AIRTABLE_ACCESS_TOKEN || process.env.AIRTABLE_TOKEN;
-const BASE_ID  = process.env.AIRTABLE_CONNECTICUT_BASE_ID  || 'appaCjeN9ZaJXVTV6';
-const TABLE_ID = process.env.AIRTABLE_CONNECTICUT_TABLE_ID || 'tblOeQoBxHTZGs0uZ';
+const BASE_ID = process.env.AIRTABLE_CONNECTICUT_BASE_ID;
+const TABLE_ID = process.env.AIRTABLE_CONNECTICUT_TABLE_ID;
 
 const OUT_PATH = path.join(__dirname, '..', 'connecticut-list', 'data', 'experiences.json');
 
@@ -301,8 +300,8 @@ function cleanUrl(value) {
 
 /* ---------- fetch ---------- */
 
-if (!TOKEN) {
-  console.error('AIRTABLE_ACCESS_TOKEN is not set. Refusing to run.');
+if (!TOKEN || !BASE_ID || !TABLE_ID) {
+  console.error('Airtable token, base ID, and table ID are required. Refusing to run.');
   process.exit(1);
 }
 
