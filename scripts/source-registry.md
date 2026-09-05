@@ -180,7 +180,6 @@ now.
   wams.waterbury.k12.ct.us           1  2026-08-31   Teens & High School
   wcaaa.org                          1  2026-08-31   Elder Care
   windham.cttech.org                 1  2026-08-31   Teens & High School
-  portal.ct.gov                     17  2026-09-01   Elder Care, Family & Childcare, Pet Care & Resources, Teens & High School
   meridenymca.org                    5  2026-09-01   Family & Childcare
   capitalworkforce.org               2  2026-09-01   Teens & High School
   hartfordschools.org                2  2026-09-01   Teens & High School
@@ -228,6 +227,10 @@ now.
   littleguild.org                    1  2026-09-04   Pet Care & Resources
   thevictorproject.org               1  2026-09-04   Pet Care & Resources
   hvcchelps.org                      1  2026-09-04   Pet Care & Resources
+  portal.ct.gov                     18  2026-09-05   Elder Care, Family & Childcare, Pet Care & Resources, Teens & High School
+  maloneyhs.com                      1  2026-09-05   Teens & High School
+  mhs.middletownschools.org          1  2026-09-05   Teens & High School
+  platths.com                        1  2026-09-05   Teens & High School
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -252,7 +255,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 294 of 712 listings (41%) carry a Website, so
+Only 298 of 716 listings (42%) carry a Website, so
 everything above is built from that third of the directory. The other
 418 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -262,7 +265,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-40 of the 205 domains here have never had a Last Verified on
+40 of the 208 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```

@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-05T08:49:42.301Z",
+  "generated": "2026-09-05T09:50:54.693Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 712,
+  "count": 716,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -1376,6 +1376,28 @@
       "notes": "FY26 state-funded spaces: 18 preschool. An allocation, not current openings. Licence/registry: DCEX.80579; Registry 1622. Local partner: Branford LGP -- Kerry Oberg | koberg@uwgnh.org | 203-691-4208. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "recJBbvNQYfJPXDLn",
+      "name": "BRIDGE CT (Building Resilience Independence Dignity Growth and Empowerment)",
+      "track": "Teens & High School",
+      "category": "College Access / Readiness",
+      "town": "Hartford",
+      "website": "https://portal.ct.gov/ads/knowledge-base/articles/education-services/for-children/bridge-ct-building-resilience-independence-dignity-growth-and-empowerment",
+      "contact": "ADS.BridgeCT@ct.gov",
+      "submittedBy": "Village Notes Research",
+      "notes": "Connecticut Department of Aging and Disability Services program. Works with schools and families to support students with disabilities preparing for independent living, college, and employment.",
+      "servicesOffered": [
+        "College Access / Readiness",
+        "Disability Support",
+        "Mentoring"
+      ],
+      "accessibility": "For students with disabilities ages 10–22 at participating schools. The program supports self-advocacy, peer mentoring, financial literacy, career readiness, and planning for life after high school.",
+      "lastVerified": "2026-09-05",
+      "teenOpportunity": [
+        "College Readiness",
+        "Career Exploration"
       ]
     },
     {
@@ -4190,8 +4212,9 @@
       "servicesOffered": [
         "Disability Support"
       ],
+      "accessibility": "Connecticut Level Up serves students ages 16–22 with disabilities who have an IEP, 504 plan, or special education services. It helps students prepare for employment and become more independent.",
       "programYear": "Ongoing",
-      "lastVerified": "2026-08-31",
+      "lastVerified": "2026-09-05",
       "teenOpportunity": [
         "Career Exploration",
         "College Readiness"
@@ -6551,6 +6574,24 @@
       ],
       "residency": "Residents Only",
       "lastVerified": "2026-09-04"
+    },
+    {
+      "id": "recWaKCWGlp39pLOD",
+      "name": "Francis T. Maloney High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "town": "Meriden",
+      "address": "121 Gravel Street, Meriden, CT 06450",
+      "website": "https://www.maloneyhs.com/",
+      "contact": "203-238-2334",
+      "submittedBy": "Village Notes Research",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-09-05",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Meriden Public Schools",
+      "programSetting": [
+        "Public School"
+      ]
     },
     {
       "id": "recjMZcIKKfAhB6v9",
@@ -10556,6 +10597,25 @@
       ]
     },
     {
+      "id": "recmENixIPxdpg2i5",
+      "name": "Middletown High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "town": "Middletown",
+      "address": "200 La Rosa Lane, Middletown, CT 06457",
+      "hours": "7:25 a.m.-2:00 p.m.",
+      "website": "https://mhs.middletownschools.org/",
+      "contact": "860-704-4500",
+      "submittedBy": "Village Notes Research",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-09-05",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Middletown Public Schools",
+      "programSetting": [
+        "Public School"
+      ]
+    },
+    {
       "id": "rec9cHNWOa2mSgXJI",
       "name": "Milford Animal Control Pet Food Bank",
       "track": "Pet Care & Resources",
@@ -12432,6 +12492,24 @@
       "animals": [
         "Dogs",
         "Cats"
+      ]
+    },
+    {
+      "id": "rec1zR3PxuARfO38J",
+      "name": "O.H. Platt High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "town": "Meriden",
+      "address": "220 Coe Avenue, Meriden, CT 06451",
+      "website": "https://www.platths.com/",
+      "contact": "203-235-7962",
+      "submittedBy": "Village Notes Research",
+      "programYear": "2026-2027 School Year",
+      "lastVerified": "2026-09-05",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Meriden Public Schools",
+      "programSetting": [
+        "Public School"
       ]
     },
     {
