@@ -18,7 +18,7 @@
   var DATA_URL = '/connecticut-list/data/experiences.json';
 
   var state = { all: [], search: '', region: '', types: [], towns: [],
-                categories: [], audiences: [], seasons: [],
+                categories: [], audiences: [], seasons: [], months: [], ages: [],
                 sort: 'name', shown: 0, open: null };
 
   // Cards are built as HTML strings. Rendering a screenful and extending on
@@ -48,6 +48,10 @@
     quickList:   document.getElementById('cl-quick-list'),
     seasonRow:   document.getElementById('cl-season-row'),
     seasonList:  document.getElementById('cl-season-list'),
+    monthRow:    document.getElementById('cl-month-row'),
+    monthList:   document.getElementById('cl-month-list'),
+    ageRow:      document.getElementById('cl-age-row'),
+    ageList:     document.getElementById('cl-age-list'),
     sort:        document.getElementById('cl-sort'),
     reset:       document.getElementById('cl-reset'),
     results:     document.getElementById('cl-results'),
@@ -108,6 +112,81 @@
   function list(value) { return Array.isArray(value) ? value : []; }
 
   function plural(n, one, many) { return n === 1 ? one : many; }
+
+  /* ---------- dated events ----------
+
+     A date is the one thing on a listing that goes wrong by sitting still.
+     Hours and cost are still roughly true next month; last October's apple
+     festival is a lie the moment it passes.
+
+     So an event is checked against the visitor's clock rather than the sync's.
+     The file is rebuilt every six hours, but the page must stop advertising
+     yesterday's fair even if no sync has run since, and a page left open
+     overnight must not still be advertising it in the morning. Same reasoning,
+     and the same shape, as liveEvent() in village-notes/script.js. */
+
+  function parseDay(value) {
+    if (!has(value)) return null;
+    var raw = String(value);
+    var d = new Date(raw + (/^\d{4}-\d{2}-\d{2}$/.test(raw) ? 'T00:00:00' : ''));
+    return isNaN(d.getTime()) ? null : d;
+  }
+
+  function today() {
+    var t = new Date();
+    t.setHours(0, 0, 0, 0);
+    return t;
+  }
+
+  // The event's window: start, and end if it runs more than a day. A
+  // multi-day fair counts as live through its last day, not from its first.
+  function eventWindow(r) {
+    var start = parseDay(r.eventStart);
+    if (!start) return null;
+    var end = parseDay(r.eventEnd) || start;
+    if (end < start) end = start;      // reported by the sync; shown sanely here
+    return { start: start, end: end };
+  }
+
+  function liveEvent(r) {
+    var w = eventWindow(r);
+    return w && w.end >= today() ? w : null;
+  }
+
+  var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'];
+
+  // Every month a live event touches, so a fair running 30 September to
+  // 2 October answers to both. Expired events belong to no month, which is
+  // what keeps them out of the filter as well as off the card.
+  function monthsOf(r) {
+    var w = liveEvent(r);
+    if (!w) return [];
+    var out = [];
+    var cur = new Date(w.start.getFullYear(), w.start.getMonth(), 1);
+    var last = new Date(w.end.getFullYear(), w.end.getMonth(), 1);
+    while (cur <= last && out.length < 24) {
+      out.push(MONTHS[cur.getMonth()]);
+      cur.setMonth(cur.getMonth() + 1);
+    }
+    return out.filter(function (m, i) { return out.indexOf(m) === i; });
+  }
+
+  // "Sat 4 Oct", or "4-6 Oct" for a run of days. The year is shown only when
+  // it is not this one: "Oct 4" reads as a date to act on, "Oct 4, 2027" reads
+  // as an archive entry.
+  function eventLabel(r) {
+    var w = liveEvent(r);
+    if (!w) return null;
+    var sameYear = w.start.getFullYear() === new Date().getFullYear();
+    var opts = { month: 'short', day: 'numeric' };
+    if (!sameYear) opts.year = 'numeric';
+    var start = w.start.toLocaleDateString('en-US', opts);
+    if (w.end.getTime() === w.start.getTime()) return start;
+    var endOpts = w.start.getMonth() === w.end.getMonth() && sameYear
+      ? { day: 'numeric' } : opts;
+    return start + '\u2013' + w.end.toLocaleDateString('en-US', endOpts);
+  }
 
   // Returns '' rather than the raw value when a timestamp will not parse. The
   // only caller prefixes it with "Last refreshed", and "Last refreshed
@@ -185,6 +264,12 @@
     list(r.audiences).forEach(function (a) {
       chips.push('<span class="vn-badge-chip is-open">' + esc(a) + '</span>');
     });
+    // Age sits with audience: both answer "is this for us". An adults-only
+    // badge is the one a parent most needs to see before reading further, so
+    // it is never truncated away with the categories below.
+    list(r.ages).forEach(function (a) {
+      chips.push('<span class="vn-badge-chip cl-age-chip">' + esc(a) + '</span>');
+    });
     if (has(r.bestTime) && r.bestTime !== 'Anytime') {
       chips.push('<span class="vn-badge-chip">' + esc(r.bestTime) + '</span>');
     }
@@ -194,6 +279,17 @@
   function card(r) {
     var kicker = list(r.experienceTypes).concat(list(r.categories))[0] || 'Things to do';
     var chips = chipsFor(r);
+
+    // The only row on the card carrying a deadline, so it gets the only accent
+    // border on the card face -- the same treatment, and the same class, that
+    // Village Notes gives its event row. It disappears once the date passes.
+    var when = eventLabel(r);
+    var eventRow = when
+      ? '<p class="vn-event">' +
+          '<span class="vn-visually-hidden">Event date: </span>' +
+          '<span class="vn-event-when">' + esc(when) + '</span>' +
+        '</p>'
+      : '';
 
     // Only the categories worth a glance. The full set is on the detail view,
     // where there is room for it.
@@ -225,6 +321,7 @@
         '</a>' +
       '</h3>' +
       (has(whereLine(r)) ? '<p class="vn-card-town">' + esc(whereLine(r)) + '</p>' : '') +
+      eventRow +
       (chips.length ? '<div class="vn-chips">' + chips.join('') + '</div>' : '') +
       catRow +
       why +
@@ -278,6 +375,8 @@
       fact('Town', r.town) +
       fact('Region', r.region) +
       fact('Best for', list(r.audiences).join(', ') || null) +
+      fact('Ages', list(r.ages).join(', ') || null, true) +
+      fact('Dates', eventLabel(r), true) +
       fact('Experience', list(r.experienceTypes).join(', ') || null) +
       fact('Best time', r.bestTime) +
       fact('Address', r.address) +
@@ -330,6 +429,8 @@
     ['category', function () { return state.categories; },                    function (v) { state.categories = v; }],
     ['audience', function () { return state.audiences; },                     function (v) { state.audiences = v; }],
     ['season',   function () { return state.seasons; },                       function (v) { state.seasons = v; }],
+    ['month',    function () { return state.months; },                        function (v) { state.months = v; }],
+    ['ages',     function () { return state.ages; },                          function (v) { state.ages = v; }],
     ['sort',     function () { return state.sort === 'name' ? [] : [state.sort]; }, function (v) { state.sort = v[0] || 'name'; }]
   ];
 
@@ -375,6 +476,8 @@
     state.categories.forEach(function (c) { add('category', c, c); });
     state.audiences.forEach(function (a) { add('audience', a, a); });
     state.seasons.forEach(function (s) { add('season', s, s); });
+    state.months.forEach(function (m) { add('month', m, m); });
+    state.ages.forEach(function (a) { add('ages', a, a); });
 
     el.activeChips.innerHTML = chips.join('');
     el.active.hidden = chips.length === 0;
@@ -392,6 +495,8 @@
     if (kind === 'category') { drop(state.categories); }
     if (kind === 'audience') { drop(state.audiences); }
     if (kind === 'season') { drop(state.seasons); }
+    if (kind === 'month') { drop(state.months); }
+    if (kind === 'ages') { drop(state.ages); }
     syncChipRows();
     apply();
   }
@@ -404,6 +509,8 @@
     state.categories = [];
     state.audiences = [];
     state.seasons = [];
+    state.months = [];
+    state.ages = [];
     state.sort = 'name';
     el.search.value = '';
     el.region.value = '';
@@ -439,6 +546,10 @@
     if (!hasAnyOf(r.categories, state.categories)) return false;
     if (!hasAnyOf(r.audiences, state.audiences)) return false;
     if (state.seasons.length && state.seasons.indexOf(r.bestTime) === -1) return false;
+    if (!hasAnyOf(r.ages, state.ages)) return false;
+    if (state.months.length && !state.months.some(function (m) {
+      return monthsOf(r).indexOf(m) !== -1;
+    })) return false;
     if (!state.search) return true;
     return (r._haystack || '').indexOf(state.search) !== -1;
   }
@@ -452,6 +563,13 @@
       .concat(list(r.experienceTypes))
       .concat(list(r.categories))
       .concat(list(r.audiences))
+      .concat(list(r.ages))
+      // Only while the event is still ahead. Indexing a field usually only
+      // adds matches, but an expired event is text the card deliberately does
+      // not show, and matching "october" against something invisible sends a
+      // visitor to a card that never mentions it.
+      .concat(monthsOf(r))
+      .concat(eventLabel(r) ? [eventLabel(r)] : [])
       .filter(has).join(' ␟ ').toLowerCase();
   }
 
@@ -504,6 +622,12 @@
     }).length;
   }
 
+  // Chip rows the page keeps in sync with state. Listed once so a new row is
+  // added in one place rather than in four.
+  function chipContainers() {
+    return [el.audienceList, el.ageList, el.seasonList, el.monthList, el.quickList];
+  }
+
   function buildChipRows() {
     var audienceCounts = {}, seasonCounts = {}, quickCounts = {};
     var audiences = uniqueSorted(state.all.flatMap(function (r) { return list(r.audiences); }));
@@ -516,8 +640,37 @@
       return quickCounts[q.value] > 0;
     }).map(function (q) { return { value: q.value, label: q.label, field: q.field }; });
 
+    // Months, in calendar order rather than alphabetical, and only the ones a
+    // live event actually falls in. Both rows disappear entirely until records
+    // carry the data, which is why neither can offer a choice that returns
+    // nothing -- and why adding the fields does not put two empty rows on the
+    // page in the meantime.
+    var monthCounts = {};
+    state.all.forEach(function (r) {
+      monthsOf(r).forEach(function (m) { monthCounts[m] = (monthCounts[m] || 0) + 1; });
+    });
+    var months = MONTHS.filter(function (m) { return monthCounts[m]; });
+
+    var ageCounts = {};
+    var ages = uniqueSorted(state.all.flatMap(function (r) { return list(r.ages); }));
+    ages.forEach(function (a) { ageCounts[a] = countBy('ages', a); });
+    // Youngest first, and the adults-only options last, which is the order
+    // somebody scans them in. Any option the base grows later that is not in
+    // this list still appears, at the end, rather than vanishing.
+    var AGE_ORDER = ['All ages', 'Little kids (0-5)', 'Kids (6-12)', 'Teens',
+                     'Adults only (18+)', 'Adults only (21+)'];
+    ages.sort(function (a, b) {
+      var ai = AGE_ORDER.indexOf(a), bi = AGE_ORDER.indexOf(b);
+      if (ai === -1 && bi === -1) return a.localeCompare(b);
+      if (ai === -1) return 1;
+      if (bi === -1) return -1;
+      return ai - bi;
+    });
+
     chipRow(el.audienceList, el.audienceRow, audiences, 'audience', audienceCounts);
+    chipRow(el.ageList, el.ageRow, ages, 'ages', ageCounts);
     chipRow(el.seasonList, el.seasonRow, seasons, 'season', seasonCounts);
+    chipRow(el.monthList, el.monthRow, months, 'month', monthCounts);
     chipRow(el.quickList, el.quickRow, quick, 'quick', quickCounts);
     syncChipRows();
   }
@@ -532,12 +685,14 @@
   }
 
   function syncChipRows() {
-    [el.audienceList, el.seasonList, el.quickList].forEach(function (container) {
+    chipContainers().forEach(function (container) {
       if (!container) return;
       Array.prototype.forEach.call(container.querySelectorAll('input'), function (box) {
         var kind = box.dataset.kind;
         if (kind === 'audience') box.checked = state.audiences.indexOf(box.value) !== -1;
         if (kind === 'season')   box.checked = state.seasons.indexOf(box.value) !== -1;
+        if (kind === 'month')    box.checked = state.months.indexOf(box.value) !== -1;
+        if (kind === 'ages')     box.checked = state.ages.indexOf(box.value) !== -1;
         if (kind === 'quick') {
           var q = quickFor(box.value);
           box.checked = !!q && (q.field === 'categories'
@@ -753,13 +908,16 @@
     });
 
     // Chip rows
-    [el.audienceList, el.seasonList, el.quickList].forEach(function (container) {
+    chipContainers().forEach(function (container) {
+      if (!container) return;
       container.addEventListener('change', function (event) {
         var box = event.target;
         if (!box || box.type !== 'checkbox') return;
         var kind = box.dataset.kind;
         var bucket = kind === 'audience' ? state.audiences
                    : kind === 'season'   ? state.seasons
+                   : kind === 'month'    ? state.months
+                   : kind === 'ages'     ? state.ages
                    : null;
         if (kind === 'quick') {
           var q = quickFor(box.value);

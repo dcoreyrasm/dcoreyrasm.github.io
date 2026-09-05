@@ -24,6 +24,17 @@
    pill. This only lets a row wrap independently of its label. */
 .cl-audience-list { display:flex; flex-wrap:wrap; gap:.5rem; }
 
+/* ---------- AGE BADGE ---------- */
+/* An age badge is a constraint, not a category, so it reads differently from
+   the category chips beside it -- but it uses --coral like everything else on
+   the card. No new colour, and never colour alone: the badge carries its own
+   words, so "Adults only (21+)" is legible with no colour perception at all. */
+.vn-badge-chip.cl-age-chip {
+  border-color:var(--coral);
+  color:var(--coral);
+  background:color-mix(in srgb, var(--bg2) 88%, var(--coral));
+}
+
 /* ---------- ACTIVE FILTERS ---------- */
 .cl-activefilters {
   display:flex; align-items:center; gap:.75rem 1rem; flex-wrap:wrap;

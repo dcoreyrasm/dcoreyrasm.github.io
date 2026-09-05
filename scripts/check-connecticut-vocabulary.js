@@ -48,8 +48,18 @@ const EXPECTED_TYPES = {
   'Notes':              ['multilineText', 'singleLineText', 'richText'],
   'Date Added':         ['date', 'dateTime', 'createdTime'],
   'Status':             ['singleSelect'],
-  'Verified':           ['checkbox']
+  'Verified':           ['checkbox'],
+  'Event Start Date':   ['date', 'dateTime'],
+  'Event End Date':     ['date', 'dateTime'],
+  'Age Suitability':    ['multipleSelects']
 };
+
+// The age vocabulary the page orders and styles. A new option still appears on
+// the page, at the end of the row, but it is reported here so a coined
+// near-duplicate -- "Adults (21+)" beside "Adults only (21+)" -- is caught the
+// way the audience list already catches one.
+const AGES = ['All ages', 'Little kids (0-5)', 'Kids (6-12)', 'Teens',
+              'Adults only (18+)', 'Adults only (21+)'];
 
 // The only audience values the public page treats as valid, per the
 // governance. A new one appearing in the base is a decision somebody made
@@ -132,7 +142,19 @@ function main() {
         });
     }
 
-    // 4. The committed JSON carries nothing internal. Cheap, and it is the
+    // 4. Age vocabulary, same reasoning as the audience list above.
+    const ageField = byName.get('Age Suitability');
+    if (ageField && ageField.options && ageField.options.choices) {
+      ageField.options.choices
+        .map(c => c.name)
+        .filter(name => !AGES.includes(name))
+        .forEach(name => {
+          problems.push(`"Age Suitability" has an option the page does not recognise: ` +
+                        `"${name}". The agreed values are ${AGES.join(', ')}.`);
+        });
+    }
+
+    // 5. The committed JSON carries nothing internal. Cheap, and it is the
     //    check that matters most: this file is downloaded by every visitor.
     let data = null;
     try {

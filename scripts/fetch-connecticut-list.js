@@ -125,6 +125,15 @@ const FIELD_MAP = {
   'Notes':              'notes',
   'Date Added':         'dateAdded',
 
+  // A dated event, and who it actually suits. Added to the base on
+  // 5 September 2026 as a deliberate schema change, not during a research run.
+  // Both start empty on every record and fill in from official sources only:
+  // an invented date sends somebody to a closed gate, and an invented age
+  // rating sends a family to an adults-only workshop.
+  'Event Start Date':   'eventStart',
+  'Event End Date':     'eventEnd',
+  'Age Suitability':    'ages',
+
   // Read for the publication rule and for run reporting. Stripped before
   // anything is written to disk -- see toPublic() below.
   'Status':             'status',
@@ -138,7 +147,7 @@ const INTERNAL_KEYS = new Set(['status', 'verified']);
 // Fields that arrive as lists. Airtable omits an empty multi-select entirely
 // rather than sending [], so these are normalized here and the page can treat
 // them as always-arrays.
-const LIST_KEYS = new Set(['experienceTypes', 'categories', 'audiences']);
+const LIST_KEYS = new Set(['experienceTypes', 'categories', 'audiences', 'ages']);
 
 /* ---------- display-title normalization ----------
 
@@ -414,6 +423,7 @@ function build(experiences) {
     categories:      distinct('categories'),
     audiences:       distinct('audiences'),
     seasons:         distinct('bestTime'),
+    ages:            distinct('ages'),
     experiences: experiences.map(toPublic)
   };
 }
@@ -485,6 +495,61 @@ function reportPassportTitles(experiences) {
               '"Passport" in the name and it is shown to visitors as written: ' + named.join('; ') +
               '. If that is the organizer\'s own name for the programme, leave it. If it came from ' +
               'the private project, rename the record in Airtable.');
+}
+
+// Event dates the page cannot use, or that have gone stale.
+//
+// Expired events are NOT dropped from the file. The page hides them against
+// the visitor's own clock, which is what a page left open overnight needs --
+// the file is only rebuilt every six hours. So this reports rather than
+// filters, and the reporting is the point: hidden is not fixed, and a listing
+// whose only event has passed has quietly lost a row.
+function reportEventDates(experiences) {
+  const today = new Date().toISOString().slice(0, 10);
+
+  const endOnly = experiences.filter(e => e.eventEnd && !e.eventStart).map(e => e.name).sort();
+  const backwards = experiences
+    .filter(e => e.eventStart && e.eventEnd && e.eventEnd < e.eventStart)
+    .map(e => `${e.name} (${e.eventStart} to ${e.eventEnd})`).sort();
+  const expired = experiences
+    .filter(e => (e.eventEnd || e.eventStart) && (e.eventEnd || e.eventStart) < today)
+    .map(e => `${e.name} (${e.eventEnd || e.eventStart})`).sort();
+  // Marked as a dated event by Best Time to Visit, but carrying no date. This
+  // is the gap the two new fields exist to close, so it is named until it is.
+  const undated = experiences
+    .filter(e => e.bestTime === 'Specific event/date' && !e.eventStart)
+    .map(e => e.name).sort();
+
+  if (endOnly.length) {
+    console.log(`::warning::${endOnly.length} ${endOnly.length === 1 ? 'record has' : 'records have'} ` +
+                'an Event End Date with no start date, so the page cannot place them in a month: ' +
+                endOnly.join('; ') + '.');
+  }
+  if (backwards.length) {
+    console.log(`::warning::${backwards.length} event ${backwards.length === 1 ? 'ends' : 'end'} ` +
+                'before it starts: ' + backwards.join('; ') + '.');
+  }
+  if (expired.length) {
+    console.log(`::warning::${expired.length} ${expired.length === 1 ? 'event has' : 'events have'} ` +
+                'passed and are now hidden on the site: ' + expired.join('; ') +
+                '. Replace with the next announced date, or clear the date fields.');
+  }
+  if (undated.length) {
+    const shown = undated.slice(0, 25);
+    console.log(`::warning::${undated.length} ${undated.length === 1 ? 'record is' : 'records are'} ` +
+                'marked "Specific event/date" but carry no Event Start Date, so they cannot be ' +
+                'found by month: ' + shown.join('; ') +
+                (undated.length > shown.length ? `; and ${undated.length - shown.length} more` : '') + '.');
+  }
+}
+
+// How much of the two new fields is filled in. Counted rather than listed:
+// both start empty on every record, so naming 217 of them helps nobody.
+function reportNewFieldCoverage(experiences) {
+  const withAges = experiences.filter(e => (e.ages || []).length).length;
+  const withDates = experiences.filter(e => e.eventStart).length;
+  console.log(`Age Suitability set on ${withAges} of ${experiences.length}; ` +
+              `Event Start Date set on ${withDates} of ${experiences.length}.`);
 }
 
 // Fields a card and a detail view are built around. A published record missing
@@ -592,6 +657,8 @@ async function main() {
   reportTitleCleanups(raw);
   reportThinRecords(experiences);
   reportCompoundTowns(experiences);
+  reportEventDates(experiences);
+  reportNewFieldCoverage(experiences);
   reportPassportTitles(experiences);
   await reportAwaitingReview();
   await reportUnverified();
