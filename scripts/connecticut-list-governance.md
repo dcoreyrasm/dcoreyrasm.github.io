@@ -185,6 +185,51 @@ outage, so it never holds back a data refresh. The red run is the notification.
 
 ---
 
+## 7a. Dated events and age suitability
+
+Three fields were added to the table on 5 September 2026, as a deliberate
+schema change Darice authorised, **not** during a research run:
+
+| Field | Type | What it is for |
+|---|---|---|
+| `Event Start Date` | date (ISO) | The day a dated event begins |
+| `Event End Date` | date (ISO) | The last day of a multi-day event; blank for a single day |
+| `Age Suitability` | multi-select | Who the experience actually suits |
+
+**Age Suitability values, and only these:** `All ages` · `Little kids (0-5)` ·
+`Kids (6-12)` · `Teens` · `Adults only (18+)` · `Adults only (21+)`
+
+Both are evidence-based and start empty on every record. Fill them only from
+the official source:
+
+- **An invented date sends somebody to a closed gate.** If the official page
+  does not give a date, leave both fields blank. "Specific event/date" in Best
+  Time to Visit is a marker that a date exists, not a substitute for one.
+- **An invented age rating sends a family to an adults-only workshop.** Tag
+  `Adults only (21+)` when the source says BYOB, wine, or 21+. Do not tag
+  `All ages` because something merely seems suitable. Fewer tags when unsure.
+
+### How the page treats them
+
+- An event is live through its **end** date, so a three-day fair stays visible
+  on its last day. A single-day event uses the start date for both.
+- **Expired events are hidden by the page, not dropped by the sync.** The check
+  runs against the visitor's clock, because the file is rebuilt only every six
+  hours and a page left open overnight must stop advertising this morning's
+  fair. Same reasoning, same shape, as `liveEvent()` in Village Notes.
+- The month filter offers only months a **live** event falls in, so a finished
+  event contributes no month and cannot be filtered to.
+- Both filter rows hide themselves entirely while no record carries the data,
+  so adding the fields did not put two empty rows on the page.
+- An `Event End Date` with no start is unusable and shows nothing rather than
+  guessing. The run reports it.
+
+Every run reports: expired events, an end date with no start, an end before its
+start, records marked "Specific event/date" that carry no date, and how many
+records have each field filled in.
+
+---
+
 ## 8. The four audiences
 
 `Group Activities` · `Date Night` · `Family` · `Individual Exploration`
@@ -321,6 +366,10 @@ simplify a migration, an import, an automation, or a front-end feature.
 | `scripts/fetch-connecticut-list.js` | Airtable adapter and sync. Holds the publication rule. |
 | `scripts/check-connecticut-vocabulary.js` | Schema, vocabulary and leak check |
 | `.github/workflows/connecticut-list-sync.yml` | Runs both, every six hours |
+
+Airtable fields the page reads are listed in `FIELD_MAP` in the sync, and
+their expected types in `EXPECTED_TYPES` in the check script. Adding a field
+means adding it to both.
 
 Village Notes components are reused as-is from `/village-notes/village-notes.css`.
 **That file is shared. Changing it changes both pages, so test both.**
