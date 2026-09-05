@@ -73,16 +73,33 @@
       </div>
     </div>
 
-    <section class="vn-controls-section" aria-labelledby="cl-filters-heading">
+    <section class="vn-searchbar-section" aria-labelledby="cl-search-heading">
       <div class="container">
-        <h2 id="cl-filters-heading" class="vn-visually-hidden">Find something to do</h2>
-
-        <form class="vn-controls" role="search" onsubmit="return false;">
+        <h2 id="cl-search-heading" class="vn-visually-hidden">Search the list</h2>
+        <form class="vn-searchbar" role="search" onsubmit="return false;">
           <div class="vn-field vn-field-search">
             <label for="cl-search">Search</label>
             <input type="search" id="cl-search" placeholder="Search things to do, towns, places, or experiences&hellip;" autocomplete="off" />
           </div>
 
+          <div class="vn-field">
+            <label for="cl-sort">Sort by</label>
+            <select id="cl-sort">
+              <option value="name">Name A&ndash;Z</option>
+              <option value="town">Town A&ndash;Z</option>
+              <option value="region">Region A&ndash;Z</option>
+              <option value="added">Recently added</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="vn-controls-section" aria-labelledby="cl-filters-heading">
+      <div class="container">
+        <h2 id="cl-filters-heading" class="vn-visually-hidden">Find something to do</h2>
+
+        <form class="vn-controls" role="search" onsubmit="return false;">
           <div class="vn-field">
             <label for="cl-region">Region</label>
             <select id="cl-region">
@@ -123,16 +140,6 @@
                 <div class="vn-multi-list" id="cl-town-list"></div>
               </div>
             </div>
-          </div>
-
-          <div class="vn-field">
-            <label for="cl-sort">Sort by</label>
-            <select id="cl-sort">
-              <option value="name">Name A&ndash;Z</option>
-              <option value="town">Town A&ndash;Z</option>
-              <option value="region">Region A&ndash;Z</option>
-              <option value="added">Recently added</option>
-            </select>
           </div>
 
           <button type="button" id="cl-reset" class="btn-ghost vn-reset">Reset</button>
