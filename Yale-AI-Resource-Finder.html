@@ -1,8 +1,19 @@
+---
+# Unlisted. Front matter is here so Jekyll treats this as a page and honours
+# sitemap:false, keeping the URL out of /sitemap.xml. The file contains no
+# Liquid syntax, so the templating pass leaves it untouched.
+#
+# The URL still works for anyone holding the link; it is simply not indexed,
+# not in the sitemap, and not linked from anywhere on the site.
+sitemap: false
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow" />
+<link rel="canonical" href="https://www.daricecorey.com/Yale-AI-Resource-Finder.html" />
 <title>Yale AI Resource Finder</title>
 <!--
   ============================================================================
