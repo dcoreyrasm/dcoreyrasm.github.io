@@ -422,9 +422,19 @@
     return wanted.some(function (w) { return vals.indexOf(w) !== -1; });
   }
 
+  // The names a record can be filtered under. The adapter splits a compound
+  // Town -- "Hamden / New Haven" -- into both, so filtering New Haven finds it.
+  // Falls back to the display value for the ordinary single-town record, which
+  // does not carry the split list.
+  function townsOf(r) {
+    return Array.isArray(r.towns) ? r.towns : (has(r.town) ? [r.town] : []);
+  }
+
   function matches(r) {
     if (state.region && r.region !== state.region) return false;
-    if (state.towns.length && state.towns.indexOf(r.town) === -1) return false;
+    if (state.towns.length && !state.towns.some(function (t) {
+      return townsOf(r).indexOf(t) !== -1;
+    })) return false;
     if (!hasAnyOf(r.experienceTypes, state.types)) return false;
     if (!hasAnyOf(r.categories, state.categories)) return false;
     if (!hasAnyOf(r.audiences, state.audiences)) return false;
@@ -438,6 +448,7 @@
   // library: "wat" finds Waterfalls, "stam" finds Stamford.
   function haystack(r) {
     return [r.name, r.town, r.region, r.bestTime, r.whyGo, r.address, r.tryThis, r.notes]
+      .concat(townsOf(r))
       .concat(list(r.experienceTypes))
       .concat(list(r.categories))
       .concat(list(r.audiences))
@@ -453,7 +464,15 @@
   var SORTS = {
     name:   byName,
     town:   function (a, b) { return String(a.town || '').localeCompare(String(b.town || '')) || byName(a, b); },
-    region: function (a, b) { return String(a.region || '').localeCompare(String(b.region || '')) || byName(a, b); },
+    // 152 of the current records have no Region. Sorting on the raw value puts
+    // every one of them at the top, so choosing "Region A-Z" shows the records
+    // that have no region first -- the opposite of what was asked for. Records
+    // without one sort to the end instead.
+    region: function (a, b) {
+      var ar = has(a.region), br = has(b.region);
+      if (ar !== br) return ar ? -1 : 1;
+      return String(a.region || '').localeCompare(String(b.region || '')) || byName(a, b);
+    },
     added:  function (a, b) {
               return String(b.dateAdded || '').localeCompare(String(a.dateAdded || '')) || byName(a, b);
             }
@@ -853,7 +872,9 @@
 
         fillSelect(el.region, uniqueSorted(state.all.map(function (r) { return r.region; })),
                    'All of Connecticut');
-        buildTownList(uniqueSorted(state.all.map(function (r) { return r.town; })));
+        buildTownList(uniqueSorted(state.all.reduce(function (all, r) {
+          return all.concat(townsOf(r));
+        }, [])));
         buildTypeList();
         buildChipRows();
 

@@ -176,6 +176,44 @@ function displayName(name) {
   return NEEDS_NOUN.has(last) ? stem + ' Visit' : stem;
 }
 
+/* ---------- town splitting ----------
+
+   Town is free text, and 23 records name more than one: "Hamden / New Haven",
+   "Bridgeport / Hartford / Waterbury", "Storrs / Mansfield". Left whole, each
+   compound becomes its own filter option and the record is invisible under
+   either real town -- somebody filtering New Haven does not find the Hamden /
+   New Haven listing, which is the one thing a town filter exists to do.
+
+   So the card keeps the value verbatim and the filter reads a split list.
+   Nothing is invented: every name in the list is one the record already gives.
+
+   Some parts are not towns. A region name, a statewide marker or a "Multi-Town,
+   Eastern Connecticut" is a coverage note, and offering it as a town would put
+   a choice in the dropdown that answers a different question. Those parts are
+   dropped from the filter list and still shown on the card, so a genuinely
+   statewide trail reads as statewide rather than as a town nobody can find.
+
+   A record can end up with no filterable town this way. That is correct: a
+   50-mile rail trail across eastern Connecticut is not in a town. */
+
+// A part that describes coverage rather than a place. Deliberately narrow --
+// anything not matched here is treated as a town name, because dropping a real
+// town is the worse failure.
+function isCoverageNote(part) {
+  return part === '' ||
+         /^statewide$/i.test(part) ||
+         /^multi[- ]town/i.test(part) ||
+         /,/.test(part) ||              // "Multi-Town, Eastern Connecticut"
+         /^connecticut\b/i.test(part) || // "Connecticut Shoreline"
+         /\bCT$/.test(part) ||          // "Northeastern CT"
+         / Area$/i.test(part);          // "New Haven Area"
+}
+
+function splitTowns(town) {
+  if (!town) return [];
+  return String(town).split('/').map(p => p.trim()).filter(p => !isCoverageNote(p));
+}
+
 /* ---------- slugs ---------- */
 
 function slugify(value) {
@@ -310,6 +348,12 @@ function toExperience(record) {
   }
 
   out.name = displayName(out.name) || 'Untitled';
+  // Display value stays in `town`; `towns` is what the filter reads. Omitted
+  // when it would only repeat `town`, so the file does not carry 200 copies of
+  // a single-element array.
+  const towns = splitTowns(out.town);
+  if (towns.length > 1 || (towns.length === 1 && towns[0] !== out.town)) out.towns = towns;
+  if (towns.length === 0 && out.town) out.towns = [];
   out.officialWebsite = cleanUrl(out.officialWebsite) || undefined;
   if (out.officialWebsite === undefined) delete out.officialWebsite;
   return out;
@@ -362,7 +406,10 @@ function build(experiences) {
     // visitor is never offered a choice that returns nothing, and a new
     // Airtable option appears in the filters without a code change.
     regions:         distinct('region'),
-    towns:           distinct('town'),
+    // Built from the split names, so "Hamden / New Haven" contributes Hamden
+    // and New Haven rather than a third option that is neither.
+    towns: [...new Set(experiences.flatMap(e =>
+      Array.isArray(e.towns) ? e.towns : splitTowns(e.town)))].filter(Boolean).sort(byName),
     experienceTypes: distinct('experienceTypes'),
     categories:      distinct('categories'),
     audiences:       distinct('audiences'),
@@ -404,6 +451,40 @@ function reportTitleCleanups(raw) {
   console.log(`::warning::${cleaned.length} published ${cleaned.length === 1 ? 'record still ends' : 'records still end'} ` +
               'in the private project\'s "Date" wording and are being cleaned for display only: ' +
               cleaned.join('; ') + '. Worth renaming in Airtable so the record and the page agree.');
+}
+
+// A compound Town is handled correctly by the split, but the split is a patch
+// over the record rather than a fix to it, and it cannot tell a town from a
+// coverage note in every case. So the run names them.
+function reportCompoundTowns(experiences) {
+  const compound = experiences
+    .filter(e => Array.isArray(e.towns))
+    .map(e => e.town)
+    .filter((t, i, all) => all.indexOf(t) === i)
+    .sort();
+  if (!compound.length) return;
+  console.log(`::warning::${compound.length} Town ${compound.length === 1 ? 'value names' : 'values name'} ` +
+              'more than one place or a coverage area: ' + compound.join('; ') +
+              '. Each is split so the record is findable under every town it names; ' +
+              'a single town per record would not need splitting.');
+}
+
+// The public page carries no passport language, but a record NAME is content,
+// not chrome: "Connecticut Four-Season Passport Challenge" is either a real
+// programme somebody runs under that name or the private project's framing
+// left on a public record, and the difference cannot be told from the field.
+// Guessing either way is worse than asking, so the run asks. Nothing is
+// renamed automatically.
+function reportPassportTitles(experiences) {
+  const named = experiences
+    .filter(e => /passport/i.test(e.name))
+    .map(e => e.name)
+    .sort();
+  if (!named.length) return;
+  console.log(`::warning::${named.length} published ${named.length === 1 ? 'record has' : 'records have'} ` +
+              '"Passport" in the name and it is shown to visitors as written: ' + named.join('; ') +
+              '. If that is the organizer\'s own name for the programme, leave it. If it came from ' +
+              'the private project, rename the record in Airtable.');
 }
 
 // Fields a card and a detail view are built around. A published record missing
@@ -510,6 +591,8 @@ async function main() {
   reportBadUrls();
   reportTitleCleanups(raw);
   reportThinRecords(experiences);
+  reportCompoundTowns(experiences);
+  reportPassportTitles(experiences);
   await reportAwaitingReview();
   await reportUnverified();
 }
