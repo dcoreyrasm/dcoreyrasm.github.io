@@ -6,6 +6,9 @@
   --bg: #16131f; --bg2: #1e1a2e; --coral: #c084fc; --coral-dim: #a855f7;
   --cream: #ede9f6; --muted: #a9a4c2; --line: rgba(192,132,252,0.12);
   --nav-bg: rgba(22,19,31,0.95);
+  /* Height of the fixed header. Anything that has to sit directly below it
+     reads this instead of carrying its own copy of the number. */
+  --header-h: 4.7rem;
   --serif: 'Playfair Display', Georgia, serif; --sans: 'DM Sans', sans-serif;
 }
 .skip-link { position:absolute; top:-100%; left:1rem; background:var(--coral); color:#1a0a2e; padding:.75rem 1.25rem; font-size:.9rem; font-weight:500; z-index:9999; text-decoration:none; border-radius:0 0 4px 4px; }
@@ -32,7 +35,7 @@ nav[aria-label="Main navigation"] { position:fixed; top:0; left:0; right:0; z-in
 /* Clears the fixed header. The Newsletter button makes the bar ~74px, so
    this leaves room for webfont metrics to vary without content sliding
    underneath. */
-body { padding-top:5.5rem; }
+body { padding-top:calc(var(--header-h) + .75rem); }
 .container { max-width:1100px; margin:0 auto; padding:0 3rem; }
 .section-label { font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--coral); margin-bottom:2rem; display:flex; align-items:center; gap:1rem; }
 .section-label::after { content:''; flex:1; height:1px; background:var(--line); }
@@ -278,10 +281,11 @@ footer p { font-size:.78rem; color:var(--muted); }
 .nav-toggle.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
 
 @media (max-width:1060px) {
+  :root { --header-h: 4rem; }
   nav[aria-label="Main navigation"] { padding:1.1rem 1.5rem; }
   .nav-toggle { display:flex; }
   .nav-links {
-    display:none; position:fixed; top:60px; left:0; right:0;
+    display:none; position:fixed; top:var(--header-h); left:0; right:0;
     background:var(--nav-bg); flex-direction:column; gap:0;
     padding:1rem 0; border-bottom:1px solid var(--line); z-index:99;
   }

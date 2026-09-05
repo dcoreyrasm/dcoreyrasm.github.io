@@ -63,7 +63,7 @@
 .cf-door p { font-size: .88rem; color: var(--muted); line-height: 1.6; }
 
 /* ---- Search bar --------------------------------------------------------- */
-.cf-tools { position: sticky; top: 5rem; z-index: 40; background: var(--bg); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1.1rem 0; margin-bottom: 2rem; }
+.cf-tools { position: sticky; top: var(--header-h); z-index: 40; background: var(--bg); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1.1rem 0; margin-bottom: 2rem; }
 .cf-toolbar { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; }
 .cf-searchbox { position: relative; flex: 1 1 320px; min-width: 0; }
 .cf-searchbox svg { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; stroke: var(--muted); pointer-events: none; }
