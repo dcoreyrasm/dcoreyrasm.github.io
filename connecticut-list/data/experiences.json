@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-05T19:08:15.330Z",
-  "count": 217,
+  "generated": "2026-09-05T22:15:52.335Z",
+  "count": 337,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -14,13 +14,17 @@
   ],
   "towns": [
     "Ansonia",
+    "Barkhamsted",
     "Berlin",
     "Bethel",
     "Bethlehem",
     "Bloomfield",
     "Branford",
     "Bridgeport",
+    "Bristol",
     "Brookfield",
+    "Burlington",
+    "Canterbury",
     "Canton",
     "Cheshire",
     "Chester",
@@ -33,17 +37,22 @@
     "Cromwell",
     "Danbury",
     "Deep River",
+    "Derby",
     "Durham",
+    "East Granby",
     "East Haddam",
     "East Hampton",
     "East Hartford",
     "East Haven",
     "East Lyme",
+    "East Windsor",
     "Easton",
     "Essex",
     "Fairfield",
+    "Farmington",
     "Glastonbury",
     "Goshen",
+    "Granby",
     "Greenwich",
     "Groton",
     "Guilford",
@@ -51,36 +60,46 @@
     "Hamden",
     "Hampton",
     "Hartford",
+    "Harwinton",
     "Hebron",
     "Kent",
     "Killingworth",
+    "Lebanon",
     "Litchfield",
     "Lyme",
+    "Madison",
     "Manchester",
     "Mansfield",
     "Mashantucket",
+    "Meriden",
     "Middlefield",
+    "Middletown",
     "Milford",
     "Mobile",
     "Montville",
+    "Moodus",
     "Mystic",
     "New Britain",
     "New Canaan",
     "New Hartford",
     "New Haven",
+    "New Haven to Suffield",
     "New London",
     "New Milford",
     "New Preston",
     "Newtown",
     "Niantic",
     "Norfolk",
+    "North Branford",
     "North Grosvenordale",
     "Norwalk",
+    "Norwich",
     "Old Greenwich",
     "Old Lyme",
     "Old Saybrook",
     "Orange",
     "Oxford",
+    "Plantsville",
     "Pomfret",
     "Pomfret Center",
     "Putnam",
@@ -95,8 +114,11 @@
     "Sharon",
     "Shelton",
     "Sherman",
+    "Simsbury",
     "Somers",
+    "South Glastonbury",
     "South Windsor",
+    "Southbury",
     "Southington",
     "Stamford",
     "Statewide Connecticut Delivery",
@@ -104,18 +126,23 @@
     "Stony Creek",
     "Storrs",
     "Stratford",
+    "Terryville",
     "Thomaston",
     "Thompson",
     "Trumbull",
     "Uncasville",
+    "Union",
     "Various Connecticut Locations",
     "Vernon",
+    "Voluntown",
     "Wallingford",
+    "Warren",
     "Washington",
     "Washington Depot",
     "Waterbury",
     "Waterford",
     "Watertown",
+    "West Cornwall",
     "West Hartford",
     "Weston",
     "Westport",
@@ -130,6 +157,7 @@
   ],
   "experienceTypes": [
     "Bookstore",
+    "Corn Maze",
     "Date Night",
     "Fall & Seasonal",
     "Food & Treats",
@@ -175,7 +203,21 @@
     "Summer",
     "Winter"
   ],
+  "ages": [],
   "experiences": [
+    {
+      "name": "101st Bethlehem Fair",
+      "town": "Bethlehem",
+      "region": "Litchfield Hills",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://bethlehemfair.com/",
+      "address": "384 Main Street North, Bethlehem, CT 06751",
+      "dateAdded": "2026-09-04",
+      "slug": "101st-bethlehem-fair"
+    },
     {
       "name": "2026 Celebrate Mansfield Festival",
       "town": "Storrs / Mansfield",
@@ -231,6 +273,32 @@
       "slug": "2026-celebrate-stratford-great-pumpkin-festival"
     },
     {
+      "name": "2026 Cheshire Fall Festival & Fireworks",
+      "town": "Cheshire",
+      "region": "Central CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://cheshirefestival.com/",
+      "address": "Bartlem Park, Cheshire, CT",
+      "dateAdded": "2026-09-02",
+      "slug": "2026-cheshire-fall-festival-and-fireworks"
+    },
+    {
+      "name": "2026 Connecticut Landmarks Museum Passport Challenge",
+      "town": "Statewide",
+      "region": "Other / Statewide",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://ctlandmarks.org/passport/",
+      "dateAdded": "2026-08-24",
+      "towns": [],
+      "slug": "2026-connecticut-landmarks-museum-passport-challenge"
+    },
+    {
       "name": "2026 Cromwell Riverport Festival & Fireworks",
       "town": "Cromwell",
       "region": "Central CT",
@@ -270,6 +338,19 @@
       "slug": "2026-durham-fair"
     },
     {
+      "name": "2026 Guilford Fair",
+      "town": "Guilford",
+      "region": "Connecticut Shoreline",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://guilfordfair.org/",
+      "address": "111 Lovers Lane, Guilford, CT",
+      "dateAdded": "2026-08-28",
+      "slug": "2026-guilford-fair"
+    },
+    {
       "name": "2026 Hamburg Fair",
       "town": "Lyme",
       "region": "Connecticut Shoreline",
@@ -293,6 +374,18 @@
       "slug": "2026-hamburg-fair"
     },
     {
+      "name": "2026 Harwinton Fair",
+      "town": "Harwinton",
+      "region": "Litchfield Hills",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://harwintonfair.com/",
+      "dateAdded": "2026-08-28",
+      "slug": "2026-harwinton-fair"
+    },
+    {
       "name": "2026 Hebron Harvest Fair",
       "town": "Hebron",
       "audiences": [
@@ -301,6 +394,32 @@
       "officialWebsite": "https://www.hebronharvestfair.org/",
       "dateAdded": "2026-08-21",
       "slug": "2026-hebron-harvest-fair"
+    },
+    {
+      "name": "2026 Newtown Arts Festival",
+      "town": "Newtown",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://newtownartsfestival.com/",
+      "address": "Fairfield Hills, Newtown, CT",
+      "dateAdded": "2026-09-04",
+      "slug": "2026-newtown-arts-festival"
+    },
+    {
+      "name": "2026 Norfolk Tour de Forest Scenic Bike Ride",
+      "town": "Norfolk",
+      "region": "Litchfield Hills",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://greatmountainforest.org/events/",
+      "address": "Norfolk Curling Club, 70 Golf Drive, Norfolk, CT",
+      "dateAdded": "2026-09-04",
+      "slug": "2026-norfolk-tour-de-forest-scenic-bike-ride"
     },
     {
       "name": "2026 Norwalk Oyster Festival",
@@ -386,6 +505,31 @@
       "slug": "2026-south-windsor-apple-fest"
     },
     {
+      "name": "2026 Southington Apple Harvest Festival",
+      "town": "Southington",
+      "region": "Central CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://www.southingtonct.gov/ahf/",
+      "dateAdded": "2026-08-26",
+      "slug": "2026-southington-apple-harvest-festival"
+    },
+    {
+      "name": "2026 Trumbull Arts Festival",
+      "town": "Trumbull",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://www.trumbull-ct.gov/625/Arts-Festival",
+      "address": "5866 Main Street, Trumbull, CT 06611",
+      "dateAdded": "2026-08-19",
+      "slug": "2026-trumbull-arts-festival"
+    },
+    {
       "name": "Air Line State Park Trail",
       "town": "Multi-Town, Eastern Connecticut",
       "categories": [
@@ -411,6 +555,19 @@
       "dateAdded": "2026-08-14",
       "towns": [],
       "slug": "air-line-state-park-trail"
+    },
+    {
+      "name": "Ambler Farm",
+      "town": "Wilton",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Summer",
+      "officialWebsite": "https://amblerfarm.org/visit/plan-your-visit/",
+      "address": "257 Hurlbutt Street, Wilton, CT 06897",
+      "dateAdded": "2026-08-21",
+      "slug": "ambler-farm"
     },
     {
       "name": "American Mural Project Five-Story Art Visit",
@@ -443,6 +600,35 @@
       "slug": "ansonia-nature-center-free-creature-feature-and-guided-hike"
     },
     {
+      "name": "Antiques on the Farmington",
+      "town": "Collinsville",
+      "region": "Hartford Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://ctvisit.com/listings/antiques-farmington",
+      "dateAdded": "2026-08-17",
+      "slug": "antiques-on-the-farmington"
+    },
+    {
+      "name": "Aquila's Nest Paint Your Partner Date Night",
+      "town": "Sandy Hook / Newtown",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://www.aquilasnestvineyards.com/service-page/paint-your-partner",
+      "address": "56 Pole Bridge Rd, Sandy Hook, CT 06482",
+      "dateAdded": "2026-08-22",
+      "towns": [
+        "Sandy Hook",
+        "Newtown"
+      ],
+      "slug": "aquilas-nest-paint-your-partner-date-night"
+    },
+    {
       "name": "Aquila's Nest Vineyards",
       "town": "Sandy Hook / Newtown",
       "audiences": [
@@ -455,6 +641,19 @@
         "Newtown"
       ],
       "slug": "aquilas-nest-vineyards"
+    },
+    {
+      "name": "Art Plus Studio Paint Your Partner Like Picasso",
+      "town": "Trumbull",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://www.eventbrite.com/e/pop-up-hotspot-paint-event-paint-your-partner-like-picasso-tickets-1998226298650",
+      "address": "Trumbull Marriott Shelton, 180 Hawley Lane, Trumbull, CT 06611",
+      "dateAdded": "2026-08-22",
+      "slug": "art-plus-studio-paint-your-partner-like-picasso"
     },
     {
       "name": "Art Studio of Connecticut Duo Date Night",
@@ -557,6 +756,19 @@
       "slug": "ballard-institute-and-museum-of-puppetry"
     },
     {
+      "name": "Ballroom Elegance Couples Date Night Dance",
+      "town": "Westport",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://ballroomdancewestport.com/",
+      "address": "877 Post Road East, Westport, CT 06880",
+      "dateAdded": "2026-08-22",
+      "slug": "ballroom-elegance-couples-date-night-dance"
+    },
+    {
       "name": "Bank Square Books",
       "town": "Mystic",
       "region": "Mystic & Southeastern CT",
@@ -617,10 +829,23 @@
     {
       "name": "Beardsley's Cider Mill & Orchard",
       "town": "Shelton",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Food & Treats",
+        "Date Night"
+      ],
       "audiences": [
         "Date Night"
       ],
+      "bestTime": "Fall",
+      "whyGo": "A Shelton orchard centered on apple picking and fresh-pressed cider, with a strong mid-September through October harvest window.",
       "officialWebsite": "https://beardsleyscidermill.com/",
+      "notes": "The orchard says mid-September and early October are usually excellent for apple picking. Pick-your-own timing varies by variety and weather, so check current conditions before visiting.",
       "dateAdded": "2026-08-17",
       "slug": "beardsleys-cider-mill-and-orchard"
     },
@@ -645,6 +870,55 @@
       "slug": "bellamy-ferriday-house-and-garden"
     },
     {
+      "name": "Belltown Hill Orchards Pick-Your-Own Apple & Pumpkin",
+      "town": "South Glastonbury",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A South Glastonbury pick-your-own orchard with more than 24 apple varieties and seasonal pumpkin picking.",
+      "officialWebsite": "https://www.belltownhillorchards.com/pick-your-own",
+      "address": "483 Matson Hill Road, South Glastonbury, CT 06073",
+      "notes": "Pick-your-own runs from mid-June to late October. Apples are the signature crop; pumpkins are also available when in season. PYO hours are Monday-Friday 9 AM-4 PM and weekends 8 AM-4 PM, but the farm warns that picking is not guaranteed daily because crop and weather conditions can change.",
+      "dateAdded": "2026-08-28",
+      "slug": "belltown-hill-orchards-pick-your-own-apple-and-pumpkin"
+    },
+    {
+      "name": "Best Buds Flower Farm Experience",
+      "town": "Lyme",
+      "region": "Connecticut Shoreline",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Summer",
+      "officialWebsite": "https://www.bestbudsflowerfarm.com/member",
+      "address": "52-1 Blood St, Lyme, CT 06371",
+      "dateAdded": "2026-08-21",
+      "slug": "best-buds-flower-farm-experience"
+    },
+    {
+      "name": "Bigelow Hollow State Park",
+      "town": "Union",
+      "region": "Quiet Corner & Northeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://ctparks.com/parks/bigelow-hollow-state-park",
+      "address": "298 Bigelow Hollow Rd., Union, CT 06076",
+      "dateAdded": "2026-08-19",
+      "slug": "bigelow-hollow-state-park"
+    },
+    {
       "name": "Birdcraft Museum & Sanctuary",
       "town": "Fairfield",
       "audiences": [
@@ -655,12 +929,67 @@
       "slug": "birdcraft-museum-and-sanctuary"
     },
     {
-      "name": "Blue Jay Orchards",
-      "town": "Bethel",
+      "name": "Bishop's Orchards Farm Market & Winery",
+      "town": "Guilford",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Corn Maze",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Corn Mazes",
+        "Food & Treats",
+        "Festivals & Events",
+        "Date Night"
+      ],
       "audiences": [
         "Date Night"
       ],
+      "bestTime": "Fall",
+      "whyGo": "A major Guilford fall farm stop with current pick-your-own fruit and flowers, pumpkins, a corn maze, seasonal food and a daily Fall Festival.",
+      "officialWebsite": "https://www.bishopsorchards.com/pick-your-own",
+      "address": "1355 Boston Post Road, Guilford, CT 06437",
+      "notes": "2026 Fall Festival runs September 5-November 1, daily 10 AM-5 PM. Apples, pears, peaches, flowers and raspberries are currently in season; pumpkins begin mid-September. Bishop's advises calling 203-458-PICK for same-day crop availability, hours and location details.",
+      "dateAdded": "2026-08-17",
+      "slug": "bishops-orchards-farm-market-and-winery"
+    },
+    {
+      "name": "Blackledge Falls Wooded Waterfall Walk",
+      "town": "Glastonbury",
+      "region": "Hartford Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://www.glastonburyct.gov/Home/Components/FacilityDirectory/FacilityDirectory/60/180",
+      "address": "3874 Hebron Avenue, Glastonbury, CT 06033",
+      "notes": "A small parking area is available. Ice climbing is specifically prohibited by the town.",
+      "dateAdded": "2026-09-02",
+      "slug": "blackledge-falls-wooded-waterfall-walk"
+    },
+    {
+      "name": "Blue Jay Orchards",
+      "town": "Bethel",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Food & Treats",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A Bethel fall orchard with pick-your-own apples, a seasonal pumpkin patch, farm market, bakery, cider and cider donuts.",
       "officialWebsite": "https://bluejayorchardsct.com/",
+      "notes": "2026 pick-your-own apples begin September 5 and usually continue through the end of October, with varieties changing weekly. The pumpkin patch opens September 13. The farm says to check current orchard information before visiting.",
       "dateAdded": "2026-08-17",
       "slug": "blue-jay-orchards"
     },
@@ -710,6 +1039,19 @@
       "slug": "book-barn"
     },
     {
+      "name": "Boothe Memorial Park & Museum Free Grounds",
+      "town": "Stratford",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://boothememorialpark.com/plan-your-visit/",
+      "address": "5800 Main Street, Stratford, CT 06614",
+      "dateAdded": "2026-09-02",
+      "slug": "boothe-memorial-park-and-museum-free-grounds"
+    },
+    {
       "name": "Bradley Mountain Farm Goat Yoga",
       "town": "Southington",
       "audiences": [
@@ -718,6 +1060,47 @@
       "officialWebsite": "https://bradleymountainfarm.com/goat-yoga",
       "dateAdded": "2026-09-02",
       "slug": "bradley-mountain-farm-goat-yoga"
+    },
+    {
+      "name": "Branford Farm Stand Fall Harvest Festival",
+      "town": "Branford",
+      "region": "New Haven Area",
+      "experienceTypes": [
+        "Corn Maze",
+        "Fall & Seasonal",
+        "Food & Treats",
+        "Music & Events"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Corn Mazes",
+        "Food & Treats",
+        "Festivals & Events"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A Branford fall destination with a pumpkin patch, 7-acre crop maze, hayride, live music, Ferris wheel and seasonal treats.",
+      "officialWebsite": "https://www.branfordfarmstand.com/",
+      "notes": "Weekend-only fall event, October 3-November 1, 2026. Current site lists live music, pumpkin patch, 7-acre crop maze, Ferris wheel, hay ride and seasonal food/drinks.",
+      "dateAdded": "2026-09-05",
+      "slug": "branford-farm-stand-fall-harvest-festival"
+    },
+    {
+      "name": "Branford River Spa Couples Massage Experience",
+      "town": "Branford",
+      "region": "New Haven Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://branfordspa.com/",
+      "address": "249 East Main St, Branford, CT 06405",
+      "dateAdded": "2026-08-21",
+      "slug": "branford-river-spa-couples-massage-experience"
     },
     {
       "name": "Bridgeport Treetop Ropes & Zipline",
@@ -848,6 +1231,23 @@
       "slug": "chatfield-hollow-state-park"
     },
     {
+      "name": "Chester Ferry + Gillette Castle + Chester Village",
+      "town": "Chester / East Haddam",
+      "region": "Connecticut Shoreline",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://portal.ct.gov/dot/travel-gateway/public-transportation/ct-ferries/chester-hadlyme-ferry",
+      "address": "Chester and East Haddam, CT",
+      "dateAdded": "2026-08-21",
+      "towns": [
+        "Chester",
+        "East Haddam"
+      ],
+      "slug": "chester-ferry-gillette-castle-chester-village"
+    },
+    {
       "name": "Chester-Hadlyme Ferry",
       "town": "Chester / Hadlyme",
       "region": "Connecticut Shoreline",
@@ -894,6 +1294,19 @@
       "slug": "clinton-antique-center"
     },
     {
+      "name": "Coastal Center at Milford Point & Smith-Hubbell Sanctuary",
+      "town": "Milford",
+      "region": "Connecticut Shoreline",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://ctaudubon.org/locations/the-coastal-center-at-milford-point-and-smith-hubbell-sanctuary/",
+      "address": "1 Milford Point Road, Milford, CT 06460",
+      "dateAdded": "2026-08-19",
+      "slug": "coastal-center-at-milford-point-and-smith-hubbell-sanctuary"
+    },
+    {
       "name": "College Street Music Hall",
       "town": "New Haven",
       "audiences": [
@@ -912,6 +1325,31 @@
       "officialWebsite": "https://www.colorblendsspringgarden.com/",
       "dateAdded": "2026-08-21",
       "slug": "colorblends-house-and-spring-garden"
+    },
+    {
+      "name": "Community African Drum & Dance Class",
+      "town": "New Haven",
+      "region": "New Haven Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://artsucation.org/",
+      "dateAdded": "2026-08-22",
+      "slug": "community-african-drum-and-dance-class"
+    },
+    {
+      "name": "Connecticut Antique Machinery Association 2026 Fall Festival",
+      "town": "Kent",
+      "region": "Litchfield Hills",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://www.ctamachinery.org/events/fall-festival",
+      "address": "31B Kent Cornwall Road, Kent, CT 06757",
+      "dateAdded": "2026-08-31",
+      "slug": "connecticut-antique-machinery-association-2026-fall-festival"
     },
     {
       "name": "Connecticut Audubon Annual Lighthouse Cruise",
@@ -957,6 +1395,46 @@
       "slug": "connecticut-beer-trail-challenge"
     },
     {
+      "name": "Connecticut Bike Date Challenge",
+      "town": "Statewide",
+      "region": "Other / Statewide",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Spring",
+      "officialWebsite": "https://ctparks.com/biking",
+      "dateAdded": "2026-08-21",
+      "towns": [],
+      "slug": "connecticut-bike-date-challenge"
+    },
+    {
+      "name": "Connecticut Book Trail Slow & Steady Passport Challenge",
+      "town": "Statewide",
+      "region": "Other / Statewide",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://ctbooktrail.org/passport-challenge/",
+      "dateAdded": "2026-09-02",
+      "towns": [],
+      "slug": "connecticut-book-trail-slow-and-steady-passport-challenge"
+    },
+    {
+      "name": "Connecticut Chocolate Trail Challenge",
+      "town": "Statewide",
+      "region": "Other / Statewide",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://ctvisit.com/articles/connecticuts-sweet-spots-connecticut-chocolate-trail",
+      "notes": "Works well as several small dates over time rather than one long outing.",
+      "dateAdded": "2026-08-21",
+      "towns": [],
+      "slug": "connecticut-chocolate-trail-challenge"
+    },
+    {
       "name": "Connecticut College Arboretum",
       "town": "New London",
       "audiences": [
@@ -975,6 +1453,19 @@
       "officialWebsite": "https://www.cteastrailroad.org/hours",
       "dateAdded": "2026-08-26",
       "slug": "connecticut-eastern-railroad-museum-pump-car-and-train-day"
+    },
+    {
+      "name": "Connecticut Fishing Date Challenge",
+      "town": "Statewide",
+      "region": "Other / Statewide",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Summer",
+      "officialWebsite": "https://portal.ct.gov/deep/fishing",
+      "dateAdded": "2026-08-21",
+      "towns": [],
+      "slug": "connecticut-fishing-date-challenge"
     },
     {
       "name": "Connecticut Four-Season Passport Challenge",
@@ -996,6 +1487,19 @@
       "officialWebsite": "https://garlicfestct.com/",
       "dateAdded": "2026-08-21",
       "slug": "connecticut-garlic-and-harvest-festival"
+    },
+    {
+      "name": "Connecticut Maple Sugaring Season Challenge",
+      "town": "Statewide",
+      "region": "Other / Statewide",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Winter",
+      "officialWebsite": "https://ctvisit.com/articles/maple-sugaring-connecticut",
+      "dateAdded": "2026-08-17",
+      "towns": [],
+      "slug": "connecticut-maple-sugaring-season-challenge"
     },
     {
       "name": "Connecticut Oyster Trail Challenge",
@@ -1030,6 +1534,19 @@
       "slug": "connecticut-oyster-trail-challenge"
     },
     {
+      "name": "Connecticut Pizza Trail Challenge",
+      "town": "Statewide",
+      "region": "Other / Statewide",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://ctvisit.com/articles/connecticut-pizza-trail",
+      "dateAdded": "2026-08-21",
+      "towns": [],
+      "slug": "connecticut-pizza-trail-challenge"
+    },
+    {
       "name": "Connecticut Public Stargazing Night",
       "town": "Various Connecticut Locations",
       "region": "Other / Statewide",
@@ -1049,6 +1566,19 @@
       "officialWebsite": "https://www.asnh.org/Outreach/SPEvents.php",
       "dateAdded": "2026-08-21",
       "slug": "connecticut-public-stargazing-night"
+    },
+    {
+      "name": "Connecticut Renaissance Faire",
+      "town": "Lebanon",
+      "region": "Quiet Corner & Northeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://www.ctfaire.com/",
+      "address": "122 Mack Road, Lebanon, CT 06249",
+      "dateAdded": "2026-08-21",
+      "slug": "connecticut-renaissance-faire"
     },
     {
       "name": "Connecticut River Museum Specialty Cruise Challenge",
@@ -1085,6 +1615,19 @@
       "slug": "connecticut-science-center"
     },
     {
+      "name": "Connecticut Trolley Museum Winterfest & Tunnel of Lights",
+      "town": "East Windsor",
+      "region": "Hartford Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Winter",
+      "officialWebsite": "https://www.ct-trolley.org/events/winterfest-and-the-tunnel-of-lights/",
+      "address": "58 North Road, East Windsor, CT",
+      "dateAdded": "2026-08-17",
+      "slug": "connecticut-trolley-museum-winterfest-and-tunnel-of-lights"
+    },
+    {
       "name": "Connecticut Valley School of Woodworking Hands-On Class",
       "town": "Manchester",
       "audiences": [
@@ -1105,6 +1648,32 @@
       "slug": "connecticuts-beardsley-zoo"
     },
     {
+      "name": "Connecticut's Old State House + Museum of Curiosities",
+      "town": "Hartford",
+      "region": "Hartford Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://wp.cga.ct.gov/osh/visit/",
+      "address": "800 Main Street, Hartford, CT 06103",
+      "dateAdded": "2026-08-31",
+      "slug": "connecticuts-old-state-house-museum-of-curiosities"
+    },
+    {
+      "name": "Counter Weight Brewing Company",
+      "town": "Cheshire",
+      "region": "New Haven Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://www.counterweightbrewing.com/",
+      "address": "7 Diana Court, Cheshire, CT 06410",
+      "dateAdded": "2026-08-21",
+      "slug": "counter-weight-brewing-company"
+    },
+    {
       "name": "Cove Island Park",
       "town": "Stamford",
       "audiences": [
@@ -1113,6 +1682,18 @@
       "officialWebsite": "https://www.stamfordct.gov/Home/Components/FacilityDirectory/FacilityDirectory/120/507",
       "dateAdded": "2026-08-13",
       "slug": "cove-island-park"
+    },
+    {
+      "name": "Coventry Farmers' Market",
+      "town": "Coventry",
+      "region": "Quiet Corner & Northeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Summer",
+      "officialWebsite": "https://coventryfarmersmarket.com/",
+      "dateAdded": "2026-08-17",
+      "slug": "coventry-farmers-market"
     },
     {
       "name": "Crisp Serenity Candle & Fragrance Bar Experience",
@@ -1255,6 +1836,16 @@
       "slug": "dennis-hill-state-park-summit-picnic-and-foliage-view"
     },
     {
+      "name": "Devil's Hopyard State Park / Chapman Falls",
+      "town": "East Haddam",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://ctparks.com/parks/devils-hopyard-state-park",
+      "dateAdded": "2026-08-13",
+      "slug": "devils-hopyard-state-park-chapman-falls"
+    },
+    {
       "name": "Dinosaur State Park",
       "town": "Rocky Hill",
       "audiences": [
@@ -1273,6 +1864,19 @@
       "officialWebsite": "https://districtmusichall.com/",
       "dateAdded": "2026-08-17",
       "slug": "district-music-hall"
+    },
+    {
+      "name": "Dockside Brewery & Waterfront Biergarten",
+      "town": "Milford",
+      "region": "Connecticut Shoreline",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Summer",
+      "officialWebsite": "https://docksidebrewery.com/",
+      "address": "40 Bridgeport Ave, Milford, CT 06460",
+      "dateAdded": "2026-08-21",
+      "slug": "dockside-brewery-and-waterfront-biergarten"
     },
     {
       "name": "Earthplace Craft & Sip Basket Weaving Date Night",
@@ -1339,6 +1943,39 @@
         "West Hartford"
       ],
       "slug": "elizabeth-park-rose-garden"
+    },
+    {
+      "name": "Enders Island Plein Air Painting Workshop",
+      "town": "Mystic / Stonington",
+      "region": "Mystic & Southeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://endersisland.secure.retreat.guru/program/plein-air-oil-painting-workshop-with-dan-delouise-2/",
+      "address": "Enders Island, Mystic, Stonington, CT",
+      "dateAdded": "2026-08-22",
+      "towns": [
+        "Mystic",
+        "Stonington"
+      ],
+      "slug": "enders-island-plein-air-painting-workshop"
+    },
+    {
+      "name": "Enders State Forest & Waterfalls",
+      "town": "Granby / Barkhamsted",
+      "region": "Hartford Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Spring",
+      "officialWebsite": "https://portal.ct.gov/deep/state-parks/forests/enders-state-forest",
+      "dateAdded": "2026-08-19",
+      "towns": [
+        "Granby",
+        "Barkhamsted"
+      ],
+      "slug": "enders-state-forest-and-waterfalls"
     },
     {
       "name": "Eric Sloane Museum Hands-On Workshop Experience",
@@ -1413,6 +2050,16 @@
       "slug": "fairfield-museum-ogden-house-sunday-visit"
     },
     {
+      "name": "Fairfield Nature Center & Larsen Sanctuary",
+      "town": "Fairfield",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://ctaudubon.org/locations/the-fairfield-nature-center-and-larsen-sanctuary/",
+      "dateAdded": "2026-08-17",
+      "slug": "fairfield-nature-center-and-larsen-sanctuary"
+    },
+    {
       "name": "Fairfield University Art Museum Fall 2026 Free Gallery Visit",
       "town": "Fairfield",
       "region": "Fairfield County",
@@ -1451,6 +2098,30 @@
       "notes": "This is not a day outing. It is a five-week delivered animal-care experience and requires a substantially greater commitment than a normal stop.",
       "dateAdded": "2026-08-21",
       "slug": "farmer-joes-hatch-the-guinea-pig-experience"
+    },
+    {
+      "name": "Farmer Joe's Rent The Guinea Pig Experience",
+      "town": "Statewide Connecticut Delivery",
+      "region": "Other / Statewide",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://farmerjoesgardens.com/collections/rent-the-chicken",
+      "dateAdded": "2026-08-21",
+      "slug": "farmer-joes-rent-the-guinea-pig-experience"
+    },
+    {
+      "name": "Farmington Canal Heritage Trail Pick-a-Town",
+      "town": "New Haven to Suffield",
+      "region": "Other / Statewide",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://fchtrail.org/our-trails/",
+      "dateAdded": "2026-08-26",
+      "slug": "farmington-canal-heritage-trail-pick-a-town"
     },
     {
       "name": "Farmington River Tubing at Satan's Kingdom",
@@ -1528,6 +2199,19 @@
       "slug": "florence-griswold-museum"
     },
     {
+      "name": "Foodology Adult Cooking Workshop",
+      "town": "Plantsville",
+      "region": "Central CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://foodologylab.com/Adult_Classes.html",
+      "address": "991 S. Main St., Plantsville, CT 06479",
+      "dateAdded": "2026-08-21",
+      "slug": "foodology-adult-cooking-workshop"
+    },
+    {
       "name": "Fort Griswold Battlefield State Park",
       "town": "Groton",
       "region": "Mystic & Southeastern CT",
@@ -1551,6 +2235,19 @@
       "notes": "Free admission. The site is especially easy to combine with Fort Trumbull.",
       "dateAdded": "2026-08-19",
       "slug": "fort-griswold-battlefield-state-park"
+    },
+    {
+      "name": "Fort Hill Farms 2026 Star-Spangled Flashlight Corn Maze",
+      "town": "Thompson",
+      "region": "Quiet Corner & Northeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://forthillfarms.com/",
+      "address": "260 Quaddick Road, Thompson, CT 06277",
+      "dateAdded": "2026-08-31",
+      "slug": "fort-hill-farms-2026-star-spangled-flashlight-corn-maze"
     },
     {
       "name": "Fort Stamford + Goodbody Garden History Walk",
@@ -1608,6 +2305,19 @@
       "slug": "fox-farm-brewery"
     },
     {
+      "name": "Fred Astaire Shelton Couples Dance Lesson",
+      "town": "Shelton",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://www.fredastaire.com/shelton/",
+      "address": "1000 Bridgeport Avenue, Shelton, CT 06484",
+      "dateAdded": "2026-08-22",
+      "slug": "fred-astaire-shelton-couples-dance-lesson"
+    },
+    {
       "name": "Fresh Flower Bar Floral Design Class",
       "town": "Fairfield",
       "region": "Fairfield County",
@@ -1657,6 +2367,17 @@
       "slug": "gouveia-vineyards"
     },
     {
+      "name": "Grace Farms",
+      "town": "New Canaan",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://gracefarms.org/visit",
+      "notes": "Free admission. Advance registration is required. Open Tuesday through Saturday 10 AM to 5 PM and Sunday noon to 5 PM. Tea is available for purchase in the Tea Pavilion.",
+      "dateAdded": "2026-08-17",
+      "slug": "grace-farms"
+    },
+    {
       "name": "Greenwich Audubon Center Main Sanctuary",
       "town": "Greenwich",
       "audiences": [
@@ -1691,6 +2412,28 @@
       "slug": "greenwich-point-park-shoreline-and-historic-buildings-walk"
     },
     {
+      "name": "Guilford Art Center Specialty Workshop Challenge",
+      "town": "Guilford",
+      "region": "Connecticut Shoreline",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://guilfordartcenter.org/",
+      "dateAdded": "2026-08-22",
+      "slug": "guilford-art-center-specialty-workshop-challenge"
+    },
+    {
+      "name": "Hammonasset Beach State Park",
+      "town": "Madison",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://ctparks.com/parks/hammonasset-beach-state-park",
+      "dateAdded": "2026-08-14",
+      "slug": "hammonasset-beach-state-park"
+    },
+    {
       "name": "Harkness Memorial State Park",
       "town": "Waterford",
       "audiences": [
@@ -1701,6 +2444,29 @@
       "slug": "harkness-memorial-state-park"
     },
     {
+      "name": "Harris Hill Farm October Pumpkin Patch",
+      "town": "New Milford",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Orchards & Farms"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A New Milford farm that opens to the public specifically for pick-your-own pumpkins during October, with specialty pumpkins, gourds and winter squash.",
+      "officialWebsite": "https://www.harrishillfarm.com/pumpkins",
+      "address": "106 Ridge Road, New Milford, CT 06776",
+      "notes": "The farm is closed to the public outside pumpkin season. Current site says it opens weekends in October for pick-your-own pumpkins. Check the farm site closer to October for exact 2026 weekend dates and hours.",
+      "dateAdded": "2026-09-05",
+      "slug": "harris-hill-farm-october-pumpkin-patch"
+    },
+    {
       "name": "Hartford Artisans Beginner Weaving Workshop",
       "town": "Hartford",
       "audiences": [
@@ -1709,6 +2475,19 @@
       "officialWebsite": "https://www.weavingcenter.org/",
       "dateAdded": "2026-08-22",
       "slug": "hartford-artisans-beginner-weaving-workshop"
+    },
+    {
+      "name": "Hartford HealthCare Amphitheater",
+      "town": "Bridgeport",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Summer",
+      "officialWebsite": "https://hartfordhealthcareamp.com/",
+      "address": "500 Broad Street, Bridgeport, CT 06604",
+      "dateAdded": "2026-08-17",
+      "slug": "hartford-healthcare-amphitheater"
     },
     {
       "name": "Hawk Ridge Winery",
@@ -1741,6 +2520,32 @@
       "slug": "heritage-rail-bikes-willimantic"
     },
     {
+      "name": "Hickory Hill Orchard Fall Apple Picking",
+      "town": "Cheshire",
+      "region": "New Haven Area",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Food & Treats"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A Cheshire orchard with a broad pick-your-own apple season, farm market, cider and donuts, seasonal gifts and fall activities.",
+      "officialWebsite": "https://www.hickoryhillorchard.com/",
+      "address": "351 S. Meriden Rd, Cheshire, CT 06410",
+      "notes": "Open Thursdays through Sundays during the fall season. Apple varieties change through September and October, with Granny Smith continuing through November. Check the orchard schedule before visiting.",
+      "dateAdded": "2026-09-05",
+      "slug": "hickory-hill-orchard-fall-apple-picking"
+    },
+    {
       "name": "Hickory Ridge Tree Farm",
       "town": "Coventry",
       "audiences": [
@@ -1761,6 +2566,29 @@
       "slug": "hidden-valley-preserve-thoreau-bridge-and-pinnacle"
     },
     {
+      "name": "Hill-Stead Museum Grounds & Trails",
+      "town": "Farmington",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://hillstead.org/visit/",
+      "dateAdded": "2026-08-14",
+      "slug": "hill-stead-museum-grounds-and-trails"
+    },
+    {
+      "name": "Hogan's Cider Mill Mini Golf + Cider Donut",
+      "town": "Burlington",
+      "region": "Central CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://hoganscidermill.com/",
+      "notes": "Check the current site or call for mini-golf and mill hours before driving out, because operating hours can vary by season.",
+      "dateAdded": "2026-08-31",
+      "slug": "hogans-cider-mill-mini-golf-cider-donut"
+    },
+    {
       "name": "Hollister House Garden",
       "town": "Washington",
       "audiences": [
@@ -1769,6 +2597,19 @@
       "officialWebsite": "https://hollisterhousegarden.org/visit/",
       "dateAdded": "2026-08-19",
       "slug": "hollister-house-garden"
+    },
+    {
+      "name": "Hopkins Vineyard",
+      "town": "Warren",
+      "region": "Litchfield Hills",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://www.hopkinsvineyard.com/",
+      "address": "25 Hopkins Road, Warren, CT 06777",
+      "dateAdded": "2026-08-17",
+      "slug": "hopkins-vineyard"
     },
     {
       "name": "Housatonic Museum of Art Free Campus Art Visit",
@@ -1801,6 +2642,18 @@
       "slug": "housatonic-museum-of-art-free-campus-art-visit"
     },
     {
+      "name": "Hubbard Park & Castle Craig Fall Overlook",
+      "town": "Meriden",
+      "region": "Central CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://www.meridenct.gov/city-services/parks-and-recreation/hubbard-park/",
+      "dateAdded": "2026-08-26",
+      "slug": "hubbard-park-and-castle-craig-fall-overlook"
+    },
+    {
       "name": "Hudson Table Stamford Hands-On Cooking Experience",
       "town": "Stamford",
       "audiences": [
@@ -1811,6 +2664,19 @@
       "slug": "hudson-table-stamford-hands-on-cooking-experience"
     },
     {
+      "name": "Humacao Salsa Lesson + Social Night",
+      "town": "East Hartford",
+      "region": "Hartford Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://humacaoct.com/events",
+      "address": "775 Silver Lane, East Hartford, CT 06118",
+      "dateAdded": "2026-08-22",
+      "slug": "humacao-salsa-lesson-social-night"
+    },
+    {
       "name": "Immerse HydroSpa Couples Wellness Experience",
       "town": "Glastonbury",
       "audiences": [
@@ -1819,6 +2685,32 @@
       "officialWebsite": "https://immersehydrospa.com/",
       "dateAdded": "2026-08-21",
       "slug": "immerse-hydrospa-couples-wellness-experience"
+    },
+    {
+      "name": "Indian Well State Park",
+      "town": "Shelton",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Summer",
+      "officialWebsite": "https://ctparks.com/parks/indian-well-state-park",
+      "address": "1 Indian Well Road, Shelton, CT 06484",
+      "dateAdded": "2026-08-21",
+      "slug": "indian-well-state-park"
+    },
+    {
+      "name": "Infinity Music Hall Hartford",
+      "town": "Hartford",
+      "region": "Hartford Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://www.infinityhall.com/Venues/Infinity-Hartford/Music-Hall/",
+      "address": "32 Front Street, Hartford, CT 06103",
+      "dateAdded": "2026-08-17",
+      "slug": "infinity-music-hall-hartford"
     },
     {
       "name": "Infinity Music Hall Norfolk",
@@ -1853,10 +2745,24 @@
     {
       "name": "Jones Family Farms",
       "town": "Shelton",
+      "experienceTypes": [
+        "Corn Maze",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Corn Mazes",
+        "Food & Treats",
+        "Date Night"
+      ],
       "audiences": [
         "Date Night"
       ],
-      "officialWebsite": "https://jonesfamilyfarms.com/news-and-events",
+      "bestTime": "Fall",
+      "whyGo": "A classic Shelton harvest stop with pick-your-own pumpkins, a mini corn maze, hayrides, fall flowers, apples, squash and farm scenery, plus a winery for an adults-focused add-on.",
+      "officialWebsite": "https://www.jonesfamilyfarms.com/seasons/pumpkins",
+      "notes": "2026 pumpkin season runs September 19-October 31 at Pumpkinseed Hill. Jones advises checking the crop report because hours can change with weather and picking conditions. Christmas-tree season begins the weekend before Thanksgiving and runs daily except Thanksgiving Day.",
       "dateAdded": "2026-08-17",
       "slug": "jones-family-farms"
     },
@@ -1869,6 +2775,20 @@
       "officialWebsite": "https://www.joneswineryct.com/jones-winery",
       "dateAdded": "2026-08-17",
       "slug": "jones-winery"
+    },
+    {
+      "name": "Keeler Tavern Museum & History Center",
+      "town": "Ridgefield",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://keelertavernmuseum.org/",
+      "address": "152 Main Street, Ridgefield, CT 06877",
+      "notes": "Open March-December, Thursday-Sunday, 11 AM-4 PM. Closed January and February.",
+      "dateAdded": "2026-08-17",
+      "slug": "keeler-tavern-museum-and-history-center"
     },
     {
       "name": "Kent Falls Brewing Co.",
@@ -1926,6 +2846,56 @@
       "slug": "lake-waramaug-state-park"
     },
     {
+      "name": "Laurel Glen Farm Fall Pick-Your-Own",
+      "town": "Shelton",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Orchards & Farms"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A Shelton farm with dedicated pick-your-own fields for berries and flowers and an announced return of pick-your-own opportunities this fall.",
+      "officialWebsite": "https://www.laurelglenfarm.com/thefields",
+      "address": "475 Booth Hill Road, Shelton, CT 06484",
+      "notes": "Pick-your-own is not currently open on the posted schedule. The farm asks visitors to follow live updates and check before visiting because weather and crop conditions change. Farm store remains open through December 5, 2026.",
+      "dateAdded": "2026-09-05",
+      "slug": "laurel-glen-farm-fall-pick-your-own"
+    },
+    {
+      "name": "Leffingwell House + Silversmith Shop Colonial",
+      "town": "Norwich",
+      "region": "Mystic & Southeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://www.leffingwellhousemuseum.org/",
+      "address": "348 Washington Street, Norwich, CT 06360",
+      "notes": "Seasonal Saturday hours. Private tours can also be arranged in advance.",
+      "dateAdded": "2026-09-04",
+      "slug": "leffingwell-house-silversmith-shop-colonial"
+    },
+    {
+      "name": "Leitner Family Observatory Tuesday Public Night",
+      "town": "New Haven",
+      "region": "New Haven Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://leitnerobservatory.yale.edu/public-nights",
+      "address": "355 Prospect Street, New Haven, CT 06511",
+      "dateAdded": "2026-09-02",
+      "slug": "leitner-family-observatory-tuesday-public-night"
+    },
+    {
       "name": "Levitt Pavilion for the Performing Arts",
       "town": "Westport",
       "region": "Fairfield County",
@@ -1945,6 +2915,31 @@
       "notes": "Outdoor seasonal venue with many free-ticket performances plus paid events.",
       "dateAdded": "2026-08-17",
       "slug": "levitt-pavilion-for-the-performing-arts"
+    },
+    {
+      "name": "Litchfield Hills Farm-Fresh Market",
+      "town": "Litchfield",
+      "region": "Litchfield Hills",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://portal.ct.gov/doag/public-resources/farmers-markets",
+      "dateAdded": "2026-08-17",
+      "slug": "litchfield-hills-farm-fresh-market"
+    },
+    {
+      "name": "Lock Museum of America + Terryville Water Wheel",
+      "town": "Terryville",
+      "region": "Litchfield Hills",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://www.lockmuseumofamerica.org/visit-us",
+      "address": "230 Main Street, Terryville, CT 06786",
+      "dateAdded": "2026-08-24",
+      "slug": "lock-museum-of-america-terryville-water-wheel"
     },
     {
       "name": "Lockwood-Mathews Mansion Museum",
@@ -2057,6 +3052,32 @@
       "slug": "lyman-orchards-2026-corn-maze"
     },
     {
+      "name": "Lyman Orchards Fall Pick-Your-Own",
+      "town": "Middlefield",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Food & Treats"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A separate pick-your-own experience from Lyman's corn maze, with apples, pears and other seasonal fruit plus the Apple Barrel Farm Market.",
+      "officialWebsite": "https://lymanorchards.com/pick-your-own/",
+      "notes": "2026 Pick-Your-Own is open daily 8 AM-4:30 PM. Call the 24-hour PYO hotline at 860-349-6015 for current field conditions, varieties and pricing before visiting.",
+      "dateAdded": "2026-09-05",
+      "slug": "lyman-orchards-fall-pick-your-own"
+    },
+    {
       "name": "Macedonia Brook State Park",
       "town": "Kent",
       "audiences": [
@@ -2065,6 +3086,23 @@
       "officialWebsite": "https://ctparks.com/parks/macedonia-brook-state-park",
       "dateAdded": "2026-08-21",
       "slug": "macedonia-brook-state-park"
+    },
+    {
+      "name": "Machimoodus + Sunrise State Parks Salmon River",
+      "town": "Moodus / East Haddam",
+      "region": "Central CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://ctparks.com/parks/machimoodus-state-park",
+      "address": "128 Leesville Road, Moodus, CT 06469",
+      "dateAdded": "2026-09-02",
+      "towns": [
+        "Moodus",
+        "East Haddam"
+      ],
+      "slug": "machimoodus-sunrise-state-parks-salmon-river"
     },
     {
       "name": "MakerspaceCT Intro to Blacksmithing",
@@ -2085,6 +3123,47 @@
       "address": "36 Talcott Street, Hartford, CT 06103",
       "dateAdded": "2026-08-21",
       "slug": "makerspacect-intro-to-blacksmithing"
+    },
+    {
+      "name": "MakerspaceCT Maker Class Challenge",
+      "town": "Hartford",
+      "region": "Hartford Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://app.makerspacect.com/Classes",
+      "address": "36 Talcott Street, Hartford, CT 06103",
+      "dateAdded": "2026-08-22",
+      "slug": "makerspacect-maker-class-challenge"
+    },
+    {
+      "name": "March Farm Fall Pick-Your-Own & Corn Maze",
+      "town": "Bethlehem",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Corn Maze",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Corn Mazes",
+        "Food & Treats"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A Litchfield County fall farm experience with apple and pumpkin picking, a hilltop corn maze, hayrides, foliage views and a farm snack stop.",
+      "officialWebsite": "https://marchfarm.com/pick-your-own/",
+      "address": "160 Munger Lane, Bethlehem, CT 06751",
+      "notes": "Pumpkin picking typically begins in late September and continues through October. No advance ticket is required on the current page. Conditions and activity availability can vary by weekend.",
+      "dateAdded": "2026-09-05",
+      "slug": "march-farm-fall-pick-your-own-and-corn-maze"
     },
     {
       "name": "Mark Twain House & Museum",
@@ -2280,6 +3359,30 @@
       "slug": "mustang-meadow-horseback-trail-ride"
     },
     {
+      "name": "Mystic Dark Room Intimate Dance Theatre Night",
+      "town": "Stonington",
+      "region": "Mystic & Southeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://www.mysticdarkroom.org/",
+      "address": "325 Mistuxet Avenue, Stonington, CT",
+      "notes": "Check the performance calendar and ticket availability before traveling because the program can change by weekend.",
+      "dateAdded": "2026-08-28",
+      "slug": "mystic-dark-room-intimate-dance-theatre-night"
+    },
+    {
+      "name": "Mystic Seaport Museum",
+      "town": "Mystic",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://mysticseaport.org/visit/",
+      "dateAdded": "2026-08-13",
+      "slug": "mystic-seaport-museum"
+    },
+    {
       "name": "Mystic Seaport Museum Adult Sailing Experience",
       "town": "Mystic",
       "audiences": [
@@ -2321,6 +3424,19 @@
       "tryThis": "Bring a favorite drink or snack and add one small personal detail to the finished painting.",
       "dateAdded": "2026-08-22",
       "slug": "naturalannie-byob-sip-and-paint-night"
+    },
+    {
+      "name": "NaturalAnnie Sip & Pour Candle Making Experience",
+      "town": "Bridgeport",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://www.naturalannieessentials.com/pages/sip-pour-candle-making-work-shop",
+      "address": "1313 Connecticut Ave, Bridgeport, CT 06607",
+      "dateAdded": "2026-08-21",
+      "slug": "naturalannie-sip-and-pour-candle-making-experience"
     },
     {
       "name": "Naugatuck Railroad Autumn Colors Limited",
@@ -2405,6 +3521,19 @@
       "slug": "new-england-air-museum-flight-simulator-or-vip-aircraft-experience"
     },
     {
+      "name": "New England Carousel Museum & Museum of Fire History",
+      "town": "Bristol",
+      "region": "Central CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://www.thecarouselmuseum.org/",
+      "address": "95 Riverside Avenue, Bristol, CT 06010",
+      "dateAdded": "2026-08-17",
+      "slug": "new-england-carousel-museum-and-museum-of-fire-history"
+    },
+    {
       "name": "New England Motorcycle Museum Mill-Building Visit",
       "town": "Rockville / Vernon",
       "audiences": [
@@ -2427,6 +3556,18 @@
       "officialWebsite": "https://www.nlmaritimesociety.org/nl-harbor-light.html",
       "dateAdded": "2026-08-21",
       "slug": "new-london-harbor-pequot-lighthouse-climb"
+    },
+    {
+      "name": "New London Ledge Light Interior Tour",
+      "town": "New London",
+      "region": "Mystic & Southeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Summer",
+      "officialWebsite": "https://www.nlmaritimesociety.org/ledgelight.html",
+      "dateAdded": "2026-08-21",
+      "slug": "new-london-ledge-light-interior-tour"
     },
     {
       "name": "Niantic Bay Boardwalk Sunset + Main Street",
@@ -2500,6 +3641,31 @@
       "slug": "odyssey-26-greek-festival-in-orange"
     },
     {
+      "name": "Old New-Gate Prison & Copper Mine",
+      "town": "East Granby",
+      "region": "Hartford Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Summer",
+      "officialWebsite": "https://portal.ct.gov/decd/content/historic-preservation/04_state_museums/old-newgate-prison-and-copper-mine",
+      "address": "115 Newgate Road, East Granby, CT 06026",
+      "dateAdded": "2026-08-17",
+      "slug": "old-new-gate-prison-and-copper-mine"
+    },
+    {
+      "name": "Old Saybrook Winter Shoreline + Fresh Salt",
+      "town": "Old Saybrook",
+      "region": "Connecticut Shoreline",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Winter",
+      "officialWebsite": "https://www.oldsaybrookct.gov/159/Our-History",
+      "dateAdded": "2026-08-17",
+      "slug": "old-saybrook-winter-shoreline-fresh-salt"
+    },
+    {
       "name": "Olde Mistick Village Holiday Lights Spectacular",
       "town": "Mystic",
       "audiences": [
@@ -2518,6 +3684,45 @@
       "officialWebsite": "https://www.onerafoundation.org/exhibitions/fape",
       "dateAdded": "2026-08-31",
       "slug": "onera-foundation-america-abroad-art-architecture"
+    },
+    {
+      "name": "Osborne Homestead Museum",
+      "town": "Derby",
+      "region": "New Haven Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://portal.ct.gov/deep/education/kellogg/osborne-homestead-museum",
+      "address": "500 Hawthorne Avenue, Derby, CT 06418",
+      "dateAdded": "2026-08-17",
+      "slug": "osborne-homestead-museum"
+    },
+    {
+      "name": "Pachaug State Forest: Mount Misery & Rhododendron Sanctuary",
+      "town": "Voluntown",
+      "region": "Quiet Corner & Northeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://ctparks.com/parks/pachaug-state-forest",
+      "address": "219 Ekonk Hill Road, Voluntown, CT 06384",
+      "dateAdded": "2026-08-21",
+      "slug": "pachaug-state-forest-mount-misery-and-rhododendron-sanctuary"
+    },
+    {
+      "name": "Palmer-Warner House Pipes & Cider Festival",
+      "town": "East Haddam",
+      "region": "Connecticut Shoreline",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://ctlandmarks.org/event/pipes-cider/",
+      "address": "307 Town Street, East Haddam, CT 06423",
+      "dateAdded": "2026-08-24",
+      "slug": "palmer-warner-house-pipes-and-cider-festival"
     },
     {
       "name": "Pardee Rose Garden & Greenhouse",
@@ -2622,6 +3827,45 @@
       "slug": "pez-visitor-center"
     },
     {
+      "name": "Powder Ridge Winterfest & Snow Tubing",
+      "town": "Middlefield",
+      "region": "Central CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Winter",
+      "officialWebsite": "https://powderridgepark.com/winterfest/",
+      "address": "99 Powder Hill Road, Middlefield, CT 06455",
+      "dateAdded": "2026-08-17",
+      "slug": "powder-ridge-winterfest-and-snow-tubing"
+    },
+    {
+      "name": "Prudence Crandall Museum Guided Tour",
+      "town": "Canterbury",
+      "region": "Quiet Corner & Northeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://portal.ct.gov/ecd-prudencecrandallmuseum",
+      "address": "1 South Canterbury Road, Canterbury, CT 06331",
+      "dateAdded": "2026-08-28",
+      "slug": "prudence-crandall-museum-guided-tour"
+    },
+    {
+      "name": "Pumpkintown U.S.A. Village & Forest Hayride",
+      "town": "East Hampton",
+      "region": "Central CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://www.pumpkintown.com/plan-your-visit/",
+      "address": "93 E High Street, East Hampton, CT 06424",
+      "dateAdded": "2026-08-28",
+      "slug": "pumpkintown-u-s-a-village-and-forest-hayride"
+    },
+    {
       "name": "Putnam Antiques Marketplace",
       "town": "Putnam",
       "audiences": [
@@ -2632,6 +3876,107 @@
       "slug": "putnam-antiques-marketplace"
     },
     {
+      "name": "Ripley Waterfowl Conservancy Rare Bird Visit",
+      "town": "Litchfield",
+      "region": "Litchfield Hills",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://www.ripleyconservancy.org/visit",
+      "address": "55 Duck Pond Road, Litchfield, CT 06759",
+      "dateAdded": "2026-09-02",
+      "slug": "ripley-waterfowl-conservancy-rare-bird-visit"
+    },
+    {
+      "name": "River Highlands State Park Bluff & Blowhole Hike",
+      "town": "Cromwell",
+      "region": "Central CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://ctparks.com/parks/river-highlands-state-park",
+      "address": "113 Field Rd., Cromwell, CT 06416",
+      "notes": "Walk-in park with gravel parking and no restrooms. Wear sturdy shoes.",
+      "dateAdded": "2026-09-04",
+      "slug": "river-highlands-state-park-bluff-and-blowhole-hike"
+    },
+    {
+      "name": "Rock Hill Farm Nehantic State Forest Trail Ride",
+      "town": "East Lyme",
+      "region": "Mystic & Southeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://www.rockhillfarm.online/service-page/guided-trail-rides",
+      "address": "119 Grassy Hill Road, East Lyme, CT",
+      "dateAdded": "2026-08-21",
+      "slug": "rock-hill-farm-nehantic-state-forest-trail-ride"
+    },
+    {
+      "name": "Rocky Hill-Glastonbury Ferry",
+      "town": "Rocky Hill / Glastonbury",
+      "region": "Central CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://portal.ct.gov/dot/travel-gateway/public-transportation/ct-ferries/rocky-hill-ferry",
+      "address": "Route 160, Rocky Hill, CT 06067",
+      "dateAdded": "2026-08-21",
+      "towns": [
+        "Rocky Hill",
+        "Glastonbury"
+      ],
+      "slug": "rocky-hill-glastonbury-ferry"
+    },
+    {
+      "name": "Rocky Neck State Park",
+      "town": "Niantic / East Lyme",
+      "region": "Connecticut Shoreline",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Summer",
+      "officialWebsite": "https://ctparks.com/parks/rocky-neck-state-park",
+      "address": "244 W Main Street, Niantic, CT 06357",
+      "dateAdded": "2026-08-19",
+      "towns": [
+        "Niantic",
+        "East Lyme"
+      ],
+      "slug": "rocky-neck-state-park"
+    },
+    {
+      "name": "Rogers Orchards Fall Apple Picking",
+      "town": "Southington",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Food & Treats"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A Southington fall orchard experience with pick-your-own apples, farm bakery, cider donuts and two farm locations.",
+      "officialWebsite": "https://rogersorchards.com/pick-your-own/",
+      "address": "336 Long Bottom Road and 2876 Meriden-Waterbury Turnpike, Southington, CT",
+      "notes": "Pick-your-own runs at both Southington locations. Check the official site for what is ripe and weather updates before visiting.",
+      "dateAdded": "2026-09-05",
+      "slug": "rogers-orchards-fall-apple-picking"
+    },
+    {
       "name": "Roosevelt Forest",
       "town": "Stratford",
       "audiences": [
@@ -2640,6 +3985,44 @@
       "officialWebsite": "https://www.stratfordct.gov/o/stratford/page/roosevelt-forest",
       "dateAdded": "2026-08-13",
       "slug": "roosevelt-forest"
+    },
+    {
+      "name": "Rose Orchards Fall Farm Experience",
+      "town": "North Branford",
+      "region": "New Haven Area",
+      "experienceTypes": [
+        "Corn Maze",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Corn Mazes",
+        "Food & Treats"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A North Branford farm with a broad fall mix: pumpkins, a corn maze, hay maze, hayrides, ice cream, pies and farm animals.",
+      "officialWebsite": "https://www.roseorchardsfarm.com/our-story.html",
+      "notes": "Fall activities are seasonal. Check the farm's current site or contact the farm before traveling for exact daily availability and hours.",
+      "dateAdded": "2026-09-05",
+      "slug": "rose-orchards-fall-farm-experience"
+    },
+    {
+      "name": "Roseland Cottage",
+      "town": "Woodstock",
+      "region": "Quiet Corner & Northeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://www.historicnewengland.org/property/roseland-cottage/",
+      "dateAdded": "2026-08-17",
+      "slug": "roseland-cottage"
     },
     {
       "name": "Salmon River State Forest + Comstock Covered Bridge Picnic Walk",
@@ -2706,6 +4089,30 @@
       "slug": "schencks-island"
     },
     {
+      "name": "Scotts’ CT Valley Orchards Fall Pick-Your-Own",
+      "town": "Deep River",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Orchards & Farms"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A Deep River orchard with pick-your-own apples through fall and a nearby Essex farm location offering cut-your-own flowers until frost.",
+      "officialWebsite": "https://www.scottsfarms.com/pick-your-own/",
+      "address": "274 Kelsey Hill Road, Deep River, CT 06417",
+      "notes": "Call 860-526-9633 before visiting because field conditions and picking availability change daily. Cut-your-own flowers at the Essex location generally continue until frost.",
+      "dateAdded": "2026-09-05",
+      "slug": "scotts-ct-valley-orchards-fall-pick-your-own"
+    },
+    {
       "name": "Seaside Park",
       "town": "Bridgeport",
       "audiences": [
@@ -2724,6 +4131,19 @@
       "officialWebsite": "https://www.audubon.org/sharon/visit",
       "dateAdded": "2026-09-02",
       "slug": "sharon-audubon-center-trails-and-aviary"
+    },
+    {
+      "name": "Sheffield Island Lighthouse Clambake",
+      "town": "Norwalk",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Summer",
+      "officialWebsite": "https://www.seaport.org/clambakes",
+      "address": "Departs from 90 Water Street, Norwalk, CT 06854",
+      "dateAdded": "2026-08-21",
+      "slug": "sheffield-island-lighthouse-clambake"
     },
     {
       "name": "Sheffield Island Lighthouse Cruise & Tour",
@@ -2780,6 +4200,20 @@
       "slug": "sherwood-island-state-park"
     },
     {
+      "name": "Shore Line Trolley Museum Guest Motorman Experience",
+      "town": "East Haven",
+      "region": "New Haven Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://shorelinetrolley.org/guest-operators/",
+      "address": "17 River Street, East Haven, CT 06512",
+      "notes": "Space is limited and advance booking is required. Historic cars require 2-3 steps to board.",
+      "dateAdded": "2026-08-24",
+      "slug": "shore-line-trolley-museum-guest-motorman-experience"
+    },
+    {
       "name": "Shore Line Trolley Museum Scenic Trolley Ride",
       "town": "East Haven",
       "audiences": [
@@ -2788,6 +4222,16 @@
       "officialWebsite": "https://shorelinetrolley.org/",
       "dateAdded": "2026-08-24",
       "slug": "shore-line-trolley-museum-scenic-trolley-ride"
+    },
+    {
+      "name": "Short Beach Park",
+      "town": "Stratford",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://www.stratfordct.gov/o/stratford/page/facility-administration",
+      "dateAdded": "2026-08-13",
+      "slug": "short-beach-park"
     },
     {
       "name": "Shubert Theatre Paint and Sip",
@@ -2819,6 +4263,31 @@
       "slug": "silver-sands-state-park"
     },
     {
+      "name": "Silverman's Farm",
+      "town": "Easton",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Food & Treats",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A broad Easton fall farm experience with pick-your-own apples, a pumpkin patch, farm market, animal farm and scenic tractor rides in October.",
+      "officialWebsite": "https://www.silvermansfarm.com/",
+      "address": "451 Sport Hill Road, Easton, CT 06612",
+      "notes": "Pick-your-own apples continue by variety from September into early November. The pumpkin patch is a fall feature, and 20-minute scenic tractor rides run through October on weekends and some weekdays. Farm Market and Animal Farm are open through December 31, 2026. Call ahead because crop and ride availability can change.",
+      "dateAdded": "2026-08-17",
+      "slug": "silvermans-farm"
+    },
+    {
       "name": "Silvermine Arts Center",
       "town": "New Canaan",
       "audiences": [
@@ -2839,6 +4308,19 @@
       "slug": "silvermine-one-day-jewelry-making-workshop"
     },
     {
+      "name": "Silvermine One-Night Potter's Wheel Experience",
+      "town": "New Canaan",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://www.silvermineart.org/instructor/jon-puzzuoli/",
+      "address": "1037 Silvermine Road, New Canaan, CT 06840",
+      "dateAdded": "2026-08-21",
+      "slug": "silvermine-one-night-potters-wheel-experience"
+    },
+    {
       "name": "SilverSpiral Metalsmithing Class",
       "town": "Winsted",
       "audiences": [
@@ -2847,6 +4329,32 @@
       "officialWebsite": "https://silverspiralcreations.com/classes",
       "dateAdded": "2026-08-21",
       "slug": "silverspiral-metalsmithing-class"
+    },
+    {
+      "name": "Simsbury Meadows Performing Arts Center",
+      "town": "Simsbury",
+      "region": "Hartford Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Summer",
+      "officialWebsite": "https://www.simsburymeadows.org/",
+      "address": "22 Iron Horse Boulevard, Simsbury, CT 06070",
+      "dateAdded": "2026-08-17",
+      "slug": "simsbury-meadows-performing-arts-center"
+    },
+    {
+      "name": "Slater Memorial Museum Norwich Art & Architecture",
+      "town": "Norwich",
+      "region": "Mystic & Southeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://www.slatermuseum.org/visit",
+      "address": "108 Crescent Street, Norwich, CT 06360",
+      "dateAdded": "2026-08-28",
+      "slug": "slater-memorial-museum-norwich-art-and-architecture"
     },
     {
       "name": "Sleeping Giant State Park",
@@ -2868,6 +4376,33 @@
       "officialWebsite": "https://ctparks.com/parks/sleeping-giant-state-park",
       "dateAdded": "2026-08-13",
       "slug": "sleeping-giant-state-park"
+    },
+    {
+      "name": "Southford Falls State Park",
+      "town": "Southbury",
+      "region": "New Haven Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://ctparks.com/parks/southford-falls-state-park",
+      "address": "175 Quaker Farms Rd., Southbury, CT 06488",
+      "dateAdded": "2026-08-19",
+      "slug": "southford-falls-state-park"
+    },
+    {
+      "name": "StageOne at Fairfield Theatre Company",
+      "town": "Fairfield",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://fairfieldtheatre.org/venue/stageone",
+      "address": "70 Sanford Street, Fairfield, CT 06824",
+      "notes": "Indoor intimate music venue in downtown Fairfield.",
+      "dateAdded": "2026-08-17",
+      "slug": "stageone-at-fairfield-theatre-company"
     },
     {
       "name": "Stamford Museum & Nature Center",
@@ -2903,6 +4438,32 @@
       "notes": "A strong foliage-season option, but worthwhile year-round. The preserve also has old-growth hemlocks and summit views.",
       "dateAdded": "2026-08-24",
       "slug": "steep-rock-preserve-railroad-tunnel-and-river-walk"
+    },
+    {
+      "name": "Stonington Lighthouse Museum Tower + Borough Walk",
+      "town": "Stonington",
+      "region": "Mystic & Southeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://www.historicstonington.org/visit/the-lighthouse-museum/",
+      "address": "7 Water Street, Stonington, CT",
+      "dateAdded": "2026-09-02",
+      "slug": "stonington-lighthouse-museum-tower-borough-walk"
+    },
+    {
+      "name": "Stonington Vineyards",
+      "town": "Stonington",
+      "region": "Mystic & Southeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://stoningtonvineyards.com/",
+      "address": "523 Taugwonk Road, Stonington, CT 06378",
+      "dateAdded": "2026-08-17",
+      "slug": "stonington-vineyards"
     },
     {
       "name": "Stony Creek Museum + Village History Stop",
@@ -2994,6 +4555,19 @@
       "slug": "submarine-force-museum-and-uss-nautilus"
     },
     {
+      "name": "Submarine Force Museum AR + Scavenger Hunt Experience",
+      "town": "Groton",
+      "region": "Mystic & Southeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://ussnautilus.org/scavenger-hunts/",
+      "address": "1 Crystal Lake Rd, Groton, CT 06340",
+      "dateAdded": "2026-08-22",
+      "slug": "submarine-force-museum-ar-scavenger-hunt-experience"
+    },
+    {
       "name": "Submarine Veterans WWII National Memorial East",
       "town": "Groton",
       "audiences": [
@@ -3029,6 +4603,16 @@
       "slug": "sur-la-table-canton-couples-cooking"
     },
     {
+      "name": "Talcott Mountain State Park & Heublein Tower",
+      "town": "Simsbury",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://ctparks.com/parks/talcott-mountain-state-park",
+      "dateAdded": "2026-08-17",
+      "slug": "talcott-mountain-state-park-and-heublein-tower"
+    },
+    {
       "name": "Taylor Brooke Brewery",
       "town": "Woodstock",
       "audiences": [
@@ -3049,6 +4633,32 @@
       "slug": "the-aldrich-contemporary-art-museum"
     },
     {
+      "name": "The Glass House",
+      "town": "New Canaan",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://theglasshouse.org/visit/",
+      "address": "Visitor Center: 199 Elm Street, New Canaan, CT 06840",
+      "dateAdded": "2026-08-17",
+      "slug": "the-glass-house"
+    },
+    {
+      "name": "The Glebe House Museum & Gertrude Jekyll Garden",
+      "town": "Woodbury",
+      "region": "Litchfield Hills",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Spring",
+      "officialWebsite": "https://www.glebehousemuseum.org/",
+      "address": "49 Hollow Road, Woodbury, CT 06798",
+      "dateAdded": "2026-08-21",
+      "slug": "the-glebe-house-museum-and-gertrude-jekyll-garden"
+    },
+    {
       "name": "The Goodspeed",
       "town": "East Haddam",
       "audiences": [
@@ -3067,6 +4677,20 @@
       "officialWebsite": "https://www.thekate.org/visit/",
       "dateAdded": "2026-08-31",
       "slug": "the-kate-show-katharine-hepburn-museum"
+    },
+    {
+      "name": "The Maritime Aquarium at Norwalk",
+      "town": "Norwalk",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://www.maritimeaquarium.org/visit-us",
+      "address": "10 North Water Street, Norwalk, CT 06854",
+      "notes": "Open daily 10 a.m.-5 p.m. Check the official ticket page for current admission pricing and special experiences.",
+      "dateAdded": "2026-08-21",
+      "slug": "the-maritime-aquarium-at-norwalk"
     },
     {
       "name": "The Past Antique Marketplace",
@@ -3146,6 +4770,20 @@
       "slug": "thorncrest-farm-milk-house-chocolates-cow-and-chocolate"
     },
     {
+      "name": "Toad's Place",
+      "town": "New Haven",
+      "region": "New Haven Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://www.toadsplace.com/",
+      "address": "300 York Street, New Haven, CT 06511",
+      "notes": "Indoor live-music club with year-round programming.",
+      "dateAdded": "2026-08-17",
+      "slug": "toads-place"
+    },
+    {
       "name": "Topsmead State Forest",
       "town": "Litchfield",
       "categories": [
@@ -3177,6 +4815,24 @@
       "officialWebsite": "https://ctrivermuseum.org/events/tree-swallow-sunset-trips-on-onrust-riverquest-2/",
       "dateAdded": "2026-08-21",
       "slug": "tree-swallow-sunset-trips-on-the-connecticut-river"
+    },
+    {
+      "name": "Trout Brook Valley Preserve Sunset & Orchard Hike",
+      "town": "Easton / Weston",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://www.aspetucklandtrust.org/trout-brook-valley-preserve",
+      "address": "Bradley Road / Black Rock Road entrances, Easton, CT",
+      "notes": "Open-space rules apply. Hunting is permitted in limited areas in season, so check the current preserve map and notices before a fall visit.",
+      "dateAdded": "2026-09-04",
+      "towns": [
+        "Easton",
+        "Weston"
+      ],
+      "slug": "trout-brook-valley-preserve-sunset-and-orchard-hike"
     },
     {
       "name": "Twelvenote Brew Co.",
@@ -3222,6 +4878,31 @@
       "slug": "two-roads-brewing-company"
     },
     {
+      "name": "UConn Arboretum & Campus Tree Tour",
+      "town": "Storrs",
+      "region": "Quiet Corner & Northeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://arboretum.uconn.edu/",
+      "dateAdded": "2026-08-21",
+      "slug": "uconn-arboretum-and-campus-tree-tour"
+    },
+    {
+      "name": "Uncas Leap Heritage Park & Yantic Falls",
+      "town": "Norwich",
+      "region": "Mystic & Southeastern CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://www.norwichct.gov/853/Uncas-Leap-Heritage-Park",
+      "address": "196-200 Yantic Street, Norwich, CT",
+      "dateAdded": "2026-08-26",
+      "slug": "uncas-leap-heritage-park-and-yantic-falls"
+    },
+    {
       "name": "Village Center for the Arts Dirty Date Night Pottery",
       "town": "New Milford",
       "audiences": [
@@ -3252,6 +4933,30 @@
       "slug": "wadsworth-atheneum-adult-art-class-experience"
     },
     {
+      "name": "Wadsworth Atheneum Museum of Art",
+      "town": "Hartford",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://www.thewadsworth.org/visit/",
+      "dateAdded": "2026-08-13",
+      "slug": "wadsworth-atheneum-museum-of-art"
+    },
+    {
+      "name": "Wadsworth Falls State Park",
+      "town": "Middlefield / Middletown",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://ctparks.com/parks/wadsworth-falls-state-park",
+      "dateAdded": "2026-08-13",
+      "towns": [
+        "Middlefield",
+        "Middletown"
+      ],
+      "slug": "wadsworth-falls-state-park"
+    },
+    {
       "name": "WanderBrush Paint Your Partner Experience",
       "town": "Collinsville / Mobile",
       "audiences": [
@@ -3264,6 +4969,58 @@
         "Mobile"
       ],
       "slug": "wanderbrush-paint-your-partner-experience"
+    },
+    {
+      "name": "Waveny Park",
+      "town": "New Canaan",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "officialWebsite": "https://wavenyparkconservancy.org/visit/",
+      "address": "677 South Avenue, New Canaan, CT 06840",
+      "dateAdded": "2026-08-21",
+      "slug": "waveny-park"
+    },
+    {
+      "name": "Weir Farm National Historical Park",
+      "town": "Wilton",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://www.nps.gov/wefa/planyourvisit/index.htm",
+      "dateAdded": "2026-08-14",
+      "slug": "weir-farm-national-historical-park"
+    },
+    {
+      "name": "West Cornwall Covered Bridge + Saturday Farm Market",
+      "town": "West Cornwall",
+      "region": "Litchfield Hills",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://cornwallct.org/event/west-cornwall-farm-market-wish-house-2026/2026-09-05/",
+      "address": "413 Sharon Goshen Turnpike, West Cornwall, CT 06796",
+      "dateAdded": "2026-09-02",
+      "slug": "west-cornwall-covered-bridge-saturday-farm-market"
+    },
+    {
+      "name": "West Rock Ridge State Park",
+      "town": "New Haven / Hamden",
+      "region": "New Haven Area",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Fall",
+      "officialWebsite": "https://ctparks.com/parks/west-rock-ridge-state-park",
+      "dateAdded": "2026-08-19",
+      "towns": [
+        "New Haven",
+        "Hamden"
+      ],
+      "slug": "west-rock-ridge-state-park"
     },
     {
       "name": "West Thompson Lake Disc Golf & Quinebaug Water Trail",
@@ -3323,6 +5080,17 @@
       "slug": "westville-music-bowl"
     },
     {
+      "name": "White Memorial Conservation Center",
+      "town": "Litchfield",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://whitememorialcc.org/",
+      "notes": "Museum hours are Tuesday through Saturday 9 AM to 5 PM and Sunday noon to 5 PM. Adult museum admission is $6. Current site notice says some wetland-adjacent trails may be flooded after heavy rain, so check conditions before going.",
+      "dateAdded": "2026-08-14",
+      "slug": "white-memorial-conservation-center"
+    },
+    {
       "name": "Wickham Park Gardens",
       "town": "Manchester / East Hartford",
       "categories": [
@@ -3370,6 +5138,19 @@
       "notes": "The Society states that general museum admission is free through 2026. Special events may have separate fees.",
       "dateAdded": "2026-08-31",
       "slug": "wilton-historical-society-america-250-wilton-300"
+    },
+    {
+      "name": "Winding Trails Cross Country Ski Center",
+      "town": "Farmington",
+      "region": "Central CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Winter",
+      "officialWebsite": "https://www.windingtrails.org/hours-directions-maps",
+      "address": "50 Winding Trails Drive, Farmington, CT 06032",
+      "dateAdded": "2026-08-17",
+      "slug": "winding-trails-cross-country-ski-center"
     },
     {
       "name": "Windsor Meadows Bissell Bridge River Walk",
