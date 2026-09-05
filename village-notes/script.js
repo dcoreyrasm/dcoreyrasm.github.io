@@ -16,7 +16,7 @@
   // markup instead of relying on script -- keep the two in step.
   var FORM_URL = 'https://airtable.com/appxUByKs5ULrDZQp/pagofYquo4QHUjcQG/form';
 
-  var state = { all: [], search: '', track: '', categories: [], towns: [], flags: {},
+  var state = { all: [], search: '', terms: [], track: '', categories: [], towns: [], flags: {},
                sort: 'name', shown: 0 };
 
   // Cards are built as HTML strings; 524 of them at once is the slowest thing
@@ -671,8 +671,34 @@
     for (var flag in state.flags) {
       if (state.flags[flag] && FLAGS[flag] && !FLAGS[flag](r)) return false;
     }
-    if (!state.search) return true;
-    return (r._haystack || '').indexOf(state.search) !== -1;
+    if (!state.terms.length) return true;
+    return matchesSearch(r._haystack);
+  }
+
+
+  /* ---------- search terms ----------
+
+     Split on whitespace, and require every term to match somewhere in the
+     record. Adding a word narrows the results rather than widening them, so
+     "mystic museum" finds the museum in Mystic instead of everything in
+     Mystic plus every museum in the state.
+
+     Terms are matched independently and may land in different fields, which
+     is what makes that example work at all: one word is the town, the other
+     is the category. A single-word search behaves exactly as it did before.
+
+     Community AI already searched this way. These two now agree with it. */
+
+  function searchTerms(value) {
+    return String(value || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+  }
+
+  function matchesSearch(hay) {
+    var terms = state.terms || [];
+    for (var i = 0; i < terms.length; i++) {
+      if ((hay || '').indexOf(terms[i]) === -1) return false;
+    }
+    return true;
   }
 
   function haystack(r) {
@@ -769,6 +795,10 @@
   }
 
   function render(keepShown) {
+    // Recomputed here rather than at every place the query can change --
+    // typing, a reset, a filter chip, a shared link -- so the two can never
+    // drift apart.
+    state.terms = searchTerms(state.search);
     var shown = state.all.filter(matches).sort(SORTS[state.sort] || SORTS.name);
 
     if (!keepShown) state.shown = PAGE;

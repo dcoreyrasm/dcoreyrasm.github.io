@@ -17,7 +17,7 @@
 
   var DATA_URL = '/connecticut-list/data/experiences.json';
 
-  var state = { all: [], search: '', region: '', types: [], towns: [],
+  var state = { all: [], search: '', terms: [], region: '', types: [], towns: [],
                 categories: [], audiences: [], seasons: [], months: [], ages: [],
                 sort: 'name', shown: 0, open: null };
 
@@ -550,8 +550,34 @@
     if (state.months.length && !state.months.some(function (m) {
       return monthsOf(r).indexOf(m) !== -1;
     })) return false;
-    if (!state.search) return true;
-    return (r._haystack || '').indexOf(state.search) !== -1;
+    if (!state.terms.length) return true;
+    return matchesSearch(r._haystack);
+  }
+
+
+  /* ---------- search terms ----------
+
+     Split on whitespace, and require every term to match somewhere in the
+     record. Adding a word narrows the results rather than widening them, so
+     "mystic museum" finds the museum in Mystic instead of everything in
+     Mystic plus every museum in the state.
+
+     Terms are matched independently and may land in different fields, which
+     is what makes that example work at all: one word is the town, the other
+     is the category. A single-word search behaves exactly as it did before.
+
+     Community AI already searched this way. These two now agree with it. */
+
+  function searchTerms(value) {
+    return String(value || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+  }
+
+  function matchesSearch(hay) {
+    var terms = state.terms || [];
+    for (var i = 0; i < terms.length; i++) {
+      if ((hay || '').indexOf(terms[i]) === -1) return false;
+    }
+    return true;
   }
 
   // Search is a substring match over one prepared lowercase string per record,
@@ -778,6 +804,10 @@
   /* ---------- render ---------- */
 
   function render(keepShown) {
+    // Recomputed here rather than at every place the query can change --
+    // typing, a reset, a filter chip, a shared link -- so the two can never
+    // drift apart.
+    state.terms = searchTerms(state.search);
     var shown = state.all.filter(matches).sort(SORTS[state.sort] || SORTS.name);
     state._shown = shown;
 
