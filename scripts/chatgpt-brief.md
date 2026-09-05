@@ -433,6 +433,54 @@ DO NOT GUESS A URL FROM THE NAME. "Riverside Learning Center" does not imply
 riversidelearningcenter.com. Open it, confirm it is that provider in that
 town, then record it.
 
+DISABILITY AND ACCESSIBILITY — three fields, and they are now findable.
+
+The site has an accessibility filter that cuts across all four tracks at once.
+It reads three things, and a listing qualifies on any of them, so a family
+looking for a place that can accommodate their child or their parent finds it
+whichever one you filled in. Before this filter existed these fields were dead
+weight; they are not any more, so record them.
+
+  Services Offered        Tag "Disability Support" when the provider states it
+                          serves people with disabilities. "Special-Needs Pet
+                          Care" is the pet-track equivalent, and no listing
+                          carries it yet -- boarding and grooming that take
+                          special-needs animals are a real gap.
+
+  Specialized Support     A closed list: Inclusive Program, Adaptive Program,
+  Type                    Therapeutic Recreation, Behavioral Support, Medically
+                          Supported Camp, Diagnosis-Specific Program,
+                          One-to-One Support, Accessibility Accommodations.
+                          Tag every one the provider confirms.
+
+  Inclusion /             The provider's own words about what it can
+  Accessibility Support   accommodate. This appears on the card verbatim, so
+                          quote or paraphrase closely rather than summarising
+                          into a promise the provider did not make.
+
+TRAP SIX, AND IT IS THE SAME TRAP AS THE FIRST FIVE. A page that mentions
+disability is not a disability service. An earlier pass tagged six elder
+listings "Disability Support" because the source citation said "Aging and
+Disability Services" -- the publisher's name, not the programme. Read what the
+organisation does, not what the letterhead says.
+
+BE CAREFUL WITH THE FREE-TEXT FIELD IN PARTICULAR. Because a listing qualifies
+for the filter on that field alone, writing a limitation into it puts the
+listing in front of exactly the family it cannot help. "The Y asks families to
+contact the director about accommodations and cannot guarantee a particular
+counsellor" is a caveat, and two listings currently reach the filter that way.
+Record it if the provider says it -- honesty about limits is useful -- but do
+not write anything into that field that the provider has not actually said.
+
+DISABILITY & ACCESSIBILITY SERVICES is a Category, and almost never the right
+one. Disability support is not a track and not usually a category, because
+nearly every organisation offering it is also a camp, an agency on aging, or a
+job programme, and it belongs under what it actually is. Use this category only
+when disability or accessibility support is the organisation's whole purpose
+and nothing else fits -- an independent living centre, a disability-rights
+legal aid office. An adaptive camp is a camp. Do not move existing records into
+it.
+
 UPCOMING EVENT AND EVENT DATE — an announced, dated thing a family can attend.
 
 Open houses, tour dates, information sessions, webinars, registration nights,
