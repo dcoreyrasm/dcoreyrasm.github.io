@@ -56,12 +56,9 @@ now.
   newtowncommunitycenter.org         1  never        Family & Childcare
   medicine.yale.edu                  1  never        Family & Childcare
   reddingct.gov                      1  never        Family & Childcare
-  rightathome.net                    1  never        Elder Care
   stamfordjcc.org                    1  never        Family & Childcare
   stamfordrecreation.com             1  never        Family & Childcare
   bgcastamford.org                   1  never        Family & Childcare
-  hospice.com                        1  never        Elder Care
-  whitneycenter.com                  1  never        Elder Care
   greenwichymca.org                  1  never        Family & Childcare
   darien-ymca.org                    3  2026-08-25   Family & Childcare
   vergnano.institute.uconn.edu       3  2026-08-25   Family & Childcare
@@ -228,9 +225,21 @@ now.
   thevictorproject.org               1  2026-09-04   Pet Care & Resources
   hvcchelps.org                      1  2026-09-04   Pet Care & Resources
   portal.ct.gov                     18  2026-09-05   Elder Care, Family & Childcare, Pet Care & Resources, Teens & High School
+  disrightsct.org                    1  2026-09-05   Family & Childcare
   maloneyhs.com                      1  2026-09-05   Teens & High School
+  independenceunlimited.org          1  2026-09-05   Teens & High School
+  kennedy.waterbury.k12.ct.us        1  2026-09-05   Teens & High School
   mhs.middletownschools.org          1  2026-09-05   Teens & High School
   platths.com                        1  2026-09-05   Teens & High School
+  rightathome.net                    1  2026-09-05   Elder Care
+  hospice.com                        1  2026-09-05   Elder Care
+  chase.waterbury.k12.ct.us          1  2026-09-05   Family & Childcare
+  gilmartin.waterbury.k12.ct.us      1  2026-09-05   Family & Childcare
+  sprague.waterbury.k12.ct.us        1  2026-09-05   Family & Childcare
+  wca.waterbury.k12.ct.us            1  2026-09-05   Teens & High School
+  westhartfordct.gov                 1  2026-09-05   Family & Childcare
+  whitneycenter.com                  1  2026-09-05   Elder Care
+  wilby.waterbury.k12.ct.us          1  2026-09-05   Teens & High School
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -255,9 +264,9 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 298 of 716 listings (42%) carry a Website, so
+Only 307 of 722 listings (43%) carry a Website, so
 everything above is built from that third of the directory. The other
-418 have no URL recorded at all, which means nobody -- not you,
+415 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
 unverifiable in their current state.
 
@@ -265,7 +274,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-40 of the 208 domains here have never had a Last Verified on
+37 of the 217 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```

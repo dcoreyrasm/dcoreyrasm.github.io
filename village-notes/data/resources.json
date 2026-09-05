@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-05T09:50:54.693Z",
+  "generated": "2026-09-05T14:25:13.248Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 716,
+  "count": 722,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -5283,6 +5283,28 @@
       ]
     },
     {
+      "id": "recF0Wue8lbgQ1b3G",
+      "name": "Disability Rights Connecticut Education Rights Clinic",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Free virtual special-education and Section 504 rights clinic",
+      "town": "Hartford",
+      "address": "75 Charter Oak Avenue, Suite 1-101, Hartford, CT 06106",
+      "ages": "Students with disabilities and their families, including special-education and Section 504 needs",
+      "cost": "Free",
+      "website": "https://www.disrightsct.org/education-rights-clinic",
+      "contact": "860-310-1993; Ed.Clinic@DisRightsCT.org",
+      "submittedBy": "Village Notes Research",
+      "notes": "The clinic normally provides a one-hour virtual meeting with free counsel, advice, and short-term service. Appointment requests have been paused since June 1, 2026. The provider anticipated reopening in late summer but had not posted a reopening update when checked September 5, 2026.",
+      "registrationStatus": "Closed",
+      "servicesOffered": [
+        "Disability Support",
+        "Parent / Family Support"
+      ],
+      "accessibility": "The clinic is specifically open to students and families dealing with disability-related special-education or Section 504 issues. Meetings are virtual. DRCT also publishes a videophone and an accommodation request route for people unable to use voice phone service.",
+      "lastVerified": "2026-09-05"
+    },
+    {
       "id": "recP1gGuGPYvvr15r",
       "name": "Discover Summer Day Camp",
       "track": "Family & Childcare",
@@ -8331,6 +8353,29 @@
       ]
     },
     {
+      "id": "recHIfs8riRtO4Jz3",
+      "name": "Independence Unlimited Leaders of Tomorrow Youth Group",
+      "track": "Teens & High School",
+      "category": "Job Training Program",
+      "specificType": "Disability-focused school-to-work and independent-living transition group",
+      "town": "Hartford",
+      "address": "151 New Park Avenue, North Annex Suite D, Hartford, CT 06106",
+      "ages": "Youth with disabilities and young adults ages 16-30",
+      "website": "https://www.independenceunlimited.org/index.php/our-programs",
+      "contact": "860-523-5021 Voice/TTY",
+      "submittedBy": "Village Notes Research",
+      "notes": "The official provider page confirms skills training, peer counseling, and social and recreational opportunities for participants transitioning from school to work or from family living to independent living. Current meeting schedule and enrollment process are not published.",
+      "registrationStatus": "Not Confirmed",
+      "servicesOffered": [
+        "Disability Support",
+        "Mentoring",
+        "Teen Program"
+      ],
+      "accessibility": "Program is specifically for youth with disabilities and young adults ages 16-30. The provider publishes a Voice/TTY contact number.",
+      "lastVerified": "2026-09-05",
+      "gradeRange": "Varies"
+    },
+    {
       "id": "recSzuJexRPTTKPwD",
       "name": "Indian Rock Summer Camp",
       "track": "Family & Childcare",
@@ -8787,6 +8832,26 @@
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
+      ]
+    },
+    {
+      "id": "recZfVGa7EYZBGYp8",
+      "name": "John F. Kennedy High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Comprehensive public high school",
+      "town": "Waterbury",
+      "address": "422 Highland Avenue, Waterbury, CT 06708",
+      "hours": "School hours: 7:20 AM-1:50 PM",
+      "website": "https://kennedy.waterbury.k12.ct.us/",
+      "contact": "203-574-8150",
+      "submittedBy": "Village Notes Research",
+      "notes": "Official Waterbury Public Schools site confirms the school, address, hours, school counselors, activities and clubs, athletics, and district college-and-career resources. Grade span was not explicitly stated on the pages checked.",
+      "lastVerified": "2026-09-05",
+      "gradeRange": "Not Confirmed",
+      "schoolDistrict": "Waterbury Public Schools",
+      "programSetting": [
+        "Public School"
       ]
     },
     {
@@ -13532,11 +13597,16 @@
       ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-08",
-      "notes": "Right at Home of New Haven County is a locally owned, licensed non-medical home care agency (Connecticut DCP Registration #HCA.0000342) based in Milford and serving New Haven, Hamden, North Haven, and the surrounding towns. Caregivers provide companionship, help with errands and medical appointments, light housekeeping, and personal care such as bathing and dressing, with care available around the clock even though the office itself keeps standard business hours. The New Haven County office won Home Care Pulse's 2026 Best of Home Care Provider of Choice and Employer of Choice awards. A complimentary custom service plan consultation is the usual starting point for a family figuring out what level of help they actually need.",
+      "notes": "Right at Home of New Haven County is a locally owned non-medical home-care agency based in Milford. Its official page confirms companionship, personal care, errands and appointment transportation, respite support, and specialty care for adults with disabilities. The provider page displayed Connecticut registration number 0000705 when checked on September 5, 2026. Families can request a complimentary care consultation.",
       "servicesOffered": [
         "Caregiver Support",
-        "Elder Care"
-      ]
+        "Elder Care",
+        "Companion Services",
+        "Disability Support",
+        "Transportation"
+      ],
+      "accessibility": "The official provider page specifically confirms non-medical specialty care for adults with disabilities.",
+      "lastVerified": "2026-09-05"
     },
     {
       "id": "rec1w05pZwJgOLQ89",
@@ -15316,8 +15386,10 @@
       "notes": "The Connecticut Hospice in Branford was the first hospice in the United States and remains the only one in the state with its own dedicated inpatient hospital, a waterfront facility overlooking Long Island Sound. It offers both inpatient and home-based hospice and palliative care, along with skilled home care, a dementia-focused Magnolia Care program, and short-term respite care (up to five days) for family caregivers who need a break. The centralized intake department takes calls 24 hours a day, seven days a week, which matters for families making end-of-life decisions on short notice. As a non-profit, the organization also relies on donor support to cover services and therapies not fully reimbursed by insurance.",
       "servicesOffered": [
         "Caregiver Support",
-        "Elder Care"
-      ]
+        "Elder Care",
+        "Hospice"
+      ],
+      "lastVerified": "2026-09-05"
     },
     {
       "id": "rect0u5qlpz60NHoa",
@@ -16964,6 +17036,7 @@
       "ages": "Preschool",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
+      "website": "https://chase.waterbury.k12.ct.us/",
       "contact": "Maureen Bergin | (203) 574-8024",
       "townsServed": [
         "Waterbury"
@@ -16973,7 +17046,8 @@
       "notes": "FY26 state-funded spaces: 10 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 8174. Local partner: Waterbury Bridge to Success Partnership -- Krista Pisano | krista.pisano@waterbury.k12.ct.us | 203-573-6684. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
-      ]
+      ],
+      "lastVerified": "2026-09-05"
     },
     {
       "id": "recWA2HqpYvIv0XFN",
@@ -17028,8 +17102,10 @@
       "town": "Waterbury",
       "address": "94 Spring Lake Rd, Waterbury, CT, 06706",
       "ages": "Preschool",
+      "hours": "Doors open 8:05 AM; school starts 8:35 AM; dismissal 2:50 PM",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
+      "website": "https://gilmartin.waterbury.k12.ct.us/",
       "contact": "Maureen Bergin | (203) 574-8024",
       "townsServed": [
         "Waterbury"
@@ -17039,7 +17115,8 @@
       "notes": "FY26 state-funded spaces: 32 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 6256. Local partner: Waterbury Bridge to Success Partnership -- Krista Pisano | krista.pisano@waterbury.k12.ct.us | 203-573-6684. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
-      ]
+      ],
+      "lastVerified": "2026-09-05"
     },
     {
       "id": "rec6UhdQ9aVNBBiAr",
@@ -17096,6 +17173,7 @@
       "ages": "Preschool",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
+      "website": "https://sprague.waterbury.k12.ct.us/",
       "contact": "Maureen Bergin | (203) 574-8024",
       "townsServed": [
         "Waterbury"
@@ -17105,7 +17183,8 @@
       "notes": "FY26 state-funded spaces: 36 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 6381. Local partner: Waterbury Bridge to Success Partnership -- Krista Pisano | krista.pisano@waterbury.k12.ct.us | 203-573-6684. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
-      ]
+      ],
+      "lastVerified": "2026-09-05"
     },
     {
       "id": "rec5t0i1Az9q1lxRG",
@@ -17127,6 +17206,70 @@
       "notes": "FY26 state-funded spaces: 28 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 8176. Local partner: Waterbury Bridge to Success Partnership -- Krista Pisano | krista.pisano@waterbury.k12.ct.us | 203-573-6684. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "recztLKTyOlmr3cEh",
+      "name": "Waterbury Career Academy High School",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "Public career-pathway high school with Health Services, Education and Training, Information Technology and Engineering, and Manufacturing academies",
+      "town": "Waterbury",
+      "address": "175 Birch Street, Waterbury, CT 06704",
+      "ages": "Waterbury residents in grades 9-12; applications are limited to current grade 8 students",
+      "hours": "School hours: 7:20 AM-1:50 PM",
+      "cost": "Free to students",
+      "website": "https://wca.waterbury.k12.ct.us/",
+      "contact": "203-574-6000",
+      "submittedBy": "Village Notes Research",
+      "notes": "The official application page confirms grades 9-12, public-school status, four career academies, AP and college-level courses, internships and certifications, and district busing. The last published application window ended December 5, 2025; the next cycle is not yet posted.",
+      "registrationStatus": "Not Yet Announced",
+      "servicesOffered": [
+        "College Access / Readiness",
+        "Afterschool Enrichment",
+        "STEM Enrichment"
+      ],
+      "lastVerified": "2026-09-05",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Waterbury Public Schools",
+      "programSetting": [
+        "Public School"
+      ],
+      "programTopics": [
+        "College Readiness",
+        "Health Careers",
+        "STEM"
+      ],
+      "teenOpportunity": [
+        "Internship",
+        "Certification Program",
+        "College Readiness",
+        "Career Exploration"
+      ]
+    },
+    {
+      "id": "recFa27qi9hlO8dfB",
+      "name": "West Hartford Beachland Adventures and Beachland CITeen",
+      "track": "Family & Childcare",
+      "category": "Inclusive/Special Needs Camp",
+      "specificType": "Municipal special-needs summer camps for children and youth",
+      "town": "West Hartford",
+      "ages": "Children and youth with special needs",
+      "website": "https://www.westhartfordct.gov/town-departments/leisure-services/special-needs-recreation",
+      "contact": "Dani Brown, Special Needs and Inclusion Support Coordinator: 860-561-8194; dani.brown@westhartfordct.gov",
+      "submittedBy": "Village Notes Research",
+      "notes": "The official municipal page confirms two recurring special-needs summer camp programs. It also describes inclusion assistance for mainstream camps. The next summer schedule and fees were not posted on the page checked.",
+      "registrationStatus": "Not Yet Announced",
+      "servicesOffered": [
+        "Summer Camp",
+        "Disability Support",
+        "Teen / CIT Program"
+      ],
+      "accessibility": "Beachland Adventures and Beachland CITeen are designed for children and youth with special needs. Mainstream-camp inclusion support requires advance coordination; the town recommends contacting the coordinator at least two weeks before the program starts.",
+      "lastVerified": "2026-09-05",
+      "specializedSupport": [
+        "Inclusive Program",
+        "Accessibility Accommodations"
       ]
     },
     {
@@ -17372,8 +17515,11 @@
       "dateSubmitted": "2026-08-08",
       "notes": "Whitney Center is a non-profit Life Plan (continuing care) community in Hamden that lets residents move between independent living, assisted living, memory care, and skilled nursing on the same campus as their needs change, without relocating to a new facility each time. Its memory care neighborhood, Meadow Mills, is a secured unit designed specifically for residents who need memory support, with staff and structured activities built around that population. Because it's a Life Care community, the entrance-fee model is designed so a resident's costs don't spike if they need a higher level of care later, one of the bigger financial unknowns families run into with elder care. The campus includes amenities like a fitness center, pool, art studio, and cultural arts center, and it serves the Greater New Haven area specifically.",
       "servicesOffered": [
-        "Elder Care"
-      ]
+        "Elder Care",
+        "Assisted Living",
+        "Skilled Nursing"
+      ],
+      "lastVerified": "2026-09-05"
     },
     {
       "id": "rechOFNbfyPT1EyUC",
@@ -17388,6 +17534,26 @@
       "submittedBy": "Village Notes Research",
       "lastVerified": "2026-09-01",
       "schoolDistrict": "New Haven Public Schools",
+      "programSetting": [
+        "Public School"
+      ]
+    },
+    {
+      "id": "recOqjC9NWnqwitAe",
+      "name": "Wilby High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Comprehensive public high school",
+      "town": "Waterbury",
+      "address": "568 Bucks Hill Road, Waterbury, CT 06704",
+      "hours": "School office: 7:00 AM-2:30 PM; school hours: 7:20 AM-1:50 PM",
+      "website": "https://wilby.waterbury.k12.ct.us/",
+      "contact": "203-574-8100",
+      "submittedBy": "Village Notes Research",
+      "notes": "Official Waterbury Public Schools site confirms the school, address, hours, after-school programs and clubs, MCJROTC, school counselors, athletics, and district college-and-career resources. Grade span was not explicitly stated on the pages checked.",
+      "lastVerified": "2026-09-05",
+      "gradeRange": "Not Confirmed",
+      "schoolDistrict": "Waterbury Public Schools",
       "programSetting": [
         "Public School"
       ]
