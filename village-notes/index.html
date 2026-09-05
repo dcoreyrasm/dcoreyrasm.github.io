@@ -148,12 +148,21 @@
 
         <div class="vn-toggles" role="group" aria-label="Quick filters">
           <span class="vn-toggles-label">Only show</span>
+          <label class="vn-toggle"><input type="checkbox" id="vn-flag-disability" data-flag="disability" /><span>Disability &amp; accessibility support</span></label>
           <label class="vn-toggle"><input type="checkbox" data-flag="openNow" /><span>Registration open</span></label>
           <label class="vn-toggle"><input type="checkbox" data-flag="care4Kids" /><span>Accepts Care 4 Kids</span></label>
           <label class="vn-toggle"><input type="checkbox" data-flag="financialAid" /><span>Financial help</span></label>
           <label class="vn-toggle"><input type="checkbox" data-flag="transport" /><span>Transportation</span></label>
           <label class="vn-toggle"><input type="checkbox" data-flag="extended" /><span>Before/after care</span></label>
           <label class="vn-toggle"><input type="checkbox" data-flag="fullDay" /><span>Covers a workday</span></label>
+        </div>
+
+        <div class="vn-doorway" id="vn-doorway" hidden>
+          <p class="vn-doorway-text">
+            <strong>Disability and accessibility support</strong>
+            <span id="vn-doorway-detail"></span>
+          </p>
+          <button type="button" class="btn-ghost vn-doorway-btn" id="vn-doorway-btn">Show these listings</button>
         </div>
 
         <p class="vn-resultline" id="vn-resultline" role="status" aria-live="polite"></p>
