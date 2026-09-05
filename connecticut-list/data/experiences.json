@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-05T22:15:52.335Z",
-  "count": 337,
+  "generated": "2026-09-05T22:22:59.768Z",
+  "count": 346,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -70,6 +70,7 @@
     "Madison",
     "Manchester",
     "Mansfield",
+    "Marlborough",
     "Mashantucket",
     "Meriden",
     "Middlefield",
@@ -870,6 +871,16 @@
       "slug": "bellamy-ferriday-house-and-garden"
     },
     {
+      "name": "Bellamy-Ferriday Plein Air Painting Lead",
+      "town": "Bethlehem",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://ctlandmarks.org/properties/bellamy-ferriday-house-garden/",
+      "dateAdded": "2026-08-22",
+      "slug": "bellamy-ferriday-plein-air-painting-lead"
+    },
+    {
       "name": "Belltown Hill Orchards Pick-Your-Own Apple & Pumpkin",
       "town": "South Glastonbury",
       "region": "Central CT",
@@ -1231,6 +1242,15 @@
       "slug": "chatfield-hollow-state-park"
     },
     {
+      "name": "Chester Farmer's Market",
+      "town": "Chester",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://chestersundaymarket.jimdofree.com/about-1/",
+      "slug": "chester-farmers-market"
+    },
+    {
       "name": "Chester Ferry + Gillette Castle + Chester Village",
       "town": "Chester / East Haddam",
       "region": "Connecticut Shoreline",
@@ -1325,6 +1345,16 @@
       "officialWebsite": "https://www.colorblendsspringgarden.com/",
       "dateAdded": "2026-08-21",
       "slug": "colorblends-house-and-spring-garden"
+    },
+    {
+      "name": "Columbus Park Trattoria Pasta-Making Historical Lead",
+      "town": "Stamford",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://enrichment.stamfordadulted.org/CourseCatalog/ScheduleView.asp?ScheduleID=7926",
+      "dateAdded": "2026-08-22",
+      "slug": "columbus-park-trattoria-pasta-making-historical-lead"
     },
     {
       "name": "Community African Drum & Dance Class",
@@ -1943,6 +1973,15 @@
         "West Hartford"
       ],
       "slug": "elizabeth-park-rose-garden"
+    },
+    {
+      "name": "ELM CITY GAMES!",
+      "town": "New Haven",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://www.elmcitygames.com/",
+      "slug": "elm-city-games"
     },
     {
       "name": "Enders Island Plein Air Painting Workshop",
@@ -2743,6 +2782,17 @@
       "slug": "james-l-goodwin-forest-trails-ponds-and-gardens"
     },
     {
+      "name": "Jessica's Garden and Lobster Shack",
+      "town": "Marlborough",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Summer",
+      "officialWebsite": "https://jessicasgarden.net/",
+      "address": "198 East Hampton Road, Marlborough, CT 06447",
+      "slug": "jessicas-garden-and-lobster-shack"
+    },
+    {
       "name": "Jones Family Farms",
       "town": "Shelton",
       "experienceTypes": [
@@ -2775,6 +2825,15 @@
       "officialWebsite": "https://www.joneswineryct.com/jones-winery",
       "dateAdded": "2026-08-17",
       "slug": "jones-winery"
+    },
+    {
+      "name": "Julien's Farm Store",
+      "town": "Granby",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://www.juliensfarmstore.com/about",
+      "slug": "juliens-farm-store"
     },
     {
       "name": "Keeler Tavern Museum & History Center",
@@ -3329,6 +3388,15 @@
       "slug": "mohegan-sun-arena"
     },
     {
+      "name": "Montgomery & Taggert Bookstore",
+      "town": "Chester",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://www.montgomeryandtaggert.com/",
+      "slug": "montgomery-and-taggert-bookstore"
+    },
+    {
       "name": "Mount Tom State Park & Tower",
       "town": "Litchfield",
       "audiences": [
@@ -3793,6 +3861,15 @@
       "slug": "pequonnock-river-valley-park-rails-to-trails"
     },
     {
+      "name": "Perkatory Coffee Roasters",
+      "town": "Branford",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://www.perkatoryroasters.com/",
+      "slug": "perkatory-coffee-roasters"
+    },
+    {
       "name": "PEZ Visitor Center",
       "town": "Orange",
       "region": "New Haven Area",
@@ -4121,6 +4198,16 @@
       "officialWebsite": "https://www.bridgeportct.gov/government/departments/parks-recreation/seaside-park-history",
       "dateAdded": "2026-08-13",
       "slug": "seaside-park"
+    },
+    {
+      "name": "Shanks",
+      "town": "Clinton, CT",
+      "audiences": [
+        "Date Night"
+      ],
+      "officialWebsite": "https://shanksclinton.com/",
+      "towns": [],
+      "slug": "shanks"
     },
     {
       "name": "Sharon Audubon Center Trails & Aviary",
