@@ -1,0 +1,78 @@
+name: Connecticut List sync (Airtable to JSON)
+
+# Refreshes connecticut-list/data/experiences.json from the "Connecticut
+# Passport" base, table "Things to Do", every six hours.
+#
+# This workflow is the only place the Airtable token exists for this page. It
+# is read from a repository secret at runtime, handed to the script as an env
+# var, and never written to a file. The script pulls only records that pass the
+# publication rule -- Status is "📘 Published" or "⭐ Featured" AND Verified is
+# ticked -- and requests only the public fields, so Verification Notes and the
+# rest of the internal workflow are never transferred at all. Nothing committed
+# here contains a credential and the site never calls Airtable.
+#
+# The private "Mya & Victor's Connecticut Passport" base is a separate base and
+# is not referenced by this workflow or by the script it runs.
+#
+# If the pull fails the script exits non-zero having written nothing, so the
+# previous JSON stays live rather than the page going blank.
+
+on:
+  schedule:
+    - cron: "20 */6 * * *"   # offset from the Village Notes sync, which runs on the hour
+  workflow_dispatch:         # allows a manual run
+
+permissions:
+  contents: write
+
+concurrency:
+  group: connecticut-list-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+
+      - name: Pull published activities from Airtable
+        env:
+          # AIRTABLE_ACCESS_TOKEN is the secret this page expects. The script
+          # falls back to AIRTABLE_TOKEN -- the secret Village Notes already
+          # uses -- so one token can serve both if that is what is configured.
+          AIRTABLE_ACCESS_TOKEN: ${{ secrets.AIRTABLE_ACCESS_TOKEN }}
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+          AIRTABLE_CONNECTICUT_BASE_ID: ${{ vars.AIRTABLE_CONNECTICUT_BASE_ID }}
+          AIRTABLE_CONNECTICUT_TABLE_ID: ${{ vars.AIRTABLE_CONNECTICUT_TABLE_ID }}
+        run: node scripts/fetch-connecticut-list.js
+
+      - name: Commit the refreshed list
+        run: |
+          git add connecticut-list/data/experiences.json
+          if git diff --cached --quiet; then
+            echo "List already in sync; nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh Darice's Connecticut List from Airtable"
+          # main can move under us between checkout and push; rebase and retry.
+          for attempt in 1 2 3; do
+            git push && break
+            echo "push rejected (attempt $attempt); rebasing on origin/main"
+            git pull --rebase origin main
+          done
+
+      # Deliberately after the commit. An unrecognised select option is a
+      # quality problem, not an outage -- the page still shows every published
+      # activity -- so it must never be a reason to hold back a refresh.
+      # Failing here turns the run red, which is the notification.
+      - name: Check the base for vocabulary and field-shape drift
+        env:
+          AIRTABLE_ACCESS_TOKEN: ${{ secrets.AIRTABLE_ACCESS_TOKEN }}
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+        run: node scripts/check-connecticut-vocabulary.js
