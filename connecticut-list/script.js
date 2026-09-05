@@ -197,7 +197,12 @@
 
     // Only the categories worth a glance. The full set is on the detail view,
     // where there is room for it.
-    var cats = list(r.categories).slice(0, 4);
+    // Same de-duplication as the detail view: a category that repeats an
+    // audience badge already above it earns no second chip.
+    var shownAudiences = list(r.audiences);
+    var cats = list(r.categories).filter(function (c) {
+      return shownAudiences.indexOf(c) === -1;
+    }).slice(0, 4);
     var catRow = cats.length
       ? '<div class="vn-chips">' + cats.map(function (c) {
           return '<span class="vn-badge-chip">' + esc(c) + '</span>';
@@ -254,9 +259,15 @@
     el.detailName.textContent = r.name;
     el.detailWhere.textContent = whereLine(r);
 
-    var chips = chipsFor(r).concat(list(r.categories).map(function (c) {
-      return '<span class="vn-badge-chip">' + esc(c) + '</span>';
-    }));
+    // "Date Night" is both an audience and a category in the base, so without
+    // this it appears twice in the same row. The audience badge is the one that
+    // stays: it answers who the outing suits, which is what the row is for.
+    var shownAudiences = list(r.audiences);
+    var chips = chipsFor(r).concat(list(r.categories)
+      .filter(function (c) { return shownAudiences.indexOf(c) === -1; })
+      .map(function (c) {
+        return '<span class="vn-badge-chip">' + esc(c) + '</span>';
+      }));
     el.detailChips.innerHTML = chips.join('');
     el.detailChips.hidden = !chips.length;
 
