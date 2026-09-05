@@ -37,10 +37,18 @@
    /styles.css alternates band colour with `section:nth-child(even)`, which
    outranks a bare class selector -- a plain `.vn-submit-section` loses and the
    dark band renders light. Matching that specificity is what makes these hold. */
-section.vn-controls-section { background:var(--bg); padding:2.5rem 0 1.5rem; border-bottom:1px solid var(--line); }
+/* The pinned strip: search + sort only. top reads --header-h from styles.css
+   so it cannot drift out of sync with the header. */
+section.vn-searchbar-section {
+  background:var(--bg); padding:1.1rem 0; border-bottom:1px solid var(--line);
+  position:sticky; top:var(--header-h); z-index:40;
+}
+.vn-searchbar { display:grid; grid-template-columns:minmax(240px,1fr) auto; gap:1rem 1.25rem; align-items:end; }
+
+section.vn-controls-section { background:var(--bg); padding:1.75rem 0 1.5rem; border-bottom:1px solid var(--line); }
 .vn-controls {
   display:grid; gap:1rem 1.25rem; align-items:end;
-  grid-template-columns:minmax(220px,1.6fr) repeat(3,minmax(150px,1fr)) auto;
+  grid-template-columns:repeat(3,minmax(170px,1fr)) auto;
 }
 .vn-field { display:flex; flex-direction:column; gap:.5rem; min-width:0; }
 .vn-field label {
@@ -155,8 +163,11 @@ section.vn-about-section { background:var(--bg2); padding:5rem 0; }
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width:900px) {
+  /* Unpinned below the nav breakpoint: on a short screen the strip costs more
+     than it gives, and the header is already a menu button by here. */
+  section.vn-searchbar-section { position:static; }
+  .vn-searchbar { grid-template-columns:1fr; }
   .vn-controls { grid-template-columns:1fr 1fr; }
-  .vn-field-search { grid-column:1 / -1; }
   .vn-reset { grid-column:1 / -1; justify-self:start; }
   .vn-about-grid { grid-template-columns:1fr; }
 }
