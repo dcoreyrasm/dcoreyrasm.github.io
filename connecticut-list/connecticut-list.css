@@ -1,0 +1,129 @@
+/* ============================================================
+   Darice's Connecticut List — the small amount Village Notes has
+   no component for.
+
+   Everything else on this page is a Village Notes class, loaded
+   from /village-notes/village-notes.css and not modified here.
+   No palette is introduced: every colour below resolves to a
+   token already defined in /styles.css.
+   ============================================================ */
+
+/* ---------- RESULT LINE + SURPRISE ME ---------- */
+/* Surprise Me sits beside the count as a quiet text control rather than a
+   button competing with the filters. It is a shortcut, not the point of
+   the page, and it disappears when there is nothing to choose between. */
+.cl-resultbar {
+  display:flex; align-items:baseline; justify-content:space-between;
+  gap:1rem; flex-wrap:wrap;
+}
+.cl-surprise { margin-top:1.5rem; font-size:.72rem; }
+.cl-surprise[hidden] { display:none; }
+
+/* ---------- CHIP ROWS ---------- */
+/* The audience, quick-filter and season rows reuse Village Notes' .vn-toggle
+   pill. This only lets a row wrap independently of its label. */
+.cl-audience-list { display:flex; flex-wrap:wrap; gap:.5rem; }
+
+/* ---------- ACTIVE FILTERS ---------- */
+.cl-activefilters {
+  display:flex; align-items:center; gap:.75rem 1rem; flex-wrap:wrap;
+  margin-top:1rem; padding-top:1rem; border-top:1px solid var(--line);
+}
+.cl-activefilters[hidden] { display:none; }
+.cl-chips { display:flex; flex-wrap:wrap; gap:.4rem; }
+.cl-chip {
+  display:inline-flex; align-items:center; gap:.45rem;
+  background:var(--bg2); border:1px solid var(--coral); border-radius:999px;
+  color:var(--coral); font-family:var(--sans); font-size:.75rem;
+  padding:.32rem .7rem; cursor:pointer; transition:background .15s,color .15s;
+}
+.cl-chip:hover { background:var(--coral); color:#241038; }
+.cl-chip-x { font-size:.95rem; line-height:1; opacity:.8; }
+@media (prefers-color-scheme: light) { .cl-chip:hover { color:#fff; } }
+
+/* ---------- CARD ---------- */
+/* The title is a real link to the activity's own address, so it can be
+   opened in a new tab or shared. It carries no underline until hovered so
+   the card still reads as a Village Notes card. */
+.cl-card-link { color:inherit; text-decoration:none; }
+.cl-card-link:hover { color:var(--coral); text-decoration:underline; }
+/* "Full details" is a button, not a link -- it opens the panel. Styled as
+   the card's other links so the footer row reads as one set of actions. */
+.cl-open {
+  background:none; border:none; padding:0; cursor:pointer;
+  font-family:var(--sans); font-size:.76rem; letter-spacing:.06em;
+  color:var(--coral);
+}
+.cl-open:hover { text-decoration:underline; }
+
+/* ---------- DETAIL PANEL ---------- */
+/* Village Notes has no detail view, so this is the one genuinely new
+   component. It is built from Village Notes parts -- .vn-facts, .vn-chips,
+   .vn-badge-chip, .btn-primary -- so it reads as the same system seen closer
+   up. On a phone it fills the screen; on a desktop it is a centred panel. */
+.cl-detail-backdrop {
+  position:fixed; inset:0; z-index:200;
+  background:rgba(10,7,18,.72); backdrop-filter:blur(2px);
+}
+.cl-detail-backdrop[hidden] { display:none; }
+
+.cl-detail {
+  position:fixed; z-index:201; top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  width:min(46rem,94vw); max-height:88vh; overflow-y:auto;
+  background:var(--bg2); border:1px solid var(--coral); border-top-width:3px;
+  box-shadow:0 24px 60px rgba(0,0,0,.45);
+  padding:0;
+}
+.cl-detail[hidden] { display:none; }
+.cl-detail-inner { padding:2.5rem 2rem 2rem; position:relative; }
+.cl-detail-close {
+  position:absolute; top:.6rem; right:.85rem;
+  background:none; border:none; cursor:pointer;
+  font-family:var(--sans); font-size:1.6rem; line-height:1;
+  color:var(--muted); padding:.25rem .5rem;
+}
+.cl-detail-close:hover { color:var(--coral); }
+.cl-detail-name {
+  font-family:var(--serif); font-size:1.5rem; font-weight:700;
+  line-height:1.25; color:var(--cream); margin-bottom:.35rem;
+}
+.cl-detail-sub {
+  font-size:.68rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--coral); font-weight:500; margin-bottom:.5rem;
+}
+.cl-detail-why { margin:1.25rem 0; }
+.cl-detail-why p { font-size:.95rem; color:var(--cream); opacity:.9; line-height:1.75; }
+.cl-detail-actions { margin:1.5rem 0 1rem; }
+.cl-detail-actions a[hidden] { display:none; }
+.cl-detail-caveat {
+  font-size:.78rem; color:var(--muted); line-height:1.7;
+  border-top:1px solid var(--line); padding-top:1rem;
+}
+/* The panel scrolls on its own; the page behind it must not scroll with it. */
+body.cl-detail-open { overflow:hidden; }
+
+@media (max-width:600px) {
+  .cl-detail {
+    top:0; left:0; transform:none;
+    width:100vw; max-width:100vw; height:100%; max-height:100%;
+    border:none; border-top:3px solid var(--coral);
+  }
+  .cl-detail-inner { padding:2.75rem 1.25rem 2rem; }
+  /* Thumb-sized rather than pointer-sized. */
+  .cl-detail-close { font-size:2rem; padding:.4rem .7rem; }
+  .cl-detail-actions .btn-primary { display:block; text-align:center; }
+  .cl-resultbar { flex-direction:column; align-items:flex-start; gap:0; }
+  .cl-surprise { margin-top:.5rem; }
+}
+
+/* ---------- FOOTER DISCLAIMER ---------- */
+/* The shared footer is a left-aligned flex column whose children set their own
+   width, so this matches .footer-base rather than centring itself, and sits
+   directly above it. Required on this page and belonging only to it, so it
+   lives here rather than in the shared footer markup. */
+.cl-disclaimer {
+  width:100%; max-width:720px;
+  font-size:.76rem; color:var(--muted); line-height:1.7;
+  margin:0 0 1.25rem; opacity:.85;
+}

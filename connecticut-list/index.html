@@ -1,0 +1,293 @@
+---
+# This front matter exists for one reason: it makes Jekyll evaluate the {{ }}
+# stamps on the stylesheet and script URLs below. Without it the file is copied
+# through verbatim and the stamps would ship as literal text.
+#
+# No layout is applied and nothing else about the page changes -- the rest is
+# still written and served exactly as it reads here.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Darice's curated list of things to do across Connecticut, including parks, museums, trails, shoreline experiences, date ideas, family activities, seasonal events, local finds, and more." />
+  <title>Darice&rsquo;s Connecticut List | Things to Do in Connecticut</title>
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.daricecorey.com/connecticut-list/" id="cl-canonical" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Darice&rsquo;s Connecticut List | Things to Do in Connecticut" />
+  <meta property="og:description" content="Things worth doing, seeing, tasting, and exploring across Connecticut." />
+  <meta property="og:url" content="https://www.daricecorey.com/connecticut-list/" />
+  <meta property="og:image" content="https://www.daricecorey.com/darice.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Darice&rsquo;s Connecticut List | Things to Do in Connecticut" />
+  <meta name="twitter:description" content="Things worth doing, seeing, tasting, and exploring across Connecticut." />
+  <meta name="twitter:image" content="https://www.daricecorey.com/darice.jpg" />
+  <script>window.__daOptOut=(function(){try{return localStorage.getItem('da-analytics-optout')==='1'}catch(e){return false}})();if(window.__daOptOut){window['ga-disable-G-725R412XD7']=true;}</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-725R412XD7"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-725R412XD7');</script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/styles.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
+  <!-- Village Notes' stylesheet, loaded as-is and not modified. Every control,
+       card, chip, panel and empty state on this page is one of its components,
+       so the two directories are the same interface with different subject
+       matter. connecticut-list.css below adds only what Village Notes has no
+       equivalent for: the detail panel and the audience chip row. -->
+  <link rel="stylesheet" href="/village-notes/village-notes.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
+  <link rel="stylesheet" href="/connecticut-list/connecticut-list.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">if(!window.__daOptOut){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xdrtc0i2un");}</script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <nav aria-label="Main navigation">
+    <a class="nav-name" href="/index.html">Darice Corey</a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/work.html">Work</a></li>
+      <li><a href="/ai.html">AI Leadership</a></li>
+      <li><a href="/research.html">Research</a></li>
+      <li><a href="/speaking.html">Speaking</a></li>
+      <li><a href="/community-ai/">Community AI</a></li>
+      <li><a href="/mentorship.html">Mentorship</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/newsletter.html" class="nav-cta">Newsletter</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+
+    <div class="vn-hero">
+      <div class="container">
+        <p class="section-label" style="color:var(--coral);">Things to Do in Connecticut</p>
+        <h1 class="section-heading" style="color:#fff;">Darice&rsquo;s Connecticut List</h1>
+        <p class="vn-hero-lede">Things worth doing, seeing, tasting, and exploring across Connecticut &mdash; from familiar favorites to small-town finds, free outings, seasonal experiences, and places you might otherwise miss.</p>
+        <div class="vn-hero-meta">
+          <span id="cl-count-badge" class="vn-badge">Loading the list&hellip;</span>
+          <span id="cl-updated" class="vn-updated"></span>
+        </div>
+      </div>
+    </div>
+
+    <section class="vn-searchbar-section" aria-labelledby="cl-search-heading">
+      <div class="container">
+        <h2 id="cl-search-heading" class="vn-visually-hidden">Search the list</h2>
+        <form class="vn-searchbar" role="search" onsubmit="return false;">
+          <div class="vn-field vn-field-search">
+            <label for="cl-search">Search</label>
+            <input type="search" id="cl-search" placeholder="Search things to do, towns, places, or experiences&hellip;" autocomplete="off" />
+          </div>
+
+          <div class="vn-field">
+            <label for="cl-sort">Sort by</label>
+            <select id="cl-sort">
+              <option value="name">Name A&ndash;Z</option>
+              <option value="town">Town A&ndash;Z</option>
+              <option value="region">Region A&ndash;Z</option>
+              <option value="added">Recently added</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="vn-controls-section" aria-labelledby="cl-filters-heading">
+      <div class="container">
+        <h2 id="cl-filters-heading" class="vn-visually-hidden">Find something to do</h2>
+
+        <form class="vn-controls" role="search" onsubmit="return false;">
+          <div class="vn-field">
+            <label for="cl-region">Region</label>
+            <select id="cl-region">
+              <option value="">All of Connecticut</option>
+            </select>
+          </div>
+
+          <div class="vn-field">
+            <span class="vn-field-label">Experience type</span>
+            <div class="vn-multi" id="cl-type-multi">
+              <button type="button" class="vn-multi-toggle" id="cl-type-toggle"
+                      aria-expanded="false" aria-haspopup="true" aria-controls="cl-type-panel">
+                <span id="cl-type-label">Anything</span>
+              </button>
+              <div class="vn-multi-panel vn-multi-panel-wide" id="cl-type-panel" role="group" aria-label="Filter by experience type" hidden>
+                <div class="vn-multi-head">
+                  <input type="search" id="cl-type-find" placeholder="Find a type&hellip;" aria-label="Find a type" autocomplete="off" />
+                  <button type="button" class="vn-multi-clear" id="cl-type-clear">Clear</button>
+                </div>
+                <div class="vn-multi-list" id="cl-type-list"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="vn-field">
+            <span class="vn-field-label" id="cl-town-lbl">Town</span>
+            <div class="vn-multi" id="cl-town-multi">
+              <button type="button" class="vn-multi-toggle" id="cl-town-toggle"
+                      aria-expanded="false" aria-haspopup="true" aria-controls="cl-town-panel">
+                <span id="cl-town-label">All towns</span>
+              </button>
+              <div class="vn-multi-panel" id="cl-town-panel" role="group" aria-label="Filter by town" hidden>
+                <div class="vn-multi-head">
+                  <input type="search" id="cl-town-find" placeholder="Find a town&hellip;"
+                         aria-label="Find a town" autocomplete="off" />
+                  <button type="button" class="vn-multi-clear" id="cl-town-clear">Clear</button>
+                </div>
+                <div class="vn-multi-list" id="cl-town-list"></div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" id="cl-reset" class="btn-ghost vn-reset">Reset</button>
+        </form>
+
+        <div class="vn-toggles cl-audience-row" role="group" aria-label="Who you are planning for" id="cl-audience-row" hidden>
+          <span class="vn-toggles-label">Planning for</span>
+          <div id="cl-audience-list" class="cl-audience-list"></div>
+        </div>
+
+        <div class="vn-toggles" role="group" aria-label="Quick filters" id="cl-quick-row" hidden>
+          <span class="vn-toggles-label">Only show</span>
+          <div id="cl-quick-list" class="cl-audience-list"></div>
+        </div>
+
+        <div class="vn-toggles" role="group" aria-label="Best time to visit" id="cl-season-row" hidden>
+          <span class="vn-toggles-label">Best time</span>
+          <div id="cl-season-list" class="cl-audience-list"></div>
+        </div>
+
+        <div class="cl-resultbar">
+          <p class="vn-resultline" id="cl-resultline" role="status" aria-live="polite"></p>
+          <button type="button" id="cl-surprise" class="vn-multi-clear cl-surprise" hidden>Surprise me</button>
+        </div>
+
+        <div class="cl-activefilters" id="cl-activefilters" hidden>
+          <span class="vn-visually-hidden" id="cl-active-label">Active filters</span>
+          <div class="cl-chips" id="cl-active-chips" aria-labelledby="cl-active-label"></div>
+          <button type="button" class="vn-multi-clear" id="cl-clear-all">Clear filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="vn-results-section">
+      <div class="container">
+        <p class="vn-source-note">Every entry here was checked against the organization&rsquo;s own website before it was published. Hours, pricing, reservations, and seasonal availability still change, so the official link on each card is the one to trust on the day you go.</p>
+
+        <div id="cl-results" class="vn-grid"></div>
+
+        <div class="vn-more-wrap">
+          <button type="button" id="cl-showmore" class="btn-ghost" hidden></button>
+        </div>
+
+        <div id="cl-empty" class="vn-empty" hidden>
+          <p class="vn-empty-icon" aria-hidden="true">&#9671;</p>
+          <h2 class="vn-empty-heading" id="cl-empty-heading">Nothing here yet.</h2>
+          <p class="vn-empty-body" id="cl-empty-body">The list is still being filled in. Activities appear here once they have been checked and published.</p>
+          <div class="vn-empty-cta" id="cl-empty-cta" hidden>
+            <p class="vn-empty-ask">Try removing a filter or searching another Connecticut town or activity.</p>
+            <button type="button" class="btn-primary" id="cl-empty-clear">Clear filters</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="vn-about-section" aria-labelledby="cl-about-heading">
+      <div class="container">
+        <p class="section-label">About This List</p>
+        <h2 class="section-heading" id="cl-about-heading">A curated list, not a directory dump.</h2>
+        <div class="vn-about-grid">
+          <div class="vn-about-block">
+            <h3>Checked against the official source</h3>
+            <p>Every activity is confirmed against the organization&rsquo;s own website, a municipal page, or a state or federal page before it appears here. Aggregators and social posts can point to something worth adding, but they are not what publishes it.</p>
+          </div>
+          <div class="vn-about-block">
+            <h3>Blank rather than guessed</h3>
+            <p>Hours, pricing, ages, accessibility and reservation rules change constantly, so this list does not repeat them. Where a detail is not confirmed, the field is empty. Unknown is better than wrong.</p>
+          </div>
+          <div class="vn-about-block">
+            <h3>Nothing publishes itself</h3>
+            <p>An activity reaches this page only after it has been reviewed and marked for publication. Verifying a source and publishing an entry are two separate decisions, and both have to happen.</p>
+          </div>
+          <div class="vn-about-block">
+            <h3>The companion to Village Notes</h3>
+            <p>Village Notes covers Connecticut care, support and community resources. This covers what to do for the fun of it. Same search, same filters, same standards &mdash; different question.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Detail view. One panel, filled in from the selected activity, with its
+       own address: /connecticut-list/?place=<slug>. Each card title is a real
+       link to that URL, so a card can be opened in a new tab, shared, or
+       followed with scripting unavailable -- and the panel is what opens when
+       scripting is available. -->
+  <div class="cl-detail-backdrop" id="cl-detail-backdrop" hidden></div>
+  <section class="cl-detail" id="cl-detail" role="dialog" aria-modal="true"
+           aria-labelledby="cl-detail-name" tabindex="-1" hidden>
+    <div class="cl-detail-inner">
+      <button type="button" class="cl-detail-close" id="cl-detail-close" aria-label="Close">&times;</button>
+      <p class="vn-card-track" id="cl-detail-kicker"></p>
+      <h2 class="cl-detail-name" id="cl-detail-name"></h2>
+      <p class="vn-card-town" id="cl-detail-where"></p>
+      <div class="vn-chips" id="cl-detail-chips"></div>
+      <div id="cl-detail-why" class="cl-detail-why"></div>
+      <dl class="vn-facts" id="cl-detail-facts"></dl>
+      <div class="cl-detail-actions">
+        <a href="#" class="btn-primary" id="cl-detail-site" target="_blank" rel="noopener noreferrer" hidden>Visit Official Website</a>
+      </div>
+      <p class="cl-detail-caveat">Hours, pricing, reservations, and seasonal availability can change. Check the official website before visiting.</p>
+    </div>
+  </section>
+
+  <footer role="contentinfo">
+    <div class="footer-cols">
+      <nav class="footer-col" aria-labelledby="foot-explore">
+        <h2 id="foot-explore">Explore</h2>
+        <ul>
+          <li><a href="/work.html">Work</a></li>
+          <li><a href="/ai.html">AI Leadership</a></li>
+          <li><a href="/research.html">Research</a></li>
+          <li><a href="/speaking.html">Speaking</a></li>
+          <li><a href="/mentorship.html">Mentorship</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="foot-projects">
+        <h2 id="foot-projects">Projects</h2>
+        <ul>
+          <li><a href="/village-notes/">Village Notes</a></li>
+          <li><a href="/year-end-report/">Year-End Report</a></li>
+          <li><a href="/community-ai/">Community AI</a></li>
+          <li><a href="/Yale-AI-Resource-Finder.html">Yale AI Resource Finder</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="foot-elsewhere">
+        <h2 id="foot-elsewhere">Elsewhere</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+          <li><a href="/newsletter.html">Newsletter</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="cl-disclaimer">Darice&rsquo;s Connecticut List is an independently curated resource for discovering things to do across Connecticut. It is not affiliated with the State of Connecticut or any featured organization. Details can change, so always confirm current hours, pricing, reservations, and availability with the official source before visiting.</p>
+    <p class="footer-base">&copy; 2026 Darice Corey. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      const nav = document.getElementById('nav-links');
+      const open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+  </script>
+  <script src="/connecticut-list/script.js?v={{ site.time | date: '%Y%m%d%H%M' }}" defer></script>
+</body>
+</html>
