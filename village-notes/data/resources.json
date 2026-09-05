@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T20:09:54.143Z",
+  "generated": "2026-09-05T08:49:42.301Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -906,7 +906,11 @@
         "Summer Sleepaway Camp"
       ],
       "programYear": "2026 Summer",
-      "lastVerified": "2026-08-26"
+      "lastVerified": "2026-08-26",
+      "specializedSupport": [
+        "Medically Supported Camp",
+        "Diagnosis-Specific Program"
+      ]
     },
     {
       "id": "recEbyjYcMR1fmwJs",
@@ -2481,7 +2485,11 @@
         "Summer Sleepaway Camp"
       ],
       "programYear": "2026 Summer",
-      "lastVerified": "2026-08-26"
+      "lastVerified": "2026-08-26",
+      "specializedSupport": [
+        "Medically Supported Camp",
+        "Diagnosis-Specific Program"
+      ]
     },
     {
       "id": "recsqQIMks6uDOKVK",
@@ -2558,6 +2566,10 @@
       ],
       "teenOpportunity": [
         "Leadership Program"
+      ],
+      "specializedSupport": [
+        "Medically Supported Camp",
+        "Diagnosis-Specific Program"
       ]
     },
     {
@@ -4231,6 +4243,10 @@
         "Hiking",
         "Sports",
         "Arts"
+      ],
+      "specializedSupport": [
+        "Medically Supported Camp",
+        "Diagnosis-Specific Program"
       ]
     },
     {
@@ -6217,6 +6233,9 @@
       ],
       "teenOpportunity": [
         "Counselor in Training"
+      ],
+      "specializedSupport": [
+        "Accessibility Accommodations"
       ]
     },
     {
@@ -6315,6 +6334,9 @@
       "programTopics": [
         "Arts",
         "Aquatics"
+      ],
+      "specializedSupport": [
+        "Accessibility Accommodations"
       ]
     },
     {
@@ -8477,6 +8499,12 @@
         "Adaptive Sports",
         "Leadership",
         "Life Skills"
+      ],
+      "specializedSupport": [
+        "Inclusive Program",
+        "Adaptive Program",
+        "Diagnosis-Specific Program",
+        "Accessibility Accommodations"
       ]
     },
     {
@@ -10301,6 +10329,13 @@
         "Adaptive Sports",
         "Leadership",
         "Social-Emotional Learning"
+      ],
+      "specializedSupport": [
+        "Inclusive Program",
+        "Adaptive Program",
+        "Behavioral Support",
+        "One-to-One Support",
+        "Accessibility Accommodations"
       ]
     },
     {
