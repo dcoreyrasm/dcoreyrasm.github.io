@@ -1,0 +1,3 @@
+[allowlist]
+description = "Known public Airtable identifiers from the Connecticut List setup commit"
+commits = ["ef63425cc84598b18d85c51dcddbb09cd0e3ca87"]
