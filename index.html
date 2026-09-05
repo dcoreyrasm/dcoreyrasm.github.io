@@ -43,22 +43,20 @@
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <nav aria-label="Main navigation">
-    <a class="nav-name" href="index.html">Darice Corey</a>
+    <a class="nav-name" href="/index.html">Darice Corey</a>
     <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="work.html">Work</a></li>
-      <li><a href="ai.html">AI Leadership</a></li>
-      <li><a href="community-ai/">AI Resources</a></li>
-      <li><a href="newsletter.html">Newsletter</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="speaking.html">Speaking</a></li>
-      <li><a href="mentorship.html">Mentorship</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+      <li><a href="/work.html">Work</a></li>
+      <li><a href="/ai.html">AI Leadership</a></li>
+      <li><a href="/research.html">Research</a></li>
+      <li><a href="/speaking.html">Speaking</a></li>
+      <li><a href="/community-ai/">Community AI</a></li>
+      <li><a href="/mentorship.html">Mentorship</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/newsletter.html" class="nav-cta">Newsletter</a></li>
     </ul>
   </nav>
 
@@ -192,6 +190,22 @@
       </div>
     </section>
 
+    <section aria-labelledby="also-built-heading">
+      <div class="container">
+        <p class="section-label">Also Built</p>
+        <h2 class="section-heading" id="also-built-heading">A directory for Connecticut families.</h2>
+        <a href="village-notes/" class="project-feature" aria-label="Open Village Notes">
+          <img src="village-notes/village-notes-preview.jpg" width="1200" height="628" loading="lazy" alt="The Village Notes directory listing Connecticut care resources with hours and waitlist notes" />
+          <div class="project-feature-body">
+            <p class="work-card-tag">Civic Tool · Connecticut</p>
+            <h3>Village Notes</h3>
+            <p>Childcare, camp, elder care, and pet care resources across Connecticut, with the real operating hours and honest waitlist timelines official directories don't publish.</p>
+            <p class="work-card-arrow">Open the directory →</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
     <section aria-labelledby="about-heading" style="background:var(--bg2);">
       <div class="container">
         <p class="section-label">About</p>
@@ -222,15 +236,38 @@
   </main>
 
   <footer role="contentinfo">
-    <p>&copy; 2026 Darice Corey. All rights reserved.</p>
-    <ul class="footer-links">
-      <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
-      <li><a href="community-ai/">AI Resources</a></li>
-      <li><a href="village-notes/">Village Notes</a></li>
-      <li><a href="year-end-report/">Year-End Report</a></li>
-      <li><a href="privacy.html">Privacy</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="footer-cols">
+      <nav class="footer-col" aria-labelledby="foot-explore">
+        <h2 id="foot-explore">Explore</h2>
+        <ul>
+          <li><a href="/work.html">Work</a></li>
+          <li><a href="/ai.html">AI Leadership</a></li>
+          <li><a href="/research.html">Research</a></li>
+          <li><a href="/speaking.html">Speaking</a></li>
+          <li><a href="/mentorship.html">Mentorship</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="foot-projects">
+        <h2 id="foot-projects">Projects</h2>
+        <ul>
+          <li><a href="/village-notes/">Village Notes</a></li>
+          <li><a href="/year-end-report/">Year-End Report</a></li>
+          <li><a href="/community-ai/">Community AI</a></li>
+          <li><a href="/Yale-AI-Resource-Finder.html">Yale AI Resource Finder</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="foot-elsewhere">
+        <h2 id="foot-elsewhere">Elsewhere</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+          <li><a href="/newsletter.html">Newsletter</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer-base">&copy; 2026 Darice Corey. All rights reserved.</p>
   </footer>
 
   <script>
