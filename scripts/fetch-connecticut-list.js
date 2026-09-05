@@ -76,6 +76,13 @@ const AWAITING_REVIEW = [
   ')'
 ].join('');
 
+// Records whose source has not been checked yet. They are two decisions away
+// from the site rather than one, so they are counted separately -- but they are
+// still counted. Once most of the table is published, an unverified record is
+// the one thing that can sit in the base indefinitely with nothing pointing at
+// it, which is exactly how a queue builds up unnoticed.
+const UNVERIFIED = 'NOT({Verified})';
+
 /* ---------- the adapter ----------
 
    Airtable field name -> key on the normalized experience. The front end
@@ -439,6 +446,26 @@ async function reportAwaitingReview() {
               '. Set Status to "📘 Published" or "⭐ Featured" and they appear on the next run.');
 }
 
+// Not an error and not a queue anybody forgot: a record with no verified source
+// is not ready to be published and the rule is right to hold it. It is named so
+// that "why is this not on the site" always has an answer on the run.
+async function reportUnverified() {
+  let pending;
+  try {
+    pending = await fetchAll(UNVERIFIED, ['Place / Experience']);
+  } catch (err) {
+    console.log(`::warning::Could not check for unverified records: ${err.message}`);
+    return;
+  }
+  if (!pending.length) return;
+  const names = pending.map(r => (r.fields || {})['Place / Experience'] || r.id).sort();
+  const shown = names.slice(0, 25);
+  console.log(`::warning::${names.length} ${names.length === 1 ? 'record has' : 'records have'} ` +
+              'no verified source yet, so they cannot be published: ' + shown.join('; ') +
+              (names.length > shown.length ? `; and ${names.length - shown.length} more` : '') +
+              '. Check each against its official source, then tick Verified and set a status.');
+}
+
 async function main() {
   const raw = await fetchAll(PUBLISHABLE);
   const experiences = raw.map(toExperience)
@@ -484,6 +511,7 @@ async function main() {
   reportTitleCleanups(raw);
   reportThinRecords(experiences);
   await reportAwaitingReview();
+  await reportUnverified();
 }
 
 main().catch(err => {
