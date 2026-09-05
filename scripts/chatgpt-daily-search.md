@@ -42,21 +42,32 @@ you record it. What follows is what to go looking for.
 
 Work in this priority order. Do not skip to the easy one.
 
-1. TEENS & HIGH SCHOOL — started, and lopsided.
+1. HOURS ON LISTINGS THAT ALREADY EXIST.
 
-   The technical high schools and interdistrict magnets are in. What is missing
-   is everything a family compares them AGAINST, and the routes out of school:
+   "The real operating hours official directories don't publish" is the
+   promise on the front of the site, and most listings cannot keep it. The
+   measured section below says how many are missing hours; it is the largest
+   single gap in the directory and by some distance.
 
-     High School (Public)        the comprehensive high school in each town --
-                                 the default option, and the one most families
-                                 are actually choosing between
+   This one cannot be fixed by adding listings. It is only fixed by going back
+   through ones already held: open the provider's own page, find the published
+   operating hours, record them in Hours/Schedule. If the hours are not
+   published, leave the field empty -- an invented schedule is worse than a
+   blank one, because a family plans a day around it.
+
+   Work by town so one municipal or provider site serves several at once, and
+   start where the directory is already dense.
+
+2. TEENS & HIGH SCHOOL — no longer empty, still lopsided.
+
+   The technical high schools, magnets and comprehensive publics are in. Read
+   the measured section for where each category stands rather than trusting
+   this paragraph; the shape of the gap has moved twice already. What has
+   stayed thin is:
+
      High School (Private)       independent and parochial
      College Access / Readiness  Upward Bound, GEAR UP, college-access
                                  nonprofits, the state's own programmes
-
-   Those three categories are empty. A family looking at a magnet has nothing
-   to weigh it against, which makes the track misleading rather than merely
-   thin -- it currently reads as though specialty schools are the only option.
 
    Start with the towns the directory already covers well, so a family
    searching their own town sees the local high school beside the magnet.
@@ -152,13 +163,17 @@ Check for an existing record before adding one. Match on organisation name plus
 street address. Two sites of one provider in different towns are two records;
 the same site written up twice is a duplicate that someone has to clean up.
 
-Set Moderation Status to "Published" on what you research -- and only on what
-you research. Public form submissions arrive with it empty and are Darice's to
-review; leave those alone, and flag them in your report. Your own records go
-live on the next sync with nobody reading them first, which is deliberate --
-but it means an unsound record reaches a family before anyone notices. If one is not solid enough to
-stand on its own, leave it out and name it in your report rather than
-publishing a thinner version of it.
+Do not set Moderation Status. The recording instructions cover this in full:
+a record you write publishes on the strength of Submitted By and Source Type,
+so the status field is the public form's gate, not yours. Public form
+submissions arrive with it empty and are Darice's to review; leave those alone
+and flag them in your report.
+
+What that means for you has not changed. Your own records go live on the next
+sync with nobody reading them first, which is deliberate -- but it means an
+unsound record reaches a family before anyone notices. If one is not solid
+enough to stand on its own, leave it out and name it in your report rather
+than publishing a thinner version of it.
 
 REPORT AT THE END OF EACH RUN
   - how many records you added, by track

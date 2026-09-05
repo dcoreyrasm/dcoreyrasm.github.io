@@ -147,6 +147,7 @@ CATEGORY — exactly one value, from this list only:
 - Respite Care
 - Elder Law / Financial Planning
 - Caregiver Support Group
+- Disability & Accessibility Services
 - Birth-to-Three / Early Intervention
 - Doula Services
 - Pediatric Therapy (OT/PT/Speech)
