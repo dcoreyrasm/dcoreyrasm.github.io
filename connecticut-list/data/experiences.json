@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-06T15:29:40.485Z",
+  "generated": "2026-09-06T21:31:05.955Z",
   "count": 351,
   "regions": [
     "Central CT",
@@ -377,6 +377,8 @@
       "address": "2 Sterling City Road, Lyme, CT 06371",
       "notes": "Runs August 21-23, 2026. General admission is currently $10; children 11 and under are free. The 2026 schedule includes live music, contests, rides, food, animals, exhibits, and a beer/wine garden.",
       "dateAdded": "2026-08-19",
+      "eventStart": "2026-08-21",
+      "eventEnd": "2026-08-23",
       "slug": "2026-hamburg-fair"
     },
     {
@@ -510,6 +512,7 @@
       "tryThis": "Split a piece of apple pie, choose one local vendor item to take home, and take one photo that feels most like fall.",
       "notes": "October 3, 2026, 9 a.m.-5 p.m. Free admission and free parking. Food, live music, apples, rides, and activities are available.",
       "dateAdded": "2026-08-21",
+      "eventStart": "2026-10-03",
       "slug": "2026-south-windsor-apple-fest"
     },
     {
@@ -1136,6 +1139,8 @@
       "officialWebsite": "https://www.branfordfarmstand.com/",
       "notes": "Weekend-only fall event, October 3-November 1, 2026. Current site lists live music, pumpkin patch, 7-acre crop maze, Ferris wheel, hay ride and seasonal food/drinks.",
       "dateAdded": "2026-09-05",
+      "eventStart": "2026-10-03",
+      "eventEnd": "2026-11-01",
       "slug": "branford-farm-stand-fall-harvest-festival"
     },
     {
