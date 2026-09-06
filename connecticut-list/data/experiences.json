@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-05T22:22:59.768Z",
-  "count": 346,
+  "generated": "2026-09-06T04:42:45.300Z",
+  "count": 347,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -3902,6 +3902,19 @@
       "notes": "Open daily 10 a.m.-5 p.m. Regular adult admission is $5 and includes a $2 same-day merchandise credit and souvenir lanyard.",
       "dateAdded": "2026-08-21",
       "slug": "pez-visitor-center"
+    },
+    {
+      "name": "Pinot's Palette Stamford Date Night Painting",
+      "town": "Stamford",
+      "region": "Fairfield County",
+      "audiences": [
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "officialWebsite": "https://www.pinotspalette.com/stamford",
+      "notes": "Preserve for future repeat dates. Re-check the current calendar before planning.",
+      "dateAdded": "2026-08-22",
+      "slug": "pinots-palette-stamford-date-night-painting"
     },
     {
       "name": "Powder Ridge Winterfest & Snow Tubing",
