@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-06T04:42:45.300Z",
-  "count": 347,
+  "generated": "2026-09-06T15:29:40.485Z",
+  "count": 351,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -50,6 +50,7 @@
     "Essex",
     "Fairfield",
     "Farmington",
+    "Gales Ferry",
     "Glastonbury",
     "Goshen",
     "Granby",
@@ -217,6 +218,8 @@
       "officialWebsite": "https://bethlehemfair.com/",
       "address": "384 Main Street North, Bethlehem, CT 06751",
       "dateAdded": "2026-09-04",
+      "eventStart": "2026-09-11",
+      "eventEnd": "2026-09-13",
       "slug": "101st-bethlehem-fair"
     },
     {
@@ -336,6 +339,8 @@
       ],
       "officialWebsite": "https://www.durhamfair.com/",
       "dateAdded": "2026-08-19",
+      "eventStart": "2026-09-24",
+      "eventEnd": "2026-09-27",
       "slug": "2026-durham-fair"
     },
     {
@@ -430,6 +435,8 @@
       ],
       "officialWebsite": "https://www.seaport.org/norwalk-oyster-festival",
       "dateAdded": "2026-08-19",
+      "eventStart": "2026-09-11",
+      "eventEnd": "2026-09-13",
       "slug": "2026-norwalk-oyster-festival"
     },
     {
@@ -528,6 +535,8 @@
       "officialWebsite": "https://www.trumbull-ct.gov/625/Arts-Festival",
       "address": "5866 Main Street, Trumbull, CT 06611",
       "dateAdded": "2026-08-19",
+      "eventStart": "2026-09-27",
+      "eventEnd": "2026-09-27",
       "slug": "2026-trumbull-arts-festival"
     },
     {
@@ -735,6 +744,35 @@
       "notes": "Pick-your-own varieties and crop availability change through the season. Check the farm site or call before going for a specific apple.",
       "dateAdded": "2026-08-31",
       "slug": "averill-farm-hilltop-apples-cider-donuts-corn-maze"
+    },
+    {
+      "name": "B.F. Clyde's Cider Mill Fall Visit",
+      "town": "Mystic",
+      "region": "Mystic & Southeastern CT",
+      "experienceTypes": [
+        "Fall & Seasonal",
+        "Food & Treats",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Food & Treats",
+        "Only in Connecticut",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A living-history fall stop at the country's oldest steam-powered cider mill, with fresh sweet cider, cider donuts, hard cider and wine tastings, and chances to watch the historic press operate.",
+      "officialWebsite": "https://www.clydescidermill.com/",
+      "address": "129 North Stonington Road, Mystic, CT 06355",
+      "tryThis": "Visit during a pressing window, watch the steam-powered mill in action, then pair a fresh cider donut with sweet cider.",
+      "notes": "Pressing times can vary. The mill does not take call-ahead orders or preorders. It is closed on Thanksgiving Day.",
+      "dateAdded": "2026-09-06",
+      "slug": "b-f-clydes-cider-mill-fall-visit"
     },
     {
       "name": "Baila Conmigo Salsa Partnerwork Experience",
@@ -2595,6 +2633,34 @@
       "slug": "hickory-ridge-tree-farm"
     },
     {
+      "name": "Hidden Gem Orchard 2026 Apple Picking",
+      "town": "Southbury",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Food & Treats",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A quieter Western Connecticut orchard focused on heirloom and unusual apple varieties, with pick-your-own weekends, a scenic hay-wagon ride, fresh cider donuts and hand pies.",
+      "officialWebsite": "https://www.hiddengemorchard.com/",
+      "address": "2500 Purchase Brook Road, Southbury, CT",
+      "tryThis": "Each choose one unfamiliar apple variety, compare the flavors, then split a cider donut or hand pie from the farm stand.",
+      "notes": "No reservations are required. Free parking is available. A bag purchase is required before entering the orchard. Hay-wagon service is weather dependent.",
+      "dateAdded": "2026-09-06",
+      "slug": "hidden-gem-orchard-2026-apple-picking"
+    },
+    {
       "name": "Hidden Valley Preserve Thoreau Bridge & Pinnacle",
       "town": "Washington",
       "audiences": [
@@ -2636,6 +2702,37 @@
       "officialWebsite": "https://hollisterhousegarden.org/visit/",
       "dateAdded": "2026-08-19",
       "slug": "hollister-house-garden"
+    },
+    {
+      "name": "Holmberg Orchards Fall Pick-Your-Own & Corn Maze",
+      "town": "Gales Ferry",
+      "region": "Mystic & Southeastern CT",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Corn Maze",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Corn Mazes",
+        "Food & Treats",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A full fall orchard outing with apples, pears and flowers, a weekend corn maze, free orchard wagon rides in September and October, and a winery and cidery on the farm.",
+      "officialWebsite": "https://holmbergorchards.com/pick-your-own/",
+      "address": "12 Orchard Lane, Gales Ferry, CT 06335",
+      "tryThis": "Pick one apple variety neither person has tried before, walk the corn maze, then finish with a wagon ride or farm-made drink.",
+      "notes": "Crop availability changes frequently. Check the official page or farm updates before visiting. Fruit picking is closed Mondays except Columbus Day.",
+      "dateAdded": "2026-09-06",
+      "slug": "holmberg-orchards-fall-pick-your-own-and-corn-maze"
     },
     {
       "name": "Hopkins Vineyard",
@@ -2834,6 +2931,34 @@
       ],
       "officialWebsite": "https://www.juliensfarmstore.com/about",
       "slug": "juliens-farm-store"
+    },
+    {
+      "name": "Karabin Farms Fall Apple & Pumpkin Picking",
+      "town": "Southington",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Food & Treats"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A Southington farm outing with weekend pick-your-own apples and pumpkins, a farm store, seasonal baked goods, and a late-fall transition into cut-your-own Christmas trees.",
+      "officialWebsite": "https://www.karabinfarms.com/apples",
+      "address": "894 Andrews Street, Southington, CT 06489",
+      "tryThis": "Pick a bag of apples together, choose one variety for baking and one for eating fresh, then stop in the farm store for a seasonal treat.",
+      "notes": "Entry to the orchard requires pre-purchased Karabin Farms apple bags. The store is open daily 9 AM-5 PM April 1-December 23. Thanksgiving weekend begins the farm's Christmas-tree season.",
+      "dateAdded": "2026-09-06",
+      "slug": "karabin-farms-fall-apple-and-pumpkin-picking"
     },
     {
       "name": "Keeler Tavern Museum & History Center",
