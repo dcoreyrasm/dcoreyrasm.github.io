@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-06T21:31:05.955Z",
+  "generated": "2026-09-07T00:03:14.998Z",
   "count": 351,
   "regions": [
     "Central CT",
@@ -287,6 +287,8 @@
       "officialWebsite": "https://cheshirefestival.com/",
       "address": "Bartlem Park, Cheshire, CT",
       "dateAdded": "2026-09-02",
+      "eventStart": "2026-09-18",
+      "eventEnd": "2026-09-19",
       "slug": "2026-cheshire-fall-festival-and-fireworks"
     },
     {
@@ -329,6 +331,8 @@
       "tryThis": "Choose one local food or artisan stop and stay through the Saturday fireworks.",
       "notes": "Some festival activities have separate charges. Fireworks are scheduled Saturday at 9:15 p.m. with viewing throughout Pierson Park.",
       "dateAdded": "2026-09-04",
+      "eventStart": "2026-09-24",
+      "eventEnd": "2026-09-26",
       "slug": "2026-cromwell-riverport-festival-and-fireworks"
     },
     {
@@ -354,6 +358,8 @@
       "officialWebsite": "https://guilfordfair.org/",
       "address": "111 Lovers Lane, Guilford, CT",
       "dateAdded": "2026-08-28",
+      "eventStart": "2026-09-18",
+      "eventEnd": "2026-09-20",
       "slug": "2026-guilford-fair"
     },
     {
