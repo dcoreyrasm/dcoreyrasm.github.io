@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-07T00:03:14.998Z",
-  "count": 351,
+  "generated": "2026-09-07T21:32:44.626Z",
+  "count": 355,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -14,6 +14,7 @@
   ],
   "towns": [
     "Ansonia",
+    "Ashford",
     "Barkhamsted",
     "Berlin",
     "Bethel",
@@ -46,6 +47,7 @@
     "East Haven",
     "East Lyme",
     "East Windsor",
+    "Eastford",
     "Easton",
     "Essex",
     "Fairfield",
@@ -205,7 +207,9 @@
     "Summer",
     "Winter"
   ],
-  "ages": [],
+  "ages": [
+    "All ages"
+  ],
   "experiences": [
     {
       "name": "101st Bethlehem Fair",
@@ -363,31 +367,6 @@
       "slug": "2026-guilford-fair"
     },
     {
-      "name": "2026 Hamburg Fair",
-      "town": "Lyme",
-      "region": "Connecticut Shoreline",
-      "categories": [
-        "Food & Treats",
-        "Festivals & Events",
-        "Date Night",
-        "Only in Connecticut"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Date Night",
-        "Family",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "officialWebsite": "https://hamburgfair.org/",
-      "address": "2 Sterling City Road, Lyme, CT 06371",
-      "notes": "Runs August 21-23, 2026. General admission is currently $10; children 11 and under are free. The 2026 schedule includes live music, contests, rides, food, animals, exhibits, and a beer/wine garden.",
-      "dateAdded": "2026-08-19",
-      "eventStart": "2026-08-21",
-      "eventEnd": "2026-08-23",
-      "slug": "2026-hamburg-fair"
-    },
-    {
       "name": "2026 Harwinton Fair",
       "town": "Harwinton",
       "region": "Litchfield Hills",
@@ -406,7 +385,10 @@
         "Date Night"
       ],
       "officialWebsite": "https://www.hebronharvestfair.org/",
+      "notes": "2026 fair dates: September 10-13. Thursday 4-10:30 PM, Friday noon-midnight, Saturday 10 AM-midnight, Sunday 10 AM-7:30 PM. Parking is free; children age 10 and under are admitted free.",
       "dateAdded": "2026-08-21",
+      "eventStart": "2026-09-10",
+      "eventEnd": "2026-09-13",
       "slug": "2026-hebron-harvest-fair"
     },
     {
@@ -476,6 +458,39 @@
       "officialWebsite": "https://rivertonfair.com/",
       "dateAdded": "2026-08-19",
       "slug": "2026-riverton-fair"
+    },
+    {
+      "name": "2026 Second Company Governor's Horse Guard Fall Festival",
+      "town": "Newtown",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Fall & Seasonal",
+        "Music & Events",
+        "Museum & Culture",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Festivals & Events",
+        "Museums & Culture",
+        "Free / Low-Cost",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Family"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A free community day with the Second Company Governor's Horse Guard featuring horse shows, pony rides, cavalry history displays, activities, vendors and food trucks at the unit's Newtown grounds.",
+      "officialWebsite": "https://ctvisit.com/events/2ghg-fall-festival",
+      "address": "4 Wildlife Drive, Newtown, CT 06470",
+      "tryThis": "Watch one horse demonstration and learn one piece of Connecticut cavalry history from a display or trooper.",
+      "notes": "Rain-or-shine event. The state tourism listing describes live horse shows, pony rides, cavalry history displays, face painting, games, local vendors, food trucks and pet-adoption opportunities. Free admission; donations welcome.",
+      "dateAdded": "2026-09-07",
+      "eventStart": "2026-09-12",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "2026-second-company-governors-horse-guard-fall-festival"
     },
     {
       "name": "2026 Sky's the Limit Hiking & Walking Challenge",
@@ -1197,6 +1212,31 @@
       "slug": "bruce-museum"
     },
     {
+      "name": "Buell's Orchard Fall Apple Picking & Cider Donuts",
+      "town": "Eastford",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Food & Treats"
+      ],
+      "audiences": [
+        "Family"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A smaller family farm in the Quiet Corner with pick-your-own apples, farm-made cider and cider donuts. Pumpkin picking and weekend hayrides follow later in the fall.",
+      "officialWebsite": "https://www.buellsorchard.com/",
+      "address": "108 Crystal Pond Road, Eastford, CT 06242",
+      "tryThis": "Pick a bag of apples, then choose a cider donut and cider to enjoy before heading home.",
+      "notes": "Current posted hours through September 7 are Monday-Friday 8 AM-5 PM and Saturday 8 AM-3 PM, closed Sunday. Seasonal hours may change after September 7, so check the farm's official site or call before driving out.",
+      "dateAdded": "2026-09-07",
+      "slug": "buells-orchard-fall-apple-picking-and-cider-donuts"
+    },
+    {
       "name": "C.P. Huntington State Park Bear Sculptures + Pond Walk",
       "town": "Redding / Bethel / Newtown",
       "region": "Fairfield County",
@@ -1803,6 +1843,34 @@
       "slug": "critter-caravan-guinea-pig-and-exotic-animal-visit"
     },
     {
+      "name": "Crookes Orchard Fall Apple & Flower Picking",
+      "town": "Ashford",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal",
+        "Food & Treats",
+        "Something Different"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Food & Treats",
+        "Something Different"
+      ],
+      "audiences": [
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A working Ashford orchard with September apple picking, cut-your-own flowers, a farm shop, cider and weekend cider donuts. The orchard also posts special evening picking events during the fall.",
+      "officialWebsite": "https://crookesorchard.com/",
+      "address": "317 Bebbington Road, Ashford, CT 06278",
+      "tryThis": "Pick a fall apple variety you have never tried before and add a small cut-flower bouquet if flowers are available.",
+      "notes": "Current posted hours are Wednesday-Friday 11 AM-5 PM and Saturday-Sunday 9 AM-5 PM; closed Monday-Tuesday. The farm asks pick-your-own visitors to arrive at least 20 minutes before closing and does not allow pets in the orchard or shop.",
+      "dateAdded": "2026-09-07",
+      "slug": "crookes-orchard-fall-apple-and-flower-picking"
+    },
+    {
       "name": "CT Hackerspace Open House & Maker Experience",
       "town": "Watertown",
       "audiences": [
@@ -2370,6 +2438,38 @@
       "officialWebsite": "https://ctparks.com/parks/fort-trumbull-state-park",
       "dateAdded": "2026-08-19",
       "slug": "fort-trumbull-state-park"
+    },
+    {
+      "name": "Foster Family Farm 2026 Corn Maze & Hayride",
+      "town": "South Windsor",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Corn Maze",
+        "Fall & Seasonal",
+        "Something Different"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Corn Mazes",
+        "Something Different"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Family"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A full fall farm outing with two large corn mazes, a mini maze, sunflower field, hayride, farm animals and courtyard activities. Evening night-maze sessions add a different option later in the season.",
+      "officialWebsite": "https://www.fosterfarm.com/",
+      "address": "90 Foster Street, South Windsor, CT 06074",
+      "tryThis": "Try one of the large mazes, then take the hayride and compare which part of the farm was your favorite.",
+      "notes": "Season begins September 12, 2026. Starting September 21 the farm is open daily 10 AM-6 PM. Saturday night mazes begin September 19 and Friday night mazes begin October 2, 6:30-9:30 PM. Tickets are required; night-maze tickets are sold online.",
+      "dateAdded": "2026-09-07",
+      "eventStart": "2026-09-12",
+      "eventEnd": "2026-11-01",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "foster-family-farm-2026-corn-maze-and-hayride"
     },
     {
       "name": "Fox Farm Brewery",
@@ -3671,6 +3771,34 @@
       "notes": "The official excursion page lists a two-hour fall ride with multiple seating choices starting at $35. Check the linked ticket calendar for specific 2026 operating dates and availability.",
       "dateAdded": "2026-08-21",
       "slug": "naugatuck-railroad-autumn-colors-limited"
+    },
+    {
+      "name": "Naugatuck Railroad Pumpkin Patch Express",
+      "town": "Thomaston",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Trains & Scenic Rides",
+        "Fall & Seasonal",
+        "Food & Treats",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Trains & Scenic Rides",
+        "Orchards & Farms",
+        "Food & Treats",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Family"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A one-hour fall train ride through the Naugatuck River Valley with a stop at the railroad's own pumpkin patch. Each ticket includes a pumpkin and pumpkin ice cream.",
+      "officialWebsite": "https://www.rmne.org/excursions/pumpkin-patch-express",
+      "address": "242 East Main Street, Thomaston, CT 06787",
+      "tryThis": "Pick a pumpkin from the railroad patch and take one photo of the Naugatuck River scenery from the train.",
+      "notes": "The official page says the trains run in the weeks leading up to Halloween. Coach tickets are currently listed at $20 for adults and children. Advance ticket purchase is recommended because the excursion is popular.",
+      "dateAdded": "2026-09-07",
+      "slug": "naugatuck-railroad-pumpkin-patch-express"
     },
     {
       "name": "New Britain Museum of American Art + Walnut Hill Park",
