@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-07T21:32:44.626Z",
-  "count": 355,
+  "generated": "2026-09-08T16:40:03.243Z",
+  "count": 360,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -208,6 +208,7 @@
     "Winter"
   ],
   "ages": [
+    "Adults only (21+)",
     "All ages"
   ],
   "experiences": [
@@ -402,6 +403,8 @@
       "officialWebsite": "https://newtownartsfestival.com/",
       "address": "Fairfield Hills, Newtown, CT",
       "dateAdded": "2026-09-04",
+      "eventStart": "2026-09-18",
+      "eventEnd": "2026-09-20",
       "slug": "2026-newtown-arts-festival"
     },
     {
@@ -437,6 +440,7 @@
       ],
       "officialWebsite": "https://www.wethersfieldhistory.org/visit/44th-annual-old-wethersfield-arts-and-crafts-fair/",
       "dateAdded": "2026-09-04",
+      "eventStart": "2026-10-03",
       "slug": "2026-old-wethersfield-arts-and-crafts-fair"
     },
     {
@@ -1044,6 +1048,31 @@
       "slug": "blackledge-falls-wooded-waterfall-walk"
     },
     {
+      "name": "Blue Hills Orchard 2026 Weekend Apple Picking",
+      "town": "Wallingford",
+      "region": "New Haven Area",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Orchards & Farms"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A working Wallingford orchard with a current weekend pick-your-own apple season. Visitors check in for a wagon ride to the designated picking area, then pay for the fruit they pick.",
+      "officialWebsite": "https://www.bluehillsorchard.com/pick-your-own",
+      "address": "141 Blue Hills Rd., Wallingford, CT 06492",
+      "tryThis": "Take the wagon into the orchard and pick one apple variety you have not tried before, then compare it with a familiar favorite.",
+      "notes": "Outdoor picking includes natural farm hazards. Children must stay within arm's reach of an adult. No pets except service animals, no sampling in the field, and no professional photography sessions.",
+      "dateAdded": "2026-09-08",
+      "slug": "blue-hills-orchard-2026-weekend-apple-picking"
+    },
+    {
       "name": "Blue Jay Orchards",
       "town": "Bethel",
       "experienceTypes": [
@@ -1200,6 +1229,34 @@
         "Watertown"
       ],
       "slug": "brook-noel-paint-your-pet-workshop"
+    },
+    {
+      "name": "Brown's Harvest 2026 Fall Festival & Corn Maze",
+      "town": "Windsor",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Corn Maze",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Corn Mazes",
+        "Festivals & Events"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Family"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A full farm fall day with a five-acre corn maze, hayride, pumpkins, farm activities, and seasonal food. It is a strong family or group option near Hartford.",
+      "officialWebsite": "https://www.brownsharvest.com/fall-festival-2026",
+      "address": "1911 Poquonock Ave., Windsor, CT 06095",
+      "tryThis": "Complete the five-acre corn maze before taking the hayride, then choose one pumpkin to bring home.",
+      "notes": "General weekend admission for ages 3+ includes the hayride, five-acre corn maze, kids maze, barrel train, jump pad and other activities. Online admission is $16.95 and door admission is $18. Pumpkins and some add-ons cost extra. No pets.",
+      "dateAdded": "2026-09-08",
+      "eventStart": "2026-09-19",
+      "eventEnd": "2026-11-01",
+      "slug": "browns-harvest-2026-fall-festival-and-corn-maze"
     },
     {
       "name": "Bruce Museum",
@@ -1385,6 +1442,33 @@
       "slug": "chester-hadlyme-ferry"
     },
     {
+      "name": "Clark Farms at Bushy Hill 2026 Apple Picking & Farm Stop",
+      "town": "Granby",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Food & Treats"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A current Granby apple-picking option with tractor access to the picking fields plus donuts, ice cream, cider, a weekend cafe, farm animals, and an optional hard-cider stop for adults.",
+      "officialWebsite": "https://clarkfarmsct.com/upick-1",
+      "address": "29 Bushy Hill Road, Granby, CT 06035",
+      "tryThis": "Pick a bag of apples, choose a farm treat to share, and, if you are 21 or older, consider adding a farm-made cider tasting.",
+      "notes": "Visitors must check in and take the tractor to the apple fields; walking to the picking fields is not permitted. Picking is weather dependent, and current varieties should be confirmed by the farm's recorded information or current updates. The farm warns that Google hours may be inaccurate.",
+      "dateAdded": "2026-09-08",
+      "slug": "clark-farms-at-bushy-hill-2026-apple-picking-and-farm-stop"
+    },
+    {
       "name": "Clinton Antique Center",
       "town": "Clinton",
       "region": "Connecticut Shoreline",
@@ -1468,6 +1552,8 @@
       "officialWebsite": "https://www.ctamachinery.org/events/fall-festival",
       "address": "31B Kent Cornwall Road, Kent, CT 06757",
       "dateAdded": "2026-08-31",
+      "eventStart": "2026-09-25",
+      "eventEnd": "2026-09-27",
       "slug": "connecticut-antique-machinery-association-2026-fall-festival"
     },
     {
@@ -2924,6 +3010,39 @@
       "slug": "humacao-salsa-lesson-social-night"
     },
     {
+      "name": "I-Park Open Trails + Music Day",
+      "town": "East Haddam",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Hiking & Outdoors",
+        "Museum & Culture",
+        "Music & Events"
+      ],
+      "categories": [
+        "Easy Walks",
+        "Free / Low-Cost",
+        "Museums & Culture",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A free art-and-nature day at I-Park with gentle trails, more than 40 environmental artworks, a guided hike, live music, a craft activity, and a pollinator-garden scavenger hunt.",
+      "officialWebsite": "https://ctvisit.com/events/i-park-open-trails-music-day",
+      "address": "428 Hopyard Road, East Haddam, CT 06423",
+      "tryThis": "Take the 10 AM guided hike or choose your own trail, find three environmental artworks that stand out to you, then stay for the live music.",
+      "notes": "Free to attend with a $10 suggested donation for adults. Guided hike begins at 10 AM; live music is scheduled 12:30-2:30 PM. Advance registration is recommended, but walk-ins are welcome.",
+      "dateAdded": "2026-09-08",
+      "eventStart": "2026-09-12",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "i-park-open-trails-music-day"
+    },
+    {
       "name": "Immerse HydroSpa Couples Wellness Experience",
       "town": "Glastonbury",
       "audiences": [
@@ -3961,16 +4080,6 @@
       "officialWebsite": "https://www.nrvt-trail.com/trail-section-wilton",
       "dateAdded": "2026-09-04",
       "slug": "norwalk-river-valley-trail-wilton-boardwalk-loop"
-    },
-    {
-      "name": "Odyssey '26 Greek Festival in Orange",
-      "town": "Orange",
-      "audiences": [
-        "Date Night"
-      ],
-      "officialWebsite": "https://www.saintbarbara.org/",
-      "dateAdded": "2026-09-04",
-      "slug": "odyssey-26-greek-festival-in-orange"
     },
     {
       "name": "Old New-Gate Prison & Copper Mine",
@@ -5277,6 +5386,38 @@
       "slug": "village-center-for-the-arts-dirty-date-night-pottery"
     },
     {
+      "name": "Village Center for the Arts: a Studio Affair",
+      "town": "New Milford",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Date Night",
+        "Something Different"
+      ],
+      "categories": [
+        "Free / Low-Cost",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A free 21+ community art night where adults bring a current creative project, listen to vinyl, meet people, or spend a low-key evening making something together. No art experience is required.",
+      "officialWebsite": "https://www.villagecenterarts.org/eventscalendar",
+      "address": "12 Main Street, New Milford, CT 06776",
+      "tryThis": "Bring one unfinished creative project or small craft to work on, put the phones away for an hour, and leave with something you moved closer to finished.",
+      "notes": "Bring your own project or art supplies. Vinyl music is part of the event and guests may BYOB. The center notes that dates, times and pricing can change, so checking the calendar before going is recommended.",
+      "dateAdded": "2026-09-08",
+      "eventStart": "2026-09-19",
+      "ages": [
+        "Adults only (21+)"
+      ],
+      "slug": "village-center-for-the-arts-a-studio-affair"
+    },
+    {
       "name": "Vintage Radio & Communications Museum Hands-On Visit + Fall Swap Meet",
       "town": "Windsor",
       "audiences": [
@@ -5432,6 +5573,35 @@
       "officialWebsite": "https://www.westportfarmersmarket.com/",
       "dateAdded": "2026-08-17",
       "slug": "westport-farmers-market"
+    },
+    {
+      "name": "Westview Farm 2026 Pick-Your-Own Sunflowers",
+      "town": "Woodstock",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Fall & Seasonal",
+        "Date Night",
+        "Something Different"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Free / Low-Cost",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "Walk through a working sunflower field and either pick a bouquet or simply enjoy the blooms. The 2026 field is open now, with low-cost non-picker admission and occasional music, food trucks, and seasonal treats.",
+      "officialWebsite": "https://www.westviewfarmct.com/sunflowers",
+      "address": "209 Prospect St, Woodstock, CT 06281",
+      "tryThis": "Each choose a sunflower for the other, or build one small bouquet together and take a photo along the field path.",
+      "notes": "Dates depend on weather and flower availability. Pick-your-own with vase is $16, a handful is $14, non-picker entry is $5, and children 10 and under are free. Bring your own scissors. Service animals only.",
+      "dateAdded": "2026-09-08",
+      "slug": "westview-farm-2026-pick-your-own-sunflowers"
     },
     {
       "name": "Westville Music Bowl",
