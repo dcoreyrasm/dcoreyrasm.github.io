@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-08T21:16:12.943Z",
+  "generated": "2026-09-09T02:40:10.159Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -2131,6 +2131,25 @@
       "notes": "FY26 state-funded spaces: 168 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 11956. Local partner: Bristol LGP -- Donna Osuch | donnaosuch@bristolct.gov | 860-584-6254. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "recGqly00Cy7u29DK",
+      "name": "Bristol Central High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Comprehensive public high school.",
+      "town": "Bristol",
+      "address": "480 Wolcott Street, Bristol, CT 06010",
+      "ages": "Grades 9-12",
+      "website": "https://bchs.bristol.k12.ct.us/",
+      "contact": "860-584-7735",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-08",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Bristol Public Schools",
+      "programSetting": [
+        "Public School"
       ]
     },
     {
@@ -5691,6 +5710,25 @@
       ]
     },
     {
+      "id": "recYdvaw4YehyId3d",
+      "name": "East Hartford High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Comprehensive public high school with college and career pathways.",
+      "town": "East Hartford",
+      "address": "869 Forbes Street, East Hartford, CT 06118",
+      "ages": "Grades 9-12",
+      "website": "https://ehhs.easthartford.org/",
+      "contact": "860-622-5200",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-08",
+      "gradeRange": "9-12",
+      "schoolDistrict": "East Hartford Public Schools",
+      "programSetting": [
+        "Public School"
+      ]
+    },
+    {
       "id": "reccpqJb9nu27GCx4",
       "name": "East Hartford Parks & Recreation Summer Camps",
       "track": "Family & Childcare",
@@ -6105,6 +6143,25 @@
       "notes": "Licence/registry: Exempt; Registry 7467. Local partner: Enfield KITE (Key Initiatives to Early Education) -- Hannah Song | hsong@enfield.org | 860-253-6502. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "recuUctFEiib8hEjm",
+      "name": "Enfield High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Comprehensive public high school.",
+      "town": "Enfield",
+      "address": "1264 Enfield Street, Enfield, CT 06082",
+      "ages": "Grades 9-12",
+      "website": "https://enfieldhigh.sharpschool.com/",
+      "contact": "860-253-5540",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-08",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Enfield Public Schools",
+      "programSetting": [
+        "Public School"
       ]
     },
     {
@@ -9879,6 +9936,25 @@
       "servicesOffered": [
         "Child Care",
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "recobUOfAxTGAtnPJ",
+      "name": "Manchester High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Comprehensive public high school.",
+      "town": "Manchester",
+      "address": "134 East Middle Turnpike, Manchester, CT 06040",
+      "ages": "Grades 9-12",
+      "website": "https://mhs.mpspride.org/",
+      "contact": "860-647-3521",
+      "submittedBy": "Village Notes Research",
+      "lastVerified": "2026-09-08",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Manchester Public Schools",
+      "programSetting": [
+        "Public School"
       ]
     },
     {
@@ -15497,6 +15573,24 @@
       ]
     },
     {
+      "id": "rechJ3Kuag9aDLgdq",
+      "name": "The Kennedy Collective Transition Services",
+      "track": "Teens & High School",
+      "category": "Job Training Program",
+      "specificType": "Transition services supporting movement from school to employment and adult life.",
+      "town": "Trumbull",
+      "address": "2440 Reservoir Avenue, Trumbull, CT 06611",
+      "ages": "People with disabilities ages 16-22",
+      "website": "https://www.thekennedycollective.org/support-services/transition-services",
+      "contact": "203-365-8522; info@thekennedycollective.org",
+      "submittedBy": "Village Notes Research",
+      "servicesOffered": [
+        "Disability Support"
+      ],
+      "accessibility": "Provider states that transition services support people with disabilities ages 16-22.",
+      "lastVerified": "2026-09-08"
+    },
+    {
       "id": "recZQojUOEsdyU22R",
       "name": "The Learning Curve Daycare Center",
       "track": "Family & Childcare",
@@ -18331,100 +18425,6 @@
         "Preschool / Pre-K",
         "Toddler Care"
       ]
-    },
-    {
-      "id": "recYdvaw4YehyId3d",
-      "name": "East Hartford High School",
-      "track": "Teens & High School",
-      "category": "High School (Public)",
-      "specificType": "Comprehensive public high school with college and career pathways.",
-      "town": "East Hartford",
-      "address": "869 Forbes Street, East Hartford, CT 06118",
-      "ages": "Grades 9-12",
-      "website": "https://ehhs.easthartford.org/",
-      "contact": "860-622-5200",
-      "submittedBy": "Village Notes Research",
-      "lastVerified": "2026-09-08",
-      "gradeRange": "9-12",
-      "schoolDistrict": "East Hartford Public Schools",
-      "programSetting": [
-        "Public School"
-      ]
-    },
-    {
-      "id": "recobUOfAxTGAtnPJ",
-      "name": "Manchester High School",
-      "track": "Teens & High School",
-      "category": "High School (Public)",
-      "specificType": "Comprehensive public high school.",
-      "town": "Manchester",
-      "address": "134 East Middle Turnpike, Manchester, CT 06040",
-      "ages": "Grades 9-12",
-      "website": "https://mhs.mpspride.org/",
-      "contact": "860-647-3521",
-      "submittedBy": "Village Notes Research",
-      "lastVerified": "2026-09-08",
-      "gradeRange": "9-12",
-      "schoolDistrict": "Manchester Public Schools",
-      "programSetting": [
-        "Public School"
-      ]
-    },
-    {
-      "id": "recGqly00Cy7u29DK",
-      "name": "Bristol Central High School",
-      "track": "Teens & High School",
-      "category": "High School (Public)",
-      "specificType": "Comprehensive public high school.",
-      "town": "Bristol",
-      "address": "480 Wolcott Street, Bristol, CT 06010",
-      "ages": "Grades 9-12",
-      "website": "https://bchs.bristol.k12.ct.us/",
-      "contact": "860-584-7735",
-      "submittedBy": "Village Notes Research",
-      "lastVerified": "2026-09-08",
-      "gradeRange": "9-12",
-      "schoolDistrict": "Bristol Public Schools",
-      "programSetting": [
-        "Public School"
-      ]
-    },
-    {
-      "id": "recuUctFEiib8hEjm",
-      "name": "Enfield High School",
-      "track": "Teens & High School",
-      "category": "High School (Public)",
-      "specificType": "Comprehensive public high school.",
-      "town": "Enfield",
-      "address": "1264 Enfield Street, Enfield, CT 06082",
-      "ages": "Grades 9-12",
-      "website": "https://enfieldhigh.sharpschool.com/",
-      "contact": "860-253-5540",
-      "submittedBy": "Village Notes Research",
-      "lastVerified": "2026-09-08",
-      "gradeRange": "9-12",
-      "schoolDistrict": "Enfield Public Schools",
-      "programSetting": [
-        "Public School"
-      ]
-    },
-    {
-      "id": "rechJ3Kuag9aDLgdq",
-      "name": "The Kennedy Collective Transition Services",
-      "track": "Teens & High School",
-      "category": "Job Training Program",
-      "specificType": "Transition services supporting movement from school to employment and adult life.",
-      "town": "Trumbull",
-      "address": "2440 Reservoir Avenue, Trumbull, CT 06611",
-      "ages": "People with disabilities ages 16-22",
-      "website": "https://www.thekennedycollective.org/support-services/transition-services",
-      "contact": "203-365-8522; info@thekennedycollective.org",
-      "submittedBy": "Village Notes Research",
-      "servicesOffered": [
-        "Disability Support"
-      ],
-      "lastVerified": "2026-09-08",
-      "inclusionSupport": "Provider states that transition services support people with disabilities ages 16-22."
     }
   ]
 }

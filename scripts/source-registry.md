@@ -240,6 +240,11 @@ now.
   westhartfordct.gov                 1  2026-09-05   Family & Childcare
   whitneycenter.com                  1  2026-09-05   Elder Care
   wilby.waterbury.k12.ct.us          1  2026-09-05   Teens & High School
+  bchs.bristol.k12.ct.us             1  2026-09-08   Teens & High School
+  ehhs.easthartford.org              1  2026-09-08   Teens & High School
+  enfieldhigh.sharpschool.com        1  2026-09-08   Teens & High School
+  mhs.mpspride.org                   1  2026-09-08   Teens & High School
+  thekennedycollective.org           1  2026-09-08   Teens & High School
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -264,7 +269,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 307 of 722 listings (43%) carry a Website, so
+Only 312 of 727 listings (43%) carry a Website, so
 everything above is built from that third of the directory. The other
 415 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -274,7 +279,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-37 of the 217 domains here have never had a Last Verified on
+37 of the 222 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```
