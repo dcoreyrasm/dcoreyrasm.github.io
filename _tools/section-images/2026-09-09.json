@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-09-09",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "doc_stack",
+      "label": "Break Reminders and Quiet Hours"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "doc_stack",
+      "label": "Book a Table Without Leaving the Chat"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "doc_stack",
+      "label": "Browse with Copilot"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "doc_stack",
+      "label": "Daily Brief"
+    }
+  ]
+}
