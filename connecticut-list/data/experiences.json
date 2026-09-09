@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-08T16:40:03.243Z",
-  "count": 360,
+  "generated": "2026-09-09T16:40:32.826Z",
+  "count": 364,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -106,6 +106,7 @@
     "Plantsville",
     "Pomfret",
     "Pomfret Center",
+    "Preston",
     "Putnam",
     "Redding",
     "Ridgefield",
@@ -171,6 +172,7 @@
     "Only in Connecticut",
     "Orchard & Apples",
     "Something Different",
+    "Theater & Movies",
     "Trains & Scenic Rides",
     "Waterfront"
   ],
@@ -191,6 +193,7 @@
     "Parks & Preserves",
     "Scenic Views",
     "Something Different",
+    "Theater & Movies",
     "Trains & Scenic Rides"
   ],
   "audiences": [
@@ -716,6 +719,34 @@
       "tryThis": "Choose a duo painting and complete the paired canvases without trying to make the styles match perfectly.",
       "dateAdded": "2026-08-22",
       "slug": "art-studio-of-connecticut-duo-date-night"
+    },
+    {
+      "name": "ARTFARM ephemera Immersive Cemetery Performance",
+      "town": "Middletown",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Theater & Movies",
+        "Date Night",
+        "Something Different"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "See an original outdoor performance that moves through two historic Middletown cemeteries, combining actors, dancers, puppeteers, musicians and circus performers.",
+      "officialWebsite": "https://www.art-farm.org/event-details/ephemera",
+      "address": "192 Cross St., Parking Lot R, Middletown, CT 06457",
+      "tryThis": "Choose one of the three performances, wear comfortable walking shoes, and notice which scene or setting stays with you most afterward.",
+      "notes": "Promenade-style performance requiring walking. Reservations are highly encouraged because each performance is limited to 30 tickets. General admission uses a $25-$50 sliding scale. Bring water and dress for the weather.",
+      "dateAdded": "2026-09-09",
+      "eventStart": "2026-09-19",
+      "slug": "artfarm-ephemera-immersive-cemetery-performance"
     },
     {
       "name": "Auerfarm State Park Scenic Reserve Overlook Walk",
@@ -1518,16 +1549,6 @@
       "officialWebsite": "https://www.colorblendsspringgarden.com/",
       "dateAdded": "2026-08-21",
       "slug": "colorblends-house-and-spring-garden"
-    },
-    {
-      "name": "Columbus Park Trattoria Pasta-Making Historical Lead",
-      "town": "Stamford",
-      "audiences": [
-        "Date Night"
-      ],
-      "officialWebsite": "https://enrichment.stamfordadulted.org/CourseCatalog/ScheduleView.asp?ScheduleID=7926",
-      "dateAdded": "2026-08-22",
-      "slug": "columbus-park-trattoria-pasta-making-historical-lead"
     },
     {
       "name": "Community African Drum & Dance Class",
@@ -4107,6 +4128,37 @@
       "slug": "old-saybrook-winter-shoreline-fresh-salt"
     },
     {
+      "name": "Olde Mistick Village 19th Annual Garlic Festival",
+      "town": "Mystic",
+      "region": "Mystic & Southeastern CT",
+      "experienceTypes": [
+        "Fall & Seasonal",
+        "Food & Treats",
+        "Music & Events",
+        "Date Night"
+      ],
+      "categories": [
+        "Festivals & Events",
+        "Food & Treats",
+        "Date Night"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night",
+        "Family"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Spend a fall day sampling garlic-focused food, browsing farms, bakers, crafters and artists, and listening to live music in Olde Mistick Village.",
+      "officialWebsite": "https://oldemistickvillage.com/garlic-festival-2/",
+      "address": "27 Coogan Blvd., Mystic, CT",
+      "tryThis": "Try one garlic-centered food you have never ordered before, then pick one locally made item from a farm, baker or artisan.",
+      "notes": "Saturday hours are 11 AM-7 PM and Sunday hours are 11 AM-6 PM. The official page does not state an admission price.",
+      "dateAdded": "2026-09-09",
+      "eventStart": "2026-09-19",
+      "eventEnd": "2026-09-20",
+      "slug": "olde-mistick-village-19th-annual-garlic-festival"
+    },
+    {
       "name": "Olde Mistick Village Holiday Lights Spectacular",
       "town": "Mystic",
       "audiences": [
@@ -4301,6 +4353,34 @@
       "address": "99 Powder Hill Road, Middlefield, CT 06455",
       "dateAdded": "2026-08-17",
       "slug": "powder-ridge-winterfest-and-snow-tubing"
+    },
+    {
+      "name": "Preston Farms 2026 America 250 Corn Maze",
+      "town": "Preston",
+      "region": "Mystic & Southeastern CT",
+      "experienceTypes": [
+        "Corn Maze",
+        "Fall & Seasonal",
+        "Date Night"
+      ],
+      "categories": [
+        "Corn Mazes",
+        "Orchards & Farms",
+        "Date Night"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night",
+        "Family"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "Start the fall season with Preston Farms' 27th annual corn maze, themed America 250 'Ears' of Freedom for 2026.",
+      "officialWebsite": "https://www.prestonfarmsct.com/",
+      "address": "92 Route 2, Preston, CT 06365",
+      "tryThis": "See how many turns you can make before checking your bearings, then compare your route guesses when you finally reach the exit.",
+      "notes": "The current 2026 homepage confirms the opening date and address. A separate detailed information page still displays 2025 hours and pricing, so those older details were not carried into this record.",
+      "dateAdded": "2026-09-09",
+      "slug": "preston-farms-2026-america-250-corn-maze"
     },
     {
       "name": "Prudence Crandall Museum Guided Tour",
@@ -5094,6 +5174,71 @@
       "officialWebsite": "https://www.taylorbrookebrewery.com/",
       "dateAdded": "2026-08-21",
       "slug": "taylor-brooke-brewery"
+    },
+    {
+      "name": "Thames River Maritime Heritage Festival Drone Show Cruise",
+      "town": "New London",
+      "region": "Mystic & Southeastern CT",
+      "experienceTypes": [
+        "Waterfront",
+        "Trains & Scenic Rides",
+        "Date Night",
+        "Something Different"
+      ],
+      "categories": [
+        "Trains & Scenic Rides",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night",
+        "Family"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Cruise the Thames River and watch a 300-drone light show over the New London waterfront from the water, with a route toward Ledge Lighthouse when conditions allow.",
+      "officialWebsite": "https://www.thamesriverheritagepark.org/ct-maritime-heritage-festival-drone-cruise-on-the-thames/",
+      "tryThis": "Watch for the lighthouse on the river portion of the trip, then choose your favorite shape or sequence in the synchronized drone show.",
+      "notes": "Weather and boat traffic can affect the route. Snacks and drinks may be brought aboard, but glass is prohibited. There is no bathroom on the boat. The organizer describes the event as family-friendly and appropriate for all ages.",
+      "dateAdded": "2026-09-09",
+      "eventStart": "2026-09-12",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "thames-river-maritime-heritage-festival-drone-show-cruise"
+    },
+    {
+      "name": "Thames River Norwich Harbor Glow Cruise",
+      "town": "New London",
+      "region": "Mystic & Southeastern CT",
+      "experienceTypes": [
+        "Waterfront",
+        "Trains & Scenic Rides",
+        "Fall & Seasonal",
+        "Date Night",
+        "Something Different"
+      ],
+      "categories": [
+        "Trains & Scenic Rides",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night",
+        "Family"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Take a narrated cruise from New London to Norwich, spend two hours at the Harbor Glow community event, then return by boat while the sun sets.",
+      "officialWebsite": "https://www.thamesriverheritagepark.org/norwich-harbor-glow-cruise/",
+      "tryThis": "Pack a small cooler, listen for one river-history fact you did not know, and make the return sunset your final stop of the day.",
+      "notes": "The itinerary includes a narrated cruise to Norwich, the Harbor Glow event from 4-6 PM, and a sunset return to New London. The organizer states that guests of all ages are welcome and that guests may pack beverages and snacks.",
+      "dateAdded": "2026-09-09",
+      "eventStart": "2026-09-27",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "thames-river-norwich-harbor-glow-cruise"
     },
     {
       "name": "The Aldrich Contemporary Art Museum",
