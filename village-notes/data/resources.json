@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-09T02:40:10.159Z",
+  "generated": "2026-09-09T10:20:49.749Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 727,
+  "count": 736,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -294,6 +294,47 @@
       ]
     },
     {
+      "id": "recRsETDY0S2Pg6sk",
+      "name": "Abilis Project SEARCH",
+      "track": "Teens & High School",
+      "category": "Job Training Program",
+      "specificType": "Nine-month workplace internship program for young adults with developmental disabilities",
+      "town": "Greenwich",
+      "address": "50 Glenville Street, Greenwich, CT 06831",
+      "ages": "People ages 18 to 30 with developmental disabilities who are eligible for Connecticut Developmental Disabilities Services or willing to pay privately, and whose goal is competitive employment",
+      "hours": "Nine-month program. Typical day runs 8:45 a.m. to 3:00 p.m. with workplace internships and classroom instruction.",
+      "cost": "DDS-eligible participants or private pay. Amount is not stated.",
+      "website": "https://www.abilis.us/life-services/project-search/",
+      "contact": "203-531-1880",
+      "townsServed": [
+        "Greenwich",
+        "Stamford",
+        "Darien"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-09-09",
+      "notes": "Three unpaid internships take place through Greenwich Hospital, Stamford Health, and the Darien YMCA. The licensed curriculum combines workplace immersion, job skills, classroom instruction, career exploration, and preparation for competitive employment. Applications are accepted year-round, with a May deadline for programs beginning the following September and October.",
+      "registrationStatus": "Rolling / Ongoing",
+      "servicesOffered": [
+        "Disability Support",
+        "Youth Employment"
+      ],
+      "accessibility": "Designed for young adults with developmental disabilities and delivered through supported workplace placements and classroom instruction.",
+      "programYear": "2026-2027",
+      "lastVerified": "2026-09-09",
+      "programSetting": [
+        "Hospital",
+        "YMCA"
+      ],
+      "programTopics": [
+        "Life Skills"
+      ],
+      "teenOpportunity": [
+        "Internship",
+        "Career Exploration"
+      ]
+    },
+    {
       "id": "reclODLiV5u4SnnGr",
       "name": "Abundance of Joy Learning Center",
       "track": "Family & Childcare",
@@ -483,7 +524,7 @@
       "ages": "Older adults, individuals with disabilities, and their caregivers",
       "hours": "Contact for current office hours",
       "availability": "Call and ask for 'Aging Answers' or service navigation to get started.",
-      "cost": "Free information, referral, and counseling services; some connected programs are income-based",
+      "cost": "Service coordination is free for all Connecticut residents; costs for other services vary.",
       "website": "https://www.aoascc.org/",
       "contact": "(203) 785-8533",
       "townsServed": [
@@ -510,13 +551,13 @@
       ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-08",
-      "notes": "The Agency on Aging of South Central Connecticut is the regional Area Agency on Aging serving Greater New Haven and the lower Naugatuck Valley. Information counselors help older adults and caregivers navigate state, federal, and community programs, including CHOICES Medicare counseling, caregiver respite and training, in-home assessment, and Connecticut Home Care Program for Elders case management. Its home-modification service helps older adults and people with disabilities identify safety changes such as grab bars, ramps, widened doorways, and stair glides and seek available public funding. Home-modification page: https://www.aoascc.org/Services/Support-to-Live-at-Home/Home-Modification-and-Repair-Services/",
+      "notes": "The Agency on Aging of South Central Connecticut serves Greater New Haven and the lower Naugatuck Valley. Information counselors help older adults and caregivers access state, federal, and community programs, including CHOICES Medicare counseling, caregiver respite and training, in-home assessment, Connecticut Home Care Program for Elders case management, and home-modification help. A Yale-supported service coordination program is free for all Connecticut residents and has served older adults, people with disabilities, and caregivers since 2022. Home-modification page: https://www.aoascc.org/Services/Support-to-Live-at-Home/Home-Modification-and-Repair-Services/. Service coordination source: https://medicine.yale.edu/news-article/service-navigation-program-helps-older-adults-age-in-place/",
       "servicesOffered": [
         "Caregiver Support",
         "Disability Support",
         "Elder Care"
       ],
-      "lastVerified": "2026-08-30"
+      "lastVerified": "2026-09-09"
     },
     {
       "id": "recvBfqW3mePW0YRh",
@@ -1807,16 +1848,18 @@
       "ages": "Preschool",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
+      "website": "https://tisdale.bridgeportedu.net/",
       "contact": "Lindsay Davis | (203) 275-1262",
       "townsServed": [
         "Bridgeport"
       ],
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
-      "notes": "FY26 state-funded spaces: 18 preschool. An allocation, not current openings. Licence/registry: DCEX.80528; Registry 1870. Local partner: Bridgeport LGP -- Camille Harris | charris@bridgeportedu.net | 203-275-1082. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
+      "notes": "FY26 state-funded spaces: 18 preschool. This is an allocation, not current openings. License/registry: DCEX.80528; Registry 1870. Local partner: Bridgeport LGP, Camille Harris, charris@bridgeportedu.net, 203-275-1082. Connecticut Office of Early Childhood Early Start CT FY26 map accessed August 25, 2026. The current Bridgeport Public Schools site confirms the Tisdale address and an Early Childhood section.",
       "servicesOffered": [
         "Preschool / Pre-K"
-      ]
+      ],
+      "lastVerified": "2026-09-09"
     },
     {
       "id": "rec8cF7cenFVvyClp",
@@ -3141,6 +3184,46 @@
       "animals": [
         "Dogs",
         "Cats"
+      ]
+    },
+    {
+      "id": "rec7WvRHzqekW76Tb",
+      "name": "Central TRiO Educational Talent Search",
+      "track": "Teens & High School",
+      "category": "College Access / Readiness",
+      "specificType": "College and career support for eligible New Britain middle and high school students",
+      "town": "New Britain",
+      "address": "1615 Stanley Street, New Britain, CT 06050",
+      "ages": "Middle and high school students in the Consolidated School District of New Britain who are first-generation, low-income, and/or have an alternative ability",
+      "cost": "Federally funded. Participant price is not stated on the program page.",
+      "website": "https://www.ccsu.edu/trio/trio-educational-talent-search-services",
+      "contact": "860-832-1907",
+      "townsServed": [
+        "New Britain"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-09-09",
+      "notes": "Services include study and writing skills, tutoring, mentoring, career and college exploration, academic counseling, college and financial-aid application help, fee assistance, entrance-exam preparation, and scholarship information.",
+      "registrationStatus": "Not Confirmed",
+      "servicesOffered": [
+        "College Access / Readiness",
+        "Literacy / Tutoring",
+        "Mentoring",
+        "Disability Support"
+      ],
+      "residency": "Residents Only",
+      "lastVerified": "2026-09-09",
+      "gradeRange": "Not Confirmed",
+      "programSetting": [
+        "College / University"
+      ],
+      "programTopics": [
+        "College Readiness",
+        "Mentoring"
+      ],
+      "teenOpportunity": [
+        "College Readiness",
+        "Career Exploration"
       ]
     },
     {
@@ -4941,6 +5024,45 @@
       ]
     },
     {
+      "id": "recbjA1Hu9x6t9wlE",
+      "name": "CT State Early College and Dual Enrollment",
+      "track": "Teens & High School",
+      "category": "College Access / Readiness",
+      "specificType": "College-credit options for Connecticut high school students through school and campus partnerships",
+      "town": "Hartford",
+      "address": "61 Woodland Street, Hartford, CT 06105",
+      "ages": "Connecticut high school students whose school has an eligible CT State partnership or who meet the requirements for a qualifying college course",
+      "cost": "Dual and concurrent routes can be tuition and fee-free. Books may be extra. A separate self-pay route also exists.",
+      "website": "https://ctstate.edu/component/content/article/early-college-and-dual-enrollment?Itemid=1228&catid=8",
+      "contact": "CTState-AdmissionsRecruitment@ct.edu",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-09-09",
+      "notes": "Students begin through a school counselor or CT State recruiting staff. Available courses and routes vary by high school partnership. Credits are recorded on the student's CT State transcript. Some routes require a digital application supplied by the school or CT State.",
+      "registrationStatus": "Registration Varies",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "College Access / Readiness",
+        "Literacy / Tutoring",
+        "Disability Support"
+      ],
+      "residency": "Statewide",
+      "accessibility": "Dual-enrolled students may contact the campus Office of Disability and Accessibility Services and submit its self-disclosure intake form for accommodations.",
+      "lastVerified": "2026-09-09",
+      "gradeRange": "Not Confirmed",
+      "programSetting": [
+        "College / University"
+      ],
+      "programTopics": [
+        "College Readiness"
+      ],
+      "teenOpportunity": [
+        "College Readiness"
+      ]
+    },
+    {
       "id": "recdk5Vxl39vY1LTF",
       "name": "Daddy Backwards Entertainment Summer Youth Program",
       "track": "Family & Childcare",
@@ -6232,6 +6354,51 @@
       "notes": "Official Fairfield Community Services page verified August 25, 2026."
     },
     {
+      "id": "recAF6wa0lBsAbMpz",
+      "name": "Fairfield University Upward Bound",
+      "track": "Teens & High School",
+      "category": "College Access / Readiness",
+      "specificType": "Free year-round college preparation for eligible Bridgeport high school students",
+      "town": "Fairfield",
+      "address": "1073 North Benson Road, Fairfield, CT 06824",
+      "ages": "Bridgeport students at Bassick, Central, Harding, or Fairchild Wheeler; applicants enter in grades 9 or 10 and must be low-income and potential first-generation college students",
+      "hours": "Academic instruction and enrichment two to three Saturdays per month from October through May, plus a six-week summer program and school-year tutoring.",
+      "cost": "No cost to students or families.",
+      "website": "https://www.fairfield.edu/about/offices-and-departments/student-diversity-and-multicultural-affairs/upward-bound/",
+      "contact": "203-254-4027",
+      "townsServed": [
+        "Bridgeport"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-09-09",
+      "notes": "Provides tutoring, academic instruction, standardized-test preparation, college visits, admissions and financial-aid help, career exploration, leadership development, and a summer residential component. Transportation is provided for most program activities but not tutoring.",
+      "registrationStatus": "Open",
+      "transportation": "Program Transportation Included",
+      "servicesOffered": [
+        "College Access / Readiness",
+        "Literacy / Tutoring",
+        "Mentoring",
+        "Youth Leadership",
+        "Transportation"
+      ],
+      "residency": "Residents Only",
+      "lastVerified": "2026-09-09",
+      "gradeRange": "9-12",
+      "programSetting": [
+        "College / University"
+      ],
+      "programTopics": [
+        "College Readiness",
+        "Leadership",
+        "Mentoring"
+      ],
+      "teenOpportunity": [
+        "College Readiness",
+        "Career Exploration",
+        "Leadership Program"
+      ]
+    },
+    {
       "id": "recw3ioVZjTl1NOZA",
       "name": "Fairfield YMCA Beach Club",
       "track": "Family & Childcare",
@@ -6955,6 +7122,41 @@
         "Skilled Nursing"
       ],
       "lastVerified": "2026-08-31"
+    },
+    {
+      "id": "recn4DEjmh7Ibhz2k",
+      "name": "Gengras Center",
+      "track": "Teens & High School",
+      "category": "Magnet / Specialty School",
+      "specificType": "State-approved private special education school with academic, vocational, transition, and life-skills programs",
+      "town": "West Hartford",
+      "address": "1678 Asylum Avenue, West Hartford, CT 06117",
+      "ages": "Students ages 5 to 21 with intellectual and developmental disabilities, autism, and related behavioral challenges",
+      "cost": "Not stated. Referrals are made by the local school district through the Planning and Placement Team process.",
+      "website": "https://www.usj.edu/about/laboratory-schools/gengras-center/",
+      "contact": "860-231-5616",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-09-09",
+      "notes": "The on-campus school provides structured academic instruction, community-living skills, work readiness, job training, social development, independent-living preparation, applied behavior analysis space, therapy space, and vocational classrooms.",
+      "registrationStatus": "Not Confirmed",
+      "servicesOffered": [
+        "Disability Support"
+      ],
+      "accessibility": "A highly structured, intensive, self-contained program for students with intellectual and developmental disabilities, autism, and related behavioral needs.",
+      "lastVerified": "2026-09-09",
+      "gradeRange": "K-12",
+      "programSetting": [
+        "Private School"
+      ],
+      "programTopics": [
+        "Life Skills"
+      ],
+      "teenOpportunity": [
+        "Career Exploration"
+      ],
+      "specializedSupport": [
+        "Behavioral Support"
+      ]
     },
     {
       "id": "recs9Vt6qy37JU1PV",
@@ -13904,6 +14106,48 @@
       ]
     },
     {
+      "id": "recG5ePjVn7kfhPtc",
+      "name": "Sacred Heart University Upward Bound",
+      "track": "Teens & High School",
+      "category": "College Access / Readiness",
+      "specificType": "Year-round college preparation for eligible Bridgeport students ages 13 to 19",
+      "town": "Fairfield",
+      "address": "3135 Easton Turnpike, Fairfield, CT 06825",
+      "ages": "Students ages 13 to 19 who are entering or attending high school, are low-income and/or first-generation, need academic support, and attend a target Bridgeport school or live in Bridgeport",
+      "hours": "Operates September through mid-August. School-year workshops meet twice monthly on Saturdays. The six-week summer program meets daily from 9:00 a.m. to 3:15 p.m.",
+      "cost": "Program price is not stated. Bus transportation is free and attendance-based stipends are offered.",
+      "website": "https://www.sacredheart.edu/offices--departments-directory/upward-bound/",
+      "contact": "espinala5@sacredheart.edu; 203-371-7866",
+      "townsServed": [
+        "Bridgeport"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-09-09",
+      "notes": "Target schools are Bassick, Central, Harding, and Fairchild Wheeler. Services include tutoring, college and career preparation, admissions-test workshops, financial-aid and scholarship information, parent workshops, college visits, and counseling.",
+      "registrationStatus": "Open",
+      "transportation": "Program Transportation Included",
+      "servicesOffered": [
+        "College Access / Readiness",
+        "Literacy / Tutoring",
+        "Parent / Family Support",
+        "Transportation"
+      ],
+      "meals": "Meals Only",
+      "residency": "Residents Only",
+      "lastVerified": "2026-09-09",
+      "gradeRange": "9-12",
+      "programSetting": [
+        "College / University"
+      ],
+      "programTopics": [
+        "College Readiness"
+      ],
+      "teenOpportunity": [
+        "College Readiness",
+        "Career Exploration"
+      ]
+    },
+    {
       "id": "recaCnyBI1ASgApXv",
       "name": "Safe Futures Protect Our Pets",
       "track": "Pet Care & Resources",
@@ -15089,22 +15333,25 @@
       "specificType": "State-funded Early Start CT provider (Child Care Center) -- 2 infant/toddler and 16 preschool funded spaces FY26",
       "town": "East Hartford",
       "address": "1184 Burnside Ave, East Hartford, CT, 06108",
-      "ages": "Infant/Toddler; Preschool",
+      "ages": "Children ages 6 weeks to 5 years",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
+      "website": "https://www.swaddlejoy.com/",
       "contact": "Fauy Ellis Gordon | (860) 938-8526",
       "townsServed": [
         "East Hartford"
       ],
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
-      "notes": "FY26 state-funded spaces: 2 infant/toddler and 16 preschool. An allocation, not current openings. Licence/registry: DCCC.70330; Registry 7782. Local partner: East Hartford LGP -- Thomas Anderson | anderson.t@easthartford.org | 860-622-5107. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
+      "notes": "FY26 state-funded spaces: 2 infant/toddler and 16 preschool. This is an allocation, not current openings. License/registry: DCCC.70330; Registry 7782. Local partner: East Hartford LGP, Thomas Anderson, anderson.t@easthartford.org, 860-622-5107. Connecticut Office of Early Childhood Early Start CT FY26 map accessed August 25, 2026. The provider site states it is enrolling children ages 6 weeks to 5 years and lists 860-206-0334. It publishes conflicting hours, Monday through Friday 6:30 a.m. to 5:30 p.m. in one section and nights/weekends 6:30 a.m. to 8:30 p.m. daily in another, so hours remain blank pending confirmation.",
+      "registrationStatus": "Open",
       "servicesOffered": [
         "Child Care",
         "Infant Care",
         "Preschool / Pre-K",
         "Toddler Care"
-      ]
+      ],
+      "lastVerified": "2026-09-09"
     },
     {
       "id": "recT1f7fL75L6ofLL",
@@ -16296,6 +16543,54 @@
       ]
     },
     {
+      "id": "recUmamXXVX69SbIR",
+      "name": "UConn ConnCAP",
+      "track": "Teens & High School",
+      "category": "College Access / Readiness",
+      "specificType": "Year-round college and career preparation for eligible students at seven Connecticut high schools",
+      "town": "Mansfield",
+      "ages": "Students in grades 9 to 12 who are first-generation and/or meet low-income guidelines and attend a listed target school",
+      "hours": "Year-round academic support and a multiweek on-campus summer experience.",
+      "cost": "Supported by the Connecticut Office of Higher Education and UConn. Participant price is not stated.",
+      "website": "https://caps.center.uconn.edu/programs/college-access-programs/conncap/",
+      "contact": "CAPSPreCollege@uconn.edu",
+      "townsServed": [
+        "Hartford",
+        "Naugatuck",
+        "Norwich",
+        "Stamford",
+        "Windham"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-09-09",
+      "notes": "Target schools are Bulkeley, Hartford Public, Naugatuck, Norwich Free Academy, Stamford, Weaver, and Windham. Services include tutoring, test preparation, college and business visits, STEM workshops, financial-aid advising, mentoring, leadership training, service activities, family workshops, and summer courses.",
+      "registrationStatus": "Not Confirmed",
+      "servicesOffered": [
+        "College Access / Readiness",
+        "Literacy / Tutoring",
+        "Mentoring",
+        "STEM Enrichment",
+        "Youth Leadership",
+        "Parent / Family Support"
+      ],
+      "lastVerified": "2026-09-09",
+      "gradeRange": "9-12",
+      "programSetting": [
+        "College / University"
+      ],
+      "programTopics": [
+        "College Readiness",
+        "Mentoring",
+        "STEM",
+        "Leadership"
+      ],
+      "teenOpportunity": [
+        "College Readiness",
+        "Career Exploration",
+        "Leadership Program"
+      ]
+    },
+    {
       "id": "recznuF6pGME3ONfW",
       "name": "UConn Explore Engineering",
       "track": "Family & Childcare",
@@ -16392,6 +16687,46 @@
       "programLength": "Overnight",
       "programYear": "Summer 2026",
       "lastVerified": "2026-08-25"
+    },
+    {
+      "id": "recPtBP0baQZEtQck",
+      "name": "UConn Upward Bound Math & Science",
+      "track": "Teens & High School",
+      "category": "College Access / Readiness",
+      "specificType": "Free STEM-focused college preparation for eligible students at three target high schools",
+      "town": "Mansfield",
+      "ages": "Connecticut students ages 13 to 19 in grades 9 to 12 who attend New London High School, Norwich Free Academy, or Rockville High School and meet income, first-generation, citizenship, academic-need, and STEM-interest requirements",
+      "hours": "Academic-year support plus a six-week on-campus summer experience.",
+      "cost": "No charge to participants.",
+      "website": "https://caps.center.uconn.edu/programs/college-access-programs/upwardbound-conncap/",
+      "contact": "CAPSPreCollege@uconn.edu",
+      "townsServed": [
+        "New London",
+        "Norwich",
+        "Vernon"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-09-09",
+      "notes": "Provides high-school success, college and career preparation, health and wellness, personal development, family engagement, foundational courses, college-admissions preparation, and personal enrichment.",
+      "registrationStatus": "Not Confirmed",
+      "servicesOffered": [
+        "College Access / Readiness",
+        "STEM Enrichment",
+        "Parent / Family Support"
+      ],
+      "lastVerified": "2026-09-09",
+      "gradeRange": "9-12",
+      "programSetting": [
+        "College / University"
+      ],
+      "programTopics": [
+        "College Readiness",
+        "STEM"
+      ],
+      "teenOpportunity": [
+        "College Readiness",
+        "Career Exploration"
+      ]
     },
     {
       "id": "recJ9jvcn68KF4u51",
@@ -17337,6 +17672,49 @@
       "teenOpportunity": [
         "Internship",
         "Certification Program",
+        "College Readiness",
+        "Career Exploration"
+      ]
+    },
+    {
+      "id": "recnbSRRy0xAIz8X8",
+      "name": "Wesleyan Upward Bound and Upward Bound Math-Science",
+      "track": "Teens & High School",
+      "category": "College Access / Readiness",
+      "specificType": "Free college preparation for eligible Meriden and Middletown high school students",
+      "town": "Middletown",
+      "address": "45 Wyllys Avenue, Middletown, CT 06459",
+      "ages": "Applicants in grades 9 to 11 who attend Maloney or Platt High Schools for Upward Bound, or Middletown High School for Upward Bound Math-Science, and meet low-income and/or first-generation criteria",
+      "hours": "One Saturday each month from 9:00 a.m. to noon, a six-week summer program usually held from mid-June through late July, and tutoring during the school week.",
+      "cost": "Free to participants.",
+      "website": "https://www.wesleyan.edu/ubms/Upward%20Bound1.html",
+      "contact": "zrhoden@wesleyan.edu; tfreeman@wesleyan.edu",
+      "townsServed": [
+        "Meriden",
+        "Middletown"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-09-09",
+      "notes": "The 2026-2027 Upward Bound application is posted. The shared program includes year-round counseling, mentoring, academic support, tutoring, financial literacy, college and career exposure, and a six-week summer program. Math-Science participants also receive STEM-focused activities.",
+      "registrationStatus": "Open",
+      "servicesOffered": [
+        "College Access / Readiness",
+        "Literacy / Tutoring",
+        "Mentoring",
+        "STEM Enrichment"
+      ],
+      "programYear": "2026-2027",
+      "lastVerified": "2026-09-09",
+      "gradeRange": "9-12",
+      "programSetting": [
+        "College / University"
+      ],
+      "programTopics": [
+        "College Readiness",
+        "Mentoring",
+        "STEM"
+      ],
+      "teenOpportunity": [
         "College Readiness",
         "Career Exploration"
       ]
