@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-09T10:20:49.749Z",
+  "generated": "2026-09-10T20:20:15.963Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 736,
+  "count": 737,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -192,6 +192,7 @@
     "West Hartford",
     "West Haven",
     "Westbrook",
+    "Westport",
     "Wethersfield",
     "Willimantic",
     "Wilton",
@@ -2287,6 +2288,50 @@
       "notes": "FY26 state-funded spaces: 54 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 1604. Local partner: Northeast Early Childhood Council (NECC) -- Kristine Cicchetti | mrscicch95@sbcglobal.net | 860-431-0830. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
         "Preschool / Pre-K"
+      ]
+    },
+    {
+      "id": "recZncOm29rkWWIhs",
+      "name": "Brooklyn Robot Foundry - Coastal CT",
+      "track": "Family & Childcare",
+      "category": "Afterschool Enrichment",
+      "specificType": "Fall 2026 robotics and coding enrichment at the Westport Makerspace. Six-class series; students build hands-on robot projects or participate in coding classes.",
+      "town": "Westport",
+      "address": "155 Post Rd. E, Suite 7 & 8, Westport, CT 06880",
+      "hours": "Monday Afterschool Robot Building Fun: Sept. 28, Oct. 5, 12, 19, 26, Nov. 2, 2026, 5:00-6:00 PM. Tuesday Afterschool Coding Fun: Sept. 29, Oct. 6, 13, 20, 27, Nov. 3, 2026, 5:00-6:00 PM.",
+      "cost": "$240 for 6 classes",
+      "website": "https://brooklynrobotfoundry.com/fairfieldcounty/product/after-school-classes/?location=9",
+      "contact": "203-350-9454; john@brooklynrobotfoundry.com",
+      "townsServed": [
+        "Westport"
+      ],
+      "submittedBy": "ChatGPT Web Research",
+      "dateSubmitted": "2026-09-10",
+      "notes": "Fall enrollment open. Hands-on robotics, engineering, and coding. Provider also offers school-holiday Foundry Fundays, summer programs, parties, school enrichment, Mini Makers, youth-group programs, and adult events. General provider information states need-based scholarships may be offered when available.",
+      "registrationStatus": "Open",
+      "financialAid": "Yes",
+      "schoolDayCoverage": "Partial Day",
+      "daysOffered": [
+        "Monday",
+        "Tuesday"
+      ],
+      "scheduleWindow": [
+        "After School",
+        "Evening"
+      ],
+      "programLength": "Under 2 Hours",
+      "startTime": "5:00 PM",
+      "endTime": "6:00 PM",
+      "refundPolicy": "Provider policy: cancellations at least 30 days before the start date receive a full refund. For after-school programs canceled less than 30 days before the start date, provider credit is available minus a $150 cancellation fee. No refund or credit after the program starts. Schedule changes 15+ days before start have no charge; 14 days or less before start incur a $125 alteration fee. Provider-canceled classes receive a full refund; weather/emergency cancellations may be rescheduled or moved online.",
+      "programYear": "Fall 2026",
+      "lastVerified": "2026-09-10",
+      "programSetting": [
+        "Makerspace"
+      ],
+      "programTopics": [
+        "STEM",
+        "Coding",
+        "Robotics"
       ]
     },
     {

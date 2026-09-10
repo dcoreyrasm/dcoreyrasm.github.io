@@ -13,17 +13,17 @@ between sessions: read them fresh from this section each time this brief is
 given to you, and if you are working from a remembered figure you are working
 from a gap that has already moved.
 
-736 listings across 129 Connecticut towns of 169.
+737 listings across 130 Connecticut towns of 169.
 
 That breadth is real. The depth behind it is the problem:
 
-  a website              323 / 736   44%   the single most valuable gap: without a URL nobody can ever re-check the listing
-  operating hours        169 / 736   23%   the specific promise on the front of the page
-  a real cost note       115 / 736   16%   excludes the state-fee boilerplate
-  a real waitlist note    59 / 736    8%   excludes the "contact the program directly" boilerplate
-  a verified date        262 / 736   36%   without one we cannot tell fresh from forgotten
-  a phone or email       686 / 736   93%
-  services tagged        682 / 736   93%   what makes a listing findable beyond its one category
+  a website              324 / 737   44%   the single most valuable gap: without a URL nobody can ever re-check the listing
+  operating hours        170 / 737   23%   the specific promise on the front of the page
+  a real cost note       116 / 737   16%   excludes the state-fee boilerplate
+  a real waitlist note    59 / 737    8%   excludes the "contact the program directly" boilerplate
+  a verified date        263 / 737   36%   without one we cannot tell fresh from forgotten
+  a phone or email       687 / 737   93%
+  services tagged        682 / 737   93%   what makes a listing findable beyond its one category
 
 A listing can carry a value and still say nothing. Two boilerplate lines were
 written onto hundreds of records by the original state import -- "Contact the
@@ -36,7 +36,7 @@ that sounds more specific than what you actually know.
 
 WEBSITE COVERAGE BY TRACK
 
-  Family & Childcare      543 listings, 130 with a website (24%)
+  Family & Childcare      544 listings, 131 with a website (24%)
   Teens & High School      81 listings,  81 with a website (100%)
   Pet Care & Resources     61 listings,  61 with a website (100%)
   Elder Care               51 listings,  51 with a website (100%)
