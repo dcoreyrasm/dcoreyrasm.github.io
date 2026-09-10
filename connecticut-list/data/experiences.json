@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-09T16:40:32.826Z",
-  "count": 364,
+  "generated": "2026-09-10T16:26:21.080Z",
+  "count": 372,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -313,6 +313,39 @@
       "slug": "2026-connecticut-landmarks-museum-passport-challenge"
     },
     {
+      "name": "2026 Connecticut Maritime Heritage Festival",
+      "town": "New London",
+      "region": "Mystic & Southeastern CT",
+      "experienceTypes": [
+        "Waterfront",
+        "Music & Events",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Festivals & Events",
+        "Only in Connecticut",
+        "Something Different"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A free waterfront weekend with military and private vessel tours, Coast Guard demonstrations, living history, music, children's activities, local vendors, and free transportation between the two main sites.",
+      "officialWebsite": "https://ctmaritimefest.com/",
+      "address": "Fort Trumbull State Park and Waterfront Park, New London, CT",
+      "tryThis": "Ride the free water taxi between festival sites, tour a vessel, and watch one of the maritime demonstrations.",
+      "notes": "The main festival is free and family-friendly. Some separate special programs are ticketed. Saturday evening includes the Burning of Benedict Arnold program and an approximately 8:30 PM drone show at Waterfront Park.",
+      "dateAdded": "2026-09-10",
+      "eventStart": "2026-09-12",
+      "eventEnd": "2026-09-13",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "2026-connecticut-maritime-heritage-festival"
+    },
+    {
       "name": "2026 Cromwell Riverport Festival & Fireworks",
       "town": "Cromwell",
       "region": "Central CT",
@@ -571,6 +604,34 @@
       "slug": "2026-trumbull-arts-festival"
     },
     {
+      "name": "9th Annual Mystic Film Festival",
+      "town": "Mystic",
+      "region": "Mystic & Southeastern CT",
+      "experienceTypes": [
+        "Theater & Movies",
+        "Music & Events"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Festivals & Events",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A four-day independent film festival with narrative films, documentaries, shorts, filmmaker Q&As, workshops, and community events across Mystic and nearby Westerly.",
+      "officialWebsite": "https://mysticfilmfestival.com/2026-festival/",
+      "tryThis": "Choose an independent film that is new to you and stay for a filmmaker Q&A or workshop.",
+      "notes": "Opening night is hosted at Mystic Luxury Cinemas in Olde Mistick Village and highlights local filmmakers. Check the official schedule for the venue assigned to each screening or program.",
+      "dateAdded": "2026-09-10",
+      "eventStart": "2026-09-24",
+      "eventEnd": "2026-09-27",
+      "slug": "9th-annual-mystic-film-festival"
+    },
+    {
       "name": "Air Line State Park Trail",
       "town": "Multi-Town, Eastern Connecticut",
       "categories": [
@@ -629,6 +690,37 @@
       "officialWebsite": "https://www.tortmuseum.org/visit/",
       "dateAdded": "2026-08-24",
       "slug": "american-museum-of-tort-law"
+    },
+    {
+      "name": "Angevine Farm Harvest Season Pumpkin Picking",
+      "town": "Warren",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A hilltop pick-your-own pumpkin farm with broad Warren Valley views, a Harvest Barn shop, flower gardens, cider, cider donuts, and pumpkins in many shapes and sizes.",
+      "officialWebsite": "https://angevinefarm.com/pumpkins/",
+      "address": "40 Angevine Road, Warren, CT 06754",
+      "tryThis": "Choose a pumpkin from the hilltop patch, stop for cider and a donut, and take in the Warren Valley views.",
+      "notes": "Pumpkins are listed at $0.70 per pound. Friendly leashed dogs are welcome in other farm areas but must stay outside the pumpkin patches. The official event listing has an inconsistent end date, so no season end date was recorded.",
+      "dateAdded": "2026-09-10",
+      "eventStart": "2026-09-26",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "angevine-farm-harvest-season-pumpkin-picking"
     },
     {
       "name": "Ansonia Nature Center Free Creature Feature & Guided Hike",
@@ -693,7 +785,10 @@
       "bestTime": "Specific event/date",
       "officialWebsite": "https://www.eventbrite.com/e/pop-up-hotspot-paint-event-paint-your-partner-like-picasso-tickets-1998226298650",
       "address": "Trumbull Marriott Shelton, 180 Hawley Lane, Trumbull, CT 06611",
+      "notes": "Tickets are listed at $45 per person with supplies included. The organizer requires each participant to purchase at least one drink from the restaurant. This event is tomorrow and should be rechecked after September 11 for expiration.",
       "dateAdded": "2026-08-22",
+      "eventStart": "2026-09-11",
+      "eventEnd": "2026-09-11",
       "slug": "art-plus-studio-paint-your-partner-like-picasso"
     },
     {
@@ -2280,6 +2375,37 @@
       "slug": "essex-steam-train-and-riverboat"
     },
     {
+      "name": "Fair Weather Growers Fall Festival & Corn Maze",
+      "town": "Rocky Hill",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Corn Maze",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Corn Mazes",
+        "Orchards & Farms",
+        "Festivals & Events"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A 16-acre fall farm outing with a giant corn maze, hayride, pumpkin patch, farm animals, pedal carts, a jump pillow, a scarecrow walk, and other activities.",
+      "officialWebsite": "https://fairweathergrowers.com/fall-festival/",
+      "address": "1146 Cromwell Ave, Rocky Hill, CT 06067",
+      "tryThis": "Complete the corn maze, take the hayride, and choose a pumpkin before you leave.",
+      "notes": "General admission is $30 for ages 3-65 and includes a pumpkin. Children 2 and under are free. Posted festival hours are 9 AM-6 PM on open dates. No pets are allowed except ADA service dogs.",
+      "dateAdded": "2026-09-10",
+      "eventStart": "2026-09-12",
+      "eventEnd": "2026-11-01",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "fair-weather-growers-fall-festival-and-corn-maze"
+    },
+    {
       "name": "Fairfield County Makers' Guild Workshop Experience",
       "town": "Norwalk",
       "audiences": [
@@ -2785,6 +2911,69 @@
       "slug": "hartford-healthcare-amphitheater"
     },
     {
+      "name": "Hartford.com Salsa Social",
+      "town": "Hartford",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Date Night",
+        "Music & Events"
+      ],
+      "categories": [
+        "Date Night",
+        "Festivals & Events",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Group Activities",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A free downtown salsa social where professional instructors, experienced dancers, beginners, families, and spectators all take part together on Pratt Street.",
+      "officialWebsite": "https://hartford.com/calendar/sep-salsa-social/",
+      "address": "Pratt Street Historic District, Pratt Street, Hartford, CT 06103",
+      "tryThis": "Take part in the lesson, dance one full song, and take a short walk along Pratt Street afterward.",
+      "notes": "The organizer describes this as a participatory event for dancers, beginners, children, grandparents, professional instructors, and spectators.",
+      "dateAdded": "2026-09-10",
+      "eventStart": "2026-09-18",
+      "eventEnd": "2026-09-18",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "hartford-com-salsa-social"
+    },
+    {
+      "name": "Harvest Glow 2026",
+      "town": "Hartford",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Festivals & Events",
+        "Corn Mazes",
+        "Something Different"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "An indoor fall event with glowing pumpkin displays, a corn maze, mini putt, a free train ride, photo spots, treats, and a pumpkin patch at the Connecticut Convention Center.",
+      "officialWebsite": "https://hartford.glowgardens.com/",
+      "address": "100 Columbus Blvd, Hartford, CT 06103",
+      "tryThis": "Find the hidden bees in the corn maze, ride the train, and choose a pumpkin.",
+      "notes": "Adult tickets are $12 plus a $2 service fee. Children ages 4-12 are $10 plus a $2 service fee, and children 3 and under are free. On-site tickets are limited, so advance online tickets are recommended by the organizer.",
+      "dateAdded": "2026-09-10",
+      "eventStart": "2026-09-12",
+      "eventEnd": "2026-10-11",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "harvest-glow-2026"
+    },
+    {
       "name": "Hawk Ridge Winery",
       "town": "Watertown",
       "audiences": [
@@ -3162,6 +3351,8 @@
       "officialWebsite": "https://www.jonesfamilyfarms.com/seasons/pumpkins",
       "notes": "2026 pumpkin season runs September 19-October 31 at Pumpkinseed Hill. Jones advises checking the crop report because hours can change with weather and picking conditions. Christmas-tree season begins the weekend before Thanksgiving and runs daily except Thanksgiving Day.",
       "dateAdded": "2026-08-17",
+      "eventStart": "2026-09-19",
+      "eventEnd": "2026-10-31",
       "slug": "jones-family-farms"
     },
     {
@@ -4192,6 +4383,42 @@
       "slug": "osborne-homestead-museum"
     },
     {
+      "name": "Oysters, Steel, and Stories",
+      "town": "Clinton",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Only in Connecticut",
+        "Food & Treats",
+        "Museum & Culture"
+      ],
+      "categories": [
+        "Only in Connecticut",
+        "Festivals & Events",
+        "Museums & Culture",
+        "Food & Treats",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A shoreline history afternoon combining local oysters, blacksmith demonstrations, maritime crafts, traditional music, museum tours, and the Clinton Historical Society gardens.",
+      "officialWebsite": "https://clintoncthistory.org/events/garden-partyoyster-eventblacksmith-event",
+      "address": "103 East Main Street, Clinton, CT 06413",
+      "tryThis": "Taste Connecticut oysters, watch an oyster knife being forged, and tour one of the historical society museums.",
+      "notes": "Tickets are $18 per person and include admission plus a choice of four oysters, grilled or raw. Children under 12 are free. Guests may bring chairs. Additional oysters and food are available for purchase.",
+      "dateAdded": "2026-09-10",
+      "eventStart": "2026-09-19",
+      "eventEnd": "2026-09-19",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "oysters-steel-and-stories"
+    },
+    {
       "name": "Pachaug State Forest: Mount Misery & Rhododendron Sanctuary",
       "town": "Voluntown",
       "region": "Quiet Corner & Northeastern CT",
@@ -4803,6 +5030,8 @@
       "officialWebsite": "https://www.shubert.com/events/detail/paint-and-sip",
       "address": "247 College Street, New Haven, CT 06510",
       "dateAdded": "2026-08-22",
+      "eventStart": "2026-09-12",
+      "eventEnd": "2026-09-12",
       "slug": "shubert-theatre-paint-and-sip"
     },
     {
@@ -5917,6 +6146,36 @@
       "notes": "Current fall listings include a free adult walk on September 17 and Under the Harvest Moon on September 26. Event registration and pricing vary.",
       "dateAdded": "2026-08-26",
       "slug": "woodcock-nature-center-free-trail-and-raptor-visit"
+    },
+    {
+      "name": "Woodstock Orchards Pick-Your-Own Apples & Cider Donuts",
+      "town": "Woodstock",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Food & Treats",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A family-run orchard with seasonal pick-your-own apples, a farm store, fresh cider, and a bakery known for made-to-order apple cider donuts.",
+      "officialWebsite": "https://www.woodstockorchardsllc.com/harvest",
+      "address": "494 CT-169, Woodstock, CT 06281",
+      "tryThis": "Pick a bag of apples, watch the cider-donut machine at work, and choose one farm-store item to take home.",
+      "notes": "Pick-your-own apple varieties listed by the farm include McIntosh, Cortland, Empire, Macoun, Jonagold, Red Delicious, Ida Red, Fuji, Cameo, and Russett. Apple cider is also in season, and the bakery makes apple cider donuts.",
+      "dateAdded": "2026-09-10",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "woodstock-orchards-pick-your-own-apples-and-cider-donuts"
     },
     {
       "name": "Wooster Square Farmers' Market",
