@@ -272,3 +272,52 @@ section.cf-about-section { background: var(--bg2); padding: 5rem 0; margin-top: 
   .cf-stats { gap: 1.75rem; }
   .cf-card { padding: 1.25rem 1.1rem; }
 }
+
+/* ---- Weekly newsletter signup ------------------------------------------- */
+/* Sits between the listing and "Why This Exists". Everything here resolves to
+   a token /styles.css already defines, so it follows the site into light mode
+   with nothing to keep in sync. The copy column is capped at the same 68ch the
+   rest of the page's prose uses, and the MailerLite embed is capped with it so
+   a form built at some other width in the form builder cannot push the page
+   sideways on a phone. */
+.cf-newsletter { background: var(--bg); border-top: 1px solid var(--line); padding: 4.5rem 0; }
+/* The header is fixed, so an anchor jump from the nav, the hero, or the footer
+   would otherwise park the heading underneath it. */
+#community-newsletter { scroll-margin-top: calc(var(--header-h) + 1rem); }
+.cf-newsletter-inner { max-width: 68ch; }
+.cf-newsletter-lede { font-size: 1rem; color: var(--muted); line-height: 1.8; }
+.cf-newsletter-listlead { font-size: .95rem; color: var(--cream); line-height: 1.7; margin-top: 1.5rem; }
+.cf-newsletter-list { list-style: none; margin: .85rem 0 0; padding: 0; }
+.cf-newsletter-list li { position: relative; font-size: .92rem; color: var(--muted); line-height: 1.7; padding-left: 1.15rem; margin-bottom: .45rem; }
+.cf-newsletter-list li::before { content: ''; position: absolute; left: 0; top: .65em; width: 5px; height: 5px; border-radius: 50%; background: var(--coral); }
+
+/* The form's own look lives in the MailerLite form builder. This only holds it
+   to the text column and stops any fixed width inside it from spilling out. */
+.cf-newsletter-form { max-width: 34rem; margin-top: 2rem; }
+.cf-newsletter-form .ml-embedded { width: 100%; margin: 0; }
+.cf-newsletter-form .ml-embedded * { max-width: 100% !important; }
+.cf-newsletter-form .ml-embedded iframe { width: 100% !important; }
+.cf-newsletter-fallback { font-size: .85rem; color: var(--muted); line-height: 1.7; margin-top: 1rem; }
+
+.cf-newsletter-fine { font-size: .82rem; color: var(--muted); line-height: 1.7; margin-top: 1.5rem; }
+.cf-newsletter-cross { font-size: .88rem; color: var(--cream); line-height: 1.7; margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+
+.cf-newsletter a { color: var(--coral); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.cf-newsletter a:hover { color: var(--cream); }
+
+/* The one-line pointer in the hero band. Small enough to stay under the lede
+   rather than compete with the heading, and light enough on the purple band to
+   clear AA at this size. */
+.cf-newsletter-herolink { font-size: .9rem; line-height: 1.7; color: rgba(255,255,255,.78); margin: -1.25rem 0 2rem; max-width: 680px; }
+.cf-newsletter-herolink a { color: var(--coral); text-decoration: underline; text-underline-offset: 3px; }
+.cf-newsletter-herolink a:hover { color: #fff; }
+
+/* The site sets a focus ring globally; restated here so it stays visible on
+   both the dark band and the section background. */
+.cf-newsletter a:focus-visible,
+.cf-newsletter-herolink a:focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
+
+@media (max-width: 560px) {
+  .cf-newsletter { padding: 3.25rem 0; }
+  .cf-newsletter-form { max-width: 100%; }
+}
