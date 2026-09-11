@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-10T16:26:21.080Z",
-  "count": 372,
+  "generated": "2026-09-11T16:30:51.221Z",
+  "count": 375,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -59,7 +59,6 @@
     "Greenwich",
     "Groton",
     "Guilford",
-    "Hadlyme",
     "Hamden",
     "Hampton",
     "Hartford",
@@ -127,6 +126,7 @@
     "Southington",
     "Stamford",
     "Statewide Connecticut Delivery",
+    "Sterling",
     "Stonington",
     "Stony Creek",
     "Storrs",
@@ -463,6 +463,7 @@
         "Date Night"
       ],
       "officialWebsite": "https://www.seaport.org/norwalk-oyster-festival",
+      "notes": "The official page lists general admission at $20 for adults and $15 for children ages 5-12, with children under 5 free. Sunday children are free with a paid adult ticket. Admission includes entertainment, off-site parking and shuttle buses.",
       "dateAdded": "2026-08-19",
       "eventStart": "2026-09-11",
       "eventEnd": "2026-09-13",
@@ -659,6 +660,36 @@
       "slug": "air-line-state-park-trail"
     },
     {
+      "name": "Aldrich Artists at the Table",
+      "town": "Ridgefield",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Food & Treats",
+        "Date Night",
+        "Something Different"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Food & Treats",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Group Activities"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A farm-to-museum dinner in The Aldrich's Sculpture Garden that pairs a locally sourced meal with conversation alongside exhibiting Connecticut artists. The evening also includes a cocktail hour, oyster bar, silent auction, and art in the garden.",
+      "officialWebsite": "https://thealdrich.org/events/aldrich-artists-at-the-table-2",
+      "address": "258 Main Street, Ridgefield, CT 06877",
+      "tryThis": "Choose one Connecticut artist you meet or see during dinner and look up another work by that artist afterward.",
+      "notes": "This is a higher-cost special event. The official event page describes an outdoor dinner in the Sculpture Garden with cocktails, an oyster bar, silent auction and locally sourced dinner.",
+      "dateAdded": "2026-09-11",
+      "eventStart": "2026-09-26",
+      "slug": "aldrich-artists-at-the-table"
+    },
+    {
       "name": "Ambler Farm",
       "town": "Wilton",
       "region": "Fairfield County",
@@ -785,7 +816,7 @@
       "bestTime": "Specific event/date",
       "officialWebsite": "https://www.eventbrite.com/e/pop-up-hotspot-paint-event-paint-your-partner-like-picasso-tickets-1998226298650",
       "address": "Trumbull Marriott Shelton, 180 Hawley Lane, Trumbull, CT 06611",
-      "notes": "Tickets are listed at $45 per person with supplies included. The organizer requires each participant to purchase at least one drink from the restaurant. This event is tomorrow and should be rechecked after September 11 for expiration.",
+      "notes": "Tickets are listed at $45 per person with supplies included. The organizer requires each participant to purchase at least one drink from the restaurant. This is a single-day event and should be moved out of current recommendations after September 11 unless a new date is announced.",
       "dateAdded": "2026-08-22",
       "eventStart": "2026-09-11",
       "eventEnd": "2026-09-11",
@@ -1155,7 +1186,7 @@
       "whyGo": "A major Guilford fall farm stop with current pick-your-own fruit and flowers, pumpkins, a corn maze, seasonal food and a daily Fall Festival.",
       "officialWebsite": "https://www.bishopsorchards.com/pick-your-own",
       "address": "1355 Boston Post Road, Guilford, CT 06437",
-      "notes": "2026 Fall Festival runs September 5-November 1, daily 10 AM-5 PM. Apples, pears, peaches, flowers and raspberries are currently in season; pumpkins begin mid-September. Bishop's advises calling 203-458-PICK for same-day crop availability, hours and location details.",
+      "notes": "Fall Festival and pick-your-own are open daily through November 1. Wagon rides, the mega slide and apple train operate on weekends and holidays. Crop availability changes, so use Bishop's same-day pick-your-own information before leaving.",
       "dateAdded": "2026-08-17",
       "slug": "bishops-orchards-farm-market-and-winery"
     },
@@ -1521,51 +1552,6 @@
       ],
       "officialWebsite": "https://chestersundaymarket.jimdofree.com/about-1/",
       "slug": "chester-farmers-market"
-    },
-    {
-      "name": "Chester Ferry + Gillette Castle + Chester Village",
-      "town": "Chester / East Haddam",
-      "region": "Connecticut Shoreline",
-      "audiences": [
-        "Date Night"
-      ],
-      "bestTime": "Fall",
-      "officialWebsite": "https://portal.ct.gov/dot/travel-gateway/public-transportation/ct-ferries/chester-hadlyme-ferry",
-      "address": "Chester and East Haddam, CT",
-      "dateAdded": "2026-08-21",
-      "towns": [
-        "Chester",
-        "East Haddam"
-      ],
-      "slug": "chester-ferry-gillette-castle-chester-village"
-    },
-    {
-      "name": "Chester-Hadlyme Ferry",
-      "town": "Chester / Hadlyme",
-      "region": "Connecticut Shoreline",
-      "categories": [
-        "Scenic Views",
-        "Free / Low-Cost",
-        "Date Night",
-        "Only in Connecticut",
-        "Something Different"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Date Night",
-        "Family",
-        "Individual Exploration"
-      ],
-      "bestTime": "Fall",
-      "officialWebsite": "https://portal.ct.gov/dot/travel-gateway/public-transportation/ct-ferries/chester-hadlyme-ferry",
-      "address": "Ferry Rd, Chester, CT 06412",
-      "notes": "Seasonal and subject to weather, water level, and mechanical closures. Check CTroads before making a special trip.",
-      "dateAdded": "2026-08-21",
-      "towns": [
-        "Chester",
-        "Hadlyme"
-      ],
-      "slug": "chester-hadlyme-ferry"
     },
     {
       "name": "Clark Farms at Bushy Hill 2026 Apple Picking & Farm Stop",
@@ -3877,6 +3863,40 @@
       "slug": "mianus-river-and-natural-park-river-trail"
     },
     {
+      "name": "Milford Lobster Roll and Music Festival 2026",
+      "town": "Milford",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Food & Treats",
+        "Music & Events",
+        "Waterfront",
+        "Fall & Seasonal",
+        "Only in Connecticut",
+        "Date Night"
+      ],
+      "categories": [
+        "Food & Treats",
+        "Festivals & Events",
+        "Beaches & Shoreline",
+        "Only in Connecticut",
+        "Date Night"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night",
+        "Family"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A shoreline festival at Walnut Beach celebrating Milford's history as the birthplace of the hot buttered lobster roll. The day includes lobster rolls, live music, local craft beverages, family activities, artists, vendors, and live glassblowing.",
+      "officialWebsite": "https://milfordct.com/1st-annual-lobster-roll-festival/",
+      "address": "Walnut Beach, Milford, CT",
+      "tryThis": "Try a hot buttered lobster roll, watch one live music set, and stop by a local artist or maker booth.",
+      "notes": "The official page confirms live music, Connecticut hot buttered lobster rolls, craft beer and wine, family activities, local artists and makers, and live glassblowing. General admission pricing was not stated in the source checked.",
+      "dateAdded": "2026-09-11",
+      "eventStart": "2026-09-20",
+      "slug": "milford-lobster-roll-and-music-festival-2026"
+    },
+    {
       "name": "Mill River Park $2 Carousel + Downtown Stamford Walk",
       "town": "Stamford",
       "audiences": [
@@ -4140,6 +4160,36 @@
       "officialWebsite": "https://www.nbmaa.org/visit",
       "dateAdded": "2026-08-17",
       "slug": "new-britain-museum-of-american-art-walnut-hill-park"
+    },
+    {
+      "name": "New Canaan Music Festival 2026",
+      "town": "New Canaan",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Music & Events",
+        "Food & Treats",
+        "Fall & Seasonal",
+        "Date Night"
+      ],
+      "categories": [
+        "Festivals & Events",
+        "Food & Treats",
+        "Date Night"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night",
+        "Family"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A full day of live music on two outdoor stages at the New Canaan Nature Center, with local food, artisan vendors, and children's activities. The festival invites visitors to bring a blanket and spend the day outdoors with friends and family.",
+      "officialWebsite": "https://www.newcanaanmusicfestival.com/",
+      "address": "144 Oenoke Ridge, New Canaan, CT",
+      "tryThis": "Bring a blanket, hear at least one artist you have not heard before, and try something from a local food vendor.",
+      "notes": "The official site lists live music, local food, artisan vendors and children's activities. Ticket pricing for adults was not stated in the source checked, so no adult price was recorded.",
+      "dateAdded": "2026-09-11",
+      "eventStart": "2026-09-19",
+      "slug": "new-canaan-music-festival-2026"
     },
     {
       "name": "New Canaan Nature Center",
@@ -4554,6 +4604,41 @@
       "notes": "Open daily 10 a.m.-5 p.m. Regular adult admission is $5 and includes a $2 same-day merchandise credit and souvenir lanyard.",
       "dateAdded": "2026-08-21",
       "slug": "pez-visitor-center"
+    },
+    {
+      "name": "Pilobolus Day 2026",
+      "town": "Washington",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Theater & Movies",
+        "Music & Events",
+        "Date Night",
+        "Something Different"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Festivals & Events",
+        "Date Night",
+        "Something Different",
+        "Free / Low-Cost"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night",
+        "Family"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "An all-ages afternoon of Pilobolus dance, lawn games, and optional movement workshops in Washington. The official event page confirms a live performance and three workshop choices, with $15 adult tickets and free admission for guests under 18.",
+      "officialWebsite": "https://pilobolus.org/tour-dates/2026/9/13/pilobolus-day-2026",
+      "address": "81 Sabbaday Lane, Washington, CT 06794",
+      "tryThis": "Watch the matinee, then try one of the movement workshops together if space is available.",
+      "notes": "Rain or shine. Workshop participation is included but depends on available space.",
+      "dateAdded": "2026-09-11",
+      "eventStart": "2026-09-13",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "pilobolus-day-2026"
     },
     {
       "name": "Pinot's Palette Stamford Date Night Painting",
@@ -5220,6 +5305,35 @@
       "notes": "A strong foliage-season option, but worthwhile year-round. The preserve also has old-growth hemlocks and summit views.",
       "dateAdded": "2026-08-24",
       "slug": "steep-rock-preserve-railroad-tunnel-and-river-walk"
+    },
+    {
+      "name": "Sterling Flower Farm Pick-Your-Own Flowers",
+      "town": "Sterling",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Fall & Seasonal",
+        "Date Night",
+        "Something Different"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Date Night",
+        "Something Different",
+        "Free / Low-Cost"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A small-farm flower-picking experience with sunflowers and other seasonal blooms. Visitors can fill a cup or bucket, borrow snips, and wrap their flowers before leaving. The farm expects pick-your-own flowers to continue into early October.",
+      "officialWebsite": "https://www.sterlingflowerfarm.com/book-online",
+      "address": "1080 Plainfield Pike, Sterling, CT 06377",
+      "tryThis": "Pick a shared bucket of flowers and each choose a few stems for one small arrangement to take home.",
+      "notes": "The farm's current event page and booking page show different daily hour blocks, so exact hours were not recorded. Check the live booking page before leaving. The booking page says walk-ins are currently welcome and the event page reports sunflowers and other flowers in bloom.",
+      "dateAdded": "2026-09-11",
+      "slug": "sterling-flower-farm-pick-your-own-flowers"
     },
     {
       "name": "Stonington Lighthouse Museum Tower + Borough Walk",
