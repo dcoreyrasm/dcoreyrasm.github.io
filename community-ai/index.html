@@ -32,6 +32,15 @@
   <link rel="stylesheet" href="/community-ai/community-ai.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
   <!-- Microsoft Clarity -->
   <script type="text/javascript">if(!window.__daOptOut){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xdrtc0i2un");}</script>
+  <!-- MailerLite Universal -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2474527');
+  </script>
+  <!-- End MailerLite Universal -->
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -49,7 +58,7 @@
       <li><a href="/mentorship.html">Mentorship</a></li>
       <li><a href="/blog.html">Blog</a></li>
       <li><a href="/contact.html">Contact</a></li>
-      <li><a href="/newsletter.html" class="nav-cta">Newsletter</a></li>
+      <li><a href="#community-newsletter" class="nav-cta">Newsletter</a></li>
     </ul>
   </nav>
 
@@ -60,6 +69,7 @@
         <p class="section-label" style="color:var(--coral);">Community AI Directory</p>
         <h1 class="section-heading" style="color:#fff;">AI Support &amp; Opportunities for Communities</h1>
         <p class="cf-hero-lede">Funding, training, tools, and technical help for the people who usually get left out of the AI conversation &mdash; community leaders, informal groups without nonprofit status, fiscally sponsored projects, small nonprofits, libraries, schools, and Connecticut organizations.</p>
+        <p class="cf-newsletter-herolink">Get new and updated opportunities every Sunday. <a href="#community-newsletter">Sign up for Darice's Community AI</a>.</p>
         <div class="cf-hero-meta">
           <span id="cf-count-badge" class="cf-badge-pill">Loading opportunities&hellip;</span>
           <span id="cf-updated" class="cf-updated"></span>
@@ -151,6 +161,36 @@
       </div>
     </div>
 
+    <!-- Sign-up for the weekly email that follows this directory. Placed right
+         after the listing, where someone who has just read the entries is most
+         likely to want the next batch delivered. -->
+    <section class="cf-newsletter" id="community-newsletter" aria-labelledby="cf-newsletter-heading">
+      <div class="cf-wrap">
+        <div class="cf-newsletter-inner">
+          <p class="section-label">Weekly Newsletter</p>
+          <h2 class="section-heading" id="cf-newsletter-heading">Get new opportunities in your inbox every Sunday</h2>
+          <p class="cf-newsletter-lede">Darice's Community AI is a free weekly email that rounds up what's new or updated in this directory. Each issue lists new funding, training, tools, and help, with a short description, the official link, and the deadline. It also flags anything I've rechecked. The email is the short version. The full details stay here.</p>
+          <p class="cf-newsletter-listlead">Each Sunday you'll get:</p>
+          <ul class="cf-newsletter-list">
+            <li>New entries added to the directory</li>
+            <li>Upcoming deadlines, listed by date</li>
+            <li>Entries I've rechecked when something important changed</li>
+          </ul>
+
+          <!-- MailerLite embedded form. The form's look is controlled in the
+               MailerLite form builder, so this renders empty until the design
+               is finished there. The link below is the way in either way. -->
+          <div class="cf-newsletter-form">
+            <div class="ml-embedded" data-form="VuRtv7"></div>
+            <p class="cf-newsletter-fallback">Form not showing? <a href="https://preview.mailerlite.io/forms/2474527/198311500140512479/share">Sign up here</a>.</p>
+          </div>
+
+          <p class="cf-newsletter-fine">Free. Weekly on Sundays. You'll get a confirmation email first, and you can unsubscribe anytime.</p>
+          <p class="cf-newsletter-cross">Looking for practical tips on using AI in everyday life? That's my other newsletter, <a href="/newsletter.html">Darice on AI</a>.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="cf-about-section" aria-labelledby="cf-about-heading">
       <div class="cf-wrap">
         <p class="section-label">Why This Exists</p>
@@ -211,7 +251,8 @@
         <h2 id="foot-elsewhere">Elsewhere</h2>
         <ul>
           <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
-          <li><a href="/newsletter.html">Newsletter</a></li>
+          <li><a href="/newsletter.html">Darice on AI newsletter</a></li>
+          <li><a href="#community-newsletter">Community AI newsletter</a></li>
           <li><a href="/contact.html">Contact</a></li>
           <li><a href="/privacy.html">Privacy</a></li>
         </ul>
