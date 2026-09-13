@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-09-13",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "doc_stack",
+      "label": "Add the Claude Widget to Your Phone"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "doc_stack",
+      "label": "Pull Up ChatGPT With Alt+Space"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "doc_stack",
+      "label": "Press the Copilot Key (or Win+C)"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "doc_stack",
+      "label": "Make Gemini Your Phone\u2019s Default Assistant"
+    }
+  ]
+}
