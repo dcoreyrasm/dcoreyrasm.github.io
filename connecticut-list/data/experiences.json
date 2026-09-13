@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-11T16:30:51.221Z",
+  "generated": "2026-09-13T16:19:56.164Z",
   "count": 375,
   "regions": [
     "Central CT",
@@ -134,6 +134,7 @@
     "Terryville",
     "Thomaston",
     "Thompson",
+    "Torrington",
     "Trumbull",
     "Uncasville",
     "Union",
@@ -501,39 +502,6 @@
       "slug": "2026-riverton-fair"
     },
     {
-      "name": "2026 Second Company Governor's Horse Guard Fall Festival",
-      "town": "Newtown",
-      "region": "Fairfield County",
-      "experienceTypes": [
-        "Fall & Seasonal",
-        "Music & Events",
-        "Museum & Culture",
-        "Only in Connecticut"
-      ],
-      "categories": [
-        "Festivals & Events",
-        "Museums & Culture",
-        "Free / Low-Cost",
-        "Only in Connecticut"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Family"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A free community day with the Second Company Governor's Horse Guard featuring horse shows, pony rides, cavalry history displays, activities, vendors and food trucks at the unit's Newtown grounds.",
-      "officialWebsite": "https://ctvisit.com/events/2ghg-fall-festival",
-      "address": "4 Wildlife Drive, Newtown, CT 06470",
-      "tryThis": "Watch one horse demonstration and learn one piece of Connecticut cavalry history from a display or trooper.",
-      "notes": "Rain-or-shine event. The state tourism listing describes live horse shows, pony rides, cavalry history displays, face painting, games, local vendors, food trucks and pet-adoption opportunities. Free admission; donations welcome.",
-      "dateAdded": "2026-09-07",
-      "eventStart": "2026-09-12",
-      "ages": [
-        "All ages"
-      ],
-      "slug": "2026-second-company-governors-horse-guard-fall-festival"
-    },
-    {
       "name": "2026 Sky's the Limit Hiking & Walking Challenge",
       "town": "Statewide",
       "audiences": [
@@ -807,22 +775,6 @@
       "slug": "aquilas-nest-vineyards"
     },
     {
-      "name": "Art Plus Studio Paint Your Partner Like Picasso",
-      "town": "Trumbull",
-      "region": "Fairfield County",
-      "audiences": [
-        "Date Night"
-      ],
-      "bestTime": "Specific event/date",
-      "officialWebsite": "https://www.eventbrite.com/e/pop-up-hotspot-paint-event-paint-your-partner-like-picasso-tickets-1998226298650",
-      "address": "Trumbull Marriott Shelton, 180 Hawley Lane, Trumbull, CT 06611",
-      "notes": "Tickets are listed at $45 per person with supplies included. The organizer requires each participant to purchase at least one drink from the restaurant. This is a single-day event and should be moved out of current recommendations after September 11 unless a new date is announced.",
-      "dateAdded": "2026-08-22",
-      "eventStart": "2026-09-11",
-      "eventEnd": "2026-09-11",
-      "slug": "art-plus-studio-paint-your-partner-like-picasso"
-    },
-    {
       "name": "Art Studio of Connecticut Duo Date Night",
       "town": "Berlin",
       "region": "Central CT",
@@ -1069,7 +1021,7 @@
       "bestTime": "Fall",
       "whyGo": "A Shelton orchard centered on apple picking and fresh-pressed cider, with a strong mid-September through October harvest window.",
       "officialWebsite": "https://beardsleyscidermill.com/",
-      "notes": "The orchard says mid-September and early October are usually excellent for apple picking. Pick-your-own timing varies by variety and weather, so check current conditions before visiting.",
+      "notes": "Pick-your-own is cash only and currently priced at $25 for the orchard's 10-pound bag. Apple availability changes with ripening and weather, so check the farm's current update or phone message before visiting. No pets are allowed in the orchard except service dogs.",
       "dateAdded": "2026-08-17",
       "slug": "beardsleys-cider-mill-and-orchard"
     },
@@ -2754,6 +2706,41 @@
       "slug": "gillette-castle-state-park"
     },
     {
+      "name": "GLOW Wild 2026 at Connecticut's Beardsley Zoo",
+      "town": "Bridgeport",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Fall & Seasonal",
+        "Date Night",
+        "Something Different"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Festivals & Events",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night",
+        "Family"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Walk through the zoo after dark among more than 40 illuminated wildlife displays and hundreds of new handcrafted lanterns. The zoo specifically describes this as a good fit for families, date nights, and evenings with friends or coworkers.",
+      "officialWebsite": "https://beardsleyzoo.org/glow-wild/",
+      "address": "1875 Noble Avenue, Bridgeport, CT 06610",
+      "tryThis": "Pick a favorite lantern scene and take one nighttime photo near the display you would most like to see again.",
+      "notes": "Official 2026 pricing: adults age 12+ $25 online/$27 at the gate; children age 11 and under $23 online/$25 at the gate; adults 65+ $15 online/$17 at the gate; children age 2 and under free. Timed-entry tickets are sold online.",
+      "dateAdded": "2026-09-13",
+      "eventStart": "2026-10-01",
+      "eventEnd": "2026-12-20",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "glow-wild-2026-at-connecticuts-beardsley-zoo"
+    },
+    {
       "name": "Gold Rush Farms Guided Trail Ride",
       "town": "Easton",
       "audiences": [
@@ -3097,6 +3084,32 @@
       "slug": "hollister-house-garden"
     },
     {
+      "name": "Hollister House Garden Watercolor Workshop: The Late Summer Palette",
+      "town": "Washington",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Fall & Seasonal",
+        "Something Different"
+      ],
+      "categories": [
+        "Gardens & Arboretums",
+        "Something Different"
+      ],
+      "audiences": [
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Spend a full day working with watercolor in Hollister House Garden. The workshop uses the late-summer garden to study color relationships, mixing, transparent washes, and a botanical color wheel, and it is open to all experience levels.",
+      "officialWebsite": "https://hollisterhousegarden.org/event/watercolor-workshop-the-late-summer-palette/",
+      "address": "300 Nettleton Hollow Road, Washington, CT",
+      "tryThis": "Create one small color study based on a section of the garden that catches your attention.",
+      "notes": "Members $90; non-members $120. Bring a bag lunch. Water and snacks are provided. The workshop combines outdoor garden observation with studio work in the barn.",
+      "dateAdded": "2026-09-13",
+      "eventStart": "2026-09-18",
+      "slug": "hollister-house-garden-watercolor-workshop-the-late-summer-palette"
+    },
+    {
       "name": "Holmberg Orchards Fall Pick-Your-Own & Corn Maze",
       "town": "Gales Ferry",
       "region": "Mystic & Southeastern CT",
@@ -3204,39 +3217,6 @@
       "address": "775 Silver Lane, East Hartford, CT 06118",
       "dateAdded": "2026-08-22",
       "slug": "humacao-salsa-lesson-social-night"
-    },
-    {
-      "name": "I-Park Open Trails + Music Day",
-      "town": "East Haddam",
-      "region": "Central CT",
-      "experienceTypes": [
-        "Hiking & Outdoors",
-        "Museum & Culture",
-        "Music & Events"
-      ],
-      "categories": [
-        "Easy Walks",
-        "Free / Low-Cost",
-        "Museums & Culture",
-        "Something Different"
-      ],
-      "audiences": [
-        "Date Night",
-        "Family",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A free art-and-nature day at I-Park with gentle trails, more than 40 environmental artworks, a guided hike, live music, a craft activity, and a pollinator-garden scavenger hunt.",
-      "officialWebsite": "https://ctvisit.com/events/i-park-open-trails-music-day",
-      "address": "428 Hopyard Road, East Haddam, CT 06423",
-      "tryThis": "Take the 10 AM guided hike or choose your own trail, find three environmental artworks that stand out to you, then stay for the live music.",
-      "notes": "Free to attend with a $10 suggested donation for adults. Guided hike begins at 10 AM; live music is scheduled 12:30-2:30 PM. Advance registration is recommended, but walk-ins are welcome.",
-      "dateAdded": "2026-09-08",
-      "eventStart": "2026-09-12",
-      "ages": [
-        "All ages"
-      ],
-      "slug": "i-park-open-trails-music-day"
     },
     {
       "name": "Immerse HydroSpa Couples Wellness Experience",
@@ -4046,6 +4026,39 @@
       "officialWebsite": "https://mysticseaport.org/learn/summer-camps/community-sailing/",
       "dateAdded": "2026-08-21",
       "slug": "mystic-seaport-museum-adult-sailing-experience"
+    },
+    {
+      "name": "Mystic Seaport Museum What Lurks Beneath: GHOST SHIP",
+      "town": "Mystic",
+      "region": "Mystic & Southeastern CT",
+      "experienceTypes": [
+        "Theater & Movies",
+        "Waterfront",
+        "Fall & Seasonal",
+        "Date Night",
+        "Something Different"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Festivals & Events",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night",
+        "Family"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A self-guided Halloween theater experience spread across Mystic Seaport Museum's historic waterfront, with live performers, storytelling, music, sound effects, and optional darker indoor scenes. The museum describes it as more suspenseful than frightening and recommends it for ages 8 and up.",
+      "officialWebsite": "https://mysticseaport.org/whatlurksbeneath/",
+      "address": "75 Greenmanville Avenue, Mystic, CT 06355",
+      "tryThis": "Follow one character's story across the waterfront, then decide whether to try one of the optional darker indoor scenes.",
+      "notes": "2026 dates are October 9, 10, 11, 16, 17, 18, 23, 24, 25, 28, 29 and 30. Advance ticket purchase is strongly recommended. Most of the experience is outdoors on uneven ground; optional indoor scenes are darker. Light rain generally does not cancel the event.",
+      "dateAdded": "2026-09-13",
+      "eventStart": "2026-10-09",
+      "eventEnd": "2026-10-30",
+      "slug": "mystic-seaport-museum-what-lurks-beneath-ghost-ship"
     },
     {
       "name": "Nathan Hale Homestead Things That Go Bump in the Night",
@@ -5099,11 +5112,17 @@
       "slug": "short-beach-park"
     },
     {
-      "name": "Shubert Theatre Paint and Sip",
+      "name": "Shubert Theatre Mystical Magical Trivia",
       "town": "New Haven",
       "region": "New Haven Area",
+      "experienceTypes": [
+        "Music & Events",
+        "Date Night",
+        "Something Different"
+      ],
       "categories": [
-        "Museums & Culture",
+        "Free / Low-Cost",
+        "Festivals & Events",
         "Date Night",
         "Something Different"
       ],
@@ -5112,12 +5131,14 @@
         "Date Night"
       ],
       "bestTime": "Specific event/date",
-      "officialWebsite": "https://www.shubert.com/events/detail/paint-and-sip",
+      "whyGo": "A free fantasy-themed trivia night at Elm City's Cabaret covering Harry Potter, The Lord of the Rings, The Wizard of Oz, fairy tales, Dungeons & Dragons, Magic: The Gathering, and more. Teams compete for prizes, and guests may bring food or buy from local restaurant partners.",
+      "officialWebsite": "https://www.shubert.com/events/detail/mystical-magical-trivia",
       "address": "247 College Street, New Haven, CT 06510",
-      "dateAdded": "2026-08-22",
-      "eventStart": "2026-09-12",
-      "eventEnd": "2026-09-12",
-      "slug": "shubert-theatre-paint-and-sip"
+      "tryThis": "Build a team name around your favorite fantasy world and see which topic earns your highest score.",
+      "notes": "Seating is first come, first served. Guests may bring food or support a local restaurant partner. The cabaret bar offers half-priced drinks during the event.",
+      "dateAdded": "2026-09-13",
+      "eventStart": "2026-09-22",
+      "slug": "shubert-theatre-mystical-magical-trivia"
     },
     {
       "name": "Silver Sands State Park",
@@ -5517,38 +5538,6 @@
       "officialWebsite": "https://www.taylorbrookebrewery.com/",
       "dateAdded": "2026-08-21",
       "slug": "taylor-brooke-brewery"
-    },
-    {
-      "name": "Thames River Maritime Heritage Festival Drone Show Cruise",
-      "town": "New London",
-      "region": "Mystic & Southeastern CT",
-      "experienceTypes": [
-        "Waterfront",
-        "Trains & Scenic Rides",
-        "Date Night",
-        "Something Different"
-      ],
-      "categories": [
-        "Trains & Scenic Rides",
-        "Date Night",
-        "Something Different"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Date Night",
-        "Family"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "Cruise the Thames River and watch a 300-drone light show over the New London waterfront from the water, with a route toward Ledge Lighthouse when conditions allow.",
-      "officialWebsite": "https://www.thamesriverheritagepark.org/ct-maritime-heritage-festival-drone-cruise-on-the-thames/",
-      "tryThis": "Watch for the lighthouse on the river portion of the trip, then choose your favorite shape or sequence in the synchronized drone show.",
-      "notes": "Weather and boat traffic can affect the route. Snacks and drinks may be brought aboard, but glass is prohibited. There is no bathroom on the boat. The organizer describes the event as family-friendly and appropriate for all ages.",
-      "dateAdded": "2026-09-09",
-      "eventStart": "2026-09-12",
-      "ages": [
-        "All ages"
-      ],
-      "slug": "thames-river-maritime-heritage-festival-drone-show-cruise"
     },
     {
       "name": "Thames River Norwich Harbor Glow Cruise",
@@ -5962,6 +5951,37 @@
         "Mobile"
       ],
       "slug": "wanderbrush-paint-your-partner-experience"
+    },
+    {
+      "name": "Warner Theatre Sips, Spirits & Snacks 2026",
+      "town": "Torrington",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Food & Treats",
+        "Fall & Seasonal",
+        "Date Night"
+      ],
+      "categories": [
+        "Food & Treats",
+        "Festivals & Events",
+        "Date Night"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A 21+ fall wine and food tasting inside the Warner Theatre featuring wines, spirits, local craft beers, and food from area vendors. The 2026 event marks the tasting's 25th anniversary and also supports the theater.",
+      "officialWebsite": "https://www.warnertheatre.org/events/sips-spirits-snacks/",
+      "address": "68 Main Street, Torrington, CT 06790",
+      "tryThis": "Try one food-and-drink pairing you would not normally order and compare notes before the night ends.",
+      "notes": "General admission is $40 and VIP admission is $100. The event is the Warner Theatre's annual Wine & Food Tasting and a theater fundraiser.",
+      "dateAdded": "2026-09-13",
+      "eventStart": "2026-10-24",
+      "ages": [
+        "Adults only (21+)"
+      ],
+      "slug": "warner-theatre-sips-spirits-and-snacks-2026"
     },
     {
       "name": "Waveny Park",
