@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-09-16",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "doc_stack",
+      "label": "Export Your Claude Data"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "doc_stack",
+      "label": "Shared Links"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "doc_stack",
+      "label": "Share Conversations And Responses"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "doc_stack",
+      "label": "Share Your Chats"
+    }
+  ]
+}
