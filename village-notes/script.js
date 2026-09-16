@@ -42,6 +42,7 @@
     townFind:   document.getElementById('vn-town-find'),
     townClear:  document.getElementById('vn-town-clear'),
     reset:      document.getElementById('vn-reset'),
+    featured:   document.getElementById('vn-featured'),
     doorway:    document.getElementById('vn-doorway'),
     doorwayNum: document.getElementById('vn-doorway-detail'),
     doorwayBtn: document.getElementById('vn-doorway-btn'),
@@ -1031,6 +1032,11 @@
     });
     var row = document.querySelector('.vn-toggles');
     if (row) row.hidden = shown === 0;
+
+    // Paid leave covers time off to care for a family member, which a pet is
+    // not. Offering it above a pet-care search is the same mistake as offering
+    // a Care 4 Kids filter there, so it stands down for that one track.
+    if (el.featured) el.featured.hidden = state.track === 'Pet Care & Resources';
 
     if (el.doorway) {
       var n = pool.filter(FLAGS.disability).length;

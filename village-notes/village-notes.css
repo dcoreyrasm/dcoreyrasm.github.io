@@ -321,6 +321,95 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
   color:var(--coral); font-weight:600; font-size:.7rem;
   letter-spacing:.08em; text-transform:uppercase; white-space:nowrap;
 }
+/* ---------- FEATURED RESOURCE ---------- */
+/* One hand-written block above the listings, for a resource that answers a
+   question no card can: how a family affords to stop working while they care
+   for someone. It borrows the provider's own blue rather than the site's
+   purple, so it reads as official and distinct without becoming a second
+   design language -- everything else here is the page's existing card.
+
+   --ctpl-blue is a lightened version of Connecticut Paid Leave's #0045ab.
+   Their blue on this page's background measures 1.96:1, which is unreadable;
+   this measures 6.22:1 at the same hue. The logo keeps the original. */
+.vn-featured {
+  --ctpl-blue:#5c9dff;
+  --ctpl-edge:rgba(92,157,255,.32);
+  --ctpl-on-blue:#0a1430;
+  background:var(--bg2);
+  border:1px solid var(--ctpl-edge);
+  border-left:3px solid var(--ctpl-blue);
+  border-radius:10px;
+  padding:1.6rem 1.7rem;
+  margin-bottom:2rem;
+}
+.vn-featured[hidden] { display:none; }
+.vn-featured-eyebrow {
+  font-size:.66rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ctpl-blue); margin:0 0 .85rem;
+}
+.vn-featured-head { display:flex; gap:1.3rem; align-items:flex-start; flex-wrap:wrap; }
+/* The wordmark is navy-on-white artwork, so it needs its own light ground
+   rather than sitting straight on the dark card. */
+.vn-featured-mark {
+  background:#fff; border-radius:8px; padding:.55rem .65rem;
+  width:104px; height:auto; flex:0 0 auto;
+}
+.vn-featured-name {
+  font-family:var(--serif); font-weight:400; font-size:1.45rem;
+  margin:0 0 .4rem; color:var(--cream);
+}
+.vn-featured-lede { font-size:.92rem; color:var(--cream); margin:0; max-width:60ch; }
+.vn-featured-cols {
+  display:grid; grid-template-columns:1.15fr 1fr; gap:1.6rem; margin-top:1.4rem;
+}
+.vn-featured h3 {
+  font-size:.68rem; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--ctpl-blue); margin:0 0 .6rem; font-weight:400;
+}
+.vn-featured-h3-gap { margin-top:1.1rem !important; }
+.vn-featured-list { margin:0; padding:0; list-style:none; font-size:.85rem; color:var(--cream); }
+.vn-featured-list li { padding:.3rem 0 .3rem 1.05rem; position:relative; }
+.vn-featured-list li::before {
+  content:""; position:absolute; left:0; top:.95em; width:.4rem; height:.4rem;
+  border-radius:50%; background:var(--ctpl-blue);
+}
+.vn-featured-fact { font-size:.85rem; color:var(--cream); margin:0 0 .7rem; }
+.vn-featured-fact b { color:var(--ctpl-blue); font-weight:500; }
+.vn-featured-caveat {
+  margin:1.3rem 0 0; padding-top:1rem; border-top:1px solid var(--line);
+  font-size:.8rem; color:var(--muted);
+}
+.vn-featured-caveat b { color:var(--cream); font-weight:500; }
+.vn-featured-actions {
+  display:flex; gap:.7rem; flex-wrap:wrap; align-items:center; margin-top:1.2rem;
+}
+.vn-featured-btn {
+  display:inline-block; font-size:.8rem; letter-spacing:.03em; text-decoration:none;
+  padding:.6rem 1.1rem; border-radius:4px;
+  background:var(--ctpl-blue); color:var(--ctpl-on-blue); font-weight:500;
+}
+.vn-featured-btn-ghost {
+  background:none; border:1px solid var(--ctpl-edge); color:var(--ctpl-blue); font-weight:400;
+}
+.vn-featured-meta { font-size:.76rem; color:var(--muted); }
+/* In light mode the block can use Connecticut Paid Leave's own #0045ab, which
+   is what the brand actually specifies. The lift above exists only because
+   that blue is unreadable on the dark ground -- given a light one there is no
+   reason not to use the real thing. Measured both ways in a browser: 6.22:1
+   on the dark card, 7.43:1 on the light one. */
+@media (prefers-color-scheme: light) {
+  .vn-featured {
+    --ctpl-blue:#0045ab;
+    --ctpl-edge:rgba(0,69,171,.28);
+    --ctpl-on-blue:#ffffff;
+  }
+}
+
+@media (max-width:760px) {
+  .vn-featured { padding:1.2rem 1.1rem; }
+  .vn-featured-cols { grid-template-columns:1fr; gap:1.1rem; }
+}
+
 /* ---------- DISABILITY & ACCESSIBILITY DOORWAY ---------- */
 /* The filter is an ordinary quick filter; this is the sign above it. It exists
    because the toggle row is seven checkboxes long and someone caring for a
