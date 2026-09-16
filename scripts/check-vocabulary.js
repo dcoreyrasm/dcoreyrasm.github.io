@@ -163,6 +163,40 @@ function report(unknown, singular, many, counts, examples) {
   }
 }
 
+/**
+ * The featured block on the page is hand-written, not synced, so nothing else
+ * would ever notice it going stale. It carries real numbers that move -- the
+ * Connecticut Paid Leave earnings threshold is reset every January -- and a
+ * figure that is quietly a year out is worse on a page a family trusts than no
+ * figure at all.
+ *
+ * So the block states the date it was last checked against its source, and
+ * this says so on the run once that date is old. A warning rather than a
+ * failure: the numbers are probably still right, and a good directory should
+ * not stop syncing because one block wants re-reading.
+ */
+const FEATURED_STALE_DAYS = 180;
+
+function checkFeatured() {
+  const page = path.join(__dirname, '..', 'village-notes', 'index.html');
+  let html;
+  try {
+    html = fs.readFileSync(page, 'utf8');
+  } catch (err) {
+    return; // No page to check is not this script's problem.
+  }
+  const m = html.match(/id="vn-featured"[^>]*data-verified="(\d{4}-\d{2}-\d{2})"/);
+  if (!m) return; // No featured block, or it carries no date to judge.
+
+  const days = Math.floor((Date.now() - Date.parse(m[1] + 'T00:00:00Z')) / 86400000);
+  if (days > FEATURED_STALE_DAYS) {
+    console.log(`::warning::The featured block on the Village Notes page was last checked ` +
+                `${m[1]}, ${days} days ago. It states benefit amounts and an earnings ` +
+                `threshold that change; re-read ctpaidleave.org, correct anything that moved, ` +
+                `and update data-verified on the block.`);
+  }
+}
+
 async function main() {
   const { fields, skipped } = await airtableFields();
   if (skipped) {
@@ -190,6 +224,8 @@ it. Do not leave the two disagreeing.
       console.log(`Field shapes match: ${readExpectedShapes().length} fields as the sync expects them.`);
     }
   }
+
+  checkFeatured();
 
   const knownTracks = readTracks();
   const mapped = readGroups();
