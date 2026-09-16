@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T02:56:43.476Z",
+  "generated": "2026-09-16T11:05:26.387Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -4463,21 +4463,21 @@
       "name": "Connecticut Paid Leave",
       "track": "Family & Childcare",
       "category": "Legal/HR Resource",
-      "specificType": "Connecticut's statewide Paid Family and Medical Leave Insurance program. Provides income-replacement benefits to eligible workers who need leave for their own serious health condition, to care for a family member with a serious health condition, for birth/adoption/foster-care bonding, organ or bone marrow donation, certain military-family reasons, or qualifying safe leave.",
+      "specificType": "State paid family and medical leave — income replacement while you are off work, not job protection",
       "town": "Statewide",
-      "ages": "Eligible Connecticut workers and certain enrolled self-employed individuals/sole proprietors who meet the program's employment, earnings, and qualifying-reason requirements.",
+      "ages": "People working in Connecticut for a covered employer",
       "website": "https://www.ctpaidleave.org/",
-      "contact": "Claims/application assistance: Aflac, 877-499-8606, Monday-Friday 8:00 AM-8:00 PM ET. General program information and Contact Us form available at ctpaidleave.org.",
+      "contact": "(877) 499-8606",
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
       "submittedBy": "Village Notes Research",
-      "notes": "Official site verified 2026-09-15. CT Paid Leave provides income-replacement benefits for qualifying family and medical leave. Coverage depends on employer/worker status, minimum earnings, and a qualifying reason. Applications can be started online through CT Paid Leave or by calling the program's claims administrator, Aflac, at 877-499-8606. This resource is filed under Family & Childcare but is also relevant to caregivers supporting an ill family member, including older adults. CT Paid Leave benefits are separate from job-protected FMLA leave.",
+      "notes": "A state-run program that provides income replacement to covered workers when they take time away from their job for a qualifying reason.\n\nQualifying reasons: medical leave for your own serious health condition; caregiver leave for a family member; bonding leave for a biological, adoptive or foster child; safe leave for family violence or sexual assault; military caregiver leave; qualifying exigency leave.\n\nHow long: up to 12 weeks of paid leave benefits in a 12-month period for most reasons. An additional 2 weeks may be available during pregnancy. Up to 12 days of the 12 weeks may be used for safe leave.\n\nWho is covered: most private employers with 1 or more people working in Connecticut. You must have earned at least $2,325 in your highest-earning quarter of the past four of the five most recently completed quarters.\n\nIT REPLACES INCOME, IT DOES NOT PROTECT YOUR JOB. For job-protected leave under FMLA or other laws, speak to your employer — you can apply for both.\n\nApply at ctpaidleave.org or by calling (877) 499-8606.\n\nSource note: verified 2026-09-16 against the Connecticut Paid Leave general infographic, the programme's own published material, supplied by Darice. The website itself could not be opened from the environment this was written in, so every figure above is the infographic's wording rather than the live site's. The earnings threshold is reset annually and should be re-read each January.\n\nTrack and Category are a judgement call worth a second look: paid leave covers bonding with a new child AND caring for a seriously ill family member, so it serves Elder Care as much as Family & Childcare. Filed under Family & Childcare / Legal/HR Resource because that category already holds the state's other benefit programmes for families — Care 4 Kids, HUSKY Health, Early Start CT.",
       "servicesOffered": [
-        "Parent / Family Support",
-        "Caregiver Support"
+        "Caregiver Support",
+        "Parent / Family Support"
       ],
-      "lastVerified": "2026-09-15"
+      "lastVerified": "2026-09-16"
     },
     {
       "id": "rec3GEXKKTT13BHcy",
