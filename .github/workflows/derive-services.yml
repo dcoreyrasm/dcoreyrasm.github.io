@@ -65,6 +65,12 @@ jobs:
             exit 1
           fi
 
+      # The rules are the whole product here -- the matcher is easy and
+      # knowing what it must NOT tag is the hard part. Run them before the
+      # derive so a broken rule stops the job rather than reaching the base.
+      - name: Check the derive rules still hold
+        run: python3 scripts/test-derive-services.py
+
       - name: Derive
         env:
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_WRITE_TOKEN }}
