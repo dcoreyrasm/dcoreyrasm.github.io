@@ -131,7 +131,26 @@ CARE_TAGS = {"Infant Care", "Toddler Care", "Preschool / Pre-K", "Full-Day Child
 YOUTH_TAGS = {"Arts Enrichment", "STEM Enrichment", "Sports Enrichment",
               "Literacy / Tutoring", "College Access / Readiness", "Mentoring",
               "Youth Leadership", "Afterschool Enrichment", "Teen Program",
-              "Teen / CIT Program", "Youth Employment", "Volunteer Opportunity"}
+              "Teen / CIT Program", "Youth Employment", "Volunteer Opportunity",
+              # Reads as a parenting class on the site, so a nursing home's
+              # bereavement group must not earn it.
+              "Parent / Family Support"}
+
+# Withheld from a track entirely, whatever the text says. Elder Care was the
+# first case; the other two arrived with the tracks that came after it.
+#   Pet Care -- "Doggie Day Camp" is not a summer day camp and canine agility
+#   is not sports enrichment, but both read that way to a phrase matcher.
+#   Teens & High School -- see ENRICHMENT_TAGS below.
+YOUTH_BLOCKED_TRACKS = {"Elder Care", "Pet Care & Resources"}
+
+# A school is not an enrichment provider. Every high school teaches subjects,
+# fields a team and runs academies, and a matcher reading that text tags the
+# school Arts, STEM and Sports -- which puts a four-year magnet placement in
+# front of a parent looking for somewhere to send a child on a Tuesday. The
+# distinction is the whole point of the Teens & High School track, so the tags
+# are withheld from it rather than argued about record by record.
+ENRICHMENT_TAGS = {"Arts Enrichment", "STEM Enrichment", "Sports Enrichment",
+                   "Afterschool Enrichment", "Literacy / Tutoring"}
 
 CARE_CATEGORIES = {
     "Center-Based Daycare", "Home Daycare (Licensed)", "Infant Care", "Preschool / Pre-K",
@@ -189,8 +208,17 @@ CITATION = re.compile(
     r"|accessed \d{4}-\d{2}-\d{2}", re.I)
 
 
+# A record's notes can end with an editorial tail -- where the source came
+# from, why it is filed where it is. That is writing ABOUT the record, and
+# reading it as evidence is the same error as reading a source citation.
+# Connecticut Paid Leave carried the sentence "it serves Elder Care as much as
+# Family & Childcare", explaining why it is NOT filed under Elder Care, and the
+# matcher took it as proof that it should be.
+EDITORIAL_TAIL = re.compile(r"\bSource note\s*:.*", re.S | re.I)
+
+
 def strip_citations(text):
-    return CITATION.sub(" ", text)
+    return CITATION.sub(" ", EDITORIAL_TAIL.sub(" ", text))
 
 
 def evidence(text):
@@ -240,11 +268,19 @@ def derive(rec):
         # share boilerplate -- a local-partner contact, a source line -- and
         # reading it as evidence would tag hundreds of them off one sentence
         # that describes the state programme rather than the provider.
-        text = strip_citations(" ".join([name, specific, ages, notes]))
+        # The NAME is deliberately not in here. "Cooperative Arts & Humanities
+        # Magnet High School" is what a place is called, not a list of what it
+        # offers, and reading it that way tagged five magnet schools off their
+        # own signage and put a boarding kennel called "Doggie Day Camp" into
+        # the children's camp filter. A service has to be described somewhere,
+        # not just implied by a name.
+        text = strip_citations(" ".join([specific, ages, notes]))
         for tag, snippet in evidence(text).items():
             if tag in CARE_TAGS and category not in CARE_CATEGORIES:
                 continue
-            if tag in YOUTH_TAGS and track == "Elder Care":
+            if tag in YOUTH_TAGS and track in YOUTH_BLOCKED_TRACKS:
+                continue
+            if tag in ENRICHMENT_TAGS and track == "Teens & High School":
                 continue
             add(tag, f'text says "{snippet}"')
 
