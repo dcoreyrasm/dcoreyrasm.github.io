@@ -8,9 +8,10 @@ name: Derive Services Offered (manual)
 # Manual trigger only. Runs here rather than from a laptop because the Airtable
 # token lives in this repo's secrets and nothing outside Actions can read it.
 #
-# Requires AIRTABLE_TOKEN to carry data.records:write for the run. Narrow it
-# back to data.records:read afterwards -- it is the same secret the two sync
-# workflows use unattended every six hours.
+# Writes to Airtable, so it uses AIRTABLE_WRITE_TOKEN rather than the
+# AIRTABLE_TOKEN the scheduled syncs carry. That separation is the point: the
+# token running unattended every six hours can be read-only, and the one that
+# can change 738 records is only ever handed to a run somebody started.
 #
 # Safe to re-run: tags are only ever added, so a human correction survives, and
 # a record whose text supports nothing new is left alone. Start with dry_run.
@@ -44,9 +45,29 @@ jobs:
         with:
           python-version: "3.x"
 
+      # The two manual writers use their own credential, so the token the
+      # scheduled syncs carry can stay read-only. Without this step a missing
+      # secret surfaces as "AIRTABLE_TOKEN is not set", which is true but says
+      # nothing about which secret or why there are two.
+      - name: Check the write token exists
+        env:
+          WRITE_TOKEN: ${{ secrets.AIRTABLE_WRITE_TOKEN }}
+        run: |
+          if [ -z "$WRITE_TOKEN" ]; then
+            echo "::error::AIRTABLE_WRITE_TOKEN is not set."
+            echo "This workflow writes to Airtable, so it deliberately does not use"
+            echo "AIRTABLE_TOKEN -- that secret is read-only and is what the scheduled"
+            echo "syncs carry every six hours."
+            echo ""
+            echo "Create a second Airtable personal access token with data.records:write"
+            echo "on the Village Notes base, then add it to this repository as the secret"
+            echo "AIRTABLE_WRITE_TOKEN (Settings -> Secrets and variables -> Actions)."
+            exit 1
+          fi
+
       - name: Derive
         env:
-          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_WRITE_TOKEN }}
         run: |
           python3 scripts/derive-services.py \
             --limit "${{ inputs.limit }}" \

@@ -60,7 +60,8 @@ Airtable  ──(GitHub Actions, every 6h)──>  connecticut-list/data/experie
 | Name | Where | Notes |
 |---|---|---|
 | `AIRTABLE_ACCESS_TOKEN` | repo secret | Preferred. Needs read access to the Connecticut Passport base plus `schema.bases:read` for the drift check. |
-| `AIRTABLE_TOKEN` | repo secret | Fallback, already present for Village Notes. One token can serve both bases. |
+| `AIRTABLE_TOKEN` | repo secret | Fallback, already present for Village Notes. One token can serve both bases. Read-only: every scheduled sync uses it, and none of them write. |
+| `AIRTABLE_WRITE_TOKEN` | repo secret | Only for the two manual writers, `derive-services` and `airtable-import`. Never used by anything on a schedule. |
 | `AIRTABLE_CONNECTICUT_BASE_ID` | repo variable | Optional. Defaults to the live base ID. |
 | `AIRTABLE_CONNECTICUT_TABLE_ID` | repo variable | Optional. Defaults to the live table ID. |
 
