@@ -23,7 +23,7 @@ That breadth is real. The depth behind it is the problem:
   a real waitlist note    59 / 738    8%   excludes the "contact the program directly" boilerplate
   a verified date        264 / 738   36%   without one we cannot tell fresh from forgotten
   a phone or email       688 / 738   93%
-  services tagged        683 / 738   93%   what makes a listing findable beyond its one category
+  services tagged        687 / 738   93%   what makes a listing findable beyond its one category
 
 A listing can carry a value and still say nothing. Two boilerplate lines were
 written onto hundreds of records by the original state import -- "Contact the

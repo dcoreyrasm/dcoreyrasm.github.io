@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T11:05:26.387Z",
+  "generated": "2026-09-16T12:10:25.985Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -1088,8 +1088,9 @@
       "submittedBy": "Village Notes Research",
       "notes": "Provider confirms assisted living, Mind & Memory Care, respite care, housekeeping, transportation and other resident supports.",
       "servicesOffered": [
-        "Elder Care",
         "Assisted Living",
+        "Caregiver Support",
+        "Elder Care",
         "Transportation"
       ],
       "lastVerified": "2026-08-31"
@@ -1113,6 +1114,7 @@
       "notes": "The official location page confirms assisted living, Mind & Memory Care, respite care, transportation assistance, housekeeping, laundry, meals, and activities.",
       "transportation": "Yes",
       "servicesOffered": [
+        "Caregiver Support",
         "Elder Care",
         "Transportation"
       ],
@@ -2311,6 +2313,10 @@
       "registrationStatus": "Open",
       "financialAid": "Yes",
       "schoolDayCoverage": "Partial Day",
+      "servicesOffered": [
+        "Afterschool Enrichment",
+        "STEM Enrichment"
+      ],
       "daysOffered": [
         "Monday",
         "Tuesday"
@@ -3375,6 +3381,7 @@
       "submittedBy": "Village Notes Research",
       "notes": "Identified through Connecticut nursing-facility data and confirmed on the provider's current site. Services include short-term rehabilitation, long-term care, 24/7 skilled nursing, respite care, memory care, and outpatient rehabilitation.",
       "servicesOffered": [
+        "Caregiver Support",
         "Elder Care",
         "Skilled Nursing"
       ],
@@ -4065,6 +4072,9 @@
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-31",
       "notes": "The state lists district offices in Rocky Hill, Norwich, Milford, Fairfield, and Waterbury. Staff help with federal, state, and local veterans benefits and entitlements.",
+      "servicesOffered": [
+        "Disability Support"
+      ],
       "residency": "Statewide",
       "lastVerified": "2026-08-31"
     },
@@ -4341,8 +4351,9 @@
       "notes": "Official provider materials identify Connecticut Department of Consumer Protection registration HCA.0000137 and offices in Stratford, Hamden, Hartford, and Stamford.",
       "registrationStatus": "Rolling / Ongoing",
       "servicesOffered": [
-        "Elder Care",
-        "Companion Services"
+        "Companion Services",
+        "Disability Support",
+        "Elder Care"
       ],
       "lastVerified": "2026-08-30"
     },
@@ -4510,6 +4521,9 @@
       "website": "https://portal.ct.gov/dol/divisions/apprenticeships/message",
       "submittedBy": "Village Notes Research",
       "registrationStatus": "Rolling / Ongoing",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
       "programYear": "Ongoing",
       "lastVerified": "2026-08-31",
       "teenOpportunity": [
@@ -4943,8 +4957,9 @@
       "submittedBy": "Village Notes Research",
       "notes": "Provider confirms assisted living, Mind & Memory Care and respite care at the Niantic location.",
       "servicesOffered": [
-        "Elder Care",
-        "Assisted Living"
+        "Assisted Living",
+        "Caregiver Support",
+        "Elder Care"
       ],
       "lastVerified": "2026-08-31"
     },
@@ -7206,7 +7221,8 @@
       "notes": "The on-campus school provides structured academic instruction, community-living skills, work readiness, job training, social development, independent-living preparation, applied behavior analysis space, therapy space, and vocational classrooms.",
       "registrationStatus": "Not Confirmed",
       "servicesOffered": [
-        "Disability Support"
+        "Disability Support",
+        "Youth Employment"
       ],
       "accessibility": "A highly structured, intensive, self-contained program for students with intellectual and developmental disabilities, autism, and related behavioral needs.",
       "lastVerified": "2026-09-09",
@@ -10607,6 +10623,7 @@
       "dateSubmitted": "2026-08-29",
       "notes": "Official provider and contact pages checked August 29, 2026. Provider states Medicare and Medicaid certification and acceptance of most commercial insurance plans.",
       "servicesOffered": [
+        "Caregiver Support",
         "Elder Care"
       ],
       "meals": "Meals and Snacks",
@@ -13239,8 +13256,9 @@
       "dateSubmitted": "2026-08-30",
       "registrationStatus": "Open",
       "servicesOffered": [
-        "Elder Care",
-        "Caregiver Support"
+        "Caregiver Support",
+        "Disability Support",
+        "Elder Care"
       ],
       "meals": "Meals Only",
       "lastVerified": "2026-08-30"
@@ -14427,6 +14445,7 @@
       "submittedBy": "Village Notes Research",
       "notes": "Identified through Connecticut nursing-facility data and confirmed on the provider's current site. Provides post-acute rehabilitation, long-term care, around-the-clock care for chronic illnesses and disabilities, medical and therapy services, and a dedicated memory care unit.",
       "servicesOffered": [
+        "Disability Support",
         "Elder Care",
         "Skilled Nursing"
       ],
@@ -15365,6 +15384,7 @@
       "submittedBy": "Village Notes Research",
       "notes": "Identified through Connecticut nursing-facility data and confirmed on the provider's current site. Provides skilled nursing, respite care, palliative care, rehabilitation, and related healthcare services. The same organization also operates Eagle Point assisted living, but this record represents the skilled nursing/rehabilitation facility.",
       "servicesOffered": [
+        "Caregiver Support",
         "Elder Care",
         "Skilled Nursing"
       ],
@@ -16143,6 +16163,9 @@
       "website": "https://www.workplace.org/careerhub/",
       "contact": "203-610-8500; info2@workplace.org",
       "submittedBy": "Village Notes Research",
+      "servicesOffered": [
+        "Youth Employment"
+      ],
       "lastVerified": "2026-09-01",
       "teenOpportunity": [
         "Internship",
@@ -17799,8 +17822,9 @@
       "notes": "The official municipal page confirms two recurring special-needs summer camp programs. It also describes inclusion assistance for mainstream camps. The next summer schedule and fees were not posted on the page checked.",
       "registrationStatus": "Not Yet Announced",
       "servicesOffered": [
-        "Summer Camp",
+        "Adaptive Program",
         "Disability Support",
+        "Summer Camp",
         "Teen / CIT Program"
       ],
       "accessibility": "Beachland Adventures and Beachland CITeen are designed for children and youth with special needs. Mainstream-camp inclusion support requires advance coordination; the town recommends contacting the coordinator at least two weeks before the program starts.",
