@@ -37,7 +37,14 @@
   <script>window.__daOptOut=(function(){try{return localStorage.getItem('da-analytics-optout')==='1'}catch(e){return false}})();if(window.__daOptOut){window['ga-disable-G-725R412XD7']=true;}</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-725R412XD7"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-725R412XD7');</script>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <!-- The rest of the site uses /favicon.svg. Village Notes carries its own
+       mark from the brand kit, cropped out of the supplied social avatar --
+       in that file the badge sits in the middle of a mostly empty 1080-pixel
+       square, which at tab size would have come out around five pixels of
+       note. This link replaces the site icon rather than sitting beside it:
+       browsers that support SVG prefer it, so an added PNG would never win. -->
+  <link rel="icon" type="image/png" sizes="180x180" href="/village-notes/village-notes-icon.png" />
+  <link rel="apple-touch-icon" href="/village-notes/village-notes-icon.png" />
   <link rel="stylesheet" href="/styles.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
   <link rel="stylesheet" href="/village-notes/village-notes.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
   <!-- Microsoft Clarity -->
@@ -67,8 +74,16 @@
 
     <div class="vn-hero">
       <div class="container">
-        <p class="section-label" style="color:var(--coral);">Connecticut Care Directory</p>
-        <h1 class="section-heading" style="color:#fff;">Village Notes</h1>
+        <!-- The logo already sets the name, the descriptor and the tagline, so
+             the text label and heading that used to say two of those three
+             came out rather than be read twice. The h1 stays -- the page still
+             needs one heading at the top of its outline -- and the alt text
+             carries every word the artwork does. The band behind this is
+             #2d1f4e in both themes, which is why one dark logo is enough. -->
+        <h1 class="vn-hero-logo">
+          <img src="/village-notes/village-notes-logo.png" width="513" height="215"
+               alt="Village Notes — Connecticut Care Directory. People, resources, stronger communities." />
+        </h1>
         <p class="vn-hero-lede">A searchable list of childcare, camps, high schools and teen programs, elder care, and pet care across Connecticut, built from official state listings and public sources. Families and caregivers add what those records leave out &mdash; real operating hours, honest waitlist timelines, what it actually costs. Search it, filter it, and add what you know.</p>
         <div class="vn-hero-meta">
           <span id="vn-count-badge" class="vn-badge">Loading listings&hellip;</span>
