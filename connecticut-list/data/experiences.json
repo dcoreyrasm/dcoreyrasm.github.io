@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-13T16:19:56.164Z",
-  "count": 375,
+  "generated": "2026-09-17T21:24:47.306Z",
+  "count": 424,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -47,6 +47,7 @@
     "East Haven",
     "East Lyme",
     "East Windsor",
+    "Eastern Connecticut",
     "Eastford",
     "Easton",
     "Essex",
@@ -64,6 +65,7 @@
     "Hartford",
     "Harwinton",
     "Hebron",
+    "Ivoryton",
     "Kent",
     "Killingworth",
     "Lebanon",
@@ -75,6 +77,7 @@
     "Marlborough",
     "Mashantucket",
     "Meriden",
+    "Middlebury",
     "Middlefield",
     "Middletown",
     "Milford",
@@ -82,6 +85,7 @@
     "Montville",
     "Moodus",
     "Mystic",
+    "Naugatuck",
     "New Britain",
     "New Canaan",
     "New Hartford",
@@ -122,6 +126,7 @@
     "Somers",
     "South Glastonbury",
     "South Windsor",
+    "South Woodstock",
     "Southbury",
     "Southington",
     "Stamford",
@@ -671,6 +676,31 @@
       "slug": "ambler-farm"
     },
     {
+      "name": "American Clock & Watch Museum",
+      "town": "Bristol",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A museum devoted to American horology and Connecticut's clockmaking history, with more than 1,500 clocks and watches on display from a collection of more than 6,000 timepieces.",
+      "officialWebsite": "https://www.clockandwatchmuseum.org/",
+      "address": "100 Maple Street, Bristol, CT 06010",
+      "tryThis": "Find the strangest or most unexpected timepiece in the galleries and learn what problem its design was meant to solve.",
+      "dateAdded": "2026-09-17",
+      "slug": "american-clock-and-watch-museum"
+    },
+    {
       "name": "American Mural Project Five-Story Art Visit",
       "town": "Winsted",
       "audiences": [
@@ -1143,6 +1173,33 @@
       "slug": "bishops-orchards-farm-market-and-winery"
     },
     {
+      "name": "Black Hall Marina Kayaking & Paddleboarding",
+      "town": "Old Lyme",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Waterfront",
+        "Hiking & Outdoors",
+        "Something Different"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A shoreline paddlesports experience from the former Black Hall Outfitters Old Lyme operation, now transitioning to Black Hall Marina, with kayaking, paddleboarding, rentals, excursions, and paddlesports retail.",
+      "officialWebsite": "https://blackhalloutfitters.com/pages/paddlesports-info-and-support",
+      "tryThis": "Rent a kayak or paddleboard and pick one shoreline feature or wildlife sighting to photograph from the water.",
+      "notes": "Business is in transition from Black Hall Outfitters Old Lyme to Black Hall Marina. Recheck naming and direct marina URL on a future verification pass.",
+      "dateAdded": "2026-09-17",
+      "slug": "black-hall-marina-kayaking-and-paddleboarding"
+    },
+    {
       "name": "Blackledge Falls Wooded Waterfall Walk",
       "town": "Glastonbury",
       "region": "Hartford Area",
@@ -1303,6 +1360,59 @@
       "slug": "branford-farm-stand-fall-harvest-festival"
     },
     {
+      "name": "Branford Point Beach",
+      "town": "Branford",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Waterfront"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A town beach and waterfront park at Branford Point, maintained by Branford Parks and Recreation.",
+      "officialWebsite": "https://branfordct.myrec.com/info/facilities/default.aspx",
+      "address": "Harbor Street, Branford, CT 06405",
+      "tryThis": "Pair a beach visit with a short Branford Harbor walk and choose your favorite water view.",
+      "dateAdded": "2026-09-17",
+      "slug": "branford-point-beach"
+    },
+    {
+      "name": "Branford River Paddlesports",
+      "town": "Branford",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Waterfront",
+        "Hiking & Outdoors",
+        "Something Different"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Something Different",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "Seasonal kayak and stand-up paddleboard rentals, lessons, and guided tours including Thimble Islands, Outer Island, Farm River, and Kelsey Beach routes.",
+      "officialWebsite": "https://branfordriverpaddlesports.com/",
+      "address": "50 Maple Street, Branford, CT 06405",
+      "tryThis": "Choose a guided route and photograph one shoreline feature you could not see the same way from land.",
+      "dateAdded": "2026-09-17",
+      "slug": "branford-river-paddlesports"
+    },
+    {
       "name": "Branford River Spa Couples Massage Experience",
       "town": "Branford",
       "region": "New Haven Area",
@@ -1338,6 +1448,32 @@
         "Watertown"
       ],
       "slug": "brook-noel-paint-your-pet-workshop"
+    },
+    {
+      "name": "Brookfield Craft Center",
+      "town": "Brookfield",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Something Different"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Something Different",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A nonprofit craft center offering classes, open studios, gallery exhibitions, and hands-on work in areas including clay, glass, jewelry, forging, painting, and other fine crafts.",
+      "officialWebsite": "https://brookfieldcraft.org/",
+      "address": "286 Whisconier Road, Brookfield, CT 06804",
+      "tryThis": "Choose a workshop in a medium you have never tried before and create something to take home.",
+      "dateAdded": "2026-09-17",
+      "slug": "brookfield-craft-center"
     },
     {
       "name": "Brown's Harvest 2026 Fall Festival & Corn Maze",
@@ -1403,6 +1539,32 @@
       "slug": "buells-orchard-fall-apple-picking-and-cider-donuts"
     },
     {
+      "name": "Byram Park Beach, Pool & Waterfront Park",
+      "town": "Greenwich",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Waterfront",
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Parks & Preserves",
+        "Easy Walks"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A 30-plus-acre Greenwich waterfront park with a beach, seasonal pool and splash pad, marina, boat launch, playground, sports areas, picnic space, and walking trails.",
+      "officialWebsite": "https://www.greenwichct.gov/2154/Byram-Park",
+      "address": "4 Ritch Avenue West, Greenwich, CT 06830",
+      "tryThis": "Combine a shoreline walk with one other park activity, then choose your favorite view across the water.",
+      "dateAdded": "2026-09-17",
+      "slug": "byram-park-beach-pool-and-waterfront-park"
+    },
+    {
       "name": "C.P. Huntington State Park Bear Sculptures + Pond Walk",
       "town": "Redding / Bethel / Newtown",
       "region": "Fairfield County",
@@ -1439,6 +1601,33 @@
       "slug": "c-p-huntington-state-park-bear-sculptures-pond-walk"
     },
     {
+      "name": "Calf Pasture & Shady Beach",
+      "town": "Norwalk",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Waterfront",
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Parks & Preserves",
+        "Easy Walks",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A Norwalk waterfront recreation area with roughly three-quarters of a mile of coastline, swimming, playgrounds, splash pad, sports courts, skate park, sailing, and seasonal events.",
+      "officialWebsite": "https://www.norwalkct.gov/2094/Calf-Pasture-and-Shady-Beach",
+      "address": "99 Calf Pasture Beach Road, Norwalk, CT",
+      "tryThis": "Walk the shoreline and pier, then pick one activity beyond swimming to try before leaving.",
+      "dateAdded": "2026-09-17",
+      "slug": "calf-pasture-and-shady-beach"
+    },
+    {
       "name": "Cedar Hill Cemetery Fall Foliage & Hallowed History Tours",
       "town": "Hartford",
       "audiences": [
@@ -1457,6 +1646,33 @@
       "officialWebsite": "https://ctaudubon.org/locations/the-center-at-pomfret-and-bafflin-sanctuary/",
       "dateAdded": "2026-08-17",
       "slug": "center-at-pomfret-and-bafflin-sanctuary"
+    },
+    {
+      "name": "Chaffinch Island Park",
+      "town": "Guilford",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Waterfront",
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Parks & Preserves",
+        "Free / Low-Cost",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A 22-acre Guilford shoreline park used for fishing, picnicking, and quiet waterfront time, with picnic tables and grills.",
+      "officialWebsite": "https://visitguilfordct.com/listing/",
+      "tryThis": "Bring a simple picnic and find the quietest water view in the park.",
+      "dateAdded": "2026-09-17",
+      "slug": "chaffinch-island-park"
     },
     {
       "name": "Chamard Vineyards",
@@ -1504,6 +1720,29 @@
       ],
       "officialWebsite": "https://chestersundaymarket.jimdofree.com/about-1/",
       "slug": "chester-farmers-market"
+    },
+    {
+      "name": "Chester Gallery & Framing",
+      "town": "Chester",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Museum & Culture"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A Main Street art gallery showing paintings, works on paper, sculpture, baskets, and rotating exhibitions in the village of Chester.",
+      "officialWebsite": "https://www.chestergalleryct.com/",
+      "address": "76 Main Street, Chester, CT 06412",
+      "tryThis": "Choose one piece you would use to start an imaginary Connecticut art collection and explain why.",
+      "dateAdded": "2026-09-17",
+      "slug": "chester-gallery-and-framing"
     },
     {
       "name": "Clark Farms at Bushy Hill 2026 Apple Picking & Farm Stop",
@@ -1594,6 +1833,31 @@
       "officialWebsite": "https://artsucation.org/",
       "dateAdded": "2026-08-22",
       "slug": "community-african-drum-and-dance-class"
+    },
+    {
+      "name": "Compo Beach",
+      "town": "Westport",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Waterfront",
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A major Westport town beach on Long Island Sound with shoreline access, swimming in season, picnic areas, and recreation facilities.",
+      "officialWebsite": "https://www.westportct.gov/government/departments-a-z/parks-and-recreation/beaches",
+      "tryThis": "Walk the shoreline near sunset and choose the best view for a one-photo Westport postcard.",
+      "dateAdded": "2026-09-17",
+      "slug": "compo-beach"
     },
     {
       "name": "Connecticut Antique Machinery Association 2026 Fall Festival",
@@ -2011,6 +2275,36 @@
       "slug": "crookes-orchard-fall-apple-and-flower-picking"
     },
     {
+      "name": "Cross Sound Ferry Lighthouse Cruise",
+      "town": "New London",
+      "region": "Mystic & Southeastern CT",
+      "experienceTypes": [
+        "Waterfront",
+        "Only in Connecticut",
+        "Something Different"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Scenic Views",
+        "Only in Connecticut",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A narrated approximately two-hour lighthouse cruise departing from New London aboard Cross Sound Ferry vessels, with outdoor viewing space and views of regional lighthouses and coastal landmarks.",
+      "officialWebsite": "https://longislandferry.com/",
+      "address": "2 Ferry Street, New London, CT",
+      "tryThis": "Choose one lighthouse before boarding and learn one fact about it. See if you can spot it from the water without being told first.",
+      "notes": "Cruises depart from the New London terminal. Reservations are strongly recommended. Schedule and fares can change by season.",
+      "dateAdded": "2026-09-17",
+      "slug": "cross-sound-ferry-lighthouse-cruise"
+    },
+    {
       "name": "CT Hackerspace Open House & Maker Experience",
       "town": "Watertown",
       "audiences": [
@@ -2019,6 +2313,31 @@
       "officialWebsite": "https://cthacker.space/",
       "dateAdded": "2026-08-22",
       "slug": "ct-hackerspace-open-house-and-maker-experience"
+    },
+    {
+      "name": "Danbury Museum & Historical Society",
+      "town": "Danbury",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A multi-building local history campus preserving Danbury's past, including historic houses, a hat shop, the Marian Anderson Studio, schoolhouses, exhibitions, and guided tours.",
+      "officialWebsite": "https://www.danbury-ct.gov/210/Danbury-Museum-Historical-Society",
+      "address": "43 Main Street, Danbury, CT 06810",
+      "tryThis": "Find one object or building that tells a story about Danbury's hat-making or cultural history and share the story with your group.",
+      "dateAdded": "2026-09-17",
+      "slug": "danbury-museum-and-historical-society"
     },
     {
       "name": "Danbury Railway Museum Railyard Local",
@@ -2185,6 +2504,26 @@
       "slug": "earthplace-craft-and-sip-basket-weaving-date-night"
     },
     {
+      "name": "Eastern Connecticut (CTvisit Regional Guide)",
+      "town": "Eastern Connecticut",
+      "region": "Other / Statewide",
+      "categories": [
+        "Something Different"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Official Connecticut tourism guide to Eastern Connecticut, covering outdoor activities, coastline and countryside, museums, historic forts, family attractions, arts and music, casinos, and regional destinations including Mystic Country, Greater New London/Norwich, and the Scenic Northeast.",
+      "officialWebsite": "https://ctvisit.com/eastern-connecticut",
+      "notes": "Regional source page. Useful for identifying additional individual places and experiences to add to the Connecticut Passport list.",
+      "dateAdded": "2026-09-17",
+      "slug": "eastern-connecticut-ctvisit-regional-guide"
+    },
+    {
       "name": "Edgerton Park Gardens & Greenhouses",
       "town": "New Haven",
       "audiences": [
@@ -2282,6 +2621,30 @@
       "officialWebsite": "https://portal.ct.gov/DECD/Content/Historic-Preservation/04_State_Museums/Eric-Sloane-Museum-and-Kent-Iron-Furnace/Hands-on-Classes-Schedule",
       "dateAdded": "2026-08-21",
       "slug": "eric-sloane-museum-hands-on-workshop-experience"
+    },
+    {
+      "name": "Essex Art Association Gallery",
+      "town": "Essex",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Museum & Culture"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A nonprofit seasonal gallery founded in 1946 with juried, open, elected-artist, student, and solo exhibitions featuring regional visual artists.",
+      "officialWebsite": "https://www.essexartassociation.com/",
+      "address": "10 North Main Street, Essex, CT",
+      "tryThis": "Choose one work in the current exhibition you would build a room around and explain what else would go in that room.",
+      "dateAdded": "2026-09-17",
+      "slug": "essex-art-association-gallery"
     },
     {
       "name": "Essex Saybrook Antiques Village",
@@ -2482,6 +2845,31 @@
       "notes": "Reserve through Fascia's official site before going because public experience times vary.",
       "dateAdded": "2026-08-28",
       "slug": "fascias-chocolates-make-your-own-chocolate-experience"
+    },
+    {
+      "name": "Fenwick Golf Course",
+      "town": "Old Saybrook",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Hiking & Outdoors",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Scenic Views",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Date Night",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Spring",
+      "whyGo": "Connecticut's oldest public golf course, a historic nine-hole links-style course where the Connecticut River meets Long Island Sound.",
+      "officialWebsite": "https://www.fenwickgolfcourse.com/",
+      "address": "580 Maple Avenue, Old Saybrook, CT 06475",
+      "tryThis": "Play a round and pause at the oldest green to take in the coastal setting and the course's history.",
+      "dateAdded": "2026-09-17",
+      "slug": "fenwick-golf-course"
     },
     {
       "name": "Floral Notes Farm Flower Arranging Class",
@@ -2772,6 +3160,32 @@
       "slug": "grace-farms"
     },
     {
+      "name": "Great Captain Island Ferry Day",
+      "town": "Greenwich",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Waterfront",
+        "Something Different"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Scenic Views",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A seasonal ferry outing from Greenwich Harbor to Great Captain Island, one of the town's two offshore island destinations in Long Island Sound.",
+      "officialWebsite": "https://www.greenwichct.gov/641/Ferry-Service",
+      "tryThis": "Take the ferry to the island and see how many different views of the shoreline and Sound you can capture before returning.",
+      "dateAdded": "2026-09-17",
+      "slug": "great-captain-island-ferry-day"
+    },
+    {
       "name": "Greenwich Audubon Center Main Sanctuary",
       "town": "Greenwich",
       "audiences": [
@@ -2794,6 +3208,32 @@
         "Greenwich"
       ],
       "slug": "greenwich-botanical-center"
+    },
+    {
+      "name": "Greenwich Island Beach Ferry Day",
+      "town": "Greenwich",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Waterfront",
+        "Something Different"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Scenic Views",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A seasonal town-ferry trip from Greenwich Harbor to Island Beach, a 3.9-acre Long Island Sound island with swimming, picnic areas, playground space, and shoreline facilities.",
+      "officialWebsite": "https://www.greenwichct.gov/2196/Island-Beach",
+      "tryThis": "Ride the ferry out, spend time on the island, and take one photo looking back toward mainland Greenwich.",
+      "dateAdded": "2026-09-17",
+      "slug": "greenwich-island-beach-ferry-day"
     },
     {
       "name": "Greenwich Point Park Shoreline & Historic Buildings Walk",
@@ -2945,6 +3385,30 @@
         "All ages"
       ],
       "slug": "harvest-glow-2026"
+    },
+    {
+      "name": "Harvey's Beach",
+      "town": "Old Saybrook",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Waterfront"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A public Old Saybrook beach on Long Island Sound that is open year-round, with seasonal parking fees during the main beach season.",
+      "officialWebsite": "https://www.oldsaybrookct.gov/159/Our-History",
+      "tryThis": "Visit near low tide or sunset and take one shoreline photo that captures the quieter side of Old Saybrook.",
+      "dateAdded": "2026-09-17",
+      "slug": "harveys-beach"
     },
     {
       "name": "Hawk Ridge Winery",
@@ -3275,6 +3739,32 @@
       "slug": "institute-for-american-indian-studies-museum-indigenous-led-program"
     },
     {
+      "name": "Ivoryton Playhouse",
+      "town": "Ivoryton",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Theater & Movies",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Date Night",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Date Night",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A historic professional theater in the village of Ivoryton producing a year-round season of plays and musicals in a 274-seat venue with more than a century of theater history.",
+      "officialWebsite": "https://www.ivorytonplayhouse.org/",
+      "address": "103 Main Street, Ivoryton, CT 06442",
+      "tryThis": "See a production and find one detail in the century-old theater that reminds you this is more than just a performance venue.",
+      "dateAdded": "2026-09-17",
+      "slug": "ivoryton-playhouse"
+    },
+    {
       "name": "James L. Goodwin Forest Trails, Ponds & Gardens",
       "town": "Hampton",
       "audiences": [
@@ -3383,6 +3873,29 @@
       "slug": "keeler-tavern-museum-and-history-center"
     },
     {
+      "name": "Kenise Barnes Fine Art",
+      "town": "Kent",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Museum & Culture"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A contemporary fine-art gallery in Kent Barns representing more than 50 emerging and mid-career artists, with solo and group exhibitions that change regularly.",
+      "officialWebsite": "https://www.kbfa.com/",
+      "address": "7 Fulling Lane, Kent, CT 06757",
+      "tryThis": "Pick the work in the current show that you would most want to ask the artist one question about, then decide what you would ask.",
+      "dateAdded": "2026-09-17",
+      "slug": "kenise-barnes-fine-art"
+    },
+    {
       "name": "Kent Falls Brewing Co.",
       "town": "Kent",
       "region": "Litchfield Hills",
@@ -3461,6 +3974,33 @@
       "slug": "laurel-glen-farm-fall-pick-your-own"
     },
     {
+      "name": "Lee's Riding Stable",
+      "town": "Litchfield",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Hiking & Outdoors",
+        "Something Different"
+      ],
+      "categories": [
+        "Scenic Views",
+        "Something Different",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Guided horseback trail rides through the Litchfield countryside, plus pony rides and riding lessons at Windfield Morgan Farm.",
+      "officialWebsite": "https://www.windfieldmorganfarm.com/lees.html",
+      "address": "57 East Litchfield Road, Litchfield, CT 06759",
+      "tryThis": "Take a guided trail ride and choose one stretch of the route that best captures the Litchfield Hills landscape.",
+      "dateAdded": "2026-09-17",
+      "slug": "lees-riding-stable"
+    },
+    {
       "name": "Leffingwell House + Silversmith Shop Colonial",
       "town": "Norwich",
       "region": "Mystic & Southeastern CT",
@@ -3521,6 +4061,32 @@
       "slug": "litchfield-hills-farm-fresh-market"
     },
     {
+      "name": "Litchfield History Museum & Tapping Reeve House",
+      "town": "Litchfield",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Free / Low-Cost",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Two Litchfield Historical Society museums exploring the town's history and the nation's first law school, with interactive exhibits, historic spaces, and a self-guided historic district walking map.",
+      "officialWebsite": "https://www.litchfieldhistoricalsociety.org/museums/",
+      "address": "7 and 82 South Street, Litchfield, CT 06759",
+      "tryThis": "Visit both museum sites and identify one way education or law in early America differs from today.",
+      "dateAdded": "2026-09-17",
+      "slug": "litchfield-history-museum-and-tapping-reeve-house"
+    },
+    {
       "name": "Lock Museum of America + Terryville Water Wheel",
       "town": "Terryville",
       "region": "Litchfield Hills",
@@ -3570,6 +4136,34 @@
       "officialWebsite": "https://www.stratfordct.gov/page/longbrook-park",
       "dateAdded": "2026-08-13",
       "slug": "longbrook-park"
+    },
+    {
+      "name": "Longshore Sailing School Rentals & Lessons",
+      "town": "Westport",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Waterfront",
+        "Hiking & Outdoors",
+        "Something Different"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Something Different",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A public boating school at Longshore Club Park offering sailing instruction plus sailboat, kayak, and paddleboard rentals on Long Island Sound.",
+      "officialWebsite": "https://www.longshoresailing.com/",
+      "address": "260 Compo Road South, Westport, CT 06880",
+      "tryThis": "Try a boat or board you have not used before, then identify one skill you improved during the outing.",
+      "dateAdded": "2026-09-17",
+      "slug": "longshore-sailing-school-rentals-and-lessons"
     },
     {
       "name": "Lovers Leap State Park Iron Bridge & Gorge Views",
@@ -3728,6 +4322,34 @@
       "address": "36 Talcott Street, Hartford, CT 06103",
       "dateAdded": "2026-08-22",
       "slug": "makerspacect-maker-class-challenge"
+    },
+    {
+      "name": "Mansfield Hollow State Park",
+      "town": "Mansfield",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Parks & Preserves",
+        "Easy Walks",
+        "Longer Hikes",
+        "Free / Low-Cost",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A free state park built around Mansfield Hollow Lake with hiking, multi-use trails, birdwatching, picnicking, field sports, and varied glacial and bedrock geology.",
+      "officialWebsite": "https://ctparks.com/parks/mansfield-hollow-state-park",
+      "tryThis": "Walk a section of trail near the lake and see how many different bird calls, rock formations, or water views you can identify.",
+      "notes": "No park fee listed. Leashed pets are allowed in picnic areas and on hiking trails.",
+      "dateAdded": "2026-09-17",
+      "slug": "mansfield-hollow-state-park"
     },
     {
       "name": "March Farm Fall Pick-Your-Own & Corn Maze",
@@ -3920,6 +4542,31 @@
       "slug": "mine-hill-preserve-industrial-ruins-and-hike"
     },
     {
+      "name": "MoCA CT",
+      "town": "Westport",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Museum & Culture"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A contemporary art museum and cultural arts center with rotating exhibitions, a two-acre sculpture garden, performances, talks, and educational programs.",
+      "officialWebsite": "https://mocact.org/",
+      "address": "19 Newtown Turnpike, Westport, CT 06880",
+      "tryThis": "Choose one artwork inside and one sculpture outside that seem to be having a conversation with each other.",
+      "dateAdded": "2026-09-17",
+      "slug": "moca-ct"
+    },
+    {
       "name": "Mohawk State Park Summit & Black Spruce Bog",
       "town": "Cornwall / Goshen",
       "audiences": [
@@ -3982,6 +4629,31 @@
       "officialWebsite": "https://portal.ct.gov/museumofcthistory",
       "dateAdded": "2026-08-28",
       "slug": "museum-of-connecticut-history-connecticuts-revolution-exhibit"
+    },
+    {
+      "name": "Music Theatre of Connecticut",
+      "town": "Norwalk",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Theater & Movies"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A professional theater and conservatory in Norwalk producing an annual series of Equity productions along with student productions and performing arts programs.",
+      "officialWebsite": "https://www.musictheatreofct.com/",
+      "address": "509 Westport Avenue, Norwalk, CT 06851",
+      "tryThis": "See a professional production in the intimate theater and choose one performance element to discuss afterward: acting, music, design, or staging.",
+      "dateAdded": "2026-09-17",
+      "slug": "music-theatre-of-connecticut"
     },
     {
       "name": "Mustang Meadow Horseback Trail Ride",
@@ -4061,6 +4733,35 @@
       "slug": "mystic-seaport-museum-what-lurks-beneath-ghost-ship"
     },
     {
+      "name": "Natchaug State Forest",
+      "town": "Eastford",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Hiking & Outdoors",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Parks & Preserves",
+        "Longer Hikes",
+        "Free / Low-Cost",
+        "Scenic Views",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A large state forest in Eastford with hiking, mountain biking, fishing, picnicking, horseback riding, historic sites, letterboxing, snowmobiling, and seasonal camping opportunities.",
+      "officialWebsite": "https://portal.ct.gov/deep/state-parks/forests/natchaug-state-forest/getting-here",
+      "address": "Pilfershire Road, Eastford, CT",
+      "tryThis": "Use the official trail map to choose one short route, then find a quiet picnic or river spot before leaving.",
+      "notes": "Forest recreation areas are generally open 8 a.m. to sunset. Other forest areas have broader dawn/dusk access rules. Check DEEP notices before visiting.",
+      "dateAdded": "2026-09-17",
+      "slug": "natchaug-state-forest"
+    },
+    {
       "name": "Nathan Hale Homestead Things That Go Bump in the Night",
       "town": "Coventry",
       "audiences": [
@@ -4105,6 +4806,31 @@
       "address": "1313 Connecticut Ave, Bridgeport, CT 06607",
       "dateAdded": "2026-08-21",
       "slug": "naturalannie-sip-and-pour-candle-making-experience"
+    },
+    {
+      "name": "Naugatuck History Museum at the Tuttle House",
+      "town": "Naugatuck",
+      "region": "New Haven Area",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A local museum with exhibits on Naugatuck's people, industry, wartime experience, civic history, and architecture, housed at the Tuttle House.",
+      "officialWebsite": "https://www.naugatuckhistory.org/visitthenaugatuckhistorymuseum",
+      "address": "380 Church Street, Naugatuck, CT 06770",
+      "tryThis": "Pair the museum with part of the society's architectural walking tour and find one building detail you would have missed otherwise.",
+      "dateAdded": "2026-09-17",
+      "slug": "naugatuck-history-museum-at-the-tuttle-house"
     },
     {
       "name": "Naugatuck Railroad Autumn Colors Limited",
@@ -4294,6 +5020,31 @@
       "officialWebsite": "https://www.nlmaritimesociety.org/ledgelight.html",
       "dateAdded": "2026-08-21",
       "slug": "new-london-ledge-light-interior-tour"
+    },
+    {
+      "name": "New Milford Historical Society & Museum",
+      "town": "New Milford",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A local history museum just off the New Milford Green with permanent and temporary exhibits, historic buildings, artifacts, photographs, and collections covering the town's past.",
+      "officialWebsite": "https://www.nmhistorical.org/",
+      "address": "6 Aspetuck Avenue, New Milford, CT 06776",
+      "tryThis": "Find the exhibit item that most surprises you about New Milford's history and photograph or note its story.",
+      "dateAdded": "2026-09-17",
+      "slug": "new-milford-historical-society-and-museum"
     },
     {
       "name": "Niantic Bay Boardwalk Sunset + Main Street",
@@ -4493,6 +5244,33 @@
       "address": "219 Ekonk Hill Road, Voluntown, CT 06384",
       "dateAdded": "2026-08-21",
       "slug": "pachaug-state-forest-mount-misery-and-rhododendron-sanctuary"
+    },
+    {
+      "name": "Palace Theater Waterbury",
+      "town": "Waterbury",
+      "region": "New Haven Area",
+      "experienceTypes": [
+        "Theater & Movies",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Only in Connecticut",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A restored historic 1922 performing arts center presenting Broadway tours, concerts, comedy, family entertainment, community events, and guided behind-the-scenes theater tours.",
+      "officialWebsite": "https://www.palacetheaterct.org/",
+      "address": "100 East Main Street, Waterbury, CT 06702",
+      "tryThis": "Take a guided theater tour or attend a show and look for one architectural detail you would not expect in a 1920s theater.",
+      "dateAdded": "2026-09-17",
+      "slug": "palace-theater-waterbury"
     },
     {
       "name": "Palmer-Warner House Pipes & Cider Festival",
@@ -4744,6 +5522,58 @@
       "slug": "putnam-antiques-marketplace"
     },
     {
+      "name": "R.J. Julia Booksellers",
+      "town": "Madison",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Bookstore",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Bookstores",
+        "Only in Connecticut",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A long-running independent bookstore in Madison known for author events, book clubs, curated selections, and its role as a major Connecticut literary destination.",
+      "officialWebsite": "https://www.rjjulia.com/",
+      "address": "768 Boston Post Road, Madison, CT 06443",
+      "tryThis": "Choose a book using only a staff recommendation card or attend an author event and leave with one new title.",
+      "dateAdded": "2026-09-17",
+      "slug": "r-j-julia-booksellers"
+    },
+    {
+      "name": "Ridgefield Guild of Artists",
+      "town": "Ridgefield",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Museum & Culture"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A community visual arts organization in a historic barn with changing exhibitions, classes, workshops, ArtWalk programming, and special arts events.",
+      "officialWebsite": "https://rgoa.org/",
+      "address": "34 Halpin Lane, Ridgefield, CT 06877",
+      "tryThis": "Visit during an exhibition and choose one work that best represents what you think of when you hear 'Connecticut art.'",
+      "dateAdded": "2026-09-17",
+      "slug": "ridgefield-guild-of-artists"
+    },
+    {
       "name": "Ripley Waterfowl Conservancy Rare Bird Visit",
       "town": "Litchfield",
       "region": "Litchfield Hills",
@@ -4921,6 +5751,30 @@
       "slug": "salmon-river-state-forest-comstock-covered-bridge-picnic-walk"
     },
     {
+      "name": "Saybrook Point Mini-Golf",
+      "town": "Old Saybrook",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Something Different",
+        "Waterfront"
+      ],
+      "categories": [
+        "Something Different",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A seasonal miniature-golf outing at Saybrook Point Park, listed by the Town of Old Saybrook as a public attraction operating from Memorial Day through Labor Day with select fall dates.",
+      "officialWebsite": "https://www.oldsaybrookct.gov/159/Our-History",
+      "tryThis": "Play a round and let the winner choose the next stop around Saybrook Point.",
+      "dateAdded": "2026-09-17",
+      "slug": "saybrook-point-mini-golf"
+    },
+    {
       "name": "SCAN Painting Workshop & Plein Air Experience",
       "town": "Newtown",
       "region": "Fairfield County",
@@ -4979,6 +5833,32 @@
       "notes": "Call 860-526-9633 before visiting because field conditions and picking availability change daily. Cut-your-own flowers at the Essex location generally continue until frost.",
       "dateAdded": "2026-09-05",
       "slug": "scotts-ct-valley-orchards-fall-pick-your-own"
+    },
+    {
+      "name": "Scranton's Shops",
+      "town": "South Woodstock",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Something Different"
+      ],
+      "categories": [
+        "Something Different",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "An antiques and gift-shopping stop inside an early New England blacksmith shop, with more than 3,800 square feet across two floors and merchandise from more than 85 dealers.",
+      "officialWebsite": "https://www.scrantonsshops.com/",
+      "address": "300 Route 169, South Woodstock, CT 06267",
+      "tryThis": "Each person gets a small imaginary budget and has to find the strangest, oldest, or most Connecticut-looking item they would take home.",
+      "notes": "Current listed hours are Wednesday-Sunday, 11 a.m.-5 p.m.; verify before visiting.",
+      "dateAdded": "2026-09-17",
+      "slug": "scrantons-shops"
     },
     {
       "name": "Seaside Park",
@@ -5266,6 +6146,33 @@
       "slug": "sleeping-giant-state-park"
     },
     {
+      "name": "SoundWaters Public Sails & Paddlesports",
+      "town": "Stamford",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Waterfront",
+        "Something Different"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Something Different",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A Long Island Sound education and recreation organization offering public sails aboard the 80-foot Schooner SoundWaters and seasonal paddlesports from Stamford Harbor.",
+      "officialWebsite": "https://soundwaters.org/",
+      "address": "200 Southfield Avenue, Stamford, CT 06902",
+      "tryThis": "Choose either a schooner sail or paddling outing and identify one feature of Long Island Sound you can only appreciate from the water.",
+      "dateAdded": "2026-09-17",
+      "slug": "soundwaters-public-sails-and-paddlesports"
+    },
+    {
       "name": "Southford Falls State Park",
       "town": "Southbury",
       "region": "New Haven Area",
@@ -5303,6 +6210,31 @@
       "slug": "stamford-museum-and-nature-center"
     },
     {
+      "name": "Stamford Palace Theatre",
+      "town": "Stamford",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Theater & Movies"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A historic 1927 performing arts venue in downtown Stamford presenting concerts, comedy, dance, family shows, films, and arts education programs.",
+      "officialWebsite": "https://www.palacestamford.org/",
+      "address": "61 Atlantic Street, Stamford, CT 06901",
+      "tryThis": "Choose a live performance outside your usual genre and make it a downtown Stamford night out.",
+      "dateAdded": "2026-09-17",
+      "slug": "stamford-palace-theatre"
+    },
+    {
       "name": "Steep Rock Preserve Railroad Tunnel & River Walk",
       "town": "Washington",
       "region": "Litchfield Hills",
@@ -5326,6 +6258,27 @@
       "notes": "A strong foliage-season option, but worthwhile year-round. The preserve also has old-growth hemlocks and summit views.",
       "dateAdded": "2026-08-24",
       "slug": "steep-rock-preserve-railroad-tunnel-and-river-walk"
+    },
+    {
+      "name": "Stepping Stones Museum for Children",
+      "town": "Norwalk",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Museum & Culture"
+      ],
+      "categories": [
+        "Museums & Culture"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A hands-on children's museum in Mathews Park with interactive learning experiences, puppetry, STEAM activities, and programs designed primarily for young children and families.",
+      "officialWebsite": "https://www.steppingstonesmuseum.org/",
+      "tryThis": "Let each child choose one hands-on area to teach the rest of the group something they learned.",
+      "dateAdded": "2026-09-17",
+      "slug": "stepping-stones-museum-for-children"
     },
     {
       "name": "Sterling Flower Farm Pick-Your-Own Flowers",
@@ -5381,6 +6334,34 @@
       "address": "523 Taugwonk Road, Stonington, CT 06378",
       "dateAdded": "2026-08-17",
       "slug": "stonington-vineyards"
+    },
+    {
+      "name": "Stony Creek Beach",
+      "town": "Stony Creek / Branford",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Waterfront"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A small public beach in Stony Creek, close to the Thimble Islands waterfront and village.",
+      "officialWebsite": "https://branfordct.myrec.com/info/facilities/details.aspx?FacilityID=14781",
+      "address": "Thimble Island Road, Branford, CT 06405",
+      "tryThis": "Visit the beach, then walk toward the village waterfront and see how many Thimble Islands you can spot.",
+      "dateAdded": "2026-09-17",
+      "towns": [
+        "Stony Creek",
+        "Branford"
+      ],
+      "slug": "stony-creek-beach"
     },
     {
       "name": "Stony Creek Museum + Village History Stop",
@@ -5530,6 +6511,33 @@
       "slug": "talcott-mountain-state-park-and-heublein-tower"
     },
     {
+      "name": "Taste of New Haven Food & Pizza Tours",
+      "town": "New Haven",
+      "region": "New Haven Area",
+      "experienceTypes": [
+        "Food & Treats",
+        "Only in Connecticut",
+        "Something Different"
+      ],
+      "categories": [
+        "Food & Treats",
+        "Date Night",
+        "Only in Connecticut",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Guided culinary walking experiences through New Haven, including pizza, pasta, taco, neighborhood, and themed tours that combine food with local culture and history.",
+      "officialWebsite": "https://tasteofnewhaven.com/",
+      "tryThis": "Take a food tour and rank the stops by both flavor and the story you learned about New Haven.",
+      "dateAdded": "2026-09-17",
+      "slug": "taste-of-new-haven-food-and-pizza-tours"
+    },
+    {
       "name": "Taylor Brooke Brewery",
       "town": "Woodstock",
       "audiences": [
@@ -5571,6 +6579,32 @@
         "All ages"
       ],
       "slug": "thames-river-norwich-harbor-glow-cruise"
+    },
+    {
+      "name": "The Adventure Park at Storrs",
+      "town": "Storrs",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Hiking & Outdoors",
+        "Something Different"
+      ],
+      "categories": [
+        "Parks & Preserves",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A treetop ropes and zipline park with nine aerial trails, 28 ziplines, 106 challenge elements, and multiple difficulty levels in a wooded setting near UConn.",
+      "officialWebsite": "https://myadventurepark.com/location/storrs-ct/",
+      "tryThis": "Complete one course that feels just outside your comfort zone, then take a group photo at the finish.",
+      "notes": "Seasonal operating schedule. Official 2026 fall schedule runs Friday-Sunday, with special-event dates also listed.",
+      "dateAdded": "2026-09-17",
+      "slug": "the-adventure-park-at-storrs"
     },
     {
       "name": "The Aldrich Contemporary Art Museum",
@@ -5663,6 +6697,34 @@
       "slug": "the-ridgefield-playhouse"
     },
     {
+      "name": "The Sculpture Mile at Madison",
+      "town": "Madison",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Hiking & Outdoors",
+        "Something Different"
+      ],
+      "categories": [
+        "Easy Walks",
+        "Museums & Culture",
+        "Free / Low-Cost",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "An outdoor public-art experience in Madison featuring sculpture displayed along a walkable route through town.",
+      "officialWebsite": "https://www.madisonct.org/701/Culture",
+      "tryThis": "Walk the route and choose the sculpture whose setting changes the work the most. Take a photo showing both the art and its surroundings.",
+      "dateAdded": "2026-09-17",
+      "slug": "the-sculpture-mile-at-madison"
+    },
+    {
       "name": "The Silo Cooking School Hands-On Class",
       "town": "New Milford",
       "region": "Litchfield Hills",
@@ -5696,6 +6758,35 @@
         "Branford"
       ],
       "slug": "thimble-islands-cruise-aboard-volsunga-iv"
+    },
+    {
+      "name": "Thompson Speedway Motorsports Park",
+      "town": "Thompson",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Only in Connecticut",
+        "Something Different",
+        "Music & Events"
+      ],
+      "categories": [
+        "Festivals & Events",
+        "Only in Connecticut",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A historic Connecticut motorsports complex with a .625-mile oval, road course, and scheduled racing events including short-track racing, drifting, motorcycles, and other track programs.",
+      "officialWebsite": "https://www.thompsonspeedway.com/",
+      "address": "205 E Thompson Rd, Thompson, CT 06277",
+      "tryThis": "Attend a race or track event and pick one car, driver, or racing class to follow for the day.",
+      "notes": "Event-based experience. Check the official schedule before visiting.",
+      "dateAdded": "2026-09-17",
+      "slug": "thompson-speedway-motorsports-park"
     },
     {
       "name": "Thorncrest Farm + Milk House Chocolates Cow & Chocolate",
@@ -5732,6 +6823,32 @@
       "notes": "Indoor live-music club with year-round programming.",
       "dateAdded": "2026-08-17",
       "slug": "toads-place"
+    },
+    {
+      "name": "Tod's Point Sailing School",
+      "town": "Old Greenwich",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Waterfront",
+        "Something Different"
+      ],
+      "categories": [
+        "Beaches & Shoreline",
+        "Something Different",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Summer",
+      "whyGo": "A public-access sailing program at Greenwich Point offering summer sailing instruction and hourly boat rentals, including adult classes.",
+      "officialWebsite": "https://todspointsailingschool.org/",
+      "tryThis": "Take a lesson or rent a boat and identify one new sailing skill you learned on Long Island Sound.",
+      "dateAdded": "2026-09-17",
+      "slug": "tods-point-sailing-school"
     },
     {
       "name": "Topsmead State Forest",
@@ -5939,6 +7056,37 @@
       "slug": "wadsworth-falls-state-park"
     },
     {
+      "name": "Wall to Wall: New London Mural Walk",
+      "town": "New London",
+      "region": "Mystic & Southeastern CT",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Only in Connecticut",
+        "Something Different"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Free / Low-Cost",
+        "Only in Connecticut",
+        "Something Different",
+        "Easy Walks"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A self-guided six-block public-art walk through downtown New London featuring more than 20 murals by local and internationally known artists. Hygienic Art's official mural-walk material includes a mapped route and artist information.",
+      "officialWebsite": "https://www.hygienic.org/uploads/b/23b44a50-2536-11eb-98c6-1b02f252f039/b0f2e670-8d9e-11eb-a0ed-210b7e2ac094.pdf",
+      "address": "79 Bank Street, New London, CT 06320",
+      "tryThis": "Choose three murals without reading their labels first. Give each one your own title, then check the official mural guide to see the real title and artist.",
+      "notes": "Free, walkable downtown activity. Official guide identifies 24 mural stops.",
+      "dateAdded": "2026-09-17",
+      "slug": "wall-to-wall-new-london-mural-walk"
+    },
+    {
       "name": "WanderBrush Paint Your Partner Experience",
       "town": "Collinsville / Mobile",
       "audiences": [
@@ -5995,6 +7143,31 @@
       "address": "677 South Avenue, New Canaan, CT 06840",
       "dateAdded": "2026-08-21",
       "slug": "waveny-park"
+    },
+    {
+      "name": "Webb Deane Stevens Museum",
+      "town": "Wethersfield",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A preserved historic-site museum with guided house tours, exhibitions, gardens, and programs exploring Connecticut and early American history.",
+      "officialWebsite": "https://wdsmuseum.org/",
+      "address": "211 Main Street, Wethersfield, CT 06109",
+      "tryThis": "Take a guided tour and choose one room or object that gives you the clearest sense of daily life in an earlier Connecticut.",
+      "dateAdded": "2026-09-17",
+      "slug": "webb-deane-stevens-museum"
     },
     {
       "name": "Weir Farm National Historical Park",
@@ -6073,6 +7246,31 @@
       "slug": "west-thompson-lake-disc-golf-and-quinebaug-water-trail"
     },
     {
+      "name": "Westport Country Playhouse",
+      "town": "Westport",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Theater & Movies"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A nearly century-old nonprofit theater and performing arts center with mainstage productions, family programming, special events, and year-round performances.",
+      "officialWebsite": "https://www.westportplayhouse.org/",
+      "address": "25 Powers Court, Westport, CT 06880",
+      "tryThis": "Pick a production you would not normally choose and make the show the centerpiece of a Westport arts night.",
+      "dateAdded": "2026-09-17",
+      "slug": "westport-country-playhouse"
+    },
+    {
       "name": "Westport Farmers' Market",
       "town": "Westport",
       "audiences": [
@@ -6131,6 +7329,33 @@
       "notes": "Museum hours are Tuesday through Saturday 9 AM to 5 PM and Sunday noon to 5 PM. Adult museum admission is $6. Current site notice says some wetland-adjacent trails may be flooded after heavy rain, so check conditions before going.",
       "dateAdded": "2026-08-14",
       "slug": "white-memorial-conservation-center"
+    },
+    {
+      "name": "Whittemore Glen State Park",
+      "town": "Naugatuck / Middlebury",
+      "region": "New Haven Area",
+      "experienceTypes": [
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Parks & Preserves",
+        "Longer Hikes",
+        "Free / Low-Cost"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A 242-acre Connecticut state park offering hiking and horseback riding, with free parking and a quieter alternative to the state's better-known parks.",
+      "officialWebsite": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+      "tryThis": "Take a short hike and note three signs of how the landscape changes between wooded and open sections.",
+      "dateAdded": "2026-09-17",
+      "towns": [
+        "Naugatuck",
+        "Middlebury"
+      ],
+      "slug": "whittemore-glen-state-park"
     },
     {
       "name": "Wickham Park Gardens",
@@ -6322,6 +7547,33 @@
       "slug": "wooster-square-farmers-market"
     },
     {
+      "name": "Yale Center for British Art",
+      "town": "New Haven",
+      "region": "New Haven Area",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Free / Low-Cost",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A free Yale museum devoted to British art, housed in Louis Kahn's landmark building and offering galleries, exhibitions, research collections, and public programs.",
+      "officialWebsite": "https://britishart.yale.edu/",
+      "address": "1080 Chapel Street, New Haven, CT 06520",
+      "tryThis": "Find one work that changes how you think about the word 'British,' then compare it with a work across the street at the Yale Art Gallery.",
+      "dateAdded": "2026-09-17",
+      "slug": "yale-center-for-british-art"
+    },
+    {
       "name": "Yale Peabody Museum",
       "town": "New Haven",
       "audiences": [
@@ -6330,6 +7582,33 @@
       "officialWebsite": "https://peabody.yale.edu/visit",
       "dateAdded": "2026-08-13",
       "slug": "yale-peabody-museum"
+    },
+    {
+      "name": "Yale University Art Gallery",
+      "town": "New Haven",
+      "region": "New Haven Area",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Free / Low-Cost",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A free encyclopedic art museum at Yale with nearly 300,000 objects in its collection and more than 4,000 works on view across art from ancient cultures to the present.",
+      "officialWebsite": "https://artgallery.yale.edu/",
+      "address": "1111 Chapel Street, New Haven, CT 06511",
+      "tryThis": "Each person picks one work they would take home if they could, then explains why before revealing the artist and date.",
+      "dateAdded": "2026-09-17",
+      "slug": "yale-university-art-gallery"
     },
     {
       "name": "Yoga in Our City Free Outdoor Yoga",
