@@ -13,6 +13,13 @@
 /* ---------- HERO (deep-purple band, matching .research-hero) ---------- */
 .vn-hero { background:#2d1f4e; padding:4rem 0 3.5rem; }
 .vn-hero .section-heading { margin-bottom:1.25rem; }
+/* The h1 is the brand logo. Being an image it picks up none of the heading
+   type styles, so the margin below is what .section-heading used to
+   contribute. The width is capped in rem as well as vw so the mark stops
+   growing on a wide screen instead of turning into a banner; 27rem is a
+   little under its native 513px, which keeps it sharp on a 2x display. */
+.vn-hero-logo { margin:0 0 1.5rem; line-height:0; }
+.vn-hero-logo img { display:block; width:min(27rem, 72vw); height:auto; }
 .vn-hero-lede {
   font-size:1rem; color:rgba(255,255,255,.8); max-width:640px;
   line-height:1.75; margin-bottom:2rem;
