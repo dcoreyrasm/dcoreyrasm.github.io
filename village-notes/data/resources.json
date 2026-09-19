@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-16T12:10:25.985Z",
+  "generated": "2026-09-19T14:02:45.885Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 738,
+  "count": 743,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -1438,7 +1438,7 @@
         "Mentoring"
       ],
       "accessibility": "For students with disabilities ages 10–22 at participating schools. The program supports self-advocacy, peer mentoring, financial literacy, career readiness, and planning for life after high school.",
-      "lastVerified": "2026-09-05",
+      "lastVerified": "2026-09-19",
       "teenOpportunity": [
         "College Readiness",
         "Career Exploration"
@@ -2888,7 +2888,8 @@
       ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
-      "notes": "Official Connecticut Office of Early Childhood source verified 2026-08-25. Category is the closest available tracker choice; this is a child-care subsidy and application resource."
+      "notes": "Official Connecticut Office of Early Childhood source verified 2026-08-25. Category is the closest available tracker choice; this is a child-care subsidy and application resource.",
+      "lastVerified": "2026-09-19"
     },
     {
       "id": "recc3apTSqgPafxXb",
@@ -4508,7 +4509,8 @@
       "notes": "Official Connecticut Department of Children and Families source verified 2026-08-25.",
       "servicesOffered": [
         "Parent / Family Support"
-      ]
+      ],
+      "lastVerified": "2026-09-19"
     },
     {
       "id": "recr1Zns1rQBDtn67",
@@ -4525,10 +4527,11 @@
         "Youth Employment"
       ],
       "programYear": "Ongoing",
-      "lastVerified": "2026-08-31",
+      "lastVerified": "2026-09-19",
       "teenOpportunity": [
         "Apprenticeship"
-      ]
+      ],
+      "hours": "Office hours: Monday–Friday, 8 a.m.–4:30 p.m. Apprenticeship schedules vary by sponsor."
     },
     {
       "id": "recRMsdacElIMoVkl",
@@ -6435,6 +6438,28 @@
       "notes": "Official Fairfield Community Services page verified August 25, 2026."
     },
     {
+      "id": "recpkeh7OwgDV7Rhe",
+      "name": "Fairfield Ludlowe High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Comprehensive public high school",
+      "town": "Fairfield",
+      "address": "785 Unquowa Road, Fairfield, CT 06824",
+      "ages": "Grades 9–12",
+      "website": "https://flhs.fairfieldschools.org/",
+      "contact": "203-255-7201",
+      "submittedBy": "Village Notes Research",
+      "townsServed": [
+        "Fairfield"
+      ],
+      "lastVerified": "2026-09-19",
+      "programSetting": [
+        "Public School"
+      ],
+      "gradeRange": "9-12",
+      "schoolDistrict": "Fairfield Public Schools"
+    },
+    {
       "id": "recAF6wa0lBsAbMpz",
       "name": "Fairfield University Upward Bound",
       "track": "Teens & High School",
@@ -6478,6 +6503,32 @@
         "Career Exploration",
         "Leadership Program"
       ]
+    },
+    {
+      "id": "recK7O6BzFhHLOXP3",
+      "name": "Fairfield Warde High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Comprehensive public high school offering Advanced Placement and UConn Early College Experience courses",
+      "town": "Fairfield",
+      "address": "755 Melville Avenue, Fairfield, CT 06825",
+      "ages": "Grades 9–12",
+      "hours": "School day: 7:30 a.m.–2:10 p.m.; early dismissal: 11:45 a.m.; delayed opening: 9:30 a.m.",
+      "website": "https://fwhs.fairfieldschools.org/",
+      "contact": "203-255-8354",
+      "submittedBy": "Village Notes Research",
+      "townsServed": [
+        "Fairfield"
+      ],
+      "servicesOffered": [
+        "College Access / Readiness"
+      ],
+      "lastVerified": "2026-09-19",
+      "programSetting": [
+        "Public School"
+      ],
+      "gradeRange": "9-12",
+      "schoolDistrict": "Fairfield Public Schools"
     },
     {
       "id": "recw3ioVZjTl1NOZA",
@@ -7480,6 +7531,33 @@
       ]
     },
     {
+      "id": "recz7Y5BsUZoP8Gzo",
+      "name": "Greenwich High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Four-year comprehensive public high school with a College and Career Center",
+      "town": "Greenwich",
+      "address": "10 Hillside Road, Greenwich, CT 06830",
+      "ages": "Grades 9–12",
+      "website": "https://ghs.greenwichschools.org/",
+      "contact": "203-625-8000",
+      "submittedBy": "Village Notes Research",
+      "townsServed": [
+        "Greenwich"
+      ],
+      "servicesOffered": [
+        "College Access / Readiness"
+      ],
+      "lastVerified": "2026-09-19",
+      "programSetting": [
+        "Public School"
+      ],
+      "gradeRange": "9-12",
+      "schoolDistrict": "Greenwich Public Schools",
+      "event": "College Admission Speaker Panel, 6 p.m.",
+      "eventDate": "2026-09-29"
+    },
+    {
       "id": "recG2kRQ5pR6c5861",
       "name": "Greta Weiss Family Child Care Home (Little Garden Day Care)",
       "track": "Family & Childcare",
@@ -7703,7 +7781,7 @@
       "specificType": "State-funded Early Start CT provider (Public School) -- 20 preschool funded spaces FY26",
       "town": "Hamden",
       "address": "35 Hillfield Rd, Hamden, CT, 06518",
-      "ages": "Preschool",
+      "ages": "Ages 3–5; children not yet in kindergarten",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
       "contact": "Jessica Vega | (203) 407-2254",
@@ -7714,8 +7792,16 @@
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 20 preschool. An allocation, not current openings. Licence/registry: DCEX.80513; Registry 1800. Local partner: Hamden's Partnership for Young Children -- Kerry Oberg | koberg@uwgnh.org | 203-691-4208. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
-        "Preschool / Pre-K"
-      ]
+        "Preschool / Pre-K",
+        "Disability Support"
+      ],
+      "website": "https://alicepeck.hamden.org/",
+      "hours": "Pre-K 4: Monday–Friday, 9 a.m.–3:30 p.m.; Pre-K 3 provides morning and afternoon sessions.",
+      "accessibility": "Two Pre-K 4 classrooms are 50/50 preschool rooms with equal numbers of students with IEPs and play partners; the program also integrates students with Hamden Early Learning Program peers during recess, PE, art, music, and classroom play.",
+      "specializedSupport": [
+        "Inclusive Program"
+      ],
+      "lastVerified": "2026-09-19"
     },
     {
       "id": "reciasneGs7vFHXSK",
@@ -11764,7 +11850,7 @@
       "specificType": "State-funded Early Start CT provider (Public School) -- 43 preschool funded spaces FY26",
       "town": "Naugatuck",
       "address": "28 Central Ave, Naugatuck, CT, 06770",
-      "ages": "Preschool",
+      "ages": "Ages 3–4",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
       "contact": "Liying (Lily) Zhao | (203) 589-7391",
@@ -11775,8 +11861,17 @@
       "dateSubmitted": "2026-08-25",
       "notes": "FY26 state-funded spaces: 43 preschool. An allocation, not current openings. Licence/registry: DCEX.80618; Registry 1632. Local partner: Naugatuck LGP -- Eileen Cornacchia | ecornacchia@naugatuck-ct.gov | 617-416-6661. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
       "servicesOffered": [
-        "Preschool / Pre-K"
-      ]
+        "Preschool / Pre-K",
+        "Disability Support"
+      ],
+      "website": "https://ecc.naugatuck.k12.ct.us/",
+      "hours": "Full-day classes: 7:30 a.m.–5:30 p.m.; school-day classes: 9:10 a.m.–3:10 p.m.; morning and afternoon session schedules are also available.",
+      "meals": "Breakfast, Lunch, and Snack",
+      "accessibility": "The center lists an on-site Behavioral Health and Disabilities Specialist and a full special education team.",
+      "specializedSupport": [
+        "Behavioral Support"
+      ],
+      "lastVerified": "2026-09-19"
     },
     {
       "id": "rec2xlix35Jn9qibG",
@@ -14738,7 +14833,10 @@
         "Arts Enrichment",
         "Sports Enrichment",
         "Summer Day Camp"
-      ]
+      ],
+      "registrationStatus": "Past Cycle",
+      "programYear": "2026 Summer",
+      "lastVerified": "2026-09-19"
     },
     {
       "id": "rec2tHyrFKtZMhmBI",
@@ -17949,6 +18047,28 @@
       ]
     },
     {
+      "id": "reckMor6nMRp2ziOw",
+      "name": "West Haven High School",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Comprehensive public high school",
+      "town": "West Haven",
+      "address": "1 McDonough Plaza, West Haven, CT 06516",
+      "ages": "Grades 9–12",
+      "website": "https://whhs.whschools.org/",
+      "contact": "203-937-4360",
+      "submittedBy": "Village Notes Research",
+      "townsServed": [
+        "West Haven"
+      ],
+      "lastVerified": "2026-09-19",
+      "programSetting": [
+        "Public School"
+      ],
+      "gradeRange": "9-12",
+      "schoolDistrict": "West Haven Public Schools"
+    },
+    {
       "id": "recjiO4bzJtqlbNiK",
       "name": "Western Connecticut Area Agency on Aging",
       "track": "Elder Care",
@@ -18354,6 +18474,38 @@
         "Certification Program",
         "Career Exploration"
       ]
+    },
+    {
+      "id": "recnj39okQSq1Wvox",
+      "name": "Yale College Application Essay Workshops",
+      "track": "Teens & High School",
+      "category": "College Access / Readiness",
+      "specificType": "Two-session college application essay workshop with one-on-one feedback and revision recommendations; attendance at both sessions is required",
+      "town": "New Haven",
+      "address": "Poorvu Center for Teaching and Learning, 120 High Street, New Haven, CT 06511",
+      "ages": "12th-grade students in New Haven Public Schools",
+      "hours": "September 26 and October 10, 2026, 10:30 a.m.–12:30 p.m.; attendance at both sessions is required.",
+      "cost": "Official event page does not state a participant cost.",
+      "website": "https://onha.yale.edu/events/2026-09-26-college-application-essay-workshops",
+      "contact": "YalePathways@yale.edu",
+      "submittedBy": "Village Notes Research",
+      "townsServed": [
+        "New Haven"
+      ],
+      "servicesOffered": [
+        "College Access / Readiness",
+        "Literacy / Tutoring"
+      ],
+      "registrationStatus": "Open",
+      "lastVerified": "2026-09-19",
+      "programSetting": [
+        "College / University"
+      ],
+      "teenOpportunity": [
+        "College Readiness"
+      ],
+      "event": "Two-session college essay workshop; attendance at both required",
+      "eventDate": "2026-09-26"
     },
     {
       "id": "recX9CgohEyCYo6dY",
