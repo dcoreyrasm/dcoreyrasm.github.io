@@ -23,7 +23,6 @@ worth far more to a family than one that was right in August and might not be
 now.
 
   DOMAIN                             N  VERIFIED     TRACKS
-  bgchartford.org                    5  never        Family & Childcare
   ghymca.org                         5  never        Family & Childcare
   ctoec.org                          3  never        Family & Childcare
   resources.211childcare.org         1  never        Family & Childcare
@@ -75,7 +74,6 @@ now.
   navy-stem.uconn.edu                1  2026-08-25   Family & Childcare
   hartford.edu                       1  2026-08-25   Family & Childcare
   wakemanclub.org                    1  2026-08-25   Family & Childcare
-  onha.yale.edu                      1  2026-08-25   Family & Childcare
   yale.learningu.org                 1  2026-08-25   Family & Childcare
   ysph.yale.edu                      1  2026-08-25   Family & Childcare
   kindercare.com                     7  2026-08-26   Family & Childcare
@@ -223,7 +221,6 @@ now.
   littleguild.org                    1  2026-09-04   Pet Care & Resources
   thevictorproject.org               1  2026-09-04   Pet Care & Resources
   hvcchelps.org                      1  2026-09-04   Pet Care & Resources
-  portal.ct.gov                     18  2026-09-05   Elder Care, Family & Childcare, Pet Care & Resources, Teens & High School
   disrightsct.org                    1  2026-09-05   Family & Childcare
   maloneyhs.com                      1  2026-09-05   Teens & High School
   independenceunlimited.org          1  2026-09-05   Teens & High School
@@ -257,6 +254,15 @@ now.
   wesleyan.edu                       1  2026-09-09   Teens & High School
   brooklynrobotfoundry.com           1  2026-09-10   Family & Childcare
   ctpaidleave.org                    1  2026-09-16   Family & Childcare
+  portal.ct.gov                     18  2026-09-19   Elder Care, Family & Childcare, Pet Care & Resources, Teens & High School
+  bgchartford.org                    5  2026-09-19   Family & Childcare
+  onha.yale.edu                      2  2026-09-19   Family & Childcare, Teens & High School
+  flhs.fairfieldschools.org          1  2026-09-19   Teens & High School
+  fwhs.fairfieldschools.org          1  2026-09-19   Teens & High School
+  ghs.greenwichschools.org           1  2026-09-19   Teens & High School
+  alicepeck.hamden.org               1  2026-09-19   Family & Childcare
+  ecc.naugatuck.k12.ct.us            1  2026-09-19   Family & Childcare
+  whhs.whschools.org                 1  2026-09-19   Teens & High School
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -281,9 +287,9 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 325 of 738 listings (44%) carry a Website, so
+Only 332 of 743 listings (45%) carry a Website, so
 everything above is built from that third of the directory. The other
-413 have no URL recorded at all, which means nobody -- not you,
+411 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
 unverifiable in their current state.
 
@@ -291,7 +297,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-37 of the 234 domains here have never had a Last Verified on
+36 of the 240 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```

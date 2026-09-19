@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-19T14:02:45.885Z",
+  "generated": "2026-09-19T15:12:16.060Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -4520,6 +4520,7 @@
       "specificType": "Statewide registered apprenticeship system combining paid on-the-job training with required academic instruction. Apprentices register through an approved employer sponsor.",
       "town": "Statewide",
       "address": "200 Folly Brook Boulevard, Wethersfield, CT 06109",
+      "hours": "Office hours: Monday–Friday, 8 a.m.–4:30 p.m. Apprenticeship schedules vary by sponsor.",
       "website": "https://portal.ct.gov/dol/divisions/apprenticeships/message",
       "submittedBy": "Village Notes Research",
       "registrationStatus": "Rolling / Ongoing",
@@ -4530,8 +4531,7 @@
       "lastVerified": "2026-09-19",
       "teenOpportunity": [
         "Apprenticeship"
-      ],
-      "hours": "Office hours: Monday–Friday, 8 a.m.–4:30 p.m. Apprenticeship schedules vary by sponsor."
+      ]
     },
     {
       "id": "recRMsdacElIMoVkl",
@@ -6448,16 +6448,16 @@
       "ages": "Grades 9–12",
       "website": "https://flhs.fairfieldschools.org/",
       "contact": "203-255-7201",
-      "submittedBy": "Village Notes Research",
       "townsServed": [
         "Fairfield"
       ],
+      "submittedBy": "Village Notes Research",
       "lastVerified": "2026-09-19",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Fairfield Public Schools",
       "programSetting": [
         "Public School"
-      ],
-      "gradeRange": "9-12",
-      "schoolDistrict": "Fairfield Public Schools"
+      ]
     },
     {
       "id": "recAF6wa0lBsAbMpz",
@@ -6516,19 +6516,19 @@
       "hours": "School day: 7:30 a.m.–2:10 p.m.; early dismissal: 11:45 a.m.; delayed opening: 9:30 a.m.",
       "website": "https://fwhs.fairfieldschools.org/",
       "contact": "203-255-8354",
-      "submittedBy": "Village Notes Research",
       "townsServed": [
         "Fairfield"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "College Access / Readiness"
       ],
       "lastVerified": "2026-09-19",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Fairfield Public Schools",
       "programSetting": [
         "Public School"
-      ],
-      "gradeRange": "9-12",
-      "schoolDistrict": "Fairfield Public Schools"
+      ]
     },
     {
       "id": "recw3ioVZjTl1NOZA",
@@ -7541,19 +7541,19 @@
       "ages": "Grades 9–12",
       "website": "https://ghs.greenwichschools.org/",
       "contact": "203-625-8000",
-      "submittedBy": "Village Notes Research",
       "townsServed": [
         "Greenwich"
       ],
+      "submittedBy": "Village Notes Research",
       "servicesOffered": [
         "College Access / Readiness"
       ],
       "lastVerified": "2026-09-19",
+      "gradeRange": "9-12",
+      "schoolDistrict": "Greenwich Public Schools",
       "programSetting": [
         "Public School"
       ],
-      "gradeRange": "9-12",
-      "schoolDistrict": "Greenwich Public Schools",
       "event": "College Admission Speaker Panel, 6 p.m.",
       "eventDate": "2026-09-29"
     },
@@ -7782,8 +7782,10 @@
       "town": "Hamden",
       "address": "35 Hillfield Rd, Hamden, CT, 06518",
       "ages": "Ages 3–5; children not yet in kindergarten",
+      "hours": "Pre-K 4: Monday–Friday, 9 a.m.–3:30 p.m.; Pre-K 3 provides morning and afternoon sessions.",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
+      "website": "https://alicepeck.hamden.org/",
       "contact": "Jessica Vega | (203) 407-2254",
       "townsServed": [
         "Hamden"
@@ -7795,13 +7797,11 @@
         "Preschool / Pre-K",
         "Disability Support"
       ],
-      "website": "https://alicepeck.hamden.org/",
-      "hours": "Pre-K 4: Monday–Friday, 9 a.m.–3:30 p.m.; Pre-K 3 provides morning and afternoon sessions.",
       "accessibility": "Two Pre-K 4 classrooms are 50/50 preschool rooms with equal numbers of students with IEPs and play partners; the program also integrates students with Hamden Early Learning Program peers during recess, PE, art, music, and classroom play.",
+      "lastVerified": "2026-09-19",
       "specializedSupport": [
         "Inclusive Program"
-      ],
-      "lastVerified": "2026-09-19"
+      ]
     },
     {
       "id": "reciasneGs7vFHXSK",
@@ -11851,8 +11851,10 @@
       "town": "Naugatuck",
       "address": "28 Central Ave, Naugatuck, CT, 06770",
       "ages": "Ages 3–4",
+      "hours": "Full-day classes: 7:30 a.m.–5:30 p.m.; school-day classes: 9:10 a.m.–3:10 p.m.; morning and afternoon session schedules are also available.",
       "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
+      "website": "https://ecc.naugatuck.k12.ct.us/",
       "contact": "Liying (Lily) Zhao | (203) 589-7391",
       "townsServed": [
         "Naugatuck"
@@ -11864,14 +11866,12 @@
         "Preschool / Pre-K",
         "Disability Support"
       ],
-      "website": "https://ecc.naugatuck.k12.ct.us/",
-      "hours": "Full-day classes: 7:30 a.m.–5:30 p.m.; school-day classes: 9:10 a.m.–3:10 p.m.; morning and afternoon session schedules are also available.",
       "meals": "Breakfast, Lunch, and Snack",
       "accessibility": "The center lists an on-site Behavioral Health and Disabilities Specialist and a full special education team.",
+      "lastVerified": "2026-09-19",
       "specializedSupport": [
         "Behavioral Support"
-      ],
-      "lastVerified": "2026-09-19"
+      ]
     },
     {
       "id": "rec2xlix35Jn9qibG",
@@ -14829,12 +14829,12 @@
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Arts, sciences, athletics, field trips, and meals. Official 2026 program page verified August 25, 2026.",
+      "registrationStatus": "Past Cycle",
       "servicesOffered": [
         "Arts Enrichment",
         "Sports Enrichment",
         "Summer Day Camp"
       ],
-      "registrationStatus": "Past Cycle",
       "programYear": "2026 Summer",
       "lastVerified": "2026-09-19"
     },
@@ -18057,16 +18057,16 @@
       "ages": "Grades 9–12",
       "website": "https://whhs.whschools.org/",
       "contact": "203-937-4360",
-      "submittedBy": "Village Notes Research",
       "townsServed": [
         "West Haven"
       ],
+      "submittedBy": "Village Notes Research",
       "lastVerified": "2026-09-19",
+      "gradeRange": "9-12",
+      "schoolDistrict": "West Haven Public Schools",
       "programSetting": [
         "Public School"
-      ],
-      "gradeRange": "9-12",
-      "schoolDistrict": "West Haven Public Schools"
+      ]
     },
     {
       "id": "recjiO4bzJtqlbNiK",
@@ -18488,15 +18488,15 @@
       "cost": "Official event page does not state a participant cost.",
       "website": "https://onha.yale.edu/events/2026-09-26-college-application-essay-workshops",
       "contact": "YalePathways@yale.edu",
-      "submittedBy": "Village Notes Research",
       "townsServed": [
         "New Haven"
       ],
+      "submittedBy": "Village Notes Research",
+      "registrationStatus": "Open",
       "servicesOffered": [
         "College Access / Readiness",
         "Literacy / Tutoring"
       ],
-      "registrationStatus": "Open",
       "lastVerified": "2026-09-19",
       "programSetting": [
         "College / University"
