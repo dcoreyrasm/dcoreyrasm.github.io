@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-17T21:24:47.306Z",
-  "count": 424,
+  "generated": "2026-09-20T16:10:04.649Z",
+  "count": 429,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -37,6 +37,7 @@
     "Coventry",
     "Cromwell",
     "Danbury",
+    "Danielson",
     "Deep River",
     "Derby",
     "Durham",
@@ -1166,7 +1167,7 @@
       ],
       "bestTime": "Fall",
       "whyGo": "A major Guilford fall farm stop with current pick-your-own fruit and flowers, pumpkins, a corn maze, seasonal food and a daily Fall Festival.",
-      "officialWebsite": "https://www.bishopsorchards.com/pick-your-own",
+      "officialWebsite": "https://www.bishopsorchards.com/fall-festival",
       "address": "1355 Boston Post Road, Guilford, CT 06437",
       "notes": "Fall Festival and pick-your-own are open daily through November 1. Wagon rides, the mega slide and apple train operate on weekends and holidays. Crop availability changes, so use Bishop's same-day pick-your-own information before leaving.",
       "dateAdded": "2026-08-17",
@@ -2023,6 +2024,35 @@
       "dateAdded": "2026-08-17",
       "towns": [],
       "slug": "connecticut-maple-sugaring-season-challenge"
+    },
+    {
+      "name": "Connecticut Museum of Culture and History",
+      "town": "Hartford",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Date Night",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Free / Low-Cost",
+        "Date Night",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Explore Connecticut history through exhibitions, objects, documents, and stories in Hartford. The museum also has regular free-admission weekends and strong accessibility information.",
+      "officialWebsite": "https://www.connecticutmuseum.org/visit/plan-your-visit/",
+      "address": "One Elizabeth Street, Hartford, CT 06105",
+      "tryThis": "Find one Connecticut story tied to a town you know and share one detail that surprised you.",
+      "notes": "The current official page notes a temporary September 21 technical-upgrade closure and says the museum will reopen September 22. Free parking is available. First full Saturday and Sunday of each month are free for all ages.",
+      "dateAdded": "2026-09-20",
+      "slug": "connecticut-museum-of-culture-and-history"
     },
     {
       "name": "Connecticut Oyster Trail Challenge",
@@ -3804,7 +3834,7 @@
       ],
       "bestTime": "Fall",
       "whyGo": "A classic Shelton harvest stop with pick-your-own pumpkins, a mini corn maze, hayrides, fall flowers, apples, squash and farm scenery, plus a winery for an adults-focused add-on.",
-      "officialWebsite": "https://www.jonesfamilyfarms.com/seasons/pumpkins",
+      "officialWebsite": "https://www.jonesfamilyfarms.com/pumpkin-update",
       "notes": "2026 pumpkin season runs September 19-October 31 at Pumpkinseed Hill. Jones advises checking the crop report because hours can change with weather and picking conditions. Christmas-tree season begins the weekend before Thanksgiving and runs daily except Thanksgiving Day.",
       "dateAdded": "2026-08-17",
       "eventStart": "2026-09-19",
@@ -3949,6 +3979,37 @@
         "New Preston"
       ],
       "slug": "lake-waramaug-state-park"
+    },
+    {
+      "name": "Lapsley Orchard Fall Pick-Your-Own",
+      "town": "Pomfret Center",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal",
+        "Food & Treats",
+        "Date Night"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Food & Treats",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A classic Quiet Corner farm stop for fall picking. Current state farm information lists pick-your-own apples from September into November, flowers into early October, and pumpkins beginning October 1.",
+      "officialWebsite": "https://www.lapsleyorchard.com/",
+      "address": "403 Orchard Hill Road, Pomfret Center, CT 06259",
+      "tryThis": "Call ahead for the day's crop, pick apples together, and stop for a cider doughnut.",
+      "notes": "The orchard's own site also lists fall cider doughnuts and Sunday wagon rides in September and October. Crop conditions vary, so call 860-928-9186 before visiting.",
+      "dateAdded": "2026-09-20",
+      "slug": "lapsley-orchard-fall-pick-your-own"
     },
     {
       "name": "Laurel Glen Farm Fall Pick-Your-Own",
@@ -4126,6 +4187,33 @@
       "tryThis": "Choose the room or design detail you would borrow for a dream house and explain why.",
       "dateAdded": "2026-08-17",
       "slug": "lockwood-mathews-mansion-museum"
+    },
+    {
+      "name": "Logee's Historic Greenhouses",
+      "town": "Danielson",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Something Different",
+        "Date Night",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Something Different",
+        "Date Night",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Date Night",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Browse Logee's historic retail greenhouses for rare, tropical, fruiting, and unusual plants at a Connecticut family business that dates to 1892.",
+      "officialWebsite": "https://www.logees.com/pages/plan-your-visit",
+      "address": "141 North Street, Danielson, CT 06239",
+      "tryThis": "Find one plant you have never seen before and each pick a favorite greenhouse find.",
+      "notes": "Retail greenhouse visit. Closed Mondays and Tuesdays. Hours and access can change, so check the official visit page before going.",
+      "dateAdded": "2026-09-20",
+      "slug": "logees-historic-greenhouses"
     },
     {
       "name": "Longbrook Park",
@@ -5000,6 +5088,34 @@
       "slug": "new-england-motorcycle-museum-mill-building-visit"
     },
     {
+      "name": "New Haven Museum",
+      "town": "New Haven",
+      "region": "New Haven Area",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Date Night",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Free / Low-Cost",
+        "Date Night",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Date Night",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A low-cost way to spend time with New Haven history, with current exhibitions on the people, places, events, and ideas that shaped the city.",
+      "officialWebsite": "https://www.newhavenmuseum.org/visit/admission-hours-directions/",
+      "address": "114 Whitney Avenue, New Haven, CT 06510",
+      "tryThis": "Choose one object or story in the museum and connect it to a New Haven place you can visit afterward.",
+      "notes": "Limited parking is available behind the museum. Check the museum homepage for schedule updates before visiting.",
+      "dateAdded": "2026-09-20",
+      "slug": "new-haven-museum"
+    },
+    {
       "name": "New London Harbor 'Pequot' Lighthouse Climb",
       "town": "New London",
       "audiences": [
@@ -5721,6 +5837,40 @@
       "officialWebsite": "https://www.historicnewengland.org/property/roseland-cottage/",
       "dateAdded": "2026-08-17",
       "slug": "roseland-cottage"
+    },
+    {
+      "name": "Roseland Cottage Fine Arts & Crafts Festival 2026",
+      "town": "Woodstock",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Fall & Seasonal",
+        "Music & Events",
+        "Date Night"
+      ],
+      "categories": [
+        "Festivals & Events",
+        "Museums & Culture",
+        "Free / Low-Cost",
+        "Date Night",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A two-day juried arts and crafts festival at historic Roseland Cottage with 180 artisans, live music, food vendors, and first-floor house tours.",
+      "officialWebsite": "https://my.historicnewengland.org/26498/ros-fest-sun",
+      "address": "556 Route 169, Woodstock, CT 06281",
+      "tryThis": "Pick one handmade piece you both like, then take the first-floor Roseland Cottage tour.",
+      "notes": "Rain or shine. The official page notes outdoor walking over uneven terrain; accessible restrooms are available and parking is provided.",
+      "dateAdded": "2026-09-20",
+      "eventStart": "2026-10-17",
+      "eventEnd": "2026-10-18",
+      "slug": "roseland-cottage-fine-arts-and-crafts-festival-2026"
     },
     {
       "name": "Salmon River State Forest + Comstock Covered Bridge Picnic Walk",
