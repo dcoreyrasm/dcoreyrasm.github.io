@@ -6,7 +6,7 @@ Measured from the published listings, so it is never out of date.
 ```
 WHERE THE DIRECTORY IS THIN — measured, not remembered.
 
-Measured on 2026-09-20. THESE FIGURES EXPIRE. They are recounted from the
+Measured on 2026-09-21. THESE FIGURES EXPIRE. They are recounted from the
 published listings on every sync, which is several times a day, and your own
 work is what moves them. Do not save any number here as a baseline or carry it
 between sessions: read them fresh from this section each time this brief is
