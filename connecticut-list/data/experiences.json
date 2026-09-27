@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-20T16:10:04.649Z",
-  "count": 429,
+  "generated": "2026-09-27T16:59:38.017Z",
+  "count": 426,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -51,6 +51,7 @@
     "Eastern Connecticut",
     "Eastford",
     "Easton",
+    "Enfield",
     "Essex",
     "Fairfield",
     "Farmington",
@@ -110,6 +111,7 @@
     "Plantsville",
     "Pomfret",
     "Pomfret Center",
+    "Portland",
     "Preston",
     "Putnam",
     "Redding",
@@ -119,6 +121,7 @@
     "Rocky Hill",
     "Roxbury",
     "Salem",
+    "Salisbury",
     "Sandy Hook",
     "Sharon",
     "Shelton",
@@ -353,62 +356,17 @@
       "slug": "2026-connecticut-maritime-heritage-festival"
     },
     {
-      "name": "2026 Cromwell Riverport Festival & Fireworks",
-      "town": "Cromwell",
-      "region": "Central CT",
-      "experienceTypes": [
-        "Music & Events",
-        "Fall & Seasonal",
-        "Date Night"
-      ],
-      "categories": [
-        "Festivals & Events",
-        "Free / Low-Cost",
-        "Date Night"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Date Night",
-        "Family",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A free three-day town celebration at Pierson Park marking Cromwell's 175th anniversary, with live music, food, local artisans, carnival activities, a 5K, and Saturday-night fireworks.",
-      "officialWebsite": "https://cromwellriverport.com/",
-      "address": "Pierson Park, 5 West St., Cromwell, CT 06416",
-      "tryThis": "Choose one local food or artisan stop and stay through the Saturday fireworks.",
-      "notes": "Some festival activities have separate charges. Fireworks are scheduled Saturday at 9:15 p.m. with viewing throughout Pierson Park.",
-      "dateAdded": "2026-09-04",
-      "eventStart": "2026-09-24",
-      "eventEnd": "2026-09-26",
-      "slug": "2026-cromwell-riverport-festival-and-fireworks"
-    },
-    {
       "name": "2026 Durham Fair",
       "town": "Durham",
       "audiences": [
         "Date Night"
       ],
       "officialWebsite": "https://www.durhamfair.com/",
+      "notes": "Current official schedule remains subject to change because of weather. Check the fair website before leaving.",
       "dateAdded": "2026-08-19",
       "eventStart": "2026-09-24",
       "eventEnd": "2026-09-27",
       "slug": "2026-durham-fair"
-    },
-    {
-      "name": "2026 Guilford Fair",
-      "town": "Guilford",
-      "region": "Connecticut Shoreline",
-      "audiences": [
-        "Date Night"
-      ],
-      "bestTime": "Specific event/date",
-      "officialWebsite": "https://guilfordfair.org/",
-      "address": "111 Lovers Lane, Guilford, CT",
-      "dateAdded": "2026-08-28",
-      "eventStart": "2026-09-18",
-      "eventEnd": "2026-09-20",
-      "slug": "2026-guilford-fair"
     },
     {
       "name": "2026 Harwinton Fair",
@@ -434,21 +392,6 @@
       "eventStart": "2026-09-10",
       "eventEnd": "2026-09-13",
       "slug": "2026-hebron-harvest-fair"
-    },
-    {
-      "name": "2026 Newtown Arts Festival",
-      "town": "Newtown",
-      "region": "Fairfield County",
-      "audiences": [
-        "Date Night"
-      ],
-      "bestTime": "Specific event/date",
-      "officialWebsite": "https://newtownartsfestival.com/",
-      "address": "Fairfield Hills, Newtown, CT",
-      "dateAdded": "2026-09-04",
-      "eventStart": "2026-09-18",
-      "eventEnd": "2026-09-20",
-      "slug": "2026-newtown-arts-festival"
     },
     {
       "name": "2026 Norfolk Tour de Forest Scenic Bike Ride",
@@ -573,9 +516,10 @@
       "bestTime": "Specific event/date",
       "officialWebsite": "https://www.trumbull-ct.gov/625/Arts-Festival",
       "address": "5866 Main Street, Trumbull, CT 06611",
+      "notes": "The Town of Trumbull postponed the festival under advice from the Emergency Management Team. Current date is Sunday, October 11, 2026 at Town Hall Green.",
       "dateAdded": "2026-08-19",
-      "eventStart": "2026-09-27",
-      "eventEnd": "2026-09-27",
+      "eventStart": "2026-10-11",
+      "eventEnd": "2026-10-11",
       "slug": "2026-trumbull-arts-festival"
     },
     {
@@ -632,36 +576,6 @@
       "dateAdded": "2026-08-14",
       "towns": [],
       "slug": "air-line-state-park-trail"
-    },
-    {
-      "name": "Aldrich Artists at the Table",
-      "town": "Ridgefield",
-      "region": "Fairfield County",
-      "experienceTypes": [
-        "Museum & Culture",
-        "Food & Treats",
-        "Date Night",
-        "Something Different"
-      ],
-      "categories": [
-        "Museums & Culture",
-        "Food & Treats",
-        "Date Night",
-        "Something Different"
-      ],
-      "audiences": [
-        "Date Night",
-        "Group Activities"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A farm-to-museum dinner in The Aldrich's Sculpture Garden that pairs a locally sourced meal with conversation alongside exhibiting Connecticut artists. The evening also includes a cocktail hour, oyster bar, silent auction, and art in the garden.",
-      "officialWebsite": "https://thealdrich.org/events/aldrich-artists-at-the-table-2",
-      "address": "258 Main Street, Ridgefield, CT 06877",
-      "tryThis": "Choose one Connecticut artist you meet or see during dinner and look up another work by that artist afterward.",
-      "notes": "This is a higher-cost special event. The official event page describes an outdoor dinner in the Sculpture Garden with cocktails, an oyster bar, silent auction and locally sourced dinner.",
-      "dateAdded": "2026-09-11",
-      "eventStart": "2026-09-26",
-      "slug": "aldrich-artists-at-the-table"
     },
     {
       "name": "Ambler Farm",
@@ -2554,6 +2468,34 @@
       "slug": "eastern-connecticut-ctvisit-regional-guide"
     },
     {
+      "name": "Easy Pickin's Orchard Fall Pick-Your-Own",
+      "town": "Enfield",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal",
+        "Food & Treats",
+        "Date Night"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Food & Treats",
+        "Date Night"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night",
+        "Family"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A hands-on farm stop where the latest late-September update lists apples, raspberries, herbs, flowers and vegetables for pick-your-own.",
+      "officialWebsite": "https://www.easypickinsorchard.com/",
+      "tryThis": "Choose two different things to pick, one familiar and one you do not usually bring home.",
+      "notes": "Crop availability and hours can change with weather. Check the homepage before leaving. The September 25 update changed hours because of the weekend storm forecast.",
+      "dateAdded": "2026-09-27",
+      "slug": "easy-pickins-orchard-fall-pick-your-own"
+    },
+    {
       "name": "Edgerton Park Gardens & Greenhouses",
       "town": "New Haven",
       "audiences": [
@@ -3578,32 +3520,6 @@
       "slug": "hollister-house-garden"
     },
     {
-      "name": "Hollister House Garden Watercolor Workshop: The Late Summer Palette",
-      "town": "Washington",
-      "region": "Litchfield Hills",
-      "experienceTypes": [
-        "Museum & Culture",
-        "Fall & Seasonal",
-        "Something Different"
-      ],
-      "categories": [
-        "Gardens & Arboretums",
-        "Something Different"
-      ],
-      "audiences": [
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "Spend a full day working with watercolor in Hollister House Garden. The workshop uses the late-summer garden to study color relationships, mixing, transparent washes, and a botanical color wheel, and it is open to all experience levels.",
-      "officialWebsite": "https://hollisterhousegarden.org/event/watercolor-workshop-the-late-summer-palette/",
-      "address": "300 Nettleton Hollow Road, Washington, CT",
-      "tryThis": "Create one small color study based on a section of the garden that catches your attention.",
-      "notes": "Members $90; non-members $120. Bring a bag lunch. Water and snacks are provided. The workshop combines outdoor garden observation with studio work in the barn.",
-      "dateAdded": "2026-09-13",
-      "eventStart": "2026-09-18",
-      "slug": "hollister-house-garden-watercolor-workshop-the-late-summer-palette"
-    },
-    {
       "name": "Holmberg Orchards Fall Pick-Your-Own & Corn Maze",
       "town": "Gales Ferry",
       "region": "Mystic & Southeastern CT",
@@ -3646,6 +3562,38 @@
       "address": "25 Hopkins Road, Warren, CT 06777",
       "dateAdded": "2026-08-17",
       "slug": "hopkins-vineyard"
+    },
+    {
+      "name": "Housatonic Heritage Walk: Secrets of Dark Hollow Preserve",
+      "town": "Salisbury",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Hiking & Outdoors",
+        "Fall & Seasonal",
+        "Date Night",
+        "Something Different"
+      ],
+      "categories": [
+        "Parks & Preserves",
+        "Scenic Views",
+        "Free / Low-Cost",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A free guided walk through Dark Hollow Preserve, with forest, rock outcroppings, fields and wetlands plus local history connected to the area's older place names.",
+      "officialWebsite": "https://housatonicheritage.org/heritage-experiences/heritage-walks/",
+      "tryThis": "Go for the forest walk and listen for the stories behind the Dark Hollow and Spooky Lane names.",
+      "notes": "Meet at the first pull-off on Dark Hollow Road coming from Farnam Road. The organizer advises sturdy footwear, a drink and snack, bug repellent, and clothing for changing weather.",
+      "dateAdded": "2026-09-27",
+      "eventStart": "2026-10-03",
+      "eventEnd": "2026-10-03",
+      "slug": "housatonic-heritage-walk-secrets-of-dark-hollow-preserve"
     },
     {
       "name": "Housatonic Museum of Art Free Campus Art Visit",
@@ -3835,7 +3783,7 @@
       "bestTime": "Fall",
       "whyGo": "A classic Shelton harvest stop with pick-your-own pumpkins, a mini corn maze, hayrides, fall flowers, apples, squash and farm scenery, plus a winery for an adults-focused add-on.",
       "officialWebsite": "https://www.jonesfamilyfarms.com/pumpkin-update",
-      "notes": "2026 pumpkin season runs September 19-October 31 at Pumpkinseed Hill. Jones advises checking the crop report because hours can change with weather and picking conditions. Christmas-tree season begins the weekend before Thanksgiving and runs daily except Thanksgiving Day.",
+      "notes": "Pumpkin season is weather dependent. The official update currently says Sunday, September 27: check back. For September 28-October 30, posted regular hours are 10 AM-5:30 PM, weather permitting.",
       "dateAdded": "2026-08-17",
       "eventStart": "2026-09-19",
       "eventEnd": "2026-10-31",
@@ -4553,40 +4501,6 @@
       "slug": "mianus-river-and-natural-park-river-trail"
     },
     {
-      "name": "Milford Lobster Roll and Music Festival 2026",
-      "town": "Milford",
-      "region": "Connecticut Shoreline",
-      "experienceTypes": [
-        "Food & Treats",
-        "Music & Events",
-        "Waterfront",
-        "Fall & Seasonal",
-        "Only in Connecticut",
-        "Date Night"
-      ],
-      "categories": [
-        "Food & Treats",
-        "Festivals & Events",
-        "Beaches & Shoreline",
-        "Only in Connecticut",
-        "Date Night"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Date Night",
-        "Family"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A shoreline festival at Walnut Beach celebrating Milford's history as the birthplace of the hot buttered lobster roll. The day includes lobster rolls, live music, local craft beverages, family activities, artists, vendors, and live glassblowing.",
-      "officialWebsite": "https://milfordct.com/1st-annual-lobster-roll-festival/",
-      "address": "Walnut Beach, Milford, CT",
-      "tryThis": "Try a hot buttered lobster roll, watch one live music set, and stop by a local artist or maker booth.",
-      "notes": "The official page confirms live music, Connecticut hot buttered lobster rolls, craft beer and wine, family activities, local artists and makers, and live glassblowing. General admission pricing was not stated in the source checked.",
-      "dateAdded": "2026-09-11",
-      "eventStart": "2026-09-20",
-      "slug": "milford-lobster-roll-and-music-festival-2026"
-    },
-    {
       "name": "Mill River Park $2 Carousel + Downtown Stamford Walk",
       "town": "Stamford",
       "audiences": [
@@ -5249,37 +5163,6 @@
       "slug": "old-saybrook-winter-shoreline-fresh-salt"
     },
     {
-      "name": "Olde Mistick Village 19th Annual Garlic Festival",
-      "town": "Mystic",
-      "region": "Mystic & Southeastern CT",
-      "experienceTypes": [
-        "Fall & Seasonal",
-        "Food & Treats",
-        "Music & Events",
-        "Date Night"
-      ],
-      "categories": [
-        "Festivals & Events",
-        "Food & Treats",
-        "Date Night"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Date Night",
-        "Family"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "Spend a fall day sampling garlic-focused food, browsing farms, bakers, crafters and artists, and listening to live music in Olde Mistick Village.",
-      "officialWebsite": "https://oldemistickvillage.com/garlic-festival-2/",
-      "address": "27 Coogan Blvd., Mystic, CT",
-      "tryThis": "Try one garlic-centered food you have never ordered before, then pick one locally made item from a farm, baker or artisan.",
-      "notes": "Saturday hours are 11 AM-7 PM and Sunday hours are 11 AM-6 PM. The official page does not state an admission price.",
-      "dateAdded": "2026-09-09",
-      "eventStart": "2026-09-19",
-      "eventEnd": "2026-09-20",
-      "slug": "olde-mistick-village-19th-annual-garlic-festival"
-    },
-    {
       "name": "Olde Mistick Village Holiday Lights Spectacular",
       "town": "Mystic",
       "audiences": [
@@ -5561,6 +5444,38 @@
       "slug": "pinots-palette-stamford-date-night-painting"
     },
     {
+      "name": "Portland Agricultural Fair 2026",
+      "town": "Portland",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Fall & Seasonal",
+        "Music & Events",
+        "Food & Treats"
+      ],
+      "categories": [
+        "Festivals & Events",
+        "Food & Treats",
+        "Something Different"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A small-town agricultural fair with rides, livestock and exhibits, live entertainment, food, pulling events, and traditional fair activities.",
+      "officialWebsite": "https://portlandfair.com/",
+      "tryThis": "Pick one traditional fair activity you have never tried before, then make time for an agricultural exhibit.",
+      "notes": "Official admission is $15 for adults, $10 for seniors age 65+ and active/reserve military with valid ID, and free for children under 12. On-site parking is $10 cash only. No pets are allowed except service animals.",
+      "dateAdded": "2026-09-27",
+      "eventStart": "2026-10-02",
+      "eventEnd": "2026-10-04",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "portland-agricultural-fair-2026"
+    },
+    {
       "name": "Powder Ridge Winterfest & Snow Tubing",
       "town": "Middlefield",
       "region": "Central CT",
@@ -5701,6 +5616,36 @@
       "address": "55 Duck Pond Road, Litchfield, CT 06759",
       "dateAdded": "2026-09-02",
       "slug": "ripley-waterfowl-conservancy-rare-bird-visit"
+    },
+    {
+      "name": "River Bend Bookshop, Glastonbury",
+      "town": "Glastonbury",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Bookstore",
+        "Date Night",
+        "Something Different"
+      ],
+      "categories": [
+        "Bookstores",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "An independent bookstore in Glastonbury Town Center with books for all ages and a regular schedule of author visits, release parties and community events.",
+      "officialWebsite": "https://riverbendbookshop.com/Glastonbury",
+      "tryThis": "Each person picks a book for the other, then compare why you chose it.",
+      "notes": "The Glastonbury shop is in a historic building in Town Center and has its own parking lot. Check the official events calendar if you want to pair a visit with an author or release event.",
+      "dateAdded": "2026-09-27",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "river-bend-bookshop-glastonbury"
     },
     {
       "name": "River Highlands State Park Bluff & Blowhole Hike",
@@ -6140,35 +6085,6 @@
       "officialWebsite": "https://www.stratfordct.gov/o/stratford/page/facility-administration",
       "dateAdded": "2026-08-13",
       "slug": "short-beach-park"
-    },
-    {
-      "name": "Shubert Theatre Mystical Magical Trivia",
-      "town": "New Haven",
-      "region": "New Haven Area",
-      "experienceTypes": [
-        "Music & Events",
-        "Date Night",
-        "Something Different"
-      ],
-      "categories": [
-        "Free / Low-Cost",
-        "Festivals & Events",
-        "Date Night",
-        "Something Different"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Date Night"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A free fantasy-themed trivia night at Elm City's Cabaret covering Harry Potter, The Lord of the Rings, The Wizard of Oz, fairy tales, Dungeons & Dragons, Magic: The Gathering, and more. Teams compete for prizes, and guests may bring food or buy from local restaurant partners.",
-      "officialWebsite": "https://www.shubert.com/events/detail/mystical-magical-trivia",
-      "address": "247 College Street, New Haven, CT 06510",
-      "tryThis": "Build a team name around your favorite fantasy world and see which topic earns your highest score.",
-      "notes": "Seating is first come, first served. Guests may bring food or support a local restaurant partner. The cabaret bar offers half-priced drinks during the event.",
-      "dateAdded": "2026-09-13",
-      "eventStart": "2026-09-22",
-      "slug": "shubert-theatre-mystical-magical-trivia"
     },
     {
       "name": "Silver Sands State Park",
@@ -7022,6 +6938,39 @@
       "notes": "Open daily 8 AM to sunset. Admission is free. Free cottage tours run June through October on the second and fourth weekends of each month, 11 AM to 4 PM.",
       "dateAdded": "2026-08-17",
       "slug": "topsmead-state-forest"
+    },
+    {
+      "name": "Trail Sessions: Hike & Concert at the Bartlett",
+      "town": "Stamford",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Hiking & Outdoors",
+        "Music & Events",
+        "Date Night",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Gardens & Arboretums",
+        "Easy Walks",
+        "Free / Low-Cost",
+        "Festivals & Events",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Group Activities",
+        "Date Night",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Pair a gentle guided walk through Bartlett Arboretum & Gardens with a live outdoor concert by Connecticut indie-pop band Similar Kind.",
+      "officialWebsite": "https://www.bartlettarboretum.org/events/2026/trailsessions",
+      "tryThis": "Take the guided hike, then stay for the concert and choose one part of the gardens you want to return to later in the fall.",
+      "notes": "Guided hike space is limited to 25 people, so early registration is encouraged. Parking and restrooms are available. Dogs are not permitted at this event.",
+      "dateAdded": "2026-09-27",
+      "eventStart": "2026-10-03",
+      "eventEnd": "2026-10-03",
+      "slug": "trail-sessions-hike-and-concert-at-the-bartlett"
     },
     {
       "name": "Tree Swallow Sunset Trips on the Connecticut River",
