@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-27T21:22:46.152Z",
-  "count": 426,
+  "generated": "2026-10-04T14:15:33.886Z",
+  "count": 415,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -62,11 +62,11 @@
     "Greenwich",
     "Groton",
     "Guilford",
+    "Haddam",
     "Hamden",
     "Hampton",
     "Hartford",
     "Harwinton",
-    "Hebron",
     "Ivoryton",
     "Kent",
     "Killingworth",
@@ -121,7 +121,6 @@
     "Rocky Hill",
     "Roxbury",
     "Salem",
-    "Salisbury",
     "Sandy Hook",
     "Sharon",
     "Shelton",
@@ -226,21 +225,6 @@
   ],
   "experiences": [
     {
-      "name": "101st Bethlehem Fair",
-      "town": "Bethlehem",
-      "region": "Litchfield Hills",
-      "audiences": [
-        "Date Night"
-      ],
-      "bestTime": "Specific event/date",
-      "officialWebsite": "https://bethlehemfair.com/",
-      "address": "384 Main Street North, Bethlehem, CT 06751",
-      "dateAdded": "2026-09-04",
-      "eventStart": "2026-09-11",
-      "eventEnd": "2026-09-13",
-      "slug": "101st-bethlehem-fair"
-    },
-    {
       "name": "2026 Celebrate Mansfield Festival",
       "town": "Storrs / Mansfield",
       "region": "Quiet Corner & Northeastern CT",
@@ -295,21 +279,6 @@
       "slug": "2026-celebrate-stratford-great-pumpkin-festival"
     },
     {
-      "name": "2026 Cheshire Fall Festival & Fireworks",
-      "town": "Cheshire",
-      "region": "Central CT",
-      "audiences": [
-        "Date Night"
-      ],
-      "bestTime": "Specific event/date",
-      "officialWebsite": "https://cheshirefestival.com/",
-      "address": "Bartlem Park, Cheshire, CT",
-      "dateAdded": "2026-09-02",
-      "eventStart": "2026-09-18",
-      "eventEnd": "2026-09-19",
-      "slug": "2026-cheshire-fall-festival-and-fireworks"
-    },
-    {
       "name": "2026 Connecticut Landmarks Museum Passport Challenge",
       "town": "Statewide",
       "region": "Other / Statewide",
@@ -321,52 +290,6 @@
       "dateAdded": "2026-08-24",
       "towns": [],
       "slug": "2026-connecticut-landmarks-museum-passport-challenge"
-    },
-    {
-      "name": "2026 Connecticut Maritime Heritage Festival",
-      "town": "New London",
-      "region": "Mystic & Southeastern CT",
-      "experienceTypes": [
-        "Waterfront",
-        "Music & Events",
-        "Only in Connecticut"
-      ],
-      "categories": [
-        "Festivals & Events",
-        "Only in Connecticut",
-        "Something Different"
-      ],
-      "audiences": [
-        "Family",
-        "Group Activities",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A free waterfront weekend with military and private vessel tours, Coast Guard demonstrations, living history, music, children's activities, local vendors, and free transportation between the two main sites.",
-      "officialWebsite": "https://ctmaritimefest.com/",
-      "address": "Fort Trumbull State Park and Waterfront Park, New London, CT",
-      "tryThis": "Ride the free water taxi between festival sites, tour a vessel, and watch one of the maritime demonstrations.",
-      "notes": "The main festival is free and family-friendly. Some separate special programs are ticketed. Saturday evening includes the Burning of Benedict Arnold program and an approximately 8:30 PM drone show at Waterfront Park.",
-      "dateAdded": "2026-09-10",
-      "eventStart": "2026-09-12",
-      "eventEnd": "2026-09-13",
-      "ages": [
-        "All ages"
-      ],
-      "slug": "2026-connecticut-maritime-heritage-festival"
-    },
-    {
-      "name": "2026 Durham Fair",
-      "town": "Durham",
-      "audiences": [
-        "Date Night"
-      ],
-      "officialWebsite": "https://www.durhamfair.com/",
-      "notes": "Current official schedule remains subject to change because of weather. Check the fair website before leaving.",
-      "dateAdded": "2026-08-19",
-      "eventStart": "2026-09-24",
-      "eventEnd": "2026-09-27",
-      "slug": "2026-durham-fair"
     },
     {
       "name": "2026 Harwinton Fair",
@@ -381,19 +304,6 @@
       "slug": "2026-harwinton-fair"
     },
     {
-      "name": "2026 Hebron Harvest Fair",
-      "town": "Hebron",
-      "audiences": [
-        "Date Night"
-      ],
-      "officialWebsite": "https://www.hebronharvestfair.org/",
-      "notes": "2026 fair dates: September 10-13. Thursday 4-10:30 PM, Friday noon-midnight, Saturday 10 AM-midnight, Sunday 10 AM-7:30 PM. Parking is free; children age 10 and under are admitted free.",
-      "dateAdded": "2026-08-21",
-      "eventStart": "2026-09-10",
-      "eventEnd": "2026-09-13",
-      "slug": "2026-hebron-harvest-fair"
-    },
-    {
       "name": "2026 Norfolk Tour de Forest Scenic Bike Ride",
       "town": "Norfolk",
       "region": "Litchfield Hills",
@@ -405,30 +315,6 @@
       "address": "Norfolk Curling Club, 70 Golf Drive, Norfolk, CT",
       "dateAdded": "2026-09-04",
       "slug": "2026-norfolk-tour-de-forest-scenic-bike-ride"
-    },
-    {
-      "name": "2026 Norwalk Oyster Festival",
-      "town": "Norwalk",
-      "audiences": [
-        "Date Night"
-      ],
-      "officialWebsite": "https://www.seaport.org/norwalk-oyster-festival",
-      "notes": "The official page lists general admission at $20 for adults and $15 for children ages 5-12, with children under 5 free. Sunday children are free with a paid adult ticket. Admission includes entertainment, off-site parking and shuttle buses.",
-      "dateAdded": "2026-08-19",
-      "eventStart": "2026-09-11",
-      "eventEnd": "2026-09-13",
-      "slug": "2026-norwalk-oyster-festival"
-    },
-    {
-      "name": "2026 Old Wethersfield Arts & Crafts Fair",
-      "town": "Wethersfield",
-      "audiences": [
-        "Date Night"
-      ],
-      "officialWebsite": "https://www.wethersfieldhistory.org/visit/44th-annual-old-wethersfield-arts-and-crafts-fair/",
-      "dateAdded": "2026-09-04",
-      "eventStart": "2026-10-03",
-      "slug": "2026-old-wethersfield-arts-and-crafts-fair"
     },
     {
       "name": "2026 Old Wethersfield Lantern Light Tours",
@@ -462,39 +348,6 @@
       "slug": "2026-skys-the-limit-hiking-and-walking-challenge"
     },
     {
-      "name": "2026 South Windsor Apple Fest",
-      "town": "South Windsor",
-      "region": "Hartford Area",
-      "experienceTypes": [
-        "Orchard & Apples",
-        "Fall & Seasonal",
-        "Food & Treats",
-        "Music & Events",
-        "Date Night"
-      ],
-      "categories": [
-        "Festivals & Events",
-        "Food & Treats",
-        "Free / Low-Cost",
-        "Date Night"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Date Night",
-        "Family",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A free fall festival centered on apples, local food, music, and community activities. It is an easy low-cost option for a relaxed fall day without needing a major attraction.",
-      "officialWebsite": "https://www.swapplefest.com/",
-      "address": "John J. Mitchell Fairgrounds, 75 Brookfield Street, South Windsor, CT",
-      "tryThis": "Split a piece of apple pie, choose one local vendor item to take home, and take one photo that feels most like fall.",
-      "notes": "October 3, 2026, 9 a.m.-5 p.m. Free admission and free parking. Food, live music, apples, rides, and activities are available.",
-      "dateAdded": "2026-08-21",
-      "eventStart": "2026-10-03",
-      "slug": "2026-south-windsor-apple-fest"
-    },
-    {
       "name": "2026 Southington Apple Harvest Festival",
       "town": "Southington",
       "region": "Central CT",
@@ -521,34 +374,6 @@
       "eventStart": "2026-10-11",
       "eventEnd": "2026-10-11",
       "slug": "2026-trumbull-arts-festival"
-    },
-    {
-      "name": "9th Annual Mystic Film Festival",
-      "town": "Mystic",
-      "region": "Mystic & Southeastern CT",
-      "experienceTypes": [
-        "Theater & Movies",
-        "Music & Events"
-      ],
-      "categories": [
-        "Theater & Movies",
-        "Festivals & Events",
-        "Date Night"
-      ],
-      "audiences": [
-        "Date Night",
-        "Group Activities",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A four-day independent film festival with narrative films, documentaries, shorts, filmmaker Q&As, workshops, and community events across Mystic and nearby Westerly.",
-      "officialWebsite": "https://mysticfilmfestival.com/2026-festival/",
-      "tryThis": "Choose an independent film that is new to you and stay for a filmmaker Q&A or workshop.",
-      "notes": "Opening night is hosted at Mystic Luxury Cinemas in Olde Mistick Village and highlights local filmmakers. Check the official schedule for the venue assigned to each screening or program.",
-      "dateAdded": "2026-09-10",
-      "eventStart": "2026-09-24",
-      "eventEnd": "2026-09-27",
-      "slug": "9th-annual-mystic-film-festival"
     },
     {
       "name": "Air Line State Park Trail",
@@ -636,6 +461,35 @@
       "slug": "american-museum-of-tort-law"
     },
     {
+      "name": "An Evening with David Sedaris at Shubert Theatre",
+      "town": "New Haven",
+      "region": "New Haven Area",
+      "experienceTypes": [
+        "Theater & Movies",
+        "Date Night",
+        "Something Different"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A live evening with humorist David Sedaris featuring new stories and commentary, followed by a book-signing opportunity at the Shubert.",
+      "officialWebsite": "https://www.shubert.com/events/detail/an-evening-with-david-sedaris",
+      "address": "247 College Street, New Haven, CT 06510",
+      "tryThis": "Make it a downtown New Haven night and stay for the book signing after the reading.",
+      "notes": "Lobby doors open one hour before showtime and theatre doors about 30 minutes before. The reading includes new, unpublished stories and commentary and is accompanied by pre- and post-show book signing.",
+      "dateAdded": "2026-10-04",
+      "eventStart": "2026-10-05",
+      "slug": "an-evening-with-david-sedaris-at-shubert-theatre"
+    },
+    {
       "name": "Angevine Farm Harvest Season Pumpkin Picking",
       "town": "Warren",
       "region": "Litchfield Hills",
@@ -660,7 +514,6 @@
       "tryThis": "Choose a pumpkin from the hilltop patch, stop for cider and a donut, and take in the Warren Valley views.",
       "notes": "Pumpkins are listed at $0.70 per pound. Friendly leashed dogs are welcome in other farm areas but must stay outside the pumpkin patches. The official event listing has an inconsistent end date, so no season end date was recorded.",
       "dateAdded": "2026-09-10",
-      "eventStart": "2026-09-26",
       "ages": [
         "All ages"
       ],
@@ -742,34 +595,6 @@
       "tryThis": "Choose a duo painting and complete the paired canvases without trying to make the styles match perfectly.",
       "dateAdded": "2026-08-22",
       "slug": "art-studio-of-connecticut-duo-date-night"
-    },
-    {
-      "name": "ARTFARM ephemera Immersive Cemetery Performance",
-      "town": "Middletown",
-      "region": "Central CT",
-      "experienceTypes": [
-        "Theater & Movies",
-        "Date Night",
-        "Something Different"
-      ],
-      "categories": [
-        "Theater & Movies",
-        "Date Night",
-        "Something Different"
-      ],
-      "audiences": [
-        "Date Night",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "See an original outdoor performance that moves through two historic Middletown cemeteries, combining actors, dancers, puppeteers, musicians and circus performers.",
-      "officialWebsite": "https://www.art-farm.org/event-details/ephemera",
-      "address": "192 Cross St., Parking Lot R, Middletown, CT 06457",
-      "tryThis": "Choose one of the three performances, wear comfortable walking shoes, and notice which scene or setting stays with you most afterward.",
-      "notes": "Promenade-style performance requiring walking. Reservations are highly encouraged because each performance is limited to 30 tickets. General admission uses a $25-$50 sliding scale. Bring water and dress for the weather.",
-      "dateAdded": "2026-09-09",
-      "eventStart": "2026-09-19",
-      "slug": "artfarm-ephemera-immersive-cemetery-performance"
     },
     {
       "name": "Auerfarm State Park Scenic Reserve Overlook Walk",
@@ -1429,6 +1254,37 @@
       "slug": "bruce-museum"
     },
     {
+      "name": "Buell's Orchard Annual Harvest Festival 2026",
+      "town": "Eastford",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Fall & Seasonal",
+        "Music & Events",
+        "Food & Treats",
+        "Date Night"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Festivals & Events",
+        "Food & Treats",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A small-town orchard festival with hayrides to apple and pumpkin picking, live music, a chicken barbecue, face painting, cider donuts, and free admission and parking.",
+      "officialWebsite": "https://www.buellsorchard.com/upcoming-events",
+      "address": "108 Crystal Pond Road, Eastford, CT 06242",
+      "tryThis": "Take the hayride to pick apples or pumpkins, catch the live music, and get a cider donut before heading home.",
+      "notes": "The official page does not state the calendar dates for the Columbus Day weekend festival, so Event Start Date and Event End Date are left blank. The festival runs rain or shine unless there are high winds or downpours. Pets are not allowed.",
+      "dateAdded": "2026-10-04",
+      "slug": "buells-orchard-annual-harvest-festival-2026"
+    },
+    {
       "name": "Buell's Orchard Fall Apple Picking & Cider Donuts",
       "town": "Eastford",
       "region": "Quiet Corner & Northeastern CT",
@@ -1773,21 +1629,6 @@
       "tryThis": "Walk the shoreline near sunset and choose the best view for a one-photo Westport postcard.",
       "dateAdded": "2026-09-17",
       "slug": "compo-beach"
-    },
-    {
-      "name": "Connecticut Antique Machinery Association 2026 Fall Festival",
-      "town": "Kent",
-      "region": "Litchfield Hills",
-      "audiences": [
-        "Date Night"
-      ],
-      "bestTime": "Specific event/date",
-      "officialWebsite": "https://www.ctamachinery.org/events/fall-festival",
-      "address": "31B Kent Cornwall Road, Kent, CT 06757",
-      "dateAdded": "2026-08-31",
-      "eventStart": "2026-09-25",
-      "eventEnd": "2026-09-27",
-      "slug": "connecticut-antique-machinery-association-2026-fall-festival"
     },
     {
       "name": "Connecticut Audubon Annual Lighthouse Cruise",
@@ -3296,39 +3137,6 @@
       "slug": "hartford-healthcare-amphitheater"
     },
     {
-      "name": "Hartford.com Salsa Social",
-      "town": "Hartford",
-      "region": "Hartford Area",
-      "experienceTypes": [
-        "Date Night",
-        "Music & Events"
-      ],
-      "categories": [
-        "Date Night",
-        "Festivals & Events",
-        "Something Different"
-      ],
-      "audiences": [
-        "Date Night",
-        "Group Activities",
-        "Family",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A free downtown salsa social where professional instructors, experienced dancers, beginners, families, and spectators all take part together on Pratt Street.",
-      "officialWebsite": "https://hartford.com/calendar/sep-salsa-social/",
-      "address": "Pratt Street Historic District, Pratt Street, Hartford, CT 06103",
-      "tryThis": "Take part in the lesson, dance one full song, and take a short walk along Pratt Street afterward.",
-      "notes": "The organizer describes this as a participatory event for dancers, beginners, children, grandparents, professional instructors, and spectators.",
-      "dateAdded": "2026-09-10",
-      "eventStart": "2026-09-18",
-      "eventEnd": "2026-09-18",
-      "ages": [
-        "All ages"
-      ],
-      "slug": "hartford-com-salsa-social"
-    },
-    {
       "name": "Harvest Glow 2026",
       "town": "Hartford",
       "region": "Hartford Area",
@@ -3564,38 +3372,6 @@
       "slug": "hopkins-vineyard"
     },
     {
-      "name": "Housatonic Heritage Walk: Secrets of Dark Hollow Preserve",
-      "town": "Salisbury",
-      "region": "Litchfield Hills",
-      "experienceTypes": [
-        "Hiking & Outdoors",
-        "Fall & Seasonal",
-        "Date Night",
-        "Something Different"
-      ],
-      "categories": [
-        "Parks & Preserves",
-        "Scenic Views",
-        "Free / Low-Cost",
-        "Date Night",
-        "Something Different"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Date Night",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A free guided walk through Dark Hollow Preserve, with forest, rock outcroppings, fields and wetlands plus local history connected to the area's older place names.",
-      "officialWebsite": "https://housatonicheritage.org/heritage-experiences/heritage-walks/",
-      "tryThis": "Go for the forest walk and listen for the stories behind the Dark Hollow and Spooky Lane names.",
-      "notes": "Meet at the first pull-off on Dark Hollow Road coming from Farnam Road. The organizer advises sturdy footwear, a drink and snack, bug repellent, and clothing for changing weather.",
-      "dateAdded": "2026-09-27",
-      "eventStart": "2026-10-03",
-      "eventEnd": "2026-10-03",
-      "slug": "housatonic-heritage-walk-secrets-of-dark-hollow-preserve"
-    },
-    {
       "name": "Housatonic Museum of Art Free Campus Art Visit",
       "town": "Bridgeport",
       "region": "Fairfield County",
@@ -3659,6 +3435,39 @@
       "address": "775 Silver Lane, East Hartford, CT 06118",
       "dateAdded": "2026-08-22",
       "slug": "humacao-salsa-lesson-social-night"
+    },
+    {
+      "name": "I-Park October Open Trails + Music",
+      "town": "East Haddam",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Hiking & Outdoors",
+        "Museum & Culture",
+        "Music & Events"
+      ],
+      "categories": [
+        "Easy Walks",
+        "Free / Low-Cost",
+        "Museums & Culture",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A free public day to walk I-Park’s art-filled nature trails and hear live local music in a setting that is normally open to visitors only during scheduled public programs.",
+      "officialWebsite": "https://www.i-park.org/",
+      "address": "428 Hopyard Road, East Haddam, CT 06423",
+      "tryThis": "Walk the art-and-nature trails, choose three outdoor artworks that stand out to you, then stay for the live music.",
+      "notes": "Free public event. I-Park is not generally open to the public outside scheduled events, so visit on the published event date and check the official site for any last-minute changes.",
+      "dateAdded": "2026-09-08",
+      "eventStart": "2026-10-10",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "i-park-october-open-trails-music"
     },
     {
       "name": "Immerse HydroSpa Couples Wellness Experience",
@@ -3913,6 +3722,36 @@
       "officialWebsite": "https://ctparks.com/parks/kent-falls-state-park",
       "dateAdded": "2026-08-13",
       "slug": "kent-falls-state-park"
+    },
+    {
+      "name": "Lady Kate Golden Hour Foliage Cruise",
+      "town": "Haddam",
+      "experienceTypes": [
+        "Waterfront",
+        "Fall & Seasonal",
+        "Date Night",
+        "Only in Connecticut"
+      ],
+      "categories": [
+        "Trains & Scenic Rides",
+        "Scenic Views",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A golden-hour Connecticut River cruise timed for fall color, with appetizers, small plates and desserts served aboard Lady Kate.",
+      "officialWebsite": "https://riverhousecruises.com/public-cruises/",
+      "address": "14 Little Meadow Rd, Haddam, CT 06438",
+      "tryThis": "Watch the changing light on the river and pick one favorite foliage view to photograph before sunset.",
+      "notes": "Current ticket prices are $59 for adults and $20 for kids. The cruise includes appetizers, a small-plates station and desserts. Region is left blank because the Airtable Region field does not include a Lower Connecticut River Valley option.",
+      "dateAdded": "2026-10-04",
+      "eventStart": "2026-10-16",
+      "slug": "lady-kate-golden-hour-foliage-cruise"
     },
     {
       "name": "Lake Waramaug State Park",
@@ -4295,7 +4134,7 @@
       "bestTime": "Fall",
       "whyGo": "A separate pick-your-own experience from Lyman's corn maze, with apples, pears and other seasonal fruit plus the Apple Barrel Farm Market.",
       "officialWebsite": "https://lymanorchards.com/pick-your-own/",
-      "notes": "2026 Pick-Your-Own is open daily 8 AM-4:30 PM. Call the 24-hour PYO hotline at 860-349-6015 for current field conditions, varieties and pricing before visiting.",
+      "notes": "Current official Pick Your Own hours are 9 AM-4:30 PM daily. Call 860-349-6015 for current field conditions, varieties and pricing before visiting.",
       "dateAdded": "2026-09-05",
       "slug": "lyman-orchards-fall-pick-your-own"
     },
@@ -4903,36 +4742,6 @@
       "slug": "new-britain-museum-of-american-art-walnut-hill-park"
     },
     {
-      "name": "New Canaan Music Festival 2026",
-      "town": "New Canaan",
-      "region": "Fairfield County",
-      "experienceTypes": [
-        "Music & Events",
-        "Food & Treats",
-        "Fall & Seasonal",
-        "Date Night"
-      ],
-      "categories": [
-        "Festivals & Events",
-        "Food & Treats",
-        "Date Night"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Date Night",
-        "Family"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A full day of live music on two outdoor stages at the New Canaan Nature Center, with local food, artisan vendors, and children's activities. The festival invites visitors to bring a blanket and spend the day outdoors with friends and family.",
-      "officialWebsite": "https://www.newcanaanmusicfestival.com/",
-      "address": "144 Oenoke Ridge, New Canaan, CT",
-      "tryThis": "Bring a blanket, hear at least one artist you have not heard before, and try something from a local food vendor.",
-      "notes": "The official site lists live music, local food, artisan vendors and children's activities. Ticket pricing for adults was not stated in the source checked, so no adult price was recorded.",
-      "dateAdded": "2026-09-11",
-      "eventStart": "2026-09-19",
-      "slug": "new-canaan-music-festival-2026"
-    },
-    {
       "name": "New Canaan Nature Center",
       "town": "New Canaan",
       "audiences": [
@@ -5196,42 +5005,6 @@
       "slug": "osborne-homestead-museum"
     },
     {
-      "name": "Oysters, Steel, and Stories",
-      "town": "Clinton",
-      "region": "Connecticut Shoreline",
-      "experienceTypes": [
-        "Only in Connecticut",
-        "Food & Treats",
-        "Museum & Culture"
-      ],
-      "categories": [
-        "Only in Connecticut",
-        "Festivals & Events",
-        "Museums & Culture",
-        "Food & Treats",
-        "Date Night"
-      ],
-      "audiences": [
-        "Date Night",
-        "Family",
-        "Group Activities",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A shoreline history afternoon combining local oysters, blacksmith demonstrations, maritime crafts, traditional music, museum tours, and the Clinton Historical Society gardens.",
-      "officialWebsite": "https://clintoncthistory.org/events/garden-partyoyster-eventblacksmith-event",
-      "address": "103 East Main Street, Clinton, CT 06413",
-      "tryThis": "Taste Connecticut oysters, watch an oyster knife being forged, and tour one of the historical society museums.",
-      "notes": "Tickets are $18 per person and include admission plus a choice of four oysters, grilled or raw. Children under 12 are free. Guests may bring chairs. Additional oysters and food are available for purchase.",
-      "dateAdded": "2026-09-10",
-      "eventStart": "2026-09-19",
-      "eventEnd": "2026-09-19",
-      "ages": [
-        "All ages"
-      ],
-      "slug": "oysters-steel-and-stories"
-    },
-    {
       "name": "Pachaug State Forest: Mount Misery & Rhododendron Sanctuary",
       "town": "Voluntown",
       "region": "Quiet Corner & Northeastern CT",
@@ -5394,41 +5167,6 @@
       "notes": "Open daily 10 a.m.-5 p.m. Regular adult admission is $5 and includes a $2 same-day merchandise credit and souvenir lanyard.",
       "dateAdded": "2026-08-21",
       "slug": "pez-visitor-center"
-    },
-    {
-      "name": "Pilobolus Day 2026",
-      "town": "Washington",
-      "region": "Litchfield Hills",
-      "experienceTypes": [
-        "Theater & Movies",
-        "Music & Events",
-        "Date Night",
-        "Something Different"
-      ],
-      "categories": [
-        "Theater & Movies",
-        "Festivals & Events",
-        "Date Night",
-        "Something Different",
-        "Free / Low-Cost"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Date Night",
-        "Family"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "An all-ages afternoon of Pilobolus dance, lawn games, and optional movement workshops in Washington. The official event page confirms a live performance and three workshop choices, with $15 adult tickets and free admission for guests under 18.",
-      "officialWebsite": "https://pilobolus.org/tour-dates/2026/9/13/pilobolus-day-2026",
-      "address": "81 Sabbaday Lane, Washington, CT 06794",
-      "tryThis": "Watch the matinee, then try one of the movement workshops together if space is available.",
-      "notes": "Rain or shine. Workshop participation is included but depends on available space.",
-      "dateAdded": "2026-09-11",
-      "eventStart": "2026-09-13",
-      "ages": [
-        "All ages"
-      ],
-      "slug": "pilobolus-day-2026"
     },
     {
       "name": "Pinot's Palette Stamford Date Night Painting",
@@ -5905,6 +5643,35 @@
       "officialWebsite": "https://www.wiltonct.gov/parks-recreation-department/pages/parks-and-trails",
       "dateAdded": "2026-08-13",
       "slug": "schencks-island"
+    },
+    {
+      "name": "Scott’s Yankee Farmer Fall Pick-Your-Own & Corn Maze",
+      "town": "East Lyme",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Orchard & Apples",
+        "Corn Maze",
+        "Fall & Seasonal",
+        "Date Night"
+      ],
+      "categories": [
+        "Orchards & Farms",
+        "Corn Mazes",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Fall",
+      "whyGo": "A working East Lyme farm with current fall pick-your-own apples and pumpkins, a corn maze, and weekend apple-cinnamon donuts. It combines several classic fall activities in one stop.",
+      "officialWebsite": "https://scottsyankeefarmer.net/pick-your-own/",
+      "address": "436 Boston Post Rd, East Lyme, CT 06333",
+      "tryThis": "Pick apples, walk the corn maze, choose a pumpkin, and finish with a fresh weekend apple-cinnamon donut.",
+      "notes": "Last corn maze entry is 4 PM. Pick-your-own is closed Tuesday-Thursday. Crop supply can change, so call the farm before leaving. Pets are not allowed in orchards or fields. Apple-cinnamon donuts are made fresh on Saturdays and Sundays.",
+      "dateAdded": "2026-10-04",
+      "slug": "scotts-yankee-farmer-fall-pick-your-own-and-corn-maze"
     },
     {
       "name": "Scotts’ CT Valley Orchards Fall Pick-Your-Own",
@@ -6641,7 +6408,8 @@
       "tryThis": "Pack a small cooler, listen for one river-history fact you did not know, and make the return sunset your final stop of the day.",
       "notes": "The itinerary includes a narrated cruise to Norwich, the Harbor Glow event from 4-6 PM, and a sunset return to New London. The organizer states that guests of all ages are welcome and that guests may pack beverages and snacks.",
       "dateAdded": "2026-09-09",
-      "eventStart": "2026-09-27",
+      "eventStart": "2026-10-04",
+      "eventEnd": "2026-10-04",
       "ages": [
         "All ages"
       ],
@@ -6941,39 +6709,6 @@
       "slug": "topsmead-state-forest"
     },
     {
-      "name": "Trail Sessions: Hike & Concert at the Bartlett",
-      "town": "Stamford",
-      "region": "Fairfield County",
-      "experienceTypes": [
-        "Hiking & Outdoors",
-        "Music & Events",
-        "Date Night",
-        "Fall & Seasonal"
-      ],
-      "categories": [
-        "Gardens & Arboretums",
-        "Easy Walks",
-        "Free / Low-Cost",
-        "Festivals & Events",
-        "Date Night",
-        "Something Different"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Date Night",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "Pair a gentle guided walk through Bartlett Arboretum & Gardens with a live outdoor concert by Connecticut indie-pop band Similar Kind.",
-      "officialWebsite": "https://www.bartlettarboretum.org/events/2026/trailsessions",
-      "tryThis": "Take the guided hike, then stay for the concert and choose one part of the gardens you want to return to later in the fall.",
-      "notes": "Guided hike space is limited to 25 people, so early registration is encouraged. Parking and restrooms are available. Dogs are not permitted at this event.",
-      "dateAdded": "2026-09-27",
-      "eventStart": "2026-10-03",
-      "eventEnd": "2026-10-03",
-      "slug": "trail-sessions-hike-and-concert-at-the-bartlett"
-    },
-    {
       "name": "Tree Swallow Sunset Trips on the Connecticut River",
       "town": "Essex",
       "audiences": [
@@ -7105,7 +6840,6 @@
       "tryThis": "Bring one unfinished creative project or small craft to work on, put the phones away for an hour, and leave with something you moved closer to finished.",
       "notes": "Bring your own project or art supplies. Vinyl music is part of the event and guests may BYOB. The center notes that dates, times and pricing can change, so checking the calendar before going is recommended.",
       "dateAdded": "2026-09-08",
-      "eventStart": "2026-09-19",
       "ages": [
         "Adults only (21+)"
       ],
@@ -7278,6 +7012,31 @@
       "officialWebsite": "https://www.nps.gov/wefa/planyourvisit/index.htm",
       "dateAdded": "2026-08-14",
       "slug": "weir-farm-national-historical-park"
+    },
+    {
+      "name": "Wesleyan RJ Julia Bookstore",
+      "town": "Middletown",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Bookstore",
+        "Date Night"
+      ],
+      "categories": [
+        "Bookstores",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "An independent bookstore open to the public in downtown Middletown, with books, gifts, community programming, and a café connection with Cohen’s Bagel Company.",
+      "officialWebsite": "https://www.wesleyanrjjulia.com/",
+      "address": "413 Main Street, Middletown, CT 06457",
+      "tryThis": "Browse separately for 15 minutes, then each choose a book you think the other person would enjoy.",
+      "notes": "The store serves the Middletown and Wesleyan communities and is managed by RJ Julia Booksellers. The official site describes it as a community gathering place and notes Cohen’s Bagel Company in the bookstore space.",
+      "dateAdded": "2026-10-04",
+      "slug": "wesleyan-rj-julia-bookstore"
     },
     {
       "name": "West Cornwall Covered Bridge + Saturday Farm Market",
