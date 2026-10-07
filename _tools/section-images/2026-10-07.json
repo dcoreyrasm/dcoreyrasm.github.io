@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-10-07",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "doc_stack",
+      "label": "Ask Claude with Siri or the Share menu (iPhone)"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "doc_stack",
+      "label": "ChatGPT in CarPlay"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "doc_stack",
+      "label": "Microsoft Copilot in Apple CarPlay"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "doc_stack",
+      "label": "Gemini in your car (Android Auto)"
+    }
+  ]
+}
