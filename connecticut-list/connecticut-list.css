@@ -50,7 +50,10 @@
 }
 .cl-chip:hover { background:var(--coral); color:#241038; }
 .cl-chip-x { font-size:.95rem; line-height:1; opacity:.8; }
-@media (prefers-color-scheme: light) { .cl-chip:hover { color:#fff; } }
+@media (prefers-color-scheme: light) { :where(html:not([data-theme="dark"])) .cl-chip:hover { color:#fff; } }
+/* Same rules when the visitor picks Light with the switch. */
+ :where(html[data-theme="light"]) .cl-chip:hover { color:#fff; } 
+
 
 /* ---------- CARD ---------- */
 /* The title is a real link to the activity's own address, so it can be

@@ -18,7 +18,7 @@
   --cf-mark: rgba(192,132,252,.30);
 }
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:where(:not([data-theme="dark"])) {
     --cf-on-accent: #fff;
     --cf-ok:    #0f7a4a; --cf-ok-line:    rgba(15,122,74,.34);  --cf-ok-bg:    rgba(15,122,74,.07);
     --cf-warn:  #8a5a00; --cf-warn-line:  rgba(138,90,0,.34);   --cf-warn-bg:  rgba(138,90,0,.07);
@@ -26,6 +26,15 @@
     --cf-mark: rgba(124,58,237,.20);
   }
 }
+/* Same rules when the visitor picks Light with the switch. */
+  :root:where([data-theme="light"]) {
+    --cf-on-accent: #fff;
+    --cf-ok:    #0f7a4a; --cf-ok-line:    rgba(15,122,74,.34);  --cf-ok-bg:    rgba(15,122,74,.07);
+    --cf-warn:  #8a5a00; --cf-warn-line:  rgba(138,90,0,.34);   --cf-warn-bg:  rgba(138,90,0,.07);
+    --cf-alert: #b02525; --cf-alert-line: rgba(176,37,37,.34);  --cf-alert-bg: rgba(176,37,37,.06);
+    --cf-mark: rgba(124,58,237,.20);
+  }
+
 
 .cf-wrap { max-width: 1240px; margin: 0 auto; padding: 0 3rem; }
 
@@ -45,8 +54,11 @@
 /* The band stays dark in light mode, so re-assert the bright accent inside it
    the same way /styles.css does for the site's other hero bands. */
 @media (prefers-color-scheme: light) {
-  .cf-hero { --coral: #c084fc; --coral-dim: #a855f7; }
+  :where(html:not([data-theme="dark"])) .cf-hero { --coral: #c084fc; --coral-dim: #a855f7; }
 }
+/* Same rules when the visitor picks Light with the switch. */
+  :where(html[data-theme="light"]) .cf-hero { --coral: #c084fc; --coral-dim: #a855f7; }
+
 
 /* ---- Intro ------------------------------------------------------------- */
 .cf-lede { font-size: 1rem; color: var(--muted); line-height: 1.8; max-width: 68ch; margin-top: 2rem; }

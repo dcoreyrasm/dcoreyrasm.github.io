@@ -7,8 +7,16 @@
 {%- assign in_speak = false -%}{%- if u == '/speaking.html' or u == '/services.html' -%}{%- assign in_speak = true -%}{%- endif -%}
 {%- assign in_proj = false -%}{%- if u contains '/community-ai/' or u contains '/village-notes/' or u contains '/connecticut-list/' or u contains '/year-end-report/' -%}{%- assign in_proj = true -%}{%- endif -%}
 {%- assign in_write = false -%}{%- if u == '/blog.html' or u contains '/blog/' or u == '/newsletter.html' -%}{%- assign in_write = true -%}{%- endif -%}
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('da-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
   <nav aria-label="Main navigation">
-    <a class="nav-name" href="/index.html"><picture><source srcset="/brand/monogram-light.svg" media="(prefers-color-scheme: light)" /><img class="nav-mark" src="/brand/monogram-dark.svg" alt="" width="34" height="34" /></picture><span>Darice Corey</span></a>
+    <a class="nav-name" href="/index.html"><img class="nav-mark nav-mark-dark" src="/brand/monogram-dark.svg" alt="" width="34" height="34" /><img class="nav-mark nav-mark-light" src="/brand/monogram-light.svg" alt="" width="34" height="34" /><span>Darice Corey</span></a>
     <div class="nav-right">
       <ul class="nav-links" id="nav-links">
         <li class="nav-group">
@@ -46,6 +54,10 @@
         </li>
         <li><a class="nav-top{% if u == '/contact.html' %} active{% endif %}" href="/contact.html"{% if u == '/contact.html' %} aria-current="page"{% endif %}>Contact</a></li>
       </ul>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      </button>
       <a href="/contact.html?reason=speaking#contact-form" class="nav-cta">Book Darice to Speak</a>
       <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links" onclick="toggleNav(this)">
         <span></span><span></span><span></span>
@@ -80,6 +92,23 @@
       document.addEventListener('click', function (e) {
         if (!e.target.closest('nav[aria-label="Main navigation"]')) closeGroups();
       });
+      var themeBtn = document.getElementById('theme-toggle');
+      var mq = window.matchMedia('(prefers-color-scheme: light)');
+      function current() {
+        var t = document.documentElement.getAttribute('data-theme');
+        return t || (mq.matches ? 'light' : 'dark');
+      }
+      function label() {
+        themeBtn.setAttribute('aria-label', current() === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+      }
+      themeBtn.addEventListener('click', function () {
+        var next = current() === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('da-theme', next); } catch (e) {}
+        label();
+      });
+      if (mq.addEventListener) mq.addEventListener('change', label);
+      label();
       document.addEventListener('keydown', function (e) {
         if (e.key !== 'Escape') return;
         var openBtn = groups.filter(function (b) { return b.getAttribute('aria-expanded') === 'true'; })[0];

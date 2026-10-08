@@ -36,8 +36,11 @@
 /* The band stays dark in light mode, so re-assert the bright accent
    inside it the same way /styles.css does for the other hero bands. */
 @media (prefers-color-scheme: light) {
-  .vn-hero { --coral:#c084fc; --coral-dim:#a855f7; }
+  :where(html:not([data-theme="dark"])) .vn-hero { --coral:#c084fc; --coral-dim:#a855f7; }
 }
+/* Same rules when the visitor picks Light with the switch. */
+  :where(html[data-theme="light"]) .vn-hero { --coral:#c084fc; --coral-dim:#a855f7; }
+
 
 /* ---------- CONTROLS ---------- */
 /* The section backgrounds below are written as `section.vn-*` on purpose.
@@ -206,8 +209,11 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
 /* The band stays dark in light mode, so re-assert the bright accent the way
    /styles.css does for the other dark bands. */
 @media (prefers-color-scheme: light) {
-  section.vn-submit-section { --coral:#c084fc; --coral-dim:#a855f7; }
+  :where(html:not([data-theme="dark"])) section.vn-submit-section { --coral:#c084fc; --coral-dim:#a855f7; }
 }
+/* Same rules when the visitor picks Light with the switch. */
+  :where(html[data-theme="light"]) section.vn-submit-section { --coral:#c084fc; --coral-dim:#a855f7; }
+
 
 @media (max-width:700px) {
   .vn-submit-grid { grid-template-columns:1fr; }
@@ -302,7 +308,10 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
 .vn-toggle:hover span { border-color:var(--coral); color:var(--cream); }
 .vn-toggle input:checked + span { background:var(--coral); border-color:var(--coral); color:#241038; }
 .vn-toggle input:focus-visible + span { outline:3px solid var(--coral); outline-offset:2px; }
-@media (prefers-color-scheme: light) { .vn-toggle input:checked + span { color:#fff; } }
+@media (prefers-color-scheme: light) { :where(html:not([data-theme="dark"])) .vn-toggle input:checked + span { color:#fff; } }
+/* Same rules when the visitor picks Light with the switch. */
+ :where(html[data-theme="light"]) .vn-toggle input:checked + span { color:#fff; } 
+
 
 /* ---------- CARD CHIPS ---------- */
 .vn-chips { display:flex; flex-wrap:wrap; gap:.35rem; margin-bottom:.85rem; }
@@ -405,12 +414,19 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
    reason not to use the real thing. Measured both ways in a browser: 6.22:1
    on the dark card, 7.43:1 on the light one. */
 @media (prefers-color-scheme: light) {
-  .vn-featured {
+  :where(html:not([data-theme="dark"])) .vn-featured {
     --ctpl-blue:#0045ab;
     --ctpl-edge:rgba(0,69,171,.28);
     --ctpl-on-blue:#ffffff;
   }
 }
+/* Same rules when the visitor picks Light with the switch. */
+  :where(html[data-theme="light"]) .vn-featured {
+    --ctpl-blue:#0045ab;
+    --ctpl-edge:rgba(0,69,171,.28);
+    --ctpl-on-blue:#ffffff;
+  }
+
 
 @media (max-width:760px) {
   .vn-featured { padding:1.2rem 1.1rem; }

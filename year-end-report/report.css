@@ -9,12 +9,20 @@
       color:var(--text);
     }
     @media (prefers-color-scheme: light){
-      .yer-wrap{
+      :where(html:not([data-theme="dark"])) .yer-wrap {
         --on-accent:#fff; --soft:rgba(124,58,237,0.07);
         --green:#059669; --blue:#2563eb; --teal:#0d9488; --orange:#c2410c;
         --red:#dc2626; --yellow:#b45309; --pink:#db2777; --indigo:#4f46e5;
       }
     }
+/* Same rules when the visitor picks Light with the switch. */
+      :where(html[data-theme="light"]) .yer-wrap {
+        --on-accent:#fff; --soft:rgba(124,58,237,0.07);
+        --green:#059669; --blue:#2563eb; --teal:#0d9488; --orange:#c2410c;
+        --red:#dc2626; --yellow:#b45309; --pink:#db2777; --indigo:#4f46e5;
+      }
+    
+
     /* Dark accent bands keep their look in both modes (matches site bands) */
     .yer-band{
       --accent:#c084fc; --accent-dim:#a855f7;
@@ -46,7 +54,10 @@
     }
     .yer-tab:hover{color:var(--cream); border-color:var(--coral);}
     .yer-tab.active{background:var(--coral); border-color:var(--coral); color:#241038;}
-    @media (prefers-color-scheme: light){ .yer-tab.active{color:#fff;} }
+    @media (prefers-color-scheme: light){ :where(html:not([data-theme="dark"])) .yer-tab.active {color:#fff;} }
+/* Same rules when the visitor picks Light with the switch. */
+ :where(html[data-theme="light"]) .yer-tab.active {color:#fff;} 
+
 
     /* Panels */
     .yer-panel{display:none;}

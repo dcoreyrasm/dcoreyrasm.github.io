@@ -48,6 +48,20 @@ nav[aria-label="Main navigation"] { position:fixed; top:0; left:0; right:0; z-in
 /* Booking button stays outside the collapsible menu, so it is always visible. */
 .nav-cta { color:var(--coral); border:1px solid var(--coral); padding:.5rem .95rem; font-size:.72rem; letter-spacing:.09em; text-transform:uppercase; text-decoration:none; white-space:nowrap; transition:background .2s,color .2s; }
 .nav-cta:hover { background:var(--coral); color:#1a0a2e; }
+/* Light/dark switch. Shows a sun in dark mode and a moon in light mode. */
+.theme-toggle { display:inline-flex; align-items:center; justify-content:center; width:2.75rem; height:2.75rem; background:none; border:1px solid var(--line); border-radius:50%; color:var(--cream); cursor:pointer; transition:color .2s,border-color .2s; flex-shrink:0; }
+.theme-toggle:hover { color:var(--coral); border-color:var(--coral); }
+.theme-toggle .icon-moon, .nav-mark-light { display:none; }
+@media (prefers-color-scheme: light) {
+  :where(html:not([data-theme="dark"])) .theme-toggle .icon-sun,
+  :where(html:not([data-theme="dark"])) .nav-mark-dark { display:none; }
+  :where(html:not([data-theme="dark"])) .theme-toggle .icon-moon,
+  :where(html:not([data-theme="dark"])) .nav-mark-light { display:block; }
+}
+:where(html[data-theme="light"]) .theme-toggle .icon-sun,
+:where(html[data-theme="light"]) .nav-mark-dark { display:none; }
+:where(html[data-theme="light"]) .theme-toggle .icon-moon,
+:where(html[data-theme="light"]) .nav-mark-light { display:block; }
 
 /* SHARED LAYOUT */
 /* Clears the fixed header. The Newsletter button makes the bar ~74px, so
@@ -391,7 +405,7 @@ footer p { font-size:.78rem; color:var(--muted); }
    preference". Only colors change; layout is untouched.
    ============================================================ */
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:where(:not([data-theme="dark"])) {
     color-scheme: light;
     --bg: #f8f7fc;        /* page background */
     --bg2: #ede9f6;       /* brand Soft Cream: cards / alternating sections */
@@ -406,33 +420,72 @@ footer p { font-size:.78rem; color:var(--muted); }
   /* The deep-purple accent bands stay dark by design. Re-assert the
      brighter accent inside them so their labels, links, and buttons
      keep full contrast against the dark background. */
-  .marquee-strip, .focus-section, .podcast-section,
-  .ai-hero, .research-hero, .speaking-hero {
+  :where(html:not([data-theme="dark"])) .marquee-strip, :where(html:not([data-theme="dark"])) .focus-section, :where(html:not([data-theme="dark"])) .podcast-section, :where(html:not([data-theme="dark"])) .ai-hero, :where(html:not([data-theme="dark"])) .research-hero, :where(html:not([data-theme="dark"])) .speaking-hero {
     --coral: #c084fc; --coral-dim: #a855f7;
   }
   /* Keep the band backgrounds dark even if they sit on an even section
      index (specificity must match `section:nth-child(even)`). */
-  section.focus-section, section.podcast-section { background:#2d1f4e; }
+  :where(html:not([data-theme="dark"])) section.focus-section, :where(html:not([data-theme="dark"])) section.podcast-section { background:#2d1f4e; }
   /* Buttons inside those dark bands keep their original dark-on-accent text. */
-  .focus-section .btn-primary, .podcast-section .btn-primary,
-  .ai-hero .btn-primary, .research-hero .btn-primary, .speaking-hero .btn-primary { color:#1a0a2e; }
+  :where(html:not([data-theme="dark"])) .focus-section .btn-primary, :where(html:not([data-theme="dark"])) .podcast-section .btn-primary, :where(html:not([data-theme="dark"])) .ai-hero .btn-primary, :where(html:not([data-theme="dark"])) .research-hero .btn-primary, :where(html:not([data-theme="dark"])) .speaking-hero .btn-primary { color:#1a0a2e; }
 
   /* Chrome elements that were hardcoded dark. */
-  footer { background:var(--bg2); }
-  .work-card:hover { background:#e7e3f3; }
-  .project-feature:hover { background:#e7e3f3; }
-  .work-card.featured { background:var(--bg2); }
+  :where(html:not([data-theme="dark"])) footer { background:var(--bg2); }
+  :where(html:not([data-theme="dark"])) .work-card:hover { background:#e7e3f3; }
+  :where(html:not([data-theme="dark"])) .project-feature:hover { background:#e7e3f3; }
+  :where(html:not([data-theme="dark"])) .work-card.featured { background:var(--bg2); }
 
   /* On light surfaces the accent is now dark, so accent-backed text turns white. */
-  .btn-primary, .btn-primary:hover { color:#fff; }
-  .nav-cta:hover { color:#fff; }
-  .nav-sub { box-shadow:0 14px 34px rgba(22,19,31,.12); }
-  .stat-card-1 { color:#fff; }
-  .skip-link { color:#fff; }
+  :where(html:not([data-theme="dark"])) .btn-primary, :where(html:not([data-theme="dark"])) .btn-primary:hover { color:#fff; }
+  :where(html:not([data-theme="dark"])) .nav-cta:hover { color:#fff; }
+  :where(html:not([data-theme="dark"])) .nav-sub { box-shadow:0 14px 34px rgba(22,19,31,.12); }
+  :where(html:not([data-theme="dark"])) .stat-card-1 { color:#fff; }
+  :where(html:not([data-theme="dark"])) .skip-link { color:#fff; }
 
   /* Ghost-button outline needs to be visible on a light background. */
-  .btn-ghost { border-color:rgba(33,28,46,0.25); }
+  :where(html:not([data-theme="dark"])) .btn-ghost { border-color:rgba(33,28,46,0.25); }
 }
+/* Same rules when the visitor picks Light with the switch. */
+  :root:where([data-theme="light"]) {
+    color-scheme: light;
+    --bg: #f8f7fc;        /* page background */
+    --bg2: #ede9f6;       /* brand Soft Cream: cards / alternating sections */
+    --coral: #7e22ce;     /* brand Deep Violet: accent text on light surfaces (7.0:1 on white) */
+    --coral-dim: #6b1bb0; /* accent hover */
+    --cream: #16131f;     /* brand Deep Plum: primary text */
+    --muted: #595270;     /* secondary text */
+    --line: rgba(126,34,206,0.16);
+    --nav-bg: rgba(248,247,252,0.9);
+  }
+
+  /* The deep-purple accent bands stay dark by design. Re-assert the
+     brighter accent inside them so their labels, links, and buttons
+     keep full contrast against the dark background. */
+  :where(html[data-theme="light"]) .marquee-strip, :where(html[data-theme="light"]) .focus-section, :where(html[data-theme="light"]) .podcast-section, :where(html[data-theme="light"]) .ai-hero, :where(html[data-theme="light"]) .research-hero, :where(html[data-theme="light"]) .speaking-hero {
+    --coral: #c084fc; --coral-dim: #a855f7;
+  }
+  /* Keep the band backgrounds dark even if they sit on an even section
+     index (specificity must match `section:nth-child(even)`). */
+  :where(html[data-theme="light"]) section.focus-section, :where(html[data-theme="light"]) section.podcast-section { background:#2d1f4e; }
+  /* Buttons inside those dark bands keep their original dark-on-accent text. */
+  :where(html[data-theme="light"]) .focus-section .btn-primary, :where(html[data-theme="light"]) .podcast-section .btn-primary, :where(html[data-theme="light"]) .ai-hero .btn-primary, :where(html[data-theme="light"]) .research-hero .btn-primary, :where(html[data-theme="light"]) .speaking-hero .btn-primary { color:#1a0a2e; }
+
+  /* Chrome elements that were hardcoded dark. */
+  :where(html[data-theme="light"]) footer { background:var(--bg2); }
+  :where(html[data-theme="light"]) .work-card:hover { background:#e7e3f3; }
+  :where(html[data-theme="light"]) .project-feature:hover { background:#e7e3f3; }
+  :where(html[data-theme="light"]) .work-card.featured { background:var(--bg2); }
+
+  /* On light surfaces the accent is now dark, so accent-backed text turns white. */
+  :where(html[data-theme="light"]) .btn-primary, :where(html[data-theme="light"]) .btn-primary:hover { color:#fff; }
+  :where(html[data-theme="light"]) .nav-cta:hover { color:#fff; }
+  :where(html[data-theme="light"]) .nav-sub { box-shadow:0 14px 34px rgba(22,19,31,.12); }
+  :where(html[data-theme="light"]) .stat-card-1 { color:#fff; }
+  :where(html[data-theme="light"]) .skip-link { color:#fff; }
+
+  /* Ghost-button outline needs to be visible on a light background. */
+  :where(html[data-theme="light"]) .btn-ghost { border-color:rgba(33,28,46,0.25); }
+
 
 /* ============================================================
    BLOG — additive styles for the Jekyll blog section only.
