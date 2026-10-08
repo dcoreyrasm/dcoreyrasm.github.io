@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap');
+/* Brand fonts: Playfair Display (headlines) and Aktiv Grotesk (body, from Adobe Fonts).
+   Aktiv Grotesk loads once an Adobe Fonts web project for daricecorey.com is added to each page's <head>.
+   Until then, body text falls back to DM Sans. */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
@@ -9,7 +12,7 @@
   /* Height of the fixed header. Anything that has to sit directly below it
      reads this instead of carrying its own copy of the number. */
   --header-h: 4.7rem;
-  --serif: 'Playfair Display', Georgia, serif; --sans: 'DM Sans', sans-serif;
+  --serif: 'Playfair Display', Georgia, serif; --sans: 'aktiv-grotesk', 'Aktiv Grotesk', 'DM Sans', sans-serif;
 }
 .skip-link { position:absolute; top:-100%; left:1rem; background:var(--coral); color:#1a0a2e; padding:.75rem 1.25rem; font-size:.9rem; font-weight:500; z-index:9999; text-decoration:none; border-radius:0 0 4px 4px; }
 .skip-link:focus { top:0; }
@@ -24,7 +27,8 @@ p, li, span, h1, h2, h3, h4 { word-break:normal; overflow-wrap:break-word; hyphe
 /* Scoped to the site header. A bare `nav` selector also catches the <nav>
    landmarks in the footer, which then get fixed to the top of the page. */
 nav[aria-label="Main navigation"] { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; justify-content:space-between; align-items:center; padding:1.2rem 3rem; background:var(--nav-bg); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
-.nav-name { font-family:var(--serif); font-size:1.05rem; color:var(--cream); text-decoration:none; flex-shrink:0; }
+.nav-name { font-family:var(--serif); font-size:1.1rem; color:var(--cream); text-decoration:none; flex-shrink:0; display:inline-flex; align-items:center; gap:.6rem; }
+.nav-mark { width:34px; height:34px; display:block; }
 .nav-links { display:flex; gap:1.75rem; list-style:none; flex-wrap:wrap; }
 .nav-links a { color:var(--muted); text-decoration:none; font-size:.78rem; letter-spacing:.05em; text-transform:uppercase; transition:color .2s; }
 .nav-links a.nav-cta { color:var(--coral); border:1px solid var(--coral); padding:.45rem .9rem; font-size:.72rem; letter-spacing:.09em; transition:background .2s,color .2s; }
@@ -269,7 +273,7 @@ section:nth-child(even) { background:var(--bg2); }
 /* FOOTER */
 footer { background:#0e0b17; padding:2.5rem 3rem 1.75rem; display:flex; flex-direction:column; align-items:flex-start; border-top:1px solid var(--line); }
 footer p { font-size:.78rem; color:var(--muted); }
-.footer-cols { display:grid; grid-template-columns:repeat(3,1fr); gap:2.5rem; width:100%; margin-bottom:2rem; }
+.footer-cols { display:grid; grid-template-columns:repeat(4,1fr); gap:2.5rem; width:100%; margin-bottom:2rem; }
 .footer-col h2 { font-family:var(--sans); font-size:.68rem; font-weight:500; letter-spacing:.16em; text-transform:uppercase; color:var(--coral); margin-bottom:1rem; }
 .footer-col ul { list-style:none; display:flex; flex-direction:column; gap:.55rem; }
 .footer-col a { font-size:.82rem; color:var(--muted); text-decoration:none; transition:color .2s; }
@@ -283,7 +287,7 @@ footer p { font-size:.78rem; color:var(--muted); }
 .nav-toggle.open span:nth-child(2) { opacity:0; }
 .nav-toggle.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
 
-@media (max-width:1060px) {
+@media (max-width:1280px) {
   :root { --header-h: 4rem; }
   nav[aria-label="Main navigation"] { padding:1.1rem 1.5rem; }
   .nav-toggle { display:flex; }
@@ -301,7 +305,7 @@ footer p { font-size:.78rem; color:var(--muted); }
   .nav-links a.nav-cta:hover, .nav-links a.nav-cta.active { background:none; color:var(--coral); }
 }
 
-/* Page layout stacks lower down than the nav does; between 900 and 1060px
+/* Page layout stacks lower down than the nav does; between 900 and 1280px
    the bar is a menu button but the content is still comfortably wide. */
 @media (max-width:900px) {
   .hero { grid-template-columns:1fr; padding:2rem 1.5rem; gap:1.5rem; }
@@ -369,12 +373,12 @@ footer p { font-size:.78rem; color:var(--muted); }
   :root {
     color-scheme: light;
     --bg: #f8f7fc;        /* page background */
-    --bg2: #efedf7;       /* cards / alternating sections */
-    --coral: #7c3aed;     /* accent, darkened for contrast on light surfaces */
-    --coral-dim: #6d28d9; /* accent hover */
-    --cream: #211c2e;     /* primary text */
+    --bg2: #ede9f6;       /* brand Soft Cream: cards / alternating sections */
+    --coral: #7e22ce;     /* brand Deep Violet: accent text on light surfaces (7.0:1 on white) */
+    --coral-dim: #6b1bb0; /* accent hover */
+    --cream: #16131f;     /* brand Deep Plum: primary text */
     --muted: #595270;     /* secondary text */
-    --line: rgba(124,58,237,0.16);
+    --line: rgba(126,34,206,0.16);
     --nav-bg: rgba(248,247,252,0.9);
   }
 
@@ -400,6 +404,7 @@ footer p { font-size:.78rem; color:var(--muted); }
 
   /* On light surfaces the accent is now dark, so accent-backed text turns white. */
   .btn-primary, .btn-primary:hover { color:#fff; }
+  .nav-links a.nav-cta:hover, .nav-links a.nav-cta.active { color:#fff; }
   .stat-card-1 { color:#fff; }
   .skip-link { color:#fff; }
 
@@ -489,3 +494,18 @@ footer p { font-size:.78rem; color:var(--muted); }
   .archive-week-list a { flex-direction:column; gap:.15rem; }
   .archive-post-day { min-width:0; }
 }
+
+/* DARICE COREY, LLC: speaking and services */
+.llc-logo { display:block; width:260px; max-width:70vw; height:auto; margin:-8px 0 1.5rem -8px; }
+.book-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+.book-icon { display:block; width:40px; height:40px; margin-bottom:1rem; }
+.services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+.service-card { background:var(--bg2); border:1px solid var(--line); padding:2rem; display:flex; flex-direction:column; }
+.service-card h3 { font-family:var(--serif); font-size:1.35rem; font-weight:700; color:var(--cream); margin-bottom:.75rem; line-height:1.25; }
+.service-card p { font-size:.95rem; color:var(--muted); line-height:1.7; margin-bottom:1rem; }
+.service-card ul { list-style:none; margin:0 0 1.5rem; display:flex; flex-direction:column; gap:.5rem; }
+.service-card li { font-size:.9rem; color:var(--muted); padding-left:1.1rem; position:relative; line-height:1.55; }
+.service-card li::before { content:''; position:absolute; left:0; top:.6em; width:.45rem; height:2px; background:var(--coral); }
+.service-card .btn-ghost { margin-top:auto; align-self:flex-start; }
+@media (max-width:900px) { .book-grid, .services-grid { grid-template-columns:1fr; } }
+.contact-form { scroll-margin-top: calc(var(--header-h) + 1.5rem); }
