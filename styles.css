@@ -633,3 +633,16 @@ footer p { font-size:.78rem; color:var(--muted); }
   .focus-card-wide { flex-direction:column; }
   .talk-date { flex-basis:100%; }
 }
+
+/* Stock photography (Adobe Stock, licensed). Decorative, so alt text is empty. */
+.section-figure { margin:0 0 2.5rem; border-radius:14px; overflow:hidden; border:1px solid var(--line); }
+.section-figure img { display:block; width:100%; object-fit:cover; }
+.section-figure--books img { height:260px; }
+.section-figure--impact img { height:200px; }
+.section-figure--impact + .impact-strip { margin-top:0; }
+/* Current Focus: purple network photo under a plum overlay so the text keeps its contrast. */
+section.focus-section { background:linear-gradient(rgba(30,26,46,.86), rgba(45,31,78,.9)), url('/images/stock/network-purple.jpg') center/cover no-repeat; }
+@media (max-width:900px) {
+  .section-figure--books img { height:180px; }
+  .section-figure--impact img { height:140px; }
+}
