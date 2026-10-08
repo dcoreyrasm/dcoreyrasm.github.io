@@ -1,0 +1,89 @@
+{%- comment -%}
+  Shared site header. Every page includes this file, so the menu is edited in
+  one place. The current section is marked from page.url.
+{%- endcomment -%}
+{%- assign u = page.url -%}
+{%- assign in_about = false -%}{%- if u == '/work.html' or u == '/ai.html' or u == '/research.html' or u == '/mentorship.html' -%}{%- assign in_about = true -%}{%- endif -%}
+{%- assign in_speak = false -%}{%- if u == '/speaking.html' or u == '/services.html' -%}{%- assign in_speak = true -%}{%- endif -%}
+{%- assign in_proj = false -%}{%- if u contains '/community-ai/' or u contains '/village-notes/' or u contains '/connecticut-list/' or u contains '/year-end-report/' -%}{%- assign in_proj = true -%}{%- endif -%}
+{%- assign in_write = false -%}{%- if u == '/blog.html' or u contains '/blog/' or u == '/newsletter.html' -%}{%- assign in_write = true -%}{%- endif -%}
+  <nav aria-label="Main navigation">
+    <a class="nav-name" href="/index.html"><picture><source srcset="/brand/monogram-light.svg" media="(prefers-color-scheme: light)" /><img class="nav-mark" src="/brand/monogram-dark.svg" alt="" width="34" height="34" /></picture><span>Darice Corey</span></a>
+    <div class="nav-right">
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-group">
+          <button type="button" class="nav-group-btn{% if in_about %} active{% endif %}" aria-expanded="false" aria-controls="nav-sub-about">About</button>
+          <ul class="nav-sub" id="nav-sub-about" hidden>
+            <li><a href="/work.html"{% if u == '/work.html' %} aria-current="page"{% endif %}>Work</a></li>
+            <li><a href="/ai.html"{% if u == '/ai.html' %} aria-current="page"{% endif %}>AI Leadership</a></li>
+            <li><a href="/research.html"{% if u == '/research.html' %} aria-current="page"{% endif %}>Research</a></li>
+            <li><a href="/mentorship.html"{% if u == '/mentorship.html' %} aria-current="page"{% endif %}>Mentorship</a></li>
+          </ul>
+        </li>
+        <li class="nav-group">
+          <button type="button" class="nav-group-btn{% if in_speak %} active{% endif %}" aria-expanded="false" aria-controls="nav-sub-speaking">Speaking &amp; Services</button>
+          <ul class="nav-sub" id="nav-sub-speaking" hidden>
+            <li><a href="/speaking.html"{% if u == '/speaking.html' %} aria-current="page"{% endif %}>Speaking</a></li>
+            <li><a href="/services.html"{% if u == '/services.html' %} aria-current="page"{% endif %}>Services</a></li>
+            <li><a href="/contact.html?reason=speaking#contact-form">Book Darice to Speak</a></li>
+          </ul>
+        </li>
+        <li class="nav-group">
+          <button type="button" class="nav-group-btn{% if in_proj %} active{% endif %}" aria-expanded="false" aria-controls="nav-sub-projects">Projects</button>
+          <ul class="nav-sub" id="nav-sub-projects" hidden>
+            <li><a href="/community-ai/"{% if u contains '/community-ai/' %} aria-current="page"{% endif %}>Community AI</a></li>
+            <li><a href="/village-notes/"{% if u contains '/village-notes/' %} aria-current="page"{% endif %}>Village Notes</a></li>
+            <li><a href="/connecticut-list/"{% if u contains '/connecticut-list/' %} aria-current="page"{% endif %}>Connecticut List</a></li>
+            <li><a href="/year-end-report/"{% if u contains '/year-end-report/' %} aria-current="page"{% endif %}>Year-End Report</a></li>
+          </ul>
+        </li>
+        <li class="nav-group">
+          <button type="button" class="nav-group-btn{% if in_write %} active{% endif %}" aria-expanded="false" aria-controls="nav-sub-writing">Writing</button>
+          <ul class="nav-sub" id="nav-sub-writing" hidden>
+            <li><a href="/blog.html"{% if u == '/blog.html' or u contains '/blog/' %} aria-current="page"{% endif %}>Blog</a></li>
+            <li><a href="/newsletter.html"{% if u == '/newsletter.html' %} aria-current="page"{% endif %}>Newsletter</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-top{% if u == '/contact.html' %} active{% endif %}" href="/contact.html"{% if u == '/contact.html' %} aria-current="page"{% endif %}>Contact</a></li>
+      </ul>
+      <a href="/contact.html?reason=speaking#contact-form" class="nav-cta">Book Darice to Speak</a>
+      <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links" onclick="toggleNav(this)">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <script>
+    (function () {
+      var menu = document.getElementById('nav-links');
+      var groups = Array.prototype.slice.call(document.querySelectorAll('.nav-group-btn'));
+      function closeGroups(except) {
+        groups.forEach(function (b) {
+          if (b === except) return;
+          b.setAttribute('aria-expanded', 'false');
+          document.getElementById(b.getAttribute('aria-controls')).hidden = true;
+        });
+      }
+      groups.forEach(function (b) {
+        b.addEventListener('click', function () {
+          var open = b.getAttribute('aria-expanded') !== 'true';
+          closeGroups(b);
+          b.setAttribute('aria-expanded', String(open));
+          document.getElementById(b.getAttribute('aria-controls')).hidden = !open;
+        });
+      });
+      window.toggleNav = function (btn) {
+        var open = menu.classList.toggle('open');
+        btn.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', String(open));
+        if (!open) closeGroups();
+      };
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('nav[aria-label="Main navigation"]')) closeGroups();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key !== 'Escape') return;
+        var openBtn = groups.filter(function (b) { return b.getAttribute('aria-expanded') === 'true'; })[0];
+        if (openBtn) { closeGroups(); openBtn.focus(); }
+      });
+    })();
+  </script>

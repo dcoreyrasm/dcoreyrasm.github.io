@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,31 +26,13 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#16131F" />
-  <link rel="stylesheet" href="styles.css?v=20261008" />
+  <link rel="stylesheet" href="styles.css?v=20261008b" />
   <!-- Microsoft Clarity -->
   <script type="text/javascript">if(!window.__daOptOut){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xdrtc0i2un");}</script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  <nav aria-label="Main navigation">
-    <a class="nav-name" href="/index.html"><picture><source srcset="/brand/monogram-light.svg" media="(prefers-color-scheme: light)" /><img class="nav-mark" src="/brand/monogram-dark.svg" alt="" width="34" height="34" /></picture><span>Darice Corey</span></a>
-    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="/work.html" class="active">Work</a></li>
-      <li><a href="/ai.html">AI Leadership</a></li>
-      <li><a href="/research.html">Research</a></li>
-      <li><a href="/speaking.html">Speaking</a></li>
-      <li><a href="/services.html">Services</a></li>
-      <li><a href="/community-ai/">Community AI</a></li>
-      <li><a href="/mentorship.html">Mentorship</a></li>
-      <li><a href="/blog.html">Blog</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-      <li><a href="/newsletter.html">Newsletter</a></li>
-      <li><a href="/contact.html?reason=speaking#contact-form" class="nav-cta">Book Darice to Speak</a></li>
-    </ul>
-  </nav>
+  {% include site-nav.html %}
 
   <main id="main-content">
 
@@ -250,13 +234,5 @@
     </div>
     <p class="footer-base">&copy; 2026 Darice Corey. All rights reserved. Speaking, consulting, and workshops outside my Yale role are offered through Darice Corey, LLC.</p>
   </footer>
-  <script>
-    function toggleNav(btn) {
-      const nav = document.getElementById('nav-links');
-      const open = nav.classList.toggle('open');
-      btn.classList.toggle('open', open);
-      btn.setAttribute('aria-expanded', open);
-    }
-  </script>
 </body>
 </html>
