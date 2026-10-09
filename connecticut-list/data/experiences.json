@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-04T14:15:33.886Z",
-  "count": 415,
+  "generated": "2026-10-09T18:36:42.362Z",
+  "count": 417,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -4326,6 +4326,20 @@
       "slug": "mattatuck-museum-adult-art-workshop-experience"
     },
     {
+      "name": "Merle's Record Rack",
+      "town": "Orange",
+      "region": "New Haven Area",
+      "categories": [
+        "Something Different"
+      ],
+      "whyGo": "Browse new and used music, memorabilia and vintage audio gear at a longtime independent record store in Orange.",
+      "officialWebsite": "https://www.merlesrecordrack.com/",
+      "address": "307 Racebrook Road, Orange, CT 06477",
+      "notes": "Related record store identified from statewide music-shop research. Verify hours and events before visiting.",
+      "dateAdded": "2026-10-09",
+      "slug": "merles-record-rack"
+    },
+    {
       "name": "Mianus River & Natural Park River Trail",
       "town": "Greenwich / Stamford",
       "audiences": [
@@ -5316,6 +5330,20 @@
       "tryThis": "Choose a book using only a staff recommendation card or attend an author event and leave with one new title.",
       "dateAdded": "2026-09-17",
       "slug": "r-j-julia-booksellers"
+    },
+    {
+      "name": "Redscroll Records",
+      "town": "Wallingford",
+      "region": "New Haven Area",
+      "categories": [
+        "Something Different"
+      ],
+      "whyGo": "Browse new and used vinyl records, CDs, tapes, and underground music at an independent Connecticut record shop.",
+      "officialWebsite": "https://redscrollrecords.com/contact",
+      "address": "69 South Turnpike Road, Unit B, Wallingford, CT 06492",
+      "notes": "Featured in Decor Hint article supplied by Darice. Hours, prices and stock should be checked before visiting.",
+      "dateAdded": "2026-10-09",
+      "slug": "redscroll-records"
     },
     {
       "name": "Ridgefield Guild of Artists",
