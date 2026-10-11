@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-09T18:36:42.362Z",
-  "count": 417,
+  "generated": "2026-10-11T18:36:16.493Z",
+  "count": 420,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -108,10 +108,10 @@
     "Old Saybrook",
     "Orange",
     "Oxford",
+    "Plainfield",
     "Plantsville",
     "Pomfret",
     "Pomfret Center",
-    "Portland",
     "Preston",
     "Putnam",
     "Redding",
@@ -367,9 +367,9 @@
         "Date Night"
       ],
       "bestTime": "Specific event/date",
-      "officialWebsite": "https://www.trumbull-ct.gov/625/Arts-Festival",
+      "officialWebsite": "https://trumbull-ct.gov/m/newsflash/Home/Detail/3184",
       "address": "5866 Main Street, Trumbull, CT 06611",
-      "notes": "The Town of Trumbull postponed the festival under advice from the Emergency Management Team. Current date is Sunday, October 11, 2026 at Town Hall Green.",
+      "notes": "TODAY only: Sunday, October 11, 2026, 10 a.m.-3 p.m. on Town Hall Green. Free admission and parking. Municipal news states closing time was revised to 3 p.m.; general town page still lists 4 p.m.",
       "dateAdded": "2026-08-19",
       "eventStart": "2026-10-11",
       "eventEnd": "2026-10-11",
@@ -459,35 +459,6 @@
       "officialWebsite": "https://www.tortmuseum.org/visit/",
       "dateAdded": "2026-08-24",
       "slug": "american-museum-of-tort-law"
-    },
-    {
-      "name": "An Evening with David Sedaris at Shubert Theatre",
-      "town": "New Haven",
-      "region": "New Haven Area",
-      "experienceTypes": [
-        "Theater & Movies",
-        "Date Night",
-        "Something Different"
-      ],
-      "categories": [
-        "Theater & Movies",
-        "Date Night",
-        "Something Different"
-      ],
-      "audiences": [
-        "Date Night",
-        "Group Activities",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A live evening with humorist David Sedaris featuring new stories and commentary, followed by a book-signing opportunity at the Shubert.",
-      "officialWebsite": "https://www.shubert.com/events/detail/an-evening-with-david-sedaris",
-      "address": "247 College Street, New Haven, CT 06510",
-      "tryThis": "Make it a downtown New Haven night and stay for the book signing after the reading.",
-      "notes": "Lobby doors open one hour before showtime and theatre doors about 30 minutes before. The reading includes new, unpublished stories and commentary and is accompanied by pre- and post-show book signing.",
-      "dateAdded": "2026-10-04",
-      "eventStart": "2026-10-05",
-      "slug": "an-evening-with-david-sedaris-at-shubert-theatre"
     },
     {
       "name": "Angevine Farm Harvest Season Pumpkin Picking",
@@ -773,6 +744,34 @@
       "slug": "bartlett-arboretum-and-gardens"
     },
     {
+      "name": "Bartlett Arboretum October Third Thursday Walk & Talk",
+      "town": "Stamford",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Hiking & Outdoors",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Gardens & Arboretums",
+        "Easy Walks",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Individual Exploration",
+        "Group Activities"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Join a Master Gardener for a guided October walk focused on nut trees and fall foliage at Bartlett Arboretum & Gardens.",
+      "officialWebsite": "https://www.bartlettarboretum.org/events/2026/8/20/third-thursdays-walks-and-talks-at-the-bartlett-y6sdf-ttl4m",
+      "address": "151 Brookdale Road, Stamford, CT 06903",
+      "tryThis": "Find and identify two nut trees mentioned on the guided walk.",
+      "notes": "Thursday October 15, 2026, 10–11 a.m. Meets in the Silver Educational Center lobby. Free for members, $10 for nonmembers. Walking shoes recommended; event is separate from normal free grounds admission.",
+      "dateAdded": "2026-10-11",
+      "eventStart": "2026-10-15",
+      "slug": "bartlett-arboretum-october-third-thursday-walk-and-talk"
+    },
+    {
       "name": "Beardsley's Cider Mill & Orchard",
       "town": "Shelton",
       "experienceTypes": [
@@ -1047,6 +1046,30 @@
       "slug": "book-barn"
     },
     {
+      "name": "Books on the Common Independent Bookstore",
+      "town": "Ridgefield",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Bookstore"
+      ],
+      "categories": [
+        "Bookstores",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Browse a long-running independent bookstore in downtown Ridgefield, with shelves of books, gifts and bookseller recommendations.",
+      "officialWebsite": "https://booksonthecommon.com/",
+      "address": "404 Main Street, Ridgefield, CT 06877",
+      "tryThis": "Ask a bookseller for a recommendation outside your usual reading interests.",
+      "notes": "Official hours: Monday–Friday 10 a.m.–5:30 p.m.; Saturday 10 a.m.–5 p.m.; Sunday 11 a.m.–4 p.m.",
+      "dateAdded": "2026-10-11",
+      "slug": "books-on-the-common-independent-bookstore"
+    },
+    {
       "name": "Boothe Memorial Park & Museum Free Grounds",
       "town": "Stratford",
       "region": "Fairfield County",
@@ -1068,36 +1091,6 @@
       "officialWebsite": "https://bradleymountainfarm.com/goat-yoga",
       "dateAdded": "2026-09-02",
       "slug": "bradley-mountain-farm-goat-yoga"
-    },
-    {
-      "name": "Branford Farm Stand Fall Harvest Festival",
-      "town": "Branford",
-      "region": "New Haven Area",
-      "experienceTypes": [
-        "Corn Maze",
-        "Fall & Seasonal",
-        "Food & Treats",
-        "Music & Events"
-      ],
-      "categories": [
-        "Orchards & Farms",
-        "Corn Mazes",
-        "Food & Treats",
-        "Festivals & Events"
-      ],
-      "audiences": [
-        "Date Night",
-        "Family",
-        "Group Activities"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A Branford fall destination with a pumpkin patch, 7-acre crop maze, hayride, live music, Ferris wheel and seasonal treats.",
-      "officialWebsite": "https://www.branfordfarmstand.com/",
-      "notes": "Weekend-only fall event, October 3-November 1, 2026. Current site lists live music, pumpkin patch, 7-acre crop maze, Ferris wheel, hay ride and seasonal food/drinks.",
-      "dateAdded": "2026-09-05",
-      "eventStart": "2026-10-03",
-      "eventEnd": "2026-11-01",
-      "slug": "branford-farm-stand-fall-harvest-festival"
     },
     {
       "name": "Branford Point Beach",
@@ -2125,6 +2118,34 @@
       "slug": "danbury-museum-and-historical-society"
     },
     {
+      "name": "Danbury Railway Museum 2026 Pumpkin Patch Trains",
+      "town": "Danbury",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Trains & Scenic Rides",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Trains & Scenic Rides",
+        "Festivals & Events",
+        "Orchards & Farms"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Ride a vintage train to the museum's pumpkin patch, where families can select a pumpkin and enjoy cider and cookies.",
+      "officialWebsite": "https://www.danburyrail.org/pumpkin",
+      "address": "120 White Street, Danbury, CT 06810",
+      "tryThis": "Ride the short round trip, pick a pumpkin and compare the vintage railcars.",
+      "notes": "Official 2026 schedule: Saturdays October 10, 17, 24, 31 and Sundays October 11, 18, 25, November 1. Select Saturday 11 a.m. trips include children's storytime; Saturday twilight trips at 6:30 p.m. Museum notes vintage trains are not wheelchair accessible even though the museum station and yard are accessible. Reservations recommended; special-event price not independently confirmed.",
+      "dateAdded": "2026-10-11",
+      "eventStart": "2026-10-10",
+      "eventEnd": "2026-11-01",
+      "slug": "danbury-railway-museum-2026-pumpkin-patch-trains"
+    },
+    {
       "name": "Danbury Railway Museum Railyard Local",
       "town": "Danbury",
       "audiences": [
@@ -3087,6 +3108,7 @@
         "Date Night"
       ],
       "officialWebsite": "https://ctparks.com/parks/harkness-memorial-state-park",
+      "notes": "DEEP says free all-terrain wheelchairs are offered seasonally into fall at Harkness. Reserve through ReserveAmerica at least two days before the visit; safety video, ID and signed waiver required. Confirm seasonal availability before arriving.",
       "dateAdded": "2026-08-14",
       "slug": "harkness-memorial-state-park"
     },
@@ -3135,6 +3157,35 @@
       "address": "500 Broad Street, Bridgeport, CT 06604",
       "dateAdded": "2026-08-17",
       "slug": "hartford-healthcare-amphitheater"
+    },
+    {
+      "name": "Hartford Stage Dracula 2026",
+      "town": "Hartford",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Theater & Movies",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "See Hartford Stage's new production of Dracula, a live theater option for the fall season in downtown Hartford.",
+      "officialWebsite": "https://www.hartfordstage.org/2026-2027/dracula/",
+      "address": "50 Church Street, Hartford, CT 06103",
+      "tryThis": "Choose one performance and discuss how the production reimagines the familiar Dracula story.",
+      "notes": "Hartford Stage lists October 9–November 1 on the production page. It explicitly offers an open-captioned performance October 25 at 2 p.m. and an audio-described performance October 31 at 2 p.m. Check tickets and schedule before booking.",
+      "dateAdded": "2026-10-11",
+      "eventStart": "2026-10-09",
+      "eventEnd": "2026-11-01",
+      "slug": "hartford-stage-dracula-2026"
     },
     {
       "name": "Harvest Glow 2026",
@@ -3435,39 +3486,6 @@
       "address": "775 Silver Lane, East Hartford, CT 06118",
       "dateAdded": "2026-08-22",
       "slug": "humacao-salsa-lesson-social-night"
-    },
-    {
-      "name": "I-Park October Open Trails + Music",
-      "town": "East Haddam",
-      "region": "Central CT",
-      "experienceTypes": [
-        "Hiking & Outdoors",
-        "Museum & Culture",
-        "Music & Events"
-      ],
-      "categories": [
-        "Easy Walks",
-        "Free / Low-Cost",
-        "Museums & Culture",
-        "Something Different"
-      ],
-      "audiences": [
-        "Date Night",
-        "Family",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A free public day to walk I-Park’s art-filled nature trails and hear live local music in a setting that is normally open to visitors only during scheduled public programs.",
-      "officialWebsite": "https://www.i-park.org/",
-      "address": "428 Hopyard Road, East Haddam, CT 06423",
-      "tryThis": "Walk the art-and-nature trails, choose three outdoor artworks that stand out to you, then stay for the live music.",
-      "notes": "Free public event. I-Park is not generally open to the public outside scheduled events, so visit on the published event date and check the official site for any last-minute changes.",
-      "dateAdded": "2026-09-08",
-      "eventStart": "2026-10-10",
-      "ages": [
-        "All ages"
-      ],
-      "slug": "i-park-october-open-trails-music"
     },
     {
       "name": "Immerse HydroSpa Couples Wellness Experience",
@@ -5196,36 +5214,28 @@
       "slug": "pinots-palette-stamford-date-night-painting"
     },
     {
-      "name": "Portland Agricultural Fair 2026",
-      "town": "Portland",
-      "region": "Central CT",
+      "name": "Possible Futures Neighborhood Bookspace",
+      "town": "New Haven",
+      "region": "New Haven Area",
       "experienceTypes": [
-        "Fall & Seasonal",
-        "Music & Events",
-        "Food & Treats"
+        "Bookstore"
       ],
       "categories": [
-        "Festivals & Events",
-        "Food & Treats",
+        "Bookstores",
         "Something Different"
       ],
       "audiences": [
-        "Group Activities",
-        "Family",
+        "Date Night",
         "Individual Exploration"
       ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A small-town agricultural fair with rides, livestock and exhibits, live entertainment, food, pulling events, and traditional fair activities.",
-      "officialWebsite": "https://portlandfair.com/",
-      "tryThis": "Pick one traditional fair activity you have never tried before, then make time for an agricultural exhibit.",
-      "notes": "Official admission is $15 for adults, $10 for seniors age 65+ and active/reserve military with valid ID, and free for children under 12. On-site parking is $10 cash only. No pets are allowed except service animals.",
-      "dateAdded": "2026-09-27",
-      "eventStart": "2026-10-02",
-      "eventEnd": "2026-10-04",
-      "ages": [
-        "All ages"
-      ],
-      "slug": "portland-agricultural-fair-2026"
+      "bestTime": "Anytime",
+      "whyGo": "Explore a neighborhood bookspace in New Haven focused on books and community connections.",
+      "officialWebsite": "https://www.possiblefuturesbooks.com/",
+      "address": "318 Edgewood Avenue, New Haven, CT 06511",
+      "tryThis": "Choose a book connected to a place, subject or community you would like to learn more about.",
+      "notes": "The provider's homepage confirms the Edgewood Avenue address. Current opening hours were not independently confirmed; check directly before visiting.",
+      "dateAdded": "2026-10-11",
+      "slug": "possible-futures-neighborhood-bookspace"
     },
     {
       "name": "Powder Ridge Winterfest & Snow Tubing",
@@ -5303,6 +5313,34 @@
       "officialWebsite": "https://ctvisit.com/articles/antiques-outings",
       "dateAdded": "2026-08-17",
       "slug": "putnam-antiques-marketplace"
+    },
+    {
+      "name": "Quinebaug Trail Long Hike at Pachaug State Forest",
+      "town": "Plainfield / Voluntown",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Longer Hikes",
+        "Parks & Preserves",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Follow a 6.5-mile Blue-Blazed hiking trail across forested hills, ponds and historic stone foundations, with options for a longer route.",
+      "officialWebsite": "https://ctwoodlands.org/trails/quinebaug-trail/",
+      "tryThis": "Study the trail map, choose a suitable section and look for a historic stone foundation.",
+      "notes": "The Connecticut Forest & Park Association describes the full Quinebaug Trail as moderate, 6.5 miles through Plainfield and Voluntown. Sections intersect a multi-use motorcycle trail; study maps and conditions. No specific trailhead street address is confirmed.",
+      "dateAdded": "2026-10-11",
+      "towns": [
+        "Plainfield",
+        "Voluntown"
+      ],
+      "slug": "quinebaug-trail-long-hike-at-pachaug-state-forest"
     },
     {
       "name": "R.J. Julia Booksellers",
@@ -5415,6 +5453,30 @@
       "slug": "river-bend-bookshop-glastonbury"
     },
     {
+      "name": "River Bend Bookshop, West Hartford",
+      "town": "West Hartford",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Bookstore"
+      ],
+      "categories": [
+        "Bookstores",
+        "Date Night"
+      ],
+      "audiences": [
+        "Date Night",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Visit River Bend's separate West Hartford bookshop on Park Road and browse books or watch for author events.",
+      "officialWebsite": "https://riverbendbookshop.com/locations",
+      "address": "224 Park Road, West Hartford, CT 06119",
+      "tryThis": "Find a book by a Connecticut writer and check the shop's event calendar.",
+      "notes": "Official location information explicitly states the first-floor bookstore is wheelchair accessible, with an accessible parking space and ramp behind the building. Official pages list differing updated hours; check the live location page before going.",
+      "dateAdded": "2026-10-11",
+      "slug": "river-bend-bookshop-west-hartford"
+    },
+    {
       "name": "River Highlands State Park Bluff & Blowhole Hike",
       "town": "Cromwell",
       "region": "Central CT",
@@ -5468,6 +5530,7 @@
       "bestTime": "Summer",
       "officialWebsite": "https://ctparks.com/parks/rocky-neck-state-park",
       "address": "244 W Main Street, Niantic, CT 06357",
+      "notes": "Seasonal free all-terrain wheelchairs available at Rocky Neck, confirmed by Connecticut DEEP. Reservations through ReserveAmerica at least two days ahead; safety training video, ID and waiver required. Check the 2026 seasonal end date.",
       "dateAdded": "2026-08-19",
       "towns": [
         "Niantic",
@@ -5578,7 +5641,7 @@
       "officialWebsite": "https://my.historicnewengland.org/26498/ros-fest-sun",
       "address": "556 Route 169, Woodstock, CT 06281",
       "tryThis": "Pick one handmade piece you both like, then take the first-floor Roseland Cottage tour.",
-      "notes": "Rain or shine. The official page notes outdoor walking over uneven terrain; accessible restrooms are available and parking is provided.",
+      "notes": "October 17 and 18, 2026, rain or shine. Adults $5 nonmembers, members and children under 12 free. Grounds include uneven terrain; parking is available. Provider does not guarantee an entirely accessible route.",
       "dateAdded": "2026-09-20",
       "eventStart": "2026-10-17",
       "eventEnd": "2026-10-18",
@@ -5611,6 +5674,31 @@
         "East Hampton"
       ],
       "slug": "salmon-river-state-forest-comstock-covered-bridge-picnic-walk"
+    },
+    {
+      "name": "Saugatuck Universal Access Trail Reservoir Overlook",
+      "town": "Redding",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Easy Walks",
+        "Scenic Views",
+        "Parks & Preserves"
+      ],
+      "audiences": [
+        "Date Night",
+        "Individual Exploration",
+        "Family"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Follow a short wheelchair-accessible trail through Centennial Watershed State Forest to a viewing platform above Saugatuck Reservoir.",
+      "officialWebsite": "https://portal.ct.gov/deep/state-parks/saugatuck-universal-access-trail---ct-state-parks-and-forests",
+      "tryThis": "Read the official directions, visit the overlook and look for birds around the reservoir.",
+      "notes": "Connecticut DEEP explicitly states the trail is wheelchair accessible, about 500 feet long and open sunrise to sunset. The trail entrance is at the left side of the parking area off Newtown Turnpike after Route 53; no reliable street number provided.",
+      "dateAdded": "2026-10-11",
+      "slug": "saugatuck-universal-access-trail-reservoir-overlook"
     },
     {
       "name": "Saybrook Point Mini-Golf",
@@ -6410,40 +6498,6 @@
       "slug": "taylor-brooke-brewery"
     },
     {
-      "name": "Thames River Norwich Harbor Glow Cruise",
-      "town": "New London",
-      "region": "Mystic & Southeastern CT",
-      "experienceTypes": [
-        "Waterfront",
-        "Trains & Scenic Rides",
-        "Fall & Seasonal",
-        "Date Night",
-        "Something Different"
-      ],
-      "categories": [
-        "Trains & Scenic Rides",
-        "Date Night",
-        "Something Different"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Date Night",
-        "Family"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "Take a narrated cruise from New London to Norwich, spend two hours at the Harbor Glow community event, then return by boat while the sun sets.",
-      "officialWebsite": "https://www.thamesriverheritagepark.org/norwich-harbor-glow-cruise/",
-      "tryThis": "Pack a small cooler, listen for one river-history fact you did not know, and make the return sunset your final stop of the day.",
-      "notes": "The itinerary includes a narrated cruise to Norwich, the Harbor Glow event from 4-6 PM, and a sunset return to New London. The organizer states that guests of all ages are welcome and that guests may pack beverages and snacks.",
-      "dateAdded": "2026-09-09",
-      "eventStart": "2026-10-04",
-      "eventEnd": "2026-10-04",
-      "ages": [
-        "All ages"
-      ],
-      "slug": "thames-river-norwich-harbor-glow-cruise"
-    },
-    {
       "name": "The Adventure Park at Storrs",
       "town": "Storrs",
       "region": "Quiet Corner & Northeastern CT",
@@ -6732,7 +6786,7 @@
         "Individual Exploration"
       ],
       "officialWebsite": "https://ctparks.com/parks/topsmead-state-forest",
-      "notes": "Open daily 8 AM to sunset. Admission is free. Free cottage tours run June through October on the second and fourth weekends of each month, 11 AM to 4 PM.",
+      "notes": "The forest is open daily, generally 8 a.m. to sunset, with free admission and seasonal free cottage tours. DEEP also confirms seasonal all-terrain wheelchairs on designated trails. Reserve at least two days ahead through ReserveAmerica; video training, ID and waiver required.",
       "dateAdded": "2026-08-17",
       "slug": "topsmead-state-forest"
     },
@@ -6910,6 +6964,7 @@
         "Date Night"
       ],
       "officialWebsite": "https://ctparks.com/parks/wadsworth-falls-state-park",
+      "notes": "DEEP confirms free seasonal all-terrain wheelchair access on designated routes at Wadsworth Falls. Reserve through ReserveAmerica at least two days in advance; safety video and ID/waiver required. Verify seasonal availability before visiting.",
       "dateAdded": "2026-08-13",
       "towns": [
         "Middlefield",
