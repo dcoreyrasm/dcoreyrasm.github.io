@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-10-11",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "doc_stack",
+      "label": "Find a free hour on your iPhone calendar"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "doc_stack",
+      "label": "Scan a stack of pages into one PDF"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "doc_stack",
+      "label": "Clean up your inbox in plain words"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "doc_stack",
+      "label": "Bring your memory over from another AI"
+    }
+  ]
+}
