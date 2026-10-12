@@ -162,6 +162,7 @@
       'K-12 Education',
       'Higher Education & Research',
       'Technology & Software Development',
+      'General-Purpose AI Tools',
       'Science & Innovation'
     ] },
     { label: 'Community Access and AI Governance', options: [

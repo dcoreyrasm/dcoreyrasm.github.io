@@ -113,26 +113,12 @@ function readIndustryGroups() {
 }
 
 /**
- * Fields that are published and deliberately not filled in yet.
- *
- * carriedBySomeRecord() below tells a renamed field from one the snapshot
- * predates, which covers every field this base had until Industry Categories
- * arrived. That field is a third case the two could not express: it exists in
- * Airtable with all 24 of its options, the sync publishes it, and every record
- * carries it as an empty list because nothing has been classified yet. Without
- * this, the first sync after adding any new field turns the run red for a
- * reason nobody can act on.
- *
- * An entry here is a promise that the emptiness is known, not a way to quiet
- * the check: the moment a key listed here DOES carry data the run fails asking
- * for the entry to be removed, so an exemption cannot outlive its reason and
- * go on hiding a real disappearance.
+ * Fields that are published and deliberately not filled in yet. Each entry is
+ * a promise that the emptiness is known, not a way to quiet the check: the
+ * moment a key listed here carries data the run fails asking for the entry to
+ * be removed, so an exemption cannot hide a real disappearance.
  */
-const EXPECTED_EMPTY = new Map([
-  ['industries',
-   'Industry Categories is in the base with all 24 options, but no record ' +
-   'carries one yet. The filter stays hidden until the first is classified.'],
-]);
+const EXPECTED_EMPTY = new Map([]);
 
 /**
  * Tell a field that has gone quiet from one that has not arrived yet.
