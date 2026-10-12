@@ -129,9 +129,9 @@ function readIndustryGroups() {
  * go on hiding a real disappearance.
  */
 const EXPECTED_EMPTY = new Map([
-  ['industries',
-   'Industry Categories is in the base with all 24 options, but no record ' +
-   'carries one yet. The filter stays hidden until the first is classified.'],
+  // Empty on purpose. Industry Categories was listed here from 2026-10-12
+  // until the base was classified the same day; its entry was removed as soon
+  // as records carried a value, which is the expiry this map is built around.
 ]);
 
 /**
