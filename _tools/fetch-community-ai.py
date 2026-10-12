@@ -75,6 +75,7 @@ FIELDS = {
     "Age Group": "ageGroup",
     "Delivery Format": "deliveryFormat",
     "Community Topics": "topics",
+    "Industry Categories": "industries",
     "Support Available": "support",
     "Languages Available": "languages",
     "Accessibility Features": "accessibility",
@@ -85,7 +86,7 @@ FIELDS = {
 LIST_KEYS = {
     "whoCanParticipate", "audienceStage", "communityServed", "ageGroup",
     "deliveryFormat", "topics", "support", "languages", "accessibility",
-    "accountBenefit",
+    "accountBenefit", "industries",
 }
 
 

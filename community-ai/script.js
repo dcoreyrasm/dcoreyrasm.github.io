@@ -39,6 +39,7 @@
      URL both follow this list. */
   var FACETS = [
     { key: 'whoCanParticipate', label: 'Who can take part',   empty: 'Anyone' },
+    { key: 'industries',        label: 'Industry',            empty: 'Any industry', groups: true },
     { key: 'door',              label: 'How you access it',   empty: 'Any way in' },
     { key: 'support',           label: 'What you get',        empty: 'Anything' },
     { key: 'cost',              label: 'Cost',                empty: 'Any cost' },
@@ -49,6 +50,7 @@
   var SEARCH_FIELDS = [
     ['title', 12], ['org', 10], ['description', 5], ['bestFit', 4],
     ['whoCanApply', 3], ['eligibility', 3], ['support', 3], ['topics', 3],
+    ['industries', 3],
     ['communityServed', 3], ['type', 3], ['audienceStage', 2], ['fundingDetails', 2],
     ['nextStep', 2], ['geo', 1], ['notes', 1], ['concern', 1], ['cost', 1],
     ['legalStatus', 1], ['deliveryFormat', 1], ['accountBenefit', 1], ['ageGroup', 1]
@@ -81,6 +83,7 @@
     ['sensitiveInfo',    'Sensitive information'],
     ['lockIn',           'Platform lock-in risk'],
     ['support',          'What you get'],
+    ['industries',       'Industry'],
     ['topics',           'Topic areas'],
     ['communityServed',  'Communities served'],
     ['audienceStage',    'Written for'],
@@ -116,6 +119,56 @@
      three real categories and say why they are there, rather than heading a
      fifth of the directory with the words "Not stated". */
   var NO_DOOR = 'Access not recorded yet';
+
+  /* The Industry Categories field in Airtable, in the five sections its 24
+     options were written to sit in. This is the one facet whose options are
+     NOT derived from the data: all 24 show whether or not anything carries
+     them yet, so what a visitor can filter by is the vocabulary the base
+     offers, not the subset that happens to be classified today.
+
+     Airtable multi-selects have no notion of a group, so the sections cannot
+     be read from the base -- this list is the only place they exist. That can
+     drift, so scripts/check-community-vocabulary.js parses this literal and
+     turns the sync run red if Airtable's options and these stop matching. A
+     category Airtable has and this list does not still reaches the filter:
+     buildRow puts it under "Other" rather than dropping it, so a visitor can
+     always narrow by anything a card displays. */
+  var INDUSTRY_GROUPS = [
+    { label: 'Business and Work', options: [
+      'Marketing & Advertising',
+      'Finance & Banking',
+      'Small Business & Entrepreneurship',
+      'Workforce & Career Development',
+      'Human Resources & Leadership',
+      'Real Estate & Housing'
+    ] },
+    { label: 'Creative Industries', options: [
+      'Arts & Creative Design',
+      'Media, TV & Film',
+      'Music & Audio',
+      'Sports & Recreation',
+      'Gaming & Interactive Media'
+    ] },
+    { label: 'Public Services and Community', options: [
+      'Government & Public Policy',
+      'Nonprofits & Philanthropy',
+      'Healthcare & Wellness',
+      'Legal Services & Access to Justice',
+      'Accessibility & Disability',
+      'Environment & Sustainability',
+      'Family, Aging & Caregiving'
+    ] },
+    { label: 'Education and Technology', options: [
+      'K-12 Education',
+      'Higher Education & Research',
+      'Technology & Software Development',
+      'Science & Innovation'
+    ] },
+    { label: 'Community Access and AI Governance', options: [
+      'AI Literacy & Digital Inclusion',
+      'AI Safety, Rights & Governance'
+    ] }
+  ];
 
   /* Legal status is read as well as displayed: the hero counts the first list
      as "no 501(c)(3) required", and a card turns 'None' into a plain-English
@@ -404,13 +457,41 @@
 
       var text = function (v) { return field.key === 'door' ? (DOOR_LABEL[v] || v) : v; };
 
-      var list = opts.map(function (v) {
+      var option = function (v) {
         return '<label class="cf-multi-opt" data-find-text="' + esc(text(v).toLowerCase()) + '">' +
                  '<input type="checkbox" data-facet="' + esc(field.key) + '" value="' + esc(v) + '" />' +
                  '<span>' + esc(text(v)) + '</span>' +
                  '<em data-count="' + esc(v) + '">' + (counts[v] || 0) + '</em>' +
                '</label>';
-      }).join('');
+      };
+
+      /* Industry is long enough that 24 options in one column read as a wall,
+         so it is the one facet drawn under headings. The heading carries its
+         own section name AND every option name beneath it in data-find-text,
+         which is what keeps the Find box working unchanged: typing "finance"
+         matches the Finance option and, through that same string, the heading
+         above it, while a section with no match drops out on its own. */
+      var list;
+      if (facet.groups) {
+        var placed = {};
+        list = INDUSTRY_GROUPS.map(function (group) {
+          var inGroup = group.options.filter(function (v) { return opts.indexOf(v) !== -1; });
+          inGroup.forEach(function (v) { placed[v] = true; });
+          if (!inGroup.length) return '';
+          var find = (group.label + ' ' + inGroup.join(' ')).toLowerCase();
+          return '<p class="cf-multi-group" data-find-text="' + esc(find) + '">' +
+                   esc(group.label) + '</p>' + inGroup.map(option).join('');
+        }).join('');
+
+        var loose = opts.filter(function (v) { return !placed[v]; });
+        if (loose.length) {
+          list += '<p class="cf-multi-group" data-find-text="' +
+                    esc(('Other ' + loose.join(' ')).toLowerCase()) + '">Other</p>' +
+                  loose.map(option).join('');
+        }
+      } else {
+        list = opts.map(option).join('');
+      }
 
       // A find box earns its place on a long list and clutters a short one.
       var head = opts.length > 8
@@ -551,6 +632,17 @@
     }
     if (showsNew(rec)) badges.push('<span class="cf-badge fresh">Just added</span>');
 
+    /* Industry sits on its own line under the badges rather than among them.
+       The badges answer "can I get this and what does it cost"; industry
+       answers "is this even my field", which is a different question and reads
+       better unmixed. An unclassified entry simply shows no line. */
+    var industries = values(rec, 'industries').filter(function (v) { return isAnswer(v); });
+    var industryRow = industries.length
+      ? '<div class="cf-card-industries">' + industries.map(function (v) {
+          return '<span class="cf-industry-tag">' + esc(v) + '</span>';
+        }).join('') + '</div>'
+      : '';
+
     /* A field the official source never addressed is worth saying once, at the
        end — not as eight rows of "Not stated" between the facts that matter. */
     var unstated = [];
@@ -591,7 +683,7 @@
         (rec.org ? '<p class="cf-card-org">' + highlight(rec.org, toks) + '</p>' : '') +
         '<h3>' + highlight(rec.title, toks) + '</h3>' +
       '</div></div>' +
-      '<div class="cf-badges">' + badges.join('') + '</div>' +
+      '<div class="cf-badges">' + badges.join('') + '</div>' + industryRow +
       (rec.description ? '<p class="cf-card-desc">' + highlight(rec.description, toks) + '</p>' : '') +
       '<div class="cf-card-actions">' +
         '<button type="button" class="cf-toggle" data-detail="' + esc(rec.id) + '" aria-expanded="' + open + '" aria-controls="d-' + esc(rec.id) + '">' +
@@ -933,6 +1025,28 @@
       facet._options = {};
       ALL.forEach(function (rec) {
         values(rec, facet.key).forEach(function (v) { facet._options[v] = true; });
+      });
+    });
+
+    /* Industry is the exception, and deliberately: all 24 approved categories
+       are offered, not only the ones something already carries, so the filter
+       describes the vocabulary rather than today's classification progress.
+       An option nothing matches is dimmed and unclickable by syncRow, the same
+       treatment every other zero already gets.
+
+       With NOTHING classified, though, there is nothing to narrow, and 24 dead
+       options would be a control that cannot do anything. So the box waits for
+       the first classified record and appears on its own after that -- which
+       is also what keeps this shippable before the base is filled in. */
+    FACETS.forEach(function (facet) {
+      if (!facet.groups) return;
+      var classified = false;
+      for (var i = 0; i < ALL.length && !classified; i++) {
+        if (values(ALL[i], facet.key).length) classified = true;
+      }
+      if (!classified) { facet._options = {}; return; }
+      INDUSTRY_GROUPS.forEach(function (group) {
+        group.options.forEach(function (v) { facet._options[v] = true; });
       });
     });
 
