@@ -113,6 +113,28 @@ function readIndustryGroups() {
 }
 
 /**
+ * Fields that are published and deliberately not filled in yet.
+ *
+ * carriedBySomeRecord() below tells a renamed field from one the snapshot
+ * predates, which covers every field this base had until Industry Categories
+ * arrived. That field is a third case the two could not express: it exists in
+ * Airtable with all 24 of its options, the sync publishes it, and every record
+ * carries it as an empty list because nothing has been classified yet. Without
+ * this, the first sync after adding any new field turns the run red for a
+ * reason nobody can act on.
+ *
+ * An entry here is a promise that the emptiness is known, not a way to quiet
+ * the check: the moment a key listed here DOES carry data the run fails asking
+ * for the entry to be removed, so an exemption cannot outlive its reason and
+ * go on hiding a real disappearance.
+ */
+const EXPECTED_EMPTY = new Map([
+  ['industries',
+   'Industry Categories is in the base with all 24 options, but no record ' +
+   'carries one yet. The filter stays hidden until the first is classified.'],
+]);
+
+/**
  * Tell a field that has gone quiet from one that has not arrived yet.
  *
  * A renamed Airtable field still leaves its key on every record, set to null by
@@ -176,8 +198,16 @@ function main() {
   // today, so this only goes red when a field stops arriving.
   const keys = readKeys();
   const unanswered = keys.filter(key => opportunities.every(row => isEmpty(row[key])));
-  const goneQuiet = unanswered.filter(key => carriedBySomeRecord(opportunities, key)).sort();
-  const notYetSynced = unanswered.filter(key => !carriedBySomeRecord(opportunities, key)).sort();
+  const knownEmpty = unanswered.filter(key => EXPECTED_EMPTY.has(key)).sort();
+  const goneQuiet = unanswered.filter(key => carriedBySomeRecord(opportunities, key) &&
+                                             !EXPECTED_EMPTY.has(key)).sort();
+  const notYetSynced = unanswered.filter(key => !carriedBySomeRecord(opportunities, key) &&
+                                                !EXPECTED_EMPTY.has(key)).sort();
+
+  // An exemption that has outlived its reason. Left in place it would go on
+  // swallowing a real disappearance of this field, so it fails loudly instead.
+  const staleExemptions = [...EXPECTED_EMPTY.keys()]
+    .filter(key => keys.includes(key) && !unanswered.includes(key)).sort();
 
   if (notYetSynced.length) {
     console.log(`${notYetSynced.length} ${plural(notYetSynced.length, 'field the page reads is', 'fields the page reads are')} ` +
@@ -185,8 +215,15 @@ function main() {
                 notYetSynced.join(', '));
   }
 
-  if (!newDoors.length && !newLegal.length && !newIndustries.length && !goneQuiet.length) {
-    const answered = keys.length - notYetSynced.length;
+  if (knownEmpty.length) {
+    console.log(`${knownEmpty.length} ${plural(knownEmpty.length, 'field is', 'fields are')} ` +
+                `published but not filled in yet, which is expected:`);
+    for (const key of knownEmpty) console.log(`  ${key} -- ${EXPECTED_EMPTY.get(key)}`);
+  }
+
+  if (!newDoors.length && !newLegal.length && !newIndustries.length &&
+      !goneQuiet.length && !staleExemptions.length) {
+    const answered = keys.length - notYetSynced.length - knownEmpty.length;
     console.log(`Vocabulary clean: ${doors.counts.size} access ${plural(doors.counts.size, 'door', 'doors')}, ` +
                 `${legal.counts.size} legal-status ${plural(legal.counts.size, 'option', 'options')}, ` +
                 `${industry.counts.size} of ${knownIndustries.length} industry categories in use, ` +
@@ -203,6 +240,11 @@ function main() {
                   `empty for every entry:`);
     for (const key of goneQuiet) console.error(`  ${key}`);
   }
+  if (staleExemptions.length) {
+    console.error(`\n${staleExemptions.length} ${plural(staleExemptions.length, 'field is', 'fields are')} ` +
+                  `listed in EXPECTED_EMPTY but now ${plural(staleExemptions.length, 'carries', 'carry')} data:`);
+    for (const key of staleExemptions) console.error(`  ${key}`);
+  }
 
   console.error(`
 The site is still fine -- every opportunity shows either way. This is about
@@ -218,6 +260,9 @@ whether the page keeps saying true things about them.
                           filter shows it under "Other" rather than losing it
   a second spelling    -> retag its records onto the existing option in
                           Airtable, then delete the duplicate option
+  a stale exemption    -> the field is filled in now, so delete its entry from
+                          EXPECTED_EMPTY in this file. Leaving it there would
+                          hide the field really going quiet later
   a field gone quiet   -> the Airtable field was probably renamed. Match the new
                           name in the FIELDS map in _tools/fetch-community-ai.py,
                           or drop the key from the page if the field is really
