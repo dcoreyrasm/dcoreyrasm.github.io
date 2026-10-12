@@ -162,12 +162,12 @@
       'K-12 Education',
       'Higher Education & Research',
       'Technology & Software Development',
-      'General-Purpose AI Tools',
       'Science & Innovation'
     ] },
     { label: 'Community Access and AI Governance', options: [
       'AI Literacy & Digital Inclusion',
-      'AI Safety, Rights & Governance'
+      'AI Safety, Rights & Governance',
+      'General-Purpose AI Tools'
     ] }
   ];
 
