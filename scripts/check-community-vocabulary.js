@@ -83,6 +83,36 @@ function readKeys() {
 }
 
 /**
+ * The 24 industry categories, flattened out of the grouped literal.
+ *
+ * INDUSTRY_GROUPS is the only place the five sections exist -- Airtable
+ * multi-selects have no groups to read them from -- so it is also the only
+ * thing that can quietly stop matching the base. Reading it here means the
+ * check can never fall behind the list it is checking.
+ */
+function readIndustryGroups() {
+  const marker = 'var INDUSTRY_GROUPS = [';
+  const start = source.indexOf(marker);
+  if (start === -1) throw new Error(`could not find "${marker}" in community-ai/script.js`);
+  const open = source.indexOf('[', start);
+  const end = source.indexOf('\n  ];', open);
+  if (end === -1) throw new Error('could not find the end of the INDUSTRY_GROUPS literal');
+
+  const groups = new Function('return ' + source.slice(open, end + 4))();
+  const ok = Array.isArray(groups) && groups.length &&
+    groups.every(g => g && typeof g.label === 'string' && Array.isArray(g.options) &&
+                      g.options.length && g.options.every(o => typeof o === 'string'));
+  if (!ok) throw new Error('the INDUSTRY_GROUPS literal in community-ai/script.js is not a list of {label, options}');
+
+  const flat = groups.flatMap(g => g.options);
+  const duplicated = flat.filter((v, i) => flat.indexOf(v) !== i);
+  if (duplicated.length) {
+    throw new Error(`INDUSTRY_GROUPS lists the same category in two sections: ${[...new Set(duplicated)].join(', ')}`);
+  }
+  return flat;
+}
+
+/**
  * Tell a field that has gone quiet from one that has not arrived yet.
  *
  * A renamed Airtable field still leaves its key on every record, set to null by
@@ -129,12 +159,18 @@ function main() {
 
   const doors = tally(opportunities, 'door');
   const legal = tally(opportunities, 'legalStatus');
+  const industry = tally(opportunities, 'industries');
 
   const knownDoors = readLiteral('DOOR_ORDER');
   const knownLegal = readLiteral('LEGAL_KNOWN');
+  const knownIndustries = readIndustryGroups();
 
   const newDoors = [...doors.counts.keys()].filter(d => !knownDoors.includes(d)).sort();
   const newLegal = [...legal.counts.keys()].filter(l => !knownLegal.includes(l)).sort();
+
+  // An industry on a record that no section lists. The filter still offers it,
+  // under "Other", so this is drift to tidy rather than anything broken.
+  const newIndustries = [...industry.counts.keys()].filter(i => !knownIndustries.includes(i)).sort();
 
   // A key the page reads that no entry answers. Every one of them carries data
   // today, so this only goes red when a field stops arriving.
@@ -149,10 +185,11 @@ function main() {
                 notYetSynced.join(', '));
   }
 
-  if (!newDoors.length && !newLegal.length && !goneQuiet.length) {
+  if (!newDoors.length && !newLegal.length && !newIndustries.length && !goneQuiet.length) {
     const answered = keys.length - notYetSynced.length;
     console.log(`Vocabulary clean: ${doors.counts.size} access ${plural(doors.counts.size, 'door', 'doors')}, ` +
                 `${legal.counts.size} legal-status ${plural(legal.counts.size, 'option', 'options')}, ` +
+                `${industry.counts.size} of ${knownIndustries.length} industry categories in use, ` +
                 `and all ${answered} fields in this snapshot are answered by at least one entry.`);
     return;
   }
@@ -160,6 +197,7 @@ function main() {
   console.error('The community AI base has drifted from what the site understands.');
   if (newDoors.length) report('access door', newDoors, doors.counts, doors.examples);
   if (newLegal.length) report('legal status', newLegal, legal.counts, legal.examples);
+  if (newIndustries.length) report('industry category', newIndustries, industry.counts, industry.examples);
   if (goneQuiet.length) {
     console.error(`\n${goneQuiet.length} ${plural(goneQuiet.length, 'field the page reads is', 'fields the page reads are')} ` +
                   `empty for every entry:`);
@@ -175,6 +213,9 @@ whether the page keeps saying true things about them.
                           community-ai/community-ai.css
   a new legal status   -> add it to LEGAL_KNOWN, and to LEGAL_OPEN as well if it
                           means an applicant does NOT need their own 501(c)(3)
+  a new industry       -> add it to INDUSTRY_GROUPS in community-ai/script.js,
+                          under the section it belongs to. Until then the
+                          filter shows it under "Other" rather than losing it
   a second spelling    -> retag its records onto the existing option in
                           Airtable, then delete the duplicate option
   a field gone quiet   -> the Airtable field was probably renamed. Match the new
