@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-14T08:43:26.246Z",
+  "generated": "2026-10-14T08:58:57.235Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 810,
+  "count": 814,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -7895,6 +7895,19 @@
       "tags": "center-based daycare, childcare, glastonbury"
     },
     {
+      "id": "recO5wia6Q5X2LHdt",
+      "name": "Good As New",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "town": "North Haven",
+      "address": "344 Washington Avenue, North Haven, CT 06473",
+      "website": "https://www.yellowpages.com/north-haven-ct/mip/good-as-new-465426506",
+      "notes": "Multiple third-party directories identify children's resale at this address, phone 203-691-5864. No current first-party store website verified. Current operation and hours need direct provider confirmation before approval.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Children's Resale / Consignment",
+      "tags": "children's consignment, secondhand kids clothing, used toys, kids books, north haven"
+    },
+    {
       "id": "recQUEuDFFivivB25",
       "name": "Good Child Development Center",
       "track": "Family & Childcare",
@@ -10905,6 +10918,19 @@
       "programYear": "2026",
       "lastVerified": "2026-08-26",
       "tags": "center-based daycare, childcare, stamford"
+    },
+    {
+      "id": "recTtQKej8O6ulyzW",
+      "name": "Loop de Loop",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "town": "Wilton",
+      "address": "24 Danbury Road, Wilton, CT",
+      "website": "https://wiltongogreen.org/sustainability-in-fashion/",
+      "notes": "Wilton Go Green identifies store and physical address; local directory corroborates children's and maternity resale. Current store operation and hours not independently confirmed with business; requires follow-up.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Children's Resale / Consignment",
+      "tags": "children's consignment, maternity consignment, baby gear, used kids clothing, toys, wilton"
     },
     {
       "id": "recrgEVDtvhtASEli",
@@ -14442,6 +14468,19 @@
         "College Readiness"
       ],
       "tags": "magnet / specialty school, teen resources, high school, norwalk"
+    },
+    {
+      "id": "rec4lVBB4YMGlpSdM",
+      "name": "Paradise Green Consignments",
+      "track": "Family & Childcare",
+      "category": "Clothing & Household Resale",
+      "town": "Stratford",
+      "address": "3649 Main Street, Stratford, CT 06614",
+      "website": "https://stratford.yiftee.com/business/paradise-green-consignments-561288",
+      "notes": "Local Stratford merchant program confirms consignment at address, phone 203-690-1287. Also independently listed by BBB. Current business hours unverified.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Clothing & Household Resale",
+      "tags": "consignment shop, used clothing, secondhand fashion, accessories, household goods, stratford"
     },
     {
       "id": "recNBlSNxFaQDg3Tn",
@@ -20446,6 +20485,19 @@
         "Toddler Care"
       ],
       "tags": "home daycare licensed, childcare, waterbury"
+    },
+    {
+      "id": "recyxek8HPhULGBo8",
+      "name": "Your Closet or Mine Consignment",
+      "track": "Family & Childcare",
+      "category": "Clothing & Household Resale",
+      "town": "Middletown",
+      "address": "541 Washington Street, Middletown, CT 06457",
+      "website": "https://yourclosetormine.com/",
+      "notes": "First-party website confirms address and phone 860-347-3300; clothing, toys and household goods. Store hours Mon-Sat 10 AM-5 PM, Sun 11 AM-4 PM as shown on official page; consignment intake differs.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Clothing & Household Resale",
+      "tags": "consignment shop, secondhand clothing, shoes, kids toys, housewares, used furniture, middletown"
     },
     {
       "id": "recWR3FQ6IW0wmaoR",

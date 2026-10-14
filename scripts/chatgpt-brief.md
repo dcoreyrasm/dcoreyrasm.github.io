@@ -1023,7 +1023,11 @@ now.
   gwct.org                           5  2026-10-14   Family & Childcare
   goodwillsne.org                    3  2026-10-14   Family & Childcare
   stores.savers.com                  3  2026-10-14   Family & Childcare
+  yellowpages.com                    1  2026-10-14   Family & Childcare
+  wiltongogreen.org                  1  2026-10-14   Family & Childcare
   onceuponachild.com                 1  2026-10-14   Family & Childcare
+  stratford.yiftee.com               1  2026-10-14   Family & Childcare
+  yourclosetormine.com               1  2026-10-14   Family & Childcare
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -1048,7 +1052,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 399 of 810 listings (49%) carry a Website, so
+Only 403 of 814 listings (50%) carry a Website, so
 everything above is built from that third of the directory. The other
 411 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -1058,7 +1062,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-34 of the 259 domains here have never had a Last Verified on
+34 of the 263 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 
@@ -1076,17 +1080,17 @@ between sessions: read them fresh from this section each time this brief is
 given to you, and if you are working from a remembered figure you are working
 from a gap that has already moved.
 
-810 listings across 130 Connecticut towns of 169.
+814 listings across 130 Connecticut towns of 169.
 
 That breadth is real. The depth behind it is the problem:
 
-  a website              399 / 810   49%   the single most valuable gap: without a URL nobody can ever re-check the listing
-  operating hours        175 / 810   22%   the specific promise on the front of the page
-  a real cost note       118 / 810   15%   excludes the state-fee boilerplate
-  a real waitlist note    59 / 810    7%   excludes the "contact the program directly" boilerplate
-  a verified date        341 / 810   42%   without one we cannot tell fresh from forgotten
-  a phone or email       693 / 810   86%
-  services tagged        690 / 810   85%   what makes a listing findable beyond its one category
+  a website              403 / 814   50%   the single most valuable gap: without a URL nobody can ever re-check the listing
+  operating hours        175 / 814   21%   the specific promise on the front of the page
+  a real cost note       118 / 814   14%   excludes the state-fee boilerplate
+  a real waitlist note    59 / 814    7%   excludes the "contact the program directly" boilerplate
+  a verified date        345 / 814   42%   without one we cannot tell fresh from forgotten
+  a phone or email       693 / 814   85%
+  services tagged        690 / 814   85%   what makes a listing findable beyond its one category
 
 A listing can carry a value and still say nothing. Two boilerplate lines were
 written onto hundreds of records by the original state import -- "Contact the
@@ -1099,7 +1103,7 @@ that sounds more specific than what you actually know.
 
 WEBSITE COVERAGE BY TRACK
 
-  Family & Childcare      557 listings, 146 with a website (26%)
+  Family & Childcare      561 listings, 150 with a website (27%)
   Teens & High School      86 listings,  86 with a website (100%)
   Pet Care & Resources     61 listings,  61 with a website (100%)
   Food & Basic Needs       55 listings,  55 with a website (100%)
