@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-10-14",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "doc_stack",
+      "label": "Claude for PowerPoint: new slides in your own template"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "doc_stack",
+      "label": "ChatGPT for PowerPoint: a first draft from your notes"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "doc_stack",
+      "label": "Copilot in PowerPoint: reuse an old deck's content or style"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "doc_stack",
+      "label": "Gemini in Google Slides: a deck from a plan you approve"
+    }
+  ]
+}
