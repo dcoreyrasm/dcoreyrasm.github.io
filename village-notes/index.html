@@ -68,10 +68,27 @@
           <img src="/village-notes/village-notes-logo.png" width="513" height="215"
                alt="Village Notes — Connecticut Care Directory. People, resources, stronger communities." />
         </h1>
-        <p class="vn-hero-lede">A searchable list of childcare, camps, high schools and teen programs, elder care, and pet care across Connecticut, built from official state listings and public sources. Families and caregivers add what those records leave out &mdash; real operating hours, honest waitlist timelines, what it actually costs. Search it, filter it, and add what you know.</p>
+        <p class="vn-hero-lede">A searchable list of childcare, camps, high schools and teen programs, elder care, pet care, and food assistance across Connecticut, built from official state listings and public sources. Families and caregivers add what those records leave out &mdash; real operating hours, honest waitlist timelines, what it actually costs. Search it, filter it, and add what you know.</p>
         <div class="vn-hero-meta">
           <span id="vn-count-badge" class="vn-badge">Loading listings&hellip;</span>
           <span id="vn-updated" class="vn-updated"></span>
+        </div>
+
+        <!-- Food assistance gets its own way in. Everything else on this page
+             is a filter you narrow down to; this is the one search where the
+             person may need an answer today, and asking them to work out that
+             "Who you're caring for" is where food lives is a step too many.
+             The town box is an accelerator, not a requirement -- the button
+             works on its own. -->
+        <div class="vn-foodbar">
+          <p class="vn-foodbar-text" id="vn-foodbar-text">Looking for help with food?</p>
+          <div class="vn-foodbar-controls">
+            <label class="vn-visually-hidden" for="vn-food-town">Your town</label>
+            <input type="search" id="vn-food-town" class="vn-foodbar-town"
+                   placeholder="Your town (optional)" autocomplete="address-level2" />
+            <button type="button" class="btn-primary vn-foodbar-btn" id="vn-food-btn"
+                    aria-describedby="vn-foodbar-text">Find food assistance</button>
+          </div>
         </div>
       </div>
     </div>
@@ -171,6 +188,10 @@
           <button type="button" class="btn-ghost vn-doorway-btn" id="vn-doorway-btn">Show these listings</button>
         </div>
 
+        <!-- "Find food assistance" scrolls here: the result count rather than
+             the grid, so a visitor who arrives by that button can still see
+             what was filtered and how to widen it. Landing on bare cards hides
+             the controls that produced them. -->
         <p class="vn-resultline" id="vn-resultline" role="status" aria-live="polite"></p>
       </div>
     </section>
@@ -248,6 +269,21 @@
           <p class="vn-empty-icon" aria-hidden="true">&#9671;</p>
           <h2 class="vn-empty-heading">Nothing here yet.</h2>
           <p class="vn-empty-body" id="vn-empty-body">The directory is still being filled in. Published listings appear here automatically once they clear review.</p>
+
+          <!-- Food searches get somewhere to go. Every other empty result can
+               honestly end at "would you add it" -- that is a gap in a
+               directory. This one may be somebody who needs to eat today, and
+               the right answer is the two statewide services that already know
+               every pantry in Connecticut. Shown alongside the contribution
+               prompt, not instead of it. Clean URLs, no tracking parameters. -->
+          <div class="vn-food-fallback" id="vn-food-fallback" hidden>
+            <p class="vn-food-fallback-body">No food assistance resources are currently listed for this search. You can also check Connecticut 211 or Connecticut Foodshare for additional options.</p>
+            <div class="vn-food-fallback-links">
+              <a class="btn-primary" href="https://www.211ct.org/" target="_blank" rel="noopener noreferrer">Connecticut 211 &#8599;</a>
+              <a class="btn-ghost" href="https://www.ctfoodshare.org/find-food" target="_blank" rel="noopener noreferrer">Connecticut Foodshare &#8599;</a>
+            </div>
+          </div>
+
           <div class="vn-empty-cta" id="vn-empty-cta" hidden>
             <p class="vn-empty-ask" id="vn-empty-ask"></p>
             <a href="/contact.html" class="btn-primary" id="vn-empty-add">Add what you found</a>

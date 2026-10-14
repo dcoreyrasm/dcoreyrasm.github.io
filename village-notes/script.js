@@ -46,6 +46,9 @@
     doorway:    document.getElementById('vn-doorway'),
     doorwayNum: document.getElementById('vn-doorway-detail'),
     doorwayBtn: document.getElementById('vn-doorway-btn'),
+    foodBtn:    document.getElementById('vn-food-btn'),
+    foodTown:   document.getElementById('vn-food-town'),
+    foodFallback: document.getElementById('vn-food-fallback'),
     results:    document.getElementById('vn-results'),
     empty:      document.getElementById('vn-empty'),
     emptyBody:  document.getElementById('vn-empty-body'),
@@ -162,24 +165,37 @@
   // Renaming the variable or reindenting its closing bracket breaks that
   // check -- loudly, by design, rather than by reporting every category
   // as unmapped.
-  // The three audiences this directory serves. Declared rather than read off
+  // The audiences this directory serves. Declared rather than read off
   // the data, because a track with no listings yet still has to be offerable:
   // somebody looking for pet care needs to find the section and be asked to
   // add the first one, not conclude the site has nothing to do with pets.
   // Selecting an empty track lands on the contribution prompt, which is the
   // most useful thing an empty section can do.
   //
+  // Food & Basic Needs is the one track that is deliberately listed here while
+  // holding nothing: its 55 researched listings are Pending Review in Airtable
+  // and the sync does not carry unpublished records. The section therefore
+  // offers itself, finds nothing, and says where else to look -- which is the
+  // honest answer until those listings clear review.
+  //
   // scripts/check-vocabulary.js reads this literal, so it is the one place the
   // expected tracks are written down. A track in the data but not here still
-  // appears in the dropdown -- and fails the sync check, which is how a fourth
+  // appears in the dropdown -- and fails the sync check, which is how a fifth
   // one gets noticed rather than quietly filtering to nothing.
   var TRACKS = ['Family & Childcare', 'Elder Care', 'Pet Care & Resources',
-                'Teens & High School'];
+                'Teens & High School', 'Food & Basic Needs'];
+
+  var FOOD_TRACK = 'Food & Basic Needs';
 
   // The dropdown asks "Who you're caring for", so the options have to answer
   // that question rather than name the track. Display only -- the values, the
   // data and the Airtable field are untouched, and a track missing from here
-  // (a fourth one) falls back to its own name instead of vanishing.
+  // falls back to its own name instead of vanishing.
+  //
+  // Food has no label here on purpose. Every other track answers "who", and
+  // food assistance does not: it is the one section where the person asking is
+  // usually the person who needs it, and "Yourself or your household" reads as
+  // a means test rather than a filter. Its own name is the kinder answer.
   var TRACK_LABELS = {
     'Family & Childcare':   'Kids & family',
     'Elder Care':           'Older adults',
@@ -252,7 +268,21 @@
     // is only for the rare organisation whose sole purpose is disability
     // support and which fits nowhere else -- an independent living centre, a
     // disability-rights legal aid office. No existing record was moved into it.
-    ['Disability & Accessibility', ['Disability & Accessibility Services']]
+    ['Disability & Accessibility', ['Disability & Accessibility Services']],
+
+    // Food & Basic Needs. One group rather than several, because six options
+    // is already a scannable list and splitting them would invent distinctions
+    // the records do not make.
+    //
+    // Pet Food Assistance is NOT here, and must not be. It lives under Pet Help
+    // & Rehoming and it answers a different question -- it keeps an animal fed
+    // so a household does not have to surrender it. Folding the two together
+    // would put pet food in front of a parent looking for a food pantry, and a
+    // food pantry in front of someone looking for help feeding a dog. Both are
+    // wrong, and the second is worse.
+    ['Food Assistance', ['Food Bank / Food Pantry','Mobile Food Distribution',
+      'Community Meals / Soup Kitchen','Senior Food Assistance',
+      'School / Family Food Support','Emergency / Seasonal Food Assistance']]
   ];
 
   var GROUP_OF = (function () {
@@ -373,7 +403,7 @@
                                 return e.some(function (x) { return x !== 'None' && x !== 'Not Confirmed'; }); },
     fullDay:     function (r) { return r.schoolDayCoverage === 'Full Workday'; },
 
-    // Disability and accessibility support, across all four tracks at once.
+    // Disability and accessibility support, across all five tracks at once.
     // Three ways a listing can qualify, because the base records this in three
     // places and a family does not care which one was filled in: the service
     // is tagged, the kind of support is named, or the provider has written
@@ -493,6 +523,18 @@
       return teenTrack ? (values || []).join(', ') || null : null;
     };
 
+    // Food & Basic Needs. Residency and Last Verified have both been mapped
+    // since the state import without ever reaching a card, so they are gated
+    // the same way the teen rows above are: showing them unconditionally would
+    // put new rows on every existing listing, which this change is not for.
+    //
+    // Last Verified earns its place on this track specifically. A pantry's
+    // opening hours change more often than a daycare's, and a date the visitor
+    // can see is what lets them judge how much to trust the rest of the card --
+    // which is the honest version of a field that cannot promise it is current.
+    var foodTrack = r.track === FOOD_TRACK;
+    var foodOnly = function (value) { return foodTrack ? (value || null) : null; };
+
     var facts =
       fact('Serves', servesLabel) +
       fact('Takes', animals.join(', ') || null) +
@@ -519,6 +561,9 @@
         return x !== 'Not Confirmed'; }).join(', ') || null) +
       fact('Meals', r.meals && r.meals !== 'Not Confirmed' ? r.meals : null) +
       fact('Licensing', r.licensing && r.licensing !== 'Not Confirmed' ? r.licensing : null) +
+      fact('Who can come', foodOnly(
+        r.residency && r.residency !== 'Not Confirmed' ? r.residency : null)) +
+      fact('Last checked', foodOnly(formatDate(r.lastVerified))) +
       fact('Address', r.address);
 
     var links = [];
@@ -540,6 +585,16 @@
       if (long) notes += '<button type="button" class="vn-more">Read more</button>';
     }
 
+    // A pantry's hours, eligibility and stock move faster than this directory
+    // can follow, and the cost of a wasted trip falls on somebody who may have
+    // spent their last bus fare making it. The card says so rather than
+    // implying the listing is a guarantee. Food only: every track goes stale,
+    // but this is the one where being wrong means going hungry today.
+    var foodCaveat = foodTrack
+      ? '<p class="vn-card-caveat">Contact the organization to confirm current ' +
+        'hours, eligibility, and availability before visiting.</p>'
+      : '';
+
     return '<article class="vn-card">' +
       head +
       '<h3 class="vn-card-name">' + esc(r.name || 'Untitled listing') + '</h3>' +
@@ -549,6 +604,7 @@
       stars(r.rating) +
       (has(r.specificType) ? '<p class="vn-card-type">' + esc(r.specificType) + '</p>' : '') +
       (facts ? '<dl class="vn-facts">' + facts + '</dl>' : '') +
+      foodCaveat +
       notes +
       '<div class="vn-card-foot">' +
         (links.length ? '<div class="vn-card-links">' + links.join('') + '</div>' : '') +
@@ -589,6 +645,78 @@
     if (state.categories.length === 1) q.push('prefill_Category=' + encodeURIComponent(state.categories[0]));
     if (state.track) q.push('prefill_Track=' + encodeURIComponent(state.track));
     return FORM_URL + (q.length ? (FORM_URL.indexOf('?') === -1 ? '?' : '&') + q.join('&') : '');
+  }
+
+  /* ---------- food assistance: the quick way in, and the way out ---------- */
+
+  // Food is the one search where sending somebody away empty-handed is not an
+  // acceptable outcome. Every other track can honestly answer "nobody has added
+  // one yet, would you add it" -- that is a gap in a directory. Here the person
+  // asking may need to eat today, and the right answer is not a contribution
+  // form, it is the two statewide services that already know every pantry in
+  // Connecticut. So this block appears whenever a food search finds nothing.
+  //
+  // It is shown in addition to the contribution prompt rather than instead of
+  // it: the prompt is still true, it is just not the urgent part.
+
+  function foodSearchActive() {
+    if (state.track === FOOD_TRACK) return true;
+    // Also catch someone who picked a food category without the track, and
+    // someone typing "food pantry" into the search box with no filters set.
+    return state.categories.some(function (c) {
+      return (GROUP_OF[c] || '') === 'Food Assistance';
+    });
+  }
+
+  function updateFoodFallback(isEmpty) {
+    if (!el.foodFallback) return;
+    el.foodFallback.hidden = !(isEmpty && foodSearchActive());
+  }
+
+  // The quick search: one button that puts the visitor in the food section, and
+  // a town box beside it so the common case -- "a pantry near me" -- is one
+  // step rather than three. A typed town that matches the directory's own town
+  // list becomes a town filter; anything else falls through to the search box,
+  // which is the behaviour someone typing a neighbourhood or a zip expects.
+  function knownTown(value) {
+    var want = String(value || '').trim().toLowerCase();
+    if (!want) return null;
+    var found = null;
+    Array.prototype.forEach.call(el.townList.querySelectorAll('input'), function (box) {
+      if (!found && box.value.toLowerCase() === want) found = box.value;
+    });
+    return found;
+  }
+
+  function goToFood(townText) {
+    state.track = FOOD_TRACK;
+    if (el.track) el.track.value = FOOD_TRACK;
+
+    var town = knownTown(townText);
+    if (town) {
+      state.towns = [town];
+      state.search = '';
+      state.terms = [];
+      if (el.search) el.search.value = '';
+    } else if (String(townText || '').trim()) {
+      state.search = String(townText).trim();
+      state.terms = searchTerms(state.search);
+      state.towns = [];
+      if (el.search) el.search.value = state.search;
+    }
+
+    syncTownUI();
+    buildCatList();
+    tuneToggles();
+    render();
+
+    // Move the reader to the results rather than leaving them at the top of the
+    // page wondering whether the button did anything. The result count, not the
+    // grid: landing on bare cards hides the controls that produced them.
+    var target = el.resultline || el.results;
+    if (target && target.scrollIntoView) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 
   function updateEmptyCta(hasFilters) {
@@ -814,8 +942,10 @@
         ? 'Nothing in the directory matches that yet \u2014 which does not mean nothing exists.'
         : 'The directory is still being filled in. Published listings appear here automatically once they clear review.';
       updateEmptyCta(filtered);
+      updateFoodFallback(true);
     } else {
       el.empty.hidden = true;
+      updateFoodFallback(false);
       el.results.innerHTML = page.map(card).join('');
       var left = shown.length - page.length;
       el.showMore.hidden = left <= 0;
@@ -1042,7 +1172,7 @@
       var n = pool.filter(FLAGS.disability).length;
       el.doorway.hidden = n === 0 || !!state.flags.disability;
       el.doorwayNum.textContent = n + ' ' + plural(n, 'listing', 'listings') +
-        (state.track ? ' here' : ' across all four sections') +
+        (state.track ? ' here' : ' across all five sections') +
         ' name the accommodations they can make, the support they offer, or ' +
         'both. They stay filed under the kind of care they are, so this is a ' +
         'way of finding them together rather than a separate list.';
@@ -1078,6 +1208,7 @@
       el.sort.value = 'name';
       el.search.value = '';
       el.track.value = '';
+      if (el.foodTown) el.foodTown.value = '';
       Array.prototype.forEach.call(el.toggles, function (t) { t.checked = false; });
       syncTownUI();
       buildCatList();
@@ -1085,6 +1216,23 @@
       render();
       el.search.focus();
     });
+
+    // Find food assistance. The button works on its own -- an empty town box
+    // just lands on the whole section -- so the input is an accelerator, never
+    // a thing you have to fill in first.
+    if (el.foodBtn) {
+      el.foodBtn.addEventListener('click', function () {
+        goToFood(el.foodTown ? el.foodTown.value : '');
+      });
+    }
+    if (el.foodTown) {
+      el.foodTown.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+          event.preventDefault();
+          goToFood(this.value);
+        }
+      });
+    }
 
     // One delegated handler covers every card's "Read more" toggle, so
     // re-rendering the grid never leaves listeners behind.
