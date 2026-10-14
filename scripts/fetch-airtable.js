@@ -160,7 +160,15 @@ const FIELD_MAP = {
   // directory that advertises last March's open house is worse than one that
   // advertises nothing, and nobody was ever going to sweep these by hand.
   'Upcoming Event':               'event',
-  'Event Date':                   'eventDate'
+  'Event Date':                   'eventDate',
+
+  // Food & Basic Needs. The track's Category is what the page filters on, and
+  // it carries the same six values as this field. This is here so the two can
+  // be compared: these records were researched into Food & Basic Needs Type
+  // before the Track and Category options existed, so that field is the
+  // original, and a listing whose Category disagrees with it is a mistake
+  // somebody should see. It cannot be seen if only one of them leaves Airtable.
+  'Food & Basic Needs Type':      'foodType'
 };
 
 const TOKEN = process.env.AIRTABLE_TOKEN;
