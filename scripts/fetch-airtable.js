@@ -175,7 +175,18 @@ const FIELD_MAP = {
   // researched into it before the matching Category options existed, so it is
   // the original and Category is the copy. A listing whose two disagree is a
   // mistake somebody should be able to see.
-  'Family Secondhand Shopping Type': 'shoppingType'
+  'Family Secondhand Shopping Type': 'shoppingType',
+
+  // Free-text tags, comma separated. The directory is growing into services
+  // that do not each deserve a category -- diaper banks, hearing aids, low-cost
+  // internet, hospital beds -- and a dropdown would need a new choice coined
+  // for every one of them. This is the field that lets a listing be found by
+  // the words a resident would actually type, with nothing to maintain.
+  //
+  // Note it is NOT Notes/Tags. That field's name promises tags and delivers
+  // prose: 687 of 810 published records carry one, median 302 characters, and
+  // not one is a tag list. It stays prose; this is the tag field.
+  'Tags':                         'tags'
 };
 
 const TOKEN = process.env.AIRTABLE_TOKEN;

@@ -536,3 +536,20 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
 @media (max-width:640px) {
   .vn-shopbar { margin-top:.85rem; padding-top:.85rem; }
 }
+
+/* ---------- TAGS ---------- */
+
+/* Search vocabulary that happens to be visible. Quieter than the status chips
+   above them -- a tag is context, not a claim about availability -- and the
+   whole list is absent rather than empty when a record carries none. */
+.vn-tags {
+  list-style:none; margin:.85rem 0 0; padding:0;
+  display:flex; flex-wrap:wrap; gap:.3rem;
+}
+.vn-tags li {
+  /* Matched to .vn-badge-chip rather than set smaller: a tag should not be the
+     least readable thing on the card, and 10.6px was already at the floor. */
+  font-size:.68rem; letter-spacing:.03em; padding:.2rem .5rem;
+  border:1px solid var(--line); border-radius:3px;
+  color:var(--muted); background:transparent;
+}
