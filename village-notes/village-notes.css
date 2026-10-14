@@ -520,3 +520,19 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
   .vn-foodbar-town { flex:1 1 100%; min-width:0; }
   .vn-foodbar-btn { flex:1 1 100%; text-align:center; }
 }
+
+/* ---------- AFFORDABLE FAMILY SHOPPING & COUNTY ---------- */
+
+/* The shopping quick search reuses .vn-foodbar wholesale -- same band, same
+   tokens, same behaviour. This only separates the two so they do not run
+   together, and drops the second top border that would otherwise double up. */
+.vn-shopbar { margin-top:1rem; padding-top:1rem; border-top-style:dashed; }
+
+/* County row. Reuses .vn-toggle for each box, so it inherits the quick
+   filters' focus ring and hit area; this only lays them out. */
+.vn-counties { align-items:flex-start; }
+.vn-county-list { display:flex; flex-wrap:wrap; gap:.4rem .5rem; }
+
+@media (max-width:640px) {
+  .vn-shopbar { margin-top:.85rem; padding-top:.85rem; }
+}
