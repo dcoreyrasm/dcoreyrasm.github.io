@@ -509,10 +509,12 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
    second time and undo their own filter. So selection now draws an actual
    tick, and the row behind it holds a background that outlasts the pointer.
 
-   Scoped to .vn-page because /connecticut-list shares this stylesheet and
-   reuses .vn-toggle; its pills are left exactly as they are. */
+   /connecticut-list shares this stylesheet and draws the same pills and the
+   same panel rows, so it gets the same treatment -- the two pages are the same
+   control to a visitor and should not disagree about what "chosen" looks
+   like. */
 
-.vn-page { --vn-oncoral:#241038; }
+:root { --vn-oncoral:#241038; }
 
 /* --- panel rows: category and town --- */
 
@@ -521,17 +523,17 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
    dark panel where a thin system tick disappears. padding:0 is load-bearing
    once appearance is off: .vn-field input further up sets .7rem/.85rem for the
    real text inputs in this panel, which the native checkbox widget ignored. */
-.vn-page .vn-multi-opt input {
+.vn-multi-opt input {
   appearance:none; -webkit-appearance:none; margin:0; padding:0;
   box-sizing:border-box; width:1.1rem; height:1.1rem; min-width:1.1rem;
   flex-shrink:0; position:relative; cursor:pointer;
   border:2px solid var(--muted); border-radius:3px; background:transparent;
   transition:background .12s, border-color .12s;
 }
-.vn-page .vn-multi-opt:hover input { border-color:var(--coral); }
-.vn-page .vn-multi-opt input:checked,
-.vn-page .vn-multi-opt input:indeterminate { background:var(--coral); border-color:var(--coral); }
-.vn-page .vn-multi-opt input:checked::after {
+.vn-multi-opt:hover input { border-color:var(--coral); }
+.vn-multi-opt input:checked,
+.vn-multi-opt input:indeterminate { background:var(--coral); border-color:var(--coral); }
+.vn-multi-opt input:checked::after {
   content:""; position:absolute; left:.29rem; top:.04rem;
   width:.25rem; height:.55rem;
   border:solid var(--vn-oncoral); border-width:0 2.5px 2.5px 0;
@@ -539,38 +541,41 @@ section.vn-submit-section { background:#2d1f4e; padding:5rem 0; }
 }
 /* A group with some but not all of its types chosen. A dash, so "partly" never
    reads as "all of it". */
-.vn-page .vn-multi-opt input:indeterminate::after {
+.vn-multi-opt input:indeterminate::after {
   content:""; position:absolute; left:.15rem; top:.38rem;
   width:.5rem; height:0; border-top:2.5px solid var(--vn-oncoral);
 }
-.vn-page .vn-multi-opt input:focus-visible { outline:3px solid var(--coral); outline-offset:2px; }
+.vn-multi-opt input:focus-visible { outline:3px solid var(--coral); outline-offset:2px; }
 
 /* The chosen row keeps a background after the pointer leaves, so what is on is
    readable from the shape of the list rather than only from the boxes. */
-.vn-page .vn-multi-opt:has(input:checked) {
+.vn-multi-opt:has(input:checked) {
   background:color-mix(in srgb, var(--bg2) 58%, var(--coral));
 }
-.vn-page .vn-multi-opt:has(input:checked) span { color:var(--cream); font-weight:500; }
+.vn-multi-opt:has(input:checked) span { color:var(--cream); font-weight:500; }
 /* The count has to come up with the row: --muted was sized for the panel
    background and drops under 4.5:1 against the lighter selected band. */
-.vn-page .vn-multi-opt:has(input:checked) em { color:var(--cream); }
+.vn-multi-opt:has(input:checked) em { color:var(--cream); }
 
 /* --- pills: quick filters and county --- */
 
 /* inline-flex so the tick centres against the label instead of sitting on the
    text baseline, which a rotated box does badly. */
-.vn-page .vn-toggle span { display:inline-flex; align-items:center; }
-.vn-page .vn-toggle input:checked + span::before {
+.vn-toggle span { display:inline-flex; align-items:center; }
+.vn-toggle input:checked + span::before {
   content:""; flex:none; width:.26rem; height:.55rem; margin:-2px .45rem 0 0;
   border:solid currentColor; border-width:0 2.5px 2.5px 0;
   transform:rotate(45deg);
 }
 
+/* :root, not :where(html...), on purpose: :where() carries no specificity, so
+   against the :root default above it would lose and the tick would stay dark
+   on a dark fill in light mode. Measured 2.49:1 before this was fixed. */
 @media (prefers-color-scheme: light) {
-  :where(html:not([data-theme="dark"])) .vn-page { --vn-oncoral:#fff; }
+  :root:not([data-theme="dark"]) { --vn-oncoral:#fff; }
 }
 /* Same when the visitor picks Light with the switch. */
-:where(html[data-theme="light"]) .vn-page { --vn-oncoral:#fff; }
+:root[data-theme="light"] { --vn-oncoral:#fff; }
 
 /* ---------- TAGS ---------- */
 

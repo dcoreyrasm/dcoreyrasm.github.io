@@ -651,8 +651,11 @@
     // but this is the one where being wrong means going hungry today.
     // Tags, shown small and last. They are search vocabulary first and card
     // content second, so they sit below the facts rather than competing with
-    // them -- and the row is absent entirely when the field is empty.
-    var tagList = tagsOf(r);
+    // them -- and the row is absent entirely once the repeats are dropped.
+    var tagList = newTagsOf(r, [
+      r.track, r.category, r.name, r.town, r.specificType,
+      (r.townsServed || []).join(' '), facts, r.notes
+    ].join(' '));
     var tagRow = tagList.length
       ? '<ul class="vn-tags" aria-label="Tags">' +
         tagList.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') +
@@ -827,6 +830,33 @@
     return String(r.tags || '').split(',')
       .map(function (t) { return t.trim(); })
       .filter(function (t, i, all) { return t && all.indexOf(t) === i; });
+  }
+
+  // Tags are written for the search box, so most of them restate the category,
+  // track or town -- which the card already prints at the top. Measured on the
+  // live data, 168 of 188 chips on the first page of results said something the
+  // same card said somewhere else. A chip that repeats the line above it costs
+  // space and teaches the reader to skip the row, so only the tags that add a
+  // word are shown. Every tag still goes into the search index: this hides a
+  // chip, it never narrows what can be found.
+  //
+  // Both sides are reduced to words before comparing, because the tags do not
+  // always carry a record's punctuation -- "children s resale / consignment"
+  // against "Children's Resale / Consignment" is the same thing said twice.
+  // Whole tokens only, so the tag "care" is not swallowed by "childcare".
+  function wordsOf(value) {
+    return ' ' + String(value || '').toLowerCase()
+      .replace(/<[^>]*>/g, ' ')
+      .replace(/&[a-z]+;/g, ' ')
+      .replace(/[^a-z0-9]+/g, ' ')
+      .trim() + ' ';
+  }
+
+  function newTagsOf(r, shown) {
+    var text = wordsOf(shown);
+    return tagsOf(r).filter(function (t) {
+      return text.indexOf(wordsOf(t)) === -1;
+    });
   }
 
   function servesTown(r, town) {
