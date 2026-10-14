@@ -16,8 +16,8 @@
   // markup instead of relying on script -- keep the two in step.
   var FORM_URL = 'https://airtable.com/appxUByKs5ULrDZQp/pagofYquo4QHUjcQG/form';
 
-  var state = { all: [], search: '', terms: [], track: '', categories: [], towns: [], flags: {},
-               sort: 'name', shown: 0 };
+  var state = { all: [], search: '', terms: [], track: '', categories: [], towns: [],
+               counties: [], flags: {}, sort: 'name', shown: 0 };
 
   // Cards are built as HTML strings; 524 of them at once is the slowest thing
   // the page does. Rendering a screenful and extending on demand keeps the
@@ -34,7 +34,11 @@
     catList:    document.getElementById('vn-cat-list'),
     catFind:    document.getElementById('vn-cat-find'),
     catClear:   document.getElementById('vn-cat-clear'),
-    toggles:    document.querySelectorAll('.vn-toggle input'),
+    // Scoped to inputs carrying a flag. The county row reuses the same
+    // .vn-toggle markup for its styling and keyboard behaviour, and those
+    // boxes are not quick filters -- without [data-flag] they would be
+    // counted, hidden and cleared as if they were.
+    toggles:    document.querySelectorAll('.vn-toggle input[data-flag]'),
     townToggle: document.getElementById('vn-town-toggle'),
     townPanel:  document.getElementById('vn-town-panel'),
     townLabel:  document.getElementById('vn-town-label'),
@@ -49,6 +53,11 @@
     foodBtn:    document.getElementById('vn-food-btn'),
     foodTown:   document.getElementById('vn-food-town'),
     foodFallback: document.getElementById('vn-food-fallback'),
+    shopFallback: document.getElementById('vn-shop-fallback'),
+    shopReset:  document.getElementById('vn-shop-reset'),
+    shopBtn:    document.getElementById('vn-shop-btn'),
+    shopTown:   document.getElementById('vn-shop-town'),
+    countyList: document.getElementById('vn-county-list'),
     results:    document.getElementById('vn-results'),
     empty:      document.getElementById('vn-empty'),
     emptyBody:  document.getElementById('vn-empty-body'),
@@ -282,8 +291,33 @@
     // wrong, and the second is worse.
     ['Food Assistance', ['Food Bank / Food Pantry','Mobile Food Distribution',
       'Community Meals / Soup Kitchen','Senior Food Assistance',
-      'School / Family Food Support','Emergency / Seasonal Food Assistance']]
+      'School / Family Food Support','Emergency / Seasonal Food Assistance']],
+
+    // Affordable family shopping, inside Family & Childcare. Two groups rather
+    // than one, because the two halves answer different questions and a family
+    // is only ever asking one of them. A shop is somewhere you can go on
+    // Saturday; a sale is a date you have to catch. Mixing them would put a
+    // consignment weekend that has not been announced yet next to a store that
+    // is open now, and a parent needing school clothes this week cannot use
+    // the second kind at all.
+    ['Thrift, Consignment & Affordable Shopping',
+      ["Children's Resale / Consignment",'Family Thrift Store',
+       'Clothing & Household Resale','Maternity & Baby Gear Resale',
+       'Free Clothing Closets']],
+
+    // The dated half. These expire, which is why they are kept apart: the
+    // card's event row already hides an event once its date passes, and a
+    // group that is mostly empty between seasons is honest in a way a merged
+    // list would not be.
+    ['Seasonal Consignment Sales & Clothing Exchanges',
+      ["Seasonal Children's Consignment Sales",'Clothing Swaps & Exchanges',
+       'School Uniform Exchanges']]
   ];
+
+  // The two groups above, named once so the card and the filters agree on what
+  // counts as affordable shopping.
+  var SHOPPING_GROUP   = 'Thrift, Consignment & Affordable Shopping';
+  var SHOPPING_SEASONAL = 'Seasonal Consignment Sales & Clothing Exchanges';
 
   var GROUP_OF = (function () {
     var map = {};
@@ -414,7 +448,15 @@
              services.indexOf('Special-Needs Pet Care') !== -1 ||
              (r.specializedSupport || []).length > 0 ||
              has(r.accessibility);
-    }
+    },
+
+    // A dated event that has not happened yet. liveEvent() is the same
+    // function the card uses, so the filter and the card can never disagree
+    // about whether something is upcoming -- an expired sale is excluded here
+    // for exactly the reason it is hidden there. Like every toggle, this one
+    // hides itself when nothing in the current section qualifies, which is
+    // what keeps it honest between consignment seasons.
+    upcomingEvent: function (r) { return liveEvent(r) !== null; }
   };
 
   /* ---------- rendering ---------- */
@@ -535,6 +577,25 @@
     var foodTrack = r.track === FOOD_TRACK;
     var foodOnly = function (value) { return foodTrack ? (value || null) : null; };
 
+    // Affordable family shopping. A shop and a sale want different rows, and
+    // neither wants the other's: a seasonal sale has a date and a seller
+    // deadline, a permanent shop has opening hours. Both are gated the way the
+    // teen and food rows are, so nothing appears on the 700-odd cards this
+    // change is not about.
+    var shopGroup  = groupOf(r);
+    var isSale     = shopGroup === SHOPPING_SEASONAL;
+    var isShopping = isSale || shopGroup === SHOPPING_GROUP;
+
+    // Seller/consignor registration, for a sale. Three separate Airtable
+    // fields say one thing between them, so they are joined rather than given
+    // a row each -- and the whole row disappears when none is filled in.
+    var sellerBits = isSale ? [
+      r.registrationStatus && r.registrationStatus !== 'Not Confirmed'
+        ? r.registrationStatus : null,
+      formatDate(r.registrationOpens) ? 'opens ' + formatDate(r.registrationOpens) : null,
+      formatDate(r.registrationCloses) ? 'closes ' + formatDate(r.registrationCloses) : null
+    ].filter(has) : [];
+
     var facts =
       fact('Serves', servesLabel) +
       fact('Takes', animals.join(', ') || null) +
@@ -552,7 +613,7 @@
       fact('Hours', r.hours) +
       fact('Waitlist', r.availability, true) +
       fact('Ages', r.ages) +
-      fact('Cost', r.cost) +
+      fact(isSale ? 'Admission' : 'Cost', r.cost) +
       fact('Times', times || null) +
       fact('Days', (r.daysOffered || []).join(', ') || null) +
       fact('Extended', (r.extendedCare || []).filter(function (x) {
@@ -563,7 +624,9 @@
       fact('Licensing', r.licensing && r.licensing !== 'Not Confirmed' ? r.licensing : null) +
       fact('Who can come', foodOnly(
         r.residency && r.residency !== 'Not Confirmed' ? r.residency : null)) +
-      fact('Last checked', foodOnly(formatDate(r.lastVerified))) +
+      fact('Seller registration', sellerBits.join(', ') || null) +
+      fact('Last checked', (foodTrack || isShopping)
+                           ? (formatDate(r.lastVerified) || null) : null) +
       fact('Address', r.address);
 
     var links = [];
@@ -673,6 +736,18 @@
     el.foodFallback.hidden = !(isEmpty && foodSearchActive());
   }
 
+  function shoppingSearchActive() {
+    return state.categories.some(function (c) {
+      var g = GROUP_OF[c] || '';
+      return g === SHOPPING_GROUP || g === SHOPPING_SEASONAL;
+    });
+  }
+
+  function updateShopFallback(isEmpty) {
+    if (!el.shopFallback) return;
+    el.shopFallback.hidden = !(isEmpty && shoppingSearchActive());
+  }
+
   // The quick search: one button that puts the visitor in the food section, and
   // a town box beside it so the common case -- "a pantry near me" -- is one
   // step rather than three. A typed town that matches the directory's own town
@@ -688,9 +763,17 @@
     return found;
   }
 
-  function goToFood(townText) {
-    state.track = FOOD_TRACK;
-    if (el.track) el.track.value = FOOD_TRACK;
+  // Both quick searches do the same three things -- put the visitor in a
+  // section, optionally narrow to their town, and move them to the results --
+  // so they share one function. The only difference is what "a section" means:
+  // food is a whole track, shopping is a set of categories inside one.
+  function jumpTo(opts, townText) {
+    state.track = opts.track || '';
+    if (el.track) el.track.value = state.track;
+    state.categories = (opts.categories || []).slice();
+    state.counties = [];
+    state.flags = {};
+    Array.prototype.forEach.call(el.toggles, function (t) { t.checked = false; });
 
     var town = knownTown(townText);
     if (town) {
@@ -706,6 +789,7 @@
     }
 
     syncTownUI();
+    syncCountyUI();
     buildCatList();
     tuneToggles();
     render();
@@ -717,6 +801,28 @@
     if (target && target.scrollIntoView) {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+  }
+
+  function goToFood(townText) {
+    jumpTo({ track: FOOD_TRACK }, townText);
+  }
+
+  // Every category in the two shopping groups, read off GROUPS so the quick
+  // search cannot drift from the filter list the way a second hard-coded copy
+  // would.
+  function shoppingCategories() {
+    return GROUPS.reduce(function (acc, g) {
+      return (g[0] === SHOPPING_GROUP || g[0] === SHOPPING_SEASONAL)
+        ? acc.concat(g[1]) : acc;
+    }, []);
+  }
+
+  // Shopping is a set of categories inside Family & Childcare rather than a
+  // track of its own, so the quick search selects them all. Both halves are
+  // included -- somebody who needs school clothes this week and somebody
+  // waiting for the autumn sale both start from the same question.
+  function goToShopping(townText) {
+    jumpTo({ track: 'Family & Childcare', categories: shoppingCategories() }, townText);
   }
 
   function updateEmptyCta(hasFilters) {
@@ -791,12 +897,129 @@
     return served(r).indexOf(town) !== -1;
   }
 
+  /* ---------- county ----------
+
+     Connecticut does not store a county on the record, and it is not a field
+     anybody is going to maintain by hand on 800 listings. It is derivable: a
+     town belongs to exactly one county and has since 1960, so the map below is
+     the whole of it and it does not drift.
+
+     What this is NOT: a service area. A shop in Milford is in New Haven County;
+     that says nothing about whether it serves Waterbury. Filtering by county
+     matches a listing on the town it actually sits in (or a town it has
+     explicitly said it serves), never on everything inside the county line.
+
+     All 169 towns, grouped the way people still say them even though county
+     government was abolished -- "Fairfield County" is how a parent describes
+     where they live, so it is how the filter has to ask. */
+  var COUNTY_TOWNS = {
+    'Fairfield': [
+      'Bethel', 'Bridgeport', 'Brookfield', 'Danbury', 'Darien', 'Easton',
+      'Fairfield', 'Greenwich', 'Monroe', 'New Canaan', 'New Fairfield',
+      'Newtown', 'Norwalk', 'Redding', 'Ridgefield', 'Shelton', 'Sherman',
+      'Stamford', 'Stratford', 'Trumbull', 'Weston', 'Westport', 'Wilton'
+    ],
+    'Hartford': [
+      'Avon', 'Berlin', 'Bloomfield', 'Bristol', 'Burlington', 'Canton',
+      'East Granby', 'East Hartford', 'East Windsor', 'Enfield',
+      'Farmington', 'Glastonbury', 'Granby', 'Hartford', 'Hartland',
+      'Manchester', 'Marlborough', 'New Britain', 'Newington',
+      'Plainville', 'Rocky Hill', 'Simsbury', 'South Windsor',
+      'Southington', 'Suffield', 'West Hartford', 'Wethersfield',
+      'Windsor', 'Windsor Locks'
+    ],
+    'Litchfield': [
+      'Barkhamsted', 'Bethlehem', 'Bridgewater', 'Canaan', 'Colebrook',
+      'Cornwall', 'Goshen', 'Harwinton', 'Kent', 'Litchfield', 'Morris',
+      'New Hartford', 'New Milford', 'Norfolk', 'North Canaan',
+      'Plymouth', 'Roxbury', 'Salisbury', 'Sharon', 'Thomaston',
+      'Torrington', 'Warren', 'Washington', 'Watertown', 'Winchester',
+      'Woodbury'
+    ],
+    'Middlesex': [
+      'Chester', 'Clinton', 'Cromwell', 'Deep River', 'Durham',
+      'East Haddam', 'East Hampton', 'Essex', 'Haddam', 'Killingworth',
+      'Middlefield', 'Middletown', 'Old Saybrook', 'Portland', 'Westbrook'
+    ],
+    'New Haven': [
+      'Ansonia', 'Beacon Falls', 'Bethany', 'Branford', 'Cheshire', 'Derby',
+      'East Haven', 'Guilford', 'Hamden', 'Madison', 'Meriden',
+      'Middlebury', 'Milford', 'Naugatuck', 'New Haven', 'North Branford',
+      'North Haven', 'Orange', 'Oxford', 'Prospect', 'Seymour',
+      'Southbury', 'Wallingford', 'Waterbury', 'West Haven', 'Wolcott',
+      'Woodbridge'
+    ],
+    'New London': [
+      'Bozrah', 'Colchester', 'East Lyme', 'Franklin', 'Griswold', 'Groton',
+      'Lebanon', 'Ledyard', 'Lisbon', 'Lyme', 'Montville', 'New London',
+      'North Stonington', 'Norwich', 'Old Lyme', 'Preston', 'Salem',
+      'Sprague', 'Stonington', 'Voluntown', 'Waterford'
+    ],
+    'Tolland': [
+      'Andover', 'Bolton', 'Columbia', 'Coventry', 'Ellington', 'Hebron',
+      'Mansfield', 'Somers', 'Stafford', 'Tolland', 'Union', 'Vernon',
+      'Willington'
+    ],
+    'Windham': [
+      'Ashford', 'Brooklyn', 'Canterbury', 'Chaplin', 'Eastford', 'Hampton',
+      'Killingly', 'Plainfield', 'Pomfret', 'Putnam', 'Scotland',
+      'Sterling', 'Thompson', 'Windham', 'Woodstock'
+    ],
+  };
+
+  // Villages and boroughs that are not towns but are what people actually type.
+  // Each sits inside one town, so it inherits that town's county. Kept separate
+  // from the 169 so the list above stays checkable against the state's own.
+  var VILLAGE_TOWN = {
+    'Lakeville': 'Salisbury',
+    'Moodus': 'East Haddam',
+    'Mystic': 'Stonington',
+    'Pawcatuck': 'Stonington',
+    'South Windham': 'Windham',
+    'Storrs': 'Mansfield',
+    'West Cornwall': 'Cornwall',
+    'Willimantic': 'Windham',
+    'Winsted': 'Winchester'
+  };
+
+  var COUNTY_OF = (function () {
+    var map = {};
+    Object.keys(COUNTY_TOWNS).forEach(function (county) {
+      COUNTY_TOWNS[county].forEach(function (town) { map[town] = county; });
+    });
+    Object.keys(VILLAGE_TOWN).forEach(function (village) {
+      map[village] = map[VILLAGE_TOWN[village]];
+    });
+    return map;
+  })();
+
+  var COUNTIES = Object.keys(COUNTY_TOWNS).sort();
+
+  // Every county a listing can honestly be filed under: the one it sits in,
+  // plus the counties of any town it has said it serves. A statewide listing
+  // answers to all of them, which is what statewide means.
+  function countiesOf(r) {
+    if (isStatewide(r)) return COUNTIES.slice();
+    var seen = {}, out = [];
+    [r.town].concat(served(r)).forEach(function (t) {
+      var c = COUNTY_OF[t];
+      if (c && !seen[c]) { seen[c] = true; out.push(c); }
+    });
+    return out;
+  }
+
   function matches(r) {
     if (state.track && r.track !== state.track) return false;
     if (state.categories.length && !(r._cats || []).some(function (c) {
       return state.categories.indexOf(c) !== -1;
     })) return false;
     if (state.towns.length && !state.towns.some(function (t) { return servesTown(r, t); })) return false;
+    // County narrows the same way a town does, on where the listing actually
+    // is or where it has said it serves -- not on everything inside the line.
+    if (state.counties.length) {
+      var mine = r._counties || [];
+      if (!state.counties.some(function (c) { return mine.indexOf(c) !== -1; })) return false;
+    }
     for (var flag in state.flags) {
       if (state.flags[flag] && FLAGS[flag] && !FLAGS[flag](r)) return false;
     }
@@ -841,6 +1064,11 @@
       .concat(r.teenOpportunity || []).concat(r.specializedSupport || [])
       .concat([groupOf(r), r.registrationStatus, r.licensing,
                r.gradeRange, r.schoolDistrict, r.accessibility])
+      // County and the shopping type the record was researched into. Indexing
+      // a field can only ever add matches, so "thrift stores in Fairfield
+      // County" finds them without a county control being touched.
+      .concat(countiesOf(r).map(function (c) { return c + ' County'; }))
+      .concat([r.shoppingType, r.foodType])
       // Only while the event is still ahead. Indexing a field usually can
       // only add matches, which is why the teen fields are indexed for every
       // track -- but an expired event is text the card deliberately does not
@@ -943,9 +1171,11 @@
         : 'The directory is still being filled in. Published listings appear here automatically once they clear review.';
       updateEmptyCta(filtered);
       updateFoodFallback(true);
+      updateShopFallback(true);
     } else {
       el.empty.hidden = true;
       updateFoodFallback(false);
+      updateShopFallback(false);
       el.results.innerHTML = page.map(card).join('');
       var left = shown.length - page.length;
       el.showMore.hidden = left <= 0;
@@ -1033,6 +1263,41 @@
         openTownPanel(false);
         el.townToggle.focus();
       }
+    });
+  }
+
+  /* ---------- county filter ---------- */
+
+  // Eight options, so this is a plain row of checkboxes rather than the
+  // searchable panel the 130-town list needs. It reuses the quick-filter
+  // markup the toggles already use, which is why it inherits their keyboard
+  // behaviour and focus ring for free instead of being a third way to pick
+  // something on the same page.
+  function buildCountyList() {
+    if (!el.countyList) return;
+    el.countyList.innerHTML = COUNTIES.map(function (c) {
+      return '<label class="vn-toggle"><input type="checkbox" value="' + esc(c) + '" />' +
+             '<span>' + esc(c) + '</span></label>';
+    }).join('');
+    syncCountyUI();
+  }
+
+  function syncCountyUI() {
+    if (!el.countyList) return;
+    Array.prototype.forEach.call(el.countyList.querySelectorAll('input'), function (box) {
+      box.checked = state.counties.indexOf(box.value) !== -1;
+    });
+  }
+
+  function bindCountyFilter() {
+    if (!el.countyList) return;
+    el.countyList.addEventListener('change', function (event) {
+      var box = event.target;
+      if (!box || box.type !== 'checkbox') return;
+      var at = state.counties.indexOf(box.value);
+      if (box.checked && at === -1) state.counties.push(box.value);
+      if (!box.checked && at !== -1) state.counties.splice(at, 1);
+      render();
     });
   }
 
@@ -1184,6 +1449,7 @@
   function bind() {
     bindTownMulti();
     bindCatMulti();
+    bindCountyFilter();
     bindToggles();
     bindDoorway();
     bindSortAndPaging();
@@ -1208,9 +1474,12 @@
       el.sort.value = 'name';
       el.search.value = '';
       el.track.value = '';
+      state.counties = [];
       if (el.foodTown) el.foodTown.value = '';
+      if (el.shopTown) el.shopTown.value = '';
       Array.prototype.forEach.call(el.toggles, function (t) { t.checked = false; });
       syncTownUI();
+      syncCountyUI();
       buildCatList();
       tuneToggles();
       render();
@@ -1230,6 +1499,25 @@
         if (event.key === 'Enter') {
           event.preventDefault();
           goToFood(this.value);
+        }
+      });
+    }
+
+    if (el.shopReset) {
+      el.shopReset.addEventListener('click', function () { el.reset.click(); });
+    }
+
+    // Find affordable family shopping. Same shape as the food one above.
+    if (el.shopBtn) {
+      el.shopBtn.addEventListener('click', function () {
+        goToShopping(el.shopTown ? el.shopTown.value : '');
+      });
+    }
+    if (el.shopTown) {
+      el.shopTown.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+          event.preventDefault();
+          goToShopping(this.value);
         }
       });
     }
@@ -1259,6 +1547,7 @@
 
         state.all = list.map(function (r) {
           r._cats = categoriesOf(r);
+          r._counties = countiesOf(r);
           r._haystack = haystack(r);
           return r;
         });
@@ -1284,6 +1573,7 @@
           return t && !/^statewide/i.test(t) && !/,| and | area$/i.test(t);
         });
         buildTownList(uniqueSorted(townValues));
+        buildCountyList();
         buildCatList();
         tuneToggles();
 

@@ -168,7 +168,14 @@ const FIELD_MAP = {
   // before the Track and Category options existed, so that field is the
   // original, and a listing whose Category disagrees with it is a mistake
   // somebody should see. It cannot be seen if only one of them leaves Airtable.
-  'Food & Basic Needs Type':      'foodType'
+  'Food & Basic Needs Type':      'foodType',
+
+  // Thrift, consignment and affordable shopping, inside Family & Childcare.
+  // Carried for the same reason as the food field above: these records were
+  // researched into it before the matching Category options existed, so it is
+  // the original and Category is the copy. A listing whose two disagree is a
+  // mistake somebody should be able to see.
+  'Family Secondhand Shopping Type': 'shoppingType'
 };
 
 const TOKEN = process.env.AIRTABLE_TOKEN;

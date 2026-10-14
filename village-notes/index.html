@@ -90,6 +90,22 @@
                     aria-describedby="vn-foodbar-text">Find food assistance</button>
           </div>
         </div>
+
+        <!-- Affordable family shopping. Same shape as the food bar above, and
+             for a related reason: thrift and consignment sit inside Family &
+             Childcare among forty other categories, so a parent who needs
+             school clothes this week would have to know to look there. This
+             asks the question they are actually asking. -->
+        <div class="vn-foodbar vn-shopbar">
+          <p class="vn-foodbar-text" id="vn-shopbar-text">Looking for affordable clothes and gear?</p>
+          <div class="vn-foodbar-controls">
+            <label class="vn-visually-hidden" for="vn-shop-town">Your town</label>
+            <input type="search" id="vn-shop-town" class="vn-foodbar-town"
+                   placeholder="Your town (optional)" autocomplete="address-level2" />
+            <button type="button" class="btn-primary vn-foodbar-btn" id="vn-shop-btn"
+                    aria-describedby="vn-shopbar-text">Find affordable family shopping</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -178,6 +194,18 @@
           <label class="vn-toggle"><input type="checkbox" data-flag="transport" /><span>Transportation</span></label>
           <label class="vn-toggle"><input type="checkbox" data-flag="extended" /><span>Before/after care</span></label>
           <label class="vn-toggle"><input type="checkbox" data-flag="fullDay" /><span>Covers a workday</span></label>
+          <label class="vn-toggle"><input type="checkbox" data-flag="upcomingEvent" /><span>Has an upcoming date</span></label>
+        </div>
+
+        <!-- County. Connecticut stores no county on a listing, so these are
+             derived from the town each listing actually sits in. Choosing one
+             does NOT assume a business serves every town inside the line --
+             it matches where the listing is, or a town it has said it serves.
+             Eight options, so a plain checkbox row rather than the searchable
+             panel the 130-town list needs. -->
+        <div class="vn-toggles vn-counties" role="group" aria-labelledby="vn-county-label">
+          <span class="vn-toggles-label" id="vn-county-label">County</span>
+          <div class="vn-county-list" id="vn-county-list"></div>
         </div>
 
         <div class="vn-doorway" id="vn-doorway" hidden>
@@ -281,6 +309,17 @@
             <div class="vn-food-fallback-links">
               <a class="btn-primary" href="https://www.211ct.org/" target="_blank" rel="noopener noreferrer">Connecticut 211 &#8599;</a>
               <a class="btn-ghost" href="https://www.ctfoodshare.org/find-food" target="_blank" rel="noopener noreferrer">Connecticut Foodshare &#8599;</a>
+            </div>
+          </div>
+
+          <!-- Shopping searches get a way back rather than a dead end. Unlike
+               food there is no statewide service to hand somebody off to, so
+               this offers the two things that actually help: widen the search,
+               or add the shop you know about. -->
+          <div class="vn-food-fallback" id="vn-shop-fallback" hidden>
+            <p class="vn-food-fallback-body">No thrift, consignment or affordable shopping is listed for this search yet. Seasonal consignment sales are only listed once a date has been announced, so there may be nothing between seasons.</p>
+            <div class="vn-food-fallback-links">
+              <button type="button" class="btn-primary" id="vn-shop-reset">Clear these filters</button>
             </div>
           </div>
 
