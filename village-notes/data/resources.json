@@ -1,14 +1,15 @@
 {
-  "generated": "2026-09-19T15:12:16.060Z",
+  "generated": "2026-10-14T03:52:28.297Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 743,
+  "count": 798,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
+    "Food & Basic Needs",
     "Pet Care & Resources",
     "Teens & High School"
   ],
@@ -24,6 +25,7 @@
     "Caregiver Support Group",
     "Center-Based Daycare",
     "College Access / Readiness",
+    "Community Meals / Soup Kitchen",
     "Companion Services",
     "Dog Daycare",
     "Dog Park",
@@ -32,6 +34,7 @@
     "Elder Transportation",
     "Emergency Pet Foster Care",
     "Emergency Veterinary Care",
+    "Food Bank / Food Pantry",
     "Geriatric Care Manager",
     "High School (Private)",
     "High School (Public)",
@@ -48,6 +51,7 @@
     "Meal Delivery",
     "Medical / Diagnosis-Specific Camp",
     "Memory Care",
+    "Mobile Food Distribution",
     "Mobile Veterinary Service",
     "Municipal/Parks & Rec Camp",
     "Nature / Farm Camp",
@@ -57,7 +61,9 @@
     "Pet Food Assistance",
     "Preschool / Pre-K",
     "Respite Care",
+    "School / Family Food Support",
     "Senior Center / Congregate Meals & Social Programs",
+    "Senior Food Assistance",
     "Skilled Nursing / Rehab",
     "Spay/Neuter Assistance",
     "Specialty Camp",
@@ -837,6 +843,18 @@
       ]
     },
     {
+      "id": "recXEvkOQdg2t8DBO",
+      "name": "Anja Rosenberg Kosher Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "West Hartford",
+      "address": "333 Bloomfield Avenue, West Hartford, CT",
+      "website": "https://www.westhartfordct.gov/town-departments/social-services/food-resources/local-food-options",
+      "notes": "Food & Basic Needs source check 2026-10-13. Town identifies Jewish Family Services kosher pantry; call 860-236-1927; hours unknown. Track and Category options still required. Verify provider details before publication.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recdZdIdulJA5kK1f",
       "name": "Ansonia Public Schools Pre-K",
       "track": "Family & Childcare",
@@ -1145,6 +1163,30 @@
       "teenOpportunity": [
         "Career Exploration"
       ]
+    },
+    {
+      "id": "recQWwZnXFBSiUg2w",
+      "name": "Bishop Jean Williams Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Bridgeport",
+      "address": "3160 Park Avenue, Bridgeport, CT",
+      "website": "https://www.bridgeportct.gov/government/departments/health-social-services/social-services/food-banks-pantries",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. Appointment and intake required; city lists Tuesday through Thursday. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
+      "id": "recd8EaHdXP8ZIXqP",
+      "name": "Black Rock Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Bridgeport",
+      "address": "2676 Fairfield Avenue, Bridgeport, CT",
+      "website": "https://www.bridgeportct.gov/government/departments/health-social-services/social-services/food-banks-pantries",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. City lists Saturday 9-11 AM; ID and 06605 residency required. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "recllcR7JDFw8emf4",
@@ -1887,6 +1929,18 @@
       ]
     },
     {
+      "id": "reco5JmJlEADKvnS7",
+      "name": "Bridgeport Hospital Connecticut Foodshare Mobile Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Mobile Food Distribution",
+      "town": "Bridgeport",
+      "address": "200 Mill Hill Avenue, Bridgeport, CT",
+      "website": "https://www.bridgeportct.gov/government/departments/health-social-services/social-services/food-banks-pantries",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. City lists rear parking lot and every other Wednesday; confirm next date with Foodshare. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Mobile Food Distribution"
+    },
+    {
       "id": "recokakJq7XyeH5YT",
       "name": "Bridgeport Regional Aquaculture Science and Technology Education Center",
       "track": "Teens & High School",
@@ -1910,6 +1964,18 @@
       "teenOpportunity": [
         "Career Exploration"
       ]
+    },
+    {
+      "id": "recUvb2uJn2kBAiND",
+      "name": "Bridgeport Rescue Mission Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Bridgeport",
+      "address": "1088 Fairfield Avenue, Bridgeport, CT",
+      "website": "https://www.bridgeportct.gov/government/departments/health-social-services/social-services/food-banks-pantries",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. City lists pantry and meals; check current schedule as city and college listings disagree. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "recOaka93AssLHrQn",
@@ -2249,6 +2315,28 @@
       ]
     },
     {
+      "id": "rec3p7QOsICzUjEDI",
+      "name": "Bristol Grace Baptist Church Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Bristol",
+      "website": "https://www.bristolct.gov/DocumentCenter/View/49953/Con-Plan-Final-2025_2029",
+      "notes": "Food & Basic Needs research 2026-10-13. City 2025-29 plan confirms pantry and food delivery for Bonnie Acres elderly residents; confirm contact and schedule. Listed in official municipal/institutional directory; provider hours/status may need direct verification. Main Track/Category not configured; DO NOT publish.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
+      "id": "recB6V72CdRtZOo8B",
+      "name": "Bristol Salvation Army Food Pantry and Kitchen",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Bristol",
+      "website": "https://www.bristolct.gov/DocumentCenter/View/49953/Con-Plan-Final-2025_2029",
+      "notes": "Food & Basic Needs research 2026-10-13. City 2025-29 plan identifies Salvation Army food pantry and soup kitchen; operational details and address must be confirmed. Listed in official municipal/institutional directory; provider hours/status may need direct verification. Main Track/Category not configured; DO NOT publish.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recUdMDHCcnefguyw",
       "name": "Bristol Technical Education Center",
       "track": "Teens & High School",
@@ -2269,6 +2357,18 @@
         "Certification Program",
         "Career Exploration"
       ]
+    },
+    {
+      "id": "recuIv6y2sN99xlsP",
+      "name": "Bristol Zion Lutheran Meals for Neighbors",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "town": "Bristol",
+      "address": "27 Judd Street, Bristol, CT",
+      "website": "https://www.bristolct.gov/DocumentCenter/View/49953/Con-Plan-Final-2025_2029",
+      "notes": "Food & Basic Needs research 2026-10-13. City plan names Zion Lutheran as soup kitchen/pantry; confirm current hours and meals eligibility. Listed in official municipal/institutional directory; provider hours/status may need direct verification. Main Track/Category not configured; DO NOT publish.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Community Meals / Soup Kitchen"
     },
     {
       "id": "reczTaDIhufoi4tbI",
@@ -3647,6 +3747,18 @@
       ]
     },
     {
+      "id": "recw5jaAiN4j1diPb",
+      "name": "Christian Community Action Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "New Haven",
+      "address": "168 Davenport Avenue, New Haven, CT",
+      "website": "https://www.ccahelping.org/contact-us/",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. Official organization confirms food pantry and intake contact 203-777-7848; distribution hours not verified. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "rec797EqjtvXXXqW6",
       "name": "CIFC/GNHS – Ben Franklin (Norwalk)",
       "track": "Family & Childcare",
@@ -3963,6 +4075,18 @@
       ]
     },
     {
+      "id": "recxb1Xux115kbTgG",
+      "name": "Community Action Agency of Western Connecticut Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Danbury",
+      "address": "78 Triangle Street, Danbury, CT",
+      "website": "https://www.danbury-ct.gov/455/Community-Resources",
+      "notes": "Food & Basic Needs; initial official municipal-source review 2026-10-13. Danbury city resource list; 203-744-4700. Low-income food assistance; verify intake requirements; Track and Category awaiting new select options and website filter support.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recVKaqAgSc39ErMY",
       "name": "Community Childrens Center",
       "track": "Family & Childcare",
@@ -3986,6 +4110,18 @@
         "Preschool / Pre-K",
         "Toddler Care"
       ]
+    },
+    {
+      "id": "rec8uklEPsTiq8ROG",
+      "name": "Community Soup Kitchen at Christ Church",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "town": "New Haven",
+      "address": "84 Broadway, New Haven, CT",
+      "website": "https://deskct.org/faq/",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. DESK links to Community Soup Kitchen lunch Monday Tuesday Thursday Friday 11:30-1:30; confirm current meals. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Community Meals / Soup Kitchen"
     },
     {
       "id": "recyQoc1fkJIEv2PA",
@@ -4096,6 +4232,29 @@
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
       "notes": "Source: https://www.elicense.ct.gov/Lookup/DownloadRoster.aspx, accessed 2026-08-25."
+    },
+    {
+      "id": "recOiWpeyvcpJllMZ",
+      "name": "Connecticut Foodshare Mobile Pantry at Meriden",
+      "track": "Food & Basic Needs",
+      "category": "Mobile Food Distribution",
+      "town": "Meriden",
+      "address": "165 Miller Street, Meriden, CT",
+      "website": "https://www.meridenct.gov/Customer-Content/www/CMS/files/Health_and_Human_Services/Community_Resources/CT_Foodshare_Mobile_Pantry_2026.pdf",
+      "notes": "Food & Basic Needs; initial official municipal-source review 2026-10-13. Official 2026 Meriden schedule lists upcoming October 22 and November 5, 1-2 PM; bring reusable bags; Track and Category awaiting new select options and website filter support.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Mobile Food Distribution"
+    },
+    {
+      "id": "recqfvecUuOttjXeL",
+      "name": "Connecticut Foodshare Mobile Pantry Manchester",
+      "track": "Food & Basic Needs",
+      "category": "Mobile Food Distribution",
+      "town": "Manchester",
+      "website": "https://www.manchesterct.gov/Community/Town-Calendar-of-Events/Mobile-Food-Pantry-2026",
+      "notes": "Food & Basic Needs official-source research 2026-10-13. Official town event page reports 2026 mobile service and directs users to Foodshare live locator for changing sites and schedules. Main Track/Category awaiting new options; not yet published.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Mobile Food Distribution"
     },
     {
       "id": "recxPfBTqM5HysaN4",
@@ -5172,6 +5331,18 @@
       "lastVerified": "2026-08-25"
     },
     {
+      "id": "reczG8V7g9fHaNHWl",
+      "name": "Daily Bread Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Danbury",
+      "address": "25 West Street, Danbury, CT",
+      "website": "https://www.danbury-ct.gov/455/Community-Resources",
+      "notes": "Food & Basic Needs; initial official municipal-source review 2026-10-13. Danbury city resource list. Call 203-748-3561 for current eligibility and hours; Track and Category awaiting new select options and website filter support.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recfXpJ97MvZHPdDN",
       "name": "Danbury Animal Welfare Society Low-Cost Spay/Neuter Clinic",
       "track": "Pet Care & Resources",
@@ -5722,6 +5893,29 @@
       ]
     },
     {
+      "id": "reck73Szhbf7XsnWr",
+      "name": "Downtown Evening Soup Kitchen Grab and Go Dinner",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "town": "New Haven",
+      "website": "https://deskct.org/hours-of-service/",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. DESK meals at multiple New Haven Green/Broadway locations Sunday-Saturday; inspect daily site before visiting. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Community Meals / Soup Kitchen"
+    },
+    {
+      "id": "rec2zTuBsi0EuvsBK",
+      "name": "Downtown Evening Soup Kitchen Olive Street Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "New Haven",
+      "address": "57 Olive Street, New Haven, CT",
+      "website": "https://deskct.org/hours-of-service/",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. DESK official: Wednesday 1:30-3 PM; brief intake; all welcome. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recQZ2oZPLO2QtHzB",
       "name": "Downtown Evening Soup Kitchen Pet Food Assistance",
       "track": "Pet Care & Resources",
@@ -5950,6 +6144,17 @@
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
       "notes": "Official East Hartford Parks & Recreation page verified August 25, 2026."
+    },
+    {
+      "id": "recCPybaa69ibLQax",
+      "name": "East Hartford Town Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "East Hartford",
+      "website": "https://www.easthartfordct.gov/FoodPantry",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. Town confirms all Connecticut residents eligible through self declaration; bring bags. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "recYDSIXPOJu3LVdx",
@@ -6831,6 +7036,30 @@
         "Preschool / Pre-K",
         "Toddler Care"
       ]
+    },
+    {
+      "id": "recBJwgMiXtVOL9wT",
+      "name": "Fern Street Connecticut Foodshare Mobile Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Mobile Food Distribution",
+      "town": "West Hartford",
+      "address": "433 Fern Street, West Hartford, CT",
+      "website": "https://www.westhartfordct.gov/town-departments/social-services/food-resources/local-food-options",
+      "notes": "Food & Basic Needs source check 2026-10-13. Town lists third Saturday mobile food distribution 8:45-9:15 AM; schedule reconfirm before travel. Track and Category options still required. Verify provider details before publication.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Mobile Food Distribution"
+    },
+    {
+      "id": "recT3S1EY9cXedPiC",
+      "name": "Fern Street Food Ministry Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "West Hartford",
+      "address": "433 Fern Street, West Hartford, CT",
+      "website": "https://www.westhartfordct.gov/town-departments/social-services/food-resources/local-food-options",
+      "notes": "Food & Basic Needs source check 2026-10-13. Town lists third Saturday 10-11:30 AM pantry and free breakfast 9-10 AM. Track and Category options still required. Verify provider details before publication.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "rec8Ng3xx3TPjVsmH",
@@ -7892,6 +8121,18 @@
       ]
     },
     {
+      "id": "recLdwOR1Z7qOGEIB",
+      "name": "Hamden Food Bank at Keefe Community Center",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Hamden",
+      "address": "11 Pine Street, Hamden, CT",
+      "website": "https://www.hamden.com/155/Keefe-Community-Center",
+      "notes": "Food & Basic Needs; initial official municipal-source review 2026-10-13. Appointment-only pantry for Hamden residents; shelf-stable food, frozen meat, produce; Track and Category awaiting new select options and website filter support.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recNvJla2VFA7OQhr",
       "name": "Hampton Boe At Hampton Elementary School",
       "track": "Family & Childcare",
@@ -7912,6 +8153,41 @@
       "servicesOffered": [
         "Preschool / Pre-K"
       ]
+    },
+    {
+      "id": "recD93xhpc24rzuaw",
+      "name": "Hands On Hartford Backpack Nutrition Program",
+      "track": "Food & Basic Needs",
+      "category": "School / Family Food Support",
+      "town": "Hartford",
+      "website": "https://handsonhartford.org/programs/",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. Weekend meals and snacks for Hartford students; enrollment and participating schools not verified. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "School / Family Food Support"
+    },
+    {
+      "id": "recs49qOgt85ccRsf",
+      "name": "Hands On Hartford Community Dinner",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "town": "Hartford",
+      "address": "55 Bartholomew Avenue, Hartford, CT",
+      "website": "https://handsonhartford.org/assistance/",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. Free community dinner Monday 5:30-6:30 PM. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Community Meals / Soup Kitchen"
+    },
+    {
+      "id": "rec20XAMJ3Atk0q6l",
+      "name": "Hands On Hartford MANNA Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Hartford",
+      "address": "55 Bartholomew Avenue, Hartford, CT",
+      "website": "https://handsonhartford.org/assistance/",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. Monday-Thursday 9:30-noon and 1-5 PM; Connecticut residents eligible for emergency food bag; phone 860-728-3201. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "rec0vZe7gB3a6jp5Q",
@@ -8383,6 +8659,18 @@
       ]
     },
     {
+      "id": "rec1ygAEetqzRq40R",
+      "name": "Hillside Food Outreach Danbury",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Danbury",
+      "address": "39 Old Ridgebury Road, Danbury, CT",
+      "website": "https://www.danbury-ct.gov/455/Community-Resources",
+      "notes": "Food & Basic Needs; initial official municipal-source review 2026-10-13. Danbury city directory lists food pantry at this address; verify distribution site versus office before visiting; Track and Category awaiting new select options and website filter support.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recjUOoOmOI3sYwRK",
       "name": "Hilltop Christian Early Learning Center",
       "track": "Family & Childcare",
@@ -8404,6 +8692,30 @@
         "Child Care",
         "Preschool / Pre-K"
       ]
+    },
+    {
+      "id": "recehO4EQzOSgvzof",
+      "name": "Homes with Hope / Gillespie Center Pantry Norwalk",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Norwalk",
+      "address": "1 Father Conlon Place, Norwalk, CT",
+      "website": "https://www.norwalkct.gov/DocumentCenter/View/15548/Feed_Your_Family_English-and-Spanish",
+      "notes": "Food & Basic Needs source check 2026-10-13. Norwalk schools food guide lists Friday 8:30-11:30; source labels Gillespie Center; verify operator before publication. Track and Category options still required. Verify provider details before publication.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
+      "id": "recAyIDVl4wuTCOGG",
+      "name": "Homes with Hope Gillespie Center Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Westport",
+      "address": "45 Jesup Road, Westport, CT",
+      "website": "https://www.norwalkct.gov/DocumentCenter/View/15548/Feed_Your_Family_English-and-Spanish",
+      "notes": "Food & Basic Needs source check 2026-10-13. Norwalk school family food guide lists food assistance on Mon Tue Fri 1:30-4:30 and Thu 1:30-6; call 203-226-1191. Track and Category options still required. Verify provider details before publication.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "recIvdb4zbljdsiIt",
@@ -8608,6 +8920,18 @@
         "Child Care",
         "Preschool / Pre-K"
       ]
+    },
+    {
+      "id": "recWXKKlV1HCEyz8M",
+      "name": "Husky Harvest UConn Waterbury",
+      "track": "Food & Basic Needs",
+      "category": "School / Family Food Support",
+      "town": "Waterbury",
+      "address": "99 East Main Street, Waterbury, CT",
+      "website": "https://huskyharvest.uconn.edu/",
+      "notes": "Food & Basic Needs research 2026-10-13. Campus-based food support for UConn students; confirm access/hours at campus. Listed in official municipal/institutional directory; provider hours/status may need direct verification. Main Track/Category not configured; DO NOT publish.",
+      "lastVerified": "2026-10-13",
+      "foodType": "School / Family Food Support"
     },
     {
       "id": "recsMyh0LBH3A8JcK",
@@ -9519,6 +9843,18 @@
       ]
     },
     {
+      "id": "rec2NHp7CMUldU2ZT",
+      "name": "King's Pantry Bridgeport",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Bridgeport",
+      "address": "30 Florence Street, Bridgeport, CT",
+      "website": "https://www.bridgeportct.gov/government/departments/health-social-services/social-services/food-banks-pantries",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. City lists weekday pantry; reconfirm distribution hours. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recj6BOshGOXLM3LN",
       "name": "Kings Chapel Early Care & Education Ctr",
       "track": "Family & Childcare",
@@ -9542,6 +9878,18 @@
         "Preschool / Pre-K",
         "Toddler Care"
       ]
+    },
+    {
+      "id": "rec3ZwxbrV7weBpEW",
+      "name": "Klingberg Family Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "New Britain",
+      "address": "370 Linwood Street, New Britain, CT",
+      "website": "https://www.newbritainct.gov/",
+      "notes": "Food & Basic Needs research 2026-10-13. City 2025 food directory lists by-appointment pantry at 860-832-5532; verify 2026 status. Listed in official municipal/institutional directory; provider hours/status may need direct verification. Main Track/Category not configured; DO NOT publish.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "recaoZSQau0XPVCWa",
@@ -10218,6 +10566,30 @@
         "Infant Care",
         "Toddler Care"
       ]
+    },
+    {
+      "id": "recxJg0uHYqfWJ9Vs",
+      "name": "MACC Community Kitchen",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "town": "Manchester",
+      "address": "466 Main Street, Manchester, CT",
+      "website": "https://www.manchesterct.gov/Government/Departments/Senior-Adult-Family-Services/Food-Resources",
+      "notes": "Food & Basic Needs official-source research 2026-10-13. Municipal 2025-26 directory lists free meals for community members; verify today's hours with MACC. Main Track/Category awaiting new options; not yet published.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Community Meals / Soup Kitchen"
+    },
+    {
+      "id": "recIJHkD2FpSmDciq",
+      "name": "MACC Emergency Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Manchester",
+      "address": "460 Main Street, Manchester, CT",
+      "website": "https://www.manchesterct.gov/Government/Departments/Senior-Adult-Family-Services/Food-Resources",
+      "notes": "Food & Basic Needs official-source research 2026-10-13. Municipal directory lists MACC pantry at 460 Main; appointment and eligibility certification required, call MACC for current schedule. Main Track/Category awaiting new options; not yet published.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "recmob78YwwnNRIEq",
@@ -11221,6 +11593,18 @@
       ]
     },
     {
+      "id": "recfW7Wyeve2jtgU9",
+      "name": "Milford Food Bank at Milford Senior Center",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Milford",
+      "address": "9 Jepson Drive, Milford, CT",
+      "website": "https://www.milfordct.us/434/Food-In-Milford",
+      "notes": "Food & Basic Needs; initial official municipal-source review 2026-10-13. City reports open to community members. Contact 203-876-6142 to confirm client-choice appointment; Track and Category awaiting new select options and website filter support.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recyTjRhksIvmI2yM",
       "name": "Milford KinderCare",
       "track": "Family & Childcare",
@@ -11258,6 +11642,18 @@
       "endTime": "18:00",
       "licensing": "Licensed",
       "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "recpFZIBzLkoNP710",
+      "name": "Milford Regional Pop-Up Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Mobile Food Distribution",
+      "town": "Milford",
+      "address": "1455 Naugatuck Avenue, Milford, CT",
+      "website": "https://www.milfordct.us/434/Food-In-Milford",
+      "notes": "Food & Basic Needs; initial official municipal-source review 2026-10-13. Hosted at Kingdom Life Christian Church; city says every other Tuesday, recheck schedule; Track and Category awaiting new select options and website filter support.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Mobile Food Distribution"
     },
     {
       "id": "recvJWqefdbAAW09B",
@@ -12038,6 +12434,18 @@
       ]
     },
     {
+      "id": "reclHURsL1ISICc28",
+      "name": "New Britain Food and Resource Center",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "New Britain",
+      "address": "550 Farmington Avenue, New Britain, CT",
+      "website": "https://www.newbritainct.gov/",
+      "notes": "Food & Basic Needs research 2026-10-13. Named in city's 2025 food resource schedule; verify present service hours before publishing. Listed in official municipal/institutional directory; provider hours/status may need direct verification. Main Track/Category not configured; DO NOT publish.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recWE1D5ux3zJtSI5",
       "name": "New Britain High School",
       "track": "Teens & High School",
@@ -12123,6 +12531,18 @@
       "programLength": "Half Day",
       "programYear": "Summer 2026",
       "lastVerified": "2026-08-25"
+    },
+    {
+      "id": "reccOVYmLchs2uVXU",
+      "name": "New Covenant Center Cafe",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "town": "Stamford",
+      "address": "174 Richmond Hill Avenue, Stamford, CT",
+      "website": "https://www.stamfordct.gov/government/public-safety-health-welfare/health-human-services/information/giving/looking-for-assistance",
+      "notes": "Food & Basic Needs source check 2026-10-13. Stamford official assistance directory names lunch and dinner service; call 203-964-8228 to verify schedule. Track and Category options still required. Verify provider details before publication.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Community Meals / Soup Kitchen"
     },
     {
       "id": "recNA7ZAfznSXVa3L",
@@ -12501,6 +12921,18 @@
       ],
       "programYear": "2025–2026 latest verified",
       "lastVerified": "2026-08-25"
+    },
+    {
+      "id": "recQXQ4ltCk9EIntU",
+      "name": "New Life Church Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Norwalk",
+      "address": "216 Scribner Avenue, Norwalk, CT",
+      "website": "https://www.norwalkct.gov/DocumentCenter/View/15548/Feed_Your_Family_English-and-Spanish",
+      "notes": "Food & Basic Needs source check 2026-10-13. Norwalk schools official food guide lists Wed 9:30-11:30; Norwalk resident and photo ID. Track and Category options still required. Verify provider details before publication.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "recCU1UotnP40F6IY",
@@ -12989,6 +13421,18 @@
       ]
     },
     {
+      "id": "recFVng2x7BT1QCqO",
+      "name": "nOURish Bridgeport Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Bridgeport",
+      "address": "2200 North Avenue, Bridgeport, CT",
+      "website": "https://www.bridgeportct.gov/government/departments/health-social-services/social-services/food-banks-pantries",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. City lists Wednesday afternoon pantry; entrance on North Avenue. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recy7FuWoyHZzFmii",
       "name": "Nutmeg Spay/Neuter Clinic",
       "track": "Pet Care & Resources",
@@ -13136,6 +13580,30 @@
       ]
     },
     {
+      "id": "recOstFjZDa5f3haJ",
+      "name": "Open Doors Food Pantry Norwalk",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Norwalk",
+      "address": "55 Chestnut Street, Norwalk, CT",
+      "website": "https://www.norwalkct.gov/DocumentCenter/View/15548/Feed_Your_Family_English-and-Spanish",
+      "notes": "Food & Basic Needs source check 2026-10-13. Norwalk school food guide lists weekday morning pantry by appointment; call 203-866-1057. Track and Category options still required. Verify provider details before publication.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
+      "id": "recVGeTasABIcWUGM",
+      "name": "Orange Community Services Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Orange",
+      "address": "525 Orange Center Road, Orange, CT",
+      "website": "https://www.orange-ct.gov/782/Community-Services",
+      "notes": "Food & Basic Needs; initial official municipal-source review 2026-10-13. Orange residents; call 203-891-4788 for assistance. Pantry supplies nonperishables and personal care items; Track and Category awaiting new select options and website filter support.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recqCWer511Nobboj",
       "name": "Orange Parks and Recreation Day Camp",
       "track": "Family & Childcare",
@@ -13217,6 +13685,18 @@
       "endTime": "Normally 4:00 PM; varies by trip",
       "programYear": "Seasonal; current year not stated",
       "lastVerified": "2026-08-25"
+    },
+    {
+      "id": "recWTlFqvSJHzfMd9",
+      "name": "Orange Senior Center Daily Meals",
+      "track": "Food & Basic Needs",
+      "category": "Senior Food Assistance",
+      "town": "Orange",
+      "address": "525 Orange Center Road, Orange, CT",
+      "website": "https://www.orange-ct.gov/DocumentCenter/View/5453",
+      "notes": "Food & Basic Needs; initial official municipal-source review 2026-10-13. Municipal food assistance guide: weekday lunch for senior center members; reserve two days in advance, suggested donation $3 not required; Track and Category awaiting new select options and website filter support.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Senior Food Assistance"
     },
     {
       "id": "recOg3bQHgJU4cKOF",
@@ -13357,6 +13837,18 @@
       ],
       "meals": "Meals Only",
       "lastVerified": "2026-08-30"
+    },
+    {
+      "id": "recQaGhdqmBsF7wGm",
+      "name": "Pathways Pantry New Britain",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "New Britain",
+      "address": "43 Viets Street, New Britain, CT",
+      "website": "https://www.newbritainct.gov/",
+      "notes": "Food & Basic Needs research 2026-10-13. Named in city 2025 directory. Pantry Mon/Wed listed; call 860-229-2776 for current hours. Listed in official municipal/institutional directory; provider hours/status may need direct verification. Main Track/Category not configured; DO NOT publish.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "recGl0Hr7nW9zQTFv",
@@ -14366,6 +14858,42 @@
       "lastVerified": "2026-08-29"
     },
     {
+      "id": "recZGkr5LaQCe4PuT",
+      "name": "Saint Vincent DePaul Mission Soup Kitchen",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "town": "Waterbury",
+      "address": "327 Baldwin Street, Waterbury, CT",
+      "website": "https://www.takecarewaterbury.com/services-directory",
+      "notes": "Food & Basic Needs research 2026-10-13. City health resource directory lists Greater Waterbury residents, photo ID, phone 203-757-0411. Listed in official municipal/institutional directory; provider hours/status may need direct verification. Main Track/Category not configured; DO NOT publish.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Community Meals / Soup Kitchen"
+    },
+    {
+      "id": "rechgY8mPsku2gVX4",
+      "name": "Salvation Army Food Distribution Center Waterbury",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Waterbury",
+      "address": "74 Central Avenue, Waterbury, CT",
+      "website": "https://www.takecarewaterbury.com/services-directory",
+      "notes": "Food & Basic Needs research 2026-10-13. City health resource guide states open to all; telephone 203-754-7056. Listed in official municipal/institutional directory; provider hours/status may need direct verification. Main Track/Category not configured; DO NOT publish.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
+      "id": "recrK3WEYjxHTRFLo",
+      "name": "Salvation Army Food Pantry Danbury",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Danbury",
+      "address": "15 Foster Street, Danbury, CT",
+      "website": "https://www.danbury-ct.gov/455/Community-Resources",
+      "notes": "Food & Basic Needs; initial official municipal-source review 2026-10-13. Danbury city resource list; call 203-792-7505 to verify hours and eligibility; Track and Category awaiting new select options and website filter support.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recMQ7nEjpv1zHbzC",
       "name": "Samuel S. Gray Jr. Boys & Girls Club Summer Fun Club",
       "track": "Family & Childcare",
@@ -14476,6 +15004,18 @@
       "lastVerified": "2026-08-25"
     },
     {
+      "id": "recuqyV5BDTvd8fuq",
+      "name": "Second Congregational Church Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Manchester",
+      "address": "385 North Main Street, Manchester, CT",
+      "website": "https://www.manchesterct.gov/Government/Departments/Human-Services/Community-Agencies",
+      "notes": "Food & Basic Needs official-source research 2026-10-13. Manchester municipal source confirms Connecticut Foodshare partner pantry with client-choice shopping; check current hours. Main Track/Category awaiting new options; not yet published.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "rec5E1ozij8fe25nT",
       "name": "Senior Meals on Wheels — Greater New Haven",
       "track": "Elder Care",
@@ -14527,6 +15067,18 @@
         "Disability Support"
       ],
       "lastVerified": "2026-08-31"
+    },
+    {
+      "id": "recY74AhVxYSSejkE",
+      "name": "Shalom Seventh Day Adventist Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Waterbury",
+      "address": "84 Crown Street, Waterbury, CT",
+      "website": "https://www.takecarewaterbury.com/services-directory",
+      "notes": "Food & Basic Needs research 2026-10-13. Waterbury residency, bring own grocery bags, walk-in or appointment; 203-756-8131. Listed in official municipal/institutional directory; provider hours/status may need direct verification. Main Track/Category not configured; DO NOT publish.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "recu1DJKbTVtTBI6T",
@@ -14938,6 +15490,17 @@
         "Disability Support"
       ],
       "lastVerified": "2026-08-31"
+    },
+    {
+      "id": "rec3hR3L2QXEk6oAU",
+      "name": "Spooner House Food Assistance",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Shelton",
+      "website": "https://cityofshelton.org/Home/DownloadDocument?docId=b8f8aa17-d0c4-48a8-b622-68d379112b0a",
+      "notes": "Food & Basic Needs research 2026-10-13. Shelton city plan documents food, shelter and support services provided by Spooner House; need current location and pantry distribution times. Listed in official municipal/institutional directory; provider hours/status may need direct verification. Main Track/Category not configured; DO NOT publish.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "recR9W2hxz8xiKJFq",
@@ -15445,6 +16008,19 @@
       "servicesOffered": [
         "Preschool / Pre-K"
       ]
+    },
+    {
+      "id": "recS1Y69CeSHAk3GS",
+      "name": "Stratford Mobile Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Mobile Food Distribution",
+      "town": "Stratford",
+      "address": "1950 Barnum Avenue, Stratford, CT",
+      "cost": "Free food distribution",
+      "website": "https://www.townofstratford.com/page/mobile-food-pantry",
+      "notes": "Food & Basic Needs; initial official municipal-source review 2026-10-13. Town page names Holy Name of Jesus Church, distribution schedule should be reconfirmed with CT Foodshare; 203-385-4090; Track and Category awaiting new select options and website filter support.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Mobile Food Distribution"
     },
     {
       "id": "recWGS90XqFXEbbxw",
@@ -16198,6 +16774,18 @@
       ]
     },
     {
+      "id": "reco6RMGwPJMDPFQM",
+      "name": "The Rock of Waterbury Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Waterbury",
+      "address": "513 Meriden Road, Waterbury, CT",
+      "website": "https://www.takecarewaterbury.com/services-directory",
+      "notes": "Food & Basic Needs research 2026-10-13. Greater Waterbury residents; photo ID and household size proof; 203-574-0515. Listed in official municipal/institutional directory; provider hours/status may need direct verification. Main Track/Category not configured; DO NOT publish.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recwBxWIw2XRkOonx",
       "name": "The School For Young Children At The University of Saint Joseph",
       "track": "Family & Childcare",
@@ -16270,6 +16858,18 @@
         "Certification Program",
         "Career Exploration"
       ]
+    },
+    {
+      "id": "recUbFdbUVkeNtvnV",
+      "name": "Thomas Merton Family Center Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Bridgeport",
+      "address": "1406 State Street, Bridgeport, CT",
+      "website": "https://www.bridgeportct.gov/government/departments/health-social-services/social-services/food-banks-pantries",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. City lists pantry Tuesday through Thursday and breakfast/lunch weekdays; confirm by surname shopping schedule. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "recD2wG8itDR3yJuN",
@@ -16548,6 +17148,17 @@
         "Infant Care",
         "Toddler Care"
       ]
+    },
+    {
+      "id": "recCRZ4lHLlPxy38M",
+      "name": "Trumbull Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Trumbull",
+      "website": "https://www.trumbull-ct.gov/310/Food-Pantry",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. Trumbull residents; income guidelines or financial need; appointments at 203-452-5136; Monday Tuesday Thursday 9:30 AM-4 PM. Main Track/Category choices and webpage filtering pending.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "reccBJ3eOb3NnDB0g",
@@ -17384,6 +17995,18 @@
       ]
     },
     {
+      "id": "recqXs5uqLYfkKnBO",
+      "name": "W.H.E.A.T. Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "West Haven",
+      "address": "674 Washington Avenue, West Haven, CT",
+      "website": "https://www.cityofwesthaven.com/DocumentCenter/View/7908/West-Haven-Food-Assistance-Resource-Guide-PDF",
+      "notes": "Food & Basic Needs official-source research 2026-10-13. West Haven official resource directory lists pantry; confirm hours with provider before publicizing. Main Track/Category awaiting new options; not yet published.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "recnrCH8WhOeFZrtM",
       "name": "Wag Central",
       "track": "Pet Care & Resources",
@@ -17596,6 +18219,18 @@
       "teenOpportunity": [
         "Internship"
       ]
+    },
+    {
+      "id": "rec5uk8Dm6qiJiDPg",
+      "name": "Waterbury Baptist Ministries Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Waterbury",
+      "address": "222 West Main Street, Waterbury, CT",
+      "website": "https://www.takecarewaterbury.com/services-directory",
+      "notes": "Food & Basic Needs research 2026-10-13. Downtown Waterbury residents; ID and intake; 203-754-5140. Listed in official municipal/institutional directory; provider hours/status may need direct verification. Main Track/Category not configured; DO NOT publish.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "recy6qK2Y47XshRE6",
@@ -17999,6 +18634,18 @@
       ]
     },
     {
+      "id": "recfb7y4XDtaumdK4",
+      "name": "West Hartford Town Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "West Hartford",
+      "address": "50 South Main Street, West Hartford, CT",
+      "website": "https://www.westhartfordct.gov/town-departments/social-services/food-resources",
+      "notes": "Food & Basic Needs source check 2026-10-13. Town social services: West Hartford residents, photo ID and proof of address required; curbside Tues Wed Fri; income guidelines apply. Track and Category options still required. Verify provider details before publication.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
+    },
+    {
       "id": "rec47ogHSx1Iz2hPr",
       "name": "West Haven Child Development Center",
       "track": "Family & Childcare",
@@ -18361,6 +19008,17 @@
         "Career Exploration",
         "Paid Youth Employment"
       ]
+    },
+    {
+      "id": "recr5BXeOUX9uQofT",
+      "name": "Windsor Food and Fuel Bank",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "town": "Windsor",
+      "website": "https://townofwindsorct.com/social-services/documents/most-needed-items-at-the-food-bank/",
+      "notes": "Food & Basic Needs official-source research 2026-10-13. Town social services identifies food and necessities assistance; confirm distribution site and eligibility. Main Track/Category awaiting new options; not yet published.",
+      "lastVerified": "2026-10-13",
+      "foodType": "Food Bank / Food Pantry"
     },
     {
       "id": "reczUV0CmoNYbdMlV",
