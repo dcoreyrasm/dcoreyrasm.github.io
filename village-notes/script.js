@@ -653,6 +653,16 @@
     // spent their last bus fare making it. The card says so rather than
     // implying the listing is a guarantee. Food only: every track goes stale,
     // but this is the one where being wrong means going hungry today.
+    // Tags, shown small and last. They are search vocabulary first and card
+    // content second, so they sit below the facts rather than competing with
+    // them -- and the row is absent entirely when the field is empty.
+    var tagList = tagsOf(r);
+    var tagRow = tagList.length
+      ? '<ul class="vn-tags" aria-label="Tags">' +
+        tagList.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') +
+        '</ul>'
+      : '';
+
     var foodCaveat = foodTrack
       ? '<p class="vn-card-caveat">Contact the organization to confirm current ' +
         'hours, eligibility, and availability before visiting.</p>'
@@ -667,6 +677,7 @@
       stars(r.rating) +
       (has(r.specificType) ? '<p class="vn-card-type">' + esc(r.specificType) + '</p>' : '') +
       (facts ? '<dl class="vn-facts">' + facts + '</dl>' : '') +
+      tagRow +
       foodCaveat +
       notes +
       '<div class="vn-card-foot">' +
@@ -891,6 +902,14 @@
   // providers headquartered there -- an agency based one town over that covers
   // theirs is exactly the result they are looking for, and a statewide program
   // covers them wherever they are.
+  // Comma separated in Airtable, a list here. Trimmed and de-duplicated so a
+  // trailing comma or a double space does not become an empty chip.
+  function tagsOf(r) {
+    return String(r.tags || '').split(',')
+      .map(function (t) { return t.trim(); })
+      .filter(function (t, i, all) { return t && all.indexOf(t) === i; });
+  }
+
   function servesTown(r, town) {
     if (r.town === town) return true;
     if (isStatewide(r)) return true;
@@ -1039,16 +1058,138 @@
      is what makes that example work at all: one word is the town, the other
      is the category. A single-word search behaves exactly as it did before.
 
-     Community AI already searched this way. These two now agree with it. */
+     Community AI already searched this way. These two now agree with it.
+
+     Two things sit on top of that, because "every word must match" is exactly
+     right for "mystic museum" and exactly wrong for how people ask for help.
+
+     1. INTENT WORDS. "free wheelchair Bridgeport" found nothing while
+        "wheelchair" found five, because no listing writes the word "free" --
+        they write "no cost", "loan", "donation", or nothing at all. Same for
+        "low cost", "help with", and "near me", which is not a place. These
+        say what kind of answer somebody wants rather than what the record
+        contains, so they stop narrowing and the search runs on the words that
+        carry meaning.
+
+     2. SYNONYMS. A resident types "diapers"; the record says "infant
+        supplies". They type "internet"; it says "broadband". A term matches
+        if the record holds it OR a known alternative, which can only widen a
+        search -- no listing stops being findable by the word it already uses.
+
+     Both are deliberately small and hand-written, and every synonym was
+     counted against the live data before it stayed -- matching is substring
+     matching, so a short synonym quietly matches inside longer words. A
+     stemmer or a fuzzy match would do that everywhere and at a scale nobody
+     could audit. */
+
+  // Words describing the kind of help wanted rather than the resource. Dropped
+  // from matching, never from the box: the visitor still sees what they typed.
+  var INTENT_WORDS = {
+    'free': 1, 'low': 1, 'cost': 1, 'low-cost': 1, 'lowcost': 1, 'cheap': 1,
+    'affordable': 1, 'reduced': 1, 'discount': 1, 'discounted': 1, 'sliding': 1,
+    'scale': 1, 'near': 1, 'me': 1, 'nearby': 1, 'close': 1, 'around': 1,
+    'help': 1, 'helping': 1, 'need': 1, 'needed': 1, 'looking': 1, 'for': 1,
+    'with': 1, 'any': 1, 'some': 1, 'a': 1, 'an': 1, 'the': 1, 'in': 1, 'at': 1,
+    'and': 1, 'or': 1, 'of': 1, 'my': 1, 'we': 1, 'i': 1
+  };
+
+  // Each key widens to itself plus its list. Written from the resident's word
+  // toward the directory's word, because that is the gap that loses people.
+  // Each key widens to itself plus its list. Written from the resident's word
+  // toward the directory's word, because that is the gap that loses people.
+  //
+  // Kept deliberately short, and every entry measured against the live data
+  // before it was allowed to stay. Matching is substring matching, so a short
+  // synonym is a trap: "child" is inside "childcare", "rent" is inside
+  // "parent", "infant" is inside half the daycare listings. Pairs that read
+  // perfectly well in the abstract -- kids/children, baby/infant, rent/rental
+  // -- each matched roughly two-thirds of the directory and were dropped.
+  // Anything that cannot be justified by a count is not here.
+  //
+  // thrift / consignment / resale are also absent on purpose. They are not
+  // interchangeable: a consignment shop pays you for your child's outgrown
+  // coat, a donation thrift store does not. Widening between them put eight
+  // Goodwills in front of somebody searching "consignment". The Tags field is
+  // where a listing says which words it answers to.
+  var SYNONYMS = {
+    wheelchair:   ['wheel chair', 'mobility', 'durable medical equipment'],
+    walker:       ['mobility', 'durable medical equipment'],
+    scooter:      ['mobility', 'durable medical equipment'],
+    crutches:     ['durable medical equipment', 'mobility'],
+    hospital:     ['hospital bed', 'durable medical equipment'],
+    bed:          ['hospital bed', 'durable medical equipment'],
+    equipment:    ['durable medical equipment', 'medical equipment'],
+    // In this directory equipment is lent, not rented: the places that have a
+    // hospital bed call themselves a loan closet. 0 listings say "rental", 3
+    // say "loan", which is why somebody searching the ordinary word found
+    // nothing. "rent" on its own is deliberately absent -- it is a substring
+    // of "parent" and matches 523 of 810 listings on its own.
+    rental:       ['loan', 'lending'],
+    diaper:       ['infant supplies', 'baby supplies'],
+    diapers:      ['diaper', 'infant supplies', 'baby supplies'],
+    internet:     ['broadband', 'wifi', 'wi-fi', 'connectivity'],
+    broadband:    ['internet'],
+    wifi:         ['internet', 'broadband'],
+    ride:         ['transportation', 'transport'],
+    transport:    ['transportation'],
+    van:          ['transportation', 'accessible vehicle'],
+    heat:         ['heating', 'energy', 'utility'],
+    heating:      ['heat', 'energy', 'utility'],
+    utility:      ['utilities', 'energy'],
+    utilities:    ['utility', 'energy'],
+    clothes:      ['clothing', 'apparel'],
+    clothing:     ['clothes', 'apparel'],
+    food:         ['pantry', 'meals', 'groceries'],
+    groceries:    ['food', 'pantry'],
+    pantry:       ['food', 'food bank'],
+    meal:         ['meals', 'food'],
+    dentist:      ['dental'],
+    dental:       ['dentist'],
+    glasses:      ['vision', 'eye'],
+    vision:       ['eye', 'glasses'],
+    hearing:      ['hearing aid', 'audiology'],
+    tutor:        ['tutoring', 'literacy', 'academic support'],
+    tutoring:     ['tutor', 'literacy', 'academic support'],
+    lawyer:       ['legal', 'attorney'],
+    legal:        ['lawyer', 'attorney'],
+    taxes:        ['tax preparation', 'vita'],
+    tax:          ['tax preparation', 'vita'],
+    benefits:     ['benefits enrollment', 'snap'],
+    companionship:['companion', 'friendly visiting'],
+    vet:          ['veterinary', 'veterinarian'],
+    veterinary:   ['vet', 'veterinarian'],
+    senior:       ['older adult', 'elder']
+  };
 
   function searchTerms(value) {
-    return String(value || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+    return String(value || '').trim().toLowerCase().split(/\s+/)
+      .filter(Boolean)
+      .filter(function (t) { return !INTENT_WORDS[t]; });
+  }
+
+  // Every spelling a term may match on: itself, its synonyms, and the naive
+  // singular/plural pair. The pair is only tried on words long enough that
+  // adding or dropping an s cannot turn them into a different word.
+  function termVariants(term) {
+    var out = [term];
+    (SYNONYMS[term] || []).forEach(function (s) { out.push(s); });
+    if (term.length > 3) {
+      if (term.charAt(term.length - 1) === 's') out.push(term.slice(0, -1));
+      else out.push(term + 's');
+    }
+    return out;
   }
 
   function matchesSearch(hay) {
     var terms = state.terms || [];
+    var text = hay || '';
     for (var i = 0; i < terms.length; i++) {
-      if ((hay || '').indexOf(terms[i]) === -1) return false;
+      var variants = termVariants(terms[i]);
+      var hit = false;
+      for (var v = 0; v < variants.length && !hit; v++) {
+        if (text.indexOf(variants[v]) !== -1) hit = true;
+      }
+      if (!hit) return false;
     }
     return true;
   }
@@ -1069,6 +1210,10 @@
       // County" finds them without a county control being touched.
       .concat(countiesOf(r).map(function (c) { return c + ' County'; }))
       .concat([r.shoppingType, r.foodType])
+      // Free-text tags. The whole point of the field is that a resident can
+      // find a listing by the word they would actually type, so it goes in
+      // alongside everything else rather than being a filter of its own.
+      .concat(tagsOf(r))
       // Only while the event is still ahead. Indexing a field usually can
       // only add matches, which is why the teen fields are indexed for every
       // track -- but an expired event is text the card deliberately does not
