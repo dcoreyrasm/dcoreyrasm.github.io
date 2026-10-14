@@ -50,13 +50,9 @@
     doorway:    document.getElementById('vn-doorway'),
     doorwayNum: document.getElementById('vn-doorway-detail'),
     doorwayBtn: document.getElementById('vn-doorway-btn'),
-    foodBtn:    document.getElementById('vn-food-btn'),
-    foodTown:   document.getElementById('vn-food-town'),
     foodFallback: document.getElementById('vn-food-fallback'),
     shopFallback: document.getElementById('vn-shop-fallback'),
     shopReset:  document.getElementById('vn-shop-reset'),
-    shopBtn:    document.getElementById('vn-shop-btn'),
-    shopTown:   document.getElementById('vn-shop-town'),
     countyList: document.getElementById('vn-county-list'),
     results:    document.getElementById('vn-results'),
     empty:      document.getElementById('vn-empty'),
@@ -655,8 +651,11 @@
     // but this is the one where being wrong means going hungry today.
     // Tags, shown small and last. They are search vocabulary first and card
     // content second, so they sit below the facts rather than competing with
-    // them -- and the row is absent entirely when the field is empty.
-    var tagList = tagsOf(r);
+    // them -- and the row is absent entirely once the repeats are dropped.
+    var tagList = newTagsOf(r, [
+      r.track, r.category, r.name, r.town, r.specificType,
+      (r.townsServed || []).join(' '), facts, r.notes
+    ].join(' '));
     var tagRow = tagList.length
       ? '<ul class="vn-tags" aria-label="Tags">' +
         tagList.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') +
@@ -759,83 +758,6 @@
     el.shopFallback.hidden = !(isEmpty && shoppingSearchActive());
   }
 
-  // The quick search: one button that puts the visitor in the food section, and
-  // a town box beside it so the common case -- "a pantry near me" -- is one
-  // step rather than three. A typed town that matches the directory's own town
-  // list becomes a town filter; anything else falls through to the search box,
-  // which is the behaviour someone typing a neighbourhood or a zip expects.
-  function knownTown(value) {
-    var want = String(value || '').trim().toLowerCase();
-    if (!want) return null;
-    var found = null;
-    Array.prototype.forEach.call(el.townList.querySelectorAll('input'), function (box) {
-      if (!found && box.value.toLowerCase() === want) found = box.value;
-    });
-    return found;
-  }
-
-  // Both quick searches do the same three things -- put the visitor in a
-  // section, optionally narrow to their town, and move them to the results --
-  // so they share one function. The only difference is what "a section" means:
-  // food is a whole track, shopping is a set of categories inside one.
-  function jumpTo(opts, townText) {
-    state.track = opts.track || '';
-    if (el.track) el.track.value = state.track;
-    state.categories = (opts.categories || []).slice();
-    state.counties = [];
-    state.flags = {};
-    Array.prototype.forEach.call(el.toggles, function (t) { t.checked = false; });
-
-    var town = knownTown(townText);
-    if (town) {
-      state.towns = [town];
-      state.search = '';
-      state.terms = [];
-      if (el.search) el.search.value = '';
-    } else if (String(townText || '').trim()) {
-      state.search = String(townText).trim();
-      state.terms = searchTerms(state.search);
-      state.towns = [];
-      if (el.search) el.search.value = state.search;
-    }
-
-    syncTownUI();
-    syncCountyUI();
-    buildCatList();
-    tuneToggles();
-    render();
-
-    // Move the reader to the results rather than leaving them at the top of the
-    // page wondering whether the button did anything. The result count, not the
-    // grid: landing on bare cards hides the controls that produced them.
-    var target = el.resultline || el.results;
-    if (target && target.scrollIntoView) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
-
-  function goToFood(townText) {
-    jumpTo({ track: FOOD_TRACK }, townText);
-  }
-
-  // Every category in the two shopping groups, read off GROUPS so the quick
-  // search cannot drift from the filter list the way a second hard-coded copy
-  // would.
-  function shoppingCategories() {
-    return GROUPS.reduce(function (acc, g) {
-      return (g[0] === SHOPPING_GROUP || g[0] === SHOPPING_SEASONAL)
-        ? acc.concat(g[1]) : acc;
-    }, []);
-  }
-
-  // Shopping is a set of categories inside Family & Childcare rather than a
-  // track of its own, so the quick search selects them all. Both halves are
-  // included -- somebody who needs school clothes this week and somebody
-  // waiting for the autumn sale both start from the same question.
-  function goToShopping(townText) {
-    jumpTo({ track: 'Family & Childcare', categories: shoppingCategories() }, townText);
-  }
-
   function updateEmptyCta(hasFilters) {
     if (!el.emptyCta) return;
     el.emptyCta.hidden = !hasFilters;
@@ -908,6 +830,33 @@
     return String(r.tags || '').split(',')
       .map(function (t) { return t.trim(); })
       .filter(function (t, i, all) { return t && all.indexOf(t) === i; });
+  }
+
+  // Tags are written for the search box, so most of them restate the category,
+  // track or town -- which the card already prints at the top. Measured on the
+  // live data, 168 of 188 chips on the first page of results said something the
+  // same card said somewhere else. A chip that repeats the line above it costs
+  // space and teaches the reader to skip the row, so only the tags that add a
+  // word are shown. Every tag still goes into the search index: this hides a
+  // chip, it never narrows what can be found.
+  //
+  // Both sides are reduced to words before comparing, because the tags do not
+  // always carry a record's punctuation -- "children s resale / consignment"
+  // against "Children's Resale / Consignment" is the same thing said twice.
+  // Whole tokens only, so the tag "care" is not swallowed by "childcare".
+  function wordsOf(value) {
+    return ' ' + String(value || '').toLowerCase()
+      .replace(/<[^>]*>/g, ' ')
+      .replace(/&[a-z]+;/g, ' ')
+      .replace(/[^a-z0-9]+/g, ' ')
+      .trim() + ' ';
+  }
+
+  function newTagsOf(r, shown) {
+    var text = wordsOf(shown);
+    return tagsOf(r).filter(function (t) {
+      return text.indexOf(wordsOf(t)) === -1;
+    });
   }
 
   function servesTown(r, town) {
@@ -1620,8 +1569,6 @@
       el.search.value = '';
       el.track.value = '';
       state.counties = [];
-      if (el.foodTown) el.foodTown.value = '';
-      if (el.shopTown) el.shopTown.value = '';
       Array.prototype.forEach.call(el.toggles, function (t) { t.checked = false; });
       syncTownUI();
       syncCountyUI();
@@ -1631,40 +1578,8 @@
       el.search.focus();
     });
 
-    // Find food assistance. The button works on its own -- an empty town box
-    // just lands on the whole section -- so the input is an accelerator, never
-    // a thing you have to fill in first.
-    if (el.foodBtn) {
-      el.foodBtn.addEventListener('click', function () {
-        goToFood(el.foodTown ? el.foodTown.value : '');
-      });
-    }
-    if (el.foodTown) {
-      el.foodTown.addEventListener('keydown', function (event) {
-        if (event.key === 'Enter') {
-          event.preventDefault();
-          goToFood(this.value);
-        }
-      });
-    }
-
     if (el.shopReset) {
       el.shopReset.addEventListener('click', function () { el.reset.click(); });
-    }
-
-    // Find affordable family shopping. Same shape as the food one above.
-    if (el.shopBtn) {
-      el.shopBtn.addEventListener('click', function () {
-        goToShopping(el.shopTown ? el.shopTown.value : '');
-      });
-    }
-    if (el.shopTown) {
-      el.shopTown.addEventListener('keydown', function (event) {
-        if (event.key === 'Enter') {
-          event.preventDefault();
-          goToShopping(this.value);
-        }
-      });
     }
 
     // One delegated handler covers every card's "Read more" toggle, so
