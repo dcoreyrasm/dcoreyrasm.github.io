@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-14T04:10:59.064Z",
+  "generated": "2026-10-14T04:55:40.751Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 798,
+  "count": 810,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -24,6 +24,8 @@
     "Birth-to-Three / Early Intervention",
     "Caregiver Support Group",
     "Center-Based Daycare",
+    "Children's Resale / Consignment",
+    "Clothing & Household Resale",
     "College Access / Readiness",
     "Community Meals / Soup Kitchen",
     "Companion Services",
@@ -34,6 +36,7 @@
     "Elder Transportation",
     "Emergency Pet Foster Care",
     "Emergency Veterinary Care",
+    "Family Thrift Store",
     "Food Bank / Food Pantry",
     "Geriatric Care Manager",
     "High School (Private)",
@@ -7617,6 +7620,110 @@
       ]
     },
     {
+      "id": "recUqzFHj6ElOeLW6",
+      "name": "Goodwill Bridgeport",
+      "track": "Family & Childcare",
+      "category": "Family Thrift Store",
+      "specificType": "Family affordable secondhand shopping; clothing and household items vary by store",
+      "town": "Bridgeport",
+      "address": "165 Ocean Terrace, Bridgeport, CT",
+      "website": "https://www.gwct.org/locations",
+      "notes": "Family-focused thrift/resale lead; official brand location verified 2026-10-14. Items and buyback/donation rules vary by location.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Family Thrift Store"
+    },
+    {
+      "id": "rec3ckdGhG4NAxRcz",
+      "name": "Goodwill Fairfield",
+      "track": "Family & Childcare",
+      "category": "Family Thrift Store",
+      "specificType": "Family affordable secondhand shopping; clothing and household items vary by store",
+      "town": "Fairfield",
+      "address": "500 Kings Highway East, Fairfield, CT",
+      "website": "https://www.gwct.org/locations",
+      "notes": "Family-focused thrift/resale lead; official brand location verified 2026-10-14. Items and buyback/donation rules vary by location.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Family Thrift Store"
+    },
+    {
+      "id": "recPgdmWGdZMmH1h1",
+      "name": "Goodwill Hamden",
+      "track": "Family & Childcare",
+      "category": "Family Thrift Store",
+      "specificType": "Family affordable secondhand shopping; clothing and household items vary by store",
+      "town": "Hamden",
+      "address": "2175 Dixwell Avenue, Hamden, CT",
+      "website": "https://www.goodwillsne.org/locations/",
+      "notes": "Family-focused thrift/resale lead; official brand location verified 2026-10-14. Items and buyback/donation rules vary by location.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Family Thrift Store"
+    },
+    {
+      "id": "recg7os9ttxZpE9JH",
+      "name": "Goodwill New Britain",
+      "track": "Family & Childcare",
+      "category": "Family Thrift Store",
+      "specificType": "Family affordable secondhand shopping; clothing and household items vary by store",
+      "town": "New Britain",
+      "address": "615 Hartford Road, New Britain, CT",
+      "website": "https://www.goodwillsne.org/locations/",
+      "notes": "Family-focused thrift/resale lead; official brand location verified 2026-10-14. Items and buyback/donation rules vary by location.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Family Thrift Store"
+    },
+    {
+      "id": "recPZ5NAli26KPhMB",
+      "name": "Goodwill New Haven Westville",
+      "track": "Family & Childcare",
+      "category": "Family Thrift Store",
+      "specificType": "Family affordable secondhand shopping; clothing and household items vary by store",
+      "town": "New Haven",
+      "address": "61 Amity Road, New Haven, CT",
+      "website": "https://www.goodwillsne.org/locations/",
+      "notes": "Family-focused thrift/resale lead; official brand location verified 2026-10-14. Items and buyback/donation rules vary by location.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Family Thrift Store"
+    },
+    {
+      "id": "reciszbmgKvxVmsAm",
+      "name": "Goodwill Norwalk",
+      "track": "Family & Childcare",
+      "category": "Family Thrift Store",
+      "specificType": "Family affordable secondhand shopping; clothing and household items vary by store",
+      "town": "Norwalk",
+      "address": "15 Cross Street, Norwalk, CT",
+      "website": "https://www.gwct.org/locations",
+      "notes": "Family-focused thrift/resale lead; official brand location verified 2026-10-14. Items and buyback/donation rules vary by location.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Family Thrift Store"
+    },
+    {
+      "id": "recygwPGLQ1KKPazU",
+      "name": "Goodwill Shelton",
+      "track": "Family & Childcare",
+      "category": "Family Thrift Store",
+      "specificType": "Family affordable secondhand shopping; clothing and household items vary by store",
+      "town": "Shelton",
+      "address": "397 Bridgeport Avenue, Shelton, CT",
+      "website": "https://www.gwct.org/locations",
+      "notes": "Family-focused thrift/resale lead; official brand location verified 2026-10-14. Items and buyback/donation rules vary by location.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Family Thrift Store"
+    },
+    {
+      "id": "reccyEK7zddOSWNCM",
+      "name": "Goodwill Stamford West Broad",
+      "track": "Family & Childcare",
+      "category": "Family Thrift Store",
+      "specificType": "Family affordable secondhand shopping; clothing and household items vary by store",
+      "town": "Stamford",
+      "address": "1 West Broad Street, Stamford, CT",
+      "website": "https://www.gwct.org/locations",
+      "notes": "Family-focused thrift/resale lead; official brand location verified 2026-10-14. Items and buyback/donation rules vary by location.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Family Thrift Store"
+    },
+    {
       "id": "recHSHaE3eg9Rmuyf",
       "name": "Granby Senior Van Transportation Service",
       "track": "Elder Care",
@@ -13580,6 +13687,19 @@
       ]
     },
     {
+      "id": "rec0X9kAF91Ac1MMh",
+      "name": "Once Upon A Child Enfield",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "specificType": "Family affordable secondhand shopping; clothing and household items vary by store",
+      "town": "Enfield",
+      "address": "25 Palomba Drive, Enfield, CT",
+      "website": "https://onceuponachild.com/locations/enfield-ct/",
+      "notes": "Family-focused thrift/resale lead; official brand location verified 2026-10-14. Items and buyback/donation rules vary by location.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Children's Resale / Consignment"
+    },
+    {
       "id": "recOstFjZDa5f3haJ",
       "name": "Open Doors Food Pantry Norwalk",
       "track": "Food & Basic Needs",
@@ -14940,6 +15060,45 @@
         "Infant Care",
         "Toddler Care"
       ]
+    },
+    {
+      "id": "recZmVXp5Th1t9jwf",
+      "name": "Savers Manchester",
+      "track": "Family & Childcare",
+      "category": "Clothing & Household Resale",
+      "specificType": "Family affordable secondhand shopping; clothing and household items vary by store",
+      "town": "Manchester",
+      "address": "432 Buckland Hills Drive, Manchester, CT",
+      "website": "https://stores.savers.com/ct/manchester/savers-thrift-store-1147.html",
+      "notes": "Family-focused thrift/resale lead; official brand location verified 2026-10-14. Items and buyback/donation rules vary by location.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Clothing & Household Resale"
+    },
+    {
+      "id": "rech1ZBDhfS6Mudvv",
+      "name": "Savers Newington",
+      "track": "Family & Childcare",
+      "category": "Clothing & Household Resale",
+      "specificType": "Family affordable secondhand shopping; clothing and household items vary by store",
+      "town": "Newington",
+      "address": "3137 Berlin Turnpike, Newington, CT",
+      "website": "https://stores.savers.com/ct/newington/savers-thrift-store-1156.html",
+      "notes": "Family-focused thrift/resale lead; official brand location verified 2026-10-14. Items and buyback/donation rules vary by location.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Clothing & Household Resale"
+    },
+    {
+      "id": "rec8kLSOeNNQBpJ2U",
+      "name": "Savers Orange",
+      "track": "Family & Childcare",
+      "category": "Clothing & Household Resale",
+      "specificType": "Family affordable secondhand shopping; clothing and household items vary by store",
+      "town": "Orange",
+      "address": "130 Boston Post Road, Orange, CT",
+      "website": "https://stores.savers.com/ct/orange/savers-thrift-store-1153.html",
+      "notes": "Family-focused thrift/resale lead; official brand location verified 2026-10-14. Items and buyback/donation rules vary by location.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Clothing & Household Resale"
     },
     {
       "id": "recL1wxhmHGdvUtsO",

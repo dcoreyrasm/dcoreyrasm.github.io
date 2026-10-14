@@ -13,17 +13,17 @@ between sessions: read them fresh from this section each time this brief is
 given to you, and if you are working from a remembered figure you are working
 from a gap that has already moved.
 
-798 listings across 130 Connecticut towns of 169.
+810 listings across 130 Connecticut towns of 169.
 
 That breadth is real. The depth behind it is the problem:
 
-  a website              387 / 798   48%   the single most valuable gap: without a URL nobody can ever re-check the listing
-  operating hours        175 / 798   22%   the specific promise on the front of the page
-  a real cost note       118 / 798   15%   excludes the state-fee boilerplate
-  a real waitlist note    59 / 798    7%   excludes the "contact the program directly" boilerplate
-  a verified date        329 / 798   41%   without one we cannot tell fresh from forgotten
-  a phone or email       693 / 798   87%
-  services tagged        690 / 798   86%   what makes a listing findable beyond its one category
+  a website              399 / 810   49%   the single most valuable gap: without a URL nobody can ever re-check the listing
+  operating hours        175 / 810   22%   the specific promise on the front of the page
+  a real cost note       118 / 810   15%   excludes the state-fee boilerplate
+  a real waitlist note    59 / 810    7%   excludes the "contact the program directly" boilerplate
+  a verified date        341 / 810   42%   without one we cannot tell fresh from forgotten
+  a phone or email       693 / 810   86%
+  services tagged        690 / 810   85%   what makes a listing findable beyond its one category
 
 A listing can carry a value and still say nothing. Two boilerplate lines were
 written onto hundreds of records by the original state import -- "Contact the
@@ -36,7 +36,7 @@ that sounds more specific than what you actually know.
 
 WEBSITE COVERAGE BY TRACK
 
-  Family & Childcare      545 listings, 134 with a website (25%)
+  Family & Childcare      557 listings, 146 with a website (26%)
   Teens & High School      86 listings,  86 with a website (100%)
   Pet Care & Resources     61 listings,  61 with a website (100%)
   Food & Basic Needs       55 listings,  55 with a website (100%)
