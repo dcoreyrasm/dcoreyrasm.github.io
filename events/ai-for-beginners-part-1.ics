@@ -5,13 +5,13 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ai-for-beginners-part1-20261022@daricecorey.com
-DTSTAMP:20261018T152400Z
+DTSTAMP:20261018T160000Z
 DTSTART:20261022T230000Z
 DTEND:20261023T000000Z
 SUMMARY:AI for Beginners\, Part 1: Getting Started with ChatGPT
-LOCATION:https://us06web.zoom.us/j/82080381519?pwd=GQIaahCcUWKbb4vHEK7aMFgGxo9GXc.1
-URL:https://us06web.zoom.us/j/82080381519?pwd=GQIaahCcUWKbb4vHEK7aMFgGxo9GXc.1
-DESCRIPTION:Join on Zoom: https://us06web.zoom.us/j/82080381519?pwd=GQIaahCcUWKbb4vHEK7aMFgGxo9GXc.1\nMeeting ID: 820 8038 1519\n\nA 30-minute guided workshop followed by open practice and Q&A. Bring something real you'd like help with.\n\nHosted by Darice Corey\, Darice Corey\, LLC\nQuestions? info@daricecorey.com
+LOCATION:Zoom (join link is on your registration confirmation page)
+URL:https://www.daricecorey.com/ai-for-beginners.html
+DESCRIPTION:Live on Zoom. Your Zoom join link is on the confirmation page you saw after registering. If you can't find it\, email info@daricecorey.com and I'll send it.\n\nA 30-minute guided workshop followed by open practice and Q&A.\n\nHosted by Darice Corey\, Darice Corey\, LLC
 ORGANIZER;CN=Darice Corey:mailto:info@daricecorey.com
 STATUS:CONFIRMED
 TRANSP:OPAQUE
