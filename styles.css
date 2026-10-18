@@ -588,7 +588,8 @@ footer p { font-size:.78rem; color:var(--muted); }
 .service-card li { font-size:.9rem; color:var(--muted); padding-left:1.1rem; position:relative; line-height:1.55; }
 .service-card li::before { content:''; position:absolute; left:0; top:.6em; width:.45rem; height:2px; background:var(--coral); }
 .service-card .btn-ghost { margin-top:auto; align-self:flex-start; }
-@media (max-width:900px) { .book-grid, .services-grid { grid-template-columns:1fr; } }
+.services-grid.two-up { grid-template-columns:repeat(2,1fr); }
+@media (max-width:900px) { .book-grid, .services-grid, .services-grid.two-up { grid-template-columns:1fr; } }
 .contact-form { scroll-margin-top: calc(var(--header-h) + 1.5rem); }
 
 /* ============================================================
