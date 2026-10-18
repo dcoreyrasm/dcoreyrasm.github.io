@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-11T18:36:16.493Z",
-  "count": 420,
+  "generated": "2026-10-18T12:36:06.568Z",
+  "count": 417,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -62,7 +62,6 @@
     "Greenwich",
     "Groton",
     "Guilford",
-    "Haddam",
     "Hamden",
     "Hampton",
     "Hartford",
@@ -358,22 +357,6 @@
       "officialWebsite": "https://www.southingtonct.gov/ahf/",
       "dateAdded": "2026-08-26",
       "slug": "2026-southington-apple-harvest-festival"
-    },
-    {
-      "name": "2026 Trumbull Arts Festival",
-      "town": "Trumbull",
-      "region": "Fairfield County",
-      "audiences": [
-        "Date Night"
-      ],
-      "bestTime": "Specific event/date",
-      "officialWebsite": "https://trumbull-ct.gov/m/newsflash/Home/Detail/3184",
-      "address": "5866 Main Street, Trumbull, CT 06611",
-      "notes": "TODAY only: Sunday, October 11, 2026, 10 a.m.-3 p.m. on Town Hall Green. Free admission and parking. Municipal news states closing time was revised to 3 p.m.; general town page still lists 4 p.m.",
-      "dateAdded": "2026-08-19",
-      "eventStart": "2026-10-11",
-      "eventEnd": "2026-10-11",
-      "slug": "2026-trumbull-arts-festival"
     },
     {
       "name": "Air Line State Park Trail",
@@ -744,34 +727,6 @@
       "slug": "bartlett-arboretum-and-gardens"
     },
     {
-      "name": "Bartlett Arboretum October Third Thursday Walk & Talk",
-      "town": "Stamford",
-      "region": "Fairfield County",
-      "experienceTypes": [
-        "Hiking & Outdoors",
-        "Fall & Seasonal"
-      ],
-      "categories": [
-        "Gardens & Arboretums",
-        "Easy Walks",
-        "Date Night"
-      ],
-      "audiences": [
-        "Date Night",
-        "Individual Exploration",
-        "Group Activities"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "Join a Master Gardener for a guided October walk focused on nut trees and fall foliage at Bartlett Arboretum & Gardens.",
-      "officialWebsite": "https://www.bartlettarboretum.org/events/2026/8/20/third-thursdays-walks-and-talks-at-the-bartlett-y6sdf-ttl4m",
-      "address": "151 Brookdale Road, Stamford, CT 06903",
-      "tryThis": "Find and identify two nut trees mentioned on the guided walk.",
-      "notes": "Thursday October 15, 2026, 10–11 a.m. Meets in the Silver Educational Center lobby. Free for members, $10 for nonmembers. Walking shoes recommended; event is separate from normal free grounds admission.",
-      "dateAdded": "2026-10-11",
-      "eventStart": "2026-10-15",
-      "slug": "bartlett-arboretum-october-third-thursday-walk-and-talk"
-    },
-    {
       "name": "Beardsley's Cider Mill & Orchard",
       "town": "Shelton",
       "experienceTypes": [
@@ -1038,10 +993,15 @@
     {
       "name": "Book Barn",
       "town": "Niantic",
+      "categories": [
+        "Bookstores",
+        "Something Different"
+      ],
       "audiences": [
         "Date Night"
       ],
       "officialWebsite": "https://www.bookbarnniantic.com/",
+      "notes": "Independent used and rare bookstore with several browsing locations in Niantic. Seasonal operating schedules change; check the official site before travel. Current October 10-18 sale ends October 18.",
       "dateAdded": "2026-08-13",
       "slug": "book-barn"
     },
@@ -1709,10 +1669,18 @@
     {
       "name": "Connecticut College Arboretum",
       "town": "New London",
+      "categories": [
+        "Gardens & Arboretums",
+        "Parks & Preserves",
+        "Easy Walks",
+        "Free / Low-Cost",
+        "Date Night"
+      ],
       "audiences": [
         "Date Night"
       ],
       "officialWebsite": "https://www.conncoll.edu/the-arboretum/",
+      "notes": "The college's free Arboretum grounds are open sunrise-sunset. Trail conditions and terrain vary; no specific accessible-trail guarantees established by the checked page.",
       "dateAdded": "2026-08-17",
       "slug": "connecticut-college-arboretum"
     },
@@ -2502,10 +2470,16 @@
     {
       "name": "Essex Steam Train & Riverboat",
       "town": "Essex",
+      "categories": [
+        "Trains & Scenic Rides",
+        "Scenic Views",
+        "Date Night"
+      ],
       "audiences": [
         "Date Night"
       ],
       "officialWebsite": "https://essexsteamtrain.com/",
+      "notes": "Rail rides and Connecticut River experiences have different schedules and tickets. Check the official event calendar and accessible boarding arrangements before reserving.",
       "dateAdded": "2026-08-13",
       "slug": "essex-steam-train-and-riverboat"
     },
@@ -3188,36 +3162,6 @@
       "slug": "hartford-stage-dracula-2026"
     },
     {
-      "name": "Harvest Glow 2026",
-      "town": "Hartford",
-      "region": "Hartford Area",
-      "experienceTypes": [
-        "Fall & Seasonal"
-      ],
-      "categories": [
-        "Festivals & Events",
-        "Corn Mazes",
-        "Something Different"
-      ],
-      "audiences": [
-        "Family",
-        "Group Activities"
-      ],
-      "bestTime": "Fall",
-      "whyGo": "An indoor fall event with glowing pumpkin displays, a corn maze, mini putt, a free train ride, photo spots, treats, and a pumpkin patch at the Connecticut Convention Center.",
-      "officialWebsite": "https://hartford.glowgardens.com/",
-      "address": "100 Columbus Blvd, Hartford, CT 06103",
-      "tryThis": "Find the hidden bees in the corn maze, ride the train, and choose a pumpkin.",
-      "notes": "Adult tickets are $12 plus a $2 service fee. Children ages 4-12 are $10 plus a $2 service fee, and children 3 and under are free. On-site tickets are limited, so advance online tickets are recommended by the organizer.",
-      "dateAdded": "2026-09-10",
-      "eventStart": "2026-09-12",
-      "eventEnd": "2026-10-11",
-      "ages": [
-        "All ages"
-      ],
-      "slug": "harvest-glow-2026"
-    },
-    {
       "name": "Harvey's Beach",
       "town": "Old Saybrook",
       "region": "Connecticut Shoreline",
@@ -3488,6 +3432,39 @@
       "slug": "humacao-salsa-lesson-social-night"
     },
     {
+      "name": "I-Park November Open Trails + Music",
+      "town": "East Haddam",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Hiking & Outdoors",
+        "Museum & Culture",
+        "Music & Events"
+      ],
+      "categories": [
+        "Easy Walks",
+        "Free / Low-Cost",
+        "Museums & Culture",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Family",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A free public day to walk I-Park’s art-filled nature trails and hear live local music in a setting that is normally open to visitors only during scheduled public programs.",
+      "officialWebsite": "https://www.i-park.org/event/november-open-trails-music/",
+      "address": "428 Hopyard Road, East Haddam, CT 06423",
+      "tryThis": "Walk the art-and-nature trails, choose three outdoor artworks that stand out to you, then stay for the live music.",
+      "notes": "The October 10 cycle passed; same recurring experience updated to new confirmed Saturday Nov 7 event, 9:30 AM-3:30 PM. Art trail, crafts, guided hiking and live music; free tickets, $10 voluntary suggested adult donation. Advance registration recommended; walk-in registration possible; no pets. Some paths gentle but no accessibility accommodations confirmed.",
+      "dateAdded": "2026-09-08",
+      "eventStart": "2026-11-07",
+      "ages": [
+        "All ages"
+      ],
+      "slug": "i-park-november-open-trails-music"
+    },
+    {
       "name": "Immerse HydroSpa Couples Wellness Experience",
       "town": "Glastonbury",
       "audiences": [
@@ -3610,7 +3587,7 @@
       "bestTime": "Fall",
       "whyGo": "A classic Shelton harvest stop with pick-your-own pumpkins, a mini corn maze, hayrides, fall flowers, apples, squash and farm scenery, plus a winery for an adults-focused add-on.",
       "officialWebsite": "https://www.jonesfamilyfarms.com/pumpkin-update",
-      "notes": "Pumpkin season is weather dependent. The official update currently says Sunday, September 27: check back. For September 28-October 30, posted regular hours are 10 AM-5:30 PM, weather permitting.",
+      "notes": "2026 pumpkin farm current through late October, weather permitting. Official Oct 17 farm update lists regular picking 10 AM-5:30 PM through Oct 30. Halloween Oct 31 hours should be confirmed separately. Always check today's pumpkin-status update and field availability.",
       "dateAdded": "2026-08-17",
       "eventStart": "2026-09-19",
       "eventEnd": "2026-10-31",
@@ -3740,36 +3717,6 @@
       "officialWebsite": "https://ctparks.com/parks/kent-falls-state-park",
       "dateAdded": "2026-08-13",
       "slug": "kent-falls-state-park"
-    },
-    {
-      "name": "Lady Kate Golden Hour Foliage Cruise",
-      "town": "Haddam",
-      "experienceTypes": [
-        "Waterfront",
-        "Fall & Seasonal",
-        "Date Night",
-        "Only in Connecticut"
-      ],
-      "categories": [
-        "Trains & Scenic Rides",
-        "Scenic Views",
-        "Date Night",
-        "Something Different"
-      ],
-      "audiences": [
-        "Date Night",
-        "Family",
-        "Group Activities"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A golden-hour Connecticut River cruise timed for fall color, with appetizers, small plates and desserts served aboard Lady Kate.",
-      "officialWebsite": "https://riverhousecruises.com/public-cruises/",
-      "address": "14 Little Meadow Rd, Haddam, CT 06438",
-      "tryThis": "Watch the changing light on the river and pick one favorite foliage view to photograph before sunset.",
-      "notes": "Current ticket prices are $59 for adults and $20 for kids. The cruise includes appetizers, a small-plates station and desserts. Region is left blank because the Airtable Region field does not include a Lower Connecticut River Valley option.",
-      "dateAdded": "2026-10-04",
-      "eventStart": "2026-10-16",
-      "slug": "lady-kate-golden-hour-foliage-cruise"
     },
     {
       "name": "Lake Waramaug State Park",
@@ -5953,10 +5900,16 @@
     {
       "name": "Shore Line Trolley Museum Scenic Trolley Ride",
       "town": "East Haven",
+      "categories": [
+        "Trains & Scenic Rides",
+        "Museums & Culture",
+        "Date Night"
+      ],
       "audiences": [
         "Date Night"
       ],
       "officialWebsite": "https://shorelinetrolley.org/",
+      "notes": "Vintage trolley rides and transit exhibits. Visitor center is accessible; boarding historic trolley cars requires navigating 2-3 steps according to museum's official guidance. Ask provider for current train and site accessibility details before visiting.",
       "dateAdded": "2026-08-24",
       "slug": "shore-line-trolley-museum-scenic-trolley-ride"
     },
@@ -6562,10 +6515,15 @@
     {
       "name": "The Goodspeed",
       "town": "East Haddam",
+      "categories": [
+        "Theater & Movies",
+        "Date Night"
+      ],
       "audiences": [
         "Date Night"
       ],
       "officialWebsite": "https://www.goodspeed.org/seasons/2026-season",
+      "notes": "Historic East Haddam theater offering current productions. Accessibility: assisted-listening equipment, some wheelchair seating by box-office arrangement; Annie special dates include Dec 4 open captions and Dec 13 sensory-friendly performance. Confirm seating in advance.",
       "dateAdded": "2026-08-13",
       "slug": "the-goodspeed"
     },
@@ -6865,11 +6823,16 @@
       "name": "UConn Arboretum & Campus Tree Tour",
       "town": "Storrs",
       "region": "Quiet Corner & Northeastern CT",
+      "categories": [
+        "Gardens & Arboretums",
+        "Easy Walks"
+      ],
       "audiences": [
         "Date Night"
       ],
       "bestTime": "Anytime",
       "officialWebsite": "https://arboretum.uconn.edu/",
+      "notes": "Self-guided campus tree and arboretum walk. The original arboretum.uconn.edu link was not consistently reachable during research; alternative official UConn information is linked in Verification Notes. Specific accessibility of the route not established.",
       "dateAdded": "2026-08-21",
       "slug": "uconn-arboretum-and-campus-tree-tour"
     },
