@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Darice Corey LLC//AI for Beginners//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ai-for-beginners-part1-20261022@daricecorey.com
+DTSTAMP:20261018T152400Z
+DTSTART:20261022T230000Z
+DTEND:20261023T000000Z
+SUMMARY:AI for Beginners\, Part 1: Getting Started with ChatGPT
+LOCATION:https://us06web.zoom.us/j/82080381519?pwd=GQIaahCcUWKbb4vHEK7aMFgGxo9GXc.1
+URL:https://us06web.zoom.us/j/82080381519?pwd=GQIaahCcUWKbb4vHEK7aMFgGxo9GXc.1
+DESCRIPTION:Join on Zoom: https://us06web.zoom.us/j/82080381519?pwd=GQIaahCcUWKbb4vHEK7aMFgGxo9GXc.1\nMeeting ID: 820 8038 1519\n\nA 30-minute guided workshop followed by open practice and Q&A. Bring something real you'd like help with.\n\nHosted by Darice Corey\, Darice Corey\, LLC\nQuestions? info@daricecorey.com
+ORGANIZER;CN=Darice Corey:mailto:info@daricecorey.com
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:AI for Beginners starts in 30 minutes
+END:VALARM
+END:VEVENT
+END:VCALENDAR
