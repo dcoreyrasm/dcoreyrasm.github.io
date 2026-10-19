@@ -53,6 +53,10 @@ DEFAULT_ICON = "doc_stack"   # neutral; retheme in the PR if you want
 
 MIN_RECIPIENTS = 5
 SKIP_NAME = re.compile(r"\b(test|resend)\b", re.I)
+# Only "Darice on AI" issues become blog posts. Other newsletters sent from the
+# same MailerLite account (for example, Darice's Community AI) have no tool
+# cards and must be ignored, or the parser raises and the run fails.
+SERIES_NAME = re.compile(r"^\s*darice on ai\b", re.I)
 
 CLOSER = ("Want this in your inbox each week? "
           "[Subscribe to Darice on AI](https://www.daricecorey.com/newsletter.html).")
@@ -79,6 +83,8 @@ def fetch_campaign(api_key, cid):
 
 
 def is_real_issue(c):
+    if not SERIES_NAME.match(c.get("name", "")):
+        return False
     if SKIP_NAME.search(c.get("name", "")):
         return False
     return ((c.get("stats") or {}).get("sent") or 0) >= MIN_RECIPIENTS
