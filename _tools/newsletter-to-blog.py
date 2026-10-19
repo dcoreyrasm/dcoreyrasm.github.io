@@ -150,7 +150,10 @@ def parse_issue(campaign):
     intro = clean(intro_el.get_text()) if intro_el else ""
 
     sections = []
-    cards = soup.select("table.bg-callout")
+    # Other email blocks (for example, the Past issues archive) use the same
+    # table class. Only tool cards have the card heading class.
+    cards = [card for card in soup.select("table.bg-callout")
+             if card.select_one("h2.card-h")]
     for i, card in enumerate(cards[:4]):
         tool = TOOLS[i] if i < len(TOOLS) else clean(
             (card.select_one("span.t-accent") or card).get_text())
