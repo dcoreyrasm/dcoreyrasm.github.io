@@ -36,6 +36,10 @@ POSTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "_pos
 # naming ever changes.
 MIN_RECIPIENTS = 5          # 1-2 recipient sends are test sends
 SKIP_NAME = re.compile(r"\b(test|resend)\b", re.I)
+# Only "Darice on AI" issues become blog posts. Other newsletters sent from the
+# same MailerLite account (for example, Darice's Community AI) have no tool
+# cards and must be ignored, or the parser raises and the run fails.
+SERIES_NAME = re.compile(r"^\s*darice on ai\b", re.I)
 
 
 def fetch_sent(api_key):
@@ -48,6 +52,8 @@ def fetch_sent(api_key):
 
 
 def is_real_issue(c):
+    if not SERIES_NAME.match(c.get("name", "")):
+        return False
     if SKIP_NAME.search(c.get("name", "")):
         return False
     sent = (c.get("stats") or {}).get("sent") or 0
