@@ -17,19 +17,30 @@ spec.loader.exec_module(newsletter)
 
 
 def campaign_with_archive_callout():
-    cards = "".join(
-        f"""
+    cards = []
+    for i, tool in enumerate(newsletter.TOOLS, 1):
+        if i == 1:
+            content = """
+              <h2 class="card-h"></h2>
+              <h2>Claude feature 1</h2>
+              <p>A description of the feature.</p>
+              <ol><li>Open the app.</li></ol>
+            """
+        else:
+            content = f"""
+              <h2 class="card-h">{tool} feature {i}</h2>
+              <p>A description of the feature.</p>
+              <p>1. Open the app.</p>
+            """
+        cards.append(f"""
         <table class="bg-callout">
           <tr><td>
-            <h2 class="card-h">{tool} feature {i}</h2>
-            <p>A description of the feature.</p>
-            <p>1. Open the app.</p>
+            {content}
             <div class="t-faint"><a href="https://example.com/{tool.lower()}">Source</a></div>
           </td></tr>
         </table>
-        """
-        for i, tool in enumerate(newsletter.TOOLS, 1)
-    )
+        """)
+    cards = "".join(cards)
     return {
         "name": "Darice on AI - Test issue - 2026-10-19",
         "scheduled_for": "2026-10-19",

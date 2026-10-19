@@ -157,18 +157,25 @@ def parse_issue(campaign):
     for i, card in enumerate(cards[:4]):
         tool = TOOLS[i] if i < len(TOOLS) else clean(
             (card.select_one("span.t-accent") or card).get_text())
-        h2 = card.select_one("h2.card-h") or card.select_one("h2")
-        feature = clean(h2.get_text()) if h2 else ""
+        headings = card.select("h2.card-h, h2, h3")
+        feature = next((clean(heading.get_text()) for heading in headings
+                        if clean(heading.get_text())), "")
 
-        # steps: paragraphs led by a "N." accent span
+        # Steps may be numbered paragraphs or items in an ordered list.
         steps = []
         desc = ""
         for p in card.find_all("p"):
             txt = clean(p.get_text())
             if re.match(r"^\d+\.", txt):
                 steps.append(re.sub(r"^\d+\.\s*", "", txt))
-            elif not desc and txt:
+            elif not desc and txt and not p.find_parent("ol"):
                 desc = txt
+        for item in card.select("ol > li"):
+            txt = clean(item.get_text())
+            if txt:
+                step = re.sub(r"^\d+\.\s*", "", txt)
+                if step not in steps:
+                    steps.append(step)
 
         when_cell = card.select_one("td.when-cell")
         when = ""
