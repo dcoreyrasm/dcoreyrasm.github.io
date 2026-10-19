@@ -173,6 +173,25 @@
       </div>
     </section>
 
+    <section aria-labelledby="coming-soon-heading" id="workshop-updates" style="background:var(--bg2);">
+      <div class="container">
+        <p class="section-label">Coming Soon</p>
+        <h2 class="section-heading" id="coming-soon-heading">Workshops on Claude, Gemini, and Copilot.</h2>
+        <p class="section-sub">After this ChatGPT series, I'm planning beginner workshops on Claude, Google Gemini, and Microsoft Copilot, with the same plain-language approach and the same focus on using AI safely. Join my workshop updates list and I'll email you when new dates open, along with other workshops and offerings.</p>
+        <form id="workshop-updates-form" class="contact-form" style="margin:0;max-width:560px;" action="https://assets.mailerlite.com/jsonp/2474527/forms/201713282076116487/subscribe" method="POST" aria-label="Workshop updates signup">
+          <div class="form-row">
+            <div class="form-group"><label for="wu-name">First Name</label><input type="text" id="wu-name" name="fields[name]" autocomplete="given-name" placeholder="Jane" /></div>
+            <div class="form-group"><label for="wu-email">Email</label><input type="email" id="wu-email" name="fields[email]" autocomplete="email" placeholder="jane@example.com" required aria-required="true" /></div>
+          </div>
+          <input type="hidden" name="ml-submit" value="1" />
+          <input type="hidden" name="anticsrf" value="true" />
+          <button type="submit" class="btn-primary">Send Me Workshop Updates</button>
+          <p id="wu-status" role="status" aria-live="polite" style="margin-top:1rem;line-height:1.6;"></p>
+        </form>
+        <p style="font-size:.9rem;line-height:1.6;max-width:560px;margin-top:.5rem;">Free. You'll get a confirmation email first, and you can unsubscribe anytime.</p>
+      </div>
+    </section>
+
     <section aria-labelledby="questions-heading">
       <div class="container">
         <p class="section-label">Questions</p>
@@ -227,5 +246,27 @@
     </div>
     <p class="footer-base">&copy; 2026 Darice Corey. All rights reserved. Speaking, consulting, and workshops outside my Yale role are offered through Darice Corey, LLC.</p>
   </footer>
+  <script>
+    // Sends the workshop updates signup to MailerLite without leaving the page.
+    (function () {
+      var form = document.getElementById('workshop-updates-form');
+      var status = document.getElementById('wu-status');
+      if (!form || !window.fetch) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        fetch(form.action, { method: 'POST', body: new FormData(form), mode: 'no-cors' })
+          .then(function () {
+            form.reset();
+            status.textContent = "Thank you! Please check your email and confirm your signup.";
+          })
+          .catch(function () {
+            status.textContent = "Something went wrong. Please try again, or email info@daricecorey.com.";
+          })
+          .then(function () { btn.disabled = false; });
+      });
+    })();
+  </script>
 </body>
 </html>
