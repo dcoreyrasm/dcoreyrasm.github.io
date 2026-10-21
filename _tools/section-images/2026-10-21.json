@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-10-21",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "doc_stack",
+      "label": "Chat Font and Color Mode"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "doc_stack",
+      "label": "Appearance, Contrast, and Accent Color"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "doc_stack",
+      "label": "Ask Copilot to Make Your Screen Easier to Read"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "doc_stack",
+      "label": "Dark Theme"
+    }
+  ]
+}
