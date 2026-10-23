@@ -27,6 +27,23 @@
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#16131F" />
   <link rel="stylesheet" href="styles.css?v=20261018a" />
+  <style>
+    /* Course page accents: brand colors plus pops of gold, teal, and coral.
+       Pops are used only as fills behind Deep Plum text (6.8:1 or higher in both themes). */
+    .sb-gold { --pop:#F5B841; } .sb-teal { --pop:#2DD4BF; } .sb-coral { --pop:#FB7185; } .sb-sky { --pop:#60A5FA; }
+    .sb-pills { display:flex; flex-wrap:wrap; gap:.6rem; margin:0 0 1.75rem; padding:0; list-style:none; }
+    .sb-pill { background:var(--pop); color:#16131F; font-weight:600; font-size:.9rem; padding:.4rem .95rem; border-radius:999px; }
+    .sb-checks { list-style:none; padding:0; margin:0 0 2rem; }
+    .sb-checks li { display:flex; gap:.75rem; align-items:flex-start; line-height:1.6; margin-bottom:.7rem; }
+    .sb-checks li::before { content:"✓"; flex:none; width:1.6rem; height:1.6rem; border-radius:50%; background:var(--pop,#F5B841); color:#16131F; font-weight:700; font-size:.85rem; display:flex; align-items:center; justify-content:center; margin-top:.1rem; }
+    .sb-checks li:nth-child(3n+1) { --pop:#F5B841; } .sb-checks li:nth-child(3n+2) { --pop:#2DD4BF; } .sb-checks li:nth-child(3n+3) { --pop:#FB7185; }
+    .sb-legend { display:flex; flex-wrap:wrap; gap:.6rem; margin:0 0 2rem; padding:0; list-style:none; }
+    .sb-session { position:relative; border-top:4px solid var(--pop); }
+    .sb-session-head { display:flex; align-items:center; gap:.75rem; margin-bottom:.5rem; }
+    .sb-num { flex:none; width:2.4rem; height:2.4rem; border-radius:50%; background:var(--pop); color:#16131F; font-weight:700; display:flex; align-items:center; justify-content:center; }
+    .sb-phase { display:inline-block; align-self:flex-start; width:auto; background:var(--pop); color:#16131F; font-size:.75rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:.15rem .6rem; border-radius:999px; margin-top:.75rem; }
+    .sb-ribbon { display:inline-block; background:#F5B841; color:#16131F; font-size:.8rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:.3rem .8rem; border-radius:999px; margin-bottom:.75rem; }
+  </style>
   <!-- Microsoft Clarity -->
   <script type="text/javascript">if(!window.__daOptOut){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xdrtc0i2un");}</script>
 </head>
@@ -41,6 +58,7 @@
         <p class="section-label" style="color:var(--coral);">Live Course on Zoom</p>
         <h1 class="section-heading" style="color:#fff;">Start Your Business in 12 Sessions Using AI</h1>
         <p style="font-size:1.1rem;color:#fff;font-weight:500;margin-bottom:.75rem;">Sundays, 2:00 to 4:00 PM Eastern, November 1, 2026 to February 14, 2027</p>
+        <ul class="sb-pills" aria-label="Course at a glance"><li class="sb-pill sb-gold">12 live sessions</li><li class="sb-pill sb-teal">Free tools first</li><li class="sb-pill sb-coral">Starts November 1</li></ul>
         <p style="font-size:1rem;color:rgba(255,255,255,.8);max-width:620px;line-height:1.75;margin-bottom:2.5rem;">I started Darice Corey, LLC this fall and used AI to do a lot of the heavy lifting: my brand, my documents, my website, my mailing list, and a way to get paid. In this course, I'll show you how to do the same for your business, step by step, starting with free tools. Every session ends with something real you built.</p>
         <div class="hero-ctas">
           <a href="STRIPE_EARLY_BIRD_URL" class="btn-primary" target="_blank" rel="noopener">Register for the Full Course ($697 Early Bird)</a>
@@ -54,7 +72,7 @@
         <div>
           <p class="section-label">About the Course</p>
           <h2 class="section-heading" id="about-course-heading">What you'll leave with.</h2>
-          <ul style="line-height:1.9;margin-bottom:2rem;padding-left:1.2rem;">
+          <ul class="sb-checks">
             <li>A business idea you've tested, and a one-page plan</li>
             <li>A brand, built with Claude and ChatGPT</li>
             <li>Your proposal, services sheet, and a short pitch deck</li>
@@ -79,19 +97,20 @@
         <p class="section-label">The Sessions</p>
         <h2 class="section-heading" id="sessions-heading">Twelve Sundays, one working business.</h2>
         <p class="section-sub">All sessions are live on Zoom, Sundays, 2:00 to 4:00 PM Eastern. We take a few weeks off for the holidays.</p>
+        <ul class="sb-legend" aria-label="Course phases"><li class="sb-pill sb-gold">Sessions 1 to 4: Plan and set up</li><li class="sb-pill sb-teal">Sessions 5 to 8: Build</li><li class="sb-pill sb-coral">Sessions 9 to 12: Grow</li></ul>
         <div class="services-grid">
-          <div class="service-card"><h3>1. Your business idea</h3><p style="margin:.25rem 0 .5rem;font-weight:500;">November 1</p><p>Shape your idea, test it, and write a one-page plan.</p></div>
-          <div class="service-card"><h3>2. Setting up the business</h3><p style="margin:.25rem 0 .5rem;font-weight:500;">November 8</p><p>A setup checklist, formation service examples, and the questions to ask first.</p></div>
-          <div class="service-card"><h3>3. Branding</h3><p style="margin:.25rem 0 .5rem;font-weight:500;">November 15</p><p>Your brand, logo, and graphics with Claude and ChatGPT.</p></div>
-          <div class="service-card"><h3>4. Documents and templates</h3><p style="margin:.25rem 0 .5rem;font-weight:500;">November 22</p><p>A proposal, a services sheet, a pitch deck, and an invoice template.</p></div>
-          <div class="service-card"><h3>5. Website, part 1</h3><p style="margin:.25rem 0 .5rem;font-weight:500;">December 6</p><p>Write your site with Claude and publish it for free.</p></div>
-          <div class="service-card"><h3>6. Website, part 2</h3><p style="margin:.25rem 0 .5rem;font-weight:500;">December 20</p><p>Your own domain, a secure site, and easy updates.</p></div>
-          <div class="service-card"><h3>7. Newsletter and forms</h3><p style="margin:.25rem 0 .5rem;font-weight:500;">January 3</p><p>A mailing list, signup forms, a welcome email, and a contact form.</p></div>
-          <div class="service-card"><h3>8. Getting paid</h3><p style="margin:.25rem 0 .5rem;font-weight:500;">January 10</p><p>Payment links, including pay-later options, and delivering what people paid for.</p></div>
-          <div class="service-card"><h3>9. Marketing</h3><p style="margin:.25rem 0 .5rem;font-weight:500;">January 17</p><p>A starter content plan, social graphics, and your first posts.</p></div>
-          <div class="service-card"><h3>10. Skills: teach Claude your way</h3><p style="margin:.25rem 0 .5rem;font-weight:500;">January 31</p><p>Customize ready-made templates so Claude writes and works the way you do.</p></div>
-          <div class="service-card"><h3>11. Connectors</h3><p style="margin:.25rem 0 .5rem;font-weight:500;">February 7</p><p>Connect Claude to your tools safely, and learn what AI can do on your computer.</p></div>
-          <div class="service-card"><h3>12. Running it and choosing plans</h3><p style="margin:.25rem 0 .5rem;font-weight:500;">February 14</p><p>Time-saving routines, upkeep, and a tool budget that fits.</p></div>
+          <div class="service-card sb-session sb-gold"><div class="sb-session-head"><span class="sb-num" aria-hidden="true">1</span><h3>Your business idea</h3></div><p style="margin:.25rem 0 .5rem;font-weight:500;">November 1</p><p>Shape your idea, test it, and write a one-page plan.</p><span class="sb-phase">Plan and set up</span></div>
+          <div class="service-card sb-session sb-gold"><div class="sb-session-head"><span class="sb-num" aria-hidden="true">2</span><h3>Setting up the business</h3></div><p style="margin:.25rem 0 .5rem;font-weight:500;">November 8</p><p>A setup checklist, formation service examples, and the questions to ask first.</p><span class="sb-phase">Plan and set up</span></div>
+          <div class="service-card sb-session sb-gold"><div class="sb-session-head"><span class="sb-num" aria-hidden="true">3</span><h3>Branding</h3></div><p style="margin:.25rem 0 .5rem;font-weight:500;">November 15</p><p>Your brand, logo, and graphics with Claude and ChatGPT.</p><span class="sb-phase">Plan and set up</span></div>
+          <div class="service-card sb-session sb-gold"><div class="sb-session-head"><span class="sb-num" aria-hidden="true">4</span><h3>Documents and templates</h3></div><p style="margin:.25rem 0 .5rem;font-weight:500;">November 22</p><p>A proposal, a services sheet, a pitch deck, and an invoice template.</p><span class="sb-phase">Plan and set up</span></div>
+          <div class="service-card sb-session sb-teal"><div class="sb-session-head"><span class="sb-num" aria-hidden="true">5</span><h3>Website, part 1</h3></div><p style="margin:.25rem 0 .5rem;font-weight:500;">December 6</p><p>Write your site with Claude and publish it for free.</p><span class="sb-phase">Build</span></div>
+          <div class="service-card sb-session sb-teal"><div class="sb-session-head"><span class="sb-num" aria-hidden="true">6</span><h3>Website, part 2</h3></div><p style="margin:.25rem 0 .5rem;font-weight:500;">December 20</p><p>Your own domain, a secure site, and easy updates.</p><span class="sb-phase">Build</span></div>
+          <div class="service-card sb-session sb-teal"><div class="sb-session-head"><span class="sb-num" aria-hidden="true">7</span><h3>Newsletter and forms</h3></div><p style="margin:.25rem 0 .5rem;font-weight:500;">January 3</p><p>A mailing list, signup forms, a welcome email, and a contact form.</p><span class="sb-phase">Build</span></div>
+          <div class="service-card sb-session sb-teal"><div class="sb-session-head"><span class="sb-num" aria-hidden="true">8</span><h3>Getting paid</h3></div><p style="margin:.25rem 0 .5rem;font-weight:500;">January 10</p><p>Payment links, including pay-later options, and delivering what people paid for.</p><span class="sb-phase">Build</span></div>
+          <div class="service-card sb-session sb-coral"><div class="sb-session-head"><span class="sb-num" aria-hidden="true">9</span><h3>Marketing</h3></div><p style="margin:.25rem 0 .5rem;font-weight:500;">January 17</p><p>A starter content plan, social graphics, and your first posts.</p><span class="sb-phase">Grow</span></div>
+          <div class="service-card sb-session sb-coral"><div class="sb-session-head"><span class="sb-num" aria-hidden="true">10</span><h3>Skills: teach Claude your way</h3></div><p style="margin:.25rem 0 .5rem;font-weight:500;">January 31</p><p>Customize ready-made templates so Claude writes and works the way you do.</p><span class="sb-phase">Grow</span></div>
+          <div class="service-card sb-session sb-coral"><div class="sb-session-head"><span class="sb-num" aria-hidden="true">11</span><h3>Connectors</h3></div><p style="margin:.25rem 0 .5rem;font-weight:500;">February 7</p><p>Connect Claude to your tools safely, and learn what AI can do on your computer.</p><span class="sb-phase">Grow</span></div>
+          <div class="service-card sb-session sb-coral"><div class="sb-session-head"><span class="sb-num" aria-hidden="true">12</span><h3>Running it and choosing plans</h3></div><p style="margin:.25rem 0 .5rem;font-weight:500;">February 14</p><p>Time-saving routines, upkeep, and a tool budget that fits.</p><span class="sb-phase">Grow</span></div>
         </div>
       </div>
     </section>
@@ -102,6 +121,7 @@
         <h2 class="section-heading" id="register-heading">Choose how you'd like to join.</h2>
         <div class="services-grid two-up">
           <div class="service-card">
+            <span class="sb-ribbon">Early bird</span>
             <h3>Full Live Course</h3>
             <p style="font-size:1.5rem;font-weight:600;margin:.5rem 0 .25rem;">$697 early bird</p>
             <p style="margin:0 0 1rem;">Early bird price through [early bird end date]. The regular price is $897.</p>
