@@ -33,7 +33,7 @@ nav[aria-label="Main navigation"] { position:fixed; top:0; left:0; right:0; z-in
 .nav-links { display:flex; align-items:center; gap:1.75rem; list-style:none; }
 .nav-links > li { position:relative; }
 /* Top-level items: the four group buttons and the Contact link share one look. */
-.nav-group-btn, .nav-top { background:none; border:none; cursor:pointer; color:var(--muted); text-decoration:none; font:inherit; font-size:.78rem; font-weight:400; letter-spacing:.05em; text-transform:uppercase; padding:.35rem 0; display:inline-flex; align-items:center; gap:.4rem; transition:color .2s, box-shadow .2s; }
+.nav-group-btn, .nav-top { background:none; border:none; cursor:pointer; color:var(--muted); text-decoration:none; font:inherit; font-size:.78rem; font-weight:400; letter-spacing:.05em; text-transform:uppercase; padding:.35rem 0; display:inline-flex; white-space:nowrap; align-items:center; gap:.4rem; transition:color .2s, box-shadow .2s; }
 .nav-group-btn::after { content:""; width:.38rem; height:.38rem; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform:translateY(-2px) rotate(45deg); transition:transform .2s; }
 .nav-group-btn[aria-expanded="true"]::after { transform:translateY(1px) rotate(-135deg); }
 .nav-group-btn:hover, .nav-top:hover, .nav-group-btn[aria-expanded="true"] { color:var(--coral); }
@@ -321,7 +321,7 @@ footer p { font-size:.78rem; color:var(--muted); }
 .nav-toggle.open span:nth-child(2) { opacity:0; }
 .nav-toggle.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
 
-@media (max-width:1080px) {
+@media (max-width:1200px) {
   :root { --header-h: 4rem; }
   nav[aria-label="Main navigation"] { padding:1.1rem 1.5rem; }
   .nav-right { gap:.9rem; }
