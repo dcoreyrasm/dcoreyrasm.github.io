@@ -46,6 +46,19 @@
     .cost-ours{display:inline-block;font-family:var(--serif);font-size:clamp(3rem,10vw,4.5rem);line-height:1;margin:.5rem 0 0;padding:.5rem 1.5rem;border-radius:14px;background:var(--pop-gold);color:var(--pop-ink);}
     .cost-total .btn-primary{margin-top:1.5rem;}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+    .quick-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem 1.5rem;margin:0 0 2rem;max-width:760px;}
+    .quick-facts div{border-left:3px solid var(--pop-gold);padding-left:.8rem;}
+    .quick-facts div:nth-child(2){border-left-color:var(--pop-teal);} .quick-facts div:nth-child(3){border-left-color:var(--pop-rose);} .quick-facts div:nth-child(4){border-left-color:var(--coral);}
+    .quick-facts dt{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7);}
+    .quick-facts dd{margin:0;color:#fff;font-weight:500;line-height:1.5;}
+    .page-jump{border-bottom:1px solid var(--line);padding:.9rem 0;font-size:.9rem;}
+    .page-jump .container{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;align-items:center;}
+    .page-jump a{color:var(--coral);text-decoration:none;} .page-jump a:hover{text-decoration:underline;}
+    .page-jump-label{color:var(--muted);}
+    .steps-list{list-style:none;counter-reset:st;padding:0;margin:1rem 0 0;max-width:640px;}
+    .steps-list li{counter-increment:st;position:relative;padding-left:3rem;margin-bottom:1rem;line-height:1.6;}
+    .steps-list li::before{content:counter(st);position:absolute;left:0;top:-.1rem;width:2rem;height:2rem;border-radius:50%;background:var(--pop-teal);color:var(--pop-ink);font-weight:700;display:flex;align-items:center;justify-content:center;}
+    .steps-list li:nth-child(2)::before{background:var(--pop-gold);} .steps-list li:nth-child(3)::before{background:var(--pop-rose);}
     .price-big{font-size:1.75rem;font-weight:600;margin:.5rem 0 .25rem;}
     .price-note{font-size:.9rem;margin:0 0 1rem;opacity:.85;}
     @media (max-width:640px){
@@ -68,16 +81,32 @@
       <div class="container">
         <p class="section-label" style="color:var(--coral);">Live Course on Zoom</p>
         <h1 class="section-heading" style="color:#fff;">Start Your Business in 12 Sessions Using AI</h1>
-        <p style="font-size:1.1rem;color:#fff;font-weight:500;margin-bottom:.75rem;">12 Sundays, 2:00 to 3:30 PM Eastern, starting November 1, 2026</p>
-        <p style="font-size:1rem;color:rgba(255,255,255,.8);max-width:640px;line-height:1.75;margin-bottom:2.5rem;">I started Darice Corey, LLC in September 2026 and used AI to build my brand, my website, my newsletter, and my payment links. In this course, I'll show you exactly how I did it, step by step, so you can do the same for your own business on a small budget. Every session ends with something real you built.</p>
+        <p style="font-size:1.1rem;color:rgba(255,255,255,.9);max-width:640px;line-height:1.7;margin-bottom:1.5rem;">Go from idea to open for business on a small budget. Every session ends with something real you built.</p>
+        <ul class="pop-pills" aria-label="Course highlights"><li class="pop-pill gold">Early bird $697 through Oct 29</li><li class="pop-pill teal">Free tools first</li><li class="pop-pill rose">Starts November 1</li></ul>
+        <dl class="quick-facts">
+          <div><dt>When</dt><dd>12 Sundays, 2:00 to 3:30 PM Eastern</dd></div>
+          <div><dt>Dates</dt><dd>November 1, 2026 to February 14, 2027</dd></div>
+          <div><dt>Where</dt><dd>Live on Zoom, with recordings</dd></div>
+          <div><dt>Price</dt><dd>$697 through October 29, then $897</dd></div>
+        </dl>
         <div class="hero-ctas">
           <a href="https://buy.stripe.com/3cI9AU9JleldeSK1uJ6J209" class="btn-primary" target="_blank" rel="noopener">Register at the Early Bird Price ($697)</a>
-          <a href="#pricing" class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.3);">See Pricing</a>
+          <a href="#schedule-heading" class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.3);">See What You'll Build</a>
         </div>
-        <ul class="pop-pills" style="margin-top:1.5rem;" aria-label="Course highlights"><li class="pop-pill gold">Early bird $697 through Oct 29</li><li class="pop-pill teal">Free tools first</li><li class="pop-pill rose">Starts November 1</li></ul>
-        <p style="color:rgba(255,255,255,.85);line-height:1.7;">After October 29, the live course is $897.</p>
       </div>
     </div>
+
+    <nav class="page-jump" aria-label="On this page">
+      <div class="container">
+        <span class="page-jump-label">On this page:</span>
+        <a href="#who-heading">Who it's for</a>
+        <a href="#schedule-heading">What you'll build</a>
+        <a href="#benefits-heading">Why join</a>
+        <a href="#cost-heading">The math</a>
+        <a href="#pricing-heading">Pricing</a>
+        <a href="#questions-heading">Questions</a>
+      </div>
+    </nav>
 
     <section aria-labelledby="who-heading">
       <div class="container">
@@ -87,6 +116,7 @@
       <div class="container" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:3rem;align-items:start;">
         <div>
           <p style="line-height:1.75;margin-bottom:1rem;">This course is for new and future business owners who have an idea, a small budget, and a reason to get started right away. You don't need a tech background.</p>
+          <p style="line-height:1.75;margin-bottom:1rem;">I started Darice Corey, LLC in September 2026 and used AI to build my brand, my website, my newsletter, and my payment links. In this course, I'll show you how, step by step, so you can do the same for your own business.</p>
           <p style="line-height:1.75;margin-bottom:1rem;">I teach in plain language, show my own real setup as the example, and then show you other options you can choose instead. I've spent more than 35 years in IT and over 20 years teaching it at the college level, and I built my own business this fall using these exact steps.</p>
           <p style="line-height:1.75;">We start with free tools first. When a paid tool is actually worth it, I'll tell you.</p>
         </div>
@@ -94,14 +124,43 @@
       </div>
     </section>
 
-    <section aria-labelledby="benefits-heading" style="background:var(--bg2);">
+    <section aria-labelledby="schedule-heading" style="background:var(--bg2);">
       <div class="container">
-        <p class="section-label">What You Get</p>
-        <h2 class="section-heading" id="benefits-heading">Why join.</h2>
+        <p class="section-label">What You'll Build</p>
+        <h2 class="section-heading" id="schedule-heading">One topic each Sunday, one real result each time.</h2>
+        <p class="section-sub">All sessions are live on Zoom, Sundays from 2:00 to 3:30 PM Eastern. There are no sessions on November 29, December 13, December 27, or January 24. I may adjust a topic based on what the group needs.</p>
+        <p style="margin:0 0 .5rem;"><span class="pop-dot teal" aria-hidden="true"></span>Part 1, Launch: Sessions 1 to 6 &nbsp; <span class="pop-dot rose" aria-hidden="true"></span>Part 2, Grow: Sessions 7 to 12</p>
+        <table class="sched">
+          <thead>
+            <tr><th scope="col">Date</th><th scope="col">Session</th><th scope="col">You'll leave with</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Sun, Nov 1</td><td><strong><span class="pop-dot teal" aria-hidden="true"></span>1. Your business idea</strong></td><td>A tested business idea and a one-page plan</td></tr>
+            <tr><td>Sun, Nov 8</td><td><strong><span class="pop-dot teal" aria-hidden="true"></span>2. Setting up the business</strong></td><td>A clear checklist for getting your business set up</td></tr>
+            <tr><td>Sun, Nov 15</td><td><strong><span class="pop-dot teal" aria-hidden="true"></span>3. Branding</strong></td><td>Your own logo, brand look, and first marketing pieces</td></tr>
+            <tr><td>Sun, Nov 22</td><td><strong><span class="pop-dot teal" aria-hidden="true"></span>4. Documents and templates</strong></td><td>Ready-to-use business documents and templates</td></tr>
+            <tr><td>Sun, Dec 6</td><td><strong><span class="pop-dot teal" aria-hidden="true"></span>5. Website, part 1</strong></td><td>A published website</td></tr>
+            <tr><td>Sun, Dec 20</td><td><strong><span class="pop-dot teal" aria-hidden="true"></span>6. Website, part 2</strong></td><td>Your own web address and a secure site you can update yourself</td></tr>
+            <tr><td>Sun, Jan 3</td><td><strong><span class="pop-dot rose" aria-hidden="true"></span>7. Newsletter and forms</strong></td><td>A self-running newsletter and a way for customers to reach you</td></tr>
+            <tr><td>Sun, Jan 10</td><td><strong><span class="pop-dot rose" aria-hidden="true"></span>8. Getting paid</strong></td><td>Learn how to set up and customize payment links without coding</td></tr>
+            <tr><td>Sun, Jan 17</td><td><strong><span class="pop-dot rose" aria-hidden="true"></span>9. Marketing</strong></td><td>A marketing plan and your first social posts</td></tr>
+            <tr><td>Sun, Jan 31</td><td><strong><span class="pop-dot rose" aria-hidden="true"></span>10. Teach AI your way</strong></td><td>AI that works in your voice and your way</td></tr>
+            <tr><td>Sun, Feb 7</td><td><strong><span class="pop-dot rose" aria-hidden="true"></span>11. Connect your tools</strong></td><td>Your business tools working together with AI, safely</td></tr>
+            <tr><td>Sun, Feb 14</td><td><strong><span class="pop-dot rose" aria-hidden="true"></span>12. Running it and choosing plans</strong></td><td>Routine upkeep that runs on its own, and a realistic tool budget</td></tr>
+          </tbody>
+        </table>
+        
+      </div>
+    </section>
+
+    <section aria-labelledby="benefits-heading">
+      <div class="container">
+        <p class="section-label">Why Join</p>
+        <h2 class="section-heading" id="benefits-heading">What makes this course different.</h2>
         <div class="services-grid">
           <div class="service-card pop-card gold">
             <h3>Leave every session with something real</h3>
-            <p>A one-page plan, a brand sheet, a live website, a signup form, a payment link. You build as we go, so by the end you have a working business setup, not just notes.</p>
+            <p>You build as we go, so by the end you have a working business setup, not just notes.</p>
           </div>
           <div class="service-card pop-card teal">
             <h3>Learn from a real business</h3>
@@ -127,7 +186,7 @@
       </div>
     </section>
 
-    <section aria-labelledby="cost-heading" class="cost-compare">
+    <section aria-labelledby="cost-heading" class="cost-compare" style="background:var(--bg2);">
       <div class="container">
         <p class="section-label">The Math</p>
         <h2 class="section-heading" id="cost-heading">Hire it all out, or <span class="pop-mark">build it yourself</span>?</h2>
@@ -152,38 +211,9 @@
       </div>
     </section>
 
-    <section aria-labelledby="schedule-heading">
+    <section aria-labelledby="pricing-heading" id="pricing">
       <div class="container">
-        <p class="section-label">Schedule</p>
-        <h2 class="section-heading" id="schedule-heading">Twelve sessions, one topic at a time.</h2>
-        <p class="section-sub">All sessions are live on Zoom, Sundays from 2:00 to 3:30 PM Eastern. There are no sessions on November 29, December 13, December 27, or January 24. I may adjust a topic based on what the group needs.</p>
-        <p style="margin:0 0 .5rem;"><span class="pop-dot teal" aria-hidden="true"></span>Part 1, Launch: Sessions 1 to 6 &nbsp; <span class="pop-dot rose" aria-hidden="true"></span>Part 2, Grow: Sessions 7 to 12</p>
-        <table class="sched">
-          <thead>
-            <tr><th scope="col">Date</th><th scope="col">Session</th><th scope="col">You'll leave with</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Sun, Nov 1</td><td><strong><span class="pop-dot teal" aria-hidden="true"></span>1. Your business idea</strong></td><td>A tested business idea and a one-page plan</td></tr>
-            <tr><td>Sun, Nov 8</td><td><strong><span class="pop-dot teal" aria-hidden="true"></span>2. Setting up the business</strong></td><td>A clear checklist for getting your business set up</td></tr>
-            <tr><td>Sun, Nov 15</td><td><strong><span class="pop-dot teal" aria-hidden="true"></span>3. Branding</strong></td><td>Your own logo, brand look, and first marketing pieces</td></tr>
-            <tr><td>Sun, Nov 22</td><td><strong><span class="pop-dot teal" aria-hidden="true"></span>4. Documents and templates</strong></td><td>Ready-to-use business documents and templates</td></tr>
-            <tr><td>Sun, Dec 6</td><td><strong><span class="pop-dot teal" aria-hidden="true"></span>5. Website, part 1</strong></td><td>A published website</td></tr>
-            <tr><td>Sun, Dec 20</td><td><strong><span class="pop-dot teal" aria-hidden="true"></span>6. Website, part 2</strong></td><td>Your own web address and a secure site you can update yourself</td></tr>
-            <tr><td>Sun, Jan 3</td><td><strong><span class="pop-dot rose" aria-hidden="true"></span>7. Newsletter and forms</strong></td><td>A self-running newsletter and a way for customers to reach you</td></tr>
-            <tr><td>Sun, Jan 10</td><td><strong><span class="pop-dot rose" aria-hidden="true"></span>8. Getting paid</strong></td><td>Learn how to set up and customize payment links without coding</td></tr>
-            <tr><td>Sun, Jan 17</td><td><strong><span class="pop-dot rose" aria-hidden="true"></span>9. Marketing</strong></td><td>A marketing plan and your first social posts</td></tr>
-            <tr><td>Sun, Jan 31</td><td><strong><span class="pop-dot rose" aria-hidden="true"></span>10. Teach AI your way</strong></td><td>AI that works in your voice and your way</td></tr>
-            <tr><td>Sun, Feb 7</td><td><strong><span class="pop-dot rose" aria-hidden="true"></span>11. Connect your tools</strong></td><td>Your business tools working together with AI, safely</td></tr>
-            <tr><td>Sun, Feb 14</td><td><strong><span class="pop-dot rose" aria-hidden="true"></span>12. Running it and choosing plans</strong></td><td>Routine upkeep that runs on its own, and a realistic tool budget</td></tr>
-          </tbody>
-        </table>
-        <p style="line-height:1.75;max-width:720px;">We start with free tools. When a step works better with a paid plan, I'll tell you, so you can decide what's worth it for you.</p>
-      </div>
-    </section>
-
-    <section aria-labelledby="pricing-heading" id="pricing" style="background:var(--bg2);">
-      <div class="container">
-        <p class="section-label">Pricing</p>
+        <p class="section-label">Pricing and Registration</p>
         <h2 class="section-heading" id="pricing-heading">Register for the live course.</h2>
         <p class="section-sub">Prices include tax. At checkout you can pay by card, Apple Pay, Google Pay, or Cash App Pay, or spread the cost with buy now, pay later options such as Klarna, Afterpay, and Zip.</p>
         <div class="services-grid two-up">
@@ -194,7 +224,7 @@
             <ul>
               <li>All 12 live sessions on Zoom</li>
               <li>Ongoing access to the session recordings</li>
-              <li>Starter skill templates to customize</li>
+              <li>Templates you can customize</li>
               <li>Certificate of completion</li>
             </ul>
             <a href="https://buy.stripe.com/3cI9AU9JleldeSK1uJ6J209" class="btn-primary" target="_blank" rel="noopener">Register at $697</a>
@@ -206,34 +236,28 @@
             <ul>
               <li>All 12 live sessions on Zoom</li>
               <li>Ongoing access to the session recordings</li>
-              <li>Starter skill templates to customize</li>
+              <li>Templates you can customize</li>
               <li>Certificate of completion</li>
             </ul>
             <a href="https://buy.stripe.com/6oU3cw3kX0un11Uddr6J20a" class="btn-ghost" target="_blank" rel="noopener">Register at $897</a>
           </div>
         </div>
         <p style="line-height:1.75;max-width:720px;margin-top:2rem;"><strong>Want a smaller first step?</strong> You can also join one part at a time, Part 1, Launch (Sessions 1 to 6) or Part 2, Grow (Sessions 7 to 12), for $497 each, or a single session for $95. Registration for those options opens soon. Questions? <a href="mailto:info@daricecorey.com?subject=Start%20Your%20Business%20course%20question" style="color:var(--coral);">Email me</a>.</p>
-      </div>
-    </section>
-
-    <section aria-labelledby="how-heading">
-      <div class="container">
-        <p class="section-label">How It Works</p>
-        <h2 class="section-heading" id="how-heading">After you register.</h2>
-        <ol style="line-height:1.9;margin-bottom:2rem;padding-left:1.2rem;max-width:640px;">
-          <li>Choose your price above and complete checkout. Stripe will email you a receipt.</li>
-          <li>Before Session 1, I'll email the Zoom details to the address you used at checkout.</li>
-          <li>Join live each Sunday. Bring your own business idea, since we'll work on it in every session.</li>
+        <h3 id="how-heading" style="margin-top:2.5rem;">After you register</h3>
+        <ol class="steps-list">
+          <li><strong>Check out.</strong> Stripe emails you a receipt.</li>
+          <li><strong>Watch your inbox.</strong> Before Session 1, I'll email your Zoom details to the address you used at checkout.</li>
+          <li><strong>Join live each Sunday.</strong> Bring your business idea, since we work on it in every session.</li>
         </ol>
-        <p style="line-height:1.75;max-width:640px;">The Zoom details are for registered students only, so please don't share them. This course teaches tools and process. It isn't legal, tax, or financial advice, and I'll point you to an attorney or accountant for those questions.</p>
       </div>
     </section>
 
-    <section aria-labelledby="questions-heading">
+    <section aria-labelledby="questions-heading" style="background:var(--bg2);">
       <div class="container">
         <p class="section-label">Questions</p>
         <h2 class="section-heading" id="questions-heading">I'm happy to help.</h2>
         <p class="section-sub">If you're not sure the course is a fit, or you have a question before you register, email me.</p>
+        <p style="font-size:.9rem;line-height:1.7;max-width:640px;margin-bottom:1.5rem;">Good to know: the Zoom details are for registered students only, so please don't share them. This course teaches tools and process. It isn't legal, tax, or financial advice, and I'll point you to an attorney or accountant for those questions.</p>
         <div class="hero-ctas">
           <a href="mailto:info@daricecorey.com?subject=Start%20Your%20Business%20course%20question" class="btn-ghost">Email info@daricecorey.com</a>
           <a href="/ai-for-beginners.html#workshop-updates" class="btn-ghost">Get Workshop Updates</a>
