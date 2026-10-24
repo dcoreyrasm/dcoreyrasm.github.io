@@ -60,6 +60,7 @@
     .steps-list li::before{content:counter(st);position:absolute;left:0;top:-.1rem;width:2rem;height:2rem;border-radius:50%;background:var(--pop-teal);color:var(--pop-ink);font-weight:700;display:flex;align-items:center;justify-content:center;}
     .steps-list li:nth-child(2)::before{background:var(--pop-gold);} .steps-list li:nth-child(3)::before{background:var(--pop-rose);}
     .pop-callout{max-width:720px;margin:1rem 0 1.5rem;padding:1rem 1.25rem;border-left:4px solid var(--pop-gold);background:rgba(253,185,38,.08);border-radius:0 10px 10px 0;line-height:1.7;}
+    .price-options .service-card{display:flex;flex-direction:column;}
     .price-big{font-size:1.75rem;font-weight:600;margin:.5rem 0 .25rem;}
     .price-note{font-size:.9rem;margin:0 0 1rem;opacity:.85;}
     @media (max-width:640px){
@@ -218,11 +219,12 @@
         <p class="section-label">Pricing and Registration</p>
         <h2 class="section-heading" id="pricing-heading">Register for the live course.</h2>
         <p class="section-sub">Prices include tax. At checkout you can pay by card, Apple Pay, Google Pay, or Cash App Pay, or spread the cost with buy now, pay later options such as Klarna, Afterpay, and Zip.</p>
-        <div class="services-grid two-up">
+        <div class="services-grid price-options">
           <div class="service-card pop-card gold">
-            <h3>Early Bird <span class="pop-pill gold" style="font-size:.75rem;vertical-align:middle;margin-left:.4rem;">Best price</span></h3>
+            <h3>Full Course <span class="pop-pill gold" style="font-size:.75rem;vertical-align:middle;margin-left:.4rem;">Best value</span></h3>
+            <p class="price-note" style="margin-top:.25rem;">Parts 1 and 2, all 12 sessions</p>
             <p class="price-big">$697</p>
-            <p class="price-note">Through October 29, 2026</p>
+            <p class="price-note">Early bird through October 29. $897 after.</p>
             <ul>
               <li>All 12 live sessions on Zoom</li>
               <li>Ongoing access to the session recordings</li>
@@ -232,19 +234,31 @@
             <a href="https://buy.stripe.com/3cI9AU9JleldeSK1uJ6J209" class="btn-primary" target="_blank" rel="noopener">Register at $697</a>
           </div>
           <div class="service-card pop-card teal">
-            <h3>Regular</h3>
-            <p class="price-big">$897</p>
-            <p class="price-note">Starting October 30, 2026</p>
+            <h3>One Part</h3>
+            <p class="price-note" style="margin-top:.25rem;">Part 1 or Part 2, 6 sessions</p>
+            <p class="price-big">$497</p>
+            <p class="price-note">per part</p>
             <ul>
-              <li>All 12 live sessions on Zoom</li>
-              <li>Ongoing access to the session recordings</li>
-              <li>Templates you can customize</li>
-              <li>Certificate of completion</li>
+              <li><strong>Part 1, Launch:</strong> Sessions 1 to 6, November 1 to December 20</li>
+              <li><strong>Part 2, Grow:</strong> Sessions 7 to 12, January 3 to February 14</li>
+              <li>Recordings for the sessions in your part</li>
             </ul>
-            <a href="https://buy.stripe.com/6oU3cw3kX0un11Uddr6J20a" class="btn-ghost" target="_blank" rel="noopener">Register at $897</a>
+            <p class="price-note" style="margin-top:auto;"><strong>Registration opens soon.</strong></p>
+          </div>
+          <div class="service-card pop-card rose">
+            <h3>One Session</h3>
+            <p class="price-note" style="margin-top:.25rem;">Any single session</p>
+            <p class="price-big">$95</p>
+            <p class="price-note">per session</p>
+            <ul>
+              <li>One live session on Zoom</li>
+              <li>A good way to try it before committing</li>
+            </ul>
+            <p class="price-note" style="margin-top:auto;"><strong>Registration opens soon.</strong></p>
           </div>
         </div>
-        <p style="line-height:1.75;max-width:720px;margin-top:2rem;"><strong>Want a smaller first step?</strong> Join Part 1, Launch (Sessions 1 to 6), or Part 2, Grow (Sessions 7 to 12), for $497 each. Or try a single session for $95. Registration for these options opens soon. Planning to take both parts? Save by registering for the full course. Questions? <a href="mailto:info@daricecorey.com?subject=Start%20Your%20Business%20course%20question" style="color:var(--coral);">Email me</a>.</p>
+        <p class="pop-callout"><strong>Taking both parts?</strong> The full course includes Parts 1 and 2 for $697. Buying the two parts separately would cost $994, so you save $297 with the early bird price.</p>
+        <p style="line-height:1.75;max-width:720px;">Questions about which option is right for you? <a href="mailto:info@daricecorey.com?subject=Start%20Your%20Business%20course%20question" style="color:var(--coral);">Email me</a>.</p>
         <h3 id="how-heading" style="margin-top:2.5rem;">After you register</h3>
         <ol class="steps-list">
           <li><strong>Check out.</strong> Stripe emails you a receipt.</li>
