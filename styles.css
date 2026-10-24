@@ -649,3 +649,20 @@ section.focus-section { background:linear-gradient(rgba(30,26,46,.86), rgba(45,3
   .section-figure--impact img { height:140px; }
   .section-figure--desk img { height:170px; }
 }
+
+/* Pops of color, from the Start Your Business course graphic (2026-10-23).
+   Bright fills always carry Deep Plum text, so contrast holds in light and dark themes:
+   gold 10.9:1, teal 11.9:1, rose 6.0:1 with #16131f. Thin borders are decorative only. */
+:root { --pop-gold:#fdb926; --pop-teal:#1fd6dc; --pop-rose:#f45d6b; --pop-ink:#16131f; }
+.pop-pills { display:flex; flex-wrap:wrap; gap:.6rem; margin:0 0 1.75rem; padding:0; list-style:none; }
+.pop-pill { display:inline-block; padding:.45rem 1rem; border-radius:999px; font-weight:600; font-size:.9rem; line-height:1.3; color:var(--pop-ink); }
+.pop-pill.gold { background:var(--pop-gold); }
+.pop-pill.teal { background:var(--pop-teal); }
+.pop-pill.rose { background:var(--pop-rose); }
+.pop-card { border-top:4px solid var(--coral); }
+.pop-card.gold { border-top-color:var(--pop-gold); }
+.pop-card.teal { border-top-color:var(--pop-teal); }
+.pop-card.rose { border-top-color:var(--pop-rose); }
+.pop-dot { display:inline-block; width:.7rem; height:.7rem; border-radius:50%; margin-right:.5rem; vertical-align:middle; }
+.pop-dot.gold { background:var(--pop-gold); } .pop-dot.teal { background:var(--pop-teal); } .pop-dot.rose { background:var(--pop-rose); }
+.pop-mark { background:linear-gradient(transparent 62%, rgba(253,185,38,.45) 62%); padding:0 .1em; }
