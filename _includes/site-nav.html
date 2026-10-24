@@ -5,7 +5,7 @@
 {%- assign u = page.url -%}
 {%- assign in_about = false -%}{%- if u == '/work.html' or u == '/ai.html' or u == '/research.html' or u == '/mentorship.html' -%}{%- assign in_about = true -%}{%- endif -%}
 {%- assign in_speak = false -%}{%- if u == '/speaking.html' or u == '/services.html' -%}{%- assign in_speak = true -%}{%- endif -%}
-{%- assign in_class = false -%}{%- if u == '/ai-for-beginners.html' or u == '/start-your-business.html' -%}{%- assign in_class = true -%}{%- endif -%}
+{%- assign in_class = false -%}{%- if u == '/ai-for-beginners.html' or u == '/start-your-business.html' or u == '/classes.html' -%}{%- assign in_class = true -%}{%- endif -%}
 {%- assign in_proj = false -%}{%- if u contains '/community-ai/' or u contains '/village-notes/' or u contains '/connecticut-list/' or u contains '/year-end-report/' -%}{%- assign in_proj = true -%}{%- endif -%}
 {%- assign in_write = false -%}{%- if u == '/blog.html' or u contains '/blog/' or u == '/newsletter.html' -%}{%- assign in_write = true -%}{%- endif -%}
   <script>
@@ -40,6 +40,7 @@
         <li class="nav-group">
           <button type="button" class="nav-group-btn{% if in_class %} active{% endif %}" aria-expanded="false" aria-controls="nav-sub-classes">Classes</button>
           <ul class="nav-sub" id="nav-sub-classes" hidden>
+            <li><a href="/classes.html"{% if u == '/classes.html' %} aria-current="page"{% endif %}>All Classes</a></li>
             <li><a href="/ai-for-beginners.html"{% if u == '/ai-for-beginners.html' %} aria-current="page"{% endif %}>AI for Beginners</a></li>
             <li><a href="/start-your-business.html"{% if u == '/start-your-business.html' %} aria-current="page"{% endif %}>Start Your Business in 12 Sessions</a></li>
           </ul>

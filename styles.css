@@ -692,3 +692,14 @@ section.focus-section { background:linear-gradient(rgba(30,26,46,.86), rgba(45,3
 .how-i-think-item:nth-child(3n) .hit-num::after { background:var(--pop-rose); }
 @media (max-width:600px) { .class-feature { padding:1.5rem 1.25rem; } .class-feature h3 { font-size:1.4rem; } }
 .class-feature .section-label { margin-bottom:.5rem; }
+
+/* Classes page and class cards (Oct 2026) */
+.class-grid .service-card { border-top-width:4px; }
+.class-tag { font-size:.78rem !important; letter-spacing:.12em; text-transform:uppercase; color:var(--coral) !important; margin-bottom:.6rem !important; }
+.class-actions { margin-top:auto; display:flex; flex-wrap:wrap; gap:.75rem; }
+.class-actions .btn-ghost { margin-top:0; }
+.class-coming { margin-top:1.5rem; padding:1.25rem 1.5rem; background:var(--bg2); border:1px solid var(--line); border-top:4px solid var(--pop-rose); }
+.class-coming p { line-height:1.7; color:var(--muted); }
+.class-coming p + p { margin-top:.5rem; }
+.service-card .card-actions { margin-top:auto; display:flex; flex-direction:column; align-items:flex-start; gap:.75rem; }
+.service-card .card-actions .btn-ghost { margin-top:0; }
