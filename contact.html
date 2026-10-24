@@ -62,6 +62,7 @@
               <option value="">Select one...</option>
               <option value="speaking">Speaking or workshop booking (Darice Corey, LLC)</option>
               <option value="consulting">Consulting, workshop, or coaching inquiry (Darice Corey, LLC)</option>
+              <option value="office-hours">Course office hours (Start Your Business students)</option>
               <option value="collaboration">Collaboration or research partnership</option>
               <option value="leadership">Leadership or AI conversation</option>
               <option value="other">Something else</option>
@@ -124,6 +125,10 @@
       if (!reason || !select) return;
       for (var i = 0; i < select.options.length; i++) {
         if (select.options[i].value === reason) { select.selectedIndex = i; break; }
+      }
+      if (reason === 'office-hours') {
+        var oh = document.getElementById('contact-message');
+        if (oh) oh.placeholder = 'Tell me what you would like help with and a few days and times that work for you.';
       }
       if (reason === 'speaking') {
         var msg = document.getElementById('contact-message');
