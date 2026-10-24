@@ -652,7 +652,7 @@ section.focus-section { background:linear-gradient(rgba(30,26,46,.86), rgba(45,3
 
 /* Pops of color, from the Start Your Business course graphic (2026-10-23).
    Bright fills always carry Deep Plum text, so contrast holds in light and dark themes:
-   gold 10.9:1, teal 11.9:1, rose 6.0:1 with #16131f. Thin borders are decorative only. */
+   gold 10.6:1, teal 10.2:1, rose 5.8:1 with #16131f. Never use them as text on light backgrounds. */
 :root { --pop-gold:#fdb926; --pop-teal:#1fd6dc; --pop-rose:#f45d6b; --pop-ink:#16131f; }
 .pop-pills { display:flex; flex-wrap:wrap; gap:.6rem; margin:0 0 1.75rem; padding:0; list-style:none; }
 .pop-pill { display:inline-block; padding:.45rem 1rem; border-radius:999px; font-weight:600; font-size:.9rem; line-height:1.3; color:var(--pop-ink); }
