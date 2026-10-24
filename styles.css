@@ -703,3 +703,12 @@ section.focus-section { background:linear-gradient(rgba(30,26,46,.86), rgba(45,3
 .class-coming p + p { margin-top:.5rem; }
 .service-card .card-actions { margin-top:auto; display:flex; flex-direction:column; align-items:flex-start; gap:.75rem; }
 .service-card .card-actions .btn-ghost { margin-top:0; }
+
+/* Accent pops on service and class cards (Oct 2026) */
+.services-grid .service-card { border-top:4px solid var(--pop-gold); }
+.services-grid .service-card:nth-child(3n+2) { border-top-color:var(--pop-teal); }
+.services-grid .service-card:nth-child(3n) { border-top-color:var(--pop-rose); }
+.services-grid .service-card li::before { background:var(--pop-gold); height:3px; }
+.services-grid .service-card:nth-child(3n+2) li::before { background:var(--pop-teal); }
+.services-grid .service-card:nth-child(3n) li::before { background:var(--pop-rose); }
+.speaking-hero .pop-pills { margin-bottom:2rem; }
