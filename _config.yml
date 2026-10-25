@@ -44,3 +44,7 @@ exclude:
   # runs only in Actions and has no business being copied into the published
   # site.
   - scripts
+  # Notes written for Darice about a piece of work, kept in the repo so the
+  # reasoning stays next to the code it explains. They are not site content,
+  # and this one names gaps in the Airtable base, so it is not published.
+  - FREE-AI-LEARNING-REPORT.md
