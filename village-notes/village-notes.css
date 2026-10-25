@@ -688,8 +688,21 @@ main .btn-ghost.vn-btn-on-dark:hover { color:#fff; border-color:var(--pop-gold);
 .vn-track-pill[data-track="teens"] { background:var(--pop-gold); }
 .vn-track-pill[data-track="elder"] { background:var(--pop-rose); }
 .vn-track-pill[data-track="pet"] { background:#c084fc; }
-.vn-track-pill[data-track="food"] { background:var(--pop-gold); }
+.vn-track-pill[data-track="food"] { background:var(--pop-rose); }
 
-/* Quick filters: a picked filter fills gold (the tick still marks it). */
-.vn-toggle:hover span { border-color:var(--pop-teal); }
-main .vn-toggle input:checked + span { background:var(--pop-gold); border-color:var(--pop-gold); color:var(--pop-ink); }
+/* Filter pills: filled in rotating gold, teal and rose, like the pills on
+   the Start Your Business page. A picked pill turns Deep Plum (white in the
+   dark theme) and gains the tick, so the state never rests on colour alone. */
+main .vn-toggle span { background:var(--pop-gold); border:2px solid var(--pop-gold); color:var(--pop-ink); font-weight:500; }
+main .vn-toggle:nth-of-type(3n+2) span { background:var(--pop-teal); border-color:var(--pop-teal); }
+main .vn-toggle:nth-of-type(3n) span { background:var(--pop-rose); border-color:var(--pop-rose); }
+main .vn-toggle:hover span { color:var(--pop-ink); filter:brightness(1.06); }
+main .vn-toggles .vn-toggle input:checked + span { background:var(--pop-ink); border-color:var(--pop-ink); color:#fff; font-weight:700; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) main .vn-toggles .vn-toggle input:checked + span { background:#fff; border-color:#fff; color:var(--pop-ink); } }
+:root[data-theme="dark"] main .vn-toggles .vn-toggle input:checked + span { background:#fff; border-color:#fff; color:var(--pop-ink); }
+
+/* Card chips and tags rotate through the pops too. "Registration open"
+   keeps its purple outline because it carries meaning. */
+.vn-badge-chip:not(.is-open), .vn-tags li { color:var(--pop-ink); border-color:transparent; background:var(--pop-gold); border-radius:999px; font-weight:500; }
+.vn-badge-chip:not(.is-open):nth-child(3n+2), .vn-tags li:nth-child(3n+2) { background:var(--pop-teal); }
+.vn-badge-chip:not(.is-open):nth-child(3n), .vn-tags li:nth-child(3n) { background:var(--pop-rose); }
