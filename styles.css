@@ -712,3 +712,32 @@ section.focus-section { background:linear-gradient(rgba(30,26,46,.86), rgba(45,3
 .services-grid .service-card:nth-child(3n+2) li::before { background:var(--pop-teal); }
 .services-grid .service-card:nth-child(3n) li::before { background:var(--pop-rose); }
 .speaking-hero .pop-pills { margin-bottom:2rem; }
+
+/* Color pop utilities (STD-DCLLC-COLOR-POPS v1.0, 2026-10-25). Opt-in classes
+   so any page can carry the pops top to bottom the way the Village Notes page
+   does. Rules: pops are decoration on top of the purple; bright fills always
+   take Deep Plum text; never gold/teal/rose text on a light background; never
+   let a pop be the only signal of a state or meaning. */
+.pop-stripe { position:relative; }
+.pop-stripe::after {
+  content:""; position:absolute; left:0; right:0; bottom:0; height:6px;
+  background:linear-gradient(90deg, var(--pop-gold) 0 33.34%, var(--pop-teal) 33.34% 66.67%, var(--pop-rose) 66.67% 100%);
+}
+.pop-stripe-top { border-top:6px solid transparent;
+  border-image:linear-gradient(90deg, var(--pop-gold) 0 33.34%, var(--pop-teal) 33.34% 66.67%, var(--pop-rose) 66.67% 100%) 1; }
+/* Children of .pop-rotate fill in rotating gold, teal, rose (pills, chips, tags). */
+.pop-rotate > * { background:var(--pop-gold); color:var(--pop-ink); border-color:var(--pop-gold); }
+.pop-rotate > :nth-child(3n+2) { background:var(--pop-teal); border-color:var(--pop-teal); }
+.pop-rotate > :nth-child(3n) { background:var(--pop-rose); border-color:var(--pop-rose); }
+/* Children of .pop-rotate-edge get rotating 4px top edges (cards). */
+.pop-rotate-edge > * { border-top:4px solid var(--pop-gold); }
+.pop-rotate-edge > :nth-child(3n+2) { border-top-color:var(--pop-teal); }
+.pop-rotate-edge > :nth-child(3n) { border-top-color:var(--pop-rose); }
+/* Gold call-to-action button, teal on hover. Add alongside .btn-primary. */
+.btn-primary.btn-pop, .btn-primary.btn-pop:hover { color:var(--pop-ink); }
+.btn-primary.btn-pop { background:var(--pop-gold); font-weight:600; }
+.btn-primary.btn-pop:hover, .btn-primary.btn-pop:focus-visible { background:var(--pop-teal); }
+.btn-ghost.btn-pop { border:2px solid var(--pop-teal); }
+.btn-ghost.btn-pop:hover { border-color:var(--pop-gold); }
+.pop-label::before { content:""; display:inline-block; width:1.5rem; height:4px; border-radius:2px; margin-right:.6rem; vertical-align:middle; background:var(--pop-gold); }
+.pop-label.teal::before { background:var(--pop-teal); } .pop-label.rose::before { background:var(--pop-rose); }
