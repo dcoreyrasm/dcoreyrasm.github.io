@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-18T12:36:06.568Z",
-  "count": 417,
+  "generated": "2026-10-25T12:36:53.204Z",
+  "count": 424,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -44,6 +44,7 @@
     "East Granby",
     "East Haddam",
     "East Hampton",
+    "East Hampton to Stafford",
     "East Hartford",
     "East Haven",
     "East Lyme",
@@ -66,6 +67,7 @@
     "Hampton",
     "Hartford",
     "Harwinton",
+    "Hebron",
     "Ivoryton",
     "Kent",
     "Killingworth",
@@ -138,6 +140,7 @@
     "Stony Creek",
     "Storrs",
     "Stratford",
+    "Suffield",
     "Terryville",
     "Thomaston",
     "Thompson",
@@ -690,7 +693,7 @@
       "officialWebsite": "https://banksquarebooks.com/",
       "address": "80 Stonington Road, Suite 8, Mystic, CT 06355",
       "tryThis": "Choose one book under a set budget based only on the cover, title, and first page.",
-      "notes": "Open Sunday-Monday 10 a.m.-6 p.m. and Tuesday-Saturday 10 a.m.-8 p.m. The official site also maintains an author-event calendar.",
+      "notes": "Official shop at 80 Stonington Rd, Suite 8, Mystic; relocated from former Main Street location in 2024. Current hours Sun-Mon 10-6, Tue-Sat 10-8; provider publishes regular author talks and events. Do not use the old 53 West Main Street address.",
       "dateAdded": "2026-08-21",
       "slug": "bank-square-books"
     },
@@ -862,7 +865,7 @@
       "whyGo": "A major Guilford fall farm stop with current pick-your-own fruit and flowers, pumpkins, a corn maze, seasonal food and a daily Fall Festival.",
       "officialWebsite": "https://www.bishopsorchards.com/fall-festival",
       "address": "1355 Boston Post Road, Guilford, CT 06437",
-      "notes": "Fall Festival and pick-your-own are open daily through November 1. Wagon rides, the mega slide and apple train operate on weekends and holidays. Crop availability changes, so use Bishop's same-day pick-your-own information before leaving.",
+      "notes": "Fall festival and pick-your-own through November 1, 2026. Main ORCHARD entrance is 480 New England Rd; year-round market is 1355 Boston Post Rd. Official FAQ lists 10 am-5 pm but page header shows 10 am-6 pm; confirm hours by calling the published pick-your-own update number 203-458-PICK. Wagon rides and some attractions only weekends/holidays. PYO add-on and admission required; check same-day crop availability.",
       "dateAdded": "2026-08-17",
       "slug": "bishops-orchards-farm-market-and-winery"
     },
@@ -1364,10 +1367,18 @@
     {
       "name": "Center at Pomfret & Bafflin Sanctuary",
       "town": "Pomfret Center",
+      "region": "Quiet Corner & Northeastern CT",
+      "categories": [
+        "Parks & Preserves",
+        "Longer Hikes",
+        "Museums & Culture",
+        "Free / Low-Cost"
+      ],
       "audiences": [
         "Date Night"
       ],
       "officialWebsite": "https://ctaudubon.org/locations/the-center-at-pomfret-and-bafflin-sanctuary/",
+      "notes": "Official source lists seven miles of trails across the sanctuary (not a single continuous route); pick a section using the official trail map. Nature center hours are Tue-Sun noon-4; outdoor trails dawn-dusk. Suggested donation $2. Accessible trail details not confirmed.",
       "dateAdded": "2026-08-17",
       "slug": "center-at-pomfret-and-bafflin-sanctuary"
     },
@@ -1884,6 +1895,35 @@
       "slug": "connecticut-science-center"
     },
     {
+      "name": "Connecticut Trolley Museum Historic Trolley Ride",
+      "town": "East Windsor",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Trains & Scenic Rides",
+        "Museum & Culture"
+      ],
+      "categories": [
+        "Trains & Scenic Rides",
+        "Museums & Culture",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Family",
+        "Date Night",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Ride a restored vintage trolley through the countryside and visit transportation exhibits and a historic fire apparatus museum.",
+      "officialWebsite": "https://ct-trolley.org/visit/visitors-guide/",
+      "address": "58 North Road, East Windsor, CT 06088",
+      "tryThis": "Ride one vintage trolley and find an exhibit that shows how people traveled in Connecticut a century ago.",
+      "notes": "Museum's 2026 schedule lists seasonal general-admission days and separate fall/winter ticketed events; confirm the day's trolley operations before visiting. Standard adult general admission is $14; special-event tickets differ. Official accessibility statement confirms accessible parking, outdoor paths, visitor center and restrooms, but historic trolley cars have limited access; mobile wheelchair lift available for certain cars only when arranged in advance. Air compressors and whistles can be loud.",
+      "dateAdded": "2026-10-25",
+      "slug": "connecticut-trolley-museum-historic-trolley-ride"
+    },
+    {
       "name": "Connecticut Trolley Museum Winterfest & Tunnel of Lights",
       "town": "East Windsor",
       "region": "Hartford Area",
@@ -1893,6 +1933,7 @@
       "bestTime": "Winter",
       "officialWebsite": "https://www.ct-trolley.org/events/winterfest-and-the-tunnel-of-lights/",
       "address": "58 North Road, East Windsor, CT",
+      "notes": "Recurring seasonal Winterfest & Tunnel of Lights. Provider 2026 season list says late November through December but the detailed Winterfest page still presents 2025 dates, so exact 2026 public ride schedule and pricing must be confirmed with the museum before visitors plan; no specific 2026 dates claimed.",
       "dateAdded": "2026-08-17",
       "slug": "connecticut-trolley-museum-winterfest-and-tunnel-of-lights"
     },
@@ -2485,7 +2526,7 @@
     },
     {
       "name": "Fair Weather Growers Fall Festival & Corn Maze",
-      "town": "Rocky Hill",
+      "town": "Cromwell",
       "region": "Central CT",
       "experienceTypes": [
         "Corn Maze",
@@ -2503,9 +2544,9 @@
       "bestTime": "Fall",
       "whyGo": "A 16-acre fall farm outing with a giant corn maze, hayride, pumpkin patch, farm animals, pedal carts, a jump pillow, a scarecrow walk, and other activities.",
       "officialWebsite": "https://fairweathergrowers.com/fall-festival/",
-      "address": "1146 Cromwell Ave, Rocky Hill, CT 06067",
+      "address": "10 County Line Drive, Cromwell, CT",
       "tryThis": "Complete the corn maze, take the hayride, and choose a pumpkin before you leave.",
-      "notes": "General admission is $30 for ages 3-65 and includes a pumpkin. Children 2 and under are free. Posted festival hours are 9 AM-6 PM on open dates. No pets are allowed except ADA service dogs.",
+      "notes": "Use the FALL FESTIVAL entrance at 10 County Line Drive, Cromwell, NOT the Rocky Hill farm-market address. Open listed Fridays in October and Saturdays/Sundays through Nov 1; check daily weather and availability. Outdoor attractions can close for safety. No pet entry apart from ADA service animals. Provider FAQ confirms this location.",
       "dateAdded": "2026-09-10",
       "eventStart": "2026-09-12",
       "eventEnd": "2026-11-01",
@@ -2550,10 +2591,17 @@
     {
       "name": "Fairfield Nature Center & Larsen Sanctuary",
       "town": "Fairfield",
+      "region": "Fairfield County",
+      "categories": [
+        "Parks & Preserves",
+        "Easy Walks",
+        "Longer Hikes"
+      ],
       "audiences": [
         "Date Night"
       ],
       "officialWebsite": "https://ctaudubon.org/locations/the-fairfield-nature-center-and-larsen-sanctuary/",
+      "notes": "7 miles is a network total; shorter and longer routes may be selected from the official trail map. The 1-mile Edna Strube Chiboucas Special Use Trail was designed for stroller and wheelchair accessibility. Other trails are not represented as accessible. Trails open dawn to dusk; no dogs, horses or bikes.",
       "dateAdded": "2026-08-17",
       "slug": "fairfield-nature-center-and-larsen-sanctuary"
     },
@@ -2892,6 +2940,32 @@
       "slug": "fresh-flower-bar-floral-design-class"
     },
     {
+      "name": "Gay City State Park Linked Hiking Trails",
+      "town": "Hebron",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Longer Hikes",
+        "Parks & Preserves",
+        "Scenic Views",
+        "Date Night"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Group Activities",
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Walk wooded loops around ponds, stream crossings, and remains of an old mill settlement on a trail network connected to the Shenipsit Trail.",
+      "officialWebsite": "https://ctwoodlands.org/trails/gay-city-state-park-trails/",
+      "tryThis": "Plan a loop on the official park trail map and look for one of the historic mill-community sites.",
+      "notes": "9.2 miles is the combined trail-network length, not a single required hike. Check DEEP/CFPA maps, trail access, weather and ground conditions. Route accessibility is not confirmed.",
+      "dateAdded": "2026-10-25",
+      "slug": "gay-city-state-park-linked-hiking-trails"
+    },
+    {
       "name": "Gillette Castle State Park",
       "town": "East Haddam",
       "audiences": [
@@ -2900,6 +2974,36 @@
       "officialWebsite": "https://ctparks.com/parks/gillette-castle-state-park",
       "dateAdded": "2026-08-13",
       "slug": "gillette-castle-state-park"
+    },
+    {
+      "name": "Glow Hartford Holiday Light Festival & Market 2026",
+      "town": "Hartford",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Fall & Seasonal",
+        "Music & Events"
+      ],
+      "categories": [
+        "Festivals & Events",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Family",
+        "Date Night",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Visit a large indoor holiday light display and market with interactive illuminated areas and seasonal activities at the Connecticut Convention Center.",
+      "officialWebsite": "https://hartford.glowgardens.com/",
+      "address": "100 Columbus Boulevard, Hartford, CT 06103",
+      "tryThis": "Find an interactive light installation and visit one local market vendor.",
+      "notes": "2026 holiday festival on selected days November 20–December 23. Tickets sold by time slot; official adult price shown $34 including $4 service fee, plus applicable taxes and 3.5% processing fee; parking managed separately. Site also has a distinct older Harvest Glow experience; this is the 2026 winter holiday light event. No specific accessibility accommodations confirmed for this event.",
+      "dateAdded": "2026-10-25",
+      "eventStart": "2026-11-20",
+      "eventEnd": "2026-12-23",
+      "slug": "glow-hartford-holiday-light-festival-and-market-2026"
     },
     {
       "name": "GLOW Wild 2026 at Connecticut's Beardsley Zoo",
@@ -2945,6 +3049,35 @@
       "officialWebsite": "https://goldrushfarmsct.com/trail-rides1.html",
       "dateAdded": "2026-08-21",
       "slug": "gold-rush-farms-guided-trail-ride"
+    },
+    {
+      "name": "Goodspeed Musicals: Annie (2026)",
+      "town": "East Haddam",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Theater & Movies"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Family",
+        "Date Night",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "See the 50th-anniversary staging of the musical Annie at the historic Goodspeed theater where the production originated.",
+      "officialWebsite": "https://www.goodspeed.org/shows/annie",
+      "address": "6 Main Street, East Haddam, CT 06423",
+      "tryThis": "Before or after the show, learn one fact about the history of Annie at Goodspeed.",
+      "notes": "Ticketed show October 30–December 27, 2026; confirm selected performance. Officially documented accommodations: wheelchair-accessible seating must be arranged through box office, ramp and elevator to orchestra level (not balcony), assisted listening, open captions on Dec 4 at 7:30 pm, and sensory-friendly performance Dec 13 at 6:30 pm with modified light/sound and quiet area. Accessible seating arrangements should be made ahead.",
+      "dateAdded": "2026-10-25",
+      "eventStart": "2026-10-30",
+      "eventEnd": "2026-12-27",
+      "slug": "goodspeed-musicals-annie-2026"
     },
     {
       "name": "Gouveia Vineyards",
@@ -3397,6 +3530,30 @@
       "slug": "housatonic-museum-of-art-free-campus-art-visit"
     },
     {
+      "name": "House of Books Independent Bookshop",
+      "town": "Kent",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Bookstore"
+      ],
+      "categories": [
+        "Bookstores",
+        "Date Night"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Browse an independent bookshop in the center of Kent, with a chance to pick up a book before exploring the village.",
+      "officialWebsite": "https://houseofbooksct.com/",
+      "address": "10 N Main St, Kent, CT 06757",
+      "tryThis": "Ask for one bookseller recommendation and choose a book you might not otherwise have picked.",
+      "notes": "Current daily store hours were not independently confirmed; check with the shop before traveling. No specific accessibility features confirmed.",
+      "dateAdded": "2026-10-25",
+      "slug": "house-of-books-independent-bookshop"
+    },
+    {
       "name": "Hubbard Park & Castle Craig Fall Overlook",
       "town": "Meriden",
       "region": "Central CT",
@@ -3587,7 +3744,7 @@
       "bestTime": "Fall",
       "whyGo": "A classic Shelton harvest stop with pick-your-own pumpkins, a mini corn maze, hayrides, fall flowers, apples, squash and farm scenery, plus a winery for an adults-focused add-on.",
       "officialWebsite": "https://www.jonesfamilyfarms.com/pumpkin-update",
-      "notes": "2026 pumpkin farm current through late October, weather permitting. Official Oct 17 farm update lists regular picking 10 AM-5:30 PM through Oct 30. Halloween Oct 31 hours should be confirmed separately. Always check today's pumpkin-status update and field availability.",
+      "notes": "2026 harvest-your-own pumpkins and squash through Halloween. Daily 10 am-5:30 pm through Oct 30; Halloween Oct 31 10 am-4 pm, arrive by 3 pm. Friday Oct 30 Golden Hour hours extended to 6 pm; gates close shortly before standard closing. Book ahead for discounted entry; check farm's same-day status and crop report before travel. Original Source = Darice preserved.",
       "dateAdded": "2026-08-17",
       "eventStart": "2026-09-19",
       "eventEnd": "2026-10-31",
@@ -4906,6 +5063,30 @@
       "slug": "niantic-farmers-market"
     },
     {
+      "name": "Nipmuck Trail: Mansfield to Bigelow Hollow Sections",
+      "town": "Mansfield, Ashford, Willington and Union",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Longer Hikes",
+        "Parks & Preserves"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Group Activities"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Follow segments of a long blue-blazed trail through northeastern Connecticut woodlands, ridges, river areas, and conservation properties.",
+      "officialWebsite": "https://ctwoodlands.org/trails/nipmuck-trail/",
+      "tryThis": "Choose one manageable section on the official trail map and note an interesting landscape feature along the way.",
+      "notes": "This is a multi-section trail, not a recommendation to complete it in one outing. Check CFPA map, parking, trail notices, flooding and conditions before selecting a section. Do not assume wheelchair accessibility.",
+      "dateAdded": "2026-10-25",
+      "towns": [],
+      "slug": "nipmuck-trail-mansfield-to-bigelow-hollow-sections"
+    },
+    {
       "name": "Nod Hill Brewery Biergarten & Pollinator Meadow",
       "town": "Ridgefield",
       "audiences": [
@@ -5146,6 +5327,33 @@
       "notes": "Open daily 10 a.m.-5 p.m. Regular adult admission is $5 and includes a $2 same-day merchandise credit and souvenir lanyard.",
       "dateAdded": "2026-08-21",
       "slug": "pez-visitor-center"
+    },
+    {
+      "name": "Phelps-Hatheway House & Colonial Revival Garden",
+      "town": "Suffield",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Gardens & Arboretums",
+        "Museums & Culture",
+        "Date Night"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Date Night",
+        "Group Activities"
+      ],
+      "bestTime": "Spring",
+      "whyGo": "Explore a historic house and its Colonial Revival garden, herb bed, and period plantings through a guided visit or special program.",
+      "officialWebsite": "https://ctlandmarks.org/properties/phelps-hatheway-house-garden/",
+      "address": "55 South Main Street, Suffield, CT 06078",
+      "tryThis": "On a guided visit, identify one garden feature and one historic detail about the house.",
+      "notes": "Scheduled 2026 second-Sunday public tour dates ended October 11. The provider says house tours are also available by advance reservation and at scheduled programs. Contact the venue to confirm any late-season visit; do not assume unscheduled walk-in access. Adult guided-house admission listed at $18. No specific accessible route was confirmed.",
+      "dateAdded": "2026-10-25",
+      "slug": "phelps-hatheway-house-and-colonial-revival-garden"
     },
     {
       "name": "Pinot's Palette Stamford Date Night Painting",
@@ -5552,47 +5760,19 @@
       "name": "Roseland Cottage",
       "town": "Woodstock",
       "region": "Quiet Corner & Northeastern CT",
+      "categories": [
+        "Gardens & Arboretums",
+        "Museums & Culture",
+        "Only in Connecticut"
+      ],
       "audiences": [
         "Date Night"
       ],
       "bestTime": "Fall",
       "officialWebsite": "https://www.historicnewengland.org/property/roseland-cottage/",
+      "notes": "2026 guided house-tour season ends October 25, 2026. The official site says gardens and grounds open dawn to dusk. House tour admission listed $20 adults; EBT cardholders qualify for discounted tours. Tour involves stairs; no ramps, lifts or elevators, and limited-mobility visitors should call ahead for first-floor options. Keep original Darice provenance.",
       "dateAdded": "2026-08-17",
       "slug": "roseland-cottage"
-    },
-    {
-      "name": "Roseland Cottage Fine Arts & Crafts Festival 2026",
-      "town": "Woodstock",
-      "region": "Quiet Corner & Northeastern CT",
-      "experienceTypes": [
-        "Museum & Culture",
-        "Fall & Seasonal",
-        "Music & Events",
-        "Date Night"
-      ],
-      "categories": [
-        "Festivals & Events",
-        "Museums & Culture",
-        "Free / Low-Cost",
-        "Date Night",
-        "Only in Connecticut"
-      ],
-      "audiences": [
-        "Date Night",
-        "Family",
-        "Group Activities",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A two-day juried arts and crafts festival at historic Roseland Cottage with 180 artisans, live music, food vendors, and first-floor house tours.",
-      "officialWebsite": "https://my.historicnewengland.org/26498/ros-fest-sun",
-      "address": "556 Route 169, Woodstock, CT 06281",
-      "tryThis": "Pick one handmade piece you both like, then take the first-floor Roseland Cottage tour.",
-      "notes": "October 17 and 18, 2026, rain or shine. Adults $5 nonmembers, members and children under 12 free. Grounds include uneven terrain; parking is available. Provider does not guarantee an entirely accessible route.",
-      "dateAdded": "2026-09-20",
-      "eventStart": "2026-10-17",
-      "eventEnd": "2026-10-18",
-      "slug": "roseland-cottage-fine-arts-and-crafts-festival-2026"
     },
     {
       "name": "Salmon River State Forest + Comstock Covered Bridge Picnic Walk",
@@ -5860,6 +6040,30 @@
       "notes": "Current 2026 adult cruise and lighthouse-tour fare is $42. Advance reservations are required.",
       "dateAdded": "2026-08-19",
       "slug": "sheffield-island-lighthouse-cruise-and-tour"
+    },
+    {
+      "name": "Shenipsit Trail: Connecticut River to Stafford Sections",
+      "town": "East Hampton to Stafford",
+      "region": "Other / Statewide",
+      "experienceTypes": [
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Longer Hikes",
+        "Scenic Views",
+        "Parks & Preserves"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Group Activities"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Choose a stretch of this long wooded trail system linking central and northeastern Connecticut, including river overlooks and state forests.",
+      "officialWebsite": "https://ctwoodlands.org/trails/shenipsit-trail/",
+      "tryThis": "Pick one day-hike section on the official map and look for a river or ridgeline overlook.",
+      "notes": "The entire route is approximately 50 miles. Select a segment appropriate to experience and conditions; consult official maps, current notices, access and parking. No accessibility claim is made.",
+      "dateAdded": "2026-10-25",
+      "slug": "shenipsit-trail-connecticut-river-to-stafford-sections"
     },
     {
       "name": "Sherwood Island State Park",
@@ -6981,35 +7185,32 @@
       "slug": "wanderbrush-paint-your-partner-experience"
     },
     {
-      "name": "Warner Theatre Sips, Spirits & Snacks 2026",
+      "name": "Warner Theatre: Behind The Scream Screening & David Arquette Conversation",
       "town": "Torrington",
       "region": "Litchfield Hills",
       "experienceTypes": [
-        "Food & Treats",
-        "Fall & Seasonal",
-        "Date Night"
+        "Theater & Movies",
+        "Music & Events"
       ],
       "categories": [
-        "Food & Treats",
-        "Festivals & Events",
-        "Date Night"
+        "Theater & Movies",
+        "Date Night",
+        "Something Different"
       ],
       "audiences": [
+        "Date Night",
         "Group Activities",
-        "Date Night"
+        "Individual Exploration"
       ],
       "bestTime": "Specific event/date",
-      "whyGo": "A 21+ fall wine and food tasting inside the Warner Theatre featuring wines, spirits, local craft beers, and food from area vendors. The 2026 event marks the tasting's 25th anniversary and also supports the theater.",
-      "officialWebsite": "https://www.warnertheatre.org/events/sips-spirits-snacks/",
+      "whyGo": "See a Halloween screening of the 1996 horror film Scream followed by a live moderated conversation with actor David Arquette.",
+      "officialWebsite": "https://www.warnertheatre.org/events/behind-the-scream/",
       "address": "68 Main Street, Torrington, CT 06790",
-      "tryThis": "Try one food-and-drink pairing you would not normally order and compare notes before the night ends.",
-      "notes": "General admission is $40 and VIP admission is $100. The event is the Warner Theatre's annual Wine & Food Tasting and a theater fundraiser.",
-      "dateAdded": "2026-09-13",
-      "eventStart": "2026-10-24",
-      "ages": [
-        "Adults only (21+)"
-      ],
-      "slug": "warner-theatre-sips-spirits-and-snacks-2026"
+      "tryThis": "After the film, take note of one detail about filmmaking you learned from the onstage conversation.",
+      "notes": "Single Halloween event October 31, 2026, 8 PM; ticket required. Film is horror-themed; the official listing does not specify an admission age limit, so no age suitability tag assigned. Optional VIP photo opportunity is limited.",
+      "dateAdded": "2026-10-25",
+      "eventStart": "2026-10-31",
+      "slug": "warner-theatre-behind-the-scream-screening-and-david-arquette-conversation"
     },
     {
       "name": "Waveny Park",
