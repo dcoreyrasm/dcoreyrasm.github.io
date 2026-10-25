@@ -618,3 +618,48 @@ section.vn-updates-section { background:var(--bg); padding:5rem 0; }
 .vn-hero-signup a:hover, .vn-hero-signup a:focus-visible { box-shadow:inset 0 -1.2em 0 rgba(253,185,38,.35); }
 .vn-updates-form { padding-top:1.75rem; border-top:4px solid var(--pop-rose); }
 .vn-updates-section .pop-pills { margin:0 0 1.75rem; }
+
+/* Accent pops, top to bottom (2026-10-25). Decoration only: the purple
+   accent (--coral) still carries every state and meaning on the page --
+   checked filters, open registration, upcoming dates -- so nobody has to
+   learn what a gold, teal or rose mark means. */
+
+/* Hero: a three-colour stripe along the bottom edge of the band, and a gold
+   dot on the listings badge. */
+.vn-hero { position:relative; }
+.vn-hero::after {
+  content:""; position:absolute; left:0; right:0; bottom:0; height:6px;
+  background:linear-gradient(90deg, var(--pop-gold) 0 33.34%, var(--pop-teal) 33.34% 66.67%, var(--pop-rose) 66.67% 100%);
+}
+.vn-badge::before {
+  content:""; display:inline-block; width:.5rem; height:.5rem; border-radius:50%;
+  background:var(--pop-gold); margin-right:.5rem; vertical-align:middle;
+}
+
+/* Filters: a small marker before each row label. */
+.vn-toggles-label::before {
+  content:""; display:inline-block; width:.55rem; height:.55rem; border-radius:50%;
+  background:var(--pop-teal); margin-right:.45rem; vertical-align:middle;
+}
+.vn-counties .vn-toggles-label::before { background:var(--pop-rose); }
+
+/* Results: card top edges rotate through the three pops. */
+.vn-card { border-top:4px solid var(--pop-gold); }
+.vn-card:nth-child(3n+2) { border-top-color:var(--pop-teal); }
+.vn-card:nth-child(3n) { border-top-color:var(--pop-rose); }
+.vn-source-note { border-left:4px solid var(--pop-teal); padding-left:1rem; }
+.vn-empty-icon { color:var(--pop-gold); }
+
+/* Section labels further down get a short coloured bar. */
+.vn-submit-section .section-label::before,
+.vn-updates-section .section-label::before,
+.vn-about-section .section-label::before {
+  content:""; display:inline-block; width:1.5rem; height:4px; border-radius:2px;
+  margin-right:.6rem; vertical-align:middle; background:var(--pop-gold);
+}
+.vn-updates-section .section-label::before { background:var(--pop-rose); }
+.vn-about-section .section-label::before { background:var(--pop-teal); }
+
+/* Footer: the same stripe as the hero closes the page. */
+footer[role="contentinfo"] { border-top:6px solid transparent;
+  border-image:linear-gradient(90deg, var(--pop-gold) 0 33.34%, var(--pop-teal) 33.34% 66.67%, var(--pop-rose) 66.67% 100%) 1; }
