@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-10-25",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "doc_stack",
+      "label": "Delete Several Chats at Once"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "doc_stack",
+      "label": "Archive a Chat Instead of Deleting It"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "doc_stack",
+      "label": "Delete One Conversation or Your Whole History"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "doc_stack",
+      "label": "Set Your Gemini Activity to Delete Itself"
+    }
+  ]
+}
