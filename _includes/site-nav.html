@@ -48,7 +48,14 @@
         <li class="nav-group">
           <button type="button" class="nav-group-btn{% if in_proj %} active{% endif %}" aria-expanded="false" aria-controls="nav-sub-projects">Projects</button>
           <ul class="nav-sub" id="nav-sub-projects" hidden>
-            <li><a href="/community-ai/"{% if u contains '/community-ai/' %} aria-current="page"{% endif %}>Community AI</a></li>
+            {%- comment -%}
+              Community AI tests for the exact path, not `contains`: the
+              learning page lives underneath it, so `contains` would mark both
+              entries as the current page at once and tell a screen reader the
+              reader is in two places.
+            {%- endcomment -%}
+            <li><a href="/community-ai/"{% if u == '/community-ai/' %} aria-current="page"{% endif %}>Community AI</a></li>
+            <li><a href="/community-ai/learn/"{% if u contains '/community-ai/learn' %} aria-current="page"{% endif %}>Free AI Learning</a></li>
             <li><a href="/village-notes/"{% if u contains '/village-notes/' %} aria-current="page"{% endif %}>Village Notes</a></li>
             <li><a href="/connecticut-list/"{% if u contains '/connecticut-list/' %} aria-current="page"{% endif %}>Connecticut List</a></li>
             <li><a href="/year-end-report/"{% if u contains '/year-end-report/' %} aria-current="page"{% endif %}>Year-End Report</a></li>
