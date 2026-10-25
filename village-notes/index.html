@@ -69,6 +69,7 @@
                alt="Village Notes — Connecticut Care Directory. People, resources, stronger communities." />
         </h1>
         <p class="vn-hero-lede">A searchable list of childcare, camps, high schools and teen programs, elder care, pet care, and food assistance across Connecticut, built from official state listings and public sources. Families and caregivers add what those records leave out &mdash; real operating hours, honest waitlist timelines, what it actually costs. Search it, filter it, and add what you know.</p>
+        <p class="vn-hero-signup">Want to hear when new resources and dates are added? <a href="#vn-updates">Get Village Notes updates</a>.</p>
         <div class="vn-hero-meta">
           <span id="vn-count-badge" class="vn-badge">Loading listings&hellip;</span>
           <span id="vn-updated" class="vn-updated"></span>
@@ -336,6 +337,30 @@
       </div>
     </section>
 
+    <!-- Village Notes updates signup. Posts to the MailerLite form
+         "Village Notes Updates Signup" (group: Village Notes Updates) using
+         the same no-reload pattern as the Workshop Updates form on
+         ai-for-beginners.html. MailerLite sends a confirmation email first
+         (double opt-in), so nobody is added without confirming. -->
+    <section class="vn-updates-section" id="vn-updates" aria-labelledby="vn-updates-heading">
+      <div class="container">
+        <p class="section-label">Stay in the Loop</p>
+        <h2 class="section-heading" id="vn-updates-heading">Get Village Notes updates.</h2>
+        <p class="section-sub">I'll email you when new resources are added and when important dates, like registration openings and open houses, are coming up.</p>
+        <form id="vn-updates-form" class="contact-form vn-updates-form" action="https://assets.mailerlite.com/jsonp/2474527/forms/202322533642405434/subscribe" method="POST" aria-label="Village Notes updates signup">
+          <div class="form-row">
+            <div class="form-group"><label for="vnu-name">First Name</label><input type="text" id="vnu-name" name="fields[name]" autocomplete="given-name" placeholder="Jane" /></div>
+            <div class="form-group"><label for="vnu-email">Email</label><input type="email" id="vnu-email" name="fields[email]" autocomplete="email" placeholder="jane@example.com" required aria-required="true" /></div>
+          </div>
+          <input type="hidden" name="ml-submit" value="1" />
+          <input type="hidden" name="anticsrf" value="true" />
+          <button type="submit" class="btn-primary">Send Me Village Notes Updates</button>
+          <p id="vnu-status" class="vn-updates-status" role="status" aria-live="polite"></p>
+        </form>
+        <p class="vn-updates-fine">Free. You'll get a confirmation email first, and you can unsubscribe anytime.</p>
+      </div>
+    </section>
+
     <section class="vn-about-section" aria-labelledby="vn-about-heading">
       <div class="container">
         <p class="section-label">Why This Exists</p>
@@ -406,5 +431,27 @@
   </footer>
 
   <script src="/village-notes/script.js?v={{ site.time | date: '%Y%m%d%H%M' }}" defer></script>
+  <script>
+    // Sends the Village Notes updates signup to MailerLite without leaving the page.
+    (function () {
+      var form = document.getElementById('vn-updates-form');
+      var status = document.getElementById('vnu-status');
+      if (!form || !window.fetch) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        fetch(form.action, { method: 'POST', body: new FormData(form), mode: 'no-cors' })
+          .then(function () {
+            form.reset();
+            status.textContent = "Thank you! Please check your email and confirm your signup.";
+          })
+          .catch(function () {
+            status.textContent = "Something went wrong. Please try again, or email info@daricecorey.com.";
+          })
+          .then(function () { btn.disabled = false; });
+      });
+    })();
+  </script>
 </body>
 </html>
