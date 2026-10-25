@@ -496,7 +496,11 @@
                  '</p>';
     }
 
-    var head = '<p class="vn-card-track">' + esc(r.track || 'Resource');
+    // The track is shown as a coloured pill (see the accent pops in
+    // village-notes.css). The slug only picks the pill colour; the words
+    // still carry the meaning, so colour is never the only signal.
+    var trackSlug = String(r.track || 'resource').toLowerCase().split(/[^a-z]+/)[0] || 'resource';
+    var head = '<p class="vn-card-track"><span class="vn-track-pill" data-track="' + esc(trackSlug) + '">' + esc(r.track || 'Resource') + '</span>';
     if (has(r.category)) head += '<span class="vn-sep">/</span>' + esc(r.category);
     head += '</p>';
 

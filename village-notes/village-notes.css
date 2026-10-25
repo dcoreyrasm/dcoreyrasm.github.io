@@ -663,3 +663,33 @@ section.vn-updates-section { background:var(--bg); padding:5rem 0; }
 /* Footer: the same stripe as the hero closes the page. */
 footer[role="contentinfo"] { border-top:6px solid transparent;
   border-image:linear-gradient(90deg, var(--pop-gold) 0 33.34%, var(--pop-teal) 33.34% 66.67%, var(--pop-rose) 66.67% 100%) 1; }
+
+/* Buttons and categories in the accent pops (2026-10-25). Bright fills
+   always take Deep Plum text (gold 10.6:1, teal 10.2:1, rose 5.8:1).
+   `main` in each selector outranks the theme rules in styles.css that turn
+   primary-button text white in the light theme. */
+main .btn-primary, main .btn-primary:hover { color:var(--pop-ink); }
+main .btn-primary { background:var(--pop-gold); font-weight:600; }
+main .btn-primary:hover, main .btn-primary:focus-visible { background:var(--pop-teal); }
+main .btn-primary:focus-visible, main .btn-ghost:focus-visible { outline:3px solid var(--coral); outline-offset:3px; }
+main .btn-ghost { border:2px solid var(--pop-teal); }
+main .btn-ghost:hover { border-color:var(--pop-gold); }
+main .vn-reset { border-color:var(--pop-rose); }
+main .vn-doorway-btn { border-color:var(--pop-gold); }
+main .btn-ghost.vn-btn-on-dark { color:#fff; border-color:var(--pop-rose); }
+main .btn-ghost.vn-btn-on-dark:hover { color:#fff; border-color:var(--pop-gold); }
+
+/* Card categories: the track becomes a pill; the sub-category stays text. */
+.vn-track-pill {
+  display:inline-block; padding:.22rem .6rem; border-radius:999px;
+  font-weight:600; letter-spacing:.1em; color:var(--pop-ink);
+  background:var(--pop-teal);
+}
+.vn-track-pill[data-track="teens"] { background:var(--pop-gold); }
+.vn-track-pill[data-track="elder"] { background:var(--pop-rose); }
+.vn-track-pill[data-track="pet"] { background:#c084fc; }
+.vn-track-pill[data-track="food"] { background:var(--pop-gold); }
+
+/* Quick filters: a picked filter fills gold (the tick still marks it). */
+.vn-toggle:hover span { border-color:var(--pop-teal); }
+main .vn-toggle input:checked + span { background:var(--pop-gold); border-color:var(--pop-gold); color:var(--pop-ink); }
