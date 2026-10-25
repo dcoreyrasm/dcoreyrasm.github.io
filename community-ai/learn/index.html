@@ -1,0 +1,281 @@
+---
+# Front matter so Jekyll evaluates the {{ }} cache stamps on the asset URLs
+# below, the same way /community-ai/ does. No layout is applied.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free AI courses, workshops, and learning resources for Connecticut residents, educators, students, job seekers, older adults, nonprofits, and community groups — every entry checked against its official source." />
+  <title>Free AI Learning — Darice Corey</title>
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.daricecorey.com/community-ai/learn/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Free AI Learning — Darice Corey" />
+  <meta property="og:description" content="Explore free AI courses, workshops, and learning resources. Whether you're completely new to AI or ready to build your skills, find learning opportunities that fit your goals." />
+  <meta property="og:url" content="https://www.daricecorey.com/community-ai/learn/" />
+  <meta property="og:image" content="https://www.daricecorey.com/darice.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Free AI Learning — Darice Corey" />
+  <meta name="twitter:description" content="Free AI courses, workshops, and learning resources, with a finder that matches courses to what you want to learn." />
+  <meta name="twitter:image" content="https://www.daricecorey.com/darice.jpg" />
+  <script>window.__daOptOut=(function(){try{return localStorage.getItem('da-analytics-optout')==='1'}catch(e){return false}})();if(window.__daOptOut){window['ga-disable-G-725R412XD7']=true;}</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-725R412XD7"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-725R412XD7');</script>
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#16131F" />
+  <link rel="stylesheet" href="/styles.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
+  <!-- The directory's stylesheet comes first on purpose: this page reuses its
+       filter boxes, chips and cards rather than restating them, so the two
+       areas of Community AI stay one design language. learn.css adds only
+       what is new here. -->
+  <link rel="stylesheet" href="/community-ai/community-ai.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
+  <link rel="stylesheet" href="/community-ai/learn/learn.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">if(!window.__daOptOut){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xdrtc0i2un");}</script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  {% include site-nav.html %}
+
+  <main id="main-content">
+
+    <div class="cf-hero lrn-hero">
+      <div class="cf-wrap">
+        <p class="section-label" style="color:var(--coral);">Community AI &middot; Free Learning</p>
+        <h1 class="section-heading" style="color:#fff;">Free AI Learning</h1>
+        <p class="cf-hero-lede">Explore free AI courses, workshops, and learning resources. Whether you&rsquo;re completely new to AI or ready to build your skills, find learning opportunities that fit your goals.</p>
+        <ul class="pop-pills lrn-hero-pills">
+          <li class="pop-pill gold"><span id="lrn-stat-courses">&mdash;</span> free courses</li>
+          <li class="pop-pill teal"><span id="lrn-stat-beginner">&mdash;</span> beginner friendly</li>
+          <li class="pop-pill rose"><span id="lrn-stat-orgs">&mdash;</span> providers</li>
+        </ul>
+        <p class="lrn-hero-note">
+          Everything here is free to start and checked against its official source.
+          <span id="lrn-updated"></span>
+          Looking for grants, tools, or technical help instead?
+          <a href="/community-ai/">Browse the full Community AI directory</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- ===================== FINDER ===================== -->
+    <section class="lrn-finder" aria-labelledby="lrn-finder-heading">
+      <div class="cf-wrap">
+        <p class="section-label">Start Here</p>
+        <h2 class="section-heading" id="lrn-finder-heading">Find Your AI Learning Path</h2>
+        <p class="lrn-sub">Not sure where to start? Tell us what you want to learn, and we&rsquo;ll help you find a course.</p>
+
+        <fieldset class="lrn-goals" id="lrn-goals">
+          <legend class="lrn-goals-legend">Pick what fits you best. You can change this at any time.</legend>
+          <!-- Buttons are written by script.js from the GOALS list, so the
+               wording of a path and the rule that matches it live together in
+               one place instead of drifting apart across two files. -->
+        </fieldset>
+
+        <div class="lrn-result" id="lrn-result" hidden>
+          <div class="lrn-result-head">
+            <h3 id="lrn-result-heading" tabindex="-1"></h3>
+            <button type="button" class="btn-ghost lrn-reset" id="lrn-goal-reset">Start over</button>
+          </div>
+          <p class="lrn-result-why" id="lrn-result-why"></p>
+          <div class="lrn-grid" id="lrn-result-list"></div>
+          <p class="lrn-result-more" id="lrn-result-more"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LIBRARY ===================== -->
+    <section class="lrn-library" aria-labelledby="lrn-library-heading">
+      <div class="cf-wrap">
+        <p class="section-label">The Library</p>
+        <h2 class="section-heading" id="lrn-library-heading">Browse every free course</h2>
+        <p class="lrn-sub">Search by name or provider, or narrow by who it is for, how it runs, what it costs, and what it covers. Filters combine, and each one holds more than one answer.</p>
+
+        <form class="lrn-search" role="search" onsubmit="return false;">
+          <div class="cf-searchbox lrn-searchbox">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <label for="lrn-q" class="cf-sr">Search free AI courses</label>
+            <input type="search" id="lrn-q" placeholder="Search by course or provider &mdash; try &ldquo;prompting&rdquo; or &ldquo;Microsoft&rdquo;" autocomplete="off" spellcheck="false" />
+            <button type="button" class="cf-clearq" id="lrn-clearq" aria-label="Clear search" hidden>&times;</button>
+          </div>
+          <label for="lrn-sort" class="cf-sr">Sort courses</label>
+          <select id="lrn-sort" class="cf-select">
+            <option value="relevance">Sort: best match</option>
+            <option value="beginner">Sort: most beginner friendly</option>
+            <option value="title">Sort: name A&ndash;Z</option>
+            <option value="org">Sort: provider A&ndash;Z</option>
+            <option value="checked">Sort: most recently checked</option>
+          </select>
+        </form>
+
+        <form class="cf-controls lrn-controls" role="search" onsubmit="return false;" aria-label="Filter courses">
+          <div class="cf-fieldrow" id="lrn-fieldrow"></div>
+          <button type="button" id="lrn-reset" class="btn-ghost cf-reset-row">Reset</button>
+        </form>
+
+        <div class="cf-onlys lrn-onlys" role="group" aria-label="Quick filters" hidden>
+          <span class="cf-onlys-label">Only show</span>
+          <label class="cf-only"><input type="checkbox" data-only="beginner" /><span>Beginner friendly</span></label>
+          <label class="cf-only"><input type="checkbox" data-only="selfpaced" /><span>Self-paced</span></label>
+          <label class="cf-only"><input type="checkbox" data-only="live" /><span>Live or in person</span></label>
+          <label class="cf-only"><input type="checkbox" data-only="allfree" /><span>Free all the way through</span></label>
+          <label class="cf-only"><input type="checkbox" data-only="certificate" /><span>Offers a certificate</span></label>
+        </div>
+
+        <p class="cf-count lrn-count" id="lrn-count" role="status" aria-live="polite"></p>
+        <div class="cf-chips" id="lrn-chips"></div>
+        <div class="lrn-grid" id="lrn-list"><p class="cf-status">Loading free courses&hellip;</p></div>
+        <div class="cf-more-wrap">
+          <button type="button" id="lrn-showmore" class="btn-ghost" hidden></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATES ===================== -->
+    <!-- Driven by Support Available = "Certification or exam voucher", which is
+         the only certificate information this directory records. It says a
+         certificate or voucher is offered; it does not say what the certificate
+         costs or what it is worth, so neither does this section. -->
+    <section class="lrn-certs" id="lrn-certs" aria-labelledby="lrn-certs-heading" hidden>
+      <div class="cf-wrap">
+        <p class="section-label">Something to Show For It</p>
+        <h2 class="section-heading" id="lrn-certs-heading">Free courses that offer a certificate</h2>
+        <p class="lrn-sub">These free courses state that they offer a certificate, badge, or exam voucher when you finish. A certificate is worth having on a r&eacute;sum&eacute; or a LinkedIn profile, and none of these ask you to pay to take the course.</p>
+        <div class="lrn-grid lrn-grid-events" id="lrn-certs-list"></div>
+        <p class="lrn-events-note" id="lrn-certs-note"></p>
+      </div>
+    </section>
+
+    <!-- ===================== EVENTS ===================== -->
+    <section class="lrn-events" id="lrn-events" aria-labelledby="lrn-events-heading" hidden>
+      <div class="cf-wrap">
+        <p class="section-label">Dated Sessions</p>
+        <h2 class="section-heading" id="lrn-events-heading">Free AI Workshops &amp; Events</h2>
+        <p class="lrn-sub">Upcoming webinars, training sessions, community events, and hands-on workshops whose provider has confirmed they are free.</p>
+        <div class="lrn-grid lrn-grid-events" id="lrn-events-list"></div>
+
+        <!-- Kept out of the grid above on purpose. These are dated sessions the
+             provider has not priced, and the heading above says "free", so
+             listing them together would turn silence into a promise. -->
+        <div class="lrn-events-sub" id="lrn-events-other" hidden>
+          <h3 id="lrn-events-other-heading">Also coming up, cost not confirmed</h3>
+          <p class="lrn-sub">These sessions have a date on file but no stated cost. Many such sessions are free; this directory does not record it either way, so check the official page.</p>
+          <div class="lrn-grid lrn-grid-events" id="lrn-events-other-list"></div>
+        </div>
+
+        <p class="lrn-events-note" id="lrn-events-note"></p>
+      </div>
+    </section>
+
+    <!-- ===================== INSTRUCTOR-LED ===================== -->
+    <!-- Deliberately after the free library: someone who came for free
+         resources finds them first and is never interrupted on the way. -->
+    <section class="lrn-llc" aria-labelledby="lrn-llc-heading">
+      <div class="cf-wrap">
+        <p class="section-label">Another Way to Learn</p>
+        <h2 class="section-heading" id="lrn-llc-heading">Prefer to learn with an instructor?</h2>
+        <p class="lrn-sub">Free courses are a great way to get started. If you&rsquo;d rather learn with an instructor, ask questions, and practice using AI in a live session, explore my workshops.</p>
+
+        <div class="services-grid two-up lrn-llc-grid">
+          <article class="service-card pop-card gold">
+            <p class="class-tag">Instructor-led &middot; Paid</p>
+            <h3>Learn with Darice</h3>
+            <p>Build confidence using AI through live instruction, practical examples, and opportunities to ask questions.</p>
+            <ul>
+              <li>Live on Zoom, with time set aside for your questions</li>
+              <li>Practical demonstrations you follow along with</li>
+              <li>Taught by someone who has spent 35+ years in IT and 20+ years teaching technology at the college level</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn-primary" href="/ai-for-beginners.html">See AI for Beginners</a>
+              <a class="btn-ghost" href="/classes.html">All classes</a>
+            </div>
+          </article>
+
+          <article class="service-card pop-card teal">
+            <p class="class-tag">Free &middot; Self-serve</p>
+            <h3>Community AI</h3>
+            <p>A free public directory of AI funding, training, tools, and technical help. No account, no sign-up, nothing to buy.</p>
+            <ul>
+              <li>Every entry checked against its official source</li>
+              <li>Grants, free tools, programs, and technical assistance</li>
+              <li>Connecticut-specific opportunities alongside national ones</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn-ghost" href="/community-ai/">Browse the directory</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="lrn-llc-note">
+          AI for Beginners runs live on Zoom as a four-part series. Pricing and the parts still open
+          change as the series runs, so the course page is the only place that states them &mdash;
+          <a href="/ai-for-beginners.html">check it for current dates, pricing, and registration</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== HOW TO READ ===================== -->
+    <div class="cf-wrap">
+      <div class="cf-foot">
+        <p><strong>What &ldquo;free&rdquo; means here.</strong> Each card says what the provider states. Some courses are free end to end; some are free to take with a paid exam or certificate; some are a free tier of a paid product. Where a provider has not stated the cost, the card says the cost is not confirmed rather than calling it free.</p>
+        <p><strong>Some details are not on file.</strong> Course length, whether an account is required, and certificate details are not fields this directory collects yet, so no card claims them. Open the official page for those.</p>
+        <p><strong>Verify before you enroll.</strong> Providers change their terms without notice. Every card links to its official page and shows when it was last checked &mdash; treat that source, not this page, as the authority.</p>
+        <p>Maintained by <a href="/index.html">Darice Corey</a>. Know a free course that belongs here? <a href="/contact.html">Send it over</a>.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-cols">
+      <nav class="footer-col" aria-labelledby="foot-explore">
+        <h2 id="foot-explore">Explore</h2>
+        <ul>
+          <li><a href="/work.html">Work</a></li>
+          <li><a href="/ai.html">AI Leadership</a></li>
+          <li><a href="/research.html">Research</a></li>
+          <li><a href="/speaking.html">Speaking</a></li>
+          <li><a href="/mentorship.html">Mentorship</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="foot-projects">
+        <h2 id="foot-projects">Projects</h2>
+        <ul>
+          <li><a href="/community-ai/">Community AI</a></li>
+          <li><a href="/community-ai/learn/">Free AI Learning</a></li>
+          <li><a href="/village-notes/">Village Notes</a></li>
+          <li><a href="/year-end-report/">Year-End Report</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="foot-llc">
+        <h2 id="foot-llc">Darice Corey, LLC</h2>
+        <ul>
+          <li><a href="/classes.html">Classes</a></li>
+          <li><a href="/speaking.html">Speaking</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/contact.html?reason=speaking#contact-form">Book Darice to Speak</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="foot-elsewhere">
+        <h2 id="foot-elsewhere">Elsewhere</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+          <li><a href="/newsletter.html">Darice on AI newsletter</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer-base">&copy; 2026 Darice Corey. All rights reserved. Speaking, consulting, and workshops outside my Yale role are offered through Darice Corey, LLC.</p>
+  </footer>
+
+  <script src="/community-ai/learn/script.js?v={{ site.time | date: '%Y%m%d%H%M' }}" defer></script>
+</body>
+</html>

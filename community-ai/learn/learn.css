@@ -1,0 +1,200 @@
+/* ==========================================================================
+   Free AI Learning — styles for the learning area of Community AI.
+
+   Adds only what is new to this page. The filter boxes, chips, pills and
+   result counts come from /community-ai/community-ai.css, and the colour
+   itself comes from the pop palette in /styles.css: --pop-gold, --pop-teal,
+   --pop-rose, with --pop-ink as the text that sits on them. No palette is
+   invented here and no bright fill is ever used as text, which is the rule
+   those tokens are documented with (gold 10.6:1, teal 10.2:1, rose 5.8:1
+   against Deep Plum).
+   ========================================================================== */
+
+/* ---- Hero ---------------------------------------------------------------- */
+.lrn-hero-pills { margin: 0 0 1.5rem; }
+.lrn-hero-pills .pop-pill { font-size: .85rem; }
+.lrn-hero-note { font-size: .9rem; color: rgba(255,255,255,.75); line-height: 1.75; max-width: 70ch; }
+.lrn-hero-note a { color: #c084fc; }
+.lrn-hero-note a:hover { text-decoration: underline; }
+
+.lrn-sub { font-size: 1rem; color: var(--muted); line-height: 1.8; max-width: 70ch; margin: -.5rem 0 2rem; }
+
+/* ---- Section rhythm ------------------------------------------------------ */
+.lrn-finder { padding: 4rem 0 1rem; }
+.lrn-library { padding: 3.5rem 0 1rem; }
+.lrn-certs { padding: 3.5rem 0 1rem; }
+.lrn-certs[hidden] { display: none; }
+.lrn-events { padding: 3.5rem 0 1rem; }
+.lrn-events[hidden] { display: none; }
+.lrn-llc { background: var(--bg2); padding: 4.5rem 0; margin-top: 4rem; }
+
+/* ---- The goal picker ----------------------------------------------------- */
+/* Each path is a button, coloured in rotation from the pop palette so the
+   choice reads as a set rather than a list. The colour is decoration: the
+   label says what it is, and the pressed state is carried by aria-pressed
+   and a visible check, never by hue alone. */
+.lrn-goals { border: 0; padding: 0; margin: 0 0 2rem; display: grid; gap: .85rem;
+             grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); }
+.lrn-goals-legend { font-size: .85rem; color: var(--muted); padding: 0; margin-bottom: 1.1rem; }
+
+.lrn-goal {
+  position: relative; text-align: left; cursor: pointer;
+  background: var(--bg2); color: var(--cream);
+  border: 1px solid var(--line); border-top: 4px solid var(--pop-gold);
+  border-radius: 14px; padding: 1.1rem 1.15rem 1.1rem 2.6rem;
+  font-family: var(--sans); font-size: .95rem; line-height: 1.5; font-weight: 500;
+  transition: border-color .18s, background .18s, transform .12s;
+}
+.lrn-goal:nth-child(3n+2) { border-top-color: var(--pop-teal); }
+.lrn-goal:nth-child(3n)   { border-top-color: var(--pop-rose); }
+.lrn-goal:hover { background: color-mix(in srgb, var(--bg2) 88%, var(--coral)); transform: translateY(-1px); }
+.lrn-goal:focus-visible { outline: 3px solid var(--coral); outline-offset: 2px; }
+
+/* The marker is an outlined circle that fills with a tick once chosen, so the
+   selected state survives greyscale, high contrast and colour blindness. */
+.lrn-goal::before {
+  content: ''; position: absolute; left: 1rem; top: 1.25rem;
+  width: 1.05rem; height: 1.05rem; border-radius: 50%;
+  border: 2px solid var(--muted); transition: border-color .18s, background .18s;
+}
+.lrn-goal[aria-pressed="true"] { border-color: var(--coral); background: color-mix(in srgb, var(--bg2) 82%, var(--coral)); }
+.lrn-goal[aria-pressed="true"]::before { border-color: var(--coral); background: var(--coral); }
+.lrn-goal[aria-pressed="true"]::after {
+  content: ''; position: absolute; left: 1.33rem; top: 1.52rem;
+  width: .3rem; height: .55rem; border: solid var(--pop-ink);
+  border-width: 0 2px 2px 0; transform: rotate(45deg);
+}
+@media (prefers-color-scheme: light) { .lrn-goal[aria-pressed="true"]::after { border-color: #fff; } }
+@media (prefers-reduced-motion: reduce) {
+  .lrn-goal, .lrn-card { transition: none; }
+  .lrn-goal:hover { transform: none; }
+}
+
+/* ---- Finder result ------------------------------------------------------- */
+.lrn-result { border-top: 1px solid var(--line); padding-top: 2rem; margin-bottom: 1rem; }
+.lrn-result[hidden] { display: none; }
+.lrn-result-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-bottom: .75rem; }
+.lrn-result-head h3 { font-family: var(--serif); font-size: 1.35rem; font-weight: 700; color: var(--cream); line-height: 1.3; }
+.lrn-result-head h3:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
+.lrn-result-why { font-size: .92rem; color: var(--muted); line-height: 1.75; max-width: 72ch; margin-bottom: 1.75rem; }
+.lrn-result-more { font-size: .85rem; color: var(--muted); line-height: 1.7; margin-top: 1.5rem; }
+
+/* ---- Card grid ----------------------------------------------------------- */
+.lrn-grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); }
+
+.lrn-card {
+  background: var(--bg2); border: 1px solid var(--line);
+  border-top: 4px solid var(--pop-gold); border-radius: 14px;
+  padding: 1.5rem 1.5rem 1.35rem; display: flex; flex-direction: column;
+  transition: border-color .18s;
+}
+.lrn-card:nth-child(3n+2) { border-top-color: var(--pop-teal); }
+.lrn-card:nth-child(3n)   { border-top-color: var(--pop-rose); }
+.lrn-card:hover { border-color: rgba(192,132,252,.32); }
+.lrn-card:hover { border-top-color: var(--pop-gold); }
+.lrn-card:nth-child(3n+2):hover { border-top-color: var(--pop-teal); }
+.lrn-card:nth-child(3n):hover   { border-top-color: var(--pop-rose); }
+
+.lrn-card-org { font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--coral); margin-bottom: .45rem; }
+.lrn-card h3, .lrn-card h4 { font-family: var(--serif); font-size: 1.15rem; font-weight: 700; line-height: 1.3; color: var(--cream); margin-bottom: .7rem; }
+.lrn-card h3 mark, .lrn-card p mark { background: rgba(192,132,252,.3); color: var(--cream); padding: 0 .12em; border-radius: 2px; }
+.lrn-card-desc { font-size: .9rem; color: var(--muted); line-height: 1.7; margin-bottom: 1rem; }
+
+/* Labels. Small, readable, and only ever written when the record says so. */
+.lrn-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 1rem; padding: 0; list-style: none; }
+.lrn-tag {
+  display: inline-block; padding: .25rem .7rem; border-radius: 999px;
+  font-size: .74rem; font-weight: 600; line-height: 1.4; color: var(--pop-ink);
+  background: var(--pop-gold);
+}
+.lrn-tag.teal { background: var(--pop-teal); }
+.lrn-tag.rose { background: var(--pop-rose); }
+/* An unconfirmed fact is never a bright fill: it reads as an outline, so
+   "cost not confirmed" cannot be mistaken for a cheerful promise. */
+.lrn-tag.quiet { background: transparent; border: 1px solid var(--line); color: var(--muted); font-weight: 500; }
+
+.lrn-facts { margin: 0 0 1.1rem; font-size: .84rem; line-height: 1.6; }
+.lrn-facts div { display: grid; grid-template-columns: 7.5rem 1fr; gap: .3rem .8rem; padding: .22rem 0; }
+.lrn-facts dt { color: var(--coral); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; padding-top: .15rem; }
+.lrn-facts dd { color: var(--muted); }
+
+.lrn-card-foot { margin-top: auto; display: flex; flex-direction: column; gap: .6rem; align-items: flex-start; min-width: 0; }
+/* max-width and min-width let the link wrap instead of pushing the card wider
+   than the screen: a flex item will not shrink past its content otherwise, and
+   these links carry a course title and a hostname. */
+.lrn-visit { max-width: 100%; min-width: 0; color: var(--cream); font-size: .82rem; letter-spacing: .04em; text-decoration: none; border-bottom: 1px solid var(--coral); padding-bottom: 2px; }
+.lrn-visit:hover { color: var(--coral); }
+.lrn-visit:focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
+.lrn-checked { font-size: .72rem; color: var(--muted); opacity: .85; }
+
+/* ---- Library controls ---------------------------------------------------- */
+.lrn-search { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.lrn-searchbox { flex: 1 1 320px; }
+
+/* The directory styles its own search input by id (#cf-q), so none of it
+   reaches this one. Restated here against the wrapper class instead, which is
+   what the next page to reuse .cf-searchbox will inherit too. The left padding
+   is what keeps the placeholder clear of the magnifier. */
+.lrn-searchbox input[type="search"] {
+  width: 100%; box-sizing: border-box;
+  background: var(--bg2); border: 1px solid var(--line); border-radius: 2px;
+  color: var(--cream); font-family: var(--sans); font-size: .95rem;
+  padding: .85rem 2.6rem .85rem 2.8rem;
+}
+.lrn-searchbox input[type="search"]::placeholder { color: var(--muted); }
+.lrn-searchbox input[type="search"]:focus { border-color: var(--coral); outline: none; }
+.lrn-searchbox input[type="search"]:focus-visible { outline: 3px solid var(--coral); outline-offset: 1px; }
+/* Safari's own clear button on top of ours. */
+.lrn-searchbox input[type="search"]::-webkit-search-cancel-button { display: none; }
+.lrn-controls { margin-bottom: 1.25rem; }
+.lrn-onlys { margin: 0 0 1.5rem; }
+.lrn-count { margin-bottom: 1rem; }
+
+/* ---- Events -------------------------------------------------------------- */
+.lrn-grid-events { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.lrn-date {
+  display: inline-block; background: var(--pop-teal); color: var(--pop-ink);
+  font-weight: 700; font-size: .8rem; padding: .3rem .8rem; border-radius: 999px; margin-bottom: .7rem;
+}
+.lrn-events-note { font-size: .82rem; color: var(--muted); line-height: 1.7; margin-top: 1.75rem; max-width: 72ch; padding-left: 1rem; border-left: 2px solid var(--line); }
+
+/* The unpriced sessions, set apart from the ones confirmed free. The rule and
+   the quieter heading are the separation doing its job: a reader scanning for
+   free things can see where the confirmed list stops. */
+.lrn-events-sub { margin-top: 3rem; padding-top: 2.25rem; border-top: 1px solid var(--line); }
+.lrn-events-sub[hidden] { display: none; }
+.lrn-events-sub h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 700; color: var(--cream); line-height: 1.3; margin-bottom: .6rem; }
+.lrn-events-sub .lrn-sub { margin: 0 0 1.75rem; }
+
+/* The finder's widening marker. Spans the grid so the honest matches above it
+   and the broader suggestions below it read as two separate answers. */
+.lrn-widen {
+  grid-column: 1 / -1; margin: .5rem 0 -.25rem;
+  font-size: .8rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--coral); font-weight: 600;
+}
+
+/* ---- Instructor-led ------------------------------------------------------ */
+.lrn-llc-grid { margin-top: 2rem; }
+.lrn-llc-grid .service-card { border-radius: 14px; }
+.lrn-llc-note { font-size: .88rem; color: var(--muted); line-height: 1.75; margin-top: 2rem; max-width: 72ch; }
+.lrn-llc-note a { color: var(--coral); }
+
+/* ---- Empty state --------------------------------------------------------- */
+.lrn-empty { text-align: center; padding: 3.5rem 1.5rem; border: 1px dashed var(--line); border-radius: 14px; grid-column: 1 / -1; }
+.lrn-empty h3 { font-family: var(--serif); font-size: 1.25rem; margin-bottom: .75rem; color: var(--cream); }
+.lrn-empty p { color: var(--muted); font-size: .92rem; line-height: 1.7; max-width: 52ch; margin: 0 auto 1.25rem; }
+
+/* ---- Responsive ---------------------------------------------------------- */
+@media (max-width: 980px) {
+  .lrn-goals { grid-template-columns: 1fr 1fr; }
+  .lrn-grid { grid-template-columns: 1fr; }
+  .lrn-llc-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 620px) {
+  .lrn-goals { grid-template-columns: 1fr; }
+  .lrn-facts div { grid-template-columns: 1fr; gap: .1rem; }
+  .lrn-facts dt { padding-top: .5rem; }
+  .lrn-finder, .lrn-library, .lrn-events { padding-top: 2.5rem; }
+  .lrn-llc { padding: 3rem 0; }
+}
