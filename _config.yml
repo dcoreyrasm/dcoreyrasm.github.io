@@ -44,3 +44,12 @@ exclude:
   # runs only in Actions and has no business being copied into the published
   # site.
   - scripts
+
+# Prompt Library (Oct 2026). Each newsletter issue can publish one ready-to-copy
+# prompt at /prompts/<name>/. Prompt documents have NO `date` key on purpose:
+# Jekyll hides future-dated collection documents, and a prompt page must be live
+# before the email that links to it goes out. Use `published_on` for sorting.
+collections:
+  prompts:
+    output: true
+    permalink: /prompts/:name/

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}" />
+  <title>Prompt Library — Darice Corey</title>
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Darice Corey" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ page.image | default: '/darice.jpg' | absolute_url }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}" />
+  <meta name="twitter:image" content="{{ page.image | default: '/darice.jpg' | absolute_url }}" />
+    <script>window.__daOptOut=(function(){try{return localStorage.getItem('da-analytics-optout')==='1'}catch(e){return false}})();if(window.__daOptOut){window['ga-disable-G-725R412XD7']=true;}</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-725R412XD7"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-725R412XD7');</script>
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#16131F" />
+  <link rel="stylesheet" href="/styles.css?v=20261023e" />
+  <style>
+    /* Prompt Library pages (Oct 2026). Kept inline so a cached styles.css can never leave a prompt page unstyled. */
+    .prompt-box { background:var(--bg2); border:1px solid var(--line); border-radius:14px; padding:1.5rem 1.5rem 1.25rem; }
+    .prompt-text { white-space:pre-wrap; word-wrap:break-word; font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:1rem; line-height:1.7; color:var(--cream); margin:0 0 1.25rem; }
+    .prompt-actions { display:flex; flex-wrap:wrap; align-items:center; gap:1rem; }
+    .prompt-copy { background:var(--pop-gold); color:var(--pop-ink); border-radius:999px; font-weight:700; }
+    .prompt-copy:hover, .prompt-copy:focus-visible { background:var(--pop-teal); color:var(--pop-ink); }
+    .prompt-copy-status { font-size:.95rem; color:var(--cream); }
+    .prompt-note { margin-top:1rem; color:var(--muted); font-size:.98rem; }
+    .prompt-steps { margin:1rem 0 0 1.25rem; display:grid; gap:.6rem; line-height:1.7; }
+    .prompt-watch { margin-top:2.25rem; background:var(--bg2); border:1px solid var(--line); border-radius:14px; padding:1.25rem 1.5rem; line-height:1.7; }
+    .prompt-watch-label { margin-bottom:.6rem; }
+    .prompt-more { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:2.75rem; }
+    .prompt-list { display:grid; gap:1.25rem; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); list-style:none; padding:0; }
+    .prompt-list a { display:block; height:100%; background:var(--bg2); border:1px solid var(--line); border-radius:14px; padding:1.25rem 1.4rem; text-decoration:none; color:var(--cream); }
+    .prompt-list a:hover, .prompt-list a:focus-visible { border-color:var(--coral); }
+    .prompt-list h3 { font-family:var(--serif); font-weight:400; font-size:1.25rem; margin:.75rem 0 .5rem; }
+    .prompt-list p { color:var(--muted); font-size:.95rem; line-height:1.6; }
+    .prompt-box.pop-card, .prompt-watch.pop-card, .prompt-list a.pop-card { border-top-width:4px; }
+    .prompt-box.gold, .prompt-list a.gold { border-top-color:var(--pop-gold); } .prompt-list a.teal { border-top-color:var(--pop-teal); } .prompt-watch.rose, .prompt-list a.rose { border-top-color:var(--pop-rose); }
+  </style>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">if(!window.__daOptOut){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xdrtc0i2un");}</script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  {% include site-nav.html %}
+
+  <main id="main-content">
+
+    <div class="ai-hero">
+      <div class="container">
+        <p class="section-label" style="color:var(--coral);">From the Darice on AI newsletter</p>
+        <h1 class="section-heading" style="color:#fff;">Prompt Library</h1>
+        <p style="font-size:1.05rem;color:rgba(255,255,255,.85);max-width:680px;line-height:1.75;margin-bottom:0;">Ready-to-copy prompts from the newsletter. Each one works in Claude, ChatGPT, Copilot, or Gemini. Open one, copy it, and paste it into the tool you already use.</p>
+      </div>
+    </div>
+
+    <section aria-labelledby="prompts-heading">
+      <div class="container">
+        <p class="section-label" id="prompts-heading">All prompts</p>
+        {%- assign items = site.prompts | sort: "published_on" | reverse -%}
+        <ul class="prompt-list">
+          {%- assign colors = "gold,teal,rose" | split: "," -%}
+          {%- for item in items %}
+          {%- assign c = forloop.index0 | modulo: 3 %}
+          <li><a class="pop-card {{ colors[c] }}" href="{{ item.url }}">
+            <span class="pop-pill {{ colors[c] }}">{{ item.category | default: "Prompt" }}</span>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+          </a></li>
+          {%- endfor %}
+        </ul>
+        <div class="prompt-more">
+          <a class="btn-ghost" href="/newsletter.html#signup">Get a new prompt every week →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-cols">
+      <nav class="footer-col" aria-labelledby="foot-explore">
+        <h2 id="foot-explore">Explore</h2>
+        <ul>
+          <li><a href="/work.html">Work</a></li>
+          <li><a href="/ai.html">AI Leadership</a></li>
+          <li><a href="/research.html">Research</a></li>
+          <li><a href="/speaking.html">Speaking</a></li>
+          <li><a href="/mentorship.html">Mentorship</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="foot-projects">
+        <h2 id="foot-projects">Projects</h2>
+        <ul>
+          <li><a href="/village-notes/">Village Notes</a></li>
+          <li><a href="/year-end-report/">Year-End Report</a></li>
+          <li><a href="/community-ai/">Community AI</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="foot-llc">
+        <h2 id="foot-llc">Darice Corey, LLC</h2>
+        <ul>
+          <li><a href="/speaking.html">Speaking</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/contact.html?reason=speaking#contact-form">Book Darice to Speak</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="foot-elsewhere">
+        <h2 id="foot-elsewhere">Elsewhere</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+          <li><a href="/newsletter.html">Newsletter</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer-base">&copy; 2026 Darice Corey. All rights reserved. Speaking, consulting, and workshops outside my Yale role are offered through Darice Corey, LLC.</p>
+  </footer>
+
+  <script>
+    (function () {
+      document.querySelectorAll('.prompt-copy').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var el = document.getElementById(btn.getAttribute('data-copy-target'));
+          var status = btn.parentNode.querySelector('.prompt-copy-status');
+          var text = el ? el.textContent : '';
+          function done(ok) {
+            if (status) status.textContent = ok ? 'Copied. Paste it into your AI tool.' : 'Select the text above and copy it.';
+            if (ok && window.gtag) { try { gtag('event', 'prompt_copy', { prompt: location.pathname }); } catch (e) {} }
+          }
+          function fallback() {
+            try {
+              var r = document.createRange(); r.selectNodeContents(el);
+              var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+              done(document.execCommand('copy'));
+            } catch (e) { done(false); }
+          }
+          if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+          } else { fallback(); }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
