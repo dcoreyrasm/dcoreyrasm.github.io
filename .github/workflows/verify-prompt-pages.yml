@@ -1,0 +1,85 @@
+name: Verify prompt pages
+
+# Confirms every Prompt Library page is actually live on daricecorey.com,
+# checked from the public internet, not just committed.
+#
+# Why: newsletter issues link to /prompts/<name>/ with a "Get the full prompt"
+# button. The newsletter task pushes the prompt page first, then waits for THIS
+# workflow to pass for its commit before it puts the button in the email. If
+# this fails, the email goes out without the button rather than with a link
+# that 404s.
+#
+# Each page carries <meta name="prompt-id" content="<name>">, so a 404 page,
+# a stale cache, or the wrong page can never pass for the right one.
+#
+# The daily run re-checks every page and opens a tracking issue if one ever
+# stops loading, since older emails keep linking to them.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "_prompts/**"
+      - "_layouts/prompt.html"
+      - "_layouts/prompt-index.html"
+      - "prompts/**"
+      - "_config.yml"
+  schedule:
+    - cron: "40 12 * * *"   # daily
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: verify-prompt-pages-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Wait for each prompt page to be live
+        id: check
+        continue-on-error: true
+        run: |
+          set -u
+          fail=0
+          urls="https://www.daricecorey.com/prompts/"
+          for f in _prompts/*.md; do
+            name="$(basename "$f" .md)"
+            url="https://www.daricecorey.com/prompts/${name}/"
+            ok=0
+            # GitHub Pages usually deploys within a few minutes; allow up to 20.
+            for attempt in $(seq 1 40); do
+              body="$(curl -fsSL --max-time 20 -H 'Cache-Control: no-cache' "${url}?v=${GITHUB_SHA}-${attempt}" || true)"
+              if printf '%s' "$body" | grep -q "<meta name=\"prompt-id\" content=\"${name}\""; then
+                ok=1; break
+              fi
+              sleep 30
+            done
+            if [ "$ok" = 1 ]; then echo "LIVE  $url"; else echo "MISSING  $url"; fail=1; fi
+          done
+          code="$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 https://www.daricecorey.com/prompts/)"
+          if [ "$code" = "200" ]; then echo "LIVE  https://www.daricecorey.com/prompts/"; else echo "MISSING  https://www.daricecorey.com/prompts/ ($code)"; fail=1; fi
+          echo "fail=$fail" >> "$GITHUB_OUTPUT"
+
+      - name: Open a tracking issue if a page is missing on the daily check
+        if: steps.check.outputs.fail == '1' && github.event_name == 'schedule'
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const title = 'A Prompt Library page is not loading';
+            const body = 'The daily check found a /prompts/ page that does not load. Older newsletter emails link to these pages. See the run log: ' +
+              `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const { data: open } = await github.rest.issues.listForRepo({ ...context.repo, state: 'open' });
+            if (!open.some(i => i.title === title)) {
+              await github.rest.issues.create({ ...context.repo, title, body });
+            }
+
+      - name: Fail the run if anything is missing
+        if: steps.check.outputs.fail == '1'
+        run: exit 1

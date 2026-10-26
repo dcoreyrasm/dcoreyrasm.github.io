@@ -6,6 +6,7 @@
   <meta name="description" content="{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}" />
   <title>{{ page.title }} — Prompt Library — Darice Corey</title>
   <meta name="robots" content="index, follow" />
+  <meta name="prompt-id" content="{{ page.slug }}" />
   <meta name="author" content="Darice Corey" />
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
   <meta property="og:type" content="website" />
