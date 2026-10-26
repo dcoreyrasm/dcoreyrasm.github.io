@@ -6,7 +6,7 @@
 {%- assign in_about = false -%}{%- if u == '/work.html' or u == '/ai.html' or u == '/research.html' or u == '/mentorship.html' -%}{%- assign in_about = true -%}{%- endif -%}
 {%- assign in_speak = false -%}{%- if u == '/speaking.html' or u == '/services.html' -%}{%- assign in_speak = true -%}{%- endif -%}
 {%- assign in_class = false -%}{%- if u == '/ai-for-beginners.html' or u == '/start-your-business.html' or u == '/classes.html' -%}{%- assign in_class = true -%}{%- endif -%}
-{%- assign in_proj = false -%}{%- if u contains '/community-ai/' or u contains '/village-notes/' or u contains '/connecticut-list/' or u contains '/year-end-report/' -%}{%- assign in_proj = true -%}{%- endif -%}
+{%- assign in_proj = false -%}{%- if u contains '/community-ai/' or u contains '/village-notes/' or u contains '/connecticut-list/' or u contains '/year-end-report/' or u contains '/prompts/' -%}{%- assign in_proj = true -%}{%- endif -%}
 {%- assign in_write = false -%}{%- if u == '/blog.html' or u contains '/blog/' or u == '/newsletter.html' -%}{%- assign in_write = true -%}{%- endif -%}
   <script>
     (function () {
@@ -51,6 +51,7 @@
             <li><a href="/community-ai/"{% if u contains '/community-ai/' %} aria-current="page"{% endif %}>Community AI</a></li>
             <li><a href="/village-notes/"{% if u contains '/village-notes/' %} aria-current="page"{% endif %}>Village Notes</a></li>
             <li><a href="/connecticut-list/"{% if u contains '/connecticut-list/' %} aria-current="page"{% endif %}>Connecticut List</a></li>
+            <li><a href="/prompts/"{% if u contains '/prompts/' %} aria-current="page"{% endif %}>Prompt Library</a></li>
             <li><a href="/year-end-report/"{% if u contains '/year-end-report/' %} aria-current="page"{% endif %}>Year-End Report</a></li>
           </ul>
         </li>
