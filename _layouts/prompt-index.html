@@ -45,6 +45,16 @@
     .prompt-list h3 { font-family:var(--serif); font-weight:400; font-size:1.25rem; margin:.75rem 0 .5rem; }
     .prompt-list p { color:var(--muted); font-size:.95rem; line-height:1.6; }
     .prompt-box.pop-card, .prompt-watch.pop-card, .prompt-list a.pop-card { border-top-width:4px; }
+    .prompt-filter { margin:0 0 1.75rem; }
+    .prompt-filter[hidden] { display:none; }
+    .prompt-filter-label { display:block; margin-bottom:.75rem; color:var(--muted); font-size:.95rem; }
+    .prompt-filter-list { display:flex; flex-wrap:wrap; gap:.6rem; list-style:none; padding:0; margin:0; }
+    .prompt-filter-btn { min-height:44px; padding:.55rem 1.1rem; border-radius:999px; border:1px solid var(--line); background:transparent; color:var(--cream); font-family:var(--sans); font-size:.95rem; font-weight:600; cursor:pointer; }
+    .prompt-filter-btn:hover { border-color:var(--coral); }
+    .prompt-filter-btn:focus-visible { outline:3px solid var(--pop-teal); outline-offset:2px; }
+    .prompt-filter-btn[aria-pressed="true"] { background:var(--pop-gold); border-color:var(--pop-gold); color:var(--pop-ink); }
+    .prompt-filter-count { margin:1rem 0 0; color:var(--muted); font-size:.95rem; }
+    .prompt-list li[hidden] { display:none; }
     .prompt-box.gold, .prompt-list a.gold { border-top-color:var(--pop-gold); } .prompt-list a.teal { border-top-color:var(--pop-teal); } .prompt-watch.rose, .prompt-list a.rose { border-top-color:var(--pop-rose); }
   </style>
   <!-- Microsoft Clarity -->
@@ -68,11 +78,23 @@
       <div class="container">
         <p class="section-label" id="prompts-heading">All prompts</p>
         {%- assign items = site.prompts | sort: "published_on" | reverse -%}
-        <ul class="prompt-list">
+        {%- assign categories = site.prompts | map: "category" | compact | uniq | sort -%}
+        {%- comment -%} Filter bar starts hidden; the script shows it, so without JavaScript visitors simply see every prompt. {%- endcomment -%}
+        <div class="prompt-filter" id="prompt-filter" role="group" aria-labelledby="prompt-filter-label" hidden>
+          <span class="prompt-filter-label" id="prompt-filter-label">Filter by category</span>
+          <ul class="prompt-filter-list">
+            <li><button type="button" class="prompt-filter-btn" data-filter="all" aria-pressed="true">All</button></li>
+            {%- for cat in categories %}
+            <li><button type="button" class="prompt-filter-btn" data-filter="{{ cat | slugify }}" aria-pressed="false">{{ cat }}</button></li>
+            {%- endfor %}
+          </ul>
+          <p class="prompt-filter-count" id="prompt-filter-count" aria-live="polite"></p>
+        </div>
+        <ul class="prompt-list" id="prompt-list">
           {%- assign colors = "gold,teal,rose" | split: "," -%}
           {%- for item in items %}
           {%- assign c = forloop.index0 | modulo: 3 %}
-          <li><a class="pop-card {{ colors[c] }}" href="{{ item.url }}">
+          <li data-category="{{ item.category | default: 'Prompt' | slugify }}"><a class="pop-card {{ colors[c] }}" href="{{ item.url }}">
             <span class="pop-pill {{ colors[c] }}">{{ item.category | default: "Prompt" }}</span>
             <h3>{{ item.title }}</h3>
             <p>{{ item.description }}</p>
@@ -131,6 +153,53 @@
   </footer>
 
   <script>
+    /* Category filter. Supports links like /prompts/?category=career-growth from the newsletter. */
+    (function () {
+      var bar = document.getElementById('prompt-filter');
+      var list = document.getElementById('prompt-list');
+      if (!bar || !list) return;
+      var buttons = Array.prototype.slice.call(bar.querySelectorAll('.prompt-filter-btn'));
+      var items = Array.prototype.slice.call(list.querySelectorAll('li[data-category]'));
+      var count = document.getElementById('prompt-filter-count');
+      if (buttons.length < 3) return; /* "All" plus one category: nothing to filter */
+      bar.hidden = false;
+
+      function apply(slug, updateUrl) {
+        var valid = buttons.some(function (b) { return b.getAttribute('data-filter') === slug; });
+        if (!valid) slug = 'all';
+        var shown = 0;
+        items.forEach(function (li) {
+          var match = slug === 'all' || li.getAttribute('data-category') === slug;
+          li.hidden = !match;
+          if (match) shown++;
+        });
+        var label = 'all categories';
+        buttons.forEach(function (b) {
+          var on = b.getAttribute('data-filter') === slug;
+          b.setAttribute('aria-pressed', on ? 'true' : 'false');
+          if (on && slug !== 'all') label = b.textContent;
+        });
+        if (count) count.textContent = 'Showing ' + shown + (shown === 1 ? ' prompt' : ' prompts') + ' in ' + label + '.';
+        if (updateUrl && window.history && history.replaceState) {
+          var url = new URL(location.href);
+          if (slug === 'all') url.searchParams.delete('category'); else url.searchParams.set('category', slug);
+          history.replaceState(null, '', url.pathname + url.search + url.hash);
+        }
+      }
+
+      buttons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          var slug = b.getAttribute('data-filter');
+          apply(slug, true);
+          if (window.gtag) { try { gtag('event', 'prompt_filter', { category: slug }); } catch (e) {} }
+        });
+      });
+
+      var start = 'all';
+      try { start = new URLSearchParams(location.search).get('category') || 'all'; } catch (e) {}
+      apply(start, false);
+    })();
+
     (function () {
       document.querySelectorAll('.prompt-copy').forEach(function (btn) {
         btn.addEventListener('click', function () {
