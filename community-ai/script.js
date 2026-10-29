@@ -95,6 +95,17 @@
     ['whoCanParticipate','Who can take part']
   ];
 
+  /* Keys the page reads as a plain yes or no rather than as a facet or a detail
+     row: a fellowship mark and, on a closed entry, whether the programme is
+     expected to run again. Both are Airtable checkboxes, so there is no
+     vocabulary to drift -- but a renamed field would still empty them in
+     silence, so scripts/check-community-vocabulary.js reads this list and turns
+     the sync red if either one stops arriving. */
+  var RECORD_FLAGS = [
+    ['fellowship',     'Fellowship Program'],
+    ['watchNextCycle', 'Watch Next Cycle']
+  ];
+
   /* How you get in: the page's spine. These three order the groups, colour the
      badges, and fill the "open to anyone" figure in the hero.
      
@@ -306,6 +317,12 @@
      window it goes back to being a date. */
   var SOON_DAYS = 14;
 
+  /* Inside the last week the countdown stops being information and starts
+     being a decision, so it says so in those words and takes the filled
+     treatment. The fortnight above it still counts down; this is the shorter
+     window inside it, not a replacement for it. */
+  var CLOSING_SOON_DAYS = 7;
+
   function closingSoon(rec) {
     var n = daysUntil(rec.deadline);
     return n !== null && n >= 0 && n <= SOON_DAYS;
@@ -331,11 +348,24 @@
     return !newSaysNothing && isNew(rec);
   }
 
-  /* The two switches above the results. They ask about dates rather than about
-     a field, so they cut across every facet instead of being one. */
+  /* Fellowships live across several Opportunity Type values -- the ones that
+     place a fellow in an organisation are filed as a grant or a collaboration,
+     because that is what the organisation receives -- so the mark is its own
+     Airtable checkbox rather than a reading of the type. Leaving the type
+     alone keeps what those entries already say about themselves true. */
+  function isFellowship(rec) {
+    return !!rec.fellowship;
+  }
+
+  /* The switches above the results. Each one is a single yes-or-no cut that
+     applies on top of whatever the filter boxes say, which is why none of them
+     is a facet: two ask about dates, and the third asks a question the type
+     field cannot answer on its own. */
+
   var ONLY = {
     'new':  { test: showsNew,      said: 'added recently' },
-    'soon': { test: closingSoon,   said: 'with a deadline coming up' }
+    'soon': { test: closingSoon,   said: 'with a deadline coming up' },
+    'fellowship': { test: isFellowship, said: 'fellowships' }
   };
 
   /* Order for the deadline sort: what is still open, soonest first; then the
@@ -611,6 +641,12 @@
     var badges = [];
     if (rec.door) badges.push('<span class="cf-badge ' + doorClass(rec.door) + '">' + esc(shortDoor(rec.door)) + '</span>');
     if (rec.type) badges.push('<span class="cf-badge">' + esc(rec.type) + '</span>');
+    /* Only where the type does not already say it. An entry filed as a grant
+       because that is what the host organisation gets still needs saying that
+       what arrives is a fellow. */
+    if (isFellowship(rec) && rec.type !== 'Fellowship') {
+      badges.push('<span class="cf-badge fellowship">Fellowship</span>');
+    }
     if (rec.maxFunding != null) badges.push('<span class="cf-badge money">Up to ' + esc(money(rec.maxFunding)) + '</span>');
     if (rec.cost && rec.cost !== 'Not stated') badges.push('<span class="cf-badge">' + esc(rec.cost) + '</span>');
     if (rec.legalStatus === 'None') badges.push('<span class="cf-badge">No legal status needed</span>');
@@ -621,7 +657,10 @@
       if (isClosed(rec.deadline)) {
         badges.push('<span class="cf-badge closed">Closed ' + esc(prettyDate(rec.deadline)) + '</span>');
       } else if (left === 0) {
-        badges.push('<span class="cf-badge deadline">Closes today</span>');
+        badges.push('<span class="cf-badge deadline urgent">Closing soon: today</span>');
+      } else if (left !== null && left <= CLOSING_SOON_DAYS) {
+        badges.push('<span class="cf-badge deadline urgent">Closing soon: ' + left +
+                    (left === 1 ? ' day' : ' days') + ' left</span>');
       } else if (left !== null && left <= SOON_DAYS) {
         badges.push('<span class="cf-badge deadline">Closes in ' + left +
                     (left === 1 ? ' day' : ' days') + '</span>');
@@ -630,6 +669,14 @@
            that really is days away, so a further-off one reads calmer. */
         badges.push('<span class="cf-badge upcoming">Deadline ' + esc(prettyDate(rec.deadline)) + '</span>');
       }
+    }
+    /* A closed entry stays on the page because the programme is the useful
+       thing, not the date. Where it is expected to come round again that is
+       worth saying, so the reader does not read a passed deadline as a dead
+       end. Not tied to the deadline badge above: several closed programmes
+       never published a date, and those are the ones hardest to read. */
+    if (rec.watchNextCycle) {
+      badges.push('<span class="cf-badge watch">Watch next cycle</span>');
     }
     if (showsNew(rec)) badges.push('<span class="cf-badge fresh">Just added</span>');
 
@@ -921,7 +968,19 @@
 
     Array.prototype.forEach.call(document.querySelectorAll('.cf-only input[data-only]'), function (box) {
       box.addEventListener('change', function () {
-        state.only[this.getAttribute('data-only')] = this.checked;
+        var key = this.getAttribute('data-only');
+        state.only[key] = this.checked;
+        /* Narrowing to fellowships is nearly always a question about dates --
+           which ones can still be applied to -- and best match has nothing to
+           rank by with no search typed. So the deadline order comes along,
+           putting what is open first and soonest first within that. It only
+           steps in where the reader has not chosen an order themselves, and
+           the dropdown moves with it so the change is visible, not silent. */
+        if (key === 'fellowship' && this.checked && state.sort === 'relevance') {
+          state.sort = 'deadline';
+          var sortEl = $('cf-sort');
+          if (sortEl) sortEl.value = 'deadline';
+        }
         writeHash(); renderAll();
       });
     });
@@ -1015,10 +1074,14 @@
     META = payload.meta || {};
     ALL = payload.opportunities || [];
 
-    /* Pre-lowercase every searched field once, so typing stays instant. */
+    /* Pre-lowercase every searched field once, so typing stays instant, and
+       settle the yes/no marks while we are here: Airtable sends an unticked
+       box as nothing at all, so without this every reader of them would have
+       to know that null means no. */
     ALL.forEach(function (rec) {
       rec._hay = {};
       SEARCH_FIELDS.forEach(function (pair) { rec._hay[pair[0]] = haystack(rec, pair[0]); });
+      RECORD_FLAGS.forEach(function (pair) { rec[pair[0]] = rec[pair[0]] === true; });
     });
 
     /* Facet options come from the data, not a hand-kept list. */

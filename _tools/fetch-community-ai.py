@@ -76,6 +76,8 @@ FIELDS = {
     "Delivery Format": "deliveryFormat",
     "Community Topics": "topics",
     "Industry Categories": "industries",
+    "Fellowship Program": "fellowship",
+    "Watch Next Cycle": "watchNextCycle",
     "Support Available": "support",
     "Languages Available": "languages",
     "Accessibility Features": "accessibility",

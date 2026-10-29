@@ -272,6 +272,15 @@
    that really is days away. */
 .cf-badge.upcoming { border-color: var(--cf-warn-line); color: var(--cf-warn); background: var(--cf-warn-bg); }
 .cf-badge.fresh { border-color: var(--cf-ok-line); color: var(--cf-ok); background: var(--cf-ok-bg); font-weight: 500; }
+/* Inside the last week. Same alert colour as .deadline, filled rather than
+   tinted, so one badge in a row of them is the one that reads as urgent. */
+.cf-badge.deadline.urgent { border-color: var(--cf-alert); color: var(--cf-on-accent); background: var(--cf-alert); font-weight: 600; }
+/* A closed programme expected to come round again. Deliberately quiet: it sits
+   next to the closed date and is a note to come back, not a call to act now. */
+.cf-badge.watch { border-color: var(--cf-warn-line); color: var(--cf-warn); background: var(--cf-warn-bg); }
+/* The site accent, shared with the funding badge, for the one word that says
+   what kind of thing this is when the type field says something else. */
+.cf-badge.fellowship { border-color: rgba(192,132,252,.45); color: var(--coral); background: rgba(192,132,252,.1); font-weight: 500; }
 .cf-closed-note { color: var(--muted); font-size: .82em; }
 .cf-card-desc { font-size: .92rem; color: var(--muted); line-height: 1.7; }
 .cf-card-actions { display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; margin-top: 1.1rem; }
