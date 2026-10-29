@@ -4,7 +4,7 @@
 {%- endcomment -%}
 {%- assign u = page.url -%}
 {%- assign in_about = false -%}{%- if u == '/work.html' or u == '/ai.html' or u == '/research.html' or u == '/mentorship.html' -%}{%- assign in_about = true -%}{%- endif -%}
-{%- assign in_speak = false -%}{%- if u == '/speaking.html' or u == '/services.html' -%}{%- assign in_speak = true -%}{%- endif -%}
+{%- assign in_speak = false -%}{%- if u == '/speaking.html' or u == '/services.html' or u == '/portfolio.html' -%}{%- assign in_speak = true -%}{%- endif -%}
 {%- assign in_class = false -%}{%- if u == '/ai-for-beginners.html' or u == '/start-your-business.html' or u == '/classes.html' -%}{%- assign in_class = true -%}{%- endif -%}
 {%- assign in_proj = false -%}{%- if u contains '/community-ai/' or u contains '/village-notes/' or u contains '/connecticut-list/' or u contains '/year-end-report/' or u contains '/prompts/' -%}{%- assign in_proj = true -%}{%- endif -%}
 {%- assign in_write = false -%}{%- if u == '/blog.html' or u contains '/blog/' or u == '/newsletter.html' -%}{%- assign in_write = true -%}{%- endif -%}
@@ -34,6 +34,7 @@
           <ul class="nav-sub" id="nav-sub-speaking" hidden>
             <li><a href="/speaking.html"{% if u == '/speaking.html' %} aria-current="page"{% endif %}>Speaking</a></li>
             <li><a href="/services.html"{% if u == '/services.html' %} aria-current="page"{% endif %}>Services</a></li>
+            <li><a href="/portfolio.html"{% if u == '/portfolio.html' %} aria-current="page"{% endif %}>Portfolio</a></li>
             <li><a href="/contact.html?reason=speaking#contact-form">Book Darice to Speak</a></li>
           </ul>
         </li>

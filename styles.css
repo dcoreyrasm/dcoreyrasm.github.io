@@ -741,3 +741,22 @@ section.focus-section { background:linear-gradient(rgba(30,26,46,.86), rgba(45,3
 .btn-ghost.btn-pop:hover { border-color:var(--pop-gold); }
 .pop-label::before { content:""; display:inline-block; width:1.5rem; height:4px; border-radius:2px; margin-right:.6rem; vertical-align:middle; background:var(--pop-gold); }
 .pop-label.teal::before { background:var(--pop-teal); } .pop-label.rose::before { background:var(--pop-rose); }
+
+/* Portfolio page (Darice Corey, LLC), 2026-10-29. Builds on .service-card and the pop colors. */
+.portfolio-project { padding:2.25rem; }
+.portfolio-project h3 { font-size:1.6rem; }
+.portfolio-tags { margin-bottom:1.25rem; }
+.portfolio-project ul.portfolio-tags { flex-direction:row; flex-wrap:wrap; gap:.5rem; margin:0 0 1.25rem; }
+.portfolio-project .portfolio-tags .pop-pill { font-size:.8rem; padding:.35rem .85rem; color:var(--pop-ink); line-height:1.3; }
+.portfolio-project .portfolio-tags .pop-pill::before { content:none; }
+.portfolio-client { font-size:.72rem !important; letter-spacing:.14em; text-transform:uppercase; color:var(--coral) !important; margin-bottom:.5rem !important; }
+.portfolio-project > p:not(.portfolio-client) { max-width:760px; }
+.portfolio-scope { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; margin:.5rem 0 1.25rem; }
+.portfolio-scope h4 { font-family:var(--serif); font-size:1rem; font-weight:700; color:var(--cream); margin-bottom:.75rem; }
+.portfolio-more { margin-top:2rem; color:var(--muted); line-height:1.7; }
+.portfolio-more a { color:var(--coral); }
+@media (max-width:900px) {
+  .portfolio-project { padding:1.5rem; }
+  .portfolio-project h3 { font-size:1.3rem; }
+  .portfolio-scope { grid-template-columns:1fr; }
+}
