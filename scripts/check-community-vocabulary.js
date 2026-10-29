@@ -59,15 +59,17 @@ function readLiteral(name) {
 }
 
 /**
- * The keys the page reads by name: every facet it filters on, plus the ones it
- * renders as a row of the detail panel. Read from script.js so this list can
- * never fall behind the page it is checking.
+ * The keys the page reads by name: every facet it filters on, the ones it
+ * renders as a row of the detail panel, and the plain true/false marks it
+ * reads outside both. Read from script.js so this list can never fall behind
+ * the page it is checking.
  */
 function readKeys() {
   const keys = new Set();
   for (const [, block, pattern] of [
     ['FACETS', 'var FACETS = [', /key:\s*'([^']+)'/g],
-    ['DETAIL_ROWS', 'var DETAIL_ROWS = [', /\[\s*'([^']+)'/g]
+    ['DETAIL_ROWS', 'var DETAIL_ROWS = [', /\[\s*'([^']+)'/g],
+    ['RECORD_FLAGS', 'var RECORD_FLAGS = [', /\[\s*'([^']+)'/g]
   ].map(([name, marker, re]) => {
     const start = source.indexOf(marker);
     if (start === -1) throw new Error(`could not find "${marker}" in community-ai/script.js`);
