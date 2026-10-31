@@ -177,11 +177,10 @@
   // Selecting an empty track lands on the contribution prompt, which is the
   // most useful thing an empty section can do.
   //
-  // Food & Basic Needs is the one track that is deliberately listed here while
-  // holding nothing: its 55 researched listings are Pending Review in Airtable
-  // and the sync does not carry unpublished records. The section therefore
-  // offers itself, finds nothing, and says where else to look -- which is the
-  // honest answer until those listings clear review.
+  // Food & Basic Needs follows the same rule. It was first listed here while
+  // it held nothing, so the section could offer itself and say where else to
+  // look. It now carries published listings (56 as of 2026-10-31), and the
+  // empty-track prompt still covers it if those ever clear out.
   //
   // scripts/check-vocabulary.js reads this literal, so it is the one place the
   // expected tracks are written down. A track in the data but not here still

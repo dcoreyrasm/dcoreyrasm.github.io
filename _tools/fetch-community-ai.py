@@ -135,6 +135,15 @@ def normalize(record):
     return out
 
 
+HELD_PREFIXES = ("duplicate", "out of scope")
+
+
+def is_held(status):
+    """True when research has marked the record as not for publication."""
+    text = (status or "").strip().lower()
+    return text.startswith(HELD_PREFIXES) or "hold from publication" in text
+
+
 def main():
     token = os.environ.get("AIRTABLE_TOKEN") or os.environ.get("AIRTABLE_API_KEY")
     if not token:
@@ -142,6 +151,19 @@ def main():
 
     rows = [normalize(r) for r in fetch_all(token)]
     rows = [r for r in rows if r.get("title")]
+
+    # Status is free text, but research marks records it has deliberately
+    # ruled out by how the status starts: "Duplicate - ..." for a record a
+    # better one supersedes, "Out of Scope - ..." for one a Connecticut
+    # organization cannot use. Those stay in Airtable as history and are
+    # kept off the page. "Closed - Watch Next Cycle" is NOT held: a closed
+    # program that will run again is still worth knowing about.
+    held = [r for r in rows if is_held(r.get("status"))]
+    rows = [r for r in rows if not is_held(r.get("status"))]
+    if held:
+        print(f"Held back {len(held)} duplicate or out-of-scope "
+              f"{'record' if len(held) == 1 else 'records'}: "
+              + "; ".join(r["title"] for r in held))
     rows.sort(key=lambda r: ((r.get("org") or "").lower(), (r.get("title") or "").lower()))
 
     # Keep the stamp stable when nothing changed, so a no-op run leaves no diff.
