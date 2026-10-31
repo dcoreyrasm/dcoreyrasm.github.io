@@ -69,6 +69,9 @@
       "org": "Adobe",
       "readiness": "Developing",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Organizations may promote open board seats to Adobe employees",
       "support": [
         "Pro bono consulting",
@@ -153,6 +156,7 @@
       "org": "Adobe",
       "readiness": "Developing",
       "sensitiveInfo": "Not stated",
+      "states": [],
       "status": "Relationship-based; pitch volunteer or fundraising opportunities to Adobe",
       "support": [
         "Community workshop",
@@ -237,6 +241,7 @@
       "org": "Adobe",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [],
       "status": "Annual employee nomination; current 2026 cycle must be confirmed",
       "support": [
         "Beginner AI education",
@@ -313,6 +318,9 @@
       "org": "Adobe",
       "readiness": null,
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Free or reduced-price software"
@@ -394,6 +402,9 @@
       "org": "Adobe",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing public resources",
       "support": [
         "Beginner AI education",
@@ -480,6 +491,9 @@
       "org": "Adobe",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing through Adobe employee participation and Benevity registration",
       "support": [
         "Beginner AI education",
@@ -560,6 +574,9 @@
       "org": "Adobe",
       "readiness": "Developing",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Existing Adobe partners or organizations already receiving Adobe support",
       "support": [
         "Pro bono consulting",
@@ -642,6 +659,9 @@
       "org": "Adobe / Adobe Foundation",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Cannot apply cold; cohort partnership",
       "support": [
         "Beginner AI education",
@@ -728,6 +748,9 @@
       "org": "Adobe / TechSoup",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing through TechSoup; eligibility and current pricing apply",
       "support": [
         "Beginner AI education",
@@ -793,6 +816,9 @@
       "org": "AI for Community",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active as of 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -848,6 +874,9 @@
       "org": "AI4NGO",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active as of 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -916,6 +945,9 @@
       "org": "All Tech Is Human",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Beginner AI education",
@@ -998,6 +1030,9 @@
       "org": "Amazon / AWS",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "2026–27 U.S. application cycle closed; award decisions are scheduled for mid-November and winners for December 1.",
       "support": [
         "Help after free credits end",
@@ -1078,6 +1113,9 @@
       "org": "Amazon / AWS",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing; one request per fiscal year through TechSoup or partner NGO",
       "support": [
         "Help after free credits end",
@@ -1159,6 +1197,9 @@
       "org": "Amazon Future Engineer",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Available - ongoing",
       "support": [
         "Beginner AI education",
@@ -1240,6 +1281,9 @@
       "org": "Amazon Web Services",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Beginner AI education"
@@ -1324,6 +1368,9 @@
       "org": "Amazon Web Services",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "2026 challenge filled and application closed; retained for future-cycle monitoring",
       "support": [
         "Beginner AI education",
@@ -1411,6 +1458,9 @@
       "org": "Amazon Web Services",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Beginner AI education",
@@ -1498,6 +1548,9 @@
       "org": "Amazon Web Services",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "2026 application closed June 30; retained for future-cycle monitoring",
       "support": [
         "Mentoring or professional network"
@@ -1575,6 +1628,9 @@
       "org": "Amazon Web Services",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing; more than 1,000 free learning resources are available, with optional paid subscriptions",
       "support": [
         "Beginner AI education"
@@ -1670,6 +1726,9 @@
       "org": "American Printing House for the Blind",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Community workshop",
@@ -1758,6 +1817,9 @@
       "org": "Anthropic",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [
         "Legal or privacy guidance",
@@ -1843,6 +1905,9 @@
       "org": "Anthropic",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Current open online course; 14 lessons, one quiz, about four hours, and a completion badge.",
       "support": [
         "Beginner AI education",
@@ -1928,6 +1993,9 @@
       "org": "Anthropic",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Use only with approved safeguards",
+      "states": [
+        "All States"
+      ],
       "status": "Closed; applications ended August 2, 2026 at 11:59 p.m. PST. Retained because Anthropic says it plans additional thematic AI for Science calls.",
       "support": [
         "Cloud or tool credits",
@@ -2008,6 +2076,9 @@
       "org": "Anthropic",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Use only with approved safeguards",
+      "states": [
+        "All States"
+      ],
       "status": "Open; the official 2026 research agenda invites proposals and does not publish a deadline.",
       "support": [
         "Community-based research",
@@ -2095,6 +2166,9 @@
       "org": "Anthropic",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Current; Claude Academy includes product guides, AI fundamentals, capabilities and limitations, and safe-use learning.",
       "support": [
         "Beginner AI education"
@@ -2159,6 +2233,9 @@
       "org": "Anthropic",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -2229,6 +2306,9 @@
       "org": "Anthropic",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Cohort 3 applications are open on a rolling basis; cohort begins August 2027.",
       "support": [
         "Intern, fellow, or student team",
@@ -2309,6 +2389,9 @@
       "org": "Anthropic",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Rolling host applications remain available for 2027 cohorts; current host page includes an application route.",
       "support": [
         "Intern, fellow, or student team",
@@ -2397,6 +2480,9 @@
       "org": "Anthropic",
       "readiness": null,
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Legal or privacy guidance",
@@ -2477,6 +2563,9 @@
       "org": "Anthropic",
       "readiness": null,
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing limited free consumer plan",
       "support": [
         "Free or reduced-price software"
@@ -2552,6 +2641,9 @@
       "org": "Anthropic",
       "readiness": "Product-Stage",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "2026 applications closed July 15; selected projects run September 1-December 1, 2026; retained for future-cycle monitoring",
       "support": [
         "Cloud or tool credits",
@@ -2629,6 +2721,9 @@
       "org": "Apple Education",
       "readiness": "Beginner",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Current free guide. Apple also lists a virtual educator event for September 22, 2026.",
       "support": [
         "Curriculum or lesson plans",
@@ -2695,6 +2790,9 @@
       "org": "Aspen Policy Academy",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Closed — September 1, 2026 deadline passed; retained for recurring-cycle monitoring",
       "support": [],
       "techStaff": null,
@@ -2755,6 +2853,9 @@
       "org": "Atlassian Foundation",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Open; closes October 30, 2026 at 11:59 p.m. AEDT (8:59 a.m. Eastern).",
       "support": [
         "Funding or grant",
@@ -2832,6 +2933,9 @@
       "org": "Canva",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Free or reduced-price software"
@@ -2896,6 +3000,9 @@
       "org": "Capital Campaign Pro",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active as of 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -2966,6 +3073,9 @@
       "org": "Catchafire",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing project request; platform access may require sponsorship or membership",
       "support": [
         "Beginner AI education",
@@ -3044,6 +3154,9 @@
       "org": "Catchafire",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing project request; platform access may require sponsorship or membership",
       "support": [
         "Volunteer technology expert"
@@ -3116,6 +3229,9 @@
       "org": "Centre for the Governance of AI",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Open through November 22, 2026 for the 2027 DC and UK Summer Fellowship tracks.",
       "support": [
         "Intern, fellow, or student team",
@@ -3196,6 +3312,9 @@
       "org": "Charter Oak State College",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Registration remains available for two free online courses for Connecticut residents age 18 and older.",
       "support": [
         "Beginner AI education"
@@ -3276,6 +3395,9 @@
       "org": "Cisco",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Concept notes accepted; invitation required for full proposal",
       "support": [
         "Funding or grant"
@@ -3353,6 +3475,9 @@
       "org": "Cisco / Splunk",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Cannot apply cold; invitation only",
       "support": [
         "Funding or grant"
@@ -3434,6 +3559,9 @@
       "org": "Cisco Networking Academy",
       "readiness": "Beginner",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Current free beginner course in the Skills for All catalog.",
       "support": [
         "Beginner AI education"
@@ -3506,6 +3634,7 @@
       "org": "Citi Foundation",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [],
       "status": "Closed - 2026 registration period concluded after the October 6 LOI deadline; retained for recurring-cycle monitoring",
       "support": [
         "Funding or grant"
@@ -3571,6 +3700,9 @@
       "org": "City of New Haven / State of Connecticut / regional partners",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Active initiative; monitor for community and workforce opportunities",
       "support": [],
       "techStaff": null,
@@ -3626,6 +3758,9 @@
       "org": "City of New Haven Livable City Initiative",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Live public portal verified 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -3711,6 +3846,9 @@
       "org": "CodeAI",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Beginner AI education",
@@ -3794,6 +3932,9 @@
       "org": "Community Foundation for Greater New Haven",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Registration available for virtual sessions on October 6, November 10, and December 1, 2026",
       "support": [
         "Beginner AI education",
@@ -3877,6 +4018,9 @@
       "org": "Community Foundation for Greater New Haven",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": "No Google.org intermediary award verified; local AI Playground Series is active",
       "support": [
         "Beginner AI education",
@@ -3942,6 +4086,9 @@
       "org": "Compass Pro Bono",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Current offerings verified 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -4017,6 +4164,9 @@
       "org": "Computer Science Teachers Association",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Closed - Watch Next Cycle. The 2026 application deadline was May 1, 2026; the current cohort continues through December 2026.",
       "support": [
         "Legal or privacy guidance",
@@ -4099,6 +4249,9 @@
       "org": "Connecticut Commission for Educational Technology",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Meeting held September 14, 2026; official agenda and Connecticut AI-in-education framework materials remain available",
       "support": [
         "AI policy templates",
@@ -4180,6 +4333,9 @@
       "org": "Connecticut Community Nonprofit Alliance",
       "readiness": "Beginner",
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Registration open; conference is October 27, 2026; early-bird pricing ends September 11, 2026",
       "support": [
         "Beginner AI education",
@@ -4258,6 +4414,9 @@
       "org": "Connecticut Department of Administrative Services",
       "readiness": "Developing",
       "sensitiveInfo": "Use only with approved safeguards",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Current official process for Connecticut executive-branch agencies.",
       "support": [
         "Legal or privacy guidance",
@@ -4346,6 +4505,9 @@
       "org": "Connecticut Department of Economic and Community Development and City of Hartford",
       "readiness": "Developing",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Active development; broader public participation opportunities have not yet been posted",
       "support": [
         "Beginner AI education",
@@ -4423,6 +4585,9 @@
       "org": "Connecticut Office of Health Strategy / Office of Policy and Management",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Historical 2026 cycle; applications closed July 7, 2026. Official award announcement was not found during the August 28 check.",
       "support": [
         "Funding or grant"
@@ -4501,6 +4666,9 @@
       "org": "Connecticut Office of Workforce Strategy / Business-Higher Education Forum / New England Board of Higher Education",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Active pilot through seven Connecticut colleges and universities and 12 business partners",
       "support": [
         "Curriculum or lesson plans",
@@ -4580,6 +4748,9 @@
       "org": "Connecticut Small Business Development Center",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Applications closed — finalists compete November 12, 2026; public event registration remains available",
       "support": [
         "Pro bono consulting"
@@ -4653,6 +4824,9 @@
       "org": "Connecticut Small Business Development Center",
       "readiness": "Beginner",
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Current public tool. ChatGPT sign-in is required. The official page does not state a price.",
       "support": [],
       "techStaff": null,
@@ -4712,6 +4886,9 @@
       "org": "Connecticut State Community College",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Current non-credit workforce certificate; online and designed for completion in under six months.",
       "support": [],
       "techStaff": null,
@@ -4766,6 +4943,9 @@
       "org": "Connecticut State Community College",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Current program verified 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -4820,6 +5000,9 @@
       "org": "Connecticut State Community College",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Current program verified 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -4883,6 +5066,9 @@
       "org": "Connecticut State Community College",
       "readiness": null,
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Applications remain open through October 9, 2026 at 11:59 p.m.; this is the final application day",
       "support": [
         "Beginner AI education",
@@ -4942,6 +5128,9 @@
       "org": "Connecticut State Community College",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Active; the scholarship application form and tuition-free AI Certificate pathway remain available subject to eligibility and funding.",
       "support": [],
       "techStaff": null,
@@ -4998,6 +5187,9 @@
       "org": "Creative Capital Foundation",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Closed — 2027 cycle ended April 2, 2026; retained for recurring-cycle monitoring",
       "support": [],
       "techStaff": null,
@@ -5064,6 +5256,9 @@
       "org": "CT State Community College",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Registration route posted for November 13 and 20, 2026",
       "support": [
         "Beginner AI education",
@@ -5140,6 +5335,9 @@
       "org": "CT State Community College",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Registration route posted; Parts 1 and 2 scheduled for fall 2026 and Part 3 announced for spring 2027",
       "support": [
         "Beginner AI education",
@@ -5222,6 +5420,9 @@
       "org": "Cushing/Whitney Medical Library",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Available calendar; eligibility and price must be checked on each individual session.",
       "support": [
         "Community workshop"
@@ -5295,6 +5496,9 @@
       "org": "data.org and Mastercard Center for Inclusive Growth",
       "readiness": "Product-Stage",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Historical completed challenge. Five awardees were selected. Monitor data.org and Mastercard for a future cycle.",
       "support": [
         "Funding or grant",
@@ -5375,6 +5579,9 @@
       "org": "Databricks",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Cannot apply cold based on current official materials",
       "support": [
         "Beginner AI education",
@@ -5460,6 +5667,9 @@
       "org": "Day of AI",
       "readiness": "Beginner",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Free curriculum available now; free September 2026 professional learning registration is open",
       "support": [
         "Beginner AI education",
@@ -5524,6 +5734,9 @@
       "org": "DeepLearning.AI",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -5576,6 +5789,9 @@
       "org": "Digital Promise / K-12 AI Infrastructure Program",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Open",
       "support": [],
       "techStaff": null,
@@ -5645,6 +5861,9 @@
       "org": "Docker",
       "readiness": "Developing",
       "sensitiveInfo": "Use only with approved safeguards",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [
         "Free or reduced-price software"
@@ -5709,6 +5928,9 @@
       "org": "DonorSearch by EverTrue",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active as of 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -5779,6 +6001,9 @@
       "org": "DuckDuckGo",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing; free and no account required as of August 30, 2026.",
       "support": [
         "Free or reduced-price software"
@@ -5853,6 +6078,9 @@
       "org": "ElevenLabs",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Current. Registered nonprofits in good standing may apply for 12 months of free Pro access and may reapply near the end of the approval period.",
       "support": [
         "Free or reduced-price software",
@@ -5921,6 +6149,9 @@
       "org": "Eyebeam",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Closed — October 11, 2026 deadline passed; retained for recurring-cycle monitoring",
       "support": [],
       "techStaff": null,
@@ -5991,6 +6222,9 @@
       "org": "F5 Global Good",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Closed; the 2026 application ended June 14, 2026. F5 offers a 2027 grant notification form.",
       "support": [
         "Funding or grant"
@@ -6069,6 +6303,9 @@
       "org": "Fairfield County's Community Foundation",
       "readiness": "Beginner",
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Event passed; held September 15, 2026 in Norwalk",
       "support": [
         "Community workshop",
@@ -6148,6 +6385,9 @@
       "org": "Fast Forward",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Closed; the 2027 application period ended September 7, 2026. Interviews run October–December, with final notifications by year-end.",
       "support": [
         "Intern, fellow, or student team",
@@ -6228,6 +6468,9 @@
       "org": "Fast Forward",
       "readiness": "Developing",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "2026 applications closed July 26; selected founders are notified by August 30",
       "support": [
         "Funding or grant",
@@ -6297,6 +6540,9 @@
       "org": "Fast Forward",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Available as of 2026-08-28",
       "support": [],
       "techStaff": null,
@@ -6365,6 +6611,9 @@
       "org": "fast.ai",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Beginner AI education",
@@ -6432,6 +6681,9 @@
       "org": "Foresight Institute",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Research Lead — Connecticut eligibility is not explicitly confirmed on the official page; do not publish as qualified",
       "support": [],
       "techStaff": null,
@@ -6486,6 +6738,9 @@
       "org": "FreeWill",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active; demo or meeting request available as of 2026-08-27",
       "support": [],
       "techStaff": null,
@@ -6541,6 +6796,9 @@
       "org": "Fundraising.AI",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active as of 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -6596,6 +6854,9 @@
       "org": "Funraise",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active as of 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -6656,6 +6917,9 @@
       "org": "GatherVerse",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Open; sessions run September 15-17, 22-24, and 29-30, 2026, 8:00 a.m. PST",
       "support": [
         "Mentoring or professional network"
@@ -6733,6 +6997,9 @@
       "org": "Generation, supported by American Express",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Current. Registration is open through September 30, 2026 for three sessions starting October 2, 2026.",
       "support": [
         "Beginner AI education",
@@ -6813,6 +7080,9 @@
       "org": "GitHub",
       "readiness": "Developing",
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing; eligibility is checked monthly",
       "support": [
         "Free or reduced-price software"
@@ -6894,6 +7164,9 @@
       "org": "GitHub",
       "readiness": "Developing",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing limited free plan; 2,000 code completions and 50 chat requests per month as of August 30, 2026.",
       "support": [
         "Free or reduced-price software"
@@ -6973,6 +7246,9 @@
       "org": "GitHub",
       "readiness": "Beginner",
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing; student verification required",
       "support": [
         "Free or reduced-price software",
@@ -7052,6 +7328,9 @@
       "org": "GitHub",
       "readiness": "Developing",
       "sensitiveInfo": "Use only with approved safeguards",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing; nonprofit validation required",
       "support": [
         "Free or reduced-price software"
@@ -7114,6 +7393,9 @@
       "org": "GitLab Foundation",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Previous funding cohort selected; future application opportunity not yet announced",
       "support": [],
       "techStaff": null,
@@ -7181,6 +7463,9 @@
       "org": "Goodwill Keystone Area / OpenAI Academy",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "Pennsylvania"
+      ],
       "status": "Completed — in-person event in Hershey, Pennsylvania, held October 12–13, 2026; retained as a model for future GAINS events",
       "support": [
         "Community workshop"
@@ -7243,6 +7528,9 @@
       "org": "Google",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -7312,6 +7600,9 @@
       "org": "Google",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Current limited access without a paid Google AI plan; higher-limit plans start at $9.99 per month.",
       "support": [
         "Free or reduced-price software"
@@ -7398,6 +7689,9 @@
       "org": "Google",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Free or reduced-price software",
@@ -7478,6 +7772,9 @@
       "org": "Google",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Free or reduced-price software"
@@ -7559,6 +7856,9 @@
       "org": "Google",
       "readiness": "Developing",
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing free tier in available regions; model and rate limits vary.",
       "support": [
         "Free or reduced-price software"
@@ -7620,6 +7920,9 @@
       "org": "Google",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -7697,6 +8000,9 @@
       "org": "Google and ISTE+ASCD",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Core sessions are available now; new free content begins September 2, 2026 and is scheduled for the first Wednesday of each month",
       "support": [
         "Beginner AI education",
@@ -7783,6 +8089,9 @@
       "org": "Google Cloud Skills Boost",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Beginner AI education",
@@ -7867,6 +8176,9 @@
       "org": "Google for Developers",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [
         "Curriculum or lesson plans"
@@ -7934,6 +8246,9 @@
       "org": "Google for Nonprofits",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active as of 2026-08-27; three nonprofit-specific Google Skills courses are currently listed",
       "support": [],
       "techStaff": null,
@@ -8009,6 +8324,9 @@
       "org": "Google.org",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing through selected intermediaries; no cold application found",
       "support": [
         "Beginner AI education",
@@ -8095,6 +8413,9 @@
       "org": "Google.org",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Available now as a public downloadable playbook with an optional NotebookLM companion.",
       "support": [
         "Beginner AI education",
@@ -8179,6 +8500,9 @@
       "org": "Google.org",
       "readiness": "Product-Stage",
       "sensitiveInfo": "Use only with approved safeguards",
+      "states": [
+        "All States"
+      ],
       "status": "Closed. Applications closed April 3, 2026; retained for a future-cycle check.",
       "support": [
         "Funding or grant",
@@ -8267,6 +8591,9 @@
       "org": "Google.org",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Closed. Applications closed May 1, 2026; retained for a future-cycle recheck.",
       "support": [
         "Pro bono consulting",
@@ -8349,6 +8676,9 @@
       "org": "Greater Hartford Gives Foundation / Nonprofit Support Program",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Current on-demand materials from the June 11, 2026 workshop. The official page provides slides, a recording, and an edited chat transcript. The slide deck was reviewed directly on August 30, 2026.",
       "support": [
         "Beginner AI education",
@@ -8428,6 +8758,9 @@
       "org": "Harvard University",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Current free seven-week OpenCourseWare course; paid credentials or credit are optional.",
       "support": [
         "Certification or exam voucher",
@@ -8501,6 +8834,9 @@
       "org": "Horizon Institute for Public Service",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Closed - Watch Next Cycle. Applications for the 2027 Horizon Fellowship closed August 30, 2026.",
       "support": [
         "Intern, fellow, or student team",
@@ -8574,6 +8910,9 @@
       "org": "Horizon Institute for Public Service",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Closed - Watch Next Cycle. The 2026 AI for Science Fellowship deadline was July 31, 2026.",
       "support": [
         "Intern, fellow, or student team",
@@ -8647,6 +8986,9 @@
       "org": "Horizon Institute for Public Service",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Closed - Watch Next Cycle. The 2026 AI Rapid Response Fellowship deadline was July 27, 2026.",
       "support": [
         "Intern, fellow, or student team",
@@ -8730,6 +9072,9 @@
       "org": "HP LIFE",
       "readiness": "Beginner",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Current, free, self-paced course.",
       "support": [
         "Beginner AI education",
@@ -8810,6 +9155,9 @@
       "org": "HP LIFE",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Current, free, self-paced course.",
       "support": [
         "Beginner AI education"
@@ -8890,6 +9238,9 @@
       "org": "HP LIFE",
       "readiness": "Beginner",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Current, free, self-paced course.",
       "support": [
         "Beginner AI education"
@@ -8952,6 +9303,9 @@
       "org": "Hugging Face",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -9018,6 +9372,9 @@
       "org": "Hugging Face",
       "readiness": "Product-Stage",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Current program is named on Hugging Face's official pricing page. The page does not publish a full application timetable or award terms.",
       "support": [
         "Cloud or tool credits"
@@ -9095,6 +9452,9 @@
       "org": "Hugging Face",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [
         "Certification or exam voucher",
@@ -9172,6 +9532,9 @@
       "org": "Hugging Face",
       "readiness": "Developing",
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": "Current. Free accounts can host public models, datasets, and applications, with stated free CPU and ZeroGPU options subject to platform limits.",
       "support": [
         "Free or reduced-price software",
@@ -9253,6 +9616,9 @@
       "org": "Hugging Face / Anthropic",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [
         "Certification or exam voucher",
@@ -9320,6 +9686,9 @@
       "org": "Humane Intelligence / Zindi / Radiant Earth",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Open to eligible individual or team entrants — submissions close October 31, 2026",
       "support": [],
       "techStaff": null,
@@ -9388,6 +9757,9 @@
       "org": "Humanity AI",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Closed — initial applications ended October 21, 2026; finalists are expected in December 2026 and awards in early spring 2027",
       "support": [
         "Funding or grant",
@@ -9475,6 +9847,9 @@
       "org": "IBM",
       "readiness": "Beginner",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active; IBM invites nonprofits and higher education institutions to connect for collaborative AI workshops and guidance",
       "support": [
         "Community workshop",
@@ -9557,6 +9932,9 @@
       "org": "IBM",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Cannot apply cold; annual cohort selected around a theme",
       "support": [
         "Public-interest or community-owned technology",
@@ -9651,6 +10029,9 @@
       "org": "IBM",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Current; IBM states its online AI and technology learning is 100% free. Free virtual AI events are listed for September 16, 17, and 28, 2026.",
       "support": [
         "Beginner AI education",
@@ -9735,6 +10116,9 @@
       "org": "IBM / EY",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Use only with approved safeguards",
+      "states": [
+        "All States"
+      ],
       "status": "2026 cycle closed March 25; retained for future cohort monitoring.",
       "support": [
         "Cloud or tool credits",
@@ -9824,6 +10208,9 @@
       "org": "IBM SkillsBuild",
       "readiness": "Developing",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Registration open for September 16, 2026 virtual conference",
       "support": [
         "Community workshop",
@@ -9901,6 +10288,9 @@
       "org": "IBM SkillsBuild",
       "readiness": "Developing",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Upcoming free virtual event on September 17, 2026, 10:00–11:00 a.m. ET.",
       "support": [
         "Community workshop"
@@ -9977,6 +10367,9 @@
       "org": "IBM SkillsBuild",
       "readiness": "Developing",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Upcoming free online program September 28–October 11, 2026; registration is open.",
       "support": [
         "Community workshop"
@@ -10053,6 +10446,9 @@
       "org": "IBM SkillsBuild",
       "readiness": "Developing",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Upcoming free virtual event on September 16, 2026, 12:30–1:30 p.m. ET.",
       "support": [
         "Community workshop"
@@ -10111,6 +10507,9 @@
       "org": "IBM SkillsBuild",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -10163,6 +10562,9 @@
       "org": "IBM SkillsBuild",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -10215,6 +10617,9 @@
       "org": "IBM SkillsBuild",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -10285,6 +10690,9 @@
       "org": "Intel",
       "readiness": "Developing",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Current program. Access is normally arranged through schools, youth programs, governments, or other implementation partners.",
       "support": [
         "Curriculum or lesson plans",
@@ -10359,6 +10767,9 @@
       "org": "International Association of Privacy Professionals (IAPP)",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Open through November 16, 2026.",
       "support": [
         "Intern, fellow, or student team",
@@ -10438,6 +10849,9 @@
       "org": "International Telecommunication Union (ITU)",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Current; free, online, self-paced course with ITU Academy completion badges",
       "support": [
         "Beginner AI education"
@@ -10519,6 +10933,9 @@
       "org": "International Telecommunication Union (ITU) / UNDP",
       "readiness": "Developing",
       "sensitiveInfo": "Use only with approved safeguards",
+      "states": [
+        "All States"
+      ],
       "status": "Closed; applications ended September 19, 2026. Selected participants attend October 6–27, 2026.",
       "support": [
         "Certification or exam voucher",
@@ -10589,6 +11006,9 @@
       "org": "International Telecommunication Union — AI for Good",
       "readiness": "Product-Stage",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Current monthly global pitching competitions run September 2026–May 2027; each event has its own application status.",
       "support": [
         "Funding or grant",
@@ -10664,6 +11084,9 @@
       "org": "Knight Foundation",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Cannot apply cold except named open calls",
       "support": [
         "Beginner AI education",
@@ -10747,6 +11170,9 @@
       "org": "KPMG U.S. Foundation",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Cannot apply cold; selected partnerships",
       "support": [
         "Beginner AI education",
@@ -10826,6 +11252,7 @@
       "org": "Lenovo",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": null,
+      "states": [],
       "status": "The 2025 grant is closed. Lenovo invites businesses to join its email list for future opportunities.",
       "support": [
         "Funding or grant",
@@ -10911,6 +11338,9 @@
       "org": "Lovable",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Beginner AI education"
@@ -10990,6 +11420,9 @@
       "org": "Lovable",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Free or reduced-price software"
@@ -11077,6 +11510,9 @@
       "org": "Lovable and imagi Edu",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Community workshop",
@@ -11166,6 +11602,9 @@
       "org": "MacArthur Foundation",
       "readiness": "Developing",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Early strategy stage; unsolicited proposals not accepted; ideas may be shared",
       "support": [
         "Beginner AI education",
@@ -11250,6 +11689,9 @@
       "org": "Massachusetts Institute of Technology",
       "readiness": "Developing",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing; public course materials available now",
       "support": [
         "Beginner AI education",
@@ -11331,6 +11773,9 @@
       "org": "Meta",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Verify current cycle and open calls",
       "support": [
         "Accessibility or assistive technology",
@@ -11414,6 +11859,9 @@
       "org": "Meta",
       "readiness": "Product-Stage",
       "sensitiveInfo": "Use only with approved safeguards",
+      "states": [
+        "All States"
+      ],
       "status": "Closed. Applications closed March 9, 2026; recipients were announced in July 2026. Retained for future-cycle monitoring.",
       "support": [
         "Funding or grant",
@@ -11481,6 +11929,9 @@
       "org": "Microsoft",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -11554,6 +12005,9 @@
       "org": "Microsoft",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Active as of 2026-08-27",
       "support": [
         "Beginner AI education",
@@ -11639,6 +12093,9 @@
       "org": "Microsoft",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing eligibility registration and annual renewal",
       "support": [
         "Help after free credits end",
@@ -11706,6 +12163,9 @@
       "org": "Microsoft",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Program is current; official page offers an update-registration route but no verified open fellowship application window.",
       "support": [],
       "techStaff": null,
@@ -11774,6 +12234,9 @@
       "org": "Microsoft",
       "readiness": "Developing",
       "sensitiveInfo": "Use only with approved safeguards",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing; nonprofit validation required",
       "support": [
         "Free or reduced-price software",
@@ -11856,6 +12319,9 @@
       "org": "Microsoft",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Current role-based AI learning hub verified August 30, 2026.",
       "support": [
         "Certification or exam voucher"
@@ -11932,6 +12398,9 @@
       "org": "Microsoft",
       "readiness": null,
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing free personal Copilot experience; Microsoft account required under terms effective August 18, 2026",
       "support": [
         "Free or reduced-price software"
@@ -12012,6 +12481,9 @@
       "org": "Microsoft",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Beginner AI education"
@@ -12076,6 +12548,9 @@
       "org": "Microsoft",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active as of 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -12128,6 +12603,9 @@
       "org": "Microsoft",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -12182,6 +12660,9 @@
       "org": "Microsoft",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active as of 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -12234,6 +12715,9 @@
       "org": "Microsoft Learn",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -12286,6 +12770,9 @@
       "org": "Microsoft Learn",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -12356,6 +12843,9 @@
       "org": "Microsoft Learn",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Beginner AI education"
@@ -12418,6 +12908,9 @@
       "org": "Microsoft Learn",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -12470,6 +12963,9 @@
       "org": "Microsoft Learn",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -12546,6 +13042,9 @@
       "org": "Microsoft Learn",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Beginner AI education",
@@ -12625,6 +13124,9 @@
       "org": "Microsoft Reactor",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Registration open for September 10, 2026 livestream",
       "support": [
         "Community workshop",
@@ -12699,6 +13201,9 @@
       "org": "Mozilla Foundation",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Open; Letter of Intent due December 17, 2026 at 11:59 p.m. Pacific.",
       "support": [
         "Funding or grant",
@@ -12784,6 +13289,9 @@
       "org": "Mozilla Foundation",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "No universal rolling grant application verified; the open 2027 Mozilla Foundation Fellowship is tracked as a separate named record.",
       "support": [
         "Beginner AI education",
@@ -12878,6 +13386,9 @@
       "org": "NASA",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Active",
       "support": [
         "Beginner AI education",
@@ -12944,6 +13455,9 @@
       "org": "National Council on Aging and AT&T",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Applications open through November 10, 2026",
       "support": [],
       "techStaff": null,
@@ -12998,6 +13512,9 @@
       "org": "New Haven Promise / Yale President's Public Service Fellowship",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Historical 2026 placement; fellowship ended 2026-08-07",
       "support": [],
       "techStaff": null,
@@ -13070,6 +13587,9 @@
       "org": "Norwalk Public Schools and EDSAFE AI Alliance",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Current 2026 selected-district partnership; no public application route is posted.",
       "support": [
         "Legal or privacy guidance",
@@ -13138,6 +13658,9 @@
       "org": "NTEN",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active and maintained as of 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -13206,6 +13729,9 @@
       "org": "NTEN",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Recurring free virtual group; the August 26, 2026 meeting has passed and the next date was not yet listed",
       "support": [
         "Community workshop",
@@ -13277,6 +13803,9 @@
       "org": "NTEN",
       "readiness": "Developing",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "2026 cohort in progress through October; applications closed March 23, 2026. NTEN offers a notification route for future cohorts.",
       "support": [
         "Beginner AI education",
@@ -13364,6 +13893,9 @@
       "org": "NTEN / Okta for Good",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Closed - Watch Next Cycle. The 2026-2027 application period ended October 13, 2026; the next cohort is expected to open in September 2027.",
       "support": [
         "Beginner AI education",
@@ -13445,6 +13977,9 @@
       "org": "NVIDIA",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing; free and paid self-paced courses and live workshops are available.",
       "support": [
         "Community workshop",
@@ -13526,6 +14061,9 @@
       "org": "NVIDIA",
       "readiness": "Product-Stage",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Closed. NVIDIA states that the Academic Grant Program is not accepting new applications; retained for future monitoring.",
       "support": [
         "Funding or grant",
@@ -13609,6 +14147,9 @@
       "org": "NVIDIA",
       "readiness": "Product-Stage",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Open and ongoing. No application fee, deadline, or cohort.",
       "support": [
         "Cloud or tool credits",
@@ -13669,6 +14210,9 @@
       "org": "Open University",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -13721,6 +14265,9 @@
       "org": "Open University",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -13789,6 +14336,9 @@
       "org": "OpenAI",
       "readiness": null,
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": "Current free individual plan; feature and usage limits apply.",
       "support": [
         "Free or reduced-price software"
@@ -13866,6 +14416,9 @@
       "org": "OpenAI",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Beginner AI education",
@@ -13943,6 +14496,9 @@
       "org": "OpenAI",
       "readiness": "Product-Stage",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Closed; applications ended December 19, 2025. OpenAI said in January 2026 that it is actively exploring ways to expand and build on this work.",
       "support": [
         "Funding or grant",
@@ -14006,6 +14562,9 @@
       "org": "OpenAI",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -14075,6 +14634,9 @@
       "org": "OpenAI",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing eligibility and sales review; discounted, not fully free",
       "support": [
         "Free or reduced-price software",
@@ -14150,6 +14712,9 @@
       "org": "OpenAI",
       "readiness": "Product-Stage",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Closed - Watch Next Cycle. The pilot 2026 application deadline was May 3; the fellowship runs September 14, 2026-February 5, 2027.",
       "support": [
         "Funding or grant",
@@ -14231,6 +14796,9 @@
       "org": "OpenAI / OpenAI Foundation",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "2026 cycle closed; 163 grantees announced October 1 and the full $50 million is scheduled for disbursement by year-end",
       "support": [
         "Beginner AI education",
@@ -14304,6 +14872,9 @@
       "org": "OpenAI Academy",
       "readiness": null,
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Current downloadable workshop slides posted September 4, 2026",
       "support": [
         "Curriculum or lesson plans"
@@ -14371,6 +14942,9 @@
       "org": "OpenAI Academy",
       "readiness": null,
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Live event finished September 15, 2026; replay is available on the official page",
       "support": [
         "Community workshop"
@@ -14444,6 +15018,9 @@
       "org": "OpenAI Academy",
       "readiness": null,
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Completed — October 21 session has ended; no replay was published on the official page when checked",
       "support": [
         "Community workshop",
@@ -14519,6 +15096,9 @@
       "org": "OpenAI Academy",
       "readiness": "Developing",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Event completed October 7, 2026; retained because the educator office-hours series recurs",
       "support": [
         "Office hours",
@@ -14594,6 +15174,9 @@
       "org": "OpenAI Academy",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Live event finished September 16, 2026; official event slides remain available",
       "support": [
         "Community workshop"
@@ -14669,6 +15252,9 @@
       "org": "OpenAI Academy",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": "Registration open for an online livestream on September 10, 2026; price is not stated.",
       "support": [
         "Community workshop"
@@ -14742,6 +15328,9 @@
       "org": "OpenAI Academy",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Registration open for October 2, 2026, 10:30–11:30 a.m. Eastern; the session is open to everyone.",
       "support": [
         "Beginner AI education",
@@ -14815,6 +15404,9 @@
       "org": "OpenAI Academy",
       "readiness": null,
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Happening October 23, 2026, 11:30 a.m.–12:30 p.m. Eastern; registration remains available and price/accessibility are not stated",
       "support": [
         "Beginner AI education",
@@ -14894,6 +15486,9 @@
       "org": "OpenAI Academy",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Registration open for November 19, 2026, 11:30 a.m.–12:30 p.m. Eastern; price and accessibility are not stated",
       "support": [
         "Beginner AI education",
@@ -14970,6 +15565,9 @@
       "org": "OpenAI Academy",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Event completed September 18, 2026; replay is available.",
       "support": [
         "Beginner AI education",
@@ -15051,6 +15649,9 @@
       "org": "OpenAI Academy",
       "readiness": null,
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Registration open for December 4, 2026; event price is not stated",
       "support": [
         "Community workshop",
@@ -15127,6 +15728,9 @@
       "org": "OpenAI Academy",
       "readiness": "Developing",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Registration open for December 3, 2026, 1:15–2:15 p.m. Eastern; recording planned; price and accessibility are not stated",
       "support": [
         "Beginner AI education",
@@ -15216,6 +15820,9 @@
       "org": "OpenAI Academy",
       "readiness": null,
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Beginner AI education",
@@ -15290,6 +15897,9 @@
       "org": "OpenAI Academy",
       "readiness": null,
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Registration open for October 27, 2026, 10:00–11:00 a.m. Eastern; open to anyone",
       "support": [
         "Beginner AI education",
@@ -15366,6 +15976,9 @@
       "org": "OpenAI Academy",
       "readiness": "Developing",
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": "Event completed September 23, 2026; replay and slides are available.",
       "support": [
         "Community workshop"
@@ -15437,6 +16050,9 @@
       "org": "OpenAI Academy",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Event completed September 30, 2026; replay is available from the official OpenAI Academy events page.",
       "support": [
         "Community workshop"
@@ -15513,6 +16129,9 @@
       "org": "OpenAI Academy",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Registration open",
       "support": [
         "Community workshop"
@@ -15580,6 +16199,9 @@
       "org": "OpenAI Academy",
       "readiness": null,
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Registration open for an online livestream on October 28, 2026, 6:00–7:00 p.m. GMT.",
       "support": [
         "Community workshop",
@@ -15646,6 +16268,9 @@
       "org": "OpenAI Academy",
       "readiness": null,
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Completed — October 19 session has ended; official OpenAI Academy page offers a replay",
       "support": [
         "Beginner AI education",
@@ -15709,6 +16334,9 @@
       "org": "OpenAI Academy",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active as of 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -15777,6 +16405,9 @@
       "org": "OpenAI Academy",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Live event finished September 14, 2026; replay is available on the official page",
       "support": [
         "Community workshop",
@@ -15855,6 +16486,9 @@
       "org": "OpenAI Academy",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Registration open",
       "support": [
         "Community workshop",
@@ -15931,6 +16565,9 @@
       "org": "OpenAI Academy / CauseVox",
       "readiness": "Developing",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Event completed October 1, 2026; the official listing remains available, but no replay is shown.",
       "support": [
         "Community workshop"
@@ -15999,6 +16636,9 @@
       "org": "OpenAI Academy / OpenAI Forum",
       "readiness": null,
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "California"
+      ],
       "status": "Completed — in-person Los Angeles event held September 29, 2026; no replay listed when checked",
       "support": [
         "Community workshop"
@@ -16072,6 +16712,9 @@
       "org": "OpenAI Academy / Senior Planet from AARP",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "New York"
+      ],
       "status": "Event finished September 16, 2026; retained as a model for future older-adult AI Skills Jam events",
       "support": [
         "Beginner AI education",
@@ -16153,6 +16796,9 @@
       "org": "OpenAI Academy / Tech Impact",
       "readiness": "Beginner",
       "sensitiveInfo": "Use only with approved safeguards",
+      "states": [
+        "Pennsylvania"
+      ],
       "status": "Completed — in-person Philadelphia workshop held October 26, 2026",
       "support": [
         "Beginner AI education",
@@ -16237,6 +16883,9 @@
       "org": "OpenAI Academy, Veterans Forge, and AI Collective Hampton Roads",
       "readiness": null,
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Registration open for October 24, 2026; capacity is limited; event price and accessibility are not stated",
       "support": [
         "Community workshop",
@@ -16311,6 +16960,9 @@
       "org": "OpenAI and U.S. General Services Administration",
       "readiness": "Developing",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Announced; access begins October 1, 2026",
       "support": [
         "Free or reduced-price software",
@@ -16397,6 +17049,9 @@
       "org": "Oracle Academy",
       "readiness": "Developing",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Current. Educational institutions and educators can join Oracle Academy free.",
       "support": [
         "Curriculum or lesson plans",
@@ -16478,6 +17133,9 @@
       "org": "Patrick J. McGovern Foundation",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Cannot apply cold; strategic grantmaking",
       "support": [
         "Beginner AI education",
@@ -16543,6 +17201,9 @@
       "org": "Patrick J. McGovern Foundation",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Program described on official website; no confirmed open 2026 application round",
       "support": [],
       "techStaff": null,
@@ -16618,6 +17279,9 @@
       "org": "Perplexity",
       "readiness": null,
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Free or reduced-price software"
@@ -16697,6 +17361,9 @@
       "org": "Perplexity",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Free or reduced-price software"
@@ -16777,6 +17444,9 @@
       "org": "PoliSync",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Open at low-cost pricing; free registration ended September 10, 2026",
       "support": [
         "Beginner AI education",
@@ -16858,6 +17528,9 @@
       "org": "Princeton Center for Information Technology Policy",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "2027 cycle announced; application link not yet posted. Official deadline is January 10, 2027.",
       "support": [
         "Intern, fellow, or student team",
@@ -16929,6 +17602,9 @@
       "org": "Processing Foundation",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Open for self-nominations through November 1, 2026; Connecticut applicants are eligible only for the remote Collective Intelligence track.",
       "support": [
         "Intern, fellow, or student team",
@@ -17009,6 +17685,9 @@
       "org": "Project Evident",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing consulting and partner engagements; no universal free application verified",
       "support": [
         "Beginner AI education",
@@ -17108,6 +17787,12 @@
       "org": "RAISE US",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut",
+        "Arkansas",
+        "Maryland",
+        "Utah"
+      ],
       "status": "Active; Connecticut is an initial state partner; no public organization application posted",
       "support": [
         "Beginner AI education",
@@ -17199,6 +17884,9 @@
       "org": "Replicate",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Volunteer technology expert"
@@ -17278,6 +17966,9 @@
       "org": "Replit",
       "readiness": "Beginner",
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": "Free to start",
       "support": [
         "Free or reduced-price software",
@@ -17363,6 +18054,9 @@
       "org": "Rockefeller Foundation / Center for Civic Futures",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Active national initiative; participation path is through state, territory, Tribal, or partner relationships",
       "support": [
         "Beginner AI education",
@@ -17446,6 +18140,9 @@
       "org": "Salesforce",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Open: 2027 interest form due September 18, 2026; advanced applicants submit a full application in October",
       "support": [
         "Funding or grant",
@@ -17526,6 +18223,9 @@
       "org": "Salesforce",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Current self-paced foundational Trailhead trail; approximately 3 hours 15 minutes across eight steps.",
       "support": [
         "Beginner AI education",
@@ -17605,6 +18305,9 @@
       "org": "Samsung Electronics America",
       "readiness": "Developing",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Applications open for the 2026–27 competition through November 23, 2026.",
       "support": [
         "Funding or grant",
@@ -17683,6 +18386,9 @@
       "org": "Scholarship America, supported by American Express",
       "readiness": "Beginner",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "The 2026 application closed June 10. Retained for a possible future cycle.",
       "support": [
         "Funding or grant",
@@ -17763,6 +18469,9 @@
       "org": "SCORE Eastern Connecticut",
       "readiness": "Beginner",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Upcoming; registration open. Free online event on September 9, 2026, 12:00–1:00 p.m. EDT.",
       "support": [
         "Beginner AI education",
@@ -17845,6 +18554,9 @@
       "org": "SCORE Western Connecticut / Monroe Library",
       "readiness": "Beginner",
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Upcoming; registration open. Free in-person event on September 15, 2026, 12:00–1:00 p.m. EDT. Light food begins at 11:45 a.m.",
       "support": [
         "Community workshop"
@@ -17907,6 +18619,9 @@
       "org": "Senior Planet from AARP",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -17978,6 +18693,9 @@
       "org": "Siegel Family Endowment",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Cannot apply cold; relationship-based portfolio",
       "support": [
         "Beginner AI education",
@@ -18054,6 +18772,9 @@
       "org": "Sony Group Corporation",
       "readiness": "Product-Stage",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Closed; the 2026 proposal window ended September 15, 2026",
       "support": [
         "Funding or grant",
@@ -18115,6 +18836,9 @@
       "org": "Stanford University",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -18184,6 +18908,9 @@
       "org": "Tableau / Salesforce",
       "readiness": "Beginner",
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [
         "Free or reduced-price software",
@@ -18265,6 +18992,9 @@
       "org": "Tableau / Salesforce",
       "readiness": "Developing",
       "sensitiveInfo": "Use only with approved safeguards",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing; proof of active teaching required",
       "support": [
         "Free or reduced-price software",
@@ -18330,6 +19060,9 @@
       "org": "TappHQ / Tapp Network",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Current - free preliminary assessment offered",
       "support": [],
       "techStaff": null,
@@ -18392,6 +19125,9 @@
       "org": "Tarbell Center for AI Journalism",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Open through November 22, 2026.",
       "support": [
         "Intern, fellow, or student team",
@@ -18465,6 +19201,9 @@
       "org": "TechSoup",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Passed on September 1, 2026; no recording was confirmed on the official events page.",
       "support": [
         "Beginner AI education",
@@ -18549,6 +19288,9 @@
       "org": "TechSoup",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing nonprofit AI learning track and on-demand resources; individual signup is available.",
       "support": [
         "Beginner AI education",
@@ -18614,6 +19356,9 @@
       "org": "TechSoup / Tapp Network",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active; consultation request available as of 2026-08-27",
       "support": [],
       "techStaff": null,
@@ -18684,6 +19429,9 @@
       "org": "The Westport Library",
       "readiness": "Developing",
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Open with limited space; the official page showed three series passes available on September 6, 2026. Classes meet October 1, 8, 15, and 22 from 6:30–8:00 p.m. EDT.",
       "support": [
         "Community workshop"
@@ -18759,6 +19507,9 @@
       "org": "Tolland Public Library",
       "readiness": "Beginner",
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Upcoming; Thursday, September 24, 2026 from 2:00–3:00 p.m. The official page does not state a price.",
       "support": [
         "Beginner AI education",
@@ -18839,6 +19590,9 @@
       "org": "Twilio.org",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Interest form available",
       "support": [
         "Intern, fellow, or student team",
@@ -18920,6 +19674,9 @@
       "org": "Twilio.org",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing eligibility enrollment",
       "support": [
         "Beginner AI education",
@@ -19004,6 +19761,9 @@
       "org": "U.S. National Science Foundation",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Use only with approved safeguards",
+      "states": [
+        "All States"
+      ],
       "status": "Open — active NSF funding opportunity; proposals due November 4, 2026",
       "support": [
         "Funding or grant",
@@ -19094,6 +19854,9 @@
       "org": "U.S. National Science Foundation",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Round 2 letter of intent due December 15, 2026",
       "support": [
         "Funding or grant",
@@ -19165,6 +19928,9 @@
       "org": "University of Helsinki",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -19217,6 +19983,9 @@
       "org": "University of Helsinki / Reaktor",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing",
       "support": [],
       "techStaff": null,
@@ -19285,6 +20054,9 @@
       "org": "University of Helsinki and MinnaLearn",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Beginner AI education",
@@ -19349,6 +20121,9 @@
       "org": "University of New Haven / Travelers / Connecticut Tech Talent Accelerator 3.0",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Launched 2026",
       "support": [],
       "techStaff": null,
@@ -19420,6 +20195,9 @@
       "org": "Vercel",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Free or reduced-price software"
@@ -19496,6 +20274,9 @@
       "org": "Vercel",
       "readiness": "Product-Stage",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Closed; the official page states that applications are currently closed.",
       "support": [
         "Cloud or tool credits",
@@ -19584,6 +20365,9 @@
       "org": "Verizon",
       "readiness": null,
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "All States"
+      ],
       "status": "Active — free self-paced learning is available to U.S. users age 18+",
       "support": [
         "Beginner AI education"
@@ -19658,6 +20442,9 @@
       "org": "Verizon",
       "readiness": "Beginner",
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Current. Free AI lessons and courses are available through Verizon Innovative Learning HQ.",
       "support": [
         "Curriculum or lesson plans",
@@ -19735,6 +20522,9 @@
       "org": "Verizon",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Use only with approved safeguards",
+      "states": [
+        "All States"
+      ],
       "status": "2026 applications closed; official page says applications reopen in 2027",
       "support": [
         "Tool selection help",
@@ -19817,6 +20607,9 @@
       "org": "Verizon",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Ongoing; free registration is available to U.S. small businesses",
       "support": [
         "Beginner AI education",
@@ -19881,6 +20674,9 @@
       "org": "Verizon and LISC",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Applications open; monthly reviews through December 2026",
       "support": [],
       "techStaff": null,
@@ -19935,6 +20731,9 @@
       "org": "Virtuous",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Active as of 2026-08-26",
       "support": [],
       "techStaff": null,
@@ -20001,6 +20800,9 @@
       "org": "Wilton Library",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Registration open for September 28, 2026, 7:00–8:30 p.m.; registration closes at 5:00 p.m. that day",
       "support": [
         "Community workshop"
@@ -20079,6 +20881,9 @@
       "org": "Windsor Public Library",
       "readiness": "Beginner",
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Upcoming; Wednesday, September 23, 2026 at 6:30 p.m. The official event listing explicitly marks the workshop free.",
       "support": [
         "Beginner AI education",
@@ -20163,6 +20968,9 @@
       "org": "Women AI Labs",
       "readiness": "Developing",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Announced August 2026; enrollment details should be confirmed",
       "support": [
         "Mentoring or professional network"
@@ -20251,6 +21059,9 @@
       "org": "Women AI Labs",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Programs listed; current availability varies by cohort",
       "support": [
         "Beginner AI education",
@@ -20344,6 +21155,9 @@
       "org": "Women AI Labs",
       "readiness": "Beginner",
       "sensitiveInfo": "Check local policy",
+      "states": [
+        "All States"
+      ],
       "status": "Active resource",
       "support": [
         "Tool selection help"
@@ -20434,6 +21248,9 @@
       "org": "Women AI Labs",
       "readiness": "Developing",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Forming now",
       "support": [
         "Community meeting space",
@@ -20526,6 +21343,9 @@
       "org": "Workday / Workday Foundation",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Current relationship-based funding path. Aligned organizations may email a description of their work; Workday will request more information if there is a fit.",
       "support": [
         "Beginner AI education",
@@ -20603,6 +21423,9 @@
       "org": "Yale Jackson School of Global Affairs",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Registration page current for September 28, 2026; access is listed for Yale students, Yale faculty, and Yale staff; price is not stated",
       "support": [],
       "techStaff": "No",
@@ -20671,6 +21494,9 @@
       "org": "Yale Jackson School of Global Affairs",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Event completed October 8, 2026; retained as a Yale AI-alignment program example",
       "support": [
         "Community workshop"
@@ -20747,6 +21573,9 @@
       "org": "Yale Jackson School of Global Affairs",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Registration open for a free Yale-community lecture on November 18, 2026, 12:00–1:00 p.m. Eastern",
       "support": [],
       "techStaff": "No",
@@ -20814,6 +21643,9 @@
       "org": "Yale Office of New Haven Affairs (ONHA)",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Closed — Summer 2027 host proposal deadline passed October 16, 2026; recurring fellowship retained for the next host cycle",
       "support": [],
       "techStaff": null,
@@ -20885,6 +21717,9 @@
       "org": "Yale School of Management",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Registration open for a free virtual meeting on November 5, 2026, 11:00 a.m.–12:00 p.m. Eastern",
       "support": [
         "Mentoring or professional network"
@@ -20960,6 +21795,9 @@
       "org": "Yale School of Management",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": "Open only to Yale School of Management alumni and current students. Free online meeting October 1, 2026, 11:00 a.m.–noon Eastern; registration required.",
       "support": [
         "Mentoring or professional network"
@@ -21040,6 +21878,9 @@
       "org": "Yale School of Medicine",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "All States"
+      ],
       "status": null,
       "support": [
         "Legal or privacy guidance"
@@ -21123,6 +21964,9 @@
       "org": "Yale School of Medicine / Harvey Cushing-John Hay Whitney Medical Library",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "Connecticut"
+      ],
       "status": "Upcoming Yale-only training on September 8, 2026, 10:00–11:30 a.m. Eastern; registration required.",
       "support": [
         "Community workshop"
@@ -21197,6 +22041,9 @@
       "org": "Yale School of Medicine / Yale Ventures",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Registration remains available for a free public lecture on October 29, 2026, 4:00–6:30 p.m. Eastern",
       "support": [
         "Community workshop"
@@ -21280,6 +22127,9 @@
       "org": "Yale School of Medicine Educational Technology & Innovation",
       "readiness": "Developing",
       "sensitiveInfo": "Do not use for sensitive information",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Registration open for a free public ideathon on November 20, 2026, 2:00–5:00 p.m. Eastern in New Haven",
       "support": [
         "Community workshop"
@@ -21363,6 +22213,9 @@
       "org": "Yale University",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": null,
       "support": [
         "Legal or privacy guidance",
@@ -21451,6 +22304,9 @@
       "org": "Yale University Library",
       "readiness": null,
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Available to Yale community members and eligible affiliates; individual services have their own access rules.",
       "support": [
         "One-on-one help",
@@ -21542,6 +22398,9 @@
       "org": "Yale University Office of New Haven Affairs",
       "readiness": "Implementation-Ready",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Closed. The FY2027 Project Award deadline passed August 31, 2026 at 5:00 p.m.",
       "support": [
         "Legal or privacy guidance",
@@ -21632,6 +22491,9 @@
       "org": "Yale University Office of New Haven Affairs",
       "readiness": "Beginner",
       "sensitiveInfo": "Not stated",
+      "states": [
+        "Connecticut"
+      ],
       "status": "Open; reviewed monthly first-come, first-served while funds remain",
       "support": [
         "Beginner AI education",
@@ -21704,6 +22566,9 @@
       "org": "Young Futures",
       "readiness": null,
       "sensitiveInfo": null,
+      "states": [
+        "All States"
+      ],
       "status": "Closed — 2026 Unwritten Challenge applications ended October 16; recurring Young Futures funding challenge retained for a future cycle",
       "support": [],
       "techStaff": null,
