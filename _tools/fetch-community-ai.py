@@ -154,8 +154,9 @@ def main():
 
     # Status is free text, but research marks records it has deliberately
     # ruled out by how the status starts: "Duplicate - ..." for a record a
-    # better one supersedes, "Out of Scope - ..." for one a Connecticut
-    # organization cannot use. Those stay in Airtable as history and are
+    # better one supersedes, "Out of Scope - ..." for one a United States
+    # participant cannot use (the directory's scope since 2026-10-31; it was
+    # Connecticut before that). Those stay in Airtable as history and are
     # kept off the page. "Closed - Watch Next Cycle" is NOT held: a closed
     # program that will run again is still worth knowing about.
     held = [r for r in rows if is_held(r.get("status"))]
