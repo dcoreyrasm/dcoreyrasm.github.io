@@ -68,6 +68,7 @@
     ['deadline',         'Deadline'],
     ['added',            'Added to this directory'],
     ['status',           'Current status'],
+    ['states',           'Where it is available'],
     ['geo',              'Geographic scope'],
     ['ctRelevance',      'Connecticut relevance'],
     ['travel',           'Travel or location'],
@@ -199,7 +200,27 @@
 
   var ALL = [];
   var META = {};
-  var state = { q: '', filters: {}, only: {}, sort: 'relevance', expanded: {}, shown: 0 };
+  var state = { q: '', filters: {}, only: {}, sort: 'relevance', region: '', expanded: {}, shown: 0 };
+
+  /* Where someone lives, for the state picker. An entry tagged "All States" is
+     open nationwide, so it shows for every state; an entry limited to named
+     states shows only for those. A blank entry (the official source did not
+     say) shows only when no state is picked. Added 2026-10-31 when the
+     directory widened from Connecticut to the United States. */
+  var ALL_STATES = 'All States';
+  var US_STATES = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut',
+    'Delaware','District of Columbia','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana',
+    'Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan',
+    'Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire',
+    'New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma',
+    'Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas',
+    'Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
+
+  function inRegion(rec) {
+    if (!state.region) return true;
+    var s = values(rec, 'states');
+    return s.indexOf(ALL_STATES) !== -1 || s.indexOf(state.region) !== -1;
+  }
 
   var $ = function (id) { return document.getElementById(id); };
 
@@ -393,6 +414,7 @@
   /* -- filtering ---------------------------------------------------------- */
 
   function matchesFacets(rec, skipKey) {
+    if (!inRegion(rec)) return false;
     for (var only in state.only) {
       if (state.only[only] && ONLY[only] && !ONLY[only].test(rec)) return false;
     }
@@ -624,6 +646,9 @@
     if (state.q) {
       chips.push('<span class="cf-chip">Search: &ldquo;' + esc(state.q) + '&rdquo;<button type="button" data-clear="q" aria-label="Clear search">&times;</button></span>');
     }
+    if (state.region) {
+      chips.push('<span class="cf-chip">Available in ' + esc(state.region) + '<button type="button" data-clear="state" aria-label="Clear state">&times;</button></span>');
+    }
     FACETS.forEach(function (facet) {
       (state.filters[facet.key] || []).forEach(function (v) {
         chips.push('<span class="cf-chip">' + esc(facet.key === 'door' ? (DOOR_LABEL[v] || v) : v) +
@@ -764,6 +789,7 @@
       bits.push(names.length <= 2 ? names.join(' or ')
                                   : names.length + ' ' + facet.label.toLowerCase() + ' options');
     });
+    if (state.region) bits.push('available in ' + state.region);
     if (state.q) bits.push('\u201c' + state.q + '\u201d');
     return bits.join(', ');
   }
@@ -889,6 +915,7 @@
     var p = new URLSearchParams();
     if (state.q) p.set('q', state.q);
     if (state.sort !== 'relevance') p.set('sort', state.sort);
+    if (state.region) p.set('state', state.region);
     var on = Object.keys(state.only).filter(function (k) { return state.only[k]; });
     if (on.length) p.set('only', on.join('~'));
     FACETS.forEach(function (f) {
@@ -916,6 +943,7 @@
     var p = new URLSearchParams(raw);
     state.q = p.get('q') || '';
     state.sort = p.get('sort') || 'relevance';
+    state.region = US_STATES.indexOf(p.get('state')) !== -1 ? p.get('state') : '';
     state.filters = {};
     FACETS.forEach(function (f) {
       var v = p.get(f.key);
@@ -950,6 +978,8 @@
 
     $('cf-sort').addEventListener('change', function () { state.sort = this.value; writeHash(); render(); });
 
+    $('cf-state').addEventListener('change', function () { state.region = this.value; writeHash(); renderAll(); });
+
     $('cf-showmore').addEventListener('click', function () {
       var first = state.shown;
       state.shown += PAGE;
@@ -963,6 +993,7 @@
 
     function resetAll() {
       state.q = ''; state.filters = {}; state.only = {}; qEl.value = '';
+      state.region = ''; $('cf-state').value = '';
       closePanels(); writeHash(); renderAll();
     }
 
@@ -1039,13 +1070,14 @@
       var clear = e.target.closest('[data-clear]');
       if (!clear) return;
       if (clear.getAttribute('data-clear') === 'q') { state.q = ''; qEl.value = ''; }
-      else { state.q = ''; qEl.value = ''; state.filters = {}; }
+      else if (clear.getAttribute('data-clear') === 'state') { state.region = ''; $('cf-state').value = ''; }
+      else { state.q = ''; qEl.value = ''; state.filters = {}; state.region = ''; $('cf-state').value = ''; }
       writeHash(); renderAll();
     });
 
     $('cf-list').addEventListener('click', function (e) {
       var clear = e.target.closest('[data-clear]');
-      if (clear) { state.q = ''; qEl.value = ''; state.filters = {}; writeHash(); renderAll(); return; }
+      if (clear) { state.q = ''; qEl.value = ''; state.filters = {}; state.region = ''; $('cf-state').value = ''; writeHash(); renderAll(); return; }
       var btn = e.target.closest('[data-detail]');
       if (!btn) return;
       var id = btn.getAttribute('data-detail');
@@ -1063,6 +1095,7 @@
       state.sort = normalizeChoice('cf-sort', 'relevance', state.sort);
       qEl.value = state.q;
       $('cf-sort').value = state.sort;
+      $('cf-state').value = state.region;
       syncing = false;
       renderAll();
     });
@@ -1146,12 +1179,20 @@
       if (opt) opt.remove();
     }
 
+    var stateEl = $('cf-state');
+    US_STATES.forEach(function (name) {
+      var o = document.createElement('option');
+      o.value = name; o.textContent = 'State: ' + name;
+      stateEl.appendChild(o);
+    });
+
     readHash();
     buildRow();
     tuneOnly();
     state.sort = normalizeChoice('cf-sort', 'relevance', state.sort);
     $('cf-q').value = state.q;
     $('cf-sort').value = state.sort;
+    $('cf-state').value = state.region;
 
     wire();
     renderAll();

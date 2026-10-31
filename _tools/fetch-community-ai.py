@@ -82,13 +82,14 @@ FIELDS = {
     "Languages Available": "languages",
     "Accessibility Features": "accessibility",
     "Existing Account Benefit": "accountBenefit",
+    "States Available": "states",
 }
 
 # Keys the page always expects to be a list, even when Airtable returns nothing.
 LIST_KEYS = {
     "whoCanParticipate", "audienceStage", "communityServed", "ageGroup",
     "deliveryFormat", "topics", "support", "languages", "accessibility",
-    "accountBenefit", "industries",
+    "accountBenefit", "industries", "states",
 }
 
 
