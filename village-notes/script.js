@@ -289,6 +289,12 @@
       'Community Meals / Soup Kitchen','Senior Food Assistance',
       'School / Family Food Support','Emergency / Seasonal Food Assistance']],
 
+    // Also in Food & Basic Needs, but its own group: help paying for heat and
+    // utilities answers a different question from where to get food, and a
+    // household behind on a heating bill should not have to scan pantries to
+    // find it. Added 2026-10-31 for CEAP.
+    ['Utility & Heating Help', ['Utility & Heating Assistance']],
+
     // Affordable family shopping, inside Family & Childcare. Two groups rather
     // than one, because the two halves answer different questions and a family
     // is only ever asking one of them. A shop is somewhere you can go on
