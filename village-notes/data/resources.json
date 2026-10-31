@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-14T08:58:57.235Z",
+  "generated": "2026-10-31T11:52:14.647Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 814,
+  "count": 836,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -29,6 +29,7 @@
     "College Access / Readiness",
     "Community Meals / Soup Kitchen",
     "Companion Services",
+    "Disability & Accessibility Services",
     "Dog Daycare",
     "Dog Park",
     "Durable Medical Equipment Loan",
@@ -75,6 +76,7 @@
     "Summer Sleepaway Camp",
     "Teen Program",
     "Teen/CIT Program",
+    "Utility & Heating Assistance",
     "Veterans Benefits Counseling",
     "Veterinary Care",
     "Youth Development Program",
@@ -159,12 +161,14 @@
     "North Stonington",
     "Norwalk",
     "Norwich",
+    "Online, available to families in Connecticut",
     "Orange",
     "Oxford",
     "Pawcatuck",
     "Plainfield",
     "Plainville",
     "Plymouth",
+    "Portland",
     "Prospect",
     "Putnam",
     "Redding",
@@ -182,6 +186,7 @@
     "Stamford",
     "Statewide",
     "Statewide (all of Connecticut)",
+    "Statewide, Connecticut",
     "Sterling",
     "Stonington",
     "Storrs",
@@ -972,6 +977,20 @@
         "Preschool / Pre-K"
       ],
       "tags": "center-based daycare, childcare, waterbury"
+    },
+    {
+      "id": "rec6O6Nn3hozY3Afq",
+      "name": "Around The Rosy",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "specificType": "Independent secondhand clothing and consignment",
+      "town": "Westport",
+      "address": "1 Turkey Hill Road South, Westport, CT 06880",
+      "website": "https://aroundtherosy.com/",
+      "notes": "Children's clothing consignment; official store page confirms address and fall consignments. Checked 2026-10-14.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Children's Resale / Consignment",
+      "tags": "children's consignment, kids clothing, baby gear, toys, resale, westport"
     },
     {
       "id": "recU8K5HDKId7mk7Y",
@@ -3110,6 +3129,19 @@
       "tags": "legal/hr resource, legal help"
     },
     {
+      "id": "recDbFqIFUrfrf6Xk",
+      "name": "CareClinic",
+      "track": "Elder Care",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Online health journal for families and caregivers",
+      "town": "Online, available to families in Connecticut",
+      "ages": "Digital health journal; symptom, mood, medication, and caregiver tracking",
+      "website": "https://careclinic.io/",
+      "submittedBy": "Ash K",
+      "notes": "Community submission (Ash K, 2026-09-27), cleaned up 2026-10-31. Submitter's description: CareClinic is an online health journal for families and caregivers. It helps people track symptoms, mood, medications, appointments, and day-to-day wellness in one organized place. It can support Connecticut families who want a clear record to bring to conversations with a clinician or care team. Online tool, not a Connecticut provider; pricing and data-privacy terms not yet reviewed.",
+      "tags": "health journal, symptom tracker, medication tracker, appointments, caregiver, caregiver support, online, app"
+    },
+    {
       "id": "recc3apTSqgPafxXb",
       "name": "Carelot Children's Center Brooklyn",
       "track": "Family & Childcare",
@@ -4361,6 +4393,21 @@
       "tags": "center-based daycare, childcare, new london"
     },
     {
+      "id": "recljZjRjUNjxSTB8",
+      "name": "Connecticut DDS Family Supports and Services",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Family support, respite care, grants, in-home assistance, behavioral and clinical services subject to eligibility",
+      "town": "Statewide",
+      "ages": "People with intellectual or developmental disabilities and their families, subject to program eligibility",
+      "website": "https://portal.ct.gov/dds/Supports-and-Services/Family-Support-and-Services",
+      "contact": "860-418-6000",
+      "submittedBy": "Village Notes Research",
+      "notes": "Official Connecticut DDS website reviewed October 27 2026. Eligibility and availability must be confirmed with DDS.",
+      "lastVerified": "2026-10-27",
+      "tags": "developmental disability, intellectual disability, respite, family grants, in-home support"
+    },
+    {
       "id": "recjryIj1A0AQkyjj",
       "name": "Connecticut DVA Office of Advocacy and Assistance",
       "track": "Elder Care",
@@ -4402,6 +4449,25 @@
       "dateSubmitted": "2026-08-25",
       "notes": "Source: https://www.elicense.ct.gov/Lookup/DownloadRoster.aspx, accessed 2026-08-25.",
       "tags": "legal/hr resource, legal help"
+    },
+    {
+      "id": "recyPs0hpOka5MjVC",
+      "name": "Connecticut Energy Assistance Program (CEAP)",
+      "track": "Food & Basic Needs",
+      "category": "Utility & Heating Assistance",
+      "specificType": "Home heating and utility assistance, 2026–2027",
+      "town": "Statewide, Connecticut",
+      "ages": "Income-eligible Connecticut households; priority for older adults, families with young children, and people with disabilities",
+      "hours": "2026–2027 heating season. Apply by May 31, 2027. First program-paid fuel deliveries November 2, 2026.",
+      "cost": "Income-based heating assistance; amount depends on household circumstances and program rules.",
+      "website": "https://portal.ct.gov/governor/news/press-releases/2026/10-2026/governor-lamont-releases-state-aid-for-home-heating-assistance",
+      "contact": "Apply at ct.gov/heatinghelp; call 2-1-1 for help locating your community action agency.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-10-28",
+      "notes": "Official Connecticut DSS CEAP 2026–2027 season. Applications open. Annual gross household income up to 60% of state median; example $93,681 for household of four. SNAP, TFA or SSI households may qualify categorically. Apply online, by phone, email, mail or appointment with local community action agency. CEAP requires a new application each year. Source: official state press release dated October 13, 2026. Benefit amounts depend on eligibility and fuel type. Do not promise an award.",
+      "programYear": "2026–2027 heating season",
+      "lastVerified": "2026-10-28",
+      "tags": "ceap, heating assistance, energy assistance, utility bills, oil, fuel, winter heating, low income, older adults, disability, connecticut"
     },
     {
       "id": "recOiWpeyvcpJllMZ",
@@ -4838,6 +4904,21 @@
       "tags": "legal/hr resource, legal help"
     },
     {
+      "id": "recJrVbVTFVcZhtfF",
+      "name": "Connecticut Parent Advocacy Center (CPAC)",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Statewide special education support, parent training, IEP and disability rights information",
+      "town": "Statewide",
+      "ages": "Families of children and youth with disabilities or chronic conditions, birth–26",
+      "website": "https://www.cpacinc.org/",
+      "contact": "860-739-3089",
+      "submittedBy": "Village Notes Research",
+      "notes": "Official CPAC website reviewed October 27 2026. Offers free family training and assistance; not a law firm.",
+      "lastVerified": "2026-10-27",
+      "tags": "special education, iep, 504 plan, disability, parent advocacy, children"
+    },
+    {
       "id": "rec3GEXKKTT13BHcy",
       "name": "Connecticut Parenting Support Services",
       "track": "Family & Childcare",
@@ -4960,6 +5041,20 @@
         "Caregiver Support"
       ],
       "tags": "respite care, senior services, caregiver support"
+    },
+    {
+      "id": "recsYPTuBUBHmF1Wt",
+      "name": "Connecticut Tech Act Project",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Assistive technology demonstrations, short-term loans, equipment reuse and financing support",
+      "town": "Statewide",
+      "ages": "People with disabilities, older adults, family members, educators, employers",
+      "website": "https://cttechact.com/",
+      "submittedBy": "Village Notes Research",
+      "notes": "Official CT Tech Act website and CT Aging and Disability Services information reviewed October 27 2026. Specific program eligibility and costs vary.",
+      "lastVerified": "2026-10-27",
+      "tags": "assistive technology, disability, equipment loans, accessibility, adaptive equipment"
     },
     {
       "id": "recuM2X9dc0S5CJab",
@@ -10196,6 +10291,21 @@
       "tags": "center-based daycare, childcare, watertown"
     },
     {
+      "id": "rec90rs7egozFyWRp",
+      "name": "Karma's Closet",
+      "track": "Family & Childcare",
+      "category": "Clothing & Household Resale",
+      "specificType": "Family-focused secondhand shopping",
+      "town": "Newington",
+      "address": "27 Garfield St, Newington, CT 06111",
+      "website": "https://karmasclosetct.com/",
+      "contact": "860-436-6055",
+      "notes": "Provider/official source reviewed October 14 2026. Men's, women's and children's clothing plus home decor and furniture. Address and phone confirmed against the Google business listing 2026-10-31.",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Clothing & Household Resale",
+      "tags": "clothing household resale, secondhand shopping, newington"
+    },
+    {
       "id": "recCyzs0nVWKSe90B",
       "name": "Kid's Club Learning and Day Care",
       "track": "Family & Childcare",
@@ -10268,6 +10378,36 @@
         "Preschool / Pre-K"
       ],
       "tags": "center-based daycare, childcare, west haven"
+    },
+    {
+      "id": "rec1bfBbXsmw5rPAj",
+      "name": "Kidsignments Colchester",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "specificType": "Family-focused secondhand shopping",
+      "town": "Colchester",
+      "address": "51 Hayward Ave, Colchester, CT 06415",
+      "website": "https://kidsignmentsct.com/",
+      "contact": "860-800-2447",
+      "notes": "Provider/official source reviewed October 14 2026. Children's clothes, toys, baby gear. Address and phone confirmed against the Google business listing 2026-10-31.",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Children's Resale / Consignment",
+      "tags": "children s resale / consignment, secondhand shopping, kids clothing, baby gear, colchester"
+    },
+    {
+      "id": "recb82AvEzNVYmbZN",
+      "name": "Kidsignments Norwich",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "specificType": "Family-focused secondhand shopping",
+      "town": "Norwich",
+      "address": "105 Lafayette St, Norwich, CT 06360",
+      "website": "https://kidsignmentsct.com/",
+      "contact": "860-949-3008",
+      "notes": "Provider/official source reviewed October 14 2026. Children's clothes, toys, baby gear. Address and phone confirmed against the Google business listing 2026-10-31.",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Children's Resale / Consignment",
+      "tags": "children s resale / consignment, secondhand shopping, kids clothing, baby gear, norwich"
     },
     {
       "id": "recBGwEKjE5fCeZ9C",
@@ -11694,6 +11834,20 @@
       "tags": "skilled nursing / rehab, senior services, caregiver support, wallingford"
     },
     {
+      "id": "rec6p6zZJNhRSeyqo",
+      "name": "Max & Lily's Closet",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "specificType": "Independent secondhand clothing and consignment",
+      "town": "West Hartford",
+      "address": "585 Prospect Avenue, West Hartford, CT 06105",
+      "website": "https://maxandlilyscloset.com/",
+      "notes": "Children's and maternity clothing, gear, books and toys; consignor intake can pause. Official website verified 2026-10-14.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Children's Resale / Consignment",
+      "tags": "children's and maternity consignment, kids clothing, baby gear, toys, teen clothing, west hartford"
+    },
+    {
       "id": "recrud50mnYwM16UH",
       "name": "Mayflower Montessori School",
       "track": "Family & Childcare",
@@ -12774,6 +12928,21 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, waterbury"
+    },
+    {
+      "id": "recM0QxkjcMcqR2Cp",
+      "name": "Mustard Seed Thrift Shoppe",
+      "track": "Family & Childcare",
+      "category": "Family Thrift Store",
+      "specificType": "Nonprofit volunteer-operated clothing, small household goods and toys resale",
+      "town": "Monroe",
+      "address": "34 Church Street, Monroe, CT 06810",
+      "website": "https://www.mcc-ucc.org/ministries/mustard-seed-thrift-shop",
+      "contact": "203-268-4879",
+      "notes": "Official Monroe Congregational Church shop page reviewed 2026-10-14; Friday 10 AM-3 PM and Saturday 10 AM-2 PM. Phone 203-268-4879. Not a consignment payout shop; donation-based thrift.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Family Thrift Store",
+      "tags": "thrift store, nonprofit thrift, secondhand clothing, family clothing, toys, household goods, monroe"
     },
     {
       "id": "rec7QwZhZBzPvPkrT",
@@ -14272,6 +14441,36 @@
       "tags": "home daycare licensed, childcare, bristol"
     },
     {
+      "id": "recy93rWVrSxQDXh2",
+      "name": "Once Upon A Child Bristol",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "specificType": "Family-focused secondhand shopping",
+      "town": "Bristol",
+      "address": "99 Farmington Ave, Bristol, CT 06010",
+      "website": "https://onceuponachild.com/locations/bristol-ct/",
+      "contact": "860-584-8131",
+      "notes": "Provider/official source reviewed October 14 2026. Buys and sells used children's clothing, shoes, toys and baby gear. Address and phone confirmed against the Google business listing 2026-10-31.",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Children's Resale / Consignment",
+      "tags": "children s resale / consignment, secondhand shopping, kids clothing, baby gear, bristol"
+    },
+    {
+      "id": "recGMQVeh3TNfVGBc",
+      "name": "Once Upon A Child Danbury",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "specificType": "Family-focused secondhand shopping",
+      "town": "Danbury",
+      "address": "67 Newtown Rd, Ste 27, Danbury, CT 06810",
+      "website": "https://onceuponachild.com/locations/danbury-ct/",
+      "contact": "203-791-2393",
+      "notes": "Provider/official source reviewed October 14 2026. Children's resale and baby gear. Address and phone confirmed against the Google business listing 2026-10-31.",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Children's Resale / Consignment",
+      "tags": "children s resale / consignment, secondhand shopping, kids clothing, baby gear, danbury"
+    },
+    {
       "id": "rec0X9kAF91Ac1MMh",
       "name": "Once Upon A Child Enfield",
       "track": "Family & Childcare",
@@ -14284,6 +14483,81 @@
       "lastVerified": "2026-10-14",
       "shoppingType": "Children's Resale / Consignment",
       "tags": "children s resale / consignment, secondhand shopping, kids clothing, baby gear, enfield"
+    },
+    {
+      "id": "recT4PxsgMI91wVHu",
+      "name": "Once Upon A Child Manchester",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "specificType": "Family-focused secondhand shopping",
+      "town": "Manchester",
+      "address": "410C Middle Turnpike W, Manchester, CT 06040",
+      "website": "https://onceuponachild.com/locations/manchester-ct/",
+      "contact": "860-649-1577",
+      "notes": "Provider/official source reviewed October 14 2026. Children's resale and baby gear. Address and phone confirmed against the Google business listing 2026-10-31.",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Children's Resale / Consignment",
+      "tags": "children s resale / consignment, secondhand shopping, kids clothing, baby gear, manchester"
+    },
+    {
+      "id": "recv4HLrwVcEvG4ND",
+      "name": "Once Upon A Child Meriden",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "specificType": "Family-focused secondhand shopping",
+      "town": "Meriden",
+      "address": "533 S Broad St, Meriden, CT 06450",
+      "website": "https://onceuponachild.com/locations/meriden-ct/",
+      "contact": "203-235-1850",
+      "notes": "Provider/official source reviewed October 14 2026. Official store page available; business was listed for sale, so verify ongoing retail operations periodically. Address and phone confirmed against the Google business listing 2026-10-31, which shows regular hours.",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Children's Resale / Consignment",
+      "tags": "children s resale / consignment, secondhand shopping, kids clothing, baby gear, meriden"
+    },
+    {
+      "id": "recQ0fgUBtwu4pZz9",
+      "name": "Once Upon A Child Milford",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "specificType": "Family-focused secondhand shopping",
+      "town": "Orange",
+      "address": "575 Boston Post Rd, Orange, CT 06477",
+      "website": "https://onceuponachild.com/locations/orange-ct/",
+      "contact": "203-876-7981",
+      "notes": "Provider/official source reviewed October 14 2026. Children's resale and baby gear. The store brands itself as Milford, but its street address is in Orange (575 Boston Post Rd, Orange, CT 06477), confirmed against the Google business listing 2026-10-31; Town/Area set to Orange.",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Children's Resale / Consignment",
+      "tags": "children s resale / consignment, secondhand shopping, kids clothing, baby gear, milford"
+    },
+    {
+      "id": "reccqLk4UsVfejPG1",
+      "name": "Once Upon A Child Waterbury",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "specificType": "Family-focused secondhand shopping",
+      "town": "Waterbury",
+      "address": "835 Wolcott St, Ste 7B, Waterbury, CT 06705",
+      "website": "https://onceuponachild.com/locations/waterbury-ct/",
+      "contact": "203-527-5614",
+      "notes": "Provider/official source reviewed October 14 2026. Children's resale and baby gear. Address and phone confirmed against the Google business listing 2026-10-31.",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Children's Resale / Consignment",
+      "tags": "children s resale / consignment, secondhand shopping, kids clothing, baby gear, waterbury"
+    },
+    {
+      "id": "recazZzIopmKLPbA7",
+      "name": "Once Upon A Child Wethersfield",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "specificType": "Family-focused secondhand shopping",
+      "town": "Wethersfield",
+      "address": "1047 Silas Deane Hwy, Wethersfield, CT 06109",
+      "website": "https://onceuponachild.com/locations/wethersfield-ct/",
+      "contact": "860-571-8773",
+      "notes": "Provider/official source reviewed October 14 2026. Children's resale and baby gear. Address and phone confirmed against the Google business listing 2026-10-31.",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Children's Resale / Consignment",
+      "tags": "children s resale / consignment, secondhand shopping, kids clothing, baby gear, wethersfield"
     },
     {
       "id": "recOstFjZDa5f3haJ",
@@ -15190,6 +15464,21 @@
       "tags": "center-based daycare, family resources, childcare, putnam"
     },
     {
+      "id": "rec0lOLn2SOE4GAS4",
+      "name": "Rachel's Quality Consignment",
+      "track": "Family & Childcare",
+      "category": "Clothing & Household Resale",
+      "specificType": "Family-focused secondhand shopping",
+      "town": "Litchfield",
+      "address": "465 Bantam Rd, Litchfield, CT 06759",
+      "website": "https://visitlitchfieldct.com/shopping/",
+      "contact": "860-567-5656",
+      "notes": "Litchfield municipal visitor directory reviewed October 14 2026; identifies clothing for women, men and children. Address and phone confirmed against the Google business listing 2026-10-31. The Website field points to the town visitor page; no store website found.",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Clothing & Household Resale",
+      "tags": "clothing household resale, secondhand shopping, litchfield"
+    },
+    {
       "id": "recn1alJP3YIB3JPv",
       "name": "Raquel Sabogal Family Child Care Home",
       "track": "Family & Childcare",
@@ -15280,6 +15569,21 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, hartford"
+    },
+    {
+      "id": "recudeSNTO4hNBeBv",
+      "name": "Ridgefield Thrift Shop",
+      "track": "Family & Childcare",
+      "category": "Family Thrift Store",
+      "specificType": "Volunteer nonprofit resale of donated clothing for adults and children, toys, sports gear and household items",
+      "town": "Ridgefield",
+      "address": "21B Governor Street, Ridgefield, CT 06877",
+      "website": "https://www.ridgefieldthriftshop.com/",
+      "contact": "203-438-3328",
+      "notes": "Official site reviewed 2026-10-14. Shopping Wed/Fri/Sat noon-4 PM. Phone 203-438-3328. Does not accept medical equipment or infant equipment donations. Its old 15 Catoonah St address is outdated.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Family Thrift Store",
+      "tags": "thrift store, nonprofit thrift, kids clothing, used clothing, toys, sports gear, household items, ridgefield"
     },
     {
       "id": "recCQsZG6H3T0atsm",
@@ -15756,6 +16060,20 @@
       "lastVerified": "2026-10-14",
       "shoppingType": "Clothing & Household Resale",
       "tags": "clothing household resale, secondhand shopping, thrift store, orange"
+    },
+    {
+      "id": "recPjg4iSkQD6WJaw",
+      "name": "Savvy Swap Consignment",
+      "track": "Family & Childcare",
+      "category": "Clothing & Household Resale",
+      "specificType": "Independent secondhand clothing and consignment",
+      "town": "Portland",
+      "address": "275 Main Street, Portland, CT 06480",
+      "website": "https://www.savvyswapconsign.com/",
+      "notes": "Consignment clothing and accessories for adults, teens and preteens; seller intake by appointment. Official page verified 2026-10-14; not for baby/toddler wear.",
+      "lastVerified": "2026-10-14",
+      "shoppingType": "Clothing & Household Resale",
+      "tags": "clothing consignment, used clothing, women's clothing, men's clothing, junior clothing, resale, portland"
     },
     {
       "id": "recL1wxhmHGdvUtsO",
@@ -17228,6 +17546,21 @@
         "Preschool / Pre-K"
       ],
       "tags": "center-based daycare, childcare, waterbury"
+    },
+    {
+      "id": "recjvJNeZ2hZFQCsr",
+      "name": "The Children's Attic",
+      "track": "Family & Childcare",
+      "category": "Children's Resale / Consignment",
+      "specificType": "Family-focused secondhand shopping",
+      "town": "Darien",
+      "address": "282 Tokeneke Rd, Darien, CT 06820",
+      "website": "https://www.thechildrensattic.com/",
+      "contact": "203-655-4192",
+      "notes": "Provider/official source reviewed October 14 2026. Children's consignment clothing, toys and youth sports items. Address and phone confirmed against the Google business listing 2026-10-31 (listing shows no hours).",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Children's Resale / Consignment",
+      "tags": "children s resale / consignment, secondhand shopping, kids clothing, baby gear, darien"
     },
     {
       "id": "recDrXi2MkgXatfLh",
