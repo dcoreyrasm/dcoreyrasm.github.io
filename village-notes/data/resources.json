@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-31T11:52:14.647Z",
+  "generated": "2026-10-31T18:05:36.707Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 836,
+  "count": 845,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -39,6 +39,7 @@
     "Emergency Veterinary Care",
     "Family Thrift Store",
     "Food Bank / Food Pantry",
+    "Free Clothing Closets",
     "Geriatric Care Manager",
     "High School (Private)",
     "High School (Public)",
@@ -114,6 +115,7 @@
     "East Lyme",
     "East Windsor",
     "Eastford",
+    "Easton",
     "Ellington",
     "Enfield",
     "Fairfield",
@@ -206,6 +208,7 @@
     "West Hartford",
     "West Haven",
     "Westbrook",
+    "Weston",
     "Westport",
     "Wethersfield",
     "Willimantic",
@@ -408,6 +411,45 @@
         "Career Exploration"
       ],
       "tags": "magnet / specialty school, teen resources, high school, stamford"
+    },
+    {
+      "id": "recvMNNdPTCSIGTSc",
+      "name": "Access Independence",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Southwestern Connecticut Center for Independent Living serving people across disability types.",
+      "town": "Stratford",
+      "address": "300 Long Beach Boulevard, Suite 1, Stratford, CT 06615",
+      "ages": "People with disabilities; youth transition services are specifically offered to young adults ages 16–21.",
+      "cost": "Cost is not stated on the official provider page.",
+      "website": "https://www.accessinct.org/services",
+      "contact": "203-378-6977",
+      "townsServed": [
+        "Bridgeport",
+        "Darien",
+        "Easton",
+        "Fairfield",
+        "Greenwich",
+        "Monroe",
+        "New Canaan",
+        "Norwalk",
+        "Stamford",
+        "Stratford",
+        "Trumbull",
+        "Weston",
+        "Westport",
+        "Wilton"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-10-31",
+      "notes": "Can help identify benefits, housing, assistive technology, personal-assistance services and other supports. Youth transition includes financial management, driver-test preparation, résumé development and college search.",
+      "registrationStatus": "Rolling / Ongoing",
+      "servicesOffered": [
+        "Disability Support"
+      ],
+      "accessibility": "Cross-disability services include advocacy, peer support, information and referral, independent-living skills, youth transition, pre-vocational support, Deaf services, emergency preparation and transition from facilities to community living.",
+      "lastVerified": "2026-10-31",
+      "tags": "disability services, independent living, youth transition, peer support, advocacy, deaf services, assistive technology, housing support, benefits counseling, employment preparation, stratford"
     },
     {
       "id": "recBdvLlOLxs76bdH",
@@ -1542,22 +1584,24 @@
       "track": "Teens & High School",
       "category": "College Access / Readiness",
       "town": "Hartford",
+      "address": "55 Farmington Avenue, Hartford, CT 06105",
       "website": "https://portal.ct.gov/ads/knowledge-base/articles/education-services/for-children/bridge-ct-building-resilience-independence-dignity-growth-and-empowerment",
       "contact": "ADS.BridgeCT@ct.gov",
       "submittedBy": "Village Notes Research",
-      "notes": "Connecticut Department of Aging and Disability Services program. Works with schools and families to support students with disabilities preparing for independent living, college, and employment.",
+      "notes": "Eligibility is limited to students ages 10–22 with disabilities who attend a participating school. The official page does not publish a complete participating-school list or enrollment schedule.",
+      "registrationStatus": "Not Confirmed",
       "servicesOffered": [
         "College Access / Readiness",
         "Disability Support",
         "Mentoring"
       ],
-      "accessibility": "For students with disabilities ages 10–22 at participating schools. The program supports self-advocacy, peer mentoring, financial literacy, career readiness, and planning for life after high school.",
-      "lastVerified": "2026-09-19",
+      "accessibility": "For students with disabilities ages 10–22 at participating schools. BRIDGE CT supports self-advocacy, peer mentoring, financial literacy, career readiness, family resource connections and planning for independent living, college and employment.",
+      "lastVerified": "2026-10-31",
       "teenOpportunity": [
         "College Readiness",
         "Career Exploration"
       ],
-      "tags": "college access / readiness, hartford"
+      "tags": "disability transition, special education, self-advocacy, peer mentoring, financial literacy, career readiness, independent living, college planning, employment preparation, ages 10-22, participating schools, statewide"
     },
     {
       "id": "recIGHFWye7kXSTb9",
@@ -4771,21 +4815,37 @@
       "track": "Teens & High School",
       "category": "Job Training Program",
       "specificType": "Statewide pre-employment transition program for students ages 16-22 with an IEP, 504 plan, or documented disability. Services include job exploration, post-secondary counseling, work-based learning, work-readiness training, and self-advocacy.",
-      "town": "Statewide",
+      "town": "Hartford",
+      "address": "55 Farmington Avenue, Hartford, CT 06105",
+      "hours": "Services may take place at school or in the community, during or after school. Contact the nearest Rehabilitation Services office.",
+      "cost": "BRS states its services are provided at no cost.",
       "website": "https://portal.ct.gov/ads/knowledge-base/articles/education-services/for-high-school-and-college-students/level-up",
+      "contact": "860-424-4840; online contact form available",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
       "submittedBy": "Village Notes Research",
+      "notes": "Statewide pre-employment transition program. Students can start through their school counselor or nearest BRS office; families are encouraged to participate.",
       "registrationStatus": "Rolling / Ongoing",
       "servicesOffered": [
-        "Disability Support"
+        "Disability Support",
+        "Youth Employment",
+        "College Access / Readiness",
+        "Mentoring",
+        "Parent / Family Support"
       ],
-      "accessibility": "Connecticut Level Up serves students ages 16–22 with disabilities who have an IEP, 504 plan, or special education services. It helps students prepare for employment and become more independent.",
+      "accessibility": "For students ages 16–22 with an IEP, 504 plan or documented disability. Level Up provides career exploration, postsecondary counseling, work-based learning, job-readiness training, self-advocacy, supported accommodations and counselor guidance.",
       "programYear": "Ongoing",
-      "lastVerified": "2026-09-05",
+      "lastVerified": "2026-10-31",
       "teenOpportunity": [
         "Career Exploration",
         "College Readiness"
       ],
-      "tags": "job training program, teen resources, job training"
+      "specializedSupport": [
+        "One-to-One Support",
+        "Accessibility Accommodations"
+      ],
+      "tags": "disability transition, iep, 504 plan, special education, career exploration, college readiness, work-based learning, job readiness, self-advocacy, youth employment, ages 16-22, statewide"
     },
     {
       "id": "rechSPhyqMZj75yEr",
@@ -5572,6 +5632,37 @@
         "Toddler Care"
       ],
       "tags": "home daycare licensed, childcare, new britain"
+    },
+    {
+      "id": "recFUiyCgIiuqiu0E",
+      "name": "CT Pathways to Integrated Employment",
+      "track": "Teens & High School",
+      "category": "Job Training Program",
+      "specificType": "Statewide individualized employment program for eligible youth and adults with intellectual and developmental disabilities.",
+      "town": "Hartford",
+      "address": "55 Farmington Avenue, Hartford, CT 06105",
+      "ages": "Students with I/DD who are eligible for DDS and interested in work after high school; adults with I/DD who are DDS-eligible, earn below minimum wage and want integrated employment.",
+      "cost": "Program cost is not stated on the CTPIE page; contact BRS for current eligibility and service details.",
+      "website": "https://portal.ct.gov/ads/knowledge-base/articles/employment-services/for-job-seekers/ct-pathways-to-integrated-emplyoment",
+      "contact": "860-424-4840; contact the nearest BRS office",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-10-31",
+      "notes": "Led by Connecticut Aging and Disability Services/BRS with partner agencies. Families and educators are encouraged to support participant choice and planning.",
+      "registrationStatus": "Rolling / Ongoing",
+      "servicesOffered": [
+        "Disability Support",
+        "Youth Employment",
+        "Parent / Family Support"
+      ],
+      "accessibility": "Trained counselors work one-to-one with participants to create individualized plans, build skills, explore jobs, obtain integrated employment at or above minimum wage, and receive support on the job.",
+      "lastVerified": "2026-10-31",
+      "specializedSupport": [
+        "One-to-One Support"
+      ],
+      "tags": "intellectual disability, developmental disability, integrated employment, job coaching, vocational rehabilitation, one-to-one support, youth transition, adult employment, fair wages, statewide"
     },
     {
       "id": "recbjA1Hu9x6t9wlE",
@@ -9267,6 +9358,29 @@
       "tags": "center-based daycare, childcare, torrington"
     },
     {
+      "id": "recDrFuTktCz3FZ36",
+      "name": "Home for Good",
+      "track": "Family & Childcare",
+      "category": "Clothing & Household Resale",
+      "specificType": "Journey Home nonprofit resale and reuse store supporting programs that help people leave homelessness.",
+      "town": "West Hartford",
+      "address": "591 New Park Avenue, West Hartford, CT 06110",
+      "hours": "Tuesday 10:00 a.m.–5:00 p.m.; Wednesday–Thursday 10:00 a.m.–7:00 p.m.; Friday–Saturday 10:00 a.m.–5:00 p.m.",
+      "cost": "Resale prices are not published on the official page.",
+      "website": "https://www.homeforgoodct.org/about",
+      "contact": "860-639-7532; thrift@journeyhomect.org",
+      "townsServed": [
+        "West Hartford"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-10-31",
+      "notes": "Secondhand and vintage resale supports Journey Home’s homelessness programs and furniture assistance. Public access to free furnishings is not described on this store page.",
+      "registrationStatus": "Rolling / Ongoing",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Clothing & Household Resale",
+      "tags": "nonprofit thrift, furniture resale, household goods, vintage resale, reuse store, homelessness support, journey home, west hartford"
+    },
+    {
       "id": "recehO4EQzOSgvzof",
       "name": "Homes with Hope / Gillespie Center Pantry Norwalk",
       "track": "Food & Basic Needs",
@@ -9692,6 +9806,28 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, bristol"
+    },
+    {
+      "id": "reckzn2Mu1NuYjlKi",
+      "name": "Immanuel Baptist Church Clothes Closet",
+      "track": "Food & Basic Needs",
+      "category": "Free Clothing Closets",
+      "specificType": "Community clothes closet serving New Haven families and individuals.",
+      "town": "New Haven",
+      "address": "1324 Chapel Street, New Haven, CT 06511",
+      "hours": "Community pickups: Thursdays 10:30 a.m.–1:00 p.m. Clothing donations: Tuesdays 10:30 a.m.–2:45 p.m.",
+      "cost": "Participant cost is not stated on the official page.",
+      "website": "https://www.immanuelbaptistnewhaven.org/copy-of-children-s-church",
+      "contact": "203-777-8744; office@immanuelbaptistchurchnh.org",
+      "townsServed": [
+        "New Haven"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-10-31",
+      "notes": "The church says the closet is open to the community for pickups; the page does not publish income, referral or residency requirements.",
+      "registrationStatus": "Rolling / Ongoing",
+      "lastVerified": "2026-10-31",
+      "tags": "clothing closet, community clothing, donated clothing, family clothing, clothing assistance, new haven"
     },
     {
       "id": "recHIfs8riRtO4Jz3",
@@ -11011,6 +11147,28 @@
         "Preschool / Pre-K"
       ],
       "tags": "center-based daycare, family resources, childcare, meriden"
+    },
+    {
+      "id": "rec1SsnnJJDKxEcdn",
+      "name": "Loaves & Fishes Clothing Closet",
+      "track": "Food & Basic Needs",
+      "category": "Free Clothing Closets",
+      "specificType": "Clothing, hygiene items and everyday essentials for neighbors experiencing financial hardship or life transitions.",
+      "town": "New Haven",
+      "address": "57 Olive Street, New Haven, CT",
+      "ages": "Individuals and families experiencing housing instability, financial hardship, reentry after incarceration or other unexpected transitions.",
+      "hours": "Clothing Closet: Saturdays 8:00–10:00 a.m. Donation drop-off: Thursday–Saturday 9:00–11:00 a.m.",
+      "cost": "Participant cost is not stated on the official page.",
+      "website": "https://loavesandfishesnh.com/clothing/",
+      "townsServed": [
+        "New Haven"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-10-31",
+      "notes": "Offers clothing for adults, teens, children, babies and toddlers, plus hygiene and personal-care items. Donation needs change seasonally.",
+      "registrationStatus": "Rolling / Ongoing",
+      "lastVerified": "2026-10-31",
+      "tags": "clothing closet, hygiene items, family clothing, baby clothing, children's clothing, housing instability, reentry support, financial hardship, seasonal clothing, new haven"
     },
     {
       "id": "recE7vPagSJGQqTYM",
@@ -12936,13 +13094,15 @@
       "category": "Family Thrift Store",
       "specificType": "Nonprofit volunteer-operated clothing, small household goods and toys resale",
       "town": "Monroe",
-      "address": "34 Church Street, Monroe, CT 06810",
+      "address": "34 Church Street, Monroe, CT",
+      "hours": "Friday 10:00 a.m.–3:00 p.m.; Saturday 10:00 a.m.–2:00 p.m.",
+      "cost": "Cash accepted; credit cards accepted for purchases over $15. Individual item prices are not published.",
       "website": "https://www.mcc-ucc.org/ministries/mustard-seed-thrift-shop",
       "contact": "203-268-4879",
-      "notes": "Official Monroe Congregational Church shop page reviewed 2026-10-14; Friday 10 AM-3 PM and Saturday 10 AM-2 PM. Phone 203-268-4879. Not a consignment payout shop; donation-based thrift.",
-      "lastVerified": "2026-10-14",
+      "notes": "Volunteer-run donation shop selling clothing, shoes, jewelry, toys, books, movies and small household goods. Proceeds support church mission and community outreach; this is not a consignor-payout shop.",
+      "lastVerified": "2026-10-31",
       "shoppingType": "Family Thrift Store",
-      "tags": "thrift store, nonprofit thrift, secondhand clothing, family clothing, toys, household goods, monroe"
+      "tags": "thrift store, church thrift, nonprofit resale, volunteer thrift, affordable clothing, family clothing, toys, books, movies, small household goods, donations, community outreach, monroe"
     },
     {
       "id": "rec7QwZhZBzPvPkrT",
@@ -13347,6 +13507,29 @@
       "programYear": "Summer 2026",
       "lastVerified": "2026-08-25",
       "tags": "stem/tech camp, family resources, new britain"
+    },
+    {
+      "id": "recPWdAvdG5EAZWkG",
+      "name": "New Canaan Thrift Shop",
+      "track": "Family & Childcare",
+      "category": "Family Thrift Store",
+      "specificType": "Volunteer-run nonprofit thrift shop; proceeds benefit patients of Visiting Nurse & Hospice of Fairfield County.",
+      "town": "New Canaan",
+      "address": "2 Locust Avenue, New Canaan, CT 06840",
+      "hours": "Shopping: Monday–Friday 11:00 a.m.–4:00 p.m.; Saturday 9:00 a.m.–1:00 p.m. Donations: Monday–Friday 9:00 a.m.–12:00 p.m.",
+      "cost": "Resale prices are not published on the official page.",
+      "website": "https://visitingnurse.net/make-a-gift/new-canaan-thrift-shop/",
+      "contact": "203-966-2361",
+      "townsServed": [
+        "New Canaan"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-10-31",
+      "notes": "Sells donated clothing, accessories, jewelry, books, sporting goods, small appliances, housewares, toys, games and small furnishings. This is a donation-based thrift shop, not a consignor-payout program.",
+      "registrationStatus": "Rolling / Ongoing",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Family Thrift Store",
+      "tags": "thrift store, volunteer thrift, nonprofit resale, secondhand clothing, children's clothing, toys, books, sporting goods, housewares, small furniture, new canaan"
     },
     {
       "id": "reccOVYmLchs2uVXU",
@@ -14385,6 +14568,29 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, norwalk"
+    },
+    {
+      "id": "recJNsGMqeCQHG9Sa",
+      "name": "Old Stone Church Thrift Shop",
+      "track": "Family & Childcare",
+      "category": "Clothing & Household Resale",
+      "specificType": "Church-run affordable thrift shop selling clothing, household goods, books and other donated items.",
+      "town": "East Haven",
+      "address": "251 Main Street, East Haven, CT 06512",
+      "hours": "Saturday 10:00 a.m.–3:00 p.m. Limited Sunday opening may be requested in advance through the church office.",
+      "cost": "Official page describes affordable prices and advertises a $2 discount on a purchase over $10.",
+      "website": "https://oldstonechurchucc.org/thrift-shop/",
+      "contact": "203-467-2907; oldstonechurch97@gmail.com",
+      "townsServed": [
+        "East Haven"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-10-31",
+      "notes": "Proceeds support church community programs and charitable initiatives. Donations are accepted Saturdays during shop hours.",
+      "registrationStatus": "Rolling / Ongoing",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Clothing & Household Resale",
+      "tags": "church thrift, affordable clothing, household goods, used books, donation shop, community programs, east haven"
     },
     {
       "id": "rec0DmN5bnnEAuTfG",
@@ -15578,12 +15784,13 @@
       "specificType": "Volunteer nonprofit resale of donated clothing for adults and children, toys, sports gear and household items",
       "town": "Ridgefield",
       "address": "21B Governor Street, Ridgefield, CT 06877",
+      "hours": "Shopping: Wednesday, Friday and Saturday 12:00–4:00 p.m. Donations: Monday–Wednesday, Friday and Saturday 11:30 a.m.–3:30 p.m. Holiday and winter closures apply.",
       "website": "https://www.ridgefieldthriftshop.com/",
-      "contact": "203-438-3328",
-      "notes": "Official site reviewed 2026-10-14. Shopping Wed/Fri/Sat noon-4 PM. Phone 203-438-3328. Does not accept medical equipment or infant equipment donations. Its old 15 Catoonah St address is outdated.",
-      "lastVerified": "2026-10-14",
+      "contact": "203-438-3328; info@ridgefieldthriftshop.com",
+      "notes": "Entirely volunteer-staffed nonprofit thrift shop; all revenue is donated to local charities. Donation-based resale, not a consignor-payout shop.",
+      "lastVerified": "2026-10-31",
       "shoppingType": "Family Thrift Store",
-      "tags": "thrift store, nonprofit thrift, kids clothing, used clothing, toys, sports gear, household items, ridgefield"
+      "tags": "thrift store, nonprofit thrift, volunteer thrift, secondhand clothing, children's clothing, toys, sports equipment, household goods, donations, local charities, ridgefield"
     },
     {
       "id": "recCQsZG6H3T0atsm",
@@ -16757,6 +16964,29 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, new haven"
+    },
+    {
+      "id": "recNQr1egn6Q4hTlD",
+      "name": "St. John’s Family Center Free Clothing",
+      "track": "Food & Basic Needs",
+      "category": "Free Clothing Closets",
+      "specificType": "Free weekly clothing, shoes and essentials for Bridgeport-area families and individuals experiencing hardship.",
+      "town": "Bridgeport",
+      "address": "1067 Park Avenue, Bridgeport, CT 06605",
+      "ages": "Families and individuals experiencing unemployment, underemployment, homelessness or other financial hardship.",
+      "hours": "Free clothing distribution: Tuesdays 5:00–6:00 p.m.",
+      "cost": "Free.",
+      "website": "https://www.stjohnsfamilycenter.org/",
+      "contact": "203-335-2999; info@stjohnsfamilycenter.org",
+      "townsServed": [
+        "Bridgeport"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-10-31",
+      "notes": "The provider also offers a food pantry, hot meals, diapers, seasonal drives and back-to-school support. This record focuses on the free clothing service.",
+      "registrationStatus": "Rolling / Ongoing",
+      "lastVerified": "2026-10-31",
+      "tags": "free clothing, clothing closet, shoes, family essentials, low-income families, homelessness support, seasonal clothing, back-to-school supplies, bridgeport"
     },
     {
       "id": "recxqGG6fySgXOOy0",
@@ -18009,6 +18239,29 @@
       "lastVerified": "2026-10-13",
       "foodType": "Food Bank / Food Pantry",
       "tags": "food bank / food pantry, food pantry, waterbury"
+    },
+    {
+      "id": "recNc5Zx29uXo6c1Q",
+      "name": "The Rummage Room",
+      "track": "Family & Childcare",
+      "category": "Clothing & Household Resale",
+      "specificType": "Volunteer-supported church resale shop in Old Greenwich; proceeds support local, national and international charitable organizations.",
+      "town": "Greenwich",
+      "address": "191 Sound Beach Avenue, Old Greenwich, CT 06870",
+      "hours": "Shopping and donations: Monday–Thursday 11:00 a.m.–3:00 p.m.; Saturday 10:00 a.m.–1:00 p.m. Closed Friday and Sunday; August closure and summer changes may apply.",
+      "cost": "Resale prices are not published on the official page.",
+      "website": "https://www.fccog.org/rummage-room",
+      "contact": "203-637-1875",
+      "townsServed": [
+        "Greenwich"
+      ],
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-10-31",
+      "notes": "Sells donated clothing, shoes, kitchenware, books, jewelry, collectibles, small furniture, linens and sports equipment. It is not a consignment or buyback shop.",
+      "registrationStatus": "Rolling / Ongoing",
+      "lastVerified": "2026-10-31",
+      "shoppingType": "Clothing & Household Resale",
+      "tags": "church thrift, volunteer resale, secondhand clothing, shoes, housewares, books, jewelry, small furniture, linens, sports equipment, old greenwich"
     },
     {
       "id": "recwBxWIw2XRkOonx",
