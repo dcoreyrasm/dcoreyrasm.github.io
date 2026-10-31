@@ -107,8 +107,14 @@
       </div>
     </div>
 
-    <div class="cf-tools">
-      <div class="cf-wrap">
+    <div class="cf-wrap">
+      <!-- Search, sort, state, every field filter, and the "Only show"
+           switches live in this one panel so all of the ways to narrow
+           the directory sit together. -->
+      <div class="cf-filterpanel">
+        <!-- script.js builds the field boxes from the FACETS list, so a new
+             Airtable choice appears without markup changing here. -->
+        <p class="cf-controls-hint">Search the whole directory, or narrow it with any of these. They all work together, and every filter can hold more than one answer.</p>
         <div class="cf-toolbar">
           <div class="cf-searchbox">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
@@ -130,31 +136,20 @@
             <option value="">State: any</option>
           </select>
         </div>
-      </div>
-    </div>
-
-    <div class="cf-wrap">
-      <!-- Every filter on the page, in one row. There were three places to
-           filter before this — a strip of quick-start pills, these boxes, and a
-           sidebar of seventeen accordions — and the pills were a plain
-           duplicate of the first box. script.js builds the boxes from the
-           FACETS list, so a new Airtable choice appears without markup
-           changing here. -->
-      <p class="cf-controls-hint">Search the whole directory, or narrow it with any of these. They all work together, and every filter can hold more than one answer.</p>
-      <form class="cf-controls" role="search" onsubmit="return false;" aria-label="Filter opportunities">
-        <div class="cf-fieldrow" id="cf-fieldrow"></div>
-        <button type="button" id="cf-reset-row" class="btn-ghost cf-reset-row">Reset</button>
-      </form>
-
-      <!-- Two switches that ask about dates rather than about a field, so they
-           cut across every filter above. script.js puts the count on each and
-           hides one that would return nothing — including "Added recently"
-           while the whole directory is still new. -->
-      <div class="cf-onlys" role="group" aria-label="Quick filters" hidden>
-        <span class="cf-onlys-label">Only show</span>
-        <label class="cf-only"><input type="checkbox" data-only="new" /><span>Added recently</span></label>
-        <label class="cf-only"><input type="checkbox" data-only="soon" /><span>Deadline coming up</span></label>
-        <label class="cf-only"><input type="checkbox" data-only="fellowship" /><span>Fellowships</span></label>
+        <form class="cf-controls" role="search" onsubmit="return false;" aria-label="Filter opportunities">
+          <div class="cf-fieldrow" id="cf-fieldrow"></div>
+          <button type="button" id="cf-reset-row" class="btn-ghost cf-reset-row">Reset</button>
+        </form>
+        <!-- Two switches that ask about dates rather than about a field, so they
+             cut across every filter above. script.js puts the count on each and
+             hides one that would return nothing — including "Added recently"
+             while the whole directory is still new. -->
+        <div class="cf-onlys" role="group" aria-label="Quick filters" hidden>
+          <span class="cf-onlys-label">Only show</span>
+          <label class="cf-only"><input type="checkbox" data-only="new" /><span>Added recently</span></label>
+          <label class="cf-only"><input type="checkbox" data-only="soon" /><span>Deadline coming up</span></label>
+          <label class="cf-only"><input type="checkbox" data-only="fellowship" /><span>Fellowships</span></label>
+        </div>
       </div>
 
       <div class="cf-results">
