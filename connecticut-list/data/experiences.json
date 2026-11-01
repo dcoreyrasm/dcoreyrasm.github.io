@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-25T12:36:53.204Z",
-  "count": 424,
+  "generated": "2026-11-01T18:22:22.087Z",
+  "count": 430,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -61,6 +61,7 @@
     "Goshen",
     "Granby",
     "Greenwich",
+    "Griswold",
     "Groton",
     "Guilford",
     "Hamden",
@@ -102,6 +103,7 @@
     "Norfolk",
     "North Branford",
     "North Grosvenordale",
+    "North Stonington",
     "Norwalk",
     "Norwich",
     "Old Greenwich",
@@ -144,7 +146,6 @@
     "Terryville",
     "Thomaston",
     "Thompson",
-    "Torrington",
     "Trumbull",
     "Uncasville",
     "Union",
@@ -178,6 +179,7 @@
     "Fall & Seasonal",
     "Food & Treats",
     "Hiking & Outdoors",
+    "Hot Chocolate & Coffee",
     "Museum & Culture",
     "Music & Events",
     "Only in Connecticut",
@@ -190,6 +192,7 @@
   "categories": [
     "Beaches & Shoreline",
     "Bookstores",
+    "Coffee & Hot Chocolate",
     "Corn Mazes",
     "Date Night",
     "Easy Walks",
@@ -586,6 +589,33 @@
       "slug": "auerfarm-state-park-scenic-reserve-overlook-walk"
     },
     {
+      "name": "Autism-Friendly Santa Express 2026, Sun Moon & Stars",
+      "town": "Thomaston",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Trains & Scenic Rides",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Trains & Scenic Rides",
+        "Festivals & Events",
+        "Something Different"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A specifically planned sensory-considerate holiday train ride with lower-volume music and bells given out at the end.",
+      "officialWebsite": "https://www.rmne.org/excursions/autism-friendly-santa-express",
+      "address": "242 East Main Street, Thomaston, CT 06787",
+      "tryThis": "Plan a sensory-considerate holiday outing, reviewing the boarding requirements with the organizer first.",
+      "notes": "2026 official provider search view confirms 12:00 p.m. event. Music volume is lowered and bells provided at end. This is sensory-friendly, NOT wheelchair accessible; RMNE has no platform ramp or lift and requires passengers to use stairs. The exact Accessibility Experience Type is missing in Airtable, so details are saved here.",
+      "dateAdded": "2026-11-01",
+      "eventStart": "2026-11-29",
+      "slug": "autism-friendly-santa-express-2026-sun-moon-and-stars"
+    },
+    {
       "name": "Averill Farm Hilltop Apples + Cider Donuts + Corn Maze",
       "town": "Washington Depot",
       "region": "Litchfield Hills",
@@ -865,7 +895,7 @@
       "whyGo": "A major Guilford fall farm stop with current pick-your-own fruit and flowers, pumpkins, a corn maze, seasonal food and a daily Fall Festival.",
       "officialWebsite": "https://www.bishopsorchards.com/fall-festival",
       "address": "1355 Boston Post Road, Guilford, CT 06437",
-      "notes": "Fall festival and pick-your-own through November 1, 2026. Main ORCHARD entrance is 480 New England Rd; year-round market is 1355 Boston Post Rd. Official FAQ lists 10 am-5 pm but page header shows 10 am-6 pm; confirm hours by calling the published pick-your-own update number 203-458-PICK. Wagon rides and some attractions only weekends/holidays. PYO add-on and admission required; check same-day crop availability.",
+      "notes": "Nov 1 is final day of the 2026 Fall Festival. DO NOT describe apple picking as currently available: provider says PYO apples closed for season. The farm market at 1355 Boston Post Rd continues beyond festival; orchard/festival entrance at 480 New England Rd. Pumpkin, flower or other crop availability must be verified before visit, not assumed. Hours conflict across provider pages; call 203-458-PICK. Original Source=Darice preserved.",
       "dateAdded": "2026-08-17",
       "slug": "bishops-orchards-farm-market-and-winery"
     },
@@ -1264,6 +1294,32 @@
       "notes": "Current posted hours through September 7 are Monday-Friday 8 AM-5 PM and Saturday 8 AM-3 PM, closed Sunday. Seasonal hours may change after September 7, so check the farm's official site or call before driving out.",
       "dateAdded": "2026-09-07",
       "slug": "buells-orchard-fall-apple-picking-and-cider-donuts"
+    },
+    {
+      "name": "Butler-McCook House & Victorian Garden",
+      "town": "Hartford",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Museum & Culture"
+      ],
+      "categories": [
+        "Gardens & Arboretums",
+        "Museums & Culture",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Date Night",
+        "Individual Exploration",
+        "Group Activities"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Visit Hartford's 1782 house and restored Victorian garden on a scheduled public tour.",
+      "officialWebsite": "https://ctlandmarks.org/properties/butler-mccook-house-garden/",
+      "address": "396 Main Street, Hartford, CT 06103",
+      "tryThis": "Take a historic house tour and see the garden, then note one change the city has seen.",
+      "notes": "The next confirmed 2026 tour date is Saturday November 7, 1–4 p.m.; adult admission $18, concessions noted by provider. Garden access on open days only; other visits require advance arrangements. Do not assume the garden is open every day.",
+      "dateAdded": "2026-11-01",
+      "slug": "butler-mccook-house-and-victorian-garden"
     },
     {
       "name": "Byram Park Beach, Pool & Waterfront Park",
@@ -2525,6 +2581,34 @@
       "slug": "essex-steam-train-and-riverboat"
     },
     {
+      "name": "Essex Steam Train North Pole Express 2026",
+      "town": "Essex",
+      "region": "Connecticut Shoreline",
+      "experienceTypes": [
+        "Trains & Scenic Rides",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Trains & Scenic Rides",
+        "Festivals & Events",
+        "Something Different"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities",
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Ride a decorated historic train for a seasonal 90-minute trip with Santa, hot chocolate and music.",
+      "officialWebsite": "https://essexsteamtrain.com/christmas-2025/",
+      "tryThis": "Choose a holiday train departure and bring warm clothes for the station.",
+      "notes": "Holiday trips operate on SELECT dates within November 20–December 23, not every date in the range. Tickets are online-only; posted adult/coach prices vary by date. Station street address left blank pending provider-confirmed departure address.",
+      "dateAdded": "2026-11-01",
+      "eventStart": "2026-11-20",
+      "eventEnd": "2026-12-23",
+      "slug": "essex-steam-train-north-pole-express-2026"
+    },
+    {
       "name": "Fair Weather Growers Fall Festival & Corn Maze",
       "town": "Cromwell",
       "region": "Central CT",
@@ -3031,7 +3115,7 @@
       "officialWebsite": "https://beardsleyzoo.org/glow-wild/",
       "address": "1875 Noble Avenue, Bridgeport, CT 06610",
       "tryThis": "Pick a favorite lantern scene and take one nighttime photo near the display you would most like to see again.",
-      "notes": "Official 2026 pricing: adults age 12+ $25 online/$27 at the gate; children age 11 and under $23 online/$25 at the gate; adults 65+ $15 online/$17 at the gate; children age 2 and under free. Timed-entry tickets are sold online.",
+      "notes": "Official provider says GLOW Wild closed Oct 31 for Halloween and opens at 6:30 p.m. on Thursday Nov 5 (one hour later than normal). Normally Thursdays–Sundays 5:30–9:30 p.m., through Dec 20. Timed ticketing, check rain/date availability. Physical access and equipment questions should use the zoo's published accessibility services, not inferred from paved paths.",
       "dateAdded": "2026-09-13",
       "eventStart": "2026-10-01",
       "eventEnd": "2026-12-20",
@@ -3425,10 +3509,18 @@
     {
       "name": "Hill-Stead Museum Grounds & Trails",
       "town": "Farmington",
+      "region": "Hartford Area",
+      "categories": [
+        "Gardens & Arboretums",
+        "Museums & Culture",
+        "Easy Walks"
+      ],
       "audiences": [
         "Date Night"
       ],
       "officialWebsite": "https://hillstead.org/visit/",
+      "address": "35 Mountain Road, Farmington, CT 06032",
+      "notes": "Sunken Garden and museum grounds are an independent outing. The provider confirms wheelchair accessibility to the Sunken Garden and first-floor spaces, designated parking and one wheelchair on request; second-floor rooms require stairs. No Accessibility Experience Type option exists in this base. Trails may have varying terrain; do not generalize all outdoor paths as wheelchair accessible.",
       "dateAdded": "2026-08-14",
       "slug": "hill-stead-museum-grounds-and-trails"
     },
@@ -3723,32 +3815,6 @@
       "officialWebsite": "https://jessicasgarden.net/",
       "address": "198 East Hampton Road, Marlborough, CT 06447",
       "slug": "jessicas-garden-and-lobster-shack"
-    },
-    {
-      "name": "Jones Family Farms",
-      "town": "Shelton",
-      "experienceTypes": [
-        "Corn Maze",
-        "Fall & Seasonal",
-        "Food & Treats"
-      ],
-      "categories": [
-        "Orchards & Farms",
-        "Corn Mazes",
-        "Food & Treats",
-        "Date Night"
-      ],
-      "audiences": [
-        "Date Night"
-      ],
-      "bestTime": "Fall",
-      "whyGo": "A classic Shelton harvest stop with pick-your-own pumpkins, a mini corn maze, hayrides, fall flowers, apples, squash and farm scenery, plus a winery for an adults-focused add-on.",
-      "officialWebsite": "https://www.jonesfamilyfarms.com/pumpkin-update",
-      "notes": "2026 harvest-your-own pumpkins and squash through Halloween. Daily 10 am-5:30 pm through Oct 30; Halloween Oct 31 10 am-4 pm, arrive by 3 pm. Friday Oct 30 Golden Hour hours extended to 6 pm; gates close shortly before standard closing. Book ahead for discounted entry; check farm's same-day status and crop report before travel. Original Source = Darice preserved.",
-      "dateAdded": "2026-08-17",
-      "eventStart": "2026-09-19",
-      "eventEnd": "2026-10-31",
-      "slug": "jones-family-farms"
     },
     {
       "name": "Jones Winery",
@@ -4231,7 +4297,10 @@
         "Individual Exploration"
       ],
       "officialWebsite": "https://lymanorchards.com/events/corn-maze/",
+      "notes": "NOVEMBER 1, 2026 IS FINAL SCHEDULED DAY of 2026 corn maze. The page contains a contradictory older November 2 sentence; confirm any special hours directly. Do not keep this dated event current after Nov 1 without a new official schedule.",
       "dateAdded": "2026-08-13",
+      "eventStart": "2026-09-05",
+      "eventEnd": "2026-11-01",
       "slug": "lyman-orchards-2026-corn-maze"
     },
     {
@@ -4256,7 +4325,7 @@
       "bestTime": "Fall",
       "whyGo": "A separate pick-your-own experience from Lyman's corn maze, with apples, pears and other seasonal fruit plus the Apple Barrel Farm Market.",
       "officialWebsite": "https://lymanorchards.com/pick-your-own/",
-      "notes": "Current official Pick Your Own hours are 9 AM-4:30 PM daily. Call 860-349-6015 for current field conditions, varieties and pricing before visiting.",
+      "notes": "PYO page currently lists 9 a.m.-4:30 p.m. daily and apples as in season. Do not infer that pumpkins, berries or flowers can be picked on Nov 1: verify current fields/varieties with PYO hotline 860-349-6015. Apple Barrel Farm Market remains open year-round.",
       "dateAdded": "2026-09-05",
       "slug": "lyman-orchards-fall-pick-your-own"
     },
@@ -4677,37 +4746,32 @@
       "slug": "mystic-seaport-museum-adult-sailing-experience"
     },
     {
-      "name": "Mystic Seaport Museum What Lurks Beneath: GHOST SHIP",
-      "town": "Mystic",
+      "name": "Narragansett Trail: Forest and Ridge Hikes",
+      "town": "North Stonington / Voluntown",
       "region": "Mystic & Southeastern CT",
       "experienceTypes": [
-        "Theater & Movies",
-        "Waterfront",
-        "Fall & Seasonal",
-        "Date Night",
-        "Something Different"
+        "Hiking & Outdoors"
       ],
       "categories": [
-        "Theater & Movies",
-        "Festivals & Events",
-        "Date Night",
-        "Something Different"
+        "Longer Hikes",
+        "Parks & Preserves",
+        "Scenic Views"
       ],
       "audiences": [
-        "Group Activities",
-        "Date Night",
-        "Family"
+        "Individual Exploration",
+        "Group Activities"
       ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A self-guided Halloween theater experience spread across Mystic Seaport Museum's historic waterfront, with live performers, storytelling, music, sound effects, and optional darker indoor scenes. The museum describes it as more suspenseful than frightening and recommends it for ages 8 and up.",
-      "officialWebsite": "https://mysticseaport.org/whatlurksbeneath/",
-      "address": "75 Greenmanville Avenue, Mystic, CT 06355",
-      "tryThis": "Follow one character's story across the waterfront, then decide whether to try one of the optional darker indoor scenes.",
-      "notes": "2026 dates are October 9, 10, 11, 16, 17, 18, 23, 24, 25, 28, 29 and 30. Advance ticket purchase is strongly recommended. Most of the experience is outdoors on uneven ground; optional indoor scenes are darker. Light rain generally does not cancel the event.",
-      "dateAdded": "2026-09-13",
-      "eventStart": "2026-10-09",
-      "eventEnd": "2026-10-30",
-      "slug": "mystic-seaport-museum-what-lurks-beneath-ghost-ship"
+      "bestTime": "Anytime",
+      "whyGo": "Explore sections of the 16.3-mile Blue-Blazed Narragansett Trail through forest, lakes, rock ledges and ridge views.",
+      "officialWebsite": "https://ctwoodlands.org/trails/narragansett-trail/",
+      "tryThis": "Choose a marked trail section and bring the current CFPA map.",
+      "notes": "Trail has an officially posted difficult/unblazed section near North Stonington and a Route 49 closure notice; use CFPA latest maps/notices before selecting a hike. Not all 16.3 miles are intended as one day outing. No physical address or accessibility claim made.",
+      "dateAdded": "2026-11-01",
+      "towns": [
+        "North Stonington",
+        "Voluntown"
+      ],
+      "slug": "narragansett-trail-forest-and-ridge-hikes"
     },
     {
       "name": "Natchaug State Forest",
@@ -4866,6 +4930,59 @@
       "notes": "The official page says the trains run in the weeks leading up to Halloween. Coach tickets are currently listed at $20 for adults and children. Advance ticket purchase is recommended because the excursion is popular.",
       "dateAdded": "2026-09-07",
       "slug": "naugatuck-railroad-pumpkin-patch-express"
+    },
+    {
+      "name": "Naugatuck Railroad Santa Express 2026",
+      "town": "Thomaston",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Trains & Scenic Rides",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Trains & Scenic Rides",
+        "Festivals & Events"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Winter",
+      "whyGo": "Take the Railroad Museum of New England's decorated afternoon Christmas train with Santa and family activities.",
+      "officialWebsite": "https://www.rmne.org/excursions/santa-express",
+      "address": "242 East Main Street, Thomaston, CT 06787",
+      "tryThis": "Ride a seasonal train and enjoy the historic Thomaston station.",
+      "notes": "Exact 2026 first/last event dates were not established from this page; date fields left blank. Trains have no wheelchair ramp or lift; passengers must climb stairs independently or with help. Purchase early; ticket exchange limits apply.",
+      "dateAdded": "2026-11-01",
+      "slug": "naugatuck-railroad-santa-express-2026"
+    },
+    {
+      "name": "Nehantic Trail: Pachaug Forest Long Hikes",
+      "town": "Griswold / Voluntown",
+      "region": "Mystic & Southeastern CT",
+      "experienceTypes": [
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Longer Hikes",
+        "Parks & Preserves",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Group Activities"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Follow portions of the 12.6-mile Nehantic Trail through Pachaug State Forest, woodland, open fields and views near Mount Misery.",
+      "officialWebsite": "https://ctwoodlands.org/trails/nehantic-trail/",
+      "tryThis": "Choose a manageable loop with a current trail map and photograph a woodland vista.",
+      "notes": "The full trail is 12.6 miles. Trailhead location, closures, seasonal conditions and ability level should be checked on the official trail map. Physical street address not stated by provider; left blank.",
+      "dateAdded": "2026-11-01",
+      "towns": [
+        "Griswold",
+        "Voluntown"
+      ],
+      "slug": "nehantic-trail-pachaug-forest-long-hikes"
     },
     {
       "name": "New Britain Museum of American Art + Walnut Hill Park",
@@ -5537,6 +5654,32 @@
       "notes": "Featured in Decor Hint article supplied by Darice. Hours, prices and stock should be checked before visiting.",
       "dateAdded": "2026-10-09",
       "slug": "redscroll-records"
+    },
+    {
+      "name": "ReRead Books & More and Cafe",
+      "town": "Cheshire",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Bookstore",
+        "Hot Chocolate & Coffee"
+      ],
+      "categories": [
+        "Bookstores",
+        "Coffee & Hot Chocolate",
+        "Something Different"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Browse used books and enjoy an independently run community bookstore and café supporting job training programs.",
+      "officialWebsite": "https://www.rereadbooksellers.org/our-bookstore/",
+      "address": "106 Elm Street, Cheshire, CT 06410",
+      "tryThis": "Browse a genre you would not normally choose and select a book to read.",
+      "notes": "Official pages currently display inconsistent operating hours, so check directly before visiting. The Reading Room event space is separately at 134 Elm Street; the bookstore is at 106 Elm Street. No venue mobility accommodations inferred.",
+      "dateAdded": "2026-11-01",
+      "slug": "reread-books-and-more-and-cafe"
     },
     {
       "name": "Ridgefield Guild of Artists",
@@ -6521,6 +6664,32 @@
       "slug": "stratford-antique-center"
     },
     {
+      "name": "Stratton Brook State Park Accessible Trails",
+      "town": "Simsbury",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Parks & Preserves",
+        "Easy Walks",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Enjoy Connecticut's accessible wooded park, including a rail-trail route past a covered bridge and brooks.",
+      "officialWebsite": "https://ctparks.com/parks/stratton-brook-state-park",
+      "address": "149 Farms Village Road, Simsbury, CT 06070",
+      "tryThis": "Visit the covered bridge and choose a route matching your access needs.",
+      "notes": "Official park lists daily access 8 a.m. to sunset; verify specific trail/ground conditions and facilities before arrival. Accessibility is confirmed in the state source, but the exact Accessibility Experience Type selection is not available in this Airtable schema.",
+      "dateAdded": "2026-11-01",
+      "slug": "stratton-brook-state-park-accessible-trails"
+    },
+    {
       "name": "Studio Andreas Adult Woodworking Experience",
       "town": "Stamford",
       "region": "Fairfield County",
@@ -6689,6 +6858,32 @@
       "officialWebsite": "https://thealdrich.org/visit",
       "dateAdded": "2026-08-17",
       "slug": "the-aldrich-contemporary-art-museum"
+    },
+    {
+      "name": "The Bradley Playhouse: Live Theater in Putnam",
+      "town": "Putnam",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Theater & Movies"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Date Night",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "See community theater and special performances in downtown Putnam. The official 2026 season includes It's a Wonderful Life, December 4–20.",
+      "officialWebsite": "https://www.thebradleyplayhouse.org/shows",
+      "address": "30 Front Street, Putnam, CT 06260",
+      "tryThis": "Choose a performance and pair it with a walk through downtown Putnam.",
+      "notes": "Provider explicitly confirms a wheelchair lift, accessible restrooms, wheelchair-accessible seating and assistive hearing devices. Contact box office at least five days before a performance for accommodation requests. Check current ticket availability.",
+      "dateAdded": "2026-11-01",
+      "slug": "the-bradley-playhouse-live-theater-in-putnam"
     },
     {
       "name": "The Glass House",
@@ -7183,34 +7378,6 @@
         "Mobile"
       ],
       "slug": "wanderbrush-paint-your-partner-experience"
-    },
-    {
-      "name": "Warner Theatre: Behind The Scream Screening & David Arquette Conversation",
-      "town": "Torrington",
-      "region": "Litchfield Hills",
-      "experienceTypes": [
-        "Theater & Movies",
-        "Music & Events"
-      ],
-      "categories": [
-        "Theater & Movies",
-        "Date Night",
-        "Something Different"
-      ],
-      "audiences": [
-        "Date Night",
-        "Group Activities",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "See a Halloween screening of the 1996 horror film Scream followed by a live moderated conversation with actor David Arquette.",
-      "officialWebsite": "https://www.warnertheatre.org/events/behind-the-scream/",
-      "address": "68 Main Street, Torrington, CT 06790",
-      "tryThis": "After the film, take note of one detail about filmmaking you learned from the onstage conversation.",
-      "notes": "Single Halloween event October 31, 2026, 8 PM; ticket required. Film is horror-themed; the official listing does not specify an admission age limit, so no age suitability tag assigned. Optional VIP photo opportunity is limited.",
-      "dateAdded": "2026-10-25",
-      "eventStart": "2026-10-31",
-      "slug": "warner-theatre-behind-the-scream-screening-and-david-arquette-conversation"
     },
     {
       "name": "Waveny Park",
