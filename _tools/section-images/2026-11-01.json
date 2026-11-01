@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-11-01",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "doc_stack",
+      "label": "See How Much of Your Plan You Have Used"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "doc_stack",
+      "label": "Read the Reset Time When You Hit a Limit"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "doc_stack",
+      "label": "Check Your AI Credits in Your Microsoft Account"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "doc_stack",
+      "label": "Open the Usage Limits Page"
+    }
+  ]
+}
