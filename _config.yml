@@ -23,6 +23,14 @@ plugins:
   # anything local, so any script-maintained sitemap would silently fall behind.
   - jekyll-sitemap
 
+# jekyll-feed lists only the 10 newest posts by default. Raised so the feed
+# carries the full Darice on AI archive (used for the Substack import).
+# Both key names are set because plugin versions differ on which one they
+# read; the unused one is ignored.
+feed:
+  posts_limit: 500
+  limit: 500
+
 # Blog posts use the shared post layout and get clean /blog/<title>/ URLs.
 # Scoped to posts only, so it never touches the static top-level pages.
 defaults:
