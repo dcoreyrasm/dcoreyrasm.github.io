@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-11-04",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "doc_stack",
+      "label": "Dictate a prompt in the Claude mobile app"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "doc_stack",
+      "label": "Dictate, edit the text, then send"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "doc_stack",
+      "label": "Dictate messages to Microsoft Copilot Chat"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "doc_stack",
+      "label": "Talk to Type in Chrome, powered by Gemini"
+    }
+  ]
+}
