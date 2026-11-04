@@ -7,22 +7,22 @@
 {%- endcomment -%}
 {%- assign k = include.key | default: "ls" -%}
 {%- assign primary = include.primary | default: "darice-on-ai" -%}
-<form id="{{ k }}-signup-form" class="contact-form list-signup-form" style="margin:0;max-width:560px;" novalidate aria-label="Email signup">
+<form id="{{ k }}-signup-form" class="contact-form list-signup" novalidate aria-label="Email signup">
   <div class="form-row">
     <div class="form-group"><label for="{{ k }}-name">First Name</label><input type="text" id="{{ k }}-name" autocomplete="given-name" placeholder="Jane" /></div>
     <div class="form-group"><label for="{{ k }}-email">Email</label><input type="email" id="{{ k }}-email" autocomplete="email" placeholder="jane@example.com" required aria-required="true" /></div>
   </div>
-  <fieldset style="border:0;padding:0;margin:0 0 1.25rem;">
-    <legend style="font-weight:600;margin-bottom:.5rem;">Choose what you'd like to receive</legend>
-    <label style="display:flex;gap:.6rem;align-items:flex-start;margin-bottom:.6rem;line-height:1.5;"><input type="checkbox" name="list" value="191436005966873982"{% if primary == "darice-on-ai" %} checked{% endif %} style="margin-top:.3rem;" /> <span><strong>Darice on AI</strong>, my weekly newsletter on using AI well</span></label>
-    <label style="display:flex;gap:.6rem;align-items:flex-start;margin-bottom:.6rem;line-height:1.5;"><input type="checkbox" name="list" value="201713282076116487"{% if primary == "workshops" %} checked{% endif %} style="margin-top:.3rem;" /> <span><strong>Workshop Updates</strong>, new workshop dates and offerings</span></label>
-    <label style="display:flex;gap:.6rem;align-items:flex-start;margin-bottom:.6rem;line-height:1.5;"><input type="checkbox" name="list" value="198311500140512479"{% if primary == "community-ai" %} checked{% endif %} style="margin-top:.3rem;" /> <span><strong>Darice's Community AI</strong>, weekly picks from the Community AI directory</span></label>
-    <label style="display:flex;gap:.6rem;align-items:flex-start;line-height:1.5;"><input type="checkbox" name="list" value="202322533642405434"{% if primary == "village-notes" %} checked{% endif %} style="margin-top:.3rem;" /> <span><strong>Village Notes Updates</strong>, new Connecticut childcare, camp, and elder care resources</span></label>
+  <fieldset class="list-signup-choices">
+    <legend>Choose what you'd like to receive</legend>
+    <label class="list-signup-option coral"><input type="checkbox" name="list" value="191436005966873982"{% if primary == "darice-on-ai" %} checked{% endif %} /> <span><strong>Darice on AI</strong><span class="list-signup-desc">my weekly newsletter on using AI well</span></span></label>
+    <label class="list-signup-option gold"><input type="checkbox" name="list" value="201713282076116487"{% if primary == "workshops" %} checked{% endif %} /> <span><strong>Workshop Updates</strong><span class="list-signup-desc">new workshop dates and offerings</span></span></label>
+    <label class="list-signup-option teal"><input type="checkbox" name="list" value="198311500140512479"{% if primary == "community-ai" %} checked{% endif %} /> <span><strong>Darice's Community AI</strong><span class="list-signup-desc">weekly picks from the Community AI directory</span></span></label>
+    <label class="list-signup-option rose"><input type="checkbox" name="list" value="202322533642405434"{% if primary == "village-notes" %} checked{% endif %} /> <span><strong>Village Notes Updates</strong><span class="list-signup-desc">new Connecticut childcare, camp, and elder care resources</span></span></label>
   </fieldset>
-  <button type="submit" class="btn-primary">{{ include.button | default: "Sign Me Up" }}</button>
-  <p id="{{ k }}-status" role="status" aria-live="polite" style="margin-top:1rem;line-height:1.6;"></p>
+  <button type="submit" class="btn-primary btn-pop">{{ include.button | default: "Sign Me Up" }}</button>
+  <p id="{{ k }}-status" class="list-signup-status" role="status" aria-live="polite"></p>
 </form>
-<p style="font-size:.9rem;line-height:1.6;max-width:560px;margin-top:.5rem;">It's free, and you can unsubscribe anytime. Workshop Updates, Community AI, and Village Notes each send a quick confirmation email first.</p>
+<p class="list-signup-fine">It's free, and you can unsubscribe anytime. Workshop Updates, Community AI, and Village Notes each send a quick confirmation email first.</p>
 <script>
   (function () {
     var form = document.getElementById('{{ k }}-signup-form');

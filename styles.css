@@ -821,3 +821,23 @@ main > section:nth-of-type(3n) .section-label:not(.pop-label)::before { backgrou
 .credential-dot { background:var(--pop-gold); }
 .credential:nth-child(3n+2) .credential-dot { background:var(--pop-teal); }
 .credential:nth-child(3n) .credential-dot { background:var(--pop-rose); }
+
+/* Shared multi-list email signup (_includes/list-signup.html), 2026-11-04.
+   Uses the site tokens and the brand pop colors, so light and dark mode both work. */
+.contact-form.list-signup { max-width:620px; margin:0; }
+.list-signup-choices { border:0; padding:0; margin:0 0 1.5rem; min-width:0; }
+.list-signup-choices legend { font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--coral); font-weight:500; margin-bottom:.75rem; padding:0; }
+.list-signup-option { display:flex; gap:.85rem; align-items:flex-start; background:var(--bg2); border:1px solid var(--line); border-left:4px solid var(--coral); padding:.9rem 1rem; margin-bottom:.6rem; cursor:pointer; line-height:1.45; transition:border-color .2s, background .2s; }
+.list-signup-option.gold { border-left-color:var(--pop-gold); }
+.list-signup-option.teal { border-left-color:var(--pop-teal); }
+.list-signup-option.rose { border-left-color:var(--pop-rose); }
+.list-signup-option:hover { border-color:var(--coral); }
+.list-signup-option:has(input:checked) { border-color:var(--coral); background:color-mix(in srgb, var(--coral) 9%, var(--bg2)); }
+.list-signup-option:has(input:focus-visible) { outline:2px solid var(--coral); outline-offset:2px; }
+.list-signup-option input { width:1.15rem; height:1.15rem; margin:.15rem 0 0; flex-shrink:0; accent-color:var(--coral); cursor:pointer; }
+.list-signup-option strong { display:block; color:var(--cream); font-weight:600; font-size:.98rem; }
+.list-signup-desc { display:block; color:var(--muted); font-size:.9rem; font-weight:300; margin-top:.15rem; }
+.list-signup .btn-primary { margin-top:0; }
+.list-signup-status { margin-top:1rem; line-height:1.6; color:var(--cream); }
+.list-signup-status:empty { display:none; }
+.list-signup-fine { font-size:.88rem; line-height:1.6; max-width:620px; margin-top:.75rem; color:var(--muted); }
