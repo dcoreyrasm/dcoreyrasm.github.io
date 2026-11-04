@@ -760,3 +760,9 @@ section.focus-section { background:linear-gradient(rgba(30,26,46,.86), rgba(45,3
   .portfolio-project h3 { font-size:1.3rem; }
   .portfolio-scope { grid-template-columns:1fr; }
 }
+
+/* Research page color pops (STD-DCLLC-COLOR-POPS v1.0), 2026-11-03 */
+.research-block.pop-card { padding-top:1.25rem; }
+.pub-list.pop-rotate-left > * { border-left:4px solid var(--pop-gold); }
+.pub-list.pop-rotate-left > :nth-child(3n+2) { border-left-color:var(--pop-teal); }
+.pub-list.pop-rotate-left > :nth-child(3n) { border-left-color:var(--pop-rose); }
