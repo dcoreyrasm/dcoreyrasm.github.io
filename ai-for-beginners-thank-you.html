@@ -114,8 +114,8 @@ sitemap: false
     (function () {
       // Zoom registration links: paste each part's Zoom registration URL between the quotes.
       var ZOOM = {
-        part3: '',
-        part4: ''
+        part3: 'https://us06web.zoom.us/meeting/register/O1XZDcsCTWinVTFNwK4ESQ',
+        part4: 'https://us06web.zoom.us/meeting/register/cQfrKEUpSkSQRV7pnaLt0A'
       };
       var ITEMS = {
         part3: { name: 'AI for Beginners, Part 3: Putting ChatGPT to Work in Everyday Life', date: 'Thursday, November 5, 2026, 7:00 to 8:00 PM Eastern', price: 50, zoom: ['part3'] },
@@ -147,6 +147,12 @@ sitemap: false
         });
       }
       if (!shown) fallback.style.display = 'block';
+      if (key === 'all4') {
+        var note = document.createElement('p');
+        note.style.cssText = 'line-height:1.75;max-width:640px;margin-bottom:1.5rem;';
+        note.textContent = "I'll email you the recordings of Parts 1 and 2. Register on Zoom for each live part below.";
+        linksBox.parentNode.insertBefore(note, linksBox);
+      }
 
       // Count the registration once, even if the page is refreshed.
       if (item && sessionId && sessionId.indexOf('cs_') === 0 && typeof gtag === 'function') {
