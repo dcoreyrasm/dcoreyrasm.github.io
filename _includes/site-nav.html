@@ -48,11 +48,11 @@
         <li class="nav-group">
           <button type="button" class="nav-group-btn{% if in_proj %} active{% endif %}" aria-expanded="false" aria-controls="nav-sub-projects">Projects</button>
           <ul class="nav-sub" id="nav-sub-projects" hidden>
-            <li><a href="/portfolio.html"{% if u == '/portfolio.html' %} aria-current="page"{% endif %}>Portfolio</a></li>
             <li><a href="/community-ai/"{% if u contains '/community-ai/' %} aria-current="page"{% endif %}>Community AI</a></li>
-            <li><a href="/village-notes/"{% if u contains '/village-notes/' %} aria-current="page"{% endif %}>Village Notes</a></li>
             <li><a href="/connecticut-list/"{% if u contains '/connecticut-list/' %} aria-current="page"{% endif %}>Connecticut List</a></li>
+            <li><a href="/portfolio.html"{% if u == '/portfolio.html' %} aria-current="page"{% endif %}>Portfolio</a></li>
             <li><a href="/prompts/"{% if u contains '/prompts/' %} aria-current="page"{% endif %}>Prompt Library</a></li>
+            <li><a href="/village-notes/"{% if u contains '/village-notes/' %} aria-current="page"{% endif %}>Village Notes</a></li>
             <li><a href="/year-end-report/"{% if u contains '/year-end-report/' %} aria-current="page"{% endif %}>Year-End Report</a></li>
           </ul>
         </li>
