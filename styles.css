@@ -766,3 +766,58 @@ section.focus-section { background:linear-gradient(rgba(30,26,46,.86), rgba(45,3
 .pub-list.pop-rotate-left > * { border-left:4px solid var(--pop-gold); }
 .pub-list.pop-rotate-left > :nth-child(3n+2) { border-left-color:var(--pop-teal); }
 .pub-list.pop-rotate-left > :nth-child(3n) { border-left-color:var(--pop-rose); }
+
+/* ============================================================
+   Site-wide color pops (STD-DCLLC-COLOR-POPS v1.0), 2026-11-03.
+   Applies the gold / teal / rose accents across every page that
+   uses this stylesheet, keyed on existing classes so pages stay
+   consistent. Bright fills always carry Deep Plum text; pops are
+   never used as text color on light backgrounds.
+   ============================================================ */
+
+/* Header button and footer edge */
+.nav-cta { background:var(--pop-gold); border-color:var(--pop-gold); color:var(--pop-ink); font-weight:600; }
+.nav-cta:hover, .nav-cta:focus-visible { background:var(--pop-teal); border-color:var(--pop-teal); color:var(--pop-ink); }
+footer[role="contentinfo"]:has(.footer-cols) { border-top:6px solid transparent;
+  border-image:linear-gradient(90deg, var(--pop-gold) 0 33.34%, var(--pop-teal) 33.34% 66.67%, var(--pop-rose) 66.67% 100%) 1; }
+
+/* Hero bottom stripe */
+.hero, .ai-hero, .work-hero, .speaking-hero { border-bottom:6px solid transparent;
+  border-image:linear-gradient(90deg, var(--pop-gold) 0 33.34%, var(--pop-teal) 33.34% 66.67%, var(--pop-rose) 66.67% 100%) 1; }
+
+/* Primary buttons: gold with teal hover, Deep Plum text */
+main .btn-primary, .contact-form .btn-primary { background:var(--pop-gold); color:var(--pop-ink); font-weight:600; }
+main .btn-primary:hover, main .btn-primary:focus-visible, .contact-form .btn-primary:hover { background:var(--pop-teal); color:var(--pop-ink); }
+:where(html) .ai-hero .btn-primary, :where(html) .speaking-hero .btn-primary, :where(html) .research-hero .btn-primary, :where(html) .hero .btn-primary { color:var(--pop-ink); }
+
+/* Section labels get a small marker that rotates by section */
+.section-label:not(.pop-label)::before { content:""; display:inline-block; flex:0 0 1.5rem; width:1.5rem; height:4px; border-radius:2px; background:var(--pop-gold); }
+main > section:nth-of-type(3n+2) .section-label:not(.pop-label)::before { background:var(--pop-teal); }
+main > section:nth-of-type(3n) .section-label:not(.pop-label)::before { background:var(--pop-rose); }
+
+/* Cards: rotating top edges */
+.ai-card, .work-card, .topic-card, .mentorship-card, .contact-reason, .impact-cat, .impact-num { border-top:4px solid var(--pop-gold); }
+.ai-card:nth-child(3n+2), .work-card:nth-child(3n+2), .topic-card:nth-child(3n+2), .mentorship-card:nth-child(3n+2),
+.contact-reason:nth-child(3n+2), .impact-cat:nth-child(3n+2), .impact-num:nth-child(3n+2) { border-top-color:var(--pop-teal); }
+.ai-card:nth-child(3n), .work-card:nth-child(3n), .topic-card:nth-child(3n), .mentorship-card:nth-child(3n),
+.contact-reason:nth-child(3n), .impact-cat:nth-child(3n), .impact-num:nth-child(3n) { border-top-color:var(--pop-rose); }
+
+/* Side-edged blocks: rotating left edges */
+.case-study-block, .program-item, .blog-post-card, .practice-item { border-left:4px solid var(--pop-gold); }
+.case-study-block:nth-child(3n+2), .program-item:nth-child(3n+2), .blog-post-card:nth-child(3n+2), .practice-item:nth-child(3n+2) { border-left-color:var(--pop-teal); }
+.case-study-block:nth-child(3n), .program-item:nth-child(3n), .blog-post-card:nth-child(3n), .practice-item:nth-child(3n) { border-left-color:var(--pop-rose); }
+.blog-post-card:hover { border-left-color:var(--pop-teal); }
+
+/* Category tags and role badges */
+.engagement-role { background:var(--pop-gold); border-color:var(--pop-gold); color:var(--pop-ink); font-weight:600; }
+.engagement-item:nth-child(3n+2) .engagement-role { background:var(--pop-teal); border-color:var(--pop-teal); }
+.engagement-item:nth-child(3n) .engagement-role { background:var(--pop-rose); border-color:var(--pop-rose); }
+.work-card-tag::before, .class-tag::before { content:""; display:inline-block; width:.6rem; height:.6rem; border-radius:50%; margin-right:.5rem; vertical-align:middle; background:var(--pop-gold); }
+.work-card:nth-child(3n+2) .work-card-tag::before { background:var(--pop-teal); }
+.work-card:nth-child(3n) .work-card-tag::before { background:var(--pop-rose); }
+.platform-tag { border-color:var(--pop-gold); }
+.platform-tag:nth-child(3n+2) { border-color:var(--pop-teal); }
+.platform-tag:nth-child(3n) { border-color:var(--pop-rose); }
+.credential-dot { background:var(--pop-gold); }
+.credential:nth-child(3n+2) .credential-dot { background:var(--pop-teal); }
+.credential:nth-child(3n) .credential-dot { background:var(--pop-rose); }
