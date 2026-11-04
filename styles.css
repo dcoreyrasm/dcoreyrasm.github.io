@@ -841,3 +841,13 @@ main > section:nth-of-type(3n) .section-label:not(.pop-label)::before { backgrou
 .list-signup-status { margin-top:1rem; line-height:1.6; color:var(--cream); }
 .list-signup-status:empty { display:none; }
 .list-signup-fine { font-size:.88rem; line-height:1.6; max-width:620px; margin-top:.75rem; color:var(--muted); }
+
+/* Social icon links in the footer */
+.social-links { list-style:none; display:flex; gap:.75rem; margin:0 0 1.5rem; padding:0; }
+.social-link { display:inline-flex; align-items:center; justify-content:center; width:2.5rem; height:2.5rem; border:1px solid var(--line); border-radius:50%; color:var(--muted); transition:color .2s, border-color .2s, background .2s; }
+.social-link svg { width:1.1rem; height:1.1rem; fill:currentColor; }
+.social-link.coral:hover, .social-link.coral:focus-visible { color:var(--coral); border-color:var(--coral); }
+.social-link.gold:hover, .social-link.gold:focus-visible { color:var(--pop-gold); border-color:var(--pop-gold); }
+.social-link.teal:hover, .social-link.teal:focus-visible { color:var(--pop-teal); border-color:var(--pop-teal); }
+.social-link.rose:hover, .social-link.rose:focus-visible { color:var(--pop-rose); border-color:var(--pop-rose); }
+.social-link:focus-visible { outline:2px solid currentColor; outline-offset:2px; }
