@@ -80,6 +80,7 @@
     var text = (rec.status || '').trim().toLowerCase();
     if (rec.deadline && daysUntil(rec.deadline) < 0) return 'closed';
     if (rec.opens && daysUntil(rec.opens) > 0) return 'upcoming';
+    if (/^upcoming/.test(text)) return 'upcoming';
     if (/^closed/.test(text)) return 'closed';
     if ((rec.opens && daysUntil(rec.opens) <= 0) || /^open/.test(text)) return 'open';
     return 'unconfirmed';
