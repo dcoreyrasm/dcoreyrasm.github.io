@@ -378,6 +378,12 @@
     return !!rec.fellowship;
   }
 
+  /* Scholarships are their own Opportunity Type (added 2026-11-05). Before
+     that the Amazon Future Engineer record sat under Grant as a stopgap. */
+  function isScholarship(rec) {
+    return rec.type === 'Scholarship';
+  }
+
   /* The switches above the results. Each one is a single yes-or-no cut that
      applies on top of whatever the filter boxes say, which is why none of them
      is a facet: two ask about dates, and the third asks a question the type
@@ -386,7 +392,8 @@
   var ONLY = {
     'new':  { test: showsNew,      said: 'added recently' },
     'soon': { test: closingSoon,   said: 'with a deadline coming up' },
-    'fellowship': { test: isFellowship, said: 'fellowships' }
+    'fellowship': { test: isFellowship, said: 'fellowships' },
+    'scholarship': { test: isScholarship, said: 'scholarships' }
   };
 
   /* Order for the deadline sort: what is still open, soonest first; then the

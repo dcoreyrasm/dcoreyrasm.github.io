@@ -1,0 +1,206 @@
+---
+# Front matter only so Jekyll evaluates the {{ }} cache stamps and the shared
+# nav include. No layout is applied.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A searchable directory of scholarships, fellowships, internships, research funding, and professional development awards across the United States, for high school students through working professionals. Every listing is checked against its official source and dated." />
+  <title>Scholarships &amp; Fellowships | Darice Corey</title>
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.daricecorey.com/scholarships-fellowships/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Scholarships &amp; Fellowships | Darice Corey" />
+  <meta property="og:description" content="Scholarships, fellowships, internships, and funding across the United States, checked against official sources and dated." />
+  <meta property="og:url" content="https://www.daricecorey.com/scholarships-fellowships/" />
+  <meta property="og:image" content="https://www.daricecorey.com/darice.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Scholarships &amp; Fellowships" />
+  <meta name="twitter:description" content="Scholarships, fellowships, internships, and funding across the United States, checked against official sources." />
+  <meta name="twitter:image" content="https://www.daricecorey.com/darice.jpg" />
+  <script>window.__daOptOut=(function(){try{return localStorage.getItem('da-analytics-optout')==='1'}catch(e){return false}})();if(window.__daOptOut){window['ga-disable-G-725R412XD7']=true;}</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-725R412XD7"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-725R412XD7');</script>
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#16131F" />
+  <link rel="stylesheet" href="/styles.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
+  <link rel="stylesheet" href="/scholarships-fellowships/sf.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">if(!window.__daOptOut){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xdrtc0i2un");}</script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  {% include site-nav.html %}
+
+  <main id="main-content">
+
+    <div class="sf-hero">
+      <div class="sf-wrap">
+        <p class="section-label">Scholarships &amp; Fellowships Directory</p>
+        <h1 class="section-heading">Scholarships &amp; Fellowships</h1>
+        <p class="sf-lede">I built this list to make funding easier to find. It covers scholarships, fellowships, internships, research funding, and professional development awards across the United States, in every field of study, for high school students, college and graduate students, adult learners, and working professionals.</p>
+        <p class="sf-lede">Every listing links to the official application and shows the date I last checked it against that source. Programs change their rules and dates, so always confirm on the official page before you apply.</p>
+        <div class="sf-hero-meta">
+          <span class="sf-pill sf-pill-gold" id="sf-count">Loading listings&hellip;</span>
+          <span class="sf-updated" id="sf-updated"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sf-controls-band">
+      <div class="sf-wrap">
+        <h2 class="sf-visually-hidden" id="sf-filter-heading">Search and filter</h2>
+        <form class="sf-controls" id="sf-controls" role="search" aria-labelledby="sf-filter-heading">
+          <div class="sf-field sf-field-search">
+            <label for="sf-q">Search</label>
+            <input type="search" id="sf-q" name="q" placeholder="Name, organization, field, eligibility&hellip;" autocomplete="off" />
+          </div>
+          <div class="sf-field">
+            <label for="sf-type">Opportunity type</label>
+            <select id="sf-type" name="type"><option value="">All types</option></select>
+          </div>
+          <div class="sf-field">
+            <label for="sf-state">State you live in</label>
+            <select id="sf-state" name="state" aria-describedby="sf-state-help"><option value="">Any state</option></select>
+            <span class="sf-help" id="sf-state-help">Nationwide programs appear for every state.</span>
+          </div>
+          <div class="sf-field">
+            <label for="sf-stage">Who is applying</label>
+            <select id="sf-stage" name="stage"><option value="">Any stage</option></select>
+          </div>
+          <div class="sf-field">
+            <label for="sf-subject">Field of study</label>
+            <select id="sf-subject" name="subject"><option value="">Any field</option></select>
+          </div>
+          <div class="sf-field">
+            <label for="sf-deadline">Application deadline</label>
+            <select id="sf-deadline" name="deadline">
+              <option value="">Any deadline</option>
+              <option value="30">Within 30 days</option>
+              <option value="90">Within 90 days</option>
+              <option value="later">More than 90 days away</option>
+              <option value="none">No fixed deadline listed</option>
+            </select>
+          </div>
+          <div class="sf-field">
+            <label for="sf-status">Status</label>
+            <select id="sf-status" name="status">
+              <option value="active">Open and upcoming</option>
+              <option value="open">Open now</option>
+              <option value="upcoming">Opening soon</option>
+              <option value="closed">Closed (watch next cycle)</option>
+              <option value="all">All, including closed</option>
+            </select>
+          </div>
+          <div class="sf-field">
+            <label for="sf-sort">Sort by</label>
+            <select id="sf-sort" name="sort">
+              <option value="deadline">Deadline, soonest first</option>
+              <option value="amount">Largest award first</option>
+              <option value="checked">Most recently checked</option>
+              <option value="az">Name, A to Z</option>
+            </select>
+          </div>
+          <div class="sf-field sf-field-reset">
+            <button type="button" class="btn-ghost" id="sf-reset">Reset filters</button>
+          </div>
+        </form>
+        <p class="sf-resultline" id="sf-resultline" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <div class="sf-results-band">
+      <div class="sf-wrap">
+        <ul class="sf-grid" id="sf-results" aria-label="Opportunities"></ul>
+        <div class="sf-empty" id="sf-empty" hidden>
+          <h2 id="sf-empty-title">No listings match these filters</h2>
+          <p id="sf-empty-body">Try a wider deadline, another field of study, or include closed programs to see what will likely open again.</p>
+          <button type="button" class="btn-primary" id="sf-empty-reset">Reset filters</button>
+        </div>
+        <noscript><p class="sf-empty">This directory needs JavaScript to load its listings. Each listing links to its official source.</p></noscript>
+      </div>
+    </div>
+
+    <section class="sf-about" aria-labelledby="sf-about-heading">
+      <div class="sf-wrap">
+        <p class="section-label">How this list works</p>
+        <h2 class="section-heading" id="sf-about-heading">Read each listing in a minute</h2>
+        <div class="sf-about-grid">
+          <div class="sf-about-block sf-top-gold">
+            <h3>Who can apply</h3>
+            <p>Each listing names the education or career stage the program accepts, and the eligibility rules the official source states: grade, GPA, field, residency, need, or work authorization. If the source does not say, the listing does not guess.</p>
+          </div>
+          <div class="sf-about-block sf-top-teal">
+            <h3>Where you can live</h3>
+            <p>Pick your state to see programs open to you. Nationwide programs appear in every state. A program limited to certain states appears only there, and a listing whose geography is not confirmed is labeled that way.</p>
+          </div>
+          <div class="sf-about-block sf-top-rose">
+            <h3>Deadlines and status</h3>
+            <p>&ldquo;Open&rdquo; means the application window was confirmed on the official page. &ldquo;Opening soon&rdquo; means the official open date has not arrived. Closed programs stay listed so you can watch for the next cycle.</p>
+          </div>
+          <div class="sf-about-block sf-top-violet">
+            <h3>How to apply</h3>
+            <p>Use the &ldquo;Official application&rdquo; button on each listing. It goes to the sponsor, not to a listing site. Note any separate due date for recommendation letters, and start early when an essay or transcript is required.</p>
+          </div>
+        </div>
+        <p class="sf-crosslinks">Looking for something closer to home? <a href="/village-notes/">Village Notes</a> features scholarships for Connecticut families, and <a href="/community-ai/">Community AI</a> lists AI and technology funding, training, and fellowships.</p>
+        <p class="sf-crosslinks">Know a program that belongs here, or see a detail that changed? <a href="/contact.html">Send it to me</a>.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-cols">
+      <nav class="footer-col" aria-labelledby="foot-explore">
+        <h2 id="foot-explore">Explore</h2>
+        <ul>
+          <li><a href="/work.html">Work</a></li>
+          <li><a href="/ai.html">AI Leadership</a></li>
+          <li><a href="/research.html">Research</a></li>
+          <li><a href="/speaking.html">Speaking</a></li>
+          <li><a href="/mentorship.html">Mentorship</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="foot-projects">
+        <h2 id="foot-projects">Projects</h2>
+        <ul>
+          <li><a href="/community-ai/">Community AI</a></li>
+          <li><a href="/prompts/">Prompt Library</a></li>
+          <li><a href="/scholarships-fellowships/" aria-current="page">Scholarships &amp; Fellowships</a></li>
+          <li><a href="/village-notes/">Village Notes</a></li>
+          <li><a href="/year-end-report/">Year-End Report</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="foot-llc">
+        <h2 id="foot-llc">Darice Corey, LLC</h2>
+        <ul>
+          <li><a href="/speaking.html">Speaking</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/contact.html?reason=speaking#contact-form">Book Darice to Speak</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="foot-elsewhere">
+        <h2 id="foot-elsewhere">Elsewhere</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/daricecorey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+          <li><a href="/newsletter.html">Darice on AI newsletter</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+    {% include social-links.html %}
+    <p class="footer-base">&copy; 2026 Darice Corey. All rights reserved. Speaking, consulting, and workshops outside my Yale role are offered through Darice Corey, LLC.</p>
+  </footer>
+
+  <script src="/scholarships-fellowships/script.js?v={{ site.time | date: '%Y%m%d%H%M' }}" defer></script>
+</body>
+</html>

@@ -2,6 +2,8 @@ name: Community AI sync (Airtable to JSON)
 
 # Refreshes community-ai/data/opportunities.json from the "AI Support &
 # Opportunities for Communities" Airtable base, so /community-ai/ no longer
+# (and, since 2026-11-05, scholarships-fellowships/data/opportunities.json for
+# /scholarships-fellowships/ and the Village Notes scholarship feature)
 # depends on someone remembering to run the script by hand and commit the result.
 #
 # Same architecture as the Village Notes sync: the token is read from a repo
@@ -52,14 +54,15 @@ jobs:
 
       - name: Commit the refreshed directory
         run: |
-          git add community-ai/data/opportunities.json
+          git add community-ai/data/opportunities.json \
+                  scholarships-fellowships/data/opportunities.json
           if git diff --cached --quiet; then
             echo "Directory already in sync; nothing to commit."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Refresh Community AI directory from Airtable"
+          git commit -m "Refresh Community AI and Scholarships & Fellowships from Airtable"
           # main can move under us between checkout and push; rebase and retry.
           for attempt in 1 2 3; do
             git push && break

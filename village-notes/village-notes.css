@@ -706,3 +706,18 @@ main .vn-toggles .vn-toggle input:checked + span { background:var(--pop-ink); bo
 .vn-badge-chip:not(.is-open), .vn-tags li { color:var(--pop-ink); border-color:transparent; background:var(--pop-gold); border-radius:999px; font-weight:500; }
 .vn-badge-chip:not(.is-open):nth-child(3n+2), .vn-tags li:nth-child(3n+2) { background:var(--pop-teal); }
 .vn-badge-chip:not(.is-open):nth-child(3n), .vn-tags li:nth-child(3n) { background:var(--pop-rose); }
+
+
+/* ---------- SCHOLARSHIPS FOR CONNECTICUT STUDENTS (added 2026-11-05) ----------
+   Fed by village-notes/scholarships-feature.js from the Scholarships &
+   Fellowships snapshot. Tokens only, so it follows light and dark mode. */
+.vn-scholarships {
+  margin:2.5rem 0 0; padding:1.5rem; background:var(--bg2);
+  border:1px solid var(--line); border-top:4px solid var(--pop-gold, #fdb926); border-radius:10px;
+}
+.vn-scholarships[hidden] { display:none; }
+.vn-scholarships-heading { font-family:var(--serif); font-size:1.4rem; color:var(--cream); margin:.25rem 0 .5rem; }
+.vn-scholarships-intro { color:var(--muted); font-size:.92rem; line-height:1.6; margin-bottom:1rem; }
+.vn-scholarships-list { list-style:none; margin:0 0 1.25rem; padding:0; display:grid; gap:.75rem; }
+.vn-sch-item a { color:var(--coral); font-weight:600; }
+.vn-sch-meta { display:block; font-size:.82rem; color:var(--muted); margin-top:.15rem; }

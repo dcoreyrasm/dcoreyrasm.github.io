@@ -1,0 +1,115 @@
+/* ============================================================
+   Scholarships & Fellowships — extends /styles.css.
+   Text and surface colors resolve to the site tokens (--bg, --bg2,
+   --cream, --muted, --coral, --line), so light and dark mode follow
+   the rest of daricecorey.com. The bright brand pops (gold, teal,
+   rose) always carry Deep Plum text, per STD-DCLLC-COLOR-POPS v1.0.
+   ============================================================ */
+
+.sf-visually-hidden {
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+.sf-wrap { max-width:1180px; margin:0 auto; padding:0 1.5rem; }
+
+/* ---------- HERO: deep-purple band, same as the other directory heroes ---------- */
+.sf-hero { background:linear-gradient(135deg,#1e1a2e 0%,#2d1f4e 100%); padding:4rem 0 3rem; --coral:#c084fc; --coral-dim:#a855f7; }
+.sf-hero .section-label { color:#c084fc; margin-bottom:1.25rem; }
+.sf-hero .section-heading { color:#fff; }
+.sf-lede { color:rgba(255,255,255,.85); max-width:700px; line-height:1.75; margin-bottom:1rem; font-size:1rem; }
+.sf-hero-meta { display:flex; flex-wrap:wrap; gap:.75rem 1rem; align-items:center; margin-top:1.5rem; }
+.sf-updated { font-size:.78rem; color:rgba(255,255,255,.7); }
+
+/* ---------- PILLS ---------- */
+.sf-pill {
+  display:inline-block; font-size:.72rem; font-weight:600; letter-spacing:.06em;
+  text-transform:uppercase; padding:.35rem .75rem; border-radius:999px;
+  color:#16131f; background:#c084fc; line-height:1.3;
+}
+.sf-pill-gold   { background:#fdb926; }
+.sf-pill-teal   { background:#1fd6dc; }
+.sf-pill-rose   { background:#f45d6b; }
+.sf-pill-lav    { background:#c084fc; }
+.sf-pill-cream  { background:#ede9f6; }
+.sf-pill-closed { background:#d9d4e6; }
+
+/* ---------- CONTROLS ---------- */
+.sf-controls-band { background:var(--bg); border-bottom:1px solid var(--line); padding:1.75rem 0 1.25rem; }
+.sf-controls {
+  display:grid; gap:1rem 1.25rem; align-items:start;
+  grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));
+}
+.sf-field { display:flex; flex-direction:column; gap:.35rem; min-width:0; }
+.sf-field-search { grid-column:1 / -1; }
+.sf-field label { font-size:.78rem; font-weight:600; letter-spacing:.04em; color:var(--cream); }
+.sf-help { font-size:.74rem; color:var(--muted); }
+.sf-field input, .sf-field select {
+  width:100%; font:inherit; font-size:.95rem; color:var(--cream);
+  background:var(--bg2); border:1px solid var(--line); border-radius:6px;
+  padding:.7rem .8rem; min-height:44px;
+}
+.sf-field select { cursor:pointer; }
+.sf-field input:focus-visible, .sf-field select:focus-visible,
+.sf-card a:focus-visible, .sf-controls button:focus-visible, .sf-empty button:focus-visible {
+  outline:3px solid var(--coral); outline-offset:2px;
+}
+.sf-field-reset { align-self:end; }
+.sf-field-reset .btn-ghost { min-height:44px; width:100%; }
+.sf-resultline { margin-top:1rem; font-size:.9rem; color:var(--muted); }
+
+/* ---------- RESULTS ---------- */
+.sf-results-band { background:var(--bg); padding:2rem 0 4rem; }
+.sf-grid { list-style:none; margin:0; padding:0; display:grid; gap:1.25rem; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); }
+.sf-card {
+  background:var(--bg2); border:1px solid var(--line); border-top:4px solid #c084fc;
+  border-radius:10px; padding:1.4rem 1.4rem 1.2rem; display:flex; flex-direction:column; gap:.85rem;
+}
+.sf-card.sf-type-scholarship { border-top-color:#fdb926; }
+.sf-card.sf-type-fellowship  { border-top-color:#1fd6dc; }
+.sf-card.sf-type-internship  { border-top-color:#f45d6b; }
+.sf-card.sf-is-closed { opacity:.92; }
+.sf-badges { display:flex; flex-wrap:wrap; gap:.4rem; }
+.sf-card h3 { font-family:var(--serif); font-size:1.25rem; line-height:1.3; color:var(--cream); margin:0; }
+.sf-org { font-size:.88rem; color:var(--muted); margin:-.4rem 0 0; }
+.sf-alert {
+  background:#fdb926; color:#16131f; font-weight:600; font-size:.85rem;
+  padding:.5rem .75rem; border-radius:6px;
+}
+.sf-desc { font-size:.92rem; line-height:1.6; color:var(--cream); margin:0; }
+.sf-facts { margin:0; display:grid; gap:.55rem; font-size:.88rem; }
+.sf-facts div { display:grid; grid-template-columns:8.5rem 1fr; gap:.5rem; }
+.sf-facts dt { color:var(--muted); font-weight:600; }
+.sf-facts dd { margin:0; color:var(--cream); line-height:1.5; overflow-wrap:anywhere; }
+.sf-card-foot { margin-top:auto; display:flex; flex-wrap:wrap; gap:.75rem 1rem; align-items:center; justify-content:space-between; padding-top:.5rem; border-top:1px solid var(--line); }
+.sf-verified { font-size:.78rem; color:var(--muted); }
+.sf-apply { font-size:.76rem; padding:.7rem 1.1rem; min-height:44px; display:inline-flex; align-items:center; }
+.sf-nolink { font-size:.82rem; color:var(--muted); }
+
+.sf-empty { text-align:center; padding:3rem 1rem; color:var(--cream); }
+.sf-empty h2 { font-family:var(--serif); font-size:1.5rem; margin-bottom:.75rem; }
+.sf-empty p { color:var(--muted); max-width:520px; margin:0 auto 1.5rem; line-height:1.6; }
+
+/* ---------- ABOUT ---------- */
+section.sf-about { background:var(--bg2); padding:4rem 0; }
+.sf-about-grid { display:grid; gap:1.25rem; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); margin:1.5rem 0 2rem; }
+.sf-about-block { background:var(--bg); border:1px solid var(--line); border-top:4px solid #c084fc; border-radius:10px; padding:1.25rem; }
+.sf-top-gold { border-top-color:#fdb926; } .sf-top-teal { border-top-color:#1fd6dc; }
+.sf-top-rose { border-top-color:#f45d6b; } .sf-top-violet { border-top-color:#a855f7; }
+.sf-about-block h3 { font-size:1rem; color:var(--cream); margin-bottom:.5rem; }
+.sf-about-block p { font-size:.9rem; line-height:1.6; color:var(--muted); }
+.sf-crosslinks { font-size:.95rem; color:var(--cream); line-height:1.7; margin-bottom:.5rem; }
+.sf-crosslinks a, .sf-facts a { color:var(--coral); }
+
+/* ---------- PHONE ---------- */
+@media (max-width:640px) {
+  .sf-wrap { padding:0 1rem; }
+  .sf-hero { padding:2.75rem 0 2.25rem; }
+  .sf-controls { grid-template-columns:1fr 1fr; gap:.85rem; }
+  .sf-grid { grid-template-columns:1fr; }
+  .sf-facts div { grid-template-columns:1fr; gap:.1rem; }
+  .sf-card-foot { flex-direction:column; align-items:stretch; }
+  .sf-apply { justify-content:center; }
+}
+@media (max-width:400px) { .sf-controls { grid-template-columns:1fr; } }
+
+@media (prefers-reduced-motion:reduce) { .sf-card, .btn-primary { transition:none; } }

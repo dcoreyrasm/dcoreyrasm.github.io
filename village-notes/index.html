@@ -296,6 +296,18 @@
             <a href="/contact.html" class="btn-primary" id="vn-empty-add">Add what you found</a>
           </div>
         </div>
+
+        <!-- Scholarships for Connecticut students. Hidden until
+             scholarships-feature.js finds published records; the data is the
+             Scholarships & Fellowships snapshot, so nothing is duplicated in
+             the Village Notes base. -->
+        <aside class="vn-scholarships" id="vn-scholarships" aria-labelledby="vn-scholarships-heading" hidden>
+          <p class="vn-featured-eyebrow">Student funding</p>
+          <h2 class="vn-scholarships-heading" id="vn-scholarships-heading">Scholarships for Connecticut students</h2>
+          <p class="vn-scholarships-intro">Scholarships Connecticut students can apply for, checked against each official source. Confirm the details on the official page before applying.</p>
+          <ul class="vn-scholarships-list" id="vn-scholarships-list"></ul>
+          <a class="btn-ghost" href="/scholarships-fellowships/?state=Connecticut">See every scholarship open to Connecticut</a>
+        </aside>
       </div>
     </section>
 
@@ -451,5 +463,6 @@
       });
     })();
   </script>
+  <script src="/village-notes/scholarships-feature.js?v={{ site.time | date: '%Y%m%d%H%M' }}" defer></script>
 </body>
 </html>
