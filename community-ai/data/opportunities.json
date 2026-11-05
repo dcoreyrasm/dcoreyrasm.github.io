@@ -2608,7 +2608,10 @@
         "Adults"
       ],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional",
+        "Adult learner"
+      ],
       "audienceStage": [
         "Graduate or professional student",
         "Career changer"
@@ -2632,7 +2635,9 @@
       "door": "Door 2 - Competitive",
       "eligibility": "Applicants complete a short form, two free Anthropic courses, short-answer questions, a take-home assessment, interviews, and two-sided host matching. U.S. work authorization without sponsorship is required.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Any field of study"
+      ],
       "fundingDetails": "Fully funded 12-month paid fellowship with an $85,000 salary, benefits, relocation support when needed, structured training, CodePath mentoring, office hours, and hands-on AI work inside a mission-driven nonprofit.",
       "geo": "United States",
       "id": "reczNkdoBwZLK7Pwr",
@@ -3770,7 +3775,11 @@
       "afterSupportEnds": null,
       "ageGroup": [],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Undergraduate",
+        "Graduate",
+        "Working professional"
+      ],
       "audienceStage": [
         "College student",
         "Graduate or professional student",
@@ -3794,7 +3803,10 @@
       "door": "Door 2 - Competitive",
       "eligibility": "Full-time, in-person three-month fellowship. DC runs June 7-August 27, 2027; UK tracks run June 7-August 27, 2027. A paid remote work test is part of selection.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Law, Policy & Public Service",
+        "Research (any discipline)"
+      ],
       "fundingDetails": "DC fellows receive a $24,500 stipend plus travel support for the three-month program. UK research and applied fellows receive £14,000 plus travel support.",
       "geo": "Washington, DC or London, United Kingdom; in person with travel support. Connecticut residents may apply subject to work-authorization rules.",
       "id": "recQNWAECltc5o4wn",
@@ -4787,7 +4799,9 @@
         "Adults"
       ],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [
         "K-12 student",
         "K-12 educator",
@@ -4814,7 +4828,10 @@
       "door": "Door 2 - Competitive",
       "eligibility": null,
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Education",
+        "Computer Science & Technology"
+      ],
       "fundingDetails": null,
       "geo": "United States",
       "id": "reck739Nu06l8cNVs",
@@ -7121,7 +7138,9 @@
         "Adults"
       ],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [
         "K-12 educator",
         "College educator",
@@ -7146,7 +7165,9 @@
       "door": "Door 2 - Competitive",
       "eligibility": "Individual education leaders and practitioners may self-nominate. No organization or nonprofit legal status is required on the official page.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Education"
+      ],
       "fundingDetails": "Fully funded participation, no participation cost, no honorarium or compensation.",
       "geo": "Open worldwide, including all U.S. states.",
       "id": "recwDThbs6W7kJQ6v",
@@ -7213,7 +7234,9 @@
         "Adults"
       ],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [
         "K-12 educator",
         "Community leader"
@@ -7235,7 +7258,9 @@
       "door": "Door 2 - Competitive",
       "eligibility": "Individuals must currently work in K–12 education or in a regional or state education agency role that shapes safe AI use.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Education"
+      ],
       "fundingDetails": "Fully funded participation, no participation cost, no honorarium or compensation.",
       "geo": "Open to applicants across the United States; the official page gives preference to U.S.-based applicants and does not limit eligibility by state.",
       "id": "recB5psgmMkbJseP0",
@@ -7302,7 +7327,9 @@
         "Adults"
       ],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [
         "K-12 educator",
         "College educator",
@@ -7327,7 +7354,10 @@
       "door": "Door 2 - Competitive",
       "eligibility": "Individual women technologists and education leaders may self-nominate. No organization or nonprofit legal status is required on the official page.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Education",
+        "Computer Science & Technology"
+      ],
       "fundingDetails": "Fully funded participation, no participation cost, no honorarium or compensation.",
       "geo": "Open worldwide, including all U.S. states.",
       "id": "recJV0dcrrfwcyCT7",
@@ -7483,7 +7513,9 @@
       "afterSupportEnds": null,
       "ageGroup": [],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [],
       "beginnerFriendly": null,
       "bestFit": null,
@@ -7500,7 +7532,9 @@
       "door": "Door 2 - Competitive",
       "eligibility": "Projects may but need not use AI directly, but should address Eyebeam's AGENCY theme including technology and human agency. Individual applicants only; 3-4 hours weekly minimum, virtual residency November 4 2026 to February 12 2027.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Arts & Humanities"
+      ],
       "fundingDetails": "$2,000 stipend for each of six selected artists; technical consultation, weekly programming and mentorship. No application fee.",
       "geo": "US-based artists outside New York City. Connecticut eligible. Online residency.",
       "id": "rectjGMnFjug21C9I",
@@ -10564,7 +10598,9 @@
         "Adults"
       ],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [
         "Career changer",
         "Technical learner",
@@ -10587,7 +10623,10 @@
       "door": "Door 2 - Competitive",
       "eligibility": "Eligibility and level vary by placement. Applicants needed emerging-technology expertise and interest in U.S. public service.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Computer Science & Technology",
+        "Law, Policy & Public Service"
+      ],
       "fundingDetails": "Up to two years in federal agencies, congressional offices or committees, and leading think tanks. Compensation: $78,000 junior, $130,000 fellow, or $190,000+ senior, plus a $17,000 benefits-equivalent stipend, $3,000 professional-development stipend, and up to $3,000 relocation support.",
       "geo": "Washington, DC, United States",
       "id": "recUrbGUndFNg1JSX",
@@ -10650,7 +10689,9 @@
         "Adults"
       ],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [
         "Technical learner",
         "Researcher"
@@ -10672,7 +10713,10 @@
       "door": "Door 2 - Competitive",
       "eligibility": "At least two years of applied AI experience and U.S. work authorization for the full placement; no visa sponsorship. Scientific-domain experience was not required.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Computer Science & Technology",
+        "Natural Sciences & Math"
+      ],
       "fundingDetails": "Nine- to twelve-month paid fellowship with prorated annual compensation of $200,000. Fellows may work remotely or on-site and travel to their national lab at least quarterly.",
       "geo": "United States; initial placements included Idaho National Laboratory, Brookhaven National Laboratory, and Princeton Plasma Physics Laboratory.",
       "id": "recswW03thgYc9Ecy",
@@ -10736,7 +10780,9 @@
         "Adults"
       ],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [
         "Technical learner",
         "Researcher"
@@ -10758,7 +10804,10 @@
       "door": "Door 2 - Competitive",
       "eligibility": "U.S. citizenship required. An active or prior security clearance was preferred but not required. Selected candidates needed to work full time in a federal executive-branch office.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Computer Science & Technology",
+        "Law, Policy & Public Service"
+      ],
       "fundingDetails": "One-year full-time federal placement. Fellow salaries were $170,000–$200,000+ with a benefits stipend; senior compensation began at $250,000+.",
       "geo": "United States; nearly all placements were Washington, DC-based, with a small number remote or in another host-office city.",
       "id": "recKtUsnjrVte7tzT",
@@ -12773,7 +12822,9 @@
       "afterSupportEnds": null,
       "ageGroup": [],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [
         "Graduate or professional student",
         "Researcher"
@@ -12795,7 +12846,9 @@
       "door": "Door 2 - Competitive",
       "eligibility": "Hybrid work from IAPP headquarters in Portsmouth, New Hampshire is encouraged, but the official FAQ says a remote fellowship within the United States may be possible.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Law, Policy & Public Service"
+      ],
       "fundingDetails": "A one-year paid research role; the public program and FAQ pages do not state compensation.",
       "geo": "United States; hybrid in Portsmouth, New Hampshire is encouraged, and remote work within the U.S. may be possible.",
       "id": "recfXBBpCfqpnc7KL",
@@ -14360,7 +14413,9 @@
       "afterSupportEnds": null,
       "ageGroup": [],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [],
       "beginnerFriendly": null,
       "bestFit": "Nonprofit AI champions with a defined project that needs implementation support and peer learning.",
@@ -14377,7 +14432,9 @@
       "door": "Door 2 - Competitive",
       "eligibility": "Microsoft states the fellowship is open to nonprofits of all backgrounds. Cycle-specific requirements should be checked before applying.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Community Leadership"
+      ],
       "fundingDetails": "Global cohort with peer learning, implementation support from AI experts, skill development, and recognition.",
       "geo": "Global",
       "id": "recgDfrPjeRgg8YTj",
@@ -15653,7 +15710,9 @@
         "Adults"
       ],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [
         "Community educator",
         "Community leader",
@@ -15677,7 +15736,11 @@
       "door": "Door 2 - Competitive",
       "eligibility": "The first stage is a Letter of Intent. Shortlisted applicants are invited to submit a full application by March 12, 2027. Ten fellowships are planned.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Computer Science & Technology",
+        "Arts & Humanities",
+        "Community Leadership"
+      ],
       "fundingDetails": "Embedded Fellows receive $100,000 total: a $75,000 stipend and $25,000 project budget. Independent Fellows receive $125,000 total: a $100,000 stipend and $25,000 project budget.",
       "geo": "Global; Connecticut residents may apply.",
       "id": "recqL1bfPLXtAQ3Sy",
@@ -16486,7 +16549,9 @@
         "Adults"
       ],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [
         "Graduate or professional student",
         "Nonprofit staff",
@@ -16512,7 +16577,10 @@
       "door": "Door 2 - Competitive",
       "eligibility": "One-year global fellowship for nonprofit technology leaders. Most learning is online; live sessions use Pacific Time, and the program includes the March 2027 Nonprofit Technology Conference in Portland, Oregon.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Computer Science & Technology",
+        "Community Leadership"
+      ],
       "fundingDetails": "Each fellow's organization receives a $15,000 cash award. Fellows also receive NTEN course access, professional-certificate enrollment, coaching, mentoring and conference participation.",
       "geo": "Global; Connecticut nonprofit technology leaders are eligible. Online learning plus conference participation in Portland, Oregon.",
       "id": "rec6R9RIHZTJNVZps",
@@ -17384,7 +17452,10 @@
         "Adults"
       ],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Graduate",
+        "Working professional"
+      ],
       "audienceStage": [
         "Graduate or professional student",
         "Technical learner",
@@ -17411,7 +17482,10 @@
       "door": "Door 2 - Competitive",
       "eligibility": "Applicants were evaluated on research ability, technical judgment, and execution rather than a specific credential. Reference contacts were required.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Computer Science & Technology",
+        "Research (any discipline)"
+      ],
       "fundingDetails": "The fellowship includes a monthly stipend, compute support, API credits as appropriate, OpenAI mentorship, peer cohort support, and optional workspace in Berkeley. Remote participation is permitted.",
       "geo": "Remote or Berkeley, California, United States.",
       "id": "reccAbWApSlJoqOiz",
@@ -20919,7 +20993,9 @@
         "Adults"
       ],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Undergraduate"
+      ],
       "audienceStage": [
         "College student"
       ],
@@ -20942,7 +21018,10 @@
       "door": "Door 2 - Competitive",
       "eligibility": "Eight to ten weeks of full-time placement plus virtual bootcamp, weekly seminar and a mandatory August 1-3 symposium at Princeton. Stipend amount for 2027 has not yet been determined.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Computer Science & Technology",
+        "Law, Policy & Public Service"
+      ],
       "fundingDetails": "A stipend will be provided, but the 2027 amount has not yet been determined. Symposium hotel and meals are covered; other travel is expected to be budgeted from the stipend.",
       "geo": "Placements across the United States; mandatory closing symposium at Princeton, New Jersey.",
       "id": "reccpskvQ56gfVGfe",
@@ -21004,7 +21083,9 @@
       "afterSupportEnds": null,
       "ageGroup": [],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [
         "Community educator",
         "Technical learner"
@@ -21026,7 +21107,11 @@
       "door": "Door 2 - Competitive",
       "eligibility": "The Los Angeles Gaming the System and New York City DIY Computing tracks are location-restricted and are not Connecticut-eligible. Connecticut applicants should use only the nationwide remote Collective Intelligence track.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Arts & Humanities",
+        "Computer Science & Technology",
+        "Education"
+      ],
       "fundingDetails": "$10,000 stipend over eight months, plus mentorship, workshops, professional development, public-program opportunities and a fellowship cohort.",
       "geo": "Remote anywhere in the United States for the Collective Intelligence track. Los Angeles and New York tracks are out of scope for Connecticut residents.",
       "id": "recJczOFZLwnppd8W",
@@ -21925,7 +22010,9 @@
         "Adults"
       ],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [
         "Career changer",
         "Technical learner",
@@ -22738,7 +22825,9 @@
       "afterSupportEnds": null,
       "ageGroup": [],
       "annualAmount": null,
-      "applicantStage": [],
+      "applicantStage": [
+        "Working professional"
+      ],
       "audienceStage": [
         "Career changer",
         "Researcher"
@@ -22762,7 +22851,10 @@
       "door": "Door 2 - Competitive",
       "eligibility": "One-year, full-time commitment: remote AI journalism training, a one-week in-person summit, then a nine-month newsroom placement. Partner placements determine final work location.",
       "fellowship": true,
-      "fieldOfStudy": [],
+      "fieldOfStudy": [
+        "Arts & Humanities",
+        "Computer Science & Technology"
+      ],
       "fundingDetails": "Fellow salaries range from $75,000 to $120,000 depending on experience and placement city. Senior fellow salaries range from $115,000 to $135,000. Summit travel and accommodation are covered.",
       "geo": "Remote training followed by an in-person summit and newsroom placement. U.S. placements include New York, Los Angeles, San Francisco, Seattle and Washington, DC.",
       "id": "rec1RdVmQ2O636X95",
