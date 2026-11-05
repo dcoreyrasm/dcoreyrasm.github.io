@@ -3,7 +3,7 @@
   to its own MailerLite form. Use once per page:
     {% include list-signup.html key="nl" primary="darice-on-ai" button="Sign Me Up" %}
   key: short unique id for the page. primary: the list checked by default
-  (darice-on-ai, workshops, community-ai, village-notes).
+  (darice-on-ai, workshops, community-ai, village-notes, scholarships).
 {%- endcomment -%}
 {%- assign k = include.key | default: "ls" -%}
 {%- assign primary = include.primary | default: "darice-on-ai" -%}
@@ -18,11 +18,12 @@
     <label class="list-signup-option gold"><input type="checkbox" name="list" value="201713282076116487"{% if primary == "workshops" %} checked{% endif %} /> <span><strong>Workshop Updates</strong><span class="list-signup-desc">new workshop dates and offerings</span></span></label>
     <label class="list-signup-option teal"><input type="checkbox" name="list" value="198311500140512479"{% if primary == "community-ai" %} checked{% endif %} /> <span><strong>Darice's Community AI</strong><span class="list-signup-desc">weekly picks from the Community AI directory</span></span></label>
     <label class="list-signup-option rose"><input type="checkbox" name="list" value="202322533642405434"{% if primary == "village-notes" %} checked{% endif %} /> <span><strong>Village Notes Updates</strong><span class="list-signup-desc">new Connecticut childcare, camp, and elder care resources</span></span></label>
+    <label class="list-signup-option violet"><input type="checkbox" name="list" value="203298858644538889"{% if primary == "scholarships" %} checked{% endif %} /> <span><strong>Scholarships &amp; Fellowships Updates</strong><span class="list-signup-desc">new scholarships, fellowships, and funding, with upcoming deadlines</span></span></label>
   </fieldset>
   <button type="submit" class="btn-primary btn-pop">{{ include.button | default: "Sign Me Up" }}</button>
   <p id="{{ k }}-status" class="list-signup-status" role="status" aria-live="polite"></p>
 </form>
-<p class="list-signup-fine">It's free, and you can unsubscribe anytime. Workshop Updates, Community AI, and Village Notes each send a quick confirmation email first.</p>
+<p class="list-signup-fine">It's free, and you can unsubscribe anytime. Workshop Updates, Community AI, Village Notes, and Scholarships &amp; Fellowships each send a quick confirmation email first.</p>
 <script>
   (function () {
     var form = document.getElementById('{{ k }}-signup-form');

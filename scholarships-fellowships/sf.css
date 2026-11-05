@@ -113,3 +113,14 @@ section.sf-about { background:var(--bg2); padding:4rem 0; }
 @media (max-width:400px) { .sf-controls { grid-template-columns:1fr; } }
 
 @media (prefers-reduced-motion:reduce) { .sf-card, .btn-primary { transition:none; } }
+
+/* ---------- NEWSLETTER (added 2026-11-05) ---------- */
+.sf-herolink { margin-top:1.25rem; font-size:.9rem; color:rgba(255,255,255,.85); }
+.sf-herolink a { color:#c084fc; }
+section.sf-newsletter { background:var(--bg); border-top:1px solid var(--line); padding:4rem 0; }
+#sf-newsletter { scroll-margin-top:calc(var(--header-h) + 1rem); }
+.sf-newsletter-inner { max-width:68ch; }
+.sf-newsletter-lede { font-size:1rem; color:var(--muted); line-height:1.8; }
+.sf-newsletter-list { list-style:none; margin:1rem 0 1.5rem; padding:0; }
+.sf-newsletter-list li { position:relative; font-size:.92rem; color:var(--muted); line-height:1.7; padding-left:1.15rem; margin-bottom:.45rem; }
+.sf-newsletter-list li::before { content:''; position:absolute; left:0; top:.65em; width:5px; height:5px; border-radius:50%; background:#fdb926; }

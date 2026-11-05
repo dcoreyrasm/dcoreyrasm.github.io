@@ -831,6 +831,7 @@ main > section:nth-of-type(3n) .section-label:not(.pop-label)::before { backgrou
 .list-signup-option.gold { border-left-color:var(--pop-gold); }
 .list-signup-option.teal { border-left-color:var(--pop-teal); }
 .list-signup-option.rose { border-left-color:var(--pop-rose); }
+.list-signup-option.violet { border-left-color:#a855f7; }
 .list-signup-option:hover { border-color:var(--coral); }
 .list-signup-option:has(input:checked) { border-color:var(--coral); background:color-mix(in srgb, var(--coral) 9%, var(--bg2)); }
 .list-signup-option:has(input:focus-visible) { outline:2px solid var(--coral); outline-offset:2px; }
