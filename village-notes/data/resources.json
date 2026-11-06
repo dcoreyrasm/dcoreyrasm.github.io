@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-31T18:05:36.707Z",
+  "generated": "2026-11-06T00:13:31.470Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 845,
+  "count": 846,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -11457,6 +11457,28 @@
       "lastVerified": "2026-10-13",
       "foodType": "Food Bank / Food Pantry",
       "tags": "food bank / food pantry, food pantry, manchester"
+    },
+    {
+      "id": "recGuuxm7igvYahzY",
+      "name": "Make It Here CT Job Fair – Gateway Campus (November 12, 2026)",
+      "track": "Family & Childcare",
+      "category": "Job Training Program",
+      "specificType": "One-day employer hiring event, not a training program. Open to adult job seekers; healthcare, behavioral health, human services, and other employers.",
+      "town": "New Haven",
+      "address": "20 Church Street, New Haven, CT",
+      "ages": "Job seekers and adults exploring career opportunities",
+      "hours": "Thursday, November 12, 2026, 10:00 AM–1:00 PM ET",
+      "cost": "Free; no preregistration required",
+      "website": "https://portal.ct.gov/dol/divisions/american-job-centers/recruitment-events?language=en_US",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-05",
+      "notes": "Official CT Department of Labor listing confirms November 12 Gateway Campus job fair. Event flyer and organizer post supplied by user confirm 10 AM–1 PM, 20 Church Street, no preregistration, bring multiple résumés and photo ID; Temple Street Garage parking ticket may be validated at security desk. Event focus: healthcare and behavioral services. Official general event calendar, not an event-specific registration page. Category is approximate because directory lacks a Job Fair category.",
+      "registrationStatus": "Open",
+      "programYear": "November 2026",
+      "lastVerified": "2026-11-05",
+      "event": "Make It Here CT Job Fair, November 12, 10 AM–1 PM; walk-in, no registration",
+      "eventDate": "2026-11-12",
+      "tags": "job fair, jobs, hiring, new haven, employment, resume, healthcare, behavioral health, career"
     },
     {
       "id": "recmob78YwwnNRIEq",

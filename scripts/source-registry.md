@@ -290,7 +290,6 @@ now.
   yourclosetormine.com               1  2026-10-14   Family & Childcare
   cpacinc.org                        1  2026-10-27   Family & Childcare
   cttechact.com                      1  2026-10-27   Family & Childcare
-  portal.ct.gov                     21  2026-10-31   Elder Care, Family & Childcare, Food & Basic Needs, Pet Care & Resources, Teens & High School
   onceuponachild.com                 8  2026-10-31   Family & Childcare
   kidsignmentsct.com                 2  2026-10-31   Family & Childcare
   accessinct.org                     1  2026-10-31   Family & Childcare
@@ -306,6 +305,7 @@ now.
   stjohnsfamilycenter.org            1  2026-10-31   Food & Basic Needs
   thechildrensattic.com              1  2026-10-31   Family & Childcare
   fccog.org                          1  2026-10-31   Family & Childcare
+  portal.ct.gov                     22  2026-11-05   Elder Care, Family & Childcare, Food & Basic Needs, Pet Care & Resources, Teens & High School
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -330,7 +330,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 434 of 845 listings (51%) carry a Website, so
+Only 435 of 846 listings (51%) carry a Website, so
 everything above is built from that third of the directory. The other
 411 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
