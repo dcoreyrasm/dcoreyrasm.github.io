@@ -9,6 +9,10 @@ only has the GitHub repo. It is under `_tools/`, which Jekyll ignores, so it is 
 
 Format: `YYYY-MM-DD | theme | Claude feature; ChatGPT feature; Copilot feature; Gemini feature`
 
+## Prompts queued to feature (Darice approved; use in the next issue, then remove the line)
+
+- Plan a Short Demo Video for a Resource | https://www.daricecorey.com/prompts/demo-video-script-for-a-resource/ | already published and verified live 2026-11-06, so it can be linked from the issue's "Get the full prompt" button as is. Queued 2026-11-06.
+
 ## Issues so far
 
 2026-06-27 | Turn a chat into a finished thing | Claude Artifacts; ChatGPT Canvas; Copilot slash-reference in Word; Gemini Help me write
