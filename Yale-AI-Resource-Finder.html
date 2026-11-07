@@ -273,7 +273,7 @@
   <footer>
     <p>Resources are decentralized and change often. Confirm tool availability, pricing, and data classification on the linked pages.</p>
     <p><span class="badge badge-netid">NetID</span> Requires your Yale login. &nbsp; <span class="badge badge-free">Free</span> No cost to you personally. &nbsp; <span class="badge badge-paid">Paid</span> Billed to your department's budget, not you. &nbsp; <span class="badge badge-high">High-risk data OK</span> Cleared for sensitive Yale data, but always check the linked page before uploading anything you're unsure about.</p>
-    <p class="updated-note">This was last updated in September 2026 and reflects Yale's Claude Enterprise rollout and the current Clarity Platform roadmap. If a question doesn't fit, the "Ask AI at Yale" chatbot on ai.yale.edu can help too.</p>
+    <p class="updated-note">This was last updated in November 2026 from ai.yale.edu. It reflects current tool pricing, approved data levels, and the October 2026 Clarity refresh. If a question doesn't fit, the "Ask AI at Yale" chatbot on ai.yale.edu can help too.</p>
   </footer>
 </div>
 
@@ -302,9 +302,9 @@ const categories = [
         title: 'Nothing private or confidential',
         desc: 'General writing, brainstorming, or questions. No Yale records, no personal data about students, patients, or staff.',
         results: [
-          { name: 'Clarity Platform', url: 'https://ai-chat.yale.edu/', desc: "Yale's own chatbot, free for everyone, with GPT, Claude, and Gemini models and no chat limits.", badges: [NETID, FREE] },
-          { name: 'Copilot Chat (Web tab)', url: 'https://copilot.microsoft.com/', desc: 'Free Microsoft Copilot Chat, log in with your Yale email. Students use the M365 link below.', badges: [NETID, FREE] },
-          { name: 'Google Gemini for Education', url: 'https://gemini.google.com', desc: 'Log in with your Yale Google Workspace (EliApps) account.', badges: [NETID, FREE] }
+          { name: 'Clarity Platform', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform', desc: "Yale's own chatbot, free for students, faculty, and staff, with models from OpenAI, Anthropic, and Google and no chat limits. Its October 2026 refresh added voice, image generation, and organization tools. Web search with the Radiate agent is for low-risk data only.", badges: [NETID, FREE] },
+          { name: 'Copilot Chat (Web tab)', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/copilot-chat', desc: 'Free Microsoft Copilot Chat with your Yale login, for ages 18 and up. The Web tab is approved for low- and moderate-risk data.', badges: [NETID, FREE] },
+          { name: 'Google Gemini and NotebookLM', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/google-gemini', desc: 'Drafting and summarizing with Gemini, and document analysis with NotebookLM, through your Yale Google Workspace (EliApps) account. Approved for moderate-risk data, ages 18 and up.', badges: [NETID, FREE] }
         ]
       },
       {
@@ -313,8 +313,8 @@ const categories = [
         desc: 'Financial, HR, student, or research records. Not patient health information, that has its own option below.',
         results: [
           { name: 'Clarity Platform', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform', desc: 'Appropriate for low, moderate, and most high-risk data. See the Security page before uploading anything sensitive.', badges: [NETID, FREE, HIGH] },
-          { name: 'Copilot Chat (Work tab)', url: 'https://copilot.microsoft.com/', desc: 'Use the Work search specifically; the Web tab is moderate-risk only.', badges: [NETID, FREE, HIGH] },
-          { name: 'Claude Enterprise', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/claude', desc: "For ongoing or agentic work (Claude Chat, Code, Cowork), request Yale's licensed Claude Enterprise seat.", badges: [NETID, PAID, HIGH] }
+          { name: 'Copilot Chat (Work tab)', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/copilot-chat', desc: "The Work tab is approved for high-risk data; the Web tab is not. Yale's tool list pairs high-risk use with a paid Microsoft 365 Copilot license, so confirm your setup on the linked page.", badges: [NETID, HIGH] },
+          { name: 'Claude Enterprise', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/claude', desc: 'Claude Chat, Code, and Cowork for faculty and staff, and for students with school or department sponsorship. Standard is $20 a month and Premium is $50 a month, billed to a department.', badges: [NETID, PAID, HIGH] }
         ]
       },
       {
@@ -324,7 +324,7 @@ const categories = [
         results: [
           { name: 'Health Sciences AI Toolkit', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/yale-standards-for-using-ai-tools-and-chatbots-in-health-sciences', desc: "Yale's standards for using AI tools and chatbots with health sciences data. Start here before using AI with any patient data.", badges: [NETID] },
           { name: 'Clarity chatbots approved for patient data', url: 'https://ai.yale.edu/posts/2026-08-13-now-available-new-clarity-chatbots-approved-for-ephi-use-cases', desc: 'Only specific Clarity chatbots are cleared for patient health data, not the platform generally. This lists which ones, plus how to request approval for others.', badges: [NETID, FREE] },
-          { name: 'Claude Enterprise (HIPAA / zero data retention)', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/claude', desc: 'A separate, dedicated Claude environment with additional controls. Cowork is not available in this environment.', badges: [NETID, PAID] }
+          { name: 'Claude Enterprise (HIPAA / zero data retention)', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/claude', desc: 'A separate, dedicated environment with Claude Chat and Code for patient health data or work that requires zero data retention. Cowork is not available here.', badges: [NETID, PAID] }
         ]
       }
     ]
@@ -332,12 +332,13 @@ const categories = [
   {
     id: 'm365',
     icon: '&#128196;',
-    title: 'Use AI in Word, Excel, PowerPoint, Outlook, or Teams',
-    desc: 'Microsoft 365 Copilot and related tools.',
+    title: 'Use AI in Microsoft 365 or Zoom',
+    desc: 'Word, Excel, PowerPoint, Outlook, Teams, Power BI, and Zoom meetings.',
     results: [
-      { name: 'Microsoft 365 Copilot', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/microsoft-365-copilot', desc: 'AI assistant built into Word, Excel, PowerPoint, Outlook, and Teams, staff and faculty, billed per user. Copilot Studio (custom agents) is included with this license.', badges: [NETID, PAID, HIGH] },
-      { name: 'Power BI Copilot', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/power-bi-copilot', desc: 'Generative AI for extracting and sharing insights in Power BI Desktop and Service.', badges: [NETID, HIGH] },
-      { name: 'Teams Premium', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/teams-premium', desc: 'AI-powered meeting help before, during, and after Teams meetings, staff and faculty, billed per user.', badges: [NETID, PAID] }
+      { name: 'Microsoft 365 Copilot', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/microsoft-365-copilot', desc: 'AI assistant built into Word, Excel, PowerPoint, Outlook, and Teams for faculty and staff, $18 per user per month. Copilot Studio for building custom agents is included, approved for high-risk data except patient health data.', badges: [NETID, PAID, HIGH] },
+      { name: 'Power BI Copilot', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/power-bi-copilot', desc: 'Generative AI for exploring data, writing DAX, and sharing insights in Power BI Desktop and Service. Included with a Fabric Power BI Premium license.', badges: [NETID, HIGH] },
+      { name: 'Teams Premium', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/teams-premium', desc: 'AI meeting help before, during, and after Teams meetings for faculty and staff, $1.88 per user per month.', badges: [NETID, PAID, HIGH] },
+      { name: 'Zoom AI Companion', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/zoom-ai-companion', desc: 'Meeting transcripts, summaries, and next steps, on by default with your Yale Zoom account. Only hosts and co-hosts can start a summary. Approved for high-risk data.', badges: [NETID, FREE, HIGH] }
     ]
   },
   {
@@ -347,9 +348,9 @@ const categories = [
     desc: 'Write, review, or debug code with an AI assistant.',
     results: [
       { name: 'Claude Code', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/claude', desc: "Included with a Claude Enterprise license. Yale's preferred coding agent for most use cases.", badges: [NETID, PAID, HIGH] },
-      { name: 'GitHub Copilot', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/github-copilot', desc: 'AI coding assistant integrated into VS Code, JetBrains, and other editors, staff and faculty, billed per user.', badges: [NETID, PAID] },
+      { name: 'GitHub Copilot', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/github-copilot', desc: 'AI coding assistant in VS Code and JetBrains for faculty and staff, $19 a month. Approved for moderate-risk data.', badges: [NETID, PAID] },
       { name: 'AI Coding Tools on YCRC Systems', url: 'https://docs.ycrc.yale.edu/ai/aicodingtools/', desc: 'Recommendations and data-security guidance for using AI coding tools on Yale Center for Research Computing clusters.', badges: [NETID] },
-      { name: 'Portkey', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform/api#portkey', desc: 'API gateway for building your own tools against GPT, Gemini, Claude, and other models, billed by usage.', badges: [NETID] },
+      { name: 'Portkey', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform/api#portkey', desc: 'API gateway for building your own tools with GPT, Gemini, Claude, and other models. Billed by usage to a department account and approved for high-risk data.', badges: [NETID, PAID, HIGH] },
       { name: 'Azure AI', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/azure-ai', desc: "Microsoft's Azure-hosted models for building applications. Requires a Security Planning Assessment per app.", badges: [NETID] },
       { name: 'AWS Bedrock', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/aws-bedrock', desc: "Amazon's managed foundation-model service. Requires a Security Planning Assessment per app.", badges: [NETID] }
     ]
@@ -376,7 +377,7 @@ const categories = [
         title: 'Literature search and discovery',
         desc: 'Find and synthesize peer-reviewed research.',
         results: [
-          { name: 'Consensus', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/consensus', desc: 'AI-powered search engine for peer-reviewed literature reviews with citations. Free through 12/31/2026.', badges: [NETID, FREE] },
+          { name: 'Consensus', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/consensus', desc: 'AI search engine for peer-reviewed research with citations. Free trial through December 31, 2026; sign up at consensus.app with your Yale email. Approved for low-risk data only.', badges: [NETID, FREE] },
           { name: 'Yale Library — Using AI in Research', url: 'https://library.yale.edu/help-and-research-support/research-support/using-ai-research', desc: 'Guidance for researchers, the Generative AI for Research Guide, and how to book a consultation with a library specialist.', badges: [] }
         ]
       },
@@ -445,7 +446,8 @@ const categories = [
         desc: 'License requests, migration, and access.',
         results: [
           { name: 'Request a Claude Enterprise License', url: 'https://yale.service-now.com/it?id=nr_esc_sc_cat_item&sys_id=5182af5d3b7e035cdbaacaac24e45a4c', desc: 'Submit a license request; Claude requires department or faculty sponsorship.', badges: [NETID] },
-          { name: 'Migrate a Personal Claude Account', url: 'https://yale.service-now.com/kb?id=kb_article_view&sysparm_article=KB0028385&table=kb_knowledge&searchTerm=KB0028385', desc: 'Read this before merging a personal Claude account. The merge is irreversible and some data cannot transfer.', badges: [NETID] },
+          { name: 'Migrate a Personal Claude Account', url: 'https://yale.service-now.com/kb?id=kb_article_view&sysparm_article=KB0028385&table=kb_knowledge&searchTerm=KB0028385', desc: 'Read this before merging a personal Claude account. The merge cannot be undone, and custom skills and connected apps do not transfer.', badges: [NETID] },
+          { name: 'Manage an Existing Personal Claude License', url: 'https://yale.service-now.com/kb?id=kb_article_view&sysparm_article=KB0028389', desc: 'What to do with a personal Claude subscription you already pay for.', badges: [NETID] },
           { name: 'Getting Started with Claude at Yale', url: 'https://yale.service-now.com/kb?id=kb_article_view&sysparm_article=KB0028386', desc: 'Which environment to use (standard vs. HIPAA/zero data retention) and how to access each.', badges: [NETID] }
         ]
       },
@@ -468,6 +470,18 @@ const categories = [
           { name: 'Ask AI at Yale', url: 'https://ai.yale.edu/', desc: "The AI at Yale site has a built-in chatbot ('Ask AI at Yale') that can answer many quick questions directly.", badges: [] }
         ]
       }
+    ]
+  },
+  {
+    id: 'learn',
+    icon: '&#128218;',
+    title: 'Build my AI skills',
+    desc: 'Courses, beginner guides, trainings, and communities.',
+    results: [
+      { name: 'AI for Professional Development', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/ai-for-professional-development', desc: 'Curated LinkedIn Learning courses by career area, such as communications, finance, HR, and IT. Completed courses show on your Workday Learning transcript.', badges: [NETID, FREE] },
+      { name: 'Learn About AI', url: 'https://ai.yale.edu/guidance/learn-about-ai', desc: 'Beginner resources, including a Workday course, short videos on chatbots and prompting, and a glossary of AI terms.', badges: [] },
+      { name: 'Event Series and Trainings', url: 'https://ai.yale.edu/find-ai-events/event-series-and-trainings', desc: 'AI trainings and recurring events offered by programs across Yale, including YCRC and the Library.', badges: [] },
+      { name: 'AI Communities of Practice', url: 'https://ai.yale.edu/opportunities/ai-communities-of-practice', desc: 'Yale groups that share what they are learning about AI, with who can join and who to contact.', badges: [] }
     ]
   },
   {
