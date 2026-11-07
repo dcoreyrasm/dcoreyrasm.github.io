@@ -990,7 +990,6 @@ now.
   brooklynrobotfoundry.com           1  2026-09-10   Family & Childcare
   ctpaidleave.org                    1  2026-09-16   Family & Childcare
   bgchartford.org                    5  2026-09-19   Family & Childcare
-  onha.yale.edu                      2  2026-09-19   Family & Childcare, Teens & High School
   flhs.fairfieldschools.org          1  2026-09-19   Teens & High School
   fwhs.fairfieldschools.org          1  2026-09-19   Teens & High School
   ghs.greenwichschools.org           1  2026-09-19   Teens & High School
@@ -1048,6 +1047,13 @@ now.
   thechildrensattic.com              1  2026-10-31   Family & Childcare
   fccog.org                          1  2026-10-31   Family & Childcare
   portal.ct.gov                     22  2026-11-05   Elder Care, Family & Childcare, Food & Basic Needs, Pet Care & Resources, Teens & High School
+  onha.yale.edu                      4  2026-11-07   Family & Childcare, Teens & High School
+  careandshareofel.org               1  2026-11-07   Food & Basic Needs
+  dnec.org                           1  2026-11-07   Family & Childcare
+  favarh.org                         1  2026-11-07   Family & Childcare
+  independencenorthwest.org          1  2026-11-07   Family & Childcare
+  easternusa.salvationarmy.org       1  2026-11-07   Family & Childcare
+  townandcountryelc.com              1  2026-11-07   Family & Childcare
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -1072,9 +1078,9 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 435 of 846 listings (51%) carry a Website, so
+Only 443 of 852 listings (52%) carry a Website, so
 everything above is built from that third of the directory. The other
-411 have no URL recorded at all, which means nobody -- not you,
+409 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
 unverifiable in their current state.
 
@@ -1082,7 +1088,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-35 of the 283 domains here have never had a Last Verified on
+35 of the 289 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 
@@ -1100,17 +1106,17 @@ between sessions: read them fresh from this section each time this brief is
 given to you, and if you are working from a remembered figure you are working
 from a gap that has already moved.
 
-846 listings across 134 Connecticut towns of 169.
+852 listings across 158 Connecticut towns of 169.
 
 That breadth is real. The depth behind it is the problem:
 
-  a website              435 / 846   51%   the single most valuable gap: without a URL nobody can ever re-check the listing
-  operating hours        187 / 846   22%   the specific promise on the front of the page
-  a real cost note       131 / 846   15%   excludes the state-fee boilerplate
-  a real waitlist note    59 / 846    7%   excludes the "contact the program directly" boilerplate
-  a verified date        376 / 846   44%   without one we cannot tell fresh from forgotten
-  a phone or email       719 / 846   85%
-  services tagged        692 / 846   82%   what makes a listing findable beyond its one category
+  a website              443 / 852   52%   the single most valuable gap: without a URL nobody can ever re-check the listing
+  operating hours        193 / 852   23%   the specific promise on the front of the page
+  a real cost note       138 / 852   16%   excludes the state-fee boilerplate
+  a real waitlist note    61 / 852    7%   excludes the "contact the program directly" boilerplate
+  a verified date        384 / 852   45%   without one we cannot tell fresh from forgotten
+  a phone or email       725 / 852   85%
+  services tagged        697 / 852   82%   what makes a listing findable beyond its one category
 
 A listing can carry a value and still say nothing. Two boilerplate lines were
 written onto hundreds of records by the original state import -- "Contact the
@@ -1123,10 +1129,10 @@ that sounds more specific than what you actually know.
 
 WEBSITE COVERAGE BY TRACK
 
-  Family & Childcare      587 listings, 176 with a website (30%)
-  Teens & High School      87 listings,  87 with a website (100%)
+  Family & Childcare      590 listings, 181 with a website (31%)
+  Teens & High School      89 listings,  89 with a website (100%)
   Pet Care & Resources     61 listings,  61 with a website (100%)
-  Food & Basic Needs       59 listings,  59 with a website (100%)
+  Food & Basic Needs       60 listings,  60 with a website (100%)
   Elder Care               52 listings,  52 with a website (100%)
 
 WHY THE WEBSITE COLUMN COMES FIRST
@@ -1138,10 +1144,10 @@ Every other gap here can be filled later. That one compounds.
 
 AND THE GAP IS NOT WHERE IT LOOKS
 
-411 listings have no website. 411 of them -- every single one -- came from the
+409 listings have no website. 409 of them -- every single one -- came from the
 one bulk import of Connecticut Office of Early Childhood childcare providers,
-which arrived without URLs. Of the 318 records written by
-research, 318 carry a website: 100%.
+which arrived without URLs. Of the 324 records written by
+research, 324 carry a website: 100%.
 
 So this is not a habit to correct. It is a bounded backfill of a known set,
 and the set is licensed childcare providers whose details came from the state.
@@ -1150,5 +1156,5 @@ lookup has a record. Work through them by town, and record Last Verified as
 you go so the standing registry starts reaching them.
 
 That is worth more per hour than finding a new listing, because it converts
-411 permanently unverifiable rows into rows that can be maintained.
+409 permanently unverifiable rows into rows that can be maintained.
 ```

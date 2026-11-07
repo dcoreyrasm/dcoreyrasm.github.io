@@ -248,7 +248,6 @@ now.
   brooklynrobotfoundry.com           1  2026-09-10   Family & Childcare
   ctpaidleave.org                    1  2026-09-16   Family & Childcare
   bgchartford.org                    5  2026-09-19   Family & Childcare
-  onha.yale.edu                      2  2026-09-19   Family & Childcare, Teens & High School
   flhs.fairfieldschools.org          1  2026-09-19   Teens & High School
   fwhs.fairfieldschools.org          1  2026-09-19   Teens & High School
   ghs.greenwichschools.org           1  2026-09-19   Teens & High School
@@ -306,6 +305,13 @@ now.
   thechildrensattic.com              1  2026-10-31   Family & Childcare
   fccog.org                          1  2026-10-31   Family & Childcare
   portal.ct.gov                     22  2026-11-05   Elder Care, Family & Childcare, Food & Basic Needs, Pet Care & Resources, Teens & High School
+  onha.yale.edu                      4  2026-11-07   Family & Childcare, Teens & High School
+  careandshareofel.org               1  2026-11-07   Food & Basic Needs
+  dnec.org                           1  2026-11-07   Family & Childcare
+  favarh.org                         1  2026-11-07   Family & Childcare
+  independencenorthwest.org          1  2026-11-07   Family & Childcare
+  easternusa.salvationarmy.org       1  2026-11-07   Family & Childcare
+  townandcountryelc.com              1  2026-11-07   Family & Childcare
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -330,9 +336,9 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 435 of 846 listings (51%) carry a Website, so
+Only 443 of 852 listings (52%) carry a Website, so
 everything above is built from that third of the directory. The other
-411 have no URL recorded at all, which means nobody -- not you,
+409 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
 unverifiable in their current state.
 
@@ -340,7 +346,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-35 of the 283 domains here have never had a Last Verified on
+35 of the 289 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```
