@@ -253,6 +253,42 @@
   footer p { margin: 0 0 6px; }
   footer .badge-netid { vertical-align: middle; }
 
+
+  .option-btn[aria-pressed="true"] {
+    border: 2px solid var(--yale-blue);
+    background: var(--yale-blue-light);
+    padding: 15px 17px;
+  }
+  .check {
+    margin-left: auto;
+    width: 22px; height: 22px; flex: none;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    background: #fff;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 14px; color: #fff;
+  }
+  .option-btn[aria-pressed="true"] .check { background: var(--yale-blue); border-color: var(--yale-blue); }
+  .multi-hint { font-size: 14px; color: var(--muted); margin: -12px 0 18px; }
+  .continue-row { margin-top: 22px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .continue-btn {
+    background: var(--yale-blue); color: #fff; border: none; border-radius: 999px;
+    padding: 11px 26px; font-family: inherit; font-size: 15px; font-weight: 600; cursor: pointer;
+  }
+  .continue-btn:hover { background: var(--yale-blue-dark); }
+  .continue-btn:disabled { background: #9aa8b8; cursor: not-allowed; }
+  .selected-count { font-size: 14px; color: var(--muted); }
+  .result-section { margin-top: 26px; }
+  .result-section:first-of-type { margin-top: 8px; }
+  .section-title {
+    font-size: 16px; font-weight: 700; color: var(--ink);
+    margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border);
+  }
+  .section-title .sub { font-weight: 400; color: var(--muted); }
+  .also-line { font-size: 13.5px; color: var(--muted); margin: 0 0 12px; }
+  .also-line a { color: var(--accent); font-weight: 600; }
+  .question:focus, .results-title:focus { outline: none; }
+
   .updated-note {
     font-size: 12px;
     color: var(--muted);
@@ -266,14 +302,14 @@
   <h1>Yale AI Resource Finder</h1>
   <p class="intro">Find the right Yale AI guidance, tool, or support in a few clicks.</p>
   <p class="intro">Yale's AI information lives across many sites: <strong>AI at Yale</strong>, the <strong>Poorvu Center</strong>, the <strong>Library</strong>, <strong>Research Computing</strong>, the <strong>University Data Office</strong>, and <strong>Cybersecurity</strong>. This tool asks a couple of plain questions and points you to the page that actually answers yours. Every link goes to an official Yale page.</p>
-  <p class="hint">Press <kbd>Esc</kbd> to start over.</p>
+  <p class="hint">Trying to do more than one thing? Choose everything that applies. Press <kbd>Esc</kbd> to start over.</p>
 
   <div class="panel" id="panel"></div>
 
   <footer>
     <p>Resources are decentralized and change often. Confirm tool availability, pricing, and data classification on the linked pages.</p>
     <p><span class="badge badge-netid">NetID</span> Requires your Yale login. &nbsp; <span class="badge badge-free">Free</span> No cost to you personally. &nbsp; <span class="badge badge-paid">Paid</span> Billed to your department's budget, not you. &nbsp; <span class="badge badge-high">High-risk data OK</span> Cleared for sensitive Yale data, but always check the linked page before uploading anything you're unsure about.</p>
-    <p class="updated-note">This was last updated in November 2026 from ai.yale.edu. It reflects current tool pricing, approved data levels, and the October 2026 Clarity refresh. If a question doesn't fit, the "Ask AI at Yale" chatbot on ai.yale.edu can help too.</p>
+    <p class="updated-note">This was last updated in November 2026 from ai.yale.edu, and now lets you choose more than one task. It reflects current tool pricing, approved data levels, and the October 2026 Clarity refresh. If a question doesn't fit, the "Ask AI at Yale" chatbot on ai.yale.edu can help too.</p>
   </footer>
 </div>
 
@@ -497,89 +533,146 @@ const categories = [
   }
 ];
 
-/* ---------- Rendering ---------- */
+/* ---------- Rendering ----------
+   Step 1 is multi-select: people can pick every task they have in mind.
+   Each chosen category that has a follow-up question gets its own short
+   question screen. Results are grouped by task, and a resource that fits
+   more than one task appears once, with a pointer from later groups.
+------------------------------------ */
 
 const panel = document.getElementById('panel');
-let state = { step: 'root', categoryId: null };
+let state = { selected: [], answers: {}, q: 0 };
 
-function renderRoot() {
-  state = { step: 'root', categoryId: null };
+const catById = id => categories.find(c => c.id === id);
+const ordered = () => categories.filter(c => state.selected.includes(c.id));
+const followUps = () => ordered().filter(c => c.question);
+
+function focusFirst(sel) {
+  const el = panel.querySelector(sel);
+  if (el) { el.setAttribute('tabindex', '-1'); el.focus(); }
+}
+
+function renderRoot(keep) {
+  if (!keep) state = { selected: [], answers: {}, q: 0 };
+  state.onResults = false;
   let html = `<div class="step-label">Step 1 of 2</div>
-    <p class="question">What are you trying to do?</p>
-    <div class="options">`;
+    <p class="question" id="q-root">What are you trying to do?</p>
+    <p class="multi-hint">Choose all that apply.</p>
+    <div class="options" role="group" aria-labelledby="q-root">`;
   categories.forEach(cat => {
-    html += `<button class="option-btn" onclick="selectCategory('${cat.id}')">
-      <div class="option-title">${cat.icon} ${cat.title}</div>
+    const on = state.selected.includes(cat.id);
+    html += `<button class="option-btn" aria-pressed="${on}" onclick="toggleCategory('${cat.id}')">
+      <div class="option-title">${cat.icon} ${cat.title}<span class="check" aria-hidden="true">${on ? '&#10003;' : ''}</span></div>
       <div class="option-desc">${cat.desc}</div>
     </button>`;
   });
-  html += `</div>`;
+  const n = state.selected.length;
+  html += `</div>
+    <div class="continue-row">
+      <button class="continue-btn" onclick="startFollowUps()" ${n ? '' : 'disabled'}>Continue</button>
+      <span class="selected-count" aria-live="polite">${n ? n + ' selected' : 'Nothing selected yet'}</span>
+    </div>`;
   panel.innerHTML = html;
 }
 
-function selectCategory(id) {
-  const cat = categories.find(c => c.id === id);
-  state = { step: cat.question ? 'question' : 'results', categoryId: id, optionId: null };
-  if (cat.question) {
-    renderQuestion(cat);
-  } else {
-    renderResults(cat.title, cat.desc, cat.results);
-  }
+function toggleCategory(id) {
+  const i = state.selected.indexOf(id);
+  if (i >= 0) { state.selected.splice(i, 1); delete state.answers[id]; }
+  else state.selected.push(id);
+  const y = window.scrollY;
+  renderRoot(true);
+  window.scrollTo(0, y);
+  const btn = [...panel.querySelectorAll('.option-btn')][categories.findIndex(c => c.id === id)];
+  if (btn) btn.focus();
 }
 
-function renderQuestion(cat) {
-  let html = `<div class="back-row"><button class="back-btn" onclick="renderRoot()">&larr; Back</button></div>
-    <div class="step-label">Step 2 of 2</div>
-    <p class="question">${cat.question}</p>
-    <div class="options">`;
+function startFollowUps() {
+  if (!state.selected.length) return;
+  state.q = 0;
+  followUps().length ? renderQuestion() : renderResults();
+}
+
+function renderQuestion() {
+  state.onResults = false;
+  const qs = followUps();
+  const cat = qs[state.q];
+  const label = qs.length > 1 ? `Step 2 of 2 &middot; Question ${state.q + 1} of ${qs.length}` : 'Step 2 of 2';
+  let html = `<div class="back-row"><button class="back-btn" onclick="goBack()">&larr; Back</button></div>
+    <div class="step-label">${label}</div>
+    <p class="results-sub" style="margin:0 0 4px">${cat.icon} ${cat.title}</p>
+    <p class="question" id="q-${cat.id}">${cat.question}</p>
+    <div class="options" role="group" aria-labelledby="q-${cat.id}">`;
   cat.options.forEach(opt => {
-    html += `<button class="option-btn" onclick="selectOption('${cat.id}','${opt.id}')">
+    const on = state.answers[cat.id] === opt.id;
+    html += `<button class="option-btn" aria-pressed="${on}" onclick="selectOption('${cat.id}','${opt.id}')">
       <div class="option-title">${opt.title}</div>
       <div class="option-desc">${opt.desc}</div>
     </button>`;
   });
   html += `</div>`;
   panel.innerHTML = html;
+  focusFirst('.question');
 }
 
 function selectOption(catId, optId) {
-  const cat = categories.find(c => c.id === catId);
-  const opt = cat.options.find(o => o.id === optId);
-  state = { step: 'results', categoryId: catId, optionId: optId };
-  renderResults(opt.title, cat.title + ' &rsaquo; ' + opt.desc, opt.results, () => renderQuestion(cat));
+  state.answers[catId] = optId;
+  const qs = followUps();
+  if (state.q < qs.length - 1) { state.q++; renderQuestion(); }
+  else renderResults();
 }
 
-function renderResults(title, sub, results, backFn) {
+function renderResults() {
+  const cats = ordered();
+  const multi = cats.length > 1;
+  const seen = new Map();
   let html = `<div class="back-row"><button class="back-btn" onclick="goBack()">&larr; Back</button></div>
-    <p class="results-title">${title}</p>
-    <p class="results-sub">${sub}</p>`;
-  results.forEach(r => {
-    html += `<a class="resource-card" href="${r.url}" target="_blank" rel="noopener">
-      <div class="resource-head">
-        <span class="resource-name">${r.name}</span>
-        <span class="resource-arrow">Visit page &rarr;</span>
-      </div>
-      <div class="resource-desc">${r.desc}</div>
-      <div class="badges">${r.badges.join(' ')}</div>
-    </a>`;
+    <p class="results-title">${multi ? 'Your starting points' : (cats[0].question ? catById(cats[0].id).options.find(o => o.id === state.answers[cats[0].id]).title : cats[0].title)}</p>
+    <p class="results-sub">${multi ? 'Grouped by what you said you are trying to do. A resource that fits more than one task is listed once.' : (cats[0].question ? cats[0].title + ' &rsaquo; ' + catById(cats[0].id).options.find(o => o.id === state.answers[cats[0].id]).desc : cats[0].desc)}</p>`;
+  cats.forEach(cat => {
+    const opt = cat.question ? cat.options.find(o => o.id === state.answers[cat.id]) : null;
+    const results = opt ? opt.results : cat.results;
+    if (multi) {
+      html += `<section class="result-section"><h2 class="section-title">${cat.icon} ${cat.title}${opt ? ` <span class="sub">&rsaquo; ${opt.title}</span>` : ''}</h2>`;
+    }
+    const repeats = [];
+    results.forEach(r => {
+      const key = r.url + '|' + r.name;
+      if (seen.has(key)) { repeats.push(r); return; }
+      seen.set(key, cat.title);
+      html += `<a class="resource-card" href="${r.url}" target="_blank" rel="noopener">
+        <div class="resource-head">
+          <span class="resource-name">${r.name}</span>
+          <span class="resource-arrow">Visit page &rarr;</span>
+        </div>
+        <div class="resource-desc">${r.desc}</div>
+        <div class="badges">${r.badges.join(' ')}</div>
+      </a>`;
+    });
+    if (repeats.length) {
+      html += `<p class="also-line">Also fits this task: ${repeats.map(r => `<a href="${r.url}" target="_blank" rel="noopener">${r.name}</a>`).join(', ')} (listed above).</p>`;
+    }
+    if (multi) html += `</section>`;
   });
   html += `<div class="start-over-row"><button class="start-over-btn" onclick="renderRoot()">Start Over</button></div>`;
   panel.innerHTML = html;
+  state.q = Math.max(0, followUps().length - 1);
+  state.onResults = true;
+  focusFirst('.results-title');
 }
 
 function goBack() {
-  const cat = categories.find(c => c.id === state.categoryId);
-  if (state.optionId && cat.question) {
-    renderQuestion(cat);
-  } else {
-    renderRoot();
+  const qs = followUps();
+  if (state.onResults) {
+    state.onResults = false;
+    if (qs.length) { state.q = qs.length - 1; renderQuestion(); } else renderRoot(true);
+    return;
   }
+  if (state.q > 0) { state.q--; renderQuestion(); }
+  else renderRoot(true);
 }
 
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    renderRoot();
-  }
+  if (e.key === 'Escape') renderRoot();
 });
 
 renderRoot();
