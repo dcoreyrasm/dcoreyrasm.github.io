@@ -285,6 +285,8 @@
     margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border);
   }
   .section-title .sub { font-weight: 400; color: var(--muted); }
+  .notice { font-size: 14px; background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 0 0 14px; color: var(--ink); }
+  .notice-strong { border-left-color: #9a4313; background: #fff8f2; }
   .also-line { font-size: 13.5px; color: var(--muted); margin: 0 0 12px; }
   .also-line a { color: var(--accent); font-weight: 600; }
   .question:focus, .results-title:focus { outline: none; }
@@ -302,14 +304,14 @@
   <h1>Yale AI Resource Finder</h1>
   <p class="intro">Find the right Yale AI guidance, tool, or support in a few clicks.</p>
   <p class="intro">Yale's AI information lives across many sites: <strong>AI at Yale</strong>, the <strong>Poorvu Center</strong>, the <strong>Library</strong>, <strong>Research Computing</strong>, the <strong>University Data Office</strong>, and <strong>Cybersecurity</strong>. This tool asks a couple of plain questions and points you to the page that actually answers yours. Every link goes to an official Yale page.</p>
-  <p class="hint">Trying to do more than one thing? Choose everything that applies. Press <kbd>Esc</kbd> to start over.</p>
+  <p class="hint">Trying to do more than one thing, or asking about more than one tool? Choose everything that applies. Press <kbd>Esc</kbd> to start over.</p>
 
   <div class="panel" id="panel"></div>
 
   <footer>
     <p>Resources are decentralized and change often. Confirm tool availability, pricing, and data classification on the linked pages.</p>
     <p><span class="badge badge-netid">NetID</span> Requires your Yale login. &nbsp; <span class="badge badge-free">Free</span> No cost to you personally. &nbsp; <span class="badge badge-paid">Paid</span> Billed to your department's budget, not you. &nbsp; <span class="badge badge-high">High-risk data OK</span> Cleared for sensitive Yale data, but always check the linked page before uploading anything you're unsure about.</p>
-    <p class="updated-note">This was last updated in November 2026 from ai.yale.edu, and now lets you choose more than one task. It reflects current tool pricing, approved data levels, and the October 2026 Clarity refresh. If a question doesn't fit, the "Ask AI at Yale" chatbot on ai.yale.edu can help too.</p>
+    <p class="updated-note">This was last updated in November 2026 from ai.yale.edu, and now lets you choose more than one task and more than one answer to each question. It reflects current tool pricing, approved data levels, and the October 2026 Clarity refresh. If a question doesn't fit, the "Ask AI at Yale" chatbot on ai.yale.edu can help too.</p>
   </footer>
 </div>
 
@@ -405,7 +407,7 @@ const categories = [
         results: [
           { name: 'AI & Machine Learning at YCRC', url: 'https://docs.ycrc.yale.edu/ai/', desc: 'Overview of AI/ML workflows on YCRC clusters, GPU availability, and supported tools.', badges: [NETID] },
           { name: 'Ollama on YCRC Systems', url: 'https://docs.ycrc.yale.edu/ai/ollama/', desc: 'Run open-source LLMs locally on YCRC compute, including interactive, batch, and Jupyter workflows.', badges: [NETID, FREE] },
-          { name: 'Clarity API', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform/api', desc: 'Yale-managed access to closed-source models (Claude and others) with data security controls.', badges: [NETID] }
+          { name: 'Clarity API', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform/api', desc: 'Yale-managed API access to models such as Claude, for faculty, staff, and sponsored students with an approved use case. Unlike Clarity chat, API access is priced by usage; see the API pricing page.', badges: [NETID, PAID] }
         ]
       },
       {
@@ -454,8 +456,9 @@ const categories = [
     desc: 'What you can use, and how to use it well.',
     results: [
       { name: 'Student AI Toolkit', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/students', desc: 'The tools available to you as a student and how to access each one.', badges: [] },
+      { name: 'Clarity Platform', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform', desc: "Yale's own chatbot, free for students, with models from OpenAI, Anthropic, and Google. Approved for most high-risk data; web search with the Radiate agent is for low-risk data only.", badges: [NETID, FREE, HIGH] },
       { name: 'AI Guidance for Students', url: 'https://poorvucenter.yale.edu/learning/learning-resource-library/ai-guidance-for-students', desc: 'Strategies for using AI to support your own learning, developed with Yale students.', badges: [] },
-      { name: 'Google Gemini for Education', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/google-gemini', desc: 'Guided Learning, study guides, Deep Research, and NotebookLM, free with your EliApps account.', badges: [NETID, FREE] }
+      { name: 'Google Gemini for Education', url: 'https://ai.yale.edu/yales-ai-tools-and-resources/google-gemini', desc: 'Guided Learning, study guides, Deep Research, and NotebookLM, free with your EliApps account. Approved for moderate-risk data.', badges: [NETID, FREE] }
     ]
   },
   {
@@ -481,7 +484,7 @@ const categories = [
         title: 'Claude Enterprise',
         desc: 'License requests, migration, and access.',
         results: [
-          { name: 'Request a Claude Enterprise License', url: 'https://yale.service-now.com/it?id=nr_esc_sc_cat_item&sys_id=5182af5d3b7e035cdbaacaac24e45a4c', desc: 'Submit a license request; Claude requires department or faculty sponsorship.', badges: [NETID] },
+          { name: 'Request a Claude Enterprise License', url: 'https://yale.service-now.com/it?id=nr_esc_sc_cat_item&sys_id=5182af5d3b7e035cdbaacaac24e45a4c', desc: 'Licenses are not automatic: submit a request, billed to a department account. Students need school or department sponsorship.', badges: [NETID] },
           { name: 'Migrate a Personal Claude Account', url: 'https://yale.service-now.com/kb?id=kb_article_view&sysparm_article=KB0028385&table=kb_knowledge&searchTerm=KB0028385', desc: 'Read this before merging a personal Claude account. The merge cannot be undone, and custom skills and connected apps do not transfer.', badges: [NETID] },
           { name: 'Manage an Existing Personal Claude License', url: 'https://yale.service-now.com/kb?id=kb_article_view&sysparm_article=KB0028389', desc: 'What to do with a personal Claude subscription you already pay for.', badges: [NETID] },
           { name: 'Getting Started with Claude at Yale', url: 'https://yale.service-now.com/kb?id=kb_article_view&sysparm_article=KB0028386', desc: 'Which environment to use (standard vs. HIPAA/zero data retention) and how to access each.', badges: [NETID] }
@@ -536,7 +539,7 @@ const categories = [
 /* ---------- Rendering ----------
    Step 1 is multi-select: people can pick every task they have in mind.
    Each chosen category that has a follow-up question gets its own short
-   question screen. Results are grouped by task, and a resource that fits
+   question screen, also multi-select (for example, more than one tool). Results are grouped by task, and a resource that fits
    more than one task appears once, with a pointer from later groups.
 ------------------------------------ */
 
@@ -589,48 +592,104 @@ function toggleCategory(id) {
 function startFollowUps() {
   if (!state.selected.length) return;
   state.q = 0;
-  followUps().length ? renderQuestion() : renderResults();
+  if (followUps().length) { renderQuestion(); focusFirst('.question'); } else renderResults();
 }
 
 function renderQuestion() {
   state.onResults = false;
   const qs = followUps();
   const cat = qs[state.q];
+  const picked = state.answers[cat.id] || [];
   const label = qs.length > 1 ? `Step 2 of 2 &middot; Question ${state.q + 1} of ${qs.length}` : 'Step 2 of 2';
   let html = `<div class="back-row"><button class="back-btn" onclick="goBack()">&larr; Back</button></div>
     <div class="step-label">${label}</div>
     <p class="results-sub" style="margin:0 0 4px">${cat.icon} ${cat.title}</p>
     <p class="question" id="q-${cat.id}">${cat.question}</p>
+    <p class="multi-hint">Choose all that apply.</p>
     <div class="options" role="group" aria-labelledby="q-${cat.id}">`;
   cat.options.forEach(opt => {
-    const on = state.answers[cat.id] === opt.id;
-    html += `<button class="option-btn" aria-pressed="${on}" onclick="selectOption('${cat.id}','${opt.id}')">
-      <div class="option-title">${opt.title}</div>
+    const on = picked.includes(opt.id);
+    html += `<button class="option-btn" aria-pressed="${on}" onclick="toggleOption('${cat.id}','${opt.id}')">
+      <div class="option-title">${opt.title}<span class="check" aria-hidden="true">${on ? '&#10003;' : ''}</span></div>
       <div class="option-desc">${opt.desc}</div>
     </button>`;
   });
-  html += `</div>`;
+  const n = picked.length;
+  const last = state.q === qs.length - 1;
+  html += `</div>
+    <div class="continue-row">
+      <button class="continue-btn" onclick="nextQuestion()" ${n ? '' : 'disabled'}>${last ? 'See results' : 'Continue'}</button>
+      <span class="selected-count" aria-live="polite">${n ? n + ' selected' : 'Nothing selected yet'}</span>
+    </div>`;
   panel.innerHTML = html;
-  focusFirst('.question');
 }
 
-function selectOption(catId, optId) {
-  state.answers[catId] = optId;
+function toggleOption(catId, optId) {
+  const list = state.answers[catId] || (state.answers[catId] = []);
+  const i = list.indexOf(optId);
+  if (i >= 0) list.splice(i, 1); else list.push(optId);
+  const y = window.scrollY;
+  renderQuestion();
+  window.scrollTo(0, y);
+  const cat = catById(catId);
+  const btn = [...panel.querySelectorAll('.option-btn')][cat.options.findIndex(o => o.id === optId)];
+  if (btn) btn.focus();
+}
+
+function nextQuestion() {
   const qs = followUps();
-  if (state.q < qs.length - 1) { state.q++; renderQuestion(); }
+  const cat = qs[state.q];
+  if (!(state.answers[cat.id] || []).length) return;
+  if (state.q < qs.length - 1) { state.q++; renderQuestion(); focusFirst('.question'); }
   else renderResults();
+}
+
+/* Categories whose question is about how sensitive the data is. Their
+   answers are levels, not separate tasks: the most sensitive level picked
+   decides which tools fit, so only that level's results are shown. */
+const LEVELED = { chat: ['chat-low', 'chat-high', 'chat-ephi'] };
+
+function chosenOptions(cat) {
+  const ids = state.answers[cat.id] || [];
+  const picked = cat.options.filter(o => ids.includes(o.id));
+  if (LEVELED[cat.id] && picked.length > 1) {
+    const order = LEVELED[cat.id];
+    return [picked.reduce((a, b) => order.indexOf(b.id) > order.indexOf(a.id) ? b : a)];
+  }
+  return picked;
+}
+
+function dataLevel() {
+  const ids = state.answers.chat || [];
+  if (!state.selected.includes('chat')) return null;
+  return ids.includes('chat-ephi') ? 'ephi' : ids.includes('chat-high') ? 'high' : null;
 }
 
 function renderResults() {
   const cats = ordered();
-  const multi = cats.length > 1;
-  const seen = new Map();
-  let html = `<div class="back-row"><button class="back-btn" onclick="goBack()">&larr; Back</button></div>
-    <p class="results-title">${multi ? 'Your starting points' : (cats[0].question ? catById(cats[0].id).options.find(o => o.id === state.answers[cats[0].id]).title : cats[0].title)}</p>
-    <p class="results-sub">${multi ? 'Grouped by what you said you are trying to do. A resource that fits more than one task is listed once.' : (cats[0].question ? cats[0].title + ' &rsaquo; ' + catById(cats[0].id).options.find(o => o.id === state.answers[cats[0].id]).desc : cats[0].desc)}</p>`;
+  // one group per chosen task, or per chosen answer when a task's question has several picks
+  const groups = [];
   cats.forEach(cat => {
-    const opt = cat.question ? cat.options.find(o => o.id === state.answers[cat.id]) : null;
-    const results = opt ? opt.results : cat.results;
+    if (!cat.question) { groups.push({ cat, opt: null, results: cat.results }); return; }
+    chosenOptions(cat).forEach(opt => groups.push({ cat, opt, results: opt.results }));
+  });
+  const multi = groups.length > 1;
+  const g0 = groups[0];
+  const seen = new Set();
+  let html = `<div class="back-row"><button class="back-btn" onclick="goBack()">&larr; Back</button></div>
+    <p class="results-title">${multi ? 'Your starting points' : (g0.opt ? g0.opt.title : g0.cat.title)}</p>
+    <p class="results-sub">${multi ? 'Grouped by what you chose. A resource that fits more than one choice is listed once.' : (g0.opt ? g0.cat.title + ' &rsaquo; ' + g0.opt.desc : g0.cat.desc)}</p>`;
+  const lvlIds = (state.answers.chat || []);
+  if (state.selected.includes('chat') && lvlIds.length > 1) {
+    html += `<p class="notice">You chose more than one kind of data. Tools are listed for the most sensitive kind you picked, because that is what sets the limit.</p>`;
+  }
+  const lvl = dataLevel();
+  if (lvl && groups.some(g => g.cat.id !== 'chat')) {
+    html += lvl === 'ephi'
+      ? `<p class="notice notice-strong">You said you will work with patient health information. Only the tools under "Patient health information" are cleared for it. Do not use patient data with anything else listed here, and start with the Health Sciences AI Toolkit.</p>`
+      : `<p class="notice notice-strong">You said you will work with confidential Yale data. Before using any tool in the other groups with that data, check that it carries the "High-risk data OK" label and confirm on its page.</p>`;
+  }
+  groups.forEach(({ cat, opt, results }) => {
     if (multi) {
       html += `<section class="result-section"><h2 class="section-title">${cat.icon} ${cat.title}${opt ? ` <span class="sub">&rsaquo; ${opt.title}</span>` : ''}</h2>`;
     }
@@ -638,7 +697,7 @@ function renderResults() {
     results.forEach(r => {
       const key = r.url + '|' + r.name;
       if (seen.has(key)) { repeats.push(r); return; }
-      seen.set(key, cat.title);
+      seen.add(key);
       html += `<a class="resource-card" href="${r.url}" target="_blank" rel="noopener">
         <div class="resource-head">
           <span class="resource-name">${r.name}</span>
@@ -649,13 +708,12 @@ function renderResults() {
       </a>`;
     });
     if (repeats.length) {
-      html += `<p class="also-line">Also fits this task: ${repeats.map(r => `<a href="${r.url}" target="_blank" rel="noopener">${r.name}</a>`).join(', ')} (listed above).</p>`;
+      html += `<p class="also-line">Also fits here: ${repeats.map(r => `<a href="${r.url}" target="_blank" rel="noopener">${r.name}</a>`).join(', ')} (listed above).</p>`;
     }
     if (multi) html += `</section>`;
   });
   html += `<div class="start-over-row"><button class="start-over-btn" onclick="renderRoot()">Start Over</button></div>`;
   panel.innerHTML = html;
-  state.q = Math.max(0, followUps().length - 1);
   state.onResults = true;
   focusFirst('.results-title');
 }
@@ -664,10 +722,10 @@ function goBack() {
   const qs = followUps();
   if (state.onResults) {
     state.onResults = false;
-    if (qs.length) { state.q = qs.length - 1; renderQuestion(); } else renderRoot(true);
+    if (qs.length) { state.q = qs.length - 1; renderQuestion(); focusFirst('.question'); } else renderRoot(true);
     return;
   }
-  if (state.q > 0) { state.q--; renderQuestion(); }
+  if (state.q > 0) { state.q--; renderQuestion(); focusFirst('.question'); }
   else renderRoot(true);
 }
 
