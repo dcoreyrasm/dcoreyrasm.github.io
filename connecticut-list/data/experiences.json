@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-01T18:22:22.087Z",
-  "count": 430,
+  "generated": "2026-11-08T18:22:33.047Z",
+  "count": 431,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -15,6 +15,7 @@
   "towns": [
     "Ansonia",
     "Ashford",
+    "Bantam",
     "Barkhamsted",
     "Berlin",
     "Bethel",
@@ -22,6 +23,7 @@
     "Bloomfield",
     "Branford",
     "Bridgeport",
+    "Bridgewater",
     "Bristol",
     "Brookfield",
     "Burlington",
@@ -88,6 +90,7 @@
     "Mobile",
     "Montville",
     "Moodus",
+    "Multiple towns (Wolcott to Cornwall)",
     "Mystic",
     "Naugatuck",
     "New Britain",
@@ -131,7 +134,6 @@
     "Simsbury",
     "Somers",
     "South Glastonbury",
-    "South Windsor",
     "South Woodstock",
     "Southbury",
     "Southington",
@@ -728,6 +730,31 @@
       "slug": "bank-square-books"
     },
     {
+      "name": "Bantam Cinema & Arts Center Independent Films",
+      "town": "Bantam",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Theater & Movies"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Historic nonprofit cinema screening independent, international and classic films, plus occasional live cinema events.",
+      "officialWebsite": "https://www.bantamcinema.org/",
+      "address": "115 Bantam Lake Road, Bantam, CT 06750",
+      "tryThis": "Attend an art-house film or a special cinema presentation.",
+      "notes": "Official venue advertises wheelchair access, assistive listening and open captions; accessibility accommodations can vary by screening. Check current program and venue guidance before visiting.",
+      "dateAdded": "2026-11-08",
+      "slug": "bantam-cinema-and-arts-center-independent-films"
+    },
+    {
       "name": "Barker Character, Comic & Cartoon Museum",
       "town": "Cheshire",
       "audiences": [
@@ -1202,34 +1229,6 @@
       "slug": "brookfield-craft-center"
     },
     {
-      "name": "Brown's Harvest 2026 Fall Festival & Corn Maze",
-      "town": "Windsor",
-      "region": "Hartford Area",
-      "experienceTypes": [
-        "Corn Maze",
-        "Fall & Seasonal"
-      ],
-      "categories": [
-        "Orchards & Farms",
-        "Corn Mazes",
-        "Festivals & Events"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Family"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A full farm fall day with a five-acre corn maze, hayride, pumpkins, farm activities, and seasonal food. It is a strong family or group option near Hartford.",
-      "officialWebsite": "https://www.brownsharvest.com/fall-festival-2026",
-      "address": "1911 Poquonock Ave., Windsor, CT 06095",
-      "tryThis": "Complete the five-acre corn maze before taking the hayride, then choose one pumpkin to bring home.",
-      "notes": "General weekend admission for ages 3+ includes the hayride, five-acre corn maze, kids maze, barrel train, jump pad and other activities. Online admission is $16.95 and door admission is $18. Pumpkins and some add-ons cost extra. No pets.",
-      "dateAdded": "2026-09-08",
-      "eventStart": "2026-09-19",
-      "eventEnd": "2026-11-01",
-      "slug": "browns-harvest-2026-fall-festival-and-corn-maze"
-    },
-    {
       "name": "Bruce Museum",
       "town": "Greenwich",
       "audiences": [
@@ -1534,6 +1533,31 @@
       "tryThis": "Choose one piece you would use to start an imaginary Connecticut art collection and explain why.",
       "dateAdded": "2026-09-17",
       "slug": "chester-gallery-and-framing"
+    },
+    {
+      "name": "Cinestudio Independent Cinema at Trinity College",
+      "town": "Hartford",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Theater & Movies"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Independent nonprofit cinema in a historic 450-seat theater showing world cinema, classic films and special screenings.",
+      "officialWebsite": "https://cinestudio.org/",
+      "address": "300 Summit Street, Hartford, CT 06106",
+      "tryThis": "See an independent or classic film, then compare notes over coffee.",
+      "notes": "Accessibility confirmed by venue: wheelchair entry via lower Chemistry building door from rear parking lot; call ahead when arriving alone, and infrared assistive-listening headsets are available. Arrive 15 minutes early when assistance is needed. https://cinestudio.org/accessibility/",
+      "dateAdded": "2026-11-08",
+      "slug": "cinestudio-independent-cinema-at-trinity-college"
     },
     {
       "name": "Clark Farms at Bushy Hill 2026 Apple Picking & Farm Stop",
@@ -2183,34 +2207,6 @@
       "slug": "danbury-museum-and-historical-society"
     },
     {
-      "name": "Danbury Railway Museum 2026 Pumpkin Patch Trains",
-      "town": "Danbury",
-      "region": "Fairfield County",
-      "experienceTypes": [
-        "Trains & Scenic Rides",
-        "Fall & Seasonal"
-      ],
-      "categories": [
-        "Trains & Scenic Rides",
-        "Festivals & Events",
-        "Orchards & Farms"
-      ],
-      "audiences": [
-        "Family",
-        "Group Activities"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "Ride a vintage train to the museum's pumpkin patch, where families can select a pumpkin and enjoy cider and cookies.",
-      "officialWebsite": "https://www.danburyrail.org/pumpkin",
-      "address": "120 White Street, Danbury, CT 06810",
-      "tryThis": "Ride the short round trip, pick a pumpkin and compare the vintage railcars.",
-      "notes": "Official 2026 schedule: Saturdays October 10, 17, 24, 31 and Sundays October 11, 18, 25, November 1. Select Saturday 11 a.m. trips include children's storytime; Saturday twilight trips at 6:30 p.m. Museum notes vintage trains are not wheelchair accessible even though the museum station and yard are accessible. Reservations recommended; special-event price not independently confirmed.",
-      "dateAdded": "2026-10-11",
-      "eventStart": "2026-10-10",
-      "eventEnd": "2026-11-01",
-      "slug": "danbury-railway-museum-2026-pumpkin-patch-trains"
-    },
-    {
       "name": "Danbury Railway Museum Railyard Local",
       "town": "Danbury",
       "audiences": [
@@ -2609,37 +2605,6 @@
       "slug": "essex-steam-train-north-pole-express-2026"
     },
     {
-      "name": "Fair Weather Growers Fall Festival & Corn Maze",
-      "town": "Cromwell",
-      "region": "Central CT",
-      "experienceTypes": [
-        "Corn Maze",
-        "Fall & Seasonal"
-      ],
-      "categories": [
-        "Corn Mazes",
-        "Orchards & Farms",
-        "Festivals & Events"
-      ],
-      "audiences": [
-        "Family",
-        "Group Activities"
-      ],
-      "bestTime": "Fall",
-      "whyGo": "A 16-acre fall farm outing with a giant corn maze, hayride, pumpkin patch, farm animals, pedal carts, a jump pillow, a scarecrow walk, and other activities.",
-      "officialWebsite": "https://fairweathergrowers.com/fall-festival/",
-      "address": "10 County Line Drive, Cromwell, CT",
-      "tryThis": "Complete the corn maze, take the hayride, and choose a pumpkin before you leave.",
-      "notes": "Use the FALL FESTIVAL entrance at 10 County Line Drive, Cromwell, NOT the Rocky Hill farm-market address. Open listed Fridays in October and Saturdays/Sundays through Nov 1; check daily weather and availability. Outdoor attractions can close for safety. No pet entry apart from ADA service animals. Provider FAQ confirms this location.",
-      "dateAdded": "2026-09-10",
-      "eventStart": "2026-09-12",
-      "eventEnd": "2026-11-01",
-      "ages": [
-        "All ages"
-      ],
-      "slug": "fair-weather-growers-fall-festival-and-corn-maze"
-    },
-    {
       "name": "Fairfield County Makers' Guild Workshop Experience",
       "town": "Norwalk",
       "audiences": [
@@ -2854,6 +2819,29 @@
       "slug": "florence-griswold-museum"
     },
     {
+      "name": "Folklore & Fable Booksellers",
+      "town": "Colchester",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Bookstore"
+      ],
+      "categories": [
+        "Bookstores",
+        "Date Night"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Independent bookstore near Colchester's town green, with fiction, nonfiction, gifts, and public book-related events.",
+      "officialWebsite": "https://www.folkloreandfablebooks.com/about-us",
+      "tryThis": "Browse the independent shelves and choose a book you would not normally read.",
+      "notes": "Official provider site confirms its Colchester Merchant's Row location and events. Exact street address was not independently established on a readable provider page; Address left blank.",
+      "dateAdded": "2026-11-08",
+      "slug": "folklore-and-fable-booksellers"
+    },
+    {
       "name": "Foodology Adult Cooking Workshop",
       "town": "Plantsville",
       "region": "Central CT",
@@ -2937,38 +2925,6 @@
       "officialWebsite": "https://ctparks.com/parks/fort-trumbull-state-park",
       "dateAdded": "2026-08-19",
       "slug": "fort-trumbull-state-park"
-    },
-    {
-      "name": "Foster Family Farm 2026 Corn Maze & Hayride",
-      "town": "South Windsor",
-      "region": "Hartford Area",
-      "experienceTypes": [
-        "Corn Maze",
-        "Fall & Seasonal",
-        "Something Different"
-      ],
-      "categories": [
-        "Orchards & Farms",
-        "Corn Mazes",
-        "Something Different"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Family"
-      ],
-      "bestTime": "Fall",
-      "whyGo": "A full fall farm outing with two large corn mazes, a mini maze, sunflower field, hayride, farm animals and courtyard activities. Evening night-maze sessions add a different option later in the season.",
-      "officialWebsite": "https://www.fosterfarm.com/",
-      "address": "90 Foster Street, South Windsor, CT 06074",
-      "tryThis": "Try one of the large mazes, then take the hayride and compare which part of the farm was your favorite.",
-      "notes": "Season begins September 12, 2026. Starting September 21 the farm is open daily 10 AM-6 PM. Saturday night mazes begin September 19 and Friday night mazes begin October 2, 6:30-9:30 PM. Tickets are required; night-maze tickets are sold online.",
-      "dateAdded": "2026-09-07",
-      "eventStart": "2026-09-12",
-      "eventEnd": "2026-11-01",
-      "ages": [
-        "All ages"
-      ],
-      "slug": "foster-family-farm-2026-corn-maze-and-hayride"
     },
     {
       "name": "Fox Farm Brewery",
@@ -3289,6 +3245,7 @@
         "Date Night"
       ],
       "officialWebsite": "https://ctparks.com/parks/hammonasset-beach-state-park",
+      "notes": "2026-11-08 verified accessibility: Official state park page explicitly confirms accessible 3.4-mile paved/boardwalk shoreline trail. This is not a claim that every beach or trail segment is accessible. https://ctparks.com/parks/hammonasset-beach-state-park",
       "dateAdded": "2026-08-14",
       "slug": "hammonasset-beach-state-park"
     },
@@ -3350,7 +3307,7 @@
       "slug": "hartford-healthcare-amphitheater"
     },
     {
-      "name": "Hartford Stage Dracula 2026",
+      "name": "Hartford Stage: A Christmas Carol 2026",
       "town": "Hartford",
       "region": "Hartford Area",
       "experienceTypes": [
@@ -3359,24 +3316,23 @@
       ],
       "categories": [
         "Theater & Movies",
-        "Date Night",
-        "Something Different"
+        "Festivals & Events",
+        "Date Night"
       ],
       "audiences": [
+        "Family",
         "Date Night",
-        "Group Activities",
         "Individual Exploration"
       ],
       "bestTime": "Specific event/date",
-      "whyGo": "See Hartford Stage's new production of Dracula, a live theater option for the fall season in downtown Hartford.",
-      "officialWebsite": "https://www.hartfordstage.org/2026-2027/dracula/",
-      "address": "50 Church Street, Hartford, CT 06103",
-      "tryThis": "Choose one performance and discuss how the production reimagines the familiar Dracula story.",
-      "notes": "Hartford Stage lists October 9–November 1 on the production page. It explicitly offers an open-captioned performance October 25 at 2 p.m. and an audio-described performance October 31 at 2 p.m. Check tickets and schedule before booking.",
-      "dateAdded": "2026-10-11",
-      "eventStart": "2026-10-09",
-      "eventEnd": "2026-11-01",
-      "slug": "hartford-stage-dracula-2026"
+      "whyGo": "Hartford Stage's annual live production of A Christmas Carol runs November 21 through December 27, 2026.",
+      "officialWebsite": "https://www.hartfordstage.org/2026-2027/a-christmas-carol/",
+      "tryThis": "Attend the seasonal show and enjoy a downtown Hartford outing.",
+      "notes": "Ticketed event, November 21–December 27, 2026. Check provider performance calendar and accessible performance information for the chosen date.",
+      "dateAdded": "2026-11-08",
+      "eventStart": "2026-11-21",
+      "eventEnd": "2026-12-27",
+      "slug": "hartford-stage-a-christmas-carol-2026"
     },
     {
       "name": "Harvey's Beach",
@@ -3681,39 +3637,6 @@
       "slug": "humacao-salsa-lesson-social-night"
     },
     {
-      "name": "I-Park November Open Trails + Music",
-      "town": "East Haddam",
-      "region": "Central CT",
-      "experienceTypes": [
-        "Hiking & Outdoors",
-        "Museum & Culture",
-        "Music & Events"
-      ],
-      "categories": [
-        "Easy Walks",
-        "Free / Low-Cost",
-        "Museums & Culture",
-        "Something Different"
-      ],
-      "audiences": [
-        "Date Night",
-        "Family",
-        "Individual Exploration"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "A free public day to walk I-Park’s art-filled nature trails and hear live local music in a setting that is normally open to visitors only during scheduled public programs.",
-      "officialWebsite": "https://www.i-park.org/event/november-open-trails-music/",
-      "address": "428 Hopyard Road, East Haddam, CT 06423",
-      "tryThis": "Walk the art-and-nature trails, choose three outdoor artworks that stand out to you, then stay for the live music.",
-      "notes": "The October 10 cycle passed; same recurring experience updated to new confirmed Saturday Nov 7 event, 9:30 AM-3:30 PM. Art trail, crafts, guided hiking and live music; free tickets, $10 voluntary suggested adult donation. Advance registration recommended; walk-in registration possible; no pets. Some paths gentle but no accessibility accommodations confirmed.",
-      "dateAdded": "2026-09-08",
-      "eventStart": "2026-11-07",
-      "ages": [
-        "All ages"
-      ],
-      "slug": "i-park-november-open-trails-music"
-    },
-    {
       "name": "Immerse HydroSpa Couples Wellness Experience",
       "town": "Glastonbury",
       "audiences": [
@@ -3768,6 +3691,36 @@
       "officialWebsite": "https://www.iaismuseum.org/",
       "dateAdded": "2026-08-31",
       "slug": "institute-for-american-indian-studies-museum-indigenous-led-program"
+    },
+    {
+      "name": "Isham-Terry House Mid-Century Christmas 2026",
+      "town": "Hartford",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Fall & Seasonal",
+        "Music & Events",
+        "Museum & Culture"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Festivals & Events",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Family",
+        "Date Night",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Seasonal historic-house event with a mid-century Christmas display, live music and optional guided tours.",
+      "officialWebsite": "https://ctlandmarks.org/event/mid-century-christmas-with-the-ishams-feat-selections-from-a-charlie-brown-christmas/",
+      "address": "211 High Street, Hartford, CT 06103",
+      "tryThis": "Visit the decorated house and enjoy the live seasonal music program.",
+      "notes": "December 13, 2026, 1–4 PM. Performance starts 2 PM; optional 1 PM and 3 PM house tours cost extra and require advance reservation. Event listing gives cost range Free–$25; do not imply all tickets free.",
+      "dateAdded": "2026-11-08",
+      "eventStart": "2026-12-13",
+      "slug": "isham-terry-house-mid-century-christmas-2026"
     },
     {
       "name": "Ivoryton Playhouse",
@@ -3938,6 +3891,7 @@
         "Date Night"
       ],
       "officialWebsite": "https://ctparks.com/parks/kent-falls-state-park",
+      "notes": "2026-11-08 verified accessibility: Official CT State Parks page confirms ADA-accessible paved path to the base of the falls; higher stone-step portions are steep and not established wheelchair accessible. https://ctparks.com/parks/kent-falls-state-park",
       "dateAdded": "2026-08-13",
       "slug": "kent-falls-state-park"
     },
@@ -4281,29 +4235,6 @@
       "slug": "lucius-pond-ordway-devils-den-preserve"
     },
     {
-      "name": "Lyman Orchards 2026 Corn Maze",
-      "town": "Middlefield",
-      "categories": [
-        "Orchards & Farms",
-        "Corn Mazes",
-        "Festivals & Events",
-        "Date Night",
-        "Only in Connecticut"
-      ],
-      "audiences": [
-        "Group Activities",
-        "Date Night",
-        "Family",
-        "Individual Exploration"
-      ],
-      "officialWebsite": "https://lymanorchards.com/events/corn-maze/",
-      "notes": "NOVEMBER 1, 2026 IS FINAL SCHEDULED DAY of 2026 corn maze. The page contains a contradictory older November 2 sentence; confirm any special hours directly. Do not keep this dated event current after Nov 1 without a new official schedule.",
-      "dateAdded": "2026-08-13",
-      "eventStart": "2026-09-05",
-      "eventEnd": "2026-11-01",
-      "slug": "lyman-orchards-2026-corn-maze"
-    },
-    {
       "name": "Lyman Orchards Fall Pick-Your-Own",
       "town": "Middlefield",
       "region": "Central CT",
@@ -4515,6 +4446,31 @@
       "notes": "Distinct from the general Mattatuck Museum entry because this focuses on a participatory art-making program.",
       "dateAdded": "2026-08-21",
       "slug": "mattatuck-museum-adult-art-workshop-experience"
+    },
+    {
+      "name": "Mattatuck Trail: Waterfalls, Reservoirs & Ridge Hikes",
+      "town": "Multiple towns (Wolcott to Cornwall)",
+      "region": "Other / Statewide",
+      "experienceTypes": [
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Longer Hikes",
+        "Parks & Preserves",
+        "Scenic Views",
+        "Free / Low-Cost"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Group Activities"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "The 42-mile blue-blazed trail system includes wooded ravines, Buttermilk Falls, reservoir views and mountain ridges. Choose an appropriate section rather than hiking it all at once.",
+      "officialWebsite": "https://ctwoodlands.org/trails/mattatuck-trail/",
+      "tryThis": "Choose one mapped section of the Mattatuck Trail and check current reroutes before starting.",
+      "notes": "Trail spans Wolcott, Plymouth, Thomaston, Watertown, Morris, Litchfield, Warren and Cornwall. Multiple trailheads, no single street address. CFPA reports a 2025 Wolcott relocation; follow its interactive current trail map and advisories. Conditions and hunting-season precautions apply.",
+      "dateAdded": "2026-11-08",
+      "slug": "mattatuck-trail-waterfalls-reservoirs-and-ridge-hikes"
     },
     {
       "name": "Merle's Record Rack",
@@ -6750,6 +6706,65 @@
       "officialWebsite": "https://cityofgroton.recdesk.com/Community/Page?pageId=5608",
       "dateAdded": "2026-08-22",
       "slug": "submarine-veterans-wwii-national-memorial-east"
+    },
+    {
+      "name": "Suffield Holiday Lantern Walking Tours 2026",
+      "town": "Suffield",
+      "region": "Hartford Area",
+      "experienceTypes": [
+        "Fall & Seasonal",
+        "Music & Events"
+      ],
+      "categories": [
+        "Festivals & Events",
+        "Easy Walks",
+        "Date Night",
+        "Something Different"
+      ],
+      "audiences": [
+        "Family",
+        "Date Night",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Costumed guides lead a one-mile historic holiday walking tour past decorated Main Street homes while sharing local history.",
+      "officialWebsite": "https://ctlandmarks.org/event/holiday-lantern-tour-suffields-main-street-3/",
+      "address": "55 South Main Street, Suffield, CT 06078",
+      "tryThis": "Walk with a lantern or flashlight and learn about Suffield's historic Main Street.",
+      "notes": "Two separate performances, December 5 and December 6, 2026, each 4–5 PM; tickets $15–$20 per CT Landmarks. Starting venue Phelps-Hatheway House. Outdoor and weather-dependent; walking one mile does not establish wheelchair accessibility.",
+      "dateAdded": "2026-11-08",
+      "eventStart": "2026-12-05",
+      "eventEnd": "2026-12-06",
+      "slug": "suffield-holiday-lantern-walking-tours-2026"
+    },
+    {
+      "name": "Sunny Valley Preserve Blue-Blazed Trails",
+      "town": "New Milford / Bridgewater",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Longer Hikes",
+        "Parks & Preserves",
+        "Scenic Views",
+        "Free / Low-Cost"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Group Activities"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Network of trails across farmland, forest, lakeside slopes, rocky ridges and protected open space, with options for short and longer hikes.",
+      "officialWebsite": "https://ctwoodlands.org/trails/sunny-valley-preserve-trails/",
+      "tryThis": "Choose a marked loop or longer route through Sunny Valley Preserve and observe the landscape responsibly.",
+      "notes": "CFPA lists 13.7 miles of trails and multiple parcels and access points; no single official street address for the entire trail network. Visitors should stay on blazed paths and leash dogs.",
+      "dateAdded": "2026-11-08",
+      "towns": [
+        "New Milford",
+        "Bridgewater"
+      ],
+      "slug": "sunny-valley-preserve-blue-blazed-trails"
     },
     {
       "name": "Sur La Table Canton Couples Cooking",
