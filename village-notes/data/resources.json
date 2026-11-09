@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-07T14:58:35.092Z",
+  "generated": "2026-11-09T00:14:48.321Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 852,
+  "count": 871,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -98,6 +98,7 @@
     "Bozrah",
     "Branford",
     "Bridgeport",
+    "Bridgeport, Danbury, Norwalk and Stamford service areas",
     "Bridgewater",
     "Bristol",
     "Brookfield",
@@ -111,6 +112,10 @@
     "Colchester",
     "Colebrook",
     "Columbia",
+    "Connecticut; host locations by arrangement",
+    "Connecticut; participating community sites",
+    "Connecticut; rotating community sites",
+    "Connecticut; rotating host locations",
     "Cornwall",
     "Coventry",
     "Cromwell",
@@ -132,6 +137,8 @@
     "Glastonbury",
     "Goshen",
     "Granby",
+    "Greater Hartford; Hartford and East Hartford",
+    "Greater New Haven",
     "Greenwich",
     "Griswold",
     "Groton",
@@ -209,7 +216,9 @@
     "Stamford",
     "Statewide",
     "Statewide (all of Connecticut)",
+    "Statewide participating providers",
     "Statewide, Connecticut",
+    "Statewide; next clinic in New Haven",
     "Sterling",
     "Stonington",
     "Storrs",
@@ -226,6 +235,7 @@
     "Warren",
     "Washington",
     "Waterbury",
+    "Waterbury; Naugatuck",
     "Waterford",
     "Watertown",
     "West Cornwall",
@@ -887,6 +897,23 @@
       ],
       "lastVerified": "2026-08-29",
       "tags": "caregiver support group, senior services, caregiver support, farmington"
+    },
+    {
+      "id": "recRIhbU4v73Oyp5u",
+      "name": "Americares Free Clinics",
+      "track": "Food & Basic Needs",
+      "specificType": "Free adult medical care at four Connecticut clinics; specialty referrals when available.",
+      "town": "Bridgeport, Danbury, Norwalk and Stamford service areas",
+      "ages": "Uninsured adults 18+, not Medicaid eligible, qualifying town residency and income; cutoff 250% poverty level.",
+      "hours": "Appointment required; photo ID and residency proof, income verification on request. No dental, pediatric, emergency, prenatal or mental health care.",
+      "cost": "Clinic care free for eligible patients; some external specialty providers may charge.",
+      "website": "https://americaresfreeclinics.org/patients/",
+      "contact": "203-658-9500; freeclinics@americares.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://americaresfreeclinics.org/patients/. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "free clinic, primary care, uninsured, chronic illness"
     },
     {
       "id": "reciLChcJXuY8iTCN",
@@ -2516,6 +2543,23 @@
       "tags": "food bank / food pantry, food pantry, bristol"
     },
     {
+      "id": "recQ0vc6DbylcOaP4",
+      "name": "Bristol Senior Center Dental Clinic",
+      "track": "Elder Care",
+      "specificType": "Dental screening and cleaning; referrals to participating dentists with sliding-scale fees.",
+      "town": "Bristol",
+      "ages": "Seniors; call to confirm residency, membership and age eligibility",
+      "hours": "Thursday and Friday 8:15am-3pm. Forms at Senior Center main office.",
+      "cost": "Screening and cleaning $50.",
+      "website": "https://www.bristolct.gov/552/Senior-Center-Services",
+      "contact": "860-583-9353",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://www.bristolct.gov/552/Senior-Center-Services. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "dental, seniors, low cost dental, cleanings"
+    },
+    {
       "id": "recUdMDHCcnefguyw",
       "name": "Bristol Technical Education Center",
       "track": "Teens & High School",
@@ -3687,6 +3731,23 @@
       "tags": "preschool / pre-k, childcare, chaplin"
     },
     {
+      "id": "recMGWmcWsjDAMhPt",
+      "name": "Charter Oak Health Center Mobile Medical and Dental Van",
+      "track": "Food & Basic Needs",
+      "specificType": "Mobile primary care, dental screenings, dental pain assessment and referrals, behavioral health screening, immunizations and lab testing.",
+      "town": "Hartford",
+      "ages": "Community members regardless of insurance status",
+      "hours": "Walk-up; schedule: https://thecharteroak.org/locations/mobile-health-van-locations/ . Includes Monday 11:15am-2pm at Hands On Hartford; confirm same-day changes.",
+      "cost": "Insurance not required; exact fees and assistance must be confirmed.",
+      "website": "https://thecharteroak.org/our-services/mobile-medical-dental-van/",
+      "contact": "See official mobile program and schedule pages",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://thecharteroak.org/our-services/mobile-medical-dental-van/. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "mobile clinic, mobile dental, primary care, vaccines, mental health"
+    },
+    {
       "id": "recq9rHUPmFdyjzSf",
       "name": "Cheshire KinderCare",
       "track": "Family & Childcare",
@@ -4404,6 +4465,23 @@
       "tags": "center-based daycare, childcare, mansfield"
     },
     {
+      "id": "recM778HZK3NLhIsL",
+      "name": "Community Health Center Inc. - Mobile Dental Program",
+      "track": "Food & Basic Needs",
+      "specificType": "Mobile dental teams visit schools, senior centers, Head Start programs and day cares; fixed dental clinics also available.",
+      "town": "Connecticut; participating community sites",
+      "ages": "Families and participants at host sites",
+      "hours": "Contact CHC for host-site eligibility and current mobile schedule. Mobile program is not an on-demand home visit service.",
+      "cost": "Mobile service charges and assistance not confirmed; contact provider before booking.",
+      "website": "https://www.chc1.com/what-we-do/our-services/",
+      "contact": "860-347-6971",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://www.chc1.com/what-we-do/our-services/. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "dental, mobile dental, seniors, children"
+    },
+    {
       "id": "rec8uklEPsTiq8ROG",
       "name": "Community Soup Kitchen at Christ Church",
       "track": "Food & Basic Needs",
@@ -4463,6 +4541,23 @@
       "tags": "birth-to-three / early intervention"
     },
     {
+      "id": "recUdPyUoBIp0qteq",
+      "name": "Connecticut Breast and Cervical Cancer Early Detection Program",
+      "track": "Food & Basic Needs",
+      "specificType": "Free qualifying mammograms, Pap/HPV tests, breast ultrasounds, diagnostic tests and treatment referrals through contracted providers.",
+      "town": "Statewide",
+      "ages": "Generally ages 21-64; mammograms usually 40-64; younger high-risk/symptomatic and some 65+ without Medicare Part B may qualify.",
+      "hours": "Call for eligibility and nearest contracted provider. Age criteria differ by service. Do not use old dollar income tables as current thresholds.",
+      "cost": "Free for eligible participants, generally income at or below 250% federal poverty level and qualifying insurance gap/high deductible.",
+      "website": "https://portal.ct.gov/dph/cedpp/connecticut-breast-and-cervical-cancer-early-detection-program",
+      "contact": "860-509-7804",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://portal.ct.gov/dph/cedpp/connecticut-breast-and-cervical-cancer-early-detection-program. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "mammogram, breast cancer, cervical cancer, pap test, free screening"
+    },
+    {
       "id": "recQUb2ESTgxrt7UC",
       "name": "Connecticut College Children's Program",
       "track": "Family & Childcare",
@@ -4489,6 +4584,23 @@
       "tags": "center-based daycare, childcare, new london"
     },
     {
+      "id": "recjKfKfb08A0HMrl",
+      "name": "Connecticut Colorectal Cancer Control Program - Diagnostic Follow-up",
+      "track": "Food & Basic Needs",
+      "specificType": "No-cost follow-up diagnostic colonoscopy after a positive colorectal cancer screening test for eligible participants.",
+      "town": "Statewide participating providers",
+      "ages": "Ages 45-75, positive colorectal screening, income at/below 250% federal poverty level, uninsured or deductible $1,000+.",
+      "hours": "Medical eligibility assessment and participating-provider referral required; funding limited.",
+      "cost": "Qualifying follow-up colonoscopy funded; grant does not pay for the initial screening test.",
+      "website": "https://portal.ct.gov/dph/cedpp/connecticut-colorectal-cancer-control-program",
+      "contact": "860-509-7804",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://portal.ct.gov/dph/cedpp/connecticut-colorectal-cancer-control-program. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "colorectal cancer, colonoscopy, cancer screening, uninsured"
+    },
+    {
       "id": "recljZjRjUNjxSTB8",
       "name": "Connecticut DDS Family Supports and Services",
       "track": "Family & Childcare",
@@ -4502,6 +4614,23 @@
       "notes": "Official Connecticut DDS website reviewed October 27 2026. Eligibility and availability must be confirmed with DDS.",
       "lastVerified": "2026-10-27",
       "tags": "developmental disability, intellectual disability, respite, family grants, in-home support"
+    },
+    {
+      "id": "recnVLPzuSaLtM4bK",
+      "name": "Connecticut Donated Dental Services (Dental Lifeline Network)",
+      "track": "Elder Care",
+      "specificType": "Volunteer comprehensive dental treatment for eligible applicants; no emergency or cosmetic services.",
+      "town": "Statewide",
+      "ages": "People unable to afford dental care who are over 65, permanently disabled, or need medically necessary dental care.",
+      "availability": "All Connecticut counties open to applications as of verification. Application review and volunteer matching required; care is not immediate. Application notes waits may be several months or over a year in some areas.",
+      "cost": "Donated dental treatment for eligible applicants; program application notes possible contributions toward some costs and use of existing dental benefits first.",
+      "website": "https://dentallifeline.org/connecticut/",
+      "contact": "Carrie Hebert, DDS Coordinator: 959-999-0860; chebert@DentalLifeline.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Additional related resource, not named in article. Official state program page verified November 8, 2026. Cost/wait information from linked application: https://dentallifeline.org/wp-content/uploads/2019/04/Connecticut.pdf",
+      "lastVerified": "2026-11-08",
+      "tags": "dental care, donated dental services, seniors, disability, free dental, teeth"
     },
     {
       "id": "recjryIj1A0AQkyjj",
@@ -4953,6 +5082,26 @@
       "tags": "medical / diagnosis-specific camp, summer camp, meriden"
     },
     {
+      "id": "recnaLJHp0AyNe8b1",
+      "name": "Connecticut Mission of Mercy (CTMOM) Free Dental Clinic",
+      "track": "Elder Care",
+      "specificType": "Free dental exams, cleanings, fillings, extractions, and limited additional treatments.",
+      "town": "Statewide; next clinic in New Haven",
+      "ages": "Adults and children unable to afford dental care; under 18 must attend with parent/legal guardian.",
+      "hours": "Next clinic April 2–3, 2027, Floyd Little Athletic Center, 480 Sherman Parkway, New Haven. Daily opening times not confirmed.",
+      "availability": "First come, first served until capacity. Personal ID required; bring medication list. Treatment may be limited to one procedure. Full dentures, crowns and implants not offered.",
+      "cost": "Free; proof of income or insurance not required.",
+      "website": "https://cfdo.org/ct-mom/patients/",
+      "contact": "860-863-5940; contact@cfdo.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Verified official patient page and https://cfdo.org/ on November 8, 2026. October 23, 2026 Waterbury seniors mini-clinic has ended. Next announced clinic is open to all ages. Article lead supplied by Darice.",
+      "lastVerified": "2026-11-08",
+      "event": "Free dental clinic, April 2–3, 2027, New Haven",
+      "eventDate": "2027-04-02",
+      "tags": "dental care, free dental clinic, seniors, teeth, cleanings, fillings, extractions"
+    },
+    {
       "id": "recRyR2bHkoxaKOPo",
       "name": "Connecticut Office of Early Childhood: Find Child Care and Camps",
       "track": "Family & Childcare",
@@ -5254,6 +5403,23 @@
       "tags": "parenting support/classes"
     },
     {
+      "id": "recFQJe7wxWFwocq1",
+      "name": "Connecticut WISEWOMAN Heart Health Program",
+      "track": "Food & Basic Needs",
+      "specificType": "Cardiovascular screening: blood pressure, cholesterol and blood glucose; health coaching and supportive lifestyle programs.",
+      "town": "Statewide",
+      "ages": "Women ages 35-64 enrolled in Connecticut Breast and Cervical Cancer Early Detection Program; generally income at or below 250% federal poverty level.",
+      "hours": "Contact program to confirm eligibility and local providers.",
+      "cost": "Free qualifying program; income and insurance criteria apply.",
+      "website": "https://portal.ct.gov/dph/cedpp/connecticut-well-integrated-screening-and-evaluation-for-women-across-the-nation-program",
+      "contact": "860-509-7804",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://portal.ct.gov/dph/cedpp/connecticut-well-integrated-screening-and-evaluation-for-women-across-the-nation-program. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "heart health, blood pressure, cholesterol, diabetes, free screening"
+    },
+    {
       "id": "recIlHULd6YtfyyZ0",
       "name": "Connecticut Youth Employment Program",
       "track": "Teens & High School",
@@ -5322,6 +5488,23 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, bridgeport"
+    },
+    {
+      "id": "recYjk6YPTsC5PAjO",
+      "name": "Cornell Scott-Hill Health Center Dental Care",
+      "track": "Elder Care",
+      "specificType": "Adult and pediatric dental treatment; income-based reduced fees available.",
+      "town": "Greater New Haven",
+      "ages": "Adults and children",
+      "hours": "Call for current dental locations and new-patient availability.",
+      "cost": "Not a free clinic. Eligible uninsured patients may receive sliding-fee care based on income and family size.",
+      "website": "https://www.cornellscott.org/programs-and-services/dental-care",
+      "contact": "203-503-3000",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://www.cornellscott.org/programs-and-services/dental-care. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "dental, sliding scale, uninsured"
     },
     {
       "id": "rechJUnJF1WGTb3YU",
@@ -7795,6 +7978,23 @@
       "tags": "pet food assistance, pet services, food pantry, pet food, north canaan"
     },
     {
+      "id": "rec9bMYtn88qiW9c2",
+      "name": "Fones Dental Hygiene Clinic - University of Bridgeport",
+      "track": "Elder Care",
+      "specificType": "Supervised student dental hygiene care, cleanings, exams, X-rays and periodontal services.",
+      "town": "Bridgeport",
+      "ages": "General public",
+      "hours": "Fall 2026 dental clinic Monday, Tuesday, Thursday 8am-noon and 1-5pm; semester clinic ends December 10. Confirm appointment.",
+      "cost": "Adult cleaning $40; child through age 16 $25. Exams and X-rays charged separately.",
+      "website": "https://www.bridgeport.edu/ub-clinics/dental-hygiene",
+      "contact": "See official clinic page",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://www.bridgeport.edu/ub-clinics/dental-hygiene. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "dental, low cost dental, cleanings"
+    },
+    {
       "id": "recWaKCWGlp39pLOD",
       "name": "Francis T. Maloney High School",
       "track": "Teens & High School",
@@ -8370,6 +8570,23 @@
       "lastVerified": "2026-10-14",
       "shoppingType": "Family Thrift Store",
       "tags": "family thrift store, secondhand shopping, thrift store, stamford"
+    },
+    {
+      "id": "recFQYxD8debwYyef",
+      "name": "Goodwin University Dental Hygiene Clinic",
+      "track": "Elder Care",
+      "specificType": "Free dental hygiene services for children and adults: cleanings, X-rays, fluoride, sealants and periodontal scaling.",
+      "town": "East Hartford",
+      "ages": "Children and adults",
+      "hours": "Appointment required; day, evening and Saturday hours.",
+      "cost": "Free; supervised student appointments average three hours and may require multiple visits.",
+      "website": "https://www.goodwin.edu/majors/dental-hygiene/clinic",
+      "contact": "860-218-1800",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://www.goodwin.edu/majors/dental-hygiene/clinic. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "dental, free dental, cleanings, x-rays"
     },
     {
       "id": "recHSHaE3eg9Rmuyf",
@@ -9271,6 +9488,40 @@
       ],
       "lastVerified": "2026-08-29",
       "tags": "hospice / palliative care, senior services, wethersfield"
+    },
+    {
+      "id": "recfxPzbZ5ImeV5el",
+      "name": "Hartford HealthCare Neighborhood Health Mobile Clinics",
+      "track": "Food & Basic Needs",
+      "specificType": "Walk-in care, minor illness/wound care, blood pressure/blood sugar/cholesterol checks, A1C, vaccines, HIV/STI testing and referrals; availability varies.",
+      "town": "Connecticut; rotating community sites",
+      "ages": "All ages, including uninsured and underinsured people",
+      "hours": "Official page links current CareVan calendar; most visits walk-in. No X-rays or emergency care.",
+      "cost": "Insurance accepted but not required. Exact charges not confirmed on program page.",
+      "website": "https://hartfordhealthcare.org/health-wellness/neighborhood-health",
+      "contact": "See official program calendar",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://hartfordhealthcare.org/health-wellness/neighborhood-health. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "mobile clinic, vaccines, primary care, diabetes, blood pressure, hiv testing"
+    },
+    {
+      "id": "recyGtCrkgj2xcsPs",
+      "name": "Hartford HealthCare Take the Time Mobile Mammography",
+      "track": "Food & Basic Needs",
+      "specificType": "Mobile breast cancer screening, including access for people without insurance.",
+      "town": "Connecticut; rotating host locations",
+      "ages": "People eligible for screening mammograms; confirm clinical and program requirements",
+      "hours": "Contact program for current stops, appointments, and hosting requests.",
+      "cost": "Not universally free; ask about uninsured screening assistance and eligibility.",
+      "website": "https://hartfordhealthcare.org/services/cancer-care/screening-diagnosis/mammography/mobile-mammography",
+      "contact": "860-972-8800",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://hartfordhealthcare.org/services/cancer-care/screening-diagnosis/mammography/mobile-mammography. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "mobile clinic, mammogram, breast cancer, uninsured"
     },
     {
       "id": "recrY7YkySujE4I7U",
@@ -11689,6 +11940,23 @@
       "event": "Make It Here CT Job Fair, November 12, 10 AM–1 PM; walk-in, no registration",
       "eventDate": "2026-11-12",
       "tags": "job fair, jobs, hiring, new haven, employment, resume, healthcare, behavioral health, career"
+    },
+    {
+      "id": "recyN5Q0GRRE5PH6h",
+      "name": "Malta House of Care - Free Primary Care and Mobile Clinic",
+      "track": "Food & Basic Needs",
+      "specificType": "Free primary care, physicals, vaccinations, diagnostic labs/radiology, medication and chronic illness coaching; fixed and mobile clinics.",
+      "town": "Greater Hartford; Hartford and East Hartford",
+      "ages": "Uninsured adults 18+ with photo ID in Greater Hartford",
+      "hours": "Call for appointment. Hartford clinic 136 Farmington Avenue, Mon-Fri 9am-4pm. Mobile clinic second/fourth Monday 9am-3:30pm, St Mary's Parish Center, 30 Maplewood Ave, East Hartford.",
+      "cost": "Completely free for eligible uninsured adults.",
+      "website": "https://maltahouseofcare.org/get-help/",
+      "contact": "860-725-0171",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://maltahouseofcare.org/get-help/. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "free clinic, mobile clinic, primary care, vaccines, medications"
     },
     {
       "id": "recmob78YwwnNRIEq",
@@ -17065,6 +17333,23 @@
       "tags": "dog park, pet services, southington"
     },
     {
+      "id": "recPWQZZpNNwD31Vo",
+      "name": "Southwest Community Health Center - Dental Fee Assistance",
+      "track": "Elder Care",
+      "specificType": "Income-based sliding fee program covers dental and other health services.",
+      "town": "Bridgeport",
+      "ages": "Patients meeting financial assistance requirements",
+      "hours": "Call for eligibility, appointments and required documents.",
+      "cost": "Based on household size and gross income; proof required. Discount varies by procedure.",
+      "website": "https://swchc.org/sliding-fee-discount/",
+      "contact": "203-330-6000 ext. 4320",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://swchc.org/sliding-fee-discount/. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "dental, sliding scale, medical care, uninsured"
+    },
+    {
       "id": "recC3CKf8Omr2QIhJ",
       "name": "Southwestern Connecticut Agency on Aging",
       "track": "Elder Care",
@@ -17508,6 +17793,24 @@
       ],
       "lastVerified": "2026-08-31",
       "tags": "emergency pet foster care, pet services, stamford"
+    },
+    {
+      "id": "recPTXpZVXPMhMfwJ",
+      "name": "StayWell Health Center Dental Services",
+      "track": "Elder Care",
+      "specificType": "Preventive and restorative dental care, including exams, cleanings, fillings, extractions, crowns, root canals and dentures.",
+      "town": "Waterbury; Naugatuck",
+      "ages": "All ages, including seniors.",
+      "hours": "Call for appointments and current dental hours. Locations: 80 Phoenix Avenue Suite 305 and 1302 South Main Street, Waterbury; 30 Church Street, Naugatuck.",
+      "availability": "Call to confirm new-patient availability, service-specific charges and discount eligibility.",
+      "cost": "Income-based sliding fee discounts for eligible insured/uninsured households at or below 200% of federal poverty guidelines; apply with income proof.",
+      "website": "https://staywellhealth.org/services/dental/",
+      "contact": "203-756-8021; Phoenix Avenue dental ext. 3812; South Main Street press 4",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official dental page and https://staywellhealth.org/for-patients/insurance-and-billing/ verified November 8, 2026. Ongoing discounted care; not described as universally free.",
+      "lastVerified": "2026-11-08",
+      "tags": "dental care, low cost dental, sliding scale, seniors, dentures, teeth, waterbury, naugatuck"
     },
     {
       "id": "recOXxeao3JGEJgw5",
@@ -19201,6 +19504,23 @@
       "programYear": "Summer 2026",
       "lastVerified": "2026-08-25",
       "tags": "stem/tech camp, groton"
+    },
+    {
+      "id": "recmLpeQNLYizMRcg",
+      "name": "UConn School of Dental Medicine Clinics",
+      "track": "Elder Care",
+      "specificType": "General and specialty dental care through student and resident clinics at reduced fees.",
+      "town": "Farmington",
+      "ages": "Patients seeking general or specialty dental care",
+      "hours": "Request screening appointment; student visits typically 3-4 hours.",
+      "cost": "Reduced fees vary by clinic and treatment; request estimate. Official pages give differing percentage savings, so no fixed percentage recorded.",
+      "website": "https://www.uconnhealth.org/dental-care",
+      "contact": "860-679-7600",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://www.uconnhealth.org/dental-care. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "dental, low cost dental, dentures, fillings"
     },
     {
       "id": "recVX1ty38aS1CECf",
@@ -21004,6 +21324,23 @@
       "event": "Day of Immunology, November 8, 9:00 AM–3:00 PM",
       "eventDate": "2026-11-08",
       "tags": "teen program, high school students, immunology, biology, stem enrichment, laboratory tours, stem careers, yale pathways, new haven, november 2026"
+    },
+    {
+      "id": "recnfzyROq8P0vD8e",
+      "name": "Yale New Haven Hospital Mobile Mammography and Breast Imaging Unit",
+      "track": "Food & Basic Needs",
+      "specificType": "Mobile mammography and breast imaging; official page offers a community host request form.",
+      "town": "Connecticut; host locations by arrangement",
+      "ages": "Screening patients; confirm eligibility with provider",
+      "hours": "Host form is not an individual patient appointment. Financial assistance information: https://www.ynhh.org/smilow/services/support-services/cancer-screening",
+      "cost": "Mobile unit fees and patient eligibility not specified; ask screening program about financial assistance.",
+      "website": "https://www.ynhh.org/services/Department-of-Radiology-and-Biomedical-Imaging/Breast-Imaging/mobile-mammography",
+      "contact": "Screening assistance: 203-688-2219 or 203-867-5436",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-08",
+      "notes": "Official provider/program source verified November 8, 2026: https://www.ynhh.org/services/Department-of-Radiology-and-Biomedical-Imaging/Breast-Imaging/mobile-mammography. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
+      "lastVerified": "2026-11-08",
+      "tags": "mobile clinic, mammogram, breast cancer"
     },
     {
       "id": "recX9CgohEyCYo6dY",

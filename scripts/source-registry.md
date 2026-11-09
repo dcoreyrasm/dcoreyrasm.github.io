@@ -106,7 +106,6 @@ now.
   alz.org                            1  2026-08-29   Elder Care
   ctvetcenter.com                    1  2026-08-29   Pet Care & Resources
   coventry-ct.gov                    1  2026-08-29   Elder Care
-  hartfordhealthcare.org             1  2026-08-29   Elder Care
   marywade.org                       1  2026-08-29   Elder Care
   milfordctseniorcenter.com          1  2026-08-29   Elder Care
   nhlegal.org                        1  2026-08-29   Elder Care
@@ -262,7 +261,6 @@ now.
   deskct.org                         4  2026-10-13   Food & Basic Needs, Pet Care & Resources
   norwalkct.gov                      4  2026-10-13   Food & Basic Needs
   orange-ct.gov                      4  2026-10-13   Family & Childcare, Food & Basic Needs
-  bristolct.gov                      3  2026-10-13   Food & Basic Needs
   handsonhartford.org                3  2026-10-13   Food & Basic Needs
   newbritainct.gov                   3  2026-10-13   Food & Basic Needs
   milfordct.us                       3  2026-10-13   Food & Basic Needs, Pet Care & Resources
@@ -304,7 +302,6 @@ now.
   stjohnsfamilycenter.org            1  2026-10-31   Food & Basic Needs
   thechildrensattic.com              1  2026-10-31   Family & Childcare
   fccog.org                          1  2026-10-31   Family & Childcare
-  portal.ct.gov                     22  2026-11-05   Elder Care, Family & Childcare, Food & Basic Needs, Pet Care & Resources, Teens & High School
   onha.yale.edu                      4  2026-11-07   Family & Childcare, Teens & High School
   careandshareofel.org               1  2026-11-07   Food & Basic Needs
   dnec.org                           1  2026-11-07   Family & Childcare
@@ -312,6 +309,22 @@ now.
   independencenorthwest.org          1  2026-11-07   Family & Childcare
   easternusa.salvationarmy.org       1  2026-11-07   Family & Childcare
   townandcountryelc.com              1  2026-11-07   Family & Childcare
+  portal.ct.gov                     25  2026-11-08   Elder Care, Family & Childcare, Food & Basic Needs, Pet Care & Resources, Teens & High School
+  bristolct.gov                      4  2026-11-08   Elder Care, Food & Basic Needs
+  hartfordhealthcare.org             3  2026-11-08   Elder Care, Food & Basic Needs
+  americaresfreeclinics.org          1  2026-11-08   Food & Basic Needs
+  thecharteroak.org                  1  2026-11-08   Food & Basic Needs
+  chc1.com                           1  2026-11-08   Food & Basic Needs
+  dentallifeline.org                 1  2026-11-08   Elder Care
+  cfdo.org                           1  2026-11-08   Elder Care
+  cornellscott.org                   1  2026-11-08   Elder Care
+  bridgeport.edu                     1  2026-11-08   Elder Care
+  goodwin.edu                        1  2026-11-08   Elder Care
+  maltahouseofcare.org               1  2026-11-08   Food & Basic Needs
+  swchc.org                          1  2026-11-08   Elder Care
+  staywellhealth.org                 1  2026-11-08   Elder Care
+  uconnhealth.org                    1  2026-11-08   Elder Care
+  ynhh.org                           1  2026-11-08   Food & Basic Needs
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -336,7 +349,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 443 of 852 listings (52%) carry a Website, so
+Only 462 of 871 listings (53%) carry a Website, so
 everything above is built from that third of the directory. The other
 409 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -346,7 +359,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-35 of the 289 domains here have never had a Last Verified on
+35 of the 302 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```
