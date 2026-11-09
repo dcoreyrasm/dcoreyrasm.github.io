@@ -1,0 +1,18 @@
+{% comment %}
+  Anonymous participant quotes. Data: _data/participant_quotes.yml
+  Usage: {% include participant-quotes.html bg="var(--bg2)" %}
+{% endcomment %}
+<section class="quotes-section" aria-labelledby="quotes-heading"{% if include.bg %} style="background:{{ include.bg }};"{% endif %}>
+  <div class="container">
+    <p class="section-label">In Their Words</p>
+    <h2 class="section-heading" id="quotes-heading">What participants say.</h2>
+    <div class="quote-grid">
+      {% for q in site.data.participant_quotes %}
+      <figure class="participant-quote">
+        <blockquote><p>&ldquo;{{ q.quote }}&rdquo;</p></blockquote>
+        <figcaption>{{ q.source }}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
