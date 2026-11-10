@@ -13,17 +13,17 @@ between sessions: read them fresh from this section each time this brief is
 given to you, and if you are working from a remembered figure you are working
 from a gap that has already moved.
 
-872 listings across 166 Connecticut towns of 169.
+871 listings across 166 Connecticut towns of 169.
 
 That breadth is real. The depth behind it is the problem:
 
-  a website              463 / 872   53%   the single most valuable gap: without a URL nobody can ever re-check the listing
-  operating hours        212 / 872   24%   the specific promise on the front of the page
-  a real cost note       158 / 872   18%   excludes the state-fee boilerplate
-  a real waitlist note    64 / 872    7%   excludes the "contact the program directly" boilerplate
-  a verified date        404 / 872   46%   without one we cannot tell fresh from forgotten
-  a phone or email       744 / 872   85%
-  services tagged        697 / 872   80%   what makes a listing findable beyond its one category
+  a website              462 / 871   53%   the single most valuable gap: without a URL nobody can ever re-check the listing
+  operating hours        211 / 871   24%   the specific promise on the front of the page
+  a real cost note       157 / 871   18%   excludes the state-fee boilerplate
+  a real waitlist note    64 / 871    7%   excludes the "contact the program directly" boilerplate
+  a verified date        403 / 871   46%   without one we cannot tell fresh from forgotten
+  a phone or email       744 / 871   85%
+  services tagged        697 / 871   80%   what makes a listing findable beyond its one category
 
 A listing can carry a value and still say nothing. Two boilerplate lines were
 written onto hundreds of records by the original state import -- "Contact the
@@ -37,7 +37,7 @@ that sounds more specific than what you actually know.
 WEBSITE COVERAGE BY TRACK
 
   Family & Childcare      590 listings, 181 with a website (31%)
-  Teens & High School      90 listings,  90 with a website (100%)
+  Teens & High School      89 listings,  89 with a website (100%)
   Food & Basic Needs       70 listings,  70 with a website (100%)
   Elder Care               61 listings,  61 with a website (100%)
   Pet Care & Resources     61 listings,  61 with a website (100%)
@@ -53,8 +53,8 @@ AND THE GAP IS NOT WHERE IT LOOKS
 
 409 listings have no website. 409 of them -- every single one -- came from the
 one bulk import of Connecticut Office of Early Childhood childcare providers,
-which arrived without URLs. Of the 344 records written by
-research, 344 carry a website: 100%.
+which arrived without URLs. Of the 343 records written by
+research, 343 carry a website: 100%.
 
 So this is not a habit to correct. It is a bounded backfill of a known set,
 and the set is licensed childcare providers whose details came from the state.
