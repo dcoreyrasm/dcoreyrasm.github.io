@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-09T00:14:48.321Z",
+  "generated": "2026-11-10T11:32:33.085Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 871,
+  "count": 872,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -216,6 +216,7 @@
     "Stamford",
     "Statewide",
     "Statewide (all of Connecticut)",
+    "Statewide eligibility for Connecticut students who qualify. Program held in New York City.",
     "Statewide participating providers",
     "Statewide, Connecticut",
     "Statewide; next clinic in New Haven",
@@ -12528,6 +12529,25 @@
         "Preschool / Pre-K"
       ],
       "tags": "center-based daycare, childcare, norwich"
+    },
+    {
+      "id": "rec1E4j1j4wBNuyFN",
+      "name": "McDonald’s / National Urban League College Leaders Program (2027)",
+      "track": "Teens & High School",
+      "category": "Youth Development Program",
+      "specificType": "Four-day college leadership and career development program. Applications due November 13, 2026.",
+      "town": "Statewide eligibility for Connecticut students who qualify. Program held in New York City.",
+      "ages": "College juniors and seniors at accredited U.S. institutions with a minimum 3.0 GPA and a campus organization leadership role.",
+      "hours": "February 10–13, 2027",
+      "cost": "All expenses paid, including airfare and hotel for selected students.",
+      "website": "https://www.surveymonkey.com/r/CLP2027_Application",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-10",
+      "notes": "Submit a transcript, résumé, faculty recommendation, and a one-page essay or three-minute video. Program details and deadline: https://nul.org/program/college-leaders-program",
+      "registrationStatus": "Open",
+      "registrationCloses": "2026-11-13",
+      "programYear": "2027",
+      "lastVerified": "2026-11-10"
     },
     {
       "id": "recZuffvoutN22jL3",
