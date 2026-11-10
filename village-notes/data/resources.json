@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10T11:33:37.331Z",
+  "generated": "2026-11-10T11:38:18.069Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -10,6 +10,7 @@
     "Elder Care",
     "Family & Childcare",
     "Food & Basic Needs",
+    "Health & Dental",
     "Pet Care & Resources",
     "Teens & High School"
   ],
@@ -29,6 +30,7 @@
     "College Access / Readiness",
     "Community Meals / Soup Kitchen",
     "Companion Services",
+    "Dental Care",
     "Disability & Accessibility Services",
     "Dog Daycare",
     "Dog Park",
@@ -40,8 +42,10 @@
     "Emergency Veterinary Care",
     "Family Thrift Store",
     "Food Bank / Food Pantry",
+    "Free / Low-Cost Medical Clinic",
     "Free Clothing Closets",
     "Geriatric Care Manager",
+    "Health Screening Program",
     "High School (Private)",
     "High School (Public)",
     "Home Daycare (Licensed)",
@@ -58,6 +62,7 @@
     "Medical / Diagnosis-Specific Camp",
     "Memory Care",
     "Mobile Food Distribution",
+    "Mobile Health & Dental Clinic",
     "Mobile Veterinary Service",
     "Municipal/Parks & Rec Camp",
     "Nature / Farm Camp",
@@ -901,7 +906,8 @@
     {
       "id": "recRIhbU4v73Oyp5u",
       "name": "Americares Free Clinics",
-      "track": "Food & Basic Needs",
+      "track": "Health & Dental",
+      "category": "Free / Low-Cost Medical Clinic",
       "specificType": "Free adult medical care at four Connecticut clinics; specialty referrals when available.",
       "town": "Bridgeport, Danbury, Norwalk and Stamford service areas",
       "ages": "Uninsured adults 18+, not Medicaid eligible, qualifying town residency and income; cutoff 250% poverty level.",
@@ -2545,7 +2551,8 @@
     {
       "id": "recQ0vc6DbylcOaP4",
       "name": "Bristol Senior Center Dental Clinic",
-      "track": "Elder Care",
+      "track": "Health & Dental",
+      "category": "Dental Care",
       "specificType": "Dental screening and cleaning; referrals to participating dentists with sliding-scale fees.",
       "town": "Bristol",
       "ages": "Seniors; call to confirm residency, membership and age eligibility",
@@ -3733,7 +3740,8 @@
     {
       "id": "recMGWmcWsjDAMhPt",
       "name": "Charter Oak Health Center Mobile Medical and Dental Van",
-      "track": "Food & Basic Needs",
+      "track": "Health & Dental",
+      "category": "Mobile Health & Dental Clinic",
       "specificType": "Mobile primary care, dental screenings, dental pain assessment and referrals, behavioral health screening, immunizations and lab testing.",
       "town": "Hartford",
       "ages": "Community members regardless of insurance status",
@@ -4467,7 +4475,8 @@
     {
       "id": "recM778HZK3NLhIsL",
       "name": "Community Health Center Inc. - Mobile Dental Program",
-      "track": "Food & Basic Needs",
+      "track": "Health & Dental",
+      "category": "Mobile Health & Dental Clinic",
       "specificType": "Mobile dental teams visit schools, senior centers, Head Start programs and day cares; fixed dental clinics also available.",
       "town": "Connecticut; participating community sites",
       "ages": "Families and participants at host sites",
@@ -4543,7 +4552,8 @@
     {
       "id": "recUdPyUoBIp0qteq",
       "name": "Connecticut Breast and Cervical Cancer Early Detection Program",
-      "track": "Food & Basic Needs",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
       "specificType": "Free qualifying mammograms, Pap/HPV tests, breast ultrasounds, diagnostic tests and treatment referrals through contracted providers.",
       "town": "Statewide",
       "ages": "Generally ages 21-64; mammograms usually 40-64; younger high-risk/symptomatic and some 65+ without Medicare Part B may qualify.",
@@ -4586,7 +4596,8 @@
     {
       "id": "recjKfKfb08A0HMrl",
       "name": "Connecticut Colorectal Cancer Control Program - Diagnostic Follow-up",
-      "track": "Food & Basic Needs",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
       "specificType": "No-cost follow-up diagnostic colonoscopy after a positive colorectal cancer screening test for eligible participants.",
       "town": "Statewide participating providers",
       "ages": "Ages 45-75, positive colorectal screening, income at/below 250% federal poverty level, uninsured or deductible $1,000+.",
@@ -4618,7 +4629,8 @@
     {
       "id": "recnVLPzuSaLtM4bK",
       "name": "Connecticut Donated Dental Services (Dental Lifeline Network)",
-      "track": "Elder Care",
+      "track": "Health & Dental",
+      "category": "Dental Care",
       "specificType": "Volunteer comprehensive dental treatment for eligible applicants; no emergency or cosmetic services.",
       "town": "Statewide",
       "ages": "People unable to afford dental care who are over 65, permanently disabled, or need medically necessary dental care.",
@@ -5084,7 +5096,8 @@
     {
       "id": "recnaLJHp0AyNe8b1",
       "name": "Connecticut Mission of Mercy (CTMOM) Free Dental Clinic",
-      "track": "Elder Care",
+      "track": "Health & Dental",
+      "category": "Dental Care",
       "specificType": "Free dental exams, cleanings, fillings, extractions, and limited additional treatments.",
       "town": "Statewide; next clinic in New Haven",
       "ages": "Adults and children unable to afford dental care; under 18 must attend with parent/legal guardian.",
@@ -5405,7 +5418,8 @@
     {
       "id": "recFQJe7wxWFwocq1",
       "name": "Connecticut WISEWOMAN Heart Health Program",
-      "track": "Food & Basic Needs",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
       "specificType": "Cardiovascular screening: blood pressure, cholesterol and blood glucose; health coaching and supportive lifestyle programs.",
       "town": "Statewide",
       "ages": "Women ages 35-64 enrolled in Connecticut Breast and Cervical Cancer Early Detection Program; generally income at or below 250% federal poverty level.",
@@ -5492,7 +5506,8 @@
     {
       "id": "recYjk6YPTsC5PAjO",
       "name": "Cornell Scott-Hill Health Center Dental Care",
-      "track": "Elder Care",
+      "track": "Health & Dental",
+      "category": "Dental Care",
       "specificType": "Adult and pediatric dental treatment; income-based reduced fees available.",
       "town": "Greater New Haven",
       "ages": "Adults and children",
@@ -7980,7 +7995,8 @@
     {
       "id": "rec9bMYtn88qiW9c2",
       "name": "Fones Dental Hygiene Clinic - University of Bridgeport",
-      "track": "Elder Care",
+      "track": "Health & Dental",
+      "category": "Dental Care",
       "specificType": "Supervised student dental hygiene care, cleanings, exams, X-rays and periodontal services.",
       "town": "Bridgeport",
       "ages": "General public",
@@ -8574,7 +8590,8 @@
     {
       "id": "recFQYxD8debwYyef",
       "name": "Goodwin University Dental Hygiene Clinic",
-      "track": "Elder Care",
+      "track": "Health & Dental",
+      "category": "Dental Care",
       "specificType": "Free dental hygiene services for children and adults: cleanings, X-rays, fluoride, sealants and periodontal scaling.",
       "town": "East Hartford",
       "ages": "Children and adults",
@@ -9492,7 +9509,8 @@
     {
       "id": "recfxPzbZ5ImeV5el",
       "name": "Hartford HealthCare Neighborhood Health Mobile Clinics",
-      "track": "Food & Basic Needs",
+      "track": "Health & Dental",
+      "category": "Mobile Health & Dental Clinic",
       "specificType": "Walk-in care, minor illness/wound care, blood pressure/blood sugar/cholesterol checks, A1C, vaccines, HIV/STI testing and referrals; availability varies.",
       "town": "Connecticut; rotating community sites",
       "ages": "All ages, including uninsured and underinsured people",
@@ -9509,7 +9527,8 @@
     {
       "id": "recyGtCrkgj2xcsPs",
       "name": "Hartford HealthCare Take the Time Mobile Mammography",
-      "track": "Food & Basic Needs",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
       "specificType": "Mobile breast cancer screening, including access for people without insurance.",
       "town": "Connecticut; rotating host locations",
       "ages": "People eligible for screening mammograms; confirm clinical and program requirements",
@@ -11944,7 +11963,8 @@
     {
       "id": "recyN5Q0GRRE5PH6h",
       "name": "Malta House of Care - Free Primary Care and Mobile Clinic",
-      "track": "Food & Basic Needs",
+      "track": "Health & Dental",
+      "category": "Free / Low-Cost Medical Clinic",
       "specificType": "Free primary care, physicals, vaccinations, diagnostic labs/radiology, medication and chronic illness coaching; fixed and mobile clinics.",
       "town": "Greater Hartford; Hartford and East Hartford",
       "ages": "Uninsured adults 18+ with photo ID in Greater Hartford",
@@ -17335,7 +17355,8 @@
     {
       "id": "recPWQZZpNNwD31Vo",
       "name": "Southwest Community Health Center - Dental Fee Assistance",
-      "track": "Elder Care",
+      "track": "Health & Dental",
+      "category": "Dental Care",
       "specificType": "Income-based sliding fee program covers dental and other health services.",
       "town": "Bridgeport",
       "ages": "Patients meeting financial assistance requirements",
@@ -17797,7 +17818,8 @@
     {
       "id": "recPTXpZVXPMhMfwJ",
       "name": "StayWell Health Center Dental Services",
-      "track": "Elder Care",
+      "track": "Health & Dental",
+      "category": "Dental Care",
       "specificType": "Preventive and restorative dental care, including exams, cleanings, fillings, extractions, crowns, root canals and dentures.",
       "town": "Waterbury; Naugatuck",
       "ages": "All ages, including seniors.",
@@ -19508,7 +19530,8 @@
     {
       "id": "recmLpeQNLYizMRcg",
       "name": "UConn School of Dental Medicine Clinics",
-      "track": "Elder Care",
+      "track": "Health & Dental",
+      "category": "Dental Care",
       "specificType": "General and specialty dental care through student and resident clinics at reduced fees.",
       "town": "Farmington",
       "ages": "Patients seeking general or specialty dental care",
@@ -21328,7 +21351,8 @@
     {
       "id": "recnfzyROq8P0vD8e",
       "name": "Yale New Haven Hospital Mobile Mammography and Breast Imaging Unit",
-      "track": "Food & Basic Needs",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
       "specificType": "Mobile mammography and breast imaging; official page offers a community host request form.",
       "town": "Connecticut; host locations by arrangement",
       "ages": "Screening patients; confirm eligibility with provider",

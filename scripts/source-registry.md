@@ -309,22 +309,22 @@ now.
   independencenorthwest.org          1  2026-11-07   Family & Childcare
   easternusa.salvationarmy.org       1  2026-11-07   Family & Childcare
   townandcountryelc.com              1  2026-11-07   Family & Childcare
-  portal.ct.gov                     25  2026-11-08   Elder Care, Family & Childcare, Food & Basic Needs, Pet Care & Resources, Teens & High School
-  bristolct.gov                      4  2026-11-08   Elder Care, Food & Basic Needs
-  hartfordhealthcare.org             3  2026-11-08   Elder Care, Food & Basic Needs
-  americaresfreeclinics.org          1  2026-11-08   Food & Basic Needs
-  thecharteroak.org                  1  2026-11-08   Food & Basic Needs
-  chc1.com                           1  2026-11-08   Food & Basic Needs
-  dentallifeline.org                 1  2026-11-08   Elder Care
-  cfdo.org                           1  2026-11-08   Elder Care
-  cornellscott.org                   1  2026-11-08   Elder Care
-  bridgeport.edu                     1  2026-11-08   Elder Care
-  goodwin.edu                        1  2026-11-08   Elder Care
-  maltahouseofcare.org               1  2026-11-08   Food & Basic Needs
-  swchc.org                          1  2026-11-08   Elder Care
-  staywellhealth.org                 1  2026-11-08   Elder Care
-  uconnhealth.org                    1  2026-11-08   Elder Care
-  ynhh.org                           1  2026-11-08   Food & Basic Needs
+  portal.ct.gov                     25  2026-11-08   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
+  bristolct.gov                      4  2026-11-08   Food & Basic Needs, Health & Dental
+  hartfordhealthcare.org             3  2026-11-08   Elder Care, Health & Dental
+  americaresfreeclinics.org          1  2026-11-08   Health & Dental
+  thecharteroak.org                  1  2026-11-08   Health & Dental
+  chc1.com                           1  2026-11-08   Health & Dental
+  dentallifeline.org                 1  2026-11-08   Health & Dental
+  cfdo.org                           1  2026-11-08   Health & Dental
+  cornellscott.org                   1  2026-11-08   Health & Dental
+  bridgeport.edu                     1  2026-11-08   Health & Dental
+  goodwin.edu                        1  2026-11-08   Health & Dental
+  maltahouseofcare.org               1  2026-11-08   Health & Dental
+  swchc.org                          1  2026-11-08   Health & Dental
+  staywellhealth.org                 1  2026-11-08   Health & Dental
+  uconnhealth.org                    1  2026-11-08   Health & Dental
+  ynhh.org                           1  2026-11-08   Health & Dental
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 

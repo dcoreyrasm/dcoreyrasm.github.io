@@ -38,9 +38,10 @@ WEBSITE COVERAGE BY TRACK
 
   Family & Childcare      590 listings, 181 with a website (31%)
   Teens & High School      89 listings,  89 with a website (100%)
-  Food & Basic Needs       70 listings,  70 with a website (100%)
-  Elder Care               61 listings,  61 with a website (100%)
   Pet Care & Resources     61 listings,  61 with a website (100%)
+  Food & Basic Needs       60 listings,  60 with a website (100%)
+  Elder Care               52 listings,  52 with a website (100%)
+  Health & Dental          19 listings,  19 with a website (100%)
 
 WHY THE WEBSITE COLUMN COMES FIRST
 

@@ -54,11 +54,13 @@ make it detectable, it is not to do it.
 If a field genuinely looks wrong, say so in your end-of-run report with what
 you would change and why.
 
-TRACK — exactly four values, nothing else:
+TRACK — exactly six values, nothing else:
   Family & Childcare
   Elder Care
   Pet Care & Resources
   Teens & High School
+  Food & Basic Needs
+  Health & Dental
 Track is the audience, not the kind of program. A camp is Family & Childcare
 with a camp Category. It is not its own track. Neither is a youth program.
 
@@ -144,6 +146,10 @@ CATEGORY — exactly one value, from this list only:
 - Apprenticeship
 - Job Training Program
 - College Access / Readiness
+- Dental Care
+- Free / Low-Cost Medical Clinic
+- Mobile Health & Dental Clinic
+- Health Screening Program
 
 Two entries in that list look like the coined variants warned about above, and
 are not. `Medical / Diagnosis-Specific Camp` and `Nature / Farm Camp` each name
@@ -153,7 +159,16 @@ on a farm, and `Nature / Outdoor Camp` for everything else outdoors. There is no
 `Outdoor/Nature Camp` -- that spelling has been removed, and the two surviving
 names deliberately share the `Nature / ` prefix.
 
-The last six are the Teens & High School categories. Two notes on them.
+The four Health & Dental categories (added 2026-11-10) always go with the
+Health & Dental track: a dental clinic is Health & Dental even when it serves
+seniors, and a free screening program is Health & Dental, not Food & Basic
+Needs. Use `Mobile Health & Dental Clinic` for any van or rotating-site clinic,
+`Health Screening Program` for no-cost mammograms, cancer screening and heart
+screening, and `Free / Low-Cost Medical Clinic` for a fixed-site free or
+sliding-fee medical clinic. Never leave Category blank.
+
+The six before the Health & Dental categories are the Teens & High School
+categories. Two notes on them.
 
 `College Access / Readiness` is spelled exactly as Services Offered already
 spells it, deliberately: the base carried that phrase before this track
@@ -1051,22 +1066,22 @@ now.
   independencenorthwest.org          1  2026-11-07   Family & Childcare
   easternusa.salvationarmy.org       1  2026-11-07   Family & Childcare
   townandcountryelc.com              1  2026-11-07   Family & Childcare
-  portal.ct.gov                     25  2026-11-08   Elder Care, Family & Childcare, Food & Basic Needs, Pet Care & Resources, Teens & High School
-  bristolct.gov                      4  2026-11-08   Elder Care, Food & Basic Needs
-  hartfordhealthcare.org             3  2026-11-08   Elder Care, Food & Basic Needs
-  americaresfreeclinics.org          1  2026-11-08   Food & Basic Needs
-  thecharteroak.org                  1  2026-11-08   Food & Basic Needs
-  chc1.com                           1  2026-11-08   Food & Basic Needs
-  dentallifeline.org                 1  2026-11-08   Elder Care
-  cfdo.org                           1  2026-11-08   Elder Care
-  cornellscott.org                   1  2026-11-08   Elder Care
-  bridgeport.edu                     1  2026-11-08   Elder Care
-  goodwin.edu                        1  2026-11-08   Elder Care
-  maltahouseofcare.org               1  2026-11-08   Food & Basic Needs
-  swchc.org                          1  2026-11-08   Elder Care
-  staywellhealth.org                 1  2026-11-08   Elder Care
-  uconnhealth.org                    1  2026-11-08   Elder Care
-  ynhh.org                           1  2026-11-08   Food & Basic Needs
+  portal.ct.gov                     25  2026-11-08   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
+  bristolct.gov                      4  2026-11-08   Food & Basic Needs, Health & Dental
+  hartfordhealthcare.org             3  2026-11-08   Elder Care, Health & Dental
+  americaresfreeclinics.org          1  2026-11-08   Health & Dental
+  thecharteroak.org                  1  2026-11-08   Health & Dental
+  chc1.com                           1  2026-11-08   Health & Dental
+  dentallifeline.org                 1  2026-11-08   Health & Dental
+  cfdo.org                           1  2026-11-08   Health & Dental
+  cornellscott.org                   1  2026-11-08   Health & Dental
+  bridgeport.edu                     1  2026-11-08   Health & Dental
+  goodwin.edu                        1  2026-11-08   Health & Dental
+  maltahouseofcare.org               1  2026-11-08   Health & Dental
+  swchc.org                          1  2026-11-08   Health & Dental
+  staywellhealth.org                 1  2026-11-08   Health & Dental
+  uconnhealth.org                    1  2026-11-08   Health & Dental
+  ynhh.org                           1  2026-11-08   Health & Dental
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -1144,9 +1159,10 @@ WEBSITE COVERAGE BY TRACK
 
   Family & Childcare      590 listings, 181 with a website (31%)
   Teens & High School      89 listings,  89 with a website (100%)
-  Food & Basic Needs       70 listings,  70 with a website (100%)
-  Elder Care               61 listings,  61 with a website (100%)
   Pet Care & Resources     61 listings,  61 with a website (100%)
+  Food & Basic Needs       60 listings,  60 with a website (100%)
+  Elder Care               52 listings,  52 with a website (100%)
+  Health & Dental          19 listings,  19 with a website (100%)
 
 WHY THE WEBSITE COLUMN COMES FIRST
 
