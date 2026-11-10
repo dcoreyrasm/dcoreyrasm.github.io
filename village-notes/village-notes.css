@@ -689,6 +689,7 @@ main .btn-ghost.vn-btn-on-dark:hover { color:#fff; border-color:var(--pop-gold);
 .vn-track-pill[data-track="elder"] { background:var(--pop-rose); }
 .vn-track-pill[data-track="pet"] { background:#c084fc; }
 .vn-track-pill[data-track="food"] { background:var(--pop-rose); }
+.vn-track-pill[data-track="health"] { background:var(--pop-teal); }
 
 /* Filter pills: filled in rotating gold, teal and rose, like the pills on
    the Start Your Business page. A picked pill turns Deep Plum (white in the

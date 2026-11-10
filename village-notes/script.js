@@ -187,7 +187,7 @@
   // appears in the dropdown -- and fails the sync check, which is how a fifth
   // one gets noticed rather than quietly filtering to nothing.
   var TRACKS = ['Family & Childcare', 'Elder Care', 'Pet Care & Resources',
-                'Teens & High School', 'Food & Basic Needs'];
+                'Teens & High School', 'Food & Basic Needs', 'Health & Dental'];
 
   var FOOD_TRACK = 'Food & Basic Needs';
 
@@ -293,6 +293,15 @@
     // household behind on a heating bill should not have to scan pantries to
     // find it. Added 2026-10-31 for CEAP.
     ['Utility & Heating Help', ['Utility & Heating Assistance']],
+
+    // Health & Dental. Added 2026-11-10 for free and low-cost dental clinics,
+    // free medical clinics, mobile health vans and no-cost screening programs.
+    // These had been filed under Elder Care or Food & Basic Needs with no
+    // Category, which hid them from both the category filter and the people
+    // looking for them. Like Food, the track has no "who" label: the person
+    // asking is usually the person who needs the care.
+    ['Health & Dental', ['Dental Care','Free / Low-Cost Medical Clinic',
+      'Mobile Health & Dental Clinic','Health Screening Program']],
 
     // Affordable family shopping, inside Family & Childcare. Two groups rather
     // than one, because the two halves answer different questions and a family

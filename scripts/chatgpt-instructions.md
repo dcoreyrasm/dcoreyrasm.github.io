@@ -82,11 +82,13 @@ make it detectable, it is not to do it.
 If a field genuinely looks wrong, say so in your end-of-run report with what
 you would change and why.
 
-TRACK — exactly four values, nothing else:
+TRACK — exactly six values, nothing else:
   Family & Childcare
   Elder Care
   Pet Care & Resources
   Teens & High School
+  Food & Basic Needs
+  Health & Dental
 Track is the audience, not the kind of program. A camp is Family & Childcare
 with a camp Category. It is not its own track. Neither is a youth program.
 
@@ -172,6 +174,10 @@ CATEGORY — exactly one value, from this list only:
 - Apprenticeship
 - Job Training Program
 - College Access / Readiness
+- Dental Care
+- Free / Low-Cost Medical Clinic
+- Mobile Health & Dental Clinic
+- Health Screening Program
 
 Two entries in that list look like the coined variants warned about above, and
 are not. `Medical / Diagnosis-Specific Camp` and `Nature / Farm Camp` each name
@@ -181,7 +187,16 @@ on a farm, and `Nature / Outdoor Camp` for everything else outdoors. There is no
 `Outdoor/Nature Camp` -- that spelling has been removed, and the two surviving
 names deliberately share the `Nature / ` prefix.
 
-The last six are the Teens & High School categories. Two notes on them.
+The four Health & Dental categories (added 2026-11-10) always go with the
+Health & Dental track: a dental clinic is Health & Dental even when it serves
+seniors, and a free screening program is Health & Dental, not Food & Basic
+Needs. Use `Mobile Health & Dental Clinic` for any van or rotating-site clinic,
+`Health Screening Program` for no-cost mammograms, cancer screening and heart
+screening, and `Free / Low-Cost Medical Clinic` for a fixed-site free or
+sliding-fee medical clinic. Never leave Category blank.
+
+The six before the Health & Dental categories are the Teens & High School
+categories. Two notes on them.
 
 `College Access / Readiness` is spelled exactly as Services Offered already
 spells it, deliberately: the base carried that phrase before this track
