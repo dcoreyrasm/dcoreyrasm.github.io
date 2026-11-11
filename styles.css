@@ -858,3 +858,14 @@ main > section:nth-of-type(3n) .section-label:not(.pop-label)::before { backgrou
 .social-link.teal:hover, .social-link.teal:focus-visible { color:var(--pop-teal); border-color:var(--pop-teal); }
 .social-link.rose:hover, .social-link.rose:focus-visible { color:var(--pop-rose); border-color:var(--pop-rose); }
 .social-link:focus-visible { outline:2px solid currentColor; outline-offset:2px; }
+
+/* Speaking page: event graphic thumbnails beside each engagement (2026-11-10) */
+.engagement-thumbs { float:right; display:flex; gap:.5rem; margin:0 0 .75rem 1.25rem; }
+.engagement-thumb { display:block; line-height:0; border:1px solid var(--line); border-radius:6px; overflow:hidden; transition:transform .15s ease, box-shadow .15s ease; }
+.engagement-thumb img { display:block; height:120px; width:auto; }
+.engagement-thumb:hover, .engagement-thumb:focus-visible { transform:translateY(-2px); box-shadow:0 4px 14px rgba(0,0,0,.25); }
+.engagement-thumb:focus-visible { outline:2px solid var(--coral); outline-offset:2px; }
+@media (max-width:640px) {
+  .engagement-thumbs { float:none; margin:0 0 .75rem; }
+  .engagement-thumb img { height:96px; }
+}
