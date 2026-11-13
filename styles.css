@@ -869,3 +869,14 @@ main > section:nth-of-type(3n) .section-label:not(.pop-label)::before { backgrou
   .engagement-thumbs { float:none; margin:0 0 .75rem; }
   .engagement-thumb img { height:96px; }
 }
+
+/* AI Governance Starter Review (Services) */
+.starter-review { margin-top:2.5rem; }
+.starter-steps { list-style:none; padding:0; margin:0 0 1.5rem; display:grid; gap:1rem; max-width:760px; }
+.starter-steps li { display:flex; gap:1rem; align-items:flex-start; line-height:1.65; color:var(--muted); }
+.starter-steps li strong { color:var(--cream); }
+.starter-steps .step-num { flex:0 0 auto; display:inline-flex; align-items:center; justify-content:center; width:2.25rem; height:2.25rem; border-radius:999px; font-weight:700; font-size:.85rem; color:var(--pop-ink); }
+.starter-steps .step-num.gold { background:var(--pop-gold); }
+.starter-steps .step-num.teal { background:var(--pop-teal); }
+.starter-steps .step-num.rose { background:var(--pop-rose); }
+.starter-review .leave-with { color:var(--coral); }
