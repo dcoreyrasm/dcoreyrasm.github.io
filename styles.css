@@ -988,3 +988,16 @@ main > section:nth-of-type(3n) .section-label:not(.pop-label)::before { backgrou
 .llc-banner-photo { z-index:1; }
 .llc-banner-text { z-index:2; }
 @media (max-width:800px) { .llc-banner::before, .llc-banner::after { display:none; } }
+/* Banner portrait v3: background-removed cutout over the band, like the brand board */
+.llc-banner-photo picture { display:block; width:100%; height:100%; }
+.llc-banner-photo img { width:100%; height:100%; object-fit:contain; object-position:right bottom; -webkit-mask-image:none; mask-image:none; }
+.llc-banner-photo { width:48%; right:0; }
+@media (max-width:800px) {
+  .llc-banner-photo { height:340px; }
+  .llc-banner-photo img { object-position:center bottom; -webkit-mask-image:linear-gradient(180deg,#000 80%,transparent 100%); mask-image:linear-gradient(180deg,#000 80%,transparent 100%); }
+  .llc-banner-text { margin-top:0; padding-top:1.5rem; }
+}
+@media (max-width:800px) {
+  .llc-banner-photo { position:relative; width:100%; height:360px; }
+  .llc-banner-photo img { object-position:center bottom; }
+}
