@@ -1001,3 +1001,14 @@ main > section:nth-of-type(3n) .section-label:not(.pop-label)::before { backgrou
   .llc-banner-photo { position:relative; width:100%; height:360px; }
   .llc-banner-photo img { object-position:center bottom; }
 }
+/* Banner portrait v4: Darice's purple-background portrait, blended into the band from the left */
+.llc-banner:has(.llc-banner-photo-v2)::before, .llc-banner:has(.llc-banner-photo-v2)::after { display:none; }
+.llc-banner:has(.llc-banner-photo-v2) { background:linear-gradient(100deg, #140d24 0%, #1a1330 45%, #1e1734 100%); }
+.llc-banner-photo.llc-banner-photo-v2 { width:58%; }
+.llc-banner-photo-v2 img { object-fit:cover; object-position:right center;
+  -webkit-mask-image:linear-gradient(90deg, transparent 0%, rgba(0,0,0,.55) 14%, #000 32%); mask-image:linear-gradient(90deg, transparent 0%, rgba(0,0,0,.55) 14%, #000 32%); }
+@media (max-width:800px) {
+  .llc-banner-photo.llc-banner-photo-v2 { width:100%; height:380px; }
+  .llc-banner-photo-v2 img { object-position:72% center;
+    -webkit-mask-image:linear-gradient(180deg, #000 70%, transparent 100%); mask-image:linear-gradient(180deg, #000 70%, transparent 100%); }
+}
