@@ -880,3 +880,20 @@ main > section:nth-of-type(3n) .section-label:not(.pop-label)::before { backgrou
 .starter-steps .step-num.teal { background:var(--pop-teal); }
 .starter-steps .step-num.rose { background:var(--pop-rose); }
 .starter-review .leave-with { color:var(--coral); }
+
+/* Brand photography (Brand Board v2, Nov 2026). Hero bands stay dark in both themes. */
+.speaking-hero.hero-skyline { background:
+  linear-gradient(100deg, rgba(22,19,31,.97) 0%, rgba(30,26,46,.9) 42%, rgba(45,31,78,.62) 72%, rgba(168,85,247,.28) 100%),
+  url('/images/brand/hartford-dusk-1920.jpg') center 40%/cover no-repeat; }
+.speaking-hero.hero-orchid { background:
+  linear-gradient(95deg, rgba(22,19,31,.98) 0%, rgba(22,19,31,.9) 45%, rgba(22,19,31,.35) 75%, rgba(22,19,31,.1) 100%),
+  url('/images/brand/orchid-violet-1600.jpg') right -2rem center/auto 125% no-repeat, #0f0d16; }
+@media (max-width:700px) {
+  .speaking-hero.hero-skyline { background:
+    linear-gradient(180deg, rgba(22,19,31,.9) 0%, rgba(22,19,31,.95) 100%),
+    url('/images/brand/hartford-dusk-1200.jpg') center/cover no-repeat; }
+  .speaking-hero.hero-orchid { background:
+    linear-gradient(180deg, rgba(22,19,31,.88) 0%, rgba(22,19,31,.96) 100%),
+    url('/images/brand/orchid-violet-900.jpg') center/cover no-repeat, #0f0d16; }
+}
+.brand-tagline { font-family:var(--serif); font-style:italic; color:var(--coral); font-size:1.15rem; margin:.5rem 0 0; }
