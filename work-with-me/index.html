@@ -79,6 +79,16 @@
                 <option value="partnership">Organizational partnership</option>
               </select>
             </div>
+            <div class="form-group">
+              <label for="wwm-yale">Does your organization have a current relationship with Yale University? <span class="req" aria-hidden="true">*</span></label>
+              <select id="wwm-yale" name="yale_relationship" data-name="the Yale relationship question" required aria-required="true" aria-describedby="wwm-yale-hint">
+                <option value="">Select one</option>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+                <option value="not-sure">Not sure</option>
+              </select>
+              <p class="hint" id="wwm-yale-hint">For example, as a partner, vendor, contractor, or Yale department. I ask so I can avoid any conflict of interest with my employment at Yale.</p>
+            </div>
             <div class="form-group"><label for="wwm-audience">Intended audience</label><input type="text" id="wwm-audience" name="audience" maxlength="200" aria-describedby="wwm-audience-hint" /><p class="hint" id="wwm-audience-hint">For example: small business owners, nonprofit staff, or senior leaders.</p></div>
             <div class="form-row">
               <div class="form-group"><label for="wwm-count">Number of participants</label><input type="number" id="wwm-count" name="participants" min="1" max="10000" inputmode="numeric" /></div>
