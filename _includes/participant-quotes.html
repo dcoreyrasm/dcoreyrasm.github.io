@@ -7,12 +7,12 @@
     <p class="section-label">In Their Words</p>
     <h2 class="section-heading" id="quotes-heading">What participants say.</h2>
     <div class="quote-grid">
-      {% for q in site.data.participant_quotes %}
+      {% for q in site.data.participant_quotes %}{% unless q.context == "yale" %}
       <figure class="participant-quote">
         <blockquote><p>&ldquo;{{ q.quote }}&rdquo;</p></blockquote>
         <figcaption>{{ q.source }}</figcaption>
       </figure>
-      {% endfor %}
+      {% endunless %}{% endfor %}
     </div>
   </div>
 </section>

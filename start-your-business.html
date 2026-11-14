@@ -27,6 +27,7 @@
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#16131F" />
   <link rel="stylesheet" href="styles.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
+  <link rel="stylesheet" href="/assets/css/llc-services.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
   <style>
     .sched{width:100%;border-collapse:collapse;margin:1.5rem 0 1rem;font-size:.95rem;}
     .sched th,.sched td{text-align:left;padding:.7rem .75rem;border-bottom:1px solid rgba(127,127,127,.25);vertical-align:top;line-height:1.55;}
@@ -302,6 +303,9 @@
       </div>
     </section>
 
+  
+    {% include llc-independence.html %}
+
   </main>
 
   <footer role="contentinfo">
@@ -333,6 +337,7 @@
           <li><a href="/services.html">Services</a></li>
           <li><a href="/portfolio.html">Portfolio</a></li>
           <li><a href="/contact.html?reason=speaking#contact-form">Book Darice to Speak</a></li>
+          <li><a href="/ai-consulting-training/">AI Consulting &amp; Training</a></li>
         </ul>
       </nav>
       <nav class="footer-col" aria-labelledby="foot-elsewhere">
@@ -342,6 +347,7 @@
           <li><a href="/newsletter.html">Newsletter</a></li>
           <li><a href="/contact.html">Contact</a></li>
           <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/business-independence-disclaimer/">Business Independence Statement</a></li>
         </ul>
       </nav>
     </div>

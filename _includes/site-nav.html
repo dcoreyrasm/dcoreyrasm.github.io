@@ -4,7 +4,7 @@
 {%- endcomment -%}
 {%- assign u = page.url -%}
 {%- assign in_about = false -%}{%- if u == '/work.html' or u == '/ai.html' or u == '/research.html' or u == '/mentorship.html' -%}{%- assign in_about = true -%}{%- endif -%}
-{%- assign in_speak = false -%}{%- if u == '/speaking.html' or u == '/services.html' -%}{%- assign in_speak = true -%}{%- endif -%}
+{%- assign in_speak = false -%}{%- if u == '/speaking.html' or u == '/services.html' or u contains '/ai-consulting-training/' or u contains '/ai-readiness-assessment/' or u contains '/small-business-ai-starter/' or u contains '/ai-adoption-governance/' or u contains '/organizational-ai-training/' or u contains '/speaking-workshops/' or u contains '/work-with-me/' or u contains '/business-independence-disclaimer/' -%}{%- assign in_speak = true -%}{%- endif -%}
 {%- assign in_class = false -%}{%- if u == '/ai-for-beginners.html' or u == '/claude-for-beginners.html' or u == '/gemini-for-beginners.html' or u == '/copilot-for-beginners.html' or u == '/start-your-business.html' or u == '/classes.html' -%}{%- assign in_class = true -%}{%- endif -%}
 {%- assign in_proj = false -%}{%- if u == '/portfolio.html' or u contains '/community-ai/' or u contains '/village-notes/' or u contains '/connecticut-list/' or u contains '/year-end-report/' or u contains '/prompts/' or u contains '/scholarships-fellowships/' -%}{%- assign in_proj = true -%}{%- endif -%}
 {%- assign in_write = false -%}{%- if u == '/blog.html' or u contains '/blog/' or u == '/newsletter.html' -%}{%- assign in_write = true -%}{%- endif -%}
@@ -17,7 +17,7 @@
     })();
   </script>
   <nav aria-label="Main navigation">
-    <a class="nav-name" href="/"><img class="nav-mark nav-mark-dark" src="/brand/monogram-dark.svg" alt="" width="34" height="34" /><img class="nav-mark nav-mark-light" src="/brand/monogram-light.svg" alt="" width="34" height="34" /><span>Darice Corey</span></a>
+    <a class="nav-name" href="/" aria-label="Darice Corey, home"><img class="nav-mark nav-mark-dark" src="/brand/monogram-dark.svg" alt="" width="34" height="34" /><img class="nav-mark nav-mark-light" src="/brand/monogram-light.svg" alt="" width="34" height="34" /><span>Darice Corey</span></a>
     <div class="nav-right">
       <ul class="nav-links" id="nav-links">
         <li class="nav-group">
@@ -34,6 +34,10 @@
           <ul class="nav-sub" id="nav-sub-speaking" hidden>
             <li><a href="/speaking.html"{% if u == '/speaking.html' %} aria-current="page"{% endif %}>Speaking</a></li>
             <li><a href="/services.html"{% if u == '/services.html' %} aria-current="page"{% endif %}>Services</a></li>
+            <li><a href="/ai-consulting-training/"{% if u contains '/ai-consulting-training/' %} aria-current="page"{% endif %}>AI Consulting &amp; Training</a></li>
+            <li><a href="/organizational-ai-training/"{% if u contains '/organizational-ai-training/' %} aria-current="page"{% endif %}>Training Partnerships</a></li>
+            <li><a href="/speaking-workshops/"{% if u contains '/speaking-workshops/' %} aria-current="page"{% endif %}>Speaking Topics &amp; Workshops</a></li>
+            <li><a href="/work-with-me/"{% if u contains '/work-with-me/' %} aria-current="page"{% endif %}>Work With Me</a></li>
           </ul>
         </li>
         <li class="nav-group">
