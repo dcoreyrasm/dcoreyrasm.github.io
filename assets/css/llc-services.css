@@ -3,12 +3,12 @@
    pages are white and Soft Cream (#EDE9F6) with Deep Violet accents; in dark
    mode they follow the site's existing dark theme. No new colors are added. */
 
-.llc-hero { padding:4.5rem 0 3.5rem; background:linear-gradient(135deg, rgba(168,85,247,.14) 0%, rgba(192,132,252,.05) 100%); border-bottom:1px solid var(--line); }
-.llc-hero h1 { font-family:var(--serif); font-size:clamp(2rem,4.6vw,3.2rem); font-weight:700; line-height:1.12; color:var(--cream); margin-bottom:1.25rem; max-width:860px; }
-.llc-hero .lede { font-size:1.08rem; color:var(--cream); line-height:1.75; max-width:720px; margin-bottom:1rem; }
+/* Hero uses the site's shared .speaking-hero.hero-skyline band (same as Services); .llc-hero only adds type sizes. */
+.llc-hero h1 { font-family:var(--serif); font-size:clamp(1.8rem,4vw,3rem); font-weight:700; line-height:1.15; color:var(--cream); margin-bottom:1.25rem; max-width:860px; }
+.llc-hero .lede { font-size:1rem; color:var(--cream); line-height:1.75; max-width:720px; margin-bottom:1rem; }
 .llc-hero .lede-2 { font-size:1rem; color:var(--muted); line-height:1.75; max-width:720px; margin-bottom:2rem; }
 .llc-hero .price-line { font-size:1rem; color:var(--cream); margin:-.5rem 0 1.75rem; }
-.llc-hero .price-line strong { font-family:var(--serif); font-size:1.35rem; color:var(--coral); }
+.llc-hero .price-line strong { font-family:var(--serif); font-size:1.35rem; color:inherit; }
 
 .llc-band { background:var(--bg2); }
 .llc-narrow { max-width:780px; }
@@ -73,7 +73,6 @@
 
 @media (max-width:900px) {
   .llc-grid, .llc-grid.two, .topic-cols { grid-template-columns:1fr; }
-  .llc-hero { padding:3rem 0 2.5rem; }
 }
 @media (max-width:600px) {
   .llc-steps li { padding-left:3.4rem; }
