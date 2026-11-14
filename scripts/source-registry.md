@@ -232,7 +232,6 @@ now.
   ehhs.easthartford.org              1  2026-09-08   Teens & High School
   enfieldhigh.sharpschool.com        1  2026-09-08   Teens & High School
   mhs.mpspride.org                   1  2026-09-08   Teens & High School
-  thekennedycollective.org           1  2026-09-08   Teens & High School
   caps.center.uconn.edu              2  2026-09-09   Teens & High School
   abilis.us                          1  2026-09-09   Teens & High School
   aoascc.org                         1  2026-09-09   Elder Care
@@ -294,22 +293,18 @@ now.
   immanuelbaptistnewhaven.org        1  2026-10-31   Food & Basic Needs
   karmasclosetct.com                 1  2026-10-31   Family & Childcare
   loavesandfishesnh.com              1  2026-10-31   Food & Basic Needs
-  mcc-ucc.org                        1  2026-10-31   Family & Childcare
   visitingnurse.net                  1  2026-10-31   Family & Childcare
   oldstonechurchucc.org              1  2026-10-31   Family & Childcare
   visitlitchfieldct.com              1  2026-10-31   Family & Childcare
   ridgefieldthriftshop.com           1  2026-10-31   Family & Childcare
   stjohnsfamilycenter.org            1  2026-10-31   Food & Basic Needs
   thechildrensattic.com              1  2026-10-31   Family & Childcare
-  fccog.org                          1  2026-10-31   Family & Childcare
-  onha.yale.edu                      4  2026-11-07   Family & Childcare, Teens & High School
   careandshareofel.org               1  2026-11-07   Food & Basic Needs
   dnec.org                           1  2026-11-07   Family & Childcare
   favarh.org                         1  2026-11-07   Family & Childcare
   independencenorthwest.org          1  2026-11-07   Family & Childcare
   easternusa.salvationarmy.org       1  2026-11-07   Family & Childcare
   townandcountryelc.com              1  2026-11-07   Family & Childcare
-  portal.ct.gov                     25  2026-11-08   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
   bristolct.gov                      4  2026-11-08   Food & Basic Needs, Health & Dental
   hartfordhealthcare.org             3  2026-11-08   Elder Care, Health & Dental
   americaresfreeclinics.org          1  2026-11-08   Health & Dental
@@ -325,6 +320,13 @@ now.
   staywellhealth.org                 1  2026-11-08   Health & Dental
   uconnhealth.org                    1  2026-11-08   Health & Dental
   ynhh.org                           1  2026-11-08   Health & Dental
+  portal.ct.gov                     25  2026-11-14   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
+  onha.yale.edu                      4  2026-11-14   Family & Childcare, Teens & High School
+  mcc-ucc.org                        1  2026-11-14   Family & Childcare
+  pa-nh.org                          1  2026-11-14   Health & Dental
+  stvincents.org                     1  2026-11-14   Family & Childcare
+  thekennedycollective.org           1  2026-11-14   Teens & High School
+  firstcongregationalchurchofgreenwich.snappages.site   1  2026-11-14   Family & Childcare
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -349,7 +351,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 462 of 871 listings (53%) carry a Website, so
+Only 464 of 873 listings (53%) carry a Website, so
 everything above is built from that third of the directory. The other
 409 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -359,7 +361,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-35 of the 302 domains here have never had a Last Verified on
+35 of the 304 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```

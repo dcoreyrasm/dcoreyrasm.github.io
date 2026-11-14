@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-10T11:38:18.069Z",
+  "generated": "2026-11-14T18:05:23.428Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 871,
+  "count": 873,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -4556,16 +4556,19 @@
       "category": "Health Screening Program",
       "specificType": "Free qualifying mammograms, Pap/HPV tests, breast ultrasounds, diagnostic tests and treatment referrals through contracted providers.",
       "town": "Statewide",
-      "ages": "Generally ages 21-64; mammograms usually 40-64; younger high-risk/symptomatic and some 65+ without Medicare Part B may qualify.",
-      "hours": "Call for eligibility and nearest contracted provider. Age criteria differ by service. Do not use old dollar income tables as current thresholds.",
+      "ages": "Generally ages 21–64. Mammograms usually serve ages 40–64; ages 35–39 may qualify with symptoms or specific risk factors. Some people age 65+ without Medicare Part B may qualify.",
+      "hours": "Call the Connecticut Department of Public Health or a listed contracted provider to confirm eligibility and locate the nearest screening site.",
       "cost": "Free for eligible participants, generally income at or below 250% federal poverty level and qualifying insurance gap/high deductible.",
       "website": "https://portal.ct.gov/dph/cedpp/connecticut-breast-and-cervical-cancer-early-detection-program",
       "contact": "860-509-7804",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-11-08",
-      "notes": "Official provider/program source verified November 8, 2026: https://portal.ct.gov/dph/cedpp/connecticut-breast-and-cervical-cancer-early-detection-program. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
-      "lastVerified": "2026-11-08",
-      "tags": "mammogram, breast cancer, cervical cancer, pap test, free screening"
+      "notes": "The current official page confirms free breast and cervical screening, diagnostic services and treatment referrals through contracted providers statewide. Eligibility varies by age, income and insurance status.",
+      "lastVerified": "2026-11-14",
+      "tags": "free health screening, mammogram, breast cancer screening, cervical cancer screening, pap test, hpv test, breast ultrasound, diagnostic services, uninsured, underinsured, income eligible, statewide"
     },
     {
       "id": "recQUb2ESTgxrt7UC",
@@ -13612,17 +13615,17 @@
       "name": "Mustard Seed Thrift Shoppe",
       "track": "Family & Childcare",
       "category": "Family Thrift Store",
-      "specificType": "Nonprofit volunteer-operated clothing, small household goods and toys resale",
+      "specificType": "Nonprofit volunteer-operated shop selling donated clothing, small household goods and toys.",
       "town": "Monroe",
       "address": "34 Church Street, Monroe, CT",
       "hours": "Friday 10:00 a.m.–3:00 p.m.; Saturday 10:00 a.m.–2:00 p.m.",
       "cost": "Cash accepted; credit cards accepted for purchases over $15. Individual item prices are not published.",
       "website": "https://www.mcc-ucc.org/ministries/mustard-seed-thrift-shop",
       "contact": "203-268-4879",
-      "notes": "Volunteer-run donation shop selling clothing, shoes, jewelry, toys, books, movies and small household goods. Proceeds support church mission and community outreach; this is not a consignor-payout shop.",
-      "lastVerified": "2026-10-31",
+      "notes": "Volunteer-run donation shop. Proceeds support church mission and community outreach. The current official page confirms clothing, small household goods and toys. This is not a consignor-payout shop.",
+      "lastVerified": "2026-11-14",
       "shoppingType": "Family Thrift Store",
-      "tags": "thrift store, church thrift, nonprofit resale, volunteer thrift, affordable clothing, family clothing, toys, books, movies, small household goods, donations, community outreach, monroe"
+      "tags": "thrift store, church thrift, nonprofit resale, volunteer thrift, secondhand clothing, small household goods, toys, donated goods, community outreach, monroe"
     },
     {
       "id": "rec7QwZhZBzPvPkrT",
@@ -16141,6 +16144,38 @@
       "tags": "center-based daycare, childcare, bridgeport"
     },
     {
+      "id": "recNunVAhjyuhGDC7",
+      "name": "Project Access New Haven Urgent Specialty Care Program",
+      "track": "Health & Dental",
+      "category": "Free / Low-Cost Medical Clinic",
+      "specificType": "Free urgent specialty and related ancillary care through a donated-care network; provider referral required.",
+      "town": "New Haven",
+      "address": "63 York Street, New Haven, CT 06511",
+      "ages": "Adults age 18+ in Greater New Haven who are uninsured, have household income at or below 250% of the federal poverty level, and have an urgent non-chronic specialty-care need.",
+      "availability": "A healthcare provider must refer the patient. Project Access screens eligibility and coordinates approved appointments. Behavioral health and pain management are outside this program’s scope.",
+      "cost": "Approved referral-related medical care is provided free of charge to eligible patients.",
+      "website": "https://pa-nh.org/urgent-specialty-care-program/",
+      "contact": "203-773-0838; info@pa-nh.org",
+      "townsServed": [
+        "Branford",
+        "East Haven",
+        "Guilford",
+        "Hamden",
+        "Milford",
+        "New Haven",
+        "North Branford",
+        "North Haven",
+        "Orange",
+        "Wallingford",
+        "West Haven",
+        "Woodbridge"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "Patient navigators coordinate appointments and help address barriers to care. Navigators are bilingual in English and Spanish. Required documents include photo ID, proof of address and proof of household income. Northford is also named by the provider, but it is not a separate Connecticut municipality and was not added to Towns Served.",
+      "lastVerified": "2026-11-14",
+      "tags": "free specialty care, uninsured adults, urgent medical care, patient navigation, bilingual support, english, spanish, provider referral, income eligible, greater new haven"
+    },
+    {
       "id": "recXeFIyP48Lw5dtp",
       "name": "Prospect Senior Center",
       "track": "Elder Care",
@@ -17605,6 +17640,32 @@
       "tags": "center-based daycare, childcare, meriden"
     },
     {
+      "id": "recH1fa264zxKgIGU",
+      "name": "St. Vincent’s Special Needs Services Family Center",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Family support, workshops, resource library and adaptive toy lending for families caring for people with special needs.",
+      "town": "Trumbull",
+      "address": "95 Merritt Boulevard, Trumbull, CT 06611",
+      "ages": "Parents, caregivers and professionals supporting children or adults with developmental disabilities or complex medical needs.",
+      "cost": "Family Center workshops, the resource library and adaptive toy lending library are free; costs for other St. Vincent’s services are not stated on this page.",
+      "website": "https://stvincents.org/services/special-needs-services",
+      "contact": "203-375-6400",
+      "townsServed": [
+        "Trumbull"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "The Family Center connects parents with other parents and provides information and referrals about education, transition planning, funding, respite and accessibility.",
+      "servicesOffered": [
+        "Disability Support",
+        "Parent / Family Support",
+        "Caregiver Support"
+      ],
+      "accessibility": "Provider states that the Family Center supports families caring for people with special needs and provides information about respite and accessibility.",
+      "lastVerified": "2026-11-14",
+      "tags": "special needs family support, disability support, parent support, caregiver support, adaptive toy lending, resource library, transition planning, respite information, accessibility information, trumbull"
+    },
+    {
       "id": "rec5lETHbgvtibydw",
       "name": "Stafford Springs BOE at West Stafford School",
       "track": "Family & Childcare",
@@ -18591,19 +18652,26 @@
       "name": "The Kennedy Collective Transition Services",
       "track": "Teens & High School",
       "category": "Job Training Program",
-      "specificType": "Transition services supporting movement from school to employment and adult life.",
+      "specificType": "Partners Program transition and vocational services for youth and young adults with disabilities moving from school toward employment and adult life.",
       "town": "Trumbull",
       "address": "2440 Reservoir Avenue, Trumbull, CT 06611",
       "ages": "People with disabilities ages 16-22",
+      "availability": "Youth and young adults are primarily referred through local boards of education. The provider also accepts inquiries from parents, organizations and state or workforce agencies.",
       "website": "https://www.thekennedycollective.org/support-services/transition-services",
       "contact": "203-365-8522; info@thekennedycollective.org",
       "submittedBy": "Village Notes Research",
+      "notes": "Official services include work-skills training, vocational evaluation, job training and coaching, independent-living and community-independence skills, travel training, behavioral services, workplace readiness and peer mentoring training.",
       "servicesOffered": [
-        "Disability Support"
+        "Disability Support",
+        "Youth Employment",
+        "Mentoring"
       ],
-      "accessibility": "Provider states that transition services support people with disabilities ages 16-22.",
-      "lastVerified": "2026-09-08",
-      "tags": "job training program, teen resources, job training, trumbull"
+      "accessibility": "The provider states that the Partners Program serves people with disabilities ages 16–22 and provides individualized transition, job-coaching, behavioral and independent-living supports.",
+      "lastVerified": "2026-11-14",
+      "specializedSupport": [
+        "Behavioral Support"
+      ],
+      "tags": "disability transition, school to work, job training, job coaching, youth employment, workplace readiness, independent living skills, travel training, behavioral support, peer mentoring, ages 16 to 22, trumbull"
     },
     {
       "id": "recZQojUOEsdyU22R",
@@ -18809,20 +18877,20 @@
       "specificType": "Volunteer-supported church resale shop in Old Greenwich; proceeds support local, national and international charitable organizations.",
       "town": "Greenwich",
       "address": "191 Sound Beach Avenue, Old Greenwich, CT 06870",
-      "hours": "Shopping and donations: Monday–Thursday 11:00 a.m.–3:00 p.m.; Saturday 10:00 a.m.–1:00 p.m. Closed Friday and Sunday; August closure and summer changes may apply.",
+      "hours": "Shopping and donations: Monday–Thursday 11:00 a.m.–3:00 p.m.; Saturday 10:00 a.m.–1:00 p.m. Closed Friday and Sunday. July schedule changes may apply; closed during August.",
       "cost": "Resale prices are not published on the official page.",
-      "website": "https://www.fccog.org/rummage-room",
+      "website": "https://firstcongregationalchurchofgreenwich.snappages.site/rummage-room",
       "contact": "203-637-1875",
       "townsServed": [
         "Greenwich"
       ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-10-31",
-      "notes": "Sells donated clothing, shoes, kitchenware, books, jewelry, collectibles, small furniture, linens and sports equipment. It is not a consignment or buyback shop.",
+      "notes": "Sells donated clothing, shoes, kitchenware, books, jewelry, collectibles, small furniture, linens and sports equipment. Credit cards are accepted. Proceeds support charitable organizations. It is not a consignment or buyback shop.",
       "registrationStatus": "Rolling / Ongoing",
-      "lastVerified": "2026-10-31",
+      "lastVerified": "2026-11-14",
       "shoppingType": "Clothing & Household Resale",
-      "tags": "church thrift, volunteer resale, secondhand clothing, shoes, housewares, books, jewelry, small furniture, linens, sports equipment, old greenwich"
+      "tags": "church thrift, volunteer resale, secondhand clothing, shoes, housewares, books, jewelry, small furniture, linens, sports equipment, donated goods, charitable proceeds, old greenwich"
     },
     {
       "id": "recwBxWIw2XRkOonx",
@@ -21434,6 +21502,7 @@
       "address": "University Theatre, 222 York Street, New Haven, CT 06511",
       "ages": "Students in grades 8–12.",
       "hours": "Tuesdays November 17, November 24 and December 1, 2026, 5:30 PM–7:00 PM.",
+      "availability": "The official Yale event page still provides a registration link for the three-session series. Attendance capacity and accessibility arrangements are not stated.",
       "cost": "Cost is not stated on the official event page. Pizza dinner and a take-home miniature LED light board are included.",
       "website": "https://onha.yale.edu/events/2026-11-17-theatre-magic-technical-designrigging-lighting-and-automation-technology",
       "contact": "yalepathways@yale.edu",
@@ -21449,7 +21518,7 @@
         "STEM Enrichment",
         "Teen Program"
       ],
-      "lastVerified": "2026-11-07",
+      "lastVerified": "2026-11-14",
       "event": "Theatre Magic series, November 17–December 1",
       "eventDate": "2026-11-17",
       "tags": "teen program, high school students, middle school students, technical theatre, stage lighting, rigging, props, automation technology, arts enrichment, stem enrichment, yale pathways, new haven, november 2026"
