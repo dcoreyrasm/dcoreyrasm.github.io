@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-08T18:22:33.047Z",
-  "count": 431,
+  "generated": "2026-11-15T18:23:05.607Z",
+  "count": 442,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -69,6 +69,7 @@
     "Hamden",
     "Hampton",
     "Hartford",
+    "Hartland",
     "Harwinton",
     "Hebron",
     "Ivoryton",
@@ -88,6 +89,7 @@
     "Middletown",
     "Milford",
     "Mobile",
+    "Monroe",
     "Montville",
     "Moodus",
     "Multiple towns (Wolcott to Cornwall)",
@@ -787,6 +789,33 @@
       "slug": "bartlett-arboretum-and-gardens"
     },
     {
+      "name": "Bartlett Arboretum November 2026 Conifer Walk & Talk",
+      "town": "Stamford",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Hiking & Outdoors",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Gardens & Arboretums",
+        "Easy Walks"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Date Night",
+        "Group Activities"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "One-hour Master Gardener-led public walk about evergreens and conifer trees at the arboretum.",
+      "officialWebsite": "https://www.bartlettarboretum.org/events/thursdaynovember2026",
+      "address": "151 Brookdale Road, Stamford, CT 06903",
+      "tryThis": "Learn to recognize three different kinds of conifers.",
+      "notes": "Walking shoes recommended. Trail route accessibility not stated for this guided walk.",
+      "dateAdded": "2026-11-15",
+      "eventStart": "2026-11-19",
+      "slug": "bartlett-arboretum-november-2026-conifer-walk-and-talk"
+    },
+    {
       "name": "Beardsley's Cider Mill & Orchard",
       "town": "Shelton",
       "experienceTypes": [
@@ -910,9 +939,7 @@
       ],
       "categories": [
         "Orchards & Farms",
-        "Corn Mazes",
         "Food & Treats",
-        "Festivals & Events",
         "Date Night"
       ],
       "audiences": [
@@ -920,9 +947,9 @@
       ],
       "bestTime": "Fall",
       "whyGo": "A major Guilford fall farm stop with current pick-your-own fruit and flowers, pumpkins, a corn maze, seasonal food and a daily Fall Festival.",
-      "officialWebsite": "https://www.bishopsorchards.com/fall-festival",
+      "officialWebsite": "https://www.bishopsorchards.com/",
       "address": "1355 Boston Post Road, Guilford, CT 06437",
-      "notes": "Nov 1 is final day of the 2026 Fall Festival. DO NOT describe apple picking as currently available: provider says PYO apples closed for season. The farm market at 1355 Boston Post Rd continues beyond festival; orchard/festival entrance at 480 New England Rd. Pumpkin, flower or other crop availability must be verified before visit, not assumed. Hours conflict across provider pages; call 203-458-PICK. Original Source=Darice preserved.",
+      "notes": "November 2026: Visit the farm market and creamery; seasonal field picking and festival are over. Check Thanksgiving pre-order deadlines directly with provider.",
       "dateAdded": "2026-08-17",
       "slug": "bishops-orchards-farm-market-and-winery"
     },
@@ -1345,6 +1372,29 @@
       "tryThis": "Combine a shoreline walk with one other park activity, then choose your favorite view across the water.",
       "dateAdded": "2026-09-17",
       "slug": "byram-park-beach-pool-and-waterfront-park"
+    },
+    {
+      "name": "Byrd's Books Independent Bookstore",
+      "town": "Bethel",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Bookstore"
+      ],
+      "categories": [
+        "Bookstores",
+        "Free / Low-Cost"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Browse an independent shop with Connecticut authors, new books, literary gifts and bookseller picks across from Bethel Public Library.",
+      "officialWebsite": "https://bookshop.org/shop/byrdsbooks",
+      "address": "178 Greenwood Avenue, Bethel, CT 06801",
+      "tryThis": "Choose a book by a Connecticut author.",
+      "dateAdded": "2026-11-15",
+      "slug": "byrds-books-independent-bookstore"
     },
     {
       "name": "C.P. Huntington State Park Bear Sculptures + Pond Walk",
@@ -2082,6 +2132,7 @@
       ],
       "bestTime": "Summer",
       "officialWebsite": "https://coventryfarmersmarket.com/",
+      "notes": "2026-11-15 final listed bonus market day, 10AM–1PM. Do not assume future Sunday markets are continuing without organizer confirmation.",
       "dateAdded": "2026-08-17",
       "slug": "coventry-farmers-market"
     },
@@ -2215,6 +2266,33 @@
       "officialWebsite": "https://www.danburyrail.org/hours",
       "dateAdded": "2026-08-26",
       "slug": "danbury-railway-museum-railyard-local"
+    },
+    {
+      "name": "Danbury Railway Museum Snow Clipper & First Gift Express 2026",
+      "town": "Danbury",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Trains & Scenic Rides",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Trains & Scenic Rides",
+        "Museums & Culture",
+        "Festivals & Events"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Short historic railcar ride through Danbury railyard plus Santa meeting, hot chocolate and model railroad exhibits.",
+      "officialWebsite": "https://www.danburyrail.org/santa",
+      "tryThis": "Ride a classic railcar through the holiday-lit railyard and explore the museum.",
+      "notes": "Advance reservation required. Santa gift exchange is child-oriented; train and railyard access not confirmed here.",
+      "dateAdded": "2026-11-15",
+      "eventStart": "2026-11-28",
+      "eventEnd": "2026-12-21",
+      "slug": "danbury-railway-museum-snow-clipper-and-first-gift-express-2026"
     },
     {
       "name": "Day Pond State Park Waterfall & Picnic",
@@ -2615,7 +2693,7 @@
       "slug": "fairfield-county-makers-guild-workshop-experience"
     },
     {
-      "name": "Fairfield Museum + Ogden House Sunday Visit",
+      "name": "Fairfield Museum & Seasonal Ogden House Gardens",
       "town": "Fairfield",
       "region": "Fairfield County",
       "categories": [
@@ -2633,9 +2711,38 @@
       "bestTime": "Specific event/date",
       "officialWebsite": "https://www.fairfieldhistory.org/visit/",
       "address": "370 Beach Road, Fairfield, CT 06824",
-      "notes": "Ogden House is at 1520 Bronson Road in Fairfield and is seasonal. Check the museum calendar before planning a two-site visit.",
+      "notes": "Museum visit remains current; do not advertise Ogden House Sunday indoor tours during November. Museum confirms wheelchair-accessible front entrance, galleries, restrooms; accommodations inquiries to museum. Outdoor Dooryard Garden year-round.",
       "dateAdded": "2026-08-28",
-      "slug": "fairfield-museum-ogden-house-sunday-visit"
+      "slug": "fairfield-museum-and-seasonal-ogden-house-gardens"
+    },
+    {
+      "name": "Fairfield Museum Holiday Express Train Show 2026",
+      "town": "Fairfield",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Festivals & Events",
+        "Free / Low-Cost"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Holiday exhibit with detailed model railroads and winter village scenes; affordable admission and family programs.",
+      "officialWebsite": "https://www.fairfieldhistory.org/exhibitions/holiday-express-train-show/",
+      "address": "370 Beach Road, Fairfield, CT 06824",
+      "tryThis": "Spot three different model trains and one miniature winter village.",
+      "notes": "Confirmed access: wheelchair-accessible front entrance, galleries/restrooms and museum common areas. This is a MODEL train exhibition, not a train ride. Public admission shown on event page $5 adult, $3 seniors/children over five.",
+      "dateAdded": "2026-11-15",
+      "eventStart": "2026-11-28",
+      "eventEnd": "2027-01-03",
+      "slug": "fairfield-museum-holiday-express-train-show-2026"
     },
     {
       "name": "Fairfield Nature Center & Larsen Sanctuary",
@@ -3006,6 +3113,35 @@
       "slug": "gay-city-state-park-linked-hiking-trails"
     },
     {
+      "name": "Gillette Castle Holiday Castle Tours 2026",
+      "town": "East Haddam",
+      "region": "Central CT",
+      "experienceTypes": [
+        "Museum & Culture",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Museums & Culture",
+        "Festivals & Events",
+        "Only in Connecticut"
+      ],
+      "audiences": [
+        "Family",
+        "Date Night",
+        "Group Activities"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Visit a festively decorated historic castle on a timed self-guided holiday tour above the Connecticut River.",
+      "officialWebsite": "https://ctparks.com/events/holiday-castle-tours",
+      "address": "67 River Road, East Haddam, CT 06423",
+      "tryThis": "Tour the holiday-decorated castle and notice a distinctive architectural detail.",
+      "notes": "Reservations recommended; tour access details should be confirmed with state park before visiting.",
+      "dateAdded": "2026-11-15",
+      "eventStart": "2026-11-27",
+      "eventEnd": "2026-12-20",
+      "slug": "gillette-castle-holiday-castle-tours-2026"
+    },
+    {
       "name": "Gillette Castle State Park",
       "town": "East Haddam",
       "audiences": [
@@ -3118,6 +3254,33 @@
       "eventStart": "2026-10-30",
       "eventEnd": "2026-12-27",
       "slug": "goodspeed-musicals-annie-2026"
+    },
+    {
+      "name": "Goodwin State Forest Meditative Forest Walk November 2026",
+      "town": "Hampton",
+      "region": "Quiet Corner & Northeastern CT",
+      "experienceTypes": [
+        "Hiking & Outdoors",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Parks & Preserves",
+        "Easy Walks",
+        "Festivals & Events"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Group Activities"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Naturalist-led quiet forest walk using the senses and mindfulness activities.",
+      "officialWebsite": "https://ctparks.com/events/meditative-forest-walk",
+      "address": "23 Potter Road, Hampton, CT 06247",
+      "tryThis": "Try a guided quiet walk and notice five natural sounds.",
+      "notes": "Event page shows conflicting time information (11 a.m.–noon at top; 10–11:30 in description). Contact Goodwin Conservation Center to confirm start; trail accessibility not stated.",
+      "dateAdded": "2026-11-15",
+      "eventStart": "2026-11-21",
+      "slug": "goodwin-state-forest-meditative-forest-walk-november-2026"
     },
     {
       "name": "Gouveia Vineyards",
@@ -4039,6 +4202,31 @@
       "slug": "levitt-pavilion-for-the-performing-arts"
     },
     {
+      "name": "Lillinonah Trail Lake Overlook Hike",
+      "town": "Newtown",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Longer Hikes",
+        "Parks & Preserves",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Group Activities",
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Hike a 6.2-mile woodland trail in Paugussett State Forest with elevated views toward Lake Lillinonah.",
+      "officialWebsite": "https://ctwoodlands.org/trails/lillinonah-trail/",
+      "tryThis": "Find an official trail overlook with views of Lake Lillinonah.",
+      "notes": "Rugged changes in elevation; hunting permitted. Parking depends on selected trailhead; do not assume mobility accessibility.",
+      "dateAdded": "2026-11-15",
+      "slug": "lillinonah-trail-lake-overlook-hike"
+    },
+    {
       "name": "Litchfield Hills Farm-Fresh Market",
       "town": "Litchfield",
       "region": "Litchfield Hills",
@@ -4256,7 +4444,7 @@
       "bestTime": "Fall",
       "whyGo": "A separate pick-your-own experience from Lyman's corn maze, with apples, pears and other seasonal fruit plus the Apple Barrel Farm Market.",
       "officialWebsite": "https://lymanorchards.com/pick-your-own/",
-      "notes": "PYO page currently lists 9 a.m.-4:30 p.m. daily and apples as in season. Do not infer that pumpkins, berries or flowers can be picked on Nov 1: verify current fields/varieties with PYO hotline 860-349-6015. Apple Barrel Farm Market remains open year-round.",
+      "notes": "Apples advertised in season as of Nov 15, 2026, but field availability can change. Check provider or call 860-349-6015 before travel. Do not confuse PYO location with Apple Barrel market.",
       "dateAdded": "2026-09-05",
       "slug": "lyman-orchards-fall-pick-your-own"
     },
@@ -5170,6 +5358,34 @@
       "slug": "nod-hill-brewery-biergarten-and-pollinator-meadow"
     },
     {
+      "name": "Northern Lights Limited Holiday Train 2026",
+      "town": "Thomaston",
+      "region": "Litchfield Hills",
+      "experienceTypes": [
+        "Trains & Scenic Rides",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Trains & Scenic Rides",
+        "Festivals & Events"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities",
+        "Date Night"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Evening decorated rail trip departing Thomaston with a Santa visit, lights and seasonal music. Check exact operating dates and ticket inventory.",
+      "officialWebsite": "https://www.rmne.org/excursions/northern-lights-limited",
+      "address": "242 East Main Street, Thomaston, CT 06787",
+      "tryThis": "Take an evening holiday train and look for the brightest decorated railcar.",
+      "notes": "Ticket required; exact running days vary. Historic rail accessibility needs direct provider confirmation.",
+      "dateAdded": "2026-11-15",
+      "eventStart": "2026-11-21",
+      "eventEnd": "2026-12-23",
+      "slug": "northern-lights-limited-holiday-train-2026"
+    },
+    {
       "name": "Norwalk River Valley Trail Wilton Boardwalk Loop",
       "town": "Wilton",
       "audiences": [
@@ -5303,6 +5519,35 @@
         "New Haven"
       ],
       "slug": "pardee-rose-garden-and-greenhouse"
+    },
+    {
+      "name": "Paugussett Blue-Blazed Trail: Monroe & Shelton",
+      "town": "Monroe / Shelton",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Longer Hikes",
+        "Parks & Preserves",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Group Activities",
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A 14-mile hiking trail through woods, Webb Mountain and Indian Well, with lake overlooks and old mill remnants.",
+      "officialWebsite": "https://ctwoodlands.org/trails/paugussett-trail/",
+      "tryThis": "Choose a segment with a Lake Zoar view and follow the latest trail markers.",
+      "notes": "Steep slopes and rock scrambles in some sections. Confirm trail notices and select an appropriate segment; no single street address.",
+      "dateAdded": "2026-11-15",
+      "towns": [
+        "Monroe",
+        "Shelton"
+      ],
+      "slug": "paugussett-blue-blazed-trail-monroe-and-shelton"
     },
     {
       "name": "Pell Family Farm Christmas Trees",
@@ -6641,7 +6886,7 @@
       "officialWebsite": "https://ctparks.com/parks/stratton-brook-state-park",
       "address": "149 Farms Village Road, Simsbury, CT 06070",
       "tryThis": "Visit the covered bridge and choose a route matching your access needs.",
-      "notes": "Official park lists daily access 8 a.m. to sunset; verify specific trail/ground conditions and facilities before arrival. Accessibility is confirmed in the state source, but the exact Accessibility Experience Type selection is not available in this Airtable schema.",
+      "notes": "Park accessibility documented; do not advertise all-terrain wheelchair rentals during Nov–spring. Other trail surfaces and access must be checked with the park.",
       "dateAdded": "2026-11-01",
       "slug": "stratton-brook-state-park-accessible-trails"
     },
@@ -6899,6 +7144,33 @@
       "notes": "Provider explicitly confirms a wheelchair lift, accessible restrooms, wheelchair-accessible seating and assistive hearing devices. Contact box office at least five days before a performance for accommodation requests. Check current ticket availability.",
       "dateAdded": "2026-11-01",
       "slug": "the-bradley-playhouse-live-theater-in-putnam"
+    },
+    {
+      "name": "The Christmas Express at Fairfield Theatre Company 2026",
+      "town": "Fairfield",
+      "region": "Fairfield County",
+      "experienceTypes": [
+        "Theater & Movies",
+        "Fall & Seasonal"
+      ],
+      "categories": [
+        "Theater & Movies",
+        "Festivals & Events"
+      ],
+      "audiences": [
+        "Family",
+        "Group Activities"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "A live seasonal children's theater production at FTC's Warehouse, with multiple performances and accessible seating available on request.",
+      "officialWebsite": "https://www.fairfieldtheatre.org/calendar/the-christmas-express-5tkn",
+      "address": "70 Sanford Street, Fairfield, CT 06824",
+      "tryThis": "Attend a holiday stage performance together and discuss a favorite scene.",
+      "notes": "Family/young-child focused. Wheelchair seating exists, contact box office to arrange. Price and remaining tickets vary by performance.",
+      "dateAdded": "2026-11-15",
+      "eventStart": "2026-11-28",
+      "eventEnd": "2026-12-29",
+      "slug": "the-christmas-express-at-fairfield-theatre-company-2026"
     },
     {
       "name": "The Glass House",
@@ -7189,6 +7461,36 @@
         "Weston"
       ],
       "slug": "trout-brook-valley-preserve-sunset-and-orchard-hike"
+    },
+    {
+      "name": "Tunxis Blue-Blazed Trail & Ridge Hikes",
+      "town": "Southington / Burlington / Hartland",
+      "region": "Other / Statewide",
+      "experienceTypes": [
+        "Hiking & Outdoors"
+      ],
+      "categories": [
+        "Longer Hikes",
+        "Parks & Preserves",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Group Activities",
+        "Date Night"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Choose a moderate or more challenging section of a 38.5-mile blue-blazed trail network with rocky ledges, caves and ridge overlooks.",
+      "officialWebsite": "https://ctwoodlands.org/trails/tunxis-trail/",
+      "tryThis": "Pick a mapped Tunxis segment and identify a ridge overlook.",
+      "notes": "Not a single 38.5-mile hike; choose a mapped segment. Trail conditions and hunting season require advance checks. Multiple trailheads, so no single address.",
+      "dateAdded": "2026-11-15",
+      "towns": [
+        "Southington",
+        "Burlington",
+        "Hartland"
+      ],
+      "slug": "tunxis-blue-blazed-trail-and-ridge-hikes"
     },
     {
       "name": "Twelvenote Brew Co.",
