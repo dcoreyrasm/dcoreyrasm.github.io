@@ -761,6 +761,9 @@ section.focus-section { background:linear-gradient(rgba(30,26,46,.86), rgba(45,3
 .portfolio-scope h4 { font-family:var(--serif); font-size:1rem; font-weight:700; color:var(--cream); margin-bottom:.75rem; }
 .portfolio-more { margin-top:2rem; color:var(--muted); line-height:1.7; }
 .portfolio-more a { color:var(--coral); }
+.portfolio-project + .portfolio-project { margin-top:2rem; }
+.portfolio-shot { margin:1rem 0 1.5rem; border:1px solid var(--line); border-radius:10px; overflow:hidden; box-shadow:0 12px 32px rgba(0,0,0,.25); }
+.portfolio-shot img { display:block; width:100%; height:auto; }
 @media (max-width:900px) {
   .portfolio-project { padding:1.5rem; }
   .portfolio-project h3 { font-size:1.3rem; }
