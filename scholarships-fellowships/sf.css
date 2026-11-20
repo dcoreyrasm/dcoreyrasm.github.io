@@ -124,3 +124,39 @@ section.sf-newsletter { background:var(--bg); border-top:1px solid var(--line); 
 .sf-newsletter-list { list-style:none; margin:1rem 0 1.5rem; padding:0; }
 .sf-newsletter-list li { position:relative; font-size:.92rem; color:var(--muted); line-height:1.7; padding-left:1.15rem; margin-bottom:.45rem; }
 .sf-newsletter-list li::before { content:''; position:absolute; left:0; top:.65em; width:5px; height:5px; border-radius:50%; background:#fdb926; }
+
+/* ---------- INTERNATIONAL STUDENTS & OPT (added 2026-11-20) ----------
+   Status is always written out in words; the colored edge only repeats it. */
+.sf-field-intl { grid-column:span 2; }
+.sf-help a { color:var(--coral); }
+.sf-intl-line { margin:0; font-size:.86rem; color:var(--cream); }
+.sf-intl-key { color:var(--muted); font-weight:600; }
+.sf-intl-val { font-weight:700; padding-left:.45rem; border-left:4px solid #c084fc; }
+.sf-intl-val.sf-intl-yes { border-left-color:#1fd6dc; }
+.sf-intl-val.sf-intl-no { border-left-color:#f45d6b; }
+.sf-intl-details { border:1px solid var(--line); border-radius:8px; padding:.6rem .8rem; background:var(--bg); }
+.sf-intl-details summary { cursor:pointer; font-size:.86rem; font-weight:600; color:var(--cream); min-height:32px; display:flex; align-items:center; }
+.sf-intl-details summary:focus-visible { outline:3px solid var(--coral); outline-offset:2px; }
+.sf-intl-details[open] summary { margin-bottom:.6rem; }
+.sf-intl-details .sf-facts div { grid-template-columns:9.5rem 1fr; }
+.sf-intl-note { font-size:.8rem; color:var(--muted); line-height:1.55; margin:.7rem 0 0; }
+.sf-intl-note a { color:var(--coral); }
+section.sf-intl-guide { background:var(--bg); border-top:1px solid var(--line); padding:4rem 0; }
+#sf-intl-guide, #sf-intl { scroll-margin-top:calc(var(--header-h, 72px) + 1rem); }
+.sf-intl-lede { font-size:1rem; color:var(--muted); line-height:1.8; max-width:72ch; }
+.sf-disclaimer { background:var(--bg2); border:1px solid var(--line); border-left:6px solid #a855f7; border-radius:10px; padding:1.1rem 1.25rem; margin:0 0 2rem; max-width:80ch; }
+.sf-disclaimer h3 { font-size:1rem; color:var(--cream); margin:0 0 .4rem; }
+.sf-disclaimer p { font-size:.92rem; line-height:1.65; color:var(--cream); margin:0; }
+.sf-intl-linkhead { font-size:1rem; color:var(--cream); margin:0 0 .6rem; }
+.sf-intl-links { margin:0; padding-left:1.2rem; }
+.sf-intl-links li { margin-bottom:.5rem; line-height:1.6; }
+.sf-intl-links a { color:var(--coral); }
+.sf-intl-links a:focus-visible, .sf-help a:focus-visible, .sf-intl-note a:focus-visible { outline:3px solid var(--coral); outline-offset:2px; }
+@media (max-width:640px) {
+  .sf-field-intl { grid-column:1 / -1; }
+  .sf-intl-details .sf-facts div { grid-template-columns:1fr; }
+}
+.sf-intl-details summary { list-style:none; }
+.sf-intl-details summary::-webkit-details-marker { display:none; }
+.sf-intl-details summary::before { content:'+'; display:inline-block; width:1.1rem; font-weight:700; color:var(--coral); }
+.sf-intl-details[open] summary::before { content:'\2212'; }
