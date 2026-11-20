@@ -47,6 +47,79 @@
     'Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia',
     'Washington','West Virginia','Wisconsin','Wyoming'];
 
+  /* ---------- International students & OPT (added 2026-11-20) ----------
+     Airtable keeps its own wording; these maps turn it into the public labels.
+     Anything blank or unrecognised reads as "Needs verification", so a missing
+     value can never look like a yes. Labels are text, never colour alone. */
+  var INTL_LABELS = {
+    intl: {
+      'Accepts international applicants': 'Eligible',
+      'Citizenship/PR required': 'Restricted',
+      'Unclear - verify': 'Needs verification'
+    },
+    scholarship: {
+      'Eligible': 'Eligible', 'Restricted': 'Restricted',
+      'Needs Verification': 'Needs verification', 'Not Applicable': 'Not applicable'
+    },
+    opt: {
+      'Provider confirms OPT accepted': 'Explicitly accepts OPT',
+      'Provider confirms STEM OPT support': 'Explicitly accepts STEM OPT',
+      'Potentially compatible, individual review required': 'Potentially compatible, individual review required',
+      'Provider says OPT not accepted': 'Restricted or incompatible',
+      'Provider says STEM OPT unsupported': 'Restricted or incompatible',
+      'Needs verification': 'Needs verification',
+      'Not applicable': 'Not applicable'
+    },
+    sponsorship: {
+      'Available': 'The program says it offers visa sponsorship',
+      'Not available': 'The program says it does not sponsor visas',
+      'Not applicable': 'Not needed to take part (no U.S. employment involved)',
+      'Unknown': 'Not stated by the program'
+    },
+    employment: {
+      'Yes': 'Yes, the award involves work, a placement, or a service commitment',
+      'No': 'No work or service condition is stated',
+      'Needs Verification': 'Needs verification'
+    },
+    degree: {
+      'Applies - DSO must confirm': 'Applies. Your DSO decides whether the work relates to your degree',
+      'Not Applicable': 'Not applicable',
+      'Needs Verification': 'Needs verification'
+    }
+  };
+  function lab(kind, v) { return INTL_LABELS[kind][v] || 'Needs verification'; }
+  /* One code per status, used by the filters and the card's plain-text badge. */
+  function intlCode(r) { return { 'Eligible': 'yes', 'Restricted': 'no' }[lab('intl', r.intl)] || 'verify'; }
+  function optCode(v) {
+    var l = lab('opt', v);
+    if (/^Explicitly/.test(l)) return 'explicit';
+    if (/^Potentially/.test(l)) return 'potential';
+    if (/^Restricted/.test(l)) return 'no';
+    if (l === 'Not applicable') return 'na';
+    return 'verify';
+  }
+  function optOpen(v) { var c = optCode(v); return c === 'explicit' || c === 'potential'; }
+  var STUDENT_STAGES = ['High school', 'Undergraduate', 'Graduate'];
+  var INTL_FILTERS = {
+    enrolled: function (r) {
+      return intlCode(r) === 'yes' && (r.applicantStage || []).some(function (s) { return STUDENT_STAGES.indexOf(s) !== -1; });
+    },
+    graduating: function (r) { return intlCode(r) === 'yes' && optOpen(r.opt); },
+    opt: function (r) { return optOpen(r.opt); },
+    stemopt: function (r) { return optOpen(r.stemOpt); },
+    scholarnowork: function (r) {
+      return lab('scholarship', r.intlScholarship) === 'Eligible' && r.employmentRequired === 'No';
+    },
+    fellowopt: function (r) { return typeGroups(r).indexOf('Fellowship') !== -1 && optOpen(r.opt); },
+    nosponsor: function (r) {
+      return intlCode(r) === 'yes' && (r.sponsorship === 'Not applicable' || r.employmentRequired === 'No');
+    },
+    verify: function (r) {
+      return intlCode(r) === 'verify' || optCode(r.opt) === 'verify' ||
+        lab('scholarship', r.intlScholarship) === 'Needs verification';
+    }
+  };
+
   var all = [];
   var el = function (id) { return document.getElementById(id); };
 
@@ -101,11 +174,11 @@
   function haystack(rec) {
     return [rec.title, rec.org, rec.description, rec.eligibility, rec.whoCanApply, rec.bestFit,
       rec.fundingDetails, rec.type, (rec.fieldOfStudy || []).join(' '), (rec.applicantStage || []).join(' '),
-      rec.geo, rec.cycle].join(' ').toLowerCase();
+      rec.geo, rec.cycle, rec.cptNotes, rec.intlEvidence].join(' ').toLowerCase();
   }
 
   /* ---------- filter state, mirrored in the URL so a view can be shared ---------- */
-  var KEYS = ['q', 'type', 'state', 'stage', 'subject', 'deadline', 'status', 'sort'];
+  var KEYS = ['q', 'type', 'state', 'stage', 'subject', 'intl', 'deadline', 'status', 'sort'];
   var DEFAULTS = { status: 'active', sort: 'deadline' };
   function readState() {
     var st = {};
@@ -137,6 +210,7 @@
       var f = rec.fieldOfStudy || [];
       if (f.indexOf(st.subject) === -1 && f.indexOf(ANY_FIELD) === -1) return false;
     }
+    if (st.intl && INTL_FILTERS[st.intl] && !INTL_FILTERS[st.intl](rec)) return false;
     var s = statusOf(rec);
     if (st.deadline) {
       var d = daysUntil(rec.deadline);
@@ -222,6 +296,28 @@
       fact('Cycle', esc(rec.cycle))
     ].join('');
 
+    var intlBadge = '<p class="sf-intl-line"><span class="sf-intl-key">International students:</span> ' +
+      '<span class="sf-intl-val sf-intl-' + intlCode(rec) + '">' + esc(lab('intl', rec.intl)) + '</span></p>';
+
+    var intlFacts = [
+      fact('International students', esc(lab('intl', rec.intl))),
+      fact('Scholarship eligibility', esc(lab('scholarship', rec.intlScholarship))),
+      fact('Work or services required', esc(lab('employment', rec.employmentRequired))),
+      fact('F-1 OPT', esc(lab('opt', rec.opt))),
+      fact('STEM OPT', esc(lab('opt', rec.stemOpt))),
+      fact('Still enrolled (CPT)', esc(rec.cptNotes)),
+      fact('Visa sponsorship', esc(lab('sponsorship', rec.sponsorship))),
+      fact('Degree-related work', esc(lab('degree', rec.degreeRelated))),
+      fact('What the source says', esc(rec.intlEvidence)),
+      fact('Eligibility checked', rec.intlVerified ? esc(fmtDate(rec.intlVerified)) : 'Not yet verified')
+    ].join('');
+    var intlDetails = '<details class="sf-intl-details"><summary>International student and OPT details' +
+      '<span class="sf-visually-hidden"> for ' + esc(rec.title) + '</span></summary>' +
+      '<dl class="sf-facts">' + intlFacts + '</dl>' +
+      '<p class="sf-intl-note">General guidance only, not a decision about your immigration status. ' +
+      'Confirm with the program and your school\'s Designated School Official (DSO) before you accept. ' +
+      '<a href="#sf-intl-guide">How these labels work</a>.</p></details>';
+
     var apply = rec.url
       ? '<a class="btn-primary sf-apply" href="' + esc(rec.url) + '" target="_blank" rel="noopener noreferrer">Official application<span class="sf-visually-hidden"> for ' + esc(rec.title) + ' (opens in new tab)</span></a>'
       : '<span class="sf-nolink">Official link not yet confirmed</span>';
@@ -236,6 +332,7 @@
       alert +
       (rec.description ? '<p class="sf-desc">' + esc(rec.description) + '</p>' : '') +
       '<dl class="sf-facts">' + facts + '</dl>' +
+      intlBadge + intlDetails +
       '<div class="sf-card-foot"><span class="sf-verified">' + verified + '</span>' + apply + '</div>' +
       '</li>';
   }
@@ -253,8 +350,10 @@
       el('sf-empty-reset').hidden = true;
     }
     var noun = rows.length === 1 ? 'opportunity' : 'opportunities';
+    var intlBox = el('sf-intl');
     el('sf-resultline').textContent = 'Showing ' + rows.length + ' ' + noun +
-      (st.state ? ' open to people in ' + st.state : '') + '.';
+      (st.state ? ' open to people in ' + st.state : '') +
+      (st.intl ? ' for: ' + intlBox.options[intlBox.selectedIndex].text : '') + '.';
   }
 
   function fillSelect(id, values) {
@@ -308,5 +407,6 @@
     });
 
   /* Exposed for the test harness only. */
-  window.__sf = { statusOf: statusOf, typeGroups: typeGroups, stateMatch: stateMatch, passes: passes };
+  window.__sf = { statusOf: statusOf, typeGroups: typeGroups, stateMatch: stateMatch, passes: passes,
+    INTL_FILTERS: INTL_FILTERS, intlCode: intlCode, optCode: optCode, lab: lab };
 })();

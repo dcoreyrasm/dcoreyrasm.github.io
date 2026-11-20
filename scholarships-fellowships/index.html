@@ -49,6 +49,7 @@
           <span class="sf-pill sf-pill-gold" id="sf-count">Loading listings&hellip;</span>
           <span class="sf-updated" id="sf-updated"></span>
         </div>
+        <p class="sf-herolink">International student, or on OPT? Use the <a href="#sf-intl">International Students &amp; OPT filter</a> and read <a href="#sf-intl-guide">how scholarships, fellowships, and OPT differ</a>.</p>
         <p class="sf-herolink">Want new listings and deadline reminders by email? <a href="#sf-newsletter">Sign up for Scholarships &amp; Fellowships Updates</a>.</p>
       </div>
     </div>
@@ -77,6 +78,21 @@
           <div class="sf-field">
             <label for="sf-subject">Field of study</label>
             <select id="sf-subject" name="subject"><option value="">Any field</option></select>
+          </div>
+          <div class="sf-field sf-field-intl">
+            <label for="sf-intl">International Students &amp; OPT</label>
+            <select id="sf-intl" name="intl" aria-describedby="sf-intl-help">
+              <option value="">No international filter</option>
+              <option value="enrolled">International students currently enrolled</option>
+              <option value="graduating">International students approaching graduation</option>
+              <option value="opt">Students on post-completion OPT</option>
+              <option value="stemopt">Students on STEM OPT extensions</option>
+              <option value="scholarnowork">Scholarships that do not require employment</option>
+              <option value="fellowopt">Fellowships potentially compatible with OPT</option>
+              <option value="nosponsor">Opportunities that do not require future visa sponsorship</option>
+              <option value="verify">Eligibility needs verification</option>
+            </select>
+            <span class="sf-help" id="sf-intl-help">Based only on what each program's official source says. <a href="#sf-intl-guide">What these mean</a>.</span>
           </div>
           <div class="sf-field">
             <label for="sf-deadline">Application deadline</label>
@@ -126,6 +142,52 @@
         <noscript><p class="sf-empty">This directory needs JavaScript to load its listings. Each listing links to its official source.</p></noscript>
       </div>
     </div>
+
+    <section class="sf-intl-guide" id="sf-intl-guide" aria-labelledby="sf-intl-guide-heading">
+      <div class="sf-wrap">
+        <p class="section-label">International Students &amp; OPT</p>
+        <h2 class="section-heading" id="sf-intl-guide-heading">International Students: Understanding Scholarships, Fellowships, and OPT</h2>
+        <p class="sf-intl-lede">If you are in the United States on an F-1 student visa, the first question is not only &ldquo;can I apply?&rdquo; It is also &ldquo;would taking part count as work?&rdquo; Each listing keeps those questions apart, so a program that accepts international applicants is never shown as accepting OPT unless the program says so.</p>
+        <div class="sf-about-grid">
+          <div class="sf-about-block sf-top-gold">
+            <h3>Scholarships</h3>
+            <p>Scholarships generally provide financial support for education or research. Receiving a scholarship does not automatically require OPT authorization. Eligibility depends on the scholarship's requirements and whether the award involves work or services.</p>
+          </div>
+          <div class="sf-about-block sf-top-teal">
+            <h3>Fellowships</h3>
+            <p>Fellowships may provide funding, professional experience, research activities, or employment. Some require employment authorization, while others do not. Check whether the fellowship is a paid role, a placement, or a grant before you apply.</p>
+          </div>
+          <div class="sf-about-block sf-top-rose">
+            <h3>Optional Practical Training (OPT)</h3>
+            <p>OPT allows eligible F-1 students to take part in authorized practical training related to their academic degree. It can be used before graduation (pre-completion) or after (post-completion), up to 12 months per degree level in total.</p>
+          </div>
+          <div class="sf-about-block sf-top-violet">
+            <h3>STEM OPT Extensions</h3>
+            <p>Eligible students with qualifying STEM degrees may apply for an additional 24 months of OPT authorization. STEM OPT has additional requirements, including employer participation in E-Verify, a qualifying employer-employee relationship, and a formal training plan (Form I-983).</p>
+          </div>
+          <div class="sf-about-block sf-top-gold">
+            <h3>Curricular Practical Training (CPT)</h3>
+            <p>Some students who are still enrolled may qualify for CPT when the training is an integral part of an established curriculum and authorized by their university. Your school, not the program, authorizes CPT.</p>
+          </div>
+          <div class="sf-about-block sf-top-teal">
+            <h3>How I label each listing</h3>
+            <p><strong>Eligible</strong> or <strong>Explicitly accepts OPT</strong> appear only when the official source says so. <strong>Potentially compatible, individual review required</strong> means the source accepts U.S. work authorization without naming OPT. <strong>Restricted</strong> means the source limits who can apply. Everything else is <strong>Needs verification</strong>.</p>
+          </div>
+        </div>
+        <div class="sf-disclaimer" role="note" aria-labelledby="sf-disclaimer-heading">
+          <h3 id="sf-disclaimer-heading">Important disclaimer</h3>
+          <p>Eligibility information is provided for general guidance and does not guarantee that a student qualifies for an opportunity or that participation is authorized under their immigration status. International students should confirm requirements with the program provider and their university's Designated School Official (DSO) before accepting a scholarship, fellowship, or employment opportunity.</p>
+        </div>
+        <h3 class="sf-intl-linkhead">Official U.S. government resources</h3>
+        <ul class="sf-intl-links">
+          <li><a href="https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/students-and-employment" target="_blank" rel="noopener noreferrer">USCIS: Students and Employment<span class="sf-visually-hidden"> (opens in new tab)</span></a></li>
+          <li><a href="https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students" target="_blank" rel="noopener noreferrer">USCIS: Optional Practical Training (OPT) for F-1 Students<span class="sf-visually-hidden"> (opens in new tab)</span></a></li>
+          <li><a href="https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-extension-for-stem-students-stem-opt" target="_blank" rel="noopener noreferrer">USCIS: OPT Extension for STEM Students (STEM OPT)<span class="sf-visually-hidden"> (opens in new tab)</span></a></li>
+          <li><a href="https://studyinthestates.dhs.gov/stem-opt-hub/stem-opt-extension-overview" target="_blank" rel="noopener noreferrer">DHS Study in the States: STEM OPT Extension Overview<span class="sf-visually-hidden"> (opens in new tab)</span></a></li>
+          <li><a href="https://ice.gov/sevis/practical-training" target="_blank" rel="noopener noreferrer">DHS / ICE SEVP: Practical Training (CPT and OPT)<span class="sf-visually-hidden"> (opens in new tab)</span></a></li>
+        </ul>
+      </div>
+    </section>
 
     <section class="sf-newsletter" id="sf-newsletter" aria-labelledby="sf-newsletter-heading">
       <div class="sf-wrap">

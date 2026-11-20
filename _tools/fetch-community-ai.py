@@ -92,6 +92,21 @@ FIELDS = {
     "Recommendation Deadline": "recDeadline",
     "Annual Award Amount": "annualAmount",
     "Program Family Key": "programKey",
+    # Added 2026-11-20 for the International Students & OPT filters on
+    # /scholarships-fellowships/. Single selects except where noted; the page
+    # maps the Airtable wording to its public labels (Eligible, Restricted,
+    # Needs Verification, ...) in INTL_LABELS. None of these is a statement
+    # about any one student's immigration authorization.
+    "International Student Eligibility": "intl",
+    "International Scholarship Eligibility": "intlScholarship",
+    "Employment or Services Required": "employmentRequired",
+    "F-1 OPT Compatibility": "opt",
+    "STEM OPT Compatibility": "stemOpt",
+    "CPT or Pre-Completion OPT Considerations": "cptNotes",   # long text
+    "Future Visa Sponsorship": "sponsorship",
+    "Degree-Related Work Requirement": "degreeRelated",
+    "OPT Eligibility Evidence": "intlEvidence",               # long text
+    "International Eligibility Last Verified": "intlVerified",  # date
 }
 
 # Keys the page always expects to be a list, even when Airtable returns nothing.
