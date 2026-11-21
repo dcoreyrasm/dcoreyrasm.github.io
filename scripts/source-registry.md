@@ -252,13 +252,11 @@ now.
   alicepeck.hamden.org               1  2026-09-19   Family & Childcare
   ecc.naugatuck.k12.ct.us            1  2026-09-19   Family & Childcare
   whhs.whschools.org                 1  2026-09-19   Teens & High School
-  bridgeportct.gov                   8  2026-10-13   Family & Childcare, Food & Basic Needs
   westhartfordct.gov                 5  2026-10-13   Family & Childcare, Food & Basic Needs
   manchesterct.gov                   5  2026-10-13   Family & Childcare, Food & Basic Needs
   takecarewaterbury.com              5  2026-10-13   Food & Basic Needs
   danbury-ct.gov                     4  2026-10-13   Food & Basic Needs
   deskct.org                         4  2026-10-13   Food & Basic Needs, Pet Care & Resources
-  norwalkct.gov                      4  2026-10-13   Food & Basic Needs
   orange-ct.gov                      4  2026-10-13   Family & Childcare, Food & Basic Needs
   handsonhartford.org                3  2026-10-13   Food & Basic Needs
   newbritainct.gov                   3  2026-10-13   Food & Basic Needs
@@ -271,7 +269,6 @@ now.
   stamfordct.gov                     1  2026-10-13   Food & Basic Needs
   cityofshelton.org                  1  2026-10-13   Food & Basic Needs
   townofstratford.com                1  2026-10-13   Food & Basic Needs
-  trumbull-ct.gov                    1  2026-10-13   Food & Basic Needs
   cityofwesthaven.com                1  2026-10-13   Food & Basic Needs
   townofwindsorct.com                1  2026-10-13   Food & Basic Needs
   gwct.org                           5  2026-10-14   Family & Childcare
@@ -319,14 +316,24 @@ now.
   swchc.org                          1  2026-11-08   Health & Dental
   staywellhealth.org                 1  2026-11-08   Health & Dental
   uconnhealth.org                    1  2026-11-08   Health & Dental
-  ynhh.org                           1  2026-11-08   Health & Dental
-  portal.ct.gov                     25  2026-11-14   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
-  onha.yale.edu                      4  2026-11-14   Family & Childcare, Teens & High School
+  onha.yale.edu                      3  2026-11-14   Family & Childcare, Teens & High School
   mcc-ucc.org                        1  2026-11-14   Family & Childcare
   pa-nh.org                          1  2026-11-14   Health & Dental
+  hplct.libnet.info                  1  2026-11-14   Food & Basic Needs
   stvincents.org                     1  2026-11-14   Family & Childcare
   thekennedycollective.org           1  2026-11-14   Teens & High School
   firstcongregationalchurchofgreenwich.snappages.site   1  2026-11-14   Family & Childcare
+  portal.ct.gov                     26  2026-11-20   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
+  bridgeportct.gov                  10  2026-11-20   Family & Childcare, Food & Basic Needs, Health & Dental
+  norwalkct.gov                      5  2026-11-20   Food & Basic Needs, Health & Dental
+  ynhh.org                           3  2026-11-20   Health & Dental
+  trumbull-ct.gov                    3  2026-11-20   Food & Basic Needs, Health & Dental
+  plannedparenthood.org              2  2026-11-20   Health & Dental
+  mancavehealth.org                  1  2026-11-20   Health & Dental
+  monitormyhealth.org                1  2026-11-20   Health & Dental
+  nhp.sites.yale.edu                 1  2026-11-20   Health & Dental
+  pillarcdc.com                      1  2026-11-20   Health & Dental
+  zerocancer.org                     1  2026-11-20   Health & Dental
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -351,7 +358,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 464 of 873 listings (53%) carry a Website, so
+Only 479 of 888 listings (54%) carry a Website, so
 everything above is built from that third of the directory. The other
 409 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -361,7 +368,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-35 of the 304 domains here have never had a Last Verified on
+35 of the 311 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```

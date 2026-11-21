@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-14T18:05:23.428Z",
+  "generated": "2026-11-21T03:22:38.502Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 873,
+  "count": 888,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -103,7 +103,9 @@
     "Bozrah",
     "Branford",
     "Bridgeport",
+    "Bridgeport, CT",
     "Bridgeport, Danbury, Norwalk and Stamford service areas",
+    "Bridgeport, Stamford, Norwalk, New Haven and Connecticut locations; schedule varies",
     "Bridgewater",
     "Bristol",
     "Brookfield",
@@ -117,6 +119,8 @@
     "Colchester",
     "Colebrook",
     "Columbia",
+    "Connecticut and nationwide",
+    "Connecticut statewide",
     "Connecticut; host locations by arrangement",
     "Connecticut; participating community sites",
     "Connecticut; rotating community sites",
@@ -142,6 +146,7 @@
     "Glastonbury",
     "Goshen",
     "Granby",
+    "Greater Hartford, CT",
     "Greater Hartford; Hartford and East Hartford",
     "Greater New Haven",
     "Greenwich",
@@ -173,12 +178,14 @@
     "Moodus",
     "Morris",
     "Mystic",
+    "National; event-based locations",
     "Naugatuck",
     "New Britain",
     "New Canaan",
     "New Fairfield",
     "New Hartford",
     "New Haven",
+    "New Haven, CT",
     "New London",
     "New Milford",
     "Newington",
@@ -189,6 +196,7 @@
     "North Haven",
     "North Stonington",
     "Norwalk",
+    "Norwalk, CT",
     "Norwich",
     "Online, available to families in Connecticut",
     "Orange",
@@ -233,6 +241,7 @@
     "Thompson",
     "Torrington",
     "Trumbull",
+    "Trumbull, CT",
     "Union",
     "Vernon",
     "Voluntown",
@@ -1588,6 +1597,22 @@
       "tags": "center-based daycare, childcare, hartford"
     },
     {
+      "id": "recEWcKNcV7B0AXJj",
+      "name": "BPT HEaRT - Bridgeport Free Blood Pressure Screening",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "Free blood pressure checks, education and BP tracking support at community sites; event locations posted on the Health Department Facebook page",
+      "town": "Bridgeport, CT",
+      "ages": "Community members; Bridgeport residents",
+      "cost": "Free blood pressure screening; eligible participants may receive monitors",
+      "website": "https://www.bridgeportct.gov/government/departments/health-social-services/events-and-programs/bpt-heart-project",
+      "contact": "Janay.Ayala@bridgeportct.gov",
+      "submittedBy": "Village Notes Research",
+      "notes": "Bridgeport Health Department partners with local businesses/community centers for free blood pressure checks, educational materials and BP tracking support. Future event locations announced on Health Department Facebook. No confirmed upcoming event date. Official provider source checked 2026-11-20.",
+      "lastVerified": "2026-11-20",
+      "tags": "blood pressure, cardiovascular, heart health, hypertension, free screening, community health"
+    },
+    {
       "id": "recKbjJxSqAYleZm0",
       "name": "Branford Early Learning Center",
       "track": "Family & Childcare",
@@ -2122,6 +2147,22 @@
         "Preschool / Pre-K"
       ],
       "tags": "preschool / pre-k, childcare, bridgeport"
+    },
+    {
+      "id": "recJbcGtyFJQNoCew",
+      "name": "Bridgeport Health Department - Seasonal Flu Vaccination and Homebound Service",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "Seasonal influenza vaccinations by appointment Monday-Friday 8:30am-3pm at Health Department, 999 Broad Street. Homebound Bridgeport residents can call for vaccination appointment. Note former 999 Middle Street clinic temporarily closed.",
+      "town": "Bridgeport, CT",
+      "ages": "Bridgeport residents, flu vaccines ages 6 months and older; homebound residents",
+      "cost": "Cost not specified; request insurance information if applicable",
+      "website": "https://www.bridgeportct.gov/government/departments/family-health-and-wellness-clinic/vaccines",
+      "contact": "203-576-7468",
+      "submittedBy": "Village Notes Research",
+      "notes": "Seasonal influenza vaccinations by appointment Monday-Friday 8:30am-3pm at Health Department, 999 Broad Street. Homebound Bridgeport residents can call for vaccination appointment. Note former 999 Middle Street clinic temporarily closed. Verified from official local government page 2026-11-20.",
+      "lastVerified": "2026-11-20",
+      "tags": "flu shot, vaccination, vaccines, seniors, homebound, public health, bridgeport clinic"
     },
     {
       "id": "reco5JmJlEADKvnS7",
@@ -5095,6 +5136,21 @@
         "Diagnosis-Specific Program"
       ],
       "tags": "medical / diagnosis-specific camp, summer camp, meriden"
+    },
+    {
+      "id": "recVVU2EEeHt5F6NW",
+      "name": "Connecticut Men's Health Program",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "State health education and referrals on prostate and colorectal cancer, diabetes, heart health, mental health and screening. Not itself a walk-in testing clinic.",
+      "town": "Connecticut statewide",
+      "ages": "Men; adults",
+      "cost": "Free educational information; clinical screening costs vary",
+      "website": "https://portal.ct.gov/dph/cedpp/connecticut-mens-health-program",
+      "submittedBy": "Village Notes Research",
+      "notes": "State health education and referrals on prostate and colorectal cancer, diabetes, heart health, mental health and screening. Not itself a walk-in testing clinic. Verified from official provider website on 2026-11-20. Confirm current dates and eligibility before visiting.",
+      "lastVerified": "2026-11-20",
+      "tags": "men's health, prevention, prostate, heart health, screening, health education"
     },
     {
       "id": "recnaLJHp0AyNe8b1",
@@ -11982,6 +12038,22 @@
       "tags": "free clinic, mobile clinic, primary care, vaccines, medications"
     },
     {
+      "id": "recDbidcPI26S76rV",
+      "name": "Man Cave Health",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "Van Cave mobile PSA blood tests at community events, health education, virtual support group 1st and 3rd Wednesdays at 6 p.m. ET. No currently confirmed Connecticut event.",
+      "town": "National; event-based locations",
+      "ages": "Men; prostate health",
+      "cost": "Free PSA screening at participating mobile events",
+      "website": "https://mancavehealth.org/",
+      "contact": "info@mancavehealth.org",
+      "submittedBy": "Village Notes Research",
+      "notes": "Van Cave mobile PSA blood tests at community events, health education, virtual support group 1st and 3rd Wednesdays at 6 p.m. ET. No currently confirmed Connecticut event. Verified from official provider website on 2026-11-20. Confirm current dates and eligibility before visiting.",
+      "lastVerified": "2026-11-20",
+      "tags": "men's health, prostate, psa, free screening, mobile clinic, virtual support"
+    },
+    {
       "id": "recmob78YwwnNRIEq",
       "name": "Manchester Early Learning Center",
       "track": "Family & Childcare",
@@ -13168,6 +13240,21 @@
       "tags": "home daycare licensed, childcare, west hartford"
     },
     {
+      "id": "reciMfeg5VEellkiI",
+      "name": "Monitor My Health - MyHEALTH Express Free Mobile Screening",
+      "track": "Health & Dental",
+      "category": "Mobile Health & Dental Clinic",
+      "specificType": "Monitor My Health nonprofit operates MyHEALTH Express for blood sugar and blood pressure screening and diabetes prevention referrals. Locations and dates are not verified for coming weeks. Prevention class is distinct from free mobile test;",
+      "town": "Bridgeport, Stamford, Norwalk, New Haven and Connecticut locations; schedule varies",
+      "ages": "Connecticut adults and underserved communities",
+      "cost": "Mobile blood sugar and blood pressure screening described as free; diabetes prevention class may cost $300 unless Medicare eligible",
+      "website": "https://monitormyhealth.org/",
+      "submittedBy": "Village Notes Research",
+      "notes": "Monitor My Health nonprofit operates MyHEALTH Express for blood sugar and blood pressure screening and diabetes prevention referrals. Locations and dates are not verified for coming weeks. Prevention class is distinct from free mobile test; Medicare-eligible class may be free. Official evidence reviewed 2026-11-20. Confirm scheduling before visiting.",
+      "lastVerified": "2026-11-20",
+      "tags": "free mobile clinic, blood glucose, diabetes screening, blood pressure, heart health, a1c, fall risk, health outreach"
+    },
+    {
       "id": "recUHfP94Vcc0Jugc",
       "name": "Monroe KinderCare",
       "track": "Family & Childcare",
@@ -13830,6 +13917,21 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, naugatuck"
+    },
+    {
+      "id": "rece4CLfHzTBMD006",
+      "name": "Neighborhood Health Project - Free Diabetes and Hypertension Screening",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "Student-run free hypertension and diabetes screenings with counseling and referrals to affordable primary care; confirm location and schedule first",
+      "town": "New Haven, CT",
+      "ages": "New Haven community; focus on low-income populations",
+      "cost": "Free blood pressure and blood glucose screening",
+      "website": "https://nhp.sites.yale.edu/",
+      "submittedBy": "Village Notes Research",
+      "notes": "Student-run community screenings for hypertension and diabetes, healthcare/lifestyle counseling, referral resources for affordable primary care; free flu vaccines at select times. Site says currently open; confirm service location and schedule before visiting. Official provider source checked 2026-11-20.",
+      "lastVerified": "2026-11-20",
+      "tags": "diabetes, blood glucose, blood pressure, free screening, hypertension, community clinic"
     },
     {
       "id": "recc8lOUI90anHLsy",
@@ -14833,6 +14935,22 @@
         "Public School"
       ],
       "tags": "high school public, teen resources, high school, norwalk"
+    },
+    {
+      "id": "recOfuOgP8BuRPKZ4",
+      "name": "Norwalk Know Your Numbers - Free Monthly Screenings",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "Monthly free blood pressure, A1C, BMI and waist checks at Norwalk Library Main Branch and Open Doors Smilow Life Center",
+      "town": "Norwalk, CT",
+      "ages": "Community members",
+      "cost": "Free, no insurance or appointment required",
+      "website": "https://norwalkct.gov/3535/Know-Your-Numbers",
+      "contact": "ktomlinson@norwalkct.gov",
+      "submittedBy": "Village Notes Research",
+      "notes": "Monthly blood pressure, blood sugar A1C, BMI and waist circumference tests at Norwalk Library Main Branch and Open Doors Smilow Life Center. Source confirms monthly programs but no specific future date verified here. Confirm on official page. Official provider source checked 2026-11-20.",
+      "lastVerified": "2026-11-20",
+      "tags": "a1c, diabetes, blood sugar, blood pressure, cardiovascular, bmi, free health screenings"
     },
     {
       "id": "recG8HLY7J6PZeAxP",
@@ -15865,6 +15983,21 @@
       "tags": "veterinary care, pet services, madison"
     },
     {
+      "id": "rec9pVWZUIEH5xU29",
+      "name": "Pillar CDC - First Step to Better Living Health and Wellness Fair",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "Pillar Community Development Corporation hosts an annual health and wellness fair featuring breast cancer screening, prostate exams, A1C tests, blood pressure prevention and diabetic eye/foot exams. Published September 26 2026 date has pass",
+      "town": "Greater Hartford, CT",
+      "ages": "Community members; event-specific",
+      "cost": "2026 screening fair listed; future fees and dates unconfirmed",
+      "website": "https://www.pillarcdc.com/health-wellness",
+      "submittedBy": "Village Notes Research",
+      "notes": "Pillar Community Development Corporation hosts an annual health and wellness fair featuring breast cancer screening, prostate exams, A1C tests, blood pressure prevention and diabetic eye/foot exams. Published September 26 2026 date has passed; no next fair date confirmed. Official evidence reviewed 2026-11-20. Confirm scheduling before visiting.",
+      "lastVerified": "2026-11-20",
+      "tags": "community health fair, breast screening, prostate exam, a1c, blood pressure, diabetic eye, diabetic foot, annual event"
+    },
+    {
       "id": "recuudDqZO5uIVGnC",
       "name": "Plainfield Boe At Shepard Hill Elementary School",
       "track": "Family & Childcare",
@@ -15935,6 +16068,38 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, plainville"
+    },
+    {
+      "id": "recS2oTwLoR4oxt2a",
+      "name": "Planned Parenthood Bridgeport - Preventive and Cervical Screening",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "Provider confirms HPV/Pap cervical screening, breast/chest cancer screening referral, high blood pressure and anemia testing, wellness exams, and abnormal Pap follow-up. Not a free mammography van. Call for exact costs and appointments.",
+      "town": "Bridgeport, CT",
+      "ages": "Adults seeking reproductive and preventive services",
+      "cost": "Insurance may cover some services; otherwise ask for visit-specific price",
+      "website": "https://www.plannedparenthood.org/health-center/connecticut/bridgeport/06606/bridgeport-center-4275-90220/wellness-preventive-care",
+      "contact": "203-366-0664",
+      "submittedBy": "Village Notes Research",
+      "notes": "Provider confirms HPV/Pap cervical screening, breast/chest cancer screening referral, high blood pressure and anemia testing, wellness exams, and abnormal Pap follow-up. Not a free mammography van. Call for exact costs and appointments. Official evidence reviewed 2026-11-20. Confirm scheduling before visiting.",
+      "lastVerified": "2026-11-20",
+      "tags": "pap test, cervical cancer screening, breast referral, women's health, reproductive care, blood pressure, wellness visit"
+    },
+    {
+      "id": "recMJdB8bkknNDjvH",
+      "name": "Planned Parenthood New Haven - Preventive and Cervical Screening",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "Provider confirms HPV/Pap screening, breast/chest screening referral, blood pressure and anemia testing, abnormal Pap follow-up, menopause treatment and selected preventive care. Costs and eligibility depend on the service.",
+      "town": "New Haven, CT",
+      "ages": "Adults seeking reproductive and preventive services",
+      "cost": "Insurance may cover some services; otherwise ask for visit-specific price",
+      "website": "https://www.plannedparenthood.org/health-center/connecticut/new-haven/06511/new-haven-center-3271-90220/wellness-preventive-care",
+      "contact": "203-503-0450",
+      "submittedBy": "Village Notes Research",
+      "notes": "Provider confirms HPV/Pap screening, breast/chest screening referral, blood pressure and anemia testing, abnormal Pap follow-up, menopause treatment and selected preventive care. Costs and eligibility depend on the service. Official evidence reviewed 2026-11-20. Confirm scheduling before visiting.",
+      "lastVerified": "2026-11-20",
+      "tags": "pap test, hpv, cervical screening, breast referral, blood pressure, reproductive health, menopause, women's health"
     },
     {
       "id": "recDmCyQ9YOJz38SC",
@@ -16263,6 +16428,25 @@
         "Toddler Care"
       ],
       "tags": "home daycare licensed, childcare, hartford"
+    },
+    {
+      "id": "recyfw1damsSkR8iA",
+      "name": "ReConnect CT: Digital & Financial Training (Fall 2026)",
+      "track": "Food & Basic Needs",
+      "specificType": "Six-week beginner digital and financial skills program for members of the reentry community.",
+      "town": "Hartford",
+      "ages": "Justice-impacted members of the reentry community; the published series is open to up to 12 students.",
+      "hours": "Six weekly sessions, Tuesdays 4:00–6:00 p.m.: November 17 and 24; December 1, 8, 15 and 22, 2026.",
+      "availability": "Registration is available through the official event page. The published series is limited to 12 students. Submitting the interest and eligibility form does not by itself confirm enrollment.",
+      "cost": "Free. Materials and devices for class use are provided at no cost. Participants who complete all six sessions receive $250 in Visa gift cards.",
+      "website": "https://hplct.libnet.info/event/17871801",
+      "contact": "Rose Daley: rdaley@hplct.org; Ty Waterman: twaterman@hplct.org",
+      "submittedBy": "Village Notes Research",
+      "notes": "Topics include using computers, phones and tablets; email and online searches; job and benefits applications; online banking, budgeting and credit. Successful participants receive a Hartford Public Library Certificate of Achievement.",
+      "lastVerified": "2026-11-14",
+      "event": "Six-week series, November 17–December 22, 2026",
+      "eventDate": "2026-11-17",
+      "tags": "reentry, justice impacted, digital skills, computer basics, internet skills, job applications, online benefits, financial literacy, budgeting, credit, free training, certificate, hartford"
     },
     {
       "id": "recTdbYcZoEFmFcih",
@@ -17227,6 +17411,22 @@
         "Preschool / Pre-K"
       ],
       "tags": "center-based daycare, childcare, hamden"
+    },
+    {
+      "id": "recwKNlfKvEDwYQvr",
+      "name": "Smilow Cancer Screening and Prevention Program",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "Cancer screening including breast, cervical, prostate, lung, skin, head and neck. Free/discounted breast and cervical screenings through state programs for eligible patients.",
+      "town": "Connecticut statewide",
+      "ages": "Adults; men and women",
+      "cost": "Screening costs vary; free/discounted programs for eligible patients",
+      "website": "https://www.ynhh.org/smilow/services/support-services/cancer-screening",
+      "contact": "203-200-3030",
+      "submittedBy": "Village Notes Research",
+      "notes": "Cancer screening including breast, cervical, prostate, lung, skin, head and neck. Free/discounted breast and cervical screenings through state programs for eligible patients. Verified from official provider website on 2026-11-20. Confirm current dates and eligibility before visiting.",
+      "lastVerified": "2026-11-20",
+      "tags": "mammogram, prostate, cancer screening, low cost, women's health, men's health"
     },
     {
       "id": "recxUDPHPXI5drNjh",
@@ -19286,6 +19486,38 @@
       "lastVerified": "2026-10-13",
       "foodType": "Food Bank / Food Pantry",
       "tags": "food bank / food pantry, food pantry, trumbull"
+    },
+    {
+      "id": "rece11ydsbrA19otr",
+      "name": "Trumbull Know Your Numbers - Health Department Screening Events",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "Health Department screening events (blood pressure, glucose, BMI); last confirmed event was Feb 9, 2026, no upcoming date posted",
+      "town": "Trumbull, CT",
+      "ages": "Trumbull residents age 18+",
+      "cost": "Free for eligible adult Trumbull residents at published event",
+      "website": "https://www.trumbull-ct.gov/m/NewsFlash/Archive/Item/2972?arcId=4649",
+      "contact": "203-452-1030",
+      "submittedBy": "Village Notes Research",
+      "notes": "A confirmed event was held February 9 2026 at 335 White Plains Road, with blood pressure, blood glucose, BMI, weight checks and guidance. Past event only; no upcoming date confirmed. Phone to ask about future clinics; appointment required for the prior event. Official provider source checked 2026-11-20.",
+      "lastVerified": "2026-11-20",
+      "tags": "diabetes, blood glucose, blood pressure, heart health, cardiovascular, community health, past event"
+    },
+    {
+      "id": "recsU8LsaxCF4Rdpz",
+      "name": "Trumbull Senior Wellness Nurse - Blood Pressure and Healthy Aging",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "Senior wellness nurse offers blood pressure screening, nutrition guidance, chronic disease health education, connections to care. Hours posted at Senior Center; no appointment necessary.",
+      "town": "Trumbull, CT",
+      "ages": "Trumbull seniors; ask about senior center access",
+      "cost": "Cost not published; call to confirm",
+      "website": "https://www.trumbull-ct.gov/290/Senior-Wellness-Nurse",
+      "contact": "203-452-5134",
+      "submittedBy": "Village Notes Research",
+      "notes": "Senior wellness nurse offers blood pressure screening, nutrition guidance, chronic disease health education, connections to care. Hours posted at Senior Center; no appointment necessary. Verified from official local government page 2026-11-20.",
+      "lastVerified": "2026-11-20",
+      "tags": "seniors, older adults, blood pressure, heart health, nutrition, chronic disease, preventive health"
     },
     {
       "id": "reccBJ3eOb3NnDB0g",
@@ -21355,39 +21587,6 @@
       "tags": "job training program, teen resources, transportation, high school, job training, new haven"
     },
     {
-      "id": "recnj39okQSq1Wvox",
-      "name": "Yale College Application Essay Workshops",
-      "track": "Teens & High School",
-      "category": "College Access / Readiness",
-      "specificType": "Two-session college application essay workshop with one-on-one feedback and revision recommendations; attendance at both sessions is required",
-      "town": "New Haven",
-      "address": "Poorvu Center for Teaching and Learning, 120 High Street, New Haven, CT 06511",
-      "ages": "12th-grade students in New Haven Public Schools",
-      "hours": "September 26 and October 10, 2026, 10:30 a.m.–12:30 p.m.; attendance at both sessions is required.",
-      "cost": "Official event page does not state a participant cost.",
-      "website": "https://onha.yale.edu/events/2026-09-26-college-application-essay-workshops",
-      "contact": "YalePathways@yale.edu",
-      "townsServed": [
-        "New Haven"
-      ],
-      "submittedBy": "Village Notes Research",
-      "registrationStatus": "Open",
-      "servicesOffered": [
-        "College Access / Readiness",
-        "Literacy / Tutoring"
-      ],
-      "lastVerified": "2026-09-19",
-      "programSetting": [
-        "College / University"
-      ],
-      "teenOpportunity": [
-        "College Readiness"
-      ],
-      "event": "Two-session college essay workshop; attendance at both required",
-      "eventDate": "2026-09-26",
-      "tags": "college access / readiness, teen resources, new haven"
-    },
-    {
       "id": "recVzyaEI3sYVoYc1",
       "name": "Yale Day of Immunology 2026",
       "track": "Teens & High School",
@@ -21415,6 +21614,21 @@
       "event": "Day of Immunology, November 8, 9:00 AM–3:00 PM",
       "eventDate": "2026-11-08",
       "tags": "teen program, high school students, immunology, biology, stem enrichment, laboratory tours, stem careers, yale pathways, new haven, november 2026"
+    },
+    {
+      "id": "rec6mFo2OGYxIzqGJ",
+      "name": "Yale New Haven Hospital - Annual Free Prostate Screening",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "Yale New Haven Hospital says it offers a free prostate cancer screening annually, often around September. Confirm next date in its calendar; not a year-round free service.",
+      "town": "New Haven, CT",
+      "ages": "Men; prostate screening candidates",
+      "cost": "Annual free prostate cancer screening event; dates vary",
+      "website": "https://www.ynhh.org/services/urology",
+      "submittedBy": "Village Notes Research",
+      "notes": "Yale New Haven Hospital says it offers a free prostate cancer screening annually, often around September. Confirm next date in its calendar; not a year-round free service. Verified from official provider website on 2026-11-20. Confirm current dates and eligibility before visiting.",
+      "lastVerified": "2026-11-20",
+      "tags": "prostate, psa, men's health, cancer screening, free annual event"
     },
     {
       "id": "recnfzyROq8P0vD8e",
@@ -22038,6 +22252,21 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, new britain"
+    },
+    {
+      "id": "recZwaGy3qGeTHLdv",
+      "name": "ZERO Prostate Cancer - Free and Low-Cost Screening Locator",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "Searchable locator of third-party PSA screening sites and events. Call each site to check dates, eligibility and costs.",
+      "town": "Connecticut and nationwide",
+      "ages": "Men and people seeking prostate screenings",
+      "cost": "Participating sites offer free or low-cost PSA tests at some point in the year",
+      "website": "https://zerocancer.org/help-and-support/find-prostate-cancer-screening-location-near-you",
+      "submittedBy": "Village Notes Research",
+      "notes": "Searchable locator of third-party PSA screening sites and events. Call each site to check dates, eligibility and costs. Verified from official provider website on 2026-11-20. Confirm current dates and eligibility before visiting.",
+      "lastVerified": "2026-11-20",
+      "tags": "prostate, psa, men's health, free screening, low cost, cancer screening"
     }
   ]
 }
