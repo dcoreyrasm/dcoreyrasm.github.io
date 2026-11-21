@@ -1090,7 +1090,6 @@ now.
   monitormyhealth.org                1  2026-11-20   Health & Dental
   nhp.sites.yale.edu                 1  2026-11-20   Health & Dental
   pillarcdc.com                      1  2026-11-20   Health & Dental
-  zerocancer.org                     1  2026-11-20   Health & Dental
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -1115,7 +1114,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 479 of 888 listings (54%) carry a Website, so
+Only 478 of 887 listings (54%) carry a Website, so
 everything above is built from that third of the directory. The other
 409 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -1125,7 +1124,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-35 of the 311 domains here have never had a Last Verified on
+35 of the 310 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 
@@ -1143,17 +1142,17 @@ between sessions: read them fresh from this section each time this brief is
 given to you, and if you are working from a remembered figure you are working
 from a gap that has already moved.
 
-888 listings across 175 Connecticut towns of 169.
+887 listings across 174 Connecticut towns of 169.
 
 That breadth is real. The depth behind it is the problem:
 
-  a website              479 / 888   54%   the single most valuable gap: without a URL nobody can ever re-check the listing
-  operating hours        211 / 888   24%   the specific promise on the front of the page
-  a real cost note       174 / 888   20%   excludes the state-fee boilerplate
-  a real waitlist note    68 / 888    8%   excludes the "contact the program directly" boilerplate
-  a verified date        420 / 888   47%   without one we cannot tell fresh from forgotten
-  a phone or email       755 / 888   85%
-  services tagged        697 / 888   78%   what makes a listing findable beyond its one category
+  a website              478 / 887   54%   the single most valuable gap: without a URL nobody can ever re-check the listing
+  operating hours        211 / 887   24%   the specific promise on the front of the page
+  a real cost note       173 / 887   20%   excludes the state-fee boilerplate
+  a real waitlist note    68 / 887    8%   excludes the "contact the program directly" boilerplate
+  a verified date        419 / 887   47%   without one we cannot tell fresh from forgotten
+  a phone or email       755 / 887   85%
+  services tagged        697 / 887   79%   what makes a listing findable beyond its one category
 
 A listing can carry a value and still say nothing. Two boilerplate lines were
 written onto hundreds of records by the original state import -- "Contact the
@@ -1171,7 +1170,7 @@ WEBSITE COVERAGE BY TRACK
   Pet Care & Resources     61 listings,  61 with a website (100%)
   Food & Basic Needs       61 listings,  61 with a website (100%)
   Elder Care               52 listings,  52 with a website (100%)
-  Health & Dental          35 listings,  35 with a website (100%)
+  Health & Dental          34 listings,  34 with a website (100%)
 
 WHY THE WEBSITE COLUMN COMES FIRST
 
@@ -1184,8 +1183,8 @@ AND THE GAP IS NOT WHERE IT LOOKS
 
 409 listings have no website. 409 of them -- every single one -- came from the
 one bulk import of Connecticut Office of Early Childhood childcare providers,
-which arrived without URLs. Of the 360 records written by
-research, 360 carry a website: 100%.
+which arrived without URLs. Of the 359 records written by
+research, 359 carry a website: 100%.
 
 So this is not a habit to correct. It is a bounded backfill of a known set,
 and the set is licensed childcare providers whose details came from the state.

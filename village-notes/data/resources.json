@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-21T03:22:38.502Z",
+  "generated": "2026-11-21T03:25:44.581Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 888,
+  "count": 887,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -119,7 +119,6 @@
     "Colchester",
     "Colebrook",
     "Columbia",
-    "Connecticut and nationwide",
     "Connecticut statewide",
     "Connecticut; host locations by arrangement",
     "Connecticut; participating community sites",
@@ -22252,21 +22251,6 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, new britain"
-    },
-    {
-      "id": "recZwaGy3qGeTHLdv",
-      "name": "ZERO Prostate Cancer - Free and Low-Cost Screening Locator",
-      "track": "Health & Dental",
-      "category": "Health Screening Program",
-      "specificType": "Searchable locator of third-party PSA screening sites and events. Call each site to check dates, eligibility and costs.",
-      "town": "Connecticut and nationwide",
-      "ages": "Men and people seeking prostate screenings",
-      "cost": "Participating sites offer free or low-cost PSA tests at some point in the year",
-      "website": "https://zerocancer.org/help-and-support/find-prostate-cancer-screening-location-near-you",
-      "submittedBy": "Village Notes Research",
-      "notes": "Searchable locator of third-party PSA screening sites and events. Call each site to check dates, eligibility and costs. Verified from official provider website on 2026-11-20. Confirm current dates and eligibility before visiting.",
-      "lastVerified": "2026-11-20",
-      "tags": "prostate, psa, men's health, free screening, low cost, cancer screening"
     }
   ]
 }
