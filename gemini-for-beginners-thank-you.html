@@ -7,7 +7,7 @@ sitemap: false
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Thank you for registering for Gemini for Beginners with Darice Corey. Here is how to get your Zoom link." />
-  <title>You're Registered | Gemini for Beginners | Darice Corey, LLC</title>
+  <title>You're Registered | Darice Corey, LLC</title>
   <meta name="robots" content="noindex, nofollow" />
   <script>window.__daOptOut=(function(){try{return localStorage.getItem('da-analytics-optout')==='1'}catch(e){return false}})();if(window.__daOptOut){window['ga-disable-G-725R412XD7']=true;}</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-725R412XD7"></script>
@@ -30,7 +30,7 @@ sitemap: false
       <div class="container">
         <p class="section-label" style="color:var(--coral);">You're Registered</p>
         <h1 class="section-heading" style="color:#fff;">Thank you! I'm so glad you're joining me.</h1>
-        <p id="ty-item" style="font-size:1.1rem;color:#fff;font-weight:500;margin-bottom:.75rem;">Gemini for Beginners, live on Zoom</p>
+        <p id="ty-item" style="font-size:1.1rem;color:#fff;font-weight:500;margin-bottom:.75rem;">Your purchase is confirmed.</p>
         <p style="font-size:1rem;color:rgba(255,255,255,.8);max-width:620px;line-height:1.75;margin-bottom:1.5rem;">Your payment went through, and Stripe is emailing your receipt. There is one more step: register on Zoom so I can send you your personal join link.</p>
       </div>
     </div>
@@ -153,6 +153,7 @@ sitemap: false
       var shown = 0;
       if (item) {
         document.getElementById('ty-item').textContent = item.name + ' · ' + item.date;
+        document.title = "You're Registered | " + item.name + ' | Darice Corey, LLC';
         item.zoom.forEach(function (part) {
           if (!ZOOM[part]) return;
           var a = document.createElement('a');
