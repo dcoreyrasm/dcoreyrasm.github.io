@@ -869,7 +869,6 @@ now.
   newoppinc.org                      1  2026-08-29   Elder Care
   safefuturesct.org                  1  2026-08-29   Pet Care & Resources
   woodbridgect.org                   1  2026-08-29   Elder Care
-  cccymca.org                        6  2026-08-30   Family & Childcare
   cthomecare.com                     1  2026-08-30   Elder Care
   gnhtd.org                          1  2026-08-30   Elder Care
   monroect.gov                       1  2026-08-30   Elder Care
@@ -1060,7 +1059,6 @@ now.
   easternusa.salvationarmy.org       1  2026-11-07   Family & Childcare
   townandcountryelc.com              1  2026-11-07   Family & Childcare
   bristolct.gov                      4  2026-11-08   Food & Basic Needs, Health & Dental
-  hartfordhealthcare.org             3  2026-11-08   Elder Care, Health & Dental
   americaresfreeclinics.org          1  2026-11-08   Health & Dental
   thecharteroak.org                  1  2026-11-08   Health & Dental
   chc1.com                           1  2026-11-08   Health & Dental
@@ -1073,14 +1071,12 @@ now.
   swchc.org                          1  2026-11-08   Health & Dental
   staywellhealth.org                 1  2026-11-08   Health & Dental
   uconnhealth.org                    1  2026-11-08   Health & Dental
-  onha.yale.edu                      3  2026-11-14   Family & Childcare, Teens & High School
   mcc-ucc.org                        1  2026-11-14   Family & Childcare
   pa-nh.org                          1  2026-11-14   Health & Dental
   hplct.libnet.info                  1  2026-11-14   Food & Basic Needs
   stvincents.org                     1  2026-11-14   Family & Childcare
   thekennedycollective.org           1  2026-11-14   Teens & High School
   firstcongregationalchurchofgreenwich.snappages.site   1  2026-11-14   Family & Childcare
-  portal.ct.gov                     26  2026-11-20   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
   bridgeportct.gov                  10  2026-11-20   Family & Childcare, Food & Basic Needs, Health & Dental
   norwalkct.gov                      5  2026-11-20   Food & Basic Needs, Health & Dental
   ynhh.org                           3  2026-11-20   Health & Dental
@@ -1090,6 +1086,14 @@ now.
   monitormyhealth.org                1  2026-11-20   Health & Dental
   nhp.sites.yale.edu                 1  2026-11-20   Health & Dental
   pillarcdc.com                      1  2026-11-20   Health & Dental
+  portal.ct.gov                     26  2026-11-21   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
+  cccymca.org                        7  2026-11-21   Family & Childcare
+  hartfordhealthcare.org             4  2026-11-21   Elder Care, Health & Dental
+  onha.yale.edu                      4  2026-11-21   Elder Care, Family & Childcare, Teens & High School
+  thevillage.org                     2  2026-11-21   Family & Childcare
+  ansonia.org                        1  2026-11-21   Family & Childcare
+  stthomasnorwalk.org                1  2026-11-21   Family & Childcare
+  svdpmission.org                    1  2026-11-21   Family & Childcare
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -1114,9 +1118,9 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 478 of 887 listings (54%) carry a Website, so
+Only 486 of 893 listings (54%) carry a Website, so
 everything above is built from that third of the directory. The other
-409 have no URL recorded at all, which means nobody -- not you,
+407 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
 unverifiable in their current state.
 
@@ -1124,7 +1128,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-35 of the 310 domains here have never had a Last Verified on
+35 of the 314 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 
@@ -1142,17 +1146,17 @@ between sessions: read them fresh from this section each time this brief is
 given to you, and if you are working from a remembered figure you are working
 from a gap that has already moved.
 
-887 listings across 174 Connecticut towns of 169.
+893 listings across 174 Connecticut towns of 169.
 
 That breadth is real. The depth behind it is the problem:
 
-  a website              478 / 887   54%   the single most valuable gap: without a URL nobody can ever re-check the listing
-  operating hours        211 / 887   24%   the specific promise on the front of the page
-  a real cost note       173 / 887   20%   excludes the state-fee boilerplate
-  a real waitlist note    68 / 887    8%   excludes the "contact the program directly" boilerplate
-  a verified date        419 / 887   47%   without one we cannot tell fresh from forgotten
-  a phone or email       755 / 887   85%
-  services tagged        697 / 887   79%   what makes a listing findable beyond its one category
+  a website              486 / 893   54%   the single most valuable gap: without a URL nobody can ever re-check the listing
+  operating hours        218 / 893   24%   the specific promise on the front of the page
+  a real cost note       180 / 893   20%   excludes the state-fee boilerplate
+  a real waitlist note    75 / 893    8%   excludes the "contact the program directly" boilerplate
+  a verified date        428 / 893   48%   without one we cannot tell fresh from forgotten
+  a phone or email       759 / 893   85%
+  services tagged        698 / 893   78%   what makes a listing findable beyond its one category
 
 A listing can carry a value and still say nothing. Two boilerplate lines were
 written onto hundreds of records by the original state import -- "Contact the
@@ -1165,12 +1169,12 @@ that sounds more specific than what you actually know.
 
 WEBSITE COVERAGE BY TRACK
 
-  Family & Childcare      591 listings, 182 with a website (31%)
+  Family & Childcare      595 listings, 188 with a website (32%)
   Teens & High School      88 listings,  88 with a website (100%)
   Pet Care & Resources     61 listings,  61 with a website (100%)
   Food & Basic Needs       61 listings,  61 with a website (100%)
-  Elder Care               52 listings,  52 with a website (100%)
-  Health & Dental          34 listings,  34 with a website (100%)
+  Elder Care               53 listings,  53 with a website (100%)
+  Health & Dental          35 listings,  35 with a website (100%)
 
 WHY THE WEBSITE COLUMN COMES FIRST
 
@@ -1181,10 +1185,10 @@ Every other gap here can be filled later. That one compounds.
 
 AND THE GAP IS NOT WHERE IT LOOKS
 
-409 listings have no website. 409 of them -- every single one -- came from the
+407 listings have no website. 407 of them -- every single one -- came from the
 one bulk import of Connecticut Office of Early Childhood childcare providers,
-which arrived without URLs. Of the 359 records written by
-research, 359 carry a website: 100%.
+which arrived without URLs. Of the 365 records written by
+research, 365 carry a website: 100%.
 
 So this is not a habit to correct. It is a bounded backfill of a known set,
 and the set is licensed childcare providers whose details came from the state.
@@ -1193,5 +1197,5 @@ lookup has a record. Work through them by town, and record Last Verified as
 you go so the standing registry starts reaching them.
 
 That is worth more per hour than finding a new listing, because it converts
-409 permanently unverifiable rows into rows that can be maintained.
+407 permanently unverifiable rows into rows that can be maintained.
 ```

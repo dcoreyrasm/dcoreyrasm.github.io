@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-21T03:25:44.581Z",
+  "generated": "2026-11-21T18:05:22.861Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 887,
+  "count": 893,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -1003,20 +1003,24 @@
       "specificType": "State-funded Early Start CT provider (Public School) -- 57 preschool funded spaces FY26",
       "town": "Ansonia",
       "address": "59 Finney St, Ansonia, CT, 06401",
-      "ages": "Preschool",
-      "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
+      "ages": "Ansonia children ages 3–5",
+      "hours": "Prendergast Early Start CT full day/full year: 7:30 a.m.–5:30 p.m.; part day/part year: 9:00 a.m.–1:00 p.m.; Smart Start school day: 8:30 a.m.–2:30 p.m. Mead schedules are also listed on the official page.",
+      "availability": "Contact the Early Childhood Coordinator for program information, registration applications, and the waiting list.",
       "cost": "Reduced state-set fee for eligible families in a funded space.",
-      "contact": "Tracy Platt | (203) 736-6964",
+      "website": "https://www.ansonia.org/schools1/pre-k",
+      "contact": "Alyson Stanisci | 203-736-5080 ext. 5143 | astanisci@ansonia.org",
       "townsServed": [
         "Ansonia"
       ],
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
-      "notes": "FY26 state-funded spaces: 57 preschool. An allocation, not current openings. Licence/registry: DCEX.80523; Registry 2002. Local partner: Valley Early Childhood Regional Council -- Alyson Stanici | astanisci@ansonia.org | 203-736-5080 ext. 5143. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.\n\nDirectory note (2026-11-07): An official provider website has not yet been located; the Website field remains blank.",
+      "notes": "FY26 state-funded spaces: 57 preschool. An allocation, not current openings. Licence/registry: DCEX.80523; Registry 2002. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25. Official Ansonia Public Schools Pre-K page verified 2026-11-21.",
       "servicesOffered": [
-        "Preschool / Pre-K"
+        "Preschool / Pre-K",
+        "Full-Day Childcare"
       ],
-      "tags": "preschool / pre-k, childcare, ansonia"
+      "lastVerified": "2026-11-21",
+      "tags": "ansonia preschool, public pre-k, early start ct, smart start, full-day preschool, preschool waiting list"
     },
     {
       "id": "recMLOtfjGA8p2Yu1",
@@ -5358,8 +5362,8 @@
       "category": "Respite Care",
       "specificType": "Respite and care planning for families caring for someone with Alzheimer’s disease or a related condition",
       "town": "Statewide",
-      "ages": "Connecticut caregivers of people with Alzheimer’s disease or related dementias",
-      "availability": "A care manager reviews need and available funding. Families may use a home-care agency or hire someone they trust.",
+      "ages": "Connecticut caregivers of people with Alzheimer’s disease or a related condition",
+      "availability": "A care manager reviews need and available funding. Families may use a home-care agency or hire someone they trust. Apply through the state form or call the statewide aging line.",
       "cost": "The program may pay up to $7,500 per year, depending on need and available funding.",
       "website": "https://portal.ct.gov/ads/knowledge-base/articles/independent-living-services/healthy-living-services/connecticut-statewide-respite-care",
       "contact": "1-800-994-9422",
@@ -5368,11 +5372,13 @@
       ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
-      "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25.",
+      "notes": "Official Connecticut Aging and Disability Services page rechecked 2026-11-21. The program is run with the Alzheimer’s Association Connecticut Chapter and the five Area Agencies on Aging. Funding is not guaranteed.",
       "servicesOffered": [
-        "Caregiver Support"
+        "Caregiver Support",
+        "Elder Care"
       ],
-      "tags": "respite care, senior services, caregiver support"
+      "lastVerified": "2026-11-21",
+      "tags": "respite care, dementia caregiving, alzheimer's caregiver support, care planning, home care, statewide connecticut"
     },
     {
       "id": "recsYPTuBUBHmF1Wt",
@@ -8472,6 +8478,29 @@
       "tags": "home daycare licensed, childcare, bloomfield"
     },
     {
+      "id": "recI9jBFlPP6Eqd7v",
+      "name": "Glastonbury Second Chance Shop",
+      "track": "Family & Childcare",
+      "category": "Family Thrift Store",
+      "specificType": "Volunteer-run thrift shop selling donated clothing and household items to support The Village",
+      "town": "Glastonbury",
+      "address": "2450 Main Street, Glastonbury, CT",
+      "ages": "Open to the public",
+      "hours": "Thursday and Friday 11:00 a.m.–3:00 p.m.; Saturday 11:00 a.m.–2:00 p.m.",
+      "availability": "Official page states that the shop reopened November 6. Donations are accepted during open hours.",
+      "cost": "Thrift pricing; exact prices are not posted",
+      "website": "https://thevillage.org/second-chance-shops/",
+      "contact": "860-633-5188",
+      "townsServed": [
+        "Glastonbury"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "The Village states that Auxiliary volunteers run the shop and proceeds benefit its programs. This is donation-based thrift, not consignment.",
+      "lastVerified": "2026-11-21",
+      "shoppingType": "Family Thrift Store",
+      "tags": "glastonbury thrift store, volunteer thrift, used clothing, household goods, donate goods, nonprofit resale"
+    },
+    {
       "id": "recGYNkCyVYdYl2bR",
       "name": "Glastonbury YMCA Nayaug Child Care",
       "track": "Family & Childcare",
@@ -9563,6 +9592,25 @@
       ],
       "lastVerified": "2026-08-29",
       "tags": "hospice / palliative care, senior services, wethersfield"
+    },
+    {
+      "id": "reccKuFJ6eo5K0F0J",
+      "name": "Hartford HealthCare Early Detection and Prevention Program",
+      "track": "Health & Dental",
+      "category": "Health Screening Program",
+      "specificType": "Breast, cervical, and colorectal cancer screening and diagnostic support for eligible uninsured or underinsured Connecticut residents",
+      "town": "Statewide",
+      "ages": "Eligible Connecticut residents with limited income and no insurance, excluded routine coverage, or a high deductible; age and clinical rules vary by service",
+      "availability": "Eligibility screening is required. Provider teams are listed for Hartford, central, eastern, northwestern, and southwestern Connecticut.",
+      "cost": "Free breast and cervical screening for eligible participants. No-cost follow-up diagnostic colonoscopy is available to eligible participants after a positive stool-based screening test.",
+      "website": "https://hartfordhealthcare.org/services/cancer-care/screening-diagnosis/cancer-screening-programs-for-uninsured-or-underinsured",
+      "townsServed": [
+        "Statewide (all of Connecticut)"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "The official provider page states that covered breast and cervical services include clinical breast exams, mammograms, Pap and HPV tests, and certain diagnostic services. Colorectal support is limited to eligible follow-up diagnostic colonoscopy after a positive screening test. It is not a universal free cancer-screening program.",
+      "lastVerified": "2026-11-21",
+      "tags": "free cancer screening, uninsured, underinsured, breast screening, cervical screening, mammogram, pap test, hpv test, colorectal follow-up, statewide connecticut"
     },
     {
       "id": "recfxPzbZ5ImeV5el",
@@ -17839,6 +17887,51 @@
       "tags": "center-based daycare, childcare, meriden"
     },
     {
+      "id": "recYQgBR9u8ECmMes",
+      "name": "St. Thomas Second Chance Thrift Store",
+      "track": "Family & Childcare",
+      "category": "Clothing & Household Resale",
+      "specificType": "Church-run thrift store with gently used personal and household items",
+      "town": "Norwalk",
+      "address": "208 East Avenue, Norwalk, CT 06855",
+      "ages": "Open to the public",
+      "hours": "Tuesday 10:00 a.m.–3:00 p.m.; Wednesday 12:00–4:00 p.m.; Thursday 10:00 a.m.–3:00 p.m.; Saturday 10:00 a.m.–1:00 p.m. Check the parish calendar for holiday changes.",
+      "cost": "Reasonably priced; exact prices are not posted",
+      "website": "https://stthomasnorwalk.org/",
+      "contact": "203-318-9817",
+      "townsServed": [
+        "Norwalk"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "Official church page confirms the thrift store and current posted hours. This is a thrift store, not a consignor-payout shop.",
+      "lastVerified": "2026-11-21",
+      "shoppingType": "Clothing & Household Resale",
+      "tags": "norwalk thrift store, church thrift, gently used clothing, household items, budget shopping, fairfield county"
+    },
+    {
+      "id": "recz7fDBpSLhdXHWm",
+      "name": "St. Vincent DePaul Mission of Waterbury Thrift Store",
+      "track": "Family & Childcare",
+      "category": "Clothing & Household Resale",
+      "specificType": "Donation-based thrift store with clothing, furniture, household goods, income-eligible giveaways, pickup, and delivery services",
+      "town": "Waterbury",
+      "address": "38 Willow Street, Waterbury, CT 06710",
+      "ages": "Individuals and families experiencing poverty in the Waterbury area",
+      "hours": "Tuesday–Friday 8:30 a.m.–4:00 p.m.; Saturday 8:30 a.m.–12:00 p.m.; closed Sunday and Monday.",
+      "availability": "Public store hours are posted. Pickup and delivery may be scheduled Wednesday–Saturday by phone.",
+      "cost": "Low cost or no cost based on need",
+      "website": "https://www.svdpmission.org/en/thrift-store",
+      "contact": "203-754-3695",
+      "townsServed": [
+        "Waterbury"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "Official provider page confirms donated clothing, furnishings, and household goods. This is a charity thrift store, not a consignor-payout shop.",
+      "lastVerified": "2026-11-21",
+      "shoppingType": "Clothing & Household Resale",
+      "tags": "waterbury thrift store, low-cost clothing, free clothing based on need, used furniture, household goods, donation pickup, nonprofit resale"
+    },
+    {
       "id": "recH1fa264zxKgIGU",
       "name": "St. Vincent’s Special Needs Services Family Center",
       "track": "Family & Childcare",
@@ -19963,21 +20056,27 @@
       "specificType": "State-funded Early Start CT provider (Child Care Center) -- 36 preschool funded spaces FY26",
       "town": "Ansonia",
       "address": "32 Howard Ave, Ansonia, CT, 06401",
-      "ages": "Preschool",
-      "availability": "Contact the program directly for current openings, schedule, eligibility, and family cost.",
-      "cost": "Reduced state-set fee for eligible families in a funded space.",
-      "contact": "Stephanie Trcka | (203) 732-7778",
+      "ages": "Children ages 8 weeks–5 years; School Readiness serves children ages 3–4 in Ansonia and Derby",
+      "hours": "Monday–Friday 7:30 a.m.–5:30 p.m.",
+      "availability": "2026–2027 registration forms are posted. Contact the Child Care Director for openings. Financial aid may be available.",
+      "cost": "Infant/toddler monthly fee listed as $1,290. Early Start CT infant/toddler and preschool uses a sliding fee schedule. Financial aid may be available.",
+      "website": "https://cccymca.org/locations/valley/child-care/",
+      "contact": "Child Care Director | 203-732-7778",
       "townsServed": [
         "Ansonia"
       ],
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
-      "notes": "FY26 state-funded spaces: 36 preschool. An allocation, not current openings. Licence/registry: DCCC.16707; Registry 2103. Local partner: Valley Early Childhood Regional Council -- Alyson Stanici | astanisci@ansonia.org | 203-736-5080 ext. 5143. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.\n\nDirectory note (2026-11-07): An official provider website has not yet been located; the Website field remains blank.",
+      "notes": "FY26 state-funded spaces: 36 preschool. An allocation, not current openings. Licence/registry: DCCC.16707; Registry 2103. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25. Official Central Connecticut Coast YMCA page verified 2026-11-21.",
       "servicesOffered": [
         "Child Care",
-        "Preschool / Pre-K"
+        "Infant Care",
+        "Toddler Care",
+        "Preschool / Pre-K",
+        "Full-Day Childcare"
       ],
-      "tags": "center-based daycare, family resources, childcare, ansonia"
+      "lastVerified": "2026-11-21",
+      "tags": "ansonia childcare, valley ymca, infant care, toddler care, preschool, school readiness, sliding fee childcare, financial aid"
     },
     {
       "id": "recYxgMsUDJvmeWp3",
@@ -21064,6 +21163,29 @@
       "tags": "preschool / pre-k, childcare, west hartford"
     },
     {
+      "id": "recZZFd8fHfh6T9H1",
+      "name": "West Hartford Second Chance Shop",
+      "track": "Family & Childcare",
+      "category": "Family Thrift Store",
+      "specificType": "Volunteer-run thrift shop selling donated clothing and household items to support The Village",
+      "town": "West Hartford",
+      "address": "175 Park Road, West Hartford, CT 06119",
+      "ages": "Open to the public",
+      "hours": "Thursday 10:00 a.m.–5:00 p.m.; Friday and Saturday 10:00 a.m.–2:00 p.m.",
+      "availability": "Donations are accepted during open hours.",
+      "cost": "Thrift pricing; exact prices are not posted",
+      "website": "https://thevillage.org/second-chance-shops/",
+      "contact": "860-461-7067",
+      "townsServed": [
+        "West Hartford"
+      ],
+      "submittedBy": "Village Notes Research",
+      "notes": "The Village states that Auxiliary volunteers run the shop and proceeds benefit its programs. This is donation-based thrift, not consignment.",
+      "lastVerified": "2026-11-21",
+      "shoppingType": "Family Thrift Store",
+      "tags": "west hartford thrift store, volunteer thrift, used clothing, household goods, donate goods, nonprofit resale"
+    },
+    {
       "id": "recfb7y4XDtaumdK4",
       "name": "West Hartford Town Food Pantry",
       "track": "Food & Basic Needs",
@@ -21735,6 +21857,30 @@
       "event": "Theatre Magic series, November 17–December 1",
       "eventDate": "2026-11-17",
       "tags": "teen program, high school students, middle school students, technical theatre, stage lighting, rigging, props, automation technology, arts enrichment, stem enrichment, yale pathways, new haven, november 2026"
+    },
+    {
+      "id": "recWpaVcVmuFQZWje",
+      "name": "Yale University Community Breakfast: Caring for Caregivers",
+      "track": "Elder Care",
+      "category": "Caregiver Support Group",
+      "specificType": "Free caregiver education and community breakfast on supporting a loved one after a dementia diagnosis",
+      "town": "New Haven",
+      "address": "101 Ashmun Street, New Haven, CT 06511",
+      "ages": "Caregivers, families, community members, and nonprofit partners",
+      "hours": "Thursday, December 3, 2026, 8:00–9:00 a.m. In-person and virtual attendance options.",
+      "availability": "Registration link is posted on the official event page. Breakfast is provided for in-person attendees.",
+      "cost": "Free",
+      "website": "https://onha.yale.edu/events/2026-12-03-yale-university-community-breakfast",
+      "submittedBy": "Village Notes Research",
+      "notes": "Official Yale Office of New Haven Affairs event. This is a dated caregiver education event, not an ongoing support group.",
+      "servicesOffered": [
+        "Caregiver Support",
+        "Elder Care"
+      ],
+      "lastVerified": "2026-11-21",
+      "event": "Free dementia caregiver community breakfast",
+      "eventDate": "2026-12-03",
+      "tags": "dementia caregiver support, alzheimer's caregiving, free community breakfast, new haven, virtual caregiver education"
     },
     {
       "id": "recPm7aQp6pt2n7QJ",
