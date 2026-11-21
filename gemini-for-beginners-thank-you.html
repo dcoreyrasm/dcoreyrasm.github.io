@@ -66,9 +66,9 @@ sitemap: false
     <section aria-labelledby="next-heading">
       <div class="container">
         <p class="section-label">Keep Going</p>
-        <h2 class="section-heading" id="next-heading">Coming up next</h2>
+        <h2 class="section-heading" id="next-heading">More workshops coming up</h2>
         <p id="ty-more-parts" class="section-sub" style="max-width:640px;display:none;">Want the other parts of Gemini for Beginners? Each part is $50, and you can add any of them on the <a href="/gemini-for-beginners.html" style="color:var(--coral);">series page</a>.</p>
-        {% include upcoming-workshops.html style="cards" count=3 key="ty" %}
+        {% include upcoming-workshops.html style="cards" count=3 key="ty" exclude="/gemini-for-beginners.html" %}
       </div>
     </section>
     <script>(function(){var k=new URLSearchParams(location.search).get('item');if(k&&k!=='all4'){document.getElementById('ty-more-parts').style.display='block';}})();</script>

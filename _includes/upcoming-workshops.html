@@ -3,13 +3,14 @@
   Usage:
     {% include upcoming-workshops.html style="cards" count=3 %}   homepage cards
     {% include upcoming-workshops.html style="line" %}            one-line note
+    exclude="/claude-for-beginners.html" leaves one series out (used on thank-you pages)
   A session drops off the list automatically one hour after it starts.
   To add dates, add lines to SESSIONS below (times are Eastern).
 {% endcomment %}
 {% assign uw_style = include.style | default: "cards" %}
 {% assign uw_count = include.count | default: 3 %}
 {% capture uw_id %}uw-{{ uw_style }}-{{ include.key | default: "main" }}{% endcapture %}
-<div id="{{ uw_id }}" class="uw uw-{{ uw_style }}" data-count="{{ uw_count }}">
+<div id="{{ uw_id }}" class="uw uw-{{ uw_style }}" data-count="{{ uw_count }}" data-exclude="{{ include.exclude }}">
   <p class="uw-fallback" style="line-height:1.7;margin:0;">See the dates for my live beginner workshops on Zoom on the <a href="/classes.html" style="color:var(--coral);">classes page</a>.</p>
 </div>
 <script>
@@ -32,8 +33,9 @@
   var box = document.getElementById('{{ uw_id }}');
   if (!box) return;
   var count = parseInt(box.getAttribute('data-count'), 10) || 3;
+  var exclude = box.getAttribute('data-exclude') || '';
   var now = Date.now();
-  var next = SESSIONS.filter(function (s) { return new Date(s.start).getTime() + 3600000 > now; }).slice(0, count);
+  var next = SESSIONS.filter(function (s) { return s.url !== exclude && new Date(s.start).getTime() + 3600000 > now; }).slice(0, count);
   if (!next.length) return;
   function el(tag, attrs, text) {
     var e = document.createElement(tag);
