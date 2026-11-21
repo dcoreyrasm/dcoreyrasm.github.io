@@ -2,7 +2,7 @@
   One signup form for every Darice Corey email list. Each checked list is sent
   to its own MailerLite form. Use once per page:
     {% include list-signup.html key="nl" primary="darice-on-ai" button="Sign Me Up" %}
-  key: short unique id for the page. primary: the list checked by default
+  key: short unique id for the page. primary: the list(s) checked by default, comma-separated for more than one
   (darice-on-ai, workshops, community-ai, village-notes, scholarships).
 {%- endcomment -%}
 {%- assign k = include.key | default: "ls" -%}
@@ -14,11 +14,11 @@
   </div>
   <fieldset class="list-signup-choices">
     <legend>Choose what you'd like to receive</legend>
-    <label class="list-signup-option coral"><input type="checkbox" name="list" value="191436005966873982"{% if primary == "darice-on-ai" %} checked{% endif %} /> <span><strong>Darice on AI</strong><span class="list-signup-desc">my weekly newsletter on using AI well</span></span></label>
-    <label class="list-signup-option gold"><input type="checkbox" name="list" value="201713282076116487"{% if primary == "workshops" %} checked{% endif %} /> <span><strong>Workshop Updates</strong><span class="list-signup-desc">new workshop dates and offerings</span></span></label>
-    <label class="list-signup-option teal"><input type="checkbox" name="list" value="198311500140512479"{% if primary == "community-ai" %} checked{% endif %} /> <span><strong>Darice's Community AI</strong><span class="list-signup-desc">weekly picks from the Community AI directory</span></span></label>
-    <label class="list-signup-option rose"><input type="checkbox" name="list" value="202322533642405434"{% if primary == "village-notes" %} checked{% endif %} /> <span><strong>Village Notes Updates</strong><span class="list-signup-desc">new Connecticut childcare, camp, and elder care resources</span></span></label>
-    <label class="list-signup-option violet"><input type="checkbox" name="list" value="203298858644538889"{% if primary == "scholarships" %} checked{% endif %} /> <span><strong>Scholarships &amp; Fellowships Updates</strong><span class="list-signup-desc">new scholarships, fellowships, and funding, with upcoming deadlines</span></span></label>
+    <label class="list-signup-option coral"><input type="checkbox" name="list" value="191436005966873982"{% if primary contains "darice-on-ai" %} checked{% endif %} /> <span><strong>Darice on AI</strong><span class="list-signup-desc">my weekly newsletter on using AI well</span></span></label>
+    <label class="list-signup-option gold"><input type="checkbox" name="list" value="201713282076116487"{% if primary contains "workshops" %} checked{% endif %} /> <span><strong>Workshop Updates</strong><span class="list-signup-desc">new workshop dates and offerings</span></span></label>
+    <label class="list-signup-option teal"><input type="checkbox" name="list" value="198311500140512479"{% if primary contains "community-ai" %} checked{% endif %} /> <span><strong>Darice's Community AI</strong><span class="list-signup-desc">weekly picks from the Community AI directory</span></span></label>
+    <label class="list-signup-option rose"><input type="checkbox" name="list" value="202322533642405434"{% if primary contains "village-notes" %} checked{% endif %} /> <span><strong>Village Notes Updates</strong><span class="list-signup-desc">new Connecticut childcare, camp, and elder care resources</span></span></label>
+    <label class="list-signup-option violet"><input type="checkbox" name="list" value="203298858644538889"{% if primary contains "scholarships" %} checked{% endif %} /> <span><strong>Scholarships &amp; Fellowships Updates</strong><span class="list-signup-desc">new scholarships, fellowships, and funding, with upcoming deadlines</span></span></label>
   </fieldset>
   <button type="submit" class="btn-primary btn-pop">{{ include.button | default: "Sign Me Up" }}</button>
   <p id="{{ k }}-status" class="list-signup-status" role="status" aria-live="polite"></p>
