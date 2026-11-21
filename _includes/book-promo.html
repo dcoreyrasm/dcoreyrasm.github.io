@@ -1,0 +1,20 @@
+{% comment %}
+  Brave & Bright: Girls in STEM promo block.
+  Usage: {% include book-promo.html location="homepage" %}
+  Each "Buy on Amazon" click is sent to GA4 as a book_click event with the page location,
+  because Amazon does not report sales back to this site.
+{% endcomment %}
+<aside class="book-promo" aria-labelledby="book-promo-heading-{{ include.location }}" style="display:flex;flex-wrap:wrap;gap:1.75rem;align-items:center;padding:1.75rem;background:var(--bg2);border:1px solid var(--line);border-top:4px solid var(--pop-rose);border-radius:12px;">
+  <a href="/books/" style="flex:0 0 auto;">
+    <img src="/images/books/brave-bright-girls-in-stem-cover-600.webp" width="600" height="776" loading="lazy" style="display:block;width:160px;height:auto;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,.25);" alt="Cover of Brave &amp; Bright: Girls in STEM, showing five girls doing science, coding, robotics, space, and chemistry" />
+  </a>
+  <div style="flex:1 1 280px;">
+    <p class="section-label" style="margin:0 0 .4rem;">For Curious Kids, Ages 6 to 12</p>
+    <h2 id="book-promo-heading-{{ include.location }}" style="font-family:var(--serif);font-weight:400;font-size:1.45rem;line-height:1.3;color:var(--cream);margin:0 0 .6rem;">Brave &amp; Bright: Girls in STEM</h2>
+    <p style="line-height:1.7;margin:0 0 1.1rem;color:var(--muted);max-width:560px;">My coloring book has 29 pages of girls exploring science, technology, engineering, and math, with encouraging messages on every page. It makes a thoughtful gift.</p>
+    <div class="hero-ctas" style="margin:0;">
+      <a href="https://a.co/d/0gr8fXc3" class="btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Buy Brave &amp; Bright: Girls in STEM on Amazon (opens in new tab)" onclick="if(typeof gtag==='function'){gtag('event','book_click',{book:'brave-bright-girls-in-stem',location:'{{ include.location }}',destination:'amazon'});}">Buy on Amazon</a>
+      <a href="/books/" class="btn-ghost">About the Book</a>
+    </div>
+  </div>
+</aside>
