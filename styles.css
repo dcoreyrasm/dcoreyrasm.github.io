@@ -935,3 +935,9 @@ main > section:nth-of-type(3n) .section-label:not(.pop-label)::before { backgrou
 }
 :where(html[data-theme="light"]) .speaking-hero.hero-skyline .llc-logo.brand-on-dark { display:none; }
 :where(html[data-theme="light"]) .speaking-hero.hero-skyline .llc-logo.brand-on-light { display:block; }
+
+/* Substack signup (newsletter page) */
+.substack-signup { margin-top:2.5rem; padding-top:2rem; border-top:1px solid var(--border, rgba(0,0,0,.1)); max-width:620px; }
+.substack-signup h3 { font-family:var(--serif); font-size:1.35rem; margin-bottom:.5rem; }
+.substack-signup p { color:var(--muted); margin-bottom:1rem; line-height:1.6; }
+.substack-signup iframe { display:block; width:100%; max-width:480px; height:320px; border:1px solid #EEE; border-radius:8px; background:#fff; }
