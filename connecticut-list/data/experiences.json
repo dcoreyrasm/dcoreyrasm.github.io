@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-15T18:23:05.607Z",
-  "count": 442,
+  "generated": "2026-11-22T18:23:43.012Z",
+  "count": 446,
   "regions": [
     "Central CT",
     "Connecticut Shoreline",
@@ -27,8 +27,10 @@
     "Bristol",
     "Brookfield",
     "Burlington",
+    "Canaan",
     "Canterbury",
     "Canton",
+    "Chaplin",
     "Cheshire",
     "Chester",
     "Clinton",
@@ -66,6 +68,7 @@
     "Griswold",
     "Groton",
     "Guilford",
+    "Haddam",
     "Hamden",
     "Hampton",
     "Hartford",
@@ -789,33 +792,6 @@
       "slug": "bartlett-arboretum-and-gardens"
     },
     {
-      "name": "Bartlett Arboretum November 2026 Conifer Walk & Talk",
-      "town": "Stamford",
-      "region": "Fairfield County",
-      "experienceTypes": [
-        "Hiking & Outdoors",
-        "Fall & Seasonal"
-      ],
-      "categories": [
-        "Gardens & Arboretums",
-        "Easy Walks"
-      ],
-      "audiences": [
-        "Individual Exploration",
-        "Date Night",
-        "Group Activities"
-      ],
-      "bestTime": "Specific event/date",
-      "whyGo": "One-hour Master Gardener-led public walk about evergreens and conifer trees at the arboretum.",
-      "officialWebsite": "https://www.bartlettarboretum.org/events/thursdaynovember2026",
-      "address": "151 Brookdale Road, Stamford, CT 06903",
-      "tryThis": "Learn to recognize three different kinds of conifers.",
-      "notes": "Walking shoes recommended. Trail route accessibility not stated for this guided walk.",
-      "dateAdded": "2026-11-15",
-      "eventStart": "2026-11-19",
-      "slug": "bartlett-arboretum-november-2026-conifer-walk-and-talk"
-    },
-    {
       "name": "Beardsley's Cider Mill & Orchard",
       "town": "Shelton",
       "experienceTypes": [
@@ -946,10 +922,10 @@
         "Date Night"
       ],
       "bestTime": "Fall",
-      "whyGo": "A major Guilford fall farm stop with current pick-your-own fruit and flowers, pumpkins, a corn maze, seasonal food and a daily Fall Festival.",
+      "whyGo": "Year-round Guilford farm market with local produce, bakery, cider and prepared food; winery and seasonal farm experiences also offered when listed by Bishop's Orchards.",
       "officialWebsite": "https://www.bishopsorchards.com/",
       "address": "1355 Boston Post Road, Guilford, CT 06437",
-      "notes": "November 2026: Visit the farm market and creamery; seasonal field picking and festival are over. Check Thanksgiving pre-order deadlines directly with provider.",
+      "notes": "The market and bakery are the current ongoing outing. Pumpkin picking, fall festival and pick-your-own must not be represented as currently active in late November. Check current Thanksgiving bakery pre-order cutoff and market holiday hours with provider.",
       "dateAdded": "2026-08-17",
       "slug": "bishops-orchards-farm-market-and-winery"
     },
@@ -1543,6 +1519,26 @@
       "slug": "chamard-vineyards"
     },
     {
+      "name": "Chatfield Blue-Blazed Trail: Cockaponset Forest Hike",
+      "town": "Killingworth",
+      "region": "Connecticut Shoreline",
+      "categories": [
+        "Longer Hikes",
+        "Parks & Preserves"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Group Activities"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "Challenging 4.5-mile hiking trail through forest, rocky ledges, brooks and boulder formations south of Chatfield Hollow State Park.",
+      "officialWebsite": "https://ctwoodlands.org/trails/chatfield-trail/",
+      "tryThis": "Complete a suitable marked section and look for a distinctive rock formation.",
+      "notes": "CFPA confirms rocky uneven terrain and cliff sections; not an accessible trail. No single trailhead address verified. It is distinct from Chatfield Hollow State Park general listing. Check trail conditions before visiting.",
+      "dateAdded": "2026-11-22",
+      "slug": "chatfield-blue-blazed-trail-cockaponset-forest-hike"
+    },
+    {
       "name": "Chatfield Hollow State Park",
       "town": "Killingworth",
       "audiences": [
@@ -1666,6 +1662,30 @@
       "address": "1 Milford Point Road, Milford, CT 06460",
       "dateAdded": "2026-08-19",
       "slug": "coastal-center-at-milford-point-and-smith-hubbell-sanctuary"
+    },
+    {
+      "name": "Cockaponset Trail: Chester & Haddam Forest Hikes",
+      "town": "Chester / Haddam",
+      "categories": [
+        "Longer Hikes",
+        "Parks & Preserves",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Group Activities"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A 7.4-mile blue-blazed trail through Cockaponset State Forest with historic CCC stonework, brooks, woods and views near Pattaconk Reservoir.",
+      "officialWebsite": "https://ctwoodlands.org/trails/cockaponset-trail/",
+      "tryThis": "Choose a trail section and look for historic trail stonework or a reservoir view.",
+      "notes": "Multi-access trail; no single verified street address or dedicated Lower Connecticut River Valley Region option. Leave Region blank rather than forcing a misleading category. Check CFPA trail notices and hunting-season advice. Not verified wheelchair accessible.",
+      "dateAdded": "2026-11-22",
+      "towns": [
+        "Chester",
+        "Haddam"
+      ],
+      "slug": "cockaponset-trail-chester-and-haddam-forest-hikes"
     },
     {
       "name": "College Street Music Hall",
@@ -2063,7 +2083,7 @@
       "bestTime": "Winter",
       "officialWebsite": "https://www.ct-trolley.org/events/winterfest-and-the-tunnel-of-lights/",
       "address": "58 North Road, East Windsor, CT",
-      "notes": "Recurring seasonal Winterfest & Tunnel of Lights. Provider 2026 season list says late November through December but the detailed Winterfest page still presents 2025 dates, so exact 2026 public ride schedule and pricing must be confirmed with the museum before visitors plan; no specific 2026 dates claimed.",
+      "notes": "2026 Winterfest appears in official museum season list; exact 2026 dates and ticket slots unverified because detailed page shows 2025 schedule. Historic trolley car access varies; call museum for accessibility needs. Do not reuse prior-year hours or ticket rates.",
       "dateAdded": "2026-08-17",
       "slug": "connecticut-trolley-museum-winterfest-and-tunnel-of-lights"
     },
@@ -3256,31 +3276,28 @@
       "slug": "goodspeed-musicals-annie-2026"
     },
     {
-      "name": "Goodwin State Forest Meditative Forest Walk November 2026",
+      "name": "Goodwin State Forest Winter Birding Walk & Bird Feeder Craft 2026",
       "town": "Hampton",
       "region": "Quiet Corner & Northeastern CT",
-      "experienceTypes": [
-        "Hiking & Outdoors",
-        "Fall & Seasonal"
-      ],
       "categories": [
         "Parks & Preserves",
-        "Easy Walks",
-        "Festivals & Events"
+        "Festivals & Events",
+        "Something Different"
       ],
       "audiences": [
-        "Individual Exploration",
-        "Group Activities"
+        "Family",
+        "Group Activities",
+        "Individual Exploration"
       ],
       "bestTime": "Specific event/date",
-      "whyGo": "Naturalist-led quiet forest walk using the senses and mindfulness activities.",
-      "officialWebsite": "https://ctparks.com/events/meditative-forest-walk",
+      "whyGo": "A guided winter birdwatching walk with a nature-based bird feeder craft at Goodwin Conservation Center in Hampton.",
+      "officialWebsite": "https://ctparks.com/events/winter-birding",
       "address": "23 Potter Road, Hampton, CT 06247",
-      "tryThis": "Try a guided quiet walk and notice five natural sounds.",
-      "notes": "Event page shows conflicting time information (11 a.m.–noon at top; 10–11:30 in description). Contact Goodwin Conservation Center to confirm start; trail accessibility not stated.",
-      "dateAdded": "2026-11-15",
-      "eventStart": "2026-11-21",
-      "slug": "goodwin-state-forest-meditative-forest-walk-november-2026"
+      "tryThis": "Spot two resident birds and learn which foods help them in winter.",
+      "notes": "Saturday December 5, 2026, 10–11:30 AM. Meet at the conservation center. Binoculars encouraged. Register through the official event page; admission cost and trail accessibility not stated.",
+      "dateAdded": "2026-11-22",
+      "eventStart": "2026-12-05",
+      "slug": "goodwin-state-forest-winter-birding-walk-and-bird-feeder-craft-2026"
     },
     {
       "name": "Gouveia Vineyards",
@@ -3491,7 +3508,7 @@
       "whyGo": "Hartford Stage's annual live production of A Christmas Carol runs November 21 through December 27, 2026.",
       "officialWebsite": "https://www.hartfordstage.org/2026-2027/a-christmas-carol/",
       "tryThis": "Attend the seasonal show and enjoy a downtown Hartford outing.",
-      "notes": "Ticketed event, November 21–December 27, 2026. Check provider performance calendar and accessible performance information for the chosen date.",
+      "notes": "2026 A Christmas Carol runs Nov 21–Dec 27. Sensory-friendly Dec 5 at 2 PM; open-captioned Dec 6 at 2 PM; audio-described Dec 12 at 2 PM. Specific options and seating should be confirmed with theater box office. Provider-verified accommodations; Accessibility Experience Type option is not in live schema.",
       "dateAdded": "2026-11-08",
       "eventStart": "2026-11-21",
       "eventEnd": "2026-12-27",
@@ -4423,32 +4440,6 @@
       "slug": "lucius-pond-ordway-devils-den-preserve"
     },
     {
-      "name": "Lyman Orchards Fall Pick-Your-Own",
-      "town": "Middlefield",
-      "region": "Central CT",
-      "experienceTypes": [
-        "Orchard & Apples",
-        "Fall & Seasonal",
-        "Food & Treats"
-      ],
-      "categories": [
-        "Orchards & Farms",
-        "Food & Treats"
-      ],
-      "audiences": [
-        "Date Night",
-        "Family",
-        "Group Activities",
-        "Individual Exploration"
-      ],
-      "bestTime": "Fall",
-      "whyGo": "A separate pick-your-own experience from Lyman's corn maze, with apples, pears and other seasonal fruit plus the Apple Barrel Farm Market.",
-      "officialWebsite": "https://lymanorchards.com/pick-your-own/",
-      "notes": "Apples advertised in season as of Nov 15, 2026, but field availability can change. Check provider or call 860-349-6015 before travel. Do not confuse PYO location with Apple Barrel market.",
-      "dateAdded": "2026-09-05",
-      "slug": "lyman-orchards-fall-pick-your-own"
-    },
-    {
       "name": "Macedonia Brook State Park",
       "town": "Kent",
       "audiences": [
@@ -4757,6 +4748,32 @@
       "slug": "moca-ct"
     },
     {
+      "name": "Mohawk Blue-Blazed Trail: Litchfield Hills Long Hikes",
+      "town": "Cornwall / Goshen / Canaan",
+      "region": "Litchfield Hills",
+      "categories": [
+        "Longer Hikes",
+        "Parks & Preserves",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Group Activities"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A 24.3-mile trail spanning high ridges, state forests and parkland in northwest Connecticut. Plan shorter sections for scenic viewpoints.",
+      "officialWebsite": "https://ctwoodlands.org/trails/mohawk-trail/",
+      "tryThis": "Pick one trail section and record a hilltop or forest highlight.",
+      "notes": "CFPA lists 24.3 miles and multiple towns; no single street address. Some high ridges. Trail condition, access and hunting-season checks recommended; accessibility not established.",
+      "dateAdded": "2026-11-22",
+      "towns": [
+        "Cornwall",
+        "Goshen",
+        "Canaan"
+      ],
+      "slug": "mohawk-blue-blazed-trail-litchfield-hills-long-hikes"
+    },
+    {
       "name": "Mohawk State Park Summit & Black Spruce Bog",
       "town": "Cornwall / Goshen",
       "audiences": [
@@ -4945,6 +4962,33 @@
       "notes": "Forest recreation areas are generally open 8 a.m. to sunset. Other forest areas have broader dawn/dusk access rules. Check DEEP notices before visiting.",
       "dateAdded": "2026-09-17",
       "slug": "natchaug-state-forest"
+    },
+    {
+      "name": "Natchaug Trail: Eastern Connecticut Long Hikes",
+      "town": "Hampton / Eastford / Ashford / Chaplin",
+      "region": "Quiet Corner & Northeastern CT",
+      "categories": [
+        "Longer Hikes",
+        "Parks & Preserves",
+        "Scenic Views"
+      ],
+      "audiences": [
+        "Individual Exploration",
+        "Group Activities"
+      ],
+      "bestTime": "Anytime",
+      "whyGo": "A 17.6-mile blue-blazed hiking trail through Goodwin and Natchaug State Forests, with streams, forest habitats, stone walls and historic sites. Choose a section instead of hiking the full length.",
+      "officialWebsite": "https://ctwoodlands.org/trails/natchaug-trail/",
+      "tryThis": "Choose one marked section and identify a forest or wildlife feature along the route.",
+      "notes": "Official CFPA guide lists 17.6 miles across multiple towns, with section and map planning needed. No single street address. Check official trail notices and hunting-season conditions. Accessible route not confirmed.",
+      "dateAdded": "2026-11-22",
+      "towns": [
+        "Hampton",
+        "Eastford",
+        "Ashford",
+        "Chaplin"
+      ],
+      "slug": "natchaug-trail-eastern-connecticut-long-hikes"
     },
     {
       "name": "Nathan Hale Homestead Things That Go Bump in the Night",
@@ -5439,6 +5483,32 @@
       "officialWebsite": "https://www.onerafoundation.org/exhibitions/fape",
       "dateAdded": "2026-08-31",
       "slug": "onera-foundation-america-abroad-art-architecture"
+    },
+    {
+      "name": "Osborne Homestead Connecticut State Symbols Holiday Tours 2026",
+      "town": "Derby",
+      "region": "New Haven Area",
+      "categories": [
+        "Museums & Culture",
+        "Festivals & Events",
+        "Free / Low-Cost",
+        "Something Different"
+      ],
+      "audiences": [
+        "Family",
+        "Date Night",
+        "Individual Exploration"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Free seasonal tours of Osborne Homestead Museum decorated with Connecticut state symbols. The official CT State Parks event lists Thursday–Sunday touring November 27–December 19, 2026.",
+      "officialWebsite": "https://ctparks.com/events/connecticut-state-symbols-holiday",
+      "address": "500 Hawthorne Avenue, Derby, CT 06418",
+      "tryThis": "Find three Connecticut symbols represented in the holiday rooms.",
+      "notes": "Free admission; donations accepted. Hours: Thu–Sun 10 AM–4 PM. Friday twilight tours Dec 4/11/18 from 4–7 PM. Accessibility for this specific tour was not confirmed by the event page.",
+      "dateAdded": "2026-11-22",
+      "eventStart": "2026-11-27",
+      "eventEnd": "2026-12-19",
+      "slug": "osborne-homestead-connecticut-state-symbols-holiday-tours-2026"
     },
     {
       "name": "Osborne Homestead Museum",
@@ -7564,6 +7634,31 @@
       "address": "196-200 Yantic Street, Norwich, CT",
       "dateAdded": "2026-08-26",
       "slug": "uncas-leap-heritage-park-and-yantic-falls"
+    },
+    {
+      "name": "Valley Shakespeare Festival: A Christmas Carol at Kellogg Estate 2026",
+      "town": "Derby",
+      "region": "New Haven Area",
+      "categories": [
+        "Theater & Movies",
+        "Festivals & Events",
+        "Free / Low-Cost"
+      ],
+      "audiences": [
+        "Family",
+        "Date Night",
+        "Group Activities"
+      ],
+      "bestTime": "Specific event/date",
+      "whyGo": "Free 90-minute one-person staging of A Christmas Carol at the Kellogg Estate, with three scheduled performances and the adjacent decorated Osborne Homestead Museum.",
+      "officialWebsite": "https://ctparks.com/events/christmas-carol-2026",
+      "address": "500 Hawthorne Avenue, Derby, CT 06418",
+      "tryThis": "Attend a live one-person performance and compare it with the story you know.",
+      "notes": "Performances December 11 at 7 PM, December 12 at 4:30 PM, and December 13 at 1 PM. Free admission, registration open on official state event page. Venue accessibility for this performance not stated.",
+      "dateAdded": "2026-11-22",
+      "eventStart": "2026-12-11",
+      "eventEnd": "2026-12-13",
+      "slug": "valley-shakespeare-festival-a-christmas-carol-at-kellogg-estate-2026"
     },
     {
       "name": "Village Center for the Arts Dirty Date Night Pottery",
