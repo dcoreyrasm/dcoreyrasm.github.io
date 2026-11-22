@@ -5,7 +5,7 @@
 {%- assign u = page.url -%}
 {%- assign in_about = false -%}{%- if u == '/work.html' or u == '/ai.html' or u == '/research.html' or u == '/mentorship.html' -%}{%- assign in_about = true -%}{%- endif -%}
 {%- assign in_speak = false -%}{%- if u == '/speaking.html' or u == '/services.html' or u contains '/ai-consulting-training/' or u contains '/ai-readiness-assessment/' or u contains '/small-business-ai-starter/' or u contains '/ai-adoption-governance/' or u contains '/organizational-ai-training/' or u contains '/ai-training-academy/' or u contains '/speaking-workshops/' or u contains '/work-with-me/' or u contains '/business-independence-disclaimer/' -%}{%- assign in_speak = true -%}{%- endif -%}
-{%- assign in_class = false -%}{%- if u == '/ai-for-beginners.html' or u == '/claude-for-beginners.html' or u == '/gemini-for-beginners.html' or u == '/copilot-for-beginners.html' or u == '/start-your-business.html' or u == '/classes.html' -%}{%- assign in_class = true -%}{%- endif -%}
+{%- assign in_class = false -%}{%- if u == '/ai-for-beginners.html' or u == '/claude-for-beginners.html' or u == '/gemini-for-beginners.html' or u == '/copilot-for-beginners.html' or u == '/put-claude-to-work.html' or u == '/start-your-business.html' or u == '/classes.html' -%}{%- assign in_class = true -%}{%- endif -%}
 {%- assign in_proj = false -%}{%- if u == '/portfolio.html' or u contains '/community-ai/' or u contains '/village-notes/' or u contains '/connecticut-list/' or u contains '/year-end-report/' or u contains '/prompts/' or u contains '/books/' or u contains '/scholarships-fellowships/' -%}{%- assign in_proj = true -%}{%- endif -%}
 {%- assign in_write = false -%}{%- if u == '/blog.html' or u contains '/blog/' or u == '/newsletter.html' -%}{%- assign in_write = true -%}{%- endif -%}
   <script>
@@ -48,6 +48,7 @@
             <li><a href="/claude-for-beginners.html"{% if u == '/claude-for-beginners.html' %} aria-current="page"{% endif %}>Claude for Beginners</a></li>
             <li><a href="/gemini-for-beginners.html"{% if u == '/gemini-for-beginners.html' %} aria-current="page"{% endif %}>Gemini for Beginners</a></li>
             <li><a href="/copilot-for-beginners.html"{% if u == '/copilot-for-beginners.html' %} aria-current="page"{% endif %}>Copilot for Beginners</a></li>
+            <li><a href="/put-claude-to-work.html"{% if u == '/put-claude-to-work.html' %} aria-current="page"{% endif %}>Put Claude to Work in Your Business</a></li>
             <li><a href="/start-your-business.html"{% if u == '/start-your-business.html' %} aria-current="page"{% endif %}>Start Your Business in 12 Sessions</a></li>
           </ul>
         </li>

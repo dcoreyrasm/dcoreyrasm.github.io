@@ -20,8 +20,12 @@
     { start: '2026-12-03T19:00:00-05:00', series: 'AI for Beginners', part: 'Part 4: Making ChatGPT Work for You, Safely', when: 'Thursday, December 3, 7:00 to 8:00 PM Eastern', url: '/ai-for-beginners.html' },
     { start: '2026-12-06T14:00:00-05:00', series: 'Claude for Beginners', part: 'Part 2: Having a Real Conversation with Claude', when: 'Sunday, December 6, 2:00 to 3:00 PM Eastern', url: '/claude-for-beginners.html' },
     { start: '2026-12-20T14:00:00-05:00', series: 'Claude for Beginners', part: 'Part 3: Putting Claude to Work in Everyday Life', when: 'Sunday, December 20, 2:00 to 3:00 PM Eastern', url: '/claude-for-beginners.html' },
+    { start: '2027-01-03T19:00:00-05:00', series: 'Put Claude to Work in Your Business', part: 'Part 1: Set Up Claude as Your Business Workspace', when: 'Sunday, January 3, 7:00 to 8:30 PM Eastern', url: '/put-claude-to-work.html', price: '$95 per part, or $297 for the full course' },
     { start: '2027-01-10T14:00:00-05:00', series: 'Claude for Beginners', part: 'Part 4: Making Claude Work for You, Safely', when: 'Sunday, January 10, 2:00 to 3:00 PM Eastern', url: '/claude-for-beginners.html' },
+    { start: '2027-01-10T19:00:00-05:00', series: 'Put Claude to Work in Your Business', part: 'Part 2: Turn Repeat Work into Skills', when: 'Sunday, January 10, 7:00 to 8:30 PM Eastern', url: '/put-claude-to-work.html', price: '$95 per part, or $297 for the full course' },
+    { start: '2027-01-17T19:00:00-05:00', series: 'Put Claude to Work in Your Business', part: 'Part 3: Connectors, Automation, and Safe Action', when: 'Sunday, January 17, 7:00 to 8:30 PM Eastern', url: '/put-claude-to-work.html', price: '$95 per part, or $297 for the full course' },
     { start: '2027-01-31T14:00:00-05:00', series: 'Gemini for Beginners', part: 'Part 1: Getting Started with Gemini', when: 'Sunday, January 31, 2:00 to 3:00 PM Eastern', url: '/gemini-for-beginners.html' },
+    { start: '2027-01-31T19:00:00-05:00', series: 'Put Claude to Work in Your Business', part: 'Part 4: Run It as a System', when: 'Sunday, January 31, 7:00 to 8:30 PM Eastern', url: '/put-claude-to-work.html', price: '$95 per part, or $297 for the full course' },
     { start: '2027-02-04T19:00:00-05:00', series: 'Copilot for Beginners', part: 'Part 1: Getting Started with Copilot', when: 'Thursday, February 4, 7:00 to 8:00 PM Eastern', url: '/copilot-for-beginners.html' },
     { start: '2027-02-07T14:00:00-05:00', series: 'Gemini for Beginners', part: 'Part 2: Having a Real Conversation with Gemini', when: 'Sunday, February 7, 2:00 to 3:00 PM Eastern', url: '/gemini-for-beginners.html' },
     { start: '2027-02-11T19:00:00-05:00', series: 'Copilot for Beginners', part: 'Part 2: Having a Real Conversation with Copilot', when: 'Thursday, February 11, 7:00 to 8:00 PM Eastern', url: '/copilot-for-beginners.html' },
@@ -61,7 +65,7 @@
     card.appendChild(el('p', { class: 'section-label', style: 'margin:0 0 .4rem;' }, s.series));
     card.appendChild(el('h3', { style: 'font-family:var(--serif);font-weight:400;font-size:1.2rem;line-height:1.35;color:var(--cream);margin:0 0 .6rem;' }, s.part));
     card.appendChild(el('p', { style: 'line-height:1.6;margin:0 0 .4rem;color:var(--muted);' }, s.when + ', live on Zoom'));
-    card.appendChild(el('p', { style: 'line-height:1.6;margin:0 0 1.1rem;color:var(--muted);' }, '$50 per part, or $200 for the full series'));
+    card.appendChild(el('p', { style: 'line-height:1.6;margin:0 0 1.1rem;color:var(--muted);' }, s.price || '$50 per part, or $200 for the full series'));
     var a = el('a', { href: s.url, class: 'btn-primary', style: 'margin-top:auto;align-self:flex-start;' }, 'Register');
     a.setAttribute('aria-label', 'Register for ' + s.series + ', ' + s.part.split(':')[0]);
     card.appendChild(a);
