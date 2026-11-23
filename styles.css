@@ -232,7 +232,7 @@ section:nth-child(even) { background:var(--bg2); }
 .topic-card h3 { font-family:var(--serif); font-size:1.1rem; font-weight:700; margin-bottom:.75rem; }
 .topic-card p { font-size:.88rem; color:var(--muted); line-height:1.65; overflow-wrap:break-word; max-width:100%; }
 .engagements { display:flex; flex-direction:column; margin-top:2rem; }
-.engagement-item { display:grid; grid-template-columns:80px 1fr auto; gap:2rem; align-items:start; padding:1.75rem 0; border-bottom:1px solid var(--line); }
+.engagement-item { display:grid; grid-template-columns:80px minmax(0,1fr) 15rem; gap:2rem; align-items:start; padding:1.75rem 0; border-bottom:1px solid var(--line); }
 .engagement-item:first-child { border-top:1px solid var(--line); }
 .engagement-year { font-family:var(--serif); font-size:1rem; font-weight:700; color:var(--coral); }
 .engagement-body h4 { font-family:var(--serif); font-size:1rem; font-weight:700; margin-bottom:.25rem; }
