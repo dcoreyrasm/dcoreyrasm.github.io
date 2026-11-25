@@ -149,7 +149,7 @@ sitemap: false
         part4: { name: 'AI for Beginners, Part 4: Making ChatGPT Work for You, Safely', date: 'Thursday, December 3, 2026, 7:00 to 8:00 PM Eastern', price: 50, zoom: ['part4'] },
         rec1: { name: 'AI for Beginners, Part 1 Recording: Getting Started with ChatGPT', date: 'Watch online through December 10, 2026', price: 50, zoom: [], recording: true },
         rec2: { name: 'AI for Beginners, Part 2 Recording: Having a Real Conversation with ChatGPT', date: 'Watch online through December 10, 2026', price: 50, zoom: [], recording: true },
-        all4: { name: 'AI for Beginners, Full Series (All 4 Parts)', date: 'Live parts on November 5 and December 3, 7:00 to 8:00 PM Eastern', price: 200, zoom: ['part3', 'part4'] }
+        all4: { name: 'AI for Beginners, Full Series (All 4 Parts)', date: 'Part 4 live on Thursday, December 3, 7:00 to 8:00 PM Eastern', price: 200, zoom: ['part4'] }
       };
       var LABELS = { part3: 'Register on Zoom for Part 3', part4: 'Register on Zoom for Part 4' };
 
@@ -189,7 +189,7 @@ sitemap: false
       if (key === 'all4') {
         var note = document.createElement('p');
         note.style.cssText = 'line-height:1.75;max-width:640px;margin-bottom:1.5rem;';
-        note.textContent = "I'll email you the recordings of Parts 1 and 2. Register on Zoom for each live part below.";
+        note.textContent = "I'll email you the recordings of Parts 1, 2, and 3. Register on Zoom for Part 4 below.";
         linksBox.parentNode.insertBefore(note, linksBox);
       }
 
