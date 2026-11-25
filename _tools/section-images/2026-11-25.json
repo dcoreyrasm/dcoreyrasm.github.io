@@ -1,0 +1,29 @@
+{
+  "outdir": "assets/blog/2026-11-25",
+  "sections": [
+    {
+      "platform": "Claude",
+      "accent": "#d97757",
+      "icon": "doc_stack",
+      "label": "Shop a Recipe With Instacart in Claude"
+    },
+    {
+      "platform": "ChatGPT",
+      "accent": "#10a37f",
+      "icon": "doc_stack",
+      "label": "Build and Check Out a Cart With the Instacart App"
+    },
+    {
+      "platform": "Copilot",
+      "accent": "#2e7df6",
+      "icon": "doc_stack",
+      "label": "Turn Your Notes Into a List in OneNote"
+    },
+    {
+      "platform": "Gemini",
+      "accent": "#9168e8",
+      "icon": "doc_stack",
+      "label": "Help Me Create a List in Google Keep"
+    }
+  ]
+}
