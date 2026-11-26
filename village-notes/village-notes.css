@@ -1047,3 +1047,29 @@ section.vn-scholarships-section:has(.vn-scholarships[hidden]) { display:none; }
   .vn-card { counter-increment:vn-item; }
   .vn-card-name::before { content:counter(vn-item) ". "; }
 }
+
+/* ---------- VILLAGE NOTES SOCIAL (2026-11-26) ----------
+   Village Notes' own Instagram and Threads, in the hero and under the
+   updates signup. Text labels sit beside the icons so the links read
+   the same to screen readers, in translation, and at a glance. */
+.vn-social { list-style:none; display:flex; flex-wrap:wrap; gap:.6rem; margin:0; padding:0; }
+.vn-social-link {
+  display:inline-flex; align-items:center; gap:.5rem; min-height:2.75rem;
+  padding:.5rem 1rem; border:1px solid var(--line); border-radius:999px;
+  color:var(--cream); text-decoration:none; font-size:.9rem;
+  transition:border-color .2s, background .2s, color .2s;
+}
+.vn-social-link svg { width:1.1rem; height:1.1rem; fill:currentColor; flex:none; }
+.vn-social-link:hover, .vn-social-link:focus-visible { border-color:var(--coral); color:var(--coral); }
+.vn-social-link:focus-visible { outline:2px solid currentColor; outline-offset:2px; }
+.vn-social .sr-only {
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+/* Hero band is #2d1f4e in both themes, so its colors are fixed. */
+.vn-hero-follow { display:flex; align-items:center; flex-wrap:wrap; gap:.75rem 1rem; margin:-.5rem 0 1.5rem; }
+.vn-hero-follow-label { margin:0; font-size:.95rem; color:rgba(255,255,255,.8); }
+.vn-hero-follow .vn-social-link { color:#fff; border-color:rgba(255,255,255,.35); }
+.vn-hero-follow .vn-social-link:hover, .vn-hero-follow .vn-social-link:focus-visible { color:#c084fc; border-color:#c084fc; background:rgba(192,132,252,.12); }
+.vn-updates-follow { margin-top:2rem; max-width:560px; }
+.vn-updates-follow-label { margin:0 0 .75rem; line-height:1.6; color:var(--muted); }

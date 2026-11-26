@@ -92,6 +92,10 @@
         <p class="vn-hero-lede">This is a searchable list of childcare, camps, high schools and teen programs, elder care, pet care, food assistance, and free and low-cost health and dental care across Connecticut, built from official state listings and public sources. Families and caregivers add what those records leave out: the hours a place is really open, how long the waitlist runs, and what it costs. Search it, filter it, and add what you know.</p>
         <p class="vn-hero-signup">Want to hear when new resources and dates are added? <a href="#vn-updates">Get Village Notes updates</a>.</p>
         <div class="vn-hero-signup">{% include upcoming-workshops.html style="line" key="vn" %}</div>
+        <div class="vn-hero-follow">
+          <p class="vn-hero-follow-label">Follow Village Notes</p>
+          {% include village-notes-social.html %}
+        </div>
         <div class="vn-hero-meta">
           <span id="vn-count-badge" class="vn-badge">Loading listings&hellip;</span>
           <span id="vn-updated" class="vn-updated"></span>
@@ -507,6 +511,10 @@
           <li class="pop-pill rose">Open houses and dates</li>
         </ul>
         {% include list-signup.html key="vnu" primary="village-notes" button="Send Me Updates" %}
+        <div class="vn-updates-follow">
+          <p class="vn-updates-follow-label">You can also follow Village Notes for new resources and dates as they come up.</p>
+          {% include village-notes-social.html %}
+        </div>
       </div>
     </section>
 
