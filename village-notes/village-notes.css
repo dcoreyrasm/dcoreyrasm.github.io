@@ -908,3 +908,13 @@ main .vn-morefilters .vn-check-list .vn-toggle input:focus-visible + span { outl
   .vn-mf-body { grid-template-columns:1fr; }
 }
 @media print { .vn-intro-section, .vn-start-section, .vn-morefilters { display:none !important; } }
+
+/* Accessibility shortcut: one line, the action is a link-style button. */
+.vn-doorway { margin-top:.75rem; padding:.5rem .85rem; border:0; border-left:3px solid var(--coral); border-radius:0; }
+.vn-doorway-text { flex:1 1 auto; font-size:.92rem; color:var(--cream); }
+.vn-doorway-link {
+  background:none; border:0; padding:0; font:inherit; color:var(--coral); cursor:pointer;
+  text-decoration:underline; text-underline-offset:2px; font-weight:600;
+}
+.vn-doorway-link:hover { text-decoration-thickness:2px; }
+.vn-doorway-link:focus-visible { outline:3px solid var(--coral); outline-offset:2px; }

@@ -922,8 +922,8 @@
 
   function servesTown(r, town) {
     if (r.town === town) return true;
-    if (isStatewide(r)) return true;
-    return served(r).indexOf(town) !== -1;
+    if (r._statewide || isStatewide(r)) return true;
+    return (r._towns || served(r)).indexOf(town) !== -1;
   }
 
   /* ---------- county ----------
@@ -1024,13 +1024,74 @@
 
   var COUNTIES = Object.keys(COUNTY_TOWNS).sort();
 
+  /* ---------- the town list ----------
+
+     The Town / Area menu offers Connecticut's 169 towns and nothing else.
+     Town/Area is free text in Airtable, so it carries notes as well as places
+     ("Bridgeport; CT library-card rules", "Greater Hartford service area"),
+     and building the menu from it put those notes in front of families as if
+     they were towns.
+
+     Matching reads the same free text the other way round: every real town
+     named in it counts, so "Bridgeport, Danbury, Norwalk and Stamford service
+     areas" is found under each of the four. Longest names are tried first and
+     removed once found, so "West Hartford" never also counts as Hartford.
+     County names followed by "county" or "counties" are taken out before that,
+     because "Windham and Tolland counties" names two regions, not two towns. */
+  var ALL_TOWNS = [].concat.apply([], COUNTIES.map(function (c) { return COUNTY_TOWNS[c]; })).sort();
+
+  function escRe(v) { return v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+  var COUNTY_RUN = (function () {
+    var names = COUNTIES.map(escRe).join('|');
+    return new RegExp('(?:' + names + ')(?:\\s*(?:,|/|and|,\\s*and)\\s*(?:' + names + '))*' +
+                      '\\s+count(?:y|ies)\\b', 'gi');
+  })();
+
+  var PLACE_PATTERNS = ALL_TOWNS.concat(Object.keys(VILLAGE_TOWN))
+    .sort(function (a, b) { return b.length - a.length; })
+    .map(function (name) {
+      return { town: VILLAGE_TOWN[name] || name,
+               re: new RegExp('(^|[^A-Za-z])' + escRe(name) + '(?![A-Za-z])', 'g') };
+    });
+
+  function townsIn(text) {
+    var rest = ' ' + String(text || '').replace(COUNTY_RUN, ' ') + ' ';
+    var out = [];
+    PLACE_PATTERNS.forEach(function (p) {
+      p.re.lastIndex = 0;
+      if (!p.re.test(rest)) return;
+      if (out.indexOf(p.town) === -1) out.push(p.town);
+      p.re.lastIndex = 0;
+      rest = rest.replace(p.re, '$1 ');
+    });
+    return out;
+  }
+
+  // Every real town a listing sits in or says it serves.
+  function townsOf(r) {
+    var out = townsIn(r.town);
+    served(r).forEach(function (t) {
+      var town = VILLAGE_TOWN[t] || t;
+      if (ALL_TOWNS.indexOf(town) !== -1 && out.indexOf(town) === -1) out.push(town);
+    });
+    return out;
+  }
+
+  // Statewide is the structured flag, or a Town/Area that opens with
+  // "Statewide" -- not any mention of the word, since "emergency food
+  // statewide subject to income" describes one service, not the listing.
+  function statewideOf(r) {
+    return isStatewide(r) || /^\s*(connecticut\s+)?statewide\b/i.test(r.town || '');
+  }
+
   // Every county a listing can honestly be filed under: the one it sits in,
   // plus the counties of any town it has said it serves. A statewide listing
   // answers to all of them, which is what statewide means.
   function countiesOf(r) {
-    if (isStatewide(r)) return COUNTIES.slice();
+    if (r._statewide || isStatewide(r)) return COUNTIES.slice();
     var seen = {}, out = [];
-    [r.town].concat(served(r)).forEach(function (t) {
+    [r.town].concat(served(r)).concat(r._towns || []).forEach(function (t) {
       var c = COUNTY_OF[t];
       if (c && !seen[c]) { seen[c] = true; out.push(c); }
     });
@@ -1631,11 +1692,7 @@
     if (el.doorway) {
       var n = pool.filter(FLAGS.disability).length;
       el.doorway.hidden = n === 0 || !!state.flags.disability;
-      el.doorwayNum.textContent = n + ' ' + plural(n, 'listing', 'listings') +
-        (state.track ? ' here' : ' across all five sections') +
-        ' name the accommodations they can make, the support they offer, or ' +
-        'both. They stay filed under the kind of care they are, so this is a ' +
-        'way of finding them together rather than a separate list.';
+      el.doorwayNum.textContent = n + ' ' + plural(n, 'listing', 'listings');
     }
   }
 
@@ -1710,6 +1767,8 @@
 
         state.all = list.map(function (r) {
           r._cats = categoriesOf(r);
+          r._towns = townsOf(r);
+          r._statewide = statewideOf(r);
           r._counties = countiesOf(r);
           r._haystack = haystack(r);
           return r;
@@ -1717,25 +1776,8 @@
 
         fillSelect(el.track, uniqueSorted(TRACKS.concat(
           state.all.map(function (r) { return r.track; }))), 'Anyone', trackLabel);
-        var townValues = [];
-        state.all.forEach(function (r) {
-          townValues.push(r.town);
-          townValues = townValues.concat(served(r));
-        });
-        // Town/Area is free text, so multi-town strings leak in -- "Bridgeport
-        // and Fairfield", "Greater Hartford area". They are fine on a card but
-        // useless as a filter option, and they crowd out the real town next to
-        // them alphabetically. Towns Served is the structured field, so the
-        // options come from clean single names only.
-        townValues = townValues.filter(function (t) {
-          // "Statewide" is not a town, but 21 listings carry it as their
-          // Town/Area, so it was sitting in the dropdown between Stamford and
-          // Sterling. Every one of them also carries the Towns Served
-          // statewide flag, which already matches them to whatever town a
-          // family picks, so dropping the option loses nobody.
-          return t && !/^statewide/i.test(t) && !/,| and | area$/i.test(t);
-        });
-        buildTownList(uniqueSorted(townValues));
+        // Connecticut's 169 towns, always -- see "the town list" above.
+        buildTownList(ALL_TOWNS);
         buildCountyList();
         buildCatList();
         tuneToggles();
