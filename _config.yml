@@ -38,6 +38,12 @@ defaults:
       layout: post
       permalink: /blog/:title/
 
+# Jekyll skips files whose names start with "_". This copies the Cloudflare
+# Pages _headers file into the built site so Cloudflare can read it. GitHub
+# Pages ignores it.
+include:
+  - _headers
+
 # Keep new tooling/meta files out of the built site. (README.md is left as-is
 # so it keeps publishing exactly as it does today — no change to current output.)
 exclude:

@@ -1,0 +1,8 @@
+# Cloudflare Pages response headers. GitHub Pages ignores this file.
+# Keeps the Cloudflare test copies (*.pages.dev) out of search results.
+# These rules name only pages.dev addresses, so www.daricecorey.com is not affected.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
