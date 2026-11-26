@@ -1033,3 +1033,17 @@ section.vn-start-section { padding:1rem 0 .75rem; }
 section.vn-scholarships-section { padding:0 0 2.5rem; }
 section.vn-scholarships-section .vn-scholarships { margin-top:2.5rem; }
 section.vn-scholarships-section:has(.vn-scholarships[hidden]) { display:none; }
+
+/* ---------- PAGES OF TEN ---------- */
+.vn-pager { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:.75rem 1.25rem; }
+.vn-pager[hidden] { display:none; }
+.vn-pager button { min-height:44px; padding:.6rem 1.1rem; }
+.vn-pager button:disabled { opacity:.4; cursor:default; }
+.vn-pager-pos { font-size:.9rem; color:var(--muted); }
+
+/* Printed lists are numbered, so a family can say "number 12" on the phone. */
+@media print {
+  .vn-grid { counter-reset:vn-item; }
+  .vn-card { counter-increment:vn-item; }
+  .vn-card-name::before { content:counter(vn-item) ". "; }
+}

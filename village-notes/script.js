@@ -23,7 +23,7 @@
   // the page does. Rendering a screenful and extending on demand keeps the
   // first paint quick without hiding anything -- the count above always
   // reports the full match, and Show more walks the rest.
-  var PAGE = 60;
+  var PAGE = 10;
 
   var el = {
     search:     document.getElementById('vn-search'),
@@ -62,7 +62,10 @@
     emptyAsk:   document.getElementById('vn-empty-ask'),
     emptyAdd:   document.getElementById('vn-empty-add'),
     sort:       document.getElementById('vn-sort'),
-    showMore:   document.getElementById('vn-showmore'),
+    pager:      document.getElementById('vn-pager'),
+    pagerPos:   document.getElementById('vn-pager-pos'),
+    prev:       document.getElementById('vn-prev'),
+    next:       document.getElementById('vn-next'),
     countBadge: document.getElementById('vn-count-badge'),
     updated:    document.getElementById('vn-updated')
   };
@@ -1374,13 +1377,16 @@
     state.terms = searchTerms(state.search);
     var shown = state.all.filter(matches).sort(SORTS[state.sort] || SORTS.name);
 
-    if (state.printing) state.shown = Infinity;
-    else if (!keepShown) state.shown = PAGE;
-    var page = shown.slice(0, state.shown);
+    // Ten per page on screen; every match when printing.
+    var pages = Math.max(1, Math.ceil(shown.length / PAGE));
+    if (!keepShown) state.page = 0;
+    state.page = Math.min(Math.max(state.page || 0, 0), pages - 1);
+    var start = state.printing ? 0 : state.page * PAGE;
+    var page = state.printing ? shown : shown.slice(start, start + PAGE);
 
     if (!shown.length) {
       el.results.innerHTML = '';
-      el.showMore.hidden = true;
+      el.pager.hidden = true;
       el.empty.hidden = false;
       var filtered = state.all.length > 0;
       el.emptyBody.textContent = filtered
@@ -1394,19 +1400,23 @@
       updateFoodFallback(false);
       updateShopFallback(false);
       el.results.innerHTML = page.map(card).join('');
-      var left = shown.length - page.length;
-      el.showMore.hidden = left <= 0;
-      el.showMore.textContent = 'Show ' + Math.min(left, PAGE) + ' more of ' + left;
+      el.pager.hidden = pages <= 1 || state.printing;
+      el.prev.disabled = state.page === 0;
+      el.next.disabled = state.page >= pages - 1;
+      el.pagerPos.textContent = 'Page ' + (state.page + 1) + ' of ' + pages;
     }
 
     if (!state.all.length) {
       el.resultline.textContent = '';
-    } else if (shown.length === state.all.length) {
-      el.resultline.textContent = 'Showing all ' + state.all.length + ' ' +
-        plural(state.all.length, 'listing', 'listings') + '.';
     } else {
-      el.resultline.textContent = 'Showing ' + shown.length + ' of ' + state.all.length + ' ' +
-        plural(state.all.length, 'listing', 'listings') + '.';
+      var n = shown.length, total = state.all.length;
+      var line = n === total
+        ? 'All ' + total + ' ' + plural(total, 'listing', 'listings')
+        : n + ' of ' + total + ' ' + plural(total, 'listing', 'listings') + ' match';
+      if (n > PAGE && !state.printing) {
+        line += '. Showing ' + (start + 1) + '\u2013' + Math.min(start + PAGE, n);
+      }
+      el.resultline.textContent = line + '.';
     }
     writeState();
     backToTop(keepShown);
@@ -1417,10 +1427,16 @@
   // result is above the strip, bring it back up to just under it.
   function backToTop(keepShown) {
     if (keepShown || !state.ready || state.restoring || state.printing) return;
+    scrollToResults(false);
+  }
+
+  // Bring the result count up to just under the pinned strip. 'always' is for
+  // turning a page, where the reader wants the first of the new ten.
+  function scrollToResults(always) {
     var bar = document.querySelector('.vn-searchbar-section');
     var pinned = bar && getComputedStyle(bar).position === 'sticky' ? bar.getBoundingClientRect().bottom : 0;
     var target = el.resultline.getBoundingClientRect().top;
-    if (target < pinned) {
+    if (always || target < pinned) {
       window.scrollTo({ top: window.scrollY + target - pinned - 12, behavior: 'smooth' });
     }
   }
@@ -1598,12 +1614,11 @@
       state.sort = this.value;
       render();
     });
-    el.showMore.addEventListener('click', function () {
-      state.shown += PAGE;
-      render(true);
-      // Keep the reader where they were rather than jumping to the top.
-      var cards = el.results.children;
-      if (cards.length) cards[Math.max(0, state.shown - PAGE)].scrollIntoView({ block: 'center' });
+    el.prev.addEventListener('click', function () {
+      state.page -= 1; render(true); scrollToResults(true);
+    });
+    el.next.addEventListener('click', function () {
+      state.page += 1; render(true); scrollToResults(true);
     });
 
     // Print or save as PDF. A list on paper is how this directory reaches a
@@ -1620,7 +1635,7 @@
       window.addEventListener('afterprint', function () {
         if (!state.printing) return;
         state.printing = false;
-        render();
+        render(true);   // back to the page the visitor was on
       });
     }
   }
@@ -1803,11 +1818,12 @@
     if (state.counties.length) q.set(SAVE_KEYS.county, state.counties.join(SEP));
     var on = Object.keys(state.flags).filter(function (k) { return state.flags[k]; });
     if (on.length) q.set(SAVE_KEYS.only, on.join(SEP));
+    if (state.page > 0) q.set('page', String(state.page + 1));
     if (state.sort && state.sort !== 'name') q.set(SAVE_KEYS.sort, state.sort);
     var qs = q.toString();
     var url = location.pathname + (qs ? '?' + qs : '') + location.hash;
     if (url !== location.pathname + location.search + location.hash) history.replaceState(history.state, '', url);
-    store('vn-shown', String(state.shown));
+
     countActive();
   }
 
@@ -1877,6 +1893,9 @@
 
     var sort = q.get(SAVE_KEYS.sort);
     if (sort && SORTS[sort]) { state.sort = sort; el.sort.value = sort; }
+
+    var pg = parseInt(q.get('page'), 10);
+    state.page = pg > 1 ? pg - 1 : 0;   // render() clamps it to the pages there are
   }
 
   function navigationType() {
@@ -1999,8 +2018,6 @@
         tuneToggles();
         countGroups();
         var returning = /^(reload|back_forward)$/.test(navigationType());
-        var shownBefore = parseInt(recall('vn-shown'), 10);
-        state.shown = returning && shownBefore > PAGE ? shownBefore : PAGE;
         state.restoring = false;
         render(true);
         state.ready = true;

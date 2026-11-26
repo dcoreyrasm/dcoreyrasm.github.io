@@ -405,8 +405,13 @@
         <p class="vn-print-title">Village Notes: Connecticut Care Directory &middot; daricecorey.com/village-notes &middot; Call each place to confirm details before you go.</p>
         <div id="vn-results" class="vn-grid"></div>
 
+        <!-- Ten at a time, so the bottom of the page is never far away. -->
         <div class="vn-more-wrap">
-          <button type="button" id="vn-showmore" class="btn-ghost" hidden></button>
+          <nav class="vn-pager" id="vn-pager" aria-label="More results" hidden>
+            <button type="button" class="btn-ghost" id="vn-prev">&larr; Previous 10</button>
+            <span class="vn-pager-pos" id="vn-pager-pos"></span>
+            <button type="button" class="btn-ghost" id="vn-next">Next 10 &rarr;</button>
+          </nav>
         </div>
 
         <div id="vn-empty" class="vn-empty" hidden>
