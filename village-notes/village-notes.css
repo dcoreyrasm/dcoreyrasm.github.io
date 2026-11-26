@@ -42,6 +42,26 @@
   :where(html[data-theme="light"]) .vn-hero { --coral:#c084fc; --coral-dim:#a855f7; }
 
 
+/* ---------- LANGUAGE / IDIOMA ---------- */
+.vn-lang { display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; gap:.6rem; margin:-1.5rem 0 .75rem; }
+.vn-lang label { font-size:.78rem; letter-spacing:.06em; color:rgba(255,255,255,.85); }
+.vn-lang select {
+  font:inherit; font-size:.9rem; color:#fff; background:rgba(255,255,255,.08);
+  border:1px solid rgba(192,132,252,.55); border-radius:8px; padding:.45rem .75rem; min-height:44px;
+}
+.vn-lang select option { color:#1a1a1a; background:#fff; }
+.vn-lang select:focus-visible { outline:2px solid #c084fc; outline-offset:2px; }
+.vn-lang-note { flex-basis:100%; text-align:right; font-size:.72rem; color:rgba(255,255,255,.65); margin:0; }
+@media (max-width:640px) {
+  .vn-lang { justify-content:flex-start; margin-top:-.5rem; }
+  .vn-lang-note { text-align:left; }
+}
+/* Google's widget adds a toolbar frame and pushes the page down; the
+   control above already does that job. */
+.goog-te-banner-frame, iframe.skiptranslate, #goog-gt-tt, .goog-te-balloon-frame { display:none !important; }
+body { top:0 !important; }
+.goog-text-highlight { background:none !important; box-shadow:none !important; }
+
 /* ---------- CONTROLS ---------- */
 /* The section backgrounds below are written as `section.vn-*` on purpose.
    /styles.css alternates band colour with `section:nth-child(even)`, which

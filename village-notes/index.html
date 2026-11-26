@@ -58,6 +58,25 @@
 
     <div class="vn-hero">
       <div class="container">
+        <!-- Language / Idioma. The page loads nothing from Google until a
+             visitor picks a language here. The choice is kept in Google's
+             googtrans cookie, so the listings Airtable fills in after load
+             are translated too, and the page stays translated on return
+             until "English" is picked. translate="no" keeps the language
+             names in their own spelling. -->
+        <div class="vn-lang" translate="no">
+          <label for="vn-lang-select">Language / Idioma</label>
+          <select id="vn-lang-select">
+            <option value="es" lang="es">Español</option>
+            <option value="ht" lang="ht">Kreyòl ayisyen</option>
+            <option value="pt" lang="pt">Português</option>
+            <option value="ar" lang="ar" dir="rtl">العربية</option>
+            <option value="fr" lang="fr">Français</option>
+            <option value="en" lang="en">English</option>
+          </select>
+          <p class="vn-lang-note" id="vn-lang-note" hidden>Translated automatically by Google. Some wording may not be exact.</p>
+          <div id="vn-gt" hidden></div>
+        </div>
         <!-- The logo already sets the name, the descriptor and the tagline, so
              the text label and heading that used to say two of those three
              came out rather than be read twice. The h1 stays -- the page still
@@ -482,6 +501,40 @@
           })
           .then(function () { btn.disabled = false; });
       });
+    })();
+  </script>
+  <script>
+    (function () {
+      var sel = document.getElementById('vn-lang-select');
+      var note = document.getElementById('vn-lang-note');
+      if (!sel) return;
+      var m = document.cookie.match(/(?:^|; )googtrans=\/en\/([a-z-]+)/i);
+      var current = m ? m[1] : 'en';
+      sel.value = current;
+      function setCookie(v) {
+        var host = location.hostname, exp = v ? '' : '; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+        var val = v ? '/en/' + v : '';
+        ['', '; domain=' + host, '; domain=.' + host.replace(/^www\./, '')].forEach(function (d) {
+          ['/', '/village-notes/'].forEach(function (path) {
+            document.cookie = 'googtrans=' + val + '; path=' + path + d + exp;
+          });
+        });
+      }
+      sel.addEventListener('change', function () {
+        setCookie(null);
+        if (sel.value !== 'en') setCookie(sel.value);
+        location.reload();
+      });
+      if (current !== 'en') {
+        note.hidden = false;
+        window.vnGoogleTranslateInit = function () {
+          new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'es,ht,pt,ar,fr', autoDisplay: false }, 'vn-gt');
+        };
+        var s = document.createElement('script');
+        s.src = 'https://translate.google.com/translate_a/element.js?cb=vnGoogleTranslateInit';
+        s.async = true;
+        document.body.appendChild(s);
+      }
     })();
   </script>
   <script src="/village-notes/scholarships-feature.js?v={{ site.time | date: '%Y%m%d%H%M' }}" defer></script>
