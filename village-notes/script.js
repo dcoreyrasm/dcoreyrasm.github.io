@@ -1408,6 +1408,7 @@
       el.resultline.textContent = 'Showing ' + shown.length + ' of ' + state.all.length + ' ' +
         plural(state.all.length, 'listing', 'listings') + '.';
     }
+    writeState();
   }
 
   /* ---------- town multi-select ---------- */
@@ -1699,6 +1700,8 @@
   /* ---------- events ---------- */
 
   function bind() {
+    rememberSections();
+    rememberScroll();
     bindTownMulti();
     bindCatMulti();
     bindCountyFilter();
@@ -1753,6 +1756,113 @@
       var clamped = notes.classList.toggle('vn-clamped');
       btn.textContent = clamped ? 'Read more' : 'Show less';
     });
+  }
+
+  /* ---------- remembering where the visitor was ----------
+
+     A refresh should not throw away a search. What is being looked for --
+     the words, who it is for, the town, the filters, the sort -- lives in the
+     address bar, so a refresh, the Back button and a copied link all land on
+     the same results. How the page looks -- which sections are open, how many
+     listings have been shown, how far down the visitor had scrolled -- is
+     kept for this tab only, in sessionStorage, and quietly does nothing if
+     the browser refuses storage. */
+  var SAVE_KEYS = { q: 'q', who: 'who', need: 'need', town: 'town', county: 'county', only: 'only', sort: 'sort' };
+  var SEP = '|';
+
+  function store(key, value) {
+    try { if (value === null) sessionStorage.removeItem(key); else sessionStorage.setItem(key, value); } catch (e) {}
+  }
+  function recall(key) {
+    try { return sessionStorage.getItem(key); } catch (e) { return null; }
+  }
+
+  function writeState() {
+    if (!state.all.length || state.printing || state.restoring || !window.history || !history.replaceState) return;
+    var q = new URLSearchParams();
+    var words = el.search.value.trim();
+    if (words) q.set(SAVE_KEYS.q, words);
+    if (state.track) q.set(SAVE_KEYS.who, state.track);
+    if (state.categories.length) q.set(SAVE_KEYS.need, state.categories.join(SEP));
+    if (state.towns.length) q.set(SAVE_KEYS.town, state.towns.join(SEP));
+    if (state.counties.length) q.set(SAVE_KEYS.county, state.counties.join(SEP));
+    var on = Object.keys(state.flags).filter(function (k) { return state.flags[k]; });
+    if (on.length) q.set(SAVE_KEYS.only, on.join(SEP));
+    if (state.sort && state.sort !== 'name') q.set(SAVE_KEYS.sort, state.sort);
+    var qs = q.toString();
+    var url = location.pathname + (qs ? '?' + qs : '') + location.hash;
+    if (url !== location.pathname + location.search + location.hash) history.replaceState(history.state, '', url);
+    store('vn-shown', String(state.shown));
+  }
+
+  function listParam(q, key, allowed) {
+    var raw = q.get(key);
+    if (!raw) return [];
+    return raw.split(SEP).filter(function (v, i, all) {
+      return v && all.indexOf(v) === i && (!allowed || allowed(v));
+    });
+  }
+
+  // Put the address-bar search back onto the page, checking every value
+  // against what the page offers so an old or hand-edited link cannot leave
+  // a filter switched on that nothing on screen shows.
+  function readState() {
+    var q = new URLSearchParams(location.search);
+    var words = q.get(SAVE_KEYS.q) || '';
+    el.search.value = words;
+    state.search = words.trim().toLowerCase();
+
+    var who = q.get(SAVE_KEYS.who) || '';
+    var tracks = Array.prototype.map.call(el.track.options, function (o) { return o.value; });
+    if (who && tracks.indexOf(who) !== -1) { state.track = who; el.track.value = who; }
+
+    state.categories = listParam(q, SAVE_KEYS.need);
+    buildCatList();   // drops any category the chosen section cannot show
+
+    state.towns = listParam(q, SAVE_KEYS.town, function (t) { return ALL_TOWNS.indexOf(t) !== -1; });
+    syncTownUI();
+    state.counties = listParam(q, SAVE_KEYS.county, function (c) { return COUNTIES.indexOf(c) !== -1; });
+    syncCountyUI();
+
+    var only = listParam(q, SAVE_KEYS.only, function (f) { return !!FLAGS[f]; });
+    Array.prototype.forEach.call(el.toggles, function (box) {
+      var on = only.indexOf(box.dataset.flag) !== -1;
+      box.checked = on;
+      if (on) state.flags[box.dataset.flag] = true;
+    });
+
+    var sort = q.get(SAVE_KEYS.sort);
+    if (sort && SORTS[sort]) { state.sort = sort; el.sort.value = sort; }
+  }
+
+  function navigationType() {
+    try {
+      var nav = performance.getEntriesByType('navigation')[0];
+      return nav ? nav.type : '';
+    } catch (e) { return ''; }
+  }
+
+  // Open and closed sections, per tab. Restored before anything else runs,
+  // and saved whenever the visitor opens or closes one.
+  var REMEMBERED_SECTIONS = ['vn-about', 'vn-holiday', 'vn-more'];
+  function rememberSections() {
+    REMEMBERED_SECTIONS.forEach(function (id) {
+      var d = document.getElementById(id);
+      if (!d) return;
+      var saved = recall('vn-open-' + id);
+      if (saved === '1') d.open = true;
+      if (saved === '0') d.open = false;
+      d.addEventListener('toggle', function () { store('vn-open-' + id, d.open ? '1' : '0'); });
+    });
+  }
+
+  // Scroll position: the browser's own restore runs before the listings
+  // arrive, so it lands short. Take it over, save on leaving, put it back
+  // after the first draw -- but only on a refresh or Back, never on a fresh
+  // visit from a link.
+  function rememberScroll() {
+    try { if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; } catch (e) {}
+    window.addEventListener('pagehide', function () { store('vn-scroll', String(window.scrollY || 0)); });
   }
 
   /* ---------- holiday meals ----------
@@ -1834,7 +1944,20 @@
           ? 'Last refreshed ' + formatDate(generated)
           : '';
 
-        render();
+        // Back to where the visitor was, if this is a refresh or Back.
+        state.restoring = true;
+        readState();
+        tuneToggles();
+        countGroups();
+        var returning = /^(reload|back_forward)$/.test(navigationType());
+        var shownBefore = parseInt(recall('vn-shown'), 10);
+        state.shown = returning && shownBefore > PAGE ? shownBefore : PAGE;
+        state.restoring = false;
+        render(true);
+        var y = parseInt(recall('vn-scroll'), 10);
+        if (returning && y > 0) {
+          window.requestAnimationFrame(function () { window.scrollTo(0, y); });
+        }
       })
       .catch(function (err) {
         console.error('Village Notes: could not load the directory.', err);
