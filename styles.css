@@ -393,7 +393,10 @@ footer p { font-size:.78rem; color:var(--muted); }
   .contact-reason h3 { font-size:.95rem; margin-bottom:.4rem; }
   .contact-reason p { font-size:.85rem; line-height:1.6; word-break:normal; overflow-wrap:break-word; }
   .engagement-item { grid-template-columns:60px 1fr; gap:1rem; }
-  .engagement-venue { grid-column:2; text-align:left; padding-top:0; margin-top:-.25rem; line-height:1.5; }
+  .engagement-item { row-gap:.5rem; }
+  .engagement-year { grid-column:1; grid-row:1; }
+  .engagement-venue { grid-column:2; grid-row:1; text-align:left; padding-top:.2rem; line-height:1.5; }
+  .engagement-body { grid-column:2; grid-row:2; }
   .podcast-stats { gap:1.5rem; flex-wrap:wrap; }
   .podcast-stat .big { font-size:2rem; }
   .podcast-platforms { gap:.5rem; }
