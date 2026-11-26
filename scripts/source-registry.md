@@ -386,10 +386,10 @@ now.
   tailcproject.org                   1  2026-11-25   Family & Childcare
   torringtonct.gov                   1  2026-11-25   Family & Childcare
   health.uconn.edu                   1  2026-11-25   Family & Childcare
-  law.uconn.edu                      1  2026-11-25   Family & Childcare
   waterburyyouthservices.org         1  2026-11-25   Teens & High School
-  portal.ct.gov                     47  2026-11-26   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
+  portal.ct.gov                     49  2026-11-26   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
   cthumane.org                       7  2026-11-26   Pet Care & Resources
+  law.uconn.edu                      2  2026-11-26   Family & Childcare, Food & Basic Needs
   va.gov                             2  2026-11-26   Family & Childcare, Health & Dental
   ahelpingpawff.org                  1  2026-11-26   Pet Care & Resources
   bethelcenterconnecticut.org        1  2026-11-26   Food & Basic Needs
@@ -401,6 +401,7 @@ now.
   nbhelps.org                        1  2026-11-26   Food & Basic Needs
   homesforthebrave.org               1  2026-11-26   Family & Childcare
   militaryonesource.mil              1  2026-11-26   Family & Childcare
+  svdpp.org                          1  2026-11-26   Food & Basic Needs
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -425,7 +426,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 576 of 983 listings (59%) carry a Website, so
+Only 580 of 987 listings (59%) carry a Website, so
 everything above is built from that third of the directory. The other
 407 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -435,7 +436,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-34 of the 378 domains here have never had a Last Verified on
+34 of the 379 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```
