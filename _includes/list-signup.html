@@ -10,8 +10,9 @@
 <form id="{{ k }}-signup-form" class="contact-form list-signup" novalidate aria-label="Email signup">
   <div class="form-row">
     <div class="form-group"><label for="{{ k }}-name">First Name</label><input type="text" id="{{ k }}-name" autocomplete="given-name" placeholder="Jane" /></div>
-    <div class="form-group"><label for="{{ k }}-email">Email</label><input type="email" id="{{ k }}-email" autocomplete="email" placeholder="jane@example.com" required aria-required="true" /></div>
+    <div class="form-group"><label for="{{ k }}-last">Last Name or Initial</label><input type="text" id="{{ k }}-last" autocomplete="family-name" placeholder="D." /></div>
   </div>
+  <div class="form-group"><label for="{{ k }}-email">Email</label><input type="email" id="{{ k }}-email" autocomplete="email" placeholder="jane@example.com" required aria-required="true" /></div>
   <fieldset class="list-signup-choices">
     <legend>Choose what you'd like to receive</legend>
     <label class="list-signup-option coral"><input type="checkbox" name="list" value="191436005966873982"{% if primary contains "darice-on-ai" %} checked{% endif %} /> <span><strong>Darice on AI</strong><span class="list-signup-desc">my weekly newsletter on using AI well</span></span></label>
@@ -41,6 +42,7 @@
       Promise.all(lists.map(function (id) {
         var data = new FormData();
         data.append('fields[name]', document.getElementById('{{ k }}-name').value);
+        data.append('fields[last_name]', document.getElementById('{{ k }}-last').value);
         data.append('fields[email]', email.value);
         data.append('ml-submit', '1');
         data.append('anticsrf', 'true');
