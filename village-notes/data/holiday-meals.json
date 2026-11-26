@@ -38,9 +38,9 @@
       "name": "DESK Thanksgiving dinner",
       "town": "New Haven",
       "address": "Drop-in & Resource Center, 266 State St.",
-      "when": "Thursday, Nov. 26, starting at 11:30 AM.",
-      "details": "Sit-down meal. Listings disagree on the hours, so call before going.",
-      "until": "2026-11-26T18:00:00-05:00",
+      "when": "Thursday, Nov. 26. Listings give two different times: noon to 3 PM, or 1:30 to 4:30 PM.",
+      "details": "Sit-down meal at the Drop-in & Resource Center. Call before going to confirm the time.",
+      "until": "2026-11-26T16:30:00-05:00",
       "source": "https://deskct.org/thanksgiving/",
       "phone": "203-624-6426"
     },
