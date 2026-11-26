@@ -180,6 +180,28 @@
       </div>
     </section>
 
+    <section class="vn-start-section" id="vn-holiday-food" aria-labelledby="vn-holiday-heading" hidden>
+      <div class="container">
+        <h2 class="vn-start-heading" id="vn-holiday-heading">Thanksgiving food help: November 26, 2026</h2>
+        <p>I am highlighting food help for today. Confirm with the organizer before traveling; food, seats and delivery may be limited. Times below are local Connecticut time.</p>
+        <ul class="vn-steps">
+          <li><strong>Bridgeport:</strong> A community partner lists a free Thanksgiving meal at 211 State Street, noon to 2 p.m. <a href="https://www.neighborworksnewhorizons.com/event/bridge-the-gap-community-foundation-thanksgiving-meal/">See the dated meal listing</a>. Confirm attendance details with the organizer.</li>
+          <li><strong>New Haven:</strong> DESK confirms a Thanksgiving Day sit-down meal at 266 State Street. Published partner listings disagree on hours, so call <a href="tel:2036246426">203-624-6426</a> before going. <a href="https://deskct.org/thanksgiving/">DESK Thanksgiving information</a>. Yesterday&rsquo;s Olive Street grocery distribution has ended.</li>
+          <li><strong>Fairfield closure:</strong> Operation Hope says its pantry and Community Kitchen are closed November 26 and 27. Its Thanksgiving meal took place November 25. <a href="https://operationhopect.org/office-and-food-pantry-closing-at-2pm-today-nov-25-2026/">Read the holiday notice</a>.</li>
+        </ul>
+        <p>Need another location, a ready-to-eat meal or delivery? Contact <a href="tel:211">Connecticut 2-1-1</a> or <a href="https://www.211ct.org/">search 211</a>. Ask about child access, registration, takeout, transportation and what is still available. A regular bus schedule does not confirm holiday service.</p>
+      </div>
+    </section>
+    <script>
+      (function () {
+        var box = document.getElementById('vn-holiday-food');
+        try {
+          var today = new Intl.DateTimeFormat('en-CA', {timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+          if (box && today === '2026-11-26') box.hidden = false;
+        } catch (e) {}
+      })();
+    </script>
+
     <!-- Search and sort are pinned: they are the two controls you reach for
          while reading results. The filters below stay put, so the pinned strip
          costs one row of screen instead of the whole control block. -->
