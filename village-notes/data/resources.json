@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-26T14:27:21.034Z",
+  "generated": "2026-11-26T14:29:10.961Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -167,7 +167,6 @@
     "Hampton",
     "Hartford",
     "Hartford and East Hartford",
-    "Hartford HealthCare service locations",
     "Hartford, New Haven, Middlesex and New London counties",
     "Hartland",
     "Harwinton",
@@ -261,9 +260,9 @@
     "Tolland",
     "Torrington",
     "Trumbull",
-    "UConn Health care locations and associated patient calls",
     "Union",
     "Varies by event",
+    "Varies by location",
     "Vernon",
     "Voluntown",
     "Wallingford",
@@ -295,8 +294,7 @@
     "Wolcott",
     "Woodbridge",
     "Woodbury",
-    "Woodstock",
-    "Yale New Haven Health services; confirm site"
+    "Woodstock"
   ],
   "resources": [
     {
@@ -11332,13 +11330,16 @@
       "name": "Hartford HealthCare: Interpretive Services",
       "track": "Health & Dental",
       "category": "Disability & Accessibility Services",
-      "specificType": "Interpretation for patients, designated caregivers and families, including phone/video and in-person arrangements. Request through care team; confirm language, notice, modality, fees and service-specific appointment arrangements.",
-      "town": "Hartford HealthCare service locations",
+      "specificType": "Interpretation for patients, designated caregivers and families, including phone/video and in-person arrangements. Request through care team; confirm language, notice, modality, fees and service-specific appointment arrangements. Available at Hartford HealthCare locations.",
+      "town": "Varies by location",
       "website": "https://hartfordhealthcare.org/patients-visitors/patients/interpretive-services",
       "contact": "Ask the treating practice/care team to arrange interpretation; official source has request details.",
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-11-26",
       "notes": "Official provider source checked2026-11-26. Provider-arranged access for its own services; not a general public interpreter for unrelated calls. Individual appointment availability, exact language, notice and DeafBlind/CDI arrangements require confirmation. Independently found new lead Pending Review; existing source-verification caveats retained.\nApproval2026-11-26: Darice stated Approved for this three-resource interpreting batch. Pending Review changed to Published; earlier pending note historical; source/access caveats retained.",
+      "languages": [
+        "Interpreter / Translation Available"
+      ],
       "lastVerified": "2026-11-26",
       "tags": "medical interpreters, phone interpretation, video interpretation, caregiver communication"
     },
@@ -22334,15 +22335,24 @@
       "name": "UConn Health: Appointment and Phone Interpreters",
       "track": "Health & Dental",
       "category": "Disability & Accessibility Services",
-      "specificType": "Free interpreter services24/7 for UConn Health care, in person/phone/video. Includes patient calls about appointments, refills, billing and financial services. Request through healthcare staff; confirm preferred language, modality and advance notice.",
-      "town": "UConn Health care locations and associated patient calls",
+      "specificType": "Free interpreter services 24/7 for UConn Health care, in person/phone/video. Includes patient calls about appointments, refills, billing and financial services. Request through healthcare staff; confirm preferred language, modality and advance notice. Available at UConn Health locations.",
+      "town": "Farmington",
       "website": "https://www.uconnhealth.org/patients-visitors/patient-experience/interpreter-services",
       "contact": "Ask the treating practice/care team to arrange interpretation; official source has request details.",
+      "townsServed": [
+        "Farmington"
+      ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-11-26",
       "notes": "Official provider source checked2026-11-26. Provider-arranged access for its own services; not a general public interpreter for unrelated calls. Individual appointment availability, exact language, notice and DeafBlind/CDI arrangements require confirmation. Independently found new lead Pending Review; existing source-verification caveats retained.\nApproval2026-11-26: Darice stated Approved for this three-resource interpreting batch. Pending Review changed to Published; earlier pending note historical; source/access caveats retained.",
+      "languages": [
+        "Interpreter / Translation Available"
+      ],
       "lastVerified": "2026-11-26",
-      "tags": "medical interpreters, phone interpretation, appointment help, medication refills, language access"
+      "tags": "medical interpreters, phone interpretation, appointment help, medication refills, language access",
+      "accessDetails": [
+        "Free"
+      ]
     },
     {
       "id": "recvi2fRCwpS0veHh",
@@ -24493,15 +24503,22 @@
       "name": "Yale New Haven Health: Language Services",
       "track": "Health & Dental",
       "category": "Disability & Accessibility Services",
-      "specificType": "Free interpretation/translation for patients and family members needing language assistance or Deaf/Hard-of-Hearing communication. Ask care team to contact Language Services. ASL in person/video; confirm specific appointment/phone/telehealth arrangements.",
-      "town": "Yale New Haven Health services; confirm site",
+      "specificType": "Free interpretation/translation for patients and family members needing language assistance or Deaf/Hard-of-Hearing communication. Ask care team to contact Language Services. ASL in person/video; confirm specific appointment/phone/telehealth arrangements. Available at Yale New Haven Health locations; confirm your site.",
+      "town": "Varies by location",
       "website": "https://www.ynhhs.org/patient-care/language-services",
       "contact": "Ask the treating practice/care team to arrange interpretation; official source has request details.",
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-11-26",
       "notes": "Official provider source checked2026-11-26. Provider-arranged access for its own services; not a general public interpreter for unrelated calls. Individual appointment availability, exact language, notice and DeafBlind/CDI arrangements require confirmation. Independently found new lead Pending Review; existing source-verification caveats retained.\nApproval2026-11-26: Darice stated Approved for this three-resource interpreting batch. Pending Review changed to Published; earlier pending note historical; source/access caveats retained.",
+      "languages": [
+        "American Sign Language",
+        "Interpreter / Translation Available"
+      ],
       "lastVerified": "2026-11-26",
-      "tags": "medical interpreters, language services, asl, video interpretation, patient appointments"
+      "tags": "medical interpreters, language services, asl, video interpretation, patient appointments",
+      "accessDetails": [
+        "Free"
+      ]
     },
     {
       "id": "rec6mFo2OGYxIzqGJ",

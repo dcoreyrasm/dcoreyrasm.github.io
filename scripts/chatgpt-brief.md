@@ -1254,7 +1254,7 @@ between sessions: read them fresh from this section each time this brief is
 given to you, and if you are working from a remembered figure you are working
 from a gap that has already moved.
 
-990 listings across 205 Connecticut towns of 169.
+990 listings across 203 Connecticut towns of 169.
 
 That breadth is real. The depth behind it is the problem:
 
