@@ -99,6 +99,62 @@
       </div>
     </div>
 
+    <!-- About, moved to the top and kept small: who this is for and why it
+         exists, before the search. On a phone "Why this exists" is one line
+         that opens; on a wide screen it starts open. -->
+    <section class="vn-intro-section" aria-label="About Village Notes">
+      <div class="container vn-intro">
+        <div class="vn-household">
+          <a class="vn-household-img" href="/village-notes/family-resource-guide.jpg" aria-label="Open the Village Notes family resource guide, full size">
+            <img src="/village-notes/family-resource-guide.jpg" width="1122" height="1402" alt="Village Notes, created by Darice Corey. Connecticut resources for families and caregivers: childcare and camps; high schools and teen programs; elder care; pet care; food assistance; disability and accessibility support; transportation and financial help; scholarships for Connecticut students. Free newsletter updates cover new resources, registration openings, open houses, and upcoming dates." />
+          </a>
+          <div class="vn-household-text">
+            <h2 class="vn-intro-heading" id="vn-resource-guide-heading">Support for your whole household</h2>
+            <p>I created Village Notes from a need in my own family, starting years ago when I was looking for childcare resources for my children. Over time, I have seen that it takes a village to care for our entire families and loved ones.</p>
+            <p><a href="#vn-updates">Sign up for free Village Notes updates</a></p>
+          </div>
+        </div>
+        <details class="vn-why" id="vn-why">
+          <summary><h2 class="vn-intro-heading" id="vn-about-heading">Why this exists: the gap official directories don&rsquo;t fill</h2></summary>
+          <div class="vn-why-grid">
+          <div class="vn-why-item">
+            <h3>Real hours, not listed hours</h3>
+            <p>State and hospital directories publish a phone number and an address. They rarely say when a place is actually open, whether the office hours match the care hours, or who picks up after five.</p>
+          </div>
+          <div class="vn-why-item">
+            <h3>Honest waitlist timelines</h3>
+            <p>&ldquo;Contact us for availability&rdquo; tells a family nothing. What helps is someone saying they applied in March and got a spot in November. That is the kind of note this directory collects.</p>
+          </div>
+          <div class="vn-why-item">
+            <h3>Everyone a household looks after</h3>
+            <p>Families caring for young children and those caring for aging parents are often the same people, and plenty of them are looking after an animal too. Childcare, elder care and pet care sit in one place here instead of across three separate systems, because the week they all go wrong is the same week.</p>
+          </div>
+          <div class="vn-why-item">
+            <h3>Two sources, clearly marked</h3>
+            <p>The baseline comes from official state and public records, so the list covers towns nobody has written about yet. The detail comes from families and caregivers. Every card names where it came from, and several people can add a note to the same place.</p>
+          </div>
+          </div>
+        </details>
+        <script>
+          try { if (window.matchMedia('(min-width: 900px)').matches) document.getElementById('vn-why').open = true; } catch (e) {}
+        </script>
+      </div>
+    </section>
+
+    <!-- Start here. Three steps in plain words, so nobody has to work out
+         the page before using it. -->
+    <section class="vn-start-section" aria-labelledby="vn-start-heading">
+      <div class="container">
+        <h2 class="vn-start-heading" id="vn-start-heading">How to find help</h2>
+        <ol class="vn-steps">
+          <li><strong>Type what you need</strong> in the search box, like &ldquo;dentist,&rdquo; &ldquo;food pantry,&rdquo; or &ldquo;summer camp.&rdquo;</li>
+          <li><strong>Pick who it&rsquo;s for and your town</strong> to make the list shorter.</li>
+          <li><strong>Call or visit</strong> a place on the list. Tap a phone number to call it.</li>
+        </ol>
+        <p class="vn-start-more">Looking for something specific, like free, open evenings, or help in another language? Open <strong>More filters</strong>.</p>
+      </div>
+    </section>
+
     <!-- Search and sort are pinned: they are the two controls you reach for
          while reading results. The filters below stay put, so the pinned strip
          costs one row of screen instead of the whole control block. -->
@@ -108,7 +164,7 @@
         <form class="vn-searchbar" role="search" onsubmit="return false;">
           <div class="vn-field vn-field-search">
             <label for="vn-search">Search</label>
-            <input type="search" id="vn-search" placeholder="Name, program, notes, hours&hellip;" autocomplete="off" />
+            <input type="search" id="vn-search" placeholder="Try: dentist, food pantry, summer camp" autocomplete="off" />
           </div>
 
           <div class="vn-field">
@@ -175,12 +231,18 @@
           <button type="button" id="vn-reset" class="btn-ghost vn-reset">Reset</button>
         </form>
 
-        <!-- Quick filters, in two groups so the list is shorter to scan. On
-             a phone both start closed and say how many are switched on. -->
-        <div class="vn-toggle-groups" role="group" aria-label="Quick filters">
-          <details class="vn-toggle-group" id="vn-group-help" open>
-            <summary><span class="vn-toggles-label">Help offered</span><span class="vn-group-on" aria-live="polite"></span></summary>
-            <div class="vn-toggles">
+        <!-- More filters. Everything beyond the three main choices sits behind
+             one button, as plain checkbox lists, so the page opens on three
+             choices instead of twenty-two pills. The button says how many are
+             switched on while it is closed. County is derived from the town a
+             listing sits in or says it serves, never from the county line. -->
+        <details class="vn-morefilters" id="vn-more">
+          <summary><span class="vn-mf-title">More filters</span><span class="vn-mf-hint">Free, walk-ins, evenings, county and more</span><span class="vn-group-on" id="vn-more-on" aria-live="polite"></span></summary>
+          <div class="vn-mf-body">
+          <p class="vn-filter-note">Most listings don&rsquo;t say yet whether they&rsquo;re free, take walk-ins, or help in other languages. These filters only find the ones that say so. If a listing doesn&rsquo;t say, call and ask.</p>
+            <fieldset class="vn-check-group" id="vn-group-help" data-toggle-group>
+              <legend>Help offered</legend>
+              <div class="vn-check-list">
             <label class="vn-toggle"><input type="checkbox" id="vn-flag-disability" data-flag="disability" /><span>Disability &amp; accessibility support</span></label>
             <label class="vn-toggle"><input type="checkbox" data-flag="free" /><span>Free</span></label>
             <label class="vn-toggle"><input type="checkbox" data-flag="noInsurance" /><span>No insurance needed</span></label>
@@ -190,30 +252,24 @@
             <label class="vn-toggle"><input type="checkbox" data-flag="languageHelp" /><span>Help in other languages or ASL</span></label>
             <label class="vn-toggle"><input type="checkbox" data-flag="extended" /><span>Before/after care</span></label>
             <label class="vn-toggle"><input type="checkbox" data-flag="fullDay" /><span>Covers a workday</span></label>
-            </div>
-          </details>
-          <details class="vn-toggle-group" id="vn-group-when" open>
-            <summary><span class="vn-toggles-label">When and how</span><span class="vn-group-on" aria-live="polite"></span></summary>
-            <div class="vn-toggles">
+              </div>
+            </fieldset>
+            <fieldset class="vn-check-group" id="vn-group-when" data-toggle-group>
+              <legend>When and how</legend>
+              <div class="vn-check-list">
             <label class="vn-toggle"><input type="checkbox" data-flag="walkIn" /><span>Walk-ins welcome</span></label>
             <label class="vn-toggle"><input type="checkbox" data-flag="evenings" /><span>Open evenings</span></label>
             <label class="vn-toggle"><input type="checkbox" data-flag="weekends" /><span>Open weekends</span></label>
             <label class="vn-toggle"><input type="checkbox" data-flag="openNow" /><span>Registration open</span></label>
             <label class="vn-toggle"><input type="checkbox" data-flag="upcomingEvent" /><span>Has an upcoming date</span></label>
-            </div>
-          </details>
-        </div>
-
-        <!-- County. Connecticut stores no county on a listing, so these are
-             derived from the town each listing actually sits in. Choosing one
-             does NOT assume a business serves every town inside the line --
-             it matches where the listing is, or a town it has said it serves.
-             Eight options, so a plain checkbox row rather than the searchable
-             panel the 130-town list needs. -->
-        <div class="vn-toggles vn-counties" role="group" aria-labelledby="vn-county-label">
-          <span class="vn-toggles-label" id="vn-county-label">County</span>
-          <div class="vn-county-list" id="vn-county-list"></div>
-        </div>
+              </div>
+            </fieldset>
+            <fieldset class="vn-check-group" id="vn-group-county">
+              <legend id="vn-county-label">County</legend>
+              <div class="vn-check-list vn-county-list" id="vn-county-list"></div>
+            </fieldset>
+          </div>
+        </details>
 
         <div class="vn-doorway" id="vn-doorway" hidden>
           <p class="vn-doorway-text">
@@ -228,10 +284,6 @@
              what was filtered and how to widen it. Landing on bare cards hides
              the controls that produced them. -->
         <p class="vn-resultline" id="vn-resultline" role="status" aria-live="polite"></p>
-        <!-- Most listings do not say yet whether they are free, take walk-ins,
-             or offer other languages. The filters above only find the ones
-             that do, so this says plainly that a missing tag means "ask". -->
-        <p class="vn-filter-note">Most listings don&rsquo;t say yet whether they&rsquo;re free, take walk-ins, or help in other languages. These filters show the ones that do. If a listing doesn&rsquo;t say, call and ask.</p>
         <div class="vn-print-row">
           <button type="button" id="vn-print" class="btn-ghost vn-print-btn">Print or save this list</button>
           <p class="vn-talk">Prefer to talk to someone? Dial <a href="tel:211">2-1-1</a> to reach Connecticut 211.</p>
@@ -422,41 +474,7 @@
       </div>
     </section>
 
-    <section class="vn-about-section" aria-labelledby="vn-resource-guide-heading">
-      <div class="container" style="max-width:760px;">
-        <h2 class="section-heading" id="vn-resource-guide-heading">Support for your whole household</h2>
-        <p class="section-sub">I created Village Notes from a need in my own family, starting years ago when I was looking for childcare resources for my children. Over time, I have seen that it takes a village to care for our entire families and loved ones.</p>
-        <a href="/village-notes/family-resource-guide.jpg" aria-label="Open the Village Notes family resource guide">
-          <img src="/village-notes/family-resource-guide.jpg" width="1122" height="1402" loading="lazy" style="display:block;width:100%;height:auto;border-radius:16px;" alt="Village Notes, created by Darice Corey. Connecticut resources for families and caregivers: childcare and camps; high schools and teen programs; elder care; pet care; food assistance; disability and accessibility support; transportation and financial help; scholarships for Connecticut students. Free newsletter updates cover new resources, registration openings, open houses, and upcoming dates." />
-        </a>
-        <p style="margin-top:1rem;"><a href="#vn-updates">Sign up for free Village Notes updates</a></p>
-      </div>
-    </section>
 
-    <section class="vn-about-section" aria-labelledby="vn-about-heading">
-      <div class="container">
-        <p class="section-label">Why This Exists</p>
-        <h2 class="section-heading" id="vn-about-heading">The gap official directories don't fill.</h2>
-        <div class="vn-about-grid">
-          <div class="vn-about-block">
-            <h3>Real hours, not listed hours</h3>
-            <p>State and hospital directories publish a phone number and an address. They rarely say when a place is actually open, whether the office hours match the care hours, or who picks up after five.</p>
-          </div>
-          <div class="vn-about-block">
-            <h3>Honest waitlist timelines</h3>
-            <p>&ldquo;Contact us for availability&rdquo; tells a family nothing. What helps is someone saying they applied in March and got a spot in November. That is the kind of note this directory collects.</p>
-          </div>
-          <div class="vn-about-block">
-            <h3>Everyone a household looks after</h3>
-            <p>Families caring for young children and those caring for aging parents are often the same people, and plenty of them are looking after an animal too. Childcare, elder care and pet care sit in one place here instead of across three separate systems, because the week they all go wrong is the same week.</p>
-          </div>
-          <div class="vn-about-block">
-            <h3>Two sources, clearly marked</h3>
-            <p>The baseline comes from official state and public records, so the list covers towns nobody has written about yet. The detail comes from families and caregivers. Every card names where it came from, and several people can add a note to the same place.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
   </main>
 

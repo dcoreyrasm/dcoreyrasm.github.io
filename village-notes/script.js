@@ -1453,6 +1453,7 @@
       var at = state.counties.indexOf(box.value);
       if (box.checked && at === -1) state.counties.push(box.value);
       if (!box.checked && at !== -1) state.counties.splice(at, 1);
+      countGroups();
       render();
     });
   }
@@ -1562,26 +1563,21 @@
   // How many filters are switched on in each group, shown beside its heading,
   // so a closed group on a phone still says that it is narrowing the results.
   function countGroups() {
-    Array.prototype.forEach.call(document.querySelectorAll('.vn-toggle-group'), function (g) {
-      var n = g.querySelectorAll('.vn-toggle input:checked').length;
-      var out = g.querySelector('.vn-group-on');
-      if (out) out.textContent = n ? n + ' on' : '';
-    });
+    var more = document.getElementById('vn-more');
+    var out = document.getElementById('vn-more-on');
+    if (!more || !out) return;
+    var n = more.querySelectorAll('input[type="checkbox"]:checked').length;
+    out.textContent = n ? n + ' on' : '';
   }
 
   function bindToggles() {
-    // Phones start with both groups closed: fourteen buttons is a long scroll
-    // before the first result. Wider screens keep them open.
-    if (window.matchMedia && window.matchMedia('(max-width: 640px)').matches) {
-      Array.prototype.forEach.call(document.querySelectorAll('.vn-toggle-group'), function (g) {
-        g.open = false;
-      });
-    }
     Array.prototype.forEach.call(el.toggles, function (box) {
       box.addEventListener('change', function () {
         state.flags[this.dataset.flag] = this.checked;
-        var grp = this.closest('.vn-toggle-group');
-        if (this.checked && grp) grp.open = true;
+        // A filter switched on from elsewhere (the accessibility doorway)
+        // opens the panel, so the visitor can see what is narrowing the list.
+        var more = this.closest('.vn-morefilters');
+        if (this.checked && more) more.open = true;
         countGroups();
         if (this.dataset.flag === 'disability') tuneToggles();
         render();
@@ -1621,12 +1617,10 @@
     });
     // A group with nothing to offer in this section disappears, and the whole
     // block goes if neither group has anything.
-    var groups = document.querySelectorAll('.vn-toggle-group');
+    var groups = document.querySelectorAll('.vn-check-group[data-toggle-group]');
     Array.prototype.forEach.call(groups, function (g) {
       g.hidden = !g.querySelector('.vn-toggle:not([hidden])');
     });
-    var row = document.querySelector('.vn-toggle-groups');
-    if (row) row.hidden = shown === 0;
     countGroups();
 
     // Paid leave covers time off to care for a family member, which a pet is
@@ -1680,6 +1674,7 @@
       countGroups();
       syncTownUI();
       syncCountyUI();
+      countGroups();
       buildCatList();
       tuneToggles();
       render();
