@@ -167,7 +167,7 @@ section.vn-results-section { background:var(--bg); padding:2.5rem 0 5rem; }
 }
 .vn-card-links a:hover { text-decoration:underline; }
 .vn-card-links span { color:var(--muted); }
-.vn-card-source { font-size:.7rem; color:var(--muted); opacity:.8; line-height:1.5; }
+.vn-card-source { font-size:.7rem; color:var(--muted); line-height:1.5; }
 
 /* ---------- EMPTY STATE ---------- */
 .vn-empty {
@@ -742,3 +742,62 @@ main .vn-toggles .vn-toggle input:checked + span { background:var(--pop-ink); bo
 .vn-scholarships-list { list-style:none; margin:0 0 1.25rem; padding:0; display:grid; gap:.75rem; }
 .vn-sch-item a { color:var(--coral); font-weight:600; }
 .vn-sch-meta { display:block; font-size:.82rem; color:var(--muted); margin-top:.15rem; }
+
+/* ---------- FILTER NOTE, PRINT AND 2-1-1 ROW ---------- */
+.vn-filter-note {
+  font-size:.84rem; color:var(--muted); line-height:1.6;
+  max-width:760px; margin:.75rem 0 0;
+}
+.vn-print-row {
+  display:flex; flex-wrap:wrap; align-items:center; gap:.75rem 1.5rem;
+  margin-top:1rem;
+}
+.vn-print-btn { padding:.6rem 1.1rem; }
+.vn-talk { font-size:.9rem; margin:0; }
+.vn-talk a { color:var(--coral); font-weight:600; }
+.vn-print-title { display:none; }
+
+/* Paper: the matching listings and nothing else. The print button renders
+   every match first, so this is the whole list, not the first page. */
+@media print {
+  nav, footer, .vn-hero, .vn-searchbar-section, .vn-controls, .vn-toggles,
+  .vn-doorway, .vn-featured, .vn-source-note, .vn-more-wrap, .vn-print-row,
+  .vn-filter-note, .vn-scholarships, .vn-submit-section, .vn-more,
+  main > section:not(.vn-results-section):not(.vn-controls-section),
+  #vn-gt, .skip-link { display:none !important; }
+  body, section.vn-results-section, .vn-controls-section, .vn-card {
+    background:#fff !important; color:#000 !important;
+  }
+  section.vn-results-section, .vn-controls-section { padding:0 !important; }
+  .vn-print-title { display:block; font-size:10pt; margin:0 0 .5rem; color:#000; }
+  .vn-resultline { color:#000; margin:0; }
+  .vn-grid { display:block; }
+  .vn-card {
+    display:block !important; border:1px solid #999 !important; padding:.6rem .8rem; margin:0 0 .5rem;
+    break-inside:avoid; page-break-inside:avoid;
+  }
+  .vn-card * { color:#000 !important; }
+  /* Compact: what someone needs to make the call, about four to a page. The
+     research notes, tags and "submitted by" line stay on the website. */
+  .vn-card { font-size:8.5pt !important; line-height:1.3 !important; }
+  .vn-card-notes, .vn-tags, .vn-card-source, .vn-card-caveat,
+  .vn-stars { display:none !important; }
+  .vn-card-name { font-size:11pt !important; margin:0 0 .1rem !important; }
+  .vn-card-town, .vn-card-type, .vn-chips, .vn-event { margin:0 0 .15rem !important; font-size:8.5pt !important; }
+  .vn-badge-chip { border:1px solid #000 !important; background:none !important; padding:0 .3em !important; font-size:7.5pt !important; }
+  .vn-facts { display:block !important; margin:.2rem 0 !important; }
+  .vn-fact { display:flex !important; gap:.5rem; margin:0 !important; padding:0 !important; border:0 !important; }
+  .vn-fact dt { flex:0 0 6.5rem; }
+  .vn-card-track, .vn-track-pill { margin:0 !important; padding:0 !important; background:none !important; font-size:7.5pt !important; }
+  .vn-facts dt, .vn-facts dd { margin:0 !important; padding:0 !important; border:0 !important; font-size:8.5pt !important; }
+  .vn-card-foot { padding-top:.2rem !important; margin:0 !important; gap:0 !important; }
+  .vn-card-links a, .vn-card-links span { font-size:8.5pt !important; }
+  .vn-card-notes.vn-clamped { display:block !important; max-height:none !important; -webkit-line-clamp:unset !important; overflow:visible !important; }
+  .vn-card-links a[href^="http"]::after { content:" (" attr(href) ")"; font-size:8pt; }
+}
+
+/* Links inside running text are underlined, so they never rely on colour
+   alone to stand out (WCAG 1.4.1). */
+.vn-card-links span a, .vn-hero-signup a, .vn-talk a, .vn-filter-note a {
+  text-decoration:underline; text-underline-offset:2px;
+}

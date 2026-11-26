@@ -384,6 +384,39 @@ nobody fills is worse than no field: it spreads the same evidence thinner and
 makes the record look answered when it isn't.
 
 
+WRITE IT PLAINLY — Specific Type or Notes is read by parents, grandparents and
+caregivers, many of whom read English as a second language or read the page
+through Google Translate. Write it the way you would say it on the phone:
+  - Full sentences. No slashes standing in for "and" or "or"
+    ("blood pressure, blood sugar and cholesterol checks", not "BP/A1C/glucose").
+  - Spell out abbreviations on first use, or drop them: "Connecticut Department
+    of Social Services (DSS)", "food stamps (SNAP)". Never "FY26".
+  - Put a space between a day and a time: "Saturday 9 AM to noon".
+  - One idea per sentence. Lead with what the place does for the person.
+
+ACCESS DETAILS — multi-select: Free, Walk-ins Welcome, No Insurance Required.
+Tick one only when the official source says so in plain words:
+  Free                   the main service costs nothing (eligibility rules may
+                         apply). "Free consultation", "free trial day", "not
+                         universally free" and "low-cost" do NOT count.
+  Walk-ins Welcome       "walk-ins welcome", "no appointment needed", "drop-in".
+                         "No walk-ins" means leave it off.
+  No Insurance Required  the source says insurance or proof of income is not
+                         needed.
+Blank means not stated, never no. These drive the Free, Walk-ins welcome and
+No insurance needed filters.
+
+LANGUAGES OFFERED — multi-select. Tick a language only when the source says the
+service is offered in it (staff, materials or classes in that language). Use
+"Interpreter / Translation Available" when the source says interpreters or
+translation can be arranged, and "American Sign Language" for ASL. A note that
+language access is "not confirmed" means leave the field empty. This drives the
+"Help in other languages or ASL" filter.
+
+SCHEDULE WINDOW — add Evening when the place is open until 7 PM or later, or a
+session starts at 5 PM or later. Add Weekend when it is open on Saturday or
+Sunday. These drive the Open evenings and Open weekends filters.
+
 AGE GROUPS SERVED — multi-select, fill it in where the source states ages. The
 site does not read this field yet, so Services Offered comes first if you only
 have time for one.

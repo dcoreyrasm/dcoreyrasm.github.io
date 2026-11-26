@@ -186,7 +186,14 @@ const FIELD_MAP = {
   // Note it is NOT Notes/Tags. That field's name promises tags and delivers
   // prose: 687 of 810 published records carry one, median 302 characters, and
   // not one is a tag list. It stays prose; this is the tag field.
-  'Tags':                         'tags'
+  'Tags':                         'tags',
+
+  // What a family needs to know before going: Free, Walk-ins Welcome, No
+  // Insurance Required. Set only where the listing's own source says so --
+  // blank means unknown, never no. Drives the "Free", "Walk-ins welcome" and
+  // "No insurance needed" toggles alongside Schedule Window's Evening and
+  // Weekend values.
+  'Access Details':               'accessDetails'
 };
 
 const TOKEN = process.env.AIRTABLE_TOKEN;
@@ -238,7 +245,7 @@ const LIST_KEYS = new Set(['townsServed', 'extendedCare', 'servicesOffered',
                            'languages', 'daysOffered', 'scheduleWindow',
                            'animals', 'petRequirements',
                            'programSetting', 'programTopics', 'teenOpportunity',
-                           'specializedSupport']);
+                           'specializedSupport', 'accessDetails']);
 
 function clean(value, key) {
   if (LIST_KEYS.has(key)) return Array.isArray(value) ? value : (value ? [value] : []);

@@ -1,0 +1,62 @@
+name: Plain-language Early Start descriptions (manual)
+
+# Rewrites the one-line Early Start CT import description ("State-funded Early
+# Start CT provider (Family Home) -- 4 infant/toddler funded spaces FY26") in
+# words a parent can read and machine translation can handle. Only lines that
+# still match the import template exactly are touched, so hand edits survive.
+#
+# Manual trigger only, and it writes to Airtable, so it uses
+# AIRTABLE_WRITE_TOKEN like the other manual writers. Start with dry_run.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print the plan without writing anything"
+        type: boolean
+        default: true
+      limit:
+        description: "Only print this many examples in the plan (0 = all)"
+        type: string
+        default: "15"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: airtable-write
+  cancel-in-progress: false
+
+jobs:
+  rewrite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.x"
+
+      - name: Check the write token exists
+        env:
+          WRITE_TOKEN: ${{ secrets.AIRTABLE_WRITE_TOKEN }}
+        run: |
+          if [ -z "$WRITE_TOKEN" ]; then
+            echo "::error::AIRTABLE_WRITE_TOKEN is not set."
+            echo "This workflow writes to Airtable, so it deliberately does not use"
+            echo "AIRTABLE_TOKEN -- that secret is read-only and is what the scheduled"
+            echo "syncs carry every six hours."
+            echo ""
+            echo "Create a second Airtable personal access token with data.records:write"
+            echo "on the Village Notes base, then add it to this repository as the secret"
+            echo "AIRTABLE_WRITE_TOKEN (Settings -> Secrets and variables -> Actions)."
+            exit 1
+          fi
+
+      - name: Rewrite
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_WRITE_TOKEN }}
+        run: |
+          python3 scripts/plain-language-early-start.py \
+            --limit "${{ inputs.limit }}" \
+            ${{ inputs.dry_run && '--dry-run' || '' }}

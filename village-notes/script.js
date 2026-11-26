@@ -466,8 +466,46 @@
     // for exactly the reason it is hidden there. Like every toggle, this one
     // hides itself when nothing in the current section qualifies, which is
     // what keeps it honest between consignment seasons.
-    upcomingEvent: function (r) { return liveEvent(r) !== null; }
+    upcomingEvent: function (r) { return liveEvent(r) !== null; },
+
+    // What a family needs to know before going. Each reads a field that is
+    // set only where the listing's own source says so, so a listing without
+    // it is "not stated", never "no" -- which is why these are "only show"
+    // filters and never "hide".
+    free:        function (r) { return (r.accessDetails || []).indexOf('Free') !== -1; },
+    walkIn:      function (r) { return (r.accessDetails || []).indexOf('Walk-ins Welcome') !== -1; },
+    noInsurance: function (r) { return (r.accessDetails || []).indexOf('No Insurance Required') !== -1; },
+    evenings:    function (r) { return (r.scheduleWindow || []).indexOf('Evening') !== -1; },
+    weekends:    function (r) { return (r.scheduleWindow || []).indexOf('Weekend') !== -1; },
+
+    // Help in a language other than English: a named language, ASL, or an
+    // interpreter or translation service. English alone does not count --
+    // nearly every listing is in English and saying so filters nothing.
+    languageHelp: function (r) {
+      return (r.languages || []).some(function (x) {
+        return x !== 'English' && x !== 'Not Confirmed';
+      });
+    }
   };
+
+  // Phone numbers in the contact line become tap-to-call links, so somebody
+  // on a phone can call straight from the card. The number shown is exactly
+  // the one written; only the tel: link is normalised to digits.
+  var PHONE_RE = /(\+?1[\s.-]?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}/g;
+  function linkPhones(text) {
+    var out = '', last = 0, m;
+    var src = String(text);
+    PHONE_RE.lastIndex = 0;
+    while ((m = PHONE_RE.exec(src)) !== null) {
+      var digits = m[0].replace(/\D/g, '');
+      if (digits.length === 11 && digits.charAt(0) === '1') digits = digits.slice(1);
+      if (digits.length !== 10) continue;
+      out += esc(src.slice(last, m.index)) +
+             '<a href="tel:+1' + digits + '">' + esc(m[0]) + '</a>';
+      last = m.index + m[0].length;
+    }
+    return out + esc(src.slice(last));
+  }
 
   /* ---------- rendering ---------- */
 
@@ -544,6 +582,11 @@
     if (yesish(r.financialAid)) badges.push('<span class="vn-badge-chip">Financial help</span>');
     if (FLAGS.transport(r))     badges.push('<span class="vn-badge-chip">Transport</span>');
     if (FLAGS.extended(r))      badges.push('<span class="vn-badge-chip">Before/after care</span>');
+    if (FLAGS.free(r))          badges.push('<span class="vn-badge-chip">Free</span>');
+    if (FLAGS.walkIn(r))        badges.push('<span class="vn-badge-chip">Walk-ins welcome</span>');
+    if (FLAGS.noInsurance(r))   badges.push('<span class="vn-badge-chip">No insurance needed</span>');
+    if (FLAGS.evenings(r))      badges.push('<span class="vn-badge-chip">Evenings</span>');
+    if (FLAGS.weekends(r))      badges.push('<span class="vn-badge-chip">Weekends</span>');
     var badgeRow = badges.length ? '<div class="vn-chips">' + badges.join('') + '</div>' : '';
 
     var times = [r.startTime, r.endTime].filter(has).join(' \u2013 ');
@@ -648,7 +691,7 @@
       links.push('<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' +
                  esc(hostOf(url)) + ' &#8599;</a>');
     }
-    if (has(r.contact)) links.push('<span>' + esc(r.contact) + '</span>');
+    if (has(r.contact)) links.push('<span>' + linkPhones(r.contact) + '</span>');
 
     var source = [];
     if (has(r.submittedBy)) source.push('Submitted by ' + r.submittedBy);
@@ -1270,7 +1313,8 @@
     state.terms = searchTerms(state.search);
     var shown = state.all.filter(matches).sort(SORTS[state.sort] || SORTS.name);
 
-    if (!keepShown) state.shown = PAGE;
+    if (state.printing) state.shown = Infinity;
+    else if (!keepShown) state.shown = PAGE;
     var page = shown.slice(0, state.shown);
 
     if (!shown.length) {
@@ -1484,6 +1528,24 @@
       var cards = el.results.children;
       if (cards.length) cards[Math.max(0, state.shown - PAGE)].scrollIntoView({ block: 'center' });
     });
+
+    // Print or save as PDF. A list on paper is how this directory reaches a
+    // grandparent without a smartphone, a library desk, or a case manager's
+    // folder -- so it prints every listing that matches the current filters,
+    // not just the first page on screen, then goes back to paging.
+    var printBtn = document.getElementById('vn-print');
+    if (printBtn) {
+      printBtn.addEventListener('click', function () {
+        state.printing = true;
+        render(true);
+        window.print();
+      });
+      window.addEventListener('afterprint', function () {
+        if (!state.printing) return;
+        state.printing = false;
+        render();
+      });
+    }
   }
 
   function bindDoorway() {

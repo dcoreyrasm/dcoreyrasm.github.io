@@ -101,6 +101,12 @@ def build_notes(r):
     out.append(f"Source: {g(r,'Source')}, accessed {g(r,'Verified or Accessed')}.")
     return " ".join(out)
 
+import importlib.util as _ilu
+_spec = _ilu.spec_from_file_location(
+    "plain_es", os.path.join(os.path.dirname(os.path.abspath(__file__)), "plain-language-early-start.py"))
+_plain = _ilu.module_from_spec(_spec); _spec.loader.exec_module(_plain)
+plain_early_start = _plain.plain
+
 def to_record(r, status):
     is_provider = g(r, "Record Type") == "Provider"
     name = g(r, "Resource or Program Name")
@@ -131,8 +137,11 @@ def to_record(r, status):
 
     if is_provider:
         sp = spaces_phrase(r)
-        f[FLD["specific"]] = (f"State-funded Early Start CT provider ({g(r,'Provider Type')})"
-                              + (f" -- {sp} funded spaces FY26" if sp else ""))
+        # Written in plain language from the start; see
+        # plain-language-early-start.py, which rewrote the earlier rows.
+        legacy = (f"State-funded Early Start CT provider ({g(r,'Provider Type')})"
+                  + (f" -- {sp} funded spaces FY26" if sp else ""))
+        f[FLD["specific"]] = plain_early_start(legacy) or legacy
         f[FLD["cost"]] = "Reduced state-set fee for eligible families in a funded space."
     else:
         f[FLD["specific"]] = g(r, "Category")

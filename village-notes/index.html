@@ -178,6 +178,12 @@
         <div class="vn-toggles" role="group" aria-label="Quick filters">
           <span class="vn-toggles-label">Only show</span>
           <label class="vn-toggle"><input type="checkbox" id="vn-flag-disability" data-flag="disability" /><span>Disability &amp; accessibility support</span></label>
+          <label class="vn-toggle"><input type="checkbox" data-flag="free" /><span>Free</span></label>
+          <label class="vn-toggle"><input type="checkbox" data-flag="walkIn" /><span>Walk-ins welcome</span></label>
+          <label class="vn-toggle"><input type="checkbox" data-flag="noInsurance" /><span>No insurance needed</span></label>
+          <label class="vn-toggle"><input type="checkbox" data-flag="evenings" /><span>Open evenings</span></label>
+          <label class="vn-toggle"><input type="checkbox" data-flag="weekends" /><span>Open weekends</span></label>
+          <label class="vn-toggle"><input type="checkbox" data-flag="languageHelp" /><span>Help in other languages or ASL</span></label>
           <label class="vn-toggle"><input type="checkbox" data-flag="openNow" /><span>Registration open</span></label>
           <label class="vn-toggle"><input type="checkbox" data-flag="care4Kids" /><span>Accepts Care 4 Kids</span></label>
           <label class="vn-toggle"><input type="checkbox" data-flag="financialAid" /><span>Financial help</span></label>
@@ -211,6 +217,14 @@
              what was filtered and how to widen it. Landing on bare cards hides
              the controls that produced them. -->
         <p class="vn-resultline" id="vn-resultline" role="status" aria-live="polite"></p>
+        <!-- Most listings do not say yet whether they are free, take walk-ins,
+             or offer other languages. The filters above only find the ones
+             that do, so this says plainly that a missing tag means "ask". -->
+        <p class="vn-filter-note">Most listings don&rsquo;t say yet whether they&rsquo;re free, take walk-ins, or help in other languages. These filters show the ones that do. If a listing doesn&rsquo;t say, call and ask.</p>
+        <div class="vn-print-row">
+          <button type="button" id="vn-print" class="btn-ghost vn-print-btn">Print or save this list</button>
+          <p class="vn-talk">Prefer to talk to someone? Dial <a href="tel:211">2-1-1</a> to reach Connecticut 211.</p>
+        </div>
       </div>
     </section>
 
@@ -277,6 +291,7 @@
 
         <p class="vn-source-note">Entries drawn from public records carry the official details: address, phone, license, and funded places. The hours, waitlist and cost notes come from people who have actually called. A sparse listing is a starting point, not a dead end: if you know more, add it.</p>
 
+        <p class="vn-print-title">Village Notes: Connecticut Care Directory &middot; daricecorey.com/village-notes &middot; Call each place to confirm details before you go.</p>
         <div id="vn-results" class="vn-grid"></div>
 
         <div class="vn-more-wrap">
