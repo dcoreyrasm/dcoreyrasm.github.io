@@ -152,6 +152,17 @@
          the page before using it. -->
     <section class="vn-start-section" aria-labelledby="vn-start-heading">
       <div class="container">
+        <!-- Holiday meals. One line until opened. Fed by data/holiday-meals.json;
+             each meal hides once it is over and the whole strip hides when
+             none are left, so it never advertises a dinner that has passed. -->
+        <details class="vn-holiday" id="vn-holiday" hidden>
+          <summary><span class="vn-holiday-title" id="vn-holiday-title">Free holiday meals</span><span class="vn-holiday-hint">Tap to see where</span></summary>
+          <div class="vn-holiday-body">
+            <ul class="vn-holiday-list" id="vn-holiday-list"></ul>
+            <p class="vn-holiday-foot">Times can change, so call ahead if you can. For more meals near you, dial <a href="tel:211">2-1-1</a>.
+              <button type="button" class="vn-doorway-link" id="vn-holiday-food">See all food help in the directory</button></p>
+          </div>
+        </details>
         <h2 class="vn-start-heading" id="vn-start-heading">How to find help</h2>
         <ol class="vn-steps">
           <li><strong>Type what you need</strong> in the search box, like &ldquo;dentist,&rdquo; &ldquo;food pantry,&rdquo; or &ldquo;summer camp.&rdquo;</li>

@@ -1704,6 +1704,7 @@
     bindCountyFilter();
     bindToggles();
     bindDoorway();
+    loadHolidayMeals();
     bindSortAndPaging();
     el.search.addEventListener('input', function () {
       state.search = this.value.trim().toLowerCase();
@@ -1751,6 +1752,48 @@
       if (!notes) return;
       var clamped = notes.classList.toggle('vn-clamped');
       btn.textContent = clamped ? 'Read more' : 'Show less';
+    });
+  }
+
+  /* ---------- holiday meals ----------
+
+     A one-line strip above the steps, fed by data/holiday-meals.json. Each
+     meal carries an 'until' time and drops off once it has passed; the strip
+     hides when none are left. The heading names the occasion and says
+     "today" when every meal left is today, so it reads right on the day. */
+  function loadHolidayMeals() {
+    var box = document.getElementById('vn-holiday');
+    if (!box || !window.fetch) return;
+    fetch('/village-notes/data/holiday-meals.json', { cache: 'no-cache' })
+      .then(function (res) { return res.ok ? res.json() : { meals: [] }; })
+      .then(function (data) {
+        var now = new Date();
+        var meals = (data.meals || []).filter(function (m) {
+          var end = new Date(m.until);
+          return !isNaN(end) && end > now;
+        });
+        if (!meals.length) return;
+        var occasions = uniqueSorted(meals.map(function (m) { return m.occasion; }));
+        var today = now.toDateString();
+        var allToday = meals.every(function (m) { return new Date(m.until).toDateString() === today; });
+        var what = occasions.length === 1 ? occasions[0] : 'holiday';
+        document.getElementById('vn-holiday-title').textContent =
+          'Free ' + what + ' meals' + (allToday ? ' today' : '') + ' (' + meals.length + ')';
+        document.getElementById('vn-holiday-list').innerHTML = meals.map(function (m) {
+          var place = [m.town, m.address].filter(has).join(', ');
+          return '<li><strong>' + esc(m.name) + '</strong>' +
+            (place ? '<span class="vn-holiday-place">' + esc(place) + '</span>' : '') +
+            esc(m.when) + (has(m.details) ? ' ' + esc(m.details) : '') +
+            (has(m.phone) ? ' ' + linkPhones(m.phone) : '') + '</li>';
+        }).join('');
+        box.hidden = false;
+      })
+      .catch(function () {});
+    var btn = document.getElementById('vn-holiday-food');
+    if (btn) btn.addEventListener('click', function () {
+      el.track.value = 'Food & Basic Needs';
+      el.track.dispatchEvent(new Event('change'));
+      el.resultline.scrollIntoView({ block: 'start', behavior: 'smooth' });
     });
   }
 
