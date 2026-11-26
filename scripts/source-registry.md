@@ -25,7 +25,6 @@ now.
   DOMAIN                             N  VERIFIED     TRACKS
   ghymca.org                         5  never        Family & Childcare
   ctoec.org                          3  never        Family & Childcare
-  resources.211childcare.org         1  never        Family & Childcare
   search.211childcare.org            1  never        Family & Childcare
   bgcg.org                           1  never        Family & Childcare
   boysandgirlsclubofmilford.com      1  never        Family & Childcare
@@ -309,7 +308,6 @@ now.
   maltahouseofcare.org               1  2026-11-08   Health & Dental
   swchc.org                          1  2026-11-08   Health & Dental
   staywellhealth.org                 1  2026-11-08   Health & Dental
-  uconnhealth.org                    1  2026-11-08   Health & Dental
   mcc-ucc.org                        1  2026-11-14   Family & Childcare
   pa-nh.org                          1  2026-11-14   Health & Dental
   hplct.libnet.info                  1  2026-11-14   Food & Basic Needs
@@ -326,7 +324,6 @@ now.
   nhp.sites.yale.edu                 1  2026-11-20   Health & Dental
   pillarcdc.com                      1  2026-11-20   Health & Dental
   cccymca.org                        7  2026-11-21   Family & Childcare
-  hartfordhealthcare.org             4  2026-11-21   Elder Care, Health & Dental
   onha.yale.edu                      4  2026-11-21   Elder Care, Family & Childcare, Teens & High School
   thevillage.org                     2  2026-11-21   Family & Childcare
   ansonia.org                        1  2026-11-21   Family & Childcare
@@ -389,8 +386,11 @@ now.
   waterburyyouthservices.org         1  2026-11-25   Teens & High School
   portal.ct.gov                     49  2026-11-26   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
   cthumane.org                       7  2026-11-26   Pet Care & Resources
+  hartfordhealthcare.org             5  2026-11-26   Elder Care, Health & Dental
+  uconnhealth.org                    2  2026-11-26   Health & Dental
   law.uconn.edu                      2  2026-11-26   Family & Childcare, Food & Basic Needs
   va.gov                             2  2026-11-26   Family & Childcare, Health & Dental
+  resources.211childcare.org         1  2026-11-26   Family & Childcare
   ahelpingpawff.org                  1  2026-11-26   Pet Care & Resources
   bethelcenterconnecticut.org        1  2026-11-26   Food & Basic Needs
   choreservice.org                   1  2026-11-26   Elder Care
@@ -402,6 +402,7 @@ now.
   homesforthebrave.org               1  2026-11-26   Family & Childcare
   militaryonesource.mil              1  2026-11-26   Family & Childcare
   svdpp.org                          1  2026-11-26   Food & Basic Needs
+  ynhhs.org                          1  2026-11-26   Health & Dental
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -426,7 +427,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 580 of 987 listings (59%) carry a Website, so
+Only 583 of 990 listings (59%) carry a Website, so
 everything above is built from that third of the directory. The other
 407 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -436,7 +437,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-34 of the 379 domains here have never had a Last Verified on
+33 of the 380 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```
