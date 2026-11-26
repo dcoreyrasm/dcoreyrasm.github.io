@@ -333,22 +333,34 @@ now.
   stthomasnorwalk.org                1  2026-11-21   Family & Childcare
   svdpmission.org                    1  2026-11-21   Family & Childcare
   handsonhartford.org                3  2026-11-25   Food & Basic Needs
+  crtct.org                          2  2026-11-25   Family & Childcare
   irisct.org                         2  2026-11-25   Family & Childcare
   windhamct.gov                      2  2026-11-25   Family & Childcare
+  ucpect.org                         2  2026-11-25   Family & Childcare
   abilitybeyond.org                  1  2026-11-25   Food & Basic Needs
   accessaccounting.org               1  2026-11-25   Family & Childcare
   accessagency.org                   1  2026-11-25   Family & Childcare
+  alwayshome.org                     1  2026-11-25   Family & Childcare
   asdcommunityinterpreting.com       1  2026-11-25   Family & Childcare
+  bportlibrary.org                   1  2026-11-25   Family & Childcare
   b1c.org                            1  2026-11-25   Family & Childcare
+  burnhamlibrary.org                 1  2026-11-25   Family & Childcare
+  cafafct.org                        1  2026-11-25   Family & Childcare
   thecarolinehouse.org               1  2026-11-25   Family & Childcare
+  catalystct.org                     1  2026-11-25   Teens & High School
+  ccfairfield.org                    1  2026-11-25   Family & Childcare
+  ccp-ct.org                         1  2026-11-25   Family & Childcare
   coabode.org                        1  2026-11-25   Family & Childcare
   criwct.org                         1  2026-11-25   Family & Childcare
   communityaccountingservices.weebly.com   1  2026-11-25   Family & Childcare
-  cirict.org                         1  2026-11-25   Family & Childcare
-  crtct.org                          1  2026-11-25   Family & Childcare
+  ccpg.org                           1  2026-11-25   Family & Childcare
+  ctbeds.org                         1  2026-11-25   Food & Basic Needs
+  db.ctfairhousing.com               1  2026-11-25   Family & Childcare
+  midfairfieldcounty.dressforsuccess.org   1  2026-11-25   Family & Childcare
   hartford.easterseals.com           1  2026-11-25   Family & Childcare
   elenaslight.org                    1  2026-11-25   Family & Childcare
   evictionhelpct.org                 1  2026-11-25   Food & Basic Needs
+  familyandchildrensagency.org       1  2026-11-25   Family & Childcare
   ectcinc.org                        1  2026-11-25   Family & Childcare
   financialplanningassociation.org   1  2026-11-25   Family & Childcare
   genhealth.org                      1  2026-11-25   Health & Dental
@@ -365,6 +377,7 @@ now.
   sistersplacect.org                 1  2026-11-25   Food & Basic Needs
   nationalsharedhousing.org          1  2026-11-25   Food & Basic Needs
   nhlegal.org                        1  2026-11-25   Elder Care
+  outct.org                          1  2026-11-25   Teens & High School
   p2phelps.org                       1  2026-11-25   Food & Basic Needs
   ruthshousect.com                   1  2026-11-25   Food & Basic Needs
   hollanderhouse.org                 1  2026-11-25   Food & Basic Needs
@@ -372,12 +385,22 @@ now.
   spareroom.com                      1  2026-11-25   Food & Basic Needs
   tailcproject.org                   1  2026-11-25   Family & Childcare
   torringtonct.gov                   1  2026-11-25   Family & Childcare
+  health.uconn.edu                   1  2026-11-25   Family & Childcare
   law.uconn.edu                      1  2026-11-25   Family & Childcare
-  ucpect.org                         1  2026-11-25   Family & Childcare
-  va.gov                             1  2026-11-25   Family & Childcare
-  portal.ct.gov                     41  2026-11-26   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
+  waterburyyouthservices.org         1  2026-11-25   Teens & High School
+  portal.ct.gov                     47  2026-11-26   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
   cthumane.org                       7  2026-11-26   Pet Care & Resources
+  va.gov                             2  2026-11-26   Family & Childcare, Health & Dental
+  ahelpingpawff.org                  1  2026-11-26   Pet Care & Resources
+  bethelcenterconnecticut.org        1  2026-11-26   Food & Basic Needs
   choreservice.org                   1  2026-11-26   Elder Care
+  cirict.org                         1  2026-11-26   Family & Childcare
+  ctprobate.gov                      1  2026-11-26   Family & Childcare
+  ctveteranslegal.org                1  2026-11-26   Family & Childcare
+  thediaperbank.org                  1  2026-11-26   Family & Childcare
+  nbhelps.org                        1  2026-11-26   Food & Basic Needs
+  homesforthebrave.org               1  2026-11-26   Family & Childcare
+  militaryonesource.mil              1  2026-11-26   Family & Childcare
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -402,7 +425,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 544 of 951 listings (57%) carry a Website, so
+Only 576 of 983 listings (59%) carry a Website, so
 everything above is built from that third of the directory. The other
 407 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -412,7 +435,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-34 of the 355 domains here have never had a Last Verified on
+34 of the 378 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```

@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-26T12:07:49.943Z",
+  "generated": "2026-11-26T13:19:55.252Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 951,
+  "count": 983,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -105,8 +105,13 @@
     "Bridgeport",
     "Bridgeport, CT",
     "Bridgeport, Danbury, Norwalk and Stamford service areas",
+    "Bridgeport, Danbury, Stamford, Torrington and Waterbury",
     "Bridgeport, Stamford, Norwalk, New Haven and Connecticut locations; schedule varies",
+    "Bridgeport; CT library-card rules",
+    "Bridgeport/Fairfield County; confirm case jurisdiction",
+    "Bridgeport/Mid-Fairfield County; confirm referral reach",
     "Bridgewater",
+    "Bridgewater; confirm borrower eligibility",
     "Bristol",
     "Brookfield",
     "Brooklyn",
@@ -121,6 +126,7 @@
     "Colebrook",
     "Columbia",
     "Connecticut",
+    "Connecticut eligibility; Norwalk-based provider",
     "Connecticut statewide",
     "Connecticut VA system",
     "Connecticut; confirm assignment location",
@@ -128,11 +134,13 @@
     "Connecticut; eligible nonprofits",
     "Connecticut; host locations by arrangement",
     "Connecticut; New Haven and Hartford",
+    "Connecticut; online",
     "Connecticut; participating community sites",
     "Connecticut; rotating community sites",
     "Connecticut; rotating host locations",
     "Connecticut; Trumbull mailing address",
     "Connecticut; UConn School of Law",
+    "Connecticut; Waterford/Stratford service locations",
     "Cornwall",
     "Cornwall, Falls Village, Goshen, Kent, Litchfield, Morris, Norfolk, North Canaan, Roxbury, Salisbury/Lakeville, Sharon, Warren, Washington",
     "Coventry",
@@ -153,11 +161,13 @@
     "Enfield",
     "Fairfield",
     "Fairfield / Bridgeport",
+    "Fairfield County",
     "Farmington",
     "Franklin",
     "Glastonbury",
     "Goshen",
     "Granby",
+    "Greater Bridgeport",
     "Greater Hartford service area; 50 specified towns",
     "Greater Hartford, CT",
     "Greater Hartford; Hartford and East Hartford",
@@ -188,11 +198,13 @@
     "Middlebury",
     "Middletown",
     "Milford",
+    "Milford; Greater New Haven CAN service area",
     "Monroe",
     "Montville",
     "Moodus",
     "Morris",
     "Mystic",
+    "National service accessible to eligible Connecticut households",
     "National; event-based locations",
     "Nationwide online matching; Connecticut matches depend on members",
     "Naugatuck",
@@ -201,9 +213,11 @@
     "New Fairfield",
     "New Hartford",
     "New Haven",
+    "New Haven-based; Connecticut families",
     "New Haven, CT",
     "New Haven; remote services nationwide",
     "New London",
+    "New London and Windham counties",
     "New Milford",
     "Newington",
     "Newtown",
@@ -242,6 +256,7 @@
     "Sherman",
     "South Windham",
     "Southbury",
+    "Southeastern Connecticut; location varies",
     "Southington",
     "Sprague",
     "Stafford",
@@ -250,6 +265,8 @@
     "Statewide",
     "Statewide (all of Connecticut)",
     "Statewide Connecticut",
+    "Statewide Connecticut; online access",
+    "Statewide CT records/jurisdiction rules",
     "Statewide CT; Bridgeport, Stamford, Hartford, Waterbury and New Haven offices",
     "Statewide CT; DMHAS programs",
     "Statewide participating providers",
@@ -268,12 +285,14 @@
     "Trumbull, CT",
     "Union",
     "United States directory; check individual program service areas",
+    "VA Connecticut system",
     "Vernon",
     "Voluntown",
     "Wallingford",
     "Warren",
     "Washington",
     "Waterbury",
+    "Waterbury DCF region",
     "Waterbury; Naugatuck",
     "Waterford",
     "Watertown",
@@ -363,6 +382,21 @@
       "dateSubmitted": "2026-08-25",
       "notes": "Official State of Connecticut resource page verified 2026-08-25.",
       "tags": "birth-to-three / early intervention"
+    },
+    {
+      "id": "recNKQbNM7calwvWF",
+      "name": "A Helping Paw: Fairfield County Pet Assistance",
+      "track": "Pet Care & Resources",
+      "category": "Pet Food Assistance",
+      "specificType": "Provider describes pet food and veterinary support for seniors, homebound people and others facing hardship in Fairfield County. Contact provider for current intake, qualifying conditions, funding and veterinary arrangements.",
+      "town": "Fairfield County",
+      "cost": "Financial help subject to program review; no universal free veterinary care claim.",
+      "website": "https://ahelpingpawff.org/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider page reviewed November 26, 2026; duplicate check by provider URL. Access details not published or independently confirmed: languages/interpreters, physical access, off-hours/remote service, denied-applicant alternatives and coordinated follow-up. Contact provider before relying on availability. Existing category used for best available fit; specific description/tags control scope.",
+      "lastVerified": "2026-11-26",
+      "tags": "pet food, veterinary financial help, seniors with pets, homebound pet owners, fairfield county"
     },
     {
       "id": "recwnBGQj3NfGCPsr",
@@ -966,6 +1000,24 @@
       "tags": "center-based daycare, childcare, bridgeport"
     },
     {
+      "id": "recXXpaK2jZnNYC2g",
+      "name": "Always Home Wheels to Work",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Financial help may cover car repairs, license renewal, insurance/registration for eligible employed families. Sales tax remains owner's responsibility.",
+      "town": "New London and Windham counties",
+      "ages": "Low-income employed households with legal custody of minor children in New London/Windham counties.",
+      "availability": "No guaranteed car or repair grant; current funding/capacity unknown.",
+      "cost": "Assistance subject to eligibility/funds; confirm limits and any personal costs.",
+      "website": "https://www.alwayshome.org/wheels-to-work",
+      "contact": "Official Get Help intake linked from provider page.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.alwayshome.org/wheels-to-work. No guaranteed car or repair grant; current funding/capacity unknown. Documents, denial alternatives, language access and evening/weekend intake unknown. Eligibility limited to employed low-income households with minor children in New London/Windham counties.",
+      "lastVerified": "2026-11-25",
+      "tags": "car repair, transportation, employment support, family support"
+    },
+    {
       "id": "recp8xEIMvGQjXETm",
       "name": "Alzheimer's Association Connecticut Chapter Caregiver Support Groups",
       "track": "Elder Care",
@@ -1423,6 +1475,21 @@
       "notes": "Official source checked November 25, 2026: https://portal.ct.gov/ads/knowledge-base/articles/about-ads/ads-service-bureaus/about-the-bureau-of-education-and-services-for-the-blind. Contact intake for eligibility; not every low-vision program accepts all levels of vision loss. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
       "lastVerified": "2026-11-25",
       "tags": "blind, low vision, assistive technology, independent living, employment support"
+    },
+    {
+      "id": "recw4Z6Of3uNyTYv5",
+      "name": "Beth-El Center: Community Meals and Housing Diversion",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "Public community kitchen seven days/week, two meals/day. Housing diversion accepts walk-ins without first calling 211; same-day assistance whenever possible. May offer mediation, relocation or upfront housing help based on circumstances and available funds. Greater New Haven CAN shoreline Milford through Madison and Lower Naugatuck Valley. No guaranteed shelter placement.",
+      "town": "Milford; Greater New Haven CAN service area",
+      "cost": "Meal cost not explicitly stated on reviewed page. Financial assistance conditional.",
+      "website": "https://www.bethelcenterconnecticut.org/gethelp",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider page reviewed November 26, 2026; duplicate check by provider URL. Access details not published or independently confirmed: languages/interpreters, physical access, off-hours/remote service, denied-applicant alternatives and coordinated follow-up. Contact provider before relying on availability. Existing category used for best available fit; specific description/tags control scope.",
+      "lastVerified": "2026-11-26",
+      "tags": "community meals, housing diversion, walk-in housing help, mediation, relocation assistance, milford"
     },
     {
       "id": "rec6P4XU8pzUyTJx3",
@@ -2297,6 +2364,24 @@
       "tags": "mobile food distribution, bridgeport"
     },
     {
+      "id": "recvcD90Uu6Z6spr2",
+      "name": "Bridgeport Public Library Museum Passes",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Passes for free or discounted admission at participating museums/cultural sites. Each pass has different limits and reservation rules.",
+      "town": "Bridgeport; CT library-card rules",
+      "ages": "Confirm valid CT library card, age and borrowing requirements.",
+      "availability": "No pass stock/date guaranteed. Not every museum or family member admitted free.",
+      "cost": "Free/discounted admission varies by pass; some require paid admissions.",
+      "website": "https://bportlibrary.org/museum-passes/",
+      "contact": "Library circulation; reservation information on official page.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://bportlibrary.org/museum-passes/. No pass stock/date guaranteed. Not every museum or family member admitted free. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.",
+      "lastVerified": "2026-11-25",
+      "tags": "museum passes, affordable recreation, library resources, family activities"
+    },
+    {
       "id": "recokakJq7XyeH5YT",
       "name": "Bridgeport Regional Aquaculture Science and Technology Education Center",
       "track": "Teens & High School",
@@ -2951,6 +3036,42 @@
         "Paid Youth Employment"
       ],
       "tags": "magnet / specialty school, teen resources, high school, bridgeport"
+    },
+    {
+      "id": "recrinwI3jB9wL9k6",
+      "name": "Burnham Library Museum Passes",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Free/reduced-price admission pass program for participating cultural organizations.",
+      "town": "Bridgewater; confirm borrower eligibility",
+      "ages": "Confirm library card, age, residency and borrowing requirements.",
+      "availability": "Confirm reservation, pass availability and destination accessibility.",
+      "cost": "Admission discount and borrower costs depend on pass.",
+      "website": "https://burnhamlibrary.org/museum-pass/",
+      "contact": "860-354-6937",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://burnhamlibrary.org/museum-pass/. Confirm reservation, pass availability and destination accessibility. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.\n\nDirectory note (2026-11-26): Published with an open detail. Who may borrow these passes is not confirmed. Ask the library about eligibility and reserving a pass.",
+      "lastVerified": "2026-11-25",
+      "tags": "museum passes, affordable recreation, library resources, litchfield county, check eligibility first"
+    },
+    {
+      "id": "recz4tfNdvdTPLeI7",
+      "name": "CAFAF – Foster, Adoptive and Kinship Caregiver Support",
+      "track": "Family & Childcare",
+      "category": "Parenting Support/Classes",
+      "specificType": "Caregiver support groups, area support liaisons, buddy support, training, Children's Hope Fund and open-adoption support resources. Confirm individual-program eligibility and funding.",
+      "town": "Statewide Connecticut",
+      "ages": "Foster, adoptive and kinship caregivers; eligibility varies.",
+      "availability": "24-hour caregiver support described; grant/fund awards and matches not guaranteed. Current wait/capacity unknown.",
+      "cost": "Service fees vary or unconfirmed; do not assume every program is free.",
+      "website": "https://cafafct.org/resources/",
+      "contact": "Official contact page; 24-hour caregiver support available per provider.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://cafafct.org/resources/. 24-hour caregiver support described; grant/fund awards and matches not guaranteed. Language/disability access, documents, alternatives if denied, off-hours and remote options unknown unless specified. Existing closest category used.",
+      "lastVerified": "2026-11-25",
+      "tags": "foster care, adoption support, kinship care, peer support, caregiver support"
     },
     {
       "id": "recm33ccmKUtds7u6",
@@ -3665,6 +3786,24 @@
       "tags": "center-based daycare, childcare, colchester"
     },
     {
+      "id": "rec7BTajegCCbMQYk",
+      "name": "Catalyst CT Juvenile Mediation",
+      "track": "Teens & High School",
+      "category": "Legal/HR Resource",
+      "specificType": "Restorative juvenile mediation for justice-involved youth and affected parties; referrals from courts, review boards and schools.",
+      "town": "Bridgeport, Danbury, Stamford, Torrington and Waterbury",
+      "ages": "Youth served by specified court/school/referral partners.",
+      "availability": "Not a general divorce/custody mediation program; eligibility and safety screening apply.",
+      "cost": "Cost not stated; confirm.",
+      "website": "https://catalystct.org/mediation-program/",
+      "contact": "lmckenna@ryasap.org for other referral sources.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://catalystct.org/mediation-program/. Not a general divorce/custody mediation program; eligibility and safety screening apply. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.",
+      "lastVerified": "2026-11-25",
+      "tags": "youth mediation, restorative justice, conflict resolution, youth support"
+    },
+    {
       "id": "recljVZv4GaBLGEqm",
       "name": "Catholic Charities Child Development Center",
       "track": "Family & Childcare",
@@ -3739,6 +3878,24 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, new haven"
+    },
+    {
+      "id": "recbxWR2sLpg6OA8h",
+      "name": "Catholic Charities Fairfield County – Right to Know Services",
+      "track": "Family & Childcare",
+      "category": "Parenting Support/Classes",
+      "specificType": "Adoption-information requests, lawful search/outreach, contact preferences, support before/after reunion and counseling referrals.",
+      "town": "Bridgeport/Fairfield County; confirm case jurisdiction",
+      "ages": "Adult adoptees, birth parents and qualifying biological relatives; law/case records govern access.",
+      "availability": "Information/contact cannot be guaranteed; confidentiality and legal restrictions apply. Current wait/capacity unknown.",
+      "cost": "Fees may apply; amount unconfirmed.",
+      "website": "https://www.ccfairfield.org/project/right-to-know-services/",
+      "contact": "203-416-1336; Mon–Fri 8:30 AM–4:30 PM.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.ccfairfield.org/project/right-to-know-services/. Information/contact cannot be guaranteed; confidentiality and legal restrictions apply. Language/disability access, documents, alternatives if denied, off-hours and remote options unknown unless specified. Existing closest category used.\n\nDirectory note (2026-11-26): Published with an open detail. Which cases and jurisdictions this service covers is not confirmed, and confidentiality and legal restrictions apply.",
+      "lastVerified": "2026-11-25",
+      "tags": "adult adoptees, adoption records, birth family support, reunion support, check eligibility first"
     },
     {
       "id": "recJdCjLx4DSO79zB",
@@ -4191,6 +4348,24 @@
         "Preschool / Pre-K"
       ],
       "tags": "center-based daycare, childcare, newtown"
+    },
+    {
+      "id": "recrFrO7qA569TadX",
+      "name": "Children’s Community Programs – Foster Family Recruitment, Training and Support",
+      "track": "Family & Childcare",
+      "category": "Parenting Support/Classes",
+      "specificType": "Foster-family recruitment/training and ongoing care-manager support; provider describes support for foster and kinship families across Connecticut.",
+      "town": "New Haven-based; Connecticut families",
+      "ages": "Prospective/current foster/kinship caregivers; confirm program and licensing criteria.",
+      "availability": "Not general babysitting/respite available to everyone; confirm intake and regional program eligibility. Current wait/capacity unknown.",
+      "cost": "Costs/payments and funding eligibility unconfirmed.",
+      "website": "https://www.ccp-ct.org/foster-family-recruitment/",
+      "contact": "203-786-6403",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.ccp-ct.org/foster-family-recruitment/. Not general babysitting/respite available to everyone; confirm intake and regional program eligibility. Language/disability access, documents, alternatives if denied, off-hours and remote options unknown unless specified. Existing closest category used.",
+      "lastVerified": "2026-11-25",
+      "tags": "foster care, kinship care, foster parent training, family support"
     },
     {
       "id": "rec90HTgsw6MPsO5W",
@@ -4914,6 +5089,42 @@
       "tags": "colorectal cancer, colonoscopy, cancer screening, uninsured"
     },
     {
+      "id": "recoaRiywudKu66Bw",
+      "name": "Connecticut Council on Problem Gambling – Help and Referrals",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Support/referrals for people affected by gambling and their relatives. Live chat alternative to telephone; links to regional treatment and peer support.",
+      "town": "Statewide Connecticut; online access",
+      "ages": "Individuals affected by gambling, relatives/friends and others seeking help.",
+      "availability": "Referral/support service, not a guarantee of immediate treatment. Detailed age/access rules unknown.",
+      "cost": "Free described support/referral; treatment eligibility/cost separate.",
+      "website": "https://ccpg.org/get-help/",
+      "contact": "Live chat and help options on official page.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://ccpg.org/get-help/. Referral/support service, not a guarantee of immediate treatment. Detailed age/access rules unknown. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.",
+      "lastVerified": "2026-11-25",
+      "tags": "gambling support, family support, recovery resources, live chat"
+    },
+    {
+      "id": "recoJbnTFQ1v27Eot",
+      "name": "Connecticut DCF – Foster Care and Adoption Information",
+      "track": "Family & Childcare",
+      "category": "Parenting Support/Classes",
+      "specificType": "Official starting point for fostering/adoption inquiries and links to caregiver support. Foster care may support reunification; it is not a promise of an adoptive placement.",
+      "town": "Statewide Connecticut",
+      "ages": "Prospective/current caregivers; formal assessment and licensing requirements apply.",
+      "availability": "Inquiry is not approval, licensure or placement; current orientation dates unknown. Current wait/capacity unknown.",
+      "cost": "Confirm licensing/adoption costs, payments and eligibility with agency.",
+      "website": "https://portal.ct.gov/dcf/foster-care-and-adoption",
+      "contact": "1-888-543-4376; electronic inquiry linked on official page.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://portal.ct.gov/dcf/foster-care-and-adoption. Inquiry is not approval, licensure or placement; current orientation dates unknown. Language/disability access, documents, alternatives if denied, off-hours and remote options unknown unless specified. Existing closest category used.",
+      "lastVerified": "2026-11-25",
+      "tags": "foster care, adoption information, foster parent training, caregiver support"
+    },
+    {
       "id": "recljZjRjUNjxSTB8",
       "name": "Connecticut DDS Family Supports and Services",
       "track": "Family & Childcare",
@@ -4927,6 +5138,21 @@
       "notes": "Official Connecticut DDS website reviewed October 27 2026. Eligibility and availability must be confirmed with DDS.",
       "lastVerified": "2026-10-27",
       "tags": "developmental disability, intellectual disability, respite, family grants, in-home support"
+    },
+    {
+      "id": "rec6gc4KNDNKkqqkN",
+      "name": "Connecticut DEEP: Residential Energy Preparation Services",
+      "track": "Food & Basic Needs",
+      "category": "Utility & Heating Assistance",
+      "specificType": "REPS addresses health and safety barriers for qualifying income-eligible homes deferred from weatherization or HES-IE. Includes specified minor repairs and safety issues; waitlist/intake eligibility applies. Not general home renovation funding.",
+      "town": "Statewide Connecticut",
+      "cost": "Program-specific eligibility and covered work require assessment.",
+      "website": "https://portal.ct.gov/deep/energy/conservation-and-load-management/weatherization-barrier-mitigation",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider page reviewed November 26, 2026; duplicate check by provider URL. Access details not published or independently confirmed: languages/interpreters, physical access, off-hours/remote service, denied-applicant alternatives and coordinated follow-up. Contact provider before relying on availability. Existing category used for best available fit; specific description/tags control scope.",
+      "lastVerified": "2026-11-26",
+      "tags": "weatherization barriers, minor home repairs, energy efficiency, home safety, reps"
     },
     {
       "id": "recs16DGqeU7qTtLn",
@@ -4981,6 +5207,24 @@
       "tags": "dental care, donated dental services, seniors, disability, free dental, teeth"
     },
     {
+      "id": "rec7scaTXwvMx53dy",
+      "name": "Connecticut DPH – Adoption Birth Certificate and Foreign Birth Information",
+      "track": "Family & Childcare",
+      "category": "Parenting Support/Classes",
+      "specificType": "Official guidance on adopted-person birth certificates, foreign-birth certificates and informational uncertified original birth records. Original record differs from certified identity documentation.",
+      "town": "Statewide CT records/jurisdiction rules",
+      "ages": "Record-specific eligibility; original record request generally adult adoptee 18+ or adult child/grandchild, subject to official rules.",
+      "availability": "Informational original certificate cannot serve as legal proof of identity. Do not use old forms with superseded adoption-date limits. Current wait/capacity unknown.",
+      "cost": "Fees apply; check official current form/receiving office.",
+      "website": "https://portal.ct.gov/dph/vital-records/adoptions-and-foreign-births",
+      "contact": "Town-of-birth vital records for qualifying original record; DCF Adoption Search Unit 860-550-6582 for related information.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://portal.ct.gov/dph/vital-records/adoptions-and-foreign-births. Informational original certificate cannot serve as legal proof of identity. Do not use old forms with superseded adoption-date limits. Language/disability access, documents, alternatives if denied, off-hours and remote options unknown unless specified. Existing closest category used.",
+      "lastVerified": "2026-11-25",
+      "tags": "adult adoptees, adoption records, birth certificate, document assistance"
+    },
+    {
       "id": "reccaN4QiSyHTpXDv",
       "name": "Connecticut DPH: Replacement Birth Certificate Applications",
       "track": "Food & Basic Needs",
@@ -4996,6 +5240,21 @@
       "notes": "Access review 2026-11-26: Intake/capacity, exact documents beyond published requirements, interpreter/ASL availability, accessible forms, evening access, transport/childcare, denied-applicant alternatives and hands-on application completion/follow-up remain unconfirmed unless specifically stated. Source is official provider page. Online forms alone are not evidence of personal application help.\nUser review approval 2026-11-26: Darice instructed that requests to add identified resources count as reviewed. Applied to this explicitly accepted five-resource batch. Published is the existing approved moderation state; source/access unknowns retained.",
       "lastVerified": "2026-11-26",
       "tags": "birth certificate replacement, identity documents, document recovery, vital records"
+    },
+    {
+      "id": "rec5dvw3Tk30rJS3K",
+      "name": "Connecticut DSS: Funeral and Burial Allowance",
+      "track": "Food & Basic Needs",
+      "category": "Legal/HR Resource",
+      "specificType": "Assistance for eligible people with limited means. Funeral director, family member or person arranging services may apply. Application within one year after death. Amount, resources, payment rules and documents require DSS determination.",
+      "town": "Statewide Connecticut",
+      "cost": "Conditional allowance; not universal payment of funeral expenses.",
+      "website": "https://portal.ct.gov/dss/knowledge-base/articles/cash-assistance/funeral-and-burial-allowance",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider page reviewed November 26, 2026; duplicate check by provider URL. Access details not published or independently confirmed: languages/interpreters, physical access, off-hours/remote service, denied-applicant alternatives and coordinated follow-up. Contact provider before relying on availability. Existing category used for best available fit; specific description/tags control scope.",
+      "lastVerified": "2026-11-26",
+      "tags": "funeral assistance, burial allowance, bereavement practical help, dss"
     },
     {
       "id": "recjryIj1A0AQkyjj",
@@ -5366,15 +5625,16 @@
       "specificType": "Immigration legal assistance and refugee/immigrant support. Contact staff for program-specific eligibility and referrals. Legal appointments normally weekdays 9 AM–5 PM; no evening/weekend appointments stated.",
       "town": "Statewide CT; Bridgeport, Stamford, Hartford, Waterbury and New Haven offices",
       "ages": "Refugees, immigrants, unaccompanied children and trafficking survivors; program eligibility varies",
+      "hours": "Legal appointments typically weekdays9AM–5PM; no night/weekend appointments per official FAQ.",
       "availability": "Current openings and wait times unconfirmed. Contact provider.",
       "cost": "Costs vary or are unconfirmed; contact provider.",
       "website": "https://cirict.org/faq/",
-      "contact": "(203) 336-0141",
+      "contact": "Bridgeport/New Haven203-336-0141; Stamford203-965-7190; Hartford/Waterbury860-692-3085",
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-11-25",
-      "notes": "Official source checked November 25, 2026: https://cirict.org/faq/. Costs, current openings, detailed eligibility, transportation and accessibility require provider confirmation unless specified.",
-      "lastVerified": "2026-11-25",
-      "tags": "refugee support, immigrant support, immigration legal help, family support, community resources"
+      "notes": "Official FAQ rechecked2026-11-26. Call selected office and leave name/number for appointment; bring immigration applications/notices, travel/identity/immigration records, income information and relevant case evidence. Program eligibility varies; current costs, openings, interpreter/disability access and transport not established. Published preserved. Source https://cirict.org/faq/.",
+      "lastVerified": "2026-11-26",
+      "tags": "refugee support, immigrant support, immigration legal help, family support, community resources, legal consultation documents"
     },
     {
       "id": "recV4hWQ0gAGxvBGV",
@@ -5544,6 +5804,21 @@
       "tags": "parenting support/classes"
     },
     {
+      "id": "recnS4Byqpn9Fw8Go",
+      "name": "Connecticut OHA: Free Health Insurance and Medical Bill Advocacy",
+      "track": "Health & Dental",
+      "category": "Legal/HR Resource",
+      "specificType": "Free help understanding coverage, claim denials, prior authorizations, hospital bills, care complaints and wheelchair repair delays. Online request assistance option. Advocacy is not guaranteed payment or court representation.",
+      "town": "Statewide Connecticut",
+      "cost": "Free advocacy. Bills or treatments are not automatically free.",
+      "website": "https://portal.ct.gov/oha/get-help",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider page reviewed November 26, 2026; duplicate check by provider URL. Access details not published or independently confirmed: languages/interpreters, physical access, off-hours/remote service, denied-applicant alternatives and coordinated follow-up. Contact provider before relying on availability. Existing category used for best available fit; specific description/tags control scope.",
+      "lastVerified": "2026-11-26",
+      "tags": "health insurance appeals, medical bills, hospital billing help, wheelchair repairs, free advocacy"
+    },
+    {
       "id": "recmYCvjvUPCxO1IH",
       "name": "Connecticut OHE Know B4 You Enroll / Credential Registry",
       "track": "Teens & High School",
@@ -5620,6 +5895,21 @@
       ],
       "lastVerified": "2026-09-19",
       "tags": "parenting support/classes"
+    },
+    {
+      "id": "recCwpXbCQhlejj3Z",
+      "name": "Connecticut Probate Courts: Kinship and Family Respite Funds",
+      "track": "Family & Childcare",
+      "category": "Caregiver Support Group",
+      "specificType": "Court-appointed guardians and qualifying temporary custodians of minors may apply. Requires fee-waiver eligibility or judicial finding of need, no DCF benefits/subsidies, documentation and judicial approval. Kinship up to $550/child/year, $2200/family; respite up to $2200/year. Informal kinship care alone does not establish eligibility.",
+      "town": "Statewide Connecticut",
+      "cost": "Grants subject to eligibility and authorization; not guaranteed.",
+      "website": "https://www.ctprobate.gov/childrens-matters/kinship-respite-funds",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider page reviewed November 26, 2026; duplicate check by provider URL. Access details not published or independently confirmed: languages/interpreters, physical access, off-hours/remote service, denied-applicant alternatives and coordinated follow-up. Contact provider before relying on availability. Existing category used for best available fit; specific description/tags control scope.",
+      "lastVerified": "2026-11-26",
+      "tags": "kinship care, grandparents raising children, guardian financial help, respite funds, school supplies"
     },
     {
       "id": "recr1Zns1rQBDtn67",
@@ -5764,7 +6054,7 @@
       "specificType": "Veteran-directed home and community care with an individual budget and caregiver choice",
       "town": "Statewide",
       "ages": "Eligible Connecticut veterans referred and screened through the VA Connecticut Healthcare System",
-      "availability": "A VA medical center must first refer and prescreen the veteran. The appropriate Area Agency on Aging then coordinates assessment and services.",
+      "availability": "VA Medical Center must refer and prescreen; AAA further assessment and coordination. Eligibility assessment does not establish current availability.",
       "website": "https://portal.ct.gov/ads/knowledge-base/articles/independent-living-services/healthy-living-services/connecticut-veterans-directed-care-program",
       "contact": "Area Agency on Aging: 1-800-994-9422; Connecticut Veterans Affairs advocacy: 860-616-3683",
       "townsServed": [
@@ -5772,8 +6062,9 @@
       ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
-      "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. Access begins through a VA referral.",
-      "tags": "veterans benefits counseling, senior services, caregiver support"
+      "notes": "Official ADS source rechecked 2026-11-26. VA Medical Center referral/prescreen then Area Agency on Aging assessment required. CT resident needing community-based support and able to manage PCA employment or have representative; preference service-connected disability. Fiscal management assists payroll, budgets and employer tax paperwork. Family members may serve as PCAs subject to program rules. Current enrollment, fees, languages, accessibility and alternatives if denied unknown. Existing Published preserved.",
+      "lastVerified": "2026-11-26",
+      "tags": "veterans, home care, caregiver support, self directed care, respite, application assistance"
     },
     {
       "id": "recGO7gtLfnFYO2dj",
@@ -5792,6 +6083,22 @@
       "notes": "Official source checked November 25, 2026: https://portal.ct.gov/dva/knowledge-base/articles/advocacy-and-assistance/state-veterans-resources/bus-passes-for-veterans?language=en_US. Not a promise of free rail, intercity bus, paratransit or every transit operator. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
       "lastVerified": "2026-11-25",
       "tags": "veterans, transportation, bus pass, public transit"
+    },
+    {
+      "id": "recjTWGsJiaN4OQdz",
+      "name": "Connecticut Veterans Legal Center: Legal Intake and Representation",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Free legal representation, advice and referrals for Connecticut veterans; prioritizes low income. Works with veterans in treatment for mental health/substance-use challenges and/or homelessness. Provider referral packet required before screening; referring professional need not be VA-affiliated. Eligibility and case acceptance assessed individually.",
+      "town": "Statewide Connecticut",
+      "cost": "Free legal services; acceptance and scope conditional.",
+      "website": "https://ctveteranslegal.org/veterans/",
+      "contact": "intakes@ctveteranslegal.org; intake 203-479-0375; text 203-275-9186",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked 2026-11-26. New lead independently found during approved search-area expansion; Pending Review, not approval of this previously unidentified provider. Guard/Reserve/spouse/survivor/discharge eligibility, languages/ASL/accessibility, documents, current openings and transport unknown unless specifically stated. Online referral is not guarantee of placement or representation.\nApproval update 2026-11-26: Darice explicitly stated 'Reviewed. Publish these' for this four-resource veterans/military-family batch. Status changed Pending Review to Published. Prior pending note is historical; eligibility/access caveats retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "veterans, legal representation, discharge upgrades, va benefits, housing legal help"
     },
     {
       "id": "recLq392E3JoAHR1e",
@@ -5858,6 +6165,21 @@
         "Parent / Family Support"
       ],
       "tags": "parenting support/classes"
+    },
+    {
+      "id": "recvJrtCPYiHDKAUi",
+      "name": "Connecticut Winter Protection Program",
+      "track": "Food & Basic Needs",
+      "category": "Utility & Heating Assistance",
+      "specificType": "Eligible hardship-designated utility customers may receive winter shutoff protection November 1 through May 1. Contact utility or community action agency for qualification and required documentation. Protection does not erase bills; payment and assistance planning remain necessary.",
+      "town": "Statewide Connecticut",
+      "cost": "Shutoff protection, not bill forgiveness.",
+      "website": "https://portal.ct.gov/heatinghelp/winter-protection-program?language=en_US",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider page reviewed November 26, 2026; duplicate check by provider URL. Access details not published or independently confirmed: languages/interpreters, physical access, off-hours/remote service, denied-applicant alternatives and coordinated follow-up. Contact provider before relying on availability. Existing category used for best available fit; specific description/tags control scope.",
+      "lastVerified": "2026-11-26",
+      "tags": "winter shutoff protection, utility hardship, heating assistance, energy bills"
     },
     {
       "id": "recFQJe7wxWFwocq1",
@@ -6303,6 +6625,24 @@
       "tags": "center-based daycare, childcare, hartford"
     },
     {
+      "id": "rec9uvPmyiP2VcoDP",
+      "name": "CRT Real Fathers, Real Men",
+      "track": "Family & Childcare",
+      "category": "Parenting Support/Classes",
+      "specificType": "Educational/peer fatherhood and co-parenting support, job leads and eligible child-support-arrearage help. Weekly meetings, no appointment needed.",
+      "town": "Hartford",
+      "ages": "Fathers and men over 18; confirm program eligibility.",
+      "availability": "Office Mon–Fri 8 AM–4 PM; confirm group time. No promise of arrearage relief.",
+      "cost": "Cost not confirmed on reviewed page.",
+      "website": "https://www.crtct.org/programs/health-wellness/fatherhood-initiative/",
+      "contact": "860-761-7908",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.crtct.org/programs/health-wellness/fatherhood-initiative/. Office Mon–Fri 8 AM–4 PM; confirm group time. No promise of arrearage relief. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.",
+      "lastVerified": "2026-11-25",
+      "tags": "fathers, fatherhood, co-parenting, parenting support, employment support"
+    },
+    {
       "id": "recosJ5Y9Lc3S30BT",
       "name": "CRT Supportive Services for Veteran Families",
       "track": "Family & Childcare",
@@ -6344,6 +6684,24 @@
         "Toddler Care"
       ],
       "tags": "home daycare licensed, childcare, new britain"
+    },
+    {
+      "id": "recPyOZXJuaA1KCK2",
+      "name": "CT BEDS",
+      "track": "Food & Basic Needs",
+      "category": "Legal/HR Resource",
+      "specificType": "Free twin bed/frame and bedding with coordinated delivery/setup for verified need; stock/funding dependent.",
+      "town": "Statewide Connecticut",
+      "ages": "Children/adults/veterans sleeping without a bed. Verified agency/organization/caseworker referral required.",
+      "availability": "No direct individual request; no current stock or delivery date confirmed.",
+      "cost": "Free described bed assistance.",
+      "website": "https://www.ctbeds.org/faqs",
+      "contact": "Use provider referral process; individuals need a referring organization.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.ctbeds.org/faqs. No direct individual request; no current stock or delivery date confirmed. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.",
+      "lastVerified": "2026-11-25",
+      "tags": "beds, mattress, bedding, household setup, veterans"
     },
     {
       "id": "rec1ynnadBAEfzikr",
@@ -6416,6 +6774,24 @@
       "notes": "Official source checked November 25, 2026: https://portal.ct.gov/dmv/resources/approved-translators. Confirm receiving agency requirements and provider availability. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
       "lastVerified": "2026-11-25",
       "tags": "document translation, dmv, certified translation, immigrant support"
+    },
+    {
+      "id": "recdHJd87wxrg1PC2",
+      "name": "CT Fair Housing Center Accommodation Letter Tool",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Online self-help tool to prepare a landlord accommodation/modification request letter; separate from legal representation.",
+      "town": "Connecticut; online",
+      "ages": "People requesting disability-related housing changes.",
+      "availability": "Requires JavaScript and terms acceptance. Letter does not guarantee approval; follow-up/legal advice separate.",
+      "cost": "Tool fee not stated; confirm any separate legal-service fees.",
+      "website": "https://db.ctfairhousing.com/ra/",
+      "contact": "Online tool; Center contact via linked information page.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://db.ctfairhousing.com/ra/. Requires JavaScript and terms acceptance. Letter does not guarantee approval; follow-up/legal advice separate. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.",
+      "lastVerified": "2026-11-25",
+      "tags": "housing accommodations, disability rights, self-help, accessible housing"
     },
     {
       "id": "recFUiyCgIiuqiu0E",
@@ -6875,6 +7251,21 @@
       "tags": "home daycare licensed, childcare, wethersfield"
     },
     {
+      "id": "recDThvNxKlxcZNop",
+      "name": "Diaper Bank of Connecticut: Product and County Partner Finder",
+      "track": "Family & Childcare",
+      "category": "Parenting Support/Classes",
+      "specificType": "Directory of community partners for infant/toddler diapers, period products and adult/youth incontinence supplies. Select product and county; contact partner directly. Some partners require internal referrals. Directory does not guarantee stock or walk-in eligibility.",
+      "town": "Statewide Connecticut",
+      "cost": "Partner-specific cost and eligibility must be checked.",
+      "website": "https://thediaperbank.org/ddn-member-directory/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider page reviewed November 26, 2026; duplicate check by provider URL. Access details not published or independently confirmed: languages/interpreters, physical access, off-hours/remote service, denied-applicant alternatives and coordinated follow-up. Contact provider before relying on availability. Existing category used for best available fit; specific description/tags control scope.",
+      "lastVerified": "2026-11-26",
+      "tags": "diapers, period products, adult incontinence, youth incontinence, hygiene supplies, statewide directory"
+    },
+    {
       "id": "recjhcf0cHxStZ0h6",
       "name": "Disabilities Network of Eastern Connecticut",
       "track": "Family & Childcare",
@@ -7230,6 +7621,24 @@
         "Cats"
       ],
       "tags": "pet food assistance, pet services, community meals, pet food, new haven"
+    },
+    {
+      "id": "recakaj5LhzKs4MDH",
+      "name": "Dress for Success Mid-Fairfield County – Career Clothing Referrals",
+      "track": "Family & Childcare",
+      "category": "Job Training Program",
+      "specificType": "Professional clothing/suiting through partner referrals. Appointment-only suitings Monday–Thursday; no walk-ins.",
+      "town": "Bridgeport/Mid-Fairfield County; confirm referral reach",
+      "ages": "Women referred through participating employment/training agencies; confirm individual criteria.",
+      "availability": "Agency referral and appointment needed; no current stock/appointment date confirmed.",
+      "cost": "Cost not confirmed on reviewed referral page.",
+      "website": "https://midfairfieldcounty.dressforsuccess.org/get-involved/referral-agencies/",
+      "contact": "203-333-6505 Mon–Fri 9 AM–3 PM",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://midfairfieldcounty.dressforsuccess.org/get-involved/referral-agencies/. Agency referral and appointment needed; no current stock/appointment date confirmed. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.\n\nDirectory note (2026-11-26): Published with an open detail. Which towns the partner referral network reaches is not confirmed. Contact them to check whether you can be referred.",
+      "lastVerified": "2026-11-25",
+      "tags": "work clothing, interview clothes, women, employment support, check eligibility first"
     },
     {
       "id": "recdzXV8I0R3NW3MF",
@@ -8325,6 +8734,24 @@
       "tags": "summer day camp, summer camp, fairfield"
     },
     {
+      "id": "recVBXdrRjntm7zdn",
+      "name": "Family & Children's Agency Victims of Crime Assistance",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Victim assistance and connections to counseling, housing, childcare and transport; includes stalking/harassment and identity-theft/financial crime categories.",
+      "town": "Connecticut eligibility; Norwalk-based provider",
+      "ages": "Victim residency rules apply; confirm service area and covered incident.",
+      "availability": "Advocacy/referral is not legal representation. Confidential case details should go directly to provider.",
+      "cost": "Costs unconfirmed; contact program.",
+      "website": "https://www.familyandchildrensagency.org/victims-of-crime-assistance/",
+      "contact": "Official provider contact/intake page.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.familyandchildrensagency.org/victims-of-crime-assistance/. Advocacy/referral is not legal representation. Confidential case details should go directly to provider. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.",
+      "lastVerified": "2026-11-25",
+      "tags": "victim advocacy, stalking support, financial crime, case management, family support"
+    },
+    {
       "id": "recrK30cO7CZrSvHX",
       "name": "Family Centers First Steps Center",
       "track": "Family & Childcare",
@@ -8791,6 +9218,21 @@
       ],
       "lastVerified": "2026-09-04",
       "tags": "pet food assistance, pet services, food pantry, pet food, berlin"
+    },
+    {
+      "id": "recLpj6kpJ1goNUQJ",
+      "name": "Friendship Service Center: Hope Connection Center",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "Drop-in support includes showers, laundry, housing referrals, benefits help, individual case management, healthcare/employment/transport links. Posted weekday hours 9AM–4PM. Weekend text is ambiguous; confirm directly. Service availability and intake conditions must be checked.",
+      "town": "New Britain",
+      "cost": "Cost not confirmed.",
+      "website": "https://www.nbhelps.org/hope-connection-center",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider page reviewed November 26, 2026; duplicate check by provider URL. Access details not published or independently confirmed: languages/interpreters, physical access, off-hours/remote service, denied-applicant alternatives and coordinated follow-up. Contact provider before relying on availability. Existing category used for best available fit; specific description/tags control scope.",
+      "lastVerified": "2026-11-26",
+      "tags": "showers, laundry, hygiene, benefits applications, housing referrals, new britain"
     },
     {
       "id": "recPDcRlSDkGQLiyH",
@@ -10526,6 +10968,22 @@
       "lastVerified": "2026-10-31",
       "shoppingType": "Clothing & Household Resale",
       "tags": "nonprofit thrift, furniture resale, household goods, vintage resale, reuse store, homelessness support, journey home, west hartford"
+    },
+    {
+      "id": "recRokfiee2uuPnpz",
+      "name": "Homes for the Brave: Bridgeport Veteran Support",
+      "track": "Family & Childcare",
+      "category": "Veterans Benefits Counseling",
+      "specificType": "Annex drop-in support, basic needs/housing referrals, vocational and educational help and clinical programs. Housing programs for male/female veterans experiencing homelessness have separate criteria; beds not confirmed. Case managers support individual goals. Service center posted weekday drop-in hours 8:30AM–4:30PM; confirm program and location.",
+      "town": "Greater Bridgeport",
+      "cost": "Program-specific costs and housing fees not confirmed.",
+      "website": "https://homesforthebrave.org/get-help/",
+      "contact": "Annex 203-275-0600; One Lafayette Circle Suite 100 Bridgeport",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked 2026-11-26. New lead independently found during approved search-area expansion; Pending Review, not approval of this previously unidentified provider. Guard/Reserve/spouse/survivor/discharge eligibility, languages/ASL/accessibility, documents, current openings and transport unknown unless specifically stated. Online referral is not guarantee of placement or representation.\nApproval update 2026-11-26: Darice explicitly stated 'Reviewed. Publish these' for this four-resource veterans/military-family batch. Status changed Pending Review to Published. Prior pending note is historical; eligibility/access caveats retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "veterans, military families, bridgeport, housing support, job training, mental health, case management"
     },
     {
       "id": "recehO4EQzOSgvzof",
@@ -14054,6 +14512,22 @@
       "tags": "senior center / congregate meals social programs, senior services, food pantry, senior center, caregiver support, milford"
     },
     {
+      "id": "recN3k9PGt7kZoTzb",
+      "name": "Military OneSource: Military Family Support and Eligibility",
+      "track": "Family & Childcare",
+      "category": "Parenting Support/Classes",
+      "specificType": "Information, referrals and eligible support for active-duty/Guard/Reserve households and defined family/caregiver/survivor groups. Counseling, financial/education/relocation guidance and translation/interpreting resources. Retired/discharged access is time-limited and subject to service-specific rules. Extended family may have partial rather than full access; confirm with consultant.",
+      "town": "National service accessible to eligible Connecticut households",
+      "cost": "Eligible Military OneSource services described as free; external referrals have separate terms.",
+      "website": "https://www.militaryonesource.mil/resources/millife-guides/eligibility-for-military-onesource-services/",
+      "contact": "800-342-9647; secure live chat linked from official page, 24/7",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official eligibility page reviewed 2026-11-26; eligibility varies by household relationship/status/service. Do not infer all partners/extended family or all veterans qualify. Current personal eligibility, interpreter booking, ASL, documents and local referral capacity require confirmation. Independently found new provider, Pending Review.\nApproval update 2026-11-26: Darice explicitly stated 'Reviewed. Publish these' for this four-resource veterans/military-family batch. Status changed Pending Review to Published. Prior pending note is historical; eligibility/access caveats retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "military families, guard and reserve, spouses, children, caregivers, survivors, translation, family counseling, relocation"
+    },
+    {
       "id": "recsnpwkurBrbyKbz",
       "name": "Mommune",
       "track": "Family & Childcare",
@@ -16445,6 +16919,24 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, hartford"
+    },
+    {
+      "id": "recT7yTaM1ODOiPcb",
+      "name": "OutCT Youth Program",
+      "track": "Teens & High School",
+      "category": "Youth Development Program",
+      "specificType": "Monthly social/peer support and life/career skills for LGBTQ+ and allied youth. Published recurring time third Sunday 1–4 PM; confirm location.",
+      "town": "Southeastern Connecticut; location varies",
+      "ages": "Youth age 12+; confirm upper age and participation requirements.",
+      "availability": "Email alternative available. Recurring schedule is not a newly confirmed dated event.",
+      "cost": "Costs not stated; confirm.",
+      "website": "https://www.outct.org/youth-program",
+      "contact": "youth@outct.org; 860-339-4060 x204",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.outct.org/youth-program. Email alternative available. Recurring schedule is not a newly confirmed dated event. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.",
+      "lastVerified": "2026-11-25",
+      "tags": "lgbtq, youth, peer support, social connection, life skills"
     },
     {
       "id": "reckWhS1juDN9JEmr",
@@ -20858,6 +21350,24 @@
       "tags": "stem/tech camp, storrs"
     },
     {
+      "id": "recUVD8bZ6q9BY9AJ",
+      "name": "UConn Health Adoption Assistance Program (AAP)",
+      "track": "Family & Childcare",
+      "category": "Parenting Support/Classes",
+      "specificType": "Post-adoption/guardianship assessment, education, brief counseling, referrals and case-management support; contracted providers may deliver services. Not a crisis service.",
+      "town": "Statewide Connecticut",
+      "ages": "Adoptive and guardianship families; confirm DCF history/type and program requirements.",
+      "availability": "Voluntary short-term support; current capacity unknown. Contractor and statewide program are one service network, not independent guaranteed slots. Current wait/capacity unknown.",
+      "cost": "FCA partner describes AAP post-adoption support as free; confirm eligibility and separate services.",
+      "website": "https://health.uconn.edu/adoption-assistance/",
+      "contact": "860-679-4006 (AAP contact published by FCA partner).",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://health.uconn.edu/adoption-assistance/; partner evidence: https://www.familyandchildrensagency.org/children-families/adoption/post-placement-services/. Voluntary short-term support; current capacity unknown. Contractor and statewide program are one service network, not independent guaranteed slots. Language/disability access, documents, alternatives if denied, off-hours and remote options unknown unless specified. Existing closest category used.",
+      "lastVerified": "2026-11-25",
+      "tags": "post adoption, guardianship, adoption support, counseling, case management"
+    },
+    {
       "id": "recoIidDuGmfcW9pP",
       "name": "UConn Navy STEM Boat Camp",
       "track": "Family & Childcare",
@@ -21005,6 +21515,24 @@
       "tags": "college access / readiness, teen resources, high school, mansfield"
     },
     {
+      "id": "reclRHN0M3Ho38tUg",
+      "name": "UCP Assistive Technology Lending Library",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Assistive-device loans to try equipment before purchase, including communication and daily-living access options; confirm device inventory, loan rules and training.",
+      "town": "Connecticut; Waterford/Stratford service locations",
+      "ages": "CT residents with disabilities; provider describes all ages and conditions.",
+      "availability": "Device suitability requires individual review; stock and clinical assessment not guaranteed.",
+      "cost": "Fees/deposits and loan conditions unconfirmed.",
+      "website": "https://ucpect.org/assistive-technology-at/at-lending-library/",
+      "contact": "860-443-3800; official contact form",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://ucpect.org/assistive-technology-at/at-lending-library/. Device suitability requires individual review; stock and clinical assessment not guaranteed. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.",
+      "lastVerified": "2026-11-25",
+      "tags": "aac, communication devices, assistive technology, equipment loan, disability services"
+    },
+    {
       "id": "recDEXvfwPQGvD7iL",
       "name": "UCP Eastern Connecticut – Supported Living",
       "track": "Family & Childcare",
@@ -21080,6 +21608,22 @@
       "notes": "Official source checked November 25, 2026: https://www.va.gov/connecticut-health-care/programs/blind-and-low-vision-rehabilitation/. Confirm clinic location and referral; not available at every VA site. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
       "lastVerified": "2026-11-25",
       "tags": "veterans, blind, low vision, rehabilitation, assistive technology"
+    },
+    {
+      "id": "recJEniKXW8xYwQtk",
+      "name": "VA Connecticut: Women Veterans Program",
+      "track": "Health & Dental",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Program manager connects women veterans to primary care, gynecology, maternity/postpartum care, breast imaging and mental health counseling. Confirm VA enrollment, individual eligibility, service location and appointment availability.",
+      "town": "VA Connecticut system",
+      "cost": "Individual VA eligibility/copays require confirmation.",
+      "website": "https://www.va.gov/connecticut-health-care/health-services/women-veteran-care/",
+      "contact": "donna.doris@va.gov",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked 2026-11-26. New lead independently found during approved search-area expansion; Pending Review, not approval of this previously unidentified provider. Guard/Reserve/spouse/survivor/discharge eligibility, languages/ASL/accessibility, documents, current openings and transport unknown unless specifically stated. Online referral is not guarantee of placement or representation.\nApproval update 2026-11-26: Darice explicitly stated 'Reviewed. Publish these' for this four-resource veterans/military-family batch. Status changed Pending Review to Published. Prior pending note is historical; eligibility/access caveats retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "women veterans, primary care, maternity care, mental health, mammograms"
     },
     {
       "id": "recJRXlti6eYNWbyr",
@@ -22054,6 +22598,24 @@
         "Career Exploration"
       ],
       "tags": "magnet / specialty school, teen resources, high school, waterbury"
+    },
+    {
+      "id": "recs227WP87ggFQg4",
+      "name": "Waterbury Youth Services CHAP/CHEER",
+      "track": "Teens & High School",
+      "category": "Youth Development Program",
+      "specificType": "Transition support for eligible youth leaving foster care, with weekly case-management, housing and education/employment support.",
+      "town": "Waterbury DCF region",
+      "ages": "Former foster youth 18–23; DCF referrals only.",
+      "availability": "Not general open youth housing. Current capacity unknown; confirm duration and benefits.",
+      "cost": "DCF-funded assistance; individual benefits require eligibility confirmation.",
+      "website": "https://waterburyyouthservices.org/chap/",
+      "contact": "DCF Waterbury region 203-207-5100",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://waterburyyouthservices.org/chap/. Not general open youth housing. Current capacity unknown; confirm duration and benefits. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.",
+      "lastVerified": "2026-11-25",
+      "tags": "former foster youth, young adults, transition support, life skills, case management"
     },
     {
       "id": "recnbSRRy0xAIz8X8",

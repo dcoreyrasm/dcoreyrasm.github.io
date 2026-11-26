@@ -1090,22 +1090,34 @@ now.
   stthomasnorwalk.org                1  2026-11-21   Family & Childcare
   svdpmission.org                    1  2026-11-21   Family & Childcare
   handsonhartford.org                3  2026-11-25   Food & Basic Needs
+  crtct.org                          2  2026-11-25   Family & Childcare
   irisct.org                         2  2026-11-25   Family & Childcare
   windhamct.gov                      2  2026-11-25   Family & Childcare
+  ucpect.org                         2  2026-11-25   Family & Childcare
   abilitybeyond.org                  1  2026-11-25   Food & Basic Needs
   accessaccounting.org               1  2026-11-25   Family & Childcare
   accessagency.org                   1  2026-11-25   Family & Childcare
+  alwayshome.org                     1  2026-11-25   Family & Childcare
   asdcommunityinterpreting.com       1  2026-11-25   Family & Childcare
+  bportlibrary.org                   1  2026-11-25   Family & Childcare
   b1c.org                            1  2026-11-25   Family & Childcare
+  burnhamlibrary.org                 1  2026-11-25   Family & Childcare
+  cafafct.org                        1  2026-11-25   Family & Childcare
   thecarolinehouse.org               1  2026-11-25   Family & Childcare
+  catalystct.org                     1  2026-11-25   Teens & High School
+  ccfairfield.org                    1  2026-11-25   Family & Childcare
+  ccp-ct.org                         1  2026-11-25   Family & Childcare
   coabode.org                        1  2026-11-25   Family & Childcare
   criwct.org                         1  2026-11-25   Family & Childcare
   communityaccountingservices.weebly.com   1  2026-11-25   Family & Childcare
-  cirict.org                         1  2026-11-25   Family & Childcare
-  crtct.org                          1  2026-11-25   Family & Childcare
+  ccpg.org                           1  2026-11-25   Family & Childcare
+  ctbeds.org                         1  2026-11-25   Food & Basic Needs
+  db.ctfairhousing.com               1  2026-11-25   Family & Childcare
+  midfairfieldcounty.dressforsuccess.org   1  2026-11-25   Family & Childcare
   hartford.easterseals.com           1  2026-11-25   Family & Childcare
   elenaslight.org                    1  2026-11-25   Family & Childcare
   evictionhelpct.org                 1  2026-11-25   Food & Basic Needs
+  familyandchildrensagency.org       1  2026-11-25   Family & Childcare
   ectcinc.org                        1  2026-11-25   Family & Childcare
   financialplanningassociation.org   1  2026-11-25   Family & Childcare
   genhealth.org                      1  2026-11-25   Health & Dental
@@ -1122,6 +1134,7 @@ now.
   sistersplacect.org                 1  2026-11-25   Food & Basic Needs
   nationalsharedhousing.org          1  2026-11-25   Food & Basic Needs
   nhlegal.org                        1  2026-11-25   Elder Care
+  outct.org                          1  2026-11-25   Teens & High School
   p2phelps.org                       1  2026-11-25   Food & Basic Needs
   ruthshousect.com                   1  2026-11-25   Food & Basic Needs
   hollanderhouse.org                 1  2026-11-25   Food & Basic Needs
@@ -1129,12 +1142,22 @@ now.
   spareroom.com                      1  2026-11-25   Food & Basic Needs
   tailcproject.org                   1  2026-11-25   Family & Childcare
   torringtonct.gov                   1  2026-11-25   Family & Childcare
+  health.uconn.edu                   1  2026-11-25   Family & Childcare
   law.uconn.edu                      1  2026-11-25   Family & Childcare
-  ucpect.org                         1  2026-11-25   Family & Childcare
-  va.gov                             1  2026-11-25   Family & Childcare
-  portal.ct.gov                     41  2026-11-26   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
+  waterburyyouthservices.org         1  2026-11-25   Teens & High School
+  portal.ct.gov                     47  2026-11-26   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
   cthumane.org                       7  2026-11-26   Pet Care & Resources
+  va.gov                             2  2026-11-26   Family & Childcare, Health & Dental
+  ahelpingpawff.org                  1  2026-11-26   Pet Care & Resources
+  bethelcenterconnecticut.org        1  2026-11-26   Food & Basic Needs
   choreservice.org                   1  2026-11-26   Elder Care
+  cirict.org                         1  2026-11-26   Family & Childcare
+  ctprobate.gov                      1  2026-11-26   Family & Childcare
+  ctveteranslegal.org                1  2026-11-26   Family & Childcare
+  thediaperbank.org                  1  2026-11-26   Family & Childcare
+  nbhelps.org                        1  2026-11-26   Food & Basic Needs
+  homesforthebrave.org               1  2026-11-26   Family & Childcare
+  militaryonesource.mil              1  2026-11-26   Family & Childcare
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -1159,7 +1182,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 544 of 951 listings (57%) carry a Website, so
+Only 576 of 983 listings (59%) carry a Website, so
 everything above is built from that third of the directory. The other
 407 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -1169,7 +1192,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-34 of the 355 domains here have never had a Last Verified on
+34 of the 378 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 
@@ -1187,17 +1210,17 @@ between sessions: read them fresh from this section each time this brief is
 given to you, and if you are working from a remembered figure you are working
 from a gap that has already moved.
 
-951 listings across 199 Connecticut towns of 169.
+983 listings across 216 Connecticut towns of 169.
 
 That breadth is real. The depth behind it is the problem:
 
-  a website              544 / 951   57%   the single most valuable gap: without a URL nobody can ever re-check the listing
-  operating hours        225 / 951   24%   the specific promise on the front of the page
-  a real cost note       238 / 951   25%   excludes the state-fee boilerplate
-  a real waitlist note   133 / 951   14%   excludes the "contact the program directly" boilerplate
-  a verified date        486 / 951   51%   without one we cannot tell fresh from forgotten
-  a phone or email       806 / 951   85%
-  services tagged        698 / 951   73%   what makes a listing findable beyond its one category
+  a website              576 / 983   59%   the single most valuable gap: without a URL nobody can ever re-check the listing
+  operating hours        226 / 983   23%   the specific promise on the front of the page
+  a real cost note       270 / 983   27%   excludes the state-fee boilerplate
+  a real waitlist note   152 / 983   15%   excludes the "contact the program directly" boilerplate
+  a verified date        519 / 983   53%   without one we cannot tell fresh from forgotten
+  a phone or email       829 / 983   84%
+  services tagged        698 / 983   71%   what makes a listing findable beyond its one category
 
 A listing can carry a value and still say nothing. Two boilerplate lines were
 written onto hundreds of records by the original state import -- "Contact the
@@ -1210,12 +1233,12 @@ that sounds more specific than what you actually know.
 
 WEBSITE COVERAGE BY TRACK
 
-  Family & Childcare      635 listings, 228 with a website (36%)
-  Teens & High School      88 listings,  88 with a website (100%)
-  Food & Basic Needs       74 listings,  74 with a website (100%)
-  Pet Care & Resources     61 listings,  61 with a website (100%)
+  Family & Childcare      655 listings, 248 with a website (38%)
+  Teens & High School      91 listings,  91 with a website (100%)
+  Food & Basic Needs       80 listings,  80 with a website (100%)
+  Pet Care & Resources     62 listings,  62 with a website (100%)
   Elder Care               56 listings,  56 with a website (100%)
-  Health & Dental          37 listings,  37 with a website (100%)
+  Health & Dental          39 listings,  39 with a website (100%)
 
 WHY THE WEBSITE COLUMN COMES FIRST
 
@@ -1228,8 +1251,8 @@ AND THE GAP IS NOT WHERE IT LOOKS
 
 407 listings have no website. 407 of them -- every single one -- came from the
 one bulk import of Connecticut Office of Early Childhood childcare providers,
-which arrived without URLs. Of the 423 records written by
-research, 423 carry a website: 100%.
+which arrived without URLs. Of the 455 records written by
+research, 455 carry a website: 100%.
 
 So this is not a habit to correct. It is a bounded backfill of a known set,
 and the set is licensed childcare providers whose details came from the state.
