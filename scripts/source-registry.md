@@ -332,8 +332,6 @@ now.
   ansonia.org                        1  2026-11-21   Family & Childcare
   stthomasnorwalk.org                1  2026-11-21   Family & Childcare
   svdpmission.org                    1  2026-11-21   Family & Childcare
-  portal.ct.gov                     37  2026-11-25   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
-  cthumane.org                       7  2026-11-25   Pet Care & Resources
   handsonhartford.org                3  2026-11-25   Food & Basic Needs
   irisct.org                         2  2026-11-25   Family & Childcare
   windhamct.gov                      2  2026-11-25   Family & Childcare
@@ -377,6 +375,9 @@ now.
   law.uconn.edu                      1  2026-11-25   Family & Childcare
   ucpect.org                         1  2026-11-25   Family & Childcare
   va.gov                             1  2026-11-25   Family & Childcare
+  portal.ct.gov                     41  2026-11-26   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
+  cthumane.org                       7  2026-11-26   Pet Care & Resources
+  choreservice.org                   1  2026-11-26   Elder Care
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -401,7 +402,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 539 of 946 listings (57%) carry a Website, so
+Only 544 of 951 listings (57%) carry a Website, so
 everything above is built from that third of the directory. The other
 407 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -411,7 +412,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-34 of the 354 domains here have never had a Last Verified on
+34 of the 355 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 ```

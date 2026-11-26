@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-26T06:09:03.792Z",
+  "generated": "2026-11-26T12:07:49.943Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 946,
+  "count": 951,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -134,6 +134,7 @@
     "Connecticut; Trumbull mailing address",
     "Connecticut; UConn School of Law",
     "Cornwall",
+    "Cornwall, Falls Village, Goshen, Kent, Litchfield, Morris, Norfolk, North Canaan, Roxbury, Salisbury/Lakeville, Sharon, Warren, Washington",
     "Coventry",
     "Cromwell",
     "Danbury",
@@ -4289,6 +4290,23 @@
       "tags": "center-based daycare, family resources, childcare, wolcott"
     },
     {
+      "id": "rec8FTgWriRhDD9xo",
+      "name": "Chore Service: Northwest Connecticut Help at Home",
+      "track": "Elder Care",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Nonmedical support for older adults and people with disabilities in 13 Litchfield County towns: housekeeping, laundry, companionship, meal preparation, minor repairs, technology help, rides and yard work. Temporary or ongoing arrangements; no medical care.",
+      "town": "Cornwall, Falls Village, Goshen, Kent, Litchfield, Morris, Norfolk, North Canaan, Roxbury, Salisbury/Lakeville, Sharon, Warren, Washington",
+      "availability": "Current response time, openings and waitlist unknown. Confirm with provider.",
+      "cost": "Current fees or contribution requirements not verified.",
+      "website": "https://www.choreservice.org/",
+      "contact": "860-435-9177; Chore@choreservice.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Access review 2026-11-26: Intake/capacity, exact documents beyond published requirements, interpreter/ASL availability, accessible forms, evening access, transport/childcare, denied-applicant alternatives and hands-on application completion/follow-up remain unconfirmed unless specifically stated. Source is official provider page. Online forms alone are not evidence of personal application help.\nUser review approval 2026-11-26: Darice instructed that requests to add identified resources count as reviewed. Applied to this explicitly accepted five-resource batch. Published is the existing approved moderation state; source/access unknowns retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "rural access, home support, minor repairs, transportation, technology help, older adults, disability support"
+    },
+    {
       "id": "recw5jaAiN4j1diPb",
       "name": "Christian Community Action Food Pantry",
       "track": "Food & Basic Needs",
@@ -4777,6 +4795,23 @@
       "tags": "spay/neuter assistance, pet services"
     },
     {
+      "id": "recXVcMLis4XaQdli",
+      "name": "Connecticut Attorney General: Advance Directive Forms",
+      "track": "Elder Care",
+      "category": "Legal/HR Resource",
+      "specificType": "Official booklet and downloadable living will, healthcare representative and combined advance directive forms. Self-service planning information; individual legal assistance and will drafting not established.",
+      "town": "Statewide Connecticut",
+      "availability": "Current response time, openings and waitlist unknown. Confirm with provider.",
+      "cost": "Forms available online; legal service fees not established.",
+      "website": "https://portal.ct.gov/AG/Health-Issues/Connecticuts-Living-Will-Laws",
+      "contact": "Official online forms and information",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Access review 2026-11-26: Intake/capacity, exact documents beyond published requirements, interpreter/ASL availability, accessible forms, evening access, transport/childcare, denied-applicant alternatives and hands-on application completion/follow-up remain unconfirmed unless specifically stated. Source is official provider page. Online forms alone are not evidence of personal application help.\nUser review approval 2026-11-26: Darice instructed that requests to add identified resources count as reviewed. Applied to this explicitly accepted five-resource batch. Published is the existing approved moderation state; source/access unknowns retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "advance directives, healthcare representative, living will, end of life planning"
+    },
+    {
       "id": "recDzBQwGDgwuAxTG",
       "name": "Connecticut Birth to Three System",
       "track": "Family & Childcare",
@@ -4894,6 +4929,40 @@
       "tags": "developmental disability, intellectual disability, respite, family grants, in-home support"
     },
     {
+      "id": "recs16DGqeU7qTtLn",
+      "name": "Connecticut Department of Banking: Identity Theft Assistance",
+      "track": "Food & Basic Needs",
+      "category": "Legal/HR Resource",
+      "specificType": "Starting point for identity theft complaints and referral to appropriate agencies. Online assistance form and email for general questions. Does not guarantee recovery of stolen funds or representation.",
+      "town": "Statewide Connecticut",
+      "availability": "Current response time, openings and waitlist unknown. Confirm with provider.",
+      "cost": "Current fees or contribution requirements not verified.",
+      "website": "https://portal.ct.gov/dob/consumer/consumer-complaints/identity-theft",
+      "contact": "banking.complaints@ct.gov; 860-240-8170; 800-831-7225 option 2",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Access review 2026-11-26: Intake/capacity, exact documents beyond published requirements, interpreter/ASL availability, accessible forms, evening access, transport/childcare, denied-applicant alternatives and hands-on application completion/follow-up remain unconfirmed unless specifically stated. Source is official provider page. Online forms alone are not evidence of personal application help. Do not send identity/account details to general unsecured email; use official secure assistance form.\nUser review approval 2026-11-26: Darice instructed that requests to add identified resources count as reviewed. Applied to this explicitly accepted five-resource batch. Published is the existing approved moderation state; source/access unknowns retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "identity theft, scam recovery, consumer complaints, financial exploitation"
+    },
+    {
+      "id": "recVTOehVIhbE8R9Y",
+      "name": "Connecticut DMHAS: Hoarding Treatment Options",
+      "track": "Health & Dental",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Helps identify voluntary hoarding treatment options and provider training. Referral/information service; no free cleanout, pest removal or home repair promised.",
+      "town": "Statewide Connecticut",
+      "availability": "Current response time, openings and waitlist unknown. Confirm with provider.",
+      "cost": "Current fees or contribution requirements not verified.",
+      "website": "https://portal.ct.gov/DMHAS/Divisions/Community-Services-Division/Hoarding",
+      "contact": "Siobhan.Feliciano@ct.gov; 860-550-5795",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Access review 2026-11-26: Intake/capacity, exact documents beyond published requirements, interpreter/ASL availability, accessible forms, evening access, transport/childcare, denied-applicant alternatives and hands-on application completion/follow-up remain unconfirmed unless specifically stated. Source is official provider page. Online forms alone are not evidence of personal application help.\nUser review approval 2026-11-26: Darice instructed that requests to add identified resources count as reviewed. Applied to this explicitly accepted five-resource batch. Published is the existing approved moderation state; source/access unknowns retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "hoarding support, home safety, voluntary treatment, treatment referrals"
+    },
+    {
       "id": "recnVLPzuSaLtM4bK",
       "name": "Connecticut Donated Dental Services (Dental Lifeline Network)",
       "track": "Health & Dental",
@@ -4910,6 +4979,23 @@
       "notes": "Additional related resource, not named in article. Official state program page verified November 8, 2026. Cost/wait information from linked application: https://dentallifeline.org/wp-content/uploads/2019/04/Connecticut.pdf",
       "lastVerified": "2026-11-08",
       "tags": "dental care, donated dental services, seniors, disability, free dental, teeth"
+    },
+    {
+      "id": "reccaN4QiSyHTpXDv",
+      "name": "Connecticut DPH: Replacement Birth Certificate Applications",
+      "track": "Food & Basic Needs",
+      "category": "Legal/HR Resource",
+      "specificType": "Official eligibility and application checklist for certified birth records. Online ordering via authorized vendor or mail application. Requires identification, applicable entitlement documentation and fee. Correct office depends on birth date; specialized homeless-youth process must be confirmed separately.",
+      "town": "Statewide Connecticut",
+      "availability": "Current response time, openings and waitlist unknown. Confirm with provider.",
+      "cost": "Applicable record and vendor fees; verify amount and any waiver.",
+      "website": "https://portal.ct.gov/en/dph/vital-records/birth-certificates",
+      "contact": "State or town vital records office; application links on official page",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Access review 2026-11-26: Intake/capacity, exact documents beyond published requirements, interpreter/ASL availability, accessible forms, evening access, transport/childcare, denied-applicant alternatives and hands-on application completion/follow-up remain unconfirmed unless specifically stated. Source is official provider page. Online forms alone are not evidence of personal application help.\nUser review approval 2026-11-26: Darice instructed that requests to add identified resources count as reviewed. Applied to this explicitly accepted five-resource batch. Published is the existing approved moderation state; source/access unknowns retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "birth certificate replacement, identity documents, document recovery, vital records"
     },
     {
       "id": "recjryIj1A0AQkyjj",
@@ -5176,18 +5262,19 @@
       "category": "Emergency Pet Foster Care",
       "specificType": "Temporary foster placement may be considered during military deployment, a hospital stay, housing problems, a house fire, domestic violence, or another temporary crisis. Placement is not guaranteed.",
       "town": "Statewide",
-      "availability": "Requests are evaluated based on program purpose, capacity, the household's circumstances, and each pet's needs. The provider asks applicants to allow up to five days for a response.",
+      "availability": "Call CHS first to obtain required hotline number; form says inquiries without valid hotline number will not receive a response. Owner should complete form when possible. Allow up to five days for response. Individual capacity/needs assessment; submission does not guarantee placement.",
       "website": "https://cthumane.org/request-crisis-foster/",
       "contact": "800-452-0114",
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
       "submittedBy": "Village Notes Research",
+      "notes": "Access audit 2026-11-26. Official source https://cthumane.org/request-crisis-foster/ confirms hotline-number prerequisite, online request and up-to-five-day response. No guaranteed immediate emergency placement. Pet/owner history collected. Current fees, language/ASL/accessibility, transport, off-hours help, alternatives after denial and application assistance/follow-up unknown.",
       "servicesOffered": [
         "Emergency Pet Foster Care"
       ],
-      "lastVerified": "2026-08-28",
-      "tags": "emergency pet foster care, pet services"
+      "lastVerified": "2026-11-26",
+      "tags": "emergency pet foster care, crisis pet fostering, temporary pet care, pet services, hospitalization pet care"
     },
     {
       "id": "recCU2JM8Uw9x1ilt",
