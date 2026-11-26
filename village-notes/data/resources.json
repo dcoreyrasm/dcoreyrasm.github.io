@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-26T00:12:35.522Z",
+  "generated": "2026-11-26T06:09:03.792Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 897,
+  "count": 946,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -113,6 +113,7 @@
     "Canaan",
     "Canterbury",
     "Canton",
+    "Central Connecticut; New Britain family literacy partner",
     "Chaplin",
     "Cheshire",
     "Chester",
@@ -121,20 +122,30 @@
     "Columbia",
     "Connecticut",
     "Connecticut statewide",
+    "Connecticut VA system",
+    "Connecticut; confirm assignment location",
+    "Connecticut; coverage and eligibility vary",
+    "Connecticut; eligible nonprofits",
     "Connecticut; host locations by arrangement",
+    "Connecticut; New Haven and Hartford",
     "Connecticut; participating community sites",
     "Connecticut; rotating community sites",
     "Connecticut; rotating host locations",
+    "Connecticut; Trumbull mailing address",
+    "Connecticut; UConn School of Law",
     "Cornwall",
     "Coventry",
     "Cromwell",
     "Danbury",
     "Darien",
+    "Darien, New Canaan, Norwalk, Stamford, Weston, Westport, Wilton; emergency food statewide subject to income",
     "Derby",
     "East Hartford",
     "East Haven",
     "East Lyme",
     "East Windsor",
+    "Eastern Connecticut",
+    "Eastern CT scheduled stops: Windham, Putnam and Norwich",
     "Eastford",
     "Easton",
     "Ellington",
@@ -146,8 +157,10 @@
     "Glastonbury",
     "Goshen",
     "Granby",
+    "Greater Hartford service area; 50 specified towns",
     "Greater Hartford, CT",
     "Greater Hartford; Hartford and East Hartford",
+    "Greater Milford, Stratford, Bridgeport and West Haven area",
     "Greater New Haven",
     "Greenwich",
     "Griswold",
@@ -156,6 +169,7 @@
     "Hamden",
     "Hampton",
     "Hartford",
+    "Hartford, New Haven, Middlesex and New London counties",
     "Hartland",
     "Harwinton",
     "Hebron",
@@ -187,6 +201,7 @@
     "New Hartford",
     "New Haven",
     "New Haven, CT",
+    "New Haven; remote services nationwide",
     "New London",
     "New Milford",
     "Newington",
@@ -199,6 +214,7 @@
     "Norwalk",
     "Norwalk, CT",
     "Norwich",
+    "Norwich; confirm regional program reach",
     "Online, available to families in Connecticut",
     "Online; Connecticut housing availability not confirmed",
     "Orange",
@@ -229,9 +245,14 @@
     "Sprague",
     "Stafford",
     "Stamford",
+    "Stamford; Fairfield County",
     "Statewide",
     "Statewide (all of Connecticut)",
+    "Statewide Connecticut",
+    "Statewide CT; Bridgeport, Stamford, Hartford, Waterbury and New Haven offices",
+    "Statewide CT; DMHAS programs",
     "Statewide participating providers",
+    "Statewide participating transit services; confirm routes",
     "Statewide, Connecticut",
     "Statewide; next clinic in New Haven",
     "Sterling",
@@ -261,11 +282,14 @@
     "Westbrook",
     "Weston",
     "Westport",
+    "Westport and Norwalk",
     "Wethersfield",
     "Willimantic",
     "Wilton",
     "Winchester",
     "Windham",
+    "Windham and Tolland counties",
+    "Windham, New London, Middlesex and New Haven counties",
     "Windsor",
     "Windsor Locks",
     "Winsted",
@@ -410,6 +434,23 @@
       "tags": "job training program, teen resources, job training, greenwich"
     },
     {
+      "id": "rec02NCwR70nri57L",
+      "name": "Ability Beyond Community Companion Homes",
+      "track": "Food & Basic Needs",
+      "specificType": "Ability Beyond Community Companion Homes",
+      "town": "Connecticut",
+      "ages": "Adults age 18+ with developmental/intellectual disabilities; DDS eligibility and matching apply",
+      "availability": "Supported host-family matching program confirmed. DDS process and individual placement availability require confirmation.",
+      "cost": "DDS-funded program; participant room/board obligations and other costs require confirmation.",
+      "website": "https://abilitybeyond.org/programs-services/community-companion-home/",
+      "contact": "203-826-3072; Admissions@abilitybeyond.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source reviewed November 25, 2026. Shared living with a host family, distinct from ordinary roommate matching. Background checks for adults in host home, home study/interview and ongoing training required for hosts. Household accessibility, pets, private room arrangements and support needs reviewed individually.",
+      "lastVerified": "2026-11-25",
+      "tags": "disability housing, shared living, host family, community companion home, dds, adults"
+    },
+    {
       "id": "reclODLiV5u4SnnGr",
       "name": "Abundance of Joy Learning Center",
       "track": "Family & Childcare",
@@ -463,6 +504,40 @@
         "Career Exploration"
       ],
       "tags": "magnet / specialty school, teen resources, high school, stamford"
+    },
+    {
+      "id": "recTMhQkdB9OswxG3",
+      "name": "Access Accounting",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Accounting, bookkeeping and administrative support for small-to-mid-sized 501(c)(3) nonprofits. Free initial consultation and review; ongoing service fees unconfirmed.",
+      "town": "Connecticut; eligible nonprofits",
+      "availability": "Current intake, openings and wait times unconfirmed; contact provider.",
+      "cost": "Only initial consultation/review confirmed free. Ongoing services not confirmed free.",
+      "website": "https://www.accessaccounting.org/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.accessaccounting.org/. Languages, accessibility, detailed eligibility and current capacity unknown unless stated. Category is closest existing general professional-help category.",
+      "lastVerified": "2026-11-25",
+      "tags": "nonprofit support, accounting help, bookkeeping, free consultation"
+    },
+    {
+      "id": "recKCZqFzjEuliXNy",
+      "name": "Access Employment Services – Windham and Tolland Counties",
+      "track": "Family & Childcare",
+      "category": "Job Training Program",
+      "specificType": "Employment services and case-management support, with a bilingual employment case-manager contact listed. Confirm language, eligibility and current intake. English/Spanish interest forms published.",
+      "town": "Windham and Tolland counties",
+      "ages": "Income-eligible Windham/Tolland residents age 18+, under/unemployed, willing to complete five weeks of preparation.",
+      "availability": "Bilingual staff listing does not establish availability of professional interpreting. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Costs unconfirmed.",
+      "website": "https://accessagency.org/access-to-employment/",
+      "contact": "860-450-7400 x7433",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://accessagency.org/access-to-employment/. Bilingual staff listing does not establish availability of professional interpreting. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "employment support, bilingual services, windham county, tolland county"
     },
     {
       "id": "recvMNNdPTCSIGTSc",
@@ -1162,6 +1237,24 @@
       "tags": "magnet / specialty school, teen resources, high school, willimantic"
     },
     {
+      "id": "recQZLD6Mf1ekCs8d",
+      "name": "ASD Community Interpreting",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Certified sign-language interpreting for public/private requests, 24/7 subject to resources. Ten business days' notice preferred; emergency exceptions stated.",
+      "town": "Connecticut; confirm assignment location",
+      "ages": "Deaf and hard-of-hearing communication access; public/private clients.",
+      "availability": "Ten business days preferred. Availability contingent on resources. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Fee-for-service; request quotation.",
+      "website": "https://www.asdcommunityinterpreting.com/",
+      "contact": "community.interpreting@asd-1817.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.asdcommunityinterpreting.com/. Ten business days preferred. Availability contingent on resources. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "deaf, hard of hearing, asl interpreting, language access"
+    },
+    {
       "id": "recJbmS8enr9TzwtE",
       "name": "Ashford Boe At Ashford Elementary",
       "track": "Family & Childcare",
@@ -1311,6 +1404,24 @@
       ],
       "lastVerified": "2026-08-31",
       "tags": "assisted living, senior services, transportation, caregiver support, middletown"
+    },
+    {
+      "id": "recOrH2cqN6hL7O1u",
+      "name": "BESB – Blind and Low Vision Services",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "State services for blind/visually impaired residents: independent-living training/devices, children’s education and employment support; low-vision consultant information.",
+      "town": "Statewide Connecticut",
+      "ages": "Legally blind or visually impaired CT residents; confirm program-specific criteria.",
+      "availability": "Contact intake for eligibility; not every low-vision program accepts all levels of vision loss. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Costs and financial eligibility vary or unconfirmed; contact BESB.",
+      "website": "https://portal.ct.gov/ads/knowledge-base/articles/about-ads/ads-service-bureaus/about-the-bureau-of-education-and-services-for-the-blind",
+      "contact": "860-602-4000; ads.besb@ct.gov",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://portal.ct.gov/ads/knowledge-base/articles/about-ads/ads-service-bureaus/about-the-bureau-of-education-and-services-for-the-blind. Contact intake for eligibility; not every low-vision program accepts all levels of vision loss. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "blind, low vision, assistive technology, independent living, employment support"
     },
     {
       "id": "rec6P4XU8pzUyTJx3",
@@ -2772,6 +2883,25 @@
       "tags": "center-based daycare, childcare, hamden"
     },
     {
+      "id": "recKQpnvUPTP1U5ZS",
+      "name": "Building One Community – Immigrant Education and Family Services",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "English and citizenship classes, adult literacy, job skills/coaching, entrepreneurship training, youth academic support and family referrals. English/Spanish family services; Haitian Creole with translator. Legal help is described separately as low-cost with free monthly Q&A.",
+      "town": "Stamford; Fairfield County",
+      "ages": "Immigrants and families; confirm individual program eligibility.",
+      "hours": "Confirm current class/location schedule; several programs and schedules.",
+      "availability": "Registration available through provider; current class/cohort capacity unknown.",
+      "cost": "General programs described as free. Same page describes immigration legal services as low-cost; confirm legal fees. Provider states no one turned away for inability to pay.",
+      "website": "https://b1c.org/programs/",
+      "contact": "ELL: 203-674-8585 x103; ELL@B1C.org. Family help: text SUPPORT or APOYO to 475-231-8191.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official sources checked November 25, 2026: https://b1c.org/programs/ https://b1c.org/about/. Transportation, disability accommodations, full eligibility and openings unknown unless stated.",
+      "lastVerified": "2026-11-25",
+      "tags": "immigrant support, english classes, citizenship classes, job training, digital literacy, family support, special education advocacy, entrepreneurship"
+    },
+    {
       "id": "recF88GSgpwRQGoqW",
       "name": "Bulkeley High School",
       "track": "Teens & High School",
@@ -3465,6 +3595,25 @@
         "Toddler Care"
       ],
       "tags": "home daycare licensed, childcare, hartford"
+    },
+    {
+      "id": "recvvEypWtJL7skdW",
+      "name": "Caroline House – Women's English and Life Skills Programs",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "English reading, writing and speaking, computer instruction and life-skills workshops. Onsite preschool available for students' young children; confirm ages and availability.",
+      "town": "Bridgeport",
+      "ages": "Women learning English; onsite preschool for students' young children.",
+      "hours": "Monday–Thursday 9 AM–1:30 PM, Bridgeport Public Schools calendar. Part-time ESL: two hours once weekly.",
+      "availability": "Interested and returning students contact Helen Ramos to register. Capacity and waitlist unconfirmed.",
+      "cost": "Fees not confirmed on reviewed registration page; contact provider.",
+      "website": "https://www.thecarolinehouse.org/registration",
+      "contact": "Helen Ramos: (475) 257-1454; hramospaiz@thecarolinehouse.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official sources checked November 25, 2026: https://www.thecarolinehouse.org/registration https://www.thecarolinehouse.org/womens-programs. Transportation, disability accommodations, full eligibility and openings unknown unless stated.",
+      "lastVerified": "2026-11-25",
+      "tags": "women, immigrant support, english classes, esl, computer skills, life skills, preschool, family literacy"
     },
     {
       "id": "recP1Ha6nV2272DM1",
@@ -4472,6 +4621,23 @@
       "tags": "preschool / pre-k, childcare, colchester"
     },
     {
+      "id": "recMEI19qHD0jeU6B",
+      "name": "Collective for Refugee and Immigrant Women’s Wellbeing (CRIW)",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "Community-led education, leadership, health and wellbeing support. Pathways to Learning combines ESOL and family literacy with childcare/preschool readiness support; confirm intake and eligibility.",
+      "town": "Greater New Haven",
+      "ages": "Refugee and immigrant women; mothers and young children in family literacy programming",
+      "availability": "Current openings and wait times unconfirmed. Contact provider.",
+      "cost": "Costs vary or are unconfirmed; contact provider.",
+      "website": "https://criwct.org/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://criwct.org/. Costs, current openings, detailed eligibility, transportation and accessibility require provider confirmation unless specified.",
+      "lastVerified": "2026-11-25",
+      "tags": "refugee support, immigrant support, women, english classes, esol, family literacy, childcare, wellbeing"
+    },
+    {
       "id": "recWYluHeg2kW3YFQ",
       "name": "Common Ground High School, Urban Farm & Environmental Education Center",
       "track": "Family & Childcare",
@@ -4496,6 +4662,22 @@
         "Teen / CIT Program"
       ],
       "tags": "nature / outdoor camp, summer camp, high school, new haven"
+    },
+    {
+      "id": "recKXnuhTWgLwmmDG",
+      "name": "Community Accounting Services",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Volunteer CPA accounting and financial assistance for low-income Connecticut residents and small nonprofits. Website request form required; response depends on volunteer availability.",
+      "town": "Connecticut",
+      "availability": "Current intake, openings and wait times unconfirmed; contact provider.",
+      "cost": "Provider describes free accounting and financial services for eligible clients.",
+      "website": "https://communityaccountingservices.weebly.com/faqs.html",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://communityaccountingservices.weebly.com/faqs.html. Languages, accessibility, detailed eligibility and current capacity unknown unless stated. Category is closest existing general professional-help category.",
+      "lastVerified": "2026-11-25",
+      "tags": "accounting help, financial assistance, volunteer cpa, pro bono, nonprofit support"
     },
     {
       "id": "recxb1Xux115kbTgG",
@@ -4635,6 +4817,24 @@
       "tags": "free health screening, mammogram, breast cancer screening, cervical cancer screening, pap test, hpv test, breast ultrasound, diagnostic services, uninsured, underinsured, income eligible, statewide"
     },
     {
+      "id": "recS6N1yu1GAnoduy",
+      "name": "Connecticut Caregiver Support and Respite Information",
+      "track": "Elder Care",
+      "category": "Caregiver Support Group",
+      "specificType": "Caregiver counseling/support, minor home modifications and respite referrals. Separate statewide respite program serves caregivers of people with Alzheimer's or related dementias.",
+      "town": "Statewide Connecticut",
+      "ages": "Caregivers; dementia-specific respite has narrower requirements.",
+      "availability": "Contact for assessment/application; respite availability and subsidy not guaranteed. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Eligibility, funding and costs depend on program.",
+      "website": "https://portal.ct.gov/ads/knowledge-base/articles/independent-living-services/healthy-living-services/care-for-caregivers",
+      "contact": "1-800-994-9422",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://portal.ct.gov/ads/knowledge-base/articles/independent-living-services/healthy-living-services/care-for-caregivers. Contact for assessment/application; respite availability and subsidy not guaranteed. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "caregiver support, respite, dementia, older adults"
+    },
+    {
       "id": "recQUb2ESTgxrt7UC",
       "name": "Connecticut College Children's Program",
       "track": "Family & Childcare",
@@ -4727,13 +4927,13 @@
       ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-31",
-      "notes": "The state lists district offices in Rocky Hill, Norwich, Milford, Fairfield, and Waterbury. Staff help with federal, state, and local veterans benefits and entitlements.",
+      "notes": "Official CT DVA advocacy page rechecked November 25, 2026: https://portal.ct.gov/dva/advocacy-and-assistance. Accredited Veteran Service Officers assist with state/federal benefits and VA claims/compensation; district offices include Rocky Hill, Norwich, Milford, Fairfield and Waterbury. Confirm eligibility, appointment and current capacity. Existing Published status retained.",
       "servicesOffered": [
         "Disability Support"
       ],
       "residency": "Statewide",
-      "lastVerified": "2026-08-31",
-      "tags": "veterans benefits counseling, senior services, rocky hill"
+      "lastVerified": "2026-11-25",
+      "tags": "veterans, military families, veterans benefits counseling, accredited claims assistance, education, housing, employment"
     },
     {
       "id": "rec1ow42gJJzdi07g",
@@ -4894,10 +5094,11 @@
         "Newington"
       ],
       "submittedBy": "Village Notes Research",
+      "notes": "Official source rechecked November 25, 2026: https://cthumane.org/pet-food-pantry-program/. Free short-term cat/dog food for approved applicants. Photo/current rabies proof required; financial-need information requested, proof document described as optional in application list. Three-month approval/renewal, maximum two years; no prescription food/delivery. Provider estimates application review 2–3 weeks; not independently measured. Pickup locations Newington, Waterford and Wilton. Contact 860-594-4500, petfoodpantry@cthumane.org. Published status retained.",
       "servicesOffered": [
         "Pet Food Assistance"
       ],
-      "lastVerified": "2026-08-27",
+      "lastVerified": "2026-11-25",
       "animals": [
         "Dogs",
         "Cats"
@@ -4906,7 +5107,7 @@
         "Rabies Certificate Required",
         "Membership or Registration Required"
       ],
-      "tags": "pet food assistance, pet services, food pantry, pet food, newington"
+      "tags": "pet food assistance, pet food, cats, dogs, financial hardship, newington"
     },
     {
       "id": "recjnEM36foqNXUnb",
@@ -4922,10 +5123,11 @@
         "Waterford"
       ],
       "submittedBy": "Village Notes Research",
+      "notes": "Official source rechecked November 25, 2026: https://cthumane.org/pet-food-pantry-program/. Free short-term cat/dog food for approved applicants. Photo/current rabies proof required; financial-need information requested, proof document described as optional in application list. Three-month approval/renewal, maximum two years; no prescription food/delivery. Provider estimates application review 2–3 weeks; not independently measured. Pickup locations Newington, Waterford and Wilton. Contact 860-594-4500, petfoodpantry@cthumane.org. Published status retained.",
       "servicesOffered": [
         "Pet Food Assistance"
       ],
-      "lastVerified": "2026-08-27",
+      "lastVerified": "2026-11-25",
       "animals": [
         "Dogs",
         "Cats"
@@ -4934,7 +5136,7 @@
         "Rabies Certificate Required",
         "Membership or Registration Required"
       ],
-      "tags": "pet food assistance, pet services, food pantry, pet food, waterford"
+      "tags": "pet food assistance, pet food, cats, dogs, financial hardship, waterford"
     },
     {
       "id": "recr18jeuWfoAH7fc",
@@ -4951,12 +5153,12 @@
         "Wilton"
       ],
       "submittedBy": "Village Notes Research",
-      "notes": "Connecticut Humane Society currently confirms Wilton as one of its three Pet Food Pantry pickup locations. Applicants submit a recent pet photo, proof of current rabies vaccination, and financial-need information. Approved clients receive free pet food for three months before renewal; assistance may continue for up to two years. Prescription food is not provided and there is no delivery.",
+      "notes": "Official source rechecked November 25, 2026: https://cthumane.org/pet-food-pantry-program/. Free short-term cat/dog food for approved applicants. Photo/current rabies proof required; financial-need information requested, proof document described as optional in application list. Three-month approval/renewal, maximum two years; no prescription food/delivery. Provider estimates application review 2–3 weeks; not independently measured. Pickup locations Newington, Waterford and Wilton. Contact 860-594-4500, petfoodpantry@cthumane.org. Published status retained.",
       "financialAid": "Yes",
       "servicesOffered": [
         "Pet Food Assistance"
       ],
-      "lastVerified": "2026-09-04",
+      "lastVerified": "2026-11-25",
       "animals": [
         "Dogs",
         "Cats"
@@ -4965,7 +5167,7 @@
         "Rabies Certificate Required",
         "Membership or Registration Required"
       ],
-      "tags": "pet food assistance, pet services, food pantry, pet food, wilton"
+      "tags": "pet food assistance, pet food, cats, dogs, financial hardship, wilton"
     },
     {
       "id": "recygfy7X91aWT7j8",
@@ -5070,6 +5272,24 @@
       "tags": "companion services, senior services, stratford"
     },
     {
+      "id": "recu3ttdpBYtLrYxS",
+      "name": "Connecticut Institute for Refugees and Immigrants (CIRI)",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Immigration legal assistance and refugee/immigrant support. Contact staff for program-specific eligibility and referrals. Legal appointments normally weekdays 9 AM–5 PM; no evening/weekend appointments stated.",
+      "town": "Statewide CT; Bridgeport, Stamford, Hartford, Waterbury and New Haven offices",
+      "ages": "Refugees, immigrants, unaccompanied children and trafficking survivors; program eligibility varies",
+      "availability": "Current openings and wait times unconfirmed. Contact provider.",
+      "cost": "Costs vary or are unconfirmed; contact provider.",
+      "website": "https://cirict.org/faq/",
+      "contact": "(203) 336-0141",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://cirict.org/faq/. Costs, current openings, detailed eligibility, transportation and accessibility require provider confirmation unless specified.",
+      "lastVerified": "2026-11-25",
+      "tags": "refugee support, immigrant support, immigration legal help, family support, community resources"
+    },
+    {
       "id": "recV4hWQ0gAGxvBGV",
       "name": "Connecticut Level Up Program",
       "track": "Teens & High School",
@@ -5106,6 +5326,24 @@
         "Accessibility Accommodations"
       ],
       "tags": "disability transition, iep, 504 plan, special education, career exploration, college readiness, work-based learning, job readiness, self-advocacy, youth employment, ages 16-22, statewide"
+    },
+    {
+      "id": "recIBer1lJ4YqWlj9",
+      "name": "Connecticut Library for Accessible Books (CT LAB)",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Free loans of audio/braille books and magazines for Connecticut residents unable to read standard print because of visual, reading or physical disability.",
+      "town": "Statewide Connecticut",
+      "ages": "CT residents with qualifying print disabilities; application required.",
+      "availability": "Confirm eligibility/application and equipment needs. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Free loan service for eligible residents.",
+      "website": "https://portal.ct.gov/csl/departments/ct-lab/overview",
+      "contact": "Application and service contacts on official CT LAB site.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://portal.ct.gov/csl/departments/ct-lab/overview. Confirm eligibility/application and equipment needs. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "blind, low vision, accessible books, braille, audio books, print disability"
     },
     {
       "id": "rechSPhyqMZj75yEr",
@@ -5353,6 +5591,23 @@
       "tags": "magnet / specialty school, teen resources, high school, east hartford"
     },
     {
+      "id": "recc50WLn9BY64HsI",
+      "name": "Connecticut Security Deposit Guarantee Program",
+      "track": "Food & Basic Needs",
+      "specificType": "Connecticut Security Deposit Guarantee Program",
+      "town": "Connecticut",
+      "ages": "Eligible people documented as chronically homeless or leaving shelters; also Section 8 Mobility Program participants",
+      "availability": "Referrals must come through the Coordinated Access Network. Funding/intake availability and approval require confirmation.",
+      "cost": "Guarantee to landlords for up to two months rent as security deposit; not a cash grant paid to the tenant.",
+      "website": "https://portal.ct.gov/doh/doh-1/programs/security-deposit-program",
+      "contact": "Coordinated Access Network referral; contact 211 for housing access",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source reviewed November 25, 2026. Official DOH program page. Landlord guarantee covers qualifying damages/back rent under program terms. Not general moving-cost or first-month-rent assistance.",
+      "lastVerified": "2026-11-25",
+      "tags": "security deposit, deposit guarantee, housing assistance, homelessness, coordinated access network"
+    },
+    {
       "id": "recANgRyQcMQtJToA",
       "name": "Connecticut Senior Medicare Patrol",
       "track": "Elder Care",
@@ -5432,6 +5687,24 @@
       "dateSubmitted": "2026-08-25",
       "notes": "Official Connecticut Aging and Disability Services source verified 2026-08-25. Access begins through a VA referral.",
       "tags": "veterans benefits counseling, senior services, caregiver support"
+    },
+    {
+      "id": "recGO7gtLfnFYO2dj",
+      "name": "Connecticut Veterans Free Bus Pass Program",
+      "track": "Family & Childcare",
+      "category": "Veterans Benefits Counseling",
+      "specificType": "State veteran bus-pass information and application route. Verify qualifying CT identification/veteran indicator and covered transit operators before travel.",
+      "town": "Statewide participating transit services; confirm routes",
+      "ages": "Eligible CT veterans; verify required identification.",
+      "availability": "Not a promise of free rail, intercity bus, paratransit or every transit operator. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Free pass for eligible veterans; coverage rules apply.",
+      "website": "https://portal.ct.gov/dva/knowledge-base/articles/advocacy-and-assistance/state-veterans-resources/bus-passes-for-veterans?language=en_US",
+      "contact": "Use official DVA application and transit coverage links.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://portal.ct.gov/dva/knowledge-base/articles/advocacy-and-assistance/state-veterans-resources/bus-passes-for-veterans?language=en_US. Not a promise of free rail, intercity bus, paratransit or every transit operator. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "veterans, transportation, bus pass, public transit"
     },
     {
       "id": "recLq392E3JoAHR1e",
@@ -5943,6 +6216,24 @@
       "tags": "center-based daycare, childcare, hartford"
     },
     {
+      "id": "recosJ5Y9Lc3S30BT",
+      "name": "CRT Supportive Services for Veteran Families",
+      "track": "Family & Childcare",
+      "category": "Veterans Benefits Counseling",
+      "specificType": "Housing stabilization/homelessness prevention and connections to VA services. Self-referrals and agency referrals accepted. Confirm financial and military eligibility.",
+      "town": "Hartford, New Haven, Middlesex and New London counties",
+      "ages": "Veterans/families homeless or at risk; active service and discharge conditions. Provider income wording unclear; confirm.",
+      "availability": "Application does not establish available housing/funds. Do not repeat ambiguous income formula as eligibility fact. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Program costs/assistance limits unconfirmed; contact staff.",
+      "website": "https://www.crtct.org/programs/veterans/supportive-services-for-veteran-families/",
+      "contact": "860-778-4775; outreach 860-778-2423",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.crtct.org/programs/veterans/supportive-services-for-veteran-families/. Application does not establish available housing/funds. Do not repeat ambiguous income formula as eligibility fact. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "veterans, military families, housing assistance, homelessness prevention, ssvf"
+    },
+    {
       "id": "recSNZ5UmZo9kA4mJ",
       "name": "Cruz O'Neal Family Child Care Home",
       "track": "Family & Childcare",
@@ -5966,6 +6257,78 @@
         "Toddler Care"
       ],
       "tags": "home daycare licensed, childcare, new britain"
+    },
+    {
+      "id": "rec1ynnadBAEfzikr",
+      "name": "CT Centers for Independent Living – State Directory",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "State directory of five community independent-living centers offering peer support, information/referral, skills, advocacy and transitions.",
+      "town": "Statewide Connecticut",
+      "ages": "Connecticut residents with disabilities; local service areas vary.",
+      "availability": "Directory rather than one direct-service office. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Confirm local program fees and eligibility.",
+      "website": "https://portal.ct.gov/ads/knowledge-base/articles/independent-living-services/more-independent-living-resources/independent-living-program",
+      "contact": "Contact individual center in official directory.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://portal.ct.gov/ads/knowledge-base/articles/independent-living-services/more-independent-living-resources/independent-living-program. Directory rather than one direct-service office. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "disability services, independent living, peer support, advocacy, transitions"
+    },
+    {
+      "id": "recRdngDKxFd5lMiv",
+      "name": "CT Deaf, DeafBlind and Hard of Hearing Services Bureau",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "State information hub and registered-interpreter resources, including sign/tactile communication and links to independent living, housing and family services.",
+      "town": "Statewide Connecticut",
+      "ages": "Deaf, DeafBlind and hard-of-hearing CT residents.",
+      "availability": "Registry is not a guarantee of an available or free interpreter. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Information hub; individual provider costs vary or unknown.",
+      "website": "https://portal.ct.gov/ads/knowledge-base/articles/about-ads/ads-service-bureaus/about-the-bureau-for-persons-who-are-deaf-deafblind-and-hard-of-hearing-services",
+      "contact": "Interpreter finding: CT 211; see bureau page.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://portal.ct.gov/ads/knowledge-base/articles/about-ads/ads-service-bureaus/about-the-bureau-for-persons-who-are-deaf-deafblind-and-hard-of-hearing-services. Registry is not a guarantee of an available or free interpreter. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "deaf, deafblind, hard of hearing, asl interpreting, tactile interpreting"
+    },
+    {
+      "id": "rec19Xg3ETanxMaiu",
+      "name": "CT Department of Housing – Rental Support and Crisis Access",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Official access point for rental assistance, security-deposit help and housing crisis/CAN referrals. General RAP and state Section 8 waitlists listed closed; specialized referral routes differ.",
+      "town": "Statewide Connecticut",
+      "ages": "CT renters and households in housing crisis; program eligibility varies.",
+      "availability": "Closed waiting lists are not open applications. CAN contact does not guarantee a shelter bed. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Assistance program requirements vary.",
+      "website": "https://portal.ct.gov/doh/rental-support",
+      "contact": "211 option 3 for housing crisis, weekdays 8:30 AM–4 PM per DOH.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://portal.ct.gov/doh/rental-support. Closed waiting lists are not open applications. CAN contact does not guarantee a shelter bed. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "housing assistance, rental assistance, security deposit, eviction prevention"
+    },
+    {
+      "id": "recm10Eqm0ZMmRvBK",
+      "name": "CT DMV Approved Translator Directory",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Official list of translators approved for DMV document translation. Directory, not a direct translation provider.",
+      "town": "Statewide",
+      "ages": "People needing DMV-related document translation.",
+      "availability": "Confirm receiving agency requirements and provider availability. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Provider fees vary or unknown.",
+      "website": "https://portal.ct.gov/dmv/resources/approved-translators",
+      "contact": "Use provider contacts in official list.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://portal.ct.gov/dmv/resources/approved-translators. Confirm receiving agency requirements and provider availability. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "document translation, dmv, certified translation, immigrant support"
     },
     {
       "id": "recFUiyCgIiuqiu0E",
@@ -6531,6 +6894,24 @@
         "Summer Day Camp"
       ],
       "tags": "municipal/parks rec camp, summer camp, groton"
+    },
+    {
+      "id": "rectcCYdcj5IZGrNL",
+      "name": "DMHAS Deaf, DeafBlind and Hard of Hearing Communication Access",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Qualified DMHAS participants/companions/visitors can request effective communication aids, including ASL/CDI/tactile interpreting and CART. Page also explains Relay CT.",
+      "town": "Statewide CT; DMHAS programs",
+      "ages": "People participating in or eligible for DMHAS programs and covered companions/visitors.",
+      "availability": "Not a universal interpreter booking program for unrelated appointments. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Communication accommodations at no cost to qualified people accessing DMHAS programs; confirm request.",
+      "website": "https://portal.ct.gov/DMHAS/Programs-and-Services/Statewide-Services/DMHAS-Office-of-Deaf-Hard-of-Hearing-or-Deafblind",
+      "contact": "860-418-7000; William.pierce@ct.gov; Relay CT 711",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://portal.ct.gov/DMHAS/Programs-and-Services/Statewide-Services/DMHAS-Office-of-Deaf-Hard-of-Hearing-or-Deafblind. Not a universal interpreter booking program for unrelated appointments. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "deaf, deafblind, hard of hearing, asl interpreting, captions, mental health access"
     },
     {
       "id": "reckwxW9zdUTLgfbg",
@@ -7129,6 +7510,24 @@
       "tags": "center-based daycare, childcare, waterbury"
     },
     {
+      "id": "recKnsoXHOPF2oRYw",
+      "name": "Easterseals Veterans Rally Point",
+      "track": "Family & Childcare",
+      "category": "Veterans Benefits Counseling",
+      "specificType": "Military-family support, employment/digital skills, behavioral health, benefits assistance, basic needs and wellness programs; eligibility differs by program.",
+      "town": "Norwich; confirm regional program reach",
+      "ages": "Veterans, active military, Guard/Reserve and families; specific programs may be narrower.",
+      "availability": "Confirm appointment, membership and particular services before visiting. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Costs vary or unknown; confirm program.",
+      "website": "https://hartford.easterseals.com/get-support/areas-of-support/veterans-rally-point-military-services",
+      "contact": "Use official program contact/intake.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://hartford.easterseals.com/get-support/areas-of-support/veterans-rally-point-military-services. Confirm appointment, membership and particular services before visiting. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "veterans, military families, job training, digital skills, basic needs, benefits assistance"
+    },
+    {
       "id": "recfdD0cyY3V88Eiy",
       "name": "Eastford Boe At Eastford Elementary School",
       "track": "Family & Childcare",
@@ -7173,6 +7572,23 @@
         "Preschool / Pre-K"
       ],
       "tags": "preschool / pre-k, childcare, winchester"
+    },
+    {
+      "id": "rec06E73E9mpWQXQx",
+      "name": "Elena’s Light",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "One-to-one English tutoring, education and career development, health education, advocacy and youth programs. Linktree also lists driver's permit classes for women; current class dates and openings require confirmation.",
+      "town": "Greater New Haven",
+      "ages": "Refugee and immigrant women and children",
+      "availability": "Current openings and wait times unconfirmed. Contact provider.",
+      "cost": "Costs vary or are unconfirmed; contact provider.",
+      "website": "https://elenaslight.org/programs/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://elenaslight.org/programs/; additional source https://linktr.ee/elenaslight. Costs, current openings, detailed eligibility, transportation and accessibility require provider confirmation unless specified.",
+      "lastVerified": "2026-11-25",
+      "tags": "refugee support, immigrant support, women, children, english classes, esl, health education, career development, drivers permit"
     },
     {
       "id": "recMH05Qk3XdSqtqw",
@@ -7475,6 +7891,23 @@
         "Toddler Care"
       ],
       "tags": "home daycare licensed, childcare, bridgeport"
+    },
+    {
+      "id": "reccGK6qRc6Zv5FIZ",
+      "name": "Eviction Help CT – Right to Counsel",
+      "track": "Food & Basic Needs",
+      "specificType": "Eviction Help CT – Right to Counsel",
+      "town": "Connecticut; coverage and eligibility vary",
+      "ages": "Tenants facing eviction or housing subsidy loss; eligibility depends on location, circumstances and provider capacity",
+      "availability": "Eligibility screening available; free representation is conditional and capacity-dependent. People outside representation coverage may call for advice.",
+      "cost": "Free legal representation for eligible tenants; not a rent-payment program.",
+      "website": "https://evictionhelpct.org/",
+      "contact": "1-800-559-1565",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source reviewed November 25, 2026. Official program site lists location and household conditions. Do not promise statewide full representation. Includes referrals to self-help and court-form tools.",
+      "lastVerified": "2026-11-25",
+      "tags": "eviction prevention, tenant legal help, right to counsel, housing subsidy, rental assistance referrals"
     },
     {
       "id": "recqRHAudSML1eEC8",
@@ -8077,6 +8510,24 @@
       "tags": "pet food assistance, pet services, food pantry, pet food, north canaan"
     },
     {
+      "id": "rechClkHXj6oX0IZe",
+      "name": "Focus on Veterans Transportation – ECTC listing",
+      "track": "Family & Childcare",
+      "category": "Veterans Benefits Counseling",
+      "specificType": "ECTC lists free transportation by Focus on Veterans to Newington/West Haven VA hospitals and some other trips. Two-day advance notice requested.",
+      "town": "Eastern Connecticut",
+      "ages": "Veterans living in eastern CT; confirm town and trip eligibility.",
+      "availability": "Partner listing source; confirm current fleet, accessible vehicle and booking availability. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Free described transportation; confirm trip coverage.",
+      "website": "https://www.ectcinc.org/veterans",
+      "contact": "860-317-1025; ourctveterans@yahoo.com",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.ectcinc.org/veterans. Partner listing source; confirm current fleet, accessible vehicle and booking availability. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "veterans, transportation, medical transportation, eastern connecticut"
+    },
+    {
       "id": "rec9bMYtn88qiW9c2",
       "name": "Fones Dental Hygiene Clinic - University of Bridgeport",
       "track": "Health & Dental",
@@ -8093,6 +8544,22 @@
       "notes": "Official provider/program source verified November 8, 2026: https://www.bridgeport.edu/ub-clinics/dental-hygiene. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
       "lastVerified": "2026-11-08",
       "tags": "dental, low cost dental, cleanings"
+    },
+    {
+      "id": "recZwvDXD8orfwhv2",
+      "name": "FPA Connecticut – Pro Bono Financial Planning",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "No-cost short-term financial planning, budgeting, debt/credit education and support around life changes for individuals/families; also supports community organizations.",
+      "town": "Connecticut",
+      "availability": "Current intake, openings and wait times unconfirmed; contact provider.",
+      "cost": "No-cost financial planning through pro bono program; confirm match and scope.",
+      "website": "https://www.financialplanningassociation.org/pro-bono-community-resources-public",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.financialplanningassociation.org/pro-bono-community-resources-public. Languages, accessibility, detailed eligibility and current capacity unknown unless stated. Category is closest existing general professional-help category.",
+      "lastVerified": "2026-11-25",
+      "tags": "financial planning, budgeting, debt education, credit education, pro bono"
     },
     {
       "id": "recWaKCWGlp39pLOD",
@@ -8408,6 +8875,26 @@
       ],
       "lastVerified": "2026-08-31",
       "tags": "skilled nursing / rehab, senior services, north canaan"
+    },
+    {
+      "id": "recJqgZlp96OchKCt",
+      "name": "Generations Mobile Health Unit",
+      "track": "Health & Dental",
+      "category": "Mobile Health & Dental Clinic",
+      "specificType": "Mobile medical, preventive dental and support services. BP/A1C/glucose and other testing; cholesterol referred to external lab. New/existing patients all ages; appointments and walk-ins.",
+      "town": "Eastern CT scheduled stops: Windham, Putnam and Norwich",
+      "ages": "All ages; confirm service offered at each stop.",
+      "availability": "Dec 1 Windham stop offers medical/support only; do not advertise onsite dental at that stop. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Insurance accepted; income/family-size sliding fees. Uninsured accepted, not universally free.",
+      "website": "https://genhealth.org/mobilehealthunit/",
+      "contact": "860-450-7471 option 2; mobilehealth@genhealth.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://genhealth.org/mobilehealthunit/. Dec 1 Windham stop offers medical/support only; do not advertise onsite dental at that stop. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "event": "Medical/support clinic, Windham Heights, 202 Scott Road, Windham; 8:30 AM–3:30 PM; appointments and walk-ins.",
+      "eventDate": "2026-12-01",
+      "tags": "mobile health, dental care, blood pressure, diabetes screening, uninsured, eastern connecticut"
     },
     {
       "id": "recn4DEjmh7Ibhz2k",
@@ -9305,11 +9792,12 @@
       "category": "Food Bank / Food Pantry",
       "town": "Hartford",
       "address": "55 Bartholomew Avenue, Hartford, CT",
+      "hours": "Monday–Thursday 9:30–11:30 AM and 1–5 PM.",
       "website": "https://handsonhartford.org/assistance/",
-      "notes": "Food & Basic Needs. Verified official source October 13, 2026. Monday-Thursday 9:30-noon and 1-5 PM; Connecticut residents eligible for emergency food bag; phone 860-728-3201.",
-      "lastVerified": "2026-10-13",
+      "notes": "Official source rechecked November 25, 2026: https://handsonhartford.org/assistance/. Morning closing corrected from noon to 11:30 AM. All CT residents eligible for emergency food bag; call 860-728-3201 about pantry enrollment. Existing Published status preserved.",
+      "lastVerified": "2026-11-25",
       "foodType": "Food Bank / Food Pantry",
-      "tags": "food bank / food pantry, food pantry, hartford"
+      "tags": "food bank / food pantry, food pantry, hartford, emergency food, groceries"
     },
     {
       "id": "rec0vZe7gB3a6jp5Q",
@@ -9713,6 +10201,25 @@
       "tags": "high school public, teen resources, high school, hartford"
     },
     {
+      "id": "recvaxXPJPD29Z73O",
+      "name": "Hartford Public Library – The American Place",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "Adult education, English-learning resources, computer training, job resources and immigrant services. Citizenship program offers education, interview preparation and legal assistance with naturalization applications.",
+      "town": "Hartford",
+      "ages": "Adult learners and immigrants; confirm service-specific eligibility and residency rules.",
+      "hours": "Contact staff for current classes and appointment schedule.",
+      "availability": "Citizenship interest form available; current appointment and class capacity unconfirmed.",
+      "cost": "Costs depend on service; citizenship legal assistance explicitly described as low-cost. Do not assume all legal services free.",
+      "website": "https://tap.hplct.org/",
+      "contact": "860-695-6337; tap@hplct.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official sources checked November 25, 2026: https://tap.hplct.org/ https://tap.hplct.org/immigration/citizenship/. Transportation, disability accommodations, full eligibility and openings unknown unless stated.",
+      "lastVerified": "2026-11-25",
+      "tags": "immigrant support, english classes, adult education, computer skills, citizenship, immigration legal help, library resources"
+    },
+    {
       "id": "recuwc6mpJHXArnp0",
       "name": "Hartford Youth Services Bureau",
       "track": "Family & Childcare",
@@ -9753,6 +10260,23 @@
         "Paid Youth Employment"
       ],
       "tags": "magnet / specialty school, teen resources, high school, killingly"
+    },
+    {
+      "id": "recFvCPhAJyzYObA2",
+      "name": "Havenly Fellowship",
+      "track": "Family & Childcare",
+      "category": "Job Training Program",
+      "specificType": "Six-month program combining work experience, education and community activities. Provider describes paid classes in English, digital literacy, financial literacy, food safety and job readiness, plus career coaching. Current cohort dates and openings unknown.",
+      "town": "New Haven",
+      "ages": "Refugee and immigrant women",
+      "availability": "Current openings and wait times unconfirmed. Contact provider.",
+      "cost": "Provider describes paid classes; other fees or costs unconfirmed.",
+      "website": "https://havenlynhv.org/pages/fellowship",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://havenlynhv.org/pages/fellowship. Costs, current openings, detailed eligibility, transportation and accessibility require provider confirmation unless specified.",
+      "lastVerified": "2026-11-25",
+      "tags": "refugee support, immigrant support, women, job training, paid classes, english classes, digital literacy, financial literacy"
     },
     {
       "id": "rec5hZ2BUyPGva37f",
@@ -9943,6 +10467,23 @@
       "tags": "food bank / food pantry, food pantry, westport"
     },
     {
+      "id": "reccCKKiv4DhkM5TD",
+      "name": "Homes with Hope Permanent Supportive Housing",
+      "track": "Food & Basic Needs",
+      "specificType": "Homes with Hope Permanent Supportive Housing",
+      "town": "Westport and Norwalk",
+      "ages": "Individuals and families with histories of chronic homelessness and diagnosed mental illness, per provider",
+      "availability": "Housing applications routed through 211 and Coordinated Access Network; current openings/wait times unknown.",
+      "cost": "Rent, deposits and utilities require confirmation.",
+      "website": "https://www.hwhct.org/housing",
+      "contact": "211 for housing intake",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source reviewed November 25, 2026. Separate housing program from existing food-pantry listings. Provider reports 52 supportive housing units and case management. Specific properties differ; Bacharach Community serves mothers and children. Household size, pets, unit accessibility and leases require program-specific review.",
+      "lastVerified": "2026-11-25",
+      "tags": "supportive housing, family housing, westport, norwalk, mental health, housing referral"
+    },
+    {
       "id": "recIvdb4zbljdsiIt",
       "name": "Honey Bear Learning Center",
       "track": "Family & Childcare",
@@ -10109,6 +10650,22 @@
       "tags": "center-based daycare, childcare, new britain"
     },
     {
+      "id": "rec9lhYY8ty7ai6Fm",
+      "name": "HRA of New Britain – Financial Coaching",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Financial coaching, credit rebuilding and savings support. Free to residents of the provider's 50-town Greater Hartford metropolitan service area; confirm town eligibility.",
+      "town": "Greater Hartford service area; 50 specified towns",
+      "availability": "Current intake, openings and wait times unconfirmed; contact provider.",
+      "cost": "Free for eligible service-area residents.",
+      "website": "https://www.hranbct.org/programs/financial/coaching/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.hranbct.org/programs/financial/coaching/. Languages, accessibility, detailed eligibility and current capacity unknown unless stated. Category is closest existing general professional-help category.",
+      "lastVerified": "2026-11-25",
+      "tags": "financial coaching, budgeting, credit rebuilding, savings, financial counseling"
+    },
+    {
       "id": "recLKWttuovGTuTcy",
       "name": "HRA South Street Early Learning Center - Bristol",
       "track": "Family & Childcare",
@@ -10211,6 +10768,24 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, hartford"
+    },
+    {
+      "id": "recDcp1REeGmzViqb",
+      "name": "iCanConnect Connecticut – Access Through Technology",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Assessment, distance-communication equipment and specialized training for eligible residents with combined hearing and vision loss. English/Spanish and screen-reader application resources.",
+      "town": "Statewide Connecticut",
+      "ages": "Combined significant hearing/vision loss and income requirements.",
+      "availability": "Not a general hearing-aid or low-vision device entitlement. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Free qualifying program; income guidelines apply.",
+      "website": "https://www.icanconnect.org/how-to-apply/connecticut/",
+      "contact": "860-424-5619; Muriel.Aparo@ct.gov",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.icanconnect.org/how-to-apply/connecticut/. Not a general hearing-aid or low-vision device entitlement. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "deafblind, communication equipment, assistive technology, training"
     },
     {
       "id": "recsiH9zrIcMlj2aZ",
@@ -10605,6 +11180,42 @@
         "Preschool / Pre-K"
       ],
       "tags": "center-based daycare, childcare, danbury"
+    },
+    {
+      "id": "recTtpwRU9uGAj92F",
+      "name": "IRIS – Integrated Refugee & Immigrant Services",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Provider lists housing/basic-needs, employment, healthcare support, education, legal services and case management. Contact client help line to confirm current eligibility and intake for the service needed.",
+      "town": "Connecticut; New Haven and Hartford",
+      "ages": "Refugees and immigrants; eligibility varies by program",
+      "availability": "Current openings and wait times unconfirmed. Contact provider.",
+      "cost": "Costs vary or are unconfirmed; contact provider.",
+      "website": "https://irisct.org/",
+      "contact": "Client help line: (203) 997-8490",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://irisct.org/. Costs, current openings, detailed eligibility, transportation and accessibility require provider confirmation unless specified.",
+      "lastVerified": "2026-11-25",
+      "tags": "refugee support, immigrant support, english classes, employment assistance, housing assistance, basic needs, family support"
+    },
+    {
+      "id": "rec0tNksJUqQDb1dH",
+      "name": "IRIS Language Services",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Paid document translation for individuals; interpreting for organizations. Certified/notarized document options; telephone/video and in-person interpreting. Confirm language and quotation.",
+      "town": "New Haven; remote services nationwide",
+      "ages": "Individuals: written translation only. Organizations: translation and interpreting.",
+      "availability": "Individual interpreter bookings not currently offered. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Fees apply; not a free interpreter service.",
+      "website": "https://irisct.org/language-services/",
+      "contact": "languageservices@irisct.org; (475) 267-5995",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://irisct.org/language-services/. Individual interpreter bookings not currently offered. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "document translation, interpreting, immigrant support, language access"
     },
     {
       "id": "recYdTgnTM4EMp12J",
@@ -11656,6 +12267,44 @@
       "tags": "preschool / pre-k, childcare, lisbon"
     },
     {
+      "id": "recZ48qJiaAseMmXy",
+      "name": "Literacy Volunteers of Central Connecticut – Adult Literacy Programs",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "One-to-one and small-group ESOL, basic literacy, digital literacy and basic-to-pre-GED math. Family literacy partner at YWCA New Britain serves mothers with children eight and younger.",
+      "town": "Central Connecticut; New Britain family literacy partner",
+      "ages": "Adult learners, beginner through advanced; family literacy partner serves New Britain mothers with children 8 and younger.",
+      "hours": "Typically once weekly for about two hours; flexible tutoring.",
+      "availability": "Student interest form available; confirm placement, eligibility and waitlist. Family program intake separate.",
+      "cost": "Costs not confirmed on reviewed program page; contact provider.",
+      "website": "https://literacycentral.org/programs/",
+      "contact": "860-229-7323; info@literacycentral.org. Family literacy: 860-225-4681 x255.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official sources checked November 25, 2026: https://literacycentral.org/programs/ . Transportation, disability accommodations, full eligibility and openings unknown unless stated.",
+      "lastVerified": "2026-11-25",
+      "tags": "english classes, esol, adult literacy, digital literacy, math tutoring, family literacy, mothers"
+    },
+    {
+      "id": "recu3SoDkGmZPEe1b",
+      "name": "Literacy Volunteers of Southern Connecticut – Literacy for Adults",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "Free English reading, writing, speaking and listening tutoring, primarily one-to-one in a mutually convenient public location or online. Occasional small-group classes.",
+      "town": "Greater Milford, Stratford, Bridgeport and West Haven area",
+      "ages": "Adults 18+ residing in Greater Milford, Stratford, Bridgeport and West Haven area.",
+      "hours": "Scheduled by learner and tutor; online or public meeting location.",
+      "availability": "Submit Student Information Form by email; staff reviews needs before placement. Tutor availability and wait times unknown.",
+      "cost": "Free.",
+      "website": "https://lvsct.org/literacy-for-adults/",
+      "contact": "kate.alessi@lvsct.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official sources checked November 25, 2026: https://lvsct.org/literacy-for-adults/ . Transportation, disability accommodations, full eligibility and openings unknown unless stated.",
+      "lastVerified": "2026-11-25",
+      "tags": "english classes, esol, adult literacy, free tutoring, online tutoring, immigrant support"
+    },
+    {
       "id": "recwKljtOXomamNDj",
       "name": "Little Angels Workshop",
       "track": "Family & Childcare",
@@ -12692,6 +13341,23 @@
       "tags": "center-based daycare, childcare, norwich"
     },
     {
+      "id": "recmJC1J2hc5utcQc",
+      "name": "Meadow Gardens Affordable Apartments Waitlist",
+      "track": "Food & Basic Needs",
+      "specificType": "Meadow Gardens Affordable Apartments Waitlist",
+      "town": "Norwalk",
+      "ages": "Income-eligible households; 1–4 bedroom apartments",
+      "availability": "Official page states applications accepted from November 16, 2026 at 9 a.m.; closes when desired application count reached. Reopening planned spring 2027. Waitlist only, no vacancy guaranteed.",
+      "cost": "Income limits apply; rents, deposits and utilities not confirmed.",
+      "website": "https://www.soundcommunitiesct.org/apply",
+      "contact": "Carla Wright: 203-515-3081; cwright@SoundCommunitiesCT.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source reviewed November 25, 2026. Apply through Sound Communities/Norwalk Housing Authority, 24.5 Monroe Street, Norwalk, or published email. Household occupancy rules, pets and unit accessibility require confirmation.",
+      "lastVerified": "2026-11-25",
+      "tags": "affordable housing, waitlist, family housing, income limits, norwalk"
+    },
+    {
       "id": "recZuffvoutN22jL3",
       "name": "MedVet Norwalk",
       "track": "Pet Care & Resources",
@@ -12717,6 +13383,25 @@
       ],
       "lastVerified": "2026-08-28",
       "tags": "emergency veterinary care, pet services, norwalk"
+    },
+    {
+      "id": "recChXl60Ky7O4ec5",
+      "name": "Mercy Learning Center – Adult Education and Family Support",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "Free adult education and literacy for women without a U.S. high school diploma. Enrolled students may access childcare/preschool, food/diaper pantry and support services. Childcare serves ages 3 months–5 years and is tied to maternal enrollment.",
+      "town": "Bridgeport",
+      "ages": "Women without a U.S. high school diploma. Minimum age conflicting: contact page 18+, other program pages 17+; confirm directly.",
+      "hours": "Call for current schedule; follows Bridgeport Public Schools weather closures.",
+      "availability": "Call for registration appointment or waitlist. Published Fall 2026 August registration dates have passed; current openings unknown.",
+      "cost": "Programs and services free.",
+      "website": "https://mercylearningcenter.org/contact/",
+      "contact": "(203) 334-6699; info@mercylearningcenter.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official sources checked November 25, 2026: https://mercylearningcenter.org/contact/ https://mercylearningcenter.org/early-childhood-education-program/; https://mercylearningcenter.org/support-services/. Transportation, disability accommodations, full eligibility and openings unknown unless stated. Minimum age conflict unresolved; verify before referral.",
+      "lastVerified": "2026-11-25",
+      "tags": "women, adult education, english classes, literacy, childcare, preschool, diapers, food assistance, family support"
     },
     {
       "id": "recPLuF8FWwTtVawt",
@@ -13848,6 +14533,23 @@
       "tags": "geriatric care manager, senior services"
     },
     {
+      "id": "recvZnOJcYmOSlXYi",
+      "name": "My Sisters’ Place Supportive Housing",
+      "track": "Food & Basic Needs",
+      "specificType": "My Sisters’ Place Supportive Housing",
+      "town": "Hartford",
+      "ages": "Eligible low-income individuals and families, including single men and women",
+      "availability": "Programs confirmed; current openings, waitlists and intake route require provider confirmation.",
+      "cost": "Affordable/supportive housing; exact rents, deposits and utilities not published.",
+      "website": "https://sistersplacect.org/supportive-housing/",
+      "contact": "860-808-2048",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source reviewed November 25, 2026. Mary Seymour Place serves single men and women; Sue Ann Shay and Beaumont Lofts serve families and individuals. Tenants hold leases and on-site case management is voluntary. Specific eligibility differs by property; pets, accessibility, children's age limits and length of stay not verified.",
+      "lastVerified": "2026-11-25",
+      "tags": "supportive housing, men, women, family housing, hartford, case management"
+    },
+    {
       "id": "recoabJAR0UzGIV2s",
       "name": "Natasha Smith Family Child Care Home",
       "track": "Family & Childcare",
@@ -14506,12 +15208,12 @@
       "contact": "203-946-4811",
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-29",
-      "notes": "Official provider page and current organizational materials checked August 29, 2026. Intake eligibility, service area, and appointment availability should be confirmed through the provider.",
+      "notes": "Official source rechecked November 25, 2026: https://nhlegal.org/. Organization provides free advice, brief services and full representation to eligible people in poverty in New Haven County and Lower Naugatuck Valley. This existing elder-law listing retained; organization also lists housing, family, benefits, employment and immigration services. Confirm case type, eligibility and capacity. Published status preserved.",
       "servicesOffered": [
         "Elder Care"
       ],
-      "lastVerified": "2026-08-29",
-      "tags": "elder law / financial planning, senior services, legal help, new haven"
+      "lastVerified": "2026-11-25",
+      "tags": "elder law, senior services, legal help, new haven, legal representation, civil legal aid, immigrant support"
     },
     {
       "id": "recSuFjnaOduxluvf",
@@ -15910,6 +16612,24 @@
       "tags": "center-based daycare, childcare, hartford"
     },
     {
+      "id": "rec2KZK4qVEYxcTvX",
+      "name": "Person to Person – Basic Needs and Clothing",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "Food, clothing, diapers/layettes and emergency assistance. Recurring food has seven-town/income rules; one-time emergency food available to eligible CT residents. Clothing center access rules separate.",
+      "town": "Darien, New Canaan, Norwalk, Stamford, Weston, Westport, Wilton; emergency food statewide subject to income",
+      "ages": "Income/residency requirements differ by service.",
+      "availability": "Appointment required; assistance/funds not guaranteed. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Confirm program; free clothing center described.",
+      "website": "https://p2phelps.org/get-help/",
+      "contact": "203-655-0048 or 203-939-1650",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://p2phelps.org/get-help/. Appointment required; assistance/funds not guaranteed. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "food assistance, clothing, diapers, basic needs, emergency financial help"
+    },
+    {
       "id": "rec5i9PuE7aDvO6Iu",
       "name": "PetSmart PetsHotel & Doggie Day Camp, East Hartford",
       "track": "Pet Care & Resources",
@@ -16591,6 +17311,24 @@
       "tags": "preschool / pre-k, childcare, trumbull"
     },
     {
+      "id": "recHT8h8CsrwWiPhR",
+      "name": "Relay Connecticut – Telecommunications Relay",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Free relay service connecting people who are Deaf or have communication disabilities with telephone calls. DMHAS lists TTY, voice/hearing carry-over, speech-to-speech and captioned telephone resources.",
+      "town": "Statewide Connecticut",
+      "ages": "People using supported relay communication in Connecticut.",
+      "availability": "Confirm device/setup and particular relay mode; not an in-person interpreter. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Free relay service.",
+      "website": "https://portal.ct.gov/DMHAS/Programs-and-Services/Statewide-Services/DMHAS-Office-of-Deaf-Hard-of-Hearing-or-Deafblind",
+      "contact": "Dial 711.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://portal.ct.gov/DMHAS/Programs-and-Services/Statewide-Services/DMHAS-Office-of-Deaf-Hard-of-Hearing-or-Deafblind. Confirm device/setup and particular relay mode; not an in-person interpreter. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "deaf, hard of hearing, deafblind, speech disability, relay service, accessible phone"
+    },
+    {
       "id": "recnOntP6EZUUvTNz",
       "name": "Richard A. Battles Day Care",
       "track": "Family & Childcare",
@@ -16897,6 +17635,23 @@
         "Toddler Care"
       ],
       "tags": "home daycare licensed, childcare, new britain"
+    },
+    {
+      "id": "recHrzNjFEtsNyI9D",
+      "name": "Ruth’s House Residential Program",
+      "track": "Food & Basic Needs",
+      "specificType": "Ruth’s House Residential Program",
+      "town": "Connecticut; Trumbull mailing address",
+      "ages": "Single mothers with legal custody of their children",
+      "availability": "Application and interview process published; available beds, waiting times and length of stay not confirmed.",
+      "cost": "Rent, deposit and required fees not published.",
+      "website": "https://www.ruthshousect.com/get-help",
+      "contact": "info@ruthshousect.com",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source reviewed November 25, 2026. Residential support includes educational/vocational opportunities, finance guidance, counseling and Bible study. Requires identification, financial documentation, references and active transition-plan participation. Children's age limits, pets, accessibility and mandatory religious participation require confirmation. PO box is mailing address, not verified residence.",
+      "lastVerified": "2026-11-25",
+      "tags": "single mothers, family housing, residential program, parenting support, faith based, life skills"
     },
     {
       "id": "recG5ePjVn7kfhPtc",
@@ -17257,6 +18012,23 @@
       ],
       "lastVerified": "2026-08-31",
       "tags": "geriatric care manager, senior services, caregiver support, norwich"
+    },
+    {
+      "id": "recu1wtnvXcgDCEKV",
+      "name": "Seymour I. Hollander Apartments Senior Housing Waitlist",
+      "track": "Food & Basic Needs",
+      "specificType": "Seymour I. Hollander Apartments Senior Housing Waitlist",
+      "town": "Bridgeport",
+      "ages": "Applicants age 62+; maximum two household members",
+      "availability": "Official notice opens waitlist November 1, 2026 until further notice. Independent one-bedroom subsidized apartments. No vacancy or move-in date confirmed.",
+      "cost": "Utilities included. Published 2026 income limits: $49,200 one person; $56,250 two people. Rent and deposit not stated.",
+      "website": "https://www.hollanderhouse.org/uploads/5/2/2/8/5228914/waiting_list_notice_10.23.26.pdf",
+      "contact": "203-374-7868 option 2; info@hollanderhouse.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source reviewed November 25, 2026. 4190 Park Avenue, Bridgeport. In-person pickup/drop-off by appointment; mail and secure online submission options. Credit/criminal and income screening. Alternative formats and translation materials available by request. Pets not verified.",
+      "lastVerified": "2026-11-25",
+      "tags": "senior housing, affordable housing, waitlist, bridgeport, age 62, translation assistance"
     },
     {
       "id": "recY74AhVxYSSejkE",
@@ -17731,6 +18503,24 @@
       ],
       "lastVerified": "2026-08-31",
       "tags": "geriatric care manager, senior services, caregiver support, bridgeport"
+    },
+    {
+      "id": "recwUwxZ4cl4nIiRH",
+      "name": "Spanish Community of Wallingford – Document and Family Support",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Document translation/interpreting, DMV paperwork assistance, notary services, referrals and employment support. Confirm language pair and whether certified translation is appropriate for receiving agency.",
+      "town": "Wallingford",
+      "ages": "Community members; confirm residency and individual-service eligibility.",
+      "availability": "Notarization is separate from legal representation or translation certification. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Costs unknown; contact provider.",
+      "website": "https://scowinc.org/services/",
+      "contact": "203-265-5866; arodriguez@scowinc.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://scowinc.org/services/. Notarization is separate from legal representation or translation certification. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "immigrant support, document translation, interpreting, notary, employment support"
     },
     {
       "id": "rec0luShxWloA0GYH",
@@ -18714,6 +19504,22 @@
       "tags": "center-based daycare, childcare, plymouth"
     },
     {
+      "id": "recxYx1wj1WEHztZn",
+      "name": "The American Immigrant Legal Clinic (TAILC)",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Free legal representation for low-income immigrants detained in Connecticut, including bond, habeas and merits hearings. Confirm case eligibility and capacity.",
+      "town": "Connecticut",
+      "availability": "Current intake, openings and wait times unconfirmed; contact provider.",
+      "cost": "Free legal fees; other costs unconfirmed.",
+      "website": "https://www.tailcproject.org/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.tailcproject.org/. Languages, accessibility, detailed eligibility and current capacity unknown unless stated. Category is closest existing general professional-help category.",
+      "lastVerified": "2026-11-25",
+      "tags": "immigrant support, legal representation, detention defense, pro bono"
+    },
+    {
       "id": "recTiaXxm3vlCnqwT",
       "name": "The Ark Early Care & Education Center",
       "track": "Family & Childcare",
@@ -19534,6 +20340,24 @@
       "tags": "preschool / pre-k, childcare, torrington"
     },
     {
+      "id": "recUvCIDNaqHYid1E",
+      "name": "Torrington Veterans Service Office",
+      "track": "Family & Childcare",
+      "category": "Veterans Benefits Counseling",
+      "specificType": "Volunteer-staffed veteran/family help; temporary assistance through Soldiers' Sailors' and Marines' Fund for eligible households. Tuesday/Thursday 10 AM–2 PM; special appointments possible.",
+      "town": "Torrington",
+      "ages": "Eligible veterans and families; confirm municipal and fund requirements.",
+      "availability": "Contact before visit; assistance and funding not guaranteed. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Service fees unconfirmed; financial assistance eligibility applies.",
+      "website": "https://www.torringtonct.gov/215/Veterans-Service-Office-Museum",
+      "contact": "860-489-2531",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.torringtonct.gov/215/Veterans-Service-Office-Museum. Contact before visit; assistance and funding not guaranteed. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "veterans, military families, benefits assistance, emergency financial help, litchfield county"
+    },
+    {
       "id": "rec10OoA20KDTn0c9",
       "name": "Town and Country Early Learning Centers",
       "track": "Family & Childcare",
@@ -20037,6 +20861,22 @@
       "tags": "stem/tech camp, storrs"
     },
     {
+      "id": "rec3ke1OwdMo2qGPN",
+      "name": "UConn Transactional Law Clinic",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Legal services for small businesses, nonprofits and creative professionals. Confirm accepted matters, eligibility, fees and intake.",
+      "town": "Connecticut; UConn School of Law",
+      "availability": "Current intake, openings and wait times unconfirmed; contact provider.",
+      "cost": "Fees unconfirmed; do not assume all services free.",
+      "website": "https://law.uconn.edu/academics/clinics-experiential-education/transactional-law-clinic/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://law.uconn.edu/academics/clinics-experiential-education/transactional-law-clinic/. Languages, accessibility, detailed eligibility and current capacity unknown unless stated. Category is closest existing general professional-help category.",
+      "lastVerified": "2026-11-25",
+      "tags": "small business, nonprofit support, business legal help, legal clinic"
+    },
+    {
       "id": "recPtBP0baQZEtQck",
       "name": "UConn Upward Bound Math & Science",
       "track": "Teens & High School",
@@ -20078,6 +20918,24 @@
       "tags": "college access / readiness, teen resources, high school, mansfield"
     },
     {
+      "id": "recDEXvfwPQGvD7iL",
+      "name": "UCP Eastern Connecticut – Supported Living",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Apartment-based supported living with daily skills/health support; DDS rent subsidies described. Intermittent support differs from 24-hour care; confirm referral and funding.",
+      "town": "Windham, New London, Middlesex and New Haven counties",
+      "ages": "People with disabilities; confirm DDS/referral and eligibility.",
+      "availability": "No vacancies confirmed. Ordinary shared housing and clinical care are different services. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Funding/subsidies and personal costs require confirmation.",
+      "website": "https://ucpect.org/programs/residential/",
+      "contact": "860-443-3800",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://ucpect.org/programs/residential/. No vacancies confirmed. Ordinary shared housing and clinical care are different services. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "disability services, supported living, accessible housing, independent living"
+    },
+    {
       "id": "recJ9jvcn68KF4u51",
       "name": "University of Hartford Summer Place Robotics & Coding Camp",
       "track": "Family & Childcare",
@@ -20117,6 +20975,24 @@
       "programYear": "Summer 2026",
       "lastVerified": "2026-08-25",
       "tags": "stem/tech camp, family resources, west hartford"
+    },
+    {
+      "id": "rec8lKUQO8pO7ae62",
+      "name": "VA Connecticut – Blind and Low Vision Rehabilitation",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Low-vision assessment, daily-living/visual-skills training and vision-enhancing devices/technology as clinically appropriate.",
+      "town": "Connecticut VA system",
+      "ages": "Eligible veterans/military personnel with vision loss; confirm enrollment/referral.",
+      "availability": "Confirm clinic location and referral; not available at every VA site. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Confirm VA eligibility and cost-sharing; not universal free care.",
+      "website": "https://www.va.gov/connecticut-health-care/programs/blind-and-low-vision-rehabilitation/",
+      "contact": "Request referral through VA Connecticut care team.",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://www.va.gov/connecticut-health-care/programs/blind-and-low-vision-rehabilitation/. Confirm clinic location and referral; not available at every VA site. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "veterans, blind, low vision, rehabilitation, assistive technology"
     },
     {
       "id": "recJRXlti6eYNWbyr",
@@ -21591,6 +22467,24 @@
         "Preschool / Pre-K"
       ],
       "tags": "preschool / pre-k, childcare, windham"
+    },
+    {
+      "id": "recRqsnRu1kWL5W9Q",
+      "name": "Windham Municipal Veterans Services",
+      "track": "Family & Childcare",
+      "category": "Veterans Benefits Counseling",
+      "specificType": "Municipal initial point of contact for veterans seeking federal, state and local benefits information and assistance.",
+      "town": "Windham",
+      "ages": "Veterans seeking municipal help; confirm residency and benefit rules.",
+      "availability": "Municipal representative is not automatically equivalent to accredited claims representation. Current capacity/waitlist unconfirmed unless stated.",
+      "cost": "Fees not stated; confirm.",
+      "website": "https://windhamct.gov/608/Veterans-Services",
+      "contact": "wwoodbury@windhamct.gov",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official source checked November 25, 2026: https://windhamct.gov/608/Veterans-Services. Municipal representative is not automatically equivalent to accredited claims representation. Detailed language availability, disability accommodations, fees and intake must be confirmed where unknown. Existing closest category used; no new categories created.",
+      "lastVerified": "2026-11-25",
+      "tags": "veterans, military families, benefits assistance, windham"
     },
     {
       "id": "recLjaAUhvlrc0yxb",
