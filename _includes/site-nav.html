@@ -1,6 +1,8 @@
 {%- comment -%}
   Shared site header. Every page includes this file, so the menu is edited in
   one place. The current section is marked from page.url.
+  Rule (2026-11-25): links inside every sub-menu stay in alphabetical order by
+  their visible label. When you add a link, put it in its alphabetical spot.
 {%- endcomment -%}
 {%- assign u = page.url -%}
 {%- assign in_about = false -%}{%- if u == '/work.html' or u == '/ai.html' or u == '/research.html' or u == '/mentorship.html' -%}{%- assign in_about = true -%}{%- endif -%}
@@ -23,31 +25,31 @@
         <li class="nav-group">
           <button type="button" class="nav-group-btn{% if in_about %} active{% endif %}" aria-expanded="false" aria-controls="nav-sub-about">About</button>
           <ul class="nav-sub" id="nav-sub-about" hidden>
-            <li><a href="/work.html"{% if u == '/work.html' %} aria-current="page"{% endif %}>Work</a></li>
             <li><a href="/ai.html"{% if u == '/ai.html' %} aria-current="page"{% endif %}>AI Leadership</a></li>
-            <li><a href="/research.html"{% if u == '/research.html' %} aria-current="page"{% endif %}>Research</a></li>
             <li><a href="/mentorship.html"{% if u == '/mentorship.html' %} aria-current="page"{% endif %}>Mentorship</a></li>
+            <li><a href="/research.html"{% if u == '/research.html' %} aria-current="page"{% endif %}>Research</a></li>
+            <li><a href="/work.html"{% if u == '/work.html' %} aria-current="page"{% endif %}>Work</a></li>
           </ul>
         </li>
         <li class="nav-group">
           <button type="button" class="nav-group-btn{% if in_speak %} active{% endif %}" aria-expanded="false" aria-controls="nav-sub-speaking">Speaking &amp; Services</button>
           <ul class="nav-sub" id="nav-sub-speaking" hidden>
-            <li><a href="/speaking.html"{% if u == '/speaking.html' %} aria-current="page"{% endif %}>Speaking</a></li>
-            <li><a href="/services.html"{% if u == '/services.html' %} aria-current="page"{% endif %}>Services</a></li>
             <li><a href="/ai-consulting-training/"{% if u contains '/ai-consulting-training/' %} aria-current="page"{% endif %}>AI Consulting &amp; Training</a></li>
-            <li><a href="/organizational-ai-training/"{% if u contains '/organizational-ai-training/' %} aria-current="page"{% endif %}>Training Partnerships</a></li>
+            <li><a href="/services.html"{% if u == '/services.html' %} aria-current="page"{% endif %}>Services</a></li>
+            <li><a href="/speaking.html"{% if u == '/speaking.html' %} aria-current="page"{% endif %}>Speaking</a></li>
             <li><a href="/speaking-workshops/"{% if u contains '/speaking-workshops/' %} aria-current="page"{% endif %}>Speaking Topics &amp; Workshops</a></li>
+            <li><a href="/organizational-ai-training/"{% if u contains '/organizational-ai-training/' %} aria-current="page"{% endif %}>Training Partnerships</a></li>
             <li><a href="/work-with-me/"{% if u contains '/work-with-me/' %} aria-current="page"{% endif %}>Work With Me</a></li>
           </ul>
         </li>
         <li class="nav-group">
           <button type="button" class="nav-group-btn{% if in_class %} active{% endif %}" aria-expanded="false" aria-controls="nav-sub-classes">Classes</button>
           <ul class="nav-sub" id="nav-sub-classes" hidden>
-            <li><a href="/classes.html"{% if u == '/classes.html' %} aria-current="page"{% endif %}>All Classes</a></li>
             <li><a href="/ai-for-beginners.html"{% if u == '/ai-for-beginners.html' %} aria-current="page"{% endif %}>AI for Beginners</a></li>
+            <li><a href="/classes.html"{% if u == '/classes.html' %} aria-current="page"{% endif %}>All Classes</a></li>
             <li><a href="/claude-for-beginners.html"{% if u == '/claude-for-beginners.html' %} aria-current="page"{% endif %}>Claude for Beginners</a></li>
-            <li><a href="/gemini-for-beginners.html"{% if u == '/gemini-for-beginners.html' %} aria-current="page"{% endif %}>Gemini for Beginners</a></li>
             <li><a href="/copilot-for-beginners.html"{% if u == '/copilot-for-beginners.html' %} aria-current="page"{% endif %}>Copilot for Beginners</a></li>
+            <li><a href="/gemini-for-beginners.html"{% if u == '/gemini-for-beginners.html' %} aria-current="page"{% endif %}>Gemini for Beginners</a></li>
             <li><a href="/put-claude-to-work.html"{% if u == '/put-claude-to-work.html' %} aria-current="page"{% endif %}>Put Claude to Work in Your Business</a></li>
             <li><a href="/start-your-business.html"{% if u == '/start-your-business.html' %} aria-current="page"{% endif %}>Start Your Business in 12 Sessions</a></li>
           </ul>
@@ -55,10 +57,10 @@
         <li class="nav-group">
           <button type="button" class="nav-group-btn{% if in_proj %} active{% endif %}" aria-expanded="false" aria-controls="nav-sub-projects">Projects</button>
           <ul class="nav-sub" id="nav-sub-projects" hidden>
+            <li><a href="/books/"{% if u contains '/books/' %} aria-current="page"{% endif %}>Books</a></li>
             <li><a href="/community-ai/"{% if u contains '/community-ai/' %} aria-current="page"{% endif %}>Community AI</a></li>
             <li><a href="/connecticut-list/"{% if u contains '/connecticut-list/' %} aria-current="page"{% endif %}>Connecticut List</a></li>
             <li><a href="/portfolio.html"{% if u == '/portfolio.html' %} aria-current="page"{% endif %}>Portfolio</a></li>
-            <li><a href="/books/"{% if u contains '/books/' %} aria-current="page"{% endif %}>Books</a></li>
             <li><a href="/prompts/"{% if u contains '/prompts/' %} aria-current="page"{% endif %}>Prompt Library</a></li>
             <li><a href="/scholarships-fellowships/"{% if u contains '/scholarships-fellowships/' %} aria-current="page"{% endif %}>Scholarships &amp; Fellowships</a></li>
             <li><a href="/village-notes/"{% if u contains '/village-notes/' %} aria-current="page"{% endif %}>Village Notes</a></li>
@@ -69,8 +71,8 @@
           <button type="button" class="nav-group-btn{% if in_write %} active{% endif %}" aria-expanded="false" aria-controls="nav-sub-writing">Writing</button>
           <ul class="nav-sub" id="nav-sub-writing" hidden>
             <li><a href="/blog.html"{% if u == '/blog.html' or u contains '/blog/' %} aria-current="page"{% endif %}>Blog</a></li>
-            <li><a href="/newsletter.html"{% if u == '/newsletter.html' %} aria-current="page"{% endif %}>Newsletter</a></li>
             <li><a href="/my-story/"{% if u contains '/my-story/' %} aria-current="page"{% endif %}>My Story</a></li>
+            <li><a href="/newsletter.html"{% if u == '/newsletter.html' %} aria-current="page"{% endif %}>Newsletter</a></li>
           </ul>
         </li>
         <li><a class="nav-top{% if u == '/contact.html' %} active{% endif %}" href="/contact.html"{% if u == '/contact.html' %} aria-current="page"{% endif %}>Contact</a></li>
