@@ -961,3 +961,12 @@ section.vn-intro-section { padding:1rem 0; }
 .vn-holiday-list a { color:var(--coral); text-decoration:underline; text-underline-offset:2px; }
 .vn-holiday-foot { font-size:.85rem; color:var(--muted); margin:.75rem 0 0; }
 .vn-holiday-foot a { color:var(--coral); text-decoration:underline; }
+
+/* Print sits in the pinned search strip, beside Sort by. */
+.vn-searchbar { grid-template-columns:minmax(240px,1fr) auto auto; }
+.vn-field-print { align-self:end; }
+.vn-field-print .vn-print-btn { white-space:nowrap; padding:.7rem 1rem; }
+@media (max-width:900px) {
+  .vn-searchbar { grid-template-columns:1fr auto; }
+  .vn-field-search { grid-column:1 / -1; }
+}
