@@ -1094,6 +1094,10 @@ now.
   ansonia.org                        1  2026-11-21   Family & Childcare
   stthomasnorwalk.org                1  2026-11-21   Family & Childcare
   svdpmission.org                    1  2026-11-21   Family & Childcare
+  coabode.org                        1  2026-11-25   Family & Childcare
+  mommune.org                        1  2026-11-25   Family & Childcare
+  nationalsharedhousing.org          1  2026-11-25   Food & Basic Needs
+  spareroom.com                      1  2026-11-25   Food & Basic Needs
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -1118,7 +1122,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 486 of 893 listings (54%) carry a Website, so
+Only 490 of 897 listings (55%) carry a Website, so
 everything above is built from that third of the directory. The other
 407 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -1128,7 +1132,7 @@ So when you deepen an existing listing, recording its Website is worth more
 than almost anything else you could add. It is what makes a listing checkable
 ever again, and it is what puts the site into this queue.
 
-35 of the 314 domains here have never had a Last Verified on
+35 of the 318 domains here have never had a Last Verified on
 any of their listings. Those sit at the top of the list for a reason: we do
 not know whether they were ever right, only that they were right once.
 
@@ -1139,24 +1143,24 @@ WHERE THE DIRECTORY IS THIN
 
 WHERE THE DIRECTORY IS THIN — measured, not remembered.
 
-Measured on 2026-11-25. THESE FIGURES EXPIRE. They are recounted from the
+Measured on 2026-11-26. THESE FIGURES EXPIRE. They are recounted from the
 published listings on every sync, which is several times a day, and your own
 work is what moves them. Do not save any number here as a baseline or carry it
 between sessions: read them fresh from this section each time this brief is
 given to you, and if you are working from a remembered figure you are working
 from a gap that has already moved.
 
-893 listings across 174 Connecticut towns of 169.
+897 listings across 178 Connecticut towns of 169.
 
 That breadth is real. The depth behind it is the problem:
 
-  a website              486 / 893   54%   the single most valuable gap: without a URL nobody can ever re-check the listing
-  operating hours        218 / 893   24%   the specific promise on the front of the page
-  a real cost note       180 / 893   20%   excludes the state-fee boilerplate
-  a real waitlist note    75 / 893    8%   excludes the "contact the program directly" boilerplate
-  a verified date        428 / 893   48%   without one we cannot tell fresh from forgotten
-  a phone or email       759 / 893   85%
-  services tagged        698 / 893   78%   what makes a listing findable beyond its one category
+  a website              490 / 897   55%   the single most valuable gap: without a URL nobody can ever re-check the listing
+  operating hours        218 / 897   24%   the specific promise on the front of the page
+  a real cost note       184 / 897   21%   excludes the state-fee boilerplate
+  a real waitlist note    79 / 897    9%   excludes the "contact the program directly" boilerplate
+  a verified date        432 / 897   48%   without one we cannot tell fresh from forgotten
+  a phone or email       761 / 897   85%
+  services tagged        698 / 897   78%   what makes a listing findable beyond its one category
 
 A listing can carry a value and still say nothing. Two boilerplate lines were
 written onto hundreds of records by the original state import -- "Contact the
@@ -1169,10 +1173,10 @@ that sounds more specific than what you actually know.
 
 WEBSITE COVERAGE BY TRACK
 
-  Family & Childcare      595 listings, 188 with a website (32%)
+  Family & Childcare      597 listings, 190 with a website (32%)
   Teens & High School      88 listings,  88 with a website (100%)
+  Food & Basic Needs       63 listings,  63 with a website (100%)
   Pet Care & Resources     61 listings,  61 with a website (100%)
-  Food & Basic Needs       61 listings,  61 with a website (100%)
   Elder Care               53 listings,  53 with a website (100%)
   Health & Dental          35 listings,  35 with a website (100%)
 
@@ -1187,8 +1191,8 @@ AND THE GAP IS NOT WHERE IT LOOKS
 
 407 listings have no website. 407 of them -- every single one -- came from the
 one bulk import of Connecticut Office of Early Childhood childcare providers,
-which arrived without URLs. Of the 365 records written by
-research, 365 carry a website: 100%.
+which arrived without URLs. Of the 369 records written by
+research, 369 carry a website: 100%.
 
 So this is not a habit to correct. It is a bounded backfill of a known set,
 and the set is licensed childcare providers whose details came from the state.

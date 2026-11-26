@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-21T18:05:22.861Z",
+  "generated": "2026-11-26T00:12:35.522Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 893,
+  "count": 897,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -119,6 +119,7 @@
     "Colchester",
     "Colebrook",
     "Columbia",
+    "Connecticut",
     "Connecticut statewide",
     "Connecticut; host locations by arrangement",
     "Connecticut; participating community sites",
@@ -178,6 +179,7 @@
     "Morris",
     "Mystic",
     "National; event-based locations",
+    "Nationwide online matching; Connecticut matches depend on members",
     "Naugatuck",
     "New Britain",
     "New Canaan",
@@ -198,6 +200,7 @@
     "Norwalk, CT",
     "Norwich",
     "Online, available to families in Connecticut",
+    "Online; Connecticut housing availability not confirmed",
     "Orange",
     "Oxford",
     "Pawcatuck",
@@ -242,6 +245,7 @@
     "Trumbull",
     "Trumbull, CT",
     "Union",
+    "United States directory; check individual program service areas",
     "Vernon",
     "Voluntown",
     "Wallingford",
@@ -4363,6 +4367,22 @@
       "meals": "Breakfast, Lunch, and Snack",
       "lastVerified": "2026-08-30",
       "tags": "adult day program, senior services, transportation, childcare, caregiver support, hamden"
+    },
+    {
+      "id": "recNr9umTAP2hmZhY",
+      "name": "CoAbode Single Mothers Home Sharing",
+      "track": "Family & Childcare",
+      "specificType": "Single-mother house-sharing connections",
+      "town": "Nationwide online matching; Connecticut matches depend on members",
+      "ages": "Single mothers raising children alone",
+      "availability": "Members create profiles and contact potential housemates. Often both mothers must find a home together. No guaranteed housing or local matches.",
+      "cost": "Membership is free; rent and household expenses are separate.",
+      "website": "https://www.coabode.org/programs/program/1",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Sources: https://www.coabode.org/programs/program/1 and https://www.coabode.org/about/faq . Reviewed 2026-11-25. Current home-sharing program serves single mothers. Do not present proposed broader access as confirmed eligibility for single fathers.",
+      "lastVerified": "2026-11-25",
+      "tags": "single mothers, single moms, house sharing, shared parenting, affordable housing, coabode"
     },
     {
       "id": "recZQkYAfvUBi4LKO",
@@ -13262,6 +13282,23 @@
       "tags": "senior center / congregate meals social programs, senior services, food pantry, senior center, caregiver support, milford"
     },
     {
+      "id": "recsnpwkurBrbyKbz",
+      "name": "Mommune",
+      "track": "Family & Childcare",
+      "specificType": "Communal living and shared-parenting initiative",
+      "town": "Online; Connecticut housing availability not confirmed",
+      "ages": "Women, mothers and their children",
+      "availability": "Developmental and community-building phase. No available homes, placement service or Connecticut housing confirmed.",
+      "cost": "Housing costs and participation fees not published.",
+      "website": "https://www.mommune.org/",
+      "contact": "mm@mommune.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official site reviewed 2026-11-25. Explores communal living models for women and children, storytelling and community partnerships. Resource for learning and connection; do not describe as an operating housing placement service.",
+      "lastVerified": "2026-11-25",
+      "tags": "mommune, women, mothers, single moms, shared housing, communal living, parenting support"
+    },
+    {
       "id": "recND7C4NQ8p0SSUg",
       "name": "Monica Vergara Family Child Care Home (Angels Daycare)",
       "track": "Family & Childcare",
@@ -13858,6 +13895,23 @@
         "Elder Care"
       ],
       "tags": "caregiver support group, senior services, caregiver support"
+    },
+    {
+      "id": "recbjeZZyrmUE4jxG",
+      "name": "National Shared Housing Resource Center",
+      "track": "Food & Basic Needs",
+      "specificType": "Nonprofit home-sharing program directory",
+      "town": "United States directory; check individual program service areas",
+      "ages": "Adults seeking home sharing, including older adults, students and working professionals; eligibility varies by local program",
+      "availability": "Directory and educational resource. Does not provide housing or make placements itself. Local program eligibility and openings vary.",
+      "cost": "Rent, service exchanges and program fees vary; confirm with each program.",
+      "website": "https://www.nationalsharedhousing.org/",
+      "contact": "info@nationalsharedhousing.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official website reviewed 2026-11-25. Lists independent nonprofit homesharing programs by state. Useful starting point for men and women. A Connecticut placement program was not confirmed in this review.",
+      "lastVerified": "2026-11-25",
+      "tags": "men, women, home sharing, homesharing, shared housing, seniors, roommates, housing directory"
     },
     {
       "id": "rec1cVqdx9KoLPMDK",
@@ -17677,6 +17731,22 @@
       ],
       "lastVerified": "2026-08-31",
       "tags": "geriatric care manager, senior services, caregiver support, bridgeport"
+    },
+    {
+      "id": "rec0luShxWloA0GYH",
+      "name": "SpareRoom Connecticut",
+      "track": "Food & Basic Needs",
+      "specificType": "Commercial roommate and shared-rental listing platform",
+      "town": "Connecticut",
+      "ages": "Adult men and women seeking roommates; household acceptance of children varies by listing",
+      "availability": "Connecticut roommate listings confirmed. Listings and household requirements change. Does not confirm a shared-parenting arrangement or housing assistance.",
+      "cost": "Room rates vary. Free ads and some free contacts are shown; some listings use paid Early Bird access.",
+      "website": "https://www.spareroom.com/roommates/ct",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-25",
+      "notes": "Official Connecticut listing page reviewed 2026-11-25. Includes men and women and searches for Bridgeport, Fairfield and New Haven. General roommate marketplace rather than a single-parent support or subsidy program.",
+      "lastVerified": "2026-11-25",
+      "tags": "men, women, roommates, shared housing, room rental, connecticut, single parents"
     },
     {
       "id": "rec3hR3L2QXEk6oAU",
