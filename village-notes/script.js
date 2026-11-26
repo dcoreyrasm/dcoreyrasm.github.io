@@ -1409,6 +1409,20 @@
         plural(state.all.length, 'listing', 'listings') + '.';
     }
     writeState();
+    backToTop(keepShown);
+  }
+
+  // Re-filtering from the pinned strip while deep in the list would leave the
+  // visitor looking at empty space below a shorter list. When the first
+  // result is above the strip, bring it back up to just under it.
+  function backToTop(keepShown) {
+    if (keepShown || !state.ready || state.restoring || state.printing) return;
+    var bar = document.querySelector('.vn-searchbar-section');
+    var pinned = bar && getComputedStyle(bar).position === 'sticky' ? bar.getBoundingClientRect().bottom : 0;
+    var target = el.resultline.getBoundingClientRect().top;
+    if (target < pinned) {
+      window.scrollTo({ top: window.scrollY + target - pinned - 12, behavior: 'smooth' });
+    }
   }
 
   /* ---------- town multi-select ---------- */
@@ -1702,6 +1716,7 @@
   function bind() {
     rememberSections();
     rememberScroll();
+    bindJump();
     bindTownMulti();
     bindCatMulti();
     bindCountyFilter();
@@ -1793,6 +1808,35 @@
     var url = location.pathname + (qs ? '?' + qs : '') + location.hash;
     if (url !== location.pathname + location.search + location.hash) history.replaceState(history.state, '', url);
     store('vn-shown', String(state.shown));
+    countActive();
+  }
+
+  // How many choices are narrowing the list, for the floating Filters button.
+  function countActive() {
+    var out = document.getElementById('vn-jump-on');
+    if (!out) return;
+    var n = (state.track ? 1 : 0) + state.categories.length + state.towns.length +
+            state.counties.length +
+            Object.keys(state.flags).filter(function (k) { return state.flags[k]; }).length;
+    out.textContent = n ? ' (' + n + ' on)' : '';
+  }
+
+  // Phones: the search-and-filter strip is not pinned there, so a small
+  // button appears once it has scrolled out of view and brings it back.
+  function bindJump() {
+    var btn = document.getElementById('vn-jump');
+    var bar = document.querySelector('.vn-searchbar-section');
+    if (!btn || !bar || !('IntersectionObserver' in window)) return;
+    var small = window.matchMedia('(max-width: 900px)');
+    new IntersectionObserver(function (entries) {
+      var e = entries[0];
+      btn.hidden = !(small.matches && !e.isIntersecting && e.boundingClientRect.top < 0);
+    }).observe(bar);
+    btn.addEventListener('click', function () {
+      bar.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      var heading = document.getElementById('vn-search-heading');
+      if (heading) { heading.setAttribute('tabindex', '-1'); heading.focus({ preventScroll: true }); }
+    });
   }
 
   function listParam(q, key, allowed) {
@@ -1954,6 +1998,7 @@
         state.shown = returning && shownBefore > PAGE ? shownBefore : PAGE;
         state.restoring = false;
         render(true);
+        state.ready = true;
         var y = parseInt(recall('vn-scroll'), 10);
         if (returning && y > 0) {
           window.requestAnimationFrame(function () { window.scrollTo(0, y); });

@@ -241,11 +241,9 @@
             <button type="button" id="vn-print" class="btn-ghost vn-print-btn">Print / save list</button>
           </div>
         </form>
-      </div>
-    </section>
 
-    <section class="vn-controls-section" aria-labelledby="vn-filters-heading">
-      <div class="container">
+        <!-- The filters ride in the pinned strip too, so the list can be
+             narrowed again from anywhere on the page. -->
         <h2 id="vn-filters-heading" class="vn-visually-hidden">Narrow the results</h2>
 
         <form class="vn-controls" onsubmit="return false;">
@@ -333,6 +331,11 @@
             </fieldset>
           </div>
         </details>
+      </div>
+    </section>
+
+    <section class="vn-controls-section" aria-label="Results">
+      <div class="container">
 
         <!-- One line: the accessibility filter also lives in More filters,
              so this is a shortcut to it, not a second explanation. -->
@@ -351,6 +354,10 @@
         </div>
       </div>
     </section>
+
+    <!-- Phones do not pin the strip, so once it scrolls away this button
+         brings the filters back. It says how many are switched on. -->
+    <button type="button" class="vn-jump" id="vn-jump" hidden>Filters<span class="vn-jump-on" id="vn-jump-on"></span></button>
 
     <section class="vn-results-section">
       <div class="container">

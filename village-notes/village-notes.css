@@ -970,3 +970,29 @@ section.vn-intro-section { padding:1rem 0; }
   .vn-searchbar { grid-template-columns:1fr auto; }
   .vn-field-search { grid-column:1 / -1; }
 }
+
+/* ---------- FILTERS IN THE PINNED STRIP ---------- */
+section.vn-searchbar-section { padding:.75rem 0 .85rem; }
+section.vn-searchbar-section .vn-field { gap:.3rem; }
+section.vn-searchbar-section .vn-controls { margin-top:.6rem; }
+section.vn-searchbar-section .vn-morefilters { margin-top:.6rem; }
+section.vn-searchbar-section .vn-morefilters > summary { padding:.45rem .9rem; min-height:40px; }
+section.vn-controls-section { padding:.5rem 0 1rem; }
+@media (min-width:901px) {
+  /* Pinned: keep the open panel from swallowing the screen. */
+  section.vn-searchbar-section .vn-mf-body { max-height:50vh; overflow:auto; }
+  section.vn-searchbar-section .vn-field input,
+  section.vn-searchbar-section .vn-field select,
+  section.vn-searchbar-section .vn-multi-toggle { padding-top:.5rem; padding-bottom:.5rem; }
+}
+
+/* Floating Filters button (phones only, after the strip scrolls away). */
+.vn-jump {
+  position:fixed; right:1rem; bottom:1rem; z-index:70;
+  background:#6b21a8; color:#fff; border:0; border-radius:999px;
+  padding:.8rem 1.2rem; font:inherit; font-weight:700; font-size:.95rem;
+  box-shadow:0 6px 20px rgba(0,0,0,.3); cursor:pointer; min-height:44px;
+}
+.vn-jump[hidden] { display:none; }
+.vn-jump:focus-visible { outline:3px solid var(--cream); outline-offset:3px; }
+@media print { .vn-jump { display:none !important; } }
