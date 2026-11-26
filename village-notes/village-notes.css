@@ -801,3 +801,23 @@ main .vn-toggles .vn-toggle input:checked + span { background:var(--pop-ink); bo
 .vn-card-links span a, .vn-hero-signup a, .vn-talk a, .vn-filter-note a {
   text-decoration:underline; text-underline-offset:2px;
 }
+
+/* ---------- QUICK-FILTER GROUPS ---------- */
+.vn-toggle-groups { margin-top:1.5rem; display:flex; flex-direction:column; gap:1rem; }
+.vn-toggle-group > summary {
+  display:inline-flex; align-items:center; gap:.6rem; cursor:pointer;
+  list-style:none; padding:.25rem 0;
+}
+.vn-toggle-group > summary::-webkit-details-marker { display:none; }
+.vn-toggle-group > summary::after {
+  content:""; width:.42rem; height:.42rem; border-right:2px solid var(--coral);
+  border-bottom:2px solid var(--coral); transform:rotate(-45deg); transition:transform .15s;
+}
+.vn-toggle-group[open] > summary::after { transform:rotate(45deg); }
+.vn-toggle-group > summary:focus-visible { outline:3px solid var(--coral); outline-offset:3px; }
+.vn-toggle-group .vn-toggles { margin-top:.5rem; }
+.vn-group-on {
+  font-size:.72rem; font-weight:600; color:var(--coral);
+  border:1.5px solid var(--coral); border-radius:999px; padding:0 .5rem;
+}
+.vn-group-on:empty { display:none; }

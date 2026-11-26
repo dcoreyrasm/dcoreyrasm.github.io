@@ -1559,10 +1559,30 @@
     });
   }
 
+  // How many filters are switched on in each group, shown beside its heading,
+  // so a closed group on a phone still says that it is narrowing the results.
+  function countGroups() {
+    Array.prototype.forEach.call(document.querySelectorAll('.vn-toggle-group'), function (g) {
+      var n = g.querySelectorAll('.vn-toggle input:checked').length;
+      var out = g.querySelector('.vn-group-on');
+      if (out) out.textContent = n ? n + ' on' : '';
+    });
+  }
+
   function bindToggles() {
+    // Phones start with both groups closed: fourteen buttons is a long scroll
+    // before the first result. Wider screens keep them open.
+    if (window.matchMedia && window.matchMedia('(max-width: 640px)').matches) {
+      Array.prototype.forEach.call(document.querySelectorAll('.vn-toggle-group'), function (g) {
+        g.open = false;
+      });
+    }
     Array.prototype.forEach.call(el.toggles, function (box) {
       box.addEventListener('change', function () {
         state.flags[this.dataset.flag] = this.checked;
+        var grp = this.closest('.vn-toggle-group');
+        if (this.checked && grp) grp.open = true;
+        countGroups();
         if (this.dataset.flag === 'disability') tuneToggles();
         render();
       });
@@ -1599,8 +1619,15 @@
         shown++;
       }
     });
-    var row = document.querySelector('.vn-toggles');
+    // A group with nothing to offer in this section disappears, and the whole
+    // block goes if neither group has anything.
+    var groups = document.querySelectorAll('.vn-toggle-group');
+    Array.prototype.forEach.call(groups, function (g) {
+      g.hidden = !g.querySelector('.vn-toggle:not([hidden])');
+    });
+    var row = document.querySelector('.vn-toggle-groups');
     if (row) row.hidden = shown === 0;
+    countGroups();
 
     // Paid leave covers time off to care for a family member, which a pet is
     // not. Offering it above a pet-care search is the same mistake as offering
@@ -1650,6 +1677,7 @@
       el.track.value = '';
       state.counties = [];
       Array.prototype.forEach.call(el.toggles, function (t) { t.checked = false; });
+      countGroups();
       syncTownUI();
       syncCountyUI();
       buildCatList();

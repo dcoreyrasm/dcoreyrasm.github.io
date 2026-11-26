@@ -175,22 +175,33 @@
           <button type="button" id="vn-reset" class="btn-ghost vn-reset">Reset</button>
         </form>
 
-        <div class="vn-toggles" role="group" aria-label="Quick filters">
-          <span class="vn-toggles-label">Only show</span>
-          <label class="vn-toggle"><input type="checkbox" id="vn-flag-disability" data-flag="disability" /><span>Disability &amp; accessibility support</span></label>
-          <label class="vn-toggle"><input type="checkbox" data-flag="free" /><span>Free</span></label>
-          <label class="vn-toggle"><input type="checkbox" data-flag="walkIn" /><span>Walk-ins welcome</span></label>
-          <label class="vn-toggle"><input type="checkbox" data-flag="noInsurance" /><span>No insurance needed</span></label>
-          <label class="vn-toggle"><input type="checkbox" data-flag="evenings" /><span>Open evenings</span></label>
-          <label class="vn-toggle"><input type="checkbox" data-flag="weekends" /><span>Open weekends</span></label>
-          <label class="vn-toggle"><input type="checkbox" data-flag="languageHelp" /><span>Help in other languages or ASL</span></label>
-          <label class="vn-toggle"><input type="checkbox" data-flag="openNow" /><span>Registration open</span></label>
-          <label class="vn-toggle"><input type="checkbox" data-flag="care4Kids" /><span>Accepts Care 4 Kids</span></label>
-          <label class="vn-toggle"><input type="checkbox" data-flag="financialAid" /><span>Financial help</span></label>
-          <label class="vn-toggle"><input type="checkbox" data-flag="transport" /><span>Transportation</span></label>
-          <label class="vn-toggle"><input type="checkbox" data-flag="extended" /><span>Before/after care</span></label>
-          <label class="vn-toggle"><input type="checkbox" data-flag="fullDay" /><span>Covers a workday</span></label>
-          <label class="vn-toggle"><input type="checkbox" data-flag="upcomingEvent" /><span>Has an upcoming date</span></label>
+        <!-- Quick filters, in two groups so the list is shorter to scan. On
+             a phone both start closed and say how many are switched on. -->
+        <div class="vn-toggle-groups" role="group" aria-label="Quick filters">
+          <details class="vn-toggle-group" id="vn-group-help" open>
+            <summary><span class="vn-toggles-label">Help offered</span><span class="vn-group-on" aria-live="polite"></span></summary>
+            <div class="vn-toggles">
+            <label class="vn-toggle"><input type="checkbox" id="vn-flag-disability" data-flag="disability" /><span>Disability &amp; accessibility support</span></label>
+            <label class="vn-toggle"><input type="checkbox" data-flag="free" /><span>Free</span></label>
+            <label class="vn-toggle"><input type="checkbox" data-flag="noInsurance" /><span>No insurance needed</span></label>
+            <label class="vn-toggle"><input type="checkbox" data-flag="financialAid" /><span>Financial help</span></label>
+            <label class="vn-toggle"><input type="checkbox" data-flag="care4Kids" /><span>Accepts Care 4 Kids</span></label>
+            <label class="vn-toggle"><input type="checkbox" data-flag="transport" /><span>Transportation</span></label>
+            <label class="vn-toggle"><input type="checkbox" data-flag="languageHelp" /><span>Help in other languages or ASL</span></label>
+            <label class="vn-toggle"><input type="checkbox" data-flag="extended" /><span>Before/after care</span></label>
+            <label class="vn-toggle"><input type="checkbox" data-flag="fullDay" /><span>Covers a workday</span></label>
+            </div>
+          </details>
+          <details class="vn-toggle-group" id="vn-group-when" open>
+            <summary><span class="vn-toggles-label">When and how</span><span class="vn-group-on" aria-live="polite"></span></summary>
+            <div class="vn-toggles">
+            <label class="vn-toggle"><input type="checkbox" data-flag="walkIn" /><span>Walk-ins welcome</span></label>
+            <label class="vn-toggle"><input type="checkbox" data-flag="evenings" /><span>Open evenings</span></label>
+            <label class="vn-toggle"><input type="checkbox" data-flag="weekends" /><span>Open weekends</span></label>
+            <label class="vn-toggle"><input type="checkbox" data-flag="openNow" /><span>Registration open</span></label>
+            <label class="vn-toggle"><input type="checkbox" data-flag="upcomingEvent" /><span>Has an upcoming date</span></label>
+            </div>
+          </details>
         </div>
 
         <!-- County. Connecticut stores no county on a listing, so these are
