@@ -428,6 +428,15 @@ A region is not a town: never add "Greater New Haven", "Fairfield County", or
 If you don't know which towns those are, leave the field empty — do not guess.
 
 TOWN/AREA (CT) — free text, the single town where the program physically sits.
+It holds a PLACE and nothing else, because the card prints it as the address
+line. Allowed: one Connecticut town ("Bridgeport"); a short list of towns
+("Hartford and East Hartford"); a region or counties ("Greater New Haven",
+"Windham and Tolland counties"); or exactly one of "Statewide", "Online",
+"Varies by location". Never a note: "confirm borrower eligibility", "library-
+card rules", "schedule varies", "Hartford office" all go in Specific Type or
+Notes as a full sentence. Never add ", CT". Also fill TOWNS SERVED with every
+real town the program covers, and "Statewide (all of Connecticut)" when it
+serves the whole state, so the town filter can find it.
 Send it as a plain string: "Norwalk", not ["Norwalk"]. It was briefly a
 multi-select, and an array is what a client that still believes that sends;
 Airtable answers "Field Town/Area (CT) cannot accept the provided value",
