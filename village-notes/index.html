@@ -148,13 +148,12 @@
       </div>
     </section>
 
-    <!-- Start here. Three steps in plain words, so nobody has to work out
-         the page before using it. -->
-    <section class="vn-start-section" aria-labelledby="vn-start-heading">
-      <div class="container">
-        <!-- Holiday meals. One line until opened. Fed by data/holiday-meals.json;
-             each meal hides once it is over and the whole strip hides when
-             none are left, so it never advertises a dinner that has passed. -->
+    <!-- Before the search: three one-line sections that open when tapped,
+         so the search sits close to the top. Holiday meals is fed by
+         data/holiday-meals.json and hides itself when nothing is left. Each
+         remembers being open or closed for this tab (see script.js). -->
+    <section class="vn-start-section" aria-label="Getting started">
+      <div class="container vn-start-stack">
         <details class="vn-holiday" id="vn-holiday" hidden>
           <summary><span class="vn-holiday-title" id="vn-holiday-title">Free holiday meals</span><span class="vn-holiday-hint">Tap to see where</span></summary>
           <div class="vn-holiday-body">
@@ -163,19 +162,20 @@
               <button type="button" class="vn-doorway-link" id="vn-holiday-food">See all food help in the directory</button></p>
           </div>
         </details>
-        <h2 class="vn-start-heading" id="vn-start-heading">How to find help</h2>
-        <ol class="vn-steps">
+        <details class="vn-fold" id="vn-howto">
+          <summary><h2 class="vn-fold-title" id="vn-start-heading">How to find help</h2><span class="vn-fold-hint">3 quick steps</span></summary>
+          <div class="vn-fold-body">
+            <ol class="vn-steps">
           <li><strong>Type what you need</strong> in the search box, like &ldquo;dentist,&rdquo; &ldquo;food pantry,&rdquo; or &ldquo;summer camp.&rdquo;</li>
           <li><strong>Pick who it&rsquo;s for and your town</strong> to make the list shorter.</li>
           <li><strong>Call or visit</strong> a place on the list. Tap a phone number to call it.</li>
         </ol>
         <p class="vn-start-more">Looking for something specific, like free, open evenings, or help in another language? Open <strong>More filters</strong>.</p>
-      </div>
-    </section>
-
-    <section class="vn-start-section" aria-labelledby="vn-access-heading">
-      <div class="container">
-        <h2 class="vn-start-heading" id="vn-access-heading">Before you go: questions that matter</h2>
+          </div>
+        </details>
+        <details class="vn-fold" id="vn-beforeyougo">
+          <summary><h2 class="vn-fold-title" id="vn-access-heading">Before you go: questions that matter</h2><span class="vn-fold-hint">What to ask a provider</span></summary>
+          <div class="vn-fold-body">
         <p>I want this directory to help you find support you can actually use. A missing detail means it has not been confirmed. It does not mean you cannot get help. Ask the provider these questions, or ask a support worker to help you check.</p>
         <ul class="vn-steps">
           <li>Can someone use it without an address, ID, phone, internet or bank account?</li>
@@ -188,30 +188,10 @@
         <p><strong>Getting there by public transportation:</strong> Ask which bus or train route and stop serves the location, how far the entrance is from the stop, whether the path and vehicle meet your access needs, and whether there is a return trip after your appointment. Being in a town with buses does not confirm that a service is reachable by transit.</p>
         <p><strong>Community nonprofit agencies:</strong> Ask whether staff provide the service directly, help with applications and follow-up, or refer you elsewhere. Check who qualifies, any fees, and whether you can get help without an appointment.</p>
         <p class="vn-start-more">I am prioritizing safe daytime places, family shelter eligibility, childcare outside standard hours, school stability and food that does not require a kitchen. Openings and hours can change. Confirm the details for the day you need help.</p>
+          </div>
+        </details>
       </div>
     </section>
-
-    <section class="vn-start-section" id="vn-holiday-food" aria-labelledby="vn-holiday-heading" hidden>
-      <div class="container">
-        <h2 class="vn-start-heading" id="vn-holiday-heading">Thanksgiving food help: November 26, 2026</h2>
-        <p>I am highlighting food help for today. Confirm with the organizer before traveling; food, seats and delivery may be limited. Times below are local Connecticut time.</p>
-        <ul class="vn-steps">
-          <li><strong>Bridgeport:</strong> A community partner lists a free Thanksgiving meal at 211 State Street, noon to 2 p.m. <a href="https://www.neighborworksnewhorizons.com/event/bridge-the-gap-community-foundation-thanksgiving-meal/">See the dated meal listing</a>. Confirm attendance details with the organizer.</li>
-          <li><strong>New Haven:</strong> DESK confirms a Thanksgiving Day sit-down meal at 266 State Street. Published partner listings disagree on hours, so call <a href="tel:2036246426">203-624-6426</a> before going. <a href="https://deskct.org/thanksgiving/">DESK Thanksgiving information</a>. Yesterday&rsquo;s Olive Street grocery distribution has ended.</li>
-          <li><strong>Fairfield closure:</strong> Operation Hope says its pantry and Community Kitchen are closed November 26 and 27. Its Thanksgiving meal took place November 25. <a href="https://operationhopect.org/office-and-food-pantry-closing-at-2pm-today-nov-25-2026/">Read the holiday notice</a>.</li>
-        </ul>
-        <p>Need another location, a ready-to-eat meal or delivery? Contact <a href="tel:211">Connecticut 2-1-1</a> or <a href="https://www.211ct.org/">search 211</a>. Ask about child access, registration, takeout, transportation and what is still available. A regular bus schedule does not confirm holiday service.</p>
-      </div>
-    </section>
-    <script>
-      (function () {
-        var box = document.getElementById('vn-holiday-food');
-        try {
-          var today = new Intl.DateTimeFormat('en-CA', {timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-          if (box && today === '2026-11-26') box.hidden = false;
-        } catch (e) {}
-      })();
-    </script>
 
     <!-- Search and sort are pinned: they are the two controls you reach for
          while reading results. The filters below stay put, so the pinned strip

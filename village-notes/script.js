@@ -1888,7 +1888,7 @@
 
   // Open and closed sections, per tab. Restored before anything else runs,
   // and saved whenever the visitor opens or closes one.
-  var REMEMBERED_SECTIONS = ['vn-about', 'vn-holiday', 'vn-more'];
+  var REMEMBERED_SECTIONS = ['vn-about', 'vn-holiday', 'vn-howto', 'vn-beforeyougo', 'vn-more'];
   function rememberSections() {
     REMEMBERED_SECTIONS.forEach(function (id) {
       var d = document.getElementById(id);
@@ -1926,16 +1926,21 @@
           var end = new Date(m.until);
           return !isNaN(end) && end > now;
         });
-        if (!meals.length) return;
+        // Closures and changes ("notice": true) are shown after the meals
+        // and are not counted as meals.
+        var notices = meals.filter(function (m) { return m.notice; });
+        meals = meals.filter(function (m) { return !m.notice; });
+        if (!meals.length && !notices.length) return;
         var occasions = uniqueSorted(meals.map(function (m) { return m.occasion; }));
         var today = now.toDateString();
         var allToday = meals.every(function (m) { return new Date(m.until).toDateString() === today; });
         var what = occasions.length === 1 ? occasions[0] : 'holiday';
-        document.getElementById('vn-holiday-title').textContent =
-          'Free ' + what + ' meals' + (allToday ? ' today' : '') + ' (' + meals.length + ')';
-        document.getElementById('vn-holiday-list').innerHTML = meals.map(function (m) {
+        document.getElementById('vn-holiday-title').textContent = meals.length
+          ? 'Free ' + what + ' meals' + (allToday ? ' today' : '') + ' (' + meals.length + ')'
+          : what + ' food help: closures and changes';
+        document.getElementById('vn-holiday-list').innerHTML = meals.concat(notices).map(function (m) {
           var place = [m.town, m.address].filter(has).join(', ');
-          return '<li><strong>' + esc(m.name) + '</strong>' +
+          return '<li' + (m.notice ? ' class="vn-holiday-notice"' : '') + '><strong>' + esc(m.name) + '</strong>' +
             (place ? '<span class="vn-holiday-place">' + esc(place) + '</span>' : '') +
             esc(m.when) + (has(m.details) ? ' ' + esc(m.details) : '') +
             (has(m.phone) ? ' ' + linkPhones(m.phone) : '') + '</li>';

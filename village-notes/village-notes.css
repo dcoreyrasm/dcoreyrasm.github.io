@@ -996,3 +996,34 @@ section.vn-controls-section { padding:.5rem 0 1rem; }
 .vn-jump[hidden] { display:none; }
 .vn-jump:focus-visible { outline:3px solid var(--cream); outline-offset:3px; }
 @media print { .vn-jump { display:none !important; } }
+
+/* ---------- GETTING STARTED: one-line sections that open ---------- */
+section.vn-start-section { padding:1rem 0 .75rem; }
+.vn-start-stack { display:flex; flex-direction:column; gap:.5rem; }
+.vn-start-stack .vn-holiday { margin:0; }
+.vn-fold { border:1px solid var(--line); border-radius:8px; background:var(--bg2); }
+.vn-fold > summary {
+  cursor:pointer; list-style:none; display:flex; flex-wrap:wrap; align-items:center;
+  gap:.25rem .75rem; padding:.55rem .9rem; min-height:44px;
+}
+.vn-fold > summary::-webkit-details-marker { display:none; }
+.vn-fold > summary::before {
+  content:""; flex:none; width:.5rem; height:.5rem; border-right:2px solid var(--coral);
+  border-bottom:2px solid var(--coral); transform:rotate(-45deg); transition:transform .15s; margin-right:.25rem;
+}
+.vn-fold[open] > summary::before { transform:rotate(45deg); }
+.vn-fold > summary:focus-visible { outline:3px solid var(--coral); outline-offset:2px; }
+.vn-fold-title { font-family:var(--sans); font-size:1rem; font-weight:700; color:var(--cream); margin:0; }
+.vn-fold-hint { font-size:.85rem; color:var(--muted); }
+.vn-fold-body { padding:.25rem .9rem .9rem; font-size:.92rem; line-height:1.6; color:var(--muted); }
+.vn-fold-body p { margin:.5rem 0 0; }
+.vn-fold-body strong { color:var(--cream); }
+.vn-fold-body .vn-steps { margin-top:.25rem; }
+/* Questions are a plain bulleted list, two across on wide screens. */
+.vn-fold-body ul.vn-steps { grid-template-columns:repeat(2,minmax(0,1fr)); gap:.35rem 1.5rem; }
+.vn-fold-body ul.vn-steps li { padding-left:1.1rem; font-size:.92rem; color:var(--cream); }
+.vn-fold-body ul.vn-steps li::before {
+  content:""; width:.4rem; height:.4rem; top:.6rem; left:0; border-radius:50%; background:var(--coral);
+}
+.vn-holiday-notice strong { color:var(--coral) !important; }
+@media (max-width:900px) { .vn-fold-body ul.vn-steps { grid-template-columns:1fr; } }

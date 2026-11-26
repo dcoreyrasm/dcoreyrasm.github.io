@@ -1,5 +1,5 @@
 {
-  "note": "Free holiday meals shown in the one-line banner on /village-notes/. Each meal hides itself after 'until' (Eastern time); the banner hides when none are left. Add the next season's meals here (for example Christmas) with the same fields. Only add a meal confirmed by the organizer, 211, or a news report for this year.",
+  "note": "Free holiday meals shown in the one-line banner on /village-notes/. Each meal hides itself after 'until' (Eastern time); the banner hides when none are left. Add the next season's meals here (for example Christmas) with the same fields. Only add a meal confirmed by the organizer, 211, or a news report for this year. A meal with \"notice\": true is a closure or change, shown after the meals and not counted.",
   "checked": "2026-11-26",
   "meals": [
     {
@@ -12,6 +12,16 @@
       "phone": "860-728-3201",
       "until": "2026-11-26T13:30:00-05:00",
       "source": "https://ctmirror.org/2026/11/20/where-to-find-free-thanksgiving-2026-meals-in-hartford-area/"
+    },
+    {
+      "occasion": "Thanksgiving",
+      "name": "Bridge the Gap Community Foundation meal",
+      "town": "Bridgeport",
+      "address": "211 State St.",
+      "when": "Thursday, Nov. 26, noon to 2 PM.",
+      "details": "Free meal. Confirm with the organizer before going.",
+      "until": "2026-11-26T14:00:00-05:00",
+      "source": "https://www.neighborworksnewhorizons.com/event/bridge-the-gap-community-foundation-thanksgiving-meal/"
     },
     {
       "occasion": "Thanksgiving",
@@ -29,9 +39,10 @@
       "town": "New Haven",
       "address": "Drop-in & Resource Center, 266 State St.",
       "when": "Thursday, Nov. 26, starting at 11:30 AM.",
-      "details": "Free dinner.",
+      "details": "Sit-down meal. Listings disagree on the hours, so call before going.",
       "until": "2026-11-26T18:00:00-05:00",
-      "source": "https://thequinnipiacpost.com/guides/free-thanksgiving-meals-baskets-2026-sign-up"
+      "source": "https://deskct.org/thanksgiving/",
+      "phone": "203-624-6426"
     },
     {
       "occasion": "Thanksgiving",
@@ -83,6 +94,16 @@
       "details": "Free take-out dinners for veterans, seniors and residents in need.",
       "until": "2026-11-26T20:00:00-05:00",
       "source": "https://www.fox61.com/article/life/holidays/where-to-find-free-thanksgiving-meals-in-ct-for-2026/520-94c2b5a0-7b2a-41d8-8368-ce7c0348393a"
+    },
+    {
+      "occasion": "Thanksgiving",
+      "notice": true,
+      "name": "Operation Hope is closed",
+      "town": "Fairfield",
+      "when": "Closed Thursday, Nov. 26 and Friday, Nov. 27.",
+      "details": "Its pantry and Community Kitchen are closed. Its Thanksgiving meal was Nov. 25.",
+      "until": "2026-11-27T23:59:00-05:00",
+      "source": "https://operationhopect.org/office-and-food-pantry-closing-at-2pm-today-nov-25-2026/"
     }
   ]
 }
