@@ -72,6 +72,8 @@
             <option value="pt" lang="pt">Português</option>
             <option value="ar" lang="ar" dir="rtl">العربية</option>
             <option value="fr" lang="fr">Français</option>
+            <option value="zh-CN" lang="zh-CN">中文（简体）</option>
+            <option value="pl" lang="pl">Polski</option>
             <option value="en" lang="en">English</option>
           </select>
           <p class="vn-lang-note" id="vn-lang-note" hidden>Translated automatically by Google. Some wording may not be exact.</p>
@@ -528,7 +530,7 @@
       if (current !== 'en') {
         note.hidden = false;
         window.vnGoogleTranslateInit = function () {
-          new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'es,ht,pt,ar,fr', autoDisplay: false }, 'vn-gt');
+          new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'es,ht,pt,ar,fr,zh-CN,pl', autoDisplay: false }, 'vn-gt');
         };
         var s = document.createElement('script');
         s.src = 'https://translate.google.com/translate_a/element.js?cb=vnGoogleTranslateInit';
