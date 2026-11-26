@@ -103,8 +103,13 @@
          exists, before the search. On a phone "Why this exists" is one line
          that opens; on a wide screen it starts open. -->
     <section class="vn-intro-section" aria-label="About Village Notes">
-      <div class="container vn-intro">
-        <div class="vn-household">
+      <div class="container">
+        <!-- One collapsible block for both parts. Open on a wide screen;
+             on a phone it starts closed so the search is close to the top. -->
+        <details class="vn-about" id="vn-about">
+          <summary><span class="vn-about-title">About Village Notes</span><span class="vn-about-hint">Support for your whole household, and why this exists</span></summary>
+          <div class="vn-intro">
+            <div class="vn-household">
           <a class="vn-household-img" href="/village-notes/family-resource-guide.jpg" aria-label="Open the Village Notes family resource guide, full size">
             <img src="/village-notes/family-resource-guide.jpg" width="1122" height="1402" alt="Village Notes, created by Darice Corey. Connecticut resources for families and caregivers: childcare and camps; high schools and teen programs; elder care; pet care; food assistance; disability and accessibility support; transportation and financial help; scholarships for Connecticut students. Free newsletter updates cover new resources, registration openings, open houses, and upcoming dates." />
           </a>
@@ -114,29 +119,31 @@
             <p><a href="#vn-updates">Sign up for free Village Notes updates</a></p>
           </div>
         </div>
-        <details class="vn-why" id="vn-why">
-          <summary><h2 class="vn-intro-heading" id="vn-about-heading">Why this exists: the gap official directories don&rsquo;t fill</h2></summary>
+            <div class="vn-why">
+              <h2 class="vn-intro-heading" id="vn-about-heading">Why this exists: the gap official directories don&rsquo;t fill</h2>
           <div class="vn-why-grid">
-          <div class="vn-why-item">
-            <h3>Real hours, not listed hours</h3>
-            <p>State and hospital directories publish a phone number and an address. They rarely say when a place is actually open, whether the office hours match the care hours, or who picks up after five.</p>
-          </div>
-          <div class="vn-why-item">
-            <h3>Honest waitlist timelines</h3>
-            <p>&ldquo;Contact us for availability&rdquo; tells a family nothing. What helps is someone saying they applied in March and got a spot in November. That is the kind of note this directory collects.</p>
-          </div>
-          <div class="vn-why-item">
-            <h3>Everyone a household looks after</h3>
-            <p>Families caring for young children and those caring for aging parents are often the same people, and plenty of them are looking after an animal too. Childcare, elder care and pet care sit in one place here instead of across three separate systems, because the week they all go wrong is the same week.</p>
-          </div>
-          <div class="vn-why-item">
-            <h3>Two sources, clearly marked</h3>
-            <p>The baseline comes from official state and public records, so the list covers towns nobody has written about yet. The detail comes from families and caregivers. Every card names where it came from, and several people can add a note to the same place.</p>
-          </div>
+                <div class="vn-why-item">
+                  <h3>Real hours, not listed hours</h3>
+                  <p>State and hospital directories publish a phone number and an address. They rarely say when a place is actually open, whether the office hours match the care hours, or who picks up after five.</p>
+                </div>
+                <div class="vn-why-item">
+                  <h3>Honest waitlist timelines</h3>
+                  <p>&ldquo;Contact us for availability&rdquo; tells a family nothing. What helps is someone saying they applied in March and got a spot in November. That is the kind of note this directory collects.</p>
+                </div>
+                <div class="vn-why-item">
+                  <h3>Everyone a household looks after</h3>
+                  <p>Families caring for young children and those caring for aging parents are often the same people, and plenty of them are looking after an animal too. Childcare, elder care and pet care sit in one place here instead of across three separate systems, because the week they all go wrong is the same week.</p>
+                </div>
+                <div class="vn-why-item">
+                  <h3>Two sources, clearly marked</h3>
+                  <p>The baseline comes from official state and public records, so the list covers towns nobody has written about yet. The detail comes from families and caregivers. Every card names where it came from, and several people can add a note to the same place.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </details>
         <script>
-          try { if (window.matchMedia('(min-width: 900px)').matches) document.getElementById('vn-why').open = true; } catch (e) {}
+          try { if (window.matchMedia('(min-width: 900px)').matches) document.getElementById('vn-about').open = true; } catch (e) {}
         </script>
       </div>
     </section>

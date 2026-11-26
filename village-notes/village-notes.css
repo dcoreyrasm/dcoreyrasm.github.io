@@ -918,3 +918,21 @@ main .vn-morefilters .vn-check-list .vn-toggle input:focus-visible + span { outl
 }
 .vn-doorway-link:hover { text-decoration-thickness:2px; }
 .vn-doorway-link:focus-visible { outline:3px solid var(--coral); outline-offset:2px; }
+
+/* ---------- ABOUT: one collapsible block for both parts ---------- */
+section.vn-intro-section { padding:1rem 0; }
+.vn-about > summary {
+  cursor:pointer; list-style:none; display:flex; flex-wrap:wrap; align-items:center;
+  gap:.25rem .75rem; min-height:44px; padding:.25rem 0;
+}
+.vn-about > summary::-webkit-details-marker { display:none; }
+.vn-about > summary::before {
+  content:""; flex:none; width:.5rem; height:.5rem; border-right:2px solid var(--coral);
+  border-bottom:2px solid var(--coral); transform:rotate(-45deg); transition:transform .15s; margin-right:.25rem;
+}
+.vn-about[open] > summary::before { transform:rotate(45deg); }
+.vn-about > summary:focus-visible { outline:3px solid var(--coral); outline-offset:3px; }
+.vn-about-title { font-family:var(--serif); font-weight:700; font-size:1.1rem; color:var(--cream); }
+.vn-about-hint { font-size:.85rem; color:var(--muted); }
+.vn-about .vn-intro { margin-top:.75rem; }
+.vn-about .vn-why .vn-why-grid { margin-top:.5rem; }
