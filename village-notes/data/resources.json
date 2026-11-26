@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-26T14:29:10.961Z",
+  "generated": "2026-11-26T16:10:05.051Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 990,
+  "count": 1068,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -21,6 +21,7 @@
     "Apprenticeship",
     "Arts Camp",
     "Assisted Living",
+    "Barter/Skill Exchange",
     "Before/After School Care",
     "Birth-to-Three / Early Intervention",
     "Caregiver Support Group",
@@ -50,6 +51,7 @@
     "High School (Public)",
     "Home Daycare (Licensed)",
     "Hospice / Palliative Care",
+    "Household Help",
     "In-Home Caregiver / Home Health Aide",
     "Inclusive/Special Needs Camp",
     "Infant Care",
@@ -83,6 +85,7 @@
     "Summer Sleepaway Camp",
     "Teen Program",
     "Teen/CIT Program",
+    "Tutoring / Academic Support",
     "Utility & Heating Assistance",
     "Veterans Benefits Counseling",
     "Veterinary Care",
@@ -93,6 +96,7 @@
     "Andover",
     "Ansonia",
     "Ashford",
+    "Ashford;Canterbury;Chaplin;Eastford;Hampton;Killingly;Brooklyn;Plainfield;Pomfret;Putnam;Scotland;Thompson;Woodstock",
     "Avon",
     "Barkhamsted",
     "Beacon Falls",
@@ -105,8 +109,10 @@
     "Bozrah",
     "Branford",
     "Bridgeport",
+    "Bridgeport and listed surrounding catchment towns",
     "Bridgeport, Danbury, Norwalk and Stamford",
     "Bridgeport, Danbury, Stamford, Torrington and Waterbury",
+    "Bridgeport, Fairfield County",
     "Bridgeport, Stamford, Norwalk and New Haven",
     "Bridgewater",
     "Bristol",
@@ -118,16 +124,21 @@
     "Canton",
     "Central Connecticut",
     "Chaplin",
+    "Check Connecticut ZIP/local volunteer availability",
     "Cheshire",
     "Chester",
     "Clinton",
     "Colchester",
     "Colebrook",
     "Columbia",
+    "Connecticut-accessible national/online program",
+    "Connecticut; Danbury and remote services",
     "Cornwall",
     "Coventry",
     "Cromwell",
+    "CTtransit service areas; not every Connecticut transit operator",
     "Danbury",
+    "Danbury, Fairfield County",
     "Darien",
     "Darien, New Canaan, Norwalk, Stamford, Weston, Westport and Wilton",
     "Deep River",
@@ -143,12 +154,14 @@
     "Eastern Connecticut",
     "Eastford",
     "Easton",
+    "Eligible Connecticut households; federal program",
     "Ellington",
     "Enfield",
     "Essex",
     "Fairfield",
     "Fairfield and Bridgeport",
     "Fairfield County",
+    "Fairfield, Fairfield County",
     "Farmington",
     "Franklin",
     "Glastonbury",
@@ -167,18 +180,24 @@
     "Hampton",
     "Hartford",
     "Hartford and East Hartford",
+    "Hartford County and immediate surrounding areas",
+    "Hartford, Hartford County",
     "Hartford, New Haven, Middlesex and New London counties",
+    "Hartford; referral network eligibility confirm",
     "Hartland",
     "Harwinton",
     "Hebron",
+    "Jewett City; Griswold/Lisbon community",
     "Kent",
     "Killingly",
     "Killingworth",
     "Lakeville",
     "Lebanon",
     "Ledyard",
+    "Ledyard; Gales Ferry",
     "Lisbon",
     "Litchfield",
+    "Litchfield, Litchfield County",
     "Lyme",
     "Madison",
     "Manchester",
@@ -188,20 +207,25 @@
     "Middlebury",
     "Middlefield",
     "Middletown",
+    "Middletown, Middlesex County",
     "Milford",
     "Monroe",
     "Montville",
     "Moodus",
     "Morris",
     "Mystic",
+    "National programs potentially available to eligible CT residents",
     "Naugatuck",
     "New Britain",
     "New Canaan",
     "New Fairfield",
     "New Hartford",
     "New Haven",
+    "New Haven outreach locations",
+    "New Haven, New Haven County",
     "New London",
     "New London and Windham counties",
+    "New London, New London County",
     "New Milford",
     "Newington",
     "Newtown",
@@ -212,6 +236,7 @@
     "North Stonington",
     "Northwest Connecticut",
     "Norwalk",
+    "Norwalk, Fairfield County",
     "Norwich",
     "Old Lyme",
     "Old Saybrook",
@@ -250,6 +275,14 @@
     "Stamford",
     "Statewide",
     "Statewide (all of Connecticut)",
+    "Statewide (national program)",
+    "Statewide Connecticut",
+    "Statewide Connecticut eligibility",
+    "Statewide Connecticut school districts",
+    "Statewide groups; local/online schedules vary",
+    "Statewide participating libraries",
+    "Statewide; local post office authorization required",
+    "Statewide/national",
     "Sterling",
     "Stonington",
     "Storrs",
@@ -257,13 +290,16 @@
     "Suffield",
     "Thomaston",
     "Thompson",
+    "Thompson; Pomfret; Woodstock",
     "Tolland",
     "Torrington",
+    "Trips originating in or destined for Connecticut",
     "Trumbull",
     "Union",
     "Varies by event",
     "Varies by location",
     "Vernon",
+    "Vernon/Tolland and14-town region, Tolland County and neighboring counties",
     "Voluntown",
     "Wallingford",
     "Warren",
@@ -281,6 +317,9 @@
     "Westport and Norwalk",
     "Wethersfield",
     "Willimantic",
+    "Willimantic and Danielson, Windham County",
+    "Willimantic and Danielson, Windham County; online",
+    "Willimantic, Windham County",
     "Willington",
     "Wilton",
     "Winchester",
@@ -294,7 +333,8 @@
     "Wolcott",
     "Woodbridge",
     "Woodbury",
-    "Woodstock"
+    "Woodstock",
+    "Woodstock; Canterbury; Killingly/Danielson; Thompson"
   ],
   "resources": [
     {
@@ -571,6 +611,23 @@
       "notes": "Official source checked November 25, 2026: https://www.accessaccounting.org/. Languages, accessibility, detailed eligibility and current capacity unknown unless stated. Category is closest existing general professional-help category.",
       "lastVerified": "2026-11-25",
       "tags": "nonprofit support, accounting help, bookkeeping, free consultation"
+    },
+    {
+      "id": "recY21hRiclEB4rzh",
+      "name": "Access Agency: Project Empower Workshops",
+      "track": "Family & Childcare",
+      "category": "Job Training Program",
+      "specificType": "Life/financial skills workshops include resume writing, homebuying, used-car buying; future topics are proposals until scheduled. Free financial wellness coaching available.",
+      "town": "Willimantic and Danielson, Windham County",
+      "ages": "Individuals and families",
+      "availability": "Registration required at Willimantic front desk or Helen Scanlon860-450-7400ext7480. Confirm calendar and eligibility.",
+      "cost": "Workshops free; refreshments/meals usually provided, not guaranteed.",
+      "website": "https://accessagency.org/project-empower/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://accessagency.org/project-empower/. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free classes, life skills, financial education, adults, windham"
     },
     {
       "id": "recKCZqFzjEuliXNy",
@@ -1138,6 +1195,21 @@
       "tags": "caregiver support group, senior services, caregiver support, farmington"
     },
     {
+      "id": "recdhddmRt1MoWuZd",
+      "name": "American Cancer Society: Road To Recovery Rides",
+      "track": "Health & Dental",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Free volunteer rides to cancer-related medical appointments where available. Call several business days ahead; local requirements and companion needs assessed, including minors or people needing walking assistance. Not guaranteed ride or emergency transport.",
+      "town": "Check Connecticut ZIP/local volunteer availability",
+      "website": "https://www.cancer.org/support-programs-and-services/road-to-recovery.html",
+      "contact": "800-227-2345",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Six access questions: address/ID/phone/internet/bank barriers unknown; contact/self-referral as described; children/paperwork/timing/alternatives as stated, otherwise confirm. Transit route/accessibility/return rides, interpreter/ASL and current capacity/funding require confirmation. Independently found lead Pending Review.\nUser approval2026-11-26: Darice Approved the six-resource addiction/mental-health/cancer batch. Pending Review changed to Published; prior pending wording historical, all source/access caveats preserved.",
+      "lastVerified": "2026-11-26",
+      "tags": "cancer transportation, volunteer drivers, treatment rides, appointment transportation"
+    },
+    {
       "id": "recRIhbU4v73Oyp5u",
       "name": "Americares Free Clinics",
       "track": "Health & Dental",
@@ -1229,6 +1301,21 @@
       "lastVerified": "2026-10-13",
       "foodType": "Food Bank / Food Pantry",
       "tags": "food bank / food pantry, food pantry, west hartford"
+    },
+    {
+      "id": "recDkAaCfPL40qwRA",
+      "name": "Ann's Place: Free Cancer and Family Support",
+      "track": "Health & Dental",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Free counseling, support groups, wellness and educational support for people living with cancer and loved ones. Online/in-person services; contact Client Services about intake. Not oncology treatment or guaranteed financial aid.",
+      "town": "Connecticut; Danbury and remote services",
+      "website": "https://www.annsplace.org/",
+      "contact": "203-790-6568 ext109; clientservices@annsplace.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Six access questions: address/ID/phone/internet/bank barriers unknown; contact/self-referral as described; children/paperwork/timing/alternatives as stated, otherwise confirm. Transit route/accessibility/return rides, interpreter/ASL and current capacity/funding require confirmation. Independently found lead Pending Review.\nUser approval2026-11-26: Darice Approved the six-resource addiction/mental-health/cancer batch. Pending Review changed to Published; prior pending wording historical, all source/access caveats preserved.",
+      "lastVerified": "2026-11-26",
+      "tags": "cancer support, family caregivers, counseling, support groups, remote support, danbury"
     },
     {
       "id": "recdZdIdulJA5kK1f",
@@ -1725,6 +1812,22 @@
       "tags": "center-based daycare, childcare, bloomfield"
     },
     {
+      "id": "recdfC2YqGxzpfW8S",
+      "name": "Bolton: Food Pantry, Delivery and Senior/Disability Rides",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "Food pantry for residents Mon/Wed/Thu 9:30am-3:30pm, other times by appointment; delivery by arrangement. Free scheduled space-available rides for residents60+ and adults with disabilities to appointments, groceries and community activities. Seasonal AARP tax assistance is Feb-Apr, not confirmed open now.",
+      "town": "Bolton",
+      "availability": "860-647-9196",
+      "cost": "Pantry application required. Rides free for eligible residents; confirm pantry terms and current capacity.",
+      "website": "https://www.boltonct.gov/services/senior-and-social-services",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.boltonct.gov/services/senior-and-social-services. County: Tolland. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "food pantry, delivery by arrangement, senior rides, disability transportation, benefits, bolton"
+    },
+    {
       "id": "rec08eX7f1jYsaUfj",
       "name": "Boys & Girls Club of Greenwich CIT Program",
       "track": "Family & Childcare",
@@ -1986,6 +2089,22 @@
       "tags": "preschool / pre-k, childcare, branford"
     },
     {
+      "id": "recGwyemQFIPSEpgs",
+      "name": "Branford: Basic Needs Emergency Assistance",
+      "track": "Food & Basic Needs",
+      "category": "Utility & Heating Assistance",
+      "specificType": "Temporary rent assistance, energy shutoff help, emergency food/gas cards, shelter and fuel assistance for qualifying residents. Provider states severe funding limits; help not guaranteed.",
+      "town": "Branford",
+      "availability": "203-488-5404; posted Mon-Fri9am-1pm,2-5pm.",
+      "cost": "Branford residents with insufficient resources. Exact current income limits, awards and funds must be confirmed.",
+      "website": "https://www.branford-ct.gov/207/Branford-Social-Services",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.branford-ct.gov/207/Branford-Social-Services. County: New Haven. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "emergency assistance, rent, utilities, food cards, gas cards, branford"
+    },
+    {
       "id": "recJBbvNQYfJPXDLn",
       "name": "BRIDGE CT (Building Resilience Independence Dignity Growth and Empowerment)",
       "track": "Teens & High School",
@@ -2009,6 +2128,24 @@
         "Career Exploration"
       ],
       "tags": "disability transition, special education, self-advocacy, peer mentoring, financial literacy, career readiness, independent living, college planning, employment preparation, ages 10-22, participating schools, statewide"
+    },
+    {
+      "id": "rec1nqXe2KqHpKJOG",
+      "name": "Bridge The Gap: Thanksgiving Meal November26",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "Community partner dated calendar lists FREE meal November26,2026 noon–2PM at211StateStreet. Organizer referenced Bridge The Gap Community Foundation. Registration/capacity/language/access/transit not independently confirmed; call before travel.",
+      "town": "Bridgeport",
+      "cost": "Free per dated community partner, not organizer-direct availability confirmation.",
+      "website": "https://www.neighborworksnewhorizons.com/event/bridge-the-gap-community-foundation-thanksgiving-meal/",
+      "contact": "Organizer link on dated partner listing",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Source checked2026-11-26. Access/identity/address/phone/internet/bank barriers, self-referral, children, paperwork help, no-stock/no-slot alternatives, languages/ASL and exact transit/holiday return routes unknown unless specified. Independently found lead Pending Review. Existing closest category; precise role in description/tags.\n\nApproved by Darice on 2026-11-26 and set to Published. Call-before-travel note retained.",
+      "lastVerified": "2026-11-26",
+      "event": "Thanksgiving meal today noon–2PM; confirm before travel",
+      "eventDate": "2026-11-26",
+      "tags": "thanksgiving meal, free holiday food, community meal, bridgeport"
     },
     {
       "id": "recIGHFWye7kXSTb9",
@@ -2505,6 +2642,24 @@
       "tags": "mobile food distribution, bridgeport"
     },
     {
+      "id": "recKBG1rAT3CYz3cx",
+      "name": "Bridgeport Library: Comic and Manga Hour",
+      "track": "Teens & High School",
+      "category": "Youth Development Program",
+      "specificType": "December1,2026,4–5PM Eastern, Burroughs-Saden Teen Room925 Broad Street. Comics/anime discussion, crafts and library media introductions. Text says ages12–19; calendar audience says12–18, confirm for age19. No registration required.",
+      "town": "Bridgeport",
+      "cost": "No charge stated on event page; confirm if needed.",
+      "website": "https://bportlibrary.libcal.com/event/17298945",
+      "contact": "203-576-7400 ext408",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Current stock, intake, documents, disability/language access, denied-applicant alternatives, off-hours/transport and application follow-up unknown unless specifically confirmed. Independently found lead, Pending Review. Existing closest category; description/tags specify precise service.",
+      "lastVerified": "2026-11-26",
+      "event": "Comic & Manga Hour, December1,4–5PM Eastern; no registration; confirm age19 eligibility",
+      "eventDate": "2026-12-01",
+      "tags": "library events, teen activities, comics, manga, anime, bridgeport"
+    },
+    {
       "id": "recvcD90Uu6Z6spr2",
       "name": "Bridgeport Public Library Museum Passes",
       "track": "Family & Childcare",
@@ -2524,6 +2679,22 @@
       "notes": "Official source checked November 25, 2026: https://bportlibrary.org/museum-passes/. No pass stock/date guaranteed. Not every museum or family member admitted free. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.",
       "lastVerified": "2026-11-25",
       "tags": "museum passes, affordable recreation, library resources, family activities"
+    },
+    {
+      "id": "rec39N1bchFvM7XQk",
+      "name": "Bridgeport Public Library: Digital Library",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "Digital reading/media resources including Hoopla and BookFlix through BPL. Check library-card eligibility, current subscription, title availability and borrowing limits.",
+      "town": "Bridgeport",
+      "cost": "Eligible library-card access; individual resource terms apply.",
+      "website": "https://bportlibrary.org/books/online-library/",
+      "contact": "203-576-7400; library reference desk",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Current stock, intake, documents, disability/language access, denied-applicant alternatives, off-hours/transport and application follow-up unknown unless specifically confirmed. Independently found lead, Pending Review. Existing closest category; description/tags specify precise service.",
+      "lastVerified": "2026-11-26",
+      "tags": "library apps, hoopla, bookflix, ebooks, audiobooks, bridgeport"
     },
     {
       "id": "recokakJq7XyeH5YT",
@@ -2563,6 +2734,22 @@
       "lastVerified": "2026-10-13",
       "foodType": "Food Bank / Food Pantry",
       "tags": "food bank / food pantry, food pantry, bridgeport"
+    },
+    {
+      "id": "recCjk0RzZlNc7Jst",
+      "name": "Bridgeport Rescue Mission: Prepared Community Meals",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "specificType": "Breakfast Mon/Wed/Fri9:30-10:30am; lunch Tue/Thu2-3pm at725ParkAve. Pantry groceries are separate.",
+      "town": "Bridgeport",
+      "availability": "203-333-4087; regular schedule only, holiday service unconfirmed.",
+      "cost": "Community meals for neighbors in need; confirm fees/intake with provider.",
+      "website": "https://bridgeportrescuemission.org/get-help/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26: https://bridgeportrescuemission.org/get-help/. New result Pending Review. Regular hours are not Thanksgiving confirmation. Unless stated, unknown: address/ID/phone/internet/bank requirements, self-referral, accompanying children, off-hours, paperwork help, alternatives when full, language/ASL/disability access and exact public-transit routes. Statewide service does not mean a local office confirmed in each town.\n\nDarice explicitly reviewed and approved this14-resource meals/mail/work-clothing batch on2026-11-26. Published; availability and access limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "prepared meals, no kitchen needed, bridgeport"
     },
     {
       "id": "recOaka93AssLHrQn",
@@ -3613,6 +3800,21 @@
       "tags": "center-based daycare, family resources, childcare, canaan"
     },
     {
+      "id": "recZcDcTnW5Xzbq7D",
+      "name": "CancerCare: Financial Assistance Intake",
+      "track": "Health & Dental",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Limited diagnosis/location/income/treatment-specific assistance, potentially transport/home care/childcare and other costs. Call social worker for interview and current funds; completed application, income proof and medical confirmation required. If funding unavailable, referrals may be offered.",
+      "town": "National programs potentially available to eligible CT residents",
+      "website": "https://www.cancercare.org/financial",
+      "contact": "800-813-4673",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Six access questions: address/ID/phone/internet/bank barriers unknown; contact/self-referral as described; children/paperwork/timing/alternatives as stated, otherwise confirm. Transit route/accessibility/return rides, interpreter/ASL and current capacity/funding require confirmation. Independently found lead Pending Review.\nUser approval2026-11-26: Darice Approved the six-resource addiction/mental-health/cancer batch. Pending Review changed to Published; prior pending wording historical, all source/access caveats preserved.",
+      "lastVerified": "2026-11-26",
+      "tags": "cancer financial help, medical rides, childcare assistance, application support, treatment costs"
+    },
+    {
       "id": "recmyOgtaOKhhs2ZN",
       "name": "Canterbury Boe At Canterbury Elementary School",
       "track": "Family & Childcare",
@@ -4327,6 +4529,23 @@
       ]
     },
     {
+      "id": "recFLmHEqHZJEtF3N",
+      "name": "Charter Oak: City School of the Arts",
+      "track": "Family & Childcare",
+      "category": "Afterschool Enrichment",
+      "specificType": "Inclusive visual arts, music, theatre and dance classes and ensembles.",
+      "town": "Hartford, Hartford County",
+      "ages": "Hartford-area children/youth",
+      "availability": "Fall2026 registration page warns of waiting list; registration does not guarantee enrollment. Call860-310-2589.",
+      "cost": "Tuition-free; confirm supplies and any other expenses.",
+      "website": "https://charteroakcenter.org/school-of-arts/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://charteroakcenter.org/school-of-arts/. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free classes, youth arts, music, hartford"
+    },
+    {
       "id": "recq9rHUPmFdyjzSf",
       "name": "Cheshire KinderCare",
       "track": "Family & Childcare",
@@ -4392,6 +4611,22 @@
       ],
       "lastVerified": "2026-08-31",
       "tags": "skilled nursing / rehab, senior services, moodus"
+    },
+    {
+      "id": "recSHmU0TamzrlPh5",
+      "name": "Chester: Food Pantry and Social Services",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "Resident food pantry with nonperishable food, toiletries/basic supplies; help connecting to clothing, eyeglasses, benefits, food and shelter. Page says outside24/7pantry is coming soon, so not confirmed operational.",
+      "town": "Chester",
+      "availability": "860-526-0013ext213; appointment advised because office hours vary.",
+      "cost": "Chester residents in need; program costs/income/documents must be confirmed.",
+      "website": "https://www.chesterct.gov/1378/Social-Services",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.chesterct.gov/1378/Social-Services. County: Middlesex. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "food pantry, toiletries, benefits, eyeglasses assistance, chester"
     },
     {
       "id": "recg6bvURU7b4vY5Q",
@@ -5174,17 +5409,34 @@
       "tags": "dental, mobile dental, seniors, children"
     },
     {
+      "id": "recLjP1WQgLQSVSH7",
+      "name": "Community Kitchens of Northeastern Connecticut: Free Lunch Sites",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "specificType": "Meals atnoon:MonFirstCongregationalWoodstock543Route169;TueCanterburyTownHall1MunicipalDr;WedDanielsonUnitedMethodist9SpringSt;second/fourthThuCreationChurch47WestThompsonRd. Provider seeking Friday site, none confirmed.",
+      "town": "Woodstock; Canterbury; Killingly/Danielson; Thompson",
+      "availability": "Use provider contact/calendar; no active Friday service asserted.",
+      "cost": "Free, open table, everyone welcome. Regular schedule not Thanksgiving confirmation.",
+      "website": "https://www.communitykitchensnect.org/our-sites.html",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.communitykitchensnect.org/our-sites.html. County: Windham. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "free meals, no kitchen needed, woodstock, canterbury, killingly, danielson, thompson"
+    },
+    {
       "id": "rec8uklEPsTiq8ROG",
       "name": "Community Soup Kitchen at Christ Church",
       "track": "Food & Basic Needs",
       "category": "Community Meals / Soup Kitchen",
+      "specificType": "Current direct-provider schedule replaces older secondary-source hours:84Broadway, NewHaven. LunchMon/Tue/Thu/Fri11am-1pm; Saturdaybreakfast8-9am. Dine-in/takeout and social supports.203-624-4594. Regular schedule only, Thanksgiving exceptions unverified.",
       "town": "New Haven",
       "address": "84 Broadway, New Haven, CT",
-      "website": "https://deskct.org/faq/",
-      "notes": "Food & Basic Needs. Verified official source October 13, 2026. DESK links to Community Soup Kitchen lunch Monday Tuesday Thursday Friday 11:30-1:30; confirm current meals.",
-      "lastVerified": "2026-10-13",
+      "website": "https://www.csknewhaven.org/locations/",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. DESK links to Community Soup Kitchen lunch Monday Tuesday Thursday Friday 11:30-1:30; confirm current meals.\n\n2026-11-26 deeper meal/mail/work-clothing review: Current direct-provider schedule replaces older secondary-source hours:84Broadway, NewHaven. LunchMon/Tue/Thu/Fri11am-1pm; Saturdaybreakfast8-9am. Dine-in/takeout and social supports.203-624-4594. Regular schedule only, Thanksgiving exceptions unverified. Source: https://www.csknewhaven.org/locations/. Existing Published status retained; this refresh does not assert current openings or holiday operation.",
+      "lastVerified": "2026-11-26",
       "foodType": "Community Meals / Soup Kitchen",
-      "tags": "community meals / soup kitchen, community meals, new haven"
+      "tags": "community meals, prepared meals, saturday breakfast, no kitchen needed, new haven"
     },
     {
       "id": "recyQoc1fkJIEv2PA",
@@ -5463,6 +5715,22 @@
       "tags": "hoarding support, home safety, voluntary treatment, treatment referrals"
     },
     {
+      "id": "recpD1Ah7Hf0XuQ8h",
+      "name": "Connecticut DMHAS/Wheeler: Substance Use Access Line",
+      "track": "Health & Dental",
+      "category": "Disability & Accessibility Services",
+      "specificType": "24/7 substance-use treatment access/referrals, withdrawal/residential screening and admission coordination. Can help with three-way facility intake and limited last-resort transport to/from eligible inpatient/residential programs; outpatient/MAT rides not provided through this route.",
+      "town": "Statewide Connecticut",
+      "cost": "Treatment fees/insurance and bed availability provider-specific; no universal free treatment claim.",
+      "website": "https://portal.ct.gov/dmhas/divisions/community-services-division/community-services-division",
+      "contact": "800-563-4086",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Access questions: no address/ID/phone/internet/bank requirements unconfirmed; referral/children/paperwork support as described, otherwise confirm. Current appointments/beds/funding, alternative if full, languages/ASL, transit route and return trip unknown. Do not infer public bus access or guaranteed treatment. Independently found new lead Pending Review.\nUser approval2026-11-26: Darice Approved the six-resource addiction/mental-health/cancer batch. Pending Review changed to Published; prior pending wording historical, all source/access caveats preserved.",
+      "lastVerified": "2026-11-26",
+      "tags": "addiction treatment, substance use, alcohol recovery, withdrawal care, treatment referrals, intake assistance"
+    },
+    {
       "id": "recnVLPzuSaLtM4bK",
       "name": "Connecticut Donated Dental Services (Dental Lifeline Network)",
       "track": "Health & Dental",
@@ -5565,6 +5833,22 @@
       "notes": "Official provider page reviewed November 26, 2026; duplicate check by provider URL. Access details not published or independently confirmed: languages/interpreters, physical access, off-hours/remote service, denied-applicant alternatives and coordinated follow-up. Contact provider before relying on availability. Existing category used for best available fit; specific description/tags control scope.",
       "lastVerified": "2026-11-26",
       "tags": "funeral assistance, burial allowance, bereavement practical help, dss"
+    },
+    {
+      "id": "recJK5fnbvLTYdpFy",
+      "name": "Connecticut DSS/MTM: Non-Emergency Medical Transportation",
+      "track": "Health & Dental",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Medical-appointment transport for eligible HUSKY A/C/D, CoveredCT and limited-benefit members lacking other transport. Arrange through MTM; confirm covered trip, booking notice, wheelchair/companion needs and return ride.",
+      "town": "Statewide Connecticut eligibility",
+      "cost": "Covered benefit subject to member/trip eligibility; not emergency transport.",
+      "website": "https://portal.ct.gov/dss/health-and-home-care/non-emergency-medical-transportation/eligibility",
+      "contact": "MTM855-478-7350; https://www.mtm-inc.net/connecticut/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Current stock, intake, documents, disability/language access, denied-applicant alternatives, off-hours/transport and application follow-up unknown unless specifically confirmed. Independently found lead, Pending Review. Existing closest category; description/tags specify precise service.",
+      "lastVerified": "2026-11-26",
+      "tags": "medical rides, husky transportation, medicaid rides, covered ct, mtm"
     },
     {
       "id": "recjryIj1A0AQkyjj",
@@ -6347,6 +6631,37 @@
       "tags": "magnet / specialty school, teen resources, high school, east hartford"
     },
     {
+      "id": "recO3qqLJTheOjbdk",
+      "name": "Connecticut Safe at Home: Confidential Mail Forwarding",
+      "track": "Food & Basic Needs",
+      "category": "Household Help",
+      "specificType": "Substitute address and first-class mail forwarding for eligible relocated survivors. Application through trained assistant at community-based domestic violence/sexual assault program.",
+      "town": "Statewide",
+      "availability": "Eligibility and safety requirements apply; program page has application organizations. Do not publish a participant's actual address.",
+      "cost": "Cost-free qualifying mail services; not general low-income shipping or package service.",
+      "website": "https://portal.ct.gov/sots/business-services/acp/address-confidentiality-program",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26: https://portal.ct.gov/sots/business-services/acp/address-confidentiality-program. New result Pending Review. Regular hours are not Thanksgiving confirmation. Unless stated, unknown: address/ID/phone/internet/bank requirements, self-referral, accompanying children, off-hours, paperwork help, alternatives when full, language/ASL/disability access and exact public-transit routes. Statewide service does not mean a local office confirmed in each town.\n\nDarice explicitly reviewed and approved this14-resource meals/mail/work-clothing batch on2026-11-26. Published; availability and access limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "confidential address, mail forwarding, survivor support, statewide"
+    },
+    {
+      "id": "recXSVovU4aKbvMYU",
+      "name": "Connecticut School Stability: Homeless Education and Liaisons",
+      "track": "Family & Childcare",
+      "category": "Legal/HR Resource",
+      "specificType": "Official school enrollment, school-selection/transportation and district liaison guidance for families/youth experiencing unstable housing. Case-specific eligibility review; contact district homeless education liaison.",
+      "town": "Statewide Connecticut school districts",
+      "website": "https://portal.ct.gov/sde/homeless/homeless-student-support-frequently-asked-questions",
+      "contact": "Official FAQ links to district liaison directory",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Access questions checked2026-11-26. Address/records: official guidance describes immediate enrollment without usual records for eligible students. Other phone/internet/bank requirements unknown. Referral: contact district liaison. Children: service for students/families. Tonight/weekend: unknown. Paperwork: liaison assistance; specific help confirm. Dispute: official FAQ explains continued enrollment during disputes. Public transportation: operator/route/stop, accessible path and return trip not verified. Do not infer bus access from city/location.",
+      "lastVerified": "2026-11-26",
+      "tags": "homeless education, school stability, enrollment without records, school transportation, mckinney vento"
+    },
+    {
       "id": "recc50WLn9BY64HsI",
       "name": "Connecticut Security Deposit Guarantee Program",
       "track": "Food & Basic Needs",
@@ -6538,10 +6853,11 @@
         "Statewide (all of Connecticut)"
       ],
       "submittedBy": "Village Notes Research",
+      "notes": "Official FAQ verified 2026-11-26: https://petsafetyct.org/companion-assistance-program-faq/ . Connecticut residents with low income or public assistance may apply with income documentation. $125 voucher per pet every 12 months, maximum two pets per household. Participating practices only; use within 60 days. Not for emergency, urgent, next-day, or already completed care. Typical mailing time 5-10 business days. Paper applications: 860-635-7770.",
       "servicesOffered": [
         "Low-Cost Veterinary Clinic"
       ],
-      "lastVerified": "2026-08-28",
+      "lastVerified": "2026-11-26",
       "tags": "low-cost veterinary clinic, pet services"
     },
     {
@@ -6768,6 +7084,22 @@
       "accessDetails": [
         "Free"
       ]
+    },
+    {
+      "id": "rec0bUf7Pif49LdD9",
+      "name": "Coventry: Human Services and Family Assistance",
+      "track": "Food & Basic Needs",
+      "category": "Household Help",
+      "specificType": "Free resident benefits/budget counseling, case management, food bank by appointment, fuel help, camperships and family/holiday support.",
+      "town": "Coventry",
+      "availability": "860-742-5324",
+      "cost": "Human Services lists its services free to Coventry residents; individual assistance eligibility and funds vary.",
+      "website": "https://www.coventry-ct.gov/126/Human-Services",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.coventry-ct.gov/126/Human-Services. County: Tolland. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "case management, benefits, food pantry, fuel assistance, camperships, coventry"
     },
     {
       "id": "recGZVU5aADCtPKqa",
@@ -7192,6 +7524,70 @@
       "tags": "home daycare licensed, childcare, new britain"
     },
     {
+      "id": "recb0IDwer7SbbhHx",
+      "name": "CSK Newhallville: Take-Out Lunch",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "specificType": "5HazelSt; Mon/Tue/Thu/Fri noon-2pm. Prepared takeout meals. Neighborhood Saturday breakfast not returning until summer2027 per page.",
+      "town": "New Haven",
+      "availability": "203-624-4594; regular schedule, holidays confirm.",
+      "cost": "Community meals; no income test stated for mobile program, do not infer all-site document rules.",
+      "website": "https://www.csknewhaven.org/locations/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26: https://www.csknewhaven.org/locations/. New result Pending Review. Regular hours are not Thanksgiving confirmation. Unless stated, unknown: address/ID/phone/internet/bank requirements, self-referral, accompanying children, off-hours, paperwork help, alternatives when full, language/ASL/disability access and exact public-transit routes. Statewide service does not mean a local office confirmed in each town.\n\nDarice explicitly reviewed and approved this14-resource meals/mail/work-clothing batch on2026-11-26. Published; availability and access limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "prepared meals, takeout, newhallville, new haven"
+    },
+    {
+      "id": "recIcDqdnaLyx7XNN",
+      "name": "CSK The Hill: Hot Take-Out Meals",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "specificType": "33LambertonSt; Mon/Tue/Thu/Fri noon-2pm. Clothing, footwear and essentials also listed; work-specific stock not confirmed.",
+      "town": "New Haven",
+      "availability": "203-624-4594; holidays confirm.",
+      "cost": "Community meals; confirm intake/document requirements.",
+      "website": "https://www.csknewhaven.org/locations/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26: https://www.csknewhaven.org/locations/. New result Pending Review. Regular hours are not Thanksgiving confirmation. Unless stated, unknown: address/ID/phone/internet/bank requirements, self-referral, accompanying children, off-hours, paperwork help, alternatives when full, language/ASL/disability access and exact public-transit routes. Statewide service does not mean a local office confirmed in each town.\n\nDarice explicitly reviewed and approved this14-resource meals/mail/work-clothing batch on2026-11-26. Published; availability and access limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "prepared meals, takeout, the hill, new haven"
+    },
+    {
+      "id": "rec09cIn03dTfQSiu",
+      "name": "CSK West River: Mobile Hot Meals",
+      "track": "Food & Basic Needs",
+      "category": "Mobile Food Distribution",
+      "specificType": "49KossuthSt atDavenportAve. Mon/Tue/Thu/Fri12:30-2pm. Free hot meals plus pantry groceries.",
+      "town": "New Haven",
+      "availability": "203-624-4594; holiday/cancellation schedule confirm.",
+      "cost": "Free, no income test. Pantry items require household name, ZIP and household size.",
+      "website": "https://www.csknewhaven.org/locations/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26: https://www.csknewhaven.org/locations/. New result Pending Review. Regular hours are not Thanksgiving confirmation. Unless stated, unknown: address/ID/phone/internet/bank requirements, self-referral, accompanying children, off-hours, paperwork help, alternatives when full, language/ASL/disability access and exact public-transit routes. Statewide service does not mean a local office confirmed in each town.\n\nDarice explicitly reviewed and approved this14-resource meals/mail/work-clothing batch on2026-11-26. Published; availability and access limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "prepared meals, mobile meals, west river, new haven"
+    },
+    {
+      "id": "recgN8V4DzYGg8T0R",
+      "name": "CSK West Rock: Mobile Hot Meals",
+      "track": "Food & Basic Needs",
+      "category": "Mobile Food Distribution",
+      "specificType": "90HarperAve atValleySt, FirstChurchofGod. Mondays11am-12:30pm. Free hot meals and pantry groceries.",
+      "town": "New Haven",
+      "availability": "203-624-4594; holiday/cancellation schedule confirm.",
+      "cost": "Free, no income test. Pantry items require household name, ZIP and household size.",
+      "website": "https://www.csknewhaven.org/locations/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26: https://www.csknewhaven.org/locations/. New result Pending Review. Regular hours are not Thanksgiving confirmation. Unless stated, unknown: address/ID/phone/internet/bank requirements, self-referral, accompanying children, off-hours, paperwork help, alternatives when full, language/ASL/disability access and exact public-transit routes. Statewide service does not mean a local office confirmed in each town.\n\nDarice explicitly reviewed and approved this14-resource meals/mail/work-clothing batch on2026-11-26. Published; availability and access limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "prepared meals, mobile meals, west rock, new haven"
+    },
+    {
       "id": "recPyOZXJuaA1KCK2",
       "name": "CT BEDS",
       "track": "Food & Basic Needs",
@@ -7396,6 +7792,38 @@
       "tags": "college access / readiness, teen resources, high school, hartford"
     },
     {
+      "id": "recFujfxPotSO8R0X",
+      "name": "CTDOT Project Plan Ahead: Rideshare Credits",
+      "track": "Food & Basic Needs",
+      "category": "Disability & Accessibility Services",
+      "specificType": "CTDOT announced $15 Uber/Lyft credits during designated high-risk weekends/holidays/events. Published window5PM–3AM, while supplies last; no advance ride scheduling. Check current offer dates, timezone and in-app terms. Not all rides free.",
+      "town": "Trips originating in or destined for Connecticut",
+      "cost": "Up to $15 credit; rider pays uncovered fare/charges under offer terms.",
+      "website": "https://ct.projectplanahead.com/",
+      "contact": "Official offer page; CTDOT announcement",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Current stock, intake, documents, disability/language access, denied-applicant alternatives, off-hours/transport and application follow-up unknown unless specifically confirmed. Independently found lead, Pending Review. Existing closest category; description/tags specify precise service.",
+      "lastVerified": "2026-11-26",
+      "tags": "rideshare discount, holiday rides, uber, lyft, safe rides, project plan ahead"
+    },
+    {
+      "id": "recrboJ3CSOGXkoGd",
+      "name": "CTtransit: Bus Fares and Trip Planning",
+      "track": "Food & Basic Needs",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Official fare, route/schedule and accessibility entry point for CTtransit. Check exact origin/destination, fare class, transfer rules, accessibility and holiday hours. Separate local transit and ADA paratransit rules apply.",
+      "town": "CTtransit service areas; not every Connecticut transit operator",
+      "cost": "Fare-based service; verify applicable discounts, not blanket free buses.",
+      "website": "https://www.cttransit.com/fares",
+      "contact": "Official CTtransit fare and route pages",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Current stock, intake, documents, disability/language access, denied-applicant alternatives, off-hours/transport and application follow-up unknown unless specifically confirmed. Independently found lead, Pending Review. Existing closest category; description/tags specify precise service.",
+      "lastVerified": "2026-11-26",
+      "tags": "public buses, bus fares, transit routes, transportation, cttransit"
+    },
+    {
       "id": "recdk5Vxl39vY1LTF",
       "name": "Daddy Backwards Entertainment Summer Youth Program",
       "track": "Family & Childcare",
@@ -7497,6 +7925,23 @@
         "College Readiness"
       ],
       "tags": "high school public, teen resources, high school, danbury"
+    },
+    {
+      "id": "recVLbOB8qych9gtn",
+      "name": "Danbury Library: Studio170 Free Recording Practice",
+      "track": "Family & Childcare",
+      "category": "Barter/Skill Exchange",
+      "specificType": "Free audio/video production spaces and orientation video. Reservation2hour increments up to4hours. Some computer/recording proficiency expected; staff cannot provide one-to-one assistance.",
+      "town": "Danbury, Fairfield County",
+      "ages": "Ages13+;12andyounger require adult supervision",
+      "availability": "Learning/practice resource, not confirmed instructor-led course. ClosedNov26-27.203-797-4505.",
+      "cost": "Studio free; library card not required. Bring flashdrive/SDcard to save work.",
+      "website": "https://danburylibrary.org/recording-studio/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://danburylibrary.org/recording-studio/. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free learning, music production, video, teens, adults, no library card, danbury"
     },
     {
       "id": "recMfcRysJpk3ACjA",
@@ -7730,6 +8175,24 @@
         "Preschool / Pre-K"
       ],
       "tags": "center-based daycare, childcare, new canaan"
+    },
+    {
+      "id": "rec41GiPjXczlxWw7",
+      "name": "DESK: Thanksgiving Day2026 Meal",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "Organizer confirms Thanksgiving Day sit-down meal at266StateStreet and deliveries to recently housed neighbors. Official page omits meal time; partner sources conflict noon–3PM vs1:30–4:30PM, call to confirm. Nov25 grocery distribution is PAST. Delivery not open to all without arranging.",
+      "town": "New Haven",
+      "cost": "Community meal; eligibility/seats/delivery need organizer confirmation.",
+      "website": "https://deskct.org/thanksgiving/",
+      "contact": "203-624-6426;info@deskct.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Source checked2026-11-26. Access/identity/address/phone/internet/bank barriers, self-referral, children, paperwork help, no-stock/no-slot alternatives, languages/ASL and exact transit/holiday return routes unknown unless specified. Independently found lead Pending Review. Existing closest category; precise role in description/tags.\n\nApproved by Darice on 2026-11-26 and set to Published. Conflicting meal times retained; call to confirm.",
+      "lastVerified": "2026-11-26",
+      "event": "Thanksgiving Day meal; call for time, conflicting partner listings",
+      "eventDate": "2026-11-26",
+      "tags": "thanksgiving meal, holiday food, no kitchen needed, new haven"
     },
     {
       "id": "recycMY7C3bBiR7Ka",
@@ -8138,15 +8601,16 @@
       "name": "Downtown Evening Soup Kitchen Grab and Go Dinner",
       "track": "Food & Basic Needs",
       "category": "Community Meals / Soup Kitchen",
+      "specificType": "Direct provider: Sun2:30-3pmTemple/Chapelcorner; Mon5-6pmTrinityontheGreenTemple/Chapel; Tue-Thu5-6pmLowerGreenTemple/Elm; Fri-Sat4-5pm84Broadway listed on combined schedule. DESK itself identifies its dinnerSun-Thu; Fri-Sat partner service.203-624-6426. Thanksgiving special arrangements supersede regular schedule; not confirmed by this update.",
       "town": "New Haven",
       "website": "https://deskct.org/hours-of-service/",
-      "notes": "Food & Basic Needs. Verified official source October 13, 2026. DESK meals at multiple New Haven Green/Broadway locations Sunday-Saturday; inspect daily site before visiting.",
+      "notes": "Food & Basic Needs. Verified official source October 13, 2026. DESK meals at multiple New Haven Green/Broadway locations Sunday-Saturday; inspect daily site before visiting.\n\n2026-11-26 deeper meal/mail/work-clothing review: Direct provider: Sun2:30-3pmTemple/Chapelcorner; Mon5-6pmTrinityontheGreenTemple/Chapel; Tue-Thu5-6pmLowerGreenTemple/Elm; Fri-Sat4-5pm84Broadway listed on combined schedule. DESK itself identifies its dinnerSun-Thu; Fri-Sat partner service.203-624-6426. Thanksgiving special arrangements supersede regular schedule; not confirmed by this update. Source: https://deskct.org/hours-of-service/. Existing Published status retained; this refresh does not assert current openings or holiday operation.",
       "scheduleWindow": [
         "Weekend"
       ],
-      "lastVerified": "2026-10-13",
+      "lastVerified": "2026-11-26",
       "foodType": "Community Meals / Soup Kitchen",
-      "tags": "community meals / soup kitchen, community meals, new haven"
+      "tags": "community meals, prepared meals, evening meals, weekend meals, no kitchen needed, new haven"
     },
     {
       "id": "rec2zTuBsi0EuvsBK",
@@ -8190,25 +8654,41 @@
       "tags": "pet food assistance, pet services, community meals, pet food, new haven"
     },
     {
+      "id": "recxUJrsQwfzb00Ij",
+      "name": "Dress for Success Hartford: Interview and Work Attire",
+      "track": "Food & Basic Needs",
+      "category": "Free Clothing Closets",
+      "specificType": "Women with scheduled interview referred by partner agency receive styling, interview ensemble, shoes/accessories; return for workplace attire after employment.",
+      "town": "Hartford; referral network eligibility confirm",
+      "availability": "860-525-5015; agency referral and appointment required, stock/sizes not guaranteed.",
+      "cost": "Clothing assistance; confirm local terms and no-cost appointment.",
+      "website": "https://hartford.dressforsuccess.org/programs/suiting/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26: https://hartford.dressforsuccess.org/programs/suiting/. New result Pending Review. Regular hours are not Thanksgiving confirmation. Unless stated, unknown: address/ID/phone/internet/bank requirements, self-referral, accompanying children, off-hours, paperwork help, alternatives when full, language/ASL/disability access and exact public-transit routes. Statewide service does not mean a local office confirmed in each town.\n\nDarice explicitly reviewed and approved this14-resource meals/mail/work-clothing batch on2026-11-26. Published; availability and access limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "interview clothing, business attire, women, employment, hartford"
+    },
+    {
       "id": "recakaj5LhzKs4MDH",
       "name": "Dress for Success Mid-Fairfield County – Career Clothing Referrals",
       "track": "Family & Childcare",
       "category": "Job Training Program",
-      "specificType": "Professional clothing/suiting through partner referrals. Appointment-only suitings Monday–Thursday; no walk-ins. Confirm that they take referrals from your area.",
+      "specificType": "Suiting source adds detail: women referred after an interview is scheduled or when entering internship/training receive interview outfit and accessories; once employed may return for an additional week's work attire. Agency referral and appointment, not open public walk-in. Contact203-416-8407 about referral process. Stock/sizes/town network need confirmation.",
       "town": "Bridgeport",
       "ages": "Women referred through participating employment/training agencies; confirm individual criteria.",
       "availability": "Agency referral and appointment needed; no current stock/appointment date confirmed.",
       "cost": "Cost not confirmed on reviewed referral page.",
-      "website": "https://midfairfieldcounty.dressforsuccess.org/get-involved/referral-agencies/",
+      "website": "https://midfairfieldcounty.dressforsuccess.org/programs/suiting/",
       "contact": "203-333-6505 Mon–Fri 9 AM–3 PM",
       "townsServed": [
         "Bridgeport"
       ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-11-25",
-      "notes": "Official source checked November 25, 2026: https://midfairfieldcounty.dressforsuccess.org/get-involved/referral-agencies/. Agency referral and appointment needed; no current stock/appointment date confirmed. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.\n\nDirectory note (2026-11-26): Published with an open detail. Which towns the partner referral network reaches is not confirmed. Contact them to check whether you can be referred.",
-      "lastVerified": "2026-11-25",
-      "tags": "work clothing, interview clothes, women, employment support, check eligibility first"
+      "notes": "Official source checked November 25, 2026: https://midfairfieldcounty.dressforsuccess.org/get-involved/referral-agencies/. Agency referral and appointment needed; no current stock/appointment date confirmed. Language/accessibility, documents, denial alternatives, evening/weekend availability and coordination unknown unless explicitly stated. Closest existing category used; no new categories.\n\nDirectory note (2026-11-26): Published with an open detail. Which towns the partner referral network reaches is not confirmed. Contact them to check whether you can be referred.\n\n2026-11-26 deeper meal/mail/work-clothing review: Suiting source adds detail: women referred after an interview is scheduled or when entering internship/training receive interview outfit and accessories; once employed may return for an additional week's work attire. Agency referral and appointment, not open public walk-in. Contact203-416-8407 about referral process. Stock/sizes/town network need confirmation. Source: https://midfairfieldcounty.dressforsuccess.org/programs/suiting/. Existing Published status retained; this refresh does not assert current openings or holiday operation.",
+      "lastVerified": "2026-11-26",
+      "tags": "work clothing, interview clothes, business attire, women, employment support, agency referral"
     },
     {
       "id": "recdzXV8I0R3NW3MF",
@@ -8362,6 +8842,22 @@
       "tags": "legal/hr resource, legal help"
     },
     {
+      "id": "recZRzQZBSHc4ciTG",
+      "name": "East Granby: Friend to Friend Pantry and Transport Support",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "Pantry9RainbowRd Fridays8:30-11am. Social Services eligibility screening; weekly minibus rides and homebound delivery by arrangement. Emergency fund can assist fuel/housing/medical/electric needs.",
+      "town": "East Granby",
+      "availability": "Social Services860-413-3328",
+      "cost": "Pantry application plus past30days income proof. Income limits and funds apply; no award/delivery guaranteed.",
+      "website": "https://eastgranbyct.org/social-services/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://eastgranbyct.org/social-services/. County: Hartford. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "food pantry, homebound delivery, pantry rides, emergency assistance, east granby"
+    },
+    {
       "id": "recgGSsohK7BctcUn",
       "name": "East Hartford Boe At the Early Learning Center at Hockanum School",
       "track": "Family & Childcare",
@@ -8458,6 +8954,22 @@
       "tags": "preschool / pre-k, childcare, east haven"
     },
     {
+      "id": "recLF08T9bKB3Vaaq",
+      "name": "East Windsor: Food, Fuel and Community Meal Connections",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "specificType": "Town lists Pauline's Stock Pot Kitchen55NMainSt: Wed lunch12:30-2pm, Fri takeout3:30-5pm,860-623-0198; FiveCornerCupboard124ScanticRd Tue9-11:45am/1-5:30pm,860-623-1747. Fuel bank and SNAP application contacts also listed.",
+      "town": "East Windsor",
+      "availability": "Contact each program; regular hours not holiday confirmation.",
+      "cost": "Municipal source confirms services; exact program fees, residency/intake must be confirmed.",
+      "website": "https://www.eastwindsor-ct.gov/1314/Food-Fuel-Clothes-Assistance",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.eastwindsor-ct.gov/1314/Food-Fuel-Clothes-Assistance. County: Hartford. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "prepared meals, takeout meals, food pantry, fuel assistance, east windsor"
+    },
+    {
       "id": "reciCeR5F93P9tA2Y",
       "name": "EASTCONN Danielson Head Start",
       "track": "Family & Childcare",
@@ -8481,6 +8993,23 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, killingly"
+    },
+    {
+      "id": "rec8GbEMWaBt8C6jg",
+      "name": "EASTCONN: Free Adult Education and Family Literacy",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "High-school completion, basic reading/math, English, citizenship and integrated career learning. Online/in-person; Chromebook loans and individual support. Family literacy in Windham/Willimantic includes free childcare. Citizenship application help.",
+      "town": "Willimantic and Danielson, Windham County; online",
+      "ages": "Adults17+; program-specific school/residency rules to confirm",
+      "availability": "Interest form; daytime/evening options. Call860-423-2591 or860-779-3770; aded@eastconn.org.",
+      "cost": "Listed adult education programs free; confirm testing/certification expenses separately.",
+      "website": "https://acp.eastconn.org/adult-education",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://acp.eastconn.org/adult-education. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free classes, adult education, esl, citizenship, childcare, device loans, windham"
     },
     {
       "id": "recxhSK3jeCsaenzO",
@@ -8620,6 +9149,22 @@
       "tags": "preschool / pre-k, childcare, eastford"
     },
     {
+      "id": "rec4CMDl3ijE01mnk",
+      "name": "Easton Public Library: Library of Things and Hotspots",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "Loans include games, baking pans, memory kits, hotspots/laptops and youth learning kits. Hotspot/laptop borrowers18+ need active library card and signed agreement;14-day loans, no holds/renewals. Other item terms vary; stock unknown.",
+      "town": "Easton",
+      "cost": "Confirm fees/loss liability and borrower eligibility; items are loans.",
+      "website": "https://www.eastonlibrary.org/library-of-things",
+      "contact": "203-261-0134",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Current stock, intake, documents, disability/language access, denied-applicant alternatives, off-hours/transport and application follow-up unknown unless specifically confirmed. Independently found lead, Pending Review. Existing closest category; description/tags specify precise service.",
+      "lastVerified": "2026-11-26",
+      "tags": "library of things, hotspots, laptop loans, sensory kits, memory kits, easton"
+    },
+    {
       "id": "recGxgtHp8gJ5yVrK",
       "name": "EdAdvance At Pearson School",
       "track": "Family & Childcare",
@@ -8641,6 +9186,22 @@
         "Preschool / Pre-K"
       ],
       "tags": "preschool / pre-k, childcare, winchester"
+    },
+    {
+      "id": "rec7wcZTUNqGCj0BX",
+      "name": "eGO CT and Palace: Library Ebooks and Audiobooks",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "State Library digital collection and participating local library content through Palace. Borrow ebooks/audiobooks; collection access, card/virtual-card eligibility, holds and compatibility vary. Not ownership of all books.",
+      "town": "Statewide participating libraries",
+      "cost": "Free qualifying library borrowing; holds/loan limits apply.",
+      "website": "https://researchitct.org/eaudioebooks/",
+      "contact": "Check home library or official eGO links",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Current stock, intake, documents, disability/language access, denied-applicant alternatives, off-hours/transport and application follow-up unknown unless specifically confirmed. Independently found lead, Pending Review. Existing closest category; description/tags specify precise service.",
+      "lastVerified": "2026-11-26",
+      "tags": "palace app, ego ct, ebooks, audiobooks, library apps"
     },
     {
       "id": "rec06E73E9mpWQXQx",
@@ -9024,6 +9585,23 @@
         "Public School"
       ],
       "tags": "high school public, teen resources, high school, fairfield"
+    },
+    {
+      "id": "recmikFqkz6PIqWR9",
+      "name": "Fairfield Public Library: Free Tech Topics",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "Staff/outside instructors teach technology classes; self-paced software learning also linked.",
+      "town": "Fairfield, Fairfield County",
+      "ages": "Technology learners at different skill levels; session-specific ages",
+      "availability": "Official calendar controls current subjects/dates/seats. No specific open class confirmed.",
+      "cost": "All listed Tech Topics classes free; verify library-card eligibility for online subscriptions.",
+      "website": "https://fairfieldpubliclibrary.org/tech-topics/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://fairfieldpubliclibrary.org/tech-topics/. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free classes, technology, digital literacy, fairfield"
     },
     {
       "id": "recAF6wa0lBsAbMpz",
@@ -9622,6 +10200,22 @@
       "tags": "pet food assistance, pet services, food pantry, pet food, north canaan"
     },
     {
+      "id": "reckFIktZuBFJFj7r",
+      "name": "FOCUS Bridgeport: Community Meals and Family Essentials",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "specificType": "Meal typically lastSaturday/month; homebound delivery,clothing,pantry staples and family/school outreach at select events.1510EastMainSt. Exact next meal date/time must confirm.",
+      "town": "Bridgeport",
+      "availability": "866-267-3083ext719; official assistance form.",
+      "cost": "Neighbor support; cost/intake/residency requirements not specified. Not emergency assistance.",
+      "website": "https://www.focusna.org/bridgeport/help/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.focusna.org/bridgeport/help/. County: Fairfield. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "community meals, homebound delivery, clothing, family essentials, bridgeport"
+    },
+    {
       "id": "rechClkHXj6oX0IZe",
       "name": "Focus on Veterans Transportation – ECTC listing",
       "track": "Family & Childcare",
@@ -10101,6 +10695,23 @@
       "tags": "home daycare licensed, childcare, sterling"
     },
     {
+      "id": "rec1PDKrIyWchiZQ8",
+      "name": "Girls Who Code: Free Coding Clubs",
+      "track": "Family & Childcare",
+      "category": "Youth Development Program",
+      "specificType": "Free coding clubs through schools/libraries/community hosts or online. Topics include AI, cybersecurity, game/web development.",
+      "town": "Connecticut-accessible national/online program",
+      "ages": "All students grades3-12, any skill level",
+      "availability": "Provider program verified; specific CT host, open seats and online enrollment must be confirmed. Host-start route is separate from joining.",
+      "cost": "Clubs free; online participation needs internet/device unless local host provides them.",
+      "website": "https://girlswhocode.com/programs/clubs-program",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://girlswhocode.com/programs/clubs-program. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free classes, coding, ai, cybersecurity, children, teens, online"
+    },
+    {
       "id": "recyCqtj9RgUa60gc",
       "name": "Gladys Rodriguez Family Child Care Home (Laly Love Children Daycare LLC)",
       "track": "Family & Childcare",
@@ -10397,6 +11008,22 @@
       "tags": "caregiver support group, senior services, caregiver support"
     },
     {
+      "id": "recklnW4qIYDqHwuk",
+      "name": "Greater Bridgeport Community Mental Health Center: Intake",
+      "track": "Health & Dental",
+      "category": "Disability & Accessibility Services",
+      "specificType": "State-operated adult mental-health/co-occurring services. Diagnostic/Evaluation Center coordinates assessment, short-term care and referrals. Intake weekdays8AM–4PM. Official page lists clinic100 Fairfield Ave2ndFloor and center1635 Central Ave; confirm correct service site before travel.",
+      "town": "Bridgeport and listed surrounding catchment towns",
+      "cost": "Official policy says no denial solely for inability to pay; Medicaid/Medicare and sliding fees. Clinical/program eligibility still applies.",
+      "website": "https://portal.ct.gov/dmhas/swcmhs/agency-files/gbcmhc",
+      "contact": "203-551-7423 intake; clinic203-579-7300",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Access questions: no address/ID/phone/internet/bank requirements unconfirmed; referral/children/paperwork support as described, otherwise confirm. Current appointments/beds/funding, alternative if full, languages/ASL, transit route and return trip unknown. Do not infer public bus access or guaranteed treatment. Independently found new lead Pending Review.\nUser approval2026-11-26: Darice Approved the six-resource addiction/mental-health/cancer batch. Pending Review changed to Published; prior pending wording historical, all source/access caveats preserved.",
+      "lastVerified": "2026-11-26",
+      "tags": "mental health, psychiatry, co occurring conditions, assessment, bridgeport, sliding scale"
+    },
+    {
       "id": "recchEeCzlB07Cnp1",
       "name": "Greater New Haven Transit District — Hamden Elderly Services",
       "track": "Elder Care",
@@ -10574,6 +11201,22 @@
         "Preschool / Pre-K"
       ],
       "tags": "preschool / pre-k, family resources, childcare, griswold"
+    },
+    {
+      "id": "recDKjkkOQsxuzS4g",
+      "name": "Groton Community Meals: Free Family Dinners",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "specificType": "Mon6-7pm Thrive55+,102NewtownRd; Wed6-7pm ThamesRiverMagnetSchool250BrandegeeAve. Free, no identification needed; under18with adult. Sites described accessible. Senior rides may be arranged through SeniorCenter860-441-6785.",
+      "town": "Groton",
+      "availability": "Official calendar/contact form; senior rides860-441-6785.",
+      "cost": "Free; all welcome, no ID. Meals not served federal/state holidays or when schools close/early-dismiss for weather.",
+      "website": "https://www.grotonmeals.org/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.grotonmeals.org/. County: New London. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "free meals, evening meals, family meals, no id, senior rides, groton"
     },
     {
       "id": "recaEny2yBcOAQsh3",
@@ -10955,6 +11598,21 @@
       "lastVerified": "2026-11-25",
       "foodType": "Food Bank / Food Pantry",
       "tags": "food bank / food pantry, food pantry, hartford, emergency food, groceries"
+    },
+    {
+      "id": "recWO5bexjO8HecpZ",
+      "name": "Hands On Hartford: Homeless Outreach and Day Program",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "Day program and street outreach; help with housing enrollment paperwork, identifying documents and follow-up after housing.55 Bartholomew Ave. Mon9AM–7PM with free dinner5:30PM; Tue–Thu9AM–2:30PM.",
+      "town": "Hartford",
+      "website": "https://handsonhartford.org/programs/homeless-outreach/",
+      "contact": "860-706-1535; sboyce@handsonhartford.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Access questions checked2026-11-26. Address/ID: staff help obtain identifying documents, other no-document requirements unknown. Referral: contact Day Program. Children: unknown. Tonight/weekend: Monday evening listed, weekend not established. Paperwork: housing enrollment assistance confirmed. Capacity/funds: no guaranteed housing, ask staff about alternatives. Public transportation: operator/route/stop, accessible path and return trip not verified. Do not infer bus access from city/location.",
+      "lastVerified": "2026-11-26",
+      "tags": "daytime shelter, homeless outreach, housing applications, document assistance, housing follow up, hartford"
     },
     {
       "id": "rec0vZe7gB3a6jp5Q",
@@ -12118,6 +12776,22 @@
       "tags": "stem/tech camp, middletown"
     },
     {
+      "id": "recKww6t8LuBn2Ugy",
+      "name": "IHSP: Diaper Bank of Northeastern Connecticut",
+      "track": "Food & Basic Needs",
+      "category": "Household Help",
+      "specificType": "Monthly diapers/wipes and diapering support for low/limited-income families. Main51-53GroveStPutnam,secondTue5-6:30pm byappointment. Mobile/partner distribution sites includeKillingly,Plainfield,Thompson,Danielson,Brooklyn.",
+      "town": "Ashford;Canterbury;Chaplin;Eastford;Hampton;Killingly;Brooklyn;Plainfield;Pomfret;Putnam;Scotland;Thompson;Woodstock",
+      "availability": "860-928-0169",
+      "cost": "Published town service area; confirm child age,income,documents,cost and stock. Main location and partner rules may differ.",
+      "website": "https://www.ihspputnam.org/ihsp-diaper-bank-of-nect",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.ihspputnam.org/ihsp-diaper-bank-of-nect. County: Windham. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "diapers, wipes, baby supplies, low income families, northeastern connecticut, putnam"
+    },
+    {
       "id": "recsRVeUDZWf9Re7A",
       "name": "Imagine Nation-A Museum Early Learning Center",
       "track": "Family & Childcare",
@@ -12897,6 +13571,23 @@
       "tags": "clothing household resale, secondhand shopping, newington"
     },
     {
+      "id": "recLEZhEZxbT7iJVS",
+      "name": "KEYS: Free Music Education",
+      "track": "Family & Childcare",
+      "category": "Afterschool Enrichment",
+      "specificType": "Free music education and mentoring through school/community partnerships.",
+      "town": "Bridgeport, Fairfield County",
+      "ages": "Under-resourced Bridgeport youth",
+      "availability": "Ask provider for current intake and lesson placement.",
+      "cost": "Free music instruction; confirm instrument loans, materials and enrollment requirements.",
+      "website": "https://www.keysmusic.org/about",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://www.keysmusic.org/about. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "music, free classes, youth, bridgeport"
+    },
+    {
       "id": "recCyzs0nVWKSe90B",
       "name": "Kid's Club Learning and Day Care",
       "track": "Family & Childcare",
@@ -13364,6 +14055,22 @@
       "tags": "preschool / pre-k, childcare, ledyard"
     },
     {
+      "id": "recCBirkhbBkNcqhP",
+      "name": "Ledyard: Linda C Davis Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "BlueBarnLowerTownGreen pantry for residents with financial need. Visits every14days; order at least48hours before pickup. Frozen/refrigerated options assisted by volunteer; specific stock not guaranteed.",
+      "town": "Ledyard; Gales Ferry",
+      "availability": "860-464-3222; SocialServicesMon-Thu by appointment.",
+      "cost": "Ledyard/GalesFerry residency and financial need; first-time application through Social Services.",
+      "website": "https://www.ledyardct.gov/services/ledyard-food-pantry/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.ledyardct.gov/services/ledyard-food-pantry/. County: New London. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "food pantry, household supplies, application help, ledyard, gales ferry"
+    },
+    {
       "id": "rec4WN5BZOyrHB9aC",
       "name": "Leila Day Nurseries",
       "track": "Family & Childcare",
@@ -13386,6 +14093,22 @@
         "Preschool / Pre-K"
       ],
       "tags": "center-based daycare, childcare, new haven"
+    },
+    {
+      "id": "recFkAcuDyUg0mBUN",
+      "name": "Lifeline: Phone and Internet Discount and Application Help",
+      "track": "Food & Basic Needs",
+      "category": "Utility & Heating Assistance",
+      "specificType": "Federal phone/internet discount based on income or qualifying benefits. Apply then select participating provider. Service coverage, phone/device charges, data and household rules require checking. Application help available; not ACP.",
+      "town": "Eligible Connecticut households; federal program",
+      "cost": "Standard benefit up to $9.25/month; no universal free phone promise.",
+      "website": "https://www.lifelinesupport.org/",
+      "contact": "800-234-9473; LifelineSupport@usac.org; support daily9AM–9PM Eastern",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Current stock, intake, documents, disability/language access, denied-applicant alternatives, off-hours/transport and application follow-up unknown unless specifically confirmed. Independently found lead, Pending Review. Existing closest category; description/tags specify precise service.",
+      "lastVerified": "2026-11-26",
+      "tags": "lifeline, cell phone service, internet discount, application assistance, phone bills"
     },
     {
       "id": "recstUpZs5OnQl5jt",
@@ -13506,6 +14229,23 @@
         "Preschool / Pre-K"
       ],
       "tags": "preschool / pre-k, childcare, lisbon"
+    },
+    {
+      "id": "recDyd0K8rzibIpMo",
+      "name": "Litchfield Community Center: Community Artists Group",
+      "track": "Family & Childcare",
+      "category": "Barter/Skill Exchange",
+      "specificType": "Tuesday arts/crafts group9:30am-noon; beginner instruction on request. Next verified listingDec1,2026.",
+      "town": "Litchfield, Litchfield County",
+      "ages": "All ages and skill levels",
+      "availability": "Dec1 listing verified. Confirm holiday changes and supervision for children.860-567-8302.",
+      "cost": "Free participation; bring your own materials.",
+      "website": "https://thecommunitycenter.org/event/community-artists-group/2026-12-01/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://thecommunitycenter.org/event/community-artists-group/2026-12-01/. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free classes, arts, crafts, all ages, litchfield"
     },
     {
       "id": "recZ48qJiaAseMmXy",
@@ -13947,11 +14687,13 @@
       "category": "Community Meals / Soup Kitchen",
       "town": "Manchester",
       "address": "466 Main Street, Manchester, CT",
-      "website": "https://www.manchesterct.gov/Government/Departments/Senior-Adult-Family-Services/Food-Resources",
-      "notes": "Food & Basic Needs official-source research 2026-10-13. Municipal 2025-26 directory lists free meals for community members; verify today's hours with MACC.",
-      "lastVerified": "2026-10-13",
+      "hours": "Regular lunch11:30AM–12:45PM; hot mealsTue/Wed/Thu, bag lunchesMon/Fri/Sat. Holiday hours must be confirmed.",
+      "website": "https://macc-ct.org/",
+      "contact": "860-647-8003 ext121 kitchen",
+      "notes": "Official MACC primary homepage rechecked2026-11-26; updated regular schedule, no appointment necessary for kitchen. Pantry separate appointment program; no Thanksgiving confirmation inferred. Cost/stock, ID/address barriers, children, language/accessibility, transit and no-capacity alternatives require confirmation. Prior Published preserved.",
+      "lastVerified": "2026-11-26",
       "foodType": "Community Meals / Soup Kitchen",
-      "tags": "community meals / soup kitchen, community meals, manchester",
+      "tags": "community meals, hot lunch, bag lunch, no appointment meals, manchester",
       "accessDetails": [
         "Free"
       ]
@@ -14659,6 +15401,21 @@
       "tags": "emergency veterinary care, pet services, norwalk"
     },
     {
+      "id": "recGcWCDxULxbTQ3m",
+      "name": "Mercy Housing Friendship Center: Day Shelter and Family Meals",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "Day support at118 Main Street, Tue–Sat; meals, restrooms, showers by appointment, WiFi/charging and referrals. Families meal windows8:30–9AM and12:30–1PM. Not overnight family shelter.",
+      "town": "Hartford",
+      "website": "https://mercyhousingct.org/how-we-help/friendship-center/",
+      "contact": "860-808-2048",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Access questions checked2026-11-26. Address/ID/phone/internet/bank: requirements unknown. Referral: site says all welcome, exact check-in confirm. Children: families welcome during listed meal windows; other access confirm. Tonight/weekend: Saturday service, overnight not established. Paperwork: community connections, completion help unknown. No capacity: alternative unknown. Public transportation: operator/route/stop, accessible path and return trip not verified. Do not infer bus access from city/location.",
+      "lastVerified": "2026-11-26",
+      "tags": "day shelter, family meals, saturday help, showers, wifi, charging station, no kitchen needed, hartford"
+    },
+    {
       "id": "recChXl60Ky7O4ec5",
       "name": "Mercy Learning Center – Adult Education and Family Support",
       "track": "Family & Childcare",
@@ -14975,6 +15732,23 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, hartford"
+    },
+    {
+      "id": "recg38e6SMtjwYgQn",
+      "name": "MHC and Hispanic Health Council: Free Art of Wellbeing Studio",
+      "track": "Family & Childcare",
+      "category": "Barter/Skill Exchange",
+      "specificType": "Visual art, music, dance and writing workshops/open studio at590ParkStLowerLevelB. Posted class1-3pm; open studio11-1and3-4.",
+      "town": "Hartford, Hartford County",
+      "ages": "Ages14+",
+      "availability": "Confirm operating days, class calendar and registration. Lower-level disability access not verified.",
+      "cost": "Hartford studio workshops free; other statewide MHC workshops have variable costs.",
+      "website": "https://www.mhconn.org/our-services/the-art-of-wellbeing/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://www.mhconn.org/our-services/the-art-of-wellbeing/. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free classes, arts, music, writing, teens, adults, hartford"
     },
     {
       "id": "recD6PSXHbJ3UKBLW",
@@ -15781,6 +16555,40 @@
       "tags": "center-based daycare, childcare, waterbury"
     },
     {
+      "id": "recU31e0Rj0DvIpGy",
+      "name": "Music City Strings: Free String Lessons",
+      "track": "Family & Childcare",
+      "category": "Afterschool Enrichment",
+      "specificType": "Violin, viola and cello lessons at Public Library of New London, Wed/Thu afternoons. Regular attendance required.",
+      "town": "New London, New London County",
+      "ages": "Existing students and children entering grade3 and up",
+      "availability": "Limited space; signup form on provider page. Contact newlondonorchestra@gmail.com or860-440-7442.",
+      "cost": "Free lessons; orchestra covers instrument repair/maintenance. Taking instruments home requires parental responsibility agreement.",
+      "website": "https://www.nlcommunityorchestra.org/musiccitystrings.html",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://www.nlcommunityorchestra.org/musiccitystrings.html. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free classes, music, instruments, new london"
+    },
+    {
+      "id": "recjKoXLVbcPqvWFz",
+      "name": "Music Haven: Tuition-Free Music and Mentoring",
+      "track": "Family & Childcare",
+      "category": "Afterschool Enrichment",
+      "specificType": "Eligibility considers income/benefits, neighborhoods, schools, other programs, parent education, single-parent household and family enrollment. Multiple weekday lessons3-6pm plus performances/juries.",
+      "town": "New Haven, New Haven County",
+      "ages": "Youth who meet at least4of8 provider eligibility criteria",
+      "availability": "Waiting list only; application is not enrollment. NH public school buses take students to program; parents arrange other travel.",
+      "cost": "Tuition-free program; verify instrument/material terms with provider.",
+      "website": "https://www.musichavenct.org/enrollment",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://www.musichavenct.org/enrollment. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free classes, music, mentoring, waitlist, school transportation, new haven"
+    },
+    {
       "id": "recM0QxkjcMcqR2Cp",
       "name": "Mustard Seed Thrift Shoppe",
       "track": "Family & Childcare",
@@ -15865,6 +16673,22 @@
       "notes": "Official source reviewed November 25, 2026. Mary Seymour Place serves single men and women; Sue Ann Shay and Beaumont Lofts serve families and individuals. Tenants hold leases and on-site case management is voluntary. Specific eligibility differs by property; pets, accessibility, children's age limits and length of stay not verified.",
       "lastVerified": "2026-11-25",
       "tags": "supportive housing, men, women, family housing, hartford, case management"
+    },
+    {
+      "id": "recKdlpQ2TaAdCrAY",
+      "name": "NAMI Connecticut: Peer and Family Support Groups",
+      "track": "Health & Dental",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Peer-led support for people with mental-health conditions, family/friends, parents/caregivers and young adults18–29. Opioid-family support also listed. Check group schedule, registration, format, costs and language access. Peer support is not therapy or urgent clinical treatment.",
+      "town": "Statewide groups; local/online schedules vary",
+      "cost": "Group-specific costs and registration require confirmation.",
+      "website": "https://namict.org/support-and-education/support-groups/",
+      "contact": "Official group listings and registration links",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Access questions: no address/ID/phone/internet/bank requirements unconfirmed; referral/children/paperwork support as described, otherwise confirm. Current appointments/beds/funding, alternative if full, languages/ASL, transit route and return trip unknown. Do not infer public bus access or guaranteed treatment. Independently found new lead Pending Review.\nUser approval2026-11-26: Darice Approved the six-resource addiction/mental-health/cancer batch. Pending Review changed to Published; prior pending wording historical, all source/access caveats preserved.",
+      "lastVerified": "2026-11-26",
+      "tags": "mental health peer support, family support, young adults, parent groups, opioid family support"
     },
     {
       "id": "recoabJAR0UzGIV2s",
@@ -16087,6 +16911,23 @@
         "Weekend"
       ],
       "tags": "arts camp, childcare, new haven"
+    },
+    {
+      "id": "recLBB86CL25p0syK",
+      "name": "Neighborhood Studios: Free Teen Conservatory",
+      "track": "Teens & High School",
+      "category": "Teen Program",
+      "specificType": "Intermediate/advanced visual arts, media, music, theatre and dance. Published weekly schedule includes visual arts Tue5-7, jazz Tue6-8, theatre Fri6-8, dance Thu5-7.",
+      "town": "Bridgeport, Fairfield County",
+      "ages": "Ages 13-19 who live in Bridgeport or attend a Bridgeport school",
+      "availability": "Confirm current term and available seats; schedule is provider listing, not a confirmed new intake.",
+      "cost": "Teen Conservatory free. Other classes may charge; private music scholarships limited and separate.",
+      "website": "https://www.nstudios.org/register.html",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://www.nstudios.org/register.html. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free classes, teen arts, music, dance, theatre, bridgeport"
     },
     {
       "id": "recxIleRhQ5HCG1GD",
@@ -16479,6 +17320,22 @@
       "tags": "preschool / pre-k, childcare, new haven"
     },
     {
+      "id": "recBQE02xCcgwRQkA",
+      "name": "New Haven Free Public Library: Readmobile",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "Mobile library outreach with borrowing, library-card registration/renewal and holds/interlibrary request help. Confirm current stop schedule and card requirements; not a free-book ownership giveaway.",
+      "town": "New Haven outreach locations",
+      "cost": "Library borrowing; fees/replacement terms require confirmation.",
+      "website": "https://nhfpl.org/bookmobile/",
+      "contact": "NHFPL official bookmobile page",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Current stock, intake, documents, disability/language access, denied-applicant alternatives, off-hours/transport and application follow-up unknown unless specifically confirmed. Independently found lead, Pending Review. Existing closest category; description/tags specify precise service.",
+      "lastVerified": "2026-11-26",
+      "tags": "bookmobile, mobile library, library cards, book borrowing, new haven"
+    },
+    {
       "id": "recEYpqZpR35d8gKa",
       "name": "New Haven KinderCare",
       "track": "Family & Childcare",
@@ -16824,6 +17681,23 @@
       "tags": "emergency veterinary care, pet services, newtown"
     },
     {
+      "id": "recDCmvR6ij5VuQqD",
+      "name": "NHFPL: Free Beginner Computer Classes",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "Beginner computer instruction at Ives Main Library Technology Center; one-to-one help and volunteer teaching opportunities.",
+      "town": "New Haven, New Haven County",
+      "ages": "Adult beginners; no prior computer experience needed",
+      "availability": "Check class calendar/registration. Library closedThanksgivingNov26; not available today.203-946-8130.",
+      "cost": "Beginner classes free.",
+      "website": "https://nhfpl.org/adults/technology-center/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://nhfpl.org/adults/technology-center/. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free classes, computer basics, adults, digital literacy, new haven"
+    },
+    {
       "id": "recV8EugIU3IJURVJ",
       "name": "Ninoska Santos De Acosta Family Child Care Home ( Play and Learn Home Day Care)",
       "track": "Family & Childcare",
@@ -16853,7 +17727,7 @@
       "name": "No Animal Left Unfed Pet Pantry Program",
       "track": "Pet Care & Resources",
       "category": "Pet Food Assistance",
-      "specificType": "Free pet food and supplies for Connecticut residents who submit the assistance form.",
+      "specificType": "Free pet food and supplies for Connecticut residents in need. Public request form asks town and pet details; provider will respond if able to assist. Statewide request eligibility does not guarantee stock, delivery, local pickup or acceptance.",
       "town": "West Hartford",
       "address": "PO Box 330145, West Hartford, CT 06133",
       "website": "https://noanimalleftunfedinc.com/pet-pantry-program/",
@@ -16861,10 +17735,11 @@
         "Statewide (all of Connecticut)"
       ],
       "submittedBy": "Village Notes Research",
+      "notes": "2026-11-26 recurring-search test: direct provider https://noanimalleftunfedinc.com/pet-pantry-program/ confirms free food/supplies and Connecticut resident request form. No request submitted. Existing record deduplicated; prior moderation preserved. Pickup/delivery, stock, proof of income/ID, alternative without phone/email, referral, children, paperwork help, off-hours and denial alternatives not verified. Website and full169town/category audit not tested complete.",
       "servicesOffered": [
         "Pet Food Assistance"
       ],
-      "lastVerified": "2026-08-27",
+      "lastVerified": "2026-11-26",
       "animals": [
         "Dogs",
         "Cats"
@@ -16872,7 +17747,7 @@
       "petRequirements": [
         "Membership or Registration Required"
       ],
-      "tags": "pet food assistance, pet services, west hartford",
+      "tags": "pet food assistance, pet supplies, connecticut residents, statewide request, availability varies",
       "accessDetails": [
         "Free"
       ]
@@ -16946,6 +17821,23 @@
       ],
       "lastVerified": "2026-08-31",
       "tags": "geriatric care manager, senior services, caregiver support, hartford"
+    },
+    {
+      "id": "recSV0WMau2Dulavx",
+      "name": "Norwalk Art Space: Free Art and Alon Music Classes",
+      "track": "Family & Childcare",
+      "category": "Afterschool Enrichment",
+      "specificType": "Free art/music education; some classes reserved for partner agencies and must be booked through them.",
+      "town": "Norwalk, Fairfield County",
+      "ages": "Middle/high school youth, class-specific ages11-14 and14-18",
+      "availability": "Fall term Sept28-Dec2 already underway. Page says session2 registration open but individual courses started/ended; do not assume late entry. Waitlist educoordinator@thenorwalkartspace.org.",
+      "cost": "Classes free; confirm supplies/instruments.",
+      "website": "https://www.thenorwalkartspace.org/education",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://www.thenorwalkartspace.org/education. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free classes, youth arts, music, norwalk"
     },
     {
       "id": "recelLwKXd1cZnShl",
@@ -17108,6 +18000,22 @@
       ]
     },
     {
+      "id": "recHbAGEBWhX9F4da",
+      "name": "Norwalk: Community Resource Hub",
+      "track": "Food & Basic Needs",
+      "category": "Household Help",
+      "specificType": "Human assistance with food,housing/utilities,health,benefits,seniors,youth/family,workforce,veterans and other programs. Referral forms linked English,Spanish,Creole. Referral/support hub, not direct guarantee of grants/services.",
+      "town": "Norwalk",
+      "availability": "203-854-7999;CityHall125EastAveRoom202.",
+      "cost": "For Norwalk residents; costs and specific benefit eligibility confirm.",
+      "website": "https://www.norwalkct.gov/4068/Community-Resource-Hub",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.norwalkct.gov/4068/Community-Resource-Hub. County: Fairfield. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "benefits assistance, resource referrals, spanish, creole, veterans, families, norwalk"
+    },
+    {
       "id": "recG8HLY7J6PZeAxP",
       "name": "Norwich BOE at Huntington School Preschool",
       "track": "Family & Childcare",
@@ -17265,6 +18173,22 @@
       "lastVerified": "2026-10-13",
       "foodType": "Food Bank / Food Pantry",
       "tags": "food bank / food pantry, food pantry, bridgeport"
+    },
+    {
+      "id": "recjntm4sFev9EULY",
+      "name": "nOURish Bridgeport: Feel the Warmth Hot Supper",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "specificType": "Thursday-evening community hot supper at Harrison Apartments651StateSt. All welcome; exact serving time not posted.",
+      "town": "Bridgeport",
+      "availability": "203-335-3107; call for exact time and Thanksgiving/holiday changes.",
+      "cost": "Community meal; confirm any intake requirements.",
+      "website": "https://www.nourishbpt.org/feel-the-warmth",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26: https://www.nourishbpt.org/feel-the-warmth. New result Pending Review. Regular hours are not Thanksgiving confirmation. Unless stated, unknown: address/ID/phone/internet/bank requirements, self-referral, accompanying children, off-hours, paperwork help, alternatives when full, language/ASL/disability access and exact public-transit routes. Statewide service does not mean a local office confirmed in each town.\n\nDarice explicitly reviewed and approved this14-resource meals/mail/work-clothing batch on2026-11-26. Published; availability and access limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "prepared meals, evening meals, no kitchen needed, bridgeport"
     },
     {
       "id": "recy7FuWoyHZzFmii",
@@ -18264,6 +19188,22 @@
       "tags": "preschool / pre-k, childcare, plainville"
     },
     {
+      "id": "rec1a3FbQw5XnRORS",
+      "name": "Plainville Community Food Pantry: Clothing, Food and Family Support",
+      "track": "Food & Basic Needs",
+      "category": "Free Clothing Closets",
+      "specificType": "Client-choice groceries and clothing for adults/children, plus-size,maternity,seasonal boots/coats; year-round clothing appointments. Workshops on nutrition,parenting,money; emergency fuel and school/holiday programs.",
+      "town": "Plainville",
+      "availability": "860-747-1919; postedMon-Fri9am-3pm.",
+      "cost": "Confirm resident/income/client eligibility and clothing cost. Not verified as dedicated interview clothing or workboot stock.",
+      "website": "https://www.plainvillefoodpantry.org/programs/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.plainvillefoodpantry.org/programs/. County: Hartford. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "clothing assistance, plus size, maternity, food pantry, family support, plainville"
+    },
+    {
       "id": "recC6oSshyYGfX91J",
       "name": "Plainville Early Learning Center",
       "track": "Family & Childcare",
@@ -18574,6 +19514,23 @@
       ]
     },
     {
+      "id": "recyuS6yf0jWnBySg",
+      "name": "Project Imo: Free Teen Center and Creative Space",
+      "track": "Teens & High School",
+      "category": "Teen Program",
+      "specificType": "Supervised teen space at54NorthSt2ndfloor; leadership, peer activities and access to Idea Forge creative-space opportunities.",
+      "town": "Willimantic, Windham County",
+      "ages": "Ages14-18",
+      "availability": "Membership forms required. Confirm actual scheduled creative workshops and physical access to2ndfloor.",
+      "cost": "Teen-center membership free; confirm separate studio/class/material fees.",
+      "website": "https://projectimo.org/teen-center/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://projectimo.org/teen-center/. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free teen programs, creative space, leadership, willimantic"
+    },
+    {
       "id": "recXeFIyP48Lw5dtp",
       "name": "Prospect Senior Center",
       "track": "Elder Care",
@@ -18663,6 +19620,22 @@
       "tags": "home daycare licensed, childcare, hartford"
     },
     {
+      "id": "recn1XzloSZSNCVGc",
+      "name": "Read to Grow: Free Children's Books to Keep",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "CT families can request free books for children to own. Form asks child ages, book-language preferences and contact/address information. Fulfillment time and book selection not guaranteed.",
+      "town": "Statewide Connecticut",
+      "cost": "Free books; confirm fulfillment/delivery arrangements.",
+      "website": "https://readtogrow.org/family-book-request-form/",
+      "contact": "203-488-6800; readtogrow@readtogrow.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Current stock, intake, documents, disability/language access, denied-applicant alternatives, off-hours/transport and application follow-up unknown unless specifically confirmed. Independently found lead, Pending Review. Existing closest category; description/tags specify precise service.",
+      "lastVerified": "2026-11-26",
+      "tags": "free books to keep, children books, literacy, book donations"
+    },
+    {
       "id": "recyfw1damsSkR8iA",
       "name": "ReConnect CT: Digital & Financial Training (Fall 2026)",
       "track": "Food & Basic Needs",
@@ -18701,6 +19674,23 @@
       "dateSubmitted": "2026-08-25",
       "notes": "Official Town of Redding page verified August 25, 2026. Review current registration listings for session availability.",
       "tags": "municipal/parks rec camp, summer camp, redding"
+    },
+    {
+      "id": "recA3BbruJu3VbA5v",
+      "name": "RedRover Relief Urgent Care Grants",
+      "track": "Pet Care & Resources",
+      "category": "Veterinary Care",
+      "specificType": "Small grants toward urgent treatment for a pet with a life-threatening illness or injury",
+      "town": "Statewide (national program)",
+      "ages": "U.S. pet owners with household income up to $60,000 annually",
+      "availability": "As of 2026-11-26, applications temporarily closed; official page says reopening Monday November 30. Recheck provider page before applying.",
+      "cost": "Average grant around $250; assistance not guaranteed",
+      "website": "https://redrover.org/relief/urgent-care-grants/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official grant page checked 2026-11-26. U.S. applicants and animals eligible, including Connecticut. Requires current veterinary diagnosis, treatment plan, estimate, and favorable prognosis. Excludes exams/testing, routine care, ongoing conditions, and most/already completed treatment. One grant per household. Cannot assist when $500 or more is still needed for treatment to begin or continue. Responses may take 1-2 business days; seek immediate veterinary care when needed.",
+      "lastVerified": "2026-11-26",
+      "tags": "veterinary bills, emergency vet, pet financial assistance, urgent care grants"
     },
     {
       "id": "recXkcKl6RfDxLL8f",
@@ -18748,6 +19738,22 @@
       "accessDetails": [
         "Free"
       ]
+    },
+    {
+      "id": "recPNeRq0XSCdomOP",
+      "name": "researchIT CT: Free Research and Learning Resources",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "State Library research portal for residents, students, educators and libraries. Resource-specific remote access may require CT library authentication; check individual database terms.",
+      "town": "Statewide Connecticut",
+      "cost": "Free qualifying access; resource-specific login rules.",
+      "website": "https://researchitct.org/",
+      "contact": "Official portal and help links",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Current stock, intake, documents, disability/language access, denied-applicant alternatives, off-hours/transport and application follow-up unknown unless specifically confirmed. Independently found lead, Pending Review. Existing closest category; description/tags specify precise service.",
+      "lastVerified": "2026-11-26",
+      "tags": "library resources, research databases, homework help, online learning"
     },
     {
       "id": "recnOntP6EZUUvTNz",
@@ -19623,6 +20629,22 @@
       "tags": "center-based daycare, childcare, shelton"
     },
     {
+      "id": "recJEAl6Fj8VLlFEq",
+      "name": "Sherman: Social Services, Veterans and Family Support",
+      "track": "Food & Basic Needs",
+      "category": "Household Help",
+      "specificType": "Housing/energy/food/healthcare referrals, benefits applications, municipal veterans representative, preschool tuition waiver,camp vouchers,school supplies and FISH free medical rides. Individual program screening applies.",
+      "town": "Sherman",
+      "availability": "860-354-2414ext2;Thursdayevening byappointment.",
+      "cost": "Sherman residents; costs vary by referred program. FISH rides described free, booking/availability confirm.",
+      "website": "https://www.shermanct.gov/entities/social-services",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.shermanct.gov/entities/social-services. County: Fairfield. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "benefits, veterans, camp vouchers, preschool assistance, medical rides, sherman"
+    },
+    {
       "id": "recGzXSIaCOFrQr09",
       "name": "SigmaCamp",
       "track": "Family & Childcare",
@@ -19707,6 +20729,22 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, east hartford"
+    },
+    {
+      "id": "recJyqzYtB8NqhsIq",
+      "name": "Slater Library: Libby, Palace and Acorn Apps",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "Library-card ebook/audiobook borrowing via Libby and Palace; Acorn catalog supports requests for physical materials sent to Slater. Device support and collection/holds vary.",
+      "town": "Jewett City; Griswold/Lisbon community",
+      "cost": "Free qualifying library borrowing; card rules apply.",
+      "website": "https://www.slaterlibraryct.org/home/library-services/e-books-apps",
+      "contact": "860-376-0024; info@slaterlibraryct.org",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26. Current stock, intake, documents, disability/language access, denied-applicant alternatives, off-hours/transport and application follow-up unknown unless specifically confirmed. Independently found lead, Pending Review. Existing closest category; description/tags specify precise service.",
+      "lastVerified": "2026-11-26",
+      "tags": "libby, palace, acorn catalog, ebooks, audiobooks, library apps, jewett city"
     },
     {
       "id": "recsF7W9VtE9WfvaJ",
@@ -20648,6 +21686,22 @@
       "tags": "teen/cit program, stratford"
     },
     {
+      "id": "rec3koBDuImbZ4VtI",
+      "name": "Sterling Community Center: Resource Connection Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "Food,toiletries,diapers,petfood. Once/month unless additional support needed. Mon10-noon,Tue1-3pm,Thu3-5pm; evening appointment on request. Food-4-Kids through StratfordPublicSchoolstaff.",
+      "town": "Stratford",
+      "availability": "203-378-2606;2283MainStStratford. This is not located in town of Sterling.",
+      "cost": "First pantry visit: identification,reusablebags,household size/ages. Confirm cost/residency. CommunityChristmas has separate documentation rules, not universal pantry rules.",
+      "website": "https://www.sterlingcommunitycenter.org/our-services",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.sterlingcommunitycenter.org/our-services. County: Fairfield. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "food pantry, diapers, pet food, evening appointments, school food, stratford"
+    },
+    {
       "id": "recqV3M1L87baGpt8",
       "name": "Sterling House Community Center Summer Camp",
       "track": "Family & Childcare",
@@ -20739,6 +21793,22 @@
       "tags": "municipal/parks rec camp, summer camp, stratford"
     },
     {
+      "id": "recXIsgYkh0ZvuScJ",
+      "name": "Suffield Community Aid: Resident and Caregiver Support",
+      "track": "Food & Basic Needs",
+      "category": "Household Help",
+      "specificType": "No-cost resident/caregiver support including food,nutrition,medical-equipment loans,nonemergency medical transport,housing-repair assistance,Medicare counseling and caregiver/grief supports. Individual program eligibility still applies.",
+      "town": "Suffield",
+      "availability": "860-668-1986; scafrontdesk@suffieldcommunityaid.org",
+      "cost": "Provider says range of services no-cost for Suffield residents/caregivers; verify each service eligibility, availability and repair funding terms.",
+      "website": "https://suffieldcommunityaid.org/how-we-help/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://suffieldcommunityaid.org/how-we-help/. County: Hartford. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "medical equipment loans, medical transport, caregiver support, food assistance, home repair, suffield"
+    },
+    {
       "id": "recfw5TzzCI7U6lQM",
       "name": "Suffield House Rehabilitation and Healthcare Center",
       "track": "Elder Care",
@@ -20778,6 +21848,22 @@
         "Summer Day Camp"
       ],
       "tags": "summer day camp, summer camp, stamford"
+    },
+    {
+      "id": "rec1cgmcJmxlQxGK2",
+      "name": "Sunrise Cafe: Free Weekday Breakfast",
+      "track": "Food & Basic Needs",
+      "category": "Community Meals / Soup Kitchen",
+      "specificType": "Mon-Fri6:30-8:30am at57OliveSt, StPaulandStJamesChurch. Free breakfast for all.",
+      "town": "New Haven",
+      "availability": "Regular schedule; Thanksgiving operation not verified. Contact through official site.",
+      "cost": "Free.",
+      "website": "https://sunrisecafenewhaven.org/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26: https://sunrisecafenewhaven.org/. New result Pending Review. Regular hours are not Thanksgiving confirmation. Unless stated, unknown: address/ID/phone/internet/bank requirements, self-referral, accompanying children, off-hours, paperwork help, alternatives when full, language/ASL/disability access and exact public-transit routes. Statewide service does not mean a local office confirmed in each town.\n\nDarice explicitly reviewed and approved this14-resource meals/mail/work-clothing batch on2026-11-26. Published; availability and access limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "free breakfast, prepared meals, no kitchen needed, new haven"
     },
     {
       "id": "rec0E4L5yrHOfvEjc",
@@ -20959,6 +22045,22 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, ansonia"
+    },
+    {
+      "id": "recJsRKQMrlMYxskc",
+      "name": "TEEG: Community Markets and Family Programs",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "TEEGmarketMon3-5pm,Wed1-3pm,Fri10-noon byappointment;PomfretTue/Thu2-4pm byappointment;WoodstockTownHall415Route169 fourthTue1:30-2:30pm noappointment,subjectchange. Parent/child,youtharts,lifeskills and recovery programs separately listed.",
+      "town": "Thompson; Pomfret; Woodstock",
+      "availability": "860-923-3458;15ThatcherRdNorthGrosvenordale.",
+      "cost": "Confirm residency,income,costs and each program's eligibility. Current calendar is not guaranteed seat/food availability.",
+      "website": "https://www.teegonline.org/current-programs",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.teegonline.org/current-programs. County: Windham. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "food pantry, mobile market, family programs, youth arts, recovery support, thompson, pomfret, woodstock"
     },
     {
       "id": "recetUz3P1SUElsD4",
@@ -21624,7 +22726,7 @@
         "Bridgeport"
       ],
       "submittedBy": "Village Notes Research",
-      "notes": "Serves Fairfield and Bridgeport, Connecticut, and surrounding communities. Grants cover emergency and medically necessary treatment, spay/neuter surgery, palliative care, and humane euthanasia. Vaccinations and routine/wellness care are excluded. Approved grants are paid directly to the veterinary practice.",
+      "notes": "Official application verified 2026-11-26: https://thevictorproject.org/apply-for-help/ . Residency restricted to Fairfield and Bridgeport. Covers emergency/medically necessary treatment, spay/neuter, and compassionate end-of-life care. Excludes vaccination, routine/wellness care, elective procedures, and chronic condition management. Pays veterinary clinic directly. Veterinary diagnosis and treatment estimate required. No application fee; grants depend on available donations and are not guaranteed.",
       "financialAid": "Yes",
       "servicesOffered": [
         "Emergency Veterinary Care",
@@ -21632,12 +22734,12 @@
         "Veterinary Care"
       ],
       "residency": "Residents Only",
-      "lastVerified": "2026-09-04",
+      "lastVerified": "2026-11-26",
       "animals": [
         "Dogs",
         "Cats"
       ],
-      "tags": "emergency veterinary care, pet services, fairfield / bridgeport"
+      "tags": "veterinary bills, pet financial assistance, emergency vet, spay neuter, end of life care"
     },
     {
       "id": "recSCOlPIoIFLiZLO",
@@ -21673,6 +22775,21 @@
       "lastVerified": "2026-10-13",
       "foodType": "Food Bank / Food Pantry",
       "tags": "food bank / food pantry, food pantry, bridgeport"
+    },
+    {
+      "id": "recfpn5WC7TwcETsA",
+      "name": "Thomas Merton Family Center: Meals, Mail and Showers",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "Prepared meals at1406StateSt, Bridgeport. Specific service-hours section: Mon-Fri breakfast9-10am; lunch11:30am-1pm. Same page overview says dining8:30am-1pm; use specific meal windows and call203-367-9036 if uncertain. Secure mailing address available for guests without one. Mail pickup/enrollment/parcel/outbound postage rules not posted; confirm. Regular schedule is not Thanksgiving confirmation.",
+      "town": "Greater Bridgeport",
+      "website": "https://www.ccfairfield.org/project/thomas-merton-center/",
+      "contact": "203-367-9036",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Access questions checked2026-11-26. Address: mailing service supports those without one. Other ID/phone/internet/bank requirements unknown. Referral: intake route confirm. Children: confirm. Tonight/weekend: not established. Paperwork: case management listed, exact completion help confirm. No capacity/funds: alternative route unknown. Public transportation: operator/route/stop, accessible path and return trip not verified. Do not infer bus access from city/location.\n\n2026-11-26 deeper meal/mail/work-clothing review: Prepared meals at1406StateSt, Bridgeport. Specific service-hours section: Mon-Fri breakfast9-10am; lunch11:30am-1pm. Same page overview says dining8:30am-1pm; use specific meal windows and call203-367-9036 if uncertain. Secure mailing address available for guests without one. Mail pickup/enrollment/parcel/outbound postage rules not posted; confirm. Regular schedule is not Thanksgiving confirmation. Source: https://www.ccfairfield.org/project/thomas-merton-center/. Existing Published status retained; this refresh does not assert current openings or holiday operation.",
+      "lastVerified": "2026-11-26",
+      "tags": "community meals, prepared meals, no kitchen needed, mailing address, showers, case management, bridgeport"
     },
     {
       "id": "recD2wG8itDR3yJuN",
@@ -22307,6 +23424,22 @@
       "tags": "stem/tech camp, storrs"
     },
     {
+      "id": "recmm3QwL3cM7zl1c",
+      "name": "UConn Hartford: Career Clothing Closet",
+      "track": "Food & Basic Needs",
+      "category": "Free Clothing Closets",
+      "specificType": "Free professional clothing for current UConnHartford students, including single items or interview outfits. Available to any current campus student.",
+      "town": "Hartford",
+      "availability": "Contact campus career services for current pickup/hours/stock.",
+      "cost": "Free; students only.",
+      "website": "https://career.uconn.edu/resources/career-clothing-closet-dress-for-success-at-uconn-hartford/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26: https://career.uconn.edu/resources/career-clothing-closet-dress-for-success-at-uconn-hartford/. New result Pending Review. Regular hours are not Thanksgiving confirmation. Unless stated, unknown: address/ID/phone/internet/bank requirements, self-referral, accompanying children, off-hours, paperwork help, alternatives when full, language/ASL/disability access and exact public-transit routes. Statewide service does not mean a local office confirmed in each town.\n\nDarice explicitly reviewed and approved this14-resource meals/mail/work-clothing batch on2026-11-26. Published; availability and access limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "interview clothing, business attire, students only, hartford"
+    },
+    {
       "id": "recUVD8bZ6q9BY9AJ",
       "name": "UConn Health Adoption Assistance Program (AAP)",
       "track": "Family & Childcare",
@@ -22472,6 +23605,22 @@
       "tags": "stem/tech camp, storrs"
     },
     {
+      "id": "rec6ITP7HtcY2X3S6",
+      "name": "UConn Stamford: Husky Clothing for All",
+      "track": "Food & Basic Needs",
+      "category": "Free Clothing Closets",
+      "specificType": "Free professional attire for UConnStamford students. Room1.28; hours vary by semester, posted on door.",
+      "town": "Stamford",
+      "availability": "No appointment necessary per official graphic; confirm current hours and stock.",
+      "cost": "Free; student eligibility, not general public access.",
+      "website": "https://career.uconn.edu/resources/husky-clothing-for-all-free-thrift-shop-at-uconn-stamford/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26: https://career.uconn.edu/resources/husky-clothing-for-all-free-thrift-shop-at-uconn-stamford/. New result Pending Review. Regular hours are not Thanksgiving confirmation. Unless stated, unknown: address/ID/phone/internet/bank requirements, self-referral, accompanying children, off-hours, paperwork help, alternatives when full, language/ASL/disability access and exact public-transit routes. Statewide service does not mean a local office confirmed in each town.\n\nDarice explicitly reviewed and approved this14-resource meals/mail/work-clothing batch on2026-11-26. Published; availability and access limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "interview clothing, business attire, students only, stamford"
+    },
+    {
       "id": "rec3ke1OwdMo2qGPN",
       "name": "UConn Transactional Law Clinic",
       "track": "Family & Childcare",
@@ -22534,6 +23683,22 @@
       "accessDetails": [
         "Free"
       ]
+    },
+    {
+      "id": "reclGUKRnYb0mB6qm",
+      "name": "UConn Waterbury: Free Career Closet",
+      "track": "Food & Basic Needs",
+      "category": "Free Clothing Closets",
+      "specificType": "Free gently used professional attire for UConnWaterbury students. Room128; postedMon-Thu8:30am-4:30pm, closedFri.",
+      "town": "Waterbury",
+      "availability": "Confirm semester/holiday access and stock before visiting.",
+      "cost": "Free; student eligibility, not a general public closet.",
+      "website": "https://career.uconn.edu/resources/career-closet-at-uconn-waterbury/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26: https://career.uconn.edu/resources/career-closet-at-uconn-waterbury/. New result Pending Review. Regular hours are not Thanksgiving confirmation. Unless stated, unknown: address/ID/phone/internet/bank requirements, self-referral, accompanying children, off-hours, paperwork help, alternatives when full, language/ASL/disability access and exact public-transit routes. Statewide service does not mean a local office confirmed in each town.\n\nDarice explicitly reviewed and approved this14-resource meals/mail/work-clothing batch on2026-11-26. Published; availability and access limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "interview clothing, business attire, students only, waterbury"
     },
     {
       "id": "reclRHN0M3Ho38tUg",
@@ -22694,6 +23859,38 @@
       "programYear": "Summer 2026",
       "lastVerified": "2026-08-25",
       "tags": "stem/tech camp, family resources, west hartford"
+    },
+    {
+      "id": "rec5t9cIuE3YkLcNi",
+      "name": "USPS General Delivery: Mail Pickup Without a Home Address",
+      "track": "Food & Basic Needs",
+      "category": "Household Help",
+      "specificType": "Incoming mail pickup at an authorized post office, useful for people without a fixed address. Confirm designated office, address format, identification and holding limits before sending mail.",
+      "town": "Statewide; local post office authorization required",
+      "availability": "Ask local postmaster; suitable ID may be required. Not all offices provide service. No particular Bridgeport/NewHaven office confirmed.",
+      "cost": "General Delivery free where authorized; outbound postage and PO Boxes are separate and may cost money.",
+      "website": "https://pe.usps.com/text/dmm300/508.htm",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26: https://pe.usps.com/text/dmm300/508.htm. New result Pending Review. Regular hours are not Thanksgiving confirmation. Unless stated, unknown: address/ID/phone/internet/bank requirements, self-referral, accompanying children, off-hours, paperwork help, alternatives when full, language/ASL/disability access and exact public-transit routes. Statewide service does not mean a local office confirmed in each town.\n\nDarice explicitly reviewed and approved this14-resource meals/mail/work-clothing batch on2026-11-26. Published; availability and access limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "mailing address, homeless mail, mail pickup, statewide"
+    },
+    {
+      "id": "recUnlCRX0CfIx2Pn",
+      "name": "USPS: Free Matter for Eligible Blind or Print-Disabled People",
+      "track": "Food & Basic Needs",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Postage-free mailing of qualifying reading matter and certain adapted equipment for eligible people; certification and content/preparation rules apply. Not general low-income parcel shipping.",
+      "town": "Statewide/national",
+      "availability": "Verify eligibility and specific item with post office before mailing.",
+      "cost": "Eligible mail postage-free; extra services may charge. Check current parcel barcode/preparation requirements.",
+      "website": "https://faq.usps.com/articles/Knowledge/What-is-Free-Matter-for-the-Blind-or-Other-Physically-Handicapped-Persons",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked2026-11-26: https://faq.usps.com/articles/Knowledge/What-is-Free-Matter-for-the-Blind-or-Other-Physically-Handicapped-Persons. New result Pending Review. Regular hours are not Thanksgiving confirmation. Unless stated, unknown: address/ID/phone/internet/bank requirements, self-referral, accompanying children, off-hours, paperwork help, alternatives when full, language/ASL/disability access and exact public-transit routes. Statewide service does not mean a local office confirmed in each town.\n\nDarice explicitly reviewed and approved this14-resource meals/mail/work-clothing batch on2026-11-26. Published; availability and access limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "postage assistance, blind, print disability, mailing, statewide"
     },
     {
       "id": "rec8lKUQO8pO7ae62",
@@ -23181,6 +24378,23 @@
       "tags": "preschool / pre-k, childcare, voluntown"
     },
     {
+      "id": "recuBLaOzeSNERrrs",
+      "name": "VRABE: Free Regional Adult Academic Programs",
+      "track": "Family & Childcare",
+      "category": "Literacy / Reading Program",
+      "specificType": "Free academic adult education including English, high-school completion and citizenship. Contact860-870-6060 for placement.",
+      "town": "Vernon/Tolland and14-town region, Tolland County and neighboring counties",
+      "ages": "Residents of Ashford,Bolton,Colchester,Coventry,EastWindsor,Ellington,Glastonbury,Griswold,Mansfield,SouthWindsor,Tolland,Vernon,Wethersfield,Willington",
+      "availability": "Confirm age/enrollment rules and term availability. Offices closedNov26-27.",
+      "cost": "Academic programs free for participating towns; arts/technology continuing education may charge tuition. Do not call all catalog courses free.",
+      "website": "https://www.vrabe.com/about/participating-towns/",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://www.vrabe.com/about/participating-towns/. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free classes, adult education, esl, citizenship, tolland, vernon"
+    },
+    {
       "id": "recJ9Ue2ABagk0IIJ",
       "name": "W.F. Kaynor Technical High School",
       "track": "Teens & High School",
@@ -23386,6 +24600,22 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, hartford"
+    },
+    {
+      "id": "recpaUcP1fF6bUKeL",
+      "name": "Warren Community Services: Pantry and Benefits Paperwork Help",
+      "track": "Food & Basic Needs",
+      "category": "Household Help",
+      "specificType": "CommunityServices manages local food pantry and provides hands-on assistance completing state/federal benefits applications; also family/all-age community programs.",
+      "town": "Warren",
+      "availability": "Official department contact; Mon-Thu8:30am-4:30pm,Fridaybyappointment.",
+      "cost": "Warren resident support; costs, pantry intake and program eligibility require confirmation.",
+      "website": "https://www.warrenct.gov/community-services",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.warrenct.gov/community-services. County: Litchfield. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "benefits paperwork help, food pantry, family support, warren"
     },
     {
       "id": "recX102phEVjI4ztY",
@@ -23808,6 +25038,40 @@
       ]
     },
     {
+      "id": "recrwMwfGAmg83Ag6",
+      "name": "Wesleyan: Kids Space Nights",
+      "track": "Family & Childcare",
+      "category": "Youth Development Program",
+      "specificType": "Space activities with astronomy students and telescopes when clear at VanVleckObservatory96FossHill. Provider overview says first/thirdFri starting7or8pm.",
+      "town": "Middletown, Middlesex County",
+      "ages": "Elementary-age focus; free and open to all",
+      "availability": "Exact next event/time must be checked on observatory calendar; no upcoming event date asserted.",
+      "cost": "Free.",
+      "website": "https://www.wesleyan.edu/jccp/K-12.html",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://www.wesleyan.edu/jccp/K-12.html. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free learning, astronomy, stem, children, middletown"
+    },
+    {
+      "id": "recGCOv6bsHyml7Yb",
+      "name": "Wesleyan: Traverse Square Tutoring and Arts",
+      "track": "Family & Childcare",
+      "category": "Tutoring / Academic Support",
+      "specificType": "Homework support, mentoring, arts/crafts and projects. University overview listsMon-Thu4:30-6pm, occasionalFri.",
+      "town": "Middletown, Middlesex County",
+      "ages": "Traverse Square neighborhood focus; free and open to all",
+      "availability": "University term affects service; confirm current operation and enrollment at traversesquare@gmail.com.",
+      "cost": "Free.",
+      "website": "https://www.wesleyan.edu/jccp/K-12.html",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://www.wesleyan.edu/jccp/K-12.html. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free learning, tutoring, arts, children, middletown"
+    },
+    {
       "id": "recFa27qi9hlO8dfB",
       "name": "West Hartford Beachland Adventures and Beachland CITeen",
       "track": "Family & Childcare",
@@ -24195,6 +25459,22 @@
       "tags": "high school public, teen resources, high school, waterbury"
     },
     {
+      "id": "recQSrqevIO8rFFhT",
+      "name": "Willington: Human Services Food Pantry and Fuel Bank",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "PantryMon4-6pm,Thu10am-noon; fuel bank and resident support. MobileFoodshare everyotherWed11-11:30am atTownOfficeBuilding; confirm dated schedule. No clothing/furniture donations accepted currently.",
+      "town": "Willington",
+      "availability": "860-487-3118",
+      "cost": "Resident eligibility,costs,intake and energy application season require confirmation.",
+      "website": "https://www.willingtonct.gov/1216/Human-Services",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider/municipal source checked2026-11-26: https://www.willingtonct.gov/1216/Human-Services. County: Tolland. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
+      "lastVerified": "2026-11-26",
+      "tags": "food pantry, evening pantry, fuel assistance, mobile food, willington"
+    },
+    {
       "id": "rec4lJ86WpcPR7jST",
       "name": "Wilson Gray YMCA Youth and Family Center",
       "track": "Family & Childcare",
@@ -24401,6 +25681,21 @@
       "tags": "center-based daycare, childcare, winchester"
     },
     {
+      "id": "recIfPRKKqWkXuNF0",
+      "name": "With Love From Lily Veterinary Grant Program",
+      "track": "Pet Care & Resources",
+      "category": "Veterinary Care",
+      "specificType": "Veterinary financial assistance for treatment of non-preventable illnesses or diseases",
+      "town": "Hartford County and immediate surrounding areas",
+      "ages": "Pet owners with demonstrated financial hardship; priority to low-income seniors and people with disabilities",
+      "website": "https://www.withlovefromlily.org/faqs",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official FAQ checked 2026-11-26. Veterinary grant eligibility is limited to Hartford County and immediate surrounding areas in Connecticut. Apply with veterinarian assistance; organization prefers working directly with veterinarians. Awards reviewed case by case and depend on available funds and the pet's situation. Exact surrounding towns and current funding availability are not confirmed.",
+      "lastVerified": "2026-11-26",
+      "tags": "veterinary bills, pet financial assistance, seniors, disabilities"
+    },
+    {
       "id": "rec4rXFgIljxwajcO",
       "name": "Womens League Child Development Center Inc.",
       "track": "Family & Childcare",
@@ -24497,6 +25792,23 @@
       "event": "Day of Immunology, November 8, 9:00 AM–3:00 PM",
       "eventDate": "2026-11-08",
       "tags": "teen program, high school students, immunology, biology, stem enrichment, laboratory tours, stem careers, yale pathways, new haven, november 2026"
+    },
+    {
+      "id": "recyvbkyyHEEjGe9N",
+      "name": "Yale ISM: Free After-School Visual Arts Pilot",
+      "track": "Family & Childcare",
+      "category": "Afterschool Enrichment",
+      "specificType": "Nonreligious visual arts pilot at Immanuel Baptist Church1324ChapelSt. Wed4:30-5:45pm beginningSept30,2026.",
+      "town": "New Haven, New Haven County",
+      "ages": "New Haven students grades6-8",
+      "availability": "Pilot already underway; ask Mariana Torrens Arias mariana.torrensarias@yale.edu about remaining sessions and new enrollment.",
+      "cost": "Program free; confirm materials.",
+      "website": "https://ism.yale.edu/initiatives/after-school-visual-arts-studio-pilot-program",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official provider evidence checked2026-11-26; source: https://ism.yale.edu/initiatives/after-school-visual-arts-studio-pilot-program. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "lastVerified": "2026-11-26",
+      "tags": "free classes, visual arts, middle school, new haven"
     },
     {
       "id": "recOWTF083qpsstJX",
