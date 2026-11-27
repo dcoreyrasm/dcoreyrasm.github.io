@@ -944,3 +944,8 @@ main > section:nth-of-type(3n) .section-label:not(.pop-label)::before { backgrou
 .substack-signup h3 { font-family:var(--serif); font-size:1.35rem; margin-bottom:.5rem; }
 .substack-signup p { color:var(--muted); margin-bottom:1rem; line-height:1.6; }
 .substack-signup iframe { display:block; width:100%; max-width:480px; height:320px; border:1px solid #EEE; border-radius:8px; background:#fff; }
+
+/* Demo video inside a work card (e.g., ClinicalCoach AI on work.html) */
+.work-card-video { margin:0 0 1.25rem; }
+.work-card-video video { display:block; width:100%; height:auto; aspect-ratio:16/9; border-radius:6px; background:#0f0c1a; }
+.work-card-video figcaption { font-size:.78rem; color:var(--muted); line-height:1.5; margin-top:.6rem; }
