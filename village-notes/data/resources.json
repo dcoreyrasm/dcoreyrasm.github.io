@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T06:09:02.155Z",
+  "generated": "2026-11-27T18:05:49.891Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
@@ -386,11 +386,11 @@
       ],
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
-      "notes": "Official resources.211childcare.org checked2026-11-26. Childcare referral specialists help identify programs; contact211/800-505-1000 weekdays8–5; chat link available. Ask specifically for evening/weekend/backup/school-break options; no suitable slot or immediate availability confirmed. Six access questions: address/ID/phone/internet/bank requirements unknown; self-contact for referrals; child presence unknown; staff available weekdays, care hours provider-specific; specialist advice does not guarantee completed enrollment paperwork; no-slot alternatives request from specialist. Transit depends on chosen provider, not confirmed.",
+      "notes": "Official resources.211childcare.org checked2026-11-26. Childcare referral specialists help identify programs; contact211/800-505-1000 weekdays8–5; chat link available. Ask specifically for evening/weekend/backup/school-break options; no suitable slot or immediate availability confirmed. Six access questions: address/ID/phone/internet/bank requirements unknown; self-contact for referrals; child presence unknown; staff available weekdays, care hours provider-specific; specialist advice does not guarantee completed enrollment paperwork; no-slot alternatives request from specialist. Transit depends on chosen provider, not confirmed.\nBatch018 queue71: official211ChildCare resource page rechecked November27,2026. Ask specialist for inclusive care meeting child's individual support needs; no Andover special-needs slot or provider capability verified. Referral is not placement. OEC inclusion guidance surfaced but not treated as proof of an available specific program.",
       "servicesOffered": [
         "Parent / Family Support"
       ],
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-27",
       "tags": "parenting support, child care referrals, evening childcare search, weekend childcare search, licensed provider search",
       "accessDetails": [
         "Free"
@@ -5639,20 +5639,20 @@
       "category": "Spay/Neuter Assistance",
       "specificType": "State vaccination and sterilization voucher programs for qualifying residents, municipal-pound adopters, and eligible feral-cat organizations.",
       "town": "Statewide",
-      "availability": "The Low-Income Voucher Program is closed for fiscal year 2026. Pending applications are reviewed in order received and are not guaranteed. The Feral Cat Grant Program began accepting fiscal year 2027 applications from eligible Connecticut nonprofit rescue groups on July 1, 2026 and remains open until further notice.",
+      "availability": "Low-income applications not currently open; state announces January2027 reopening. Exact day and funding not guaranteed; account registration separate from application.",
       "cost": "Low-income vouchers cover two vaccinations and up to $200 for a female dog, $180 for a male dog, $120 for a female cat, or $80 for a male cat. Municipal-pound adopters pay a $45 fee and receive a voucher.",
       "website": "https://portal.ct.gov/doag/regulatory/regulatory/animal-population-control-program",
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
       "submittedBy": "Village Notes Research",
-      "notes": "Official Connecticut Department of Agriculture source rechecked August 31, 2026. The Animal Population Control Program provides vaccination and spay/neuter vouchers for qualifying low-income Connecticut residents and for dogs or cats adopted from municipal impound facilities. The Low-Income Program is closed for FY2026 due to demand; pending applications are being reviewed. Sterilizations and vaccinations must be completed by participating veterinarians.",
+      "notes": "Official Connecticut Department of Agriculture source rechecked August 31, 2026. The Animal Population Control Program provides vaccination and spay/neuter vouchers for qualifying low-income Connecticut residents and for dogs or cats adopted from municipal impound facilities. The Low-Income Program is closed for FY2026 due to demand; pending applications are being reviewed. Sterilizations and vaccinations must be completed by participating veterinarians.\nBatch018 queue70: November5,2026 official announcement says low-income applications reopen January2027; not open now. Eligible CT benefit recipients may create account; applications online when announced. Voucher60day period,extra charges possible. Current official page says mid-January; exact day not confirmed. Contact860-713-2507,agr.apcp@ct.gov. Source https://portal.ct.gov/doag/agency-press-release-results-page/2026/november/apcp-low-income-program-to-open-january-2027 .",
       "registrationStatus": "Registration Varies",
       "financialAid": "Yes",
       "servicesOffered": [
         "Spay/Neuter Assistance"
       ],
-      "lastVerified": "2026-08-31",
+      "lastVerified": "2026-11-27",
       "animals": [
         "Dogs",
         "Cats"

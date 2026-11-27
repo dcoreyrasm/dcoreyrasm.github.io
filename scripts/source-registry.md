@@ -383,7 +383,6 @@ now.
   uconnhealth.org                    2  2026-11-26   Health & Dental
   law.uconn.edu                      2  2026-11-26   Family & Childcare, Food & Basic Needs
   va.gov                             2  2026-11-26   Family & Childcare, Health & Dental
-  resources.211childcare.org         1  2026-11-26   Family & Childcare
   ahelpingpawff.org                  1  2026-11-26   Pet Care & Resources
   cancer.org                         1  2026-11-26   Health & Dental
   annsplace.org                      1  2026-11-26   Health & Dental
@@ -475,6 +474,7 @@ now.
   ahmyouth.org                       2  2026-11-27   Elder Care, Family & Childcare
   andoverelementaryct.org            2  2026-11-27   Family & Childcare
   cuvs.org                           2  2026-11-27   Pet Care & Resources
+  resources.211childcare.org         1  2026-11-27   Family & Childcare
   asiricare.com                      1  2026-11-27   Family & Childcare
   baywoodkennels.com                 1  2026-11-27   Pet Care & Resources
   ctnannyagency.com                  1  2026-11-27   Family & Childcare
