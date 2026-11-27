@@ -1,0 +1,95 @@
+<!-- Cyber Monday 2026 exit-intent popup: AI for Beginners Part 4, 20% off with CYBERMONDAY20. Runs Mon Nov 30, 12:00 AM to 11:59 PM ET only. -->
+<div id="cmx" class="cmx" role="dialog" aria-modal="true" aria-labelledby="cmx-title" aria-describedby="cmx-desc" hidden>
+  <div class="cmx-backdrop" data-cmx-close></div>
+  <div class="cmx-card">
+    <button type="button" class="cmx-x" data-cmx-close aria-label="Close this offer">&times;</button>
+    <p class="cmx-kicker">Cyber Monday, today only</p>
+    <h2 id="cmx-title">Before you go, save 20% on your seat</h2>
+    <p id="cmx-desc">Join me for <strong>AI for Beginners, Part 4: Making ChatGPT Work for You, Safely</strong> on Thursday, December 3, 7:00 to 8:00 PM Eastern, live on Zoom. It's a small, friendly class, and you'll leave knowing how to set ChatGPT up to work for you and how to spot made-up facts and AI scams. Missed Parts 1 to 3? You can still join.</p>
+    <p class="cmx-price"><span class="cmx-was">$50</span> <span class="cmx-now">$40</span> with code <strong>CYBERMONDAY20</strong></p>
+    <a class="cmx-cta" id="cmx-cta" href="https://buy.stripe.com/5kQaEY1cP5OH9yq8Xb6J208?prefilled_promo_code=CYBERMONDAY20" target="_blank" rel="noopener">Save my seat</a>
+    <button type="button" class="cmx-no" data-cmx-close>No thanks, maybe next time</button>
+    <p class="cmx-fine">The code is already applied at checkout. Offer ends tonight at 11:59 PM Eastern.</p>
+  </div>
+</div>
+<style>
+  .cmx[hidden]{display:none}
+  .cmx{position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;padding:16px;font-family:'DM Sans',sans-serif}
+  .cmx-backdrop{position:absolute;inset:0;background:rgba(22,19,31,.65)}
+  .cmx-card{position:relative;max-width:440px;width:100%;background:#fff;color:#16131F;border-radius:14px;padding:28px 24px 20px;box-shadow:0 20px 50px rgba(0,0,0,.35);text-align:center;border-top:6px solid #FDB926}
+  .cmx-kicker{margin:0 0 6px;font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#2a1a5e}
+  .cmx-card h2{font-family:'Playfair Display',serif;font-size:26px;line-height:1.2;margin:0 0 12px;color:#2a1a5e}
+  .cmx-card p{font-size:16px;line-height:1.5;margin:0 0 12px}
+  .cmx-price{font-size:17px}
+  .cmx-was{text-decoration:line-through;color:#5b5670}
+  .cmx-now{font-size:24px;font-weight:700;color:#2a1a5e}
+  .cmx-cta{display:block;background:#2a1a5e;color:#fff;font-weight:700;font-size:17px;padding:14px 18px;border-radius:10px;text-decoration:none;margin:4px 0 10px}
+  .cmx-cta:hover,.cmx-cta:focus{background:#3d2a80;color:#fff}
+  .cmx-no{background:none;border:0;color:#2a1a5e;text-decoration:underline;font-size:15px;cursor:pointer;padding:8px;font-family:inherit}
+  .cmx-fine{font-size:13px !important;color:#5b5670;margin:8px 0 0 !important}
+  .cmx-x{position:absolute;top:8px;right:10px;background:none;border:0;font-size:28px;line-height:1;color:#2a1a5e;cursor:pointer;padding:6px 10px}
+  .cmx-cta:focus-visible,.cmx-no:focus-visible,.cmx-x:focus-visible{outline:3px solid #FDB926;outline-offset:2px}
+</style>
+<script>
+(function(){
+  var START = Date.UTC(2026, 10, 30, 5, 0, 0); /* Mon Nov 30, 12:00 AM ET */
+  var END = Date.UTC(2026, 11, 1, 4, 59, 59); /* Nov 30, 11:59:59 PM ET */
+  var KEY = 'cmx-2026-seen';
+  var el = document.getElementById('cmx');
+  if (!el) return;
+  if (Date.now() > END) { el.remove(); return; }
+  if (Date.now() < START && new URLSearchParams(location.search).get('cmx') !== 'preview') { el.remove(); return; }
+  var params = new URLSearchParams(location.search);
+  var preview = params.get('cmx') === 'preview';
+  function seen(){ try { return sessionStorage.getItem(KEY) === '1' || localStorage.getItem('cmx-2026-bought') === '1'; } catch(e){ return false; } }
+  function mark(){ try { sessionStorage.setItem(KEY, '1'); } catch(e){} }
+  if (seen() && !preview) return;
+  var shown = false, lastFocus = null, armed = false;
+  function track(name){ try { if (window.gtag) gtag('event', name, {campaign: 'cyber-monday-2026'}); } catch(e){} }
+  function focusables(){ return el.querySelectorAll('a[href],button'); }
+  function show(){
+    if (shown || Date.now() > END) return;
+    shown = true; mark(); lastFocus = document.activeElement;
+    el.hidden = false; document.body.style.overflow = 'hidden';
+    document.getElementById('cmx-cta').focus();
+    track('cm_popup_view');
+  }
+  function hide(){
+    el.hidden = true; document.body.style.overflow = '';
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  el.addEventListener('click', function(e){ if (e.target.closest('[data-cmx-close]')) { hide(); track('cm_popup_dismiss'); } });
+  document.getElementById('cmx-cta').addEventListener('click', function(){ track('cm_popup_click'); hide(); });
+  document.addEventListener('keydown', function(e){
+    if (el.hidden) return;
+    if (e.key === 'Escape') { hide(); track('cm_popup_dismiss'); }
+    if (e.key === 'Tab') {
+      var f = focusables(), first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  if (preview) { setTimeout(show, 300); return; }
+  /* Wait a few seconds so it never fires the moment the page opens */
+  setTimeout(function(){ armed = true; }, 5000);
+  /* Computer: mouse leaves through the top of the window */
+  document.addEventListener('mouseout', function(e){
+    if (armed && !e.relatedTarget && e.clientY <= 0) show();
+  });
+  /* Phone and tablet: halfway down the page, or a quick scroll back toward the top */
+  var touch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+  if (touch) {
+    var lastY = window.scrollY, lastT = Date.now(), maxY = 0;
+    window.addEventListener('scroll', function(){
+      if (!armed || shown) return;
+      var y = window.scrollY, t = Date.now();
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      maxY = Math.max(maxY, y);
+      if (h > 0 && y / h >= 0.5) { show(); return; }
+      var speed = (lastY - y) / Math.max(t - lastT, 1); /* px per ms, upward */
+      if (maxY > window.innerHeight && speed > 1.5) show();
+      lastY = y; lastT = t;
+    }, {passive: true});
+  }
+})();
+</script>
