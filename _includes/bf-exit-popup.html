@@ -83,7 +83,7 @@
       var y = window.scrollY, t = Date.now();
       var h = document.documentElement.scrollHeight - window.innerHeight;
       maxY = Math.max(maxY, y);
-      if (h > 0 && y / h >= 0.5) { show(); return; }
+      if (h > 0 && y / h >= 0.5 && !window.__popupExitOnly) { show(); return; }
       var speed = (lastY - y) / Math.max(t - lastT, 1); /* px per ms, upward */
       if (maxY > window.innerHeight && speed > 1.5) show();
       lastY = y; lastT = t;
