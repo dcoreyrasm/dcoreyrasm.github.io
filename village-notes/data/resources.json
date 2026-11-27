@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-26T16:10:05.051Z",
+  "generated": "2026-11-27T06:09:02.155Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 1068,
+  "count": 1100,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -16,6 +16,7 @@
   ],
   "categories": [
     "Academic/Enrichment Camp",
+    "Adoption & Rescue",
     "Adult Day Program",
     "Afterschool Enrichment",
     "Apprenticeship",
@@ -35,6 +36,8 @@
     "Disability & Accessibility Services",
     "Dog Daycare",
     "Dog Park",
+    "Dog Walking",
+    "Doula Services",
     "Durable Medical Equipment Loan",
     "Elder Law / Financial Planning",
     "Elder Transportation",
@@ -46,18 +49,22 @@
     "Free / Low-Cost Medical Clinic",
     "Free Clothing Closets",
     "Geriatric Care Manager",
+    "Grief/Bereavement Support",
     "Health Screening Program",
     "High School (Private)",
     "High School (Public)",
     "Home Daycare (Licensed)",
+    "Home Modification / Fall Prevention",
     "Hospice / Palliative Care",
     "Household Help",
     "In-Home Caregiver / Home Health Aide",
     "Inclusive/Special Needs Camp",
     "Infant Care",
     "Job Training Program",
+    "Lactation Support",
     "Legal/HR Resource",
     "Literacy / Reading Program",
+    "Lost & Found Pet Services",
     "Low-Cost Veterinary Clinic",
     "Magnet / Specialty School",
     "Meal Delivery",
@@ -67,11 +74,18 @@
     "Mobile Health & Dental Clinic",
     "Mobile Veterinary Service",
     "Municipal/Parks & Rec Camp",
+    "Nanny / Au Pair",
+    "Nanny Share",
     "Nature / Farm Camp",
     "Nature / Outdoor Camp",
     "Parenting Support/Classes",
+    "Pediatric Therapy (OT/PT/Speech)",
+    "Perinatal Mental Health",
     "Pet Boarding",
     "Pet Food Assistance",
+    "Pet Grooming",
+    "Pet Loss & Grief Support",
+    "Pet-Friendly Housing",
     "Preschool / Pre-K",
     "Respite Care",
     "School / Family Food Support",
@@ -94,8 +108,15 @@
   ],
   "towns": [
     "Andover",
+    "Andover and listed Hartford/Tolland-area towns",
+    "Andover and listed NECCOG partner towns",
+    "Andover and other listed Connecticut towns",
+    "Andover, Hebron, Marlborough and Columbia",
+    "Andover, Hebron, Marlborough; Columbia TASKs",
+    "Andover; other listed Connecticut towns; teletherapy",
     "Ansonia",
     "Ashford",
+    "Ashford; Northeast and Mid-Atlantic applicants including Connecticut",
     "Ashford;Canterbury;Chaplin;Eastford;Hampton;Killingly;Brooklyn;Plainfield;Pomfret;Putnam;Scotland;Thompson;Woodstock",
     "Avon",
     "Barkhamsted",
@@ -131,8 +152,11 @@
     "Colchester",
     "Colebrook",
     "Columbia",
+    "Connecticut inquiry service; Andover placement coverage unconfirmed",
     "Connecticut-accessible national/online program",
+    "Connecticut; Andover matches unconfirmed",
     "Connecticut; Danbury and remote services",
+    "Connecticut; program-specific geography and eligibility",
     "Cornwall",
     "Coventry",
     "Cromwell",
@@ -165,6 +189,7 @@
     "Farmington",
     "Franklin",
     "Glastonbury",
+    "Glastonbury; serves Andover and listed neighboring towns",
     "Goshen",
     "Granby",
     "Greater Bridgeport",
@@ -187,6 +212,8 @@
     "Hartland",
     "Harwinton",
     "Hebron",
+    "Hebron, Amston, Marlborough; selected Andover and Columbia areas",
+    "Hebron; serves Andover, Hebron and Marlborough",
     "Jewett City; Griswold/Lisbon community",
     "Kent",
     "Killingly",
@@ -241,6 +268,7 @@
     "Old Lyme",
     "Old Saybrook",
     "Online",
+    "Online; Connecticut provider in Stamford",
     "Orange",
     "Oxford",
     "Pawcatuck",
@@ -280,8 +308,10 @@
     "Statewide Connecticut eligibility",
     "Statewide Connecticut school districts",
     "Statewide groups; local/online schedules vary",
+    "Statewide online information",
     "Statewide participating libraries",
     "Statewide; local post office authorization required",
+    "Statewide; online and telephone options",
     "Statewide/national",
     "Sterling",
     "Stonington",
@@ -306,7 +336,9 @@
     "Washington",
     "Waterbury",
     "Waterbury and Naugatuck",
+    "Waterbury; statewide service stated in DSS directory",
     "Waterford",
+    "Waterford; Connecticut residents with disabilities",
     "Watertown",
     "West Cornwall",
     "West Hartford",
@@ -321,6 +353,7 @@
     "Willimantic and Danielson, Windham County; online",
     "Willimantic, Windham County",
     "Willington",
+    "Willington; regional option, not Andover location",
     "Wilton",
     "Winchester",
     "Windham",
@@ -898,6 +931,39 @@
       ]
     },
     {
+      "id": "recKz0VcxJDTK5RQb",
+      "name": "AHM CHOREs and TASKs: Senior Yard Help and Teen Work",
+      "track": "Elder Care",
+      "category": "Household Help",
+      "town": "Andover, Hebron, Marlborough; Columbia TASKs",
+      "ages": "Seniors60+ in listed towns; teen workers14–18 residing in listed towns",
+      "availability": "Contact town senior center for senior forms. Current workers/funds/scheduling unknown.",
+      "cost": "No charge to eligible seniors. Teen workers paid through program funding.",
+      "website": "https://ahmyouth.org/programs-services/youth-employment-chores-tasks/",
+      "contact": "Coordinator Kristina Smith860-324-1820; KristinaS@ahmyouth.org",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch009 queue33. Official source with2026forms checked. Light yard/property tasks, not skilled repairs or medical/personal care. CHOREs supports Andover/Hebron/Marlborough; TASKs Columbia. Program-specific paperwork required; no-ID/address/phone/internet/bank alternatives unknown. Children accompanying, tonight/weekend help, paperwork assistance, no-worker/funds alternative and language/access arrangements confirm. Service at home; no transit implied. No application made. Dedupe domain/name found no matching record.\nReviewed and approved by Darice: All approved, proceed. November26,2026; batch009 only.",
+      "lastVerified": "2026-11-26",
+      "tags": "senior chores, yard help, raking, gardening, teen employment, andover, hebron, marlborough, columbia"
+    },
+    {
+      "id": "reca1e7ph1sxfmsC7",
+      "name": "AHM Family Resource Center: Parenting Home Visits and Screening",
+      "track": "Family & Childcare",
+      "category": "Parenting Support/Classes",
+      "specificType": "Parents as Teachers home visits, parenting/child-development information and developmental screening. Home or Family Resource Center at Gilead Hill offered; Andover explicitly eligible.",
+      "town": "Andover, Hebron, Marlborough and Columbia",
+      "ages": "Home visits for families with children birth–5; developmental screening ages 4–48 months.",
+      "availability": "Call/email to arrange visit or screening. Posted class dates contain mixed/unclear years and were not promoted as current openings.",
+      "cost": "Home visits and developmental screenings listed free. Group/music/play classes may charge separately; do not assume all programs free.",
+      "website": "https://ahmyouth.org/programs-services/family-resource-center/",
+      "contact": "Rebecca Murray: 860-228-0871; BeckyM@ahmyouth.org",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch014 queue54. Official provider page inspected November 27, 2026. Parent/child participation described. School group page asks first-time visitors for license and check-in; confirm ID alternative and whether visit-specific. Screening is not therapy or diagnosis. Unless stated, address/ID/phone/internet/bank requirements, tonight/weekend help, paperwork assistance, languages/ASL/disability accommodations, transit and alternatives when full remain unverified.\nDarice approved publication November 27, 2026. Existing limits retained.",
+      "lastVerified": "2026-11-27",
+      "tags": "parenting support, home visits, free screening, child development, andover, early childhood"
+    },
+    {
       "id": "recvBfqW3mePW0YRh",
       "name": "AID a Pet Community Pet Pantry",
       "track": "Pet Care & Resources",
@@ -1244,24 +1310,41 @@
       "specificType": "A public school program in Early Start CT, Connecticut's state-funded child care program. For 2025–26, the state funds 22 preschool spots here. These are funded spots, not current openings.",
       "town": "Andover",
       "address": "35 School Rd, Andover, CT, 06232",
-      "ages": "Children ages 3-4",
-      "availability": "If applications exceed available spaces, families are placed on a waitlist based on application date. Enrollment priorities vary by age, income eligibility, and residency.",
-      "cost": "Published tuition is $600 per month or $6,000 per year. Reduced tuition may be available through School Readiness or Smart Start based on income and residency rules.",
-      "website": "https://www.andoverelementaryct.org/index.php/pre-k/about-pre-k",
-      "contact": "Taylor Parker | (860) 742-7339",
+      "ages": "Preschool ages3 and4; see packet for birthday cutoffs and special education eligibility.",
+      "availability": "Current seats unknown. Early Start CT slots may accept non-Andover families based on availability; application is not an offer.",
+      "cost": "2026–2027 packet: school-day/school-year preschool $600/month or $6,000/year. Reduced tuition may apply through Early Start CT/Smart Start, based on sliding fee rules.",
+      "website": "https://www.andoverelementaryct.org/images/prek/PK%20Registration%20Packet%202026-2027.pdf",
+      "contact": "School main office860-742-7339",
       "townsServed": [
         "Andover"
       ],
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
-      "notes": "FY26 state-funded spaces: 22 preschool. An allocation, not current openings. Licence/registry: EXEMPT; Registry 1658. Local partner: Andover/Hebron/Lebanon LGP -- Teresa Surprenant | TSurprenant@eastconn.org. Source: Connecticut Office of Early Childhood Early Start CT FY26 map, accessed 2026-08-25.",
+      "notes": "Prior FY26 allocation note retained:22preschool funded spaces, not current openings; EXEMPT registry1658, verified2026-08-25. Batch004 queue13:2026–2027 official packet p2 visually inspected. Preschool, not general infant daycare or emergency care. Forms online or request via main office. Published enrollment begins first week of February preceding school year; current acceptance confirm with office. Early Start nonresident access subject to space. Child attendance inherent; siblings/visitor rules unknown. Address/ID/phone/internet/bank alternatives, paperwork help, tonight/weekend availability, transit and no-seat alternatives require confirmation. Special education enrollment subject to eligibility under FAPE. Published preserved.\nBatch017 queue65: direct enrollment webpage rechecked November27,2026. Posted$600/month/$6000year; reduced tuition subject rules/space. Older webpage grant/age wording needs confirmation;2026–27 packet remains primary cycle source. Confirm age cutoffs,residency,grants and current seats.",
       "financialAid": "Yes",
       "servicesOffered": [
         "Preschool / Pre-K",
         "Arts Enrichment"
       ],
-      "lastVerified": "2026-09-01",
-      "tags": "preschool / pre-k, childcare, andover"
+      "lastVerified": "2026-11-27",
+      "tags": "preschool, pre k, childcare, reduced tuition, early start ct, andover"
+    },
+    {
+      "id": "recuOMEuW0FQNTNzP",
+      "name": "Andover Elementary C.O.O.L. Before and After School Care",
+      "track": "Family & Childcare",
+      "category": "Before/After School Care",
+      "town": "Andover",
+      "ages": "Pre-K through grade 6",
+      "hours": "2026–2027 school year: mornings6:45–8:30am; after school until6pm when school is in session. No school means no COOL. Full/part-time options.",
+      "availability": "Current packet describes April application opening; current seats, waitlist and application acceptance not confirmed.",
+      "cost": "Email for updated fees; older2024–2025 rates not used.",
+      "website": "https://www.andoverelementaryct.org/images/prek/PK%20Registration%20Packet%202026-2027.pdf",
+      "contact": "Amy: COOLAES35@gmail.com",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch003 queue10, also resolves batch001 current-cycle source gap for afterschool activities. Official2026–2027 packet page17 visually inspected. Activities include arts/crafts, sensory play, building, stories, games, science and music. Parent may email for fees/registration updates. Address/ID/phone/internet/bank requirements unknown; accompanying siblings unknown; no weekend/holiday care stated; paperwork help and no-seat alternative unknown. Transit, language and disability accommodations unknown. No current seat guaranteed. No duplicate COOL/Latchkey record found.\nReviewed and approved for publication by Darice in this conversation, November26,2026: All approved, proceed. Batch001–004 approval only; later new results require review.\nBatch017 queue67: school-hosted COOL PDF explicitly says closed on school vacation/snow/in-service days. Tuition labeled2024–25, not current. Source https://www.andoverelementaryct.org/images/forms/AES%20COOL%20Program.pdf . Existing2026–27 packet remains primary. No vacation-week care verified.",
+      "lastVerified": "2026-11-27",
+      "tags": "before school care, after school care, preschool, school age childcare, arts and crafts, sensory activities, andover"
     },
     {
       "id": "recFrJ92tpGSTp4fj",
@@ -1468,10 +1551,12 @@
       "specificType": "Full-day arts magnet high school serving grades 9-12, housed in the Capitol Theater and combining a demanding academic curriculum with arts study.",
       "town": "Willimantic",
       "address": "896 Main Street, Willimantic, CT 06226",
-      "website": "https://eastconn.org/index.php/act-admissions",
-      "contact": "860-465-5636",
+      "availability": "2026–27 and2027–28 applications linked. Apply byJan29 for March6,2027 applicant event; later applicants schedule separately. Interview and audition/portfolio precede lottery; waitlist if not selected.",
+      "website": "https://act.hs.eastconn.org/admissions",
+      "contact": "860-465-5636; jfolta@eastconn.org",
       "submittedBy": "Village Notes Research",
-      "lastVerified": "2026-08-31",
+      "notes": "Batch012 queue44: official admissions/about pages inspected November26,2026. Application assistance contact added; English/Spanish forms listed. Town-dependent transport routes set over summer and may change. Andover-specific admission/transport arrangements, incidental costs and seats not confirmed. Access without address/ID/phone/internet/bank account, language/ASL/disability accommodations, transit, paperwork help and alternatives when full remain unknown unless stated. No current opening guaranteed.",
+      "lastVerified": "2026-11-26",
       "gradeRange": "9-12",
       "programSetting": [
         "Magnet School",
@@ -1480,7 +1565,7 @@
       "programTopics": [
         "Arts"
       ],
-      "tags": "magnet / specialty school, teen resources, high school, willimantic"
+      "tags": "magnet / specialty school, teen resources, high school, willimantic, arts education, application assistance, lottery"
     },
     {
       "id": "recQZLD6Mf1ekCs8d",
@@ -1533,6 +1618,22 @@
         "Preschool / Pre-K"
       ],
       "tags": "preschool / pre-k, family resources, childcare, ashford"
+    },
+    {
+      "id": "recWZSHSRuln05rrm",
+      "name": "Asiri Care: Paid Nanny-Share Matching Lead",
+      "track": "Family & Childcare",
+      "category": "Nanny Share",
+      "specificType": "Provider describes families opting into nanny-share posts to find nearby families, meet and agree to shared care. No local match verified. Family page says minimum 25 hours/week; confirm applicability.",
+      "town": "Connecticut; Andover matches unconfirmed",
+      "availability": "Inquiry needs contact and care details. Provider family page says background checks are coming soon; completed checks are not established by this listing.",
+      "cost": "Paid childcare arrangement; wages, agency/platform fees and each family's share require written quote. No specific savings guaranteed.",
+      "website": "https://asiricare.com/nanny-share",
+      "contact": "203-435-3209; hello@asiricare.com",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch013 queue51. Direct nanny-share and family pages inspected November27,2026. Family page: https://asiricare.com/for-families . No family post submitted. Verify current screening, fees and town coverage before arranging care. Address/ID/bank requirements, tonight/weekend availability, paperwork help, language/ASL/disability accommodations and alternatives when no match is available remain unverified.\nDarice approved publication November 27, 2026. Existing verification limits retained.",
+      "lastVerified": "2026-11-27",
+      "tags": "nanny share, shared childcare, paid childcare, family matching, connecticut"
     },
     {
       "id": "rec5SkFc4rbQLYVBd",
@@ -1614,6 +1715,22 @@
         "College Readiness"
       ],
       "tags": "high school public, teen resources, high school, bridgeport"
+    },
+    {
+      "id": "recq09nLjxnBydE4c",
+      "name": "Baywood Kennels: Paid Dog Grooming",
+      "track": "Pet Care & Resources",
+      "category": "Pet Grooming",
+      "specificType": "Provider lists dog baths, haircuts, ear cleaning and other grooming. Dog service supported by page; cat grooming not independently confirmed from page heading alone.",
+      "town": "Willington; regional option, not Andover location",
+      "availability": "Posted service seven days/week; current appointment, holiday operation and vaccine/license requirements must be confirmed.",
+      "cost": "Paid commercial grooming; price and any additional fees require quote. No low-income discount confirmed.",
+      "website": "https://www.baywoodkennels.com/grooming",
+      "contact": "860-429-5533",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch015 queue59. Direct grooming/contact pages inspected November 27,2026. No verified pickup/transport from Andover. Commercial service, no quality/clinical endorsement. Unless stated, address/ID/phone/internet/bank requirements, accompanying children, tonight/weekend access, paperwork help, languages/ASL/disability accommodations, transit and no-capacity alternatives remain unverified.\nDarice approved publication November 27, 2026; existing limits retained.",
+      "lastVerified": "2026-11-27",
+      "tags": "dog grooming, pet grooming, paid service, willington, regional"
     },
     {
       "id": "recd0A2i4YRawURsw",
@@ -1826,6 +1943,21 @@
       "notes": "Official provider/municipal source checked2026-11-26: https://www.boltonct.gov/services/senior-and-social-services. County: Tolland. New result Pending Review. Regular hours are not holiday operation confirmation.\nCan someone use it without an address, ID, phone, internet or bank account? Unknown except explicit requirements in description.\nDoes it accept self-referrals, or must an agency refer them? Confirm unless description specifies.\nCan children come along? Unknown unless description specifies.\nIs help available tonight or this weekend? Confirm; posted regular schedule is not current capacity.\nWho helps complete the paperwork? Unknown unless described.\nWhat happens if there are no beds, appointments or funds? Alternative not verified; ask provider.\nLanguage/ASL/disability accommodation and exact public-transit route/return trip unknown unless specified. Multiple service tags describe provider programs, not guaranteed intake or funds. Existing closest category retained.\n\nReviewed and explicitly approved by Darice on2026-11-26, for the19newresources from full-scope search02. Set to Published. Eligibility,availability and access qualifications retained. This approval does not certify the unfinished town/category audit complete.",
       "lastVerified": "2026-11-26",
       "tags": "food pantry, delivery by arrangement, senior rides, disability transportation, benefits, bolton"
+    },
+    {
+      "id": "recaJSpAqSVx6C4S7",
+      "name": "Boomer's Best Buddies Rescue",
+      "track": "Pet Care & Resources",
+      "category": "Adoption & Rescue",
+      "specificType": "Animal adoption and foster applications through the provider website.",
+      "town": "Andover",
+      "availability": "Website offers adoption application. Application is not acceptance or a guaranteed available animal.",
+      "cost": "Adoption fees and any assistance unknown; confirm directly.",
+      "website": "https://boomersbestbuddies.com/",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch 001, queue cell 1. Official homepage inspected, adoption application linked; About page describes cat foster program and small-animal fostering. Andover CT identity supported by provider page title and search cross-check. No street address published here. Access questions: Address/ID/phone/internet/bank requirements unknown; self-referral versus required agency referral unknown; children accompanying visitors unknown; tonight/weekend availability unknown; paperwork assistance unknown; alternative when no spaces/funds unknown. Transit routes, languages and physical accessibility not verified. Contact provider before visiting. No availability or free-service guarantee.\nReviewed and approved for publication by Darice in this conversation, November26,2026: All approved, proceed. Batch001–004 approval only; later new results require review.",
+      "lastVerified": "2026-11-26",
+      "tags": "animal adoption, pet rescue, fostering, andover"
     },
     {
       "id": "rec08eX7f1jYsaUfj",
@@ -3179,6 +3311,22 @@
       "tags": "community meals / soup kitchen, community meals, bristol"
     },
     {
+      "id": "rec3jQenlXVAnvLnC",
+      "name": "Brookdale South Windsor: Paid Residential Memory Care",
+      "track": "Elder Care",
+      "category": "Memory Care",
+      "specificType": "Provider lists residential memory care for people with Alzheimer's or other dementia at South Windsor campus. Regional option, not an Andover facility. Clinical acceptance, licensing and funding coverage not independently established.",
+      "town": "South Windsor",
+      "availability": "Call to request assessment, full written cost and availability. No vacancy, emergency admission or low-income subsidy verified.",
+      "cost": "Private-pay residential service. Page dated11/25/2026 lists memory-care base rate from$11,980/month, excluding additional care/other fees; quote and availability required.",
+      "website": "https://www.brookdale.com/en/communities/brookdale-south-windsor.html",
+      "contact": "860-644-4408",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch012 queue47. Direct provider page inspected November26,2026. Paid option clearly separated from free assistance; no clinical quality endorsement. No proof of Andover-specific transport or public funding. Access without address/ID/phone/internet/bank account, language/ASL/disability accommodations, transit, paperwork help and alternatives when full remain unknown unless stated. No current opening guaranteed.\nDarice approved publication November27,2026; eligibility, cost and availability limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "memory care, dementia, residential care, private pay, south windsor, paid service"
+    },
+    {
       "id": "reczTaDIhufoi4tbI",
       "name": "Brooklyn Boe At Brooklyn Elementary School",
       "track": "Family & Childcare",
@@ -3627,6 +3775,21 @@
         "Diagnosis-Specific Program"
       ],
       "tags": "medical / diagnosis-specific camp, south windham"
+    },
+    {
+      "id": "recj5v7T8zONeXTeM",
+      "name": "Camp Harkness: Disability Recreation and Camp Information",
+      "track": "Family & Childcare",
+      "category": "Inclusive/Special Needs Camp",
+      "specificType": "State disability recreation property with year-round access and seasonal facilities. Connecticut residents with disabilities may obtain pass; three private agencies run summer programs.",
+      "town": "Waterford; Connecticut residents with disabilities",
+      "availability": "State pass eligibility is separate from agency-run summer camp registration. Current sessions, places and prices unknown.",
+      "cost": "Pass, day-use, overnight and private summer-program fees must be checked separately. No universal free-camp claim.",
+      "website": "https://portal.ct.gov/dds/supports-and-services/camp-harkness",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch009 queue35. Official DDS source inspected; passholder may bring5guests/2cars. No exact future event added. Pass documentation and summer age/referral requirements must be confirmed individually. Family/friends allowed under pass rules; children-specific support and supervision confirm. No-address/ID/phone/internet/bank alternatives, weekend hours, paperwork help and no-slot alternatives unknown. Accessible amenities listed; individual needs, transport and languages confirm. No overnight or staffed camp placement guaranteed. Dedupe Harkness name found none.\nReviewed and approved by Darice: All approved, proceed. November26,2026; batch009 only.",
+      "lastVerified": "2026-11-26",
+      "tags": "disability recreation, accessible camp, camp harkness, family recreation, waterford, statewide"
     },
     {
       "id": "recsqQIMks6uDOKVK",
@@ -5033,6 +5196,22 @@
       "tags": "center-based daycare, childcare, danbury"
     },
     {
+      "id": "recrxEVedULU5qRDN",
+      "name": "CIL AccesSolutions: Home Accessibility Funding Information",
+      "track": "Elder Care",
+      "category": "Home Modification / Fall Prevention",
+      "specificType": "State information page for disability-related ramps, lifts and home modifications through CIL. Funding information, not confirmed immediate contractor assistance.",
+      "town": "Connecticut; program-specific geography and eligibility",
+      "availability": "State resource page describes waitlist and periodic application openings; current intake not confirmed.",
+      "cost": "Grant/loan options have eligibility and possible lien/repayment terms; not universal free repairs. Confirm current terms directly.",
+      "website": "https://www.myplacect.org/services-and-supports/financial-options/corporation-for-independent-living-accessolutions/",
+      "contact": "CIL860-563-6011",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch008 queue31. MyPlaceCT official state-resource information inspected; direct CIL current intake and Andover-specific terms unresolved. Income/disability and other-funding requirements vary; dollar figures not repeated because page lists differing categories. Application help after approval described; no guaranteed award. Address/ID/phone/internet/bank requirements, children accompanying, nights/weekends, no-funds alternatives, transport and language accommodations unknown. Homeowner/renter/landlord permission confirm. Dedupe CIL/AccesSolutions found no existing program.\nReviewed and approved by Darice: All approved, proceed, November26,2026. Batch008 approval only.",
+      "lastVerified": "2026-11-26",
+      "tags": "home accessibility, ramps, grab bars, disability, home modifications, funding, waitlist"
+    },
+    {
       "id": "recKXJeRNC5OEHHxP",
       "name": "CLC Lathon Wider",
       "track": "Family & Childcare",
@@ -5439,6 +5618,21 @@
       "tags": "community meals, prepared meals, saturday breakfast, no kitchen needed, new haven"
     },
     {
+      "id": "recMpyHaxFeOOjsKI",
+      "name": "Connecticut American Job Centers: Career and Training Help",
+      "track": "Teens & High School",
+      "category": "Job Training Program",
+      "specificType": "Statewide entry point for career counseling, resumes, job search and training referrals, in person and virtually. Services available regardless of employment status.",
+      "town": "Statewide",
+      "availability": "Use official location/appointment links; specific course intake, funding and current seats require confirmation.",
+      "cost": "Career assistance and workshops free. Specific funded training has separate eligibility; no promise every course is free.",
+      "website": "https://portal.ct.gov/dol/divisions/american-job-centers",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch010 queue37. Official CTDOL page inspected. General statewide entry not regional training guarantee; Andover program assignment unresolved. Self-request appointment offered. Address/ID/phone/internet/bank requirements, children accompanying beyond stated policy, tonight/weekend timing, paperwork assistance and no-capacity alternatives unknown. Confirm accommodations, languages and transit before attending.\nDarice approved publication November 26, 2026.",
+      "lastVerified": "2026-11-26",
+      "tags": "job search, resume help, career counseling, job training, virtual assistance, statewide"
+    },
+    {
       "id": "recyQoc1fkJIEv2PA",
       "name": "Connecticut Animal Population Control Program",
       "track": "Pet Care & Resources",
@@ -5492,17 +5686,19 @@
       "category": "Birth-to-Three / Early Intervention",
       "specificType": "Early intervention for infants and toddlers with developmental delays or qualifying medical conditions",
       "town": "Statewide",
-      "ages": "Connecticut children age 3 or younger and their families",
-      "availability": "Families may contact 211 Child Development to discuss concerns and request a referral or evaluation.",
-      "website": "https://portal.ct.gov/dds/knowledge-base/articles/eligibility-for-birth-to-three-program",
-      "contact": "211 Child Development: 1-800-505-7000 or 2-1-1",
+      "ages": "Connecticut infants/toddlers with qualifying developmental delay or medical condition; contact intake promptly near age3.",
+      "availability": "Referral leads to evaluation, not automatic eligibility. Intake lists Thanksgiving and other holiday closures; not immediate childcare.",
+      "cost": "Evaluation and eligible services have no out-of-pocket family cost. Insurance enrollment is not required; consent applies to commercial insurance billing.",
+      "website": "https://www.birth23.org/make-a-referral/",
+      "contact": "211 Child Development:1-800-505-7000 or211; delayed-referral follow-up voicemail860-500-4431.",
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
-      "notes": "Official State of Connecticut eligibility and referral page verified 2026-08-25.",
-      "tags": "birth-to-three / early intervention"
+      "notes": "Previous note retained: Official State of Connecticut eligibility/referral page verified2026-08-25. Batch003 queue11: official birth23 referral, costs and eligibility pages checked. Anyone including parent may refer; family consent needed. Telephone referral help and free interpretation confirmed; online/fax routes also listed. Eligibility page directs children within45days of third birthday toward school-district preschool supports; this is more precise than older DDS summary. Children participate in evaluation, generally at home; sibling attendance unknown. Address/ID/bank requirements and phone-free/internet-free route details unknown. Nights/weekends unknown; holiday closure stated. Ask211 Child Development for other supports if ineligible. Appointment availability, transit and exact paperwork needs unknown. Published preserved; no duplicate.",
+      "lastVerified": "2026-11-26",
+      "tags": "birth to three, early intervention, developmental delays, infant support, toddler support, parent referral, statewide"
     },
     {
       "id": "recUdPyUoBIp0qteq",
@@ -6039,11 +6235,11 @@
         "Newington"
       ],
       "submittedBy": "Village Notes Research",
-      "notes": "Official source rechecked November 25, 2026: https://cthumane.org/pet-food-pantry-program/. Free short-term cat/dog food for approved applicants. Photo/current rabies proof required; financial-need information requested, proof document described as optional in application list. Three-month approval/renewal, maximum two years; no prescription food/delivery. Provider estimates application review 2–3 weeks; not independently measured. Pickup locations Newington, Waterford and Wilton. Contact 860-594-4500, petfoodpantry@cthumane.org. Published status retained.",
+      "notes": "Official source rechecked November 25, 2026: https://cthumane.org/pet-food-pantry-program/. Free short-term cat/dog food for approved applicants. Photo/current rabies proof required; financial-need information requested, proof document described as optional in application list. Three-month approval/renewal, maximum two years; no prescription food/delivery. Provider estimates application review 2–3 weeks; not independently measured. Pickup locations Newington, Waterford and Wilton. Contact 860-594-4500, petfoodpantry@cthumane.org. Published status retained.\nBatch015 queue58: official program page rechecked November 27,2026. Financial-proof wording conflicts: application list calls it optional, FAQ requires proof. Confirm with pantry before submitting; do not promise documentation-free access. Online application, pet photo/rabies proof and pickup required; no delivery/prescription diets. Andover resident acceptance and current stock/appointment unconfirmed.",
       "servicesOffered": [
         "Pet Food Assistance"
       ],
-      "lastVerified": "2026-11-25",
+      "lastVerified": "2026-11-27",
       "animals": [
         "Dogs",
         "Cats"
@@ -6071,11 +6267,11 @@
         "Waterford"
       ],
       "submittedBy": "Village Notes Research",
-      "notes": "Official source rechecked November 25, 2026: https://cthumane.org/pet-food-pantry-program/. Free short-term cat/dog food for approved applicants. Photo/current rabies proof required; financial-need information requested, proof document described as optional in application list. Three-month approval/renewal, maximum two years; no prescription food/delivery. Provider estimates application review 2–3 weeks; not independently measured. Pickup locations Newington, Waterford and Wilton. Contact 860-594-4500, petfoodpantry@cthumane.org. Published status retained.",
+      "notes": "Official source rechecked November 25, 2026: https://cthumane.org/pet-food-pantry-program/. Free short-term cat/dog food for approved applicants. Photo/current rabies proof required; financial-need information requested, proof document described as optional in application list. Three-month approval/renewal, maximum two years; no prescription food/delivery. Provider estimates application review 2–3 weeks; not independently measured. Pickup locations Newington, Waterford and Wilton. Contact 860-594-4500, petfoodpantry@cthumane.org. Published status retained.\nBatch015 queue58: official program page rechecked November 27,2026. Financial-proof wording conflicts: application list calls it optional, FAQ requires proof. Confirm with pantry before submitting; do not promise documentation-free access. Online application, pet photo/rabies proof and pickup required; no delivery/prescription diets. Andover resident acceptance and current stock/appointment unconfirmed.",
       "servicesOffered": [
         "Pet Food Assistance"
       ],
-      "lastVerified": "2026-11-25",
+      "lastVerified": "2026-11-27",
       "animals": [
         "Dogs",
         "Cats"
@@ -6104,12 +6300,12 @@
         "Wilton"
       ],
       "submittedBy": "Village Notes Research",
-      "notes": "Official source rechecked November 25, 2026: https://cthumane.org/pet-food-pantry-program/. Free short-term cat/dog food for approved applicants. Photo/current rabies proof required; financial-need information requested, proof document described as optional in application list. Three-month approval/renewal, maximum two years; no prescription food/delivery. Provider estimates application review 2–3 weeks; not independently measured. Pickup locations Newington, Waterford and Wilton. Contact 860-594-4500, petfoodpantry@cthumane.org. Published status retained.",
+      "notes": "Official source rechecked November 25, 2026: https://cthumane.org/pet-food-pantry-program/. Free short-term cat/dog food for approved applicants. Photo/current rabies proof required; financial-need information requested, proof document described as optional in application list. Three-month approval/renewal, maximum two years; no prescription food/delivery. Provider estimates application review 2–3 weeks; not independently measured. Pickup locations Newington, Waterford and Wilton. Contact 860-594-4500, petfoodpantry@cthumane.org. Published status retained.\nBatch015 queue58: official program page rechecked November 27,2026. Financial-proof wording conflicts: application list calls it optional, FAQ requires proof. Confirm with pantry before submitting; do not promise documentation-free access. Online application, pet photo/rabies proof and pickup required; no delivery/prescription diets. Andover resident acceptance and current stock/appointment unconfirmed.",
       "financialAid": "Yes",
       "servicesOffered": [
         "Pet Food Assistance"
       ],
-      "lastVerified": "2026-11-25",
+      "lastVerified": "2026-11-27",
       "animals": [
         "Dogs",
         "Cats"
@@ -6179,6 +6375,21 @@
         "Rabies Certificate Required"
       ],
       "tags": "low-cost veterinary clinic, pet services, wilton"
+    },
+    {
+      "id": "recBH5zkf5QWAohuu",
+      "name": "Connecticut Humane Society: Pet-Friendly Housing Guidance",
+      "track": "Pet Care & Resources",
+      "category": "Pet-Friendly Housing",
+      "specificType": "Guidance for searching rentals with pets and preparing pet information/references. Information only; no housing placement, subsidy, landlord acceptance or vacancy confirmed.",
+      "town": "Statewide online information",
+      "availability": "Self-service webpage. Confirm pet permission and restrictions directly with property before applying; no Andover listing certified.",
+      "cost": "Free online information. Rental costs, deposits and landlord rules separate.",
+      "website": "https://cthumane.org/pet-care-resources/find-pet-friendly-housing/",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch016 queue63. Direct CHS page inspected November27,2026. Did not copy deposit/fee suggestions as legal guidance. Internet access needed for page; offline help not confirmed. Address/ID/phone/internet/bank requirements, accompanying children, paperwork help, language/ASL/disability accommodations and no-capacity alternatives unknown unless stated.\nDarice approved publication November 27, 2026. Existing limits retained.",
+      "lastVerified": "2026-11-27",
+      "tags": "pet friendly housing, rental search, pet retention, housing information, statewide"
     },
     {
       "id": "rec7efvK0U25FgDQw",
@@ -6433,6 +6644,22 @@
       ]
     },
     {
+      "id": "recSAgdo9wBBBMZSn",
+      "name": "Connecticut Nanny Agency: Paid Nanny Placement",
+      "track": "Family & Childcare",
+      "category": "Nanny / Au Pair",
+      "specificType": "Agency offers long-term/live-in nanny and newborn-care specialist placement. Family inquiry form or email to discuss fit and fees. Listing is not an au-pair sponsor verification.",
+      "town": "Connecticut inquiry service; Andover placement coverage unconfirmed",
+      "availability": "Request coverage and written quote. No Andover caregiver, start date, childcare subsidy or immediate availability confirmed.",
+      "cost": "Paid. Posted $300 search fee; full-time long-term placement fee 6% of projected annual nanny salary. Other arrangements vary. Caregiver wages and full total require separate quote.",
+      "website": "https://www.ctnannyagency.com/",
+      "contact": "info@ctnannyagency.com",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch013 queue50. Official homepage inspected November27,2026; domain and name dedupe found no entry. Paid regional lead, not confirmed local placement or screening endorsement. Address/ID/bank requirements, tonight/weekend availability, paperwork help, language/ASL/disability accommodations and alternatives when no match is available remain unverified.\nDarice approved publication November 27, 2026. Existing verification limits retained.",
+      "lastVerified": "2026-11-27",
+      "tags": "nanny placement, paid childcare, live in nanny, newborn care, connecticut"
+    },
+    {
       "id": "recRyR2bHkoxaKOPo",
       "name": "Connecticut Office of Early Childhood: Find Child Care and Camps",
       "track": "Family & Childcare",
@@ -6579,22 +6806,24 @@
       "name": "Connecticut Registered Apprenticeship System",
       "track": "Teens & High School",
       "category": "Apprenticeship",
-      "specificType": "Statewide registered apprenticeship system combining paid on-the-job training with required academic instruction. Apprentices register through an approved employer sponsor.",
+      "specificType": "State registration guidance, not a job placement guarantee. An employer must hire and register the apprentice.",
       "town": "Statewide",
       "address": "200 Folly Brook Boulevard, Wethersfield, CT 06109",
       "hours": "Office hours: Monday–Friday, 8 a.m.–4:30 p.m. Apprenticeship schedules vary by sponsor.",
-      "website": "https://portal.ct.gov/dol/divisions/apprenticeships/message",
+      "availability": "Listed sponsors may be hiring, waitlisting or not hiring. Contact each employer before applying.",
+      "website": "https://portal.ct.gov/dol/knowledge-base/articles/employment-and-training/apprenticeship/how-do-i-become-a-registered-apprentice?language=en_US",
       "submittedBy": "Village Notes Research",
+      "notes": "Batch 002, Andover cell4: statewide guidance checked against official CTDOL page. Existing Published status preserved; no duplicate. Self-directed employer inquiry precedes hiring and employer registration. Individual age/trade/ID, cost, documentation, paperwork assistance, accompanying children, evening/weekend help, transit and no-opening alternatives depend on employer and remain unknown. No promised job or enrollment.",
       "registrationStatus": "Rolling / Ongoing",
       "servicesOffered": [
         "Youth Employment"
       ],
       "programYear": "Ongoing",
-      "lastVerified": "2026-09-19",
+      "lastVerified": "2026-11-26",
       "teenOpportunity": [
         "Apprenticeship"
       ],
-      "tags": "apprenticeship, teen resources, job training"
+      "tags": "apprenticeship, teen resources, job training, paid on the job training, employer sponsor, statewide"
     },
     {
       "id": "recRMsdacElIMoVkl",
@@ -6715,21 +6944,21 @@
       "specificType": "Respite and care planning for families caring for someone with Alzheimer’s disease or a related condition",
       "town": "Statewide",
       "ages": "Connecticut caregivers of people with Alzheimer’s disease or a related condition",
-      "availability": "A care manager reviews need and available funding. Families may use a home-care agency or hire someone they trust. Apply through the state form or call the statewide aging line.",
+      "availability": "Contact Area Agency on Aging for eligibility,care plan,copay/waiver and funding availability.",
       "cost": "The program may pay up to $7,500 per year, depending on need and available funding.",
       "website": "https://portal.ct.gov/ads/knowledge-base/articles/independent-living-services/healthy-living-services/connecticut-statewide-respite-care",
-      "contact": "1-800-994-9422",
+      "contact": "800-994-9422 (official ADS routing to Area Agency on Aging)",
       "townsServed": [
         "Statewide (all of Connecticut)"
       ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
-      "notes": "Official Connecticut Aging and Disability Services page rechecked 2026-11-21. The program is run with the Alzheimer’s Association Connecticut Chapter and the five Area Agencies on Aging. Funding is not guaranteed.",
+      "notes": "Official Connecticut Aging and Disability Services page rechecked 2026-11-21. The program is run with the Alzheimer’s Association Connecticut Chapter and the five Area Agencies on Aging. Funding is not guaranteed.\nBatch017 queue66: official ADS and MyPlaceCT checked November27,2026. Diagnosis/residency and program restrictions apply; individual care-manager assessment required. ADS support up to$7500/year depending funding/need, not guaranteed. MyPlaceCT describes20%copay/possible hardship waiver; confirm current financial/benefit rules. ADS contact800-994-9422; conflicting MyPlaceCT number not copied. https://www.myplacect.org/family-caregivers/connecticut-statewide-respite-care-program/ . No funds/slot guaranteed.",
       "servicesOffered": [
         "Caregiver Support",
         "Elder Care"
       ],
-      "lastVerified": "2026-11-21",
+      "lastVerified": "2026-11-27",
       "tags": "respite care, dementia caregiving, alzheimer's caregiver support, care planning, home care, statewide connecticut"
     },
     {
@@ -6876,11 +7105,12 @@
       ],
       "submittedBy": "Connecticut Office of Early Childhood (Early Start CT FY26 data)",
       "dateSubmitted": "2026-08-25",
-      "notes": "Source: https://portal.ct.gov/DPH/WIC/Find-a-Local-Agency, accessed 2026-08-25.",
+      "notes": "Original local-agency directory source retained. Batch010 queue38 official https://portal.ct.gov/DPH/WIC/Nutrition-Services checked: eligible families receive free nutrition/breastfeeding information and support; skilled lactation needs may require referral. Individual eligibility, local agency intake and peer-counselor availability confirm. No free universal clinical consultation claim. Six access questions and current local dates, paperwork, transit/language/disability arrangements unresolved. Published preserved.",
       "servicesOffered": [
         "Parent / Family Support"
       ],
-      "tags": "parenting support/classes"
+      "lastVerified": "2026-11-26",
+      "tags": "wic, nutrition support, breastfeeding support, lactation, infant feeding, statewide"
     },
     {
       "id": "recvJrtCPYiHDKAUi",
@@ -6941,6 +7171,22 @@
         "Career Exploration"
       ],
       "tags": "job training program, statewide"
+    },
+    {
+      "id": "rece3E9iViIofKAuP",
+      "name": "Consumer Law Project for Elders",
+      "track": "Elder Care",
+      "category": "Elder Law / Financial Planning",
+      "specificType": "Telephone legal advice, representation and referrals on consumer issues. Not a general financial-planning or criminal-defense service.",
+      "town": "Statewide",
+      "ages": "Connecticut residents age60and older with consumer-law concerns",
+      "cost": "Free legal assistance for covered consumer problems; confirm case acceptance.",
+      "website": "https://portal.ct.gov/ltcop/your-legal-rights",
+      "contact": "1-800-296-1467",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch006 queue21. Official CT legal-rights page inspected; CLS work page confirms project, regional AAA corroborates statewide scope. Self-contact via hotline. ID/address/phone/internet/bank alternatives, children attending, tonight/weekend assistance, paperwork completion, no-capacity alternatives and accessibility/languages unknown. No legal advice or representation guarantee. Dedupe Consumer Law/Legal Services names and provider domain found no matching record.\nReviewed and approved by Darice: All approved, proceed, November26,2026. Covers batch006–007 results only.",
+      "lastVerified": "2026-11-26",
+      "tags": "elder legal help, consumer rights, debt collection, identity theft, seniors, statewide"
     },
     {
       "id": "recQ3vGxtkvkzkSpb",
@@ -7364,6 +7610,23 @@
         "Toddler Care"
       ],
       "tags": "center-based daycare, childcare, hartford"
+    },
+    {
+      "id": "recMEYagaYiVhZC4v",
+      "name": "CRT Meals on Wheels: Home-Delivered Senior Meals",
+      "track": "Elder Care",
+      "category": "Meal Delivery",
+      "specificType": "Delivered lunches; special diets/textures and other meal options may be available. Provider lists Andover. Referrals from doctors, hospitals, VNAs or town social services; interview/home visit required.",
+      "town": "Andover and listed Hartford/Tolland-area towns",
+      "ages": "60+, medically homebound, unable to eat at community meal site; assessment required.",
+      "availability": "Office Mon–Fri8am–4pm. Posted delivery10am–1pm after referral. Current start date and holiday/weekend arrangements must be confirmed.",
+      "cost": "Suggested $3 donation per meal; inability to donate does not disqualify.",
+      "website": "https://www.crtct.org/programs/seniors/meals-on-wheels/",
+      "contact": "860-560-5848",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch012 queue45. Direct official page inspected November26,2026; town explicitly listed. Self-referral acceptance not established; call program manager. Posted two-day startup is provider description after approval, not individually confirmed capacity. Access without address/ID/phone/internet/bank account, language/ASL/disability accommodations, transit, paperwork help and alternatives when full remain unknown unless stated. No current opening guaranteed.\nDarice approved publication November27,2026; eligibility, cost and availability limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "meal delivery, meals on wheels, homebound seniors, andover, special diets, suggested donation"
     },
     {
       "id": "rec9uvPmyiP2VcoDP",
@@ -7808,6 +8071,21 @@
       "tags": "rideshare discount, holiday rides, uber, lyft, safe rides, project plan ahead"
     },
     {
+      "id": "recWa238quy1KwnwQ",
+      "name": "CTECS Apprenticeship and Extension Courses",
+      "track": "Teens & High School",
+      "category": "Apprenticeship",
+      "specificType": "Classroom trade instruction for registered apprentices and extension students. Employer-based work training is separate. Students under18 need parent permission.",
+      "town": "Statewide",
+      "availability": "School enrollment is separate from class registration and seat availability. November small-engine registration deadline has passed; do not advertise that class as open.",
+      "cost": "Paid courses. Tuition differs by registration status and format; additional registration/technology fees apply. Confirm current course total.",
+      "website": "https://cttech.org/apprenticeship",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch002, cell4 regional/statewide option. Official provider page inspected. Separate program from existing individual technical high-school listings. Online registration with a24-hour hold for new enrollment; money orders/bank checks accepted, cash/personal checks not accepted. Exact residency/document requirements, phone/internet alternatives, children accompanying students, tonight/weekend help, paperwork assistance, no-seat alternatives, transit and accommodations unknown. No job placement, subsidy or current seat guaranteed.\nReviewed and approved for publication by Darice in this conversation, November26,2026: All approved, proceed. Batch001–004 approval only; later new results require review.",
+      "lastVerified": "2026-11-26",
+      "tags": "apprenticeship, trade classes, adult education, online classes, statewide"
+    },
+    {
       "id": "recrboJ3CSOGXkoGd",
       "name": "CTtransit: Bus Fares and Trip Planning",
       "track": "Food & Basic Needs",
@@ -7822,6 +8100,37 @@
       "notes": "Official source checked2026-11-26. Current stock, intake, documents, disability/language access, denied-applicant alternatives, off-hours/transport and application follow-up unknown unless specifically confirmed. Independently found lead, Pending Review. Existing closest category; description/tags specify precise service.",
       "lastVerified": "2026-11-26",
       "tags": "public buses, bus fares, transit routes, transportation, cttransit"
+    },
+    {
+      "id": "recV2O90nocjKaDv9",
+      "name": "CUVS: Free Virtual Pet-Loss Support Group",
+      "track": "Pet Care & Resources",
+      "category": "Pet Loss & Grief Support",
+      "specificType": "Monthly Zoom pet-loss group facilitated by provider's licensed social worker. Group described as open to anyone experiencing pet loss; separate individual social-work services described for CUVS clients.",
+      "town": "Online; Connecticut provider in Stamford",
+      "availability": "Posted monthly6–7pm, registration and limited space. Listed November11/December9 links lack explicit year in page text; confirm next date before attending.",
+      "cost": "Pet-loss group listed free. Other veterinary care is separate.",
+      "website": "https://www.cuvs.org/services/veterinary_social_work",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch016 queue60. Direct official page and second search system checked November27,2026. Distinct group service from existing veterinary emergency listing; no duplicate emergency entry created. Not immediate crisis support. Address/ID/phone/internet/bank requirements, accompanying children, paperwork help, language/ASL/disability accommodations and no-capacity alternatives unknown unless stated.\nDarice approved publication November 27, 2026. Existing limits retained.",
+      "lastVerified": "2026-11-27",
+      "tags": "pet loss, grief support, free group, virtual, zoom, connecticut"
+    },
+    {
+      "id": "recPPpNR76lw9Hrnz",
+      "name": "CVMF Companions-in-Crisis: Temporary Pet Sheltering",
+      "track": "Pet Care & Resources",
+      "category": "Emergency Pet Foster Care",
+      "specificType": "Confidential temporary pet sheltering during family crisis, medical/residential treatment or shelter entry. Agency referral required; direct individual requests not accepted.",
+      "town": "Statewide",
+      "availability": "Case-by-case acceptance, agency participation and applicable court/treatment-plan compliance required. No guaranteed immediate placement or animal visitation during sheltering.",
+      "cost": "Boarding/feeding funded through participating hospitals; veterinary funding case-by-case. Confirm owner terms with referring agency.",
+      "website": "https://petsafetyct.org/companions-in-crisis/",
+      "contact": "Ask participating social-service agency/caseworker to request placement; provider contact page on website.",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch006 queue23. Official program page inspected. No confidential animal-shelter locations recorded. Different from existing CVMF veterinary voucher program. Address/ID/phone/internet/bank requirements, children at intake, night/weekend process, paperwork help and no-placement alternatives unknown. Agency initiates referral and receives animal updates. Duration, species eligibility, transport and accommodations require confirmation. No submission/contact made.\nReviewed and approved by Darice: All approved, proceed, November26,2026. Covers batch006–007 results only.",
+      "lastVerified": "2026-11-26",
+      "tags": "emergency pet foster care, temporary pet shelter, domestic violence, hospitalization, agency referral, statewide"
     },
     {
       "id": "recdk5Vxl39vY1LTF",
@@ -9007,9 +9316,9 @@
       "website": "https://acp.eastconn.org/adult-education",
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-11-26",
-      "notes": "Official provider evidence checked2026-11-26; source: https://acp.eastconn.org/adult-education. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
+      "notes": "Official provider evidence checked2026-11-26; source: https://acp.eastconn.org/adult-education. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.\nBatch011 queue41: provider adult-education page rechecked, reading/math foundation support confirmed. CT SDE2025–26 provider directory page2 lists Andover under EASTCONN: https://portal.ct.gov/-/media/sde/adult-ed/providerdirectory.pdf?hash=96F40D184420C5C3682C04F749C9AA07&rev=952d8ccc18264d7289f8018dc65fe5e8 . This older directory establishes a referral lead; current Andover intake and specific seats still require confirmation. Do not present as guaranteed enrollment.",
       "lastVerified": "2026-11-26",
-      "tags": "free classes, adult education, esl, citizenship, childcare, device loans, windham"
+      "tags": "free classes, adult education, esl, citizenship, childcare, device loans, windham, andover, reading support, basic skills"
     },
     {
       "id": "recxhSK3jeCsaenzO",
@@ -10457,6 +10766,22 @@
         "Toddler Care"
       ],
       "tags": "home daycare licensed, childcare, hartford"
+    },
+    {
+      "id": "recNFh7VvyJhM5y63",
+      "name": "FurryFriends4Life: Small-Dog Daycare and Boarding",
+      "track": "Pet Care & Resources",
+      "category": "Dog Daycare",
+      "specificType": "Small-dog-focused home daycare/boarding; medium dogs considered individually.",
+      "town": "Andover",
+      "availability": "Meet-and-greet required. Vaccine documentation, town dog license and spay/neuter for dogs over7months required. Current space unknown.",
+      "cost": "Paid service; quote at meet-and-greet, possible holiday/medical-support extras.",
+      "website": "https://www.furryfriends4life.com/faq",
+      "contact": "860-538-9307; msfurryfriends4life@gmail.com",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch005 queue16. Official FAQ checked. Provider licensing claim not independently checked with regulator, so no verified license field set. Access: self-contact offered; address/ID/phone/internet/bank requirements, children accompanying clients, paperwork help and no-availability alternatives unknown. Confirm nights/weekends, transit, language and disability accommodations. No application submitted.\nReviewed and approved by Darice: All approved, proceed. November26,2026. Batch005 publication approval; later new results require review.\nBatch015 queue57/59: official FAQ rechecked November 27,2026. Boarding and optional spa baths/nails/ears/teeth confirmed; no full haircut service asserted. Meet-and-greet, vaccination records, dog license and spay/neuter over7months required. Boarding limited; current space unconfirmed. Fees quoted individually. No license audit performed.",
+      "lastVerified": "2026-11-27",
+      "tags": "dog daycare, dog boarding, small dogs, meet and greet, andover"
     },
     {
       "id": "reckpoVXt8lrCiCo3",
@@ -11963,6 +12288,23 @@
       ]
     },
     {
+      "id": "reclA3qmCXGxz2CnK",
+      "name": "Hartford HealthCare REACH: Home-Based Medical Care",
+      "track": "Elder Care",
+      "category": "Geriatric Care Manager",
+      "specificType": "Medical house calls and coordination with care team. Existing category is closest fit; this is clinical home-based care, not a standalone private care-manager service.",
+      "town": "Andover and other listed Connecticut towns",
+      "ages": "Patients50+ unable to leave home without assistance or requiring a mobility device",
+      "availability": "Official service-area list includes Andover. Appointment availability, referral rules and payer-specific acceptance require confirmation.",
+      "cost": "Accepts Medicaid, Medicare, Medicare Advantage and commercial insurance. Individual coverage and charges confirm; not advertised as universally free.",
+      "website": "https://hartfordhealthcaremedicalgroup.org/areas-of-care/geriatric-care/reach",
+      "contact": "860-243-4899 or844-272-2700; mggeriatricsreach@hhchealth.org",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch007 queue26. Official source inspected; Andover explicitly listed. Patient may contact appointment line; formal referral rule unknown. ID/address/phone/internet/bank barriers, children during visits, nights/weekends, paperwork assistance and no-slot alternatives unknown. Clinician comes to home; no public transit needed for that visit, office-trip options unverified. Language/disability arrangements confirm. No efficacy or availability promise. Dedupe REACH name found no matching program.\nReviewed and approved by Darice: All approved, proceed, November26,2026. Covers batch006–007 results only.",
+      "lastVerified": "2026-11-26",
+      "tags": "home medical visits, house calls, homebound, senior care, care coordination, andover"
+    },
+    {
       "id": "recyGtCrkgj2xcsPs",
       "name": "Hartford HealthCare Take the Time Mobile Mammography",
       "track": "Health & Dental",
@@ -11982,6 +12324,22 @@
       "notes": "Official provider/program source verified November 8, 2026: https://hartfordhealthcare.org/services/cancer-care/screening-diagnosis/mammography/mobile-mammography. Dental/health services added at Darice's request. Confirm current availability directly. No suitable existing health/dental Category option; keywords stored in Tags.",
       "lastVerified": "2026-11-08",
       "tags": "mobile clinic, mammogram, breast cancer, uninsured"
+    },
+    {
+      "id": "rec9R90QfOLxu2feD",
+      "name": "Hartford HealthCare: Dementia Caregiver Support and Groups",
+      "track": "Elder Care",
+      "category": "Caregiver Support Group",
+      "specificType": "Dementia specialists support family care partners; virtual and in-person caregiver groups offered across Connecticut. Call for local/current group details.",
+      "town": "Statewide",
+      "availability": "Current group meeting dates, space and registration requirements not listed on reviewed page.",
+      "cost": "Dementia-specialist support described as complimentary. Individual group fees/registration confirm when calling.",
+      "website": "https://hhcseniorservices.org/services/center-for-healthy-aging/services/dementia-care-support-services",
+      "contact": "Center for Healthy Aging:1-877-424-4641",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch004 Andover queue12 statewide option. Official provider source checked; no exact upcoming event created. Direct telephone inquiry offered. Address/ID/phone/internet/bank requirements unknown; agency referral requirement not stated; children attending unknown; tonight/weekend timing unknown; paperwork help and no-space alternatives unknown. Virtual participation requires confirming access arrangements. Transit/language/accommodations unknown. Dedupe by program URL and Center for Healthy Aging name found no existing matching record.\nReviewed and approved for publication by Darice in this conversation, November26,2026: All approved, proceed. Batch001–004 approval only; later new results require review.",
+      "lastVerified": "2026-11-26",
+      "tags": "caregiver support, dementia, alzheimers, virtual support group, family caregivers, statewide"
     },
     {
       "id": "recgXMUfDGeGAgS6i",
@@ -12261,6 +12619,22 @@
         "Preschool / Pre-K"
       ],
       "tags": "center-based daycare, childcare, torrington"
+    },
+    {
+      "id": "recosCpl7DHHzM37b",
+      "name": "Hole in the Wall Gang Camp: Free Medical Summer Camp",
+      "track": "Family & Childcare",
+      "category": "Medical / Diagnosis-Specific Camp",
+      "specificType": "Residential summer camp for children with qualifying serious illnesses. Application, medical forms and immunization records required; medical team decides suitability. Listed medical criteria and developmental requirements apply.",
+      "town": "Ashford; Northeast and Mid-Atlantic applicants including Connecticut",
+      "ages": "Ages7–15 with qualifying diagnosis and individual medical review; separate sibling/AYA eligibility.",
+      "availability": "2026 summer ended; official page says2027 dates will be announced in winter. No2027 opening/deadline asserted.",
+      "cost": "Camp programming free.",
+      "website": "https://www.holeinthewallgang.org/explore-programs/connecticut-location/summer-programs/",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch012 queue46. Official summer and eligibility pages inspected November26,2026. Eligibility: https://www.holeinthewallgang.org/explore-programs/connecticut-location/summer-programs/eligibility/ . Northeast/Mid-Atlantic residence criterion supports CT applicants, subject individual review. Family and sibling sessions have separate rules; cannot bring additional children without approval. Access without address/ID/phone/internet/bank account, language/ASL/disability accommodations, transit, paperwork help and alternatives when full remain unknown unless stated. No current opening guaranteed.\nDarice approved publication November27,2026; eligibility, cost and availability limits retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "free camp, medical camp, serious illness, sibling programs, ashford, statewide applicants"
     },
     {
       "id": "recDrFuTktCz3FZ36",
@@ -13863,6 +14237,21 @@
         "Preschool / Pre-K"
       ],
       "tags": "center-based daycare, childcare, west hartford"
+    },
+    {
+      "id": "rec9C55m3obBdAMDG",
+      "name": "La Leche League of Connecticut: Free Feeding Support",
+      "track": "Family & Childcare",
+      "category": "Lactation Support",
+      "specificType": "Volunteer feeding information and peer support, local and virtual meetings. Babies and nursing children welcome; not clinical medical treatment.",
+      "town": "Statewide",
+      "cost": "Meetings and accredited-volunteer assistance free; optional membership/donations separate.",
+      "website": "https://www.lllct.org/",
+      "contact": "860-222-0990; help@lllct.org; Spanish ayuda@lllct.org",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch010 queue38. Official homepage checked. Direct contact offered, Spanish resources linked. Current meeting dates and space not confirmed. Address/ID/phone/internet/bank requirements, children accompanying beyond stated policy, tonight/weekend timing, paperwork assistance and no-capacity alternatives unknown. Confirm accommodations, languages and transit before attending.\nDarice approved publication November 26, 2026.",
+      "lastVerified": "2026-11-26",
+      "tags": "breastfeeding support, lactation, parent support, virtual meetings, spanish, statewide"
     },
     {
       "id": "recLquDkqjjgOyFF3",
@@ -16863,6 +17252,21 @@
       "tags": "center-based daycare, childcare, naugatuck"
     },
     {
+      "id": "recFW22E1O1PikySz",
+      "name": "NECCOG Animal Services: Andover Animal Control Contact",
+      "track": "Pet Care & Resources",
+      "category": "Lost & Found Pet Services",
+      "specificType": "Official provider's indexed homepage lists Andover in its service area and includes found domestic animals among emergency dispatch categories. Contact to ask about a lost or found pet; reunion and shelter space not guaranteed.",
+      "town": "Andover and listed NECCOG partner towns",
+      "availability": "Indexed official provider page describes animal-control duty coverage 24/7. Routine lost-pet response timing and current capacity require confirmation.",
+      "cost": "Fees, impound and reclaim requirements not verified.",
+      "website": "https://neccoganimalservices.org/",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch011 queue42. First-party homepage indexed content retrieved by two search systems November26,2026. Direct homepage and animal-issues opens returned403; old neccog.org route404. Current direct page/contact check remains follow-up. No unverified phone copied from older municipal packet. Requirements for address, ID, phone, internet or bank account; children attending; paperwork help; languages/ASL/disability accommodations; transit and no-capacity alternatives remain unverified unless stated.\nDarice approved publication November 26, 2026. Existing verification limitations retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "lost pets, found pets, animal control, andover, neccog, regional"
+    },
+    {
       "id": "rece4CLfHzTBMD006",
       "name": "Neighborhood Health Project - Free Diabetes and Hypertension Screening",
       "track": "Health & Dental",
@@ -16928,6 +17332,21 @@
       "notes": "Official provider evidence checked2026-11-26; source: https://www.nstudios.org/register.html. New search result, Pending Review. No current opening guaranteed. Unless stated above, unknown: use without address/ID/phone/internet/bank account; self-referral rules; children accompanying adults; evening/weekend access; paperwork help; alternatives when full; language/ASL/disability accommodations; public-transit routes. Existing closest category used; precise topic in tags. County names are geographic coverage labels.\n\nReviewed and approved by Darice on 2026-11-26: explicit approval of the 19-resource statewide free classes batch. Set to Published. Availability and access qualifications remain in force.",
       "lastVerified": "2026-11-26",
       "tags": "free classes, teen arts, music, dance, theatre, bridgeport"
+    },
+    {
+      "id": "recNITrUQATWyUxGY",
+      "name": "Network Human Services: Andover Day Program",
+      "track": "Family & Childcare",
+      "category": "Disability & Accessibility Services",
+      "specificType": "Day support with educational, creative, recreational, volunteer and sensory activities. Adult-day category research lead; not confirmed as senior medical adult day care.",
+      "town": "Andover",
+      "availability": "Provider invites an introductory inquiry. Current openings and acceptance criteria unknown.",
+      "cost": "Fees, funding eligibility and referral requirements not published on reviewed pages.",
+      "website": "https://www.networkhumanservices.org/day-support",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch 001, queue cell 2. Official /services page explicitly names Andover day program; /day-support details activities. Manchester on-site nursing does not establish Andover nursing. Specific age limits and medical adult-day classification remain unresolved. Access questions: Address/ID/phone/internet/bank requirements unknown; self-referral versus required agency referral unknown; children accompanying visitors unknown; tonight/weekend availability unknown; paperwork assistance unknown; alternative when no spaces/funds unknown. Transit routes, languages and physical accessibility not verified. Contact provider before visiting. No availability or free-service guarantee.\nReviewed and approved for publication by Darice in this conversation, November26,2026: All approved, proceed. Batch001–004 approval only; later new results require review.",
+      "lastVerified": "2026-11-26",
+      "tags": "day support, disability services, sensory activities, computer skills, andover"
     },
     {
       "id": "recxIleRhQ5HCG1GD",
@@ -17813,14 +18232,14 @@
       ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-30",
-      "notes": "Regional Area Agency on Aging serving 38 north-central Connecticut towns. Services include Medicare counseling, aging information and assistance, family caregiver help, veterans assistance, healthy aging, and grants/funding.",
+      "notes": "Existing scope retained:Regional AAA serving38north-central CTtowns with Medicare counseling, aging assistance, caregiver help and veterans resources. Batch004 queue12/15:homepage explicitly lists Andover. Official /services-for-caregivers/ describes two respite programs using one application, need-based care and supplemental supplies; eligibility and funding restrictions apply. Respite is not proof of a scheduled support group or guaranteed companion assignment. Application online/paper and info@ncaaact.org for guidance. Unknown:ID/address/phone/bank barriers, self-referral documentation, accompanying children, tonight/weekend care, complete paperwork assistance and no-funds alternatives; ask agency. No current grant/slot promised. Sources https://ncaaact.org/ and https://ncaaact.org/services-for-caregivers/ . Prior Published preserved.",
       "servicesOffered": [
         "Elder Care",
         "Caregiver Support",
         "Disability Support"
       ],
-      "lastVerified": "2026-08-31",
-      "tags": "geriatric care manager, senior services, caregiver support, hartford"
+      "lastVerified": "2026-11-26",
+      "tags": "geriatric care manager, senior services, caregiver support, respite care, north central connecticut, andover, hartford"
     },
     {
       "id": "recSV0WMau2Dulavx",
@@ -19556,6 +19975,22 @@
       "tags": "senior center / congregate meals social programs, senior services, transportation, senior center, prospect"
     },
     {
+      "id": "recN7vunuEZW1ktiN",
+      "name": "PSI Connecticut: Perinatal Peer Support and Referrals",
+      "track": "Family & Childcare",
+      "category": "Perinatal Mental Health",
+      "specificType": "Pregnancy, postpartum and post-loss peer support, volunteer connections and provider referrals. Online support options. Peer support does not establish clinical treatment or emergency response.",
+      "town": "Statewide; online and telephone options",
+      "availability": "Leave confidential message for volunteer callback. English/Spanish options and translation on request described; current group dates and callback time unconfirmed.",
+      "cost": "PSI peer support programs free. Referred professional treatment has separate fees/insurance requirements.",
+      "website": "https://psichapters.com/ct/",
+      "contact": "PSI HelpLine 800-944-4773; Spanish text 971-203-7773",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch015 queue56. Official CT chapter and national support pages inspected November 27,2026; second search system checked. National source: https://postpartum.net/get-help/north-america/ . Self-request offered; no financial/legal assistance. Unless stated, address/ID/phone/internet/bank requirements, accompanying children, tonight/weekend access, paperwork help, languages/ASL/disability accommodations, transit and no-capacity alternatives remain unverified.\nDarice approved publication November 27, 2026; existing limits retained.",
+      "lastVerified": "2026-11-27",
+      "tags": "perinatal mental health, pregnancy, postpartum, peer support, free support, spanish, statewide"
+    },
+    {
       "id": "recKdMvDOL9XBAMXw",
       "name": "Putnam School Readiness Child Care Program",
       "track": "Family & Childcare",
@@ -19754,6 +20189,20 @@
       "notes": "Official source checked2026-11-26. Current stock, intake, documents, disability/language access, denied-applicant alternatives, off-hours/transport and application follow-up unknown unless specifically confirmed. Independently found lead, Pending Review. Existing closest category; description/tags specify precise service.",
       "lastVerified": "2026-11-26",
       "tags": "library resources, research databases, homework help, online learning"
+    },
+    {
+      "id": "recuYmk1bfxNfRzIr",
+      "name": "RHAM High School: Enrollment and Family Support",
+      "track": "Teens & High School",
+      "category": "High School (Public)",
+      "specificType": "Regional public high-school enrollment. Families in temporary housing may have school-enrollment rights; ask district for assistance.",
+      "town": "Hebron; serves Andover, Hebron and Marlborough",
+      "website": "https://rhs.rhamschools.org/studentenrollment",
+      "contact": "860-228-9474 x3435; susan.abbatomarco@rhamschools.org",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch008 queue29. Official school homepage confirms Andover service; enrollment source describes parent/guardian online forms, valid email, residency/health documents and affidavit option. Same source expressly addresses homeless students; missing fixed address must not be portrayed as automatic exclusion. Request district help for no-email/no-documents circumstances. Bank requirements, siblings at office, evening/weekend help, full paperwork support, alternatives, transit and accommodations unknown. No general nonresident admission promised.\nReviewed and approved by Darice: All approved, proceed, November26,2026. Batch008 approval only.",
+      "lastVerified": "2026-11-26",
+      "tags": "public high school, student enrollment, housing instability, school support, andover, hebron, marlborough"
     },
     {
       "id": "recnOntP6EZUUvTNz",
@@ -20481,6 +20930,22 @@
       "tags": "senior housing, affordable housing, waitlist, bridgeport, age 62, translation assistance"
     },
     {
+      "id": "rec3xldk38i0P9rOv",
+      "name": "Shake a Leg! Dog Walking and Pet Visits",
+      "track": "Pet Care & Resources",
+      "category": "Dog Walking",
+      "specificType": "At-home dog walks and pet visits. Partial Andover coverage must be confirmed by address. No overnight stay service.",
+      "town": "Hebron, Amston, Marlborough; selected Andover and Columbia areas",
+      "availability": "Daily visits in some Andover areas by confirmation. Vacation sitting listed only Hebron/Amston/Marlborough; no overnight home stays. Contact for current schedule.",
+      "cost": "Published2026 rates:20-minute visit$20;30-minute$25. Holiday and combined-service extras may apply.",
+      "website": "https://www.shakealegpetsitting.com/services",
+      "contact": "860-368-9125; shakefour@yahoo.com",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch005 queue18. Official service page checked; no household-wide or townwide coverage guarantee. Access: self-contact offered; address/ID/phone/internet/bank requirements, children accompanying clients, paperwork help and no-availability alternatives unknown. Confirm nights/weekends, transit, language and disability accommodations. No application submitted.\nReviewed and approved by Darice: All approved, proceed. November26,2026. Batch005 publication approval; later new results require review.\nBatch016 queue61: official services page rechecked November27,2026. Daily visits only SOME Andover areas; vacation sitting currently only Hebron/Amston/Marlborough. No overnight stay in client's home. Posted20min$20,30min$25; confirm quote and holiday fee. January2026 availability text is not a current slot guarantee.",
+      "lastVerified": "2026-11-27",
+      "tags": "dog walking, pet visits, cat care, andover, hebron, marlborough, columbia"
+    },
+    {
       "id": "recY74AhVxYSSejkE",
       "name": "Shalom Seventh Day Adventist Food Pantry",
       "track": "Food & Basic Needs",
@@ -20769,6 +21234,22 @@
         "Preschool / Pre-K"
       ],
       "tags": "center-based daycare, childcare, hamden"
+    },
+    {
+      "id": "recAzIwKQhrxcTySA",
+      "name": "Small Talk: Pediatric Speech Services in Andover",
+      "track": "Family & Childcare",
+      "category": "Pediatric Therapy (OT/PT/Speech)",
+      "specificType": "Pediatric speech/language services in Andover in familiar community settings; teletherapy also described. Listing establishes speech services, not OT or PT availability.",
+      "town": "Andover; other listed Connecticut towns; teletherapy",
+      "availability": "Contact provider for current availability and individual suitability. Provider advertising is not confirmation of an immediate appointment.",
+      "cost": "Screenings listed free; evaluations and treatment are separate services. Fees, insurance coverage, copays and referral requirements must be confirmed.",
+      "website": "https://www.smalltalkct.com/andover",
+      "contact": "860-385-4327; hi@smalltalkct.com",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch014 queue55. Direct Andover and locations pages inspected November 27, 2026. Free screening verified on locations page: https://www.smalltalkct.com/locations . No individual clinical recommendation, credential audit or insurance guarantee. Unless stated, address/ID/phone/internet/bank requirements, tonight/weekend help, paperwork assistance, languages/ASL/disability accommodations, transit and alternatives when full remain unverified.\nDarice approved publication November 27, 2026. Existing limits retained.",
+      "lastVerified": "2026-11-27",
+      "tags": "pediatric speech therapy, language support, free screening, paid treatment, teletherapy, andover"
     },
     {
       "id": "recwKNlfKvEDwYQvr",
@@ -21568,6 +22049,22 @@
       ]
     },
     {
+      "id": "recsk2HscQjjbFOB6",
+      "name": "Statewide Legal Services: Civil Legal Aid Advice and Referrals",
+      "track": "Food & Basic Needs",
+      "category": "Legal/HR Resource",
+      "specificType": "Advice and referrals for eligible Connecticut civil legal problems, including housing, public benefits, family and unemployment. Criminal and immigration matters excluded. Representation not guaranteed.",
+      "town": "Statewide",
+      "availability": "Phone or online application. For emergencies, provider directs callers to phone rather than online application. Phone waits and limited capacity possible.",
+      "cost": "Free for eligible applicants. Most services require household income at or below 125% federal poverty level; older adults may ask their local legal aid office about eligibility.",
+      "website": "https://slsct.org/get-help/",
+      "contact": "800-453-3320",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch011 queue40. Official get-help page and homepage inspected November26,2026. Dedupe domain and organization name found no existing entry. Self-request intake offered; acceptance depends on screening. Requirements for address, ID, phone, internet or bank account; children attending; paperwork help; languages/ASL/disability accommodations; transit and no-capacity alternatives remain unverified unless stated.\nDarice approved publication November 26, 2026. Existing verification limitations retained.",
+      "lastVerified": "2026-11-26",
+      "tags": "legal aid, civil legal services, housing, public benefits, unemployment, low income, statewide"
+    },
+    {
       "id": "recPTXpZVXPMhMfwJ",
       "name": "StayWell Health Center Dental Services",
       "track": "Health & Dental",
@@ -21977,7 +22474,9 @@
       "specificType": "Mobile affordable spay/neuter and vaccination clinic for domestic and feral cats",
       "town": "Westbrook",
       "address": "P.O. Box 591, Westbrook, CT 06498",
-      "ages": "Domestic and feral cats throughout Connecticut",
+      "ages": "Connecticut cats and caretakers. Cats at least5months; older than2years or health issues may affect acceptance.",
+      "availability": "Call888-367-8326 for current route and appointment; listed locations subject to change. No Andover stop or current opening confirmed.",
+      "cost": "Posted spay/neuter package $245; additional charges may apply. Confirm total before booking.",
       "website": "https://everyanimalmatters.org/mobile-spay-neuter/",
       "contact": "860-399-5569 or 888-367-8326; info@everyanimalmatters.org",
       "townsServed": [
@@ -21985,16 +22484,16 @@
       ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-30",
-      "notes": "Mobile feline spay/neuter and vaccination clinic. Any Connecticut cat, domestic or feral, is welcome; clinic travels to communities statewide.",
+      "notes": "Mobile feline spay/neuter and vaccination clinic. Any Connecticut cat, domestic or feral, is welcome; clinic travels to communities statewide.\nBatch011 queue43: direct provider page inspected November26,2026. Posted package and age/residency restrictions added; feral-cat partial rebate may apply, confirm individually. Requirements for address, ID, phone, internet or bank account; children attending; paperwork help; languages/ASL/disability accommodations; transit and no-capacity alternatives remain unverified unless stated.\nBatch013 queue48: official mobile service page rechecked November27,2026. Existing statewide cat eligibility and listed mobile stops retained; no Andover stop, date or slot confirmed. General house-call provider CT Mobile Vet calendar says no new clients and FAQ does not list Andover; not added as available local option.",
       "servicesOffered": [
         "Mobile Veterinary Service",
         "Spay/Neuter Assistance"
       ],
-      "lastVerified": "2026-08-31",
+      "lastVerified": "2026-11-27",
       "animals": [
         "Cats"
       ],
-      "tags": "mobile veterinary service, pet services, westbrook"
+      "tags": "mobile veterinary service, cats, spay neuter, vaccinations, low cost veterinary clinic, statewide"
     },
     {
       "id": "recUmHXZlPqtniiVO",
@@ -22327,6 +22826,22 @@
       "tags": "hospice / palliative care, senior services, caregiver support, branford"
     },
     {
+      "id": "recMF5ZRVSRWu0Xiu",
+      "name": "The Cove: Family Grief Support Program",
+      "track": "Family & Childcare",
+      "category": "Grief/Bereavement Support",
+      "town": "Statewide",
+      "ages": "Children5–17 grieving death of parent, direct caregiver or sibling, and families",
+      "availability": "2026–2027 program accepts rolling applications. Pre-registration intake is followed by full application and fit discussion, not guaranteed enrollment.",
+      "cost": "Family program free.",
+      "website": "https://www.covect.org/familyprogram",
+      "contact": "203-634-0500; info@covect.org",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch007 queue27. Official program source checked. Email-based application follow-up; provider requests5–7business days processing. Peer support, not assumed individual therapy. Exact site placement, ID/address/bank requirements, phone/internet alternatives, siblings, evening/weekend meetings, paperwork help, no-seat alternatives, transit and accommodations unknown. No dated teen event claimed, scheduleTBD. Dedupe domain found no existing Cove entry.\nReviewed and approved by Darice: All approved, proceed, November26,2026. Covers batch006–007 results only.",
+      "lastVerified": "2026-11-26",
+      "tags": "grief support, bereavement, children, teens, family support, free, statewide"
+    },
+    {
       "id": "rect0u5qlpz60NHoa",
       "name": "The First Academy",
       "track": "Family & Childcare",
@@ -22434,6 +22949,22 @@
         "Preschool / Pre-K"
       ],
       "tags": "center-based daycare, childcare, greenwich"
+    },
+    {
+      "id": "recFjfbwBI4qTDtgc",
+      "name": "The KB CT Doula: Birth and Postpartum Support",
+      "track": "Family & Childcare",
+      "category": "Doula Services",
+      "specificType": "Nonmedical birth/postpartum support with in-person and virtual options. Listed in official CMAP-enrolled doula directory.",
+      "town": "Waterbury; statewide service stated in DSS directory",
+      "availability": "Booking and individual Andover/home/hospital travel arrangements require confirmation; no opening guaranteed.",
+      "cost": "Provider advertises$0out-of-pocket eligible HUSKY doula services. Confirm individual covered services and eligibility; private packages/add-ons cost extra.",
+      "website": "https://thekbctdoula.org/",
+      "contact": "203-407-9983; info@thekbctdoula.org",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch005 queue19. Provider homepage and CTDSS CMAP directory checked: https://portal.ct.gov/dss/health-and-home-care/husky-maternity-bundle/cmap-enrolled-doulas . Nonmedical services only; unrelated products/health claims not endorsed or copied. Access: self-contact offered; address/ID/phone/internet/bank requirements, children accompanying clients, paperwork help and no-availability alternatives unknown. Confirm nights/weekends, transit, language and disability accommodations. No application submitted.\nReviewed and approved by Darice: All approved, proceed. November26,2026. Batch005 publication approval; later new results require review.",
+      "lastVerified": "2026-11-26",
+      "tags": "doula, pregnancy support, postpartum, husky, medicaid, waterbury, statewide"
     },
     {
       "id": "rechJ3Kuag9aDLgdq",
@@ -26073,6 +26604,22 @@
         "Toddler Care"
       ],
       "tags": "home daycare licensed, childcare, west hartford"
+    },
+    {
+      "id": "recY8NVyxV8Zy6yaA",
+      "name": "YMCA Camp Glawackus: Outdoor Day and Teen Camp",
+      "track": "Family & Childcare",
+      "category": "Nature / Outdoor Camp",
+      "specificType": "Nature activities, crafts, sports, STEM and swimming. Official provider lists Andover in service area. Before/after care listed as included in weekly price; current-year terms must be confirmed.",
+      "town": "Glastonbury; serves Andover and listed neighboring towns",
+      "ages": "Day camp ages 5–11; teen camp ages 12–15.",
+      "availability": "2027 pricing and registration coming soon; displayed 2026 weeks are past. No current slot or deadline asserted.",
+      "cost": "Paid camp; 2027 pricing pending. Provider directs financial-assistance applicants to apply for Care 4 Kids first, then YMCA assistance. Approval not guaranteed.",
+      "website": "https://www.ghymca.org/camps/glastonbury-ymca-camp-glawackus",
+      "submittedBy": "Village Notes Research",
+      "notes": "Batch014 queue53. Official page inspected November 27, 2026. Health forms required; medication paperwork where applicable. No Andover transport route confirmed. Unless stated, address/ID/phone/internet/bank requirements, tonight/weekend help, paperwork assistance, languages/ASL/disability accommodations, transit and alternatives when full remain unverified.\nDarice approved publication November 27, 2026. Existing limits retained.",
+      "lastVerified": "2026-11-27",
+      "tags": "outdoor camp, nature camp, teen camp, andover, glastonbury, financial assistance, paid camp"
     },
     {
       "id": "recAGbqXMS0M5Umqq",
