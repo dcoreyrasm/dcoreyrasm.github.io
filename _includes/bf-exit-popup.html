@@ -1,0 +1,93 @@
+<!-- Black Friday 2026 exit-intent popup: Claude for Beginners Part 2, 20% off with BLACKFRIDAY20. Expires 2026-11-27 11:59 PM ET. -->
+<div id="bfx" class="bfx" role="dialog" aria-modal="true" aria-labelledby="bfx-title" aria-describedby="bfx-desc" hidden>
+  <div class="bfx-backdrop" data-bfx-close></div>
+  <div class="bfx-card">
+    <button type="button" class="bfx-x" data-bfx-close aria-label="Close this offer">&times;</button>
+    <p class="bfx-kicker">Black Friday, tonight only</p>
+    <h2 id="bfx-title">Before you go, save 20% on your seat</h2>
+    <p id="bfx-desc">Join me for <strong>Claude for Beginners, Part 2: Having a Real Conversation with Claude</strong> on Sunday, December 6, 2:00 to 3:00 PM Eastern, live on Zoom. It's a small, friendly class, and you'll leave knowing how to use Claude safely in your everyday work.</p>
+    <p class="bfx-price"><span class="bfx-was">$50</span> <span class="bfx-now">$40</span> with code <strong>BLACKFRIDAY20</strong></p>
+    <a class="bfx-cta" id="bfx-cta" href="https://buy.stripe.com/aFabJ2bRt2Cv11U4GV6J20j?prefilled_promo_code=BLACKFRIDAY20" target="_blank" rel="noopener">Save my seat</a>
+    <button type="button" class="bfx-no" data-bfx-close>No thanks, maybe next time</button>
+    <p class="bfx-fine">The code is already applied at checkout. Offer ends tonight at 11:59 PM Eastern.</p>
+  </div>
+</div>
+<style>
+  .bfx[hidden]{display:none}
+  .bfx{position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;padding:16px;font-family:'DM Sans',sans-serif}
+  .bfx-backdrop{position:absolute;inset:0;background:rgba(22,19,31,.65)}
+  .bfx-card{position:relative;max-width:440px;width:100%;background:#fff;color:#16131F;border-radius:14px;padding:28px 24px 20px;box-shadow:0 20px 50px rgba(0,0,0,.35);text-align:center;border-top:6px solid #FDB926}
+  .bfx-kicker{margin:0 0 6px;font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#2a1a5e}
+  .bfx-card h2{font-family:'Playfair Display',serif;font-size:26px;line-height:1.2;margin:0 0 12px;color:#2a1a5e}
+  .bfx-card p{font-size:16px;line-height:1.5;margin:0 0 12px}
+  .bfx-price{font-size:17px}
+  .bfx-was{text-decoration:line-through;color:#5b5670}
+  .bfx-now{font-size:24px;font-weight:700;color:#2a1a5e}
+  .bfx-cta{display:block;background:#2a1a5e;color:#fff;font-weight:700;font-size:17px;padding:14px 18px;border-radius:10px;text-decoration:none;margin:4px 0 10px}
+  .bfx-cta:hover,.bfx-cta:focus{background:#3d2a80;color:#fff}
+  .bfx-no{background:none;border:0;color:#2a1a5e;text-decoration:underline;font-size:15px;cursor:pointer;padding:8px;font-family:inherit}
+  .bfx-fine{font-size:13px !important;color:#5b5670;margin:8px 0 0 !important}
+  .bfx-x{position:absolute;top:8px;right:10px;background:none;border:0;font-size:28px;line-height:1;color:#2a1a5e;cursor:pointer;padding:6px 10px}
+  .bfx-cta:focus-visible,.bfx-no:focus-visible,.bfx-x:focus-visible{outline:3px solid #FDB926;outline-offset:2px}
+</style>
+<script>
+(function(){
+  var END = Date.UTC(2026, 10, 28, 4, 59, 59); /* Nov 27, 11:59:59 PM ET */
+  var KEY = 'bfx-2026-seen';
+  var el = document.getElementById('bfx');
+  if (!el) return;
+  if (Date.now() > END) { el.remove(); return; }
+  var params = new URLSearchParams(location.search);
+  var preview = params.get('bfx') === 'preview';
+  function seen(){ try { return sessionStorage.getItem(KEY) === '1' || localStorage.getItem('bfx-2026-bought') === '1'; } catch(e){ return false; } }
+  function mark(){ try { sessionStorage.setItem(KEY, '1'); } catch(e){} }
+  if (seen() && !preview) return;
+  var shown = false, lastFocus = null, armed = false;
+  function track(name){ try { if (window.gtag) gtag('event', name, {campaign: 'black-friday-2026'}); } catch(e){} }
+  function focusables(){ return el.querySelectorAll('a[href],button'); }
+  function show(){
+    if (shown || Date.now() > END) return;
+    shown = true; mark(); lastFocus = document.activeElement;
+    el.hidden = false; document.body.style.overflow = 'hidden';
+    document.getElementById('bfx-cta').focus();
+    track('bf_popup_view');
+  }
+  function hide(){
+    el.hidden = true; document.body.style.overflow = '';
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  el.addEventListener('click', function(e){ if (e.target.closest('[data-bfx-close]')) { hide(); track('bf_popup_dismiss'); } });
+  document.getElementById('bfx-cta').addEventListener('click', function(){ track('bf_popup_click'); hide(); });
+  document.addEventListener('keydown', function(e){
+    if (el.hidden) return;
+    if (e.key === 'Escape') { hide(); track('bf_popup_dismiss'); }
+    if (e.key === 'Tab') {
+      var f = focusables(), first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  if (preview) { setTimeout(show, 300); return; }
+  /* Wait a few seconds so it never fires the moment the page opens */
+  setTimeout(function(){ armed = true; }, 5000);
+  /* Computer: mouse leaves through the top of the window */
+  document.addEventListener('mouseout', function(e){
+    if (armed && !e.relatedTarget && e.clientY <= 0) show();
+  });
+  /* Phone and tablet: halfway down the page, or a quick scroll back toward the top */
+  var touch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+  if (touch) {
+    var lastY = window.scrollY, lastT = Date.now(), maxY = 0;
+    window.addEventListener('scroll', function(){
+      if (!armed || shown) return;
+      var y = window.scrollY, t = Date.now();
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      maxY = Math.max(maxY, y);
+      if (h > 0 && y / h >= 0.5) { show(); return; }
+      var speed = (lastY - y) / Math.max(t - lastT, 1); /* px per ms, upward */
+      if (maxY > window.innerHeight && speed > 1.5) show();
+      lastY = y; lastT = t;
+    }, {passive: true});
+  }
+})();
+</script>
