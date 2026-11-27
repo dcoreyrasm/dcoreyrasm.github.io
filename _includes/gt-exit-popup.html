@@ -1,0 +1,105 @@
+<!-- Giving Tuesday 2026 exit-intent popup: buy a full series at full price, give a free seat. Runs Tue Dec 1, 12:00 AM to 11:59 PM ET only. Series pages show their own bundle; other pages show all four. -->
+<div id="gtx" class="gtx" role="dialog" aria-modal="true" aria-labelledby="gtx-title" aria-describedby="gtx-desc" hidden>
+  <div class="gtx-backdrop" data-gtx-close></div>
+  <div class="gtx-card">
+    <button type="button" class="gtx-x" data-gtx-close aria-label="Close this offer">&times;</button>
+    <p class="gtx-kicker">Giving Tuesday, today only</p>
+    <h2 id="gtx-title">Buy a series, give a seat</h2>
+    <p id="gtx-desc">Today, every full series you buy gives a free seat to someone else: a friend, a neighbor, or a community group you choose. If you don't name anyone, I'll give the seat to someone through a community partner.</p>
+    <div class="gtx-options">
+      <a class="gtx-cta" data-series="claude" href="https://buy.stripe.com/14AcN6f3Fb9111Uc9n6J20C" target="_blank" rel="noopener"><span class="gtx-name">Claude for Beginners, all 4 parts</span><span class="gtx-price">$200</span></a>
+      <a class="gtx-cta" data-series="put-claude" href="https://buy.stripe.com/4gMbJ25t57WPh0S7T76J20F" target="_blank" rel="noopener"><span class="gtx-name">Put Claude to Work in Your Business, all 4 parts, starts Jan 3</span><span class="gtx-price">$297</span></a>
+      <a class="gtx-cta" data-series="gemini" href="https://buy.stripe.com/5kQ28s5t50un8um4GV6J20D" target="_blank" rel="noopener"><span class="gtx-name">Gemini for Beginners, all 4 parts, starts Jan 31</span><span class="gtx-price">$200</span></a>
+      <a class="gtx-cta" data-series="copilot" href="https://buy.stripe.com/cNi7sM9Jl6SL6meflz6J20E" target="_blank" rel="noopener"><span class="gtx-name">Copilot for Beginners, all 4 parts, starts Feb 4</span><span class="gtx-price">$200</span></a>
+    </div>
+    <button type="button" class="gtx-no" data-gtx-close>No thanks, maybe next time</button>
+    <p class="gtx-fine">Full price, no code needed. You'll tell me who gets the free seat at checkout. This is a class purchase, not a tax-deductible donation.</p>
+  </div>
+</div>
+<style>
+  .gtx[hidden]{display:none}
+  .gtx{position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;padding:16px;font-family:'DM Sans',sans-serif}
+  .gtx-backdrop{position:absolute;inset:0;background:rgba(22,19,31,.65)}
+  .gtx-card{position:relative;max-width:460px;width:100%;max-height:calc(100vh - 32px);overflow-y:auto;background:#fff;color:#16131F;border-radius:14px;padding:28px 22px 18px;box-shadow:0 20px 50px rgba(0,0,0,.35);text-align:center;border-top:6px solid #FDB926}
+  .gtx-kicker{margin:0 0 6px;font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#2a1a5e}
+  .gtx-card h2{font-family:'Playfair Display',serif;font-size:26px;line-height:1.2;margin:0 0 12px;color:#2a1a5e}
+  .gtx-card p{font-size:16px;line-height:1.5;margin:0 0 12px}
+  .gtx-options{display:flex;flex-direction:column;gap:8px;margin:4px 0 8px}
+  .gtx-cta{display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;background:#2a1a5e;color:#fff;font-weight:700;font-size:15px;padding:12px 16px;border-radius:10px;text-decoration:none}
+  .gtx-cta:hover,.gtx-cta:focus{background:#3d2a80;color:#fff}
+  .gtx-price{white-space:nowrap;color:#FDB926;font-size:17px}
+  .gtx-no{background:none;border:0;color:#2a1a5e;text-decoration:underline;font-size:15px;cursor:pointer;padding:8px;font-family:inherit}
+  .gtx-fine{font-size:13px !important;color:#5b5670;margin:6px 0 0 !important}
+  .gtx-x{position:absolute;top:8px;right:10px;background:none;border:0;font-size:28px;line-height:1;color:#2a1a5e;cursor:pointer;padding:6px 10px}
+  .gtx-cta:focus-visible,.gtx-no:focus-visible,.gtx-x:focus-visible{outline:3px solid #FDB926;outline-offset:2px}
+</style>
+<script>
+(function(){
+  var START = Date.UTC(2026, 11, 1, 5, 0, 0);   /* Tue Dec 1, 12:00 AM ET */
+  var END = Date.UTC(2026, 11, 2, 4, 59, 59);   /* Tue Dec 1, 11:59:59 PM ET */
+  var KEY = 'gtx-2026-seen';
+  var el = document.getElementById('gtx');
+  if (!el) return;
+  var preview = new URLSearchParams(location.search).get('gtx') === 'preview';
+  if (Date.now() > END || (Date.now() < START && !preview)) { el.remove(); return; }
+  /* On a series page, offer only that series */
+  var path = location.pathname, only = null;
+  if (path.indexOf('put-claude-to-work') > -1) only = 'put-claude';
+  else if (path.indexOf('claude-for-beginners') > -1) only = 'claude';
+  else if (path.indexOf('gemini-for-beginners') > -1) only = 'gemini';
+  else if (path.indexOf('copilot-for-beginners') > -1) only = 'copilot';
+  if (only) {
+    el.querySelectorAll('.gtx-cta').forEach(function(a){ if (a.getAttribute('data-series') !== only) a.remove(); });
+  }
+  function seen(){ try { return sessionStorage.getItem(KEY) === '1'; } catch(e){ return false; } }
+  function mark(){ try { sessionStorage.setItem(KEY, '1'); } catch(e){} }
+  if (seen() && !preview) return;
+  var shown = false, lastFocus = null, armed = false;
+  function track(name, extra){ try { if (window.gtag) gtag('event', name, Object.assign({campaign: 'giving-tuesday-2026'}, extra || {})); } catch(e){} }
+  function focusables(){ return el.querySelectorAll('a[href],button'); }
+  function show(){
+    if (shown) return;
+    shown = true; mark(); lastFocus = document.activeElement;
+    el.hidden = false; document.body.style.overflow = 'hidden';
+    el.querySelector('.gtx-cta').focus();
+    track('gt_popup_view');
+  }
+  function hide(){
+    el.hidden = true; document.body.style.overflow = '';
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  el.addEventListener('click', function(e){
+    var a = e.target.closest('.gtx-cta');
+    if (a) { track('gt_popup_click', {series: a.getAttribute('data-series')}); hide(); return; }
+    if (e.target.closest('[data-gtx-close]')) { hide(); track('gt_popup_dismiss'); }
+  });
+  document.addEventListener('keydown', function(e){
+    if (el.hidden) return;
+    if (e.key === 'Escape') { hide(); track('gt_popup_dismiss'); }
+    if (e.key === 'Tab') {
+      var f = focusables(), first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  if (preview) { setTimeout(show, 300); return; }
+  setTimeout(function(){ armed = true; }, 5000);
+  document.addEventListener('mouseout', function(e){
+    if (armed && !e.relatedTarget && e.clientY <= 0) show();
+  });
+  var touch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+  if (touch) {
+    var lastY = window.scrollY, lastT = Date.now(), maxY = 0;
+    window.addEventListener('scroll', function(){
+      if (!armed || shown) return;
+      var y = window.scrollY, t = Date.now();
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      maxY = Math.max(maxY, y);
+      if (h > 0 && y / h >= 0.5 && !window.__popupExitOnly) { show(); return; }
+      var speed = (lastY - y) / Math.max(t - lastT, 1);
+      if (maxY > window.innerHeight && speed > 1.5) show();
+      lastY = y; lastT = t;
+    }, {passive: true});
+  }
+})();
+</script>

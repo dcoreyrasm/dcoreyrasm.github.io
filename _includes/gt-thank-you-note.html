@@ -1,0 +1,14 @@
+<!-- Giving Tuesday 2026: thank-you note for buyers who came through a Giving Tuesday checkout link (?gt=1) -->
+<script>
+(function(){
+  try {
+    if (new URLSearchParams(location.search).get('gt') !== '1') return;
+    var m = document.querySelector('main'); if (!m) return;
+    var d = document.createElement('div');
+    d.setAttribute('role', 'status');
+    d.style.cssText = "background:#FFF6DB;border-left:6px solid #FDB926;color:#16131F;font-family:'DM Sans',sans-serif;font-size:17px;line-height:1.5;padding:16px 20px;margin:16px auto;max-width:900px;border-radius:8px;";
+    d.innerHTML = "<strong>Thank you for giving a seat this Giving Tuesday.</strong> Your purchase gives someone else a free seat in this series. If you named someone at checkout, I'll reach out to them. If not, I'll give the seat to someone through a community partner.";
+    m.insertBefore(d, m.firstChild);
+  } catch(e) {}
+})();
+</script>
