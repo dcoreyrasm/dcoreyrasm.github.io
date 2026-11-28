@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-27T18:05:49.891Z",
+  "generated": "2026-11-28T18:05:45.608Z",
   "source": {
     "base": "appxUByKs5ULrDZQp",
     "table": "tbltzLo6IdBIfjkL7",
     "filter": "OR({Moderation Status} = \"Published\",AND({Submitted By} = \"Village Notes Research\",{Source Type} != \"\",{Moderation Status} != \"Flagged\",{Moderation Status} != \"Removed\"))"
   },
-  "count": 1100,
+  "count": 1101,
   "tracks": [
     "Elder Care",
     "Family & Childcare",
@@ -14808,6 +14808,25 @@
       "tags": "clothing closet, hygiene items, family clothing, baby clothing, children's clothing, housing instability, reentry support, financial hardship, seasonal clothing, new haven"
     },
     {
+      "id": "recMws9F5B1wtvieY",
+      "name": "Loaves & Fishes New Haven: Saturday Food Pantry",
+      "track": "Food & Basic Needs",
+      "category": "Food Bank / Food Pantry",
+      "specificType": "Groceries including fresh produce, meat/eggs and culturally appropriate staples. Official food page: Saturdays8:30–10:30AM,57OliveStreet. Limited delivery partnerships with VA/Agency on Aging; not universal home delivery. No Thanksgiving-Day service confirmed.",
+      "town": "Greater New Haven",
+      "address": "57 Olive Street, New Haven, CT",
+      "cost": "Cost and documents/referral/household rules require confirmation.",
+      "website": "https://loavesandfishesnh.com/food/",
+      "contact": "Official contact link; pantry57OliveStreet",
+      "submittedBy": "Village Notes Research",
+      "dateSubmitted": "2026-11-26",
+      "notes": "Official source checked 2026-11-26. Holiday update 2026-11-28: a Loaves & Fishes Facebook post confirmed the pantry is open Saturday, November 28, during regular pantry hours at 57 Olive Street, New Haven. Please check before you go: ID, address, phone, and paperwork rules, self-referral, language and ASL support, physical access, and bus routes are not confirmed yet.",
+      "lastVerified": "2026-11-28",
+      "event": "Open Saturday after Thanksgiving (Nov 28) during regular pantry hours",
+      "eventDate": "2026-11-28",
+      "tags": "food pantry, saturday groceries, weekend food, culturally appropriate food, new haven"
+    },
+    {
       "id": "recE7vPagSJGQqTYM",
       "name": "Long Ridge Road Child Development Center",
       "track": "Family & Childcare",
@@ -23826,19 +23845,25 @@
       "category": "STEM/Tech Camp",
       "specificType": "Artificial intelligence, programming, responsible use, and engineering",
       "town": "Storrs",
-      "ages": "Rising grades 9–12; younger students who completed Algebra I may apply",
-      "hours": "July 27–31, 2026; attendance required all five days",
-      "availability": "2026 first-consideration deadline was July 1.",
+      "ages": "Rising grades 9–12; younger students who completed Algebra I may apply. No prior coding experience required; all five days required.",
+      "hours": "July 27–31, 2027, in person at UConn Storrs. Drop-off 8:30–9:00 a.m.; program 9:00 a.m.–4:00 p.m.; pick-up 4:00–4:30 p.m.",
+      "availability": "Application opens February 1, 2027. Early-bird deadline March 1; standard deadline June 1. Decisions sent July 8; commitment and payment due July 15. No current application can be submitted before the opening date.",
+      "cost": "$250 for the 2027 five-day program, including morning snacks, lunch and supplies. 50% or 100% need-based assistance is available through the application; award is not guaranteed.",
       "website": "https://vergnano.institute.uconn.edu/programs-opportunities/ai-summer-camp/",
+      "contact": "AIcamp@uconn.edu; Vergnano Institute 860-486-5536",
       "townsServed": [
         "Mansfield"
       ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
-      "registrationStatus": "Past Cycle",
+      "notes": "Batch019 queue74 reviewed November28,2026. Official UConn page supports the 2027 dates, $250 fee, snacks/lunch/supplies, 50% or 100% need-based assistance, application dates, no-prior-coding requirement and stated neurodivergent inclusion. The page does not publish a residency rule, so Andover/statewide eligibility is not inferred and Towns Served remains Mansfield only. Transportation, language/ASL support, address/ID/phone/internet/bank alternatives, hands-on application help, extended hours and a denial appeal route are not stated. Published status preserved.",
+      "registrationStatus": "Registration Opens Later",
+      "financialAid": "Yes",
       "schoolDayCoverage": "Not Confirmed",
       "servicesOffered": [
-        "STEM Enrichment"
+        "STEM Enrichment",
+        "Summer Camp",
+        "Summer Day Camp"
       ],
       "daysOffered": [
         "Monday",
@@ -23848,9 +23873,12 @@
         "Friday"
       ],
       "programLength": "Full Day",
-      "programYear": "Summer 2026",
-      "lastVerified": "2026-08-25",
-      "tags": "stem/tech camp, summer camp, storrs"
+      "registrationOpens": "2027-02-01",
+      "registrationCloses": "2027-06-01",
+      "accessibility": "Provider states neurodivergent students are welcome and accommodations can be supported; exact arrangements require individual confirmation.",
+      "programYear": "Summer 2027",
+      "lastVerified": "2026-11-28",
+      "tags": "ai camp, artificial intelligence, machine learning, python, coding, high school, summer day camp, storrs, financial assistance, neurodivergent students, no prior coding experience"
     },
     {
       "id": "rec5niPZqG2bEPVYH",
@@ -24113,27 +24141,38 @@
       "category": "STEM/Tech Camp",
       "specificType": "Project-based engineering, science, invention, and innovation camp",
       "town": "Storrs",
-      "ages": "Middle school girls interested in STEM",
-      "hours": "Residential weekly sessions: June 28–July 3, July 5–10, and July 12–17, 2026",
-      "availability": "2026 application deadline was May 1.",
+      "ages": "Middle school girls currently in grades 5–7 (rising grades 6–8); homeschool and out-of-state students welcome. Neurodivergent students are welcome.",
+      "hours": "Summer 2027 sessions: June 27–July 2, July 5–10, and July 12–17. Day and residential formats are offered; no weekend programming between sessions.",
+      "availability": "Applications open. Early Decision October 19, 2026–February 1, 2027; Early Bird February 1–March 1; standard deadline April 15. Acceptance and financial-aid decisions follow the published schedule. Admission and aid are not guaranteed.",
+      "cost": "2027: day camp $500 early bird or $700 standard per session; overnight $1,000 early bird or $1,500 standard per session. Need-based 50%, 75%, or 100% assistance may be available; full waiver requires a $100 refundable deposit. Payment-plan limits apply.",
       "website": "https://vergnano.institute.uconn.edu/programs-opportunities/spark-summer-program/",
+      "contact": "engr-spark@uconn.edu; 860-486-5536",
       "townsServed": [
-        "Mansfield"
+        "Mansfield",
+        "Statewide (all of Connecticut)"
       ],
       "submittedBy": "Village Notes Research",
       "dateSubmitted": "2026-08-25",
-      "registrationStatus": "Past Cycle",
+      "notes": "Batch019 queue74 reviewed November28,2026. Official UConn page supports the 2027 dates, application windows, cost, need-based aid, day and overnight formats, out-of-state access, homeschool eligibility and stated neurodivergent inclusion. Out-of-state access supports statewide Connecticut reach, including Andover, but transportation from Andover is not provided or verified. Airport coordination is described; individual transportation costs are not covered. Address/ID/phone/internet/bank alternatives, language/ASL support, hands-on application help and a denial appeal route are not stated. Published status preserved.",
+      "registrationStatus": "Open",
+      "financialAid": "Yes",
       "schoolDayCoverage": "Varies",
       "servicesOffered": [
-        "STEM Enrichment"
+        "STEM Enrichment",
+        "Summer Camp",
+        "Summer Day Camp",
+        "Summer Sleepaway Camp"
       ],
       "scheduleWindow": [
         "Overnight"
       ],
       "programLength": "Overnight",
-      "programYear": "Summer 2026",
-      "lastVerified": "2026-08-25",
-      "tags": "stem/tech camp, storrs"
+      "registrationOpens": "2026-10-19",
+      "registrationCloses": "2027-04-15",
+      "accessibility": "Provider states neurodivergent students are welcome and it is ready to support them; exact accommodations require individual confirmation.",
+      "programYear": "Summer 2027",
+      "lastVerified": "2026-11-28",
+      "tags": "stem camp, engineering camp, science camp, middle school, girls, residential camp, day camp, storrs, statewide, financial assistance, neurodivergent students, homeschool"
     },
     {
       "id": "rec6ITP7HtcY2X3S6",
@@ -26612,14 +26651,34 @@
       "category": "Nature / Outdoor Camp",
       "specificType": "Nature activities, crafts, sports, STEM and swimming. Official provider lists Andover in service area. Before/after care listed as included in weekly price; current-year terms must be confirmed.",
       "town": "Glastonbury; serves Andover and listed neighboring towns",
+      "address": "30 High Street, South Glastonbury, CT 06073",
       "ages": "Day camp ages 5–11; teen camp ages 12–15.",
+      "hours": "Published daily schedule: before camp 7:00–9:00 a.m.; camp day 9:00 a.m.–4:00 p.m.; after camp 4:00–6:00 p.m. Summer 2027 session dates are not yet posted.",
       "availability": "2027 pricing and registration coming soon; displayed 2026 weeks are past. No current slot or deadline asserted.",
-      "cost": "Paid camp; 2027 pricing pending. Provider directs financial-assistance applicants to apply for Care 4 Kids first, then YMCA assistance. Approval not guaranteed.",
+      "cost": "Paid camp; 2027 pricing pending. Provider directs financial-assistance applicants to apply for Care 4 Kids first, then YMCA assistance. Approval is not guaranteed.",
       "website": "https://www.ghymca.org/camps/glastonbury-ymca-camp-glawackus",
+      "contact": "860-633-6548; campglawackus@ghymca.org",
+      "townsServed": [
+        "Andover",
+        "Colchester",
+        "Glastonbury",
+        "Hebron",
+        "Marlborough"
+      ],
       "submittedBy": "Village Notes Research",
-      "notes": "Batch014 queue53. Official page inspected November 27, 2026. Health forms required; medication paperwork where applicable. No Andover transport route confirmed. Unless stated, address/ID/phone/internet/bank requirements, tonight/weekend help, paperwork assistance, languages/ASL/disability accommodations, transit and alternatives when full remain unverified.\nDarice approved publication November 27, 2026. Existing limits retained.",
-      "lastVerified": "2026-11-27",
-      "tags": "outdoor camp, nature camp, teen camp, andover, glastonbury, financial assistance, paid camp"
+      "notes": "Batch014 queue53. Official page inspected November 27, 2026. Health forms required; medication paperwork where applicable. No Andover transport route confirmed. Unless stated, address/ID/phone/internet/bank requirements, tonight/weekend help, paperwork assistance, languages/ASL/disability accommodations, transit and alternatives when full remain unverified.\nDarice approved publication November 27, 2026. Existing limits retained.\nBatch019 queues72,73,75 reviewed November28,2026. Official page confirms Andover in the service area and lists sports, STEM, archery, swimming, nature, day-camp and teen-camp activities. It is not presented as a dedicated sports-only or STEM-only camp. Summer2027 pricing and registration are still coming soon; 2026 dates are past. Published status preserved.",
+      "registrationStatus": "Opening Soon",
+      "financialAid": "Yes",
+      "servicesOffered": [
+        "Sports Enrichment",
+        "STEM Enrichment",
+        "Summer Camp",
+        "Summer Day Camp",
+        "Teen Program"
+      ],
+      "programYear": "Summer 2027 information pending",
+      "lastVerified": "2026-11-28",
+      "tags": "outdoor camp, nature camp, summer day camp, teen camp, sports activities, stem activities, archery, swimming, andover, glastonbury, financial assistance, paid camp"
     },
     {
       "id": "recAGbqXMS0M5Umqq",

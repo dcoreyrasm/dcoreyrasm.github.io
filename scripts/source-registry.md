@@ -56,7 +56,6 @@ now.
   bgcastamford.org                   1  never        Family & Childcare
   greenwichymca.org                  1  never        Family & Childcare
   darien-ymca.org                    3  2026-08-25   Family & Childcare
-  vergnano.institute.uconn.edu       3  2026-08-25   Family & Childcare
   leapforkids.org                    2  2026-08-25   Family & Childcare
   sigmacamp.org                      2  2026-08-25   Family & Childcare
   daddybackwardsentertainment.com    1  2026-08-25   Family & Childcare
@@ -270,7 +269,6 @@ now.
   homeforgoodct.org                  1  2026-10-31   Family & Childcare
   immanuelbaptistnewhaven.org        1  2026-10-31   Food & Basic Needs
   karmasclosetct.com                 1  2026-10-31   Family & Childcare
-  loavesandfishesnh.com              1  2026-10-31   Food & Basic Needs
   visitingnurse.net                  1  2026-10-31   Family & Childcare
   oldstonechurchucc.org              1  2026-10-31   Family & Childcare
   visitlitchfieldct.com              1  2026-10-31   Family & Childcare
@@ -470,7 +468,6 @@ now.
   ynhhs.org                          1  2026-11-26   Health & Dental
   portal.ct.gov                     56  2026-11-27   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
   cthumane.org                       8  2026-11-27   Pet Care & Resources
-  ghymca.org                         6  2026-11-27   Family & Childcare
   ahmyouth.org                       2  2026-11-27   Elder Care, Family & Childcare
   andoverelementaryct.org            2  2026-11-27   Family & Childcare
   cuvs.org                           2  2026-11-27   Pet Care & Resources
@@ -483,6 +480,9 @@ now.
   shakealegpetsitting.com            1  2026-11-27   Pet Care & Resources
   smalltalkct.com                    1  2026-11-27   Family & Childcare
   everyanimalmatters.org             1  2026-11-27   Pet Care & Resources
+  ghymca.org                         6  2026-11-28   Family & Childcare
+  vergnano.institute.uconn.edu       3  2026-11-28   Family & Childcare
+  loavesandfishesnh.com              2  2026-11-28   Food & Basic Needs
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -507,7 +507,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 693 of 1100 listings (63%) carry a Website, so
+Only 694 of 1101 listings (63%) carry a Website, so
 everything above is built from that third of the directory. The other
 407 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently

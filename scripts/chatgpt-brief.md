@@ -855,7 +855,6 @@ now.
   bgcastamford.org                   1  never        Family & Childcare
   greenwichymca.org                  1  never        Family & Childcare
   darien-ymca.org                    3  2026-08-25   Family & Childcare
-  vergnano.institute.uconn.edu       3  2026-08-25   Family & Childcare
   leapforkids.org                    2  2026-08-25   Family & Childcare
   sigmacamp.org                      2  2026-08-25   Family & Childcare
   daddybackwardsentertainment.com    1  2026-08-25   Family & Childcare
@@ -1069,7 +1068,6 @@ now.
   homeforgoodct.org                  1  2026-10-31   Family & Childcare
   immanuelbaptistnewhaven.org        1  2026-10-31   Food & Basic Needs
   karmasclosetct.com                 1  2026-10-31   Family & Childcare
-  loavesandfishesnh.com              1  2026-10-31   Food & Basic Needs
   visitingnurse.net                  1  2026-10-31   Family & Childcare
   oldstonechurchucc.org              1  2026-10-31   Family & Childcare
   visitlitchfieldct.com              1  2026-10-31   Family & Childcare
@@ -1269,7 +1267,6 @@ now.
   ynhhs.org                          1  2026-11-26   Health & Dental
   portal.ct.gov                     56  2026-11-27   Elder Care, Family & Childcare, Food & Basic Needs, Health & Dental, Pet Care & Resources, Teens & High School
   cthumane.org                       8  2026-11-27   Pet Care & Resources
-  ghymca.org                         6  2026-11-27   Family & Childcare
   ahmyouth.org                       2  2026-11-27   Elder Care, Family & Childcare
   andoverelementaryct.org            2  2026-11-27   Family & Childcare
   cuvs.org                           2  2026-11-27   Pet Care & Resources
@@ -1282,6 +1279,9 @@ now.
   shakealegpetsitting.com            1  2026-11-27   Pet Care & Resources
   smalltalkct.com                    1  2026-11-27   Family & Childcare
   everyanimalmatters.org             1  2026-11-27   Pet Care & Resources
+  ghymca.org                         6  2026-11-28   Family & Childcare
+  vergnano.institute.uconn.edu       3  2026-11-28   Family & Childcare
+  loavesandfishesnh.com              2  2026-11-28   Food & Basic Needs
 
 HUBS AND DIRECTORIES — check these every run regardless of the dates above.
 
@@ -1306,7 +1306,7 @@ not have yet shows up. Most will not become a listing themselves.
 
 WHAT THIS LIST DOES NOT COVER
 
-Only 693 of 1100 listings (63%) carry a Website, so
+Only 694 of 1101 listings (63%) carry a Website, so
 everything above is built from that third of the directory. The other
 407 have no URL recorded at all, which means nobody -- not you,
 not Darice, not a parent -- can go back and check them. They are permanently
@@ -1334,17 +1334,17 @@ between sessions: read them fresh from this section each time this brief is
 given to you, and if you are working from a remembered figure you are working
 from a gap that has already moved.
 
-1100 listings across 249 Connecticut towns of 169.
+1101 listings across 249 Connecticut towns of 169.
 
 That breadth is real. The depth behind it is the problem:
 
-  a website              693 / 1100   63%   the single most valuable gap: without a URL nobody can ever re-check the listing
-  operating hours        228 / 1100   21%   the specific promise on the front of the page
-  a real cost note       377 / 1100   34%   excludes the state-fee boilerplate
-  a real waitlist note   241 / 1100   22%   excludes the "contact the program directly" boilerplate
-  a verified date        639 / 1100   58%   without one we cannot tell fresh from forgotten
-  a phone or email       883 / 1100   80%
-  services tagged        698 / 1100   63%   what makes a listing findable beyond its one category
+  a website              694 / 1101   63%   the single most valuable gap: without a URL nobody can ever re-check the listing
+  operating hours        229 / 1101   21%   the specific promise on the front of the page
+  a real cost note       380 / 1101   35%   excludes the state-fee boilerplate
+  a real waitlist note   241 / 1101   22%   excludes the "contact the program directly" boilerplate
+  a verified date        640 / 1101   58%   without one we cannot tell fresh from forgotten
+  a phone or email       887 / 1101   81%
+  services tagged        699 / 1101   63%   what makes a listing findable beyond its one category
 
 A listing can carry a value and still say nothing. Two boilerplate lines were
 written onto hundreds of records by the original state import -- "Contact the
@@ -1358,7 +1358,7 @@ that sounds more specific than what you actually know.
 WEBSITE COVERAGE BY TRACK
 
   Family & Childcare      695 listings, 288 with a website (41%)
-  Food & Basic Needs      124 listings, 124 with a website (100%)
+  Food & Basic Needs      125 listings, 125 with a website (100%)
   Teens & High School      97 listings,  97 with a website (100%)
   Pet Care & Resources     72 listings,  72 with a website (100%)
   Elder Care               63 listings,  63 with a website (100%)
@@ -1375,8 +1375,8 @@ AND THE GAP IS NOT WHERE IT LOOKS
 
 407 listings have no website. 407 of them -- every single one -- came from the
 one bulk import of Connecticut Office of Early Childhood childcare providers,
-which arrived without URLs. Of the 572 records written by
-research, 572 carry a website: 100%.
+which arrived without URLs. Of the 573 records written by
+research, 573 carry a website: 100%.
 
 So this is not a habit to correct. It is a bounded backfill of a known set,
 and the set is licensed childcare providers whose details came from the state.
